@@ -1,0 +1,931 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 3664150969
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.UniformGamma",
+  "challenge_sha256": "1d0ec2d4a495ea93a8526aaf223ba12a0c1d0f4c0652d837954c206439d57020",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/UniformGamma.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.UniformGamma",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.TracialSplitting.Challenge",
+   "theorem_names": [
+    "OAI.ComparatorModel.CurrentMain.main"
+   ]
+  },
+  "config_sha256": "5c71c58d5f6529f2ded692c06b7ec44622a532e74bba484c011b09d78981da0c",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/UniformGamma.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.ComparatorModel.CurrentMain.main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/BistochasticTests.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.BistochasticTests",
+   "original_sha256": "db275135815155fcb0ce29d615addf80ed17a6684fa3624819ad36415a826061",
+   "path": "OAI/Analysis/TracialSplitting/BistochasticTests.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/BlockAveraging.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.BlockAveraging",
+   "original_sha256": "5cdf5b3da3e3f92925822dbde3179254beea77c9dc3c9140bafa9daedfd831fd",
+   "path": "OAI/Analysis/TracialSplitting/BlockAveraging.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/BlockSampling.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.BlockSampling",
+   "original_sha256": "03c473bb62b17e0fb1712039125ccc0cad598d364ca05bc224fd145373bcbebd",
+   "path": "OAI/Analysis/TracialSplitting/BlockSampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/Challenge.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.Challenge",
+   "original_sha256": "229891ee3f75ec52430a51165063fb52b711819698798c42bc13541b43b413dd",
+   "path": "OAI/Analysis/TracialSplitting/Challenge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/ChallengeDefinitions.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.ChallengeDefinitions",
+   "original_sha256": "b87f630045f785a3767bc1182c29bc8d9f1247e173f7fdfdb1d60fec11982303",
+   "path": "OAI/Analysis/TracialSplitting/ChallengeDefinitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/CoefficientApproximation.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.CoefficientApproximation",
+   "original_sha256": "d957e92fdc9ab3738e3dbaa424f7dceec0f0a0dd026a9f599d4748a33b035542",
+   "path": "OAI/Analysis/TracialSplitting/CoefficientApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/CoefficientBounds.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.CoefficientBounds",
+   "original_sha256": "754cf0a6b8dab39d16f3d7a0a4705525a6bd7904dec09c2887015241c8e64618",
+   "path": "OAI/Analysis/TracialSplitting/CoefficientBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/Completion.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.Completion",
+   "original_sha256": "874a79ede67082b40a72e14351461d04ace0c5ee4a898e7624c972516c354ada",
+   "path": "OAI/Analysis/TracialSplitting/Completion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/ConditionalSplitting.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.ConditionalSplitting",
+   "original_sha256": "a389136e6da2e67635234e9b07c38fa808075829599e729715a50806a8b7686b",
+   "path": "OAI/Analysis/TracialSplitting/ConditionalSplitting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/Diagonalization.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.Diagonalization",
+   "original_sha256": "0d349c431b2233ff98dd91a69ee9341d36bb2e21d6b2a73c61e38e19b442221a",
+   "path": "OAI/Analysis/TracialSplitting/Diagonalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/FaithfulRepresentations.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.FaithfulRepresentations",
+   "original_sha256": "8254c0b5918a241ff631427f7603fc01e677d31399b5a627aa26bfab99719661",
+   "path": "OAI/Analysis/TracialSplitting/FaithfulRepresentations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/FinitePacking.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.FinitePacking",
+   "original_sha256": "0d3f0f83db68e3f69c749e678a4628673c42f74744b62923111023dc97fd7ae9",
+   "path": "OAI/Analysis/TracialSplitting/FinitePacking.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/FiniteSplitting.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.FiniteSplitting",
+   "original_sha256": "d26111f950bbd878b4e96cdd9024970b320dd8a669a3da978beb1b85af0fa168",
+   "path": "OAI/Analysis/TracialSplitting/FiniteSplitting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/FullProjections.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.FullProjections",
+   "original_sha256": "fc709abbea640bdc01c37c5b9b3d43ad92572947a2c708d0a93fad35142f13c5",
+   "path": "OAI/Analysis/TracialSplitting/FullProjections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/GNSRepresentations.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.GNSRepresentations",
+   "original_sha256": "39c42920e4dcc2321555af39d9ec614f9b9e09c1766157f8a81a4eb3597d36bb",
+   "path": "OAI/Analysis/TracialSplitting/GNSRepresentations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/HereditaryAlgebras.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.HereditaryAlgebras",
+   "original_sha256": "1dca61a4bbc412519cce4643f508aebd3f6fda0cfb5c07b25f40b5421779ba85",
+   "path": "OAI/Analysis/TracialSplitting/HereditaryAlgebras.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/Hypertraces.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.Hypertraces",
+   "original_sha256": "30207fb477932c89698463202e23aeded26e0ca9b89ee95da40c8983a0559a4c",
+   "path": "OAI/Analysis/TracialSplitting/Hypertraces.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/KrausApproximation.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.KrausApproximation",
+   "original_sha256": "c107e905f727d3fb80159f8ed1969a63c9fd44994974d576a23ac120e7e6ec07",
+   "path": "OAI/Analysis/TracialSplitting/KrausApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/Main.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.Main",
+   "original_sha256": "36e2bdd441c9dd5a590479408dd0aa91cb2064902cb8fab82cc3df159ace94fb",
+   "path": "OAI/Analysis/TracialSplitting/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/MatrixCoefficients.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.MatrixCoefficients",
+   "original_sha256": "69ce84f494a49b5157f56c9b9d06362565795adc188cbe1fef37d64c64ad92e8",
+   "path": "OAI/Analysis/TracialSplitting/MatrixCoefficients.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/MatrixNormalization.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.MatrixNormalization",
+   "original_sha256": "b693eb1357cab551483f3d6220801b264f54cfe39f6e465a6eb440314762ad4f",
+   "path": "OAI/Analysis/TracialSplitting/MatrixNormalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/Model.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.Model",
+   "original_sha256": "4759e98fbc311476a57103767b29ba072ee87c914116dc8be4f979395bdc3bb6",
+   "path": "OAI/Analysis/TracialSplitting/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/NuclearApproximation.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.NuclearApproximation",
+   "original_sha256": "0ed9762979b67aeb9989850ca7e0cfda47b13c8cd925d8fdd58e7cb9f6b8e262",
+   "path": "OAI/Analysis/TracialSplitting/NuclearApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/NuclearFamilies.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.NuclearFamilies",
+   "original_sha256": "163a8981ee037fd2b204e80ac62c7ebb9e343b973265beffa4661503c9be6ccc",
+   "path": "OAI/Analysis/TracialSplitting/NuclearFamilies.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/NuclearPacking.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.NuclearPacking",
+   "original_sha256": "0a1e0c1d532e64f8c206f594b78453aa8f29f3f62d3c3022ac03ce9b86f4187e",
+   "path": "OAI/Analysis/TracialSplitting/NuclearPacking.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/NuclearTransfer.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.NuclearTransfer",
+   "original_sha256": "04d5cc5c72ee426b2a5b82af2966ba3c0bac699c6095adb2a35bd392e975fbec",
+   "path": "OAI/Analysis/TracialSplitting/NuclearTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/OrthogonalElements.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.OrthogonalElements",
+   "original_sha256": "87912ce3953e46d508a893e396ce88c8254962e30841583790afcf1c2c4ad988",
+   "path": "OAI/Analysis/TracialSplitting/OrthogonalElements.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/OrthogonalPacking.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.OrthogonalPacking",
+   "original_sha256": "ad12490a179211ac67dc7adc485b54563664d24afaf043cf35c1a4c56408b21f",
+   "path": "OAI/Analysis/TracialSplitting/OrthogonalPacking.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/PackingEstimates.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.PackingEstimates",
+   "original_sha256": "c07c05ddf8899b93e12d779af55ff74e625be2a5abab717b6a9b8db8d55766d4",
+   "path": "OAI/Analysis/TracialSplitting/PackingEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/PartitionAveraging.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.PartitionAveraging",
+   "original_sha256": "b0724129ce84722615290db887d9c44aa86c0509c22fac2fe339e31dd9cbcdf5",
+   "path": "OAI/Analysis/TracialSplitting/PartitionAveraging.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/PartitionCoupling.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.PartitionCoupling",
+   "original_sha256": "40b29cbd2ebd35b1bde7cfb365c28b72c53667e073cfe9e7c4b276729c85455f",
+   "path": "OAI/Analysis/TracialSplitting/PartitionCoupling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/PreparedBlocks.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.PreparedBlocks",
+   "original_sha256": "71002f71a35d38f29da89ca16f2992358037bf2aeb1e3ea6e6741e799cb21932",
+   "path": "OAI/Analysis/TracialSplitting/PreparedBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/ProjectionFrames.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.ProjectionFrames",
+   "original_sha256": "6186a0522e4477b316cfe8cae2ad0caeb3e9f531d609635f18c2c91f8a6f3de1",
+   "path": "OAI/Analysis/TracialSplitting/ProjectionFrames.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/ProjectionRounding.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.ProjectionRounding",
+   "original_sha256": "b4a427e3fd7669d41cc28f79d7ffcff169dee7f747e1a70c0c768cc2d2782034",
+   "path": "OAI/Analysis/TracialSplitting/ProjectionRounding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/ProjectionSampling.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.ProjectionSampling",
+   "original_sha256": "703dbc95f966aec1fa27901e93928a57a66c3131433ca2e33a3922ce9bff142c",
+   "path": "OAI/Analysis/TracialSplitting/ProjectionSampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/RowEstimates.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.RowEstimates",
+   "original_sha256": "bb84a76b76d4a36e0360a2f17a2768ccbbae555286c91b28b4f940e1fe4f3c7d",
+   "path": "OAI/Analysis/TracialSplitting/RowEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/ScalarCompression.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.ScalarCompression",
+   "original_sha256": "3aaaffb9513e802830ff5e769f2e3c7caaef6501550348ee975924a879bdd6d9",
+   "path": "OAI/Analysis/TracialSplitting/ScalarCompression.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/SimpleIdeals.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.SimpleIdeals",
+   "original_sha256": "122a64828ea596ba8a1d53c25e73515673057c41346c8a53382d70cf797965bb",
+   "path": "OAI/Analysis/TracialSplitting/SimpleIdeals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/SmallProjections.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.SmallProjections",
+   "original_sha256": "4707b19b651a735f1533a7ad85d67c0f0cd622169fce9a723ffdd74991dd9bb8",
+   "path": "OAI/Analysis/TracialSplitting/SmallProjections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/SpatialTensor.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.SpatialTensor",
+   "original_sha256": "bf9740c5e6b0f13bbf6aa93263ebdcc7b23f9710919986afd625d0444f6b669c",
+   "path": "OAI/Analysis/TracialSplitting/SpatialTensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/SpectralBlocks.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.SpectralBlocks",
+   "original_sha256": "268f5db3c995a1446405490387671aab8c89ce152884aaf33f51bd8b172eb5a4",
+   "path": "OAI/Analysis/TracialSplitting/SpectralBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/SpectralCutoffs.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.SpectralCutoffs",
+   "original_sha256": "0051fd4acad59029c51effca916e33787afadbf97a55ad5fa3d98df87167e308",
+   "path": "OAI/Analysis/TracialSplitting/SpectralCutoffs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/SpectralLayers.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.SpectralLayers",
+   "original_sha256": "78f986c253d8b1ed260050b4df6e5f15e23642db60e26cd267bdd9e5e08abc1d",
+   "path": "OAI/Analysis/TracialSplitting/SpectralLayers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/StateExtension.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.StateExtension",
+   "original_sha256": "139202f96bbb04c18f8ac76f7d55420611bc742ea62a11ab322d2543d385ffb9",
+   "path": "OAI/Analysis/TracialSplitting/StateExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/TensorExtension.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.TensorExtension",
+   "original_sha256": "0112304910e01530663a44a3b2553bb5510b8b0f84a12d6254ec1377be31e708",
+   "path": "OAI/Analysis/TracialSplitting/TensorExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/TensorNorms.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.TensorNorms",
+   "original_sha256": "c6991f29b59d9636bee0919bd2de369f1f2a87493bb2ccf329525599c787fde8",
+   "path": "OAI/Analysis/TracialSplitting/TensorNorms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/TraceConvexity.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.TraceConvexity",
+   "original_sha256": "060d9acd2e11dd1d0dfc8ac320af695d8d2c77c296332452b48a0e504cec708b",
+   "path": "OAI/Analysis/TracialSplitting/TraceConvexity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/TraceEstimates.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.TraceEstimates",
+   "original_sha256": "1fc5139c980454ca0f3ddacd1357e38d02782102beb6ef350ee14220e7458965",
+   "path": "OAI/Analysis/TracialSplitting/TraceEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/TraceNormalization.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.TraceNormalization",
+   "original_sha256": "3ae3dea5e1c92a1bcdd161192d541439f2e6ced08de92902ce3a0e0e3dcf43ec",
+   "path": "OAI/Analysis/TracialSplitting/TraceNormalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/VectorApproximation.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.VectorApproximation",
+   "original_sha256": "38d34823eafb0c8ad19dd31338b10d9a3a0d660fad84dafde942ffac21ffabf8",
+   "path": "OAI/Analysis/TracialSplitting/VectorApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TracialSplitting/WeightedFamilies.lean"
+   },
+   "module": "OAI.Analysis.TracialSplitting.WeightedFamilies",
+   "original_sha256": "21aabd3ece44f7c37ca8e995c1ff0f030fd4d830ca30d417124cbabe406bef65",
+   "path": "OAI/Analysis/TracialSplitting/WeightedFamilies.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.TracialSplitting.BistochasticTests",
+  "OAI.Analysis.TracialSplitting.BlockAveraging",
+  "OAI.Analysis.TracialSplitting.BlockSampling",
+  "OAI.Analysis.TracialSplitting.Challenge",
+  "OAI.Analysis.TracialSplitting.ChallengeDefinitions",
+  "OAI.Analysis.TracialSplitting.CoefficientApproximation",
+  "OAI.Analysis.TracialSplitting.CoefficientBounds",
+  "OAI.Analysis.TracialSplitting.Completion",
+  "OAI.Analysis.TracialSplitting.ConditionalSplitting",
+  "OAI.Analysis.TracialSplitting.Diagonalization",
+  "OAI.Analysis.TracialSplitting.FaithfulRepresentations",
+  "OAI.Analysis.TracialSplitting.FinitePacking",
+  "OAI.Analysis.TracialSplitting.FiniteSplitting",
+  "OAI.Analysis.TracialSplitting.FullProjections",
+  "OAI.Analysis.TracialSplitting.GNSRepresentations",
+  "OAI.Analysis.TracialSplitting.HereditaryAlgebras",
+  "OAI.Analysis.TracialSplitting.Hypertraces",
+  "OAI.Analysis.TracialSplitting.KrausApproximation",
+  "OAI.Analysis.TracialSplitting.Main",
+  "OAI.Analysis.TracialSplitting.MatrixCoefficients",
+  "OAI.Analysis.TracialSplitting.MatrixNormalization",
+  "OAI.Analysis.TracialSplitting.Model",
+  "OAI.Analysis.TracialSplitting.NuclearApproximation",
+  "OAI.Analysis.TracialSplitting.NuclearFamilies",
+  "OAI.Analysis.TracialSplitting.NuclearPacking",
+  "OAI.Analysis.TracialSplitting.NuclearTransfer",
+  "OAI.Analysis.TracialSplitting.OrthogonalElements",
+  "OAI.Analysis.TracialSplitting.OrthogonalPacking",
+  "OAI.Analysis.TracialSplitting.PackingEstimates",
+  "OAI.Analysis.TracialSplitting.PartitionAveraging",
+  "OAI.Analysis.TracialSplitting.PartitionCoupling",
+  "OAI.Analysis.TracialSplitting.PreparedBlocks",
+  "OAI.Analysis.TracialSplitting.ProjectionFrames",
+  "OAI.Analysis.TracialSplitting.ProjectionRounding",
+  "OAI.Analysis.TracialSplitting.ProjectionSampling",
+  "OAI.Analysis.TracialSplitting.RowEstimates",
+  "OAI.Analysis.TracialSplitting.ScalarCompression",
+  "OAI.Analysis.TracialSplitting.SimpleIdeals",
+  "OAI.Analysis.TracialSplitting.SmallProjections",
+  "OAI.Analysis.TracialSplitting.SpatialTensor",
+  "OAI.Analysis.TracialSplitting.SpectralBlocks",
+  "OAI.Analysis.TracialSplitting.SpectralCutoffs",
+  "OAI.Analysis.TracialSplitting.SpectralLayers",
+  "OAI.Analysis.TracialSplitting.StateExtension",
+  "OAI.Analysis.TracialSplitting.TensorExtension",
+  "OAI.Analysis.TracialSplitting.TensorNorms",
+  "OAI.Analysis.TracialSplitting.TraceConvexity",
+  "OAI.Analysis.TracialSplitting.TraceEstimates",
+  "OAI.Analysis.TracialSplitting.TraceNormalization",
+  "OAI.Analysis.TracialSplitting.VectorApproximation",
+  "OAI.Analysis.TracialSplitting.WeightedFamilies"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/UniformGamma.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.TracialSplitting.Challenge",
+   "name": "OAI.ComparatorModel.CurrentMain.main",
+   "statement_sha256": "5789908ba16b57a051dff2cac4a5f1bd36bc1f7da6e3bfed5db0c3ff39f631f4"
+  }
+ ],
+ "task_id": "oai-uniform-gamma",
+ "task_revision": 1,
+ "title": "OpenAI math: Cuntz comparison, nuclear dimension, and equivariant Jiang–Su stability: Uniform property \\Gamma from tracial real rank zero",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

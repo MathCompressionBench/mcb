@@ -1,0 +1,1101 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 33204538
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.CirculantHadamard",
+  "challenge_sha256": "397ec4f1ab8e02877f4a4d0b5a12d0c9b26a06bf768999479210b365c3acb647",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/CirculantHadamard.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.CirculantHadamard",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.LinearAlgebra.CirculantHadamard.Main",
+   "theorem_names": [
+    "OAI.CirculantHadamard.exists_iff_order_one_or_four"
+   ]
+  },
+  "config_sha256": "c1fe62023b2b218840c7389b00a97473b48f3a59ab1af453f0dd4558b9e6b4b1",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/CirculantHadamard.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.CirculantHadamard.exists_iff_order_one_or_four": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/AlternatingField.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.AlternatingField",
+   "original_sha256": "9391338bea9f18a3a1dd31c6d897fbe08d09149525b75ddf494345f52f2bca26",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/AlternatingField.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/AlternatingLocalization.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.AlternatingLocalization",
+   "original_sha256": "1c68b3e21b135328a8388a17e184b11ad7ca5cd676572778488dce9370b9f56b",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/AlternatingLocalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/AlternatingNorm.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.AlternatingNorm",
+   "original_sha256": "9003b0f8308ed35b657facf71670290a3f016dcb8ffd51f73ffcf957fa36c5f6",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/AlternatingNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/AlternatingProducts.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.AlternatingProducts",
+   "original_sha256": "012d184f571443c83a5dc76e4136700ea554c39a6dcb580ff959ec11b7f41fc0",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/AlternatingProducts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/AlternatingTorsion.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.AlternatingTorsion",
+   "original_sha256": "fc697631823d49160b2bb0932efb45e081545b9497256838256ce6e696525c8e",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/AlternatingTorsion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/Basic.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.Basic",
+   "original_sha256": "bea9bbfbed10ba23c8b30828b34b677e28258a09e99e87814410e0d57b24d62e",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/BinaryBlocks.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.BinaryBlocks",
+   "original_sha256": "11ae93ce70dbe6c05b75a5cd443d7b10b2d485ba489cc404ac39c8a84d4f496c",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/BinaryBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/BinaryCharacterSum.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.BinaryCharacterSum",
+   "original_sha256": "e47476ec7b8a35b9a496750087c7fa336f2f54871ba29ffd9ae62898b0d04ac6",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/BinaryCharacterSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/BinaryCoefficients.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.BinaryCoefficients",
+   "original_sha256": "ccb813c719fcd2fc4aecf73bdc268f0375719cee4e505aac29f9b1bf7845825b",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/BinaryCoefficients.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/BinaryContradiction.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.BinaryContradiction",
+   "original_sha256": "12dbb3029dd894e4a983b525cd3937257caed71c6686eac193c96de83deeebb5",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/BinaryContradiction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/BinaryEvaluation.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.BinaryEvaluation",
+   "original_sha256": "da18e73f49005bf301ccbe0b4db1fb89c37528f5d708895fa11ecdfc60ae8dfc",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/BinaryEvaluation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/BinaryLocalFamily.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.BinaryLocalFamily",
+   "original_sha256": "8d0e620e196245bc27fb0b0609c564b02ca25e91f8702cf5d1bcdbde77c6c458",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/BinaryLocalFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/BinaryLocalRing.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.BinaryLocalRing",
+   "original_sha256": "9d7aa646675030bcaa140f0bebba7ff40f62499f2464b78a245d978147856063",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/BinaryLocalRing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/BinaryLocalization.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.BinaryLocalization",
+   "original_sha256": "35d18ccb637a75076dfed64802758c1903e6c67ecec2e4ddcbaa59237ae3d5d7",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/BinaryLocalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/BinaryNorms.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.BinaryNorms",
+   "original_sha256": "38be4faa3f7d4578f9e1830d05a6d380cc8e1a1fa90d2a74d82c37f5405abfbe",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/BinaryNorms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/BinaryProductTransport.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.BinaryProductTransport",
+   "original_sha256": "4ea7a3e6dc3ef4edbfff6e7df675d6de360187c0a5ec83a693b6f346135e1e74",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/BinaryProductTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/BinaryResidue.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.BinaryResidue",
+   "original_sha256": "fdaa0dd88325c60e543076a3273073a4db5338ed893d88a265140159dd39351f",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/BinaryResidue.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CoefficientEvaluation.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CoefficientEvaluation",
+   "original_sha256": "0e6332687c6497abd704bc4858e0dcf60b2fc4d204d783bda70b4ae1cc9652a4",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CoefficientEvaluation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CyclicEvaluation.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CyclicEvaluation",
+   "original_sha256": "28143511aacd51c4165cb6921ad82fc1e1feb883515dec4d75e9bcf4266c17c1",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CyclicEvaluation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CyclicEvaluationAt.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CyclicEvaluationAt",
+   "original_sha256": "1017628273e591da4518ed6912645b0e0df81cb4bb425b0ead1c11125b39c4aa",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CyclicEvaluationAt.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CyclicEvaluationProjection.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CyclicEvaluationProjection",
+   "original_sha256": "30f9139b4b725369a898d39fe995e2ceb408ca3017a6ba400b4fed65bf74fb73",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CyclicEvaluationProjection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CyclicNorm.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CyclicNorm",
+   "original_sha256": "ba0ebe7da310c76cbf9a69621667106a55ea2854c2728b2d5193fe7d30ead3c4",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CyclicNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CyclicPolynomial.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CyclicPolynomial",
+   "original_sha256": "c6265330919641836bcbbd899ef0668b0ce253f21e2c687b554f3b432f8eb673",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CyclicPolynomial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CyclicProjection.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CyclicProjection",
+   "original_sha256": "f77a3dc8e1c4fa18c22c9376f2370204691cbfa1ab6ba11e0f5f63baabc6ade2",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CyclicProjection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CyclicProjectionPolynomial.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CyclicProjectionPolynomial",
+   "original_sha256": "891016b2fc010d4f49e8dc4ad5c89c9f62a95e24f518e45a60809b3ce85de4ae",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CyclicProjectionPolynomial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CyclicRing.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CyclicRing",
+   "original_sha256": "8e7aa170da31a05a41874822ae5ee14a7f1077d0d255606bcc85524f7aa402c1",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CyclicRing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CyclicScalarDivision.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CyclicScalarDivision",
+   "original_sha256": "841c30bae6fe4e3830834ac2f57bfda4d609ef65b68f10e280e34b87961abd82",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CyclicScalarDivision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CyclotomicAdjoin.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CyclotomicAdjoin",
+   "original_sha256": "4cc0e3b6a640b3b7b626b70c5818f929a3fd65b9423025123b0e46a9372a35b9",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CyclotomicAdjoin.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CyclotomicAwayLocal.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CyclotomicAwayLocal",
+   "original_sha256": "5bd838ea523be7db9293bca07ce0e4052a0db6abb89244b47f27c731a729951e",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CyclotomicAwayLocal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CyclotomicFactorDivision.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CyclotomicFactorDivision",
+   "original_sha256": "0822b2ae0ae90f20c6f951b7c6695cbf9c28a1bb0a10d187eada7ac4621a0fce",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CyclotomicFactorDivision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CyclotomicIntegerEvaluation.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CyclotomicIntegerEvaluation",
+   "original_sha256": "c7d9f217033c63b612aec938a06b457858ab1862c6e5336751ba3fc47558360b",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CyclotomicIntegerEvaluation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CyclotomicLocalBase.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CyclotomicLocalBase",
+   "original_sha256": "9c901e1e33fdcd9d0d796c633ae3343139cf5f339641cc0f3d56dfe2fff6d0b8",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CyclotomicLocalBase.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CyclotomicProjection.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CyclotomicProjection",
+   "original_sha256": "cd544f5b348761e2dec843a1014dd7839b37255f73e973fefc2b7bbb03599b69",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CyclotomicProjection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CyclotomicRemainder.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CyclotomicRemainder",
+   "original_sha256": "8c8d53db00ee4640e56e994fca93c31d6a3f8ddb2d759fd4c7c2921db9d4e87c",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CyclotomicRemainder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CyclotomicRings.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CyclotomicRings",
+   "original_sha256": "7af3949b7ce703ac1e686ca674d021e4fcbde1c2f02d26a15913e739580cf858",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CyclotomicRings.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/CyclotomicTorsion.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.CyclotomicTorsion",
+   "original_sha256": "222948087c7519b601b39de21745ad2d45e1fdca936edde178d1e4abe3483d99",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/CyclotomicTorsion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/DyadicRemainder.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.DyadicRemainder",
+   "original_sha256": "2df3135082fed2d387f06e9853c03176ef56bf68a6a0188ed0e84d6a26d222b3",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/DyadicRemainder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/FirstOrderResidue.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.FirstOrderResidue",
+   "original_sha256": "0778b66ed61299c593ac555031dbc69e26a35fc8db426fb4dccf67223e16054a",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/FirstOrderResidue.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/IntegerLocalDivisibility.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.IntegerLocalDivisibility",
+   "original_sha256": "fb3ae612e57e53cd4c8fa243efa9202a4ea727c0dc4f34f5ffc94347aa8568e5",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/IntegerLocalDivisibility.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/IntegerTwoLocal.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.IntegerTwoLocal",
+   "original_sha256": "a4b4a1d94566d383bd1194e744836a77b6e1a20d706dc922a365db46a02a4e2a",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/IntegerTwoLocal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/Kronecker.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.Kronecker",
+   "original_sha256": "459a32c9edac45e93f39f109a42b7d4b255add4bfa3bb3f9a49c9cacf3cee09b",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/Kronecker.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/LocalComparison.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.LocalComparison",
+   "original_sha256": "f00acbdb594db4610af811a8f5b516c3fe47833eab9b10817e36e7f2348a0ffb",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/LocalComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/LocalComparisonInduction.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.LocalComparisonInduction",
+   "original_sha256": "00cc7ad1e9ea81c09d523ebb7bf499f26ecc3662dffbc663793c7e9de2592494",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/LocalComparisonInduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/LocalDVR.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.LocalDVR",
+   "original_sha256": "9fb2198d694def6e9c33aa74bad6e6cdf872d5645a3433889730505331f4e0f9",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/LocalDVR.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/LocalizationIntersection.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.LocalizationIntersection",
+   "original_sha256": "a2295e7a6ccfe0e6af2dc6bb36ffa53e6bbed8aab272c92fd6ffead15e2d93a3",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/LocalizationIntersection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/LocalizationMaps.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.LocalizationMaps",
+   "original_sha256": "0a4909152b9c92801094c35aa3c0356a3af2afd053b3f9c1b451075f774e7555",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/LocalizationMaps.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/Main.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.Main",
+   "original_sha256": "10ac97dc252ed99ef11e95b13a0b1e51f403c039cdd158f6a0ade4aa446c1c9a",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/MatrixBridge.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.MatrixBridge",
+   "original_sha256": "88113b0612a0eb4aafb1af2c8dc2678109a567b4547abc9c0e25d3abdcb4532a",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/MatrixBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/ModEight.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.ModEight",
+   "original_sha256": "0fcb9b639235ddb8e5868fa0663b8540dba42581d508b33645ff99ac831daf1a",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/ModEight.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/Model.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.Model",
+   "original_sha256": "1f75b9d170bef0482c3c79d74642d9d214b51d45d856931c38fb53e14dc631c1",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/OrderCyclotomicDivisibility.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.OrderCyclotomicDivisibility",
+   "original_sha256": "92d035adc78bcf469ae178ecb02e8ff46fcc64420d5dc2023230fed53ddc6629",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/OrderCyclotomicDivisibility.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/OrderDescent.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.OrderDescent",
+   "original_sha256": "7c97371172aea55df51a2b1fcbf6692ff4419626f883a97e80ba93db9db1b773",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/OrderDescent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/OrderHalving.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.OrderHalving",
+   "original_sha256": "8bc5795b227b2eddc2a7bd0e09335a7ca2f8d41fbb3a0ed7be5c818291bf8c8d",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/OrderHalving.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/OrderProjection.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.OrderProjection",
+   "original_sha256": "3ffdd92c3360adc4a757f7870764ed05fe740c15e9096dd140bbd3a85e21ecea",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/OrderProjection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/OrderReduction.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.OrderReduction",
+   "original_sha256": "67072a861ec8040612d9627b210f900cf6062365ef826e8a787e6238afadbd40",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/OrderReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/OrderSquareEven.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.OrderSquareEven",
+   "original_sha256": "44083ca2f390d09d1953c1d9f2de463abd36d5a1084b1d4b4d8aa2f40cb92be9",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/OrderSquareEven.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/PrimeCharacterEvaluations.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.PrimeCharacterEvaluations",
+   "original_sha256": "af42913017a5125216235516006a94a08cba3705084f12a852d31cd9cbab3906",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/PrimeCharacterEvaluations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/PrimeComponents.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.PrimeComponents",
+   "original_sha256": "ee008685694ebe94166a6cf952a988e90b7074dccaf0176769fb0e7017f1209f",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/PrimeComponents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/ProjectionCoefficients.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.ProjectionCoefficients",
+   "original_sha256": "4d9f30574d3b3b8234a96cbc89135c46e2c31bb1bae7e398f307d14e36fd2a72",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/ProjectionCoefficients.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/ProjectionPairFiber.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.ProjectionPairFiber",
+   "original_sha256": "6b84f9d712bc1ecd1987969a1bc2092b2561a2c560a5285b30e3435deba89697",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/ProjectionPairFiber.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/RamifiedConjugation.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.RamifiedConjugation",
+   "original_sha256": "d4c644263d6b093fa8613dec5b10b99f12e6f5c9343bc66173b75ca0b8e97190",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/RamifiedConjugation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/RamifiedEisenstein.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.RamifiedEisenstein",
+   "original_sha256": "d8448b0794f9c52e73dfe1f4dfee3d68be16207def03ac635ae86be0c427bc54",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/RamifiedEisenstein.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/RamifiedLocal.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.RamifiedLocal",
+   "original_sha256": "9007393846c303b7bf951a2919f302b1bf20a74b00aa5b5560c9f1379a966842",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/RamifiedLocal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/RamifiedUnit.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.RamifiedUnit",
+   "original_sha256": "33dedc7a891c8a29037b4f0571ef324536f31ab6cac37162aba1008bcf8637f8",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/RamifiedUnit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/ResidueOneAssociation.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.ResidueOneAssociation",
+   "original_sha256": "d799990c541527d976e6c951f1c7c796528071cc944bb95635b41c0b1d0c84e9",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/ResidueOneAssociation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/ResidueTorsion.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.ResidueTorsion",
+   "original_sha256": "26fae007a640abd3a99f5bcad4462b895ef2d7edb5576c82a77e9b3e2b163ad4",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/ResidueTorsion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/TwoAdicDecomposition.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.TwoAdicDecomposition",
+   "original_sha256": "0f98042027ab0bd702645d4bf88106e9484feb71aa025056c2048b2ed43a4f56",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/TwoAdicDecomposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/LinearAlgebra/CirculantHadamard/Witnesses.lean"
+   },
+   "module": "OAI.LinearAlgebra.CirculantHadamard.Witnesses",
+   "original_sha256": "7dac2782ff9b1dcbb87377538dc9032acc76bcfa91c0c6f543b29eba382353ab",
+   "path": "OAI/LinearAlgebra/CirculantHadamard/Witnesses.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.LinearAlgebra.CirculantHadamard.AlternatingField",
+  "OAI.LinearAlgebra.CirculantHadamard.AlternatingLocalization",
+  "OAI.LinearAlgebra.CirculantHadamard.AlternatingNorm",
+  "OAI.LinearAlgebra.CirculantHadamard.AlternatingProducts",
+  "OAI.LinearAlgebra.CirculantHadamard.AlternatingTorsion",
+  "OAI.LinearAlgebra.CirculantHadamard.Basic",
+  "OAI.LinearAlgebra.CirculantHadamard.BinaryBlocks",
+  "OAI.LinearAlgebra.CirculantHadamard.BinaryCharacterSum",
+  "OAI.LinearAlgebra.CirculantHadamard.BinaryCoefficients",
+  "OAI.LinearAlgebra.CirculantHadamard.BinaryContradiction",
+  "OAI.LinearAlgebra.CirculantHadamard.BinaryEvaluation",
+  "OAI.LinearAlgebra.CirculantHadamard.BinaryLocalFamily",
+  "OAI.LinearAlgebra.CirculantHadamard.BinaryLocalRing",
+  "OAI.LinearAlgebra.CirculantHadamard.BinaryLocalization",
+  "OAI.LinearAlgebra.CirculantHadamard.BinaryNorms",
+  "OAI.LinearAlgebra.CirculantHadamard.BinaryProductTransport",
+  "OAI.LinearAlgebra.CirculantHadamard.BinaryResidue",
+  "OAI.LinearAlgebra.CirculantHadamard.CoefficientEvaluation",
+  "OAI.LinearAlgebra.CirculantHadamard.CyclicEvaluation",
+  "OAI.LinearAlgebra.CirculantHadamard.CyclicEvaluationAt",
+  "OAI.LinearAlgebra.CirculantHadamard.CyclicEvaluationProjection",
+  "OAI.LinearAlgebra.CirculantHadamard.CyclicNorm",
+  "OAI.LinearAlgebra.CirculantHadamard.CyclicPolynomial",
+  "OAI.LinearAlgebra.CirculantHadamard.CyclicProjection",
+  "OAI.LinearAlgebra.CirculantHadamard.CyclicProjectionPolynomial",
+  "OAI.LinearAlgebra.CirculantHadamard.CyclicRing",
+  "OAI.LinearAlgebra.CirculantHadamard.CyclicScalarDivision",
+  "OAI.LinearAlgebra.CirculantHadamard.CyclotomicAdjoin",
+  "OAI.LinearAlgebra.CirculantHadamard.CyclotomicAwayLocal",
+  "OAI.LinearAlgebra.CirculantHadamard.CyclotomicFactorDivision",
+  "OAI.LinearAlgebra.CirculantHadamard.CyclotomicIntegerEvaluation",
+  "OAI.LinearAlgebra.CirculantHadamard.CyclotomicLocalBase",
+  "OAI.LinearAlgebra.CirculantHadamard.CyclotomicProjection",
+  "OAI.LinearAlgebra.CirculantHadamard.CyclotomicRemainder",
+  "OAI.LinearAlgebra.CirculantHadamard.CyclotomicRings",
+  "OAI.LinearAlgebra.CirculantHadamard.CyclotomicTorsion",
+  "OAI.LinearAlgebra.CirculantHadamard.DyadicRemainder",
+  "OAI.LinearAlgebra.CirculantHadamard.FirstOrderResidue",
+  "OAI.LinearAlgebra.CirculantHadamard.IntegerLocalDivisibility",
+  "OAI.LinearAlgebra.CirculantHadamard.IntegerTwoLocal",
+  "OAI.LinearAlgebra.CirculantHadamard.Kronecker",
+  "OAI.LinearAlgebra.CirculantHadamard.LocalComparison",
+  "OAI.LinearAlgebra.CirculantHadamard.LocalComparisonInduction",
+  "OAI.LinearAlgebra.CirculantHadamard.LocalDVR",
+  "OAI.LinearAlgebra.CirculantHadamard.LocalizationIntersection",
+  "OAI.LinearAlgebra.CirculantHadamard.LocalizationMaps",
+  "OAI.LinearAlgebra.CirculantHadamard.Main",
+  "OAI.LinearAlgebra.CirculantHadamard.MatrixBridge",
+  "OAI.LinearAlgebra.CirculantHadamard.ModEight",
+  "OAI.LinearAlgebra.CirculantHadamard.Model",
+  "OAI.LinearAlgebra.CirculantHadamard.OrderCyclotomicDivisibility",
+  "OAI.LinearAlgebra.CirculantHadamard.OrderDescent",
+  "OAI.LinearAlgebra.CirculantHadamard.OrderHalving",
+  "OAI.LinearAlgebra.CirculantHadamard.OrderProjection",
+  "OAI.LinearAlgebra.CirculantHadamard.OrderReduction",
+  "OAI.LinearAlgebra.CirculantHadamard.OrderSquareEven",
+  "OAI.LinearAlgebra.CirculantHadamard.PrimeCharacterEvaluations",
+  "OAI.LinearAlgebra.CirculantHadamard.PrimeComponents",
+  "OAI.LinearAlgebra.CirculantHadamard.ProjectionCoefficients",
+  "OAI.LinearAlgebra.CirculantHadamard.ProjectionPairFiber",
+  "OAI.LinearAlgebra.CirculantHadamard.RamifiedConjugation",
+  "OAI.LinearAlgebra.CirculantHadamard.RamifiedEisenstein",
+  "OAI.LinearAlgebra.CirculantHadamard.RamifiedLocal",
+  "OAI.LinearAlgebra.CirculantHadamard.RamifiedUnit",
+  "OAI.LinearAlgebra.CirculantHadamard.ResidueOneAssociation",
+  "OAI.LinearAlgebra.CirculantHadamard.ResidueTorsion",
+  "OAI.LinearAlgebra.CirculantHadamard.TwoAdicDecomposition",
+  "OAI.LinearAlgebra.CirculantHadamard.Witnesses"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/CirculantHadamard.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.LinearAlgebra.CirculantHadamard.Main",
+   "name": "OAI.CirculantHadamard.exists_iff_order_one_or_four",
+   "statement_sha256": "573d0231de0fe5b27f4f07ede50f303cb1d5331f1c3fb346950b1fb04d943ee5"
+  }
+ ],
+ "task_id": "oai-circulant-hadamard",
+ "task_revision": 1,
+ "title": "OpenAI math: The circulant Hadamard and Barker-sequence conjectures: Classification of circulant Hadamard orders",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

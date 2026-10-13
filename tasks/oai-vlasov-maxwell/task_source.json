@@ -1,0 +1,2491 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 1503529838
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.VlasovMaxwell",
+  "challenge_sha256": "67941fd3f10cf129d42dc4ef6ea6b8585fb90ad942108d7d71827ce9960b9cf5",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/VlasovMaxwell.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.VlasovMaxwell",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.VlasovMaxwell.Main",
+   "theorem_names": [
+    "OAI.RVM.global_classical_solution"
+   ]
+  },
+  "config_sha256": "423df2cf9e072e1dc4bcdc848b1c37cb9a3b684109075c2122ea3f1825445a32",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/VlasovMaxwell.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.RVM.global_classical_solution": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Continuation/Bootstrap.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Continuation.Bootstrap",
+   "original_sha256": "e47631cb1189ce7c0cb60ec157b8802c71baf983f5ce4aec6381069a29c3f461",
+   "path": "OAI/Analysis/VlasovMaxwell/Continuation/Bootstrap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Continuation/DerivMovingEnergy.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Continuation.DerivMovingEnergy",
+   "original_sha256": "d8934e3b2d351c6bd4ab1361135093b577e9bb4400f2a4fe9aa77d2d84d066b3",
+   "path": "OAI/Analysis/VlasovMaxwell/Continuation/DerivMovingEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Continuation/GlobalBoundaryBound.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Continuation.GlobalBoundaryBound",
+   "original_sha256": "28e084edfd5c3112dbe2a00e9953d2fb328ba758b41e4c7dbfc683ce601ea89e",
+   "path": "OAI/Analysis/VlasovMaxwell/Continuation/GlobalBoundaryBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Continuation/GlobalContinuation.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Continuation.GlobalContinuation",
+   "original_sha256": "782320b8c39939dfab1052fdf6eb7f37d69f84b8c77280a0d21c4e34ff96f944",
+   "path": "OAI/Analysis/VlasovMaxwell/Continuation/GlobalContinuation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Continuation/IncrementBootstrap.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Continuation.IncrementBootstrap",
+   "original_sha256": "798ce5f6ed8580941d23365286d8938ea35acf92b89b01bfd432743be1b0de0f",
+   "path": "OAI/Analysis/VlasovMaxwell/Continuation/IncrementBootstrap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Continuation/PhysicalBinBasePrefix.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Continuation.PhysicalBinBasePrefix",
+   "original_sha256": "516eb44902f400e51f0cff389a3e9cbd37e92c9a599f1fadd4737c045da7b9c9",
+   "path": "OAI/Analysis/VlasovMaxwell/Continuation/PhysicalBinBasePrefix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Continuation/PrefixClamp.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Continuation.PrefixClamp",
+   "original_sha256": "235926a163d101420a916c754940a32a896682ace92adb0855d47b2e86d9b23d",
+   "path": "OAI/Analysis/VlasovMaxwell/Continuation/PrefixClamp.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Continuation/PrefixMomentumForce.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Continuation.PrefixMomentumForce",
+   "original_sha256": "ff73bba8f118e5eacb436f25eac7c953f19d0ee81068f88ea639be70307429ad",
+   "path": "OAI/Analysis/VlasovMaxwell/Continuation/PrefixMomentumForce.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Continuation/PrefixParticle.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Continuation.PrefixParticle",
+   "original_sha256": "ce59254cc8f5bbf49f78e2a5317dc3bac3afd7ac9bb4acd844403d3e90dd5317",
+   "path": "OAI/Analysis/VlasovMaxwell/Continuation/PrefixParticle.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Continuation/PrefixUniqueness.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Continuation.PrefixUniqueness",
+   "original_sha256": "f585d5c3dac780ac659714e1a8db52afe446c56064f055c9fc15dbdc74b7ee41",
+   "path": "OAI/Analysis/VlasovMaxwell/Continuation/PrefixUniqueness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Continuation/SlabSmoothBootstrap.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Continuation.SlabSmoothBootstrap",
+   "original_sha256": "36cdce555b77541bb16b0057065b2761d5aa3ee6a15a913e66af470c6fd65aff",
+   "path": "OAI/Analysis/VlasovMaxwell/Continuation/SlabSmoothBootstrap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Flow/BranchCutoffStateContinuous.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Flow.BranchCutoffStateContinuous",
+   "original_sha256": "0c39e151f90c2b36846920659d98ed6daf1089adf805b2a00bcfbaa7bb8c95d9",
+   "path": "OAI/Analysis/VlasovMaxwell/Flow/BranchCutoffStateContinuous.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Flow/BranchIntegral.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Flow.BranchIntegral",
+   "original_sha256": "ad1bfec410755a80b706729cb723259b930fc83243b522ef83e8945f48c8e52a",
+   "path": "OAI/Analysis/VlasovMaxwell/Flow/BranchIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Flow/ClosedEulerianCrudeBudget.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Flow.ClosedEulerianCrudeBudget",
+   "original_sha256": "77052082a5f02d36c7d3e7bed8849a3d2fbde07f09e14e1b565aae89db5b3851",
+   "path": "OAI/Analysis/VlasovMaxwell/Flow/ClosedEulerianCrudeBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Flow/ClosedEulerianTimeBudget.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Flow.ClosedEulerianTimeBudget",
+   "original_sha256": "1626ad7dcf69cd92a35b3a76927b9425ddfd942225405aaa5dea9febc8e004b1",
+   "path": "OAI/Analysis/VlasovMaxwell/Flow/ClosedEulerianTimeBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Flow/ExtendedLorentz.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Flow.ExtendedLorentz",
+   "original_sha256": "c2c5b93027347d937447c5f633ba5703b608e70afec8ce456c0f7ff8b1b2af7e",
+   "path": "OAI/Analysis/VlasovMaxwell/Flow/ExtendedLorentz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Flow/FlowDerivative.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Flow.FlowDerivative",
+   "original_sha256": "b7aa9166522d2b92ce3f9fbaf414006641efe3c747f27ab6ce5df5e50c24e4e7",
+   "path": "OAI/Analysis/VlasovMaxwell/Flow/FlowDerivative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Flow/HighFlow.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Flow.HighFlow",
+   "original_sha256": "c766aca423455f24f6559fe68256dd13ef508f303bdd80e7938aef7711d5de7a",
+   "path": "OAI/Analysis/VlasovMaxwell/Flow/HighFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Flow/LorentzPhase.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Flow.LorentzPhase",
+   "original_sha256": "e7ab96aca231a21c8a745370951a91e9b3b8517d605b4e7a6f04e2a7232362dd",
+   "path": "OAI/Analysis/VlasovMaxwell/Flow/LorentzPhase.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Flow/PhaseAcceleration.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Flow.PhaseAcceleration",
+   "original_sha256": "b7577ec37afe54b64a638d45c3cada1edc91f8fbefa2dfb94bc69e330514f76a",
+   "path": "OAI/Analysis/VlasovMaxwell/Flow/PhaseAcceleration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Flow/PhaseHits.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Flow.PhaseHits",
+   "original_sha256": "7d848ffa0a1984d395e1b48a7594d4f7fd3e1377a8df07fc136086ca6ba27de5",
+   "path": "OAI/Analysis/VlasovMaxwell/Flow/PhaseHits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Flow/PhaseTimePullback.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Flow.PhaseTimePullback",
+   "original_sha256": "36f35c494b7fcd594763b8fb826f45f6f3ef6428b6273d8d6b37e2702f1b272a",
+   "path": "OAI/Analysis/VlasovMaxwell/Flow/PhaseTimePullback.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Flow/TransportDifferentiation.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Flow.TransportDifferentiation",
+   "original_sha256": "90b5bd26767a145d04758969e12f13d4c9ffb94c3119ef6afd12fd5d33f088b3",
+   "path": "OAI/Analysis/VlasovMaxwell/Flow/TransportDifferentiation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Flow/WithinFlow.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Flow.WithinFlow",
+   "original_sha256": "f7c12b15f94db8498bb76f80eba60615d016c1419cafed9fd28e4c612299be88",
+   "path": "OAI/Analysis/VlasovMaxwell/Flow/WithinFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/ActualCutoffCoordinates.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.ActualCutoffCoordinates",
+   "original_sha256": "0423c672510f2db1786cc2cb50c2cd602497bef2defe475e560979ca31066ddf",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/ActualCutoffCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/ActualLabelCutoffCost.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.ActualLabelCutoffCost",
+   "original_sha256": "b6a52050379d200f31504e9c0a2e9b58895606b4fb8397a847e5f22138e21f87",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/ActualLabelCutoffCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/ArrivalDomain.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.ArrivalDomain",
+   "original_sha256": "f7211bd8ed5518a1e2cce7e4671ccd3805656e323fd8a4c02645eccecac68f00",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/ArrivalDomain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/BallCutoff.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.BallCutoff",
+   "original_sha256": "5ed09f5a33e3dcdc5d7d41972749cf2da030984cd7fe145d2e9e01096efe13e6",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/BallCutoff.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/ClippedRamp.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.ClippedRamp",
+   "original_sha256": "89cc4013888b3b385ed341df5a6986aea6d2754b743d697377f5c46802b435a4",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/ClippedRamp.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/ClosedBranchDomain.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.ClosedBranchDomain",
+   "original_sha256": "1d2c9c6f8b4e7d120f85e661396970e35f2e34e41f164cf5677663aba2dace00",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/ClosedBranchDomain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/CollisionLabels.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.CollisionLabels",
+   "original_sha256": "f60d7b3853f61ff2c68a284159227bb8b7969a766d4d346461cbdb59fb72f866",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/CollisionLabels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/CrossCLM.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.CrossCLM",
+   "original_sha256": "d46e1e8bf3c5aa4793d5f6af4dd6cfe223e3d8ab094be5e42371636691bce21d",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/CrossCLM.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/CutoffState.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.CutoffState",
+   "original_sha256": "3f041d5bf834e4d63d187e19bc0e955f3db6114c86573df0fb323e16c03f180d",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/CutoffState.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/DensitySecondMoment.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.DensitySecondMoment",
+   "original_sha256": "9ca2fe5b7b22171a1103c91085b90e858e4bda9413214ba2400e1444583f9ab7",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/DensitySecondMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/IndexTwoPow.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.IndexTwoPow",
+   "original_sha256": "6037a26a62c838d3de99238733eaedc81bb41feccbd03ba9f71179cc9977e7a6",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/IndexTwoPow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/ParticleBySpacetime.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.ParticleBySpacetime",
+   "original_sha256": "a0179544a50d4416150db424f2d66a920fa33844d16f2559c070859901685a7c",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/ParticleBySpacetime.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/ParticleTame.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.ParticleTame",
+   "original_sha256": "fa5b62372411bf28a609e1c879be8e8f72490756543056d81105c42d7bb34fc5",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/ParticleTame.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/PhysicalDivision.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.PhysicalDivision",
+   "original_sha256": "d170e651036cd00f8856c2affc3a03400198dcbbfbb8d196188e13dbbb730a8b",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/PhysicalDivision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/PhysicalGeometryCutoffDensity.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.PhysicalGeometryCutoffDensity",
+   "original_sha256": "d769b66ec0087f6f77c89deb36f02e13bc29c8d234be6eccdacff3290c2e209f",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/PhysicalGeometryCutoffDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/QuadIndexEquiv.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.QuadIndexEquiv",
+   "original_sha256": "025fbd452b6030d89ba2898a127f2dedf05389a95ab552475562ba84d314be2b",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/QuadIndexEquiv.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/RelativeAngleCoordinate.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.RelativeAngleCoordinate",
+   "original_sha256": "25f4e1053fe5975ee0b377ce4554a8253e0dded9d2c3e709c61a44b487b655a3",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/RelativeAngleCoordinate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/SelectedRemainderPhysical.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.SelectedRemainderPhysical",
+   "original_sha256": "de7cd709ba3994bdc314f42a008fabe80273b7c0e1c81f4b56e77543bc6c5cb6",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/SelectedRemainderPhysical.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/ShiftedRho.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.ShiftedRho",
+   "original_sha256": "259e809c31c0a93fdbeba5c6922260e9c19b85f5d2d6e32bc9b74cf95f437fb0",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/ShiftedRho.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/SpaceDiv.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.SpaceDiv",
+   "original_sha256": "30573b3c81dad903340dad6e395d5b1318583a6f1222fd92dfb27395ca1dd3bb",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/SpaceDiv.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/Sphere.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.Sphere",
+   "original_sha256": "23f6e2a759f29d02ded61040986ca0506e2d67053be5e820cdb0138469ec8182",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/Sphere.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Geometry/UpperTimeCut.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Geometry.UpperTimeCut",
+   "original_sha256": "cc59910d5138e6a0418a777d986f7eb710de7176e7bd15a7fdc8298028e1a77d",
+   "path": "OAI/Analysis/VlasovMaxwell/Geometry/UpperTimeCut.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/LocalPDE/EquationsBefore.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.LocalPDE.EquationsBefore",
+   "original_sha256": "a99935ef8472afc52a1e9cf18c3d3cddcc7d39279569345d55945418c0aeb575",
+   "path": "OAI/Analysis/VlasovMaxwell/LocalPDE/EquationsBefore.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/LocalPDE/FiniteUniqueness.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.LocalPDE.FiniteUniqueness",
+   "original_sha256": "f366ff98b160e5df760276393a5291619b78b8008c9240f8dab282ab663065e6",
+   "path": "OAI/Analysis/VlasovMaxwell/LocalPDE/FiniteUniqueness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/LocalPDE/GeometryCutoffDeficitLogSum.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.LocalPDE.GeometryCutoffDeficitLogSum",
+   "original_sha256": "d108b67465d61ffb204bedea8699cc7483fef7e7494d33fffd5b37e8b4f25430",
+   "path": "OAI/Analysis/VlasovMaxwell/LocalPDE/GeometryCutoffDeficitLogSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/LocalPDE/GeometryCutoffStableLogSum.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.LocalPDE.GeometryCutoffStableLogSum",
+   "original_sha256": "475615ffe5226a6e4accb0f006cd4f40fee3e2bd285823d6a403f401fcf10ce3",
+   "path": "OAI/Analysis/VlasovMaxwell/LocalPDE/GeometryCutoffStableLogSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/LocalPDE/PicardBoundary.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.LocalPDE.PicardBoundary",
+   "original_sha256": "e78a40883348c29002a3167c944b3052dcb0a0ba63f552b9ee535aa391e29de0",
+   "path": "OAI/Analysis/VlasovMaxwell/LocalPDE/PicardBoundary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/LocalPDE/PicardBounds.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.LocalPDE.PicardBounds",
+   "original_sha256": "fc621266366cd252212e1ce93afed01d88678be6bf24a09bc65827ef5159008e",
+   "path": "OAI/Analysis/VlasovMaxwell/LocalPDE/PicardBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/LocalPDE/PicardContraction.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.LocalPDE.PicardContraction",
+   "original_sha256": "88638c88019c822508a1d1325b624129c218686a958ffbf50a1fe2b4813854a6",
+   "path": "OAI/Analysis/VlasovMaxwell/LocalPDE/PicardContraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/LocalPDE/PicardCurvature.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.LocalPDE.PicardCurvature",
+   "original_sha256": "69f12a8e98c098d12ba964613e952431272f5cdd6db96a917613041439a31f06",
+   "path": "OAI/Analysis/VlasovMaxwell/LocalPDE/PicardCurvature.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/LocalPDE/RelativeCauchyConstant.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.LocalPDE.RelativeCauchyConstant",
+   "original_sha256": "6fc9da3e2e8e5bdcb1d7eb96e7be66d40f672b5aad5d7fd061b8b86f05cd7acb",
+   "path": "OAI/Analysis/VlasovMaxwell/LocalPDE/RelativeCauchyConstant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/LocalPDE/SlabEquations.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.LocalPDE.SlabEquations",
+   "original_sha256": "c7fcec7db692a7b4bd623ced9630c665067f8beed8658e728bcc3fec5e324184",
+   "path": "OAI/Analysis/VlasovMaxwell/LocalPDE/SlabEquations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/LocalPDE/SlabRHS.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.LocalPDE.SlabRHS",
+   "original_sha256": "44aed875f796d65bcf2d5bb7d1a5335b7a65d425833eed083a040572aa8a448f",
+   "path": "OAI/Analysis/VlasovMaxwell/LocalPDE/SlabRHS.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/LocalPDE/SmoothLocalExistence.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.LocalPDE.SmoothLocalExistence",
+   "original_sha256": "8f5d1813c346d3b5958433d2707f2ceb951153585d064dc8bbe8f8bcdbbec110",
+   "path": "OAI/Analysis/VlasovMaxwell/LocalPDE/SmoothLocalExistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/LocalPDE/StrongLocalExistence.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.LocalPDE.StrongLocalExistence",
+   "original_sha256": "35d8978ea39411479adddbcb29c2974d287b1735d9b50a8dd4e58bb4c1f2465f",
+   "path": "OAI/Analysis/VlasovMaxwell/LocalPDE/StrongLocalExistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/LocalPDE/UniformParticleDensityConstant.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.LocalPDE.UniformParticleDensityConstant",
+   "original_sha256": "68aab5f717bbf40ef84f3a70f27b5833875fae70721d47b929cf3b75277bfe6f",
+   "path": "OAI/Analysis/VlasovMaxwell/LocalPDE/UniformParticleDensityConstant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/LocalPDE/VlasovConstruction.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.LocalPDE.VlasovConstruction",
+   "original_sha256": "ff2199b49f9fa424e063ee7a72c65e7e1e642bddfadb678e82737020c481786a",
+   "path": "OAI/Analysis/VlasovMaxwell/LocalPDE/VlasovConstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Main.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Main",
+   "original_sha256": "32271d189735ec576f8000b501aa70502e7d32dbaa071b160615a5d615369b50",
+   "path": "OAI/Analysis/VlasovMaxwell/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Maxwell/DifferenceFieldEnergy.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Maxwell.DifferenceFieldEnergy",
+   "original_sha256": "b897a640fa8509b37dcf627c32131620c55414369216d58648855a84b4a144ac",
+   "path": "OAI/Analysis/VlasovMaxwell/Maxwell/DifferenceFieldEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Maxwell/ElectricBoundaryField.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Maxwell.ElectricBoundaryField",
+   "original_sha256": "27d1d126e45a93e3b3b5a4ee63bfe1679f6fcaf12dd7b2ef9dfd2ff220d32ea2",
+   "path": "OAI/Analysis/VlasovMaxwell/Maxwell/ElectricBoundaryField.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Maxwell/ExtendedField.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Maxwell.ExtendedField",
+   "original_sha256": "202d711a2b2099536f51845907f7fee8732e53792b8c1c5dbf964c233a08d495",
+   "path": "OAI/Analysis/VlasovMaxwell/Maxwell/ExtendedField.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Maxwell/FieldGradientNorm.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Maxwell.FieldGradientNorm",
+   "original_sha256": "3438982559c9f78aec3089f4f655ad19ff53c8c701330c3519899b0beb47ce6a",
+   "path": "OAI/Analysis/VlasovMaxwell/Maxwell/FieldGradientNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Maxwell/FiniteFlow.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Maxwell.FiniteFlow",
+   "original_sha256": "507e6aaf09220ad6c3b032a970c9add445e6b6cb31d29eb52cf8369dcb5f8574",
+   "path": "OAI/Analysis/VlasovMaxwell/Maxwell/FiniteFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Maxwell/Variational.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Maxwell.Variational",
+   "original_sha256": "f828f80a12d21994e7b7180998cd5846661ec0260660c306bbf2ddbeca1c7faf",
+   "path": "OAI/Analysis/VlasovMaxwell/Maxwell/Variational.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Maxwell/WaveGradient.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Maxwell.WaveGradient",
+   "original_sha256": "c2ec2d5385b6d9dcede28800cd55715d0213458799e33ba8ce60a7ad8d733716",
+   "path": "OAI/Analysis/VlasovMaxwell/Maxwell/WaveGradient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Maxwell/WaveK.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Maxwell.WaveK",
+   "original_sha256": "6b92f3158268715df5a4a065b7c396606ac90fe689e6d2b4aec6daf2639271d0",
+   "path": "OAI/Analysis/VlasovMaxwell/Maxwell/WaveK.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Model.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Model",
+   "original_sha256": "3f7e130e43e55a0358ff1ccb3dfd866bfc48457cfac38fae2407805e0f2ace9a",
+   "path": "OAI/Analysis/VlasovMaxwell/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/BinHits.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.BinHits",
+   "original_sha256": "62b84999d79a986c20c9136ecd41da51714ad8948466593e12de16c2c9faed33",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/BinHits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/BulkReceiverResidual.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.BulkReceiverResidual",
+   "original_sha256": "d8b75914df26051bc6e24c9835188e16eac7daccb078e28039723b16b291cdcc",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/BulkReceiverResidual.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/BulkReceiverScalar.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.BulkReceiverScalar",
+   "original_sha256": "b9aaffa7eba6d73f55502b5f45ba808bcd69fff80716fe156efe0411b417951a",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/BulkReceiverScalar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/BulkSpatialUniform.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.BulkSpatialUniform",
+   "original_sha256": "43680d2254b56e331017902c8489a806491a66b587bb8e0bf04b11b3d59b4219",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/BulkSpatialUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/BulkTestWeight.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.BulkTestWeight",
+   "original_sha256": "4863fbdab6285f89d57bb698f8d5a1920bb7d9b6daf268b228fd660d7947bfb0",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/BulkTestWeight.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/BulkWeightCost.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.BulkWeightCost",
+   "original_sha256": "f459127073a6ff7d0f16113318f32a4be63d5994d0a5a11312e070990f8085f3",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/BulkWeightCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/CappedRepresentativePos.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.CappedRepresentativePos",
+   "original_sha256": "0031e906d0251ca1fdf0a678f748ea50f07fad8baa13e3ccba9547067dde03dc",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/CappedRepresentativePos.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/CentralOccupation.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.CentralOccupation",
+   "original_sha256": "96258c1198b63d07573b3ca36f69618459ba35b7288d60f4086b277536322a05",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/CentralOccupation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/ContDiffDyadicMultiFactor.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.ContDiffDyadicMultiFactor",
+   "original_sha256": "1f23e8997e4c3dac655cdd633e0318fd9eb66a85c11c49393de6a915020799c5",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/ContDiffDyadicMultiFactor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/DatumElectricFluxKernel.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.DatumElectricFluxKernel",
+   "original_sha256": "8ea3fb9fc467942d0fe27e4c35d2ed943be7c5b0f9c58b5d2fe6ba6a7456c840",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/DatumElectricFluxKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/DirectExpandedAssemble.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.DirectExpandedAssemble",
+   "original_sha256": "1995710a1fca604f61f82b552ea25f3a7e946add1791af5e25fba4e2d66b1625",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/DirectExpandedAssemble.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/DirectExpandedDeficitUniform.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.DirectExpandedDeficitUniform",
+   "original_sha256": "6a311e59fcfb5ff8fd10d48d49dde48479ce3231678c47a47562ecbdcffab6ab",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/DirectExpandedDeficitUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/DirectExpandedLargeAngular.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.DirectExpandedLargeAngular",
+   "original_sha256": "62344037032f70cefcf3b78cfdf4effedd247b21f5ea80c86343509479f69bf3",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/DirectExpandedLargeAngular.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/DirectExpandedTransportNear.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.DirectExpandedTransportNear",
+   "original_sha256": "706368b9bb5402b31af1b74b2e86c87345dd9ef7b451f0109211eeb2d4e98454",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/DirectExpandedTransportNear.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/DirectionCounts.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.DirectionCounts",
+   "original_sha256": "3f211727d180720d49b750de1006570b3918d91b4c4c245ec5bda1e0ad6ef09d",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/DirectionCounts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/DirectionCutoffs.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.DirectionCutoffs",
+   "original_sha256": "72f713bfe0cfea182071d52c3a3b1d6f22a7bdc02993dd2f0ed4235f0a638609",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/DirectionCutoffs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/DirectionOverlap.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.DirectionOverlap",
+   "original_sha256": "98d54138dd57c8def7291bd4be2a26c2acac0007741c7663e2f4360b3a388bb7",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/DirectionOverlap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/DyadicBalanceConstant.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.DyadicBalanceConstant",
+   "original_sha256": "95f6c7891c661c3efc9c6841ad7bd22811eff8872ef67b3466b7409e8ba6f102",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/DyadicBalanceConstant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/DyadicCut.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.DyadicCut",
+   "original_sha256": "99a11fad17ee6b5d45ecddd96ba50a3d9533fa210b0eb43a7c60fc04de10e92e",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/DyadicCut.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/GoodCrossings.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.GoodCrossings",
+   "original_sha256": "1a4911216f686a038108fb32fb8e416ca387ccdab32582faf076dd109e2d6144",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/GoodCrossings.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/GoodSharedEstimates.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.GoodSharedEstimates",
+   "original_sha256": "82fdbd3b33f12d8646c28e4e491777799a7cb1308b2be15c9a568424252a4ed5",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/GoodSharedEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/HomogeneousCancellation.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.HomogeneousCancellation",
+   "original_sha256": "c61c2f32286c49684e1e2946070e4b2346e55d8947bb7ad26bc997d6bcf8e1b6",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/HomogeneousCancellation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/InitialSignedBoundaryDensity.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.InitialSignedBoundaryDensity",
+   "original_sha256": "d521eb610ac23504723dc92312c38db5ca3b56e6a8548f6a254b828c3fbfacf0",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/InitialSignedBoundaryDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/LabelOccupation.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.LabelOccupation",
+   "original_sha256": "e9ae5ecb9757d9e4ab1827a7e86ebc0e69a1cd3a3cc5bf26b7107fab7e84adc4",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/LabelOccupation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/LabelOccupationDurationMass.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.LabelOccupationDurationMass",
+   "original_sha256": "3c8ba6501e80b9e122aa1e6c005b4f0084dd9ebc193a63ca7d62ef2ab14d6605",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/LabelOccupationDurationMass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/LabelWeight.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.LabelWeight",
+   "original_sha256": "96d7b22515a4036697c1a4b6c61dcafa057f06e3645fd0b19953cc8444da5ea9",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/LabelWeight.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/MagneticEstimates.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.MagneticEstimates",
+   "original_sha256": "8afc2c4bae2070b10302a4fd69eee719decb03b9941ddc973c4e5ca1e2fcf4a7",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/MagneticEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/MajorantRelativeDensityTimeFar.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.MajorantRelativeDensityTimeFar",
+   "original_sha256": "346b6c9dbebf604bd1f7f291d1e137f66738af627997c0a8497914da35e7a792",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/MajorantRelativeDensityTimeFar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/MomentumDirection.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.MomentumDirection",
+   "original_sha256": "87ef50c575bd42dcedd985c3f0986c55e67a8bb267afbaf7974f0cef78b847ea",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/MomentumDirection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/NullConeFlux.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.NullConeFlux",
+   "original_sha256": "178b1788c8321bd84598d2e8bdad0575103620ea77a31f06e7a488896749cbdc",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/NullConeFlux.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/PartitionOccupation.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.PartitionOccupation",
+   "original_sha256": "ae27d7034292cc99054e5418d5c651fc6074dd5cdb5f0e56cf611cb79014cca2",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/PartitionOccupation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/PhysicalBinPhaseSet.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.PhysicalBinPhaseSet",
+   "original_sha256": "8aa65684c18e7fd0a1deaa01fdd9ebb158829f4265244332470d8a8fcffbc839",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/PhysicalBinPhaseSet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/RadialSummation.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.RadialSummation",
+   "original_sha256": "4b5ffbfa1b3db6a7de9348f7fe393b8c33d5a48eaab5844feed076adbc946019",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/RadialSummation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/ReceiverWeights.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.ReceiverWeights",
+   "original_sha256": "4734e84c33dd43bea27a301d9ed9adb4719122213ca19ba4031dff1603d79d29",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/ReceiverWeights.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/RelativeClosedBinHitGeometry.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.RelativeClosedBinHitGeometry",
+   "original_sha256": "dd1cc9ede205d010cb38c69666f7e667f94bb9fb5bc62908e6149d8e471fce44",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/RelativeClosedBinHitGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/RepresentativeClosedBinSourceIndices.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.RepresentativeClosedBinSourceIndices",
+   "original_sha256": "efbf6dcc3536d64503be2e52228167fbf0e377af8179243acddddb52cecfeec7",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/RepresentativeClosedBinSourceIndices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/RepresentativeCosts.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.RepresentativeCosts",
+   "original_sha256": "1381403230b214fa88095cc9cc8632dd40df27d81bbbbeeceb5189c4159867cc",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/RepresentativeCosts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/RetardedSameTimeSeparation.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.RetardedSameTimeSeparation",
+   "original_sha256": "08c0279e14301a990db97f9bdccf4f15e4f9e4188e0b8417c7d8f5e242e6aa00",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/RetardedSameTimeSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/RetardedWeightedIntegralBound.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.RetardedWeightedIntegralBound",
+   "original_sha256": "14b39b343e12b397be70428bbd8ee9e30d77c5443fa7fc77b573337dcf40e164",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/RetardedWeightedIntegralBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/SelectedDirection.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.SelectedDirection",
+   "original_sha256": "7c9427a88daca3051e74f541adcf15b61bd0cdabb462129b775493010d954c33",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/SelectedDirection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/SelectedReceiverWeightBoundFinite.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.SelectedReceiverWeightBoundFinite",
+   "original_sha256": "2019ddbbe4519cc1e5082d0b4bd95443771c042260e678c70a4b2332f42143fe",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/SelectedReceiverWeightBoundFinite.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/SelectedRemainder.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.SelectedRemainder",
+   "original_sha256": "f258faf04e5d112dedf768d8caa2c6c28ef62da72d60ed88beb57118f0f12370",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/SelectedRemainder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/SelectionCounts.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.SelectionCounts",
+   "original_sha256": "601b002d7cb596f11c4e0cc21dec71bab9568725cd6124254161e52b68ec15f7",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/SelectionCounts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/SelectionWeight.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.SelectionWeight",
+   "original_sha256": "6c9e69b63a2ef7e1ac838edf640a5300f8834d4b79a76928a308e141be61b31d",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/SelectionWeight.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/SharedBudget.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.SharedBudget",
+   "original_sha256": "407b95bb776e89ee9630e7c3bc1332552dde0bb7e2f679c1c04b1bb9f3f601af",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/SharedBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/SharedOccupation.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.SharedOccupation",
+   "original_sha256": "96fae198802dec3e79c76f41e339532b0e734b81c78aeeb63b03aa917736ef57",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/SharedOccupation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/SignedRemainder.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.SignedRemainder",
+   "original_sha256": "da3ba94e27241dbb00e1f25a5f6573bea9c659142ae4cf85f64bbe945ead70d8",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/SignedRemainder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/SourceJointFlux.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.SourceJointFlux",
+   "original_sha256": "a1d029b6037eb049931f3df45b1c3c02b7cdcd8a5d3183010c36c87daf680463",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/SourceJointFlux.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/SourceWeightedPacket.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.SourceWeightedPacket",
+   "original_sha256": "3729b1613d82c73f4ab4d6c2b05bbc41a9ff02a3c8b3e985bedc18e17eb5a383",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/SourceWeightedPacket.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/SpatialEstimates.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.SpatialEstimates",
+   "original_sha256": "8c95c9ae068dcb0d03a047267d6b70473da2e57aef8b405eefb7ec5e2eddd7aa",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/SpatialEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/SphericalFluxNorm.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.SphericalFluxNorm",
+   "original_sha256": "2ddc2e5311c55ee9c13147f64cd3491feba5d2a8494d49e37ddbb3b3fb776232",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/SphericalFluxNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/SqrtBaselineClippedLength.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.SqrtBaselineClippedLength",
+   "original_sha256": "9fab80623cd3f8dff0aea652db2d5230677807b6e2f793be31f04601a4ad3be8",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/SqrtBaselineClippedLength.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/TransportRemainder.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.TransportRemainder",
+   "original_sha256": "64b76314e1d7aab7d91907feae056c58b8127fe5f0151cd017477fa425010144",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/TransportRemainder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/TransportSingularBulk.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.TransportSingularBulk",
+   "original_sha256": "41430fd95acb7cb47298f483fe146764b70aeaed7a7b3a471368cb3302877af5",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/TransportSingularBulk.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/UniformPopulation.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.UniformPopulation",
+   "original_sha256": "13a1b1bd3109d9c5794c7a2c691a1b29d54aaa0984c6a8c8e12e722461097959",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/UniformPopulation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Population/UnselectedCover.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Population.UnselectedCover",
+   "original_sha256": "728512c737187eb91ae78a9fa55ebba893dc2ab13871d707b043484426af33dd",
+   "path": "OAI/Analysis/VlasovMaxwell/Population/UnselectedCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/AbsolutelyContinuousIntervalContinuousDerivative.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.AbsolutelyContinuousIntervalContinuousDerivative",
+   "original_sha256": "bcedc17304c92ef48db6ba89182ac2f5e33d10d4a7d3d67a36f19a0f8a8ad933",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/AbsolutelyContinuousIntervalContinuousDerivative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/BoundaryJets.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.BoundaryJets",
+   "original_sha256": "7eed0e303a2e4fb246d60cd8ebc6159895163c7412179c02366ea54c2df7733a",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/BoundaryJets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/ContinuousIntegralSphere.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.ContinuousIntegralSphere",
+   "original_sha256": "0304466041582b4500862819ae713ac2f9d419008e6c54a36459255de9ffca05",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/ContinuousIntegralSphere.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/CurvatureBounds.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.CurvatureBounds",
+   "original_sha256": "f05e30da09526777d3080752e007f76367fa18d07b76a0cfbcbb764625d866a6",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/CurvatureBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/CurvatureInterpolation.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.CurvatureInterpolation",
+   "original_sha256": "5859d7dbf905f1e5e79ca66109b856e9a0a43997ffd4308ad5480433b93017e5",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/CurvatureInterpolation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/EnergyBump.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.EnergyBump",
+   "original_sha256": "94de12e87110faa376fdf34ba77713d9c8697db8cb2df8c1a2f2792125b9e10c",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/EnergyBump.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/IntegralBallPolarFlip.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.IntegralBallPolarFlip",
+   "original_sha256": "78c73a4ece54749a46d393403342d02ccca5ca02ef8c71e4aee86f5eac050492",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/IntegralBallPolarFlip.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/LogSingularBound.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.LogSingularBound",
+   "original_sha256": "32b9ae024dc40d49128ec45eae2d5f2d0784bb58e5158912ce4a210d0c6ef96d",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/LogSingularBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/LowBoundaryControl.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.LowBoundaryControl",
+   "original_sha256": "d155c9e357c2e37bc75cd457fac745c626c58e41977bdc82b4bfbeaada4414ea",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/LowBoundaryControl.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/MixedJets.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.MixedJets",
+   "original_sha256": "77e3373364e86583ba6430143c4ee832de66c6965f71d34374cc7590a1ff5b4e",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/MixedJets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/MomentLimit.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.MomentLimit",
+   "original_sha256": "246ab6e8d02d5ef0a3460c7f471d88ae98f9ffa69108c3fa98b915e084454101",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/MomentLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/NormalisedPartialCutoff.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.NormalisedPartialCutoff",
+   "original_sha256": "36128a0c7a05d838dfbbfbfd31f7b7c2c65942754a0791a39056cb933f9092a4",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/NormalisedPartialCutoff.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/ParamPrimitive.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.ParamPrimitive",
+   "original_sha256": "6a7be34c90649c1ab318700a74cad8e647ac53b1bdc71e9939a791d342914e31",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/ParamPrimitive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/ParticleC1.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.ParticleC1",
+   "original_sha256": "1470122bb1c9a3a5d154ed4df97524d9dfb0dfee8cd45243b5aea9d6331b1441",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/ParticleC1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/PhysicalC0.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.PhysicalC0",
+   "original_sha256": "a4a51a2d4e2e2b9c12b49a5ba0c3d8094df11a138bea6515b2ecff343a2dcd27",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/PhysicalC0.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/PhysicalCutoffCoordinates.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.PhysicalCutoffCoordinates",
+   "original_sha256": "7f1ebd6bcfb9796851f1e5d27e3db95ebc1b025f71ceda686c9de84599952875",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/PhysicalCutoffCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/PhysicalGradient.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.PhysicalGradient",
+   "original_sha256": "335351ad59d2089aa8eaa9a0bc55dc4fb81024792ea191291899dbcacf7b5176",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/PhysicalGradient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/PositiveExtension.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.PositiveExtension",
+   "original_sha256": "d63c38c5e878e76e94169aa5b12faee1a37f0e147797b8e2f9ae59806ebaf8df",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/PositiveExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/RealJointEnergyBudget.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.RealJointEnergyBudget",
+   "original_sha256": "c6b3b0a0cefc1bf1f63c6eacb3edc7e4f755e83a7394a76239714c97648730e1",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/RealJointEnergyBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/SlabEvolutionRegularity.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.SlabEvolutionRegularity",
+   "original_sha256": "95b83c5c976f4b7552f069d43ecbbff3322a3a6e163002a16ca5dc38de245bfe",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/SlabEvolutionRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/SlabL2.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.SlabL2",
+   "original_sha256": "467ce119a6aead7c5d080803bacba311e139d7b6c7666c8d774006ba523a2276",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/SlabL2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/SmoothIntegral.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.SmoothIntegral",
+   "original_sha256": "b6dc90237c2a37e3010b2a323e38a6ba6fb3f23a4a8b07b7a10db3f091b612e3",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/SmoothIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/SpatialJets.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.SpatialJets",
+   "original_sha256": "70c860507fad3cf0e54735646307b02805b94c3ca70b3d60ef3998cc95e3c417",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/SpatialJets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/TameDerivative.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.TameDerivative",
+   "original_sha256": "3c0c08855fc6aaae04ec56adfcb57d693fe27453c0d42c293bb685c4f040e284",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/TameDerivative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/VelocityDerivatives.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.VelocityDerivatives",
+   "original_sha256": "7cb713adddf871a84dab766d340840b2260af1f4711cff4dfeeda478478ed29f",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/VelocityDerivatives.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/VolterraSup.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.VolterraSup",
+   "original_sha256": "9337e1b7cab9ebdbada182329b51920067d627b9025ff0b1b38a0b0d0b7a171a",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/VolterraSup.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Regularity/WithinPartial.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Regularity.WithinPartial",
+   "original_sha256": "5cb6f7d91bc59c7c9887d429d7f1bcddf513e95203ab77d1d121cd50da57c68f",
+   "path": "OAI/Analysis/VlasovMaxwell/Regularity/WithinPartial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/AffineRetardedBound.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.AffineRetardedBound",
+   "original_sha256": "9f2bfd88bc6d98e0395b9cba84f23b1c1cd885cc2ad40728b6ef9be3174c716e",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/AffineRetardedBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/AngularBump.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.AngularBump",
+   "original_sha256": "762e4f28bbf5a79cd1c51b6550f69ce79a5256c8ef61c9df0e09e9c1ad20553c",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/AngularBump.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/ArrivalConeKernelPolarNorm.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.ArrivalConeKernelPolarNorm",
+   "original_sha256": "19a690b0700640a7dd644d9700c3bf82bec38db28cec738c329ce942b18311d8",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/ArrivalConeKernelPolarNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/ConeArgument.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.ConeArgument",
+   "original_sha256": "3379ce80260d771e031a9a5f32132572904786b0adf53e8421dcb1acae01a432",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/ConeArgument.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/ConeEulerianIntegrand.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.ConeEulerianIntegrand",
+   "original_sha256": "543d4aa4fc36a6b1644346db041a9fd1df4e9fc5816fd459f826c43d7405894e",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/ConeEulerianIntegrand.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/ConeForceSplit.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.ConeForceSplit",
+   "original_sha256": "d502e15ce1941014787f40e1967ffe18ce91695885cc1ac81b25a9d45d8b20b6",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/ConeForceSplit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/ConeKernelInterior.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.ConeKernelInterior",
+   "original_sha256": "7d1f73569aef61a0af4d21fbfd93b4d51d29620b7fecb7dd9223cfe401ceda4d",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/ConeKernelInterior.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/ConeMotion.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.ConeMotion",
+   "original_sha256": "4105f6588354e2ed9685841dcd21392e98d2a6e76374601280122385de652bb6",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/ConeMotion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/ConeRadius.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.ConeRadius",
+   "original_sha256": "294a0a8687b5e5251086d1a41ab7ab49095eff4d3337153892cfb375cb95d34c",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/ConeRadius.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/ConeRegularity.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.ConeRegularity",
+   "original_sha256": "b47144af74b18c44fae2cdb03d55c3e16895ed3f3bc6a1c19df9b4ee6607e9e9",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/ConeRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/CutoffRateMajorant.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.CutoffRateMajorant",
+   "original_sha256": "75407d88b4d019f5212aa246a800154f9a056f47e07c876f119ec028f7b5bc43",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/CutoffRateMajorant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/CutoffSourceTangent.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.CutoffSourceTangent",
+   "original_sha256": "4bc7747fbe69202bfd98cbbc42469bd390755cd332aa01095995e4debc07ad62",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/CutoffSourceTangent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/DirectDeficitUniform.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.DirectDeficitUniform",
+   "original_sha256": "b001dbe58462f368009eed2abdb70885518b19b15d7e969428d61584648e2f42",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/DirectDeficitUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/DirectForce.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.DirectForce",
+   "original_sha256": "8669125cd4b786794f1c02508ffa1d07cdbc99f6937db4f66b241d24a147d9b5",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/DirectForce.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/DirectLargeAngularSharp.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.DirectLargeAngularSharp",
+   "original_sha256": "9d711cc5558d57460e3d7dbc6e0ca3634676d50b34ac47aed77e0513746b8029",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/DirectLargeAngularSharp.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/DirectLorentzUniform.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.DirectLorentzUniform",
+   "original_sha256": "cc0b50c3fb083c984482b1ab53226cb7640045f465e632a104a4f3591029cefc",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/DirectLorentzUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/DirectMixedCover.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.DirectMixedCover",
+   "original_sha256": "8b89324e25fc34887462bbb4711b86371240e4fb80d21bb795192edfd21e07a1",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/DirectMixedCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/DirectSmallAbsolute.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.DirectSmallAbsolute",
+   "original_sha256": "43e93c306b56dbea38555a0ca3870e5c99ce3c5575246bde46cb8d9246eefbe0",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/DirectSmallAbsolute.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/ElectricConeBoundary.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.ElectricConeBoundary",
+   "original_sha256": "020ca58b77182af180d7353e21cedf552e027fc3014cd2d93b0e515ea03a7029",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/ElectricConeBoundary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/GeneralDirectRadial.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.GeneralDirectRadial",
+   "original_sha256": "e5865d7283cb185157aba4ef573921f427f1b602d582a3a8cf6aaef6c5b969e0",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/GeneralDirectRadial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/InitialPuncturedCone.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.InitialPuncturedCone",
+   "original_sha256": "b5840944992e33af8ca312cc1fcee4ad213b3abc0b83be8a85b116583623ced7",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/InitialPuncturedCone.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/MagneticBoundaryJets.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.MagneticBoundaryJets",
+   "original_sha256": "be690f1021315da2bd61e086ba34ac2404b6355af8a0201870c71929f3f52aa1",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/MagneticBoundaryJets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/MagneticMomentDensity.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.MagneticMomentDensity",
+   "original_sha256": "f9af53938fbceec743fcde004b3b340f567764f3b8c1b9bc8cba2b56a741ecdd",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/MagneticMomentDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/MagneticVolterra.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.MagneticVolterra",
+   "original_sha256": "795a54681760bdce1260db4f733e34bb555a308ec4656a4f74b41ff650cf5e12",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/MagneticVolterra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/ObservationCone.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.ObservationCone",
+   "original_sha256": "d145c755f2d033072e7652420f4d5b8761fdad38d4db17de23a269407716ad2e",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/ObservationCone.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/PhysicalAngularBound.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.PhysicalAngularBound",
+   "original_sha256": "b23550a84fb11d633ca7ee29c4a842ae85d356d73f749ae5f51839b96c8d9f65",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/PhysicalAngularBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/PhysicalDirectTransportDensity.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.PhysicalDirectTransportDensity",
+   "original_sha256": "bfd9f6c2804a2487e73193d3b4f0f91c1fce420be484791b96cd0d8704da2b50",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/PhysicalDirectTransportDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/PhysicalElectricKernel.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.PhysicalElectricKernel",
+   "original_sha256": "e84d4417a2d5580c10b1cf0e93dbda0c9c38884ccdc39e74fda440ddb4db4d4b",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/PhysicalElectricKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/PhysicalProjectedRemainderDensity.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.PhysicalProjectedRemainderDensity",
+   "original_sha256": "782da1d387b6c5e9934d5f5e336ff0749e94c120396265c2ad5838858bdb7069",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/PhysicalProjectedRemainderDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/PhysicalProjectedRemainderSourceTruncate.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.PhysicalProjectedRemainderSourceTruncate",
+   "original_sha256": "4afcd39fdb5c3b19589c01d84e643071835e1b9fa987b17ae2f03df39b2ef6df",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/PhysicalProjectedRemainderSourceTruncate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/PicardKernel.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.PicardKernel",
+   "original_sha256": "9d0fc2678e616e0545bb42610fba57cf84d6652b6ff93157ddf8a8fe060a881f",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/PicardKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/ProjectedSourceStableFarBound.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.ProjectedSourceStableFarBound",
+   "original_sha256": "9817f157ea0947697851e8d4c538eb7d47bbf010c641fc55a8801449acd620cc",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/ProjectedSourceStableFarBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/ReceiverQ.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.ReceiverQ",
+   "original_sha256": "02a606fd49297eb7cb6861dd2fb556c34cc76ca67f8cde210af94ddda3d9bf6f",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/ReceiverQ.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/ReceiverQCLM.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.ReceiverQCLM",
+   "original_sha256": "d9429717b4c43ef2e75017da71d98fa9f852d46ad1ddd3c73df822ab6e4b9848",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/ReceiverQCLM.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/ReceiverRadialDomain.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.ReceiverRadialDomain",
+   "original_sha256": "a8b4050cc797568ae0ee3768adb54aa53b48201372c25b0bfa9f46c9da56b7c8",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/ReceiverRadialDomain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/RetardedDifferentiation.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.RetardedDifferentiation",
+   "original_sha256": "b6a7ca1b0813357f70bbbd40ce60e5f7ddea718bedab7f5e575b7ed97a3e088d",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/RetardedDifferentiation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/RetardedMomentumForce.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.RetardedMomentumForce",
+   "original_sha256": "f5761793879ff43d0b15bfa969e4310466d41446fd16052b3519209f47eaecdc",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/RetardedMomentumForce.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/RetardedPhaseDomain.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.RetardedPhaseDomain",
+   "original_sha256": "a70f9363224b7eccfd8082a65677cdad417d2375a4157f60ae72eeff453bf8a2",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/RetardedPhaseDomain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/RetardedRadiusSeparatedClosed.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.RetardedRadiusSeparatedClosed",
+   "original_sha256": "507d6849a17d023b78f3fbfb682e0520cb6e0965171a9ee3cb4c298466d29a11",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/RetardedRadiusSeparatedClosed.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/SelectedConeTransfer.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.SelectedConeTransfer",
+   "original_sha256": "4354df1a13d2f1d2125f4974bb8dcf97d6160a9f279d6eaef8b62b93dc7f78f4",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/SelectedConeTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/SourceCellLast.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.SourceCellLast",
+   "original_sha256": "882f27a2ab3b0f7bfdcc827837de4c69463fca06960b8bb849e60e18c7d1abbe",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/SourceCellLast.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/SourceField.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.SourceField",
+   "original_sha256": "fb48736511c1c06c75cc2924e77ab61e01476d50b163bb31f18512c0dcfaaa9e",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/SourceField.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/SourceForceConeKernel.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.SourceForceConeKernel",
+   "original_sha256": "c517f1f0c3527bcb2e4021ec3508188c54bc6c55914a412dd22db0ba0752cb3a",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/SourceForceConeKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/SourceKernels.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.SourceKernels",
+   "original_sha256": "7a873a211aaabed7b70b04d953731349d50f8f1f734357d3b7faac721cc4e431",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/SourceKernels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/SourceMajorant.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.SourceMajorant",
+   "original_sha256": "414a094999640aa8576cf77f633d88641b3c190dcd4b27ef0dafc67f60357d6d",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/SourceMajorant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/SourceMajorantFamily.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.SourceMajorantFamily",
+   "original_sha256": "7475a95166020e5dd83b678aaf2bed3ff754c5cd311959359bd80632f3e0680b",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/SourceMajorantFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/SourceVelocityProfile.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.SourceVelocityProfile",
+   "original_sha256": "ca7eec8c8bb7507acadd92dbe7128ef13324cd9ac4a08e571e3293236b9012be",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/SourceVelocityProfile.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/SourceWaveSpatialIbp.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.SourceWaveSpatialIbp",
+   "original_sha256": "badef07f34a46a730d3cd2981fece1692cb6ec7b5da2bc52fd7b23c96636fbc0",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/SourceWaveSpatialIbp.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/SpaceConeDomain.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.SpaceConeDomain",
+   "original_sha256": "2d14e519f9d19df1f59c03568c5b51c6452b23b13177adcc302ffef52901e9de",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/SpaceConeDomain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/TransportAngularCore.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.TransportAngularCore",
+   "original_sha256": "8625d6aa0a12733e054da69388a7fa9d40aeb880f68b49e83afd9f2958d4ec2f",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/TransportAngularCore.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/UniformDatumKernel.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.UniformDatumKernel",
+   "original_sha256": "15ada56ded96bda8932f6fae83d7ecc264583f6228be4008380dc52cf35218d2",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/UniformDatumKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/VolterraKernels.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.VolterraKernels",
+   "original_sha256": "605bc7b9b3240ab707bd5d6a73dcc923134867be67f3c2aeedebdd42523b7ecd",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/VolterraKernels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/VlasovMaxwell/Retarded/VolterraMajorant.lean"
+   },
+   "module": "OAI.Analysis.VlasovMaxwell.Retarded.VolterraMajorant",
+   "original_sha256": "3622a473582f2111b174f3a04d69e56a928d781a3507e8d1035e55bb1bc1a7df",
+   "path": "OAI/Analysis/VlasovMaxwell/Retarded/VolterraMajorant.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.VlasovMaxwell.Continuation.Bootstrap",
+  "OAI.Analysis.VlasovMaxwell.Continuation.DerivMovingEnergy",
+  "OAI.Analysis.VlasovMaxwell.Continuation.GlobalBoundaryBound",
+  "OAI.Analysis.VlasovMaxwell.Continuation.GlobalContinuation",
+  "OAI.Analysis.VlasovMaxwell.Continuation.IncrementBootstrap",
+  "OAI.Analysis.VlasovMaxwell.Continuation.PhysicalBinBasePrefix",
+  "OAI.Analysis.VlasovMaxwell.Continuation.PrefixClamp",
+  "OAI.Analysis.VlasovMaxwell.Continuation.PrefixMomentumForce",
+  "OAI.Analysis.VlasovMaxwell.Continuation.PrefixParticle",
+  "OAI.Analysis.VlasovMaxwell.Continuation.PrefixUniqueness",
+  "OAI.Analysis.VlasovMaxwell.Continuation.SlabSmoothBootstrap",
+  "OAI.Analysis.VlasovMaxwell.Flow.BranchCutoffStateContinuous",
+  "OAI.Analysis.VlasovMaxwell.Flow.BranchIntegral",
+  "OAI.Analysis.VlasovMaxwell.Flow.ClosedEulerianCrudeBudget",
+  "OAI.Analysis.VlasovMaxwell.Flow.ClosedEulerianTimeBudget",
+  "OAI.Analysis.VlasovMaxwell.Flow.ExtendedLorentz",
+  "OAI.Analysis.VlasovMaxwell.Flow.FlowDerivative",
+  "OAI.Analysis.VlasovMaxwell.Flow.HighFlow",
+  "OAI.Analysis.VlasovMaxwell.Flow.LorentzPhase",
+  "OAI.Analysis.VlasovMaxwell.Flow.PhaseAcceleration",
+  "OAI.Analysis.VlasovMaxwell.Flow.PhaseHits",
+  "OAI.Analysis.VlasovMaxwell.Flow.PhaseTimePullback",
+  "OAI.Analysis.VlasovMaxwell.Flow.TransportDifferentiation",
+  "OAI.Analysis.VlasovMaxwell.Flow.WithinFlow",
+  "OAI.Analysis.VlasovMaxwell.Geometry.ActualCutoffCoordinates",
+  "OAI.Analysis.VlasovMaxwell.Geometry.ActualLabelCutoffCost",
+  "OAI.Analysis.VlasovMaxwell.Geometry.ArrivalDomain",
+  "OAI.Analysis.VlasovMaxwell.Geometry.BallCutoff",
+  "OAI.Analysis.VlasovMaxwell.Geometry.ClippedRamp",
+  "OAI.Analysis.VlasovMaxwell.Geometry.ClosedBranchDomain",
+  "OAI.Analysis.VlasovMaxwell.Geometry.CollisionLabels",
+  "OAI.Analysis.VlasovMaxwell.Geometry.CrossCLM",
+  "OAI.Analysis.VlasovMaxwell.Geometry.CutoffState",
+  "OAI.Analysis.VlasovMaxwell.Geometry.DensitySecondMoment",
+  "OAI.Analysis.VlasovMaxwell.Geometry.IndexTwoPow",
+  "OAI.Analysis.VlasovMaxwell.Geometry.ParticleBySpacetime",
+  "OAI.Analysis.VlasovMaxwell.Geometry.ParticleTame",
+  "OAI.Analysis.VlasovMaxwell.Geometry.PhysicalDivision",
+  "OAI.Analysis.VlasovMaxwell.Geometry.PhysicalGeometryCutoffDensity",
+  "OAI.Analysis.VlasovMaxwell.Geometry.QuadIndexEquiv",
+  "OAI.Analysis.VlasovMaxwell.Geometry.RelativeAngleCoordinate",
+  "OAI.Analysis.VlasovMaxwell.Geometry.SelectedRemainderPhysical",
+  "OAI.Analysis.VlasovMaxwell.Geometry.ShiftedRho",
+  "OAI.Analysis.VlasovMaxwell.Geometry.SpaceDiv",
+  "OAI.Analysis.VlasovMaxwell.Geometry.Sphere",
+  "OAI.Analysis.VlasovMaxwell.Geometry.UpperTimeCut",
+  "OAI.Analysis.VlasovMaxwell.LocalPDE.EquationsBefore",
+  "OAI.Analysis.VlasovMaxwell.LocalPDE.FiniteUniqueness",
+  "OAI.Analysis.VlasovMaxwell.LocalPDE.GeometryCutoffDeficitLogSum",
+  "OAI.Analysis.VlasovMaxwell.LocalPDE.GeometryCutoffStableLogSum",
+  "OAI.Analysis.VlasovMaxwell.LocalPDE.PicardBoundary",
+  "OAI.Analysis.VlasovMaxwell.LocalPDE.PicardBounds",
+  "OAI.Analysis.VlasovMaxwell.LocalPDE.PicardContraction",
+  "OAI.Analysis.VlasovMaxwell.LocalPDE.PicardCurvature",
+  "OAI.Analysis.VlasovMaxwell.LocalPDE.RelativeCauchyConstant",
+  "OAI.Analysis.VlasovMaxwell.LocalPDE.SlabEquations",
+  "OAI.Analysis.VlasovMaxwell.LocalPDE.SlabRHS",
+  "OAI.Analysis.VlasovMaxwell.LocalPDE.SmoothLocalExistence",
+  "OAI.Analysis.VlasovMaxwell.LocalPDE.StrongLocalExistence",
+  "OAI.Analysis.VlasovMaxwell.LocalPDE.UniformParticleDensityConstant",
+  "OAI.Analysis.VlasovMaxwell.LocalPDE.VlasovConstruction",
+  "OAI.Analysis.VlasovMaxwell.Main",
+  "OAI.Analysis.VlasovMaxwell.Maxwell.DifferenceFieldEnergy",
+  "OAI.Analysis.VlasovMaxwell.Maxwell.ElectricBoundaryField",
+  "OAI.Analysis.VlasovMaxwell.Maxwell.ExtendedField",
+  "OAI.Analysis.VlasovMaxwell.Maxwell.FieldGradientNorm",
+  "OAI.Analysis.VlasovMaxwell.Maxwell.FiniteFlow",
+  "OAI.Analysis.VlasovMaxwell.Maxwell.Variational",
+  "OAI.Analysis.VlasovMaxwell.Maxwell.WaveGradient",
+  "OAI.Analysis.VlasovMaxwell.Maxwell.WaveK",
+  "OAI.Analysis.VlasovMaxwell.Model",
+  "OAI.Analysis.VlasovMaxwell.Population.BinHits",
+  "OAI.Analysis.VlasovMaxwell.Population.BulkReceiverResidual",
+  "OAI.Analysis.VlasovMaxwell.Population.BulkReceiverScalar",
+  "OAI.Analysis.VlasovMaxwell.Population.BulkSpatialUniform",
+  "OAI.Analysis.VlasovMaxwell.Population.BulkTestWeight",
+  "OAI.Analysis.VlasovMaxwell.Population.BulkWeightCost",
+  "OAI.Analysis.VlasovMaxwell.Population.CappedRepresentativePos",
+  "OAI.Analysis.VlasovMaxwell.Population.CentralOccupation",
+  "OAI.Analysis.VlasovMaxwell.Population.ContDiffDyadicMultiFactor",
+  "OAI.Analysis.VlasovMaxwell.Population.DatumElectricFluxKernel",
+  "OAI.Analysis.VlasovMaxwell.Population.DirectExpandedAssemble",
+  "OAI.Analysis.VlasovMaxwell.Population.DirectExpandedDeficitUniform",
+  "OAI.Analysis.VlasovMaxwell.Population.DirectExpandedLargeAngular",
+  "OAI.Analysis.VlasovMaxwell.Population.DirectExpandedTransportNear",
+  "OAI.Analysis.VlasovMaxwell.Population.DirectionCounts",
+  "OAI.Analysis.VlasovMaxwell.Population.DirectionCutoffs",
+  "OAI.Analysis.VlasovMaxwell.Population.DirectionOverlap",
+  "OAI.Analysis.VlasovMaxwell.Population.DyadicBalanceConstant",
+  "OAI.Analysis.VlasovMaxwell.Population.DyadicCut",
+  "OAI.Analysis.VlasovMaxwell.Population.GoodCrossings",
+  "OAI.Analysis.VlasovMaxwell.Population.GoodSharedEstimates",
+  "OAI.Analysis.VlasovMaxwell.Population.HomogeneousCancellation",
+  "OAI.Analysis.VlasovMaxwell.Population.InitialSignedBoundaryDensity",
+  "OAI.Analysis.VlasovMaxwell.Population.LabelOccupation",
+  "OAI.Analysis.VlasovMaxwell.Population.LabelOccupationDurationMass",
+  "OAI.Analysis.VlasovMaxwell.Population.LabelWeight",
+  "OAI.Analysis.VlasovMaxwell.Population.MagneticEstimates",
+  "OAI.Analysis.VlasovMaxwell.Population.MajorantRelativeDensityTimeFar",
+  "OAI.Analysis.VlasovMaxwell.Population.MomentumDirection",
+  "OAI.Analysis.VlasovMaxwell.Population.NullConeFlux",
+  "OAI.Analysis.VlasovMaxwell.Population.PartitionOccupation",
+  "OAI.Analysis.VlasovMaxwell.Population.PhysicalBinPhaseSet",
+  "OAI.Analysis.VlasovMaxwell.Population.RadialSummation",
+  "OAI.Analysis.VlasovMaxwell.Population.ReceiverWeights",
+  "OAI.Analysis.VlasovMaxwell.Population.RelativeClosedBinHitGeometry",
+  "OAI.Analysis.VlasovMaxwell.Population.RepresentativeClosedBinSourceIndices",
+  "OAI.Analysis.VlasovMaxwell.Population.RepresentativeCosts",
+  "OAI.Analysis.VlasovMaxwell.Population.RetardedSameTimeSeparation",
+  "OAI.Analysis.VlasovMaxwell.Population.RetardedWeightedIntegralBound",
+  "OAI.Analysis.VlasovMaxwell.Population.SelectedDirection",
+  "OAI.Analysis.VlasovMaxwell.Population.SelectedReceiverWeightBoundFinite",
+  "OAI.Analysis.VlasovMaxwell.Population.SelectedRemainder",
+  "OAI.Analysis.VlasovMaxwell.Population.SelectionCounts",
+  "OAI.Analysis.VlasovMaxwell.Population.SelectionWeight",
+  "OAI.Analysis.VlasovMaxwell.Population.SharedBudget",
+  "OAI.Analysis.VlasovMaxwell.Population.SharedOccupation",
+  "OAI.Analysis.VlasovMaxwell.Population.SignedRemainder",
+  "OAI.Analysis.VlasovMaxwell.Population.SourceJointFlux",
+  "OAI.Analysis.VlasovMaxwell.Population.SourceWeightedPacket",
+  "OAI.Analysis.VlasovMaxwell.Population.SpatialEstimates",
+  "OAI.Analysis.VlasovMaxwell.Population.SphericalFluxNorm",
+  "OAI.Analysis.VlasovMaxwell.Population.SqrtBaselineClippedLength",
+  "OAI.Analysis.VlasovMaxwell.Population.TransportRemainder",
+  "OAI.Analysis.VlasovMaxwell.Population.TransportSingularBulk",
+  "OAI.Analysis.VlasovMaxwell.Population.UniformPopulation",
+  "OAI.Analysis.VlasovMaxwell.Population.UnselectedCover",
+  "OAI.Analysis.VlasovMaxwell.Regularity.AbsolutelyContinuousIntervalContinuousDerivative",
+  "OAI.Analysis.VlasovMaxwell.Regularity.BoundaryJets",
+  "OAI.Analysis.VlasovMaxwell.Regularity.ContinuousIntegralSphere",
+  "OAI.Analysis.VlasovMaxwell.Regularity.CurvatureBounds",
+  "OAI.Analysis.VlasovMaxwell.Regularity.CurvatureInterpolation",
+  "OAI.Analysis.VlasovMaxwell.Regularity.EnergyBump",
+  "OAI.Analysis.VlasovMaxwell.Regularity.IntegralBallPolarFlip",
+  "OAI.Analysis.VlasovMaxwell.Regularity.LogSingularBound",
+  "OAI.Analysis.VlasovMaxwell.Regularity.LowBoundaryControl",
+  "OAI.Analysis.VlasovMaxwell.Regularity.MixedJets",
+  "OAI.Analysis.VlasovMaxwell.Regularity.MomentLimit",
+  "OAI.Analysis.VlasovMaxwell.Regularity.NormalisedPartialCutoff",
+  "OAI.Analysis.VlasovMaxwell.Regularity.ParamPrimitive",
+  "OAI.Analysis.VlasovMaxwell.Regularity.ParticleC1",
+  "OAI.Analysis.VlasovMaxwell.Regularity.PhysicalC0",
+  "OAI.Analysis.VlasovMaxwell.Regularity.PhysicalCutoffCoordinates",
+  "OAI.Analysis.VlasovMaxwell.Regularity.PhysicalGradient",
+  "OAI.Analysis.VlasovMaxwell.Regularity.PositiveExtension",
+  "OAI.Analysis.VlasovMaxwell.Regularity.RealJointEnergyBudget",
+  "OAI.Analysis.VlasovMaxwell.Regularity.SlabEvolutionRegularity",
+  "OAI.Analysis.VlasovMaxwell.Regularity.SlabL2",
+  "OAI.Analysis.VlasovMaxwell.Regularity.SmoothIntegral",
+  "OAI.Analysis.VlasovMaxwell.Regularity.SpatialJets",
+  "OAI.Analysis.VlasovMaxwell.Regularity.TameDerivative",
+  "OAI.Analysis.VlasovMaxwell.Regularity.VelocityDerivatives",
+  "OAI.Analysis.VlasovMaxwell.Regularity.VolterraSup",
+  "OAI.Analysis.VlasovMaxwell.Regularity.WithinPartial",
+  "OAI.Analysis.VlasovMaxwell.Retarded.AffineRetardedBound",
+  "OAI.Analysis.VlasovMaxwell.Retarded.AngularBump",
+  "OAI.Analysis.VlasovMaxwell.Retarded.ArrivalConeKernelPolarNorm",
+  "OAI.Analysis.VlasovMaxwell.Retarded.ConeArgument",
+  "OAI.Analysis.VlasovMaxwell.Retarded.ConeEulerianIntegrand",
+  "OAI.Analysis.VlasovMaxwell.Retarded.ConeForceSplit",
+  "OAI.Analysis.VlasovMaxwell.Retarded.ConeKernelInterior",
+  "OAI.Analysis.VlasovMaxwell.Retarded.ConeMotion",
+  "OAI.Analysis.VlasovMaxwell.Retarded.ConeRadius",
+  "OAI.Analysis.VlasovMaxwell.Retarded.ConeRegularity",
+  "OAI.Analysis.VlasovMaxwell.Retarded.CutoffRateMajorant",
+  "OAI.Analysis.VlasovMaxwell.Retarded.CutoffSourceTangent",
+  "OAI.Analysis.VlasovMaxwell.Retarded.DirectDeficitUniform",
+  "OAI.Analysis.VlasovMaxwell.Retarded.DirectForce",
+  "OAI.Analysis.VlasovMaxwell.Retarded.DirectLargeAngularSharp",
+  "OAI.Analysis.VlasovMaxwell.Retarded.DirectLorentzUniform",
+  "OAI.Analysis.VlasovMaxwell.Retarded.DirectMixedCover",
+  "OAI.Analysis.VlasovMaxwell.Retarded.DirectSmallAbsolute",
+  "OAI.Analysis.VlasovMaxwell.Retarded.ElectricConeBoundary",
+  "OAI.Analysis.VlasovMaxwell.Retarded.GeneralDirectRadial",
+  "OAI.Analysis.VlasovMaxwell.Retarded.InitialPuncturedCone",
+  "OAI.Analysis.VlasovMaxwell.Retarded.MagneticBoundaryJets",
+  "OAI.Analysis.VlasovMaxwell.Retarded.MagneticMomentDensity",
+  "OAI.Analysis.VlasovMaxwell.Retarded.MagneticVolterra",
+  "OAI.Analysis.VlasovMaxwell.Retarded.ObservationCone",
+  "OAI.Analysis.VlasovMaxwell.Retarded.PhysicalAngularBound",
+  "OAI.Analysis.VlasovMaxwell.Retarded.PhysicalDirectTransportDensity",
+  "OAI.Analysis.VlasovMaxwell.Retarded.PhysicalElectricKernel",
+  "OAI.Analysis.VlasovMaxwell.Retarded.PhysicalProjectedRemainderDensity",
+  "OAI.Analysis.VlasovMaxwell.Retarded.PhysicalProjectedRemainderSourceTruncate",
+  "OAI.Analysis.VlasovMaxwell.Retarded.PicardKernel",
+  "OAI.Analysis.VlasovMaxwell.Retarded.ProjectedSourceStableFarBound",
+  "OAI.Analysis.VlasovMaxwell.Retarded.ReceiverQ",
+  "OAI.Analysis.VlasovMaxwell.Retarded.ReceiverQCLM",
+  "OAI.Analysis.VlasovMaxwell.Retarded.ReceiverRadialDomain",
+  "OAI.Analysis.VlasovMaxwell.Retarded.RetardedDifferentiation",
+  "OAI.Analysis.VlasovMaxwell.Retarded.RetardedMomentumForce",
+  "OAI.Analysis.VlasovMaxwell.Retarded.RetardedPhaseDomain",
+  "OAI.Analysis.VlasovMaxwell.Retarded.RetardedRadiusSeparatedClosed",
+  "OAI.Analysis.VlasovMaxwell.Retarded.SelectedConeTransfer",
+  "OAI.Analysis.VlasovMaxwell.Retarded.SourceCellLast",
+  "OAI.Analysis.VlasovMaxwell.Retarded.SourceField",
+  "OAI.Analysis.VlasovMaxwell.Retarded.SourceForceConeKernel",
+  "OAI.Analysis.VlasovMaxwell.Retarded.SourceKernels",
+  "OAI.Analysis.VlasovMaxwell.Retarded.SourceMajorant",
+  "OAI.Analysis.VlasovMaxwell.Retarded.SourceMajorantFamily",
+  "OAI.Analysis.VlasovMaxwell.Retarded.SourceVelocityProfile",
+  "OAI.Analysis.VlasovMaxwell.Retarded.SourceWaveSpatialIbp",
+  "OAI.Analysis.VlasovMaxwell.Retarded.SpaceConeDomain",
+  "OAI.Analysis.VlasovMaxwell.Retarded.TransportAngularCore",
+  "OAI.Analysis.VlasovMaxwell.Retarded.UniformDatumKernel",
+  "OAI.Analysis.VlasovMaxwell.Retarded.VolterraKernels",
+  "OAI.Analysis.VlasovMaxwell.Retarded.VolterraMajorant"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/VlasovMaxwell.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.VlasovMaxwell.Main",
+   "name": "OAI.RVM.global_classical_solution",
+   "statement_sha256": "25a047290f8caeed9d239590638d7b8ce0f958f2100b05850d999ea674b2059e"
+  }
+ ],
+ "task_id": "oai-vlasov-maxwell",
+ "task_revision": 1,
+ "title": "OpenAI math: Global smoothness for relativistic Vlasov–Maxwell: Global classical Vlasov–Maxwell solutions",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

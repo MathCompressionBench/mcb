@@ -1,0 +1,851 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 11133513
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.SeymourSecondNeighborhood",
+  "challenge_sha256": "fa4a37831405b3fe7f6a88a2dce8918982195ee1757e05e4623055822d36ca98",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SeymourSecondNeighborhood.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.SeymourSecondNeighborhood",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Combinatorics.SecondNeighborhood.Main",
+   "theorem_names": [
+    "OAI.SeymourSecondNeighborhood.exists_goodVertex"
+   ]
+  },
+  "config_sha256": "e2496b399005d74e7ae3a1467f3286120b706abe519e42d87880ca1679935778",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SeymourSecondNeighborhood.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.SeymourSecondNeighborhood.exists_goodVertex": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/AugmentedGraph.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.AugmentedGraph",
+   "original_sha256": "03cbe7c240edaf224e290718f45b079deef2d3face40c234e979c717125fd30f",
+   "path": "OAI/Combinatorics/SecondNeighborhood/AugmentedGraph.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/AugmentedMatching.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.AugmentedMatching",
+   "original_sha256": "08e03d9c3061e7769657a9655349c4421e54bd0d44b4b58b09802eb4e2c6e100",
+   "path": "OAI/Combinatorics/SecondNeighborhood/AugmentedMatching.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/AugmentedRankBound.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.AugmentedRankBound",
+   "original_sha256": "6d7d740e10db319829b45dd52fbfb29222ef724c0586185aaf99ef24b2d94a06",
+   "path": "OAI/Combinatorics/SecondNeighborhood/AugmentedRankBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/Basic.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.Basic",
+   "original_sha256": "51c1ea0cac65b4a2a23917704a3e0c1af21cba9d6f6b3ae9e018877727c4d16c",
+   "path": "OAI/Combinatorics/SecondNeighborhood/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/CompositeRankBound.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.CompositeRankBound",
+   "original_sha256": "5a7f1fec57c6756e3f404c382425fccba3d45af3a70a05950a8f337556422d38",
+   "path": "OAI/Combinatorics/SecondNeighborhood/CompositeRankBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/CoverPruning.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.CoverPruning",
+   "original_sha256": "54751b3b24546eeca42e5eb277e3fa44a7aceb6e8227123ec133df314edca707",
+   "path": "OAI/Combinatorics/SecondNeighborhood/CoverPruning.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/Deletion.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.Deletion",
+   "original_sha256": "3252054785b45a24b8732981624a9496b385a0d19b30250594ea8dcf201416fa",
+   "path": "OAI/Combinatorics/SecondNeighborhood/Deletion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/ExtremalCompatibility.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.ExtremalCompatibility",
+   "original_sha256": "bfe67c57bacf7c26e649c61b28808901476d16945a8c785623e778f9ea44534d",
+   "path": "OAI/Combinatorics/SecondNeighborhood/ExtremalCompatibility.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/ExtremalContradiction.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.ExtremalContradiction",
+   "original_sha256": "6ecf0639da53e9a3d3b26c8a7cabe102fc29a8b3514e69c37e293d68e8e4340e",
+   "path": "OAI/Combinatorics/SecondNeighborhood/ExtremalContradiction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/ExtremalCounting.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.ExtremalCounting",
+   "original_sha256": "e94b3046fdd9f14c4ee4448d275ad608518b56e40b6280379b79857e938c5c4a",
+   "path": "OAI/Combinatorics/SecondNeighborhood/ExtremalCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/ExtremalImages.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.ExtremalImages",
+   "original_sha256": "ae07bab19dd64bd36c8490d89099c1b87111f7581b611d0a1b844ed7add1c2c4",
+   "path": "OAI/Combinatorics/SecondNeighborhood/ExtremalImages.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/GenericRank.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.GenericRank",
+   "original_sha256": "d1da077fb07861f8616470caf4111c4b035417c2106ffd33b30ebe7a7888b343",
+   "path": "OAI/Combinatorics/SecondNeighborhood/GenericRank.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/GenericRankCoefficients.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.GenericRankCoefficients",
+   "original_sha256": "e96db3e110723829af17365bca618b7a77e1cfb914cfc5181502bfb35b0d0175",
+   "path": "OAI/Combinatorics/SecondNeighborhood/GenericRankCoefficients.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/GenericRankColumns.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.GenericRankColumns",
+   "original_sha256": "53e72ae6b7f9ae0d64d77f2455d6e9ccc3624758aec1e393ed49109547830061",
+   "path": "OAI/Combinatorics/SecondNeighborhood/GenericRankColumns.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/GenericRankFamily.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.GenericRankFamily",
+   "original_sha256": "6e8427287e613a48f9a926ef3680183636aa3d4fe0d89f0a460359e75e4d1a1b",
+   "path": "OAI/Combinatorics/SecondNeighborhood/GenericRankFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/GenericRankGlobalMinors.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.GenericRankGlobalMinors",
+   "original_sha256": "200b06a08667c19fa9e1ee74adb8fe117bc90e808a3fe97be393d46ed81e67ab",
+   "path": "OAI/Combinatorics/SecondNeighborhood/GenericRankGlobalMinors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/GenericRankMatching.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.GenericRankMatching",
+   "original_sha256": "745d418ecc9a66e3343d3f5787e060a7586fa523ec123ff80391f4171a82e799",
+   "path": "OAI/Combinatorics/SecondNeighborhood/GenericRankMatching.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/GenericRankSelection.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.GenericRankSelection",
+   "original_sha256": "a272dd80cdba3d62039f2742b60fa26763e07b9d67e5fca59a917035b542c741",
+   "path": "OAI/Combinatorics/SecondNeighborhood/GenericRankSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/GenericRankSupport.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.GenericRankSupport",
+   "original_sha256": "b24888b0e1d06a98cf58f8cd9cc18cbd6991c33ca41dfea3026e30730a3b1219",
+   "path": "OAI/Combinatorics/SecondNeighborhood/GenericRankSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/KernelBasisLifts.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.KernelBasisLifts",
+   "original_sha256": "6aea5353ede2d1d4b0c2911d3c76976cde93b36b17e80cb34ce36feb5cbeb73c",
+   "path": "OAI/Combinatorics/SecondNeighborhood/KernelBasisLifts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/KernelConflict.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.KernelConflict",
+   "original_sha256": "d9f9e90cb3c3017399df843447e31e05327ee8340ad205627859e0f407fd4512",
+   "path": "OAI/Combinatorics/SecondNeighborhood/KernelConflict.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/KernelIndependence.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.KernelIndependence",
+   "original_sha256": "c3a5afa10668d5c0a4b567134342c5f8a39ede4e46c9a0c2c7b875c0eb737fb9",
+   "path": "OAI/Combinatorics/SecondNeighborhood/KernelIndependence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/KernelRestriction.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.KernelRestriction",
+   "original_sha256": "4d0b9dacdb36b10eb6a7d3bee55e7c203b98350b4d49d247e714814d45ab725e",
+   "path": "OAI/Combinatorics/SecondNeighborhood/KernelRestriction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/Main.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.Main",
+   "original_sha256": "44637990cc5daddcb30874368807ce7a0531ac1bbbe6a21751734b291f9b35f7",
+   "path": "OAI/Combinatorics/SecondNeighborhood/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/Matching.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.Matching",
+   "original_sha256": "7b3716452f60c97d1e4d4a4a432d6c1bf417c07f791a1c5b53736b74d356ffe3",
+   "path": "OAI/Combinatorics/SecondNeighborhood/Matching.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/MatchingAugmented.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.MatchingAugmented",
+   "original_sha256": "2a9bc13b90459ca480e0f352283bb6fa9b183d77fa21f659edee98b064b0fc4d",
+   "path": "OAI/Combinatorics/SecondNeighborhood/MatchingAugmented.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/MatchingCover.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.MatchingCover",
+   "original_sha256": "d1e35ef04f1bb447f72d5d9232618c47a38772dc8c1d52ec00e3d0aa7bcada9c",
+   "path": "OAI/Combinatorics/SecondNeighborhood/MatchingCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/MatchingExchange.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.MatchingExchange",
+   "original_sha256": "7f0f44bbaa8b8a49023272b57adc50ff70e5990f43ae449622e7527e10ad9ac9",
+   "path": "OAI/Combinatorics/SecondNeighborhood/MatchingExchange.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/MatrixMaps.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.MatrixMaps",
+   "original_sha256": "0f2790c1a5d5da38b15f5e0a7979998c90d96ef0e8a006f45c38b2b52d221af8",
+   "path": "OAI/Combinatorics/SecondNeighborhood/MatrixMaps.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/MatrixMapsCommute.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.MatrixMapsCommute",
+   "original_sha256": "63774931970d04bb5d66c458d666a13eeca225accab7f82f238c6631b3fc5acd",
+   "path": "OAI/Combinatorics/SecondNeighborhood/MatrixMapsCommute.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/MatrixMapsPolynomial.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.MatrixMapsPolynomial",
+   "original_sha256": "dee84acf7a318b1e6bf6ed9b045037ead560db7bf81328a1c7a6b373b66c409d",
+   "path": "OAI/Combinatorics/SecondNeighborhood/MatrixMapsPolynomial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/MaxSupportKernel.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.MaxSupportKernel",
+   "original_sha256": "82f9128b783662b2560e456f71f200880f77cf84c65ab199b8810630975a5910",
+   "path": "OAI/Combinatorics/SecondNeighborhood/MaxSupportKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/MinimalCounterexample.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.MinimalCounterexample",
+   "original_sha256": "66ff0113a483642bc6e71d2de57f620c46e39ccab77aae1cb79439f2e9c8da34",
+   "path": "OAI/Combinatorics/SecondNeighborhood/MinimalCounterexample.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/Model.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.Model",
+   "original_sha256": "3bbdb8b2c7f753ac457f4a94d4cb604630ebf0cedc0d10d05f24b48bbbc2d52f",
+   "path": "OAI/Combinatorics/SecondNeighborhood/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/Pruning.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.Pruning",
+   "original_sha256": "ba64f4f8fd180c1a3634cc1dbb8907267075ed3a496d2c39256c8f975e82e3a5",
+   "path": "OAI/Combinatorics/SecondNeighborhood/Pruning.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/PruningDefinitions.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.PruningDefinitions",
+   "original_sha256": "baf1b2938d1d5e9b866517951e728aefeab1c144e952d2a1e326d260ca60a74d",
+   "path": "OAI/Combinatorics/SecondNeighborhood/PruningDefinitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/RankBoundFromMinors.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.RankBoundFromMinors",
+   "original_sha256": "01776b4068c86fd48f6b63326a653a8d7ebef68a28ace0745bf30b83947ce574",
+   "path": "OAI/Combinatorics/SecondNeighborhood/RankBoundFromMinors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/Reduction.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.Reduction",
+   "original_sha256": "47db979f728e38a683d7cbea7350bf5580a5298332e81241d57692d1ad116660",
+   "path": "OAI/Combinatorics/SecondNeighborhood/Reduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/ReductionCore.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.ReductionCore",
+   "original_sha256": "4e412524c70ce9d7245700cc18116479cab8edd3c5de3af69d014b49d63b39d8",
+   "path": "OAI/Combinatorics/SecondNeighborhood/ReductionCore.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/Reindex.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.Reindex",
+   "original_sha256": "9c4a2cc050c5dad8b04fc28cb7a23e8fede9735127911313d69b6325812f4a21",
+   "path": "OAI/Combinatorics/SecondNeighborhood/Reindex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/SubsetAugmentation.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.SubsetAugmentation",
+   "original_sha256": "0cc08e2ece7abe923263673f1f8dc7c89e8c136926136846250e1da44ec24e9a",
+   "path": "OAI/Combinatorics/SecondNeighborhood/SubsetAugmentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/SubsetDeficit.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.SubsetDeficit",
+   "original_sha256": "3b8c1806017edfa7a6f53d7396441c80904939986416107cfcf4a22430364fdb",
+   "path": "OAI/Combinatorics/SecondNeighborhood/SubsetDeficit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SecondNeighborhood/TransitiveBlowup.lean"
+   },
+   "module": "OAI.Combinatorics.SecondNeighborhood.TransitiveBlowup",
+   "original_sha256": "946cb494c10f69eaf7edd51b476d021e51245969f5c95ac5870c6a95f225fc46",
+   "path": "OAI/Combinatorics/SecondNeighborhood/TransitiveBlowup.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.SecondNeighborhood.AugmentedGraph",
+  "OAI.Combinatorics.SecondNeighborhood.AugmentedMatching",
+  "OAI.Combinatorics.SecondNeighborhood.AugmentedRankBound",
+  "OAI.Combinatorics.SecondNeighborhood.Basic",
+  "OAI.Combinatorics.SecondNeighborhood.CompositeRankBound",
+  "OAI.Combinatorics.SecondNeighborhood.CoverPruning",
+  "OAI.Combinatorics.SecondNeighborhood.Deletion",
+  "OAI.Combinatorics.SecondNeighborhood.ExtremalCompatibility",
+  "OAI.Combinatorics.SecondNeighborhood.ExtremalContradiction",
+  "OAI.Combinatorics.SecondNeighborhood.ExtremalCounting",
+  "OAI.Combinatorics.SecondNeighborhood.ExtremalImages",
+  "OAI.Combinatorics.SecondNeighborhood.GenericRank",
+  "OAI.Combinatorics.SecondNeighborhood.GenericRankCoefficients",
+  "OAI.Combinatorics.SecondNeighborhood.GenericRankColumns",
+  "OAI.Combinatorics.SecondNeighborhood.GenericRankFamily",
+  "OAI.Combinatorics.SecondNeighborhood.GenericRankGlobalMinors",
+  "OAI.Combinatorics.SecondNeighborhood.GenericRankMatching",
+  "OAI.Combinatorics.SecondNeighborhood.GenericRankSelection",
+  "OAI.Combinatorics.SecondNeighborhood.GenericRankSupport",
+  "OAI.Combinatorics.SecondNeighborhood.KernelBasisLifts",
+  "OAI.Combinatorics.SecondNeighborhood.KernelConflict",
+  "OAI.Combinatorics.SecondNeighborhood.KernelIndependence",
+  "OAI.Combinatorics.SecondNeighborhood.KernelRestriction",
+  "OAI.Combinatorics.SecondNeighborhood.Main",
+  "OAI.Combinatorics.SecondNeighborhood.Matching",
+  "OAI.Combinatorics.SecondNeighborhood.MatchingAugmented",
+  "OAI.Combinatorics.SecondNeighborhood.MatchingCover",
+  "OAI.Combinatorics.SecondNeighborhood.MatchingExchange",
+  "OAI.Combinatorics.SecondNeighborhood.MatrixMaps",
+  "OAI.Combinatorics.SecondNeighborhood.MatrixMapsCommute",
+  "OAI.Combinatorics.SecondNeighborhood.MatrixMapsPolynomial",
+  "OAI.Combinatorics.SecondNeighborhood.MaxSupportKernel",
+  "OAI.Combinatorics.SecondNeighborhood.MinimalCounterexample",
+  "OAI.Combinatorics.SecondNeighborhood.Model",
+  "OAI.Combinatorics.SecondNeighborhood.Pruning",
+  "OAI.Combinatorics.SecondNeighborhood.PruningDefinitions",
+  "OAI.Combinatorics.SecondNeighborhood.RankBoundFromMinors",
+  "OAI.Combinatorics.SecondNeighborhood.Reduction",
+  "OAI.Combinatorics.SecondNeighborhood.ReductionCore",
+  "OAI.Combinatorics.SecondNeighborhood.Reindex",
+  "OAI.Combinatorics.SecondNeighborhood.SubsetAugmentation",
+  "OAI.Combinatorics.SecondNeighborhood.SubsetDeficit",
+  "OAI.Combinatorics.SecondNeighborhood.TransitiveBlowup"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/SeymourSecondNeighborhood.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Combinatorics.SecondNeighborhood.Main",
+   "name": "OAI.SeymourSecondNeighborhood.exists_goodVertex",
+   "statement_sha256": "90b886f27de07d99e54ee9bf7c422ef1717bd6afcfd3fe312f2383464556b93f"
+  }
+ ],
+ "task_id": "oai-seymour-second-neighborhood",
+ "task_revision": 1,
+ "title": "OpenAI math: Seymour’s second-neighborhood conjecture: Seymour's second-neighborhood conjecture",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

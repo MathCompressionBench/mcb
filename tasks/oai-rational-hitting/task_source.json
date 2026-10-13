@@ -1,0 +1,950 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 1617170284
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.RationalHitting",
+  "challenge_sha256": "c0fc0d9740d4ef195918447f4da9605e75760845cae1163c534d6299c6e4877f",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/RationalHitting.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.RationalHitting",
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Computability.RationalHitting.Main",
+   "theorem_names": [
+    "OAI.RationalHitting.main"
+   ]
+  },
+  "config_sha256": "2b135eaf875cd6c699fd8dd9b9b8073f11da8ef767c581fd2e1b65d15d250dee",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/RationalHitting.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.RationalHitting.main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/Affine.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.Affine",
+   "original_sha256": "150c2ce4e096ece402853085966ef35a74ee0e8c11b49fa5073a2faf6c805c12",
+   "path": "OAI/Computability/RationalHitting/Affine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/BinaryAddition.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.BinaryAddition",
+   "original_sha256": "3bab2a514ae1501712c98c522edb5fa7ba786336bda0d6c44518cedb91bd7ce3",
+   "path": "OAI/Computability/RationalHitting/BinaryAddition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/BinaryBinomial.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.BinaryBinomial",
+   "original_sha256": "4bff6eb4b88c8f158cd92a894c20e4afef9150af6d28af727501a8df5a353757",
+   "path": "OAI/Computability/RationalHitting/BinaryBinomial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/BinaryDivision.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.BinaryDivision",
+   "original_sha256": "04f12c964896a9359ba0cb3856ea5ebbaec8184b8f7747d6142ba7794cb48252",
+   "path": "OAI/Computability/RationalHitting/BinaryDivision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/BinaryFactorial.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.BinaryFactorial",
+   "original_sha256": "1092dcc2511a85fe31be3ea755bb4adffdd9859cbac60ed4f64154932419f080",
+   "path": "OAI/Computability/RationalHitting/BinaryFactorial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/BinaryGcd.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.BinaryGcd",
+   "original_sha256": "5e6c815193a9008b64a03d1b731ef732a035ca0ffa6ad42b54f4bf4e0b276213",
+   "path": "OAI/Computability/RationalHitting/BinaryGcd.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/BinaryMultiply.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.BinaryMultiply",
+   "original_sha256": "37c41fe0f9ed732e19c70334560fdacb88309a64b1a22795931f7a2baa0c422a",
+   "path": "OAI/Computability/RationalHitting/BinaryMultiply.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/BinarySubtract.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.BinarySubtract",
+   "original_sha256": "f4bcb69e49f7b0a9e784f4eba6a45e8495f30065cfa9c7708533f6f1aff28a4c",
+   "path": "OAI/Computability/RationalHitting/BinarySubtract.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/BinomialBounds.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.BinomialBounds",
+   "original_sha256": "c16ceb963d82a84b81b9875973d1ae250c3d21ddf562faf006f61b497149dfa9",
+   "path": "OAI/Computability/RationalHitting/BinomialBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/BlockDivision.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.BlockDivision",
+   "original_sha256": "f9a44e5b957de26dcaf32d7ad981386937771d2714f4534ef266aad14ae0c224",
+   "path": "OAI/Computability/RationalHitting/BlockDivision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/Certificates.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.Certificates",
+   "original_sha256": "316add6ab6f1c4be9c49fe63f18777de17e7a57ed4f8482b86532b14a48594c3",
+   "path": "OAI/Computability/RationalHitting/Certificates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/Compiler.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.Compiler",
+   "original_sha256": "781342669cdb1bedb9e906e40ee83717c3e8c1ece03f0355fc7f2f4a3bae0dd5",
+   "path": "OAI/Computability/RationalHitting/Compiler.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/CyclotomicGrid.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.CyclotomicGrid",
+   "original_sha256": "380e783eef092537c95759d8fd8325eaa301ab1d17ab1395c1ceccff4e43e604",
+   "path": "OAI/Computability/RationalHitting/CyclotomicGrid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/Deformation.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.Deformation",
+   "original_sha256": "2dbdeac316092ddeff4288add074dc86349e0a2304e1ac21808471c381459518",
+   "path": "OAI/Computability/RationalHitting/Deformation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/DenseDeterminant.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.DenseDeterminant",
+   "original_sha256": "a3ddfae5de0e2983c676e3c3b36032a305767e32b6b28d4232ee2e96d4d7d26e",
+   "path": "OAI/Computability/RationalHitting/DenseDeterminant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/DenseRecords.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.DenseRecords",
+   "original_sha256": "43b5fa39dd1d986aa9bc2671ecfb05a28dd2fa99c019217e4969e2714ab7b919",
+   "path": "OAI/Computability/RationalHitting/DenseRecords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/Determinant.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.Determinant",
+   "original_sha256": "a87a8a0d07d64de106fae3775a4bcfff22afd47da1c2a5c2ce1c839de7379e5b",
+   "path": "OAI/Computability/RationalHitting/Determinant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/EncodingBounds.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.EncodingBounds",
+   "original_sha256": "b5305c4cc1163ed96ebad22b426af852410372928ce83d27be7fb327b9efc875",
+   "path": "OAI/Computability/RationalHitting/EncodingBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/Evaluation.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.Evaluation",
+   "original_sha256": "905252ba46c6581670a343546862a133c9f4afe6e825353f7ee1342e324f4137",
+   "path": "OAI/Computability/RationalHitting/Evaluation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/Executable.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.Executable",
+   "original_sha256": "60c2d0f5deac8733b279cec2f7706642d9dd57cb8ed6a3acb13dac09e21a5694",
+   "path": "OAI/Computability/RationalHitting/Executable.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/Feasibility.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.Feasibility",
+   "original_sha256": "870f0eea69931966ddd8bed1569c2bb97bea4236e4b98a002bedfd26a59e647d",
+   "path": "OAI/Computability/RationalHitting/Feasibility.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/FiniteCompiler.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.FiniteCompiler",
+   "original_sha256": "428903f929a24a5a50c6ea9548db73767c6fd7f5348900787d67f325b31f3a23",
+   "path": "OAI/Computability/RationalHitting/FiniteCompiler.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/Generator.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.Generator",
+   "original_sha256": "df62a7ca46e3bc62b0972ea58df49f8f2ec05a3fbb240a3da4403e5ab71b150f",
+   "path": "OAI/Computability/RationalHitting/Generator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/GridComputation.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.GridComputation",
+   "original_sha256": "d4be1543e872ebaa3383905dd0b72df77061b69087c8647937538ca24e940040",
+   "path": "OAI/Computability/RationalHitting/GridComputation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/InputAdapter.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.InputAdapter",
+   "original_sha256": "f52e59c55bbf23cdeceff1e3b2fb49c26a179cd37c20d828de07cee2e252fa9e",
+   "path": "OAI/Computability/RationalHitting/InputAdapter.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/IntegralLift.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.IntegralLift",
+   "original_sha256": "8aa5d9a7f70bf38f9ed560c9edd4c534ea0fcd0269dddce681103dc9aa61706b",
+   "path": "OAI/Computability/RationalHitting/IntegralLift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/LaurentReduction.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.LaurentReduction",
+   "original_sha256": "443d8f665723662fc157be7988ffc7acadeb689d23093dd6abd08fc8a3fed2c0",
+   "path": "OAI/Computability/RationalHitting/LaurentReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/LiftComputation.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.LiftComputation",
+   "original_sha256": "9edf4a447c7260fd900a281b6817be6e11b90cf6fcb78b4e92f82761bc334f13",
+   "path": "OAI/Computability/RationalHitting/LiftComputation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/ListProcedures.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.ListProcedures",
+   "original_sha256": "e6b67a5cc9bf0faac2dd64651c937eb7d34c6a23bea8a51b234a538516268a91",
+   "path": "OAI/Computability/RationalHitting/ListProcedures.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/Main.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.Main",
+   "original_sha256": "1de92103466695d67f6bbdbf44690af033aab4fb7e232228a702d3434e5203cd",
+   "path": "OAI/Computability/RationalHitting/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/MatrixComputation.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.MatrixComputation",
+   "original_sha256": "d112f1c17b310224e2f315c520bce895a8bb6a50341ff268320610e5b8775da6",
+   "path": "OAI/Computability/RationalHitting/MatrixComputation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/Model.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.Model",
+   "original_sha256": "f771d1586a5f8ef4e32027a8a45e3a2bfdaeb35088b29abdc0cb99b512f4d2c2",
+   "path": "OAI/Computability/RationalHitting/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/OutputAdapter.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.OutputAdapter",
+   "original_sha256": "07205d181b0b85989ac62ab4bf9245a97b1fb862122652babac233ad986f84de",
+   "path": "OAI/Computability/RationalHitting/OutputAdapter.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/OutputComputation.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.OutputComputation",
+   "original_sha256": "86aa29328c8212103f7c97626f74a3d92715587473bb571c39c8b49c07141ebf",
+   "path": "OAI/Computability/RationalHitting/OutputComputation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/PaddedRank.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.PaddedRank",
+   "original_sha256": "d2db6c61899ec87a477e71be2163bd5b40acec043f554cfe33bdf6e01f820a0e",
+   "path": "OAI/Computability/RationalHitting/PaddedRank.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/ProcedureControl.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.ProcedureControl",
+   "original_sha256": "2f6aa387f328f775cbc8aa58868191803056daba2fbd8944a1558adfe0c2a512",
+   "path": "OAI/Computability/RationalHitting/ProcedureControl.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/ProcedurePairs.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.ProcedurePairs",
+   "original_sha256": "6bdc1686c5e72e153cc0f1ea1be40d6c48951bc1e113ba1eed70d78b963af90e",
+   "path": "OAI/Computability/RationalHitting/ProcedurePairs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/Procedures.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.Procedures",
+   "original_sha256": "550723cb370269161a146495411427b6961f89369e2a0dbab42d324f6f5c0bff",
+   "path": "OAI/Computability/RationalHitting/Procedures.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/QuantumMatrices.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.QuantumMatrices",
+   "original_sha256": "650aaf7a5ae98b1f9e86d9aeae33cb7bac6d17911a9e6dc5f02a61cda1a2ba38",
+   "path": "OAI/Computability/RationalHitting/QuantumMatrices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/QuantumSeries.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.QuantumSeries",
+   "original_sha256": "09ce9f6d7ccac2675f5622d5eff2ceffdcd24854fcc2787ce4a0852db652361d",
+   "path": "OAI/Computability/RationalHitting/QuantumSeries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/RationalArithmetic.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.RationalArithmetic",
+   "original_sha256": "d395e01cc11554a2e30b225f5c2aae2db55a1f98d85f051d73e361d0bb95c397",
+   "path": "OAI/Computability/RationalHitting/RationalArithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/RationalBinary.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.RationalBinary",
+   "original_sha256": "ae72c71a4ceea72441fa35453b06f8ed8354c517301e9a0e020806307dfca494",
+   "path": "OAI/Computability/RationalHitting/RationalBinary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/Rectangular.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.Rectangular",
+   "original_sha256": "a198e84aacdc75e4e7e4fa2c38a1b771166b97f196087a1c37169a0d3bfd54bb",
+   "path": "OAI/Computability/RationalHitting/Rectangular.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/SignedArithmetic.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.SignedArithmetic",
+   "original_sha256": "6f1c681afd84b0a6a4438d7e26708e6b92ae73d9359c03662e2c61e01998b554",
+   "path": "OAI/Computability/RationalHitting/SignedArithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/SignedBinary.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.SignedBinary",
+   "original_sha256": "4ed008491ec8f4f4ee2f4e68d1a5c0c9ddc092a128e9e57aab60d1084c4ca9d1",
+   "path": "OAI/Computability/RationalHitting/SignedBinary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/SmallExpansion.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.SmallExpansion",
+   "original_sha256": "cfe5a94f9afe7554c88de8549a58a2933a6254c71c8ca66cedf5fd94bd05c32b",
+   "path": "OAI/Computability/RationalHitting/SmallExpansion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/StackLanguage.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.StackLanguage",
+   "original_sha256": "c134728f8a5bede784a25bc5fc7344de106c5442f8265bb6dea1c33fb6b8c160",
+   "path": "OAI/Computability/RationalHitting/StackLanguage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/StackSimulation.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.StackSimulation",
+   "original_sha256": "852d3fa1d6e38240f77188ceee9dcfdcb0a73671e20cd7e68889610c6b76d1b2",
+   "path": "OAI/Computability/RationalHitting/StackSimulation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/StackWords.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.StackWords",
+   "original_sha256": "7e7a94aa2b41b8881bf512628912157f4ed4515d2e83b5346ce9b2443044b409",
+   "path": "OAI/Computability/RationalHitting/StackWords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/Tabulation.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.Tabulation",
+   "original_sha256": "d8dfdaad7a322b2b036f0ce538b0cdb0135edb4ab5651a20b4ab8dcc45577e1a",
+   "path": "OAI/Computability/RationalHitting/Tabulation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/TaylorComputation.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.TaylorComputation",
+   "original_sha256": "e55c22466ea48852589a05df5f77d73e4d45312e7ebdc0922910cf7f6d135e4a",
+   "path": "OAI/Computability/RationalHitting/TaylorComputation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/UnaryArithmetic.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.UnaryArithmetic",
+   "original_sha256": "9c2781e8b3149a7dad651a3025c3d98468038dca57f6e27aaebfddb51e015d11",
+   "path": "OAI/Computability/RationalHitting/UnaryArithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RationalHitting/Wronskian.lean"
+   },
+   "module": "OAI.Computability.RationalHitting.Wronskian",
+   "original_sha256": "b8a40b5768ee306bda6b1b3f64581d1e6346400104a7ba102de10a87f438b7c9",
+   "path": "OAI/Computability/RationalHitting/Wronskian.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Computability.RationalHitting.Affine",
+  "OAI.Computability.RationalHitting.BinaryAddition",
+  "OAI.Computability.RationalHitting.BinaryBinomial",
+  "OAI.Computability.RationalHitting.BinaryDivision",
+  "OAI.Computability.RationalHitting.BinaryFactorial",
+  "OAI.Computability.RationalHitting.BinaryGcd",
+  "OAI.Computability.RationalHitting.BinaryMultiply",
+  "OAI.Computability.RationalHitting.BinarySubtract",
+  "OAI.Computability.RationalHitting.BinomialBounds",
+  "OAI.Computability.RationalHitting.BlockDivision",
+  "OAI.Computability.RationalHitting.Certificates",
+  "OAI.Computability.RationalHitting.Compiler",
+  "OAI.Computability.RationalHitting.CyclotomicGrid",
+  "OAI.Computability.RationalHitting.Deformation",
+  "OAI.Computability.RationalHitting.DenseDeterminant",
+  "OAI.Computability.RationalHitting.DenseRecords",
+  "OAI.Computability.RationalHitting.Determinant",
+  "OAI.Computability.RationalHitting.EncodingBounds",
+  "OAI.Computability.RationalHitting.Evaluation",
+  "OAI.Computability.RationalHitting.Executable",
+  "OAI.Computability.RationalHitting.Feasibility",
+  "OAI.Computability.RationalHitting.FiniteCompiler",
+  "OAI.Computability.RationalHitting.Generator",
+  "OAI.Computability.RationalHitting.GridComputation",
+  "OAI.Computability.RationalHitting.InputAdapter",
+  "OAI.Computability.RationalHitting.IntegralLift",
+  "OAI.Computability.RationalHitting.LaurentReduction",
+  "OAI.Computability.RationalHitting.LiftComputation",
+  "OAI.Computability.RationalHitting.ListProcedures",
+  "OAI.Computability.RationalHitting.Main",
+  "OAI.Computability.RationalHitting.MatrixComputation",
+  "OAI.Computability.RationalHitting.Model",
+  "OAI.Computability.RationalHitting.OutputAdapter",
+  "OAI.Computability.RationalHitting.OutputComputation",
+  "OAI.Computability.RationalHitting.PaddedRank",
+  "OAI.Computability.RationalHitting.ProcedureControl",
+  "OAI.Computability.RationalHitting.ProcedurePairs",
+  "OAI.Computability.RationalHitting.Procedures",
+  "OAI.Computability.RationalHitting.QuantumMatrices",
+  "OAI.Computability.RationalHitting.QuantumSeries",
+  "OAI.Computability.RationalHitting.RationalArithmetic",
+  "OAI.Computability.RationalHitting.RationalBinary",
+  "OAI.Computability.RationalHitting.Rectangular",
+  "OAI.Computability.RationalHitting.SignedArithmetic",
+  "OAI.Computability.RationalHitting.SignedBinary",
+  "OAI.Computability.RationalHitting.SmallExpansion",
+  "OAI.Computability.RationalHitting.StackLanguage",
+  "OAI.Computability.RationalHitting.StackSimulation",
+  "OAI.Computability.RationalHitting.StackWords",
+  "OAI.Computability.RationalHitting.Tabulation",
+  "OAI.Computability.RationalHitting.TaylorComputation",
+  "OAI.Computability.RationalHitting.UnaryArithmetic",
+  "OAI.Computability.RationalHitting.Wronskian"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/RationalHitting.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Computability.RationalHitting.Main",
+   "name": "OAI.RationalHitting.main",
+   "statement_sha256": "39afd5b46fa2a59584b8ef3e2922503bdfa5e13ca77d9766c4b0e4e628016187"
+  }
+ ],
+ "task_id": "oai-rational-hitting",
+ "task_revision": 1,
+ "title": "OpenAI math: Uniform black-box noncommutative identity testing across characteristics: Polynomial hitting lists for rational formulas",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

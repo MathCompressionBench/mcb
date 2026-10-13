@@ -1,0 +1,1591 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 952789013
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.ClassicalON",
+  "challenge_sha256": "c2f5f88455b811eb6b56c1ae80ff91f4e398e18e7c7fbeee6daca8da4122d696",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ClassicalON.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.ClassicalON",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Probability.ClassicalON.Main",
+   "theorem_names": [
+    "OAI.ClassicalON.main"
+   ]
+  },
+  "config_sha256": "47cb3623915c8cfcc35099fabd0c44173afa72b706eb0526c4b8d3855e789252",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ClassicalON.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.ClassicalON.main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/AmplitudeLaw.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.AmplitudeLaw",
+   "original_sha256": "d95b47e57c73b763934f0091fd1160c994d4180d1522efebe2d8763f0d9b3c44",
+   "path": "OAI/Probability/ClassicalON/AmplitudeLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/AmplitudeModular.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.AmplitudeModular",
+   "original_sha256": "dd35173251429121e99d1d22e06876a177f18f825f51c6315d7621f3830ff9d6",
+   "path": "OAI/Probability/ClassicalON/AmplitudeModular.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/AmplitudePartition.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.AmplitudePartition",
+   "original_sha256": "b5b85912e89350c24b3293649299d1e4666b6ba81085ae6936e431e78871df5f",
+   "path": "OAI/Probability/ClassicalON/AmplitudePartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/AmplitudeSplit.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.AmplitudeSplit",
+   "original_sha256": "e908bf2334ead887e0e65f76ceba707f7af0c1b9911afe8bbd3c2bfc30c9fb1b",
+   "path": "OAI/Probability/ClassicalON/AmplitudeSplit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/AnnulusBlocks.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.AnnulusBlocks",
+   "original_sha256": "e8faf4e3c10fedb706e6d0708df2699997b0140263659dd3048bcd348d936289",
+   "path": "OAI/Probability/ClassicalON/AnnulusBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/AnnulusCrossing.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.AnnulusCrossing",
+   "original_sha256": "ca8d841227fd6da9d94c4ea942909aa18420fce6c60f13402de7d5baa242ee7a",
+   "path": "OAI/Probability/ClassicalON/AnnulusCrossing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/AnnulusCut.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.AnnulusCut",
+   "original_sha256": "d446a176e16f25ca68c0b01cbbae22d13adc232e2ea6a7c5e1b65866078f75d3",
+   "path": "OAI/Probability/ClassicalON/AnnulusCut.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/AnnulusLabels.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.AnnulusLabels",
+   "original_sha256": "d9baeb5e2d9635f33c8b2ab4b23b283da882245d4af2bdb4504283473be7dae9",
+   "path": "OAI/Probability/ClassicalON/AnnulusLabels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/AnnulusPartition.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.AnnulusPartition",
+   "original_sha256": "23011c4725212f8ef427fe3788813f0ec734062400a93e70b5dde5688fa8c940",
+   "path": "OAI/Probability/ClassicalON/AnnulusPartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/AnnulusResponse.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.AnnulusResponse",
+   "original_sha256": "a74c5cf99e4f26874a41f89221e8dcdad9d9b6be774b557def2c0960a003236b",
+   "path": "OAI/Probability/ClassicalON/AnnulusResponse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/AnnulusSmall.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.AnnulusSmall",
+   "original_sha256": "52b319d9110321a7acd8b6ddffad5f6dcda819c041075305ae7e7d1b061822fb",
+   "path": "OAI/Probability/ClassicalON/AnnulusSmall.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/AssociationCore.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.AssociationCore",
+   "original_sha256": "f00559e2d457a7c17acb8546dd4f0ce75e6f73542321db1c357503b02381541a",
+   "path": "OAI/Probability/ClassicalON/AssociationCore.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/AxisRotation.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.AxisRotation",
+   "original_sha256": "0bdc19117641f7af9c9880b98ed5c75100270a54e57d580ba6d39805bd98f18c",
+   "path": "OAI/Probability/ClassicalON/AxisRotation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/BlockGeometry.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.BlockGeometry",
+   "original_sha256": "5428a3255d56570e823bc654eaec5751001a348fed91060a44a9f6d3bbe9729f",
+   "path": "OAI/Probability/ClassicalON/BlockGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/BlockKernel.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.BlockKernel",
+   "original_sha256": "bc53bb0ae88980659502988e6c7b51d83fc59d2286e3458c60340b4487ffa656",
+   "path": "OAI/Probability/ClassicalON/BlockKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/BlockLocal.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.BlockLocal",
+   "original_sha256": "377fa4198ebb225f0473562db858472983a11f20f82be3a371b52f283e5e002c",
+   "path": "OAI/Probability/ClassicalON/BlockLocal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/BlockOrbit.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.BlockOrbit",
+   "original_sha256": "cb0bddb014589e4c06b67548c145bbac8648d67dc517a738cffb2d5672983341",
+   "path": "OAI/Probability/ClassicalON/BlockOrbit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/BlockReduction.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.BlockReduction",
+   "original_sha256": "dbc54dd895e7b325dcf19e37b9edb8002c24f204390f5d3b6b05ab5549933ab7",
+   "path": "OAI/Probability/ClassicalON/BlockReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/BondAssociation.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.BondAssociation",
+   "original_sha256": "26eea09bc3c9b74916dfd60ed9a88681cd25f9b4d1899699f7a92bfb9387599f",
+   "path": "OAI/Probability/ClassicalON/BondAssociation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/BondConnectivity.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.BondConnectivity",
+   "original_sha256": "332b51c6ec241d3710d0b1aa32d9aa8b446c29b46644ccbb170f3d4bd675daba",
+   "path": "OAI/Probability/ClassicalON/BondConnectivity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/BondExpansion.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.BondExpansion",
+   "original_sha256": "4e6a2cc71bbdb531e97fa6325dc0b59352b4a3debd90d7c9b8d50dcd0b1d3594",
+   "path": "OAI/Probability/ClassicalON/BondExpansion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/BondLaw.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.BondLaw",
+   "original_sha256": "453d3386a19a5e43a5f220a7ae3a9655b920cfc50b28f80ef7c8c0ecee0a0b8a",
+   "path": "OAI/Probability/ClassicalON/BondLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/BondMeanOrder.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.BondMeanOrder",
+   "original_sha256": "2988c3ce7b9e64e829ac971141c1ad3d4b23b9cc085c8a036a5bc17fb08ca1d5",
+   "path": "OAI/Probability/ClassicalON/BondMeanOrder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/BondMoments.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.BondMoments",
+   "original_sha256": "d049660167cbc59e9b8bc722743b11a40095cac4c16bddb2917b3ea8df9d64a8",
+   "path": "OAI/Probability/ClassicalON/BondMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/BondPin.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.BondPin",
+   "original_sha256": "a0af375a7d3ae4bab412b0156f43482140a64d3ebfd6a04fa91fb5fbe95542a3",
+   "path": "OAI/Probability/ClassicalON/BondPin.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/BondSigns.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.BondSigns",
+   "original_sha256": "6db8aef907d2f426c4b6d1a474fbbb39101455e20f355a2cae54132c407d83c2",
+   "path": "OAI/Probability/ClassicalON/BondSigns.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/BondSubspace.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.BondSubspace",
+   "original_sha256": "5f32ee78e87ca876797cdd3756f2c6fa7835f902245d75368624ec1ca5a42a5b",
+   "path": "OAI/Probability/ClassicalON/BondSubspace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/CenteredAnnulus.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.CenteredAnnulus",
+   "original_sha256": "0aa05dc768dfefa5f8605a6b04a8f8d540d7c2cfe55769a6ad080e4109ef619e",
+   "path": "OAI/Probability/ClassicalON/CenteredAnnulus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/CoarseCodes.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.CoarseCodes",
+   "original_sha256": "6243e05cedfd480579d3c1fd8dff813ae8a9ac214f1a973bb1106da468d07109",
+   "path": "OAI/Probability/ClassicalON/CoarseCodes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/CoarseExponential.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.CoarseExponential",
+   "original_sha256": "0f229805526fdc0fb4523573cd12e5f7511d487152db532f593105d8c40ebdda",
+   "path": "OAI/Probability/ClassicalON/CoarseExponential.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/CoarseGeometry.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.CoarseGeometry",
+   "original_sha256": "3ff1c162063cb37cc402ce333784f36ae94e7829c26a1342eccc6caaad39a01c",
+   "path": "OAI/Probability/ClassicalON/CoarseGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/CoarsePaths.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.CoarsePaths",
+   "original_sha256": "2ade4fceee9a028435d9fb1c214c21bd8c7b2c56862aa25606b9d100d43aed97",
+   "path": "OAI/Probability/ClassicalON/CoarsePaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/CoarseTail.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.CoarseTail",
+   "original_sha256": "0f310f0597b836ac3b7b5b464e6c14b7429177c94df7a4075249d4b2d72341ef",
+   "path": "OAI/Probability/ClassicalON/CoarseTail.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/ComplexWard.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.ComplexWard",
+   "original_sha256": "fc905bc508817660b744af3e6d15875fb0ed6af9d9a0010f46f95cec9e180be0",
+   "path": "OAI/Probability/ClassicalON/ComplexWard.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/CylindricalConfiguration.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.CylindricalConfiguration",
+   "original_sha256": "cd32514501a01629159299d6f9f4c8c1fd3a575eef0b23b06c420b6d8b82be82",
+   "path": "OAI/Probability/ClassicalON/CylindricalConfiguration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/CylindricalFiber.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.CylindricalFiber",
+   "original_sha256": "9190500359a44c2903dd901111ddda51f336210d62252785df64fae5fa21660a",
+   "path": "OAI/Probability/ClassicalON/CylindricalFiber.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/CylindricalGeometry.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.CylindricalGeometry",
+   "original_sha256": "fcdd8846b64af0e5bb6061a7696f2906a7fd2931f80105c284459bc0f28b275f",
+   "path": "OAI/Probability/ClassicalON/CylindricalGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/CylindricalLaw.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.CylindricalLaw",
+   "original_sha256": "6bfb3d957977b0e258d6af9281dbc4784f5f0f6c63601c62999cbad4fe215c1b",
+   "path": "OAI/Probability/ClassicalON/CylindricalLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/DiscreteReference.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.DiscreteReference",
+   "original_sha256": "88feccb6987807920ed28710b29f17589300e87f310c36bb63138a58be4047c2",
+   "path": "OAI/Probability/ClassicalON/DiscreteReference.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/DyadicFourier.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.DyadicFourier",
+   "original_sha256": "cb542c785c505037b75b6e9ecc40e15c346300b3765a9b7a12dfc26db70b9248",
+   "path": "OAI/Probability/ClassicalON/DyadicFourier.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/DyadicModes.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.DyadicModes",
+   "original_sha256": "cd6d91e99649d535a77e89440275758f48d1c4b6bc69a40e0215fb23ae050865",
+   "path": "OAI/Probability/ClassicalON/DyadicModes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/DyadicSine.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.DyadicSine",
+   "original_sha256": "4facd0350cccb83d39e59a62cf91caec5fab046814be712c1560e06eb4b97eef",
+   "path": "OAI/Probability/ClassicalON/DyadicSine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/DyadicSums.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.DyadicSums",
+   "original_sha256": "67ade38a487d80cc1170d5118a79756c40bac2f117d57db7ccd9d092763f986d",
+   "path": "OAI/Probability/ClassicalON/DyadicSums.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/EdgeOperators.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.EdgeOperators",
+   "original_sha256": "d7e1b54ce7f3cf60e47c8f25cbb03c516756f87aa4fb4045419db79787c6c221",
+   "path": "OAI/Probability/ClassicalON/EdgeOperators.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/ExpMoments.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.ExpMoments",
+   "original_sha256": "0a031e2b1a3be9a6b83f5e7043e1014aca5c4f1d7540bfd6362bf32c14276802",
+   "path": "OAI/Probability/ClassicalON/ExpMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/FamilyAlgebra.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.FamilyAlgebra",
+   "original_sha256": "d9b46a5fb01444262f3b02899f24e874d99755a9296fae1ac064b073d84d9040",
+   "path": "OAI/Probability/ClassicalON/FamilyAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/FamilyBound.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.FamilyBound",
+   "original_sha256": "8be596213ae063389b2f432651403a54e18a2231b11c4ad3da28fad2a7cf6a45",
+   "path": "OAI/Probability/ClassicalON/FamilyBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/FamilyEstimate.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.FamilyEstimate",
+   "original_sha256": "4464e48f3a5e0ed05a9c05eccc06cdf23a64280e43ce6580e38df59d99f91276",
+   "path": "OAI/Probability/ClassicalON/FamilyEstimate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/FamilyKernel.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.FamilyKernel",
+   "original_sha256": "3f27c587d4ce33742bce49ad587571c0ed3bb2ba5cd9423303e08d9593bf235d",
+   "path": "OAI/Probability/ClassicalON/FamilyKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/FamilyLower.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.FamilyLower",
+   "original_sha256": "1a27b48e39592688dc4a4af8b0d38680aa71ca66cad78747ce99ab58a4738049",
+   "path": "OAI/Probability/ClassicalON/FamilyLower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/FerromagneticMean.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.FerromagneticMean",
+   "original_sha256": "8eb9905b3b7c59a162e5b2fbee434e8176490d231338b5ba9f4d538a23da3dbd",
+   "path": "OAI/Probability/ClassicalON/FerromagneticMean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/FinFKG.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.FinFKG",
+   "original_sha256": "076c3d8df035d7b0bc614fef8a1b7dfafec6dc19fdce65457bea967b23eec55b",
+   "path": "OAI/Probability/ClassicalON/FinFKG.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/FiniteVolume.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.FiniteVolume",
+   "original_sha256": "98521d9bab90a2d27583b1ff831170ced437f0cd8d3692b90507fd92908bfcc4",
+   "path": "OAI/Probability/ClassicalON/FiniteVolume.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/FourierOperator.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.FourierOperator",
+   "original_sha256": "76fda713c9f52f235eee10b936be7303df3cdede9e8a25920937530903643bfc",
+   "path": "OAI/Probability/ClassicalON/FourierOperator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/GibbsCovariance.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.GibbsCovariance",
+   "original_sha256": "c538e994b5b433e8453ab43a4682a57e5a4d4b406a7ea6f80c37e10c790400c7",
+   "path": "OAI/Probability/ClassicalON/GibbsCovariance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/GibbsDerivative.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.GibbsDerivative",
+   "original_sha256": "bcb6eb71f4fa7d13fb16e9c620ccf005a74c0a23c43c0a72a1d07a07dadd8a20",
+   "path": "OAI/Probability/ClassicalON/GibbsDerivative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/GradientComplex.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.GradientComplex",
+   "original_sha256": "830667fbc7f567b2af2576b97e8c86958ac1da117f3ce7b3f94b89da4c13fcf0",
+   "path": "OAI/Probability/ClassicalON/GradientComplex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/IsingGinibre.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.IsingGinibre",
+   "original_sha256": "0a255f30d610c1dba35edf1b34cfae5cd6a5eec636b75616df078023e1cbf0de",
+   "path": "OAI/Probability/ClassicalON/IsingGinibre.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/IsingPositive.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.IsingPositive",
+   "original_sha256": "f5f6081410b7faea307f9705912643ef7e365ffae298f0fd93c4bfbda8f3443f",
+   "path": "OAI/Probability/ClassicalON/IsingPositive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/IsingReference.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.IsingReference",
+   "original_sha256": "111ac703587f3224f693bf90ff23a2e0485c1a2f10a8c5c34a4b29c4ff0b5152",
+   "path": "OAI/Probability/ClassicalON/IsingReference.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/JointBond.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.JointBond",
+   "original_sha256": "09aa1f2fd562955d432aa831a2f5ea0f81fc512cd27033224f9467f84ce4919f",
+   "path": "OAI/Probability/ClassicalON/JointBond.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/LatticeGeometry.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.LatticeGeometry",
+   "original_sha256": "217c6f9e884d065bfa56b3f7ee2ae6f2f8c6943de59e084e893c3931c085a2cb",
+   "path": "OAI/Probability/ClassicalON/LatticeGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/LatticeModes.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.LatticeModes",
+   "original_sha256": "268e1e36a5ac7a312ec8f6052cbfcafd8e5ed2ac1688f065084e210ac158ea14",
+   "path": "OAI/Probability/ClassicalON/LatticeModes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/LatticeRadius.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.LatticeRadius",
+   "original_sha256": "23cb1f3567752a400f27dcba0995451f9db3ef3bcd5404e4e5ae25aa18bf31d1",
+   "path": "OAI/Probability/ClassicalON/LatticeRadius.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/LatticeRestriction.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.LatticeRestriction",
+   "original_sha256": "0ae7832e79848cdfc3d9ad7557939c8e7958fa6d2e320e580aad06fc561a0c74",
+   "path": "OAI/Probability/ClassicalON/LatticeRestriction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/Main.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.Main",
+   "original_sha256": "0e4bca8c6b8fe89ffec32eda5d3222af85062a2e3e685729f41578076b528c8a",
+   "path": "OAI/Probability/ClassicalON/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/MatrixSquare.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.MatrixSquare",
+   "original_sha256": "0b1d4754835bdc69906fd64d0f1440cb154d5db8141a05546fb1db8534d82ecf",
+   "path": "OAI/Probability/ClassicalON/MatrixSquare.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/MixedWard.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.MixedWard",
+   "original_sha256": "d8bc8a574cb3c93306b4a394c7f3e217903800fcb1b5169f5412dbf7ed300a51",
+   "path": "OAI/Probability/ClassicalON/MixedWard.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/ModeBounds.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.ModeBounds",
+   "original_sha256": "6f36d8cc43ee6cb36ded9da4780b7ed6ce7e7bc094a6eba3c4aa07ea6f95c1c5",
+   "path": "OAI/Probability/ClassicalON/ModeBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/ModeCommutator.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.ModeCommutator",
+   "original_sha256": "9ba9a799bfafc26898ccbf00472146dc8d8120f75c158ce397e498d31bb480f9",
+   "path": "OAI/Probability/ClassicalON/ModeCommutator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/ModeCosts.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.ModeCosts",
+   "original_sha256": "8496632347a56b3f301a3a0d25fab4948d566e32439fe6c2b5f101be52027290",
+   "path": "OAI/Probability/ClassicalON/ModeCosts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/Model.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.Model",
+   "original_sha256": "1db13f5d22a51650533bc85ae609b23eb9b4a9927cac11e50c5642b52b1da378",
+   "path": "OAI/Probability/ClassicalON/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/MomentCone.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.MomentCone",
+   "original_sha256": "e3e0ae2757cb1df08d844d921e725b87314f6f2738dd1c11cee85f2120f0a3c6",
+   "path": "OAI/Probability/ClassicalON/MomentCone.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/ObservableBounds.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.ObservableBounds",
+   "original_sha256": "8823ade92f756fa09c0c253350555499f25e070e3aaac14d203a083c42d9a0ca",
+   "path": "OAI/Probability/ClassicalON/ObservableBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/OrthogonalAverage.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.OrthogonalAverage",
+   "original_sha256": "052ba1bca3f1ac8a64693e05e6c02f16090869d6410c7c9e98a3a9378060d74a",
+   "path": "OAI/Probability/ClassicalON/OrthogonalAverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/PeriodicODE.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.PeriodicODE",
+   "original_sha256": "631ff1a74ab5b4b3e8431b43ab7ca8cec885746859407ebd462a9dad45645eae",
+   "path": "OAI/Probability/ClassicalON/PeriodicODE.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/PeriodicPartition.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.PeriodicPartition",
+   "original_sha256": "9ec3dfb6e28101eb46a0e42b2cf12b6546167773a3c020c24dec1830387ff1bc",
+   "path": "OAI/Probability/ClassicalON/PeriodicPartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/PinComparison.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.PinComparison",
+   "original_sha256": "4a3f327acceb3729581e99fce4942572706f5ed13df6e1fb234f04a2227b54d3",
+   "path": "OAI/Probability/ClassicalON/PinComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/PinnedBlocks.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.PinnedBlocks",
+   "original_sha256": "542f0b512ac4f6aebcb9c29562de6781751cbc29dcffdd7489a1386c8cb3da8a",
+   "path": "OAI/Probability/ClassicalON/PinnedBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/PinnedBonds.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.PinnedBonds",
+   "original_sha256": "7f30274d83a918e128ef82dcc3cb1aa6baef09989e2ba53a7b6dc9e0ba03f965",
+   "path": "OAI/Probability/ClassicalON/PinnedBonds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/PinnedCylinder.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.PinnedCylinder",
+   "original_sha256": "90edddeb6cf33be79ed3f351b97cefca0002fa684a4201e065e892e07bc77286",
+   "path": "OAI/Probability/ClassicalON/PinnedCylinder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/PinnedReference.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.PinnedReference",
+   "original_sha256": "03126cbe93d4857d576d9cfcd34214bb30d37ac2de72c63f9c124db7444e799a",
+   "path": "OAI/Probability/ClassicalON/PinnedReference.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/PinnedSigns.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.PinnedSigns",
+   "original_sha256": "8034d0e7ce916b81d0159e69ec27a495cbb673bdb83fef537f50348defaec533",
+   "path": "OAI/Probability/ClassicalON/PinnedSigns.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/PlanarAlgebra.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.PlanarAlgebra",
+   "original_sha256": "7dcb0b2e55573620b20b63625554c5c09505145f76fd2f9c5aea06fe51606e69",
+   "path": "OAI/Probability/ClassicalON/PlanarAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/PlanarGinibre.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.PlanarGinibre",
+   "original_sha256": "e823586e1bfd6a9cb11ddba3d822f4a40c8ac69b07b604677471b583d92a95ea",
+   "path": "OAI/Probability/ClassicalON/PlanarGinibre.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/PlanarPositive.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.PlanarPositive",
+   "original_sha256": "3b0baa35da869b1e5462101f7a26264d6f6b041a5f2b3d471aba4350c2c1be22",
+   "path": "OAI/Probability/ClassicalON/PlanarPositive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/PoleCrossing.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.PoleCrossing",
+   "original_sha256": "9c1399c47cff0bde1a8df90cbc358ed7d4c2a8db7106b450489f5a0589890f80",
+   "path": "OAI/Probability/ClassicalON/PoleCrossing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/PositiveKernel.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.PositiveKernel",
+   "original_sha256": "3bc3c79db604076e350ce2324037a18725ec8b87d4ea4e1217c21065fc8b5107",
+   "path": "OAI/Probability/ClassicalON/PositiveKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/PotentialRotation.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.PotentialRotation",
+   "original_sha256": "3a6b8dc198c2c5a9b88a119ab8afee03f113dbacf40e1334d8915eb1142426f1",
+   "path": "OAI/Probability/ClassicalON/PotentialRotation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/ProductFKG.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.ProductFKG",
+   "original_sha256": "a4affaf4ad1b01f72b6df63ce72f16e0a63a24f8293385393538dce57e79514e",
+   "path": "OAI/Probability/ClassicalON/ProductFKG.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/ProductGrouping.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.ProductGrouping",
+   "original_sha256": "6f49af0df5bae030d9d666732d069532bffbd583e1b1220408c1d7e030965bf5",
+   "path": "OAI/Probability/ClassicalON/ProductGrouping.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/ProductMoments.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.ProductMoments",
+   "original_sha256": "888d7c3303044561c153cece13273e526bb5036055e4805965babdf6a3ef4741",
+   "path": "OAI/Probability/ClassicalON/ProductMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/ProfileEstimates.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.ProfileEstimates",
+   "original_sha256": "be60fbb7a2b007935cd2b719ae5b86f96ac8bd46a28590585f9d91d5581c8779",
+   "path": "OAI/Probability/ClassicalON/ProfileEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/RawBond.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.RawBond",
+   "original_sha256": "2b3af1b4664982f7fb8c2a04471f6b345afc497af7b7f7e781b06e76142229eb",
+   "path": "OAI/Probability/ClassicalON/RawBond.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/ReindexIntegral.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.ReindexIntegral",
+   "original_sha256": "fcbbfa483d30b15c5b877d6c31e871f28adcfa30270593b9141b15b6e78e0e87",
+   "path": "OAI/Probability/ClassicalON/ReindexIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/ResponseTransfer.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.ResponseTransfer",
+   "original_sha256": "4a344ba4345424cf915d732f809839ebb32a51baa38b86f24bdeff3c7e27aeb1",
+   "path": "OAI/Probability/ClassicalON/ResponseTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/RotationInequality.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.RotationInequality",
+   "original_sha256": "7c21d9401e661e0328de67c5fd32a0457a39dbe1f2d3d16649e87540e4e60a9b",
+   "path": "OAI/Probability/ClassicalON/RotationInequality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/RotationWork.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.RotationWork",
+   "original_sha256": "871335fc6c385621208493608097b2fde77cca5cef4f33288facb38ad5a49922",
+   "path": "OAI/Probability/ClassicalON/RotationWork.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/SecondBound.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.SecondBound",
+   "original_sha256": "9177cbc3711d794c1909bf113765aaf08cabf47b6e9262ea2e9f852038bff16c",
+   "path": "OAI/Probability/ClassicalON/SecondBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/SecondGauge.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.SecondGauge",
+   "original_sha256": "d3dac92f43b8fbcf91f90ec0cad8d705d6e1b3c7f4347722bb5683a1be662c00",
+   "path": "OAI/Probability/ClassicalON/SecondGauge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/SeparatedAnnuli.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.SeparatedAnnuli",
+   "original_sha256": "f72fd35df51f940e8877bc4b19ab7a3645b5785d9d3a8b36d7bb31703626158d",
+   "path": "OAI/Probability/ClassicalON/SeparatedAnnuli.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/SignedSigns.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.SignedSigns",
+   "original_sha256": "b78e0b67dcce6d58ad69264d6cebc64558fb0645df223f2e5ea8512f9c5d4edb",
+   "path": "OAI/Probability/ClassicalON/SignedSigns.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/SmoothBounds.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.SmoothBounds",
+   "original_sha256": "b75ea1c101248e737b578306bb1f3d01353d49734bbd6ac6361de181c9c94ec9",
+   "path": "OAI/Probability/ClassicalON/SmoothBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/SmoothProfiles.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.SmoothProfiles",
+   "original_sha256": "9e9ad3615f76905fbe54fc937c87f4e6a596f7d067877cbdb4c05260b7b2fe99",
+   "path": "OAI/Probability/ClassicalON/SmoothProfiles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/SpinBondKernel.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.SpinBondKernel",
+   "original_sha256": "48bf335b9ccf43235ffef1428ee7a3e627a0305fd19724444593a3b2eb3fe252",
+   "path": "OAI/Probability/ClassicalON/SpinBondKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/SpinBonds.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.SpinBonds",
+   "original_sha256": "4eb52d12bc03d6c0be599f99cc44d71740dd0ba60d42dbcdab2e47e8d6a1840f",
+   "path": "OAI/Probability/ClassicalON/SpinBonds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/SpinCorrelation.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.SpinCorrelation",
+   "original_sha256": "f63a85c8eb11ce9b329dd676eea654c8b8ab57edd86983c6b4e2cd0227fa919c",
+   "path": "OAI/Probability/ClassicalON/SpinCorrelation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/SpinIsotropy.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.SpinIsotropy",
+   "original_sha256": "8a767e645dc642519636778cdd7f3b8ca1f0e5ddaa8d0caf3990dbb410bebf04",
+   "path": "OAI/Probability/ClassicalON/SpinIsotropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/SpinReindex.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.SpinReindex",
+   "original_sha256": "d9bf2da34c930551f2af1c5f5ec1c99f338f4f90d4e605431e092a8463cae61b",
+   "path": "OAI/Probability/ClassicalON/SpinReindex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/SquareEstimates.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.SquareEstimates",
+   "original_sha256": "1d1844a12f31d62a6e1dad10c1d6f046a5b09908f29ef56bd6bcd7f48dcb8961",
+   "path": "OAI/Probability/ClassicalON/SquareEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/ThetaEstimates.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.ThetaEstimates",
+   "original_sha256": "e0722fc6a189d310fe34f1d7e5a7cb3f51479539d521535a0c704e07d07712e2",
+   "path": "OAI/Probability/ClassicalON/ThetaEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/TorusDouble.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.TorusDouble",
+   "original_sha256": "dba37e61388a722fa7e72661a3c34ee1832ed178d77cee864e2d300b9c1e5fd6",
+   "path": "OAI/Probability/ClassicalON/TorusDouble.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/TorusFourier.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.TorusFourier",
+   "original_sha256": "d35c70ec5d16f4c3a64bf924a16e0a27e030f64a878dd8d4fc86a3b565aa015b",
+   "path": "OAI/Probability/ClassicalON/TorusFourier.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/UpperEndpoint.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.UpperEndpoint",
+   "original_sha256": "57f49c9bd99fbc74f5cbe35b17c54000a2972042d3c8e584e18bdbb3c4ad3762",
+   "path": "OAI/Probability/ClassicalON/UpperEndpoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/WeightedLinear.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.WeightedLinear",
+   "original_sha256": "231e620915bb4b0e5d007b04ab8e638674c82ca9975abe73099f21bbe1894e56",
+   "path": "OAI/Probability/ClassicalON/WeightedLinear.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/WeightedProduct.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.WeightedProduct",
+   "original_sha256": "06ef20eaf77a7e81e8d9c0a674000f86f3d7dcf4a43caf2e345aa4eba62faacb",
+   "path": "OAI/Probability/ClassicalON/WeightedProduct.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ClassicalON/WeightedTilt.lean"
+   },
+   "module": "OAI.Probability.ClassicalON.WeightedTilt",
+   "original_sha256": "ee7b8978e2ca4926c4ac8a8960b03c451af6f2da295712b8fff892bcab42349d",
+   "path": "OAI/Probability/ClassicalON/WeightedTilt.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Probability.ClassicalON.AmplitudeLaw",
+  "OAI.Probability.ClassicalON.AmplitudeModular",
+  "OAI.Probability.ClassicalON.AmplitudePartition",
+  "OAI.Probability.ClassicalON.AmplitudeSplit",
+  "OAI.Probability.ClassicalON.AnnulusBlocks",
+  "OAI.Probability.ClassicalON.AnnulusCrossing",
+  "OAI.Probability.ClassicalON.AnnulusCut",
+  "OAI.Probability.ClassicalON.AnnulusLabels",
+  "OAI.Probability.ClassicalON.AnnulusPartition",
+  "OAI.Probability.ClassicalON.AnnulusResponse",
+  "OAI.Probability.ClassicalON.AnnulusSmall",
+  "OAI.Probability.ClassicalON.AssociationCore",
+  "OAI.Probability.ClassicalON.AxisRotation",
+  "OAI.Probability.ClassicalON.BlockGeometry",
+  "OAI.Probability.ClassicalON.BlockKernel",
+  "OAI.Probability.ClassicalON.BlockLocal",
+  "OAI.Probability.ClassicalON.BlockOrbit",
+  "OAI.Probability.ClassicalON.BlockReduction",
+  "OAI.Probability.ClassicalON.BondAssociation",
+  "OAI.Probability.ClassicalON.BondConnectivity",
+  "OAI.Probability.ClassicalON.BondExpansion",
+  "OAI.Probability.ClassicalON.BondLaw",
+  "OAI.Probability.ClassicalON.BondMeanOrder",
+  "OAI.Probability.ClassicalON.BondMoments",
+  "OAI.Probability.ClassicalON.BondPin",
+  "OAI.Probability.ClassicalON.BondSigns",
+  "OAI.Probability.ClassicalON.BondSubspace",
+  "OAI.Probability.ClassicalON.CenteredAnnulus",
+  "OAI.Probability.ClassicalON.CoarseCodes",
+  "OAI.Probability.ClassicalON.CoarseExponential",
+  "OAI.Probability.ClassicalON.CoarseGeometry",
+  "OAI.Probability.ClassicalON.CoarsePaths",
+  "OAI.Probability.ClassicalON.CoarseTail",
+  "OAI.Probability.ClassicalON.ComplexWard",
+  "OAI.Probability.ClassicalON.CylindricalConfiguration",
+  "OAI.Probability.ClassicalON.CylindricalFiber",
+  "OAI.Probability.ClassicalON.CylindricalGeometry",
+  "OAI.Probability.ClassicalON.CylindricalLaw",
+  "OAI.Probability.ClassicalON.DiscreteReference",
+  "OAI.Probability.ClassicalON.DyadicFourier",
+  "OAI.Probability.ClassicalON.DyadicModes",
+  "OAI.Probability.ClassicalON.DyadicSine",
+  "OAI.Probability.ClassicalON.DyadicSums",
+  "OAI.Probability.ClassicalON.EdgeOperators",
+  "OAI.Probability.ClassicalON.ExpMoments",
+  "OAI.Probability.ClassicalON.FamilyAlgebra",
+  "OAI.Probability.ClassicalON.FamilyBound",
+  "OAI.Probability.ClassicalON.FamilyEstimate",
+  "OAI.Probability.ClassicalON.FamilyKernel",
+  "OAI.Probability.ClassicalON.FamilyLower",
+  "OAI.Probability.ClassicalON.FerromagneticMean",
+  "OAI.Probability.ClassicalON.FinFKG",
+  "OAI.Probability.ClassicalON.FiniteVolume",
+  "OAI.Probability.ClassicalON.FourierOperator",
+  "OAI.Probability.ClassicalON.GibbsCovariance",
+  "OAI.Probability.ClassicalON.GibbsDerivative",
+  "OAI.Probability.ClassicalON.GradientComplex",
+  "OAI.Probability.ClassicalON.IsingGinibre",
+  "OAI.Probability.ClassicalON.IsingPositive",
+  "OAI.Probability.ClassicalON.IsingReference",
+  "OAI.Probability.ClassicalON.JointBond",
+  "OAI.Probability.ClassicalON.LatticeGeometry",
+  "OAI.Probability.ClassicalON.LatticeModes",
+  "OAI.Probability.ClassicalON.LatticeRadius",
+  "OAI.Probability.ClassicalON.LatticeRestriction",
+  "OAI.Probability.ClassicalON.Main",
+  "OAI.Probability.ClassicalON.MatrixSquare",
+  "OAI.Probability.ClassicalON.MixedWard",
+  "OAI.Probability.ClassicalON.ModeBounds",
+  "OAI.Probability.ClassicalON.ModeCommutator",
+  "OAI.Probability.ClassicalON.ModeCosts",
+  "OAI.Probability.ClassicalON.Model",
+  "OAI.Probability.ClassicalON.MomentCone",
+  "OAI.Probability.ClassicalON.ObservableBounds",
+  "OAI.Probability.ClassicalON.OrthogonalAverage",
+  "OAI.Probability.ClassicalON.PeriodicODE",
+  "OAI.Probability.ClassicalON.PeriodicPartition",
+  "OAI.Probability.ClassicalON.PinComparison",
+  "OAI.Probability.ClassicalON.PinnedBlocks",
+  "OAI.Probability.ClassicalON.PinnedBonds",
+  "OAI.Probability.ClassicalON.PinnedCylinder",
+  "OAI.Probability.ClassicalON.PinnedReference",
+  "OAI.Probability.ClassicalON.PinnedSigns",
+  "OAI.Probability.ClassicalON.PlanarAlgebra",
+  "OAI.Probability.ClassicalON.PlanarGinibre",
+  "OAI.Probability.ClassicalON.PlanarPositive",
+  "OAI.Probability.ClassicalON.PoleCrossing",
+  "OAI.Probability.ClassicalON.PositiveKernel",
+  "OAI.Probability.ClassicalON.PotentialRotation",
+  "OAI.Probability.ClassicalON.ProductFKG",
+  "OAI.Probability.ClassicalON.ProductGrouping",
+  "OAI.Probability.ClassicalON.ProductMoments",
+  "OAI.Probability.ClassicalON.ProfileEstimates",
+  "OAI.Probability.ClassicalON.RawBond",
+  "OAI.Probability.ClassicalON.ReindexIntegral",
+  "OAI.Probability.ClassicalON.ResponseTransfer",
+  "OAI.Probability.ClassicalON.RotationInequality",
+  "OAI.Probability.ClassicalON.RotationWork",
+  "OAI.Probability.ClassicalON.SecondBound",
+  "OAI.Probability.ClassicalON.SecondGauge",
+  "OAI.Probability.ClassicalON.SeparatedAnnuli",
+  "OAI.Probability.ClassicalON.SignedSigns",
+  "OAI.Probability.ClassicalON.SmoothBounds",
+  "OAI.Probability.ClassicalON.SmoothProfiles",
+  "OAI.Probability.ClassicalON.SpinBondKernel",
+  "OAI.Probability.ClassicalON.SpinBonds",
+  "OAI.Probability.ClassicalON.SpinCorrelation",
+  "OAI.Probability.ClassicalON.SpinIsotropy",
+  "OAI.Probability.ClassicalON.SpinReindex",
+  "OAI.Probability.ClassicalON.SquareEstimates",
+  "OAI.Probability.ClassicalON.ThetaEstimates",
+  "OAI.Probability.ClassicalON.TorusDouble",
+  "OAI.Probability.ClassicalON.TorusFourier",
+  "OAI.Probability.ClassicalON.UpperEndpoint",
+  "OAI.Probability.ClassicalON.WeightedLinear",
+  "OAI.Probability.ClassicalON.WeightedProduct",
+  "OAI.Probability.ClassicalON.WeightedTilt"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/ClassicalON.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Probability.ClassicalON.Main",
+   "name": "OAI.ClassicalON.main",
+   "statement_sha256": "929cec9c85e483201f63302ab6dea32f42b2cd593f9c3c401309990e944dd009"
+  }
+ ],
+ "task_id": "oai-classical-on",
+ "task_revision": 1,
+ "title": "OpenAI math: Canonical `O(3)` continuum limit and exact `O(4)` mass asymptotics: Exponential correlation decay for classical O(n) models",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

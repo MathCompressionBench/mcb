@@ -7,16 +7,17 @@ import LcbenchTools.Request
 open Lean LcbenchTools
 
 def usage : String :=
-  "usage: lcbench-check replay [--kernel-heartbeats N] OWNER_MODULE...   (N per declaration; 0 = no limit)\n" ++
+  "usage: lcbench-check replay [--kernel-heartbeats N [--jobs J]] OWNER_MODULE...   (N per declaration; 0 = no " ++
+  "limit; J owners replayed at once when the replay runs per owner module, default 1)\n" ++
   "       lcbench-check replay-one [--kernel-heartbeats N] OWNER_MODULE   (stock leanchecker's check of one " ++
   "module; the replay's per-module mode runs it in a child process for each owner)\n" ++
   "       lcbench-check facts REQUEST.json   (the lcbench-metric request plus \"extract\": " ++
   "{\"roots\", \"frozen\", \"out\"} and an optional \"result\" file; see docs/VERIFY.md)"
 
 /-- Replays every owner module through the kernel and prints the report; exit 1 when the kernel rejects one. -/
-unsafe def replayMain (owners : List String) (budget : Nat) : IO UInt32 := do
+unsafe def replayMain (owners : List String) (budget : Nat) (jobs : Nat := 1) : IO UInt32 := do
   initSearchPath (← findSysroot)
-  let report ← Replay.replayOwners (owners.toArray.map String.toName) budget
+  let report ← Replay.replayOwners (owners.toArray.map String.toName) budget jobs
   IO.println report.toJson.compress
   return if report.failure.isNone then 0 else 1
 
@@ -66,6 +67,12 @@ def factsMain (requestPath : String) : IO UInt32 := do
 
 unsafe def main (args : List String) : IO UInt32 := do
   match args with
+  | "replay" :: "--kernel-heartbeats" :: n :: "--jobs" :: j :: owners@(_ :: _) =>
+    match n.toNat?, j.toNat? with
+    | some budget, some jobs => replayMain owners budget jobs
+    | _, _ =>
+      IO.eprintln usage
+      return 2
   | "replay" :: "--kernel-heartbeats" :: n :: owners@(_ :: _) =>
     match n.toNat? with
     | some budget => replayMain owners budget

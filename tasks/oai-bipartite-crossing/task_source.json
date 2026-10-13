@@ -1,0 +1,3811 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 240066065
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.BipartiteCrossing",
+  "challenge_sha256": "37ea82a967ca9fa95fd504fa75a8fb063dd99d91651ae3f5b68bc150950e2032",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/BipartiteCrossing.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.BipartiteCrossing",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Combinatorics.Crossing.Main",
+   "theorem_names": [
+    "OAI.Zarankiewicz.mainTarget_proof"
+   ]
+  },
+  "config_sha256": "805fa1d52cc07581d9951ad6d927c123c933f5c75fc4a2a6b08f5096a555625c",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/BipartiteCrossing.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.Zarankiewicz.mainTarget_proof": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AdaptedFamily.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AdaptedFamily",
+   "original_sha256": "83f929f9d30c4548b9430b965b0a7c2cd382966d9f4330b364c029cf1c46b6ae",
+   "path": "OAI/Combinatorics/Crossing/AdaptedFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AdditiveBlockRelation.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AdditiveBlockRelation",
+   "original_sha256": "30a526006ef31c3b2b2551f37419798cf4d6d4a4876a633d65c3f8a586c99635",
+   "path": "OAI/Combinatorics/Crossing/AdditiveBlockRelation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AdjacentSurgeryDrawing.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AdjacentSurgeryDrawing",
+   "original_sha256": "64f3c03ce7f03231d0dae14b2634d0b5f317803e80288d7f4394ff1c7ea6b213",
+   "path": "OAI/Combinatorics/Crossing/AdjacentSurgeryDrawing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AdjacentSurgeryPointRemoval.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AdjacentSurgeryPointRemoval",
+   "original_sha256": "58a34a4f78e55ae8e426eb765d82e783b9934babb1808a9176a1b84a08a8daed",
+   "path": "OAI/Combinatorics/Crossing/AdjacentSurgeryPointRemoval.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AdjacentSurgeryRoutes.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AdjacentSurgeryRoutes",
+   "original_sha256": "356d2ddf702411a1e57f1fde69d84ffe8cdc09c88f3403baac33e93db5fae106",
+   "path": "OAI/Combinatorics/Crossing/AdjacentSurgeryRoutes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AdmissibleAdjacentSurgery.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AdmissibleAdjacentSurgery",
+   "original_sha256": "9d0b7e2b8471b9f8052756c8df5be5d0e197aea776f0909669498e2010088e0c",
+   "path": "OAI/Combinatorics/Crossing/AdmissibleAdjacentSurgery.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AffineIntervalRestriction.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AffineIntervalRestriction",
+   "original_sha256": "dd0b5d1b3ae3872320251f6e586c46b660a84389c5216e2cc8515655c3f65c73",
+   "path": "OAI/Combinatorics/Crossing/AffineIntervalRestriction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AffinePathHalves.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AffinePathHalves",
+   "original_sha256": "9c951b9605288289b4d170a1f9ae4d7ce95c80b11e2bdbadc54ca5f16e703d36",
+   "path": "OAI/Combinatorics/Crossing/AffinePathHalves.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AffineSideEvents.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AffineSideEvents",
+   "original_sha256": "84f36b35dffe75426e74d5f33a7ad7bd6bb26c2bdc133c143e47bfddb4e205ce",
+   "path": "OAI/Combinatorics/Crossing/AffineSideEvents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AffineSubdivisionRefinement.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AffineSubdivisionRefinement",
+   "original_sha256": "79ca43cd2e78ef864743aebdeabd8af1113239256ad6e91d2d673e4d3b5dd70e",
+   "path": "OAI/Combinatorics/Crossing/AffineSubdivisionRefinement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AlternatingPaths.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AlternatingPaths",
+   "original_sha256": "1e8e8cc598aeb9129ef44fe3f09f2f18e0dd52eca789ea2c7b842bce672b2c32",
+   "path": "OAI/Combinatorics/Crossing/AlternatingPaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ArcRangeMinimality.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ArcRangeMinimality",
+   "original_sha256": "a8dc26e6608923aa4a90d0f949196a4a04ae125995de783673f5071dca86a91e",
+   "path": "OAI/Combinatorics/Crossing/ArcRangeMinimality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AssembledAdmissibleDrawing.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AssembledAdmissibleDrawing",
+   "original_sha256": "08770b574ec4d39b259fae63db2d1387216a1d4880fae7699631efc6c6ed9af8",
+   "path": "OAI/Combinatorics/Crossing/AssembledAdmissibleDrawing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AssembledContinuousDrawing.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AssembledContinuousDrawing",
+   "original_sha256": "3b5513a5d5688aea3c516e52f8f75d43fe7c9e57b924b30c67f67ec3442d58d4",
+   "path": "OAI/Combinatorics/Crossing/AssembledContinuousDrawing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AssembledCrossings.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AssembledCrossings",
+   "original_sha256": "3a5d5cda3f34cc722205b1d952f066212c74aefb3a9e37d85b73f57d926dc3c4",
+   "path": "OAI/Combinatorics/Crossing/AssembledCrossings.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AssembledEdge.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AssembledEdge",
+   "original_sha256": "29e97fd7d6cd3b46bd935affed502d3f739701e617133fadcc537e1d0b401cca",
+   "path": "OAI/Combinatorics/Crossing/AssembledEdge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AssembledNoTriples.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AssembledNoTriples",
+   "original_sha256": "6849dba05fbe69532a95ac497c725dafdfb060043c5c00fc6a2ade92c1931275",
+   "path": "OAI/Combinatorics/Crossing/AssembledNoTriples.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AssembledPortIncidence.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AssembledPortIncidence",
+   "original_sha256": "0541a9ca6b6998f352743707c52ab0eb1ebd73e3937fb237e7986879711e4276",
+   "path": "OAI/Combinatorics/Crossing/AssembledPortIncidence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AxisAdmissibility.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AxisAdmissibility",
+   "original_sha256": "c1d3681c652a5863f71561e743927681a149108b1cd1469c81d51b03561eed17",
+   "path": "OAI/Combinatorics/Crossing/AxisAdmissibility.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AxisConcurrency.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AxisConcurrency",
+   "original_sha256": "c1f2d2b7b014cc88b92ae40e338a766b2697a166d06952ad3632bdbba209068e",
+   "path": "OAI/Combinatorics/Crossing/AxisConcurrency.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AxisContinuousDrawing.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AxisContinuousDrawing",
+   "original_sha256": "8170a03afbdf36cedc0b1b5a37e9f62bae9c3f0740bac782a02f89cc27469af2",
+   "path": "OAI/Combinatorics/Crossing/AxisContinuousDrawing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AxisCrossingOrder.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AxisCrossingOrder",
+   "original_sha256": "c870b505a90c6328565b3151b4f1ce147dfdd76d2e6522ef1bb96a0877169bd7",
+   "path": "OAI/Combinatorics/Crossing/AxisCrossingOrder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AxisFiniteCrossings.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AxisFiniteCrossings",
+   "original_sha256": "c9f91cad55ead1638eda14d6e6464092964836e3bd71a485a4ffd9cbec336b4b",
+   "path": "OAI/Combinatorics/Crossing/AxisFiniteCrossings.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AxisGenericPositions.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AxisGenericPositions",
+   "original_sha256": "2b02d080d4eab8dcd88094d89743853f35eaa12dab9f8803e2682ebe6ac31e28",
+   "path": "OAI/Combinatorics/Crossing/AxisGenericPositions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/AxisSegments.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.AxisSegments",
+   "original_sha256": "89f29a4faea5b8da24fd96355d9ed4c7a3f86a92ed43b70674329626b023fedb",
+   "path": "OAI/Combinatorics/Crossing/AxisSegments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/BalancedAxisCrossingCount.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.BalancedAxisCrossingCount",
+   "original_sha256": "e0bed01c6a8085ec8a9d1f9ca6787c855b6c4666908fffee7ec544c65482a7fa",
+   "path": "OAI/Combinatorics/Crossing/BalancedAxisCrossingCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/BalancedAxisDrawing.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.BalancedAxisDrawing",
+   "original_sha256": "e1092acd4be965bd3daae0c71cda64df6f3d83d43b75aa538171d8d27cd440c0",
+   "path": "OAI/Combinatorics/Crossing/BalancedAxisDrawing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/BalancedAxisIntervals.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.BalancedAxisIntervals",
+   "original_sha256": "79932f8355c66cb0dd0e2662d1b626e28a3b08bea58bf023ecb9da287543ed86",
+   "path": "OAI/Combinatorics/Crossing/BalancedAxisIntervals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/BalancedRayPairs.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.BalancedRayPairs",
+   "original_sha256": "d13d2ad511053c8c01f6bb42949de290019aaa3353bcea5d27115f84f96cebc0",
+   "path": "OAI/Combinatorics/Crossing/BalancedRayPairs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/BipartiteDartGeometry.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.BipartiteDartGeometry",
+   "original_sha256": "d6e11a5146143c7af21daa2b08d6ec78a974f8646868e997b3bb11a4c1d8b0d6",
+   "path": "OAI/Combinatorics/Crossing/BipartiteDartGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/Bivariate.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.Bivariate",
+   "original_sha256": "2299899117589ef6d5010a3d511d6c472a3744830b7796febe391f1546b781d6",
+   "path": "OAI/Combinatorics/Crossing/Bivariate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/BivariateCoefficients.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.BivariateCoefficients",
+   "original_sha256": "904f3e183cab183b3c269bbedcbc27e802845818a6d1c14f280745de241007ae",
+   "path": "OAI/Combinatorics/Crossing/BivariateCoefficients.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/BoundaryCollar.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.BoundaryCollar",
+   "original_sha256": "11340d6a1f4146ba2a7bfb695971b830f6cd17e294aa2b55e798367d0e1b4360",
+   "path": "OAI/Combinatorics/Crossing/BoundaryCollar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ChainPieceInteriors.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ChainPieceInteriors",
+   "original_sha256": "ab46668ede046a7c6330d2b285a8fcebb0a262eabb55a60a0d789cc624d23bd8",
+   "path": "OAI/Combinatorics/Crossing/ChainPieceInteriors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ChainTracePieces.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ChainTracePieces",
+   "original_sha256": "db62dc714ea0ad2ade0187b772780073ac3c022a3619b516e197f3486dd1f3c7",
+   "path": "OAI/Combinatorics/Crossing/ChainTracePieces.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ChordEdgeIntersections.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ChordEdgeIntersections",
+   "original_sha256": "d8aee805a577762bf627ebaaf8ba6657a2a45a03c63753e299d42dcb9ad1c7c0",
+   "path": "OAI/Combinatorics/Crossing/ChordEdgeIntersections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ChordExteriorSeparation.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ChordExteriorSeparation",
+   "original_sha256": "0a4e73c538c450782d51dc0d77714c32f74bb45799c521b4e3afa6ba1090b75a",
+   "path": "OAI/Combinatorics/Crossing/ChordExteriorSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ChordOrientations.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ChordOrientations",
+   "original_sha256": "906fefd13b97d633286f1d58b68d17450e4abe2bcf731e625e35352cdc4a5b25",
+   "path": "OAI/Combinatorics/Crossing/ChordOrientations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ChordPairing.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ChordPairing",
+   "original_sha256": "5462ad82e69f6f01e93b7f26d3223a1086fef6d19a876c3b77a791629b3769a1",
+   "path": "OAI/Combinatorics/Crossing/ChordPairing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ChordTransversality.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ChordTransversality",
+   "original_sha256": "02a97785174beadad083970be6f6e83bf72b54cf6429047e07c45bcbc1bd1761",
+   "path": "OAI/Combinatorics/Crossing/ChordTransversality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CircleChords.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CircleChords",
+   "original_sha256": "1ff88ee19f4ad0fcca78e7b152b8068849acba826020c6a7ac2514e79ff534c7",
+   "path": "OAI/Combinatorics/Crossing/CircleChords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CircleConnectors.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CircleConnectors",
+   "original_sha256": "2655e2ca931f860c6d3040bbc65c2a7cb5cfffd7816f27e3ce757c56d1c5f412",
+   "path": "OAI/Combinatorics/Crossing/CircleConnectors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CircleDeterminantOrder.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CircleDeterminantOrder",
+   "original_sha256": "e3483709d358528ed4d1916dd7a398e65e649c381cd328d19cd6ebf88bbc7db5",
+   "path": "OAI/Combinatorics/Crossing/CircleDeterminantOrder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CircleOffset.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CircleOffset",
+   "original_sha256": "f58037df3e7037ea1d26997d8a121f1affa66bd7ef6e110e9e3407c5c47ada26",
+   "path": "OAI/Combinatorics/Crossing/CircleOffset.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CircleOffsetLine.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CircleOffsetLine",
+   "original_sha256": "4842406a177037cb39888eeeafd2914579fd20df9f9feda862dde3d65470b8ce",
+   "path": "OAI/Combinatorics/Crossing/CircleOffsetLine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CircleOffsetParameter.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CircleOffsetParameter",
+   "original_sha256": "f1892b19991f9637c16ad3da76d2dacf8938dfa79b3f9c93caaa85be98c796f4",
+   "path": "OAI/Combinatorics/Crossing/CircleOffsetParameter.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CircleParameterChart.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CircleParameterChart",
+   "original_sha256": "db81ffae95b9ad47f6309d25e5849e42379f6d8350b5ad7e161889091308e188",
+   "path": "OAI/Combinatorics/Crossing/CircleParameterChart.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ClosedPolygonIntersection.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ClosedPolygonIntersection",
+   "original_sha256": "b1393ecfb82a72c19d1515442d685a916d647dc89d04d0a3a4c80bcdfb0fccd1",
+   "path": "OAI/Combinatorics/Crossing/ClosedPolygonIntersection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CollinearSegmentUnion.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CollinearSegmentUnion",
+   "original_sha256": "4d83ae636201161edefdf0dccc781aefa56e4caf794433ed6667fbe5c84d1d81",
+   "path": "OAI/Combinatorics/Crossing/CollinearSegmentUnion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CompactCorridors.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CompactCorridors",
+   "original_sha256": "1e72dd7ff33949a812d54a3fffa61fc89071436669aaa3970e4177a8ab5e05eb",
+   "path": "OAI/Combinatorics/Crossing/CompactCorridors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ConeIntersection.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ConeIntersection",
+   "original_sha256": "61a539f388a02fea8d0052c73e4dda7a38dbf5c6a066a03d139be6e361fb59e6",
+   "path": "OAI/Combinatorics/Crossing/ConeIntersection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ConnectorOtherDisks.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ConnectorOtherDisks",
+   "original_sha256": "f192767a664afaaa198680672d30a6ba071770ff4331c6fb33433455932ca62d",
+   "path": "OAI/Combinatorics/Crossing/ConnectorOtherDisks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ConnectorSupportingLines.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ConnectorSupportingLines",
+   "original_sha256": "1c13a074af4bb5eaf3eafa488794fb813a39fd7759730df41b2544da53f4dcec",
+   "path": "OAI/Combinatorics/Crossing/ConnectorSupportingLines.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ConnectorTrackAvoidance.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ConnectorTrackAvoidance",
+   "original_sha256": "bad5df7a8472a4c2d515fd90e1776812a0f64de3b76cbdc880bce013ac2fac7f",
+   "path": "OAI/Combinatorics/Crossing/ConnectorTrackAvoidance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ConstructAdjacentSurgery.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ConstructAdjacentSurgery",
+   "original_sha256": "0d652c0a2a4a35ff59ac598ab46d2fd2b43267df202ec878bf7fe1892728bc9d",
+   "path": "OAI/Combinatorics/Crossing/ConstructAdjacentSurgery.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CrossingCoordinates.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CrossingCoordinates",
+   "original_sha256": "70a5d162ab47352fc09538064c2c1399ebab8e1e093db78ed9e8386a234d5651",
+   "path": "OAI/Combinatorics/Crossing/CrossingCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CrossingCutWalks.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CrossingCutWalks",
+   "original_sha256": "23c97e2465332e8615f6bb659f77f6224f7ef7f099c05edb7470ceed25e0b69a",
+   "path": "OAI/Combinatorics/Crossing/CrossingCutWalks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CrossingDiskCount.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CrossingDiskCount",
+   "original_sha256": "064c79618f8b23e24460c692782d227c8ded49e3c043c6936b8821ff96b75fbb",
+   "path": "OAI/Combinatorics/Crossing/CrossingDiskCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CrossingDiskIncidence.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CrossingDiskIncidence",
+   "original_sha256": "e2371b02582cd0660e72f8b12de3d81923d010f74615eceb2d6ae01fd9c4457c",
+   "path": "OAI/Combinatorics/Crossing/CrossingDiskIncidence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CrossingDiskNeighborhood.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CrossingDiskNeighborhood",
+   "original_sha256": "a8d5d976f4f530c7bf04823313e73bdfa58ed9b9e8c2c486adc68b5a218e2fca",
+   "path": "OAI/Combinatorics/Crossing/CrossingDiskNeighborhood.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CrossingDiskOwners.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CrossingDiskOwners",
+   "original_sha256": "35465b3d3a383cbf43076ac0f9706101d7eb9a497419b617fb596048363a439d",
+   "path": "OAI/Combinatorics/Crossing/CrossingDiskOwners.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CrossingDiskUniqueness.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CrossingDiskUniqueness",
+   "original_sha256": "6a43d64c809a013756410ea2302f7754d2890bec17ee868f7052b77205619251",
+   "path": "OAI/Combinatorics/Crossing/CrossingDiskUniqueness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CrossingIncidence.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CrossingIncidence",
+   "original_sha256": "2ad3f5a872b920a47e3b6652cec4e89f9389c986ac5920a5d63f2461f0d8c0da",
+   "path": "OAI/Combinatorics/Crossing/CrossingIncidence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CrossingPortClearance.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CrossingPortClearance",
+   "original_sha256": "da8a9e5d239486c7e5f7d0c63d041259124b59a1dd91b4d09e7eaa4b812c2cc6",
+   "path": "OAI/Combinatorics/Crossing/CrossingPortClearance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CrossingReconnection.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CrossingReconnection",
+   "original_sha256": "ce0ac9144ea2d35769c3ea452f5190a45163b96f5b2056e1c69bc2e7fea10e48",
+   "path": "OAI/Combinatorics/Crossing/CrossingReconnection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CrossingSurgeryGraph.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CrossingSurgeryGraph",
+   "original_sha256": "95baeab59557a62e2a30a13b2e30ef410b70ff39caafcad53e7d6a0ca967d648",
+   "path": "OAI/Combinatorics/Crossing/CrossingSurgeryGraph.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CurveDiskIsolation.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CurveDiskIsolation",
+   "original_sha256": "9c79c2d1fdd2fc3b623ca3ab9f4397ac68136e06b438ccf344922e49c701a413",
+   "path": "OAI/Combinatorics/Crossing/CurveDiskIsolation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CutTraceSeparation.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CutTraceSeparation",
+   "original_sha256": "a9a80d6343cdadac2f869898551455b309b0f04cd4cfc5bb309e8d42432db28a",
+   "path": "OAI/Combinatorics/Crossing/CutTraceSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CutVertexAvoidance.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CutVertexAvoidance",
+   "original_sha256": "36c6e2d29863b826f30c4b42ce2eb2064c09351d93cee87f565a87eba5ae6583",
+   "path": "OAI/Combinatorics/Crossing/CutVertexAvoidance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CycleBlockIntersections.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CycleBlockIntersections",
+   "original_sha256": "8c55cff8df83a475d4dc943cc9cfafbfdbd4eecbdd81e345a83620e093684372",
+   "path": "OAI/Combinatorics/Crossing/CycleBlockIntersections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CycleEndpointSum.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CycleEndpointSum",
+   "original_sha256": "49607d73cd4eadd1720cc3aac851547cafa4f2b1466f8ed62fef1c2093cdaf75",
+   "path": "OAI/Combinatorics/Crossing/CycleEndpointSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CycleMatrixBlocks.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CycleMatrixBlocks",
+   "original_sha256": "d99e0fdce8cf63482a5d380a3493fa123764547015dfb7fa6efe65733667a7e7",
+   "path": "OAI/Combinatorics/Crossing/CycleMatrixBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CyclePairing.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CyclePairing",
+   "original_sha256": "359ab7268693a26e2cfbe75596ad66ea8840c910122e561d57030859376a01eb",
+   "path": "OAI/Combinatorics/Crossing/CyclePairing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CyclicSumArithmetic.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CyclicSumArithmetic",
+   "original_sha256": "35f22865b96d975738bf93ab51565d2695257baf923439c6403903e04f91f973",
+   "path": "OAI/Combinatorics/Crossing/CyclicSumArithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/CyclicWalkDarts.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.CyclicWalkDarts",
+   "original_sha256": "331f4705b4eeec4250bd9481f18078b66d37193918caf4791daa20df237465a6",
+   "path": "OAI/Combinatorics/Crossing/CyclicWalkDarts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DartCyclePaths.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DartCyclePaths",
+   "original_sha256": "f50fe1e8a183d62cd3dcd22dcc8bb7f62fa131c015b663747a462f9962487f8a",
+   "path": "OAI/Combinatorics/Crossing/DartCyclePaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DartPairIntersections.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DartPairIntersections",
+   "original_sha256": "48df16a1db967093aa9d08a5b6548b33e84516710418f786d5d437bab788497d",
+   "path": "OAI/Combinatorics/Crossing/DartPairIntersections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DartPathRealizations.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DartPathRealizations",
+   "original_sha256": "7ff858f609eb7e550b0f6017ab51850e116261583891ecf0243730845da1162e",
+   "path": "OAI/Combinatorics/Crossing/DartPathRealizations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DegreeCounting.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DegreeCounting",
+   "original_sha256": "c23f2221304a639c1eeb0f1a82b60388580f01742580399df56c6e420609ddbc",
+   "path": "OAI/Combinatorics/Crossing/DegreeCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DeletionCount.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DeletionCount",
+   "original_sha256": "f05a27ea612e589dd2ddb58fb82199495891671acc2a69d416c8cec42ae10538",
+   "path": "OAI/Combinatorics/Crossing/DeletionCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DetectorAnnihilation.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DetectorAnnihilation",
+   "original_sha256": "2dbc407d1f85b8ab4e3904be376abcc7d414b3075f141a7f4f3794c310095641",
+   "path": "OAI/Combinatorics/Crossing/DetectorAnnihilation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DetectorCrossingBound.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DetectorCrossingBound",
+   "original_sha256": "3f374eeb971ba43e4345171d2e15a74d705f4ff27fb384e37227ac19707812b1",
+   "path": "OAI/Combinatorics/Crossing/DetectorCrossingBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DetectorRank.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DetectorRank",
+   "original_sha256": "e760ffc6b310be45cace76b4dcda73d37c51eb25c78764bf822d545363bab0b1",
+   "path": "OAI/Combinatorics/Crossing/DetectorRank.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DetectorRelabeling.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DetectorRelabeling",
+   "original_sha256": "3bf86419252a9f4a0fcc3ed81f469f75bfcc42939dae8f851752851c44d17b7a",
+   "path": "OAI/Combinatorics/Crossing/DetectorRelabeling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DiskFillingContainment.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DiskFillingContainment",
+   "original_sha256": "765aced03bc2f78c68b5a77de0c0bcf11d03fa85d34366fa62e9cf552c53341b",
+   "path": "OAI/Combinatorics/Crossing/DiskFillingContainment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DiskPassage.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DiskPassage",
+   "original_sha256": "faef1585ac911f3777ccb910b563d89f73d57a5e8bd5c4474d57a18f6eafa7f3",
+   "path": "OAI/Combinatorics/Crossing/DiskPassage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DiskSegments.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DiskSegments",
+   "original_sha256": "635bcd2777ec8b0a350e5df791695c3c32a1d9d02750778b307a679e8e56c33a",
+   "path": "OAI/Combinatorics/Crossing/DiskSegments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DrawingDefinition.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DrawingDefinition",
+   "original_sha256": "fed7c28fa20f024ffa105cc486cc28d046ce9726a132622835a2a06cfdf1948b",
+   "path": "OAI/Combinatorics/Crossing/DrawingDefinition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DrawingDeletion.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DrawingDeletion",
+   "original_sha256": "4a90ac7475252d26af64973d0bdec5ba250401b31faad6749474d4ced331e89f",
+   "path": "OAI/Combinatorics/Crossing/DrawingDeletion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DrawingDiskIsolation.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DrawingDiskIsolation",
+   "original_sha256": "e6dbbb69c20a9c5454e757acacf3e6c9edba5060a59c68107f0d8f8ac64aa842",
+   "path": "OAI/Combinatorics/Crossing/DrawingDiskIsolation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DrawingEdgeWalk.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DrawingEdgeWalk",
+   "original_sha256": "5b8f8b61e703664aa5960767cc5fc56d1981aec76dc821704b23812ef4f25b18",
+   "path": "OAI/Combinatorics/Crossing/DrawingEdgeWalk.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DrawingEdgeWalkTrace.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DrawingEdgeWalkTrace",
+   "original_sha256": "8266990387c47c01b2ac0b165952f12fc29fd3bdb9f7af60f57f20d5e7c7d58d",
+   "path": "OAI/Combinatorics/Crossing/DrawingEdgeWalkTrace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DrawingExteriorReplacement.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DrawingExteriorReplacement",
+   "original_sha256": "4ee85dc2c256f66face9fbed357558cf7ffa1922b0c7bf6b99043ef781831e31",
+   "path": "OAI/Combinatorics/Crossing/DrawingExteriorReplacement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DrawingMarks.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DrawingMarks",
+   "original_sha256": "38b5c0e94b13c497f820876ac9e3d23d89df0a7fae222f827abc1446a7d80887",
+   "path": "OAI/Combinatorics/Crossing/DrawingMarks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DrawingPassages.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DrawingPassages",
+   "original_sha256": "b8c9314d9985ff5f2c7a41c26e6a34987a2df98cb4c036f53f5ab869f6aba696",
+   "path": "OAI/Combinatorics/Crossing/DrawingPassages.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DrawingPorts.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DrawingPorts",
+   "original_sha256": "4c26fd2b5984cbc633bb739de405e18755acddf10cd08d794de9232dc37ea102",
+   "path": "OAI/Combinatorics/Crossing/DrawingPorts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DrawingRangeCrossings.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DrawingRangeCrossings",
+   "original_sha256": "5bfed0b58cf408984da0f0b39df6582db7e53a9a079fb14691e7cf3ade1615c5",
+   "path": "OAI/Combinatorics/Crossing/DrawingRangeCrossings.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DrawingRestriction.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DrawingRestriction",
+   "original_sha256": "20f8675212cabddb99677ff27b64269c3d2f495b0bbd0bf53c05a58519fc6a5a",
+   "path": "OAI/Combinatorics/Crossing/DrawingRestriction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DrawingSegmentIncidence.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DrawingSegmentIncidence",
+   "original_sha256": "948cfde4e5c51cb5c2484749471e40dcd1410a62eec1b6ad41f856d603533b79",
+   "path": "OAI/Combinatorics/Crossing/DrawingSegmentIncidence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DrawingSpokePorts.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DrawingSpokePorts",
+   "original_sha256": "b745c080b830cc2e42d883c861096a28c500cac004dda2381d772f0486f5ba97",
+   "path": "OAI/Combinatorics/Crossing/DrawingSpokePorts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DrawingSubdivisionGraph.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DrawingSubdivisionGraph",
+   "original_sha256": "359d476c73a46da55a8a4a8cf01a1c5853380a1e0b057507dc00ae05a5ead734",
+   "path": "OAI/Combinatorics/Crossing/DrawingSubdivisionGraph.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DrawingVertexPlacement.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DrawingVertexPlacement",
+   "original_sha256": "19d1494aa59c61afabf197f605fa872f444374ccdde23ea9d9df74cfe4f9a2ec",
+   "path": "OAI/Combinatorics/Crossing/DrawingVertexPlacement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DrawingWalkCutTraces.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DrawingWalkCutTraces",
+   "original_sha256": "6ebf1afae1f4905133eb505b3ba33c57e11611dd3a5b891981ad142300ae1a76",
+   "path": "OAI/Combinatorics/Crossing/DrawingWalkCutTraces.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/DrawnEdgeChains.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.DrawnEdgeChains",
+   "original_sha256": "b6f7a0e44cba4dba69a502731e0f4248892dc74f6111a12f30b113b16c0333de",
+   "path": "OAI/Combinatorics/Crossing/DrawnEdgeChains.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/EmbeddedGraphPaths.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.EmbeddedGraphPaths",
+   "original_sha256": "30fae2ec05096f6a32f9f4ab30a66257ad799fa48ad367fec8c88af41539ee02",
+   "path": "OAI/Combinatorics/Crossing/EmbeddedGraphPaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/EndpointFlagPairing.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.EndpointFlagPairing",
+   "original_sha256": "3846b601b7e6ad0e0d0ea59fc3f5582ab3c6382c2c789439cfe302f7b46c4f0d",
+   "path": "OAI/Combinatorics/Crossing/EndpointFlagPairing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/EndpointVisits.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.EndpointVisits",
+   "original_sha256": "5f6edf9af6958d16ba8f6675987f18477e420a58a2ecc0c7f1f81c70098cab76",
+   "path": "OAI/Combinatorics/Crossing/EndpointVisits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/EvaluationAmbient.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.EvaluationAmbient",
+   "original_sha256": "d2d6a8c14b4982e462ceacea2fe7ff0baf55fb295b36c11a06ab86a7d4af7a31",
+   "path": "OAI/Combinatorics/Crossing/EvaluationAmbient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/EvenCrossingLowerBound.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.EvenCrossingLowerBound",
+   "original_sha256": "69cd3efa864b834a9fe9ec2af477ee4ac25ce081bc9d3cc6f5fcf432e2daebf8",
+   "path": "OAI/Combinatorics/Crossing/EvenCrossingLowerBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ExpectedTrackGeometry.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ExpectedTrackGeometry",
+   "original_sha256": "c5da12af8b1a6e3bb6fb64ac2e920ed9291bb9e2941a62579cb2280d9d077484",
+   "path": "OAI/Combinatorics/Crossing/ExpectedTrackGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ExteriorArcReplacement.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ExteriorArcReplacement",
+   "original_sha256": "82d02d3de3288c3c9f8eab97c7932e909e5b84b81fbff6bf125b086d9e721358",
+   "path": "OAI/Combinatorics/Crossing/ExteriorArcReplacement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ExteriorChordMeeting.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ExteriorChordMeeting",
+   "original_sha256": "d2a7c372ab32846746a54524458eb407f99245c32b86f54c9b25cefb555cb43b",
+   "path": "OAI/Combinatorics/Crossing/ExteriorChordMeeting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ExteriorCrossingCut.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ExteriorCrossingCut",
+   "original_sha256": "0fe88d32d6b537ac25439e144884a005d3b4ff72009848140e9fea7026d34e72",
+   "path": "OAI/Combinatorics/Crossing/ExteriorCrossingCut.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ExteriorSegmentGraph.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ExteriorSegmentGraph",
+   "original_sha256": "2451ad685c10ab91ecdf8165735ae4e01b054c74fe4155f185a976bfa89d370a",
+   "path": "OAI/Combinatorics/Crossing/ExteriorSegmentGraph.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ExteriorSpokeMeeting.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ExteriorSpokeMeeting",
+   "original_sha256": "4f6b1836f15245f17ed1b8b44524ebafe2071a95187f33014d9ab1e63de30712",
+   "path": "OAI/Combinatorics/Crossing/ExteriorSpokeMeeting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ExtraDrawingSubdivision.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ExtraDrawingSubdivision",
+   "original_sha256": "e9ca81b89ed2cdba335e0f49c2802ebc062baf733b46d0462940720442fef4ac",
+   "path": "OAI/Combinatorics/Crossing/ExtraDrawingSubdivision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/FiniteAffineCover.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.FiniteAffineCover",
+   "original_sha256": "6a5c9ad8cc52f3e75ce9f3587ed7b9cc48a99b9953da7e3d95f8942efbf42103",
+   "path": "OAI/Combinatorics/Crossing/FiniteAffineCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/FiniteCircleCoordinates.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.FiniteCircleCoordinates",
+   "original_sha256": "624f1a2998c80022248634692ebc701f2c16e09dc99f1bc36f9ef957d1f2b6a6",
+   "path": "OAI/Combinatorics/Crossing/FiniteCircleCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/FiniteConePoint.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.FiniteConePoint",
+   "original_sha256": "56200ad4d9b6fb1ae16c9b977203a5661cdf8c32bce009776adf3dddf33bcfee",
+   "path": "OAI/Combinatorics/Crossing/FiniteConePoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/FiniteDiskCollar.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.FiniteDiskCollar",
+   "original_sha256": "cea8c90e8dc3522783f3d794e2fa610d7ad2852c404b522ac5bec3113d05423c",
+   "path": "OAI/Combinatorics/Crossing/FiniteDiskCollar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/FiniteEventualRadius.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.FiniteEventualRadius",
+   "original_sha256": "0a20ef38982d2ba868269b313b698fa2640e4cd1815309aa56ff1016b8ce1668",
+   "path": "OAI/Combinatorics/Crossing/FiniteEventualRadius.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/FiniteIntersectionDrawing.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.FiniteIntersectionDrawing",
+   "original_sha256": "acf8dafff6d37be4b2993f53f9357650f6f994a8cf8acb4eb2d9d9f3dadfe5ce",
+   "path": "OAI/Combinatorics/Crossing/FiniteIntersectionDrawing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/FiniteLineAvoidance.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.FiniteLineAvoidance",
+   "original_sha256": "2179fa73363fff99037ec97cd75cd3dfbb9c16bb8bcc83fc1336d92eba5f342f",
+   "path": "OAI/Combinatorics/Crossing/FiniteLineAvoidance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/FiniteMovingPoints.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.FiniteMovingPoints",
+   "original_sha256": "15a8b94f529fe5ff89c848a93bd3a97966d0751c0a223dfd5eacd94dbc686ba8",
+   "path": "OAI/Combinatorics/Crossing/FiniteMovingPoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/FinitePathChain.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.FinitePathChain",
+   "original_sha256": "898514cd17b47632a3737da5aec9ba8242bd95a924928908bce699081c302aa3",
+   "path": "OAI/Combinatorics/Crossing/FinitePathChain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/FinitePolygonalComposition.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.FinitePolygonalComposition",
+   "original_sha256": "9e0dc1fbded5cb52ecdb5a5bc310c66c822e3b2a612f37447f95dc27d8027fce",
+   "path": "OAI/Combinatorics/Crossing/FinitePolygonalComposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/FiniteScaledRadius.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.FiniteScaledRadius",
+   "original_sha256": "e9c393d204d3ebb3eab78fee58214e17514c07dc0c761ee93a3667d3f9dad163",
+   "path": "OAI/Combinatorics/Crossing/FiniteScaledRadius.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/FiniteSeparation.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.FiniteSeparation",
+   "original_sha256": "5edece5743b4d8afaf1e6010c529756d14f0064ae3c404e947a6bf8bbeb879fc",
+   "path": "OAI/Combinatorics/Crossing/FiniteSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/FirstLastVisits.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.FirstLastVisits",
+   "original_sha256": "4b74d3eaffd249c3aad664d6dbc25b61c9ca3749f2fbd1ce6d9f25c81493bcfc",
+   "path": "OAI/Combinatorics/Crossing/FirstLastVisits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/FloorArithmetic.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.FloorArithmetic",
+   "original_sha256": "74e316045912ecf73cb0aa1cf2ff0b3ab5fe0e8e48ecca0e09853cab3b048b05",
+   "path": "OAI/Combinatorics/Crossing/FloorArithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/FourCyclePairing.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.FourCyclePairing",
+   "original_sha256": "83d3a4ded6518f6fa94ea4b9563df711fabae3926fb5fab6c7d017944b7dd26b",
+   "path": "OAI/Combinatorics/Crossing/FourCyclePairing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/FourCycles.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.FourCycles",
+   "original_sha256": "7400fb2ae659ffb477c84c6f4aafca8bca8c7c7617eb57f8c8e71d4a9a99f92b",
+   "path": "OAI/Combinatorics/Crossing/FourCycles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/GeneralOrderAveraging.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.GeneralOrderAveraging",
+   "original_sha256": "b11723085aef8bee33be7a5109b370781dc8beb6389380b690e6efa158767a16",
+   "path": "OAI/Combinatorics/Crossing/GeneralOrderAveraging.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/GeneralSpokeAveraging.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.GeneralSpokeAveraging",
+   "original_sha256": "75a9d070076943d6c67e3f47880866ab8fc35ef29ab02c79f2bd4a0c893e697d",
+   "path": "OAI/Combinatorics/Crossing/GeneralSpokeAveraging.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/GenericPointExtension.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.GenericPointExtension",
+   "original_sha256": "32a675344bd30fdf91952a80f7fff03749c1036dd3a2eb5a1f864e9696c474a6",
+   "path": "OAI/Combinatorics/Crossing/GenericPointExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/GenericPointFamily.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.GenericPointFamily",
+   "original_sha256": "5a95cf61365054bef45851c76e9649112caebae1c0db1f3ad67313fd21da517e",
+   "path": "OAI/Combinatorics/Crossing/GenericPointFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/GenericPolygonIntersection.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.GenericPolygonIntersection",
+   "original_sha256": "105fed4fed55422c787df60ef7edc217f7889c94b5608c69374eba9cef3b0956",
+   "path": "OAI/Combinatorics/Crossing/GenericPolygonIntersection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/GenericPolynomialBox.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.GenericPolynomialBox",
+   "original_sha256": "c9a6ae873eb8b257435d69b702ab6c88a151eda9385e7c19caa8f32289c55db3",
+   "path": "OAI/Combinatorics/Crossing/GenericPolynomialBox.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/GlobalCycleAveraging.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.GlobalCycleAveraging",
+   "original_sha256": "a0c66a7cbe17922679d052b8eb378a6568b71c7cb24800183dcbd75dc606f462",
+   "path": "OAI/Combinatorics/Crossing/GlobalCycleAveraging.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/GlobalCycleIntersection.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.GlobalCycleIntersection",
+   "original_sha256": "c6914b0268f610a7aab36aae5bd2cd9d99dc21c25dd5dab82436a80d5e6e830e",
+   "path": "OAI/Combinatorics/Crossing/GlobalCycleIntersection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/GraphSequenceWalk.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.GraphSequenceWalk",
+   "original_sha256": "2410cff0f057da777a8219b724c11a21c1aedf63bffc0416681c5ddf7f19bd16",
+   "path": "OAI/Combinatorics/Crossing/GraphSequenceWalk.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/GraphWalkRealizationLaws.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.GraphWalkRealizationLaws",
+   "original_sha256": "5a908245c88548bfbb9a477f151201eaa042a5166b4d1047bbb11a164b052d75",
+   "path": "OAI/Combinatorics/Crossing/GraphWalkRealizationLaws.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/GraphWalkTrace.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.GraphWalkTrace",
+   "original_sha256": "e6a37118a3bc9e416c8f37027a37c6b0e0b1a048109effb2f5822cab81dce875",
+   "path": "OAI/Combinatorics/Crossing/GraphWalkTrace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/HalfOrderInvertibility.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.HalfOrderInvertibility",
+   "original_sha256": "0dd4c4c58e6dc42157f98847277058697eba7dcd46278d24dd30b68cafe5ff14",
+   "path": "OAI/Combinatorics/Crossing/HalfOrderInvertibility.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/HalfOrderReduction.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.HalfOrderReduction",
+   "original_sha256": "e1a7f17f5afaf56050ee4b4b86213cb318a28577a8e65483f9a65bc08db355be",
+   "path": "OAI/Combinatorics/Crossing/HalfOrderReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/IncidentSpokePorts.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.IncidentSpokePorts",
+   "original_sha256": "9c3a401b640d4803b9c9584e5458ac6a6b3c571b5bc35031e6bc7d3ed705ede1",
+   "path": "OAI/Combinatorics/Crossing/IncidentSpokePorts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/IndexedMatrixRankSum.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.IndexedMatrixRankSum",
+   "original_sha256": "14201d8fda875f37d3cdc40939fc5f74211dc3c5b558568a23333bdd48c2e3ba",
+   "path": "OAI/Combinatorics/Crossing/IndexedMatrixRankSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/InnerDrawingPassages.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.InnerDrawingPassages",
+   "original_sha256": "7c5333266aa97c6580c4093d79c636d346341ed888dffdfbe7e02a410d3a49d9",
+   "path": "OAI/Combinatorics/Crossing/InnerDrawingPassages.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/Interpolation.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.Interpolation",
+   "original_sha256": "eb3cd177980c1e117102b136c52ba03af134543ec14e06379c4146187fa71cdc",
+   "path": "OAI/Combinatorics/Crossing/Interpolation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/IntervalSegmentStrict.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.IntervalSegmentStrict",
+   "original_sha256": "f48f7aded742e86b4716c195ec83f47a6fc08f0a90d21cba383bb9fe001f95ae",
+   "path": "OAI/Combinatorics/Crossing/IntervalSegmentStrict.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/IntervalSegments.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.IntervalSegments",
+   "original_sha256": "b86ff3974f272398ef89c6f0d29ea696898e1e8920c195d1444ff81908045f26",
+   "path": "OAI/Combinatorics/Crossing/IntervalSegments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/LocalLineBends.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.LocalLineBends",
+   "original_sha256": "9815499e08175f82ea6c4eb571910b69cb680183c80fb404f916974df718e1e4",
+   "path": "OAI/Combinatorics/Crossing/LocalLineBends.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/LocalSegmentTransversality.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.LocalSegmentTransversality",
+   "original_sha256": "ecd497c769b00f747d71ae0f20fbbdc0019e1acd2fcd9d809aef3931d8973b37",
+   "path": "OAI/Combinatorics/Crossing/LocalSegmentTransversality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/LocallyStraightNormalization.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.LocallyStraightNormalization",
+   "original_sha256": "97cd411d3300df3bba86bb63353d480de8f1bfe45153108b42d8dc00f790560b",
+   "path": "OAI/Combinatorics/Crossing/LocallyStraightNormalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/LocallyTransverseNormalization.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.LocallyTransverseNormalization",
+   "original_sha256": "192d4151be79f3235193aab065f897745e62f2fcdb05484ddbee7adbda6f2650",
+   "path": "OAI/Combinatorics/Crossing/LocallyTransverseNormalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/Main.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.Main",
+   "original_sha256": "7291182875afe4e1d5bb53c68eca65286191b44aca6e4efdb823cdc932b28057",
+   "path": "OAI/Combinatorics/Crossing/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/MarkedCurveDisks.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.MarkedCurveDisks",
+   "original_sha256": "9a14b2dab3fd0526d738054cc0cbcc177a2ced3c54e3f094372045d1303a7ade",
+   "path": "OAI/Combinatorics/Crossing/MarkedCurveDisks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/MatrixGraphs.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.MatrixGraphs",
+   "original_sha256": "a14a9257f635ff8e72a2901c58a9150ab21bdd7f61e484069ea539f0cc0dff9d",
+   "path": "OAI/Combinatorics/Crossing/MatrixGraphs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/MatrixRankBounds.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.MatrixRankBounds",
+   "original_sha256": "ed87c140e0c962e9d554ca9f2189f61af8c4babe82c0c717fe9a9b706378392d",
+   "path": "OAI/Combinatorics/Crossing/MatrixRankBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/MatrixRankSum.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.MatrixRankSum",
+   "original_sha256": "369c117bdf21495707bbd4c21ba41b2d9ca0bd3cc982313cadb0b58b9cd988e7",
+   "path": "OAI/Combinatorics/Crossing/MatrixRankSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/MiddleEdgeIncidence.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.MiddleEdgeIncidence",
+   "original_sha256": "3f67ce6ec4eeef7454721743340dbac4a31a859bab563cc6efb93bb123e46259",
+   "path": "OAI/Combinatorics/Crossing/MiddleEdgeIncidence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/MiddlePathInjective.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.MiddlePathInjective",
+   "original_sha256": "f1d2449b4087282d7c5351f56fbbbd2a650d477b8446a5b4390fe4d496d730ff",
+   "path": "OAI/Combinatorics/Crossing/MiddlePathInjective.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/MiddleSpokeMeeting.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.MiddleSpokeMeeting",
+   "original_sha256": "2797de6b93446f5d4543b9d464a25172c2e52098cae3171dec1c2513e96f5cbe",
+   "path": "OAI/Combinatorics/Crossing/MiddleSpokeMeeting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/MinimumChainGeometry.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.MinimumChainGeometry",
+   "original_sha256": "6f4a3033cc9c738faca84ab2617788ddf5e26e32c0f00b06fe050d0d84e7bed5",
+   "path": "OAI/Combinatorics/Crossing/MinimumChainGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/MinimumChainVertexPieces.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.MinimumChainVertexPieces",
+   "original_sha256": "66c46d9e7e386c301ff66f557633b773794afbb0d0a62bc538bd29bd21c98ef3",
+   "path": "OAI/Combinatorics/Crossing/MinimumChainVertexPieces.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/MovingDiskClearance.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.MovingDiskClearance",
+   "original_sha256": "b7d4da5be52c37670d0621cf6df7d0a657fa229777c69a2dc3fd80da4af6a82a",
+   "path": "OAI/Combinatorics/Crossing/MovingDiskClearance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/MovingSegmentStability.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.MovingSegmentStability",
+   "original_sha256": "ceb60d731591bf62ebe6f35b452ff611b72f334b666862ebea4c7fb5e1cc3420",
+   "path": "OAI/Combinatorics/Crossing/MovingSegmentStability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/NoAdjacentLocalNormalization.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.NoAdjacentLocalNormalization",
+   "original_sha256": "315ea56fce73b148edb088711eb2e48281edb8f326518ea28df346733e1150cf",
+   "path": "OAI/Combinatorics/Crossing/NoAdjacentLocalNormalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/NoAdjacentNormalization.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.NoAdjacentNormalization",
+   "original_sha256": "7a675680fed61376975e6d4d4c8583b5de60c1e143b0b709e1c843532a79d413",
+   "path": "OAI/Combinatorics/Crossing/NoAdjacentNormalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/NodeMoments.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.NodeMoments",
+   "original_sha256": "8420c4deaa953392a2a688b2a903e7845ca816712c553ae94a9906168d015aad",
+   "path": "OAI/Combinatorics/Crossing/NodeMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/NodeRankLoss.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.NodeRankLoss",
+   "original_sha256": "517bcddd4b3dc1a46a6b10ca3aef3c7b31dfa69ac75e57d7f80d63614670d4f6",
+   "path": "OAI/Combinatorics/Crossing/NodeRankLoss.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/NormalOffsetExterior.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.NormalOffsetExterior",
+   "original_sha256": "5706057f948122b6f7353900977d3405381b5c5330a03bf165ebbc9c555324f0",
+   "path": "OAI/Combinatorics/Crossing/NormalOffsetExterior.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/NormalizedPolygonalDrawing.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.NormalizedPolygonalDrawing",
+   "original_sha256": "621287766df1f618cf1a98f3db563b72b16491a2218b33ec10bbc38e3e6e5eb9",
+   "path": "OAI/Combinatorics/Crossing/NormalizedPolygonalDrawing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/OddCrossingLowerBound.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.OddCrossingLowerBound",
+   "original_sha256": "5b9758df468a34064e3e5dd30579f5bf06663271660de9cd6cfe6721ed197ed6",
+   "path": "OAI/Combinatorics/Crossing/OddCrossingLowerBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/OddNormalizedLowerBound.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.OddNormalizedLowerBound",
+   "original_sha256": "3e84735a80492c7f3cf2b8c89964a83ec3e08ad31936c549f0fdcdd46eba9131",
+   "path": "OAI/Combinatorics/Crossing/OddNormalizedLowerBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/OffsetBendSegments.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.OffsetBendSegments",
+   "original_sha256": "ca11d9b116a9d15ddcc31f0e03decb554c62f6c6f457858788138f803cb95591",
+   "path": "OAI/Combinatorics/Crossing/OffsetBendSegments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/OffsetSegments.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.OffsetSegments",
+   "original_sha256": "7eb2c3176f057cdb701cc0996fe8a8d8ee7e30c439fdf40f913c2b73409bbe47",
+   "path": "OAI/Combinatorics/Crossing/OffsetSegments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/OffsetTrack.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.OffsetTrack",
+   "original_sha256": "3e6744e9b68c724723c7ca150935d9191f8f8fc120f4eed0e02b6d8aca891051",
+   "path": "OAI/Combinatorics/Crossing/OffsetTrack.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/OffsetVectors.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.OffsetVectors",
+   "original_sha256": "d480ca6f4ecd2cf6db0796554cf75792b9cd470e86d0b0657a5b895c6617377c",
+   "path": "OAI/Combinatorics/Crossing/OffsetVectors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/OpenSegmentEndpoints.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.OpenSegmentEndpoints",
+   "original_sha256": "aae2660bae4ac871ffc369712f30cf30e835bd666ea8be55c550ad7c1b848428",
+   "path": "OAI/Combinatorics/Crossing/OpenSegmentEndpoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/OrderShift.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.OrderShift",
+   "original_sha256": "23bc43be11a0db514ea4399ca0a4137c66ff8d5e23167a38424b36d7c8755083",
+   "path": "OAI/Combinatorics/Crossing/OrderShift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/OrderedAffineSubdivision.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.OrderedAffineSubdivision",
+   "original_sha256": "3a5216a8a25c28c4ca64a15a00b8ee02cd3150a724b3b804c73c9d4e85ddca9b",
+   "path": "OAI/Combinatorics/Crossing/OrderedAffineSubdivision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/OrderedCrossingPorts.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.OrderedCrossingPorts",
+   "original_sha256": "43a21fadbce53bd8ef5a1fa04b8f49f413b792a736748d1303bf6782f13d8bf7",
+   "path": "OAI/Combinatorics/Crossing/OrderedCrossingPorts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/OrderedExteriorPaths.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.OrderedExteriorPaths",
+   "original_sha256": "9893c323fd36bb7df3816c944232c48d0fe0da48aafea43e87486430d038920b",
+   "path": "OAI/Combinatorics/Crossing/OrderedExteriorPaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/OrderedKnotCover.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.OrderedKnotCover",
+   "original_sha256": "c55dc44c2749a68975353a70e4bb4e313aedd3f8003e2f18008b8f70c5d09a38",
+   "path": "OAI/Combinatorics/Crossing/OrderedKnotCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/OrderedNodeIndices.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.OrderedNodeIndices",
+   "original_sha256": "2f738df46bd3126f9a125e50e1b71b4e73b7ec6a1741ec06221ea6f5d807f7e8",
+   "path": "OAI/Combinatorics/Crossing/OrderedNodeIndices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/OrderedPassages.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.OrderedPassages",
+   "original_sha256": "72e9586e60b816abc845e96e19262b65d8869c097c266466e89794779242bf22",
+   "path": "OAI/Combinatorics/Crossing/OrderedPassages.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/OrderedPathParts.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.OrderedPathParts",
+   "original_sha256": "4483f3a9809ae02a3160d0ce7d255496482397402d371cd31ca0ae0b7769bad0",
+   "path": "OAI/Combinatorics/Crossing/OrderedPathParts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/OrientedSimilarity.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.OrientedSimilarity",
+   "original_sha256": "d117f66a3833372bb2ce6dc6b98ded328ebcab6a3068cf7ee2202a22b6d0b5a2",
+   "path": "OAI/Combinatorics/Crossing/OrientedSimilarity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ParallelDirection.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ParallelDirection",
+   "original_sha256": "70038d246574485e86bd4f7c1ee08b03d10b4c78ffc32fd662e8ecc0fef0b83c",
+   "path": "OAI/Combinatorics/Crossing/ParallelDirection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ParameterNeighborhoods.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ParameterNeighborhoods",
+   "original_sha256": "ed8aada0ad7a313fbf99433161c9ad824a4c29f7c5ecaba091f0a39ca8ed5520",
+   "path": "OAI/Combinatorics/Crossing/ParameterNeighborhoods.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PathConcatenationInjective.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PathConcatenationInjective",
+   "original_sha256": "5dec9e9e13c81167bdc9807c892687a32026ef2416ac970d67bee938df849437",
+   "path": "OAI/Combinatorics/Crossing/PathConcatenationInjective.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PathEndpointNeighborhoods.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PathEndpointNeighborhoods",
+   "original_sha256": "d66cfbde8074d8a35c87f14adc8163bb07d7857de0c8a8c1c1f86f1ca143a357",
+   "path": "OAI/Combinatorics/Crossing/PathEndpointNeighborhoods.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PathSubarc.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PathSubarc",
+   "original_sha256": "d2ec247b9359712198de3971594c40a5b0030064847bafffd56927dbeb29b38e",
+   "path": "OAI/Combinatorics/Crossing/PathSubarc.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PeriodicPolygon.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PeriodicPolygon",
+   "original_sha256": "9e1c5704a2600ebc9ebf3de40802c4e5a77a7766e567bdce55e2a9269a258541",
+   "path": "OAI/Combinatorics/Crossing/PeriodicPolygon.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PhysicalCircleAveraging.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PhysicalCircleAveraging",
+   "original_sha256": "85ee96fbf65dacba37fc4e449127687cf6e6629e8294d4fb557d9794a69d7d27",
+   "path": "OAI/Combinatorics/Crossing/PhysicalCircleAveraging.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PhysicalSpokeAveraging.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PhysicalSpokeAveraging",
+   "original_sha256": "f2cf8890b3721f548956316f3047fb978057073809023756362b6eeec27e523e",
+   "path": "OAI/Combinatorics/Crossing/PhysicalSpokeAveraging.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PhysicalVertexChords.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PhysicalVertexChords",
+   "original_sha256": "1413d725f6dba01bbd9c6deaba06a1bb8d95ed141f6720f6d4310e3ada7864c6",
+   "path": "OAI/Combinatorics/Crossing/PhysicalVertexChords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PlanarDeterminant.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PlanarDeterminant",
+   "original_sha256": "f18e85789b6e88cbe5f341bde006bb92b4cd1ad8d9889b479adb3b8f224e83f9",
+   "path": "OAI/Combinatorics/Crossing/PlanarDeterminant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PlanarSegments.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PlanarSegments",
+   "original_sha256": "61a6d28352a30872ac2dc88da9514a0699c492171839eb8750872afbf3c8cc4b",
+   "path": "OAI/Combinatorics/Crossing/PlanarSegments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolygonComposition.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolygonComposition",
+   "original_sha256": "a13d27d9ab5b5e6beba69256122b2f9a6548461fa13a6385091481efbcbe12f8",
+   "path": "OAI/Combinatorics/Crossing/PolygonComposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolygonStability.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolygonStability",
+   "original_sha256": "bd38130e1495a837b3694ec13a4a19e002485d539d8e4136b6b95cf1d3334459",
+   "path": "OAI/Combinatorics/Crossing/PolygonStability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolygonTransversalityStability.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolygonTransversalityStability",
+   "original_sha256": "de8fe6dac9c89f23c1cd6b226209e9678d36151f3a9762320111aee66eb9392b",
+   "path": "OAI/Combinatorics/Crossing/PolygonTransversalityStability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolygonalArcInjective.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolygonalArcInjective",
+   "original_sha256": "9f82bbc26dc48b16170d1f88e9244cf2894c9c06b6d40ad36982f9cd27895bd7",
+   "path": "OAI/Combinatorics/Crossing/PolygonalArcInjective.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolygonalBoundaryReplacement.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolygonalBoundaryReplacement",
+   "original_sha256": "42a41547c4e492ad8200be83f8cc56c7b269b83f5b378b57ec098c6818402b42",
+   "path": "OAI/Combinatorics/Crossing/PolygonalBoundaryReplacement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolygonalChainComposition.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolygonalChainComposition",
+   "original_sha256": "3e6a765e9958f5183f3c64cee982cb5717ffa46fd8b185ef4f2309250a5c9352",
+   "path": "OAI/Combinatorics/Crossing/PolygonalChainComposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolygonalChainExistence.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolygonalChainExistence",
+   "original_sha256": "2dff1285382c2b973c2c21c94c199fa8ad027884a151987a0ffea382a50cb09d",
+   "path": "OAI/Combinatorics/Crossing/PolygonalChainExistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolygonalChainOperations.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolygonalChainOperations",
+   "original_sha256": "db90039735a08877ba6d955316ff0e7a2c9287b157d4a0dbef805783d8c76a0e",
+   "path": "OAI/Combinatorics/Crossing/PolygonalChainOperations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolygonalChainShortcuts.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolygonalChainShortcuts",
+   "original_sha256": "5300b76e9b944493ff601d73eb2f4154fa56efae27f28e65628359714ed73060",
+   "path": "OAI/Combinatorics/Crossing/PolygonalChainShortcuts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolygonalChainTransversality.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolygonalChainTransversality",
+   "original_sha256": "c65e2462b60e38635ef8ea60fba634e4884d69aa267f977fb307c7a8cc04949f",
+   "path": "OAI/Combinatorics/Crossing/PolygonalChainTransversality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolygonalChains.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolygonalChains",
+   "original_sha256": "5e3d2287dc2d799696763f0e38b3e648fcbbf8b1069dd29366142464405748f0",
+   "path": "OAI/Combinatorics/Crossing/PolygonalChains.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolygonalEndpointCasts.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolygonalEndpointCasts",
+   "original_sha256": "f79451cff12ac7d3ca5484e9093b0bf19597c5205f2122c27fd593d386b29d18",
+   "path": "OAI/Combinatorics/Crossing/PolygonalEndpointCasts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolygonalExterior.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolygonalExterior",
+   "original_sha256": "3608e1c181b98357dfd3b37d5c1740b0600d685b02fba2a20ed84f25564efc98",
+   "path": "OAI/Combinatorics/Crossing/PolygonalExterior.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolygonalNormalization.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolygonalNormalization",
+   "original_sha256": "21fc724c28b433fa3fe7a33d8f286e5b1207c750563603158c1bbafef2e88ab7",
+   "path": "OAI/Combinatorics/Crossing/PolygonalNormalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolygonalParametrization.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolygonalParametrization",
+   "original_sha256": "e7b70a49832a2b66f5ec6fc9826b403042c0027197e9f9a20d4ea15f51a5b24f",
+   "path": "OAI/Combinatorics/Crossing/PolygonalParametrization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolygonalParametrizationCover.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolygonalParametrizationCover",
+   "original_sha256": "3bde5fe706de21eec69fa62e8139e071467e94cae02a0cb2253650fc36efff40",
+   "path": "OAI/Combinatorics/Crossing/PolygonalParametrizationCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolygonalReach.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolygonalReach",
+   "original_sha256": "b68df64bce4e5a54e54b6b28f5836e812ffd32fd0a329668df104640f9a70a38",
+   "path": "OAI/Combinatorics/Crossing/PolygonalReach.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolygonalWalks.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolygonalWalks",
+   "original_sha256": "f838be7227f0c37a6db8a442ae5263a578edaa1239e5b2d31f03dd9b7f978a29",
+   "path": "OAI/Combinatorics/Crossing/PolygonalWalks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolynomialCoordinates.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolynomialCoordinates",
+   "original_sha256": "f3dcf13d7b281dca32d65ce36ac496fa2af188362050a2f0b09d25fca502cba4",
+   "path": "OAI/Combinatorics/Crossing/PolynomialCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolynomialFiltration.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolynomialFiltration",
+   "original_sha256": "6c32061aa712861b850cb96c2d46afb9a1124bfba28f4119237e25d6134b632e",
+   "path": "OAI/Combinatorics/Crossing/PolynomialFiltration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolynomialKernel.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolynomialKernel",
+   "original_sha256": "4a885b3f73e096cbf3f4c2643ad53b9eca4facb8b27a73601a66c9ebaef2f2d6",
+   "path": "OAI/Combinatorics/Crossing/PolynomialKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolynomialLinearMatrix.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolynomialLinearMatrix",
+   "original_sha256": "b9fefbe8237761121a7bb19c11d71ec2ec8f31191b56653b36682d679205bc53",
+   "path": "OAI/Combinatorics/Crossing/PolynomialLinearMatrix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/PolynomialMinors.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.PolynomialMinors",
+   "original_sha256": "6c8ac8937bcc9447dc9a69e46c07f8418350bc1a568135d6947d9a2ce0bea02f",
+   "path": "OAI/Combinatorics/Crossing/PolynomialMinors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ProperCrossingLocality.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ProperCrossingLocality",
+   "original_sha256": "af9ca6df0edb680fd2cc40e50590aea46b9c592c786e6f2780dfdb9984207393",
+   "path": "OAI/Combinatorics/Crossing/ProperCrossingLocality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ProperSegmentCrossing.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ProperSegmentCrossing",
+   "original_sha256": "f14cdec0712e335f58928f96a36c91e49f7fa41e5e8973b746482c128ed0e372",
+   "path": "OAI/Combinatorics/Crossing/ProperSegmentCrossing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/RadialBoundaryPorts.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.RadialBoundaryPorts",
+   "original_sha256": "8af549fa49807442065662f22044186114cbf78464f41fa912ba32228b5a8eef",
+   "path": "OAI/Combinatorics/Crossing/RadialBoundaryPorts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/RadialExterior.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.RadialExterior",
+   "original_sha256": "dac47d45fe67ec62cb34b7ecc8a33b88f0e1798aad6ce1b91d9c6aaccc6c38d9",
+   "path": "OAI/Combinatorics/Crossing/RadialExterior.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/RankDetector.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.RankDetector",
+   "original_sha256": "76df613085c053ca4b534ab1d0b6a6e08142850c3d3e4cea22ea3a45dfad9d0e",
+   "path": "OAI/Combinatorics/Crossing/RankDetector.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/RankMultiplicity.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.RankMultiplicity",
+   "original_sha256": "de75d1206ee0f783274053bb7e3dcd2a06ae9fa9d2d512070a0f9d410356b36e",
+   "path": "OAI/Combinatorics/Crossing/RankMultiplicity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/RankSpecialization.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.RankSpecialization",
+   "original_sha256": "52352cc3e2ac6bf8a1069e04cde1665fc365d448bd9ce7201e7b08d574af7125",
+   "path": "OAI/Combinatorics/Crossing/RankSpecialization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ReconnectedIntersectionCases.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ReconnectedIntersectionCases",
+   "original_sha256": "bd528af309aa38b7ab098df86ce64d730a02d10fe82d8b536febe019dc2f30b3",
+   "path": "OAI/Combinatorics/Crossing/ReconnectedIntersectionCases.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ReconnectedPaths.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ReconnectedPaths",
+   "original_sha256": "57465e1eda92680f5c77ea618bcb029ffea46a8459863055299ced5f56d47ce6",
+   "path": "OAI/Combinatorics/Crossing/ReconnectedPaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ReconnectedPointRemoval.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ReconnectedPointRemoval",
+   "original_sha256": "06b470187fb1bec8b49645e257ccd774a3d0272a6981cae6ae901fa1791a8a1c",
+   "path": "OAI/Combinatorics/Crossing/ReconnectedPointRemoval.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ReconnectedVertexAvoidance.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ReconnectedVertexAvoidance",
+   "original_sha256": "a143bb5557521caada03e4a3d911ac50d864e1d0d357ed72c8083ae2ba4ce8b1",
+   "path": "OAI/Combinatorics/Crossing/ReconnectedVertexAvoidance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ReconnectedWalks.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ReconnectedWalks",
+   "original_sha256": "b177d1f0bd51d60e66fc0f536f3327f93d6f7e001843739e354de070618aeb1c",
+   "path": "OAI/Combinatorics/Crossing/ReconnectedWalks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ReconnectionAvoidance.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ReconnectionAvoidance",
+   "original_sha256": "cfe22f9155ceca7bdd0a80f1b5148b3fc5a5e29564971d390c86848c66e0cd42",
+   "path": "OAI/Combinatorics/Crossing/ReconnectionAvoidance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ReconnectionChords.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ReconnectionChords",
+   "original_sha256": "173bac649155a682034587fa2fb7f32fa4c28269d0906f27987d60d53441b7d2",
+   "path": "OAI/Combinatorics/Crossing/ReconnectionChords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ReconnectionOppositeCuts.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ReconnectionOppositeCuts",
+   "original_sha256": "2ca1527c4f452dbc52521aaa77c6cbf71c504ef2fe152f16f05356861833619a",
+   "path": "OAI/Combinatorics/Crossing/ReconnectionOppositeCuts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ReconnectionOtherEdges.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ReconnectionOtherEdges",
+   "original_sha256": "5e5583115da82d3a621d012e2d1f77f8ad1cce99b8182a25f462727ed5720ce2",
+   "path": "OAI/Combinatorics/Crossing/ReconnectionOtherEdges.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ReconnectionVertexAvoidance.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ReconnectionVertexAvoidance",
+   "original_sha256": "a14d79ba8c6c8bf5f6506a544782340dd53c14e802037b6ab69e2cbd8eb78300",
+   "path": "OAI/Combinatorics/Crossing/ReconnectionVertexAvoidance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/RectangleAlgebra.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.RectangleAlgebra",
+   "original_sha256": "ceb9faf75e2f3b7326f2028f9df0ddf1925bc00b28b1dd3975689148e0997f2a",
+   "path": "OAI/Combinatorics/Crossing/RectangleAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ReducedCrossingCorners.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ReducedCrossingCorners",
+   "original_sha256": "7d34b7aeffc09233aa656e4893fade82934e5e8549af63331067501925297ba4",
+   "path": "OAI/Combinatorics/Crossing/ReducedCrossingCorners.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ReducedCrossingTransversality.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ReducedCrossingTransversality",
+   "original_sha256": "f65aa5e63d8774d8be6165edc7aea72bcd1804fd2381e19aa354599c8101c538",
+   "path": "OAI/Combinatorics/Crossing/ReducedCrossingTransversality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ReducedPolygonalPresentation.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ReducedPolygonalPresentation",
+   "original_sha256": "241f3d2a7fd604aa042dd7020fbabb612d3842f3f051127570d0e1df7046350c",
+   "path": "OAI/Combinatorics/Crossing/ReducedPolygonalPresentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ReplaceDrawingEdges.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ReplaceDrawingEdges",
+   "original_sha256": "c2bb1f3da6f29e931fa04ae0e809518f5c58c295276c26820f13b140770d3076",
+   "path": "OAI/Combinatorics/Crossing/ReplaceDrawingEdges.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ReplaceDrawingRangeCases.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ReplaceDrawingRangeCases",
+   "original_sha256": "217c0dff92817e88303abc09fb0854b73aad15b4689e277305c7222a86280385",
+   "path": "OAI/Combinatorics/Crossing/ReplaceDrawingRangeCases.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/RetainedArcDisjointness.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.RetainedArcDisjointness",
+   "original_sha256": "fd1541fc598ed3c4eeb05b822ee3e8cfce3f41538d23e1cacb05a2ee5db27e5f",
+   "path": "OAI/Combinatorics/Crossing/RetainedArcDisjointness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/RetainedDrawingArcs.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.RetainedDrawingArcs",
+   "original_sha256": "5f5705f8366b403244f00c069b5d40796b7544199f7ecff8924806011a4d8f0b",
+   "path": "OAI/Combinatorics/Crossing/RetainedDrawingArcs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/RoundCircleChords.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.RoundCircleChords",
+   "original_sha256": "6aa694b83fece7e5180f113263a9a7f3dddc9323ae0c5c9f7c47087da1f7c817",
+   "path": "OAI/Combinatorics/Crossing/RoundCircleChords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/RoundDiskChords.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.RoundDiskChords",
+   "original_sha256": "6efe4d3c7105b5bc0ef449b7fe5aca927a9715e283a4ca976aee46ef97134e34",
+   "path": "OAI/Combinatorics/Crossing/RoundDiskChords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/RoundDiskClearance.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.RoundDiskClearance",
+   "original_sha256": "44be72fbea2633367f7a13d2a81696ba986a3079b87d09a98464abc2a5149741",
+   "path": "OAI/Combinatorics/Crossing/RoundDiskClearance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/RoundDiskVisits.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.RoundDiskVisits",
+   "original_sha256": "caba3662605bddf5b6960a7da7921ed23f5c8129f67b16fe09935caa824cca04",
+   "path": "OAI/Combinatorics/Crossing/RoundDiskVisits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/RowCrossingCount.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.RowCrossingCount",
+   "original_sha256": "5892766c54749abcea1c6c6f6187e8269f71e00bd91e9fcd1e1521e291c402ed",
+   "path": "OAI/Combinatorics/Crossing/RowCrossingCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SegmentAffineForms.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SegmentAffineForms",
+   "original_sha256": "8c0d56887f931108a6863c06862e68e9eda6cdf87b3b9abd29a7c882415778ee",
+   "path": "OAI/Combinatorics/Crossing/SegmentAffineForms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SegmentAugmentation.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SegmentAugmentation",
+   "original_sha256": "3e325f4d22b334fb523e1d070898176f2c4adcf44b9670257900de6bdef67c76",
+   "path": "OAI/Combinatorics/Crossing/SegmentAugmentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SegmentClosedIncidence.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SegmentClosedIncidence",
+   "original_sha256": "21fb81704f186871b59a7b4530b8242046f09054843143142c32618fd6c1b808",
+   "path": "OAI/Combinatorics/Crossing/SegmentClosedIncidence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SegmentContinuity.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SegmentContinuity",
+   "original_sha256": "a4fb8a9d979e074f71b9cdab2e44305e050569c467978515c6691c6b09cbb38c",
+   "path": "OAI/Combinatorics/Crossing/SegmentContinuity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SegmentCrossingCoordinates.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SegmentCrossingCoordinates",
+   "original_sha256": "b5304ad1732cfd1bd3404be73c61b95f7ec247d5aec90264d2a39e06be4c98a3",
+   "path": "OAI/Combinatorics/Crossing/SegmentCrossingCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SegmentIntersectionUnique.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SegmentIntersectionUnique",
+   "original_sha256": "6d370c4c4c4a143d4571ba8783d78fcfdc20b6b59dfc034307429560b8b702e5",
+   "path": "OAI/Combinatorics/Crossing/SegmentIntersectionUnique.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SegmentParameters.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SegmentParameters",
+   "original_sha256": "619564dfedfb791d092daa8a1bbf3083c6d0268fc34d5df644650f5e5e05aea4",
+   "path": "OAI/Combinatorics/Crossing/SegmentParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SegmentSides.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SegmentSides",
+   "original_sha256": "c47710843d03c9fe6db3b00b608a20826f3b663a30c3bef297f312f37ff39c59",
+   "path": "OAI/Combinatorics/Crossing/SegmentSides.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SegmentSymmetries.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SegmentSymmetries",
+   "original_sha256": "6edc6cbe907e6b15abde6bca0ebbd80f7f2e31d4c54f500927aebe4b37bec5d0",
+   "path": "OAI/Combinatorics/Crossing/SegmentSymmetries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SegmentTraversalReversal.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SegmentTraversalReversal",
+   "original_sha256": "162c737f956c2daa177bae17ddaf1b22cec60ceb0a491d999310306ec76543fe",
+   "path": "OAI/Combinatorics/Crossing/SegmentTraversalReversal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SharedTrackAvoidance.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SharedTrackAvoidance",
+   "original_sha256": "56a47f81a90f15ee58874f778f095909f39e8e6d6b544b343596f424cd890c0b",
+   "path": "OAI/Combinatorics/Crossing/SharedTrackAvoidance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ShiftedEdgeIntersections.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ShiftedEdgeIntersections",
+   "original_sha256": "7db50ebc75f4c0de7c6b3892afa82982d05228dcb5b2957e6b400b1f91866cec",
+   "path": "OAI/Combinatorics/Crossing/ShiftedEdgeIntersections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ShiftedRadialPieces.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ShiftedRadialPieces",
+   "original_sha256": "58ec3213237fa14e8783b5af4167e73ac4210f95b75bc87e06290ab23cc43ec7",
+   "path": "OAI/Combinatorics/Crossing/ShiftedRadialPieces.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ShiftedSegmentStability.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ShiftedSegmentStability",
+   "original_sha256": "eded9263fb14b5d3bee414f2fd1d080ab2d3ef514a3d6d175885f52a3a50ddbd",
+   "path": "OAI/Combinatorics/Crossing/ShiftedSegmentStability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ShiftedTrackDisks.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ShiftedTrackDisks",
+   "original_sha256": "b226550cc54316e4bb681dfe3258e97e210a1732a0cc2f7da4b50b4eda3d9345",
+   "path": "OAI/Combinatorics/Crossing/ShiftedTrackDisks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/ShortVertexRadius.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.ShortVertexRadius",
+   "original_sha256": "b586cb5a7c4bcb08392eec75f1b831bb7a540a789d0ef463b063120174e1989c",
+   "path": "OAI/Combinatorics/Crossing/ShortVertexRadius.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SimilarityCoordinates.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SimilarityCoordinates",
+   "original_sha256": "78e79e4bfb80073386da85410781d4a6a94a529956893038e3b357adb9c7d8b8",
+   "path": "OAI/Combinatorics/Crossing/SimilarityCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SimultaneousExteriorArcs.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SimultaneousExteriorArcs",
+   "original_sha256": "7586780802891979c28808ca1f372cab6fbc2ffb86a023e0c8335e6a0a43924f",
+   "path": "OAI/Combinatorics/Crossing/SimultaneousExteriorArcs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SimultaneousPolygonalReplacement.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SimultaneousPolygonalReplacement",
+   "original_sha256": "f7ec106719a272652ebf37378e1d1ac24188812fa07740c67ac945fcd808cc2c",
+   "path": "OAI/Combinatorics/Crossing/SimultaneousPolygonalReplacement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SortedMarkedParameters.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SortedMarkedParameters",
+   "original_sha256": "7fa97269e7ae71759066e1498d4fe425d272248d304fa8531cb1b3e0d9a95e85",
+   "path": "OAI/Combinatorics/Crossing/SortedMarkedParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SortedSideEvents.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SortedSideEvents",
+   "original_sha256": "440757b91361e86dd7e9cd7c1304f5e1fdd023397e7b794851b89afafafc916b",
+   "path": "OAI/Combinatorics/Crossing/SortedSideEvents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SpokeEndpointSeparation.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SpokeEndpointSeparation",
+   "original_sha256": "02a26f3222e014f43d432e8c1f461892ce325999e2930b8caba026c409d68abc",
+   "path": "OAI/Combinatorics/Crossing/SpokeEndpointSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SpokePieceIsolation.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SpokePieceIsolation",
+   "original_sha256": "7fc200ba59fef6b0f5acb80c6c4f19928423aa1176fda4e1ade2ba8a57bc4c7d",
+   "path": "OAI/Combinatorics/Crossing/SpokePieceIsolation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SpokeTrackDirections.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SpokeTrackDirections",
+   "original_sha256": "b15fe68d0b90b8c9486d956456761e3d1b0d61ff1022c51dfec1000a0c31a8b5",
+   "path": "OAI/Combinatorics/Crossing/SpokeTrackDirections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/StageDegreeBound.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.StageDegreeBound",
+   "original_sha256": "db662ee15fb907fccb5d5f8c71f1a0f5586f8ed0cb3a111015dd14b6558e01ec",
+   "path": "OAI/Combinatorics/Crossing/StageDegreeBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/StepEvents.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.StepEvents",
+   "original_sha256": "b9a748dc65ab4fafb49f19e6d45557a1a0dc82732e9d6f6461274d19024a6bff",
+   "path": "OAI/Combinatorics/Crossing/StepEvents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/StraightChainIntersections.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.StraightChainIntersections",
+   "original_sha256": "f96e780a8659bbd8cb4caa8f46a949aa0caf738a048121e94742abfb36481cdb",
+   "path": "OAI/Combinatorics/Crossing/StraightChainIntersections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/StraightChainTransversality.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.StraightChainTransversality",
+   "original_sha256": "7b5f6b7d3c4b165366d5f8c1f0fee2a99cc47e839ac0360f936755707ee1beaf",
+   "path": "OAI/Combinatorics/Crossing/StraightChainTransversality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SubdivisionPointEndpoints.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SubdivisionPointEndpoints",
+   "original_sha256": "f7bc3c44972333b82d2a0a082cbca2f7fceefe944237146da3d0463cae00f3e2",
+   "path": "OAI/Combinatorics/Crossing/SubdivisionPointEndpoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SubdivisionSegments.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SubdivisionSegments",
+   "original_sha256": "6a336e84d66cf38dbbaba5f7752740adcaa4ac0bca4a0f3619373fde0b999ac9",
+   "path": "OAI/Combinatorics/Crossing/SubdivisionSegments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SublevelExtrema.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SublevelExtrema",
+   "original_sha256": "b484ab98d5d07f01c6324692461d50c849bb2fb0f4e55ff740551c47bf3a3c8f",
+   "path": "OAI/Combinatorics/Crossing/SublevelExtrema.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SubspaceIntersection.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SubspaceIntersection",
+   "original_sha256": "c89e2dea6dd0dc97f21c1fa955bef8b4a01829074c67cf6ea2778f19c7d0b696",
+   "path": "OAI/Combinatorics/Crossing/SubspaceIntersection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SubspaceProjection.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SubspaceProjection",
+   "original_sha256": "0cbc905cd33fc118de826276823503425467d2de66e07d34c364abe4c346f088",
+   "path": "OAI/Combinatorics/Crossing/SubspaceProjection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SurgeryCrossingContainment.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SurgeryCrossingContainment",
+   "original_sha256": "c3559c86f80813eeeb673a1615130dd238466434b934a457addb53a5e4716765",
+   "path": "OAI/Combinatorics/Crossing/SurgeryCrossingContainment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SurgeryCutWalks.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SurgeryCutWalks",
+   "original_sha256": "64597eca379d8507c59873f89bfd748a0c0fd5a52156f06d38c52afcbf7c1ba9",
+   "path": "OAI/Combinatorics/Crossing/SurgeryCutWalks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SurgeryFiniteDrawing.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SurgeryFiniteDrawing",
+   "original_sha256": "ed413e77cb46528882739d94e70b665b46e416233253ae8cf259d0ff3ae6575a",
+   "path": "OAI/Combinatorics/Crossing/SurgeryFiniteDrawing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SurgeryNoTriples.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SurgeryNoTriples",
+   "original_sha256": "596d2af084ac67e3f972d16157dd72698d2f51ae0667bdd977c5c46f93173844",
+   "path": "OAI/Combinatorics/Crossing/SurgeryNoTriples.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SurgeryPathWitnesses.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SurgeryPathWitnesses",
+   "original_sha256": "28af03119618aa5086cdce5e2fcfcd640be9ddd260da0cd7b358ebe715ba8b0e",
+   "path": "OAI/Combinatorics/Crossing/SurgeryPathWitnesses.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SurgeryRouteIntersections.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SurgeryRouteIntersections",
+   "original_sha256": "6bba064e96a5d60fe2c3d94f74e821e967a6e59580a4b0876ef00a74ca4e8e56",
+   "path": "OAI/Combinatorics/Crossing/SurgeryRouteIntersections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/SurgeryStrictPointCount.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.SurgeryStrictPointCount",
+   "original_sha256": "6faff62d19b4394dcc87f5fab37ac831855f1120a797010c13616a15cf382b9d",
+   "path": "OAI/Combinatorics/Crossing/SurgeryStrictPointCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TangentTrackIdentity.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TangentTrackIdentity",
+   "original_sha256": "8f42cf14043eaf49313830b23eebd6cd8a09b3019b4ba08526a7578ab152634f",
+   "path": "OAI/Combinatorics/Crossing/TangentTrackIdentity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TrackChordSeparation.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TrackChordSeparation",
+   "original_sha256": "4a7dbd8c4a4e88a5ff474453419f086ebb841d3e8e3a6e335031af63d5ecbbad",
+   "path": "OAI/Combinatorics/Crossing/TrackChordSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TrackEndpointConnections.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TrackEndpointConnections",
+   "original_sha256": "a0e0a06178cef0058e77925a59c1aa2b65a3c9d9a3ccb5b07e913d81fc93888f",
+   "path": "OAI/Combinatorics/Crossing/TrackEndpointConnections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TransversalityStability.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TransversalityStability",
+   "original_sha256": "27a938eddebe2f7cbe4a81d60d3f205536746a5a4e652926f7b42048cefef252",
+   "path": "OAI/Combinatorics/Crossing/TransversalityStability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TransversePolygonIntersection.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TransversePolygonIntersection",
+   "original_sha256": "f017085010e813851a4289938f5b6ffc098d4165a32c6b0ff44d14f30b6ed21f",
+   "path": "OAI/Combinatorics/Crossing/TransversePolygonIntersection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TriangleEntryExit.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TriangleEntryExit",
+   "original_sha256": "6a5e223ed2b449a49cb937f002529bf432036e29c1c862298b011fe9791cc572",
+   "path": "OAI/Combinatorics/Crossing/TriangleEntryExit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TriangleFactorization.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TriangleFactorization",
+   "original_sha256": "fa740273f752fce1a2df41fb58a53c8196a3846996038396f61fe1eeb3916d75",
+   "path": "OAI/Combinatorics/Crossing/TriangleFactorization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TriangleOrientations.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TriangleOrientations",
+   "original_sha256": "b5d4aab71914d5e158957d0255997d86778c69b7671ef93251e07313856d0656",
+   "path": "OAI/Combinatorics/Crossing/TriangleOrientations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TriangleSideEvent.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TriangleSideEvent",
+   "original_sha256": "4c0ad1c31d345a1b2e6601d7870adddf2981a907ce1d9e80a8f8c762f195b49b",
+   "path": "OAI/Combinatorics/Crossing/TriangleSideEvent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TriangleTransversality.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TriangleTransversality",
+   "original_sha256": "423fdc4f6c5a2c5a598ed937780b77f67ebd6cd8a07a3319d4fada95e913bb03",
+   "path": "OAI/Combinatorics/Crossing/TriangleTransversality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TruncatedChainDirections.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TruncatedChainDirections",
+   "original_sha256": "3b38cea28e45728882e6912f4e898e6c00cb86c39774c8d834c61518e1741112",
+   "path": "OAI/Combinatorics/Crossing/TruncatedChainDirections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TruncatedChainPath.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TruncatedChainPath",
+   "original_sha256": "6536c0bc4f8af9667d4caedb58a67ccfa393247223911aadbbc1b748538e6f94",
+   "path": "OAI/Combinatorics/Crossing/TruncatedChainPath.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TruncatedChainVertices.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TruncatedChainVertices",
+   "original_sha256": "6fde6c25170a1f09d1419fc4e5cd859a7242f866237782a1f945587cf115f132",
+   "path": "OAI/Combinatorics/Crossing/TruncatedChainVertices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TruncatedCrossingCorners.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TruncatedCrossingCorners",
+   "original_sha256": "c0c7cceff78688a57be5f6aced3452c8e53646d7b914d78dc5e2621d4e995710",
+   "path": "OAI/Combinatorics/Crossing/TruncatedCrossingCorners.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TruncatedCrossingRetention.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TruncatedCrossingRetention",
+   "original_sha256": "cb8532d208914f7553dc98878dfded5c8b30e8a7e84c1ecfe8f87b60f0688675",
+   "path": "OAI/Combinatorics/Crossing/TruncatedCrossingRetention.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TruncatedDrawingDisks.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TruncatedDrawingDisks",
+   "original_sha256": "b0a86c0141d93f6b33ff258e646d5ef13ee12b0ea0d977342b35a220b61f2d0d",
+   "path": "OAI/Combinatorics/Crossing/TruncatedDrawingDisks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TruncatedDrawingInteriors.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TruncatedDrawingInteriors",
+   "original_sha256": "87e4d67299a7ba78f534c00a2d7120043131c68f2c38d042f29ed3d2823019f1",
+   "path": "OAI/Combinatorics/Crossing/TruncatedDrawingInteriors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TruncatedRadialDots.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TruncatedRadialDots",
+   "original_sha256": "5cd7fc33c1280554437320ed2ff99fc656799bab235dda65bb76e51e29827ecd",
+   "path": "OAI/Combinatorics/Crossing/TruncatedRadialDots.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TruncatedRadialEnds.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TruncatedRadialEnds",
+   "original_sha256": "dfd9e174d93fe532929ebd0a87aae7d67541b7b6c24582d15c3e3a07e659322d",
+   "path": "OAI/Combinatorics/Crossing/TruncatedRadialEnds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TruncatedSegmentTransversality.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TruncatedSegmentTransversality",
+   "original_sha256": "c5f3969e2300740fd32adb041a5d26aa8b4c1917459b4d9298866dec19d0ed12",
+   "path": "OAI/Combinatorics/Crossing/TruncatedSegmentTransversality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TruncatedSignedIntersections.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TruncatedSignedIntersections",
+   "original_sha256": "823e44a2ad2d764645dacc8f740b98570e516765a69dbc1295e172133d35c881",
+   "path": "OAI/Combinatorics/Crossing/TruncatedSignedIntersections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TruncatedSpokeCoordinates.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TruncatedSpokeCoordinates",
+   "original_sha256": "9f5b1e9335c26d2b1c6a948439f0372ddb8302506a95b7af35f8fa993a88bc7a",
+   "path": "OAI/Combinatorics/Crossing/TruncatedSpokeCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TruncatedSpokeDirections.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TruncatedSpokeDirections",
+   "original_sha256": "5b2279a7f23d6d66fa6aee458f9d1c38072d087e4e4fd083adc9aa8d30a5f3db",
+   "path": "OAI/Combinatorics/Crossing/TruncatedSpokeDirections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TruncatedTraceDecomposition.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TruncatedTraceDecomposition",
+   "original_sha256": "89406c00a1090b38dc4ca8806651331fccf9853b95eeb8e67a070a8119ea647b",
+   "path": "OAI/Combinatorics/Crossing/TruncatedTraceDecomposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TruncatedTrackAvoidance.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TruncatedTrackAvoidance",
+   "original_sha256": "1aa17dfd2448e953b2c63badd2fc7b1e3e16aafe1fb9b27ebb8bec66805bae6f",
+   "path": "OAI/Combinatorics/Crossing/TruncatedTrackAvoidance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TruncatedTrackStability.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TruncatedTrackStability",
+   "original_sha256": "20ec2dd5f47e194292d460a15f13991b4bf6fb03e4f44fd0d2834d4bf430362b",
+   "path": "OAI/Combinatorics/Crossing/TruncatedTrackStability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TwoTriangleBasis.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TwoTriangleBasis",
+   "original_sha256": "437c461fd7bc5b5b20450bd22d66904beb37bdd86bcc1755027a53d59dc3f1ea",
+   "path": "OAI/Combinatorics/Crossing/TwoTriangleBasis.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TwoTriangleIndices.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TwoTriangleIndices",
+   "original_sha256": "de3e5d18bb5ea0fc2d274ceacf6a6ce43bc9e038c751a4c543459a2940c2c7d0",
+   "path": "OAI/Combinatorics/Crossing/TwoTriangleIndices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/TwoTriangleUnisolvence.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.TwoTriangleUnisolvence",
+   "original_sha256": "26dec46fdd075e722757e3a850dc476aba95bf7047660f8e624c39355c1dc77e",
+   "path": "OAI/Combinatorics/Crossing/TwoTriangleUnisolvence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/UniformCrossTypeGeometry.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.UniformCrossTypeGeometry",
+   "original_sha256": "32095981858690d301533feb4eb4374ace680ee0128948f6214789dc83d19a19",
+   "path": "OAI/Combinatorics/Crossing/UniformCrossTypeGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/UniformSpokeRadii.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.UniformSpokeRadii",
+   "original_sha256": "4733a22bee993ef61d4676e10c70c7813cd9196a3121c11646ac4d69fbbc9f29",
+   "path": "OAI/Combinatorics/Crossing/UniformSpokeRadii.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/UniformTrackPerturbation.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.UniformTrackPerturbation",
+   "original_sha256": "23c4b58291c017226658aca7790276048ccecc0c1927a666d4eec81196fd56de",
+   "path": "OAI/Combinatorics/Crossing/UniformTrackPerturbation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/UniqueWalkPassage.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.UniqueWalkPassage",
+   "original_sha256": "460afcd345cf9eda7772be21d8c55702235b6124ba077ea865deccebf9a260ef",
+   "path": "OAI/Combinatorics/Crossing/UniqueWalkPassage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/VertexChordIntersections.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.VertexChordIntersections",
+   "original_sha256": "3dda89448431b3cfa0da1f8186d7acbb3213e9bb3d0feb6891c3db06e5b92b8a",
+   "path": "OAI/Combinatorics/Crossing/VertexChordIntersections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/VertexDiskSpokes.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.VertexDiskSpokes",
+   "original_sha256": "f2b1cfd3f7689ed47bc39ef7b714ecdbd21b08aa62170090327c7c890c87f5ce",
+   "path": "OAI/Combinatorics/Crossing/VertexDiskSpokes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/VertexDisksCrossingFree.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.VertexDisksCrossingFree",
+   "original_sha256": "972b21231a11fb0b5fedb2fa351bd2b769f0b771e1250a3188d03188304f0abc",
+   "path": "OAI/Combinatorics/Crossing/VertexDisksCrossingFree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/VertexEndpointPorts.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.VertexEndpointPorts",
+   "original_sha256": "a0413d7f59505d33600ea45eaf5cef2a2df2697314ecfa415fb116ac3a3157b2",
+   "path": "OAI/Combinatorics/Crossing/VertexEndpointPorts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/VertexOrderDetector.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.VertexOrderDetector",
+   "original_sha256": "29d7289917391b83f667fb1e396bd9a140e0b6beafe8498649a870cd2cf180ef",
+   "path": "OAI/Combinatorics/Crossing/VertexOrderDetector.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/VertexPassagePairing.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.VertexPassagePairing",
+   "original_sha256": "aef45e368bef3063f5ebe85956a8c14367f37d0ee1b7cccda131189226329455",
+   "path": "OAI/Combinatorics/Crossing/VertexPassagePairing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/VertexPieceClearance.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.VertexPieceClearance",
+   "original_sha256": "c4da6309b98b7d5303565cac304670c4b2f45842aa7d57e5803f50e4cc7a5ce9",
+   "path": "OAI/Combinatorics/Crossing/VertexPieceClearance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/VertexSpokeBounds.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.VertexSpokeBounds",
+   "original_sha256": "6650fdb5399ef3ef4f24ffd30851c92f4874a083534a91a743b684ca410145ea",
+   "path": "OAI/Combinatorics/Crossing/VertexSpokeBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/VertexTraceDisks.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.VertexTraceDisks",
+   "original_sha256": "8aac3103f00535c38ca9f479a592d3852c030da9b45e0b4ffd68416583be9256",
+   "path": "OAI/Combinatorics/Crossing/VertexTraceDisks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/VertexTruncation.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.VertexTruncation",
+   "original_sha256": "0fc6171f3eb27d550220ad2cba3648ec9b3cb169d3ef2e21a5888d308e01c2dc",
+   "path": "OAI/Combinatorics/Crossing/VertexTruncation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/VertexTruncationGeometry.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.VertexTruncationGeometry",
+   "original_sha256": "87fa25d6fdbc4ad7bc89a5013ad73d34a1047dcde2ba21ec7a2913c02cbe5475",
+   "path": "OAI/Combinatorics/Crossing/VertexTruncationGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/WalkVectorSum.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.WalkVectorSum",
+   "original_sha256": "01e7f4ad7a2518db1b837ae0c5075e3342a07c30227cd57b6ae2a39b89f325ac",
+   "path": "OAI/Combinatorics/Crossing/WalkVectorSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Crossing/WeightedGram.lean"
+   },
+   "module": "OAI.Combinatorics.Crossing.WeightedGram",
+   "original_sha256": "077e433bee708492cb5620ca06d1ed67293d4c31e7675114d5f7996fbf8dd375",
+   "path": "OAI/Combinatorics/Crossing/WeightedGram.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 65536
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.Crossing.AdaptedFamily",
+  "OAI.Combinatorics.Crossing.AdditiveBlockRelation",
+  "OAI.Combinatorics.Crossing.AdjacentSurgeryDrawing",
+  "OAI.Combinatorics.Crossing.AdjacentSurgeryPointRemoval",
+  "OAI.Combinatorics.Crossing.AdjacentSurgeryRoutes",
+  "OAI.Combinatorics.Crossing.AdmissibleAdjacentSurgery",
+  "OAI.Combinatorics.Crossing.AffineIntervalRestriction",
+  "OAI.Combinatorics.Crossing.AffinePathHalves",
+  "OAI.Combinatorics.Crossing.AffineSideEvents",
+  "OAI.Combinatorics.Crossing.AffineSubdivisionRefinement",
+  "OAI.Combinatorics.Crossing.AlternatingPaths",
+  "OAI.Combinatorics.Crossing.ArcRangeMinimality",
+  "OAI.Combinatorics.Crossing.AssembledAdmissibleDrawing",
+  "OAI.Combinatorics.Crossing.AssembledContinuousDrawing",
+  "OAI.Combinatorics.Crossing.AssembledCrossings",
+  "OAI.Combinatorics.Crossing.AssembledEdge",
+  "OAI.Combinatorics.Crossing.AssembledNoTriples",
+  "OAI.Combinatorics.Crossing.AssembledPortIncidence",
+  "OAI.Combinatorics.Crossing.AxisAdmissibility",
+  "OAI.Combinatorics.Crossing.AxisConcurrency",
+  "OAI.Combinatorics.Crossing.AxisContinuousDrawing",
+  "OAI.Combinatorics.Crossing.AxisCrossingOrder",
+  "OAI.Combinatorics.Crossing.AxisFiniteCrossings",
+  "OAI.Combinatorics.Crossing.AxisGenericPositions",
+  "OAI.Combinatorics.Crossing.AxisSegments",
+  "OAI.Combinatorics.Crossing.BalancedAxisCrossingCount",
+  "OAI.Combinatorics.Crossing.BalancedAxisDrawing",
+  "OAI.Combinatorics.Crossing.BalancedAxisIntervals",
+  "OAI.Combinatorics.Crossing.BalancedRayPairs",
+  "OAI.Combinatorics.Crossing.BipartiteDartGeometry",
+  "OAI.Combinatorics.Crossing.Bivariate",
+  "OAI.Combinatorics.Crossing.BivariateCoefficients",
+  "OAI.Combinatorics.Crossing.BoundaryCollar",
+  "OAI.Combinatorics.Crossing.ChainPieceInteriors",
+  "OAI.Combinatorics.Crossing.ChainTracePieces",
+  "OAI.Combinatorics.Crossing.ChordEdgeIntersections",
+  "OAI.Combinatorics.Crossing.ChordExteriorSeparation",
+  "OAI.Combinatorics.Crossing.ChordOrientations",
+  "OAI.Combinatorics.Crossing.ChordPairing",
+  "OAI.Combinatorics.Crossing.ChordTransversality",
+  "OAI.Combinatorics.Crossing.CircleChords",
+  "OAI.Combinatorics.Crossing.CircleConnectors",
+  "OAI.Combinatorics.Crossing.CircleDeterminantOrder",
+  "OAI.Combinatorics.Crossing.CircleOffset",
+  "OAI.Combinatorics.Crossing.CircleOffsetLine",
+  "OAI.Combinatorics.Crossing.CircleOffsetParameter",
+  "OAI.Combinatorics.Crossing.CircleParameterChart",
+  "OAI.Combinatorics.Crossing.ClosedPolygonIntersection",
+  "OAI.Combinatorics.Crossing.CollinearSegmentUnion",
+  "OAI.Combinatorics.Crossing.CompactCorridors",
+  "OAI.Combinatorics.Crossing.ConeIntersection",
+  "OAI.Combinatorics.Crossing.ConnectorOtherDisks",
+  "OAI.Combinatorics.Crossing.ConnectorSupportingLines",
+  "OAI.Combinatorics.Crossing.ConnectorTrackAvoidance",
+  "OAI.Combinatorics.Crossing.ConstructAdjacentSurgery",
+  "OAI.Combinatorics.Crossing.CrossingCoordinates",
+  "OAI.Combinatorics.Crossing.CrossingCutWalks",
+  "OAI.Combinatorics.Crossing.CrossingDiskCount",
+  "OAI.Combinatorics.Crossing.CrossingDiskIncidence",
+  "OAI.Combinatorics.Crossing.CrossingDiskNeighborhood",
+  "OAI.Combinatorics.Crossing.CrossingDiskOwners",
+  "OAI.Combinatorics.Crossing.CrossingDiskUniqueness",
+  "OAI.Combinatorics.Crossing.CrossingIncidence",
+  "OAI.Combinatorics.Crossing.CrossingPortClearance",
+  "OAI.Combinatorics.Crossing.CrossingReconnection",
+  "OAI.Combinatorics.Crossing.CrossingSurgeryGraph",
+  "OAI.Combinatorics.Crossing.CurveDiskIsolation",
+  "OAI.Combinatorics.Crossing.CutTraceSeparation",
+  "OAI.Combinatorics.Crossing.CutVertexAvoidance",
+  "OAI.Combinatorics.Crossing.CycleBlockIntersections",
+  "OAI.Combinatorics.Crossing.CycleEndpointSum",
+  "OAI.Combinatorics.Crossing.CycleMatrixBlocks",
+  "OAI.Combinatorics.Crossing.CyclePairing",
+  "OAI.Combinatorics.Crossing.CyclicSumArithmetic",
+  "OAI.Combinatorics.Crossing.CyclicWalkDarts",
+  "OAI.Combinatorics.Crossing.DartCyclePaths",
+  "OAI.Combinatorics.Crossing.DartPairIntersections",
+  "OAI.Combinatorics.Crossing.DartPathRealizations",
+  "OAI.Combinatorics.Crossing.DegreeCounting",
+  "OAI.Combinatorics.Crossing.DeletionCount",
+  "OAI.Combinatorics.Crossing.DetectorAnnihilation",
+  "OAI.Combinatorics.Crossing.DetectorCrossingBound",
+  "OAI.Combinatorics.Crossing.DetectorRank",
+  "OAI.Combinatorics.Crossing.DetectorRelabeling",
+  "OAI.Combinatorics.Crossing.DiskFillingContainment",
+  "OAI.Combinatorics.Crossing.DiskPassage",
+  "OAI.Combinatorics.Crossing.DiskSegments",
+  "OAI.Combinatorics.Crossing.DrawingDefinition",
+  "OAI.Combinatorics.Crossing.DrawingDeletion",
+  "OAI.Combinatorics.Crossing.DrawingDiskIsolation",
+  "OAI.Combinatorics.Crossing.DrawingEdgeWalk",
+  "OAI.Combinatorics.Crossing.DrawingEdgeWalkTrace",
+  "OAI.Combinatorics.Crossing.DrawingExteriorReplacement",
+  "OAI.Combinatorics.Crossing.DrawingMarks",
+  "OAI.Combinatorics.Crossing.DrawingPassages",
+  "OAI.Combinatorics.Crossing.DrawingPorts",
+  "OAI.Combinatorics.Crossing.DrawingRangeCrossings",
+  "OAI.Combinatorics.Crossing.DrawingRestriction",
+  "OAI.Combinatorics.Crossing.DrawingSegmentIncidence",
+  "OAI.Combinatorics.Crossing.DrawingSpokePorts",
+  "OAI.Combinatorics.Crossing.DrawingSubdivisionGraph",
+  "OAI.Combinatorics.Crossing.DrawingVertexPlacement",
+  "OAI.Combinatorics.Crossing.DrawingWalkCutTraces",
+  "OAI.Combinatorics.Crossing.DrawnEdgeChains",
+  "OAI.Combinatorics.Crossing.EmbeddedGraphPaths",
+  "OAI.Combinatorics.Crossing.EndpointFlagPairing",
+  "OAI.Combinatorics.Crossing.EndpointVisits",
+  "OAI.Combinatorics.Crossing.EvaluationAmbient",
+  "OAI.Combinatorics.Crossing.EvenCrossingLowerBound",
+  "OAI.Combinatorics.Crossing.ExpectedTrackGeometry",
+  "OAI.Combinatorics.Crossing.ExteriorArcReplacement",
+  "OAI.Combinatorics.Crossing.ExteriorChordMeeting",
+  "OAI.Combinatorics.Crossing.ExteriorCrossingCut",
+  "OAI.Combinatorics.Crossing.ExteriorSegmentGraph",
+  "OAI.Combinatorics.Crossing.ExteriorSpokeMeeting",
+  "OAI.Combinatorics.Crossing.ExtraDrawingSubdivision",
+  "OAI.Combinatorics.Crossing.FiniteAffineCover",
+  "OAI.Combinatorics.Crossing.FiniteCircleCoordinates",
+  "OAI.Combinatorics.Crossing.FiniteConePoint",
+  "OAI.Combinatorics.Crossing.FiniteDiskCollar",
+  "OAI.Combinatorics.Crossing.FiniteEventualRadius",
+  "OAI.Combinatorics.Crossing.FiniteIntersectionDrawing",
+  "OAI.Combinatorics.Crossing.FiniteLineAvoidance",
+  "OAI.Combinatorics.Crossing.FiniteMovingPoints",
+  "OAI.Combinatorics.Crossing.FinitePathChain",
+  "OAI.Combinatorics.Crossing.FinitePolygonalComposition",
+  "OAI.Combinatorics.Crossing.FiniteScaledRadius",
+  "OAI.Combinatorics.Crossing.FiniteSeparation",
+  "OAI.Combinatorics.Crossing.FirstLastVisits",
+  "OAI.Combinatorics.Crossing.FloorArithmetic",
+  "OAI.Combinatorics.Crossing.FourCyclePairing",
+  "OAI.Combinatorics.Crossing.FourCycles",
+  "OAI.Combinatorics.Crossing.GeneralOrderAveraging",
+  "OAI.Combinatorics.Crossing.GeneralSpokeAveraging",
+  "OAI.Combinatorics.Crossing.GenericPointExtension",
+  "OAI.Combinatorics.Crossing.GenericPointFamily",
+  "OAI.Combinatorics.Crossing.GenericPolygonIntersection",
+  "OAI.Combinatorics.Crossing.GenericPolynomialBox",
+  "OAI.Combinatorics.Crossing.GlobalCycleAveraging",
+  "OAI.Combinatorics.Crossing.GlobalCycleIntersection",
+  "OAI.Combinatorics.Crossing.GraphSequenceWalk",
+  "OAI.Combinatorics.Crossing.GraphWalkRealizationLaws",
+  "OAI.Combinatorics.Crossing.GraphWalkTrace",
+  "OAI.Combinatorics.Crossing.HalfOrderInvertibility",
+  "OAI.Combinatorics.Crossing.HalfOrderReduction",
+  "OAI.Combinatorics.Crossing.IncidentSpokePorts",
+  "OAI.Combinatorics.Crossing.IndexedMatrixRankSum",
+  "OAI.Combinatorics.Crossing.InnerDrawingPassages",
+  "OAI.Combinatorics.Crossing.Interpolation",
+  "OAI.Combinatorics.Crossing.IntervalSegmentStrict",
+  "OAI.Combinatorics.Crossing.IntervalSegments",
+  "OAI.Combinatorics.Crossing.LocalLineBends",
+  "OAI.Combinatorics.Crossing.LocalSegmentTransversality",
+  "OAI.Combinatorics.Crossing.LocallyStraightNormalization",
+  "OAI.Combinatorics.Crossing.LocallyTransverseNormalization",
+  "OAI.Combinatorics.Crossing.Main",
+  "OAI.Combinatorics.Crossing.MarkedCurveDisks",
+  "OAI.Combinatorics.Crossing.MatrixGraphs",
+  "OAI.Combinatorics.Crossing.MatrixRankBounds",
+  "OAI.Combinatorics.Crossing.MatrixRankSum",
+  "OAI.Combinatorics.Crossing.MiddleEdgeIncidence",
+  "OAI.Combinatorics.Crossing.MiddlePathInjective",
+  "OAI.Combinatorics.Crossing.MiddleSpokeMeeting",
+  "OAI.Combinatorics.Crossing.MinimumChainGeometry",
+  "OAI.Combinatorics.Crossing.MinimumChainVertexPieces",
+  "OAI.Combinatorics.Crossing.MovingDiskClearance",
+  "OAI.Combinatorics.Crossing.MovingSegmentStability",
+  "OAI.Combinatorics.Crossing.NoAdjacentLocalNormalization",
+  "OAI.Combinatorics.Crossing.NoAdjacentNormalization",
+  "OAI.Combinatorics.Crossing.NodeMoments",
+  "OAI.Combinatorics.Crossing.NodeRankLoss",
+  "OAI.Combinatorics.Crossing.NormalOffsetExterior",
+  "OAI.Combinatorics.Crossing.NormalizedPolygonalDrawing",
+  "OAI.Combinatorics.Crossing.OddCrossingLowerBound",
+  "OAI.Combinatorics.Crossing.OddNormalizedLowerBound",
+  "OAI.Combinatorics.Crossing.OffsetBendSegments",
+  "OAI.Combinatorics.Crossing.OffsetSegments",
+  "OAI.Combinatorics.Crossing.OffsetTrack",
+  "OAI.Combinatorics.Crossing.OffsetVectors",
+  "OAI.Combinatorics.Crossing.OpenSegmentEndpoints",
+  "OAI.Combinatorics.Crossing.OrderShift",
+  "OAI.Combinatorics.Crossing.OrderedAffineSubdivision",
+  "OAI.Combinatorics.Crossing.OrderedCrossingPorts",
+  "OAI.Combinatorics.Crossing.OrderedExteriorPaths",
+  "OAI.Combinatorics.Crossing.OrderedKnotCover",
+  "OAI.Combinatorics.Crossing.OrderedNodeIndices",
+  "OAI.Combinatorics.Crossing.OrderedPassages",
+  "OAI.Combinatorics.Crossing.OrderedPathParts",
+  "OAI.Combinatorics.Crossing.OrientedSimilarity",
+  "OAI.Combinatorics.Crossing.ParallelDirection",
+  "OAI.Combinatorics.Crossing.ParameterNeighborhoods",
+  "OAI.Combinatorics.Crossing.PathConcatenationInjective",
+  "OAI.Combinatorics.Crossing.PathEndpointNeighborhoods",
+  "OAI.Combinatorics.Crossing.PathSubarc",
+  "OAI.Combinatorics.Crossing.PeriodicPolygon",
+  "OAI.Combinatorics.Crossing.PhysicalCircleAveraging",
+  "OAI.Combinatorics.Crossing.PhysicalSpokeAveraging",
+  "OAI.Combinatorics.Crossing.PhysicalVertexChords",
+  "OAI.Combinatorics.Crossing.PlanarDeterminant",
+  "OAI.Combinatorics.Crossing.PlanarSegments",
+  "OAI.Combinatorics.Crossing.PolygonComposition",
+  "OAI.Combinatorics.Crossing.PolygonStability",
+  "OAI.Combinatorics.Crossing.PolygonTransversalityStability",
+  "OAI.Combinatorics.Crossing.PolygonalArcInjective",
+  "OAI.Combinatorics.Crossing.PolygonalBoundaryReplacement",
+  "OAI.Combinatorics.Crossing.PolygonalChainComposition",
+  "OAI.Combinatorics.Crossing.PolygonalChainExistence",
+  "OAI.Combinatorics.Crossing.PolygonalChainOperations",
+  "OAI.Combinatorics.Crossing.PolygonalChainShortcuts",
+  "OAI.Combinatorics.Crossing.PolygonalChainTransversality",
+  "OAI.Combinatorics.Crossing.PolygonalChains",
+  "OAI.Combinatorics.Crossing.PolygonalEndpointCasts",
+  "OAI.Combinatorics.Crossing.PolygonalExterior",
+  "OAI.Combinatorics.Crossing.PolygonalNormalization",
+  "OAI.Combinatorics.Crossing.PolygonalParametrization",
+  "OAI.Combinatorics.Crossing.PolygonalParametrizationCover",
+  "OAI.Combinatorics.Crossing.PolygonalReach",
+  "OAI.Combinatorics.Crossing.PolygonalWalks",
+  "OAI.Combinatorics.Crossing.PolynomialCoordinates",
+  "OAI.Combinatorics.Crossing.PolynomialFiltration",
+  "OAI.Combinatorics.Crossing.PolynomialKernel",
+  "OAI.Combinatorics.Crossing.PolynomialLinearMatrix",
+  "OAI.Combinatorics.Crossing.PolynomialMinors",
+  "OAI.Combinatorics.Crossing.ProperCrossingLocality",
+  "OAI.Combinatorics.Crossing.ProperSegmentCrossing",
+  "OAI.Combinatorics.Crossing.RadialBoundaryPorts",
+  "OAI.Combinatorics.Crossing.RadialExterior",
+  "OAI.Combinatorics.Crossing.RankDetector",
+  "OAI.Combinatorics.Crossing.RankMultiplicity",
+  "OAI.Combinatorics.Crossing.RankSpecialization",
+  "OAI.Combinatorics.Crossing.ReconnectedIntersectionCases",
+  "OAI.Combinatorics.Crossing.ReconnectedPaths",
+  "OAI.Combinatorics.Crossing.ReconnectedPointRemoval",
+  "OAI.Combinatorics.Crossing.ReconnectedVertexAvoidance",
+  "OAI.Combinatorics.Crossing.ReconnectedWalks",
+  "OAI.Combinatorics.Crossing.ReconnectionAvoidance",
+  "OAI.Combinatorics.Crossing.ReconnectionChords",
+  "OAI.Combinatorics.Crossing.ReconnectionOppositeCuts",
+  "OAI.Combinatorics.Crossing.ReconnectionOtherEdges",
+  "OAI.Combinatorics.Crossing.ReconnectionVertexAvoidance",
+  "OAI.Combinatorics.Crossing.RectangleAlgebra",
+  "OAI.Combinatorics.Crossing.ReducedCrossingCorners",
+  "OAI.Combinatorics.Crossing.ReducedCrossingTransversality",
+  "OAI.Combinatorics.Crossing.ReducedPolygonalPresentation",
+  "OAI.Combinatorics.Crossing.ReplaceDrawingEdges",
+  "OAI.Combinatorics.Crossing.ReplaceDrawingRangeCases",
+  "OAI.Combinatorics.Crossing.RetainedArcDisjointness",
+  "OAI.Combinatorics.Crossing.RetainedDrawingArcs",
+  "OAI.Combinatorics.Crossing.RoundCircleChords",
+  "OAI.Combinatorics.Crossing.RoundDiskChords",
+  "OAI.Combinatorics.Crossing.RoundDiskClearance",
+  "OAI.Combinatorics.Crossing.RoundDiskVisits",
+  "OAI.Combinatorics.Crossing.RowCrossingCount",
+  "OAI.Combinatorics.Crossing.SegmentAffineForms",
+  "OAI.Combinatorics.Crossing.SegmentAugmentation",
+  "OAI.Combinatorics.Crossing.SegmentClosedIncidence",
+  "OAI.Combinatorics.Crossing.SegmentContinuity",
+  "OAI.Combinatorics.Crossing.SegmentCrossingCoordinates",
+  "OAI.Combinatorics.Crossing.SegmentIntersectionUnique",
+  "OAI.Combinatorics.Crossing.SegmentParameters",
+  "OAI.Combinatorics.Crossing.SegmentSides",
+  "OAI.Combinatorics.Crossing.SegmentSymmetries",
+  "OAI.Combinatorics.Crossing.SegmentTraversalReversal",
+  "OAI.Combinatorics.Crossing.SharedTrackAvoidance",
+  "OAI.Combinatorics.Crossing.ShiftedEdgeIntersections",
+  "OAI.Combinatorics.Crossing.ShiftedRadialPieces",
+  "OAI.Combinatorics.Crossing.ShiftedSegmentStability",
+  "OAI.Combinatorics.Crossing.ShiftedTrackDisks",
+  "OAI.Combinatorics.Crossing.ShortVertexRadius",
+  "OAI.Combinatorics.Crossing.SimilarityCoordinates",
+  "OAI.Combinatorics.Crossing.SimultaneousExteriorArcs",
+  "OAI.Combinatorics.Crossing.SimultaneousPolygonalReplacement",
+  "OAI.Combinatorics.Crossing.SortedMarkedParameters",
+  "OAI.Combinatorics.Crossing.SortedSideEvents",
+  "OAI.Combinatorics.Crossing.SpokeEndpointSeparation",
+  "OAI.Combinatorics.Crossing.SpokePieceIsolation",
+  "OAI.Combinatorics.Crossing.SpokeTrackDirections",
+  "OAI.Combinatorics.Crossing.StageDegreeBound",
+  "OAI.Combinatorics.Crossing.StepEvents",
+  "OAI.Combinatorics.Crossing.StraightChainIntersections",
+  "OAI.Combinatorics.Crossing.StraightChainTransversality",
+  "OAI.Combinatorics.Crossing.SubdivisionPointEndpoints",
+  "OAI.Combinatorics.Crossing.SubdivisionSegments",
+  "OAI.Combinatorics.Crossing.SublevelExtrema",
+  "OAI.Combinatorics.Crossing.SubspaceIntersection",
+  "OAI.Combinatorics.Crossing.SubspaceProjection",
+  "OAI.Combinatorics.Crossing.SurgeryCrossingContainment",
+  "OAI.Combinatorics.Crossing.SurgeryCutWalks",
+  "OAI.Combinatorics.Crossing.SurgeryFiniteDrawing",
+  "OAI.Combinatorics.Crossing.SurgeryNoTriples",
+  "OAI.Combinatorics.Crossing.SurgeryPathWitnesses",
+  "OAI.Combinatorics.Crossing.SurgeryRouteIntersections",
+  "OAI.Combinatorics.Crossing.SurgeryStrictPointCount",
+  "OAI.Combinatorics.Crossing.TangentTrackIdentity",
+  "OAI.Combinatorics.Crossing.TrackChordSeparation",
+  "OAI.Combinatorics.Crossing.TrackEndpointConnections",
+  "OAI.Combinatorics.Crossing.TransversalityStability",
+  "OAI.Combinatorics.Crossing.TransversePolygonIntersection",
+  "OAI.Combinatorics.Crossing.TriangleEntryExit",
+  "OAI.Combinatorics.Crossing.TriangleFactorization",
+  "OAI.Combinatorics.Crossing.TriangleOrientations",
+  "OAI.Combinatorics.Crossing.TriangleSideEvent",
+  "OAI.Combinatorics.Crossing.TriangleTransversality",
+  "OAI.Combinatorics.Crossing.TruncatedChainDirections",
+  "OAI.Combinatorics.Crossing.TruncatedChainPath",
+  "OAI.Combinatorics.Crossing.TruncatedChainVertices",
+  "OAI.Combinatorics.Crossing.TruncatedCrossingCorners",
+  "OAI.Combinatorics.Crossing.TruncatedCrossingRetention",
+  "OAI.Combinatorics.Crossing.TruncatedDrawingDisks",
+  "OAI.Combinatorics.Crossing.TruncatedDrawingInteriors",
+  "OAI.Combinatorics.Crossing.TruncatedRadialDots",
+  "OAI.Combinatorics.Crossing.TruncatedRadialEnds",
+  "OAI.Combinatorics.Crossing.TruncatedSegmentTransversality",
+  "OAI.Combinatorics.Crossing.TruncatedSignedIntersections",
+  "OAI.Combinatorics.Crossing.TruncatedSpokeCoordinates",
+  "OAI.Combinatorics.Crossing.TruncatedSpokeDirections",
+  "OAI.Combinatorics.Crossing.TruncatedTraceDecomposition",
+  "OAI.Combinatorics.Crossing.TruncatedTrackAvoidance",
+  "OAI.Combinatorics.Crossing.TruncatedTrackStability",
+  "OAI.Combinatorics.Crossing.TwoTriangleBasis",
+  "OAI.Combinatorics.Crossing.TwoTriangleIndices",
+  "OAI.Combinatorics.Crossing.TwoTriangleUnisolvence",
+  "OAI.Combinatorics.Crossing.UniformCrossTypeGeometry",
+  "OAI.Combinatorics.Crossing.UniformSpokeRadii",
+  "OAI.Combinatorics.Crossing.UniformTrackPerturbation",
+  "OAI.Combinatorics.Crossing.UniqueWalkPassage",
+  "OAI.Combinatorics.Crossing.VertexChordIntersections",
+  "OAI.Combinatorics.Crossing.VertexDiskSpokes",
+  "OAI.Combinatorics.Crossing.VertexDisksCrossingFree",
+  "OAI.Combinatorics.Crossing.VertexEndpointPorts",
+  "OAI.Combinatorics.Crossing.VertexOrderDetector",
+  "OAI.Combinatorics.Crossing.VertexPassagePairing",
+  "OAI.Combinatorics.Crossing.VertexPieceClearance",
+  "OAI.Combinatorics.Crossing.VertexSpokeBounds",
+  "OAI.Combinatorics.Crossing.VertexTraceDisks",
+  "OAI.Combinatorics.Crossing.VertexTruncation",
+  "OAI.Combinatorics.Crossing.VertexTruncationGeometry",
+  "OAI.Combinatorics.Crossing.WalkVectorSum",
+  "OAI.Combinatorics.Crossing.WeightedGram"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/BipartiteCrossing.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Combinatorics.Crossing.Main",
+   "name": "OAI.Zarankiewicz.mainTarget_proof",
+   "statement_sha256": "5fd37fb1ee9814b5b5c29706683bcbd216cde1b39c26be495217a72f5d719c82"
+  }
+ ],
+ "task_id": "oai-bipartite-crossing",
+ "task_revision": 1,
+ "title": "OpenAI math: The Harary–Hill and Zarankiewicz crossing-number formulas: Crossing number of complete bipartite graphs",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

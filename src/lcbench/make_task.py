@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import shutil
 import stat
@@ -64,27 +65,33 @@ def license_sources(root: Path = REPO_ROOT) -> dict[str, Path]:
 
 
 SCOPE_OPEN = re.compile(r"(?:@\[[^\]]*\]\s*)?(?:(?:public|private|noncomputable)\s+)*(namespace|section|mutual)\b\s*([^\s-]*)")
-SCOPE_END = re.compile(r"end\b")
+SCOPE_END = re.compile(r"end\b\s*([^\s-]*)")
 THEOREM = re.compile(r"(?:@\[[^\]]*\]\s*)?(?:(?:private|protected|nonrec)\s+)*(?:theorem|lemma)\s+([^\s(:{\[]+)")
 
 
 def declared_names(lines: list[str]):
     """(line index, declared name, full name) of every column-0 theorem/lemma. The full name prefixes the enclosing
-    namespaces (`namespace`/`section`/`mutual` ... `end`, outside block comments and docstrings); `_root_.` resets it."""
+    namespaces (`namespace`/`section`/`mutual` ... `end`, outside block comments and docstrings); `_root_.` resets it.
+    As in Lean, `namespace A.B` opens one scope per component and `end B` (or `end A.B`) closes as many."""
     scopes: list[str] = []
     depth = 0
     for i, line in enumerate(lines):
         if depth == 0:
             m = THEOREM.match(line)
             if m:
-                name = m.group(1)
+                # `theorem foo.{u v} ...` names `foo` with explicit universe parameters (the match stops at `{`)
+                name = m.group(1).removesuffix(".")
                 full = name[len("_root_."):] if name.startswith("_root_.") else ".".join([*filter(None, scopes), name])
                 yield i, name[len("_root_."):] if name.startswith("_root_.") else name, full
             opened = SCOPE_OPEN.match(line)
+            ended = SCOPE_END.match(line)
             if opened:
-                scopes.append(opened.group(2) if opened.group(1) == "namespace" else "")
-            elif SCOPE_END.match(line) and scopes:
-                scopes.pop()
+                if opened.group(1) == "namespace":
+                    scopes.extend(opened.group(2).split("."))
+                else:
+                    scopes.append("")
+            elif ended and scopes:
+                del scopes[-min(len(scopes), len(ended.group(1).split(".")) if ended.group(1) else 1):]
         depth = max(0, depth + line.count("/-") - line.count("-/"))
 
 
@@ -244,9 +251,33 @@ def platform_free(version: str) -> str:
     return re.sub(r",\s*[A-Za-z0-9_]+-[A-Za-z0-9_]+-[A-Za-z0-9_.\-]+\s*,", ",", version)
 
 
-def extract_or_die(task: dict, project: Path, facts_only: bool = False, background_manifest: Path | None = None) -> dict:
-    """Build and extract; with `facts_only` (erased no_hint sources) the counter may refuse the `sorry` targets."""
-    built = bk.build_and_extract(task, project, LEAN_DIR, background_manifest=background_manifest)
+def lake_dir_name(name: str) -> str:
+    """The directory Lake checks a package out to: its manifest name without the guillemets that escape it
+    (`«doc-gen4»` is `.lake/packages/doc-gen4`)."""
+    return name.replace("«", "").replace("»", "")
+
+
+def manifest_packages(manifest: dict) -> list[dict]:
+    """The pinned packages of a lake-manifest.json, named by their checkout directory (benchkit.package_problems)."""
+    return [{"name": lake_dir_name(p["name"]), "url": p["url"], "rev": p["rev"]} for p in manifest["packages"]]
+
+
+def frozen_parts(spec) -> tuple[bool, list[str]]:
+    """(statement closure included, names listed by hand) of a task source's `frozen`: "statement_closure", a hand
+    list [{name, closure_sha256}] that must contain the closure, or {"rule": "statement_closure", "add": [names]},
+    the closure plus named definitions (the OpenAI Comparator tasks freeze their definition_names this way)."""
+    if spec == "statement_closure":
+        return True, []
+    if isinstance(spec, dict):
+        return True, list(spec["add"])
+    return False, [f["name"] for f in spec]
+
+
+def extract_or_die(task: dict, project: Path, facts_only: bool = False, background_manifest: Path | None = None,
+                   replay: bool = True) -> dict:
+    """Build and extract; with `facts_only` (erased no_hint sources) the counter may refuse the `sorry` targets.
+    `replay=False` re-extracts a build an earlier call has already replayed in the kernel (the same sources)."""
+    built = bk.build_and_extract(task, project, LEAN_DIR, background_manifest=background_manifest, replay=replay)
     if built["stage"] != "ok" and not (facts_only and built["stage"] == "metric"):
         sys.exit(f"{built['stage']} failed:\n{built['log']}")
     return built["data"]
@@ -415,6 +446,20 @@ def leaf_check(src: dict, files: dict, deps: Path | None) -> None:
         sys.exit("leaf property violated: " + "; ".join(f"{m} imports editable {e}" for m, e in bad))
 
 
+def mirrored(url: str, want: str) -> bytes | None:
+    """The bytes of `url` from the local mirror LCBENCH_FETCH_MIRROR (a directory holding <host>/<path> of each URL,
+    such as a checkout of the upstream repository at the pinned commit), when the mirror has the file with sha256
+    `want`; else None. Organizer batch jobs use it so that thousands of originals are not downloaded again."""
+    root = os.environ.get("LCBENCH_FETCH_MIRROR")
+    if not root or "://" not in url:
+        return None
+    path = Path(root) / url.split("://", 1)[1]
+    if not path.is_file():
+        return None
+    data = path.read_bytes()
+    return data if bk.sha256_bytes(data) == want else None
+
+
 def fetch_original(base: Path, entry: dict) -> bytes:
     """An editable original that is not vendored (license unverified): download `fetch.url` (pinned to a commit)
     once into <task dir>/fetched/<path>, keeping it only if its sha256 equals `original_sha256`."""
@@ -423,8 +468,9 @@ def fetch_original(base: Path, entry: dict) -> bytes:
     if dest.is_file() and bk.sha256_file(dest) == want:
         return dest.read_bytes()
     url = entry["fetch"]["url"]
+    data = mirrored(url, want)
     try:
-        data = bk.fetch(url)
+        data = data if data is not None else bk.fetch(url)
     except (OSError, ValueError) as e:
         sys.exit(f"cannot fetch {url}: {e}; place the file with sha256 {want} at {dest}")
     got = bk.sha256_bytes(data)
@@ -516,8 +562,9 @@ def task_markdown(task: dict, src: dict) -> str:
     lines = [f"# {src.get('title', task['name'])}", "",
              "## The task", "",
              f"`{root}/` is a Lean 4 project (toolchain `{task['toolchain']['id']}`) with {len(targets)} target "
-             f"theorems. Make the proofs of the targets as small as possible, measured by their proof-term node count "
-             f"(below). Smaller is better. The target statements must stay exactly as they are.", ""]
+             f"theorem{'' if len(targets) == 1 else 's'}. Make the proofs of the targets as small as possible, measured "
+             f"by their proof-term node count (below). Smaller is better. The target statements must stay exactly as "
+             f"they are.", ""]
     if task["mode"] == "no_hint":
         lines += ["The proofs of the targets have been replaced by `sorry`, and the original proofs are not "
                   "included: you must write the proofs.", ""]
@@ -624,7 +671,7 @@ def main(argv=None) -> int:
     if work.exists():
         shutil.rmtree(work)
     manifest = json.loads(fixed["lake-manifest.json"]) if "lake-manifest.json" in fixed else {"packages": []}
-    packages = [{"name": p["name"], "url": p["url"], "rev": p["rev"]} for p in manifest["packages"]]
+    packages = manifest_packages(manifest)
 
     project_base = {"root": "project", "owner_modules": owners, "editable": editable, "packages": packages}
 
@@ -650,7 +697,7 @@ def main(argv=None) -> int:
     if githash != src["toolchain"]["githash"]:
         sys.exit(f"lean on PATH has githash {githash!r}, task_source pins {src['toolchain']['githash']}")
     kernel_export = src.get("export", {}).get("kernel_export", True)
-    explicit_frozen = [f["name"] for f in frozen_spec] if isinstance(frozen_spec, list) else []
+    closure_rule, explicit_frozen = frozen_parts(frozen_spec)
     background = {"modules": src["background"]["modules"],
                   "rule": "a module is background iff it equals or is prefixed by a listed module",
                   **({"explicit_modules": sorted(classes.explicit)} if classes.explicit else {}),
@@ -659,9 +706,10 @@ def main(argv=None) -> int:
              "frozen": [{"name": f} for f in explicit_frozen], "export": {"kernel_export": kernel_export}}
     data = extract_or_die(draft, work / "original")
     derived = data["statement_closure"]
-    if frozen_spec == "statement_closure":
-        draft["frozen"] = [{"name": n} for n in derived]
-        data = extract_or_die(draft, work / "original")
+    if closure_rule:
+        draft["frozen"] = [{"name": n} for n in [*derived, *(n for n in explicit_frozen if n not in derived)]]
+        # the same build again, for the frozen closures: the kernel already replayed it in the first extraction
+        data = extract_or_die(draft, work / "original", replay=False)
     else:
         missing = [n for n in derived if n not in explicit_frozen]
         if missing:
@@ -678,7 +726,10 @@ def main(argv=None) -> int:
     for t in src["targets"]:
         if t.get("statement_sha256") and statements.get(t["name"]) != t["statement_sha256"]:
             sys.exit(f"target {t['name']}: statement hash {statements.get(t['name'])} != task_source")
-    closures = {r["name"]: bk.frozen_closure_sha256(r) for r in data["frozen"] if not r["missing"]}
+    absent = [r["name"] for r in data["frozen"] if r["missing"]]
+    if absent:
+        sys.exit(f"frozen definition not found: {', '.join(absent)}")
+    closures = {r["name"]: bk.frozen_closure_sha256(r) for r in data["frozen"]}
     if isinstance(frozen_spec, list):
         for f in frozen_spec:
             if f.get("closure_sha256") and closures.get(f["name"]) != f["closure_sha256"]:

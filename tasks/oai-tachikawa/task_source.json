@@ -1,0 +1,731 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 40354474639
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.Tachikawa",
+  "challenge_sha256": "1a775f2172b4d320aa6724332f58a5ee043b92058279f8bde2d866635371829c",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/Tachikawa.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.Tachikawa",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.RingTheory.Tachikawa.Counterexample",
+   "theorem_names": [
+    "OAI.Tachikawa.main_theorem"
+   ]
+  },
+  "config_sha256": "340bcee5916a2527401f17c08107aa5d76a8bca8297505000e1fbe22a4a4cdcb",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/Tachikawa.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.Tachikawa.main_theorem": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/Bimodule.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.Bimodule",
+   "original_sha256": "53330924100a588d40620cf3a84432499d485b260b1b8ce3ec7a4743c2c7d19a",
+   "path": "OAI/RingTheory/Tachikawa/Bimodule.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/Coinduction.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.Coinduction",
+   "original_sha256": "8eb2f8c81f122c3230024f539869339aab8273f27aafd5fe4a2fcad5e57ff203",
+   "path": "OAI/RingTheory/Tachikawa/Coinduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/CompleteResolution.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.CompleteResolution",
+   "original_sha256": "4ee7cf00861f44d83ada545f6dc3b0dc2f548fce260774f3c13c0a70fd4b605c",
+   "path": "OAI/RingTheory/Tachikawa/CompleteResolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/CompleteTensor.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.CompleteTensor",
+   "original_sha256": "758fc12b730c674c42dc4c29fe2166108f41928a592818826bba01952d0c2bf9",
+   "path": "OAI/RingTheory/Tachikawa/CompleteTensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/Cone.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.Cone",
+   "original_sha256": "cf860222e8325246affc047624f534b062ef04e4dfffa91c2324ee292a7686af",
+   "path": "OAI/RingTheory/Tachikawa/Cone.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/Coresolution.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.Coresolution",
+   "original_sha256": "7692f681e603d9049bd19f81f5c20fe1d9605fd9c553fa3952d15b2c96dd4b24",
+   "path": "OAI/RingTheory/Tachikawa/Coresolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/Corner.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.Corner",
+   "original_sha256": "86b94fceb438b2c4bfc44b1a844435119f588390e025baeef47f8f2361615717",
+   "path": "OAI/RingTheory/Tachikawa/Corner.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/Counterexample.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.Counterexample",
+   "original_sha256": "ee582d108dc51c434c0c91f021f54d62a83e3f3a5e3c9966106c047d2a9a808b",
+   "path": "OAI/RingTheory/Tachikawa/Counterexample.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/Delta.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.Delta",
+   "original_sha256": "383dab18b319fb309fb7d8cd02e721046d919ec02d6ee56389031852227df873",
+   "path": "OAI/RingTheory/Tachikawa/Delta.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/DerivedDescent.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.DerivedDescent",
+   "original_sha256": "d2d09b0dd9cfcf295286ff0a9d689ab4c19378929e5bfc6cf00ceebfbf37888e",
+   "path": "OAI/RingTheory/Tachikawa/DerivedDescent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/DerivedInduction.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.DerivedInduction",
+   "original_sha256": "42d04fa1dfd158dc2760da627133b1dc49e953e0a31561d1ca77d939f018df3b",
+   "path": "OAI/RingTheory/Tachikawa/DerivedInduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/DownHom.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.DownHom",
+   "original_sha256": "bd4de177dd8d1df6a1e0d5b2f3666e5e67a2733305ec6eade0cc84b403a88d2f",
+   "path": "OAI/RingTheory/Tachikawa/DownHom.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/FiniteCoinduction.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.FiniteCoinduction",
+   "original_sha256": "b98ccbabc093782682c0f619af3a35087bea08252c0162202d05bebb17539f0b",
+   "path": "OAI/RingTheory/Tachikawa/FiniteCoinduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/HomProfile.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.HomProfile",
+   "original_sha256": "95f5fb94be0db2f62da14190a6f485c43bc3c84a821fb28a804511194d8916c0",
+   "path": "OAI/RingTheory/Tachikawa/HomProfile.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/Induction.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.Induction",
+   "original_sha256": "033c52b28b1bf533b18d52c66b118f0aaf9329d6d1aea6cca5814daacede4ab5",
+   "path": "OAI/RingTheory/Tachikawa/Induction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/Nakayama.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.Nakayama",
+   "original_sha256": "9fdc04316b8a9b1dbb85382c62b7a8664fae6aa343985d2fcad6d7da2e492880",
+   "path": "OAI/RingTheory/Tachikawa/Nakayama.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/OuterExt.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.OuterExt",
+   "original_sha256": "c96e4687926b9014dff5d27cba2c67e706bbe2894227e63eae0fe95552b2c64f",
+   "path": "OAI/RingTheory/Tachikawa/OuterExt.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/OuterTensor.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.OuterTensor",
+   "original_sha256": "39e4c586af3e229492c8029269a5b087d4a99ddcffa63b5413237abec22af7d5",
+   "path": "OAI/RingTheory/Tachikawa/OuterTensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/Perfect.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.Perfect",
+   "original_sha256": "f1b30e1bda271f7b78db55760fdcc7f33367d56fe13e0230d8a4e64cf784a85d",
+   "path": "OAI/RingTheory/Tachikawa/Perfect.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/Period.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.Period",
+   "original_sha256": "e53f838e538f7f14e69e5b7d5b79efde5a6e0c9c9be353f42c9681037decc223",
+   "path": "OAI/RingTheory/Tachikawa/Period.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/ReverseResolution.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.ReverseResolution",
+   "original_sha256": "986d6b8735edde5c98ca386ca43888ae5e96254a70f721cfedfcf6542f79bc33",
+   "path": "OAI/RingTheory/Tachikawa/ReverseResolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/RightInduction.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.RightInduction",
+   "original_sha256": "89889770f3f5808aa3317e6b0525b77fecd3f3abbb574e64cdd3cf29da15f5da",
+   "path": "OAI/RingTheory/Tachikawa/RightInduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/Socle.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.Socle",
+   "original_sha256": "bc5021bfb5cbbd09c02a1395f811c249eb36d26dc5d16fe06ed84f2b090b18ba",
+   "path": "OAI/RingTheory/Tachikawa/Socle.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/StableDuality.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.StableDuality",
+   "original_sha256": "13724a69ce6c897bcc4dbedbff8f1b4049add79f6d0bb87c527c445bf5d50ebf",
+   "path": "OAI/RingTheory/Tachikawa/StableDuality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/StableLift.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.StableLift",
+   "original_sha256": "af599c060ab08adaaa402568b706062f49104c7e40cf9f936749449a6971f43e",
+   "path": "OAI/RingTheory/Tachikawa/StableLift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/StableShift.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.StableShift",
+   "original_sha256": "58e60ab7ba86f2c1f20e35974a27f2a68544bacda8b359e672cb2541474c9860",
+   "path": "OAI/RingTheory/Tachikawa/StableShift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/Symmetry.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.Symmetry",
+   "original_sha256": "1236e0d85c2a66c58f9c6650a8c735dc1a75b4a801170ebb5228089929103c69",
+   "path": "OAI/RingTheory/Tachikawa/Symmetry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/Tensor.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.Tensor",
+   "original_sha256": "5557af22df57398c4225546ce7ffe67daad4455efed7a1361011905fec1332b7",
+   "path": "OAI/RingTheory/Tachikawa/Tensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/Triangular.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.Triangular",
+   "original_sha256": "5d480db239ca9d02aa1b046d2a83308cd72805c86833887101dcb30dea83f15f",
+   "path": "OAI/RingTheory/Tachikawa/Triangular.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/TwistHom.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.TwistHom",
+   "original_sha256": "456e8497205b30d68d789b81553752b8f22bedf1959ee3f530fee7c04cb91f3e",
+   "path": "OAI/RingTheory/Tachikawa/TwistHom.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/Tachikawa/Twisting.lean"
+   },
+   "module": "OAI.RingTheory.Tachikawa.Twisting",
+   "original_sha256": "69496ed3e7a36e91868fd0182f41c44a74504039e923fb5dc532b752432877f7",
+   "path": "OAI/RingTheory/Tachikawa/Twisting.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.RingTheory.Tachikawa.Bimodule",
+  "OAI.RingTheory.Tachikawa.Coinduction",
+  "OAI.RingTheory.Tachikawa.CompleteResolution",
+  "OAI.RingTheory.Tachikawa.CompleteTensor",
+  "OAI.RingTheory.Tachikawa.Cone",
+  "OAI.RingTheory.Tachikawa.Coresolution",
+  "OAI.RingTheory.Tachikawa.Corner",
+  "OAI.RingTheory.Tachikawa.Counterexample",
+  "OAI.RingTheory.Tachikawa.Delta",
+  "OAI.RingTheory.Tachikawa.DerivedDescent",
+  "OAI.RingTheory.Tachikawa.DerivedInduction",
+  "OAI.RingTheory.Tachikawa.DownHom",
+  "OAI.RingTheory.Tachikawa.FiniteCoinduction",
+  "OAI.RingTheory.Tachikawa.HomProfile",
+  "OAI.RingTheory.Tachikawa.Induction",
+  "OAI.RingTheory.Tachikawa.Nakayama",
+  "OAI.RingTheory.Tachikawa.OuterExt",
+  "OAI.RingTheory.Tachikawa.OuterTensor",
+  "OAI.RingTheory.Tachikawa.Perfect",
+  "OAI.RingTheory.Tachikawa.Period",
+  "OAI.RingTheory.Tachikawa.ReverseResolution",
+  "OAI.RingTheory.Tachikawa.RightInduction",
+  "OAI.RingTheory.Tachikawa.Socle",
+  "OAI.RingTheory.Tachikawa.StableDuality",
+  "OAI.RingTheory.Tachikawa.StableLift",
+  "OAI.RingTheory.Tachikawa.StableShift",
+  "OAI.RingTheory.Tachikawa.Symmetry",
+  "OAI.RingTheory.Tachikawa.Tensor",
+  "OAI.RingTheory.Tachikawa.Triangular",
+  "OAI.RingTheory.Tachikawa.TwistHom",
+  "OAI.RingTheory.Tachikawa.Twisting"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/Tachikawa.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.RingTheory.Tachikawa.Counterexample",
+   "name": "OAI.Tachikawa.main_theorem",
+   "statement_sha256": "5fb4293a5a76b6977cd1a5fc9cb4328bc5f087d3eaf6a67579e09259a059af76"
+  }
+ ],
+ "task_id": "oai-tachikawa",
+ "task_revision": 1,
+ "title": "OpenAI math: Counterexamples to Auslander–Reiten, Tachikawa and related homological conjectures: Tachikawa counterexample",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

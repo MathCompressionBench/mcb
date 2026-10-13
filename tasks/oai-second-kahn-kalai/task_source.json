@@ -1,0 +1,791 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 12017547
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.SecondKahnKalai",
+  "challenge_sha256": "2a0d29f9fde90aa8a4b5173da67cab115be047e59f6001ccdc9b6095988beae5",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SecondKahnKalai.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.SecondKahnKalai",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Combinatorics.GraphThreshold.Main",
+   "theorem_names": [
+    "OAI.LeanBlast.SecondKahnKalai.secondKahnKalaiBounds"
+   ]
+  },
+  "config_sha256": "7810510e76f4d7908d0c199ad104e02f4bd1dac404267a8aaf9fcd2a314a0001",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SecondKahnKalai.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.LeanBlast.SecondKahnKalai.secondKahnKalaiBounds": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/AdaptiveTrials.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.AdaptiveTrials",
+   "original_sha256": "3d2b132a83993cc09559bcc7df4ec4780c127b180b52497c6f3239cd6a91e17b",
+   "path": "OAI/Combinatorics/GraphThreshold/AdaptiveTrials.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/Basic.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.Basic",
+   "original_sha256": "d0e3098feb6f38595f91430ed135b6a78f965e6a40809a60b9d9a1cf59692b40",
+   "path": "OAI/Combinatorics/GraphThreshold/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/BernoulliCoupling.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.BernoulliCoupling",
+   "original_sha256": "29b58506cb9ba5bf7a4454b0b318f1e37cd8234623e61ee276efa8dd583e1572",
+   "path": "OAI/Combinatorics/GraphThreshold/BernoulliCoupling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/BernoulliMonotonicity.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.BernoulliMonotonicity",
+   "original_sha256": "fd22a6b82706c7d84af09538bbafd90f77f66b37428d1b68da9c3e44133045c5",
+   "path": "OAI/Combinatorics/GraphThreshold/BernoulliMonotonicity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/BernoulliUnion.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.BernoulliUnion",
+   "original_sha256": "21ba0e106fe8bd0f6788dedfc9a905dc5eeaff9cad2651bec18f4b32e7df8d61",
+   "path": "OAI/Combinatorics/GraphThreshold/BernoulliUnion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/CapacityIteration.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.CapacityIteration",
+   "original_sha256": "c64afedd1a6c6e4610cd46897384d22ed5db0f721cc050d9ceeafe99ca9e18b7",
+   "path": "OAI/Combinatorics/GraphThreshold/CapacityIteration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/CopyOrbits.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.CopyOrbits",
+   "original_sha256": "8f0892f1418a80a6bba4e8dda6d80ca429e375df33f6d8c741791b5dfc30a8be",
+   "path": "OAI/Combinatorics/GraphThreshold/CopyOrbits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/EmbeddingExtension.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.EmbeddingExtension",
+   "original_sha256": "f78aff5c1662a7923d50134961357c3d60de71e1fb2205022ba7498e78a9b2af",
+   "path": "OAI/Combinatorics/GraphThreshold/EmbeddingExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/FiniteProbability.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.FiniteProbability",
+   "original_sha256": "c03eb6d3a027f8ad30bf217ae44de1d9fa6849dda2f2b8ec30344dc12ac43069",
+   "path": "OAI/Combinatorics/GraphThreshold/FiniteProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/GraphContainment.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.GraphContainment",
+   "original_sha256": "c50f65ad23245efbe587f7c631835e7c69b5b3a55fb0833fcf9a00a84e8d6bfa",
+   "path": "OAI/Combinatorics/GraphThreshold/GraphContainment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/GraphCopies.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.GraphCopies",
+   "original_sha256": "e4cd3dec4bf5e1880b3e8395427985941ea25ea08401b412786086b470a24fdc",
+   "path": "OAI/Combinatorics/GraphThreshold/GraphCopies.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/GraphEncoding.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.GraphEncoding",
+   "original_sha256": "87b5721c39701301fa20273e630664966370dcf32a6a45e31c1489c2d6ebd1f7",
+   "path": "OAI/Combinatorics/GraphThreshold/GraphEncoding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/GraphExpectedCopies.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.GraphExpectedCopies",
+   "original_sha256": "a17814860ae07fa38bee463f7e660eb3a17255adfd4b0d083e59771cfa692918",
+   "path": "OAI/Combinatorics/GraphThreshold/GraphExpectedCopies.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/GraphHierarchy.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.GraphHierarchy",
+   "original_sha256": "0dd33559e8ff6b8818ed6c20c9b3e6ab694b126f49108107db277fdf95587a8b",
+   "path": "OAI/Combinatorics/GraphThreshold/GraphHierarchy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/GraphProbability.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.GraphProbability",
+   "original_sha256": "682963d47397243a58ebb80e9ad3e4a63199904e12fd91607d77281674f3dac9",
+   "path": "OAI/Combinatorics/GraphThreshold/GraphProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/GraphSupport.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.GraphSupport",
+   "original_sha256": "e52137f9e9ceaaa31e2be831ad0f575d42ecf9f6db4bd9e457a986b10c8f038c",
+   "path": "OAI/Combinatorics/GraphThreshold/GraphSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/LocalFailure.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.LocalFailure",
+   "original_sha256": "f5f8df2d049f852a250506d062bc5dc6c827fe9999ef31c94d6bcaaa8c509915",
+   "path": "OAI/Combinatorics/GraphThreshold/LocalFailure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/LocalFailureNumerics.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.LocalFailureNumerics",
+   "original_sha256": "dabebed1e531473daff81f7f5e98c8ce0f8f1dc460b31bce890cf1bc4e4e2d05",
+   "path": "OAI/Combinatorics/GraphThreshold/LocalFailureNumerics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/Main.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.Main",
+   "original_sha256": "d2812c1ef815cae093afb587bd1d5bae14199585ba3f6eb0f0aa131a2067b141",
+   "path": "OAI/Combinatorics/GraphThreshold/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/Model.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.Model",
+   "original_sha256": "d5b305dde67c1f28683806728219f63bb9becdbedf3a03e0185cfc533d17637f",
+   "path": "OAI/Combinatorics/GraphThreshold/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/OutsideChangeOfMeasure.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.OutsideChangeOfMeasure",
+   "original_sha256": "a6e0786ea4e39a3f529d61e39f1f8300a264fd33264fcc8b2ba8f12f5fc5c2cd",
+   "path": "OAI/Combinatorics/GraphThreshold/OutsideChangeOfMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/Predecessor.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.Predecessor",
+   "original_sha256": "9f78c1884f9127bc6c2cb1a919a883ccf2c4b6a5a6f37d0e2993074a0a931729",
+   "path": "OAI/Combinatorics/GraphThreshold/Predecessor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/ProbabilityTree.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.ProbabilityTree",
+   "original_sha256": "2a2622d7db4160a53d5c1a33ceac600e08529a67419bf3bd90be9110abf9300d",
+   "path": "OAI/Combinatorics/GraphThreshold/ProbabilityTree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/ProbabilityTreeFacts.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.ProbabilityTreeFacts",
+   "original_sha256": "069928b227ab8357a3803d7e6e19c68ded7bf2ac60baeae4805a064d17b18bec",
+   "path": "OAI/Combinatorics/GraphThreshold/ProbabilityTreeFacts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/ProbabilityTreePaths.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.ProbabilityTreePaths",
+   "original_sha256": "50ddaf52f5c9398911085a3f81538bd6e3f77356e01de5d8dbc292328690dfd2",
+   "path": "OAI/Combinatorics/GraphThreshold/ProbabilityTreePaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/ProbabilityTreeTrim.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.ProbabilityTreeTrim",
+   "original_sha256": "7591c354e2ed9b099bd165ce98726d6ba57ef0ec0f71b87613d85732ab821232",
+   "path": "OAI/Combinatorics/GraphThreshold/ProbabilityTreeTrim.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/Resampling.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.Resampling",
+   "original_sha256": "ba9feab57ed5bdf71ead2989c79ee3065e69b882b0d943118140306160de56db",
+   "path": "OAI/Combinatorics/GraphThreshold/Resampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/ResamplingDensity.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.ResamplingDensity",
+   "original_sha256": "e2c77ad6ee60e8af794322d83d22045daa753edf94e0bac8d9e613e49900661b",
+   "path": "OAI/Combinatorics/GraphThreshold/ResamplingDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/ResamplingEvents.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.ResamplingEvents",
+   "original_sha256": "d99232cbe6927ab03299f069403fe7197f2d3e221e4411161758bc481ffd8c1f",
+   "path": "OAI/Combinatorics/GraphThreshold/ResamplingEvents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/SpreadCounting.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.SpreadCounting",
+   "original_sha256": "86ccff90f9b53cee5df3753a9e5b778261f7c4daca7cd81118aa0a846dd676f6",
+   "path": "OAI/Combinatorics/GraphThreshold/SpreadCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/Statement.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.Statement",
+   "original_sha256": "8eeefe6cce903600ab87436f11026909d8a326d5fbbe3828fae04c511a1a9e61",
+   "path": "OAI/Combinatorics/GraphThreshold/Statement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/ThresholdBounds.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.ThresholdBounds",
+   "original_sha256": "713edda89a1bf923e9d5b20dd3bc563ad41c7920febfe0d65d0237ef94833593",
+   "path": "OAI/Combinatorics/GraphThreshold/ThresholdBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/Thresholds.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.Thresholds",
+   "original_sha256": "6513ba3889ff00f14898ef9334e57cffb5106882ceeb98d036b3e201d07f0a55",
+   "path": "OAI/Combinatorics/GraphThreshold/Thresholds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/TreeCovering.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.TreeCovering",
+   "original_sha256": "1ee2622c674e2abcc67bbebba6cc7d68d69718eaa1a56dda5a72d614e3537264",
+   "path": "OAI/Combinatorics/GraphThreshold/TreeCovering.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/TreePotential.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.TreePotential",
+   "original_sha256": "f687ac28740c8872df95db6dc194486afde1dce43057d40756329b344f34d286",
+   "path": "OAI/Combinatorics/GraphThreshold/TreePotential.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/TreeReduction.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.TreeReduction",
+   "original_sha256": "c9d1e22e6ebc4dc1d7771e514e76e8a867ac21a193c3f0608be28f52beb2b84c",
+   "path": "OAI/Combinatorics/GraphThreshold/TreeReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GraphThreshold/TreeReductionData.lean"
+   },
+   "module": "OAI.Combinatorics.GraphThreshold.TreeReductionData",
+   "original_sha256": "39475c63935a7f89075790d78e069575a6add648772c74915ed6d4ce483f162b",
+   "path": "OAI/Combinatorics/GraphThreshold/TreeReductionData.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.GraphThreshold.AdaptiveTrials",
+  "OAI.Combinatorics.GraphThreshold.Basic",
+  "OAI.Combinatorics.GraphThreshold.BernoulliCoupling",
+  "OAI.Combinatorics.GraphThreshold.BernoulliMonotonicity",
+  "OAI.Combinatorics.GraphThreshold.BernoulliUnion",
+  "OAI.Combinatorics.GraphThreshold.CapacityIteration",
+  "OAI.Combinatorics.GraphThreshold.CopyOrbits",
+  "OAI.Combinatorics.GraphThreshold.EmbeddingExtension",
+  "OAI.Combinatorics.GraphThreshold.FiniteProbability",
+  "OAI.Combinatorics.GraphThreshold.GraphContainment",
+  "OAI.Combinatorics.GraphThreshold.GraphCopies",
+  "OAI.Combinatorics.GraphThreshold.GraphEncoding",
+  "OAI.Combinatorics.GraphThreshold.GraphExpectedCopies",
+  "OAI.Combinatorics.GraphThreshold.GraphHierarchy",
+  "OAI.Combinatorics.GraphThreshold.GraphProbability",
+  "OAI.Combinatorics.GraphThreshold.GraphSupport",
+  "OAI.Combinatorics.GraphThreshold.LocalFailure",
+  "OAI.Combinatorics.GraphThreshold.LocalFailureNumerics",
+  "OAI.Combinatorics.GraphThreshold.Main",
+  "OAI.Combinatorics.GraphThreshold.Model",
+  "OAI.Combinatorics.GraphThreshold.OutsideChangeOfMeasure",
+  "OAI.Combinatorics.GraphThreshold.Predecessor",
+  "OAI.Combinatorics.GraphThreshold.ProbabilityTree",
+  "OAI.Combinatorics.GraphThreshold.ProbabilityTreeFacts",
+  "OAI.Combinatorics.GraphThreshold.ProbabilityTreePaths",
+  "OAI.Combinatorics.GraphThreshold.ProbabilityTreeTrim",
+  "OAI.Combinatorics.GraphThreshold.Resampling",
+  "OAI.Combinatorics.GraphThreshold.ResamplingDensity",
+  "OAI.Combinatorics.GraphThreshold.ResamplingEvents",
+  "OAI.Combinatorics.GraphThreshold.SpreadCounting",
+  "OAI.Combinatorics.GraphThreshold.Statement",
+  "OAI.Combinatorics.GraphThreshold.ThresholdBounds",
+  "OAI.Combinatorics.GraphThreshold.Thresholds",
+  "OAI.Combinatorics.GraphThreshold.TreeCovering",
+  "OAI.Combinatorics.GraphThreshold.TreePotential",
+  "OAI.Combinatorics.GraphThreshold.TreeReduction",
+  "OAI.Combinatorics.GraphThreshold.TreeReductionData"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/SecondKahnKalai.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Combinatorics.GraphThreshold.Main",
+   "name": "OAI.LeanBlast.SecondKahnKalai.secondKahnKalaiBounds",
+   "statement_sha256": "0e85fa7f9fef39deb3d5684ff63ff23e672a0c8fdd73638a5677c94a0ba28a2f"
+  }
+ ],
+ "task_id": "oai-second-kahn-kalai",
+ "task_revision": 1,
+ "title": "OpenAI math: The second Kahn–Kalai conjecture with an edge-count bound: Second Kahn–Kalai threshold bounds",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

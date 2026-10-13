@@ -1,0 +1,768 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 362123386
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.CoordinateSweeps",
+  "challenge_sha256": "de91026965bbc17d2b4262c82b22f44bd4034ddc71fe2b7f59b33e5670f28052",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/CoordinateSweeps.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.CoordinateSweeps",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Probability.CoordinateSweeps.Main",
+   "theorem_names": [
+    "OAI.CoordinateSweeps.conditional_main",
+    "OAI.CoordinateSweeps.all_grid_moment"
+   ]
+  },
+  "config_sha256": "84dbb774ba106569f6e05834ae5a43e5b04050f1e0bb1ebb8dd324b6bd8fc332",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/CoordinateSweeps.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.CoordinateSweeps.all_grid_moment": "equal",
+   "OAI.CoordinateSweeps.conditional_main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Matrix/BlockCycles.lean"
+   },
+   "module": "OAI.Analysis.Matrix.BlockCycles",
+   "original_sha256": "1ead6c4b4dc848bdfe29918fb0df81f87f162effa43e16bdebedffd7af7f0e30",
+   "path": "OAI/Analysis/Matrix/BlockCycles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Matrix/Holder.lean"
+   },
+   "module": "OAI.Analysis.Matrix.Holder",
+   "original_sha256": "0ce504d6cf55bb2469ac8579ed0f6874488bded3d51445356f4514129f093309",
+   "path": "OAI/Analysis/Matrix/Holder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Matrix/TensorMoment.lean"
+   },
+   "module": "OAI.Analysis.Matrix.TensorMoment",
+   "original_sha256": "98a644eaa6d1c45d2dee2cd7d09ba3e0dbfb7de3795bdddb1647f84a0e88716e",
+   "path": "OAI/Analysis/Matrix/TensorMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Graphs/Coverage.lean"
+   },
+   "module": "OAI.Combinatorics.Graphs.Coverage",
+   "original_sha256": "518c16becd35b67fdc848171f7c2c76c27772432894a901d5f78dd0cd7eed498",
+   "path": "OAI/Combinatorics/Graphs/Coverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CoordinateSweeps/Attachment.lean"
+   },
+   "module": "OAI.Probability.CoordinateSweeps.Attachment",
+   "original_sha256": "85d2b055f449f99c7c7b45c8f520dcbb07556928e2c0c0cdf2167e9ae9539f40",
+   "path": "OAI/Probability/CoordinateSweeps/Attachment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CoordinateSweeps/BaseCase.lean"
+   },
+   "module": "OAI.Probability.CoordinateSweeps.BaseCase",
+   "original_sha256": "d048ba6f9ec31bf3117994c5069761084c820c89c9fc90e77708334cc3326a2a",
+   "path": "OAI/Probability/CoordinateSweeps/BaseCase.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CoordinateSweeps/Conditioning.lean"
+   },
+   "module": "OAI.Probability.CoordinateSweeps.Conditioning",
+   "original_sha256": "d1fa80fd423d5c180fe12eaa033f1a68e9239455d994aa6208ca91b62242a37d",
+   "path": "OAI/Probability/CoordinateSweeps/Conditioning.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CoordinateSweeps/Decomposition.lean"
+   },
+   "module": "OAI.Probability.CoordinateSweeps.Decomposition",
+   "original_sha256": "fafb4dcc0670f0fa7578f69274c6831daff8e6faf5290b8f8f36d0e0eaa82cbc",
+   "path": "OAI/Probability/CoordinateSweeps/Decomposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CoordinateSweeps/Grid.lean"
+   },
+   "module": "OAI.Probability.CoordinateSweeps.Grid",
+   "original_sha256": "89a4af53f8fadece00564fe31fb6e2b0dcd291189a3eb4e48edb2403e0f7a848",
+   "path": "OAI/Probability/CoordinateSweeps/Grid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CoordinateSweeps/Induction.lean"
+   },
+   "module": "OAI.Probability.CoordinateSweeps.Induction",
+   "original_sha256": "5e1471ba3bef605286630429d2e710b2f432f5f40cd2ed277c71a71d127086ca",
+   "path": "OAI/Probability/CoordinateSweeps/Induction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CoordinateSweeps/Kernel.lean"
+   },
+   "module": "OAI.Probability.CoordinateSweeps.Kernel",
+   "original_sha256": "6dd1a59a644bf2e4590529eebc30e22b3e1d9ccc4ac6644a7ac05f634f9aeb80",
+   "path": "OAI/Probability/CoordinateSweeps/Kernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CoordinateSweeps/Main.lean"
+   },
+   "module": "OAI.Probability.CoordinateSweeps.Main",
+   "original_sha256": "01b61144920af1876dd41f6cb1d6e7daeabbb8eb855f03236206d814cbaae4b0",
+   "path": "OAI/Probability/CoordinateSweeps/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CoordinateSweeps/Perturbation.lean"
+   },
+   "module": "OAI.Probability.CoordinateSweeps.Perturbation",
+   "original_sha256": "5b45e886cbee2d7793751957bd3b178d144bae214e50d18970f94636614a3e37",
+   "path": "OAI/Probability/CoordinateSweeps/Perturbation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CoordinateSweeps/PlacementMoment.lean"
+   },
+   "module": "OAI.Probability.CoordinateSweeps.PlacementMoment",
+   "original_sha256": "b5dddbee6be26d1403ccafcbcddba8ca359bd80ced11411ca61b755ee2127495",
+   "path": "OAI/Probability/CoordinateSweeps/PlacementMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CoordinateSweeps/Scales.lean"
+   },
+   "module": "OAI.Probability.CoordinateSweeps.Scales",
+   "original_sha256": "458b5dfbe618b6764a8c29c6e71a890c3d78c203dcbe85930e98eb07c956dfb4",
+   "path": "OAI/Probability/CoordinateSweeps/Scales.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CoordinateSweeps/SparseBound.lean"
+   },
+   "module": "OAI.Probability.CoordinateSweeps.SparseBound",
+   "original_sha256": "f6c38fcff4a0c0b1aa1d4b2980c23bd2f3a82b4f60c37eb7cdf8b7ae25570a8b",
+   "path": "OAI/Probability/CoordinateSweeps/SparseBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CoordinateSweeps/SparseDimension.lean"
+   },
+   "module": "OAI.Probability.CoordinateSweeps.SparseDimension",
+   "original_sha256": "f1ce9d1138249b79479e63a9fb092c485363b651a921ed53e13f29e439bedbec",
+   "path": "OAI/Probability/CoordinateSweeps/SparseDimension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CoordinateSweeps/SparseMoment.lean"
+   },
+   "module": "OAI.Probability.CoordinateSweeps.SparseMoment",
+   "original_sha256": "87bec41c359ca80d8113093d0d964e91912d6e1e8b2ede50c627ca0024b5e188",
+   "path": "OAI/Probability/CoordinateSweeps/SparseMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CoordinateSweeps/TrajectoryMoment.lean"
+   },
+   "module": "OAI.Probability.CoordinateSweeps.TrajectoryMoment",
+   "original_sha256": "3584475b5e7e6b4e137b70be153353319f48c9156f4a78b118f8d91db485272d",
+   "path": "OAI/Probability/CoordinateSweeps/TrajectoryMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CoordinateSweeps/Transition.lean"
+   },
+   "module": "OAI.Probability.CoordinateSweeps.Transition",
+   "original_sha256": "462f947f11859bdc9f7cb0fc478b80171b4f9102c0a7d040ff2cb0b5d35d545e",
+   "path": "OAI/Probability/CoordinateSweeps/Transition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Moments/LineExpansion.lean"
+   },
+   "module": "OAI.Probability.Moments.LineExpansion",
+   "original_sha256": "565179d33bff93f673c80f91309bfa7832c1ab96781a08c8f673350670d34fcc",
+   "path": "OAI/Probability/Moments/LineExpansion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Placement/Chart.lean"
+   },
+   "module": "OAI.RepresentationTheory.Placement.Chart",
+   "original_sha256": "f4cb3f5dc993cef516af88fc83bf3649adfdeacb84bc3f651ecd5b399fcd95dc",
+   "path": "OAI/RepresentationTheory/Placement/Chart.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Placement/Occurrence.lean"
+   },
+   "module": "OAI.RepresentationTheory.Placement.Occurrence",
+   "original_sha256": "0aa9a3ed420d424d209994e638bc741ce1883fdc9541ab59f02a5cc693881d48",
+   "path": "OAI/RepresentationTheory/Placement/Occurrence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/SignedTensor/Basic.lean"
+   },
+   "module": "OAI.RepresentationTheory.SignedTensor.Basic",
+   "original_sha256": "943ff190a2d25c26e270fc1b2765876f55bd9751a8650fece129b61ae5d8e3b9",
+   "path": "OAI/RepresentationTheory/SignedTensor/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/SignedTensor/Blocks.lean"
+   },
+   "module": "OAI.RepresentationTheory.SignedTensor.Blocks",
+   "original_sha256": "5a9567093a3c910c7990c905751b0150bc2c4e9685048643d0c00892874fa614",
+   "path": "OAI/RepresentationTheory/SignedTensor/Blocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/SignedTensor/Domination.lean"
+   },
+   "module": "OAI.RepresentationTheory.SignedTensor.Domination",
+   "original_sha256": "c11c42ba4630f2f155dfc782ec07304730ce51e597a8187ecfe93e55e95c54a7",
+   "path": "OAI/RepresentationTheory/SignedTensor/Domination.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/SignedTensor/Overlap.lean"
+   },
+   "module": "OAI.RepresentationTheory.SignedTensor.Overlap",
+   "original_sha256": "e77933e69474ab38ccaaef6f20eeaf2016284f671866db5c680b2dfac8dcd42c",
+   "path": "OAI/RepresentationTheory/SignedTensor/Overlap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/SignedTensor/Resolution.lean"
+   },
+   "module": "OAI.RepresentationTheory.SignedTensor.Resolution",
+   "original_sha256": "517f9cfdbe01d95fd144b7fb9663e6066f9d12d3785dd02fea4a019393f2ab90",
+   "path": "OAI/RepresentationTheory/SignedTensor/Resolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Tensor/Postselection.lean"
+   },
+   "module": "OAI.RepresentationTheory.Tensor.Postselection",
+   "original_sha256": "c34387e38851bbdcc6568f4253b1ee2e949cb0da8444e78e094b949f55b7da52",
+   "path": "OAI/RepresentationTheory/Tensor/Postselection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Unitary/Basic.lean"
+   },
+   "module": "OAI.RepresentationTheory.Unitary.Basic",
+   "original_sha256": "ab6b2bb5e00fe91966cc371c55f8266bcc78daf02d9b5ac922a9481b906047ff",
+   "path": "OAI/RepresentationTheory/Unitary/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Unitary/Spectral.lean"
+   },
+   "module": "OAI.RepresentationTheory.Unitary.Spectral",
+   "original_sha256": "e3cc8ef4df37d6e30da3267cbdeac40b28f483c80f0ffcb9c071a21a11d5712d",
+   "path": "OAI/RepresentationTheory/Unitary/Spectral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Young/Classification.lean"
+   },
+   "module": "OAI.RepresentationTheory.Young.Classification",
+   "original_sha256": "4c76c9c1af66d35172a09b10afee1e7b040e9ec7116c82431e00b9a4442dacf1",
+   "path": "OAI/RepresentationTheory/Young/Classification.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Young/Entropy.lean"
+   },
+   "module": "OAI.RepresentationTheory.Young.Entropy",
+   "original_sha256": "1bb039242094c9f1d753d58e840ce18601979718ac440dd87ff2ac5829b6d10f",
+   "path": "OAI/RepresentationTheory/Young/Entropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Young/Restriction.lean"
+   },
+   "module": "OAI.RepresentationTheory.Young.Restriction",
+   "original_sha256": "5f72b859bcb0b48d355261e59def7b34b3089128e295dd9360f42fb9232c37b8",
+   "path": "OAI/RepresentationTheory/Young/Restriction.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.Matrix.BlockCycles",
+  "OAI.Analysis.Matrix.Holder",
+  "OAI.Analysis.Matrix.TensorMoment",
+  "OAI.Combinatorics.Graphs.Coverage",
+  "OAI.Probability.CoordinateSweeps.Attachment",
+  "OAI.Probability.CoordinateSweeps.BaseCase",
+  "OAI.Probability.CoordinateSweeps.Conditioning",
+  "OAI.Probability.CoordinateSweeps.Decomposition",
+  "OAI.Probability.CoordinateSweeps.Grid",
+  "OAI.Probability.CoordinateSweeps.Induction",
+  "OAI.Probability.CoordinateSweeps.Kernel",
+  "OAI.Probability.CoordinateSweeps.Main",
+  "OAI.Probability.CoordinateSweeps.Perturbation",
+  "OAI.Probability.CoordinateSweeps.PlacementMoment",
+  "OAI.Probability.CoordinateSweeps.Scales",
+  "OAI.Probability.CoordinateSweeps.SparseBound",
+  "OAI.Probability.CoordinateSweeps.SparseDimension",
+  "OAI.Probability.CoordinateSweeps.SparseMoment",
+  "OAI.Probability.CoordinateSweeps.TrajectoryMoment",
+  "OAI.Probability.CoordinateSweeps.Transition",
+  "OAI.Probability.Moments.LineExpansion",
+  "OAI.RepresentationTheory.Placement.Chart",
+  "OAI.RepresentationTheory.Placement.Occurrence",
+  "OAI.RepresentationTheory.SignedTensor.Basic",
+  "OAI.RepresentationTheory.SignedTensor.Blocks",
+  "OAI.RepresentationTheory.SignedTensor.Domination",
+  "OAI.RepresentationTheory.SignedTensor.Overlap",
+  "OAI.RepresentationTheory.SignedTensor.Resolution",
+  "OAI.RepresentationTheory.Tensor.Postselection",
+  "OAI.RepresentationTheory.Unitary.Basic",
+  "OAI.RepresentationTheory.Unitary.Spectral",
+  "OAI.RepresentationTheory.Young.Classification",
+  "OAI.RepresentationTheory.Young.Entropy",
+  "OAI.RepresentationTheory.Young.Restriction"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/CoordinateSweeps.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Probability.CoordinateSweeps.Main",
+   "name": "OAI.CoordinateSweeps.conditional_main",
+   "statement_sha256": "2c8534e219ff3275e60eeb73cf7932ac10561ffbb77a9d74ecf383fb7dd204fe"
+  },
+  {
+   "module": "OAI.Probability.CoordinateSweeps.Main",
+   "name": "OAI.CoordinateSweeps.all_grid_moment",
+   "statement_sha256": "595495e7dedb4cab9955a6a916e823990f83c713f1b82d1811589ca6c4f7a995"
+  }
+ ],
+ "task_id": "oai-coordinate-sweeps",
+ "task_revision": 1,
+ "title": "OpenAI math: Optimal logarithmic mixing of the Thorp shuffle: Conditional coordinate-sweep moment estimate",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

@@ -1,0 +1,701 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 131367639
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.EuclideanRamsey",
+  "challenge_sha256": "cb2ede9a1f7b6c2784acfcace10de725268779be904e8b81771e79044233ac0c",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/EuclideanRamsey.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.EuclideanRamsey",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Combinatorics.EuclideanRamsey.Main",
+   "theorem_names": [
+    "OAI.EuclideanRamsey.classification"
+   ]
+  },
+  "config_sha256": "2d7a4422593f70e170f5fc41c87e33f8afae5ad3cf795000c09181d9fad76872",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/EuclideanRamsey.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.EuclideanRamsey.classification": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/AdicLifting.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.AdicLifting",
+   "original_sha256": "a4c91c89294883ab0c1b6149993be431a2ae8cd9f40777c61f6c2c02b7e23890",
+   "path": "OAI/Combinatorics/EuclideanRamsey/AdicLifting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/ColoringCompactness.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.ColoringCompactness",
+   "original_sha256": "ffe9668987618ec36d1b8328bd4e2154eb01e6860d5f3f2a8e88bfef0d97ba9c",
+   "path": "OAI/Combinatorics/EuclideanRamsey/ColoringCompactness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/Congruence.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.Congruence",
+   "original_sha256": "3b2eb58d30db147fb8de0df322142bdc5b8a0b851f151845b813b90f5866a709",
+   "path": "OAI/Combinatorics/EuclideanRamsey/Congruence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/CornerGroup.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.CornerGroup",
+   "original_sha256": "dc5a2747b5a4952159788f4ef2fbe60412bd40b51a9f6a8cf7083afaf3996ebc",
+   "path": "OAI/Combinatorics/EuclideanRamsey/CornerGroup.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/CorrectionPaths.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.CorrectionPaths",
+   "original_sha256": "22ea62c3dbe79d7c6b3d237b13ae3c6fc33a6721ad974f9e8d62314cddc82fb3",
+   "path": "OAI/Combinatorics/EuclideanRamsey/CorrectionPaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/DerivedFractions.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.DerivedFractions",
+   "original_sha256": "3e0ff0689638a15d5dd0df72368a1ca50a1abbd136b7275953c834461b081d2e",
+   "path": "OAI/Combinatorics/EuclideanRamsey/DerivedFractions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/DifferentialSplitting.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.DifferentialSplitting",
+   "original_sha256": "5dd80ab2d27a36f64f951259e8733e6677976e72d6fdafdb137dc704c2afcba0",
+   "path": "OAI/Combinatorics/EuclideanRamsey/DifferentialSplitting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/Discretization.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.Discretization",
+   "original_sha256": "7a07ce7e90d3be69ef14db061c3bfc0b45b8f188fcba334d6cfd7069f237ec06",
+   "path": "OAI/Combinatorics/EuclideanRamsey/Discretization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/FiniteEuclidean.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.FiniteEuclidean",
+   "original_sha256": "36a71fe438bf514e928627f814c053ef5e0b6701956c8b0c89ecfbe4683bf060",
+   "path": "OAI/Combinatorics/EuclideanRamsey/FiniteEuclidean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/GramCompletion.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.GramCompletion",
+   "original_sha256": "35d55120a72b8df0cee012f95a8cff3f993096a8cc44cd373e273ff5a555f148",
+   "path": "OAI/Combinatorics/EuclideanRamsey/GramCompletion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/Hessian.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.Hessian",
+   "original_sha256": "ede62aa85cb459e73934ccf87245f523ef0c7e188cfc51d427ccafdfe1ec513b",
+   "path": "OAI/Combinatorics/EuclideanRamsey/Hessian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/LatticeMoments.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.LatticeMoments",
+   "original_sha256": "e0a5d1cd56efc3cd53b1a76f73958611789d050e9aba58ad682a72082bef2e5a",
+   "path": "OAI/Combinatorics/EuclideanRamsey/LatticeMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/Main.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.Main",
+   "original_sha256": "ef5469b2619bccdd0dfd386e0c9e45be29321e8fcb117b1de8be6db3517658a5",
+   "path": "OAI/Combinatorics/EuclideanRamsey/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/Model.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.Model",
+   "original_sha256": "40b5ceffa11dd08a7d85e8a83e0069d9d0fafeb7d1945030f973cc6717b6a7c1",
+   "path": "OAI/Combinatorics/EuclideanRamsey/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/NormalCost.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.NormalCost",
+   "original_sha256": "4a65125f9f60ccd60a3ba58b3faf41f3ffddab39df79aa9a1a64663a7b247550",
+   "path": "OAI/Combinatorics/EuclideanRamsey/NormalCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/OrbitAveraging.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.OrbitAveraging",
+   "original_sha256": "15f4ae9cf3318deaf5383798486217a98a87118691dedabcc8b81460bb91ea3f",
+   "path": "OAI/Combinatorics/EuclideanRamsey/OrbitAveraging.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/PathFractions.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.PathFractions",
+   "original_sha256": "6d20a32325c0e12c480f33b075e7be44b5d0b80593367d9289397890e01c1485",
+   "path": "OAI/Combinatorics/EuclideanRamsey/PathFractions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/PathSynchronization.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.PathSynchronization",
+   "original_sha256": "b57e3455ad002aeadee64b5ec993e1ef25ba366d4067678bdfc2248220c08edb",
+   "path": "OAI/Combinatorics/EuclideanRamsey/PathSynchronization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/PathWords.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.PathWords",
+   "original_sha256": "cc4d27e021e5961007f54cfbad4b2f9ff7054f40c75345f68e2dc8e07c7fdf16",
+   "path": "OAI/Combinatorics/EuclideanRamsey/PathWords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/RationalConvolution.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.RationalConvolution",
+   "original_sha256": "fac6f4754c676dbdd3dc3f6668c98f81285077ead7c50b957aa80132a4c2c3cd",
+   "path": "OAI/Combinatorics/EuclideanRamsey/RationalConvolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/SignedRows.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.SignedRows",
+   "original_sha256": "7c93746e5a9c7dd40cf9661b5afb5303caed020d02b2556d07a0efc3ffdfad6b",
+   "path": "OAI/Combinatorics/EuclideanRamsey/SignedRows.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/SmoothingKernel.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.SmoothingKernel",
+   "original_sha256": "c698c8c256d7ce83228e79e713562a246a40761fb9e8cb47193c2b69ae407b56",
+   "path": "OAI/Combinatorics/EuclideanRamsey/SmoothingKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/SmoothingMatrix.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.SmoothingMatrix",
+   "original_sha256": "44400bb91cc91e6ac0a336782c127fbe9d9bc7ace38bcc1b0265bf2508aef826",
+   "path": "OAI/Combinatorics/EuclideanRamsey/SmoothingMatrix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/StencilConvolution.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.StencilConvolution",
+   "original_sha256": "45923b497dedc1ef69506067bab6639c30930c741bfb6b0f162d87327edf9edf",
+   "path": "OAI/Combinatorics/EuclideanRamsey/StencilConvolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/TensorDescent.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.TensorDescent",
+   "original_sha256": "0cab41d6f80e3a252c4cb673eaec7afb33cf3d50102d7a0709f74e8b2bbfef48",
+   "path": "OAI/Combinatorics/EuclideanRamsey/TensorDescent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/TensorNecessity.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.TensorNecessity",
+   "original_sha256": "417efd25ed39e57b5e04daaef0e131df758bbce803884f7f150ad2354eb3805c",
+   "path": "OAI/Combinatorics/EuclideanRamsey/TensorNecessity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/TensorPresentation.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.TensorPresentation",
+   "original_sha256": "0a0622733bb2786b2218e7056b70cc5c2a2d7d94daed9d7f72a39c290eb4a957",
+   "path": "OAI/Combinatorics/EuclideanRamsey/TensorPresentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/EuclideanRamsey/UltrafilterStrings.lean"
+   },
+   "module": "OAI.Combinatorics.EuclideanRamsey.UltrafilterStrings",
+   "original_sha256": "86fa92590aa2e380bb40524dd6633ce0bdefab292866786d31babeb21875c4fe",
+   "path": "OAI/Combinatorics/EuclideanRamsey/UltrafilterStrings.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.EuclideanRamsey.AdicLifting",
+  "OAI.Combinatorics.EuclideanRamsey.ColoringCompactness",
+  "OAI.Combinatorics.EuclideanRamsey.Congruence",
+  "OAI.Combinatorics.EuclideanRamsey.CornerGroup",
+  "OAI.Combinatorics.EuclideanRamsey.CorrectionPaths",
+  "OAI.Combinatorics.EuclideanRamsey.DerivedFractions",
+  "OAI.Combinatorics.EuclideanRamsey.DifferentialSplitting",
+  "OAI.Combinatorics.EuclideanRamsey.Discretization",
+  "OAI.Combinatorics.EuclideanRamsey.FiniteEuclidean",
+  "OAI.Combinatorics.EuclideanRamsey.GramCompletion",
+  "OAI.Combinatorics.EuclideanRamsey.Hessian",
+  "OAI.Combinatorics.EuclideanRamsey.LatticeMoments",
+  "OAI.Combinatorics.EuclideanRamsey.Main",
+  "OAI.Combinatorics.EuclideanRamsey.Model",
+  "OAI.Combinatorics.EuclideanRamsey.NormalCost",
+  "OAI.Combinatorics.EuclideanRamsey.OrbitAveraging",
+  "OAI.Combinatorics.EuclideanRamsey.PathFractions",
+  "OAI.Combinatorics.EuclideanRamsey.PathSynchronization",
+  "OAI.Combinatorics.EuclideanRamsey.PathWords",
+  "OAI.Combinatorics.EuclideanRamsey.RationalConvolution",
+  "OAI.Combinatorics.EuclideanRamsey.SignedRows",
+  "OAI.Combinatorics.EuclideanRamsey.SmoothingKernel",
+  "OAI.Combinatorics.EuclideanRamsey.SmoothingMatrix",
+  "OAI.Combinatorics.EuclideanRamsey.StencilConvolution",
+  "OAI.Combinatorics.EuclideanRamsey.TensorDescent",
+  "OAI.Combinatorics.EuclideanRamsey.TensorNecessity",
+  "OAI.Combinatorics.EuclideanRamsey.TensorPresentation",
+  "OAI.Combinatorics.EuclideanRamsey.UltrafilterStrings"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/EuclideanRamsey.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Combinatorics.EuclideanRamsey.Main",
+   "name": "OAI.EuclideanRamsey.classification",
+   "statement_sha256": "d502d92664513082129fda87de68a801cdf8eb1e467a35bbf49fa9d458dfb0a4"
+  }
+ ],
+ "task_id": "oai-euclidean-ramsey",
+ "task_revision": 1,
+ "title": "OpenAI math: Classification of finite Euclidean Ramsey configurations: Tensor-field classification of Ramsey configurations",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

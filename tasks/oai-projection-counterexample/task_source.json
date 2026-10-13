@@ -1,0 +1,831 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 65671998
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.ProjectionCounterexample",
+  "challenge_sha256": "6f695ad46f2cb035fb085c3e852fbf33fc956235cf7e69da6a662dd106f6ea30",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ProjectionCounterexample.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.ProjectionCounterexample",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Geometry.ProjectionBody.Counterexample",
+   "theorem_names": [
+    "OAI.ProjectionCounterexample.universal_simplex_upper_bound_false"
+   ]
+  },
+  "config_sha256": "f743e8d6c9a8a1d8ccb627457ab0c6ef59bd97e1b0034b4dfae2a9cc9939466b",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ProjectionCounterexample.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.ProjectionCounterexample.universal_simplex_upper_bound_false": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/AffineChartMeasure.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.AffineChartMeasure",
+   "original_sha256": "5a72b2fdeb980b8953993f52184c45f003c9b75d032b9c3d71bd0f9f2f638a82",
+   "path": "OAI/Geometry/ProjectionBody/AffineChartMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/Arithmetic.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.Arithmetic",
+   "original_sha256": "9df55b978113cc0e790ec8504b294b86da386656d39be6289b7bb09ff2026190",
+   "path": "OAI/Geometry/ProjectionBody/Arithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/BrightnessSum.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.BrightnessSum",
+   "original_sha256": "0996696fa7aa8adf7867e596ac808f22b644f82de2eddf7c96f0c3dc4833224e",
+   "path": "OAI/Geometry/ProjectionBody/BrightnessSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/ConvexGeometry.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.ConvexGeometry",
+   "original_sha256": "795b059787a8416e23af6d6387fe46de08b93f277e1fba2db6edd63dc0812014",
+   "path": "OAI/Geometry/ProjectionBody/ConvexGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/Counterexample.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.Counterexample",
+   "original_sha256": "158f01024c0784ee12881ba13bc3448cc397c9363f87776af3b3280433791d40",
+   "path": "OAI/Geometry/ProjectionBody/Counterexample.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/Definitions.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.Definitions",
+   "original_sha256": "55873f9bed6d3ff23db2b2c82f013ade1533c7b254856f16740c91fe8938e8e2",
+   "path": "OAI/Geometry/ProjectionBody/Definitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/FacetCoordinates.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.FacetCoordinates",
+   "original_sha256": "e6edf756c2f5bb9b7f585449e175b47204c04845b6b4f5e06fe155597a284a78",
+   "path": "OAI/Geometry/ProjectionBody/FacetCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/FacetCover.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.FacetCover",
+   "original_sha256": "47e4c56c5c5127e117c1b1ee67493ccd9d0042e6a823c282f8d24fd7b4cb3e30",
+   "path": "OAI/Geometry/ProjectionBody/FacetCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/FacetMeasure.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.FacetMeasure",
+   "original_sha256": "086b188649a462abd230927e4f581c663a344e7263882403451bd7bb2626c1a3",
+   "path": "OAI/Geometry/ProjectionBody/FacetMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/GeometryDefinitions.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.GeometryDefinitions",
+   "original_sha256": "e3780c5b4b20a400b8813267336ec7bb0146f22ec982c7fdde6e33b6593f543e",
+   "path": "OAI/Geometry/ProjectionBody/GeometryDefinitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/GraphChart.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.GraphChart",
+   "original_sha256": "c4fb9cd0fa48eeb5d5446b94b86c7cfb25919ecba40f274c4d7248d2ba52c6ce",
+   "path": "OAI/Geometry/ProjectionBody/GraphChart.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/GraphJacobian.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.GraphJacobian",
+   "original_sha256": "9e6e5ecd286abbabe7080aa9fb81dc8ec9cb44ef216cca6f338669fd28bd2f81",
+   "path": "OAI/Geometry/ProjectionBody/GraphJacobian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/GraphProjection.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.GraphProjection",
+   "original_sha256": "9e496b1375378966d7e6836c58aba19042da89d987e087a70fb8bfc69767c57a",
+   "path": "OAI/Geometry/ProjectionBody/GraphProjection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/HyperplaneJacobian.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.HyperplaneJacobian",
+   "original_sha256": "998aa4ae3eb8b32b680f137ab462f5a764e7154eb0d69415a2d69a000e4c1ca8",
+   "path": "OAI/Geometry/ProjectionBody/HyperplaneJacobian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/NullHyperplane.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.NullHyperplane",
+   "original_sha256": "5b86264bc61ca53d70075429dd473b4ea50be254a5f77b472c7307c8cb2d0f99",
+   "path": "OAI/Geometry/ProjectionBody/NullHyperplane.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/ProductBrightness.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.ProductBrightness",
+   "original_sha256": "7632a2d11620f90adc12715ebad815fd2d8550c9b5e465166ea3ec3762ac1def",
+   "path": "OAI/Geometry/ProjectionBody/ProductBrightness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/ProductFacetCharts.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.ProductFacetCharts",
+   "original_sha256": "3c34d096ff758f0fc6999b5fef6f6bbdde3d97ae77b1ec7dc7fd3b8a09760760",
+   "path": "OAI/Geometry/ProjectionBody/ProductFacetCharts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/ProductFacetGraphs.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.ProductFacetGraphs",
+   "original_sha256": "93783dad5a891693424457acc71e78ef6f2a502cb39a905f474d3a8542eb036b",
+   "path": "OAI/Geometry/ProjectionBody/ProductFacetGraphs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/ProductFacetIndices.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.ProductFacetIndices",
+   "original_sha256": "5b99900fee3cbd49c5cd30180e90d1b313d9fdd40b0da67a57f6d640465fe6d1",
+   "path": "OAI/Geometry/ProjectionBody/ProductFacetIndices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/ProductFacetProjection.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.ProductFacetProjection",
+   "original_sha256": "892aad25ee9246a0d3fd61d1586d07c077c4ef6034ae5028ea4dade714c492a1",
+   "path": "OAI/Geometry/ProjectionBody/ProductFacetProjection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/ProductFacets.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.ProductFacets",
+   "original_sha256": "520d953d32ddcb97255633f38de651baf19c1bc3094f63c4d991449ef811c70e",
+   "path": "OAI/Geometry/ProjectionBody/ProductFacets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/ProductVolumes.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.ProductVolumes",
+   "original_sha256": "01643e6d990e65d45443d173b5c58b2cfd898a5a1a690d7f75a5351eeaf45ed5",
+   "path": "OAI/Geometry/ProjectionBody/ProductVolumes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/ProductZonotopeBridge.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.ProductZonotopeBridge",
+   "original_sha256": "e9cdd1013cd0b1f93ba0cdaa337f8d36bb082ff113ac333198afddaf88c21585",
+   "path": "OAI/Geometry/ProjectionBody/ProductZonotopeBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/ProjectionKernel.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.ProjectionKernel",
+   "original_sha256": "fee9a92b1ebe784fdbb3264a2456da60c5f33cb2a692bddabe3fc2c2364f714b",
+   "path": "OAI/Geometry/ProjectionBody/ProjectionKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/SimplexBrightness.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.SimplexBrightness",
+   "original_sha256": "38b69934da2bb227353e89713d1b02175e4d102de55e885e40463269b5346c74",
+   "path": "OAI/Geometry/ProjectionBody/SimplexBrightness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/SimplexFacetCharts.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.SimplexFacetCharts",
+   "original_sha256": "28212a9767510312eb9776f3020ab1e09d151c089c92cab687587f2f115003d0",
+   "path": "OAI/Geometry/ProjectionBody/SimplexFacetCharts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/SimplexFacets.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.SimplexFacets",
+   "original_sha256": "d97369807a6d7c5b25809da3418e6f9faaba846b72f9f013eb21e06b990c69ad",
+   "path": "OAI/Geometry/ProjectionBody/SimplexFacets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/SimplexVolume.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.SimplexVolume",
+   "original_sha256": "1f920adc4ba0b89e411c2a31d862856901dc831b72097703c2073189bb38b674",
+   "path": "OAI/Geometry/ProjectionBody/SimplexVolume.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/UnitSupport.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.UnitSupport",
+   "original_sha256": "179dfed0cee2a0bc3c04653cae4bea737accbebfb9e4d940d4165226cb883ad0",
+   "path": "OAI/Geometry/ProjectionBody/UnitSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/ProjectionBody/ZonotopeBridge.lean"
+   },
+   "module": "OAI.Geometry.ProjectionBody.ZonotopeBridge",
+   "original_sha256": "32e6173b0f7a1662f7ffd3663fa4851be3ad85dec408293eafeb89c3914416c3",
+   "path": "OAI/Geometry/ProjectionBody/ZonotopeBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Zonotope/Body.lean"
+   },
+   "module": "OAI.Geometry.Zonotope.Body",
+   "original_sha256": "19a221a390b78557ee80e9bd6a4c803f4b1966b5a33c544c82fd875a60e4cad7",
+   "path": "OAI/Geometry/Zonotope/Body.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Zonotope/Decomposition.lean"
+   },
+   "module": "OAI.Geometry.Zonotope.Decomposition",
+   "original_sha256": "f4203ce4c883a6bd1a436b85b49bb104cbf3ea61cc91178a9cad8d06895b50aa",
+   "path": "OAI/Geometry/Zonotope/Decomposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Zonotope/Determinant.lean"
+   },
+   "module": "OAI.Geometry.Zonotope.Determinant",
+   "original_sha256": "5f10ca70a1599a604a92b4ae7367485d566754de5f45b31a900ccaac43c8e38b",
+   "path": "OAI/Geometry/Zonotope/Determinant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Zonotope/Euclidean.lean"
+   },
+   "module": "OAI.Geometry.Zonotope.Euclidean",
+   "original_sha256": "b726f440ca883d3973fb8dfc8b8181b7688c01d34b1da7bfb5ff6d6646ebc8df",
+   "path": "OAI/Geometry/Zonotope/Euclidean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Zonotope/EuclideanVolume.lean"
+   },
+   "module": "OAI.Geometry.Zonotope.EuclideanVolume",
+   "original_sha256": "0ca3f60567cab2f1c224131bffd2adf24974a65a1cd6ef74590f51638fa53269",
+   "path": "OAI/Geometry/Zonotope/EuclideanVolume.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Zonotope/Halfspaces.lean"
+   },
+   "module": "OAI.Geometry.Zonotope.Halfspaces",
+   "original_sha256": "f83548d1407b6e15f7162115adf87313d7800febc96398eb08a229815277759e",
+   "path": "OAI/Geometry/Zonotope/Halfspaces.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Zonotope/Product.lean"
+   },
+   "module": "OAI.Geometry.Zonotope.Product",
+   "original_sha256": "e82298b719d8775f10b25707df6c44d3f351c0e11b334e1043129de3dc75e9af",
+   "path": "OAI/Geometry/Zonotope/Product.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Zonotope/Scaling.lean"
+   },
+   "module": "OAI.Geometry.Zonotope.Scaling",
+   "original_sha256": "687f87d5abe3e93ab27a47d8d152736f5f0e92caa66854a9338c718e11c9e637",
+   "path": "OAI/Geometry/Zonotope/Scaling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Zonotope/Shear.lean"
+   },
+   "module": "OAI.Geometry.Zonotope.Shear",
+   "original_sha256": "8e7b08bf1f96a47c41c89624f886d8d65c02de12477f0923a0ed80f5d3c5fd53",
+   "path": "OAI/Geometry/Zonotope/Shear.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Zonotope/Support.lean"
+   },
+   "module": "OAI.Geometry.Zonotope.Support",
+   "original_sha256": "cf31bea6dafdbcc5216f78211cb2c181fc88427fd957c84fa587445bc9545a72",
+   "path": "OAI/Geometry/Zonotope/Support.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Zonotope/Volume.lean"
+   },
+   "module": "OAI.Geometry.Zonotope.Volume",
+   "original_sha256": "d1144af93c7546b40172bd976a84583bcef4f8d2120720662f645a0e500c088a",
+   "path": "OAI/Geometry/Zonotope/Volume.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Geometry.ProjectionBody.AffineChartMeasure",
+  "OAI.Geometry.ProjectionBody.Arithmetic",
+  "OAI.Geometry.ProjectionBody.BrightnessSum",
+  "OAI.Geometry.ProjectionBody.ConvexGeometry",
+  "OAI.Geometry.ProjectionBody.Counterexample",
+  "OAI.Geometry.ProjectionBody.Definitions",
+  "OAI.Geometry.ProjectionBody.FacetCoordinates",
+  "OAI.Geometry.ProjectionBody.FacetCover",
+  "OAI.Geometry.ProjectionBody.FacetMeasure",
+  "OAI.Geometry.ProjectionBody.GeometryDefinitions",
+  "OAI.Geometry.ProjectionBody.GraphChart",
+  "OAI.Geometry.ProjectionBody.GraphJacobian",
+  "OAI.Geometry.ProjectionBody.GraphProjection",
+  "OAI.Geometry.ProjectionBody.HyperplaneJacobian",
+  "OAI.Geometry.ProjectionBody.NullHyperplane",
+  "OAI.Geometry.ProjectionBody.ProductBrightness",
+  "OAI.Geometry.ProjectionBody.ProductFacetCharts",
+  "OAI.Geometry.ProjectionBody.ProductFacetGraphs",
+  "OAI.Geometry.ProjectionBody.ProductFacetIndices",
+  "OAI.Geometry.ProjectionBody.ProductFacetProjection",
+  "OAI.Geometry.ProjectionBody.ProductFacets",
+  "OAI.Geometry.ProjectionBody.ProductVolumes",
+  "OAI.Geometry.ProjectionBody.ProductZonotopeBridge",
+  "OAI.Geometry.ProjectionBody.ProjectionKernel",
+  "OAI.Geometry.ProjectionBody.SimplexBrightness",
+  "OAI.Geometry.ProjectionBody.SimplexFacetCharts",
+  "OAI.Geometry.ProjectionBody.SimplexFacets",
+  "OAI.Geometry.ProjectionBody.SimplexVolume",
+  "OAI.Geometry.ProjectionBody.UnitSupport",
+  "OAI.Geometry.ProjectionBody.ZonotopeBridge",
+  "OAI.Geometry.Zonotope.Body",
+  "OAI.Geometry.Zonotope.Decomposition",
+  "OAI.Geometry.Zonotope.Determinant",
+  "OAI.Geometry.Zonotope.Euclidean",
+  "OAI.Geometry.Zonotope.EuclideanVolume",
+  "OAI.Geometry.Zonotope.Halfspaces",
+  "OAI.Geometry.Zonotope.Product",
+  "OAI.Geometry.Zonotope.Scaling",
+  "OAI.Geometry.Zonotope.Shear",
+  "OAI.Geometry.Zonotope.Support",
+  "OAI.Geometry.Zonotope.Volume"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/ProjectionCounterexample.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Geometry.ProjectionBody.Counterexample",
+   "name": "OAI.ProjectionCounterexample.universal_simplex_upper_bound_false",
+   "statement_sha256": "c997f1d3593b1330bf0b37c701bd9177f6afa016977ad7b2053357c3a1c022db"
+  }
+ ],
+ "task_id": "oai-projection-counterexample",
+ "task_revision": 1,
+ "title": "OpenAI math: Sharp projection-body inequalities and a counterexample to simplex maximization: Failure of the simplex upper bound in dimension 20",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

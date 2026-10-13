@@ -1,0 +1,2031 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 188424654
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.ContinuumTransition",
+  "challenge_sha256": "703b04bfb80732ba60d9c55cc108ea94e9d5740174695cae4ca97f99aedf5512",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ContinuumTransition.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.ContinuumTransition",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Probability.ContinuumTransition.Main",
+   "theorem_names": [
+    "OAI.ContinuumTemperature.main_theorem"
+   ]
+  },
+  "config_sha256": "8ec375365e428188d10ee25955a2c0eca28200f949839b0a8356d5542127e8d8",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ContinuumTransition.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.ContinuumTemperature.main_theorem": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ActiveLimits.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ActiveLimits",
+   "original_sha256": "28f68a3c0386a49cb54d618e5f318c04af80e8b8df2d2de75195d21bc1d77899",
+   "path": "OAI/Probability/ContinuumTransition/ActiveLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ActiveSupports.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ActiveSupports",
+   "original_sha256": "f785cdcb5f09195ece75cf22b05e0921cd7d54fb0ec94be72b4a782cc8abc74a",
+   "path": "OAI/Probability/ContinuumTransition/ActiveSupports.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ActiveUniform.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ActiveUniform",
+   "original_sha256": "30ab17e04a9a2b33f75b89de15efd8cc7f9125e2b29fee6e0c56a9c5a5cceab4",
+   "path": "OAI/Probability/ContinuumTransition/ActiveUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/AppendAttraction.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.AppendAttraction",
+   "original_sha256": "ac700e308a540346a636e44a5b9c53dd833e51fdd7db4985ad5f1611a10bb6e3",
+   "path": "OAI/Probability/ContinuumTransition/AppendAttraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ApproximateSupports.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ApproximateSupports",
+   "original_sha256": "abcbb3e49f35df04c4a20f1cb57404dc9ffbba3c77966bef2c015c9529b22eee",
+   "path": "OAI/Probability/ContinuumTransition/ApproximateSupports.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/Assignments.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.Assignments",
+   "original_sha256": "4457ba15c7ca3b44720fd7163e384143dead71f031098d24da128d3a3144af2d",
+   "path": "OAI/Probability/ContinuumTransition/Assignments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/BadEndpoints.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.BadEndpoints",
+   "original_sha256": "b77af4bc82acf46bece583617daa644d625ca5dcaa0c92d16fe8cd8f5462940a",
+   "path": "OAI/Probability/ContinuumTransition/BadEndpoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/BlockEnergy.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.BlockEnergy",
+   "original_sha256": "77592540ab30e270c26f958fa93e416218402911c261424aac7cb06ad18f5718",
+   "path": "OAI/Probability/ContinuumTransition/BlockEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/BlockPartition.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.BlockPartition",
+   "original_sha256": "f12d003df76c7cfa0f61adacaa1ac9acb9665ce611166ffc47d87a28b8f88071",
+   "path": "OAI/Probability/ContinuumTransition/BlockPartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/BoundarySum.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.BoundarySum",
+   "original_sha256": "d864b0bba53e1936a67774f140856704b4323a5d4168f3e05fe4dbe41f3af361",
+   "path": "OAI/Probability/ContinuumTransition/BoundarySum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/BoxTiling.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.BoxTiling",
+   "original_sha256": "fa03c39d92ab252f3af0bfdf5645052299b6c96e7e4f25922e44f7072459e682",
+   "path": "OAI/Probability/ContinuumTransition/BoxTiling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/CanonicalIntegral.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.CanonicalIntegral",
+   "original_sha256": "41156610bb85e4cde5333d712fc9e0e0642b0466534f46f22f3d33c30bb9540a",
+   "path": "OAI/Probability/ContinuumTransition/CanonicalIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/CanonicalLimit.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.CanonicalLimit",
+   "original_sha256": "02d4c48b43cfdad85aa8f8c934d844a3169840773af82cacbf5fa3177cb89263",
+   "path": "OAI/Probability/ContinuumTransition/CanonicalLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/CellEnergy.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.CellEnergy",
+   "original_sha256": "3afaa5356e090a4ad30a67fc9a3ea463cc92c67e2dfca080fbe35d8e4f17434b",
+   "path": "OAI/Probability/ContinuumTransition/CellEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/CoerciveCanonical.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.CoerciveCanonical",
+   "original_sha256": "9dfb22ba5c6a269fbfc592b83005f427bf0233ad122fd6f3d608d002f44fc2a9",
+   "path": "OAI/Probability/ContinuumTransition/CoerciveCanonical.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/CompactHulls.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.CompactHulls",
+   "original_sha256": "00d07f4d29201d1fe8737b927c7b223b307d0bed1a1af52b003467fb39d0d21d",
+   "path": "OAI/Probability/ContinuumTransition/CompactHulls.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/CompactSequences.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.CompactSequences",
+   "original_sha256": "6c588fda8611966dba360af1e4174e9a121b8477fc477e0f4cbea93d7ce5d498",
+   "path": "OAI/Probability/ContinuumTransition/CompactSequences.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ConstructionBounds.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ConstructionBounds",
+   "original_sha256": "10e1e1c628f3df46f33b0f45bf98693ab0316ef077879d4b537631b90955d2b6",
+   "path": "OAI/Probability/ContinuumTransition/ConstructionBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ConstructionCap.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ConstructionCap",
+   "original_sha256": "9823894c57f2a9c44ba34c7768823d930e964bfb3ad5297a2c6ae782aaa7cf51",
+   "path": "OAI/Probability/ContinuumTransition/ConstructionCap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ConstructionLimit.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ConstructionLimit",
+   "original_sha256": "6fa35465e5bf76de358414a62c99a1039798f45caffda7995ccd165f30766e6c",
+   "path": "OAI/Probability/ContinuumTransition/ConstructionLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ConstructionLocation.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ConstructionLocation",
+   "original_sha256": "22ce6b0c7018a0720440a62f2f2742d0ad1dccdc7384c721690db1e7d239f0cb",
+   "path": "OAI/Probability/ContinuumTransition/ConstructionLocation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ConstructionMasses.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ConstructionMasses",
+   "original_sha256": "e6cb6ac69162110f6d80b4163e3e20325e3cc606c7d91de2a1f8c5724adbeb75",
+   "path": "OAI/Probability/ContinuumTransition/ConstructionMasses.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ConstructionSequence.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ConstructionSequence",
+   "original_sha256": "4c76751cec95fc1eb292c4614a29a629de8eac13dc3cb75f83a8700e11799f8a",
+   "path": "OAI/Probability/ContinuumTransition/ConstructionSequence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ConstructionStage.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ConstructionStage",
+   "original_sha256": "4d8ee2421bc92f239300f0e75d0ed59bcd82321b282974274515999b43d62bc9",
+   "path": "OAI/Probability/ContinuumTransition/ConstructionStage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ConstructionStep.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ConstructionStep",
+   "original_sha256": "947c28d9eae589acdbdf38cbc42cdcd83be780b74b3c22477580f7340313decc",
+   "path": "OAI/Probability/ContinuumTransition/ConstructionStep.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ConvexSupport.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ConvexSupport",
+   "original_sha256": "3c3e546933e87f263af26160ca3c8e9100e061f4a46bb0f2c7a8de1c0565f96e",
+   "path": "OAI/Probability/ContinuumTransition/ConvexSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ConvexUniform.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ConvexUniform",
+   "original_sha256": "48faf29b75bd292a34b3c9f54212a5bf843a7b377c2726515a0cc19fc4a820f1",
+   "path": "OAI/Probability/ContinuumTransition/ConvexUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ConvolutionLimit.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ConvolutionLimit",
+   "original_sha256": "99e994694cd684398b352e498a3d3f17c6755078b857321691fe76765abbeb4f",
+   "path": "OAI/Probability/ContinuumTransition/ConvolutionLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/CubeBoundary.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.CubeBoundary",
+   "original_sha256": "3190190c09109ece258d55543b8707646c7bd57af5c4cb7f4c90cc92b94917bc",
+   "path": "OAI/Probability/ContinuumTransition/CubeBoundary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/CubeCoercivity.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.CubeCoercivity",
+   "original_sha256": "939051442c42d7eaf379bf04523525fb216726820410e79b374b8ab309226336",
+   "path": "OAI/Probability/ContinuumTransition/CubeCoercivity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/DensityBounds.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.DensityBounds",
+   "original_sha256": "6ee53b7ca802e864d5256ef304e39b364a24a3943af9d6adbece4b1394312b7a",
+   "path": "OAI/Probability/ContinuumTransition/DensityBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/DensityLimit.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.DensityLimit",
+   "original_sha256": "e2d199380153c884967623fc6c72d6b5f9c25901aad4a5c8352a064a14fb3dd2",
+   "path": "OAI/Probability/ContinuumTransition/DensityLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/DensityUniform.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.DensityUniform",
+   "original_sha256": "d6aba0d55bbf2b425eb892b12899c15baf2010d54f9a1f7d93d3ed00a8b9bdd0",
+   "path": "OAI/Probability/ContinuumTransition/DensityUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ExactAssignments.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ExactAssignments",
+   "original_sha256": "c8bec01b52a50f7ce941d7dc0b313bd4ec6f2b12095955b233aef46173414a4d",
+   "path": "OAI/Probability/ContinuumTransition/ExactAssignments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/FiniteBlocks.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.FiniteBlocks",
+   "original_sha256": "980f2dc908f029e1ae9d2ff054ddd0f8409713c9939942d64a41dcef2da998fb",
+   "path": "OAI/Probability/ContinuumTransition/FiniteBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/FiniteBounds.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.FiniteBounds",
+   "original_sha256": "29f14f99b702dda60d1c9e694942a85f856e951a9ac663a94f486d239b68157e",
+   "path": "OAI/Probability/ContinuumTransition/FiniteBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/FiniteProduct.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.FiniteProduct",
+   "original_sha256": "87dead31e5bb256753e08e63dd0396f4ec6527e389f37a5278d5c5b366aeb0d4",
+   "path": "OAI/Probability/ContinuumTransition/FiniteProduct.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/FixedOccupation.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.FixedOccupation",
+   "original_sha256": "440bd236f289a462d8b7e04b1b614437781cd6abd72f5c47ef31d5152757e61f",
+   "path": "OAI/Probability/ContinuumTransition/FixedOccupation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/FreeFamily.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.FreeFamily",
+   "original_sha256": "111b7bcb4d3195d72cd705326bd29074e82a42007e57af1bc49471a4fbb6cf1c",
+   "path": "OAI/Probability/ContinuumTransition/FreeFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/FreeGeometry.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.FreeGeometry",
+   "original_sha256": "1ea7e52a4c55f966200787da15cf7646c0015dec5f5001bc63f9f237f0c133db",
+   "path": "OAI/Probability/ContinuumTransition/FreeGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/FreeGrand.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.FreeGrand",
+   "original_sha256": "44b79375ffed6c9fff2e48771b01b1cd707f181bf20c63d980760c423f80bf93",
+   "path": "OAI/Probability/ContinuumTransition/FreeGrand.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/FreeIdeal.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.FreeIdeal",
+   "original_sha256": "0b2842d2e9046979b7e07bde44e1ee312e1778cb9ec80711450b8d3ca130f606",
+   "path": "OAI/Probability/ContinuumTransition/FreeIdeal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/FreeLimit.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.FreeLimit",
+   "original_sha256": "8b0e475c5ceb5af69d5fa9dd32eacf7efb9599c495ef2357fa87b902d2500260",
+   "path": "OAI/Probability/ContinuumTransition/FreeLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/FreeRoots.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.FreeRoots",
+   "original_sha256": "780a78beb278d4537412d182802712ebd66d2f67768603c02862c4d5ba951cd3",
+   "path": "OAI/Probability/ContinuumTransition/FreeRoots.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/FreeUpper.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.FreeUpper",
+   "original_sha256": "46eace99f4a43970b1e083df064c69b938bd390e29ded8e6a2c6610d7cb5ab0f",
+   "path": "OAI/Probability/ContinuumTransition/FreeUpper.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GeneralGrand.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GeneralGrand",
+   "original_sha256": "3b3ec7261307b889137b05459d917c4fe732bd2f13b8f67a451b321cacc0bbeb",
+   "path": "OAI/Probability/ContinuumTransition/GeneralGrand.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GeneralLabels.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GeneralLabels",
+   "original_sha256": "fa455df5026f7de26ba9307eb64abeae67ebb28e71bb021b555f66c908f62556",
+   "path": "OAI/Probability/ContinuumTransition/GeneralLabels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GenericGibbs.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GenericGibbs",
+   "original_sha256": "e34f4cda20bca6ad5acda9b696c44861f15f3fb5b6635fdfd23c0da43d4be6c9",
+   "path": "OAI/Probability/ContinuumTransition/GenericGibbs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GibbsBridge.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GibbsBridge",
+   "original_sha256": "980f4b0238e2c8c709224bfe5bc75cf790d3c9cc3c46b6b5700a4fd95637a216",
+   "path": "OAI/Probability/ContinuumTransition/GibbsBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GibbsIntegrability.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GibbsIntegrability",
+   "original_sha256": "3ca516c66ac6024de809f6f995cc6aab75b5be2d3dc6bc1bf2aa17519bf400b3",
+   "path": "OAI/Probability/ContinuumTransition/GibbsIntegrability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GibbsMonotonicity.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GibbsMonotonicity",
+   "original_sha256": "38134c33c605ffc215bb7847fb6b79681879bf58181307c5cfe1b7bb05cde8fa",
+   "path": "OAI/Probability/ContinuumTransition/GibbsMonotonicity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GibbsQuadratic.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GibbsQuadratic",
+   "original_sha256": "a2739853990f91e80f0181df81ac0e9c9808ae49e979baf4c2ec8369112f0ffa",
+   "path": "OAI/Probability/ContinuumTransition/GibbsQuadratic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GrandBlocks.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GrandBlocks",
+   "original_sha256": "9239abeb6e797c53bc78d6fae8c51cffb3f25d2371e83bbd91aa32a9e32c8ea8",
+   "path": "OAI/Probability/ContinuumTransition/GrandBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GrandDomination.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GrandDomination",
+   "original_sha256": "bff4205a455f086666d4de895d89361999e1614cb482536d968d44c1e0c6e50a",
+   "path": "OAI/Probability/ContinuumTransition/GrandDomination.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GrandFinite.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GrandFinite",
+   "original_sha256": "4efe581413b31a78580fcd91e9d5c6f5598e60bc4e920b0d664dd579ac8b5657",
+   "path": "OAI/Probability/ContinuumTransition/GrandFinite.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GrandInteraction.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GrandInteraction",
+   "original_sha256": "b3a92ac7c2eb92507ba724e43687cf7a2adcc90ae90973af0db288de2df27000",
+   "path": "OAI/Probability/ContinuumTransition/GrandInteraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GrandLinearity.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GrandLinearity",
+   "original_sha256": "acf48a51c16b2c1b44d2b459c10486f938406016cc27df5b1650b1668300c343",
+   "path": "OAI/Probability/ContinuumTransition/GrandLinearity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GrandOn.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GrandOn",
+   "original_sha256": "2c86e39c3104621691dbe48bc26411814f5da4a30480105f1888ee45823dea70",
+   "path": "OAI/Probability/ContinuumTransition/GrandOn.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GrandPartition.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GrandPartition",
+   "original_sha256": "c65e1e251b0665655aa5c659149c52dbd8bbdddf6fd7d3025a9d8873eab8993a",
+   "path": "OAI/Probability/ContinuumTransition/GrandPartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GrandPerturbation.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GrandPerturbation",
+   "original_sha256": "34f18a93b560e3fc6bc44443d66899c1be6a4afb879e1a0718eed27dec04b45d",
+   "path": "OAI/Probability/ContinuumTransition/GrandPerturbation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GrandProduct.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GrandProduct",
+   "original_sha256": "0d80e924ee46a901d2342e1ced7e9af776ba35f8a07cd4dd5d78b7068852e1a2",
+   "path": "OAI/Probability/ContinuumTransition/GrandProduct.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GridBoundary.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GridBoundary",
+   "original_sha256": "628881cf6598a1b3d8703b9f6132b515e5330ec1008aa96b6512896525737914",
+   "path": "OAI/Probability/ContinuumTransition/GridBoundary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GridCover.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GridCover",
+   "original_sha256": "3b4c7ca0951b884a8015944bdd1a4b864f9472129e283fd76353e2e9c818244e",
+   "path": "OAI/Probability/ContinuumTransition/GridCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/GridVolume.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.GridVolume",
+   "original_sha256": "c760d43f1ab4ff1e36d152b930b5ce0eed43a303494fe28b38b490c0b37c2086",
+   "path": "OAI/Probability/ContinuumTransition/GridVolume.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/IdealSlopes.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.IdealSlopes",
+   "original_sha256": "f2615e3a4c3b4511dbbb44ac2607d1ad1e7990e569b4d13edcc4c4b7353b4a34",
+   "path": "OAI/Probability/ContinuumTransition/IdealSlopes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/InitialTriple.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.InitialTriple",
+   "original_sha256": "318674e102cf518e25baf1a7f52b42cbe3331a8ed620dea2c2d47d55b64b852e",
+   "path": "OAI/Probability/ContinuumTransition/InitialTriple.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/InitialUniform.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.InitialUniform",
+   "original_sha256": "47c7254eef0682c0e607edd3d8408cc6120b52800ac54b728ff5de16329446ea",
+   "path": "OAI/Probability/ContinuumTransition/InitialUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/InnerGrand.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.InnerGrand",
+   "original_sha256": "ac666da31fc53666a9eafa64635bf9dce5198db5d77672e77718f94c41cee1d7",
+   "path": "OAI/Probability/ContinuumTransition/InnerGrand.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/InnerGrid.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.InnerGrid",
+   "original_sha256": "4293d52787ac8beb09dd5c1fd1711e5802e387d019f55a10f350741f12de2072",
+   "path": "OAI/Probability/ContinuumTransition/InnerGrid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/KacBlocks.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.KacBlocks",
+   "original_sha256": "dea23e2ece2c63a41644de65c8efe9d93bdc05e82248b371452f8a2b275e76b5",
+   "path": "OAI/Probability/ContinuumTransition/KacBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/KacBounds.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.KacBounds",
+   "original_sha256": "6d9f43c4adfc3daa4c3041b0c470b57598e95232fa3752fd0acd743d61fa048b",
+   "path": "OAI/Probability/ContinuumTransition/KacBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/KacEnergy.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.KacEnergy",
+   "original_sha256": "f943fa1938bd644a295d06a5a521ca1a0efd5c34dc6ba19d3c56d6969124584e",
+   "path": "OAI/Probability/ContinuumTransition/KacEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/KacGrid.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.KacGrid",
+   "original_sha256": "102c72996932d4b8d301084901b704ba33dadaf0e19cfd535bdc3e55d96280f2",
+   "path": "OAI/Probability/ContinuumTransition/KacGrid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/KacKernel.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.KacKernel",
+   "original_sha256": "1cd4160287192345ce4e952356fec475f0fa2293cb054b063406b4c4f3ad144e",
+   "path": "OAI/Probability/ContinuumTransition/KacKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/KacLimit.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.KacLimit",
+   "original_sha256": "0162c3f59977b6fd2b9aa674e904e7e16cf264391b34c89fe206b102c0a23369",
+   "path": "OAI/Probability/ContinuumTransition/KacLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/KacRows.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.KacRows",
+   "original_sha256": "a30e26343cdf70c179a5e5a1fa23c2162138d6a9610d405e08f3d8eb93cbec97",
+   "path": "OAI/Probability/ContinuumTransition/KacRows.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/KacUniform.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.KacUniform",
+   "original_sha256": "ed2f55a6d4fcf0cb023f462fb24d585fe0ea86b9d04d76f67a0e602605bcd0ee",
+   "path": "OAI/Probability/ContinuumTransition/KacUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/LabelConvolution.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.LabelConvolution",
+   "original_sha256": "e95722a2c27400a2f1b034617e2f09d85f48851f806ace95a79d2f0a91757c51",
+   "path": "OAI/Probability/ContinuumTransition/LabelConvolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/LaplaceBounds.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.LaplaceBounds",
+   "original_sha256": "e47c8c33acd47214a3778279758e988a9bcc291f3b84f9bb585a6e5dbb839b7d",
+   "path": "OAI/Probability/ContinuumTransition/LaplaceBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/LaplaceEventual.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.LaplaceEventual",
+   "original_sha256": "9dda5a51dae259690c1f08cfff70d712dd11b3c87b95516bdb321cba4b76a69f",
+   "path": "OAI/Probability/ContinuumTransition/LaplaceEventual.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/LaplacePrinciple.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.LaplacePrinciple",
+   "original_sha256": "d52885230c4e9621c97d80da0b7551874f108f21db9f1fbe9780d950fe8299c9",
+   "path": "OAI/Probability/ContinuumTransition/LaplacePrinciple.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/LatticeBounds.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.LatticeBounds",
+   "original_sha256": "ff1ab7783f547a6b689195937f4cf613b5d0f3a5c2fce267205b8b1f11a684f1",
+   "path": "OAI/Probability/ContinuumTransition/LatticeBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/LocalSupports.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.LocalSupports",
+   "original_sha256": "c96f987e0af92af1f06bb0bab6b539a00211f80cd37d5f75be3568eb1e88fcee",
+   "path": "OAI/Probability/ContinuumTransition/LocalSupports.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/LowerBounds.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.LowerBounds",
+   "original_sha256": "1cea571afea00520a8da3b80fbec8480ae1d2fc79947acac1757768fdb250b75",
+   "path": "OAI/Probability/ContinuumTransition/LowerBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/LowerComparison.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.LowerComparison",
+   "original_sha256": "38e71c2bfd05a4789f9813edbfd01d60600c0880c3171d7390d4aacc49e9d5f8",
+   "path": "OAI/Probability/ContinuumTransition/LowerComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/LowerEnergy.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.LowerEnergy",
+   "original_sha256": "df539fc22b68af1a2236a3e9307271bdb3555f003c67306446b7ec37111d4fc2",
+   "path": "OAI/Probability/ContinuumTransition/LowerEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/LowerGibbs.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.LowerGibbs",
+   "original_sha256": "4ec24628e27045c08ce0a5f080e5c0a96dc166213af94fda97c845ebd5978c46",
+   "path": "OAI/Probability/ContinuumTransition/LowerGibbs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/LowerKac.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.LowerKac",
+   "original_sha256": "803a4ee05488ae4c49dfa7cb51e5a59264a4b6d9e2fda68eb22fd982594c012a",
+   "path": "OAI/Probability/ContinuumTransition/LowerKac.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/LowerLimit.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.LowerLimit",
+   "original_sha256": "eb74134e68d4cdd90534e1f3bf0616b20775825ab64104e88379bf7363720326",
+   "path": "OAI/Probability/ContinuumTransition/LowerLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/LowerPressure.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.LowerPressure",
+   "original_sha256": "7a8fde0c6abec245b814a6450ce3858cecc62622d82b76a300d408112795bef2",
+   "path": "OAI/Probability/ContinuumTransition/LowerPressure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/LowerRows.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.LowerRows",
+   "original_sha256": "3369ac517fe91fed84fc900f449e1915f8ee18057b29191d491dc15b995473ef",
+   "path": "OAI/Probability/ContinuumTransition/LowerRows.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/Main.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.Main",
+   "original_sha256": "587e369a4f3f41fb0f356e0234c2a9087fa3071b45ae2437609b3f5c6ecdd0e8",
+   "path": "OAI/Probability/ContinuumTransition/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/MaskedComparison.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.MaskedComparison",
+   "original_sha256": "839f13a8187eafdb0320733850948668d834ed76d0aee014616373f63029cdaf",
+   "path": "OAI/Probability/ContinuumTransition/MaskedComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/MaskedReference.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.MaskedReference",
+   "original_sha256": "b7cfe4346c1d1b87af2147970ded31abd88764fdff6a2811f90b648ef44f48c1",
+   "path": "OAI/Probability/ContinuumTransition/MaskedReference.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/MeanFieldAttainment.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.MeanFieldAttainment",
+   "original_sha256": "0024c9bd96fe0ad948214c4e1106261c53d12a673614d064908dc8faab4556fd",
+   "path": "OAI/Probability/ContinuumTransition/MeanFieldAttainment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/Model.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.Model",
+   "original_sha256": "24902de8937027d4188c08114f16fd91c4e36a59d64ea1d563a1f4df4983dafa",
+   "path": "OAI/Probability/ContinuumTransition/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ModifiedComparison.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ModifiedComparison",
+   "original_sha256": "53d64dc50fbbfa5d61e10d1eeb013308e912a48c2d6a9fe285e7bb562d3d4090",
+   "path": "OAI/Probability/ContinuumTransition/ModifiedComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ModifiedEnergy.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ModifiedEnergy",
+   "original_sha256": "0c32c1760cccf3aaa8c254a4b35892a7d4c41dd5c19cf0e64c4a76af026ebabe",
+   "path": "OAI/Probability/ContinuumTransition/ModifiedEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ModifiedFinite.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ModifiedFinite",
+   "original_sha256": "428c2758930c9457304d367216e6d92cad18910dd31aba253e2577da04263db1",
+   "path": "OAI/Probability/ContinuumTransition/ModifiedFinite.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ModifiedInsertion.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ModifiedInsertion",
+   "original_sha256": "480d49686d30bce3e7009ec4a655c517ce6ea40f46b1845f6b09798ab53fcda6",
+   "path": "OAI/Probability/ContinuumTransition/ModifiedInsertion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ModifiedMoments.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ModifiedMoments",
+   "original_sha256": "990c73515ddbe2d440ed5a9747fb63a048cc63b602b6958601dda28ff6afa921",
+   "path": "OAI/Probability/ContinuumTransition/ModifiedMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/MomentBootstrap.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.MomentBootstrap",
+   "original_sha256": "353e2ba560d00ebcddd64aba3f387361fd67b5ecd5363b4fc2ba96bb6e4a90e7",
+   "path": "OAI/Probability/ContinuumTransition/MomentBootstrap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/MomentBounds.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.MomentBounds",
+   "original_sha256": "4eebf6b87604231cb6f6ece9d6e508ef5defbd772184e3a35ae024cbd599b82a",
+   "path": "OAI/Probability/ContinuumTransition/MomentBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/MomentEnergy.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.MomentEnergy",
+   "original_sha256": "f20131289d545a048da01d9f9d234b17ea0fa0b1c88a17e3cc4f7e2aa638df6d",
+   "path": "OAI/Probability/ContinuumTransition/MomentEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/MomentExpectations.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.MomentExpectations",
+   "original_sha256": "f2d873250aef373fa61421144f3882634a52b277b0277d88e846a096c99d38cf",
+   "path": "OAI/Probability/ContinuumTransition/MomentExpectations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/NearbySupport.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.NearbySupport",
+   "original_sha256": "d0f5ddcf1aa25231a4fd5cac5e5eb3fc443af80b431a797be5e050a36d0945bf",
+   "path": "OAI/Probability/ContinuumTransition/NearbySupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/OccupationEnergy.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.OccupationEnergy",
+   "original_sha256": "845efea9d5b6fd7a8881b73ff89e45c898386a8ccc8208ae8f43ba700fec5d56",
+   "path": "OAI/Probability/ContinuumTransition/OccupationEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/OccupationProducts.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.OccupationProducts",
+   "original_sha256": "898c9182736136e0185a586b47d1ce56dd038501c9e6e80101cab5ff59409920",
+   "path": "OAI/Probability/ContinuumTransition/OccupationProducts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/PackingBalls.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.PackingBalls",
+   "original_sha256": "ba654dc1d60d707923f81e6db7d818a4246a8a3280ef71ad293ee3520eefd4ad",
+   "path": "OAI/Probability/ContinuumTransition/PackingBalls.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/PackingGeometry.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.PackingGeometry",
+   "original_sha256": "06333f77d79e8f023ba581914689d1ff4e0d6e8d84d38ec6edac2ca11efba084",
+   "path": "OAI/Probability/ContinuumTransition/PackingGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/PackingLimit.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.PackingLimit",
+   "original_sha256": "6d639c7e3826bd2ba0c6da9f28b22ac9c92e35dc0a36c2244e8e1e1c5bfa7ada",
+   "path": "OAI/Probability/ContinuumTransition/PackingLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/PackingLower.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.PackingLower",
+   "original_sha256": "c6efa7aa37780ee7fe598b3477f42498ed04066e37ccd7e603785b5bd04aa2f4",
+   "path": "OAI/Probability/ContinuumTransition/PackingLower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/PackingPressure.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.PackingPressure",
+   "original_sha256": "3f3440aa3ca67d38f487f1e66e3b9e3752b432ba737ca9a9c2e44f2d8fccf37c",
+   "path": "OAI/Probability/ContinuumTransition/PackingPressure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/PackingUpper.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.PackingUpper",
+   "original_sha256": "7888482091a461c288a6402141c3f43758a93001266f7115254fe011d6cdc531",
+   "path": "OAI/Probability/ContinuumTransition/PackingUpper.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/PairEnergy.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.PairEnergy",
+   "original_sha256": "df6ebde06291c49025b578b8f604e8edeb2e75e5d768859808603ea8439e29e1",
+   "path": "OAI/Probability/ContinuumTransition/PairEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/PairMoments.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.PairMoments",
+   "original_sha256": "8dfab2c285258d1b59eede55e53620f34f685354ee6f7565634a5be6d44c0c60",
+   "path": "OAI/Probability/ContinuumTransition/PairMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/Persistence.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.Persistence",
+   "original_sha256": "0cb8c795cc2c8a0384080bbf61907777d800b58abc64fd971072fe9353b25414",
+   "path": "OAI/Probability/ContinuumTransition/Persistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/PhysicalInsertion.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.PhysicalInsertion",
+   "original_sha256": "d22157f8c41080e691c5ad03cb03c09feb724a919afed31cf4f6c6179e1711e2",
+   "path": "OAI/Probability/ContinuumTransition/PhysicalInsertion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/PhysicalMeanField.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.PhysicalMeanField",
+   "original_sha256": "aa24c5c00803f79b19a2cecaa7820ab45010be548d8ba27f888a949111665271",
+   "path": "OAI/Probability/ContinuumTransition/PhysicalMeanField.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/PhysicalMoments.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.PhysicalMoments",
+   "original_sha256": "99dc78cfb93995093a1d28b70c23a70b2272341ec150bca7564b8c25cbeba4a0",
+   "path": "OAI/Probability/ContinuumTransition/PhysicalMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/PhysicalPerturbation.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.PhysicalPerturbation",
+   "original_sha256": "06d48def0490075fda2b7fcfaf4945fde487cd5e64bd0aa3741dad7cbaa31710",
+   "path": "OAI/Probability/ContinuumTransition/PhysicalPerturbation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/PhysicalPressure.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.PhysicalPressure",
+   "original_sha256": "cfc9b3080995d5831f85b328cb0214f6b3b029ba4f5b78341b171620ba934e5d",
+   "path": "OAI/Probability/ContinuumTransition/PhysicalPressure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/PhysicalUniform.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.PhysicalUniform",
+   "original_sha256": "2e026065bd37f941a36f0047a2a0cea18f530a6bfe78d36dd81775cdf1cfeed9",
+   "path": "OAI/Probability/ContinuumTransition/PhysicalUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/PressureDuality.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.PressureDuality",
+   "original_sha256": "49dea4ea5c5ebb74eede39990b73c93d992c33c18491a815386a9030c8283f43",
+   "path": "OAI/Probability/ContinuumTransition/PressureDuality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/PressureGeometry.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.PressureGeometry",
+   "original_sha256": "04b417ed9aea49eb2a927e2d11f4d84ade652cea1a2dee1d27a473acf1962cbc",
+   "path": "OAI/Probability/ContinuumTransition/PressureGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/PressureRegularity.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.PressureRegularity",
+   "original_sha256": "1d2e52c8d788dc56526895225720f1a2f5434402306604226282234e3ddc4fc2",
+   "path": "OAI/Probability/ContinuumTransition/PressureRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ProductEquality.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ProductEquality",
+   "original_sha256": "196ca0a009a7a2a40986f84b97797cda0edcf3d087731db0b00dec341eb94e64",
+   "path": "OAI/Probability/ContinuumTransition/ProductEquality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ProfileBounds.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ProfileBounds",
+   "original_sha256": "a6cface315d9488f7bfeaa08ef8756c872464e298739195f9aa890268837ed44",
+   "path": "OAI/Probability/ContinuumTransition/ProfileBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ProfileTail.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ProfileTail",
+   "original_sha256": "42636dea5c8db6481dd839c6509af5792e6a445d95839660f09e4092e2980401",
+   "path": "OAI/Probability/ContinuumTransition/ProfileTail.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/QuadraticBlocks.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.QuadraticBlocks",
+   "original_sha256": "7bb078c77c0f54d0249ec41ae9851eaebafdba5eb9d96e5f773b34aca3f6af1d",
+   "path": "OAI/Probability/ContinuumTransition/QuadraticBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/QuadraticGrand.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.QuadraticGrand",
+   "original_sha256": "fc2859eeab9f6ac93d2bbe8460b9f5659246c68474b6d1ea0c1159e39bc6647c",
+   "path": "OAI/Probability/ContinuumTransition/QuadraticGrand.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/QuadraticLaplace.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.QuadraticLaplace",
+   "original_sha256": "ff1f425122c117dd8e321f4bccfae1df45982b99037cbd6cff778d45e0127e6a",
+   "path": "OAI/Probability/ContinuumTransition/QuadraticLaplace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/QuadraticTransform.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.QuadraticTransform",
+   "original_sha256": "79c165886ffe681688dd574dfb16f00db0769d3e1ea2fe5d963c82e306c124f3",
+   "path": "OAI/Probability/ContinuumTransition/QuadraticTransform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/RadialKernel.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.RadialKernel",
+   "original_sha256": "e8b6488b1961d1d4885ff80a3fc3765e55d9c5d0cb050082ec26802a2e3f3b1f",
+   "path": "OAI/Probability/ContinuumTransition/RadialKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/Regroup.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.Regroup",
+   "original_sha256": "1270ce5b93f42298357d5ed03bf518cfd84bc8ee98461d7578fa9f60b38366f1",
+   "path": "OAI/Probability/ContinuumTransition/Regroup.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/RootVolume.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.RootVolume",
+   "original_sha256": "d5b68de63ea0b99e945095fe5536baf206a18d6ef61039c41d5b069c123cc1ff",
+   "path": "OAI/Probability/ContinuumTransition/RootVolume.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ScaledActive.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ScaledActive",
+   "original_sha256": "15bdaf7b3497b73285f6849b5041626ab3ed312e6b493ad79f5a552710bae617",
+   "path": "OAI/Probability/ContinuumTransition/ScaledActive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ScaledBounded.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ScaledBounded",
+   "original_sha256": "bb87bb7f6f629aaacd03532fa136db5f72cc873e8c1ea3897e740928c7dee9cd",
+   "path": "OAI/Probability/ContinuumTransition/ScaledBounded.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ScaledLocalization.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ScaledLocalization",
+   "original_sha256": "6c11675c74aec053c24b08ac2107bc63c3868f5eb527126e05ff8c81aa08b220",
+   "path": "OAI/Probability/ContinuumTransition/ScaledLocalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ShellGeometry.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ShellGeometry",
+   "original_sha256": "99f66912fc5b6194a187b0d32c44f3a2b5d324e65ee6c25cda2cec6c53fccd8f",
+   "path": "OAI/Probability/ContinuumTransition/ShellGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/SpatialProducts.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.SpatialProducts",
+   "original_sha256": "b4a5ca2805907955b3267c7fd978d13414654af3c9acacb8755c5c2d3a188194",
+   "path": "OAI/Probability/ContinuumTransition/SpatialProducts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/Stability.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.Stability",
+   "original_sha256": "077e46f1240e6df9778e2506cac294a686c1c3af08b8a8ff1df7cf894bf3eeab",
+   "path": "OAI/Probability/ContinuumTransition/Stability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/SubgradientBounds.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.SubgradientBounds",
+   "original_sha256": "3bf565aaab474931eccdf04dc46e2b70263ceb29362e6e1c7a447dadc90e413b",
+   "path": "OAI/Probability/ContinuumTransition/SubgradientBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/SupportGenerators.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.SupportGenerators",
+   "original_sha256": "b448c4344eff177390b16c443eb05b5a8872cdd9ef18f0b3b4c7cb964bb85806",
+   "path": "OAI/Probability/ContinuumTransition/SupportGenerators.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/TailBounds.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.TailBounds",
+   "original_sha256": "c6c003af294bdabfdc95eb3858858d32bcfc266120a76321b0fcdcf599a4b629",
+   "path": "OAI/Probability/ContinuumTransition/TailBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/TailComparison.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.TailComparison",
+   "original_sha256": "4cf36a8b96ae56abc9cada022e55a208e50de27009754b0570db934ccfe589ac",
+   "path": "OAI/Probability/ContinuumTransition/TailComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/TailPressure.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.TailPressure",
+   "original_sha256": "4f0e884baaaba6617c21c758b6c432bb060ffa0e3b4c3a5579aa5badb1cd5f50",
+   "path": "OAI/Probability/ContinuumTransition/TailPressure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/TetraVolume.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.TetraVolume",
+   "original_sha256": "1ed0007b6744519cb2f109b5bdcbf747b0058920c9ea5b6a84db70bd86c301c2",
+   "path": "OAI/Probability/ContinuumTransition/TetraVolume.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/Tetrahedron.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.Tetrahedron",
+   "original_sha256": "a401feeb63d30a0e51dee2d8af92a09bb0ff01e9719501359ec414dce731a9f8",
+   "path": "OAI/Probability/ContinuumTransition/Tetrahedron.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/ThermodynamicExtension.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.ThermodynamicExtension",
+   "original_sha256": "96f08a8eacdc0207423d1088b414aec8b525e096f6d4d9639432a8cc6743195a",
+   "path": "OAI/Probability/ContinuumTransition/ThermodynamicExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/TransformAttainment.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.TransformAttainment",
+   "original_sha256": "bf8f0fd2c677f74acb5bed11afa8a7945e5123b896183e90a58b6e1d37b41a35",
+   "path": "OAI/Probability/ContinuumTransition/TransformAttainment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/TransformBounds.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.TransformBounds",
+   "original_sha256": "c633e2d46d8b53e881fa1975ad6b6843dca21fe62131835944b30e8fbf1688b9",
+   "path": "OAI/Probability/ContinuumTransition/TransformBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/TrialConfigurations.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.TrialConfigurations",
+   "original_sha256": "30de83ad8242a7a7ab25ec9e450eea554e66ff6c0efeaf7ed6e3601fc618ce48",
+   "path": "OAI/Probability/ContinuumTransition/TrialConfigurations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/TriangleGeometry.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.TriangleGeometry",
+   "original_sha256": "1f34bc14793988ef4db0006f911b391de7d6a24a7b0a358d3235192ab936d18f",
+   "path": "OAI/Probability/ContinuumTransition/TriangleGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/TriangleSeparation.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.TriangleSeparation",
+   "original_sha256": "056c07d5b3651822efb8386c590bf779c57b43327b967d4e2ce0bf5be75dde92",
+   "path": "OAI/Probability/ContinuumTransition/TriangleSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/TripleState.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.TripleState",
+   "original_sha256": "2a352ca0a6f3e9275a1448024c5af12c434e4d944a2e8340815954c0fc40ab72",
+   "path": "OAI/Probability/ContinuumTransition/TripleState.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/UniformMin.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.UniformMin",
+   "original_sha256": "7d9c20081c8555fc65552a23415e8e2646b0105e18be2e971975ced018c27a0f",
+   "path": "OAI/Probability/ContinuumTransition/UniformMin.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/UpperComparison.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.UpperComparison",
+   "original_sha256": "e6bf2e1fdc85e00f94a0bb823623ecaf9999659992e4f9ceda11f4ecc93e1440",
+   "path": "OAI/Probability/ContinuumTransition/UpperComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/UpperKac.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.UpperKac",
+   "original_sha256": "c33c245535deffb2a908845f09e4cd993c14bae0d03c069380224f3abb03cd73",
+   "path": "OAI/Probability/ContinuumTransition/UpperKac.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/UpperLimit.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.UpperLimit",
+   "original_sha256": "b58c9a9b5f96fc95e9bd8b5bf14ac063c45b143375fb073d285f5b5ee7ca0843",
+   "path": "OAI/Probability/ContinuumTransition/UpperLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ContinuumTransition/UpperPressure.lean"
+   },
+   "module": "OAI.Probability.ContinuumTransition.UpperPressure",
+   "original_sha256": "33b55991b9f3a14b966310478e9d4ac9eb97bedc273d2c46aa3a8a07cf7c321f",
+   "path": "OAI/Probability/ContinuumTransition/UpperPressure.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Probability.ContinuumTransition.ActiveLimits",
+  "OAI.Probability.ContinuumTransition.ActiveSupports",
+  "OAI.Probability.ContinuumTransition.ActiveUniform",
+  "OAI.Probability.ContinuumTransition.AppendAttraction",
+  "OAI.Probability.ContinuumTransition.ApproximateSupports",
+  "OAI.Probability.ContinuumTransition.Assignments",
+  "OAI.Probability.ContinuumTransition.BadEndpoints",
+  "OAI.Probability.ContinuumTransition.BlockEnergy",
+  "OAI.Probability.ContinuumTransition.BlockPartition",
+  "OAI.Probability.ContinuumTransition.BoundarySum",
+  "OAI.Probability.ContinuumTransition.BoxTiling",
+  "OAI.Probability.ContinuumTransition.CanonicalIntegral",
+  "OAI.Probability.ContinuumTransition.CanonicalLimit",
+  "OAI.Probability.ContinuumTransition.CellEnergy",
+  "OAI.Probability.ContinuumTransition.CoerciveCanonical",
+  "OAI.Probability.ContinuumTransition.CompactHulls",
+  "OAI.Probability.ContinuumTransition.CompactSequences",
+  "OAI.Probability.ContinuumTransition.ConstructionBounds",
+  "OAI.Probability.ContinuumTransition.ConstructionCap",
+  "OAI.Probability.ContinuumTransition.ConstructionLimit",
+  "OAI.Probability.ContinuumTransition.ConstructionLocation",
+  "OAI.Probability.ContinuumTransition.ConstructionMasses",
+  "OAI.Probability.ContinuumTransition.ConstructionSequence",
+  "OAI.Probability.ContinuumTransition.ConstructionStage",
+  "OAI.Probability.ContinuumTransition.ConstructionStep",
+  "OAI.Probability.ContinuumTransition.ConvexSupport",
+  "OAI.Probability.ContinuumTransition.ConvexUniform",
+  "OAI.Probability.ContinuumTransition.ConvolutionLimit",
+  "OAI.Probability.ContinuumTransition.CubeBoundary",
+  "OAI.Probability.ContinuumTransition.CubeCoercivity",
+  "OAI.Probability.ContinuumTransition.DensityBounds",
+  "OAI.Probability.ContinuumTransition.DensityLimit",
+  "OAI.Probability.ContinuumTransition.DensityUniform",
+  "OAI.Probability.ContinuumTransition.ExactAssignments",
+  "OAI.Probability.ContinuumTransition.FiniteBlocks",
+  "OAI.Probability.ContinuumTransition.FiniteBounds",
+  "OAI.Probability.ContinuumTransition.FiniteProduct",
+  "OAI.Probability.ContinuumTransition.FixedOccupation",
+  "OAI.Probability.ContinuumTransition.FreeFamily",
+  "OAI.Probability.ContinuumTransition.FreeGeometry",
+  "OAI.Probability.ContinuumTransition.FreeGrand",
+  "OAI.Probability.ContinuumTransition.FreeIdeal",
+  "OAI.Probability.ContinuumTransition.FreeLimit",
+  "OAI.Probability.ContinuumTransition.FreeRoots",
+  "OAI.Probability.ContinuumTransition.FreeUpper",
+  "OAI.Probability.ContinuumTransition.GeneralGrand",
+  "OAI.Probability.ContinuumTransition.GeneralLabels",
+  "OAI.Probability.ContinuumTransition.GenericGibbs",
+  "OAI.Probability.ContinuumTransition.GibbsBridge",
+  "OAI.Probability.ContinuumTransition.GibbsIntegrability",
+  "OAI.Probability.ContinuumTransition.GibbsMonotonicity",
+  "OAI.Probability.ContinuumTransition.GibbsQuadratic",
+  "OAI.Probability.ContinuumTransition.GrandBlocks",
+  "OAI.Probability.ContinuumTransition.GrandDomination",
+  "OAI.Probability.ContinuumTransition.GrandFinite",
+  "OAI.Probability.ContinuumTransition.GrandInteraction",
+  "OAI.Probability.ContinuumTransition.GrandLinearity",
+  "OAI.Probability.ContinuumTransition.GrandOn",
+  "OAI.Probability.ContinuumTransition.GrandPartition",
+  "OAI.Probability.ContinuumTransition.GrandPerturbation",
+  "OAI.Probability.ContinuumTransition.GrandProduct",
+  "OAI.Probability.ContinuumTransition.GridBoundary",
+  "OAI.Probability.ContinuumTransition.GridCover",
+  "OAI.Probability.ContinuumTransition.GridVolume",
+  "OAI.Probability.ContinuumTransition.IdealSlopes",
+  "OAI.Probability.ContinuumTransition.InitialTriple",
+  "OAI.Probability.ContinuumTransition.InitialUniform",
+  "OAI.Probability.ContinuumTransition.InnerGrand",
+  "OAI.Probability.ContinuumTransition.InnerGrid",
+  "OAI.Probability.ContinuumTransition.KacBlocks",
+  "OAI.Probability.ContinuumTransition.KacBounds",
+  "OAI.Probability.ContinuumTransition.KacEnergy",
+  "OAI.Probability.ContinuumTransition.KacGrid",
+  "OAI.Probability.ContinuumTransition.KacKernel",
+  "OAI.Probability.ContinuumTransition.KacLimit",
+  "OAI.Probability.ContinuumTransition.KacRows",
+  "OAI.Probability.ContinuumTransition.KacUniform",
+  "OAI.Probability.ContinuumTransition.LabelConvolution",
+  "OAI.Probability.ContinuumTransition.LaplaceBounds",
+  "OAI.Probability.ContinuumTransition.LaplaceEventual",
+  "OAI.Probability.ContinuumTransition.LaplacePrinciple",
+  "OAI.Probability.ContinuumTransition.LatticeBounds",
+  "OAI.Probability.ContinuumTransition.LocalSupports",
+  "OAI.Probability.ContinuumTransition.LowerBounds",
+  "OAI.Probability.ContinuumTransition.LowerComparison",
+  "OAI.Probability.ContinuumTransition.LowerEnergy",
+  "OAI.Probability.ContinuumTransition.LowerGibbs",
+  "OAI.Probability.ContinuumTransition.LowerKac",
+  "OAI.Probability.ContinuumTransition.LowerLimit",
+  "OAI.Probability.ContinuumTransition.LowerPressure",
+  "OAI.Probability.ContinuumTransition.LowerRows",
+  "OAI.Probability.ContinuumTransition.Main",
+  "OAI.Probability.ContinuumTransition.MaskedComparison",
+  "OAI.Probability.ContinuumTransition.MaskedReference",
+  "OAI.Probability.ContinuumTransition.MeanFieldAttainment",
+  "OAI.Probability.ContinuumTransition.Model",
+  "OAI.Probability.ContinuumTransition.ModifiedComparison",
+  "OAI.Probability.ContinuumTransition.ModifiedEnergy",
+  "OAI.Probability.ContinuumTransition.ModifiedFinite",
+  "OAI.Probability.ContinuumTransition.ModifiedInsertion",
+  "OAI.Probability.ContinuumTransition.ModifiedMoments",
+  "OAI.Probability.ContinuumTransition.MomentBootstrap",
+  "OAI.Probability.ContinuumTransition.MomentBounds",
+  "OAI.Probability.ContinuumTransition.MomentEnergy",
+  "OAI.Probability.ContinuumTransition.MomentExpectations",
+  "OAI.Probability.ContinuumTransition.NearbySupport",
+  "OAI.Probability.ContinuumTransition.OccupationEnergy",
+  "OAI.Probability.ContinuumTransition.OccupationProducts",
+  "OAI.Probability.ContinuumTransition.PackingBalls",
+  "OAI.Probability.ContinuumTransition.PackingGeometry",
+  "OAI.Probability.ContinuumTransition.PackingLimit",
+  "OAI.Probability.ContinuumTransition.PackingLower",
+  "OAI.Probability.ContinuumTransition.PackingPressure",
+  "OAI.Probability.ContinuumTransition.PackingUpper",
+  "OAI.Probability.ContinuumTransition.PairEnergy",
+  "OAI.Probability.ContinuumTransition.PairMoments",
+  "OAI.Probability.ContinuumTransition.Persistence",
+  "OAI.Probability.ContinuumTransition.PhysicalInsertion",
+  "OAI.Probability.ContinuumTransition.PhysicalMeanField",
+  "OAI.Probability.ContinuumTransition.PhysicalMoments",
+  "OAI.Probability.ContinuumTransition.PhysicalPerturbation",
+  "OAI.Probability.ContinuumTransition.PhysicalPressure",
+  "OAI.Probability.ContinuumTransition.PhysicalUniform",
+  "OAI.Probability.ContinuumTransition.PressureDuality",
+  "OAI.Probability.ContinuumTransition.PressureGeometry",
+  "OAI.Probability.ContinuumTransition.PressureRegularity",
+  "OAI.Probability.ContinuumTransition.ProductEquality",
+  "OAI.Probability.ContinuumTransition.ProfileBounds",
+  "OAI.Probability.ContinuumTransition.ProfileTail",
+  "OAI.Probability.ContinuumTransition.QuadraticBlocks",
+  "OAI.Probability.ContinuumTransition.QuadraticGrand",
+  "OAI.Probability.ContinuumTransition.QuadraticLaplace",
+  "OAI.Probability.ContinuumTransition.QuadraticTransform",
+  "OAI.Probability.ContinuumTransition.RadialKernel",
+  "OAI.Probability.ContinuumTransition.Regroup",
+  "OAI.Probability.ContinuumTransition.RootVolume",
+  "OAI.Probability.ContinuumTransition.ScaledActive",
+  "OAI.Probability.ContinuumTransition.ScaledBounded",
+  "OAI.Probability.ContinuumTransition.ScaledLocalization",
+  "OAI.Probability.ContinuumTransition.ShellGeometry",
+  "OAI.Probability.ContinuumTransition.SpatialProducts",
+  "OAI.Probability.ContinuumTransition.Stability",
+  "OAI.Probability.ContinuumTransition.SubgradientBounds",
+  "OAI.Probability.ContinuumTransition.SupportGenerators",
+  "OAI.Probability.ContinuumTransition.TailBounds",
+  "OAI.Probability.ContinuumTransition.TailComparison",
+  "OAI.Probability.ContinuumTransition.TailPressure",
+  "OAI.Probability.ContinuumTransition.TetraVolume",
+  "OAI.Probability.ContinuumTransition.Tetrahedron",
+  "OAI.Probability.ContinuumTransition.ThermodynamicExtension",
+  "OAI.Probability.ContinuumTransition.TransformAttainment",
+  "OAI.Probability.ContinuumTransition.TransformBounds",
+  "OAI.Probability.ContinuumTransition.TrialConfigurations",
+  "OAI.Probability.ContinuumTransition.TriangleGeometry",
+  "OAI.Probability.ContinuumTransition.TriangleSeparation",
+  "OAI.Probability.ContinuumTransition.TripleState",
+  "OAI.Probability.ContinuumTransition.UniformMin",
+  "OAI.Probability.ContinuumTransition.UpperComparison",
+  "OAI.Probability.ContinuumTransition.UpperKac",
+  "OAI.Probability.ContinuumTransition.UpperLimit",
+  "OAI.Probability.ContinuumTransition.UpperPressure"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/ContinuumTransition.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Probability.ContinuumTransition.Main",
+   "name": "OAI.ContinuumTemperature.main_theorem",
+   "statement_sha256": "c63358d9e5c976bc83bd888b7e78f59189f365197904c87a9a941222a14c02d9"
+  }
+ ],
+ "task_id": "oai-continuum-transition",
+ "task_revision": 1,
+ "title": "OpenAI math: Continuum phase transitions for radial pair potentials: Temperature singularity over a density interval",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

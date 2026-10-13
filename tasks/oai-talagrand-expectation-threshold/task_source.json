@@ -1,0 +1,891 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 7538076
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.TalagrandExpectationThreshold",
+  "challenge_sha256": "5cf4b2c9e45ae9b376d07d03e37a536cae59be9d78efb65ceee6db37e1f59bd0",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/TalagrandExpectationThreshold.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.TalagrandExpectationThreshold",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Combinatorics.ExpectationThreshold.Main",
+   "theorem_names": [
+    "OAI.TalagrandThreshold.talagrand_expectation_threshold_equivalence"
+   ]
+  },
+  "config_sha256": "1d0cc306d5b9c8c67fa2e00b00c0d27909791ae302b1e73d9c3c18915caa2b41",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/TalagrandExpectationThreshold.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.TalagrandThreshold.talagrand_expectation_threshold_equivalence": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/Basic.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.Basic",
+   "original_sha256": "a17fdc6164af861c002a1fef22b0a11dc3d6265f03729fe731cc84d97df955cd",
+   "path": "OAI/Combinatorics/ExpectationThreshold/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/ColorArithmetic.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.ColorArithmetic",
+   "original_sha256": "c2c2915d269b9e6d2e3a5f3b14ec7e6e1eb7d44a7b075aed8fa45cb0364f8547",
+   "path": "OAI/Combinatorics/ExpectationThreshold/ColorArithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/ColorMean.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.ColorMean",
+   "original_sha256": "88ad4867e6a2ade367b4507e75c78d01ced5583f1138aca0cfc78b9fa2a4cb4e",
+   "path": "OAI/Combinatorics/ExpectationThreshold/ColorMean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/Main.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.Main",
+   "original_sha256": "f16d3eb7de615d39aa816795aefa915d753a2aa1e906e0229de207eaddaac535",
+   "path": "OAI/Combinatorics/ExpectationThreshold/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/Model.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.Model",
+   "original_sha256": "cdff41629ec5465bb84358b710ff61b5f4f775c5bd90900b06a26ff0a7c16d0b",
+   "path": "OAI/Combinatorics/ExpectationThreshold/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/ProbabilityColors.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.ProbabilityColors",
+   "original_sha256": "4b7be671af0770e828130cd6fcf859593f3b6caa237a85201aa5a1771b71879e",
+   "path": "OAI/Combinatorics/ExpectationThreshold/ProbabilityColors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/ProbabilityFinite.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.ProbabilityFinite",
+   "original_sha256": "645214ac767c613bafdc70e5d3fe2c11cbcde6c4f33776f23265407906afe481",
+   "path": "OAI/Combinatorics/ExpectationThreshold/ProbabilityFinite.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/ProbabilityLikelihood.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.ProbabilityLikelihood",
+   "original_sha256": "3a0b8cdcac647cd8b96e01e556f99c99e312608c8a3fb48f4fcd8d46f720edb8",
+   "path": "OAI/Combinatorics/ExpectationThreshold/ProbabilityLikelihood.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/ProbabilityProduct.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.ProbabilityProduct",
+   "original_sha256": "59c33ba76912a5f9b6f019acf52e052b636dcfc296cf26a712c2375c8a60bac2",
+   "path": "OAI/Combinatorics/ExpectationThreshold/ProbabilityProduct.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/ProbabilitySubsetProduct.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.ProbabilitySubsetProduct",
+   "original_sha256": "8e65ef1a2a06e39001c5fde52414b02ed72f1272e58d31f84442d6b2564105d1",
+   "path": "OAI/Combinatorics/ExpectationThreshold/ProbabilitySubsetProduct.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/RoundingColorProducts.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.RoundingColorProducts",
+   "original_sha256": "7afeb9155eafb1c18b8b2aaed082a02f6c4e5ce16c1af4436990ef630cbc3f17",
+   "path": "OAI/Combinatorics/ExpectationThreshold/RoundingColorProducts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/RoundingExpectation.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.RoundingExpectation",
+   "original_sha256": "3c281229d383242a66bdb342d078afdbbb3e1f2f845750de7a69bff18d757bee",
+   "path": "OAI/Combinatorics/ExpectationThreshold/RoundingExpectation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/RoundingLowerBound.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.RoundingLowerBound",
+   "original_sha256": "3b5b9e3f0b8b3b7503ed23b7a7fcc60d9c379c75b15e9e6ade0691c555f3ef74",
+   "path": "OAI/Combinatorics/ExpectationThreshold/RoundingLowerBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/RoundingMain.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.RoundingMain",
+   "original_sha256": "723c2c006299d8177cdb2974219be8835331b76c28cbc9e3942cdbd59d04095d",
+   "path": "OAI/Combinatorics/ExpectationThreshold/RoundingMain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/RoundingMasses.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.RoundingMasses",
+   "original_sha256": "8d1c408f5f379ca20b98f3ee542f40edc57c12a9217d1b7bc317df73f55d5a56",
+   "path": "OAI/Combinatorics/ExpectationThreshold/RoundingMasses.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/RoundingProbabilityContradiction.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.RoundingProbabilityContradiction",
+   "original_sha256": "01f1cb84dc007740ff62db106fa27088a443a5127ccef4087f9f6a0ba9183966",
+   "path": "OAI/Combinatorics/ExpectationThreshold/RoundingProbabilityContradiction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/ScaleBounds.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.ScaleBounds",
+   "original_sha256": "f83aed7430781f11990fcf32831204b0af8ad9e8acbb4d3d31dd9ae6ce5dcc87",
+   "path": "OAI/Combinatorics/ExpectationThreshold/ScaleBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorAverageColor.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorAverageColor",
+   "original_sha256": "5851bd067b05d39c8832f8b2d385497f36f902d0478c7302748443b15a0741e0",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorAverageColor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorCommonWitness.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorCommonWitness",
+   "original_sha256": "b3e8cfc7bfcc730b9aa32f6a247ac17959e54a9403feca54f61837727189f60b",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorCommonWitness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorCountingEncoding.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorCountingEncoding",
+   "original_sha256": "e2720efc60357604ed0e9b9b109977e020ee5e4c67a6552ae61189fac71c3af4",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorCountingEncoding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorCountingEncodingBound.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorCountingEncodingBound",
+   "original_sha256": "1753ebfdee3b0b0d2607163c76affe5e00af6c2d7d575cb1036c0978abaaf16b",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorCountingEncodingBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorCountingEncodingRows.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorCountingEncodingRows",
+   "original_sha256": "cba6f4123fc5b6f841088f0f33152d06ffdbb28a84746188fcc93a431375fa63",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorCountingEncodingRows.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorCountingWords.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorCountingWords",
+   "original_sha256": "f03204589430904c3719361d329225d12a445842561e7cee0ef538a6ed985109",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorCountingWords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorCountingWordsProducts.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorCountingWordsProducts",
+   "original_sha256": "d9b986a7a1125f8095e121ea2231736e08ee0b0c4f0b06c4774311d23aaeb75f",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorCountingWordsProducts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorCountingWordsTransport.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorCountingWordsTransport",
+   "original_sha256": "1f54a59235eae2744d0f752f586ca7be735c7b6b6f4c81092b2f920601c041cd",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorCountingWordsTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorDefinitions.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorDefinitions",
+   "original_sha256": "3ff227165a9cf5db33bf69f1b37cf510a49192e517a859dc6ccc7040f2093daa",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorDefinitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorDefinitionsLemmas.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorDefinitionsLemmas",
+   "original_sha256": "3a0a8becd90c68bdce989eacf7a93da19ffbf7874d4ee2ef9bb491e07b8b0c15",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorDefinitionsLemmas.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorDelay.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorDelay",
+   "original_sha256": "424e0c00a0d46859e738b50bc7e610d4d65aa60ec52c2ac4a2f5f859e46d0fe1",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorDelay.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorDelayFeasibility.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorDelayFeasibility",
+   "original_sha256": "f342f3810249ecbd0f9c567feb235276fa570c4f5a01cf8f45461e7ea559b436",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorDelayFeasibility.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorEntropy.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorEntropy",
+   "original_sha256": "30cdec287c0ef34fab912dc236e926fff2481f9ea61bf1388180adea1e6f46d7",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorEntropyDyadic.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorEntropyDyadic",
+   "original_sha256": "50b9e272cecf9ad2c8bfd393ab47b8a5df8d9a45712fe360d81c5e4edafdf504",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorEntropyDyadic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorFeasibility.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorFeasibility",
+   "original_sha256": "5095ecd4bf3f732d79ccb862c15ba6b4dfe06f3260148db68f22506198fc084a",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorFeasibility.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorGlobalCost.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorGlobalCost",
+   "original_sha256": "b72f1051088d07b3a0fae61fbf8a810a5665ae9f08c33d4d51e491d043cdebd5",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorGlobalCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorGlobalCostProfiles.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorGlobalCostProfiles",
+   "original_sha256": "8f9637364b3f03be0d16ad5349af74e3cddf74acc10208f6ec44f5a91ae99470",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorGlobalCostProfiles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorGroupCost.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorGroupCost",
+   "original_sha256": "bafd2ad246237c07d7da61cdb6df2a0d1b0fe5b3a887ee0c7a16ab600f4b84f5",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorGroupCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorMain.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorMain",
+   "original_sha256": "3abbd9121d5610e68b1925f06cf69981b1410dbdb7d662b1875fce5e359cd428",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorMain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorProfile.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorProfile",
+   "original_sha256": "ebe07e9b2a6f061d5cb6d2892ae713740dd276a07b9d79b323af97c7d35596ed",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorProfile.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorReconstruction.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorReconstruction",
+   "original_sha256": "a90093df19c20b5b8fa5743758717a4f73d32e1e42bffdc88b94cff0afaedf89",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorReconstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorTruncation.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorTruncation",
+   "original_sha256": "9164e0d2858e7900115deb3a38f95bc12d5009ad47d1a325048c62fdbc68d6ef",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorTruncation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorTruncationCompact.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorTruncationCompact",
+   "original_sha256": "fa8d3d97446170714e60c5dedec306637854b62c4f5a2a67021317b7eff04e71",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorTruncationCompact.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorTruncationDefinitions.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorTruncationDefinitions",
+   "original_sha256": "09ad8512412bf3102d3c1f06274eaf493ff51e80527242f22b9a24ace8bdb15d",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorTruncationDefinitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/SelectorTruncationSlope.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.SelectorTruncationSlope",
+   "original_sha256": "f6c7004303eff2b816aae84e081a86b008103f2533052e42aa4bb183dd65598d",
+   "path": "OAI/Combinatorics/ExpectationThreshold/SelectorTruncationSlope.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/ThresholdAttainment.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.ThresholdAttainment",
+   "original_sha256": "03c379c134c8a2d3cc5c66e31871f55c3ed29ed06b4cf1009bafb2819af0cb7d",
+   "path": "OAI/Combinatorics/ExpectationThreshold/ThresholdAttainment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/ThresholdBounds.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.ThresholdBounds",
+   "original_sha256": "d846a57ec97b87b946ad8d68813cef7383123c48715348a826a300a95e30cb36",
+   "path": "OAI/Combinatorics/ExpectationThreshold/ThresholdBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/ThresholdCompactness.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.ThresholdCompactness",
+   "original_sha256": "aeb9ac0228d6a431287663b4ec92571d00732b55dba8830dd78ad6c0f66b78bd",
+   "path": "OAI/Combinatorics/ExpectationThreshold/ThresholdCompactness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/TupleCoefficients.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.TupleCoefficients",
+   "original_sha256": "5acb08d2c686c9707845de289fdb24b45c96bc9bad0fefe80f9bafde2ae008d8",
+   "path": "OAI/Combinatorics/ExpectationThreshold/TupleCoefficients.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ExpectationThreshold/TupleGeometric.lean"
+   },
+   "module": "OAI.Combinatorics.ExpectationThreshold.TupleGeometric",
+   "original_sha256": "ba86b9d3d1825c5ef001501754e2c43a25cb5d5ad5fdd7bd91df0260cb6427b9",
+   "path": "OAI/Combinatorics/ExpectationThreshold/TupleGeometric.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.ExpectationThreshold.Basic",
+  "OAI.Combinatorics.ExpectationThreshold.ColorArithmetic",
+  "OAI.Combinatorics.ExpectationThreshold.ColorMean",
+  "OAI.Combinatorics.ExpectationThreshold.Main",
+  "OAI.Combinatorics.ExpectationThreshold.Model",
+  "OAI.Combinatorics.ExpectationThreshold.ProbabilityColors",
+  "OAI.Combinatorics.ExpectationThreshold.ProbabilityFinite",
+  "OAI.Combinatorics.ExpectationThreshold.ProbabilityLikelihood",
+  "OAI.Combinatorics.ExpectationThreshold.ProbabilityProduct",
+  "OAI.Combinatorics.ExpectationThreshold.ProbabilitySubsetProduct",
+  "OAI.Combinatorics.ExpectationThreshold.RoundingColorProducts",
+  "OAI.Combinatorics.ExpectationThreshold.RoundingExpectation",
+  "OAI.Combinatorics.ExpectationThreshold.RoundingLowerBound",
+  "OAI.Combinatorics.ExpectationThreshold.RoundingMain",
+  "OAI.Combinatorics.ExpectationThreshold.RoundingMasses",
+  "OAI.Combinatorics.ExpectationThreshold.RoundingProbabilityContradiction",
+  "OAI.Combinatorics.ExpectationThreshold.ScaleBounds",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorAverageColor",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorCommonWitness",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorCountingEncoding",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorCountingEncodingBound",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorCountingEncodingRows",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorCountingWords",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorCountingWordsProducts",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorCountingWordsTransport",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorDefinitions",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorDefinitionsLemmas",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorDelay",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorDelayFeasibility",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorEntropy",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorEntropyDyadic",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorFeasibility",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorGlobalCost",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorGlobalCostProfiles",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorGroupCost",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorMain",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorProfile",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorReconstruction",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorTruncation",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorTruncationCompact",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorTruncationDefinitions",
+  "OAI.Combinatorics.ExpectationThreshold.SelectorTruncationSlope",
+  "OAI.Combinatorics.ExpectationThreshold.ThresholdAttainment",
+  "OAI.Combinatorics.ExpectationThreshold.ThresholdBounds",
+  "OAI.Combinatorics.ExpectationThreshold.ThresholdCompactness",
+  "OAI.Combinatorics.ExpectationThreshold.TupleCoefficients",
+  "OAI.Combinatorics.ExpectationThreshold.TupleGeometric"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/TalagrandExpectationThreshold.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Combinatorics.ExpectationThreshold.Main",
+   "name": "OAI.TalagrandThreshold.talagrand_expectation_threshold_equivalence",
+   "statement_sha256": "7889941d7f8679088881ccc7b78632c473efb65e7299311a8b15e7fbf9571dff"
+  }
+ ],
+ "task_id": "oai-talagrand-expectation-threshold",
+ "task_revision": 1,
+ "title": "OpenAI math: Talagrand’s expectation thresholds, discrete convexity, and graph decompositions: Integral–fractional expectation-threshold comparison",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

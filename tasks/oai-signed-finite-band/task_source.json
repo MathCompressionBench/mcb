@@ -1,0 +1,811 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 109553447
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.SignedFiniteBand",
+  "challenge_sha256": "b3bca8a51f58611e232ed51e4b15829a43d5a7974244a2d73a74ed7468d29488",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SignedFiniteBand.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.SignedFiniteBand",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.SignedDisk.Main",
+   "theorem_names": [
+    "OAI.SignedDisk.CenteredDiskEndpoint.main_signed_finite_band"
+   ]
+  },
+  "config_sha256": "7b103eb07fd637dcfb02923cd4df2e83b88200253e742b746629b1539d6fcec0",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SignedFiniteBand.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.SignedDisk.CenteredDiskEndpoint.main_signed_finite_band": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/ActualLabels1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.ActualLabels1",
+   "original_sha256": "9196303df29f8edc76bb0d9202b0e0ebb28c36a8b236935b889ecb78ae88f32b",
+   "path": "OAI/Analysis/SignedDisk/ActualLabels1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/ActualMarkTrees1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.ActualMarkTrees1",
+   "original_sha256": "4a5a748766e0c74257cdb2b2ae890e9b678f00d94ddd92eb0787c85eb3e41336",
+   "path": "OAI/Analysis/SignedDisk/ActualMarkTrees1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/ActualMarkTrees2.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.ActualMarkTrees2",
+   "original_sha256": "0df6a59bc3a73b8c077bfb2e6388191238a4acfbe458f2b85df330cc17cd4655",
+   "path": "OAI/Analysis/SignedDisk/ActualMarkTrees2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/AffineDensities1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.AffineDensities1",
+   "original_sha256": "35d900250e6a7084d0f7fb16e1272c97e094c3660617b39a1588897082e13660",
+   "path": "OAI/Analysis/SignedDisk/AffineDensities1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/CommonPrices1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.CommonPrices1",
+   "original_sha256": "bae66a7b3ad4af94a5a22a868f05dd90144772d517e9ffb5e2cfe1001f89e795",
+   "path": "OAI/Analysis/SignedDisk/CommonPrices1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/CommonPrices2.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.CommonPrices2",
+   "original_sha256": "94992ecdf2729a26932bf9c0c2fa22e47003ae2d0bc8e0527318e5ccc906f2a8",
+   "path": "OAI/Analysis/SignedDisk/CommonPrices2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/CommonPrices3.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.CommonPrices3",
+   "original_sha256": "98b856a190f6697f134f0a0c721e25b57e0084347f87b643e1245463a5358415",
+   "path": "OAI/Analysis/SignedDisk/CommonPrices3.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/CommonPrices4.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.CommonPrices4",
+   "original_sha256": "aa238ddfe5d9fb9d01e93080f7ce3759cb5256688cd918f5183565981f54f742",
+   "path": "OAI/Analysis/SignedDisk/CommonPrices4.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/DirectionNeighbors1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.DirectionNeighbors1",
+   "original_sha256": "75510f3adc24fa7cc35ba9283907a50cdc760c10c13e9e781ba61acb33fdc69c",
+   "path": "OAI/Analysis/SignedDisk/DirectionNeighbors1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/DiskGeometry1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.DiskGeometry1",
+   "original_sha256": "49e6e8331628070a8651f4a2c91f14929cdbd76e8d54805b030f23695666e143",
+   "path": "OAI/Analysis/SignedDisk/DiskGeometry1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/DiskGeometry2.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.DiskGeometry2",
+   "original_sha256": "34aaf0cc868ba9ea3f98b08da1ed6f2ad61d800daf6bb436dd07e2328aaca178",
+   "path": "OAI/Analysis/SignedDisk/DiskGeometry2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/DiskKernels1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.DiskKernels1",
+   "original_sha256": "3516463f87c0b243f92088bb84bdb234aa3baf869ad0b9935e262862a9868473",
+   "path": "OAI/Analysis/SignedDisk/DiskKernels1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/DiskMaximalTools1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.DiskMaximalTools1",
+   "original_sha256": "236965201f2f4d3774339a36c92bc5532e4bb916a8bc8724e0dad9a6893147cc",
+   "path": "OAI/Analysis/SignedDisk/DiskMaximalTools1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/DiskMaximalTools2.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.DiskMaximalTools2",
+   "original_sha256": "bf9c9f3fe02891f539093d525628ad3547c3ea4c9043a3db06ec55395776dbc6",
+   "path": "OAI/Analysis/SignedDisk/DiskMaximalTools2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/DiskMoments1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.DiskMoments1",
+   "original_sha256": "1657ef561cbd9fff6c50350f48b11ee710888a05188a9e0b7a1d8d613a22471d",
+   "path": "OAI/Analysis/SignedDisk/DiskMoments1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/DiskScales1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.DiskScales1",
+   "original_sha256": "54f81808a95cc54f7caece599ae27a31135ebb2ba68b238b122c5e034f9d6b4b",
+   "path": "OAI/Analysis/SignedDisk/DiskScales1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/DiskScales2.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.DiskScales2",
+   "original_sha256": "301c86213b8f8118a8f1f4a8ffdc33f7bc33bda084c8fb220a75142dc6eeca87",
+   "path": "OAI/Analysis/SignedDisk/DiskScales2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/DiskScales3.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.DiskScales3",
+   "original_sha256": "ceb5643ca440962db08e8ab5993c6793f6cf54ea8fcfc390b436f8be62f2abb2",
+   "path": "OAI/Analysis/SignedDisk/DiskScales3.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/DyadicHats1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.DyadicHats1",
+   "original_sha256": "72c6d718ea47a41252ab736c073fb9fcacf9510f3404b0dab2394100c189fe45",
+   "path": "OAI/Analysis/SignedDisk/DyadicHats1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/DyadicHats2.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.DyadicHats2",
+   "original_sha256": "fc1ca40434fb17ac24f922019db2a156002d31b124f8fcf310f9c4a26c7716b3",
+   "path": "OAI/Analysis/SignedDisk/DyadicHats2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/DyadicHats3.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.DyadicHats3",
+   "original_sha256": "08aa50983737627131c6c1bb16eb9c38d656f68aa8367f77d6b66aec6122f39c",
+   "path": "OAI/Analysis/SignedDisk/DyadicHats3.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/FiniteLabels1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.FiniteLabels1",
+   "original_sha256": "149bc675cae061691923de2f8df47655ae290f791ad6709f6c696a4248f63ed6",
+   "path": "OAI/Analysis/SignedDisk/FiniteLabels1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/FiniteLabels2.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.FiniteLabels2",
+   "original_sha256": "c05470c9961b2590ecd0ca5ff3b1182c94768a91739a756875218059f7d2b1b9",
+   "path": "OAI/Analysis/SignedDisk/FiniteLabels2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/IntrinsicMarks1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.IntrinsicMarks1",
+   "original_sha256": "f940fb8f298e559e1226a622fde72d36d6662177bdea63e97a95bdb2239a830e",
+   "path": "OAI/Analysis/SignedDisk/IntrinsicMarks1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/LabelSwitches1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.LabelSwitches1",
+   "original_sha256": "174a111b8ebb28712041e1a43c13c964fbd43070ac8a366d2e48bebbcb0a9aed",
+   "path": "OAI/Analysis/SignedDisk/LabelSwitches1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/LocalCancellation1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.LocalCancellation1",
+   "original_sha256": "96253bf494e9e8cbf9f9d8cf74a0ba7ba14d2b6647aa708b83dec5db113db46a",
+   "path": "OAI/Analysis/SignedDisk/LocalCancellation1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/LocalCancellation2.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.LocalCancellation2",
+   "original_sha256": "e4c935a56221b0746cd9c1a1d0d8aa3d179dd106f6695eea63e2606076a43574",
+   "path": "OAI/Analysis/SignedDisk/LocalCancellation2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/LocalCancellation3.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.LocalCancellation3",
+   "original_sha256": "1c402bf15c0f0e7e571b0147dbf6f698b48f3163de454151b85586de6c1df3f4",
+   "path": "OAI/Analysis/SignedDisk/LocalCancellation3.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/LocalCancellation4.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.LocalCancellation4",
+   "original_sha256": "200873e2f82c2f123b8459a478254cf0c7016551031c9d7039340091147bf6b2",
+   "path": "OAI/Analysis/SignedDisk/LocalCancellation4.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/LocalCancellation5.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.LocalCancellation5",
+   "original_sha256": "9d231894d2c58b736500e5e50d5af1ffef2d3efdeee470ce57e7a559f5fbb078",
+   "path": "OAI/Analysis/SignedDisk/LocalCancellation5.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/Main.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.Main",
+   "original_sha256": "cbba3da3041f082fa40f1cb3cca9a3fe50fbf4d00d0094e57aa8a5d8c69ef358",
+   "path": "OAI/Analysis/SignedDisk/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/Model.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.Model",
+   "original_sha256": "3255ba36012ad82df9eb3ed394239a3cf8d848e6ffbedb017371b35071464047",
+   "path": "OAI/Analysis/SignedDisk/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/PhysicalCells1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.PhysicalCells1",
+   "original_sha256": "355bed31bf73febe965753a293cca0d04e71e85514e594da211d90b1d1308899",
+   "path": "OAI/Analysis/SignedDisk/PhysicalCells1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/PlanePotential1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.PlanePotential1",
+   "original_sha256": "e28e1c23ead3485a8e35c66eb0460aff0f8cfc16402f56f3604b44cc709af07b",
+   "path": "OAI/Analysis/SignedDisk/PlanePotential1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/PlanePotential2.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.PlanePotential2",
+   "original_sha256": "5011440c7c321e9723b6288e292128305631919d9b109ec0ca2889e204d00aa3",
+   "path": "OAI/Analysis/SignedDisk/PlanePotential2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/ScalarCancellation1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.ScalarCancellation1",
+   "original_sha256": "5c6f11ac3488b7a945e06f48689ceeb99606b6d58eefb3eb74d15964af7ed554",
+   "path": "OAI/Analysis/SignedDisk/ScalarCancellation1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/SignedRuns1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.SignedRuns1",
+   "original_sha256": "7e5f2410b359a67c68815d367e51b6a76d251c4f2df411e2ecfae635b2719531",
+   "path": "OAI/Analysis/SignedDisk/SignedRuns1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/SignedRuns2.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.SignedRuns2",
+   "original_sha256": "1fde50f41c3783da95d4dec059f3a9acf3b19271dad58f6cc92869c4b7eba921",
+   "path": "OAI/Analysis/SignedDisk/SignedRuns2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SignedDisk/VectorRefinement1.lean"
+   },
+   "module": "OAI.Analysis.SignedDisk.VectorRefinement1",
+   "original_sha256": "fad96dd3fe0dccbe44b617dff09dbe382f2ab8b30c3ed6339475c7c8e475f29e",
+   "path": "OAI/Analysis/SignedDisk/VectorRefinement1.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.SignedDisk.ActualLabels1",
+  "OAI.Analysis.SignedDisk.ActualMarkTrees1",
+  "OAI.Analysis.SignedDisk.ActualMarkTrees2",
+  "OAI.Analysis.SignedDisk.AffineDensities1",
+  "OAI.Analysis.SignedDisk.CommonPrices1",
+  "OAI.Analysis.SignedDisk.CommonPrices2",
+  "OAI.Analysis.SignedDisk.CommonPrices3",
+  "OAI.Analysis.SignedDisk.CommonPrices4",
+  "OAI.Analysis.SignedDisk.DirectionNeighbors1",
+  "OAI.Analysis.SignedDisk.DiskGeometry1",
+  "OAI.Analysis.SignedDisk.DiskGeometry2",
+  "OAI.Analysis.SignedDisk.DiskKernels1",
+  "OAI.Analysis.SignedDisk.DiskMaximalTools1",
+  "OAI.Analysis.SignedDisk.DiskMaximalTools2",
+  "OAI.Analysis.SignedDisk.DiskMoments1",
+  "OAI.Analysis.SignedDisk.DiskScales1",
+  "OAI.Analysis.SignedDisk.DiskScales2",
+  "OAI.Analysis.SignedDisk.DiskScales3",
+  "OAI.Analysis.SignedDisk.DyadicHats1",
+  "OAI.Analysis.SignedDisk.DyadicHats2",
+  "OAI.Analysis.SignedDisk.DyadicHats3",
+  "OAI.Analysis.SignedDisk.FiniteLabels1",
+  "OAI.Analysis.SignedDisk.FiniteLabels2",
+  "OAI.Analysis.SignedDisk.IntrinsicMarks1",
+  "OAI.Analysis.SignedDisk.LabelSwitches1",
+  "OAI.Analysis.SignedDisk.LocalCancellation1",
+  "OAI.Analysis.SignedDisk.LocalCancellation2",
+  "OAI.Analysis.SignedDisk.LocalCancellation3",
+  "OAI.Analysis.SignedDisk.LocalCancellation4",
+  "OAI.Analysis.SignedDisk.LocalCancellation5",
+  "OAI.Analysis.SignedDisk.Main",
+  "OAI.Analysis.SignedDisk.Model",
+  "OAI.Analysis.SignedDisk.PhysicalCells1",
+  "OAI.Analysis.SignedDisk.PlanePotential1",
+  "OAI.Analysis.SignedDisk.PlanePotential2",
+  "OAI.Analysis.SignedDisk.ScalarCancellation1",
+  "OAI.Analysis.SignedDisk.SignedRuns1",
+  "OAI.Analysis.SignedDisk.SignedRuns2",
+  "OAI.Analysis.SignedDisk.VectorRefinement1"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/SignedFiniteBand.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.SignedDisk.Main",
+   "name": "OAI.SignedDisk.CenteredDiskEndpoint.main_signed_finite_band",
+   "statement_sha256": "cbdac3a197cb7af4ec732b9a01bfd688dee06fedeadbfa1d834876dca6f6be2d"
+  }
+ ],
+ "task_id": "oai-signed-finite-band",
+ "task_revision": 1,
+ "title": "OpenAI math: Endpoint Sobolev regularity of centered disk averages: Signed finite-band disk-maximal gradient bound",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

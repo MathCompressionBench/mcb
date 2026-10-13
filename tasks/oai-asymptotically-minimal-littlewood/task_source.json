@@ -1,0 +1,661 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 96558130
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.AsymptoticallyMinimalLittlewood",
+  "challenge_sha256": "045e02714ed642444b9257f20f1ce65d68f00e63e914cc3aa7335f6ed5648a71",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/AsymptoticallyMinimalLittlewood.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.AsymptoticallyMinimalLittlewood",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.Littlewood.Main",
+   "theorem_names": [
+    "OAI.AsymptoticallyMinimalLittlewood.main"
+   ]
+  },
+  "config_sha256": "0021e2cbecb32bf46c0ee9955f4241e518447f3019717304f2df794126331906",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/AsymptoticallyMinimalLittlewood.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.AsymptoticallyMinimalLittlewood.main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/AlmostSign.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.AlmostSign",
+   "original_sha256": "1b8c309c44abacacdbf4454375609187b4cc811e5bc749efadc2d8b6f68e1f1e",
+   "path": "OAI/Analysis/Littlewood/AlmostSign.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/Averages.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.Averages",
+   "original_sha256": "dbc5776e22c79221890552ece685d7253defefd2ac06c1db98d6531637daf285",
+   "path": "OAI/Analysis/Littlewood/Averages.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/BinaryPacket.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.BinaryPacket",
+   "original_sha256": "43f9aedd2620a219013db16de68651cbe5c06ed3f90ed7d04e6b20eb0d0f2748",
+   "path": "OAI/Analysis/Littlewood/BinaryPacket.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/BlockSampling.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.BlockSampling",
+   "original_sha256": "e864a28a99efb7a9855b85e209c11942db7241ee30910e76caa497e5a35f9354",
+   "path": "OAI/Analysis/Littlewood/BlockSampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/Chunks.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.Chunks",
+   "original_sha256": "fbe47c16f13a1aadbf3e98e5921fb1380e1e2b70a88bcd10831ed28d9c7ad76e",
+   "path": "OAI/Analysis/Littlewood/Chunks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/Curvature.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.Curvature",
+   "original_sha256": "f8fd719036bc2ec7f39b766b6e5a9cbb313ed1159fd7df42764b61657bf7331c",
+   "path": "OAI/Analysis/Littlewood/Curvature.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/Cutoff.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.Cutoff",
+   "original_sha256": "aa1a064dad920b3db2ee3738e6e15fb9665e1a6cf1404635684d6379f91db89d",
+   "path": "OAI/Analysis/Littlewood/Cutoff.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/DependentMoments.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.DependentMoments",
+   "original_sha256": "289282d67a2b7628ed953f428a575e2c7799a1ac61d47da0a718af049412f786",
+   "path": "OAI/Analysis/Littlewood/DependentMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/FiniteRank.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.FiniteRank",
+   "original_sha256": "355d948783e995ed909468ac3003c78280b410afdd16d7ae93b841fa734b4196",
+   "path": "OAI/Analysis/Littlewood/FiniteRank.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/Gaussian.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.Gaussian",
+   "original_sha256": "091cc4450f6c37714bc0f27be7b5c4b23be8846fe5f475fb7eacafd5b53026be",
+   "path": "OAI/Analysis/Littlewood/Gaussian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/IntervalPacking.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.IntervalPacking",
+   "original_sha256": "70097d7f501fa1d0d0c2ead9d6b2a2222f5d04d5c99644eddd9e8ea23bef1b1c",
+   "path": "OAI/Analysis/Littlewood/IntervalPacking.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/Main.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.Main",
+   "original_sha256": "7c7d54dd82a881bf5df78d9ea15973142066a60135031ad47b8d37d7fb5ebe96",
+   "path": "OAI/Analysis/Littlewood/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/Matching.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.Matching",
+   "original_sha256": "88f3a319217bf36eaf13976c700fb1d6f6ef11210eb8aeb204f9b3dd2880ae08",
+   "path": "OAI/Analysis/Littlewood/Matching.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/ModeSampling.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.ModeSampling",
+   "original_sha256": "b75991841bb65b8f0dada218ff67fabd4274b1258281204099dcf2041e72f5be",
+   "path": "OAI/Analysis/Littlewood/ModeSampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/Model.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.Model",
+   "original_sha256": "bf7d393ecbe3fb88f8feb7c68f9aafeed0a129dd359137d468edca72fdc67254",
+   "path": "OAI/Analysis/Littlewood/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/Nibble.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.Nibble",
+   "original_sha256": "639154bc5b8caf2b8ca34f73164818132c3981bc9f92769ee3c745a553d42113",
+   "path": "OAI/Analysis/Littlewood/Nibble.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/ProductProbability.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.ProductProbability",
+   "original_sha256": "b935e165088d7b939f42ccbdd54484e4d4e9904cae04182068034ed72a216fd2",
+   "path": "OAI/Analysis/Littlewood/ProductProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/QuadraticTail.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.QuadraticTail",
+   "original_sha256": "ac82c4891a789382ddf3d7bf26b53391f6c4aae7f45e1e805c47514e7a50cb18",
+   "path": "OAI/Analysis/Littlewood/QuadraticTail.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/Rounding.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.Rounding",
+   "original_sha256": "15dca2eebdbeded5e841d2a5652ffe4c341487265297af15f3c47802d7d9ebe9",
+   "path": "OAI/Analysis/Littlewood/Rounding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/SamplingEnergy.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.SamplingEnergy",
+   "original_sha256": "20f193f8ed629cc4ec9f9c7bd3b6375aaea6653ccced8396c941a04c3e9690db",
+   "path": "OAI/Analysis/Littlewood/SamplingEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/SamplingTail.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.SamplingTail",
+   "original_sha256": "48b25236e672a2b92a7a8d2a60ae2d28898564d4b1f7aeb1b5b15bcb4701e6d8",
+   "path": "OAI/Analysis/Littlewood/SamplingTail.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/SlotGraph.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.SlotGraph",
+   "original_sha256": "27d1243e791fa156fbacbc7874552084cd59ea8edacf7c58a83876bfe4011fd9",
+   "path": "OAI/Analysis/Littlewood/SlotGraph.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/SlotParameters.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.SlotParameters",
+   "original_sha256": "10ef050d0c9c9660da92a6d27b0208afd2021d6d464c7dde3e921cd34cbe063f",
+   "path": "OAI/Analysis/Littlewood/SlotParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Littlewood/Spreading.lean"
+   },
+   "module": "OAI.Analysis.Littlewood.Spreading",
+   "original_sha256": "321198e84a4aa727d318fd1d6fe4764784d8936383c276b6e5c357c79fe74ce8",
+   "path": "OAI/Analysis/Littlewood/Spreading.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.Littlewood.AlmostSign",
+  "OAI.Analysis.Littlewood.Averages",
+  "OAI.Analysis.Littlewood.BinaryPacket",
+  "OAI.Analysis.Littlewood.BlockSampling",
+  "OAI.Analysis.Littlewood.Chunks",
+  "OAI.Analysis.Littlewood.Curvature",
+  "OAI.Analysis.Littlewood.Cutoff",
+  "OAI.Analysis.Littlewood.DependentMoments",
+  "OAI.Analysis.Littlewood.FiniteRank",
+  "OAI.Analysis.Littlewood.Gaussian",
+  "OAI.Analysis.Littlewood.IntervalPacking",
+  "OAI.Analysis.Littlewood.Main",
+  "OAI.Analysis.Littlewood.Matching",
+  "OAI.Analysis.Littlewood.ModeSampling",
+  "OAI.Analysis.Littlewood.Model",
+  "OAI.Analysis.Littlewood.Nibble",
+  "OAI.Analysis.Littlewood.ProductProbability",
+  "OAI.Analysis.Littlewood.QuadraticTail",
+  "OAI.Analysis.Littlewood.Rounding",
+  "OAI.Analysis.Littlewood.SamplingEnergy",
+  "OAI.Analysis.Littlewood.SamplingTail",
+  "OAI.Analysis.Littlewood.SlotGraph",
+  "OAI.Analysis.Littlewood.SlotParameters",
+  "OAI.Analysis.Littlewood.Spreading"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/AsymptoticallyMinimalLittlewood.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.Littlewood.Main",
+   "name": "OAI.AsymptoticallyMinimalLittlewood.main",
+   "statement_sha256": "114654146c35893bb8dd3091f0064e964827c2dac8aec3724010a72f485cc6d8"
+  }
+ ],
+ "task_id": "oai-asymptotically-minimal-littlewood",
+ "task_revision": 1,
+ "title": "OpenAI math: Real ultraflat Littlewood polynomials and unbounded binary merit factors: Asymptotically minimal Littlewood maximum",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

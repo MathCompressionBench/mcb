@@ -1,0 +1,2794 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 463465564
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.SymmetricMahlerEquality",
+  "challenge_sha256": "9b36525c55b50fc2fc75dc600d69d68683b57ffc9978622c3303d1cf02c3faf3",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SymmetricMahlerEquality.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.SymmetricMahlerEquality",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_imports": [
+    "OAI.Analysis.Mahler.Classification"
+   ],
+   "solution_module": "OAI.Analysis.Mahler.Classification",
+   "theorem_names": [
+    "OAI.SymmetricMahler.symmetric_mahler_equality"
+   ]
+  },
+  "config_sha256": "2e878c2ae80cd8ce362374b38f26731d256c27125aa4cfb970d883b0df05038a",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SymmetricMahlerEquality.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.SymmetricMahler.symmetric_mahler_equality": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ActualFiniteStrips.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ActualFiniteStrips",
+   "original_sha256": "db8fd13fcdf965677174dbd1b066a74cad74bfebccce282ce8c2ba5642eed9a7",
+   "path": "OAI/Analysis/Mahler/ActualFiniteStrips.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ActualVerticalPrimitive.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ActualVerticalPrimitive",
+   "original_sha256": "9f4a3c8130313974df4a26b907cd9b0446af7cb2f55ec4d5bee1e6a804dfde93",
+   "path": "OAI/Analysis/Mahler/ActualVerticalPrimitive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/AngularEndpoint.lean"
+   },
+   "module": "OAI.Analysis.Mahler.AngularEndpoint",
+   "original_sha256": "45840cde23282ff3be796305bf6c97f1938edbadb558e0119160b3be21257160",
+   "path": "OAI/Analysis/Mahler/AngularEndpoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/AngularFibers.lean"
+   },
+   "module": "OAI.Analysis.Mahler.AngularFibers",
+   "original_sha256": "7d685912001f5e87c579f0b5e4b541c4173f440b8ad698b4634114485f3d0bd8",
+   "path": "OAI/Analysis/Mahler/AngularFibers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/AngularGeometry.lean"
+   },
+   "module": "OAI.Analysis.Mahler.AngularGeometry",
+   "original_sha256": "f43e6d0e0942a3d0ed5ff05c3580c1f45ccbb0cb1c762a72605da7476a7db417",
+   "path": "OAI/Analysis/Mahler/AngularGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/AngularIntegrals.lean"
+   },
+   "module": "OAI.Analysis.Mahler.AngularIntegrals",
+   "original_sha256": "8225ea6bd11090cfda6d2aada73da5c407f2eab99d42859cea739b4286fad556",
+   "path": "OAI/Analysis/Mahler/AngularIntegrals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/AngularStrip.lean"
+   },
+   "module": "OAI.Analysis.Mahler.AngularStrip",
+   "original_sha256": "9111e0ef3e1da6fcc4beadacbcfc0fb89e240aa81b64223bd3f59ca1d72a29f0",
+   "path": "OAI/Analysis/Mahler/AngularStrip.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/BasisContinuousWedge.lean"
+   },
+   "module": "OAI.Analysis.Mahler.BasisContinuousWedge",
+   "original_sha256": "411f955f9e3e001d9047517e99013bb3bad899227011bef869f0fc4be0b3fb3c",
+   "path": "OAI/Analysis/Mahler/BasisContinuousWedge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/BoundaryJet.lean"
+   },
+   "module": "OAI.Analysis.Mahler.BoundaryJet",
+   "original_sha256": "b6142f969dbe2e54128cee5f751ce5e676e590a78329085170956863db5292f6",
+   "path": "OAI/Analysis/Mahler/BoundaryJet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ChartExtension.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ChartExtension",
+   "original_sha256": "5b7d3103a988d7b6f7e0ad6cb9e99a88a6e63b5cb8d53d9beb113f3df69b8f3b",
+   "path": "OAI/Analysis/Mahler/ChartExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ChartStokes.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ChartStokes",
+   "original_sha256": "cba27c7bcedfc20105c3c71eec50c832331a6b17e22eda17c56a0c77729757e2",
+   "path": "OAI/Analysis/Mahler/ChartStokes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/Classification.lean"
+   },
+   "module": "OAI.Analysis.Mahler.Classification",
+   "original_sha256": "3bab72e986a45df928d08419b18392202c827e2f8c803278414db3fa90580c65",
+   "path": "OAI/Analysis/Mahler/Classification.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ClosedBoundaryStokes.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ClosedBoundaryStokes",
+   "original_sha256": "0b107f76a665e055b95d2f24c05110f498bcbec93b3d0f8761d9a8f13c72c721",
+   "path": "OAI/Analysis/Mahler/ClosedBoundaryStokes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ClosedWedgePowers.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ClosedWedgePowers",
+   "original_sha256": "b9f0df6c667835c967ab51b7df7f8d8a2d6a9610a1b468ba1ec08aecfaee52db",
+   "path": "OAI/Analysis/Mahler/ClosedWedgePowers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/CompactFluxDifferentiation.lean"
+   },
+   "module": "OAI.Analysis.Mahler.CompactFluxDifferentiation",
+   "original_sha256": "b9b88f2cf6dd5c86b734e7829f7518fd2c5a49fb0483039b1c57d792a438bdc4",
+   "path": "OAI/Analysis/Mahler/CompactFluxDifferentiation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/CompactIntegral.lean"
+   },
+   "module": "OAI.Analysis.Mahler.CompactIntegral",
+   "original_sha256": "03c193c0045df7bca7aeea791ba280725be9bcb15f514aa53b1d6bca1b7a80d6",
+   "path": "OAI/Analysis/Mahler/CompactIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ComplexCoordinates.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ComplexCoordinates",
+   "original_sha256": "38bcc022903ad89ee7aa2143073905302da60b1120e3f37045cbf0427ad99fad",
+   "path": "OAI/Analysis/Mahler/ComplexCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ComplexStripMap.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ComplexStripMap",
+   "original_sha256": "cab24b8ec4f7a2d303f54473e5e5df9afabb3312658e30a96032acb0a075a423",
+   "path": "OAI/Analysis/Mahler/ComplexStripMap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ComplexVolume.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ComplexVolume",
+   "original_sha256": "41872cfd69974e2f9aa2cab381a00e4e20a8dec50d8333ba537337447fb229af",
+   "path": "OAI/Analysis/Mahler/ComplexVolume.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ConformalInjectivity.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ConformalInjectivity",
+   "original_sha256": "93712cc44be0a5cb22554b7420bf5735c3d477f537fbefc44c4ddca7d5dee161",
+   "path": "OAI/Analysis/Mahler/ConformalInjectivity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ConformalInverse.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ConformalInverse",
+   "original_sha256": "31d18736f3ae6a7f752d9c00801b089e39c1860f7272c41a58921c199073ad0a",
+   "path": "OAI/Analysis/Mahler/ConformalInverse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ConformalRadialRegularity.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ConformalRadialRegularity",
+   "original_sha256": "c2d6983856b20bfd61bc6f6ea7f05b71eca32d028d1f033fa9b504125a275852",
+   "path": "OAI/Analysis/Mahler/ConformalRadialRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ConformalSeries.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ConformalSeries",
+   "original_sha256": "a0fb5c554c07dda04c8dd340bb919aa8ad9e0477e49e45a716454a92d94b65a0",
+   "path": "OAI/Analysis/Mahler/ConformalSeries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ContinuousWedge.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ContinuousWedge",
+   "original_sha256": "f0822c8ee8ccae57527921983a3a5a9c9a25bd2bddbcc9bed4ac1d5574a06909",
+   "path": "OAI/Analysis/Mahler/ContinuousWedge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ContinuousWedgeDerivative.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ContinuousWedgeDerivative",
+   "original_sha256": "a7a172ebcbabf73f5b646de25e41e4e8fd31a569c5c88458d90a89a11588d115",
+   "path": "OAI/Analysis/Mahler/ContinuousWedgeDerivative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ConvexApproximation.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ConvexApproximation",
+   "original_sha256": "49ec6363516efa95717f2ef449791c11f7d0d06f3a7c0b6badd5f32fc9a5aca7",
+   "path": "OAI/Analysis/Mahler/ConvexApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ConvexCompletion.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ConvexCompletion",
+   "original_sha256": "cdf1a50a490e2ebebdbc2d929d87c5902650f1c8c3c80f563f870619f9e8d45d",
+   "path": "OAI/Analysis/Mahler/ConvexCompletion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ConvexENNRealTransfer.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ConvexENNRealTransfer",
+   "original_sha256": "112bc400cea7d1f18dcf82211b04c3cd510e9cc206059c68b467c3920fa50bac",
+   "path": "OAI/Analysis/Mahler/ConvexENNRealTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ConvexGeometry.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ConvexGeometry",
+   "original_sha256": "fb661f20a73ce1f32aec0c9b40cca28246064c82df461a040cf27bc4cc97488a",
+   "path": "OAI/Analysis/Mahler/ConvexGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ConvexMain.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ConvexMain",
+   "original_sha256": "9f130b81c749c9f0fc5572e31aa3553def7bc5597b25b8a023a26d78e0414c23",
+   "path": "OAI/Analysis/Mahler/ConvexMain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ConvexMassReduction.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ConvexMassReduction",
+   "original_sha256": "73a09855cb031967808cc9e47850b495b56f78379c1abbf97ef55d538f1d2ea5",
+   "path": "OAI/Analysis/Mahler/ConvexMassReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ConvexPolarBody.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ConvexPolarBody",
+   "original_sha256": "b1d94160644876cf6a2a7f0a350ab9ef56007dc63ac3cdc3d153e51a52a76b6e",
+   "path": "OAI/Analysis/Mahler/ConvexPolarBody.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ConvexSequence.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ConvexSequence",
+   "original_sha256": "28475ca18281968cc2d559cb6b7a83be11eda09cf3d98f4a8c20c096f48315b4",
+   "path": "OAI/Analysis/Mahler/ConvexSequence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ConvexTransfer.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ConvexTransfer",
+   "original_sha256": "289578e2c8ac9b14203224827ce4b7b1390e6f46fdc14048db1a3526109f1b00",
+   "path": "OAI/Analysis/Mahler/ConvexTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/CoordinateAnnulus.lean"
+   },
+   "module": "OAI.Analysis.Mahler.CoordinateAnnulus",
+   "original_sha256": "3bb711a8bc556eeca8912c3466a37558e3ce04d8093ccd9cfca5a24a5d9af749",
+   "path": "OAI/Analysis/Mahler/CoordinateAnnulus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/CoordinateBall.lean"
+   },
+   "module": "OAI.Analysis.Mahler.CoordinateBall",
+   "original_sha256": "045bab76a695e6ac76ad7ee8617aae49140c37bd840635aa123ded3fab103397",
+   "path": "OAI/Analysis/Mahler/CoordinateBall.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/CoordinateEuclidean.lean"
+   },
+   "module": "OAI.Analysis.Mahler.CoordinateEuclidean",
+   "original_sha256": "894d95522a89a29da858d0304323d19b1773003e6146d0c11980b8204d2beaf2",
+   "path": "OAI/Analysis/Mahler/CoordinateEuclidean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/CoordinateSphere.lean"
+   },
+   "module": "OAI.Analysis.Mahler.CoordinateSphere",
+   "original_sha256": "7f268b209a3587fecb12b0c9f6afe5cc638a39cded61ca03c2826f34a691b1c6",
+   "path": "OAI/Analysis/Mahler/CoordinateSphere.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/CovectorVolume.lean"
+   },
+   "module": "OAI.Analysis.Mahler.CovectorVolume",
+   "original_sha256": "0658d432005008eec9e34252046182fa44bb3cf989db3a9f7cd92dfeadda93a3",
+   "path": "OAI/Analysis/Mahler/CovectorVolume.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/DCForms.lean"
+   },
+   "module": "OAI.Analysis.Mahler.DCForms",
+   "original_sha256": "e147eb552345d6f30999d6fe91ad87e3da862478a363a02bff62cd0be28f1074",
+   "path": "OAI/Analysis/Mahler/DCForms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/DCRegularity.lean"
+   },
+   "module": "OAI.Analysis.Mahler.DCRegularity",
+   "original_sha256": "5ea20fac905ba8855a595e7b77314f161ad81bdac0bf0be8f9e36c6fd45db0ae",
+   "path": "OAI/Analysis/Mahler/DCRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/Diamonds.lean"
+   },
+   "module": "OAI.Analysis.Mahler.Diamonds",
+   "original_sha256": "df447199a933fce32eca796d5fb81746b506ef0435a3b1a4b5d6193e405bc9b6",
+   "path": "OAI/Analysis/Mahler/Diamonds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/DilationTransport.lean"
+   },
+   "module": "OAI.Analysis.Mahler.DilationTransport",
+   "original_sha256": "a812d7779512883a6c290747dfcdf0e762bdb1be357db7218caecd16fa24beca",
+   "path": "OAI/Analysis/Mahler/DilationTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/EqualityMedians.lean"
+   },
+   "module": "OAI.Analysis.Mahler.EqualityMedians",
+   "original_sha256": "9f99945971c23dcc2fd58d0792c68c337bb31bd96dcc54b46c756493a591ec3e",
+   "path": "OAI/Analysis/Mahler/EqualityMedians.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ErrorBound.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ErrorBound",
+   "original_sha256": "083ff7dc2885dcaa8a1fe752dd333c9249308226290c5f93055c532ae409b7c9",
+   "path": "OAI/Analysis/Mahler/ErrorBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/EuclideanMassDensity.lean"
+   },
+   "module": "OAI.Analysis.Mahler.EuclideanMassDensity",
+   "original_sha256": "f7a1fad727cde1183239d9e2dc94b25524a260e4cfbed7b219f62b916a794f93",
+   "path": "OAI/Analysis/Mahler/EuclideanMassDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/EuclideanRegularLevels.lean"
+   },
+   "module": "OAI.Analysis.Mahler.EuclideanRegularLevels",
+   "original_sha256": "9babc53de6e9cee864ef5f3376a8c85c694754f01cc118ce137d62b4a5af0454",
+   "path": "OAI/Analysis/Mahler/EuclideanRegularLevels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/EuclideanSpecialMap.lean"
+   },
+   "module": "OAI.Analysis.Mahler.EuclideanSpecialMap",
+   "original_sha256": "77068c0e5dce13e0fcec035dbfddefa8673fb5fa2fc1f09ab9f2857b9dbd2809",
+   "path": "OAI/Analysis/Mahler/EuclideanSpecialMap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ExactFormCoordinates.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ExactFormCoordinates",
+   "original_sha256": "9af0cc7e5bd5b32db54b5fbde6c4d4043834c126fab1f7659447eb53ece46c45",
+   "path": "OAI/Analysis/Mahler/ExactFormCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ExactSphereFluxBridge.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ExactSphereFluxBridge",
+   "original_sha256": "42ab3e9ccf01bba98afe7d1d058f5178dcbaf15295da72aeb4c536eb1701ab0e",
+   "path": "OAI/Analysis/Mahler/ExactSphereFluxBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ExactSphereStokes.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ExactSphereStokes",
+   "original_sha256": "40b5cd4a1fafafdba30a32004fee9c3a0b9b959c6c2884b509882e6a0034d6bd",
+   "path": "OAI/Analysis/Mahler/ExactSphereStokes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ExteriorAlternatization.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ExteriorAlternatization",
+   "original_sha256": "4b2c5e6bdc635a1ad11a80731711af38f1c2c98ee68213798498f57c064113a6",
+   "path": "OAI/Analysis/Mahler/ExteriorAlternatization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ExteriorCoefficient.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ExteriorCoefficient",
+   "original_sha256": "ec6f71ac66c9d7c549ac13195af5a5394a3e2fbb5cd00c8689e7349737da04ba",
+   "path": "OAI/Analysis/Mahler/ExteriorCoefficient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ExteriorCoordinates.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ExteriorCoordinates",
+   "original_sha256": "f78301c7a8d536ac602b7d338e974b6fd29abf4ddd82075cb6cb42712551a4ca",
+   "path": "OAI/Analysis/Mahler/ExteriorCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ExteriorDirectional.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ExteriorDirectional",
+   "original_sha256": "aac10f9c79a239351d0088cf0a3464a8afedec84b1da29147c3250e760e737ca",
+   "path": "OAI/Analysis/Mahler/ExteriorDirectional.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ExteriorFlux.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ExteriorFlux",
+   "original_sha256": "6447980d9572b2abe2cd87196163548674bc1d1a29b7735a94baa5840bbbd9e2",
+   "path": "OAI/Analysis/Mahler/ExteriorFlux.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ExteriorHessian.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ExteriorHessian",
+   "original_sha256": "83aa5901f68e8f7b196cca12a9bbbe23bd74036fa297083d3cce29862660d3df",
+   "path": "OAI/Analysis/Mahler/ExteriorHessian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ExteriorLeibnizTwo.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ExteriorLeibnizTwo",
+   "original_sha256": "442b1c0f314ed9cfd8bae73c8ce1e527498e0a7e7c7b510aa4ba2af9f4b4e454",
+   "path": "OAI/Analysis/Mahler/ExteriorLeibnizTwo.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ExteriorPower.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ExteriorPower",
+   "original_sha256": "8ef56c14b5665cc7da6c17c3e10f529782bdc36cc46de1fe5de64fb82ad26a4f",
+   "path": "OAI/Analysis/Mahler/ExteriorPower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/Faces.lean"
+   },
+   "module": "OAI.Analysis.Mahler.Faces",
+   "original_sha256": "4e8c05e9a1316b9b807252d9a061c9048472fa70397e4e77d2d9be323eeb68f3",
+   "path": "OAI/Analysis/Mahler/Faces.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/FiberEndpoint.lean"
+   },
+   "module": "OAI.Analysis.Mahler.FiberEndpoint",
+   "original_sha256": "c8c88f9807c51be5c2b646bb94b77d82055496963291a6256f4428621ff4b982",
+   "path": "OAI/Analysis/Mahler/FiberEndpoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/FiberHeight.lean"
+   },
+   "module": "OAI.Analysis.Mahler.FiberHeight",
+   "original_sha256": "eec28215ea0cb1fa341d5664e2ac8481380836573fdc6704e26925bed785f87f",
+   "path": "OAI/Analysis/Mahler/FiberHeight.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/FiberPreimageEndpoint.lean"
+   },
+   "module": "OAI.Analysis.Mahler.FiberPreimageEndpoint",
+   "original_sha256": "fcd9f652edf38efc38ddcbf8568b7ba90bcbf120afebe980b3e05430cec0426d",
+   "path": "OAI/Analysis/Mahler/FiberPreimageEndpoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/FiberPrimitive.lean"
+   },
+   "module": "OAI.Analysis.Mahler.FiberPrimitive",
+   "original_sha256": "a2a924bf1b8b47716676554742ad9b1714ebd7437d2995cf625d93295f111295",
+   "path": "OAI/Analysis/Mahler/FiberPrimitive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/FiniteStripReduction.lean"
+   },
+   "module": "OAI.Analysis.Mahler.FiniteStripReduction",
+   "original_sha256": "71ee81cd3c729788bfaf222484ee4627d4479fa8022bb785eccff24d53547c4a",
+   "path": "OAI/Analysis/Mahler/FiniteStripReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/FiniteStrips.lean"
+   },
+   "module": "OAI.Analysis.Mahler.FiniteStrips",
+   "original_sha256": "5bcb103a46133100ff4923b72578b03cab8be8a4eafa4a263ea3505b306d2f95",
+   "path": "OAI/Analysis/Mahler/FiniteStrips.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/FluxVariation.lean"
+   },
+   "module": "OAI.Analysis.Mahler.FluxVariation",
+   "original_sha256": "1c5df7b6f7416e4b101702305eb108faf1fcd84e4f3018f83b4090310ab24551",
+   "path": "OAI/Analysis/Mahler/FluxVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/FormLocalization.lean"
+   },
+   "module": "OAI.Analysis.Mahler.FormLocalization",
+   "original_sha256": "7eef1bb744b82c27026d173da5c199517ea4c1b71a41e08924d5e32b22268a95",
+   "path": "OAI/Analysis/Mahler/FormLocalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/FormStokes.lean"
+   },
+   "module": "OAI.Analysis.Mahler.FormStokes",
+   "original_sha256": "be508fbb919adb42225c126d37440f6b26ff6c8b36609dcd645d68fd5df3c6de",
+   "path": "OAI/Analysis/Mahler/FormStokes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/GlobalFiberParametrization.lean"
+   },
+   "module": "OAI.Analysis.Mahler.GlobalFiberParametrization",
+   "original_sha256": "955691250252f3e2b8315394dac4340498faf75e65ef1babeef20ed470fa01ce",
+   "path": "OAI/Analysis/Mahler/GlobalFiberParametrization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/GlobalPlanarBound.lean"
+   },
+   "module": "OAI.Analysis.Mahler.GlobalPlanarBound",
+   "original_sha256": "560f8ac790aa6854070a5f43a9c673b654d5d4740b68f01a4f42fce18f8698ee",
+   "path": "OAI/Analysis/Mahler/GlobalPlanarBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/GlobalPlanarMonotonicity.lean"
+   },
+   "module": "OAI.Analysis.Mahler.GlobalPlanarMonotonicity",
+   "original_sha256": "7458012c58b325987e7ce9583d66b69618541881899200efcd01876f3eef27ce",
+   "path": "OAI/Analysis/Mahler/GlobalPlanarMonotonicity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/GlobalVerticalGeometry.lean"
+   },
+   "module": "OAI.Analysis.Mahler.GlobalVerticalGeometry",
+   "original_sha256": "f23aec04f146ddb3465ea374b3eb16a7e5d054c3e446788fc33077911d0c1e02",
+   "path": "OAI/Analysis/Mahler/GlobalVerticalGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HalfspaceStokes.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HalfspaceStokes",
+   "original_sha256": "e325c589c30091adb8e4b97b5b15bd9d42487cea644706671d07b823dd4a28f8",
+   "path": "OAI/Analysis/Mahler/HalfspaceStokes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HannerBodies.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HannerBodies",
+   "original_sha256": "fd62a45c1ba55cbd78595cbb21f886eddca7c7ee1775490702bf0936ce849f58",
+   "path": "OAI/Analysis/Mahler/HannerBodies.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HemisphereArea.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HemisphereArea",
+   "original_sha256": "790895d212b4349a48f4acd95f990ccffac1b8c23801ea653add3f1a3e10d31d",
+   "path": "OAI/Analysis/Mahler/HemisphereArea.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HemisphereChart.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HemisphereChart",
+   "original_sha256": "b2a9f8aa475ed0b5d00296d20f951d425b7f2bb09e19c00fd25ed04e8f066c75",
+   "path": "OAI/Analysis/Mahler/HemisphereChart.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HemisphereFlux.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HemisphereFlux",
+   "original_sha256": "42f464e65838c65567c0152fcac82fa21fb1cb705e5267ad12509caa67262ed8",
+   "path": "OAI/Analysis/Mahler/HemisphereFlux.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HemisphereJacobian.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HemisphereJacobian",
+   "original_sha256": "f368d5b4aa8408b717e7a2e4fdd962ce84631836e106ebde26a47a2a18cee093",
+   "path": "OAI/Analysis/Mahler/HemisphereJacobian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HemisphereMeasure.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HemisphereMeasure",
+   "original_sha256": "4cc8d7e59c0f2e1a95970328b84e6075a585655ae3d10a99a2d32cb323eb1cba",
+   "path": "OAI/Analysis/Mahler/HemisphereMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/Hessian.lean"
+   },
+   "module": "OAI.Analysis.Mahler.Hessian",
+   "original_sha256": "482a2f2dc52185ced727857277714f7464a3c53cebd3d3d4d53603ec684378d0",
+   "path": "OAI/Analysis/Mahler/Hessian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HolomorphicLogC2.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HolomorphicLogC2",
+   "original_sha256": "f8ab7d44eb062243bdc1d3763751ccbde914a8821ac9fe1e99bab54e3e9ac16b",
+   "path": "OAI/Analysis/Mahler/HolomorphicLogC2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HolomorphicRegularity.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HolomorphicRegularity",
+   "original_sha256": "bc5a60ceb8d59a5c982e754f5224cca8b60fe3e6d4b2a218739257dcb41e8fda",
+   "path": "OAI/Analysis/Mahler/HolomorphicRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HomogeneousCircleIntegral.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HomogeneousCircleIntegral",
+   "original_sha256": "7602b0d5e6ae805933ae5ce4e6174b29afcfbccf38bcb1be9cf7b4fb5924b294",
+   "path": "OAI/Analysis/Mahler/HomogeneousCircleIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HomogeneousDeformation.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HomogeneousDeformation",
+   "original_sha256": "fd1b2a1f42770e4f9bcda387b489420c09cdb00827864f44d50afab15e2a7ce6",
+   "path": "OAI/Analysis/Mahler/HomogeneousDeformation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HomogeneousDensityVariation.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HomogeneousDensityVariation",
+   "original_sha256": "7cb051ab696d60d613dcfd2e6efcc2a7485e38d391ee102149e5eb96de517004",
+   "path": "OAI/Analysis/Mahler/HomogeneousDensityVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HomogeneousEndpoint.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HomogeneousEndpoint",
+   "original_sha256": "b1c23ab0ded1757208ef0756f1af7dfec22a6231c109bea2caa9f1b9403d3169",
+   "path": "OAI/Analysis/Mahler/HomogeneousEndpoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HomogeneousFlux.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HomogeneousFlux",
+   "original_sha256": "274a9fd3da9c2554cc0d579d756112751a7cc1609e6ff97523003de0c8cc5e93",
+   "path": "OAI/Analysis/Mahler/HomogeneousFlux.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HomogeneousFluxDifferentiation.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HomogeneousFluxDifferentiation",
+   "original_sha256": "f5bd46d16a02d492ae8c334924b9bf9578f5a46a8850b54df9bc6873d1bc0b59",
+   "path": "OAI/Analysis/Mahler/HomogeneousFluxDifferentiation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HomogeneousFluxFTC.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HomogeneousFluxFTC",
+   "original_sha256": "29900b5d711e2212ae85994176c44094a569b6bea38274dcbd409c8100bef4c4",
+   "path": "OAI/Analysis/Mahler/HomogeneousFluxFTC.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HomogeneousMassAssembly.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HomogeneousMassAssembly",
+   "original_sha256": "adeef41de850349f05b61f71904c9ffe42ce974385ef778829f6a33da39e4e46",
+   "path": "OAI/Analysis/Mahler/HomogeneousMassAssembly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HomogeneousPrimitiveRegularity.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HomogeneousPrimitiveRegularity",
+   "original_sha256": "357e02cce0c0ad4b01de34fa7c3c8fb96bf3e2591aea96e6b479ef4f45dfe6f2",
+   "path": "OAI/Analysis/Mahler/HomogeneousPrimitiveRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HomogeneousSmoothForms.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HomogeneousSmoothForms",
+   "original_sha256": "14cb664f35899c47a4bfc8bb6e7a41b88bffc17c84e7f982b06a97ca4113898c",
+   "path": "OAI/Analysis/Mahler/HomogeneousSmoothForms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HomogeneousSphereIntegral.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HomogeneousSphereIntegral",
+   "original_sha256": "54ba786bc1ee29dcee8f7ac0b492684f5991ad241a635a9a2b63af71fc4dcd17",
+   "path": "OAI/Analysis/Mahler/HomogeneousSphereIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HomogeneousTransgression.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HomogeneousTransgression",
+   "original_sha256": "70ddaa59dd91b03c9d2446aa05c52fcf2a25a82d581b9544caefee612a2d8bc1",
+   "path": "OAI/Analysis/Mahler/HomogeneousTransgression.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HomogeneousTransgressionFTC.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HomogeneousTransgressionFTC",
+   "original_sha256": "b4d2389c84dee13ef8d3522b3fb364a53b905a7690493e9a44de855247587762",
+   "path": "OAI/Analysis/Mahler/HomogeneousTransgressionFTC.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HomogeneousVariationCoefficient.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HomogeneousVariationCoefficient",
+   "original_sha256": "ebe7a93d5d1644e027478b3e9ddee030319d607178f8f39f2cd030405926fa83",
+   "path": "OAI/Analysis/Mahler/HomogeneousVariationCoefficient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/HorizontalForms.lean"
+   },
+   "module": "OAI.Analysis.Mahler.HorizontalForms",
+   "original_sha256": "5ecf0de601a9be291a0670a73bce254f94253b512d3017a01474435f623b76b9",
+   "path": "OAI/Analysis/Mahler/HorizontalForms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ImplicitAngle.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ImplicitAngle",
+   "original_sha256": "74c28a141cd7783d6e0aab713f31f1137283da27d2354ec4aec507f16d13ceb3",
+   "path": "OAI/Analysis/Mahler/ImplicitAngle.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/InteriorStokes.lean"
+   },
+   "module": "OAI.Analysis.Mahler.InteriorStokes",
+   "original_sha256": "3a1afac809b2fbe19fdcf7223bd50db4d83844d098167db9be89b63e993cdd9f",
+   "path": "OAI/Analysis/Mahler/InteriorStokes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/InverseRadialRegularity.lean"
+   },
+   "module": "OAI.Analysis.Mahler.InverseRadialRegularity",
+   "original_sha256": "74bd25d7f469b030f2c4660be45090a9113f38da72a7dc1ea8a1fcd392c990e7",
+   "path": "OAI/Analysis/Mahler/InverseRadialRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/Jacobian.lean"
+   },
+   "module": "OAI.Analysis.Mahler.Jacobian",
+   "original_sha256": "1d282e7a68dc9ffd032ae5486cc3d15877aa4353d688bba8304089125bdb70f2",
+   "path": "OAI/Analysis/Mahler/Jacobian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/Lens.lean"
+   },
+   "module": "OAI.Analysis.Mahler.Lens",
+   "original_sha256": "4ecfd95588715a1ce202664cd31a8498ad84dc0b41410649aa149c879691a853",
+   "path": "OAI/Analysis/Mahler/Lens.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/LevelFace.lean"
+   },
+   "module": "OAI.Analysis.Mahler.LevelFace",
+   "original_sha256": "5fa5a82554af45c94a5829e4f8a9c79ce18d367a756e6b8802652cef5bbd684a",
+   "path": "OAI/Analysis/Mahler/LevelFace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/LevelForms.lean"
+   },
+   "module": "OAI.Analysis.Mahler.LevelForms",
+   "original_sha256": "96bbb3adf344a31939b85d74f567ea2804a855cbd4e4b23d37eb6224124369ff",
+   "path": "OAI/Analysis/Mahler/LevelForms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/LogDilation.lean"
+   },
+   "module": "OAI.Analysis.Mahler.LogDilation",
+   "original_sha256": "35985c773f415abf3de8f7d0067058dffba4dbf95542468345db07e5aa9a6874",
+   "path": "OAI/Analysis/Mahler/LogDilation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/LogJet.lean"
+   },
+   "module": "OAI.Analysis.Mahler.LogJet",
+   "original_sha256": "8420702727a58f03f1997950844dd8b70539f2cca10512d0c11a7164245c9d6c",
+   "path": "OAI/Analysis/Mahler/LogJet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/LogNormSquare.lean"
+   },
+   "module": "OAI.Analysis.Mahler.LogNormSquare",
+   "original_sha256": "cf1d0fd8291b3243291d3f7d7f04067fe38b6b9f01969588af775758b7a0ea78",
+   "path": "OAI/Analysis/Mahler/LogNormSquare.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/LogScalarJet.lean"
+   },
+   "module": "OAI.Analysis.Mahler.LogScalarJet",
+   "original_sha256": "dbfce09fe51d975cacd0d8449933df3c4933b215616e3722a90dba280d488ce1",
+   "path": "OAI/Analysis/Mahler/LogScalarJet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/LogUniform.lean"
+   },
+   "module": "OAI.Analysis.Mahler.LogUniform",
+   "original_sha256": "09126709bf8363b9abe61a3ba537fc394c8b6b084a0531120fe4375a97516c1f",
+   "path": "OAI/Analysis/Mahler/LogUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/MainTheorem.lean"
+   },
+   "module": "OAI.Analysis.Mahler.MainTheorem",
+   "original_sha256": "ff4222bb24b6b48e571c63a481f6cbe430ce68f8c707da065c2117d7e94f058e",
+   "path": "OAI/Analysis/Mahler/MainTheorem.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/MassLimit.lean"
+   },
+   "module": "OAI.Analysis.Mahler.MassLimit",
+   "original_sha256": "200e171fc9b1e8b21d779a94410fd66900b22771ae65a5b700a3d04a7e0f1d5a",
+   "path": "OAI/Analysis/Mahler/MassLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/MassTarget.lean"
+   },
+   "module": "OAI.Analysis.Mahler.MassTarget",
+   "original_sha256": "01e57540d5c45e9e507bc81593a66fda96c20e95c262b9bddfe4cfd4b1369112",
+   "path": "OAI/Analysis/Mahler/MassTarget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/MatrixExteriorPower.lean"
+   },
+   "module": "OAI.Analysis.Mahler.MatrixExteriorPower",
+   "original_sha256": "468f31df5f6d68166418962e5bb354487b696444848a5fd9dabba6a52a31361e",
+   "path": "OAI/Analysis/Mahler/MatrixExteriorPower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/MatrixHessian.lean"
+   },
+   "module": "OAI.Analysis.Mahler.MatrixHessian",
+   "original_sha256": "3a89361f59b8b5e97335b0d06b6631a5fca42bb4aa70d9f1dfe903d596aeb7f0",
+   "path": "OAI/Analysis/Mahler/MatrixHessian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/Medians.lean"
+   },
+   "module": "OAI.Analysis.Mahler.Medians",
+   "original_sha256": "147ad57541fd30758f6b39624bcc7a01c4850267898f23a999ca5b68fa6ba7fc",
+   "path": "OAI/Analysis/Mahler/Medians.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/NormExteriorPower.lean"
+   },
+   "module": "OAI.Analysis.Mahler.NormExteriorPower",
+   "original_sha256": "e1539c93e0688b000ca90bb2b9590771c400fa613d7d3779e404e72f11f07454",
+   "path": "OAI/Analysis/Mahler/NormExteriorPower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/NormSquareForm.lean"
+   },
+   "module": "OAI.Analysis.Mahler.NormSquareForm",
+   "original_sha256": "d1d4f2025572a7fa0b1e189f82616ef361671e987485da8c483e7e137debc29d",
+   "path": "OAI/Analysis/Mahler/NormSquareForm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/NormSquareJet.lean"
+   },
+   "module": "OAI.Analysis.Mahler.NormSquareJet",
+   "original_sha256": "a81e9af55c150ed94acf17a7b93364db7bdbe09ddbe13b1bd18aabc43018e80c",
+   "path": "OAI/Analysis/Mahler/NormSquareJet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/OpenExteriorNormalization.lean"
+   },
+   "module": "OAI.Analysis.Mahler.OpenExteriorNormalization",
+   "original_sha256": "df29b4d468d09700b2ac5abbfa0d79611c922eef441bdc36e8533a2f2f25e544",
+   "path": "OAI/Analysis/Mahler/OpenExteriorNormalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/OpenHessian.lean"
+   },
+   "module": "OAI.Analysis.Mahler.OpenHessian",
+   "original_sha256": "0d1da26b55219e834bf9649c083dc2a4beca4517651b1142d52dfd374052436c",
+   "path": "OAI/Analysis/Mahler/OpenHessian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/OrientedChartIntegral.lean"
+   },
+   "module": "OAI.Analysis.Mahler.OrientedChartIntegral",
+   "original_sha256": "49264b56192e1b4c12c75470d4b50dc2c55a03485541d9cd5370072a6cb86e9e",
+   "path": "OAI/Analysis/Mahler/OrientedChartIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/OrientedSphereDensity.lean"
+   },
+   "module": "OAI.Analysis.Mahler.OrientedSphereDensity",
+   "original_sha256": "2a994d2f78da188839b0ecb28b6f542e226465d722d6c315c6d57847fef47854",
+   "path": "OAI/Analysis/Mahler/OrientedSphereDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/PairExteriorBridge.lean"
+   },
+   "module": "OAI.Analysis.Mahler.PairExteriorBridge",
+   "original_sha256": "d9a143a43c501de833f1408ef58bbed873d90014d7bac726d53babf11bd8d01f",
+   "path": "OAI/Analysis/Mahler/PairExteriorBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/PairTransgression.lean"
+   },
+   "module": "OAI.Analysis.Mahler.PairTransgression",
+   "original_sha256": "8068b41f49e8964108c3a78e119f3499ae1db065f7bf52f9ef9999ec729b3295",
+   "path": "OAI/Analysis/Mahler/PairTransgression.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/PlanarDensity.lean"
+   },
+   "module": "OAI.Analysis.Mahler.PlanarDensity",
+   "original_sha256": "7cd23d9f109bf1addafb52a91d01b12d01ff8fd5ec3d4abca8f2c2973d913783",
+   "path": "OAI/Analysis/Mahler/PlanarDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/PlanarErrorRate.lean"
+   },
+   "module": "OAI.Analysis.Mahler.PlanarErrorRate",
+   "original_sha256": "18c4bf56c128644e2e241fc399d226ff19cc754635f98a8317a7cd0fcf0fd704",
+   "path": "OAI/Analysis/Mahler/PlanarErrorRate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/PlanarEstimates.lean"
+   },
+   "module": "OAI.Analysis.Mahler.PlanarEstimates",
+   "original_sha256": "98fd9dc89a82e7f4387d8147597e7630e521dc0fe5bd494817905ce3245a65f0",
+   "path": "OAI/Analysis/Mahler/PlanarEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/PlanarIntegralRegularity.lean"
+   },
+   "module": "OAI.Analysis.Mahler.PlanarIntegralRegularity",
+   "original_sha256": "1ef826a51d18f7562f154746373bdc6534c6a1c773c8494deee7172e75faa5dc",
+   "path": "OAI/Analysis/Mahler/PlanarIntegralRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/PlanarRegularity.lean"
+   },
+   "module": "OAI.Analysis.Mahler.PlanarRegularity",
+   "original_sha256": "78c1838cedab91f51d6cb75c7afca11e36f9b78fe2b852fd6acd783caa49bc5e",
+   "path": "OAI/Analysis/Mahler/PlanarRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/PlanarSymmetry.lean"
+   },
+   "module": "OAI.Analysis.Mahler.PlanarSymmetry",
+   "original_sha256": "9b842e82cbcd875428f48f5eb4de017f3666be7abe0a415cc70c20017ab70da2",
+   "path": "OAI/Analysis/Mahler/PlanarSymmetry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/Positivity.lean"
+   },
+   "module": "OAI.Analysis.Mahler.Positivity",
+   "original_sha256": "ca1422abd1fc1a150f5f5a880f50d0f73954940d33d09f9a88a1ddf28ad82862",
+   "path": "OAI/Analysis/Mahler/Positivity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/PowerTransgression.lean"
+   },
+   "module": "OAI.Analysis.Mahler.PowerTransgression",
+   "original_sha256": "930eeedf56aadd16a0309d6128f6c3232cfddbe5a85fd74456200b67b023a1fd",
+   "path": "OAI/Analysis/Mahler/PowerTransgression.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/PrimitiveBound.lean"
+   },
+   "module": "OAI.Analysis.Mahler.PrimitiveBound",
+   "original_sha256": "cb5371f615129da3d8d3d256864fc4351c436a68b7cda88c4c1e8523a3f9b5f4",
+   "path": "OAI/Analysis/Mahler/PrimitiveBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/PrimitiveEquality.lean"
+   },
+   "module": "OAI.Analysis.Mahler.PrimitiveEquality",
+   "original_sha256": "a6867f727a70e274bee6a64c0c848b38bc4634d39093cce47f2ddbb29338aa58",
+   "path": "OAI/Analysis/Mahler/PrimitiveEquality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/PrimitiveRegularity.lean"
+   },
+   "module": "OAI.Analysis.Mahler.PrimitiveRegularity",
+   "original_sha256": "bc4939677c42832650e66bd2144760724dfab5ff49fb52cef28662698c136736",
+   "path": "OAI/Analysis/Mahler/PrimitiveRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/PullbackRegularity.lean"
+   },
+   "module": "OAI.Analysis.Mahler.PullbackRegularity",
+   "original_sha256": "2235eac81d96f7416ede7c4cfd920ea167e96ca49f68cbd9e5bd4266bc434ff4",
+   "path": "OAI/Analysis/Mahler/PullbackRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/PunctureCutoff.lean"
+   },
+   "module": "OAI.Analysis.Mahler.PunctureCutoff",
+   "original_sha256": "9deb86be8ed19e0d1e9f69561554e73ee64cc5866bed349c353a254e6f1fa00f",
+   "path": "OAI/Analysis/Mahler/PunctureCutoff.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/PuncturedBallStokes.lean"
+   },
+   "module": "OAI.Analysis.Mahler.PuncturedBallStokes",
+   "original_sha256": "d193427589b3011247d8a5eb8a3ee41ecdb9ba4e474c272b83bfca9750ec97aa",
+   "path": "OAI/Analysis/Mahler/PuncturedBallStokes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/PuncturedSublevelStokes.lean"
+   },
+   "module": "OAI.Analysis.Mahler.PuncturedSublevelStokes",
+   "original_sha256": "74fdfab067e2d19be5697c3a3b478bad9eae19631105e4d416f2e06cada00181",
+   "path": "OAI/Analysis/Mahler/PuncturedSublevelStokes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RadialBridge.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RadialBridge",
+   "original_sha256": "347515c172d32dfebeddbb6e53ad216bb0d75596e4b2582061c7a3a2da96c1e8",
+   "path": "OAI/Analysis/Mahler/RadialBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RadialPrimitiveDeriv.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RadialPrimitiveDeriv",
+   "original_sha256": "b5aeb55198d5c45a37370446f0581634e78bb4c4729c21d7f16e58d4f18a84c0",
+   "path": "OAI/Analysis/Mahler/RadialPrimitiveDeriv.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RawAlternatingCalculus.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RawAlternatingCalculus",
+   "original_sha256": "7efa2a1a075c2c45070b31eeb9159812056406b43ab3c026faaf43217ad8a55b",
+   "path": "OAI/Analysis/Mahler/RawAlternatingCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RawAlternationDerivative.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RawAlternationDerivative",
+   "original_sha256": "2a6d2569b2e471e560e42c92037083a25d4ea03f9e6010123e3b871af45fe247",
+   "path": "OAI/Analysis/Mahler/RawAlternationDerivative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RawClosedPower.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RawClosedPower",
+   "original_sha256": "45f5a67b3262fdc646f41b4a35f88dbf761cb93d861cca5a0913ba4f60a89a5c",
+   "path": "OAI/Analysis/Mahler/RawClosedPower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RawClosedProduct.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RawClosedProduct",
+   "original_sha256": "2fdf9b904e9ea32b06ffd7dbf133b28f9a15a8777d464233a3bb55b66d316181",
+   "path": "OAI/Analysis/Mahler/RawClosedProduct.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RawCoefficientDerivative.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RawCoefficientDerivative",
+   "original_sha256": "c73ca45d3d9eb2d29d707e5fcd661a020ff8e1494e52c3a2e70c61237309d234",
+   "path": "OAI/Analysis/Mahler/RawCoefficientDerivative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RawExteriorPower.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RawExteriorPower",
+   "original_sha256": "69b152c7e91c72343005664adee3b90a857536b96ddd09986003540ee7a87b10",
+   "path": "OAI/Analysis/Mahler/RawExteriorPower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RawReindexedDerivative.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RawReindexedDerivative",
+   "original_sha256": "2ad1206c0a8f42146466398e7b0e57b829c8de8f9da7b76d6c15f2569da63f7e",
+   "path": "OAI/Analysis/Mahler/RawReindexedDerivative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RealLogBridge.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RealLogBridge",
+   "original_sha256": "cf3d5f00fa4249684af584aaf909806ff2afa9fafdf75420998e20d5e7aa6266",
+   "path": "OAI/Analysis/Mahler/RealLogBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ReferencePole.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ReferencePole",
+   "original_sha256": "b2204832d888df234b11b543abdaee0382fe76faaac5facdb61382ee11998a20",
+   "path": "OAI/Analysis/Mahler/ReferencePole.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ReferencePoleFrame.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ReferencePoleFrame",
+   "original_sha256": "f3ac4eae47308e45755f7dd5f157a461a5cd01c9bbe42f2f00a33a340160748b",
+   "path": "OAI/Analysis/Mahler/ReferencePoleFrame.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ReferenceSphere.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ReferenceSphere",
+   "original_sha256": "53d45e8091f92163157642b65c1625abba0b3711718d830ad06a8c91b7dda6ff",
+   "path": "OAI/Analysis/Mahler/ReferenceSphere.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ReferenceSphereIntegral.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ReferenceSphereIntegral",
+   "original_sha256": "3fb0fb065bc874d1a1bd322b55f4a9ac7729b5e1fcf41ae0843d6a7bf46864e8",
+   "path": "OAI/Analysis/Mahler/ReferenceSphereIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RegularBoundaryAtlas.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RegularBoundaryAtlas",
+   "original_sha256": "c238842a79dabc37568b274e49979bc38c6be060bb22fe4fe3e88e345abc97f5",
+   "path": "OAI/Analysis/Mahler/RegularBoundaryAtlas.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RegularChartStokes.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RegularChartStokes",
+   "original_sha256": "c6f09e9cc9ecb392bd832a9c4c329b877baf2ba1cd014a6528aecc1e7642dbe4",
+   "path": "OAI/Analysis/Mahler/RegularChartStokes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RegularLevelCharts.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RegularLevelCharts",
+   "original_sha256": "355adc7953340365db21863f6620f017be940ad78af4fae2383a9e4fdd1dbe3a",
+   "path": "OAI/Analysis/Mahler/RegularLevelCharts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RegularMassReduction.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RegularMassReduction",
+   "original_sha256": "f64a9ba55f2a56270e536bcecd5b1b327dbdf77f703cc55a7570b0b94d881cdb",
+   "path": "OAI/Analysis/Mahler/RegularMassReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RegularPartition.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RegularPartition",
+   "original_sha256": "f220171101ef8e36b7a1a1332172fada2c5bdd0fc7d08083fc0c4aa30e545f5d",
+   "path": "OAI/Analysis/Mahler/RegularPartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RegularStokesAssembly.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RegularStokesAssembly",
+   "original_sha256": "cbf48bc17702250c8db0d0dc47d08c1098a33d9ae7ac0ebeccf853a8bbd509c5",
+   "path": "OAI/Analysis/Mahler/RegularStokesAssembly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RegularSublevel.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RegularSublevel",
+   "original_sha256": "fbda5b6f84e879e849831616677cbcc91470e876e2f30c2af16c642ac0b68052",
+   "path": "OAI/Analysis/Mahler/RegularSublevel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RescaledHolomorphic.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RescaledHolomorphic",
+   "original_sha256": "edb1a903401a72f20749d95e37317128a5de925882f3af851ce8aaab6640f0f8",
+   "path": "OAI/Analysis/Mahler/RescaledHolomorphic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RescaledMassMap.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RescaledMassMap",
+   "original_sha256": "2fe7ef3106fae942c36c5390b6937c413c492f3c964bc13c563cea68add1daaa",
+   "path": "OAI/Analysis/Mahler/RescaledMassMap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/RescalingEstimates.lean"
+   },
+   "module": "OAI.Analysis.Mahler.RescalingEstimates",
+   "original_sha256": "343d4b9166dbf42e687b4d28acaa8e83fa15bb573e85870bb95eda49274d7bf9",
+   "path": "OAI/Analysis/Mahler/RescalingEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/ShellRegularity.lean"
+   },
+   "module": "OAI.Analysis.Mahler.ShellRegularity",
+   "original_sha256": "3684a2cc99681e57388962a2232f93eefbe66fa97320f044db650b41130d25f2",
+   "path": "OAI/Analysis/Mahler/ShellRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SineBound.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SineBound",
+   "original_sha256": "12df98fcc968a8062460bd80dd0887d850555cfec551615eeb5f7a1b2bcee015",
+   "path": "OAI/Analysis/Mahler/SineBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SmallSphereLimits.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SmallSphereLimits",
+   "original_sha256": "eb5d43dedffa80806ef025c0f5551306559713df1a514887884a068c325fe69f",
+   "path": "OAI/Analysis/Mahler/SmallSphereLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceBoundaryIntegral.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceBoundaryIntegral",
+   "original_sha256": "379919fd9599489b020443ce1c206cc9f5261ec8eff83fca26b9f8a5c0f21b1d",
+   "path": "OAI/Analysis/Mahler/SourceBoundaryIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceCanonicalMeasure.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceCanonicalMeasure",
+   "original_sha256": "7f47853248e3b555774bf7bfb48dea0a9ae13275f9d564cf0b24fba802b5d7e1",
+   "path": "OAI/Analysis/Mahler/SourceCanonicalMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceCoordinateExterior.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceCoordinateExterior",
+   "original_sha256": "436d22e2f8a42501245c0e17e0498cf98451f4fee25881ede92f32a8a36cea9e",
+   "path": "OAI/Analysis/Mahler/SourceCoordinateExterior.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceCoordinateForms.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceCoordinateForms",
+   "original_sha256": "5fd6ae3f8aa78b34bd5f931321ef68bf292876e9dbcc2abfcc992f12465e8bb6",
+   "path": "OAI/Analysis/Mahler/SourceCoordinateForms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceCoordinateMeasure.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceCoordinateMeasure",
+   "original_sha256": "e50dec7ac67cb777b99f64a3f054230f4dbd62fc36ec1569550dba8075e71a36",
+   "path": "OAI/Analysis/Mahler/SourceCoordinateMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceExteriorDerivative.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceExteriorDerivative",
+   "original_sha256": "61ace8da998669df4cf43db0fce2500e565d8fb254f8001bd230389297ea71df",
+   "path": "OAI/Analysis/Mahler/SourceExteriorDerivative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceFluxCoordinates.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceFluxCoordinates",
+   "original_sha256": "a41d5c89bd84a5df6f0d41195a4f0d218dfe3afd81ddbee3c1b8f355d433e7f6",
+   "path": "OAI/Analysis/Mahler/SourceFluxCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceFluxRegularity.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceFluxRegularity",
+   "original_sha256": "e303475e70234fb4ad3fe3ced763f99b6d5caadf31eb3fe6ff0b9102b9f119df",
+   "path": "OAI/Analysis/Mahler/SourceFluxRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceFullExterior.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceFullExterior",
+   "original_sha256": "81664eaa0efb483fdd3f9462a704bdeeab9f9344105f5f556d4a629198a3afe9",
+   "path": "OAI/Analysis/Mahler/SourceFullExterior.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceHomogeneous.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceHomogeneous",
+   "original_sha256": "b5e2b96a153abcf3df2aaac9cb99d002cb29588799a0184bad3f8d663e15cfb9",
+   "path": "OAI/Analysis/Mahler/SourceHomogeneous.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceLevelFlux.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceLevelFlux",
+   "original_sha256": "f4c38d717e86ed1399509453dbb3adda674f07a09a4d655a3645873b16976b63",
+   "path": "OAI/Analysis/Mahler/SourceLevelFlux.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceLogC2.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceLogC2",
+   "original_sha256": "9c1db52b86c741ea6beac05df36148b6508acdf78d6579a0b13194e5bc40a4d7",
+   "path": "OAI/Analysis/Mahler/SourceLogC2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourcePrimitiveStokes.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourcePrimitiveStokes",
+   "original_sha256": "c1f857871d04b7b08501684635d578933ea07ee7a70558a11188f920a85e3def",
+   "path": "OAI/Analysis/Mahler/SourcePrimitiveStokes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceRadiusFlux.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceRadiusFlux",
+   "original_sha256": "4a60c1f74db317cb27e94270b9b834b0f9d9332e678ab16f80cc15c88d4d9ac5",
+   "path": "OAI/Analysis/Mahler/SourceRadiusFlux.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceRawCoefficient.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceRawCoefficient",
+   "original_sha256": "3ab335701352a87a386070084d6a6f56797f1e5e4d68d51dbcdfc82795a28acb",
+   "path": "OAI/Analysis/Mahler/SourceRawCoefficient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceRawJets.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceRawJets",
+   "original_sha256": "3d8a905d4b28db688d0f91ced298c5d011a03f411204929e3af97a3734da8a55",
+   "path": "OAI/Analysis/Mahler/SourceRawJets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceRawOrientation.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceRawOrientation",
+   "original_sha256": "1a642f2757ad3fb114d1a8b56bb57b0d72476e46d10ec53de79d1a1ed2824f0f",
+   "path": "OAI/Analysis/Mahler/SourceRawOrientation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceRealExterior.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceRealExterior",
+   "original_sha256": "3908ed57c2b4cf6d60876fcefbcde2cd27397297f5faa68cb63ec8ab6b044378",
+   "path": "OAI/Analysis/Mahler/SourceRealExterior.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceRegularFlux.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceRegularFlux",
+   "original_sha256": "c7b77565b8a08faf0cf64fd8a6e42ec31d6fe122552747408ddb09339afa38dd",
+   "path": "OAI/Analysis/Mahler/SourceRegularFlux.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceRegularLimit.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceRegularLimit",
+   "original_sha256": "55fcf1fc52d0c0fa341392bbace8ab52e7f7cdefd0917b6d0c01b99619b5b36d",
+   "path": "OAI/Analysis/Mahler/SourceRegularLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceRegularMass.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceRegularMass",
+   "original_sha256": "14b6f3bbfc05f5971f482d848efd0644d3dc1ed8bc229d3676fb7dd550e6a352",
+   "path": "OAI/Analysis/Mahler/SourceRegularMass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceRescaling.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceRescaling",
+   "original_sha256": "5730a72e37de30152bf379f5ac802bdd955533d7d761fa186cd559f0e70dba90",
+   "path": "OAI/Analysis/Mahler/SourceRescaling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceSphereLimit.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceSphereLimit",
+   "original_sha256": "672fb25b8b43d36f098cc4690eab9b73ddbcf0d2704f9f9dbd1882ea69cc7f57",
+   "path": "OAI/Analysis/Mahler/SourceSphereLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceStokes.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceStokes",
+   "original_sha256": "406270e14cad59ec0b49a9fcff2c4305057a5ed9da6289650f1e7cf567431c1a",
+   "path": "OAI/Analysis/Mahler/SourceStokes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SourceTopCoordinates.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SourceTopCoordinates",
+   "original_sha256": "c6aaddbabbacbe67386898b0bbaab0f7981846e8d247d4a23e905dfde83112a4",
+   "path": "OAI/Analysis/Mahler/SourceTopCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SpecialJacobian.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SpecialJacobian",
+   "original_sha256": "e974270ee3bbf000d80218c85e9ca60eec34c906cbb7cb4641e14f01463ba00d",
+   "path": "OAI/Analysis/Mahler/SpecialJacobian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SpecialLeadingTerm.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SpecialLeadingTerm",
+   "original_sha256": "3a7eafec1688c2bcf6070155ed2ead2541685ae8c89ac03fe928a7206a7e10ed",
+   "path": "OAI/Analysis/Mahler/SpecialLeadingTerm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SpecialMassBridge.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SpecialMassBridge",
+   "original_sha256": "2b4fdae57a67f65f329f550fe25860295e576e1aeb81ad69261ccf7401907a35",
+   "path": "OAI/Analysis/Mahler/SpecialMassBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SpecialMassHypotheses.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SpecialMassHypotheses",
+   "original_sha256": "0d9fbc4e0c7cb1a076cac32cc2e4429d57457dbb56b5591250b09523cec578a6",
+   "path": "OAI/Analysis/Mahler/SpecialMassHypotheses.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SpecialSourceMass.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SpecialSourceMass",
+   "original_sha256": "5ca6f729dd257889d261226f9d97acc99f33acade382286344e6f2ddfc9916a0",
+   "path": "OAI/Analysis/Mahler/SpecialSourceMass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SphereAreaTransport.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SphereAreaTransport",
+   "original_sha256": "f21e44a034b0514f8b7d8adb91648d4bd4a2050dd1d612f87f1ec33b42725b1d",
+   "path": "OAI/Analysis/Mahler/SphereAreaTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SphereCoordinateIntegral.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SphereCoordinateIntegral",
+   "original_sha256": "e9a4912ec843773c54b224589de86f7f2812c74da173fdda46e087d0e5d474a6",
+   "path": "OAI/Analysis/Mahler/SphereCoordinateIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SphereDensityBridge.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SphereDensityBridge",
+   "original_sha256": "58c31b9f1d45f477830308c2b24ec0c69f42d0318a3d56db544e3fa033d268a6",
+   "path": "OAI/Analysis/Mahler/SphereDensityBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SphereDensityRestriction.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SphereDensityRestriction",
+   "original_sha256": "af8a40dcee2703fd82c1988cccd4c85a914530facda318001d95188619c8333c",
+   "path": "OAI/Analysis/Mahler/SphereDensityRestriction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SphereFlux.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SphereFlux",
+   "original_sha256": "b8f8948fce493d6a76d4fc2a1688f90a607141f78da2c665f6e50030830ca9cc",
+   "path": "OAI/Analysis/Mahler/SphereFlux.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SphereFluxDifferentiation.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SphereFluxDifferentiation",
+   "original_sha256": "f86300ac3381e572426f9fd1f093b8883419d46da0b9b444ffbc2acd1e019501",
+   "path": "OAI/Analysis/Mahler/SphereFluxDifferentiation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SphereFluxIntegral.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SphereFluxIntegral",
+   "original_sha256": "2c36657d99988f82e64c31880f088fb89914ed220fd590e5747c6c4931568bc7",
+   "path": "OAI/Analysis/Mahler/SphereFluxIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SphereFluxLimit.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SphereFluxLimit",
+   "original_sha256": "55d08da46ef7614584d6958a3b71ac8511e3fd3bd3a49b2a943889f17bc9f033",
+   "path": "OAI/Analysis/Mahler/SphereFluxLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SphereForms.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SphereForms",
+   "original_sha256": "ec25a18b86b5df18348a571ed2b506a2856513f55dcdeb26d169bf9b8c911556",
+   "path": "OAI/Analysis/Mahler/SphereForms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SphereNormalization.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SphereNormalization",
+   "original_sha256": "b4ad2bdd97ca4b182dbcdf120762fe33f6c02d0a00c49a25a97c78a5f2ad771e",
+   "path": "OAI/Analysis/Mahler/SphereNormalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SphereOrientation.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SphereOrientation",
+   "original_sha256": "ceb5b9f43f6c264459f05f2954ac724a5d88b46dad619170ab12dc1d17ecd635",
+   "path": "OAI/Analysis/Mahler/SphereOrientation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SphereRadius.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SphereRadius",
+   "original_sha256": "6d91fc8f673ce8b5c321f66eed542a744d12d78082442561e3aa40a61115cfbc",
+   "path": "OAI/Analysis/Mahler/SphereRadius.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SphereTransport.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SphereTransport",
+   "original_sha256": "83d095461c29cb2f95287a4006af13d1d25b3d676bbec0bc0ddc2e08e582ca56",
+   "path": "OAI/Analysis/Mahler/SphereTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/SphereVolumeOrientation.lean"
+   },
+   "module": "OAI.Analysis.Mahler.SphereVolumeOrientation",
+   "original_sha256": "51be8f3534aefcea5a60bf5d2c763c51bc474cd413aa6722cc82efc9c8a8f737",
+   "path": "OAI/Analysis/Mahler/SphereVolumeOrientation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/Splitting.lean"
+   },
+   "module": "OAI.Analysis.Mahler.Splitting",
+   "original_sha256": "7b286af0d2ca9b26aff15a412e58ae5ea4ef0061d673b2bc884fd43756a51d2b",
+   "path": "OAI/Analysis/Mahler/Splitting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/StripCompactSublevels.lean"
+   },
+   "module": "OAI.Analysis.Mahler.StripCompactSublevels",
+   "original_sha256": "72f28d5333d2db6f8e64e8004deafd985e9a57ed6cb89bea63c6b008f4c8c269",
+   "path": "OAI/Analysis/Mahler/StripCompactSublevels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/StripDifferential.lean"
+   },
+   "module": "OAI.Analysis.Mahler.StripDifferential",
+   "original_sha256": "52c6221efcfd9698d31a9ae0fa74762b85e1c6f8fb52c0c638787594b02b6f45",
+   "path": "OAI/Analysis/Mahler/StripDifferential.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/StripGeometry.lean"
+   },
+   "module": "OAI.Analysis.Mahler.StripGeometry",
+   "original_sha256": "8fed8d9d2ccf20bfc374bff60a8ec0c66ee99e7ed80109ed20278084266717b4",
+   "path": "OAI/Analysis/Mahler/StripGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/StripJacobian.lean"
+   },
+   "module": "OAI.Analysis.Mahler.StripJacobian",
+   "original_sha256": "4b2d335d921266d78d2b81b58f99a36977c73007f961f8fd25fabd1aa1ed8dfc",
+   "path": "OAI/Analysis/Mahler/StripJacobian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/StripLevelGeometry.lean"
+   },
+   "module": "OAI.Analysis.Mahler.StripLevelGeometry",
+   "original_sha256": "1fc1973db92e23bab56f4c35f1022c1f0b2ac978b2bc8c201ab13bd4ea58403a",
+   "path": "OAI/Analysis/Mahler/StripLevelGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/StripMassExhaustion.lean"
+   },
+   "module": "OAI.Analysis.Mahler.StripMassExhaustion",
+   "original_sha256": "0ec468f18bf02882edcee9a502a94dddd1580ddd521722f89926dc9a17c0f2fa",
+   "path": "OAI/Analysis/Mahler/StripMassExhaustion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/StripRankGeometry.lean"
+   },
+   "module": "OAI.Analysis.Mahler.StripRankGeometry",
+   "original_sha256": "5ef8dccd9ee975e577de01a48675630e8b24e6cf4d53c46c3d1364879cffbb19",
+   "path": "OAI/Analysis/Mahler/StripRankGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/StripRegularLevels.lean"
+   },
+   "module": "OAI.Analysis.Mahler.StripRegularLevels",
+   "original_sha256": "afa9b3f31efeea896fca7f51c8883234d441d430395fa44b843f571a26753b73",
+   "path": "OAI/Analysis/Mahler/StripRegularLevels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/StripRegularValues.lean"
+   },
+   "module": "OAI.Analysis.Mahler.StripRegularValues",
+   "original_sha256": "85307a7c093440986c71b7293060d94a6ecdd5ebe47e9ecf30b417fb34ae03e3",
+   "path": "OAI/Analysis/Mahler/StripRegularValues.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/StripSublevelTopology.lean"
+   },
+   "module": "OAI.Analysis.Mahler.StripSublevelTopology",
+   "original_sha256": "5437c4e1153f6b53c99a2f78a01789a19ea19c804b7f5e7c72a391afc8614dd4",
+   "path": "OAI/Analysis/Mahler/StripSublevelTopology.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/StripVolume.lean"
+   },
+   "module": "OAI.Analysis.Mahler.StripVolume",
+   "original_sha256": "b2925301b264893c1ee6ff9e0038714bffa4ddbb94e6b58177d9938e980e8d26",
+   "path": "OAI/Analysis/Mahler/StripVolume.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/TailIntegral.lean"
+   },
+   "module": "OAI.Analysis.Mahler.TailIntegral",
+   "original_sha256": "66777e1051d53684ab459323ee3b1509645143e61a1cba255dad0dc34def754b",
+   "path": "OAI/Analysis/Mahler/TailIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/UniformError.lean"
+   },
+   "module": "OAI.Analysis.Mahler.UniformError",
+   "original_sha256": "7a7d9cfc7ef2e5e3edaa55e8447b00371f81b8777f35e566af86a378d7d1b247",
+   "path": "OAI/Analysis/Mahler/UniformError.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/UniformJet.lean"
+   },
+   "module": "OAI.Analysis.Mahler.UniformJet",
+   "original_sha256": "480087e4b84184665aaf7eb186cb98bc1d016298a8843394989e513b6fd321fe",
+   "path": "OAI/Analysis/Mahler/UniformJet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/UnitaryReference.lean"
+   },
+   "module": "OAI.Analysis.Mahler.UnitaryReference",
+   "original_sha256": "98739168be3ddd8e8bec01f884694aa44774063fbbdfcc97968f9b87a4bb141d",
+   "path": "OAI/Analysis/Mahler/UnitaryReference.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/VerticalRadius.lean"
+   },
+   "module": "OAI.Analysis.Mahler.VerticalRadius",
+   "original_sha256": "cc4cda408743080ad31a38f501f7f593481666cfff15b2db205688f94fdd2c36",
+   "path": "OAI/Analysis/Mahler/VerticalRadius.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/VerticalSpeed.lean"
+   },
+   "module": "OAI.Analysis.Mahler.VerticalSpeed",
+   "original_sha256": "9451d3db3b1716f1f6fa523dc929b36ca4c07e2198749c594738537251dbb6bb",
+   "path": "OAI/Analysis/Mahler/VerticalSpeed.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/WedgeAlgebra.lean"
+   },
+   "module": "OAI.Analysis.Mahler.WedgeAlgebra",
+   "original_sha256": "3026c60e72cb8e7ab35e95ed1d53ef8cbc6cbff7854b357c1aca6bf162a3200b",
+   "path": "OAI/Analysis/Mahler/WedgeAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/WedgeAssociativity.lean"
+   },
+   "module": "OAI.Analysis.Mahler.WedgeAssociativity",
+   "original_sha256": "7f77b1d9925a44039dd08b61cb121215451fb917a3df93819acc687595e90f57",
+   "path": "OAI/Analysis/Mahler/WedgeAssociativity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/WedgeCalculus.lean"
+   },
+   "module": "OAI.Analysis.Mahler.WedgeCalculus",
+   "original_sha256": "e6c7ab5226c26b474af55e8cbb6e03933e6049485050a6cfac5365f3b42a6b29",
+   "path": "OAI/Analysis/Mahler/WedgeCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/WedgeDecomposition.lean"
+   },
+   "module": "OAI.Analysis.Mahler.WedgeDecomposition",
+   "original_sha256": "c1d40ffc61a8e46f4c8faff4cd77f7c13ff3af5897cc63f6083e91736f4a3189",
+   "path": "OAI/Analysis/Mahler/WedgeDecomposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/WedgeEven.lean"
+   },
+   "module": "OAI.Analysis.Mahler.WedgeEven",
+   "original_sha256": "1f118d1e2f92933efd4047b09c81f66d2e47ca3b9f408c5e89b46c3f24c0fd98",
+   "path": "OAI/Analysis/Mahler/WedgeEven.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/WedgeOne.lean"
+   },
+   "module": "OAI.Analysis.Mahler.WedgeOne",
+   "original_sha256": "93734abbf5ee5a76e1bab59b6725a0cbd45f1493896a81b2039716ba9441834b",
+   "path": "OAI/Analysis/Mahler/WedgeOne.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/WedgeTwoDifferentialAlgebra.lean"
+   },
+   "module": "OAI.Analysis.Mahler.WedgeTwoDifferentialAlgebra",
+   "original_sha256": "3fa331867939c27a5e5e67b4cd6fbfb30aecb15e651496da2dd7ce78be05a881",
+   "path": "OAI/Analysis/Mahler/WedgeTwoDifferentialAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Mahler/WedgeUnit.lean"
+   },
+   "module": "OAI.Analysis.Mahler.WedgeUnit",
+   "original_sha256": "5fa3db58867f47badd325a382a4adff9d1fbb3713caab424f87bad0d0f158ba7",
+   "path": "OAI/Analysis/Mahler/WedgeUnit.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.Mahler.ActualFiniteStrips",
+  "OAI.Analysis.Mahler.ActualVerticalPrimitive",
+  "OAI.Analysis.Mahler.AngularEndpoint",
+  "OAI.Analysis.Mahler.AngularFibers",
+  "OAI.Analysis.Mahler.AngularGeometry",
+  "OAI.Analysis.Mahler.AngularIntegrals",
+  "OAI.Analysis.Mahler.AngularStrip",
+  "OAI.Analysis.Mahler.BasisContinuousWedge",
+  "OAI.Analysis.Mahler.BoundaryJet",
+  "OAI.Analysis.Mahler.ChartExtension",
+  "OAI.Analysis.Mahler.ChartStokes",
+  "OAI.Analysis.Mahler.Classification",
+  "OAI.Analysis.Mahler.ClosedBoundaryStokes",
+  "OAI.Analysis.Mahler.ClosedWedgePowers",
+  "OAI.Analysis.Mahler.CompactFluxDifferentiation",
+  "OAI.Analysis.Mahler.CompactIntegral",
+  "OAI.Analysis.Mahler.ComplexCoordinates",
+  "OAI.Analysis.Mahler.ComplexStripMap",
+  "OAI.Analysis.Mahler.ComplexVolume",
+  "OAI.Analysis.Mahler.ConformalInjectivity",
+  "OAI.Analysis.Mahler.ConformalInverse",
+  "OAI.Analysis.Mahler.ConformalRadialRegularity",
+  "OAI.Analysis.Mahler.ConformalSeries",
+  "OAI.Analysis.Mahler.ContinuousWedge",
+  "OAI.Analysis.Mahler.ContinuousWedgeDerivative",
+  "OAI.Analysis.Mahler.ConvexApproximation",
+  "OAI.Analysis.Mahler.ConvexCompletion",
+  "OAI.Analysis.Mahler.ConvexENNRealTransfer",
+  "OAI.Analysis.Mahler.ConvexGeometry",
+  "OAI.Analysis.Mahler.ConvexMain",
+  "OAI.Analysis.Mahler.ConvexMassReduction",
+  "OAI.Analysis.Mahler.ConvexPolarBody",
+  "OAI.Analysis.Mahler.ConvexSequence",
+  "OAI.Analysis.Mahler.ConvexTransfer",
+  "OAI.Analysis.Mahler.CoordinateAnnulus",
+  "OAI.Analysis.Mahler.CoordinateBall",
+  "OAI.Analysis.Mahler.CoordinateEuclidean",
+  "OAI.Analysis.Mahler.CoordinateSphere",
+  "OAI.Analysis.Mahler.CovectorVolume",
+  "OAI.Analysis.Mahler.DCForms",
+  "OAI.Analysis.Mahler.DCRegularity",
+  "OAI.Analysis.Mahler.Diamonds",
+  "OAI.Analysis.Mahler.DilationTransport",
+  "OAI.Analysis.Mahler.EqualityMedians",
+  "OAI.Analysis.Mahler.ErrorBound",
+  "OAI.Analysis.Mahler.EuclideanMassDensity",
+  "OAI.Analysis.Mahler.EuclideanRegularLevels",
+  "OAI.Analysis.Mahler.EuclideanSpecialMap",
+  "OAI.Analysis.Mahler.ExactFormCoordinates",
+  "OAI.Analysis.Mahler.ExactSphereFluxBridge",
+  "OAI.Analysis.Mahler.ExactSphereStokes",
+  "OAI.Analysis.Mahler.ExteriorAlternatization",
+  "OAI.Analysis.Mahler.ExteriorCoefficient",
+  "OAI.Analysis.Mahler.ExteriorCoordinates",
+  "OAI.Analysis.Mahler.ExteriorDirectional",
+  "OAI.Analysis.Mahler.ExteriorFlux",
+  "OAI.Analysis.Mahler.ExteriorHessian",
+  "OAI.Analysis.Mahler.ExteriorLeibnizTwo",
+  "OAI.Analysis.Mahler.ExteriorPower",
+  "OAI.Analysis.Mahler.Faces",
+  "OAI.Analysis.Mahler.FiberEndpoint",
+  "OAI.Analysis.Mahler.FiberHeight",
+  "OAI.Analysis.Mahler.FiberPreimageEndpoint",
+  "OAI.Analysis.Mahler.FiberPrimitive",
+  "OAI.Analysis.Mahler.FiniteStripReduction",
+  "OAI.Analysis.Mahler.FiniteStrips",
+  "OAI.Analysis.Mahler.FluxVariation",
+  "OAI.Analysis.Mahler.FormLocalization",
+  "OAI.Analysis.Mahler.FormStokes",
+  "OAI.Analysis.Mahler.GlobalFiberParametrization",
+  "OAI.Analysis.Mahler.GlobalPlanarBound",
+  "OAI.Analysis.Mahler.GlobalPlanarMonotonicity",
+  "OAI.Analysis.Mahler.GlobalVerticalGeometry",
+  "OAI.Analysis.Mahler.HalfspaceStokes",
+  "OAI.Analysis.Mahler.HannerBodies",
+  "OAI.Analysis.Mahler.HemisphereArea",
+  "OAI.Analysis.Mahler.HemisphereChart",
+  "OAI.Analysis.Mahler.HemisphereFlux",
+  "OAI.Analysis.Mahler.HemisphereJacobian",
+  "OAI.Analysis.Mahler.HemisphereMeasure",
+  "OAI.Analysis.Mahler.Hessian",
+  "OAI.Analysis.Mahler.HolomorphicLogC2",
+  "OAI.Analysis.Mahler.HolomorphicRegularity",
+  "OAI.Analysis.Mahler.HomogeneousCircleIntegral",
+  "OAI.Analysis.Mahler.HomogeneousDeformation",
+  "OAI.Analysis.Mahler.HomogeneousDensityVariation",
+  "OAI.Analysis.Mahler.HomogeneousEndpoint",
+  "OAI.Analysis.Mahler.HomogeneousFlux",
+  "OAI.Analysis.Mahler.HomogeneousFluxDifferentiation",
+  "OAI.Analysis.Mahler.HomogeneousFluxFTC",
+  "OAI.Analysis.Mahler.HomogeneousMassAssembly",
+  "OAI.Analysis.Mahler.HomogeneousPrimitiveRegularity",
+  "OAI.Analysis.Mahler.HomogeneousSmoothForms",
+  "OAI.Analysis.Mahler.HomogeneousSphereIntegral",
+  "OAI.Analysis.Mahler.HomogeneousTransgression",
+  "OAI.Analysis.Mahler.HomogeneousTransgressionFTC",
+  "OAI.Analysis.Mahler.HomogeneousVariationCoefficient",
+  "OAI.Analysis.Mahler.HorizontalForms",
+  "OAI.Analysis.Mahler.ImplicitAngle",
+  "OAI.Analysis.Mahler.InteriorStokes",
+  "OAI.Analysis.Mahler.InverseRadialRegularity",
+  "OAI.Analysis.Mahler.Jacobian",
+  "OAI.Analysis.Mahler.Lens",
+  "OAI.Analysis.Mahler.LevelFace",
+  "OAI.Analysis.Mahler.LevelForms",
+  "OAI.Analysis.Mahler.LogDilation",
+  "OAI.Analysis.Mahler.LogJet",
+  "OAI.Analysis.Mahler.LogNormSquare",
+  "OAI.Analysis.Mahler.LogScalarJet",
+  "OAI.Analysis.Mahler.LogUniform",
+  "OAI.Analysis.Mahler.MainTheorem",
+  "OAI.Analysis.Mahler.MassLimit",
+  "OAI.Analysis.Mahler.MassTarget",
+  "OAI.Analysis.Mahler.MatrixExteriorPower",
+  "OAI.Analysis.Mahler.MatrixHessian",
+  "OAI.Analysis.Mahler.Medians",
+  "OAI.Analysis.Mahler.NormExteriorPower",
+  "OAI.Analysis.Mahler.NormSquareForm",
+  "OAI.Analysis.Mahler.NormSquareJet",
+  "OAI.Analysis.Mahler.OpenExteriorNormalization",
+  "OAI.Analysis.Mahler.OpenHessian",
+  "OAI.Analysis.Mahler.OrientedChartIntegral",
+  "OAI.Analysis.Mahler.OrientedSphereDensity",
+  "OAI.Analysis.Mahler.PairExteriorBridge",
+  "OAI.Analysis.Mahler.PairTransgression",
+  "OAI.Analysis.Mahler.PlanarDensity",
+  "OAI.Analysis.Mahler.PlanarErrorRate",
+  "OAI.Analysis.Mahler.PlanarEstimates",
+  "OAI.Analysis.Mahler.PlanarIntegralRegularity",
+  "OAI.Analysis.Mahler.PlanarRegularity",
+  "OAI.Analysis.Mahler.PlanarSymmetry",
+  "OAI.Analysis.Mahler.Positivity",
+  "OAI.Analysis.Mahler.PowerTransgression",
+  "OAI.Analysis.Mahler.PrimitiveBound",
+  "OAI.Analysis.Mahler.PrimitiveEquality",
+  "OAI.Analysis.Mahler.PrimitiveRegularity",
+  "OAI.Analysis.Mahler.PullbackRegularity",
+  "OAI.Analysis.Mahler.PunctureCutoff",
+  "OAI.Analysis.Mahler.PuncturedBallStokes",
+  "OAI.Analysis.Mahler.PuncturedSublevelStokes",
+  "OAI.Analysis.Mahler.RadialBridge",
+  "OAI.Analysis.Mahler.RadialPrimitiveDeriv",
+  "OAI.Analysis.Mahler.RawAlternatingCalculus",
+  "OAI.Analysis.Mahler.RawAlternationDerivative",
+  "OAI.Analysis.Mahler.RawClosedPower",
+  "OAI.Analysis.Mahler.RawClosedProduct",
+  "OAI.Analysis.Mahler.RawCoefficientDerivative",
+  "OAI.Analysis.Mahler.RawExteriorPower",
+  "OAI.Analysis.Mahler.RawReindexedDerivative",
+  "OAI.Analysis.Mahler.RealLogBridge",
+  "OAI.Analysis.Mahler.ReferencePole",
+  "OAI.Analysis.Mahler.ReferencePoleFrame",
+  "OAI.Analysis.Mahler.ReferenceSphere",
+  "OAI.Analysis.Mahler.ReferenceSphereIntegral",
+  "OAI.Analysis.Mahler.RegularBoundaryAtlas",
+  "OAI.Analysis.Mahler.RegularChartStokes",
+  "OAI.Analysis.Mahler.RegularLevelCharts",
+  "OAI.Analysis.Mahler.RegularMassReduction",
+  "OAI.Analysis.Mahler.RegularPartition",
+  "OAI.Analysis.Mahler.RegularStokesAssembly",
+  "OAI.Analysis.Mahler.RegularSublevel",
+  "OAI.Analysis.Mahler.RescaledHolomorphic",
+  "OAI.Analysis.Mahler.RescaledMassMap",
+  "OAI.Analysis.Mahler.RescalingEstimates",
+  "OAI.Analysis.Mahler.ShellRegularity",
+  "OAI.Analysis.Mahler.SineBound",
+  "OAI.Analysis.Mahler.SmallSphereLimits",
+  "OAI.Analysis.Mahler.SourceBoundaryIntegral",
+  "OAI.Analysis.Mahler.SourceCanonicalMeasure",
+  "OAI.Analysis.Mahler.SourceCoordinateExterior",
+  "OAI.Analysis.Mahler.SourceCoordinateForms",
+  "OAI.Analysis.Mahler.SourceCoordinateMeasure",
+  "OAI.Analysis.Mahler.SourceExteriorDerivative",
+  "OAI.Analysis.Mahler.SourceFluxCoordinates",
+  "OAI.Analysis.Mahler.SourceFluxRegularity",
+  "OAI.Analysis.Mahler.SourceFullExterior",
+  "OAI.Analysis.Mahler.SourceHomogeneous",
+  "OAI.Analysis.Mahler.SourceLevelFlux",
+  "OAI.Analysis.Mahler.SourceLogC2",
+  "OAI.Analysis.Mahler.SourcePrimitiveStokes",
+  "OAI.Analysis.Mahler.SourceRadiusFlux",
+  "OAI.Analysis.Mahler.SourceRawCoefficient",
+  "OAI.Analysis.Mahler.SourceRawJets",
+  "OAI.Analysis.Mahler.SourceRawOrientation",
+  "OAI.Analysis.Mahler.SourceRealExterior",
+  "OAI.Analysis.Mahler.SourceRegularFlux",
+  "OAI.Analysis.Mahler.SourceRegularLimit",
+  "OAI.Analysis.Mahler.SourceRegularMass",
+  "OAI.Analysis.Mahler.SourceRescaling",
+  "OAI.Analysis.Mahler.SourceSphereLimit",
+  "OAI.Analysis.Mahler.SourceStokes",
+  "OAI.Analysis.Mahler.SourceTopCoordinates",
+  "OAI.Analysis.Mahler.SpecialJacobian",
+  "OAI.Analysis.Mahler.SpecialLeadingTerm",
+  "OAI.Analysis.Mahler.SpecialMassBridge",
+  "OAI.Analysis.Mahler.SpecialMassHypotheses",
+  "OAI.Analysis.Mahler.SpecialSourceMass",
+  "OAI.Analysis.Mahler.SphereAreaTransport",
+  "OAI.Analysis.Mahler.SphereCoordinateIntegral",
+  "OAI.Analysis.Mahler.SphereDensityBridge",
+  "OAI.Analysis.Mahler.SphereDensityRestriction",
+  "OAI.Analysis.Mahler.SphereFlux",
+  "OAI.Analysis.Mahler.SphereFluxDifferentiation",
+  "OAI.Analysis.Mahler.SphereFluxIntegral",
+  "OAI.Analysis.Mahler.SphereFluxLimit",
+  "OAI.Analysis.Mahler.SphereForms",
+  "OAI.Analysis.Mahler.SphereNormalization",
+  "OAI.Analysis.Mahler.SphereOrientation",
+  "OAI.Analysis.Mahler.SphereRadius",
+  "OAI.Analysis.Mahler.SphereTransport",
+  "OAI.Analysis.Mahler.SphereVolumeOrientation",
+  "OAI.Analysis.Mahler.Splitting",
+  "OAI.Analysis.Mahler.StripCompactSublevels",
+  "OAI.Analysis.Mahler.StripDifferential",
+  "OAI.Analysis.Mahler.StripGeometry",
+  "OAI.Analysis.Mahler.StripJacobian",
+  "OAI.Analysis.Mahler.StripLevelGeometry",
+  "OAI.Analysis.Mahler.StripMassExhaustion",
+  "OAI.Analysis.Mahler.StripRankGeometry",
+  "OAI.Analysis.Mahler.StripRegularLevels",
+  "OAI.Analysis.Mahler.StripRegularValues",
+  "OAI.Analysis.Mahler.StripSublevelTopology",
+  "OAI.Analysis.Mahler.StripVolume",
+  "OAI.Analysis.Mahler.TailIntegral",
+  "OAI.Analysis.Mahler.UniformError",
+  "OAI.Analysis.Mahler.UniformJet",
+  "OAI.Analysis.Mahler.UnitaryReference",
+  "OAI.Analysis.Mahler.VerticalRadius",
+  "OAI.Analysis.Mahler.VerticalSpeed",
+  "OAI.Analysis.Mahler.WedgeAlgebra",
+  "OAI.Analysis.Mahler.WedgeAssociativity",
+  "OAI.Analysis.Mahler.WedgeCalculus",
+  "OAI.Analysis.Mahler.WedgeDecomposition",
+  "OAI.Analysis.Mahler.WedgeEven",
+  "OAI.Analysis.Mahler.WedgeOne",
+  "OAI.Analysis.Mahler.WedgeTwoDifferentialAlgebra",
+  "OAI.Analysis.Mahler.WedgeUnit"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/SymmetricMahlerEquality.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.Mahler.Classification",
+   "name": "OAI.SymmetricMahler.symmetric_mahler_equality",
+   "statement_sha256": "5b148fb52b2d6a7cc808e3f426e4b29ffe75af39efc3ba8825a8c40ad9c00ada"
+  }
+ ],
+ "task_id": "oai-symmetric-mahler-equality",
+ "task_revision": 1,
+ "title": "OpenAI math: The Mahler conjectures, functional inequalities and polar-product symplectic width: Symmetric Mahler equality characterization",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

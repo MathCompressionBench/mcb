@@ -1,0 +1,1051 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 716190850
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.PowerFreeValues",
+  "challenge_sha256": "5e42de8cf6611fb73cab28849edb8b473ab16a047c1fc29ec042463e87a1f2f1",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/PowerFreeValues.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.PowerFreeValues",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.NumberTheory.PowerFree.Main",
+   "theorem_names": [
+    "OAI.QuarticPowerFree.allDegrees"
+   ]
+  },
+  "config_sha256": "d47857339c42028297f4f800bb4ad35d38ba3a9949b9e6542189f9dd7f8fac2d",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/PowerFreeValues.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.QuarticPowerFree.allDegrees": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/AdaptiveFibres.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.AdaptiveFibres",
+   "original_sha256": "afa142dfdb24927eb34324c9c302985e9d4bfd80f46be295277dc5259d3a9e8c",
+   "path": "OAI/NumberTheory/PowerFree/AdaptiveFibres.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/AdaptiveRanks.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.AdaptiveRanks",
+   "original_sha256": "801c6f7133222f67fce1fac90cfabed04bda74e74bab03c2498b450cae287c74",
+   "path": "OAI/NumberTheory/PowerFree/AdaptiveRanks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/AffineCounting.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.AffineCounting",
+   "original_sha256": "ca32352f7b340ca60df99cf757307a06e71577b5b9252fc7b553fc235e9703bc",
+   "path": "OAI/NumberTheory/PowerFree/AffineCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/AffineHilbert.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.AffineHilbert",
+   "original_sha256": "98d7ed57f45ac671878754465537d0fac520d4ea3280a50829f173efafbe155b",
+   "path": "OAI/NumberTheory/PowerFree/AffineHilbert.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/BoundedLifts.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.BoundedLifts",
+   "original_sha256": "5db85e5fff8aeb7f9757d0ac287f219f868073edc0c4752baf83e1d50c5880b8",
+   "path": "OAI/NumberTheory/PowerFree/BoundedLifts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/ComplexValues.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.ComplexValues",
+   "original_sha256": "a40c9adc003376895b1c6ee85370c5261d7c0dcd2338e30a14552dc48a71f4a0",
+   "path": "OAI/NumberTheory/PowerFree/ComplexValues.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/CurveAlternatives.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.CurveAlternatives",
+   "original_sha256": "376fb872a443266e3df6504f339f06fcf5a9b43be6cea2a82ba1ea0aa5b1a91b",
+   "path": "OAI/NumberTheory/PowerFree/CurveAlternatives.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/CurveThresholds.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.CurveThresholds",
+   "original_sha256": "e5d7d9be112c31e09a8c6f572ead9ea6ebfb7b068e367adde7414d2ad3837490",
+   "path": "OAI/NumberTheory/PowerFree/CurveThresholds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/DeformedRoots.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.DeformedRoots",
+   "original_sha256": "279482ce9a4e214642f7f0686cd2e1b2d74b7574d0fb26cec110863550f30d91",
+   "path": "OAI/NumberTheory/PowerFree/DeformedRoots.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/DegreeBudgets.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.DegreeBudgets",
+   "original_sha256": "47d760b8d7357f5b15743f0a1dc7133bf1012c657375157956430488708e9957",
+   "path": "OAI/NumberTheory/PowerFree/DegreeBudgets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/DegreeSchedules.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.DegreeSchedules",
+   "original_sha256": "504d45d1d41ac70af10bbaf57f2e9723676690262bb2e7e32a9cdd10d9d6d32c",
+   "path": "OAI/NumberTheory/PowerFree/DegreeSchedules.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/EmbeddingCharts.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.EmbeddingCharts",
+   "original_sha256": "d60dd7f76617b8f81625009d0ef1c7850bbac9fd79659fb57aff27bce4e1dff2",
+   "path": "OAI/NumberTheory/PowerFree/EmbeddingCharts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/GenericCuts.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.GenericCuts",
+   "original_sha256": "9582b71388a43eb557f3236b6a80f5ef6876484f9acf32aa440a73e1d4a6f4b0",
+   "path": "OAI/NumberTheory/PowerFree/GenericCuts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/HighDegree.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.HighDegree",
+   "original_sha256": "c98bbfe74ffad3a20de36522a282b502ebdc135f03d4753232bc4e8e009d9853",
+   "path": "OAI/NumberTheory/PowerFree/HighDegree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/HilbertGrowth.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.HilbertGrowth",
+   "original_sha256": "08927f1bec93c58e6f348e35de9af22d92a89d3e5eb17fa0820ae303b94110a4",
+   "path": "OAI/NumberTheory/PowerFree/HilbertGrowth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/HilbertSimplex.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.HilbertSimplex",
+   "original_sha256": "c07e3f21185702659efa41afaa032f1c2a10716adc9bf2684da544d3e045df40",
+   "path": "OAI/NumberTheory/PowerFree/HilbertSimplex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/HomogeneousLifts.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.HomogeneousLifts",
+   "original_sha256": "6e0119688ae1315fbb31b7b760ec4a41490ec02175303e9fe0a07a56a4caa004",
+   "path": "OAI/NumberTheory/PowerFree/HomogeneousLifts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/IntegerPatches.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.IntegerPatches",
+   "original_sha256": "801a773b9bbc2768fc920047d0b6e7cc46aaa443595f0c8db2f7634842276dc3",
+   "path": "OAI/NumberTheory/PowerFree/IntegerPatches.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/IntegralKernels.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.IntegralKernels",
+   "original_sha256": "a4cf1862af5fd95c91f074add1ef7fb5a503519d6e13ea8bd3e5b6e1a798f601",
+   "path": "OAI/NumberTheory/PowerFree/IntegralKernels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/Jacobians.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.Jacobians",
+   "original_sha256": "c451d1dfdf5ee9d6bdb15fa290ef4251344734c28643569f71b1806b902ecfda",
+   "path": "OAI/NumberTheory/PowerFree/Jacobians.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/LaurentCoordinates.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.LaurentCoordinates",
+   "original_sha256": "31c39be8e1b05e5d5b11e1e1c4d740866d913f8dad40ad0321bd13f17286663a",
+   "path": "OAI/NumberTheory/PowerFree/LaurentCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/Main.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.Main",
+   "original_sha256": "45ebf810c864d3b8f0d48c95e1728f11a854ed644b6d943924a50cbf90503d73",
+   "path": "OAI/NumberTheory/PowerFree/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/MediumDegree.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.MediumDegree",
+   "original_sha256": "ec5facd2488d70c421914c74de13c0af4599c4e5224c9720d705c28274d976ae",
+   "path": "OAI/NumberTheory/PowerFree/MediumDegree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/Model.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.Model",
+   "original_sha256": "289c3e116534e7340f7a19576bca3086fa3a05f441ec7d0041791537965ebb4e",
+   "path": "OAI/NumberTheory/PowerFree/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/NormBoxes.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.NormBoxes",
+   "original_sha256": "38465a064a2fc247d55a7ba7c09dc7adea87aa480d22eeaa4fd138d51da6fdee",
+   "path": "OAI/NumberTheory/PowerFree/NormBoxes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/NormComponents.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.NormComponents",
+   "original_sha256": "229fbfb3e278fc0e59d485e07f67bca523b06224b4db5882ab79d7da704e8273",
+   "path": "OAI/NumberTheory/PowerFree/NormComponents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/NormHilbert.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.NormHilbert",
+   "original_sha256": "830ee3e91305f650cb06bd581d04e5687ff8f842272643597f6222d274a1a5c9",
+   "path": "OAI/NumberTheory/PowerFree/NormHilbert.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/NormalMonomials.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.NormalMonomials",
+   "original_sha256": "711f654e45a36d1bd15b6868b37366f52ca23cb84995413d4bc721e200ade45c",
+   "path": "OAI/NumberTheory/PowerFree/NormalMonomials.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/PairAlgebras.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.PairAlgebras",
+   "original_sha256": "971c9733f7e537ca0b5f45549f13c1e3812fac948cc58f338bf3d1bd69b042e1",
+   "path": "OAI/NumberTheory/PowerFree/PairAlgebras.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/PairBoundaries.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.PairBoundaries",
+   "original_sha256": "7c42a8045414d10f5812ea0dc9c066fa9bbf46fd9cc968f98879538b11edb6f7",
+   "path": "OAI/NumberTheory/PowerFree/PairBoundaries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/PairCuts.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.PairCuts",
+   "original_sha256": "5931f22f3f7d828d99e88bbe20cdd9b934c48f06843b0198fb957a9534b983dd",
+   "path": "OAI/NumberTheory/PowerFree/PairCuts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/PairHilbert.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.PairHilbert",
+   "original_sha256": "e35b8c33b1143a49c7dee0e369b8e18b4a02a363f00cef5be29fc94d5bf48b27",
+   "path": "OAI/NumberTheory/PowerFree/PairHilbert.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/PairProjections.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.PairProjections",
+   "original_sha256": "c5136752dde482798edb4a3f9278ceead3c45d95a5239f2b052eb951cdb87d3e",
+   "path": "OAI/NumberTheory/PowerFree/PairProjections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/PatchBounds.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.PatchBounds",
+   "original_sha256": "b3679f02a4c324f288ed3e1399a99402c558dade0357e9646270b67e637f7357",
+   "path": "OAI/NumberTheory/PowerFree/PatchBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/PointInterpolation.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.PointInterpolation",
+   "original_sha256": "79b8c4155bc316581c8a93bb7764d8bde3b82944aa7fb2c0acd2e7392c011450",
+   "path": "OAI/NumberTheory/PowerFree/PointInterpolation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/PoleCoefficients.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.PoleCoefficients",
+   "original_sha256": "a16738752387825a9e8855b13521c0602dff66fbb48f1f3537b9179ef07677d4",
+   "path": "OAI/NumberTheory/PowerFree/PoleCoefficients.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/PositiveCoordinates.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.PositiveCoordinates",
+   "original_sha256": "891fc5d2d15509ebe13d1be3d652f74b95b5926a59eaaccb175e4c4fe94f6233",
+   "path": "OAI/NumberTheory/PowerFree/PositiveCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/PrimeBlocks.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.PrimeBlocks",
+   "original_sha256": "6eec7c165c89ccf785344f97ace3080247641cb2d203b13ad57094d01c26a0d4",
+   "path": "OAI/NumberTheory/PowerFree/PrimeBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/PrimePools.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.PrimePools",
+   "original_sha256": "0e4bec82b4af24f8bf28aa74fed584643b305d2a25bf2e8a9fe9101753b16a34",
+   "path": "OAI/NumberTheory/PowerFree/PrimePools.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/PrincipalLifts.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.PrincipalLifts",
+   "original_sha256": "a697a2dd787f8d2d850cffb1a054fa6e8b7acb04c4e77b2ed9a5aa02f3ea1850",
+   "path": "OAI/NumberTheory/PowerFree/PrincipalLifts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/ProjectionDegrees.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.ProjectionDegrees",
+   "original_sha256": "9224028ba1fd6c0c90f8716615278277435c281a8a3149372ea379e17a549742",
+   "path": "OAI/NumberTheory/PowerFree/ProjectionDegrees.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/PureCuts.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.PureCuts",
+   "original_sha256": "3c7897531b1d3bf39b72da5ca43275fc821f47a0994e586d1c33d8c59345f848",
+   "path": "OAI/NumberTheory/PowerFree/PureCuts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/QuarticBoxes.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.QuarticBoxes",
+   "original_sha256": "1fb9d2a801572e75226996671ccaf3c8b371671ac00ea6dba21aae99877baf29",
+   "path": "OAI/NumberTheory/PowerFree/QuarticBoxes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/QuarticComponents.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.QuarticComponents",
+   "original_sha256": "19dc22eed297763a354d01f9153c79762da2e29076aa65e0bd041f48049c4290",
+   "path": "OAI/NumberTheory/PowerFree/QuarticComponents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/QuarticPairs.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.QuarticPairs",
+   "original_sha256": "7f443ea5a58cb5f4837c2ecfdc08515d96660a4dc3f6f221d77150e313414312",
+   "path": "OAI/NumberTheory/PowerFree/QuarticPairs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/QuarticSurfaces.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.QuarticSurfaces",
+   "original_sha256": "6216d665c6c22cdf13889f32bf36d6abad36f4a4f562fda12e3890773d075814",
+   "path": "OAI/NumberTheory/PowerFree/QuarticSurfaces.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/RadialFibres.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.RadialFibres",
+   "original_sha256": "b71e7bd15fb6df51d5019a42b57a94bc60f7548474e83a754c5cbc52a0bb173b",
+   "path": "OAI/NumberTheory/PowerFree/RadialFibres.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/RationalCoordinates.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.RationalCoordinates",
+   "original_sha256": "4785b61c5df3979207bc5e44f756a28b14868bfc3e8b7c80ffc158ef2fe2c764",
+   "path": "OAI/NumberTheory/PowerFree/RationalCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/RegularBlocks.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.RegularBlocks",
+   "original_sha256": "951895d20653e52dd321a28942b6bb3dac44437ceeafe3b1514fb0ea5c4ecbf1",
+   "path": "OAI/NumberTheory/PowerFree/RegularBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/ResidueBounds.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.ResidueBounds",
+   "original_sha256": "9a4a4c9ca59748acf0378b6e39e2deff9b696df277e18ad5be02dbb0f3fbf52f",
+   "path": "OAI/NumberTheory/PowerFree/ResidueBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/ResidueRelations.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.ResidueRelations",
+   "original_sha256": "89974ce41e4be414f1a8537ca02ef20d9524b9faffb51c81f0d048ab40aef219",
+   "path": "OAI/NumberTheory/PowerFree/ResidueRelations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/RootPairHilbert.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.RootPairHilbert",
+   "original_sha256": "020f628195539ffb91ed25d2a262adbd73f25403e2ba33992ba3c3a2e02415e5",
+   "path": "OAI/NumberTheory/PowerFree/RootPairHilbert.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/SelectedPrimes.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.SelectedPrimes",
+   "original_sha256": "9b2852870406d18c4f41d03362ef2a3565ff8687cd79d8bb0762887c1127db84",
+   "path": "OAI/NumberTheory/PowerFree/SelectedPrimes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/Sieve.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.Sieve",
+   "original_sha256": "073ad23da2c4d709e44dec37f80ecc56bcfbd9f5036e748d1cb9e9a6c843158f",
+   "path": "OAI/NumberTheory/PowerFree/Sieve.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/StoppingTrees.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.StoppingTrees",
+   "original_sha256": "f925ece8e552936ac3f4b30eea1ff80392f9d26bcb88f7c73be999f6e645cbd8",
+   "path": "OAI/NumberTheory/PowerFree/StoppingTrees.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/SurfaceCounting.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.SurfaceCounting",
+   "original_sha256": "55a4f2043acd895c7a3fe06108192564053c080f6b9e2f0e6860d826fe786d76",
+   "path": "OAI/NumberTheory/PowerFree/SurfaceCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/ThreePoles.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.ThreePoles",
+   "original_sha256": "9bce165138c069eae49afed7e2fccb37f99026ed25e4ca147949c319b7982084",
+   "path": "OAI/NumberTheory/PowerFree/ThreePoles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/TwoPoles.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.TwoPoles",
+   "original_sha256": "734686fe4afad52a15f934b691529e924d16b700df3898e811950de7f3cc84e2",
+   "path": "OAI/NumberTheory/PowerFree/TwoPoles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/UnitBalancing.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.UnitBalancing",
+   "original_sha256": "1f0d260621978015e85f39e1afecf6ae4e3882214e246cb2a70d43ac43596845",
+   "path": "OAI/NumberTheory/PowerFree/UnitBalancing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/WeightedFunctions.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.WeightedFunctions",
+   "original_sha256": "b070961f32d0bf8daa3fc9ed5970b4012a66603877088f9be4af2114ae163f24",
+   "path": "OAI/NumberTheory/PowerFree/WeightedFunctions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/WeightedHypersurfaces.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.WeightedHypersurfaces",
+   "original_sha256": "3877af2437546e2fa7f71d6877e44388181d4f208ef5e05e92c1e71402e9b114",
+   "path": "OAI/NumberTheory/PowerFree/WeightedHypersurfaces.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/WeightedRelations.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.WeightedRelations",
+   "original_sha256": "bb5690e1977c7c5a7af07bebe5fac0ee55faad3ea135a36267e881241706a9db",
+   "path": "OAI/NumberTheory/PowerFree/WeightedRelations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/PowerFree/WeightedSlabs.lean"
+   },
+   "module": "OAI.NumberTheory.PowerFree.WeightedSlabs",
+   "original_sha256": "f25298ec40bdb6b290bcd54acd739522297375e68a6787caba01d77ffb3fcb2c",
+   "path": "OAI/NumberTheory/PowerFree/WeightedSlabs.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.NumberTheory.PowerFree.AdaptiveFibres",
+  "OAI.NumberTheory.PowerFree.AdaptiveRanks",
+  "OAI.NumberTheory.PowerFree.AffineCounting",
+  "OAI.NumberTheory.PowerFree.AffineHilbert",
+  "OAI.NumberTheory.PowerFree.BoundedLifts",
+  "OAI.NumberTheory.PowerFree.ComplexValues",
+  "OAI.NumberTheory.PowerFree.CurveAlternatives",
+  "OAI.NumberTheory.PowerFree.CurveThresholds",
+  "OAI.NumberTheory.PowerFree.DeformedRoots",
+  "OAI.NumberTheory.PowerFree.DegreeBudgets",
+  "OAI.NumberTheory.PowerFree.DegreeSchedules",
+  "OAI.NumberTheory.PowerFree.EmbeddingCharts",
+  "OAI.NumberTheory.PowerFree.GenericCuts",
+  "OAI.NumberTheory.PowerFree.HighDegree",
+  "OAI.NumberTheory.PowerFree.HilbertGrowth",
+  "OAI.NumberTheory.PowerFree.HilbertSimplex",
+  "OAI.NumberTheory.PowerFree.HomogeneousLifts",
+  "OAI.NumberTheory.PowerFree.IntegerPatches",
+  "OAI.NumberTheory.PowerFree.IntegralKernels",
+  "OAI.NumberTheory.PowerFree.Jacobians",
+  "OAI.NumberTheory.PowerFree.LaurentCoordinates",
+  "OAI.NumberTheory.PowerFree.Main",
+  "OAI.NumberTheory.PowerFree.MediumDegree",
+  "OAI.NumberTheory.PowerFree.Model",
+  "OAI.NumberTheory.PowerFree.NormBoxes",
+  "OAI.NumberTheory.PowerFree.NormComponents",
+  "OAI.NumberTheory.PowerFree.NormHilbert",
+  "OAI.NumberTheory.PowerFree.NormalMonomials",
+  "OAI.NumberTheory.PowerFree.PairAlgebras",
+  "OAI.NumberTheory.PowerFree.PairBoundaries",
+  "OAI.NumberTheory.PowerFree.PairCuts",
+  "OAI.NumberTheory.PowerFree.PairHilbert",
+  "OAI.NumberTheory.PowerFree.PairProjections",
+  "OAI.NumberTheory.PowerFree.PatchBounds",
+  "OAI.NumberTheory.PowerFree.PointInterpolation",
+  "OAI.NumberTheory.PowerFree.PoleCoefficients",
+  "OAI.NumberTheory.PowerFree.PositiveCoordinates",
+  "OAI.NumberTheory.PowerFree.PrimeBlocks",
+  "OAI.NumberTheory.PowerFree.PrimePools",
+  "OAI.NumberTheory.PowerFree.PrincipalLifts",
+  "OAI.NumberTheory.PowerFree.ProjectionDegrees",
+  "OAI.NumberTheory.PowerFree.PureCuts",
+  "OAI.NumberTheory.PowerFree.QuarticBoxes",
+  "OAI.NumberTheory.PowerFree.QuarticComponents",
+  "OAI.NumberTheory.PowerFree.QuarticPairs",
+  "OAI.NumberTheory.PowerFree.QuarticSurfaces",
+  "OAI.NumberTheory.PowerFree.RadialFibres",
+  "OAI.NumberTheory.PowerFree.RationalCoordinates",
+  "OAI.NumberTheory.PowerFree.RegularBlocks",
+  "OAI.NumberTheory.PowerFree.ResidueBounds",
+  "OAI.NumberTheory.PowerFree.ResidueRelations",
+  "OAI.NumberTheory.PowerFree.RootPairHilbert",
+  "OAI.NumberTheory.PowerFree.SelectedPrimes",
+  "OAI.NumberTheory.PowerFree.Sieve",
+  "OAI.NumberTheory.PowerFree.StoppingTrees",
+  "OAI.NumberTheory.PowerFree.SurfaceCounting",
+  "OAI.NumberTheory.PowerFree.ThreePoles",
+  "OAI.NumberTheory.PowerFree.TwoPoles",
+  "OAI.NumberTheory.PowerFree.UnitBalancing",
+  "OAI.NumberTheory.PowerFree.WeightedFunctions",
+  "OAI.NumberTheory.PowerFree.WeightedHypersurfaces",
+  "OAI.NumberTheory.PowerFree.WeightedRelations",
+  "OAI.NumberTheory.PowerFree.WeightedSlabs"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/PowerFreeValues.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.NumberTheory.PowerFree.Main",
+   "name": "OAI.QuarticPowerFree.allDegrees",
+   "statement_sha256": "36488ca21f581506eceba5dc122430bf361d5cde0539509d54f80d27e98ebcbf"
+  }
+ ],
+ "task_id": "oai-power-free-values",
+ "task_revision": 1,
+ "title": "OpenAI math: Squarefree quartics and power-free polynomial values: Positive density of power-free polynomial values",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

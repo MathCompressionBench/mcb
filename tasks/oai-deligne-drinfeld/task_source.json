@@ -1,0 +1,631 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 698583790
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.DeligneDrinfeld",
+  "challenge_sha256": "b2fc1de28eb29eb1e8934f52978a64a1cd9fc13f3b4379e84171d4f8a106e3cd",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/DeligneDrinfeld.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.DeligneDrinfeld",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Algebra.Drinfeld.Completion",
+   "theorem_names": [
+    "OAI.DeligneDrinfeld.main"
+   ]
+  },
+  "config_sha256": "2fe02807b46eaab9e0f45f313f474d0d7448bcbee361cd2f9604ebd83d6bc8ba",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/DeligneDrinfeld.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.DeligneDrinfeld.main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/Boundary.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.Boundary",
+   "original_sha256": "b6522f6b00ed54866fc62145f136ff21732d5e030f6f6578b6018d8571108106",
+   "path": "OAI/Algebra/Drinfeld/Boundary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/BraidExp.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.BraidExp",
+   "original_sha256": "04493ddc98969f13b8d7efa454af7b612584643bad4ecd1e466bd8cf77c6eb77",
+   "path": "OAI/Algebra/Drinfeld/BraidExp.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/Categories.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.Categories",
+   "original_sha256": "5f6bde8300eccdfbf23cb2b7de1d763c7850efb1ee41308dc9da9459abe262a9",
+   "path": "OAI/Algebra/Drinfeld/Categories.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/Coefficients.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.Coefficients",
+   "original_sha256": "f6cc72f12d6a08d816f69ad794e046473bf502f7f94ca58f16f55c7411d8f2ab",
+   "path": "OAI/Algebra/Drinfeld/Coefficients.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/Completion.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.Completion",
+   "original_sha256": "e1a9f212972cf5644d57ba98597f0546ecb431876ba7b6b0eefb99435a9e7335",
+   "path": "OAI/Algebra/Drinfeld/Completion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/Descent.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.Descent",
+   "original_sha256": "cf8fd4f5e1d3d867acf140900f123ac8bde4459fad828a6f9ab140f6edb9c8c0",
+   "path": "OAI/Algebra/Drinfeld/Descent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/Flatness.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.Flatness",
+   "original_sha256": "e28a3453ee6565aff9fce63fb8e7aa8c1264c9aca346c7e0416979751464319d",
+   "path": "OAI/Algebra/Drinfeld/Flatness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/Foundations.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.Foundations",
+   "original_sha256": "cf89211f03a17d8a9d990d4a3797e06ef3ae5a78c67bf2e9ad3906abb1c6d8d2",
+   "path": "OAI/Algebra/Drinfeld/Foundations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/Grading.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.Grading",
+   "original_sha256": "f1a0905f1b8e3432be27229d723df6c91d76b0fa11d10473516a1a23eeafe279",
+   "path": "OAI/Algebra/Drinfeld/Grading.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/Hexagon.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.Hexagon",
+   "original_sha256": "c8f752d9c461589b3364432f1962f8f70813630a0cceaef6ac96adaccbb68763",
+   "path": "OAI/Algebra/Drinfeld/Hexagon.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/Holonomy.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.Holonomy",
+   "original_sha256": "1fb15b1938e6df50ff8a31b1ddd93f062e7a00ef262f575003b33aab8aa099f5",
+   "path": "OAI/Algebra/Drinfeld/Holonomy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/Ihara.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.Ihara",
+   "original_sha256": "7286b97425fc07dc974ef23d000026cc6dfa71485d1148979eea17b1d7f20164",
+   "path": "OAI/Algebra/Drinfeld/Ihara.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/KZTransport.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.KZTransport",
+   "original_sha256": "bde11d376d88066e87344927ea8e47c67405edccf0eee72d295a8523e7d3a9a0",
+   "path": "OAI/Algebra/Drinfeld/KZTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/Lattice.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.Lattice",
+   "original_sha256": "46dd54e56a3c1c0867ee283950abc73fce597754a88b2aaf1072235a8606466d",
+   "path": "OAI/Algebra/Drinfeld/Lattice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/Logarithm.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.Logarithm",
+   "original_sha256": "81ab1144072052b716c7075467c9d7885d13e28e7d2d4ca581050f9ea3b0f2c3",
+   "path": "OAI/Algebra/Drinfeld/Logarithm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/Ordering.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.Ordering",
+   "original_sha256": "8f37fab0bd044d10517b9dd93f364cb6cfbd7cbef2ca2629e5d2c8ed82e5501b",
+   "path": "OAI/Algebra/Drinfeld/Ordering.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/Pentagon.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.Pentagon",
+   "original_sha256": "6dec3c869e5fab9af5793c3f4e00b2814c5db3a63cb1d81f27a40c1c972cbb8f",
+   "path": "OAI/Algebra/Drinfeld/Pentagon.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/RealBraid.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.RealBraid",
+   "original_sha256": "3bc359bd9f5ed97953f16d607e2a6db5bed3b39d5cc7c4a31f7f91fce4539768",
+   "path": "OAI/Algebra/Drinfeld/RealBraid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/RealLie.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.RealLie",
+   "original_sha256": "fe9bcb68cccb1d3d329cddd9c4541ad6e35b4f5fe4b3a0116d03bc6ff292c9d8",
+   "path": "OAI/Algebra/Drinfeld/RealLie.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/Reduction.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.Reduction",
+   "original_sha256": "df33d33b35d73852e55510459d4e9099f4aab293a269e7c9efb987e9b0cace31",
+   "path": "OAI/Algebra/Drinfeld/Reduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/Drinfeld/Transport.lean"
+   },
+   "module": "OAI.Algebra.Drinfeld.Transport",
+   "original_sha256": "383a35e76a5f4006d201652917d074027d987f4cfda6b053a01d9d6a5f5ce9a8",
+   "path": "OAI/Algebra/Drinfeld/Transport.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Algebra.Drinfeld.Boundary",
+  "OAI.Algebra.Drinfeld.BraidExp",
+  "OAI.Algebra.Drinfeld.Categories",
+  "OAI.Algebra.Drinfeld.Coefficients",
+  "OAI.Algebra.Drinfeld.Completion",
+  "OAI.Algebra.Drinfeld.Descent",
+  "OAI.Algebra.Drinfeld.Flatness",
+  "OAI.Algebra.Drinfeld.Foundations",
+  "OAI.Algebra.Drinfeld.Grading",
+  "OAI.Algebra.Drinfeld.Hexagon",
+  "OAI.Algebra.Drinfeld.Holonomy",
+  "OAI.Algebra.Drinfeld.Ihara",
+  "OAI.Algebra.Drinfeld.KZTransport",
+  "OAI.Algebra.Drinfeld.Lattice",
+  "OAI.Algebra.Drinfeld.Logarithm",
+  "OAI.Algebra.Drinfeld.Ordering",
+  "OAI.Algebra.Drinfeld.Pentagon",
+  "OAI.Algebra.Drinfeld.RealBraid",
+  "OAI.Algebra.Drinfeld.RealLie",
+  "OAI.Algebra.Drinfeld.Reduction",
+  "OAI.Algebra.Drinfeld.Transport"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/DeligneDrinfeld.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Algebra.Drinfeld.Completion",
+   "name": "OAI.DeligneDrinfeld.main",
+   "statement_sha256": "698b9250b50cad1c1725676166f0b283d56d92d2acaa8ed637053eaab72349fe"
+  }
+ ],
+ "task_id": "oai-deligne-drinfeld",
+ "task_revision": 1,
+ "title": "OpenAI math: The Deligne–Drinfeld conjecture: Deligne–Drinfeld main statement",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

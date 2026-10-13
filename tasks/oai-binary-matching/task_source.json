@@ -1,0 +1,1541 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 3414548606
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.BinaryMatching",
+  "challenge_sha256": "05f2ae77b70ff97e2f9cd960662a68fb3664ffae184d2c36bbd6c330955dd090",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/BinaryMatching.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.BinaryMatching",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Computability.MatchingCount.BinarySolve",
+   "theorem_names": [
+    "OAI.BinaryMatching.deterministic_approximate_counting"
+   ]
+  },
+  "config_sha256": "9ec0cd858949e16333ae9d64e68c2a25a1d1f03b59c6af0c90cc79731f2e9c9a",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/BinaryMatching.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.BinaryMatching.deterministic_approximate_counting": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/AlgorithmPartition.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.AlgorithmPartition",
+   "original_sha256": "25c20732ecdc93596761fde245b2e4f50d6c9a241ea0c7fbe423b37a875e7f80",
+   "path": "OAI/Combinatorics/PerfectMatching/AlgorithmPartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Ascent.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Ascent",
+   "original_sha256": "8bc3ce5abfa8843066c24dc2d66dbc8e590dd17381dd7e001cdfab6ea8d6a1f7",
+   "path": "OAI/Combinatorics/PerfectMatching/Ascent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Basic.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Basic",
+   "original_sha256": "528b673bfb850559ceb0a7a50dd686f6a44af7749d3c8c65277aaeb544873949",
+   "path": "OAI/Combinatorics/PerfectMatching/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Calculus.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Calculus",
+   "original_sha256": "540138bc665b3debc9976cd19a66e7041be66a38faaf816242ee0c7701ed6cd1",
+   "path": "OAI/Combinatorics/PerfectMatching/Calculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/CompletePairs.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.CompletePairs",
+   "original_sha256": "d65e17ba1936d5904cadafbd88eda8ae18e646e80931a6accde19e8373d1fc94",
+   "path": "OAI/Combinatorics/PerfectMatching/CompletePairs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Completion.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Completion",
+   "original_sha256": "ba29c36ff8ee39fe168fa518ff09d413e4d26d289b2cfff35d032de4059436f1",
+   "path": "OAI/Combinatorics/PerfectMatching/Completion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Continuity.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Continuity",
+   "original_sha256": "eda07aa639f0d525e217d36f32bea8f015d5ed7937ce854da2e6eb2425832b83",
+   "path": "OAI/Combinatorics/PerfectMatching/Continuity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Contraction.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Contraction",
+   "original_sha256": "3a28764c1966ccc751e4eb099e6a6a68eaaa005bc5c6a5c0ad13ae88bf053fa4",
+   "path": "OAI/Combinatorics/PerfectMatching/Contraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/CountCorrect.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.CountCorrect",
+   "original_sha256": "4e7a02747cc9aa08490321f47527f3bc6e629cd8fb4ab3ff9f99c10a84a7a3c6",
+   "path": "OAI/Combinatorics/PerfectMatching/CountCorrect.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Coupling.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Coupling",
+   "original_sha256": "8cde428e73b9b190904b6cf67de19388b9d740018ea62d2b3e62a22054a3e3b3",
+   "path": "OAI/Combinatorics/PerfectMatching/Coupling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Covariance.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Covariance",
+   "original_sha256": "e8b331d0e02af6f0e70681d47b43bc094b5dfb7aa46ac516c295d6727a036b1d",
+   "path": "OAI/Combinatorics/PerfectMatching/Covariance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Duality.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Duality",
+   "original_sha256": "b2aa0613b84cc5ef8fa0ff98953f24b22f5f9d2ae4470774e505dee3386d91a4",
+   "path": "OAI/Combinatorics/PerfectMatching/Duality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/DyadicEntropy.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.DyadicEntropy",
+   "original_sha256": "257432cd28ad19bd6bb21ef04a5681d912efff02383d5bdbc47fa19160d8603a",
+   "path": "OAI/Combinatorics/PerfectMatching/DyadicEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/DyadicEnvelope.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.DyadicEnvelope",
+   "original_sha256": "02351258cc8be230d6ea17059b51f0a13f5dc0c85727c930b360473363fee9f5",
+   "path": "OAI/Combinatorics/PerfectMatching/DyadicEnvelope.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/ElementaryCount.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.ElementaryCount",
+   "original_sha256": "d1bfdd36d59ba5fb7b748c65ee0b5d6db9ab374b59feb0bb170aac11281e7db1",
+   "path": "OAI/Combinatorics/PerfectMatching/ElementaryCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Entropy.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Entropy",
+   "original_sha256": "9cd082448d53172ee8dba36c10e0729e73693f760b971892e14b34993e139eed",
+   "path": "OAI/Combinatorics/PerfectMatching/Entropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/EntropyUpper.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.EntropyUpper",
+   "original_sha256": "51696d9dddd8f0692bdfb29a5015a6181bda7f5d769edf651315be0f830f920d",
+   "path": "OAI/Combinatorics/PerfectMatching/EntropyUpper.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Face.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Face",
+   "original_sha256": "fcef1761ef22b20a3f5843a4efadf2ac263844c02f169a6617d848553a32d666",
+   "path": "OAI/Combinatorics/PerfectMatching/Face.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/FeasibilityRepair.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.FeasibilityRepair",
+   "original_sha256": "53ac91e711ca022750472c277e8ec59c93d8c538e9ad534b61f1990984cd8129",
+   "path": "OAI/Combinatorics/PerfectMatching/FeasibilityRepair.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/ForcedReduction.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.ForcedReduction",
+   "original_sha256": "676c109c85831d3c699a107c927ddcd718e530f01df1bcae8e89bee5c5512af7",
+   "path": "OAI/Combinatorics/PerfectMatching/ForcedReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Main.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Main",
+   "original_sha256": "c986879d1e060ab63989c6f21ab9e8a58d7a341364dc36bd31ea85f12637ab0d",
+   "path": "OAI/Combinatorics/PerfectMatching/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/MatchingCovariance.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.MatchingCovariance",
+   "original_sha256": "c591a63adad02707903a5a0a6fd80b6931c736a9838441dca4a6a59ae262e83c",
+   "path": "OAI/Combinatorics/PerfectMatching/MatchingCovariance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Model.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Model",
+   "original_sha256": "c9095f6b8163648a63eeadb4b10ce2ac8606d319c2677215aede639d1bab4caa",
+   "path": "OAI/Combinatorics/PerfectMatching/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/ObjectivePenalty.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.ObjectivePenalty",
+   "original_sha256": "9a57a6f5bd00af5917ae9d8aef1eb1ed82035ac4e24a05f170d22362ffaa6f10",
+   "path": "OAI/Combinatorics/PerfectMatching/ObjectivePenalty.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/OddCuts.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.OddCuts",
+   "original_sha256": "15b5180aad0855b93f08f96d8cead08118e4a98297babbc4314ba8f179a3c460",
+   "path": "OAI/Combinatorics/PerfectMatching/OddCuts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Optimizer.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Optimizer",
+   "original_sha256": "0b7e06f5d9b9e65dc2345ddf87766c1b8d40b2e27fa7c1c676db5c625ac972f3",
+   "path": "OAI/Combinatorics/PerfectMatching/Optimizer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/ParameterBounds.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.ParameterBounds",
+   "original_sha256": "89c82eb2be5d9f8a4b95317c7001c58865ec194fc78cfccd81eed11c9ee90c67",
+   "path": "OAI/Combinatorics/PerfectMatching/ParameterBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Partition.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Partition",
+   "original_sha256": "fc5ec59d48faeec1308038b4095f1c039444b5ad98f04ac8733d0fa2ffdeff1a",
+   "path": "OAI/Combinatorics/PerfectMatching/Partition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Polyhedron.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Polyhedron",
+   "original_sha256": "28b7fd71a7acd298b43c43cb807753154df34dbd76f6643164a5559ecf9527fd",
+   "path": "OAI/Combinatorics/PerfectMatching/Polyhedron.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Polytope.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Polytope",
+   "original_sha256": "f37751206cb2f7167b1854db7811fc7bd907f8f83aa75218312e1dddc5c32941",
+   "path": "OAI/Combinatorics/PerfectMatching/Polytope.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/SecondVariation.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.SecondVariation",
+   "original_sha256": "2d4cc0e64355401504d84f6dc7e4c918033a612137d19b12890e0d339d5192c7",
+   "path": "OAI/Combinatorics/PerfectMatching/SecondVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Separable.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Separable",
+   "original_sha256": "ad72affba1687c30595606bcbc2de74650bfcce4427064aac2845bc1b7784b81",
+   "path": "OAI/Combinatorics/PerfectMatching/Separable.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/SeparableCovariance.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.SeparableCovariance",
+   "original_sha256": "d9836d42cc5e0ae30f57e24973ea40fa7b7e589e1e28f48a53f3ddd917dba4c0",
+   "path": "OAI/Combinatorics/PerfectMatching/SeparableCovariance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/SeparableLower.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.SeparableLower",
+   "original_sha256": "e72a7dd461b971c1bce5a8d5bdd748ccde74ab996006f1d626e2584be04d2950",
+   "path": "OAI/Combinatorics/PerfectMatching/SeparableLower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Simplex.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Simplex",
+   "original_sha256": "a206802c6ec05ac4aa3a1ae56501fdaff066ce1785939c4f5a2f683ad3d59b81",
+   "path": "OAI/Combinatorics/PerfectMatching/Simplex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/SizeBounds.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.SizeBounds",
+   "original_sha256": "d663a8a15e816aebf6522aed222be4296d6f0e1a7187c11bb960b50e310ca0e7",
+   "path": "OAI/Combinatorics/PerfectMatching/SizeBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/Violation.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.Violation",
+   "original_sha256": "bbd7f81815f1574bcf8da4c163e1d6830e3520f7ea5607d2b3340cc533a7f2f6",
+   "path": "OAI/Combinatorics/PerfectMatching/Violation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PerfectMatching/WeightedSpectrum.lean"
+   },
+   "module": "OAI.Combinatorics.PerfectMatching.WeightedSpectrum",
+   "original_sha256": "c3249ada5717cf24dc6ff895ad695bb52b47ca5036cba6c35a4705942e3ae3e5",
+   "path": "OAI/Combinatorics/PerfectMatching/WeightedSpectrum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/ArgRoutine.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.ArgRoutine",
+   "original_sha256": "99b44203d641587d96cce13ddc9c8db79489fbd9329752ead4411303fedeef57",
+   "path": "OAI/Computability/MatchingCount/ArgRoutine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/BinaryAlgorithm.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.BinaryAlgorithm",
+   "original_sha256": "2c7a19b64e306ab6b1ac67b9d79c9406bbdb9226b0edf15d033c0a783658ce7f",
+   "path": "OAI/Computability/MatchingCount/BinaryAlgorithm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/BinaryParser.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.BinaryParser",
+   "original_sha256": "55041f57c4d6d40391e9285a44e0bcf1ad4f279fcafe873dbf73729b8804a1f5",
+   "path": "OAI/Computability/MatchingCount/BinaryParser.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/BinarySolve.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.BinarySolve",
+   "original_sha256": "299750c99714c599fb9dd9d988bbc20c0ba617b9aad8be4f05da8cc43bd36eb0",
+   "path": "OAI/Computability/MatchingCount/BinarySolve.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/CappedPower.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.CappedPower",
+   "original_sha256": "7ce83a2aa805ce83731ffb10cac83e950e11101e2c2f3b6314844b48d39164d8",
+   "path": "OAI/Computability/MatchingCount/CappedPower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/CutAlgebra.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.CutAlgebra",
+   "original_sha256": "b689d48dbf4ffa0f417c89235abc16bae4bf5209fa23ba4406c6078723d7a795",
+   "path": "OAI/Computability/MatchingCount/CutAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/DenseOracle.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.DenseOracle",
+   "original_sha256": "9f565ea4d1d03e237c234d0d305560d09780bbec875b1d0cf7b5787e3ed9056e",
+   "path": "OAI/Computability/MatchingCount/DenseOracle.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/DivisionRoutine.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.DivisionRoutine",
+   "original_sha256": "31f56b1a8b517fee2c5e14ef98d6e79e0e7c794affe4344b4624754f17ca30a2",
+   "path": "OAI/Computability/MatchingCount/DivisionRoutine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/FiniteStack.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.FiniteStack",
+   "original_sha256": "6fe27026a7bec06aa754797b8efe640a2719e6e40660e44858532129100304cb",
+   "path": "OAI/Computability/MatchingCount/FiniteStack.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/FoldRoutine.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.FoldRoutine",
+   "original_sha256": "8afdb27529e63c9b2182dfcb6991ed1fb7a36da60c196da7652a78578f6b6466",
+   "path": "OAI/Computability/MatchingCount/FoldRoutine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/GuardRoutine.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.GuardRoutine",
+   "original_sha256": "19951c2d02dceee92703ca47d221f4736f3384e0230eb3dc6b30264787ca8675",
+   "path": "OAI/Computability/MatchingCount/GuardRoutine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/IntegerRoutine.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.IntegerRoutine",
+   "original_sha256": "72e61be0ebd8804b5e5b98ca689ea7a2889fe2c1ebd7c356943965d367991aa5",
+   "path": "OAI/Computability/MatchingCount/IntegerRoutine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/IterateRoutine.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.IterateRoutine",
+   "original_sha256": "87ece79a3f3c034caa7fb71568d18db734e5d4b1966e07eb3b84bf597c9dec50",
+   "path": "OAI/Computability/MatchingCount/IterateRoutine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/LengthRoutine.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.LengthRoutine",
+   "original_sha256": "219a5cf6275f5f569bab08d638041a19f8d9ab317d1936bed1b65e111feb23a7",
+   "path": "OAI/Computability/MatchingCount/LengthRoutine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/ListNumeric.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.ListNumeric",
+   "original_sha256": "92772f88351d610e07ee41a87e22bb935c395d3c765392d4273ce2bba84c51d3",
+   "path": "OAI/Computability/MatchingCount/ListNumeric.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/ListRoutine.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.ListRoutine",
+   "original_sha256": "bbc2d51346e55e281ae7745ad2a5f2ec34e391e77eb22f7ca9ef4a7a885aafe7",
+   "path": "OAI/Computability/MatchingCount/ListRoutine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/MapRoutine.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.MapRoutine",
+   "original_sha256": "5fe89e08c04a3f1d5d4ff8e5fb2d416b4a775954691e258ac42abc7112688434",
+   "path": "OAI/Computability/MatchingCount/MapRoutine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/OddCutParity.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.OddCutParity",
+   "original_sha256": "bbf8f7e95f34bba6a2f556159253b0b7c7ee6279872f14ab4cf4f09d90f057a4",
+   "path": "OAI/Computability/MatchingCount/OddCutParity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/OddCutUncross.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.OddCutUncross",
+   "original_sha256": "dbe7255d6ff16ac90f24531c24c36f01fb9e54e113388b285d458fbe5530c1a6",
+   "path": "OAI/Computability/MatchingCount/OddCutUncross.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/OddMincut.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.OddMincut",
+   "original_sha256": "d53565903dcc52ea0d5405c5bcf447feb4022b1d73bee12d31be69bebd46d932",
+   "path": "OAI/Computability/MatchingCount/OddMincut.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/OptionCases.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.OptionCases",
+   "original_sha256": "44a7910937c3c006ee8e6671a791de063f16bdf5fce771388209e19a7611121f",
+   "path": "OAI/Computability/MatchingCount/OptionCases.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/OracleBounds.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.OracleBounds",
+   "original_sha256": "1215476872281fd8b159eaa52ebd90757e508f532e37b03d842f8309d39ce907",
+   "path": "OAI/Computability/MatchingCount/OracleBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/OrbitRoutine.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.OrbitRoutine",
+   "original_sha256": "6b8ca1f3147ecc5bdff26562ffa3627e40ee84982ff25f4b27abe996435ba801",
+   "path": "OAI/Computability/MatchingCount/OrbitRoutine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/PairRoutine.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.PairRoutine",
+   "original_sha256": "d674d8375352f054c1e7bbd246804bdaae9990ac3e45d87fc43f05d2fca28b4d",
+   "path": "OAI/Computability/MatchingCount/PairRoutine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/ParamRoutine.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.ParamRoutine",
+   "original_sha256": "7105360420d64f052751ecc95dc97471107aeb30fb3ff8fc5eb72b49c6373ca0",
+   "path": "OAI/Computability/MatchingCount/ParamRoutine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/ParserSupport.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.ParserSupport",
+   "original_sha256": "71ead5bcb5680ca959a0017612b02a43e8af6988d8e05b3cf1723ddefacd9237",
+   "path": "OAI/Computability/MatchingCount/ParserSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/PolyCoding.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.PolyCoding",
+   "original_sha256": "386e2ec083b8f2b015ec1e3dd7f2ea59817be915b33b00689d13b8f95bf8a1f5",
+   "path": "OAI/Computability/MatchingCount/PolyCoding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/ProjectionRoutine.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.ProjectionRoutine",
+   "original_sha256": "cb9b915c3b95d6cfb7dc11376496fe165b5f13d656f3bb8b5c83b17690a8cfab",
+   "path": "OAI/Computability/MatchingCount/ProjectionRoutine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawBitsBridge.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawBitsBridge",
+   "original_sha256": "f90562af57aeb2aa9afd44ac5ae8e4df1afa10963030d7d5cad41046021d4052",
+   "path": "OAI/Computability/MatchingCount/RawBitsBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawContraction.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawContraction",
+   "original_sha256": "da63c41920feba4b669d4409d457263e543af9718e405163a235fef43e833d80",
+   "path": "OAI/Computability/MatchingCount/RawContraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawContractionCompiler.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawContractionCompiler",
+   "original_sha256": "6806901524338bc3d2c04e6e2dc5b09949c8c0297e86f6851ef120c886e82f56",
+   "path": "OAI/Computability/MatchingCount/RawContractionCompiler.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawData.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawData",
+   "original_sha256": "81f3340f9f5bf6bbd46917ad74471ac88797ce23f6ef78f55a8acd18128b0c76",
+   "path": "OAI/Computability/MatchingCount/RawData.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawFlow.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawFlow",
+   "original_sha256": "771d431c3353c2bb28b31691d708a7273744953877d90c48569ba0e103687dc4",
+   "path": "OAI/Computability/MatchingCount/RawFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawFlowCompiler.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawFlowCompiler",
+   "original_sha256": "b4435e9c8ad621a608c246db65a08907e30e7a0f44b86fe9b6064234d16f496e",
+   "path": "OAI/Computability/MatchingCount/RawFlowCompiler.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawFlowSize.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawFlowSize",
+   "original_sha256": "f9aa2a30322612698105a5ec3314abedd7f5005afca1388104ec8eed322bee0d",
+   "path": "OAI/Computability/MatchingCount/RawFlowSize.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawInput.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawInput",
+   "original_sha256": "0699ae28420da564ef1fd6d2df777399a94c15d71f1ab3e143b75507d019bc04",
+   "path": "OAI/Computability/MatchingCount/RawInput.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawOddBounds.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawOddBounds",
+   "original_sha256": "b9d414d0eca2dbbb18bc0d9e9560d47ebb69bdbac5c22646f71be5d9ccfca2e3",
+   "path": "OAI/Computability/MatchingCount/RawOddBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawOddCompiler.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawOddCompiler",
+   "original_sha256": "11fb2bfd93d45da8bb24f0780a6dc2cbcbf716ac87cfc773a088e383eff61240",
+   "path": "OAI/Computability/MatchingCount/RawOddCompiler.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawOddCut.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawOddCut",
+   "original_sha256": "7a90eac4138ce9ae90157fb1342375fcc9de7880b854102aa463e547f263ccd4",
+   "path": "OAI/Computability/MatchingCount/RawOddCut.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawOptimizer.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawOptimizer",
+   "original_sha256": "6fdda2333fcfb66eff5dec02db7c98988e7cc841724073a6502d0270288bce5d",
+   "path": "OAI/Computability/MatchingCount/RawOptimizer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawOptimizerCompiler.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawOptimizerCompiler",
+   "original_sha256": "9dc744b4a020e458024faf169d9ed48b9f2c55bcad80610ea426bcbb25f288a1",
+   "path": "OAI/Computability/MatchingCount/RawOptimizerCompiler.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawOptimizerData.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawOptimizerData",
+   "original_sha256": "a6b872b782883ea8eea682ee3a6116421861a1f3d83d4205b315b51fcf0b7b68",
+   "path": "OAI/Computability/MatchingCount/RawOptimizerData.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawOptimizerDataCompiler.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawOptimizerDataCompiler",
+   "original_sha256": "c69742a80d8b7dca31889a1d559a6f917c576f3d97a7e17972f01f7969fe9569",
+   "path": "OAI/Computability/MatchingCount/RawOptimizerDataCompiler.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawOptimizerRows.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawOptimizerRows",
+   "original_sha256": "06cdfac4c1a76d10c9a30ccd1c67a936a0b0f806e0f75562ca326fdd6b7b6f08",
+   "path": "OAI/Computability/MatchingCount/RawOptimizerRows.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawOptimizerRowsCompiler.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawOptimizerRowsCompiler",
+   "original_sha256": "daab1ffdde5c6e3dc0496a89e84ac1414ed647358273083e941183cf0c5e747f",
+   "path": "OAI/Computability/MatchingCount/RawOptimizerRowsCompiler.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawPrimitives.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawPrimitives",
+   "original_sha256": "3416c86706c8de16e249428b5aee1421806a09d273cb811843715efec6f0004c",
+   "path": "OAI/Computability/MatchingCount/RawPrimitives.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawRoutine.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawRoutine",
+   "original_sha256": "fbb4a49246b77a8b45dc6852ec8b056c8f0330126bbbac62a21a000cbce68f02",
+   "path": "OAI/Computability/MatchingCount/RawRoutine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawSearch.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawSearch",
+   "original_sha256": "ffecd364766c2bcab9fb2cdab5364be43cd4ec9ca2d789f199f8a1d50b445f0c",
+   "path": "OAI/Computability/MatchingCount/RawSearch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawSearchCompiler.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawSearchCompiler",
+   "original_sha256": "5191664f1a65c02e47ed78850289d6f3655139e3318092e80c5e1daecf76a452",
+   "path": "OAI/Computability/MatchingCount/RawSearchCompiler.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawSearchSize.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawSearchSize",
+   "original_sha256": "011447f018b393f7a27799ff432ee777da70fdbbb68ab3d320a8100b9bdc653d",
+   "path": "OAI/Computability/MatchingCount/RawSearchSize.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RawSize.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RawSize",
+   "original_sha256": "ad303e21f9ceeb0bc828b88dbb4913d60ce12261ac6ae1f0df1bd4cbd0dd02a7",
+   "path": "OAI/Computability/MatchingCount/RawSize.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RecursiveBounds.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RecursiveBounds",
+   "original_sha256": "78f88d8ac05970eafb42ac4d21d6a6b16cb16478c76c9b6a761a905d5fe66bc1",
+   "path": "OAI/Computability/MatchingCount/RecursiveBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RecursiveCoding.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RecursiveCoding",
+   "original_sha256": "a28418cb5442f678cb72c71f0bbf72d9cbb982bbe41bc6add288f97274f3707b",
+   "path": "OAI/Computability/MatchingCount/RecursiveCoding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RecursiveCompiler.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RecursiveCompiler",
+   "original_sha256": "4373f06742f59d11cba0222145979d1d62b1a6d790652edde4534be13d4d751c",
+   "path": "OAI/Computability/MatchingCount/RecursiveCompiler.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/RecursiveEval.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.RecursiveEval",
+   "original_sha256": "a1d5350307caec5cd7ea9df0e8e7a8ab263ec9b716e5560631a0f263c27908c6",
+   "path": "OAI/Computability/MatchingCount/RecursiveEval.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/ResidualSearch.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.ResidualSearch",
+   "original_sha256": "7601d92579947d037db0071a81ad4e91e10754c85c1333db0e05f26eccaf65c1",
+   "path": "OAI/Computability/MatchingCount/ResidualSearch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/ScaledAlgorithm.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.ScaledAlgorithm",
+   "original_sha256": "75dc3d2d2043b6c3712f21a875b10d292b4e0679a0c14846c67ce4ce17d29340",
+   "path": "OAI/Computability/MatchingCount/ScaledAlgorithm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/ScaledBounds.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.ScaledBounds",
+   "original_sha256": "eb82377a9026e30a05c39bc3069a2d1713f98f1390b4a895e0b13627f706df76",
+   "path": "OAI/Computability/MatchingCount/ScaledBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/ScaledState.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.ScaledState",
+   "original_sha256": "2c68a9e38d75dd1383dc720bc3cebb9a637d082bb0023d31762b8fae91ee8a90",
+   "path": "OAI/Computability/MatchingCount/ScaledState.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/SelectRoutine.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.SelectRoutine",
+   "original_sha256": "ae460261cc1f993c719c53029ff19d9ccdf96d2589c8c9fa0d6e77564d1a6ac0",
+   "path": "OAI/Computability/MatchingCount/SelectRoutine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/SequenceRoutine.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.SequenceRoutine",
+   "original_sha256": "f78d6f278b70a121263e20dfe86b683a6f685d31fcd2be7bdc89f1909d7be8f1",
+   "path": "OAI/Computability/MatchingCount/SequenceRoutine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/StackCopy.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.StackCopy",
+   "original_sha256": "53b9a8ad96ec7c78e56788798f227eb10cfc7bb6e89c3d8ed63501545d4d26df",
+   "path": "OAI/Computability/MatchingCount/StackCopy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/StackEmbed.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.StackEmbed",
+   "original_sha256": "d2c19c2fe374feda57c6960c2bed3213d07efb0e91a86b4dd74ea9c6a11e6e47",
+   "path": "OAI/Computability/MatchingCount/StackEmbed.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/StackFrame.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.StackFrame",
+   "original_sha256": "c877f5882f6f1b517743c80d0bf7907f323c5e4e2fc03862ccfa2ac9421c9f8b",
+   "path": "OAI/Computability/MatchingCount/StackFrame.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/StackMacros.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.StackMacros",
+   "original_sha256": "36cc635f063d42decd21f1c32db9f911bbf62c2fea0bab5fea11e908ab5f9f45",
+   "path": "OAI/Computability/MatchingCount/StackMacros.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/StackPair.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.StackPair",
+   "original_sha256": "ecd35055d22d2d5db040bed45be16d9ceb06bf2b6d771d1761a825e713be9a0b",
+   "path": "OAI/Computability/MatchingCount/StackPair.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/StackRoutine.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.StackRoutine",
+   "original_sha256": "20c7365a44fc2f9cc74f5fa5d713e936ee2268f226ab86a5158e28b4c02b8a7c",
+   "path": "OAI/Computability/MatchingCount/StackRoutine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/SumRoutine.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.SumRoutine",
+   "original_sha256": "1eb87bb32f090bb1e9973d26124e4ac28026e16aadb88030859fb23a4aac2eb3",
+   "path": "OAI/Computability/MatchingCount/SumRoutine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/TerminalMincut.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.TerminalMincut",
+   "original_sha256": "e7394776937e94730e35dba82e0e25d3486eb30e19e2052da9c4a53aa134259c",
+   "path": "OAI/Computability/MatchingCount/TerminalMincut.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/UnaryArithmetic.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.UnaryArithmetic",
+   "original_sha256": "5d16c6b56c623c97ff09ae75f2c03c720324eb5d97ccc6b7f1a9fd17ab9a40f6",
+   "path": "OAI/Computability/MatchingCount/UnaryArithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/UnaryClog.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.UnaryClog",
+   "original_sha256": "cf1a8ac9e31f2cb3f85c29d402ed1a0c7f61d44137db730c959505b5e51354bb",
+   "path": "OAI/Computability/MatchingCount/UnaryClog.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/UnaryDivision.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.UnaryDivision",
+   "original_sha256": "2db16cb3ca30b5ef4205d098791af854f291389ef735a4b1c1c3a9e75ca2dfe4",
+   "path": "OAI/Computability/MatchingCount/UnaryDivision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/UnitFlow.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.UnitFlow",
+   "original_sha256": "9fd50df00067aeb9912570e6ee000a5486da597afd275059ab81b2f7fb2bbe8b",
+   "path": "OAI/Computability/MatchingCount/UnitFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MatchingCount/UnitMincut.lean"
+   },
+   "module": "OAI.Computability.MatchingCount.UnitMincut",
+   "original_sha256": "b1f68240940aa626896590438eea27759dc6b40879c75a9194008d653ab86448",
+   "path": "OAI/Computability/MatchingCount/UnitMincut.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.PerfectMatching.AlgorithmPartition",
+  "OAI.Combinatorics.PerfectMatching.Ascent",
+  "OAI.Combinatorics.PerfectMatching.Basic",
+  "OAI.Combinatorics.PerfectMatching.Calculus",
+  "OAI.Combinatorics.PerfectMatching.CompletePairs",
+  "OAI.Combinatorics.PerfectMatching.Completion",
+  "OAI.Combinatorics.PerfectMatching.Continuity",
+  "OAI.Combinatorics.PerfectMatching.Contraction",
+  "OAI.Combinatorics.PerfectMatching.CountCorrect",
+  "OAI.Combinatorics.PerfectMatching.Coupling",
+  "OAI.Combinatorics.PerfectMatching.Covariance",
+  "OAI.Combinatorics.PerfectMatching.Duality",
+  "OAI.Combinatorics.PerfectMatching.DyadicEntropy",
+  "OAI.Combinatorics.PerfectMatching.DyadicEnvelope",
+  "OAI.Combinatorics.PerfectMatching.ElementaryCount",
+  "OAI.Combinatorics.PerfectMatching.Entropy",
+  "OAI.Combinatorics.PerfectMatching.EntropyUpper",
+  "OAI.Combinatorics.PerfectMatching.Face",
+  "OAI.Combinatorics.PerfectMatching.FeasibilityRepair",
+  "OAI.Combinatorics.PerfectMatching.ForcedReduction",
+  "OAI.Combinatorics.PerfectMatching.Main",
+  "OAI.Combinatorics.PerfectMatching.MatchingCovariance",
+  "OAI.Combinatorics.PerfectMatching.Model",
+  "OAI.Combinatorics.PerfectMatching.ObjectivePenalty",
+  "OAI.Combinatorics.PerfectMatching.OddCuts",
+  "OAI.Combinatorics.PerfectMatching.Optimizer",
+  "OAI.Combinatorics.PerfectMatching.ParameterBounds",
+  "OAI.Combinatorics.PerfectMatching.Partition",
+  "OAI.Combinatorics.PerfectMatching.Polyhedron",
+  "OAI.Combinatorics.PerfectMatching.Polytope",
+  "OAI.Combinatorics.PerfectMatching.SecondVariation",
+  "OAI.Combinatorics.PerfectMatching.Separable",
+  "OAI.Combinatorics.PerfectMatching.SeparableCovariance",
+  "OAI.Combinatorics.PerfectMatching.SeparableLower",
+  "OAI.Combinatorics.PerfectMatching.Simplex",
+  "OAI.Combinatorics.PerfectMatching.SizeBounds",
+  "OAI.Combinatorics.PerfectMatching.Violation",
+  "OAI.Combinatorics.PerfectMatching.WeightedSpectrum",
+  "OAI.Computability.MatchingCount.ArgRoutine",
+  "OAI.Computability.MatchingCount.BinaryAlgorithm",
+  "OAI.Computability.MatchingCount.BinaryParser",
+  "OAI.Computability.MatchingCount.BinarySolve",
+  "OAI.Computability.MatchingCount.CappedPower",
+  "OAI.Computability.MatchingCount.CutAlgebra",
+  "OAI.Computability.MatchingCount.DenseOracle",
+  "OAI.Computability.MatchingCount.DivisionRoutine",
+  "OAI.Computability.MatchingCount.FiniteStack",
+  "OAI.Computability.MatchingCount.FoldRoutine",
+  "OAI.Computability.MatchingCount.GuardRoutine",
+  "OAI.Computability.MatchingCount.IntegerRoutine",
+  "OAI.Computability.MatchingCount.IterateRoutine",
+  "OAI.Computability.MatchingCount.LengthRoutine",
+  "OAI.Computability.MatchingCount.ListNumeric",
+  "OAI.Computability.MatchingCount.ListRoutine",
+  "OAI.Computability.MatchingCount.MapRoutine",
+  "OAI.Computability.MatchingCount.OddCutParity",
+  "OAI.Computability.MatchingCount.OddCutUncross",
+  "OAI.Computability.MatchingCount.OddMincut",
+  "OAI.Computability.MatchingCount.OptionCases",
+  "OAI.Computability.MatchingCount.OracleBounds",
+  "OAI.Computability.MatchingCount.OrbitRoutine",
+  "OAI.Computability.MatchingCount.PairRoutine",
+  "OAI.Computability.MatchingCount.ParamRoutine",
+  "OAI.Computability.MatchingCount.ParserSupport",
+  "OAI.Computability.MatchingCount.PolyCoding",
+  "OAI.Computability.MatchingCount.ProjectionRoutine",
+  "OAI.Computability.MatchingCount.RawBitsBridge",
+  "OAI.Computability.MatchingCount.RawContraction",
+  "OAI.Computability.MatchingCount.RawContractionCompiler",
+  "OAI.Computability.MatchingCount.RawData",
+  "OAI.Computability.MatchingCount.RawFlow",
+  "OAI.Computability.MatchingCount.RawFlowCompiler",
+  "OAI.Computability.MatchingCount.RawFlowSize",
+  "OAI.Computability.MatchingCount.RawInput",
+  "OAI.Computability.MatchingCount.RawOddBounds",
+  "OAI.Computability.MatchingCount.RawOddCompiler",
+  "OAI.Computability.MatchingCount.RawOddCut",
+  "OAI.Computability.MatchingCount.RawOptimizer",
+  "OAI.Computability.MatchingCount.RawOptimizerCompiler",
+  "OAI.Computability.MatchingCount.RawOptimizerData",
+  "OAI.Computability.MatchingCount.RawOptimizerDataCompiler",
+  "OAI.Computability.MatchingCount.RawOptimizerRows",
+  "OAI.Computability.MatchingCount.RawOptimizerRowsCompiler",
+  "OAI.Computability.MatchingCount.RawPrimitives",
+  "OAI.Computability.MatchingCount.RawRoutine",
+  "OAI.Computability.MatchingCount.RawSearch",
+  "OAI.Computability.MatchingCount.RawSearchCompiler",
+  "OAI.Computability.MatchingCount.RawSearchSize",
+  "OAI.Computability.MatchingCount.RawSize",
+  "OAI.Computability.MatchingCount.RecursiveBounds",
+  "OAI.Computability.MatchingCount.RecursiveCoding",
+  "OAI.Computability.MatchingCount.RecursiveCompiler",
+  "OAI.Computability.MatchingCount.RecursiveEval",
+  "OAI.Computability.MatchingCount.ResidualSearch",
+  "OAI.Computability.MatchingCount.ScaledAlgorithm",
+  "OAI.Computability.MatchingCount.ScaledBounds",
+  "OAI.Computability.MatchingCount.ScaledState",
+  "OAI.Computability.MatchingCount.SelectRoutine",
+  "OAI.Computability.MatchingCount.SequenceRoutine",
+  "OAI.Computability.MatchingCount.StackCopy",
+  "OAI.Computability.MatchingCount.StackEmbed",
+  "OAI.Computability.MatchingCount.StackFrame",
+  "OAI.Computability.MatchingCount.StackMacros",
+  "OAI.Computability.MatchingCount.StackPair",
+  "OAI.Computability.MatchingCount.StackRoutine",
+  "OAI.Computability.MatchingCount.SumRoutine",
+  "OAI.Computability.MatchingCount.TerminalMincut",
+  "OAI.Computability.MatchingCount.UnaryArithmetic",
+  "OAI.Computability.MatchingCount.UnaryClog",
+  "OAI.Computability.MatchingCount.UnaryDivision",
+  "OAI.Computability.MatchingCount.UnitFlow",
+  "OAI.Computability.MatchingCount.UnitMincut"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/BinaryMatching.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Computability.MatchingCount.BinarySolve",
+   "name": "OAI.BinaryMatching.deterministic_approximate_counting",
+   "statement_sha256": "1f20849f85f45536ec87b66492c47b81400de88d1a73c5f307f6969a76b8e188"
+  }
+ ],
+ "task_id": "oai-binary-matching",
+ "task_revision": 1,
+ "title": "OpenAI math: Approximate counting and entropy of perfect matchings: Deterministic approximate matching count",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

@@ -1,0 +1,751 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 48847456
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.BoundedTreewidthL1",
+  "challenge_sha256": "630b947fa99b012e1575ad23cf658b0d6e8660d31a95600f5b5894bb0fe5d48f",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/BoundedTreewidthL1.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.BoundedTreewidthL1",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Combinatorics.TreewidthL1.Main",
+   "theorem_names": [
+    "OAI.BoundedTreewidthL1.main_theorem"
+   ]
+  },
+  "config_sha256": "ec313e68d93286dff543b0d46755de4b6ca3de772978bfe476a8cae08ca5256b",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/BoundedTreewidthL1.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.BoundedTreewidthL1.main_theorem": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/AnchorEmbedding.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.AnchorEmbedding",
+   "original_sha256": "ca409829d4f9b32ce1b1c3e7b27873ae811d0d3fcac35645388fda5786ba6e1d",
+   "path": "OAI/Combinatorics/TreewidthL1/AnchorEmbedding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/AnchorExperiment.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.AnchorExperiment",
+   "original_sha256": "904821356b1a10227ca7b401ca595842c3481d84b290b2090c2693a143cef82f",
+   "path": "OAI/Combinatorics/TreewidthL1/AnchorExperiment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/AnchorGeometry.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.AnchorGeometry",
+   "original_sha256": "2e56a0829d20c0d4270d37504d360588275b6a92ae5b9ac4d757ca34fb1d9d3f",
+   "path": "OAI/Combinatorics/TreewidthL1/AnchorGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/Anchors.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.Anchors",
+   "original_sha256": "d61ace248e0ce306924e57b1be0b295d6b05f036fd02398ac3f1df7b98316fc4",
+   "path": "OAI/Combinatorics/TreewidthL1/Anchors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/Annulus.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.Annulus",
+   "original_sha256": "0251aa46a128cc2fc29f618e08b979b1886bdc144549ff2097fe40f5c58c67dd",
+   "path": "OAI/Combinatorics/TreewidthL1/Annulus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/BagLabels.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.BagLabels",
+   "original_sha256": "29a6f28794e850075d4c620934d6f01cd6f81a8228d683c004432da2479bb7f8",
+   "path": "OAI/Combinatorics/TreewidthL1/BagLabels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/CacheControl.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.CacheControl",
+   "original_sha256": "eda2d67cd6d45f38153f581440b10666b7c868402c65f23c2f69e26d61ea0bff",
+   "path": "OAI/Combinatorics/TreewidthL1/CacheControl.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/CachedEnsemble.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.CachedEnsemble",
+   "original_sha256": "a0b2ee517febce22b5afb62698025981be6ca03a922c12edffe2d33538d94599",
+   "path": "OAI/Combinatorics/TreewidthL1/CachedEnsemble.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/CobagEmbedding.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.CobagEmbedding",
+   "original_sha256": "4f892fbe72d0965fd8ebe3f2df0be95a6a3a1d55a270f75bb9cec0f582db2539",
+   "path": "OAI/Combinatorics/TreewidthL1/CobagEmbedding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/CobagNoise.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.CobagNoise",
+   "original_sha256": "2e34b9cba40fe583218a913a6514c434ebabffff9992380d1bb8a56561571355",
+   "path": "OAI/Combinatorics/TreewidthL1/CobagNoise.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/CobagScales.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.CobagScales",
+   "original_sha256": "877a7d6de5026ad2294747f29e1b4125033c21c06e8d78c321563779da57f6a4",
+   "path": "OAI/Combinatorics/TreewidthL1/CobagScales.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/Construction.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.Construction",
+   "original_sha256": "d55e4cffea2165e14e3be34dd5c2bfeb600f9d926909f9a9090dc63b028cab19",
+   "path": "OAI/Combinatorics/TreewidthL1/Construction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/Cuts.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.Cuts",
+   "original_sha256": "c991ac5e2e9847289bd1d0973c351327c3da756839feda30b4933a376862f343",
+   "path": "OAI/Combinatorics/TreewidthL1/Cuts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/ExpandedAnchor.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.ExpandedAnchor",
+   "original_sha256": "72668eb28cc5490bbc572d93ba2f28c6f14fab8401758062c637b2ba9468196f",
+   "path": "OAI/Combinatorics/TreewidthL1/ExpandedAnchor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/ExpandedParticles.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.ExpandedParticles",
+   "original_sha256": "742029b66814cdb96052343bcdca14c8851813f7614a0b77b36a216d10f3fa0e",
+   "path": "OAI/Combinatorics/TreewidthL1/ExpandedParticles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/ExpandedPaths.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.ExpandedPaths",
+   "original_sha256": "b63532ce3574079735cf9aaa08e47ebea7965ad6a3d8a662f32cad53ef4ac86e",
+   "path": "OAI/Combinatorics/TreewidthL1/ExpandedPaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/ExpandedTree.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.ExpandedTree",
+   "original_sha256": "ae28f81432a2b7eaa9bf06b5dd08d1552cbec32ad516119e5d2ab9126e9cf7a5",
+   "path": "OAI/Combinatorics/TreewidthL1/ExpandedTree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/LaunchNoise.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.LaunchNoise",
+   "original_sha256": "94c1cd05d4d9d04d33bbbffce65b7e9ef8cf7c3782b33e56f195719952ddd0a2",
+   "path": "OAI/Combinatorics/TreewidthL1/LaunchNoise.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/Main.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.Main",
+   "original_sha256": "3f5b9460f90f6dd51604e6cfa9c8a6fe9807ee013b6b4e80839471d7f1cd2fc2",
+   "path": "OAI/Combinatorics/TreewidthL1/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/MarkovProduct.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.MarkovProduct",
+   "original_sha256": "2548e3e1aafa9497daff5918a9b26a9986ff8d2ec8bf1624e9e4d2afa462e7df",
+   "path": "OAI/Combinatorics/TreewidthL1/MarkovProduct.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/Model.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.Model",
+   "original_sha256": "6fc9da7224a00d7e0c4e956b4423fe57046ca43ebd9b29914954b786804f77e3",
+   "path": "OAI/Combinatorics/TreewidthL1/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/NoiseCube.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.NoiseCube",
+   "original_sha256": "6e1e25617428dd49149f1a340b67ab2c6e3cb1749deff86b08e5a5de0b414bf7",
+   "path": "OAI/Combinatorics/TreewidthL1/NoiseCube.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/OrderedSweep.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.OrderedSweep",
+   "original_sha256": "cdb02991299668ae7e828dad9671541beaa11498bc75769bf023417362a0545c",
+   "path": "OAI/Combinatorics/TreewidthL1/OrderedSweep.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/Padding.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.Padding",
+   "original_sha256": "81531986088a7925b77688c3619de1954b731525695525a70a445f0a4cb928f9",
+   "path": "OAI/Combinatorics/TreewidthL1/Padding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/ParticleLaws.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.ParticleLaws",
+   "original_sha256": "9fe1cfcc90f7b8ef2b6e8bda8ada77b16841dd09d7d3f837d489ba6ce8eda577",
+   "path": "OAI/Combinatorics/TreewidthL1/ParticleLaws.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/Particles.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.Particles",
+   "original_sha256": "e56790fb09282232c59cfafe778690748573a30c18b38c1f38f30412c7c55c0b",
+   "path": "OAI/Combinatorics/TreewidthL1/Particles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/ReservedCoupling.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.ReservedCoupling",
+   "original_sha256": "906ca2a43e79cb085f402995be9bd6ba6394fa8cbf66ad1693462cb8ddb944fc",
+   "path": "OAI/Combinatorics/TreewidthL1/ReservedCoupling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/ReservedTests.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.ReservedTests",
+   "original_sha256": "d2459204b52751d7e39c594038825797377272917e8a9b13dfeca39568271528",
+   "path": "OAI/Combinatorics/TreewidthL1/ReservedTests.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/TreeGeometry.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.TreeGeometry",
+   "original_sha256": "04a49e2095e1381646663fa90210acb042ae595c77d7c9a5bc72d60de7cdea68",
+   "path": "OAI/Combinatorics/TreewidthL1/TreeGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/TreeMarkov.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.TreeMarkov",
+   "original_sha256": "09d02f77872af121d87ae5e315bbda6a86b54bf9128a04990ae0c8f6ffcde49d",
+   "path": "OAI/Combinatorics/TreewidthL1/TreeMarkov.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/TreeParticles.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.TreeParticles",
+   "original_sha256": "d363945823edef93aa58d10f1f2b30fe88f9ee9c48b912214a7b67390d43a44d",
+   "path": "OAI/Combinatorics/TreewidthL1/TreeParticles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/WeightedPaths.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.WeightedPaths",
+   "original_sha256": "263ffcdcc817ddcbdafb7c815306bac7c6107a3d234668fc1eab16f76501cb4e",
+   "path": "OAI/Combinatorics/TreewidthL1/WeightedPaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/TreewidthL1/YoungestCrossing.lean"
+   },
+   "module": "OAI.Combinatorics.TreewidthL1.YoungestCrossing",
+   "original_sha256": "63f90095d36a4083a8e892f4d396827f6be0e3be01f7eadf55896422cd4715d0",
+   "path": "OAI/Combinatorics/TreewidthL1/YoungestCrossing.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.TreewidthL1.AnchorEmbedding",
+  "OAI.Combinatorics.TreewidthL1.AnchorExperiment",
+  "OAI.Combinatorics.TreewidthL1.AnchorGeometry",
+  "OAI.Combinatorics.TreewidthL1.Anchors",
+  "OAI.Combinatorics.TreewidthL1.Annulus",
+  "OAI.Combinatorics.TreewidthL1.BagLabels",
+  "OAI.Combinatorics.TreewidthL1.CacheControl",
+  "OAI.Combinatorics.TreewidthL1.CachedEnsemble",
+  "OAI.Combinatorics.TreewidthL1.CobagEmbedding",
+  "OAI.Combinatorics.TreewidthL1.CobagNoise",
+  "OAI.Combinatorics.TreewidthL1.CobagScales",
+  "OAI.Combinatorics.TreewidthL1.Construction",
+  "OAI.Combinatorics.TreewidthL1.Cuts",
+  "OAI.Combinatorics.TreewidthL1.ExpandedAnchor",
+  "OAI.Combinatorics.TreewidthL1.ExpandedParticles",
+  "OAI.Combinatorics.TreewidthL1.ExpandedPaths",
+  "OAI.Combinatorics.TreewidthL1.ExpandedTree",
+  "OAI.Combinatorics.TreewidthL1.LaunchNoise",
+  "OAI.Combinatorics.TreewidthL1.Main",
+  "OAI.Combinatorics.TreewidthL1.MarkovProduct",
+  "OAI.Combinatorics.TreewidthL1.Model",
+  "OAI.Combinatorics.TreewidthL1.NoiseCube",
+  "OAI.Combinatorics.TreewidthL1.OrderedSweep",
+  "OAI.Combinatorics.TreewidthL1.Padding",
+  "OAI.Combinatorics.TreewidthL1.ParticleLaws",
+  "OAI.Combinatorics.TreewidthL1.Particles",
+  "OAI.Combinatorics.TreewidthL1.ReservedCoupling",
+  "OAI.Combinatorics.TreewidthL1.ReservedTests",
+  "OAI.Combinatorics.TreewidthL1.TreeGeometry",
+  "OAI.Combinatorics.TreewidthL1.TreeMarkov",
+  "OAI.Combinatorics.TreewidthL1.TreeParticles",
+  "OAI.Combinatorics.TreewidthL1.WeightedPaths",
+  "OAI.Combinatorics.TreewidthL1.YoungestCrossing"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/BoundedTreewidthL1.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Combinatorics.TreewidthL1.Main",
+   "name": "OAI.BoundedTreewidthL1.main_theorem",
+   "statement_sha256": "1181dc2297d733249c7972a27435f2741fe0a9aabd617bde96173be5f8c5e91d"
+  }
+ ],
+ "task_id": "oai-bounded-treewidth-l1",
+ "task_revision": 1,
+ "title": "OpenAI math: Bounded-distortion <i>L</i><sub>1</sub> embeddings of planar and bounded-treewidth graphs: Bounded-treewidth graph metrics in L_1",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

@@ -269,8 +269,15 @@ def _check_classes(src: dict, base: Path, out: list[LintError]) -> None:
             out.append(LintError("target_module", f"target {t['name']} is in {t.get('module')}, which is not a "
                                                   f"charged module"))
     frozen = src["frozen"]
-    if not (frozen == "statement_closure" or isinstance(frozen, list)):
-        out.append(LintError("bad_value", "frozen must be \"statement_closure\" or a list of {name, closure_sha256}"))
+    if isinstance(frozen, dict):
+        add = frozen.get("add")
+        if (set(frozen) != {"rule", "add"} or frozen.get("rule") != "statement_closure" or not isinstance(add, list)
+                or not all(isinstance(n, str) and n for n in add) or len(set(add)) != len(add)):
+            out.append(LintError("bad_value", "frozen as an object must be {\"rule\": \"statement_closure\", \"add\": "
+                                              "[distinct names]} (the statement closure plus named definitions)"))
+    elif not (frozen == "statement_closure" or isinstance(frozen, list)):
+        out.append(LintError("bad_value", "frozen must be \"statement_closure\", a list of {name, closure_sha256} or "
+                                          "{\"rule\": \"statement_closure\", \"add\": [names]}"))
 
 
 def _check_rules(src: dict, out: list[LintError]) -> None:
@@ -345,6 +352,17 @@ def _n(value) -> str:
     return "-" if value is None else f"{value:,}"
 
 
+def frozen_description(frozen) -> str:
+    """The frozen-set row of a task card."""
+    if frozen == "statement_closure":
+        return "mechanical (statement closure)"
+    if isinstance(frozen, dict):
+        names = ", ".join(f"`{n}`" for n in frozen["add"])
+        return (f"mechanical (statement closure) plus {len(frozen['add'])} named "
+                f"definition{'' if len(frozen['add']) == 1 else 's'}" + (f": {names}" if names else ""))
+    return f"hand list of {len(frozen)} names, checked to contain the mechanical set"
+
+
 def render_card(src: dict, base: Path, measured: dict | None) -> str:
     """tasks/<id>/CARD.md: the per-task card (source, license, module classes, targets, baselines, measurements).
     Everything is derived from task_source.json and tasks/<id>/measured.json, so the card cannot drift."""
@@ -372,7 +390,11 @@ def render_card(src: dict, base: Path, measured: dict | None) -> str:
              + (f"; {len(classes.fixed_background)} fixed background modules" if classes.fixed_background else "")
              + f"; core {', '.join(src['core']['modules'])} = {src['core']['class']} |",
              f"| targets | {len(src['targets'])} theorems |",
-             f"| frozen set | {'mechanical (statement closure)' if frozen == 'statement_closure' else f'hand list of {len(frozen)} names, checked to contain the mechanical set'} |",
+             f"| frozen set | {frozen_description(frozen)} |",
+             *([f"| upstream solution module | `{src['comparator']['config']['solution_module']}` (build it in the "
+                f"upstream checkout to prepare the Lake packages) |"]
+               if isinstance(src.get("comparator"), dict) and src["comparator"].get("config", {}).get("solution_module")
+               else []),
              f"| modes | {', '.join(src['modes'])} (official: warm) |",
              f"| limits | kernel {src['limits']['kernel_heartbeats']:,} heartbeats per declaration (the only "
              f"validity limit); safety limits that give no verdict: memory {src['limits']['mem_mb']:,} MB, wall clock "
@@ -390,7 +412,9 @@ def render_card(src: dict, base: Path, measured: dict | None) -> str:
                   f"Peak memory of the job: {measured['peak_rss_mb']:,} MB "
                   f"({measured.get('peak_rss_source') or 'source not recorded'}). ./check node count = "
                   f"{_n(measured['A'])} ({'exact' if measured['A'] == src['baseline'].get('expr_nodes_with_levels_v1') else 'MISMATCH'}).",
-                  f"Warm tarball sha256 `{measured['tarball_sha256']['warm']}`; no_hint `{measured['tarball_sha256']['no_hint']}`.",
+                  f"Warm tarball sha256 `{measured['tarball_sha256']['warm']}`"
+                  + (f"; no_hint `{measured['tarball_sha256']['no_hint']}`." if "no_hint" in measured["tarball_sha256"]
+                     else "."),
                   ""]
         if measured.get("dag_nodes_v1") is not None:
             lines += [f"dag_nodes_v1 = {measured['dag_nodes_v1']:,} (recorded, not ranked).", ""]

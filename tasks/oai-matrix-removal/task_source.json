@@ -1,0 +1,1031 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 21041200
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.MatrixRemoval",
+  "challenge_sha256": "1db0fac5a4ddc57a90e9950cfd4e7e4e1681b4c8ce755e6ba5c169f3656b77e9",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/MatrixRemoval.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.MatrixRemoval",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Combinatorics.MatrixRemoval.Main",
+   "theorem_names": [
+    "OAI.Problem348.no_polynomial_removal_bound"
+   ]
+  },
+  "config_sha256": "f746b2a374277d201eea7f901128a4833c7b637d1a8d17f33d0835a6fbfe5430",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/MatrixRemoval.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.Problem348.no_polynomial_removal_bound": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/AnchorFrames.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.AnchorFrames",
+   "original_sha256": "cb9ec45e6c69d6078645957ce7bb8afd48af9f823de93a0df7b48dce750142c0",
+   "path": "OAI/Combinatorics/MatrixRemoval/AnchorFrames.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/AnchorGroups.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.AnchorGroups",
+   "original_sha256": "f43e1b4d74eb621c8c8efff315bb009158b91174e8c3ddb3afce56c85b224c3e",
+   "path": "OAI/Combinatorics/MatrixRemoval/AnchorGroups.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/AnchorPatternBridge.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.AnchorPatternBridge",
+   "original_sha256": "11b386d6c5b839c5fd912b2f43e36439ddd51d3bb5943d121c8d1d0d317901e6",
+   "path": "OAI/Combinatorics/MatrixRemoval/AnchorPatternBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/AnchorPatternFixed.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.AnchorPatternFixed",
+   "original_sha256": "cb679642fc8f10683d7c97f2d859c01acd67a9ce0a77b2def7cb50ad36cb7f66",
+   "path": "OAI/Combinatorics/MatrixRemoval/AnchorPatternFixed.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/AnchorProperties.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.AnchorProperties",
+   "original_sha256": "f1c7e2ed9227ec6fb4faddaa1484d8cef3085fcb66e5dd528a6f1d718bf926cf",
+   "path": "OAI/Combinatorics/MatrixRemoval/AnchorProperties.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/AnchorRigidity.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.AnchorRigidity",
+   "original_sha256": "f7f37e1bf6facd820ad0f0821ea760be6f0cacd27604f91379ad486e8a2d0c2c",
+   "path": "OAI/Combinatorics/MatrixRemoval/AnchorRigidity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/AnchorRigidityFixed.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.AnchorRigidityFixed",
+   "original_sha256": "a1f54f5587e0c2bf7df2d510e93b4fc22b831c90eae87740fdcb39032993aaa1",
+   "path": "OAI/Combinatorics/MatrixRemoval/AnchorRigidityFixed.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/Asymptotics.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.Asymptotics",
+   "original_sha256": "f97ca3d114583c3e6a47b5ea23a0e077ee8118d66a2fb6758c585d50f833e2f8",
+   "path": "OAI/Combinatorics/MatrixRemoval/Asymptotics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/BodyExtension.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.BodyExtension",
+   "original_sha256": "6c2dfcce9ffac09370c5217bf9445a304089f645ab920fb7f4809381de0ac51c",
+   "path": "OAI/Combinatorics/MatrixRemoval/BodyExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/BodyRoles.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.BodyRoles",
+   "original_sha256": "39fc7582de0e209afaf55338570652ebc7fb38786e1b7b33ca4842cb8c1e3110",
+   "path": "OAI/Combinatorics/MatrixRemoval/BodyRoles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/CanonicalCopyBound.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.CanonicalCopyBound",
+   "original_sha256": "e28a4f9a4589b1afa157cd47b44e06afb905adca0a6333b58d5dfeca4024b14e",
+   "path": "OAI/Combinatorics/MatrixRemoval/CanonicalCopyBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/CanonicalHorizontal.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.CanonicalHorizontal",
+   "original_sha256": "253e242fee779345559b3a607d2ad116d3358ae4a126e6b5e5697219489c29bd",
+   "path": "OAI/Combinatorics/MatrixRemoval/CanonicalHorizontal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/CanonicalModeEntries.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.CanonicalModeEntries",
+   "original_sha256": "660a795beacd178d23d281b4259134d40b0a04fed1dcd86bd4458d90f7fc0823",
+   "path": "OAI/Combinatorics/MatrixRemoval/CanonicalModeEntries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/Consequence.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.Consequence",
+   "original_sha256": "175b9d685666729b293f4b81d433c1a924607ddf0f2539996676cd2ffe5137fc",
+   "path": "OAI/Combinatorics/MatrixRemoval/Consequence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/CopyBound.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.CopyBound",
+   "original_sha256": "39500fa77a03270e55f8b1c7c54e7581d8e3f2550043c01d670780ae8f743ac7",
+   "path": "OAI/Combinatorics/MatrixRemoval/CopyBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/CopyBoundFixed.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.CopyBoundFixed",
+   "original_sha256": "3c5d3ceee4a948e3ffef4cf5613b6ce1e7c4211ae70c002e5337a7992f094122",
+   "path": "OAI/Combinatorics/MatrixRemoval/CopyBoundFixed.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/DirectNonshattering.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.DirectNonshattering",
+   "original_sha256": "37f4fd9a29a164cccc4536cb80493dc7963a2cb5a92451bc6258e1a3e88eeb5c",
+   "path": "OAI/Combinatorics/MatrixRemoval/DirectNonshattering.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/GuardContainment.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.GuardContainment",
+   "original_sha256": "843944d0859fe47fffd9ed01366868dc8b3bd1c83e15a5484796133009e728b8",
+   "path": "OAI/Combinatorics/MatrixRemoval/GuardContainment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/GuardedFrame.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.GuardedFrame",
+   "original_sha256": "fdb5ee6a6a9cb482c6754f20c9055dc05c9bfc8e6e0f10f8e545f7bc3bbbbf97",
+   "path": "OAI/Combinatorics/MatrixRemoval/GuardedFrame.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/GuardedPath.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.GuardedPath",
+   "original_sha256": "f3609fcd68954f2002cdb92c6e709f39a65de3a2f75f8cb9e57c05a7e6572c3f",
+   "path": "OAI/Combinatorics/MatrixRemoval/GuardedPath.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/Host.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.Host",
+   "original_sha256": "edb6c4c55143cf8b7db2bd0bdeef49ae7371b60969e3f9e4be5376107e2fe206",
+   "path": "OAI/Combinatorics/MatrixRemoval/Host.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostAnchorFrames.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostAnchorFrames",
+   "original_sha256": "1ede630260ca229b51a03a8d0934bb0f1b4777a83058f5b35830804be12056ef",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostAnchorFrames.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostAnchorGroups.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostAnchorGroups",
+   "original_sha256": "26bc520b98ee30865e4026eb1626389b67854346e060a9cc1d79babdc0147858",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostAnchorGroups.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostAnchorPinning.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostAnchorPinning",
+   "original_sha256": "afe91fe22c38a9b3a47b14af52e0f4aa8117089705b78a599e7922e3663f72d8",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostAnchorPinning.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostAnchorRigidity.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostAnchorRigidity",
+   "original_sha256": "e34d5123d61821d4db9ffafa0b322214bf65e7f9cecd37a48b6d3dbc94ab6f24",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostAnchorRigidity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostBodyModes.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostBodyModes",
+   "original_sha256": "e492705d6c030a6b84e049dbaac69b5d0b93a21b6f9f172095e0688a48906b84",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostBodyModes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostBodyOrder.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostBodyOrder",
+   "original_sha256": "85248a08aff02858825936cfb1dbfff6c54c28c61a2f757ea5d3b5c0e555f48f",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostBodyOrder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostCopyBound.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostCopyBound",
+   "original_sha256": "5f448edfabebe7e5d8b1d9ee4ffbc8476dfafc1170d84e1bf4fc0080bdd72378",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostCopyBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostModeIncidence.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostModeIncidence",
+   "original_sha256": "16db00997488f3b6e6a3a0cb6d31118ffe8c1ccf4b481fcdf2a5e7553cfe7a2b",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostModeIncidence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostNonshattering.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostNonshattering",
+   "original_sha256": "1bec1944f5d0bb71866a4e926eaf18e707a3c6a01b3c9558e77fde85cd645513",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostNonshattering.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostRepairDistance.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostRepairDistance",
+   "original_sha256": "7d2f875c88ea891c283d6f972d5de3ec0170d6aa2e0174e7ff3e2013f63a4dfc",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostRepairDistance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostRoleExtraction.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostRoleExtraction",
+   "original_sha256": "bf78b6e951e6dc8257c77e60971966963b74afe7d3f5d01f3b5d85fdba6f4522",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostRoleExtraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostRootLeaf.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostRootLeaf",
+   "original_sha256": "a1a248cacc3165d27bad6e19ed81a83379414d84cbd924ae6c557fe715181815",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostRootLeaf.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostSampledPath.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostSampledPath",
+   "original_sha256": "2b3187522699e44b2088d0a034fb94a8a1d8bae64948833cac38625ea3a59fed",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostSampledPath.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostSampledSelection.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostSampledSelection",
+   "original_sha256": "f222dcd878f251fe3dc2833cbf13a43a87564924d8fb61cf8efe5d854afc34ca",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostSampledSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostSampling.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostSampling",
+   "original_sha256": "f5d34ca59cec4e40af0880e16cf477868c8c2a2885a13d867ecfdc80c08a3409",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostSampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostSamplingCompatibility.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostSamplingCompatibility",
+   "original_sha256": "ca9a99889c6e9d014f9180e5631122b5293006d2f89721653eaabd5140267ccb",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostSamplingCompatibility.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostTreeOrder.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostTreeOrder",
+   "original_sha256": "d161bb525408ccb3a922f6935673e13a4a719cac19ead94043795f2015e0a611",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostTreeOrder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostTwins.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostTwins",
+   "original_sha256": "34cf2f8a07ab4aea36ced4d8e0ac91ac24aacb36f9c7cbb6322e153142ce48fe",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostTwins.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/HostVerticalLocalization.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.HostVerticalLocalization",
+   "original_sha256": "af44a59ce5f0576b6a9ea1353e12dcb243abecde4788ad7f1d383db2128c5cec",
+   "path": "OAI/Combinatorics/MatrixRemoval/HostVerticalLocalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/Main.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.Main",
+   "original_sha256": "d4cf1a3df649c78f65a3b703307f7870dfc91907ef40c26b884f5cf9c4ba398e",
+   "path": "OAI/Combinatorics/MatrixRemoval/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/ModeIncidence.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.ModeIncidence",
+   "original_sha256": "e4bea20a05d5708f474eed3ba1cdf3be6c13a54b3eac3c5c2edf89006191c978",
+   "path": "OAI/Combinatorics/MatrixRemoval/ModeIncidence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/ModeLocalization.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.ModeLocalization",
+   "original_sha256": "f61330401e862688e9dfb519b9b02bde3f517942c130e82e8eea2ee674ade00e",
+   "path": "OAI/Combinatorics/MatrixRemoval/ModeLocalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/Model.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.Model",
+   "original_sha256": "0a752abd9bf68c4b99c0586a78ad7afb0ff441e74b098f2ab685b70d1143e731",
+   "path": "OAI/Combinatorics/MatrixRemoval/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/OrderedAnchorGroups.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.OrderedAnchorGroups",
+   "original_sha256": "590c6ea6420203659a64621f1ca44f0d991fd13ed6a0bd7ab8a082a8c8b8c2e5",
+   "path": "OAI/Combinatorics/MatrixRemoval/OrderedAnchorGroups.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/OrderedAnchorRigidity.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.OrderedAnchorRigidity",
+   "original_sha256": "a61bce44057a97a78410d3097bcc7e12229e859e7d975ddda8b35ced8fff25bb",
+   "path": "OAI/Combinatorics/MatrixRemoval/OrderedAnchorRigidity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/OrderedBodyLocalization.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.OrderedBodyLocalization",
+   "original_sha256": "843688f1ec3d486cec12b3ca8833a29ae1e4df08149b96168b38283275d042a9",
+   "path": "OAI/Combinatorics/MatrixRemoval/OrderedBodyLocalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/OrderedHost.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.OrderedHost",
+   "original_sha256": "dd957e81c006a0b1283b47e12e899dd0d6906087f22e55d5286990e70ce40e59",
+   "path": "OAI/Combinatorics/MatrixRemoval/OrderedHost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/OrderedHostCopy.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.OrderedHostCopy",
+   "original_sha256": "bd16c7f6cf1a3c3cd4b83a3854f847a89b5927adcdf87e70d9e7bdadc658dddf",
+   "path": "OAI/Combinatorics/MatrixRemoval/OrderedHostCopy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/OrderedRepairDistance.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.OrderedRepairDistance",
+   "original_sha256": "484061d5b1c17e6723b2973df90b8f524943f869be71a44932ff55ecf289843c",
+   "path": "OAI/Combinatorics/MatrixRemoval/OrderedRepairDistance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/OrderedSampledSelection.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.OrderedSampledSelection",
+   "original_sha256": "4437d9dc8553614eabe04f1a5df0dfa215dcf2cc6fa8378d079665c315f91938",
+   "path": "OAI/Combinatorics/MatrixRemoval/OrderedSampledSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/PathPropagation.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.PathPropagation",
+   "original_sha256": "e0d4067d7b4b12bd5764760c7af386727a125f58a0e2bae9c2e4a892610bee0b",
+   "path": "OAI/Combinatorics/MatrixRemoval/PathPropagation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/PinnedHostCopy.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.PinnedHostCopy",
+   "original_sha256": "2b3895398b1ab8ae9a9e5cb99b204ad457db2f3fd94b178a81c39ef3562b0bdb",
+   "path": "OAI/Combinatorics/MatrixRemoval/PinnedHostCopy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/SampledPath.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.SampledPath",
+   "original_sha256": "4191cc7f463edb37a80199114cc40195210ce56924bd9d9e23c3ab5e801be950",
+   "path": "OAI/Combinatorics/MatrixRemoval/SampledPath.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/SampledPathOrder.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.SampledPathOrder",
+   "original_sha256": "32ea2bc39ebff0cdaec1b52dbd85c7b0a63c0793c6890728cb05f430dbfbc0cb",
+   "path": "OAI/Combinatorics/MatrixRemoval/SampledPathOrder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/SamplingAvoidance.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.SamplingAvoidance",
+   "original_sha256": "5123d3d03a665a03644e3d93bb6cb8b4b06fceee076fdf5781bd70ce0558e8c0",
+   "path": "OAI/Combinatorics/MatrixRemoval/SamplingAvoidance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/SamplingDistance.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.SamplingDistance",
+   "original_sha256": "7e7ed42812f51415b416d3a7d3e27eb30bbb3e95428335886f359f85df4f180f",
+   "path": "OAI/Combinatorics/MatrixRemoval/SamplingDistance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/SelectedAnchorSparsity.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.SelectedAnchorSparsity",
+   "original_sha256": "b877ab258761c537e3369b6f046cc1d8133f0c03f1b1d7134936363707f46bfc",
+   "path": "OAI/Combinatorics/MatrixRemoval/SelectedAnchorSparsity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/SequenceAssembly.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.SequenceAssembly",
+   "original_sha256": "4f01dac023b5b14a9d8a92fd6daf6220d16d862140e88f6ee744398bd60c4ab6",
+   "path": "OAI/Combinatorics/MatrixRemoval/SequenceAssembly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/ThreeSeedSampling.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.ThreeSeedSampling",
+   "original_sha256": "37d9ecb9d62ce11ed8083e78e5c5c3172a85b6c57dc0cf0207f3e510d31a5be8",
+   "path": "OAI/Combinatorics/MatrixRemoval/ThreeSeedSampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/MatrixRemoval/TreePositions.lean"
+   },
+   "module": "OAI.Combinatorics.MatrixRemoval.TreePositions",
+   "original_sha256": "2823af1fb5561ee19cb3682338e8b53aa29dd8805d69e04a141a91f3b86c8419",
+   "path": "OAI/Combinatorics/MatrixRemoval/TreePositions.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.MatrixRemoval.AnchorFrames",
+  "OAI.Combinatorics.MatrixRemoval.AnchorGroups",
+  "OAI.Combinatorics.MatrixRemoval.AnchorPatternBridge",
+  "OAI.Combinatorics.MatrixRemoval.AnchorPatternFixed",
+  "OAI.Combinatorics.MatrixRemoval.AnchorProperties",
+  "OAI.Combinatorics.MatrixRemoval.AnchorRigidity",
+  "OAI.Combinatorics.MatrixRemoval.AnchorRigidityFixed",
+  "OAI.Combinatorics.MatrixRemoval.Asymptotics",
+  "OAI.Combinatorics.MatrixRemoval.BodyExtension",
+  "OAI.Combinatorics.MatrixRemoval.BodyRoles",
+  "OAI.Combinatorics.MatrixRemoval.CanonicalCopyBound",
+  "OAI.Combinatorics.MatrixRemoval.CanonicalHorizontal",
+  "OAI.Combinatorics.MatrixRemoval.CanonicalModeEntries",
+  "OAI.Combinatorics.MatrixRemoval.Consequence",
+  "OAI.Combinatorics.MatrixRemoval.CopyBound",
+  "OAI.Combinatorics.MatrixRemoval.CopyBoundFixed",
+  "OAI.Combinatorics.MatrixRemoval.DirectNonshattering",
+  "OAI.Combinatorics.MatrixRemoval.GuardContainment",
+  "OAI.Combinatorics.MatrixRemoval.GuardedFrame",
+  "OAI.Combinatorics.MatrixRemoval.GuardedPath",
+  "OAI.Combinatorics.MatrixRemoval.Host",
+  "OAI.Combinatorics.MatrixRemoval.HostAnchorFrames",
+  "OAI.Combinatorics.MatrixRemoval.HostAnchorGroups",
+  "OAI.Combinatorics.MatrixRemoval.HostAnchorPinning",
+  "OAI.Combinatorics.MatrixRemoval.HostAnchorRigidity",
+  "OAI.Combinatorics.MatrixRemoval.HostBodyModes",
+  "OAI.Combinatorics.MatrixRemoval.HostBodyOrder",
+  "OAI.Combinatorics.MatrixRemoval.HostCopyBound",
+  "OAI.Combinatorics.MatrixRemoval.HostModeIncidence",
+  "OAI.Combinatorics.MatrixRemoval.HostNonshattering",
+  "OAI.Combinatorics.MatrixRemoval.HostRepairDistance",
+  "OAI.Combinatorics.MatrixRemoval.HostRoleExtraction",
+  "OAI.Combinatorics.MatrixRemoval.HostRootLeaf",
+  "OAI.Combinatorics.MatrixRemoval.HostSampledPath",
+  "OAI.Combinatorics.MatrixRemoval.HostSampledSelection",
+  "OAI.Combinatorics.MatrixRemoval.HostSampling",
+  "OAI.Combinatorics.MatrixRemoval.HostSamplingCompatibility",
+  "OAI.Combinatorics.MatrixRemoval.HostTreeOrder",
+  "OAI.Combinatorics.MatrixRemoval.HostTwins",
+  "OAI.Combinatorics.MatrixRemoval.HostVerticalLocalization",
+  "OAI.Combinatorics.MatrixRemoval.Main",
+  "OAI.Combinatorics.MatrixRemoval.ModeIncidence",
+  "OAI.Combinatorics.MatrixRemoval.ModeLocalization",
+  "OAI.Combinatorics.MatrixRemoval.Model",
+  "OAI.Combinatorics.MatrixRemoval.OrderedAnchorGroups",
+  "OAI.Combinatorics.MatrixRemoval.OrderedAnchorRigidity",
+  "OAI.Combinatorics.MatrixRemoval.OrderedBodyLocalization",
+  "OAI.Combinatorics.MatrixRemoval.OrderedHost",
+  "OAI.Combinatorics.MatrixRemoval.OrderedHostCopy",
+  "OAI.Combinatorics.MatrixRemoval.OrderedRepairDistance",
+  "OAI.Combinatorics.MatrixRemoval.OrderedSampledSelection",
+  "OAI.Combinatorics.MatrixRemoval.PathPropagation",
+  "OAI.Combinatorics.MatrixRemoval.PinnedHostCopy",
+  "OAI.Combinatorics.MatrixRemoval.SampledPath",
+  "OAI.Combinatorics.MatrixRemoval.SampledPathOrder",
+  "OAI.Combinatorics.MatrixRemoval.SamplingAvoidance",
+  "OAI.Combinatorics.MatrixRemoval.SamplingDistance",
+  "OAI.Combinatorics.MatrixRemoval.SelectedAnchorSparsity",
+  "OAI.Combinatorics.MatrixRemoval.SequenceAssembly",
+  "OAI.Combinatorics.MatrixRemoval.ThreeSeedSampling",
+  "OAI.Combinatorics.MatrixRemoval.TreePositions"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/MatrixRemoval.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Combinatorics.MatrixRemoval.Main",
+   "name": "OAI.Problem348.no_polynomial_removal_bound",
+   "statement_sha256": "718a08c5b16059817904fa226cf4efeb0083393731d71e66d6b53370cbb69d87"
+  }
+ ],
+ "task_id": "oai-matrix-removal",
+ "task_revision": 1,
+ "title": "OpenAI math: Polynomial removal fails for ordered binary matrices: Failure of polynomial removal for ordered binary matrices",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

@@ -1,0 +1,1351 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 127869426962
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.FactorGeneration",
+  "challenge_sha256": "2e6b0087e27aa2814dd212e5957af3b56670ea2ce07ae049a47908ada5581bb5",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/FactorGeneration.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.FactorGeneration",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.FactorGeneration.Main",
+   "theorem_names": [
+    "OAI.Generator.single_generation_of_II1_separable_predual"
+   ]
+  },
+  "config_sha256": "4088aa35a7a507a148ff9ca928421bc372bd765c0b0e41c6cf1a0888fc11ef10",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/FactorGeneration.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.Generator.single_generation_of_II1_separable_predual": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/AmplificationEncoding.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.AmplificationEncoding",
+   "original_sha256": "45c17f4c352c2cf1c91418ec9fe8d6b7f5d8baf64bb72dd0a0b597a29df704e3",
+   "path": "OAI/Analysis/FactorGeneration/AmplificationEncoding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/Bicommutant.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.Bicommutant",
+   "original_sha256": "2d8c2c23261349504ea389a91d023dbd2b5f43f47e243327dd50fc5ef433375a",
+   "path": "OAI/Analysis/FactorGeneration/Bicommutant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/Coefficients.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.Coefficients",
+   "original_sha256": "4b5186a8be28bc4c1a931ee18454a75558cf41666c273e7563cdf8c4010c8db1",
+   "path": "OAI/Analysis/FactorGeneration/Coefficients.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/Convolution.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.Convolution",
+   "original_sha256": "566c17cb889b2e3653f918381cc7e0752b180503fb6cd081e8e64e94e4d29a54",
+   "path": "OAI/Analysis/FactorGeneration/Convolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/CoordinatePerturbation.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.CoordinatePerturbation",
+   "original_sha256": "6aba044696e559143aeaf98d60386c01252a477bb4a70750bd2c16f2c9e8c42d",
+   "path": "OAI/Analysis/FactorGeneration/CoordinatePerturbation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/CoordinateUnitaries.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.CoordinateUnitaries",
+   "original_sha256": "e4d85ae72c2794aaedf6bb9c7456c0740c8b52f47c5f10d6e774b1f5350aab8b",
+   "path": "OAI/Analysis/FactorGeneration/CoordinateUnitaries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/CornerIndependence.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.CornerIndependence",
+   "original_sha256": "3f1930dac75768247ff29f0c8ccf1a91242aeeee7f97a10385c8615dcf85fecb",
+   "path": "OAI/Analysis/FactorGeneration/CornerIndependence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/CornerTrace.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.CornerTrace",
+   "original_sha256": "71d4158c2ee213da2d080279a7ea0c04fcf0fc21477424c0a7dc5763a2565e3e",
+   "path": "OAI/Analysis/FactorGeneration/CornerTrace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/Correlation.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.Correlation",
+   "original_sha256": "505d526b49c9878ff683807cf249dcde5a5b439f5d719c941bfe0bf05e2aa9c6",
+   "path": "OAI/Analysis/FactorGeneration/Correlation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/CyclicPredual.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.CyclicPredual",
+   "original_sha256": "85b47449dfbb2955ca77a3a333eebcd7f68b20287ed4f56c3b148fc337eb3951",
+   "path": "OAI/Analysis/FactorGeneration/CyclicPredual.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/Dimension.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.Dimension",
+   "original_sha256": "3003cd419481e2e2f61b66baf791413f094a3e98244fdc2b73066e215344faa3",
+   "path": "OAI/Analysis/FactorGeneration/Dimension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/DyadicComparison.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.DyadicComparison",
+   "original_sha256": "2ef7ffcb869ea092fb51ce38f6298065b5b9f70f401d8c0f9b01948d42d4514b",
+   "path": "OAI/Analysis/FactorGeneration/DyadicComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/EnergyDescent.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.EnergyDescent",
+   "original_sha256": "e84282721489f71164ddbc3f6ea7d85aadb1a390fb8713cdaa07d77faacc4def",
+   "path": "OAI/Analysis/FactorGeneration/EnergyDescent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/Expectations.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.Expectations",
+   "original_sha256": "41fd7e892b05a278f20bd76b4e0022d1f48d93ca68a802ab5104a9dc8913b1bb",
+   "path": "OAI/Analysis/FactorGeneration/Expectations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/Exponential.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.Exponential",
+   "original_sha256": "933a116bed14f5aa098c79f6b3a9d458daf2edb63ff400cb4d53fd39418a9e2f",
+   "path": "OAI/Analysis/FactorGeneration/Exponential.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/FiniteComparison.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.FiniteComparison",
+   "original_sha256": "08cfba24a7eb3ce23da0c56ad47af8d5ea972e545e4abeb1ac6880668799aa77",
+   "path": "OAI/Analysis/FactorGeneration/FiniteComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/FreeGroupMoments.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.FreeGroupMoments",
+   "original_sha256": "a79f61550efed7b96804f9a3281a3db01f745e1974dbb8fb590ef0f4b8e96849",
+   "path": "OAI/Analysis/FactorGeneration/FreeGroupMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/FreeWords.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.FreeWords",
+   "original_sha256": "c9db9b11f16a1cbeb9f73d1dede9f8c2fb5b7eb9c55102f51ffe484ce54f0c26",
+   "path": "OAI/Analysis/FactorGeneration/FreeWords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/FunctionalLimits.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.FunctionalLimits",
+   "original_sha256": "e13a254613ceb5c90212c38b994a200732e47124c722b1eedb12f55776058628",
+   "path": "OAI/Analysis/FactorGeneration/FunctionalLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/Generation.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.Generation",
+   "original_sha256": "75f67187b83802b169c2775fbb746a93e7b69eff6129a538f1cba56537889b7a",
+   "path": "OAI/Analysis/FactorGeneration/Generation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/GroupTrace.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.GroupTrace",
+   "original_sha256": "e606425aa795b71b55ddea54af4236eb51af5f4a9c7c8598cb67c16a41df58a6",
+   "path": "OAI/Analysis/FactorGeneration/GroupTrace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/HaarIndependence.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.HaarIndependence",
+   "original_sha256": "ceca38283590119109c842a8d1bf11d9ff06c56084561346e94819c5eabdaa2d",
+   "path": "OAI/Analysis/FactorGeneration/HaarIndependence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/HaarPatches.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.HaarPatches",
+   "original_sha256": "ff9f9b054e8a8125eb35770f61c06e779a91b6fc2e58bfbc3fe9ef5fcb894b4a",
+   "path": "OAI/Analysis/FactorGeneration/HaarPatches.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/HaarSequences.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.HaarSequences",
+   "original_sha256": "83b1e8e0248ad321ef9ea39abefbe4b44e858d9b057e09e9c67bbd482194179d",
+   "path": "OAI/Analysis/FactorGeneration/HaarSequences.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/HilbertLimits.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.HilbertLimits",
+   "original_sha256": "2a2cad44207492398bb432006bd6c597ef2a86d6b4f2291f009718250cf89420",
+   "path": "OAI/Analysis/FactorGeneration/HilbertLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/HilbertProjections.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.HilbertProjections",
+   "original_sha256": "3c12c208c07ce9110d79bcd1d1b17b2bd210a3e74cf8c4feb5a3a1a143c320ae",
+   "path": "OAI/Analysis/FactorGeneration/HilbertProjections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/LaurentAlgebra.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.LaurentAlgebra",
+   "original_sha256": "2e7020b8800168b22ee75960bfcca4926bed2dba8e1aba9aa15728d811ab6b3e",
+   "path": "OAI/Analysis/FactorGeneration/LaurentAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/LaurentMoments.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.LaurentMoments",
+   "original_sha256": "84cf678a1da62e99263b6268432ccff1953572c91669c528a81710c3bf9cb431",
+   "path": "OAI/Analysis/FactorGeneration/LaurentMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/LocalPatches.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.LocalPatches",
+   "original_sha256": "bfe812bd1d382ded04453318c9d703a90b4d1dab0de02a77b0d8e6b75e2db6e1",
+   "path": "OAI/Analysis/FactorGeneration/LocalPatches.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/LocalQuantization.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.LocalQuantization",
+   "original_sha256": "322aa53ef0147d802fe773eada4bf8c043e4ca92a26aa747b4b91434f44aeb4e",
+   "path": "OAI/Analysis/FactorGeneration/LocalQuantization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/LocalizedStates.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.LocalizedStates",
+   "original_sha256": "daa7aaaa8ed19e6587b82fbd89e87860251732badc5c2bf253b31435f6ba3a72",
+   "path": "OAI/Analysis/FactorGeneration/LocalizedStates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/LongWords.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.LongWords",
+   "original_sha256": "3d3e9021b0c1c6c1581087d85b65620ace777887062057438ac04bab0bde7442",
+   "path": "OAI/Analysis/FactorGeneration/LongWords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/Main.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.Main",
+   "original_sha256": "4753cdbc2e8b15aa5c4d9c21bee3ee37eb9ff95c1dc9d43cb6758d687d0a8392",
+   "path": "OAI/Analysis/FactorGeneration/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/MatrixAlgebras.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.MatrixAlgebras",
+   "original_sha256": "79dad69a83b33875826098aff4c5d9cf2c37a89c4ac411eec0a7c84fe2295b04",
+   "path": "OAI/Analysis/FactorGeneration/MatrixAlgebras.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/MatrixEncoding.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.MatrixEncoding",
+   "original_sha256": "3a070f5ec7002836311bc0f95e7570f3d460b84950ad7b991b6ecdecc6473ff9",
+   "path": "OAI/Analysis/FactorGeneration/MatrixEncoding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/MatrixExpectation.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.MatrixExpectation",
+   "original_sha256": "00e1b938691e69b6b6c692e259f542ddd92bec5fa0cef743dca004d3de66189e",
+   "path": "OAI/Analysis/FactorGeneration/MatrixExpectation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/MatrixGenerators.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.MatrixGenerators",
+   "original_sha256": "ac5df7635fa143ebb9f7eea25e13de890def7318c66d771e8f3e307534655472",
+   "path": "OAI/Analysis/FactorGeneration/MatrixGenerators.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/MatrixRefinement.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.MatrixRefinement",
+   "original_sha256": "fb41adf53f6a2713afda31556ebe50869a4afacc6193597ecce22bbd8df6c2ac",
+   "path": "OAI/Analysis/FactorGeneration/MatrixRefinement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/MatrixSequence.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.MatrixSequence",
+   "original_sha256": "da558a9fa35f7d9f2b3cc3ae2e10987d95c539ab34f77c0e6c89ac911c09c95b",
+   "path": "OAI/Analysis/FactorGeneration/MatrixSequence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/MatrixUnits.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.MatrixUnits",
+   "original_sha256": "4cf579709611cbc195e512252f784d955e5c48816a52ebd0553b098f36d1e3c7",
+   "path": "OAI/Analysis/FactorGeneration/MatrixUnits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/MonotoneTrace.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.MonotoneTrace",
+   "original_sha256": "6039ae4464b6b76b956de835883cdbbf4cd6aa41d7b6ad7224f935145866b6be",
+   "path": "OAI/Analysis/FactorGeneration/MonotoneTrace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/NormalDimension.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.NormalDimension",
+   "original_sha256": "0ff5cf47e2f7b12fe5ac520183d6972876ef2ce358ff953f7f2ac5c2686e5806",
+   "path": "OAI/Analysis/FactorGeneration/NormalDimension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/NormalTrace.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.NormalTrace",
+   "original_sha256": "3615ad6ef5b25054314f1b0d036462010e62a9afbd1ba5c7260788caed0981a1",
+   "path": "OAI/Analysis/FactorGeneration/NormalTrace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/OperatorLimits.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.OperatorLimits",
+   "original_sha256": "23bff901204af7b63061f144e913029250cfb1ae538b9e5eafc81ba910ecd39a",
+   "path": "OAI/Analysis/FactorGeneration/OperatorLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/OrbitMinima.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.OrbitMinima",
+   "original_sha256": "3efc888186e401946435ca83bca9ef8b87947b9893606287e288f2c8a8c81bc2",
+   "path": "OAI/Analysis/FactorGeneration/OrbitMinima.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/PartialIsometries.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.PartialIsometries",
+   "original_sha256": "95e24768d2a5bcab3bd22e15dbd340ecd3a153b06313cdf87203f58b76de3f01",
+   "path": "OAI/Analysis/FactorGeneration/PartialIsometries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/PartialUnitaries.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.PartialUnitaries",
+   "original_sha256": "a160aab43936a7055b3d47b5fbcc370b5bac2558edbe523fa950c6dca3930ecf",
+   "path": "OAI/Analysis/FactorGeneration/PartialUnitaries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/PatchingBounds.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.PatchingBounds",
+   "original_sha256": "7699db00f94aad36a6a5ddfbf05d61c0e268743c1bd67fde00e351ec9f3b5bc1",
+   "path": "OAI/Analysis/FactorGeneration/PatchingBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/PatchingWords.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.PatchingWords",
+   "original_sha256": "ee911afa8e82d18636228556e3c6b6fff1cc217fb790c95aa75bf63eca0866ec",
+   "path": "OAI/Analysis/FactorGeneration/PatchingWords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/PerturbationBounds.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.PerturbationBounds",
+   "original_sha256": "711615ba653623e7341afa46dfe9f8b4bdbe6e7c36961910ef1a32381c2c00ed",
+   "path": "OAI/Analysis/FactorGeneration/PerturbationBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/Pinching.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.Pinching",
+   "original_sha256": "5501a5eb6b3e9bda78b81c9666e8f5347ff1b9b8cf2606cde5f0bf5f2eb5dd90",
+   "path": "OAI/Analysis/FactorGeneration/Pinching.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/PredualContinuity.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.PredualContinuity",
+   "original_sha256": "f59e896c622d1879ff6169d480a2c8bc9857eb8f77d77038356da521226d0fd3",
+   "path": "OAI/Analysis/FactorGeneration/PredualContinuity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/PredualOrder.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.PredualOrder",
+   "original_sha256": "72ad88205abfcb3622ff7a52bd162067e8c47bf95a572e270fdd4a01ba55e912",
+   "path": "OAI/Analysis/FactorGeneration/PredualOrder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/PredualRange.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.PredualRange",
+   "original_sha256": "00cba5e8c7625d101a5d558f8ed525556bc04f29fe904bd525160774d05a30f7",
+   "path": "OAI/Analysis/FactorGeneration/PredualRange.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/ProductWords.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.ProductWords",
+   "original_sha256": "f3a2b12bd0bfdbdf53bddd84052f857ccf68638d6513a167533e9d00d4a91349",
+   "path": "OAI/Analysis/FactorGeneration/ProductWords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/ProjectionComparison.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.ProjectionComparison",
+   "original_sha256": "5018c199a157263183a54b8bd7e1396c92467448d827e387ed34f630735cd7df",
+   "path": "OAI/Analysis/FactorGeneration/ProjectionComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/ProjectionEncoding.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.ProjectionEncoding",
+   "original_sha256": "9e512ad08c5c265abb811b3eba3722649828c695e224d86b55570c520c3bcc44",
+   "path": "OAI/Analysis/FactorGeneration/ProjectionEncoding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/ProjectionLimits.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.ProjectionLimits",
+   "original_sha256": "7451d6a6012ae84182bd28516f24bfea772f4c3266390546413ac46ad34e217b",
+   "path": "OAI/Analysis/FactorGeneration/ProjectionLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/QuotientCorners.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.QuotientCorners",
+   "original_sha256": "0c77291041cbc51d0713aa0f41221bf15c398af2f3dc62b56f7d3435c51c49b1",
+   "path": "OAI/Analysis/FactorGeneration/QuotientCorners.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/QuotientHilbert.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.QuotientHilbert",
+   "original_sha256": "1c5423c48f8c5e99733fb8f8ac2bac6b2ddfbab01670359efc346fcf9f759a60",
+   "path": "OAI/Analysis/FactorGeneration/QuotientHilbert.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/QuotientRepresentation.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.QuotientRepresentation",
+   "original_sha256": "cf1425589bd9533efe4336582241ce5c0cdc93da069683af9691ddb153f300a8",
+   "path": "OAI/Analysis/FactorGeneration/QuotientRepresentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/RelativeGeneration.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.RelativeGeneration",
+   "original_sha256": "b2b101c99abd05177f2464bb6845ddf3f0d61a14343e05b2b2187ffbd6d59f0d",
+   "path": "OAI/Analysis/FactorGeneration/RelativeGeneration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/RepresentedCorners.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.RepresentedCorners",
+   "original_sha256": "1541ca2f37ff2cc606964e3421b36147a0f14db108547dcde286d0f7aec26a4f",
+   "path": "OAI/Analysis/FactorGeneration/RepresentedCorners.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/RepresentedFreeness.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.RepresentedFreeness",
+   "original_sha256": "a048ff622053a53ec300b049a511dbfcf50b84ca5f42a6b567b835f7f20c4a24",
+   "path": "OAI/Analysis/FactorGeneration/RepresentedFreeness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/ResidualCompletion.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.ResidualCompletion",
+   "original_sha256": "b3b3d1b512a668d4483724125991a41dc27c605264872ac1704c46c5fda56f38",
+   "path": "OAI/Analysis/FactorGeneration/ResidualCompletion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/ResidualEstimates.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.ResidualEstimates",
+   "original_sha256": "f5f13e3d823720713908ed22d3fc56d00287099df1205ea0189b282189020389",
+   "path": "OAI/Analysis/FactorGeneration/ResidualEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/ResidualMoments.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.ResidualMoments",
+   "original_sha256": "cd76979cb4e18d5961ededa56431242b6903f07936cd08db9cd1634c361cf5d9",
+   "path": "OAI/Analysis/FactorGeneration/ResidualMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/SpectralApproximation.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.SpectralApproximation",
+   "original_sha256": "c83a1aab69d47909ad786e0df42ed4227e998ea8d93d1ba8eb63e08fbdf4d1f1",
+   "path": "OAI/Analysis/FactorGeneration/SpectralApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/SpectralDimension.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.SpectralDimension",
+   "original_sha256": "094f81bc5ef5181db61ed85eca6b3417056f1b33f58efd8a62e34dc12c64b77d",
+   "path": "OAI/Analysis/FactorGeneration/SpectralDimension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/SpectralPinching.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.SpectralPinching",
+   "original_sha256": "b63f697c63b37df01d90daacca630007cc5468804de1f40335faa8ee74f0bfd8",
+   "path": "OAI/Analysis/FactorGeneration/SpectralPinching.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/SpectralStates.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.SpectralStates",
+   "original_sha256": "67e900358174d8376b7ed15365f87f89a44ff4090f8bf81705b28cffacefe4d4",
+   "path": "OAI/Analysis/FactorGeneration/SpectralStates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/SpectralTruncation.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.SpectralTruncation",
+   "original_sha256": "836e7ded00a4957681e68713390370a3b592b19a9a6bb839750a9ff310291d7a",
+   "path": "OAI/Analysis/FactorGeneration/SpectralTruncation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/Subfactors.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.Subfactors",
+   "original_sha256": "7382765d720b431178de93cc96ff995a22722a80a6bc919279a7c162d2791ae2",
+   "path": "OAI/Analysis/FactorGeneration/Subfactors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/Supports.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.Supports",
+   "original_sha256": "950d63459ebe3e93665ebd8aa9a07db1612c78688e825b10432ffc413dda02bb",
+   "path": "OAI/Analysis/FactorGeneration/Supports.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/Target.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.Target",
+   "original_sha256": "2e8e0e7fdf3038abb818e51fc59afbe5bb34ee09266523e3cea9261f045e7c77",
+   "path": "OAI/Analysis/FactorGeneration/Target.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/TensorRefinement.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.TensorRefinement",
+   "original_sha256": "c1e55856889a414e444df081062dea10cda3f66e8c98739bad41c7a3d2206f10",
+   "path": "OAI/Analysis/FactorGeneration/TensorRefinement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/TraceHilbert.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.TraceHilbert",
+   "original_sha256": "b62189a42dcfef8e24a5bdbc356230f27156defa56be434bb6419e236f15b4db",
+   "path": "OAI/Analysis/FactorGeneration/TraceHilbert.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/TraceTopology.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.TraceTopology",
+   "original_sha256": "653e1b78683723c13db85a1ebbfbb29036e80a8af6553f80ae3931744b519c2d",
+   "path": "OAI/Analysis/FactorGeneration/TraceTopology.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/TraceTransport.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.TraceTransport",
+   "original_sha256": "de10694051ee87f745d577e965738779b4bcf6c8a07e1b3112bc8f5ade6c8cb1",
+   "path": "OAI/Analysis/FactorGeneration/TraceTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/TracialInclusion.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.TracialInclusion",
+   "original_sha256": "cee2b7b5cde7185d031634b68b88f28f27b87f40af4bcb09cf434a254f342903",
+   "path": "OAI/Analysis/FactorGeneration/TracialInclusion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/Ultrapower.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.Ultrapower",
+   "original_sha256": "f883b0300df7e715dac00bb990a537ef091953a07e2e168e57070dab17594f7e",
+   "path": "OAI/Analysis/FactorGeneration/Ultrapower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/UniformPartitions.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.UniformPartitions",
+   "original_sha256": "9af92b98705a9a89b9b0383cefc4602ac4e8fc5deca5eb5a1b78db3dd1fc51ef",
+   "path": "OAI/Analysis/FactorGeneration/UniformPartitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/UnitaryMetric.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.UnitaryMetric",
+   "original_sha256": "88a2012946de9c84b1c1b68e86f07ecd1c543cc43d799201b9c5040c0ad2adb6",
+   "path": "OAI/Analysis/FactorGeneration/UnitaryMetric.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/WordCorrelation.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.WordCorrelation",
+   "original_sha256": "82613fae163cdc1deef95450ba54b9230aec1baa6c4775365eba33aeb01144c6",
+   "path": "OAI/Analysis/FactorGeneration/WordCorrelation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FactorGeneration/Words.lean"
+   },
+   "module": "OAI.Analysis.FactorGeneration.Words",
+   "original_sha256": "ce687c2cc6ca8388c6d168078543da799ffaa21c21e68886222fea6b7f0902af",
+   "path": "OAI/Analysis/FactorGeneration/Words.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FreeGroupFactor/GlobalODE.lean"
+   },
+   "module": "OAI.Analysis.FreeGroupFactor.GlobalODE",
+   "original_sha256": "135153da93444e1aa18064dfcae9a9c80c4e47d0aa95ee044cf26f0ad51671d8",
+   "path": "OAI/Analysis/FreeGroupFactor/GlobalODE.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FreeGroupFactor/Model.lean"
+   },
+   "module": "OAI.Analysis.FreeGroupFactor.Model",
+   "original_sha256": "5aa845e0145b1c9a20bbe415b102398b337286773eb5c7df8308d7b3dd8c38d1",
+   "path": "OAI/Analysis/FreeGroupFactor/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FreeGroupFactor/NCPolynomial.lean"
+   },
+   "module": "OAI.Analysis.FreeGroupFactor.NCPolynomial",
+   "original_sha256": "1d85fa2caa404c30cac00c1921d727017510ac7286f8792ca97d0b223b2b0c2d",
+   "path": "OAI/Analysis/FreeGroupFactor/NCPolynomial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FreeGroupFactor/Operators.lean"
+   },
+   "module": "OAI.Analysis.FreeGroupFactor.Operators",
+   "original_sha256": "40778a821b873110744a15d1c9f8eb1a3bd829a38ead47a93492f36db6a67436",
+   "path": "OAI/Analysis/FreeGroupFactor/Operators.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FreeGroupFactor/PolynomialFlow.lean"
+   },
+   "module": "OAI.Analysis.FreeGroupFactor.PolynomialFlow",
+   "original_sha256": "262832066a33ef3e4bd3ef78bc70e0caf0ed00ee8b433d8e7d2593b77bc1e94c",
+   "path": "OAI/Analysis/FreeGroupFactor/PolynomialFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FreeGroupFactor/Taylor.lean"
+   },
+   "module": "OAI.Analysis.FreeGroupFactor.Taylor",
+   "original_sha256": "6c991d50de0def36602cb02a856a7e2d8f3674f4cbaef5baad3fdb405772273d",
+   "path": "OAI/Analysis/FreeGroupFactor/Taylor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FreeGroupFactor/TraceCocycle.lean"
+   },
+   "module": "OAI.Analysis.FreeGroupFactor.TraceCocycle",
+   "original_sha256": "fc07a15a1c0cd968717666666f520f2ded739a37694d958fb9c545653ff6230b",
+   "path": "OAI/Analysis/FreeGroupFactor/TraceCocycle.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/FreeGroupFactor/UnitaryEvaluation.lean"
+   },
+   "module": "OAI.Analysis.FreeGroupFactor.UnitaryEvaluation",
+   "original_sha256": "d4bf2c7af4bb7ad9e6e05f27d6e18d9510117d6f958089156ccb412e7512a4cd",
+   "path": "OAI/Analysis/FreeGroupFactor/UnitaryEvaluation.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.FactorGeneration.AmplificationEncoding",
+  "OAI.Analysis.FactorGeneration.Bicommutant",
+  "OAI.Analysis.FactorGeneration.Coefficients",
+  "OAI.Analysis.FactorGeneration.Convolution",
+  "OAI.Analysis.FactorGeneration.CoordinatePerturbation",
+  "OAI.Analysis.FactorGeneration.CoordinateUnitaries",
+  "OAI.Analysis.FactorGeneration.CornerIndependence",
+  "OAI.Analysis.FactorGeneration.CornerTrace",
+  "OAI.Analysis.FactorGeneration.Correlation",
+  "OAI.Analysis.FactorGeneration.CyclicPredual",
+  "OAI.Analysis.FactorGeneration.Dimension",
+  "OAI.Analysis.FactorGeneration.DyadicComparison",
+  "OAI.Analysis.FactorGeneration.EnergyDescent",
+  "OAI.Analysis.FactorGeneration.Expectations",
+  "OAI.Analysis.FactorGeneration.Exponential",
+  "OAI.Analysis.FactorGeneration.FiniteComparison",
+  "OAI.Analysis.FactorGeneration.FreeGroupMoments",
+  "OAI.Analysis.FactorGeneration.FreeWords",
+  "OAI.Analysis.FactorGeneration.FunctionalLimits",
+  "OAI.Analysis.FactorGeneration.Generation",
+  "OAI.Analysis.FactorGeneration.GroupTrace",
+  "OAI.Analysis.FactorGeneration.HaarIndependence",
+  "OAI.Analysis.FactorGeneration.HaarPatches",
+  "OAI.Analysis.FactorGeneration.HaarSequences",
+  "OAI.Analysis.FactorGeneration.HilbertLimits",
+  "OAI.Analysis.FactorGeneration.HilbertProjections",
+  "OAI.Analysis.FactorGeneration.LaurentAlgebra",
+  "OAI.Analysis.FactorGeneration.LaurentMoments",
+  "OAI.Analysis.FactorGeneration.LocalPatches",
+  "OAI.Analysis.FactorGeneration.LocalQuantization",
+  "OAI.Analysis.FactorGeneration.LocalizedStates",
+  "OAI.Analysis.FactorGeneration.LongWords",
+  "OAI.Analysis.FactorGeneration.Main",
+  "OAI.Analysis.FactorGeneration.MatrixAlgebras",
+  "OAI.Analysis.FactorGeneration.MatrixEncoding",
+  "OAI.Analysis.FactorGeneration.MatrixExpectation",
+  "OAI.Analysis.FactorGeneration.MatrixGenerators",
+  "OAI.Analysis.FactorGeneration.MatrixRefinement",
+  "OAI.Analysis.FactorGeneration.MatrixSequence",
+  "OAI.Analysis.FactorGeneration.MatrixUnits",
+  "OAI.Analysis.FactorGeneration.MonotoneTrace",
+  "OAI.Analysis.FactorGeneration.NormalDimension",
+  "OAI.Analysis.FactorGeneration.NormalTrace",
+  "OAI.Analysis.FactorGeneration.OperatorLimits",
+  "OAI.Analysis.FactorGeneration.OrbitMinima",
+  "OAI.Analysis.FactorGeneration.PartialIsometries",
+  "OAI.Analysis.FactorGeneration.PartialUnitaries",
+  "OAI.Analysis.FactorGeneration.PatchingBounds",
+  "OAI.Analysis.FactorGeneration.PatchingWords",
+  "OAI.Analysis.FactorGeneration.PerturbationBounds",
+  "OAI.Analysis.FactorGeneration.Pinching",
+  "OAI.Analysis.FactorGeneration.PredualContinuity",
+  "OAI.Analysis.FactorGeneration.PredualOrder",
+  "OAI.Analysis.FactorGeneration.PredualRange",
+  "OAI.Analysis.FactorGeneration.ProductWords",
+  "OAI.Analysis.FactorGeneration.ProjectionComparison",
+  "OAI.Analysis.FactorGeneration.ProjectionEncoding",
+  "OAI.Analysis.FactorGeneration.ProjectionLimits",
+  "OAI.Analysis.FactorGeneration.QuotientCorners",
+  "OAI.Analysis.FactorGeneration.QuotientHilbert",
+  "OAI.Analysis.FactorGeneration.QuotientRepresentation",
+  "OAI.Analysis.FactorGeneration.RelativeGeneration",
+  "OAI.Analysis.FactorGeneration.RepresentedCorners",
+  "OAI.Analysis.FactorGeneration.RepresentedFreeness",
+  "OAI.Analysis.FactorGeneration.ResidualCompletion",
+  "OAI.Analysis.FactorGeneration.ResidualEstimates",
+  "OAI.Analysis.FactorGeneration.ResidualMoments",
+  "OAI.Analysis.FactorGeneration.SpectralApproximation",
+  "OAI.Analysis.FactorGeneration.SpectralDimension",
+  "OAI.Analysis.FactorGeneration.SpectralPinching",
+  "OAI.Analysis.FactorGeneration.SpectralStates",
+  "OAI.Analysis.FactorGeneration.SpectralTruncation",
+  "OAI.Analysis.FactorGeneration.Subfactors",
+  "OAI.Analysis.FactorGeneration.Supports",
+  "OAI.Analysis.FactorGeneration.Target",
+  "OAI.Analysis.FactorGeneration.TensorRefinement",
+  "OAI.Analysis.FactorGeneration.TraceHilbert",
+  "OAI.Analysis.FactorGeneration.TraceTopology",
+  "OAI.Analysis.FactorGeneration.TraceTransport",
+  "OAI.Analysis.FactorGeneration.TracialInclusion",
+  "OAI.Analysis.FactorGeneration.Ultrapower",
+  "OAI.Analysis.FactorGeneration.UniformPartitions",
+  "OAI.Analysis.FactorGeneration.UnitaryMetric",
+  "OAI.Analysis.FactorGeneration.WordCorrelation",
+  "OAI.Analysis.FactorGeneration.Words",
+  "OAI.Analysis.FreeGroupFactor.GlobalODE",
+  "OAI.Analysis.FreeGroupFactor.Model",
+  "OAI.Analysis.FreeGroupFactor.NCPolynomial",
+  "OAI.Analysis.FreeGroupFactor.Operators",
+  "OAI.Analysis.FreeGroupFactor.PolynomialFlow",
+  "OAI.Analysis.FreeGroupFactor.Taylor",
+  "OAI.Analysis.FreeGroupFactor.TraceCocycle",
+  "OAI.Analysis.FreeGroupFactor.UnitaryEvaluation"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/FactorGeneration.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.FactorGeneration.Main",
+   "name": "OAI.Generator.single_generation_of_II1_separable_predual",
+   "statement_sha256": "dc7e9c0fc6c9055e119ef502aea8acdd53d43334ca395036f6906671d36ffcb8"
+  }
+ ],
+ "task_id": "oai-factor-generation",
+ "task_revision": 1,
+ "title": "OpenAI math: The generator problem for finite factors: Single generation of separable-predual \\mathrm{II}_1 factors",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

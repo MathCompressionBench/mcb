@@ -12,9 +12,23 @@ objective. The organizers rebuild your source, so the scored object is the recom
 bundle holds your source files and that export, no compiled files. Rules: [docs/RULES.md](docs/RULES.md).
 Metric: [docs/METRIC.md](docs/METRIC.md).
 
-The task set `lcbench-v1` ([sets/lcbench-v1.json](sets/lcbench-v1.json)) has seven tasks: ramsey96, slt26, slt49,
-permanent2, compactness5, mathlib197 and mathlib372 (`tasks/<id>/CARD.md` describes each). There is also a small toy
-task, `toyarith`, for trying the tools.
+## Task sets
+
+Tasks are grouped into task sets; `tasks/<id>/CARD.md` describes each task, and each set file lists its tasks, the
+sha256 of their packages and their baselines. A set's packages are the assets of the GitHub release that its set file
+names.
+
+| task set | tasks | Lean toolchain | packages |
+|---|---|---|---|
+| `lcbench-v1` ([sets/lcbench-v1.json](sets/lcbench-v1.json)) | seven: ramsey96, slt26, slt49, permanent2, compactness5, mathlib197 and mathlib372 | `leanprover/lean4:v4.32.0` | warm and no_hint |
+| `oai-v1` ([sets/oai-v1.json](sets/oai-v1.json)) | 175 made from the published math challenges of https://github.com/openai/math, one per challenge of its main results (`oai-<name>`) | `leanprover/lean4:v4.34.1` | warm |
+
+There is also a small toy task, `toyarith`, for trying the tools. Each package names its toolchain (`TASK.json`
+`toolchain`): put that toolchain's `bin` first on your `PATH` before `start` and `./check`. The oai-v1 tasks have no
+no_hint packages (a target's proof usually lives in lemmas of other editable files, so erasing the targets alone would
+not hide it), and three challenges are not tasks because a target statement differs from the challenge's only in the
+names of bound variables (the set file lists them under `excluded`). How to get the Lean libraries each set builds on:
+[the lcbench-v1 tasks](#the-lcbench-v1-tasks-dependencies), [the oai-v1 tasks](#the-oai-v1-tasks-dependencies).
 
 The docs call "the study" the organizers' runs of six agents on the seven tasks of lcbench-v1 (September 2026); its
 runs are listed on the leaderboards with the merged submissions ([docs/SUBMITTING.md](docs/SUBMITTING.md)).
@@ -22,13 +36,13 @@ runs are listed on the leaderboards with the merged submissions ([docs/SUBMITTIN
 ## Submitting
 
 Submissions are pull requests to https://github.com/MathCompressionBench/mcb-submissions; its README and
-[docs/SUBMITTING.md](docs/SUBMITTING.md) have the details. Open for submissions now: `toyarith-warm` and the seven
-lcbench-v1 tasks, each as its warm and its no_hint package.
+[docs/SUBMITTING.md](docs/SUBMITTING.md) have the details. Open for submissions now: `toyarith-warm`, the seven
+lcbench-v1 tasks, each as its warm and its no_hint package, and the 175 oai-v1 tasks as their warm packages.
 
 Get the tools with `git clone https://github.com/MathCompressionBench/mcb.git` (no GitHub account needed).
 
 The submissions README names the accepted packages: each one's package sha256 and the GitHub release of this
-repository that holds it (the lcbench-v1 packages are the assets of the release that `sets/lcbench-v1.json` names).
+repository that holds it (each set's packages are the assets of the release that its set file names).
 Every release asset downloads without a login from
 `https://github.com/MathCompressionBench/mcb/releases/download/<release>/<file>`. For the toy package:
 
@@ -210,6 +224,28 @@ proofwidgets, importGraph, LeanSearchClient, Cli). There are two ways to provide
    Then pass `--deps "$PWD/.lake/packages"`. Every package must be a git checkout at its pinned revision with the
    pinned `origin` URL; `start` and `verify` refuse anything else. Use a working `git` first on `PATH`: if `git
    remote get-url` fails, Lake treats the URL as changed and deletes the package to clone it again.
+
+## The oai-v1 tasks: dependencies
+
+The oai-v1 tasks use Lean `leanprover/lean4:v4.34.1` (install it as in the quickstart, with `v4.34.1` in place of
+`v4.32.0`) and the Lake packages of the `lean/` folder of https://github.com/openai/math at commit
+`adc7f1241b42e322a6451854ab7e4b4c146bf78a`: Mathlib and the other libraries that its `lake-manifest.json` pins. The
+upstream `lakefile.lean` applies compatibility patches to 23 of them during `lake update`, so `start` cannot fetch
+them by itself; prepare them once in a clone of the upstream repository and pass them with `--deps`:
+
+```sh
+git clone https://github.com/openai/math.git && cd math && git checkout adc7f1241b42e322a6451854ab7e4b4c146bf78a
+cd lean
+lake update                     # clones the pinned packages into .lake/packages and applies the upstream patches
+lake exe cache get              # Mathlib's compiled cache
+lake build <solution module>    # compiles the libraries the task imports (tasks/<task>/CARD.md names the module)
+cd ../..
+bin/mcb start "file://$PWD/<task>-warm.tar.gz" --dir <workspace> --deps "$PWD/math/lean/.lake/packages"
+```
+
+Each oai-v1 card names its upstream solution module (for example `OAI.LinearAlgebra.MatrixFields.Main` for
+oai-matrix-fields). `lake build` of several solution modules in one call prepares the packages for several tasks; the
+same `--deps` folder then serves all of them.
 
 ## Documentation
 

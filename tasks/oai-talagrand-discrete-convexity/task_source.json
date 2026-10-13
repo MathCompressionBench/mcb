@@ -1,0 +1,781 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 7734789
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.TalagrandDiscreteConvexity",
+  "challenge_sha256": "42336d1d65ce9eb583ad33c0f054f0c6bb5ae1b11174ac22793d34b4cf8a8e4f",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/TalagrandDiscreteConvexity.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.TalagrandDiscreteConvexity",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Combinatorics.DiscreteConvexity.Main",
+   "theorem_names": [
+    "OAI.TalagrandDiscreteConvexity.talagrand_discrete_convexity"
+   ]
+  },
+  "config_sha256": "536989b4c18777d436d1e3518a1c18e1ebe6eb2dbac72b7dc56777de4fc7c476",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/TalagrandDiscreteConvexity.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.TalagrandDiscreteConvexity.talagrand_discrete_convexity": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/Basic.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.Basic",
+   "original_sha256": "cc77c81017a4a14243c2caea5aa31d8245cb75021788e178e6272f6840e7aaed",
+   "path": "OAI/Combinatorics/DiscreteConvexity/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/Bernoulli.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.Bernoulli",
+   "original_sha256": "e1bd11597bba5312df1d5e48ac1cd1498a57c521afba135ca38cebc3019c814a",
+   "path": "OAI/Combinatorics/DiscreteConvexity/Bernoulli.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/BinNumerics.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.BinNumerics",
+   "original_sha256": "82ff3bba010e944ded235581ee90346fbc302b1d0dd3ec4929f7673694b8a78a",
+   "path": "OAI/Combinatorics/DiscreteConvexity/BinNumerics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/Bins.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.Bins",
+   "original_sha256": "0027c030a6c6a9665a47f9ddb14f9ca63d6983d7aa2e06d9a039a924be55b5e5",
+   "path": "OAI/Combinatorics/DiscreteConvexity/Bins.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/ColumnExpansion.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.ColumnExpansion",
+   "original_sha256": "2f43f0e2eb0c0b7ffd37db30037129cdc8b2ff44d0e9693276f78d149de0f35d",
+   "path": "OAI/Combinatorics/DiscreteConvexity/ColumnExpansion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/CoordinateObservations.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.CoordinateObservations",
+   "original_sha256": "a5c650f5e62e5715a6e5bd197e939df8b7e062cd9a8cf0979f13db7d2d02b68a",
+   "path": "OAI/Combinatorics/DiscreteConvexity/CoordinateObservations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/CoveringBasic.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.CoveringBasic",
+   "original_sha256": "d7e6703d9ffb80268acaf5b3dc85b0f4616ab72ca917926b915c413c3a4255ab",
+   "path": "OAI/Combinatorics/DiscreteConvexity/CoveringBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/CoveringBinomialBounds.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.CoveringBinomialBounds",
+   "original_sha256": "38760b902b1d85b209bf7eebc04f6c8b31007ba283d21b6f53dd2d0cd262598b",
+   "path": "OAI/Combinatorics/DiscreteConvexity/CoveringBinomialBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/CoveringNumericalBounds.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.CoveringNumericalBounds",
+   "original_sha256": "35b6a9251b13a69fb3a7f5ee327685b81ef27870f799897b1c9156d2b72d9096",
+   "path": "OAI/Combinatorics/DiscreteConvexity/CoveringNumericalBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/CoveringPairCost.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.CoveringPairCost",
+   "original_sha256": "c46561276d564d8f76dffe18ee7e7e4243d8c2d4af1a9fb14615071e63d540bf",
+   "path": "OAI/Combinatorics/DiscreteConvexity/CoveringPairCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/CoveringRegularization.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.CoveringRegularization",
+   "original_sha256": "85c4f5a781844bf302137fc87aaac9dad3c1ff400ef7239ff03f7deee35aa7bd",
+   "path": "OAI/Combinatorics/DiscreteConvexity/CoveringRegularization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/CoveringResidualCost.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.CoveringResidualCost",
+   "original_sha256": "df71d3356b6a7d0f96d646e1e8054078b082f6fdd2f7acb9e3f26daf3df6b9e8",
+   "path": "OAI/Combinatorics/DiscreteConvexity/CoveringResidualCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/CoveringResidualProbability.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.CoveringResidualProbability",
+   "original_sha256": "786c49d25f9e64680226f07cf43e404d2b305b1c7e005391637642aa6c71d2be",
+   "path": "OAI/Combinatorics/DiscreteConvexity/CoveringResidualProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/CoveringResidualTuples.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.CoveringResidualTuples",
+   "original_sha256": "8c94551f398a799ef64b86ecc4a94406b9d1d2ac9c8e6ed1cc5e6f9bbd3bf547",
+   "path": "OAI/Combinatorics/DiscreteConvexity/CoveringResidualTuples.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/CoveringSampledFamilies.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.CoveringSampledFamilies",
+   "original_sha256": "bdbeb49062d62715af8b8ecf27ad854fe3e218da378a31f8d7835bfecf3da4c0",
+   "path": "OAI/Combinatorics/DiscreteConvexity/CoveringSampledFamilies.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/DensityConstants.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.DensityConstants",
+   "original_sha256": "b05197a9d9a7837cc4a9660382f8a72f9fcbc77a7e9dde6384d0038c4aca4974",
+   "path": "OAI/Combinatorics/DiscreteConvexity/DensityConstants.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/DyadicBins.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.DyadicBins",
+   "original_sha256": "5114c7f74b37dfeb9074930326ce81b8f9a1e4d978caed7276aa9f77d4bf9dbf",
+   "path": "OAI/Combinatorics/DiscreteConvexity/DyadicBins.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/ElementaryCovering.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.ElementaryCovering",
+   "original_sha256": "aa95c0190d89fdb390397f543af2682a71e15773e5eea1c85b3f166858e5cfb5",
+   "path": "OAI/Combinatorics/DiscreteConvexity/ElementaryCovering.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/ExceptionalWeightBound.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.ExceptionalWeightBound",
+   "original_sha256": "6741e92a3f5edb153b650112b3006000c8ae1a90eeb4e9d6f188c29ede12faf2",
+   "path": "OAI/Combinatorics/DiscreteConvexity/ExceptionalWeightBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/FiniteFibers.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.FiniteFibers",
+   "original_sha256": "7c1ba032668f67e168f5d44d9d97bb3843470ee1d520c30fdca2bdbdc5e9e9c0",
+   "path": "OAI/Combinatorics/DiscreteConvexity/FiniteFibers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/FiniteParseval.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.FiniteParseval",
+   "original_sha256": "00b3420c83b39de2583fea04e3e920074c3f33c091ae00f5a5b974ccb2c95244",
+   "path": "OAI/Combinatorics/DiscreteConvexity/FiniteParseval.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/FiniteProbability.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.FiniteProbability",
+   "original_sha256": "b397e37fa61e4b79436a4706a71bce97a0f9e7f884541486aaf7096df0b4ce90",
+   "path": "OAI/Combinatorics/DiscreteConvexity/FiniteProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/FourierGlobalBound.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.FourierGlobalBound",
+   "original_sha256": "4f557514c0a8033dbc50ac98c18d9688c5a66c377e56361ffa7109e9e4d8e9df",
+   "path": "OAI/Combinatorics/DiscreteConvexity/FourierGlobalBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/FourierProductKernel.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.FourierProductKernel",
+   "original_sha256": "15cd6be3696267f695ff9ea541492937ffb12cecdc7795e6fa27ee8996e3cbe5",
+   "path": "OAI/Combinatorics/DiscreteConvexity/FourierProductKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/FourierWeights.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.FourierWeights",
+   "original_sha256": "ae0874554db6f40c8e1391b5937c711a666123e76e9457677d9edb68ffe13d9a",
+   "path": "OAI/Combinatorics/DiscreteConvexity/FourierWeights.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/HalfDensity.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.HalfDensity",
+   "original_sha256": "fd4126fc7cba1a662036f9a22b261f9e520c8c4823d00dbdf9268cd4bee5ec6b",
+   "path": "OAI/Combinatorics/DiscreteConvexity/HalfDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/LabelCoupling.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.LabelCoupling",
+   "original_sha256": "4d3b802be6f40dcdadbd1620ade45395d781efc6563f8ba09a1aab34ffc33bdb",
+   "path": "OAI/Combinatorics/DiscreteConvexity/LabelCoupling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/Main.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.Main",
+   "original_sha256": "b3f3e8849db8751d15f42eeb4e0893716f9da2a4b06b3a9b12bf1cbcbaa2cb40",
+   "path": "OAI/Combinatorics/DiscreteConvexity/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/MandatoryCoupling.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.MandatoryCoupling",
+   "original_sha256": "b3593bd405e227288684f2e0ac79adff9ffa7b6d65c0e1089e691ba6bc8d14e4",
+   "path": "OAI/Combinatorics/DiscreteConvexity/MandatoryCoupling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/Model.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.Model",
+   "original_sha256": "a718aee797911bd46926412755d0108c65ec711cc19b8065c8b9e679ec12151f",
+   "path": "OAI/Combinatorics/DiscreteConvexity/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/ProbabilisticExistence.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.ProbabilisticExistence",
+   "original_sha256": "26e4dd11f27fd462fd4da3064e260cd0eedd812379581d6e2f3e9428549e1f35",
+   "path": "OAI/Combinatorics/DiscreteConvexity/ProbabilisticExistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/ProductProbability.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.ProductProbability",
+   "original_sha256": "8193dbc4fcbe535dd89bc5bc44d6a6c6160b1fb75fa1d0d7ec6c4c6300f4ecf3",
+   "path": "OAI/Combinatorics/DiscreteConvexity/ProductProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/SignedArrays.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.SignedArrays",
+   "original_sha256": "364659b2bc85ad06bce296f00739c3298707ec28f08c1ba9797766361d074d80",
+   "path": "OAI/Combinatorics/DiscreteConvexity/SignedArrays.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/UnionBound.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.UnionBound",
+   "original_sha256": "d5b79bdad09996396daa1d6213df4df3c69ff48ffbe7f02e23ec0f855e881fd1",
+   "path": "OAI/Combinatorics/DiscreteConvexity/UnionBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/UnionTuples.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.UnionTuples",
+   "original_sha256": "f2de71b17e89ed180aace1ab7c839161aa6da4ef6a6f401f8564d8955b8a6cd5",
+   "path": "OAI/Combinatorics/DiscreteConvexity/UnionTuples.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/DiscreteConvexity/WeightedCover.lean"
+   },
+   "module": "OAI.Combinatorics.DiscreteConvexity.WeightedCover",
+   "original_sha256": "3e8ae5590fd1b82e9999e4344ec0e2f964eb91b018695298ba6acf72337a4241",
+   "path": "OAI/Combinatorics/DiscreteConvexity/WeightedCover.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.DiscreteConvexity.Basic",
+  "OAI.Combinatorics.DiscreteConvexity.Bernoulli",
+  "OAI.Combinatorics.DiscreteConvexity.BinNumerics",
+  "OAI.Combinatorics.DiscreteConvexity.Bins",
+  "OAI.Combinatorics.DiscreteConvexity.ColumnExpansion",
+  "OAI.Combinatorics.DiscreteConvexity.CoordinateObservations",
+  "OAI.Combinatorics.DiscreteConvexity.CoveringBasic",
+  "OAI.Combinatorics.DiscreteConvexity.CoveringBinomialBounds",
+  "OAI.Combinatorics.DiscreteConvexity.CoveringNumericalBounds",
+  "OAI.Combinatorics.DiscreteConvexity.CoveringPairCost",
+  "OAI.Combinatorics.DiscreteConvexity.CoveringRegularization",
+  "OAI.Combinatorics.DiscreteConvexity.CoveringResidualCost",
+  "OAI.Combinatorics.DiscreteConvexity.CoveringResidualProbability",
+  "OAI.Combinatorics.DiscreteConvexity.CoveringResidualTuples",
+  "OAI.Combinatorics.DiscreteConvexity.CoveringSampledFamilies",
+  "OAI.Combinatorics.DiscreteConvexity.DensityConstants",
+  "OAI.Combinatorics.DiscreteConvexity.DyadicBins",
+  "OAI.Combinatorics.DiscreteConvexity.ElementaryCovering",
+  "OAI.Combinatorics.DiscreteConvexity.ExceptionalWeightBound",
+  "OAI.Combinatorics.DiscreteConvexity.FiniteFibers",
+  "OAI.Combinatorics.DiscreteConvexity.FiniteParseval",
+  "OAI.Combinatorics.DiscreteConvexity.FiniteProbability",
+  "OAI.Combinatorics.DiscreteConvexity.FourierGlobalBound",
+  "OAI.Combinatorics.DiscreteConvexity.FourierProductKernel",
+  "OAI.Combinatorics.DiscreteConvexity.FourierWeights",
+  "OAI.Combinatorics.DiscreteConvexity.HalfDensity",
+  "OAI.Combinatorics.DiscreteConvexity.LabelCoupling",
+  "OAI.Combinatorics.DiscreteConvexity.Main",
+  "OAI.Combinatorics.DiscreteConvexity.MandatoryCoupling",
+  "OAI.Combinatorics.DiscreteConvexity.Model",
+  "OAI.Combinatorics.DiscreteConvexity.ProbabilisticExistence",
+  "OAI.Combinatorics.DiscreteConvexity.ProductProbability",
+  "OAI.Combinatorics.DiscreteConvexity.SignedArrays",
+  "OAI.Combinatorics.DiscreteConvexity.UnionBound",
+  "OAI.Combinatorics.DiscreteConvexity.UnionTuples",
+  "OAI.Combinatorics.DiscreteConvexity.WeightedCover"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/TalagrandDiscreteConvexity.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Combinatorics.DiscreteConvexity.Main",
+   "name": "OAI.TalagrandDiscreteConvexity.talagrand_discrete_convexity",
+   "statement_sha256": "6a1c0414635ad937ab22122583faab2ab231ef8e48df7e1ee90599e47109e36a"
+  }
+ ],
+ "task_id": "oai-talagrand-discrete-convexity",
+ "task_revision": 1,
+ "title": "OpenAI math: Talagrand’s expectation thresholds, discrete convexity, and graph decompositions: Talagrand discrete convexity",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

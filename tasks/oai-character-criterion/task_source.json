@@ -1,0 +1,1041 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 18661101158
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.CharacterCriterion",
+  "challenge_sha256": "296b0ff956fcb151637be273c44afed6439101290238ff11cec333d843e5ecf8",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/CharacterCriterion.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.CharacterCriterion",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.CharacterCriterion.Main",
+   "theorem_names": [
+    "OAI.KirchbergRordam.character_criterion"
+   ]
+  },
+  "config_sha256": "747bbe2975f953d0b5cab3007d6236031a75f82ce32a8d952d06fcc7eac170e5",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/CharacterCriterion.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.KirchbergRordam.character_criterion": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/Absorption.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.Absorption",
+   "original_sha256": "f1008f18e32c5b7643ead61ff7aa1f98638bcef193d20f7769b88c0259223dda",
+   "path": "OAI/Analysis/CharacterCriterion/Absorption.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/AmplifiedComparison.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.AmplifiedComparison",
+   "original_sha256": "54b653344cf01e92cfbae19a364a10ee923ba7a94bc75bbef637a60555399bfc",
+   "path": "OAI/Analysis/CharacterCriterion/AmplifiedComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/BalancedChannels.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.BalancedChannels",
+   "original_sha256": "f1b5ca8ea6c3c2399cb3474f53c35ad3c6d79e85a98bd839dbefcc68857f908a",
+   "path": "OAI/Analysis/CharacterCriterion/BalancedChannels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/BalancedLimit.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.BalancedLimit",
+   "original_sha256": "4fb7ed76b10f2fa79872f7584fd0b2c80187dad6c3db1b6abb972672ce838036",
+   "path": "OAI/Analysis/CharacterCriterion/BalancedLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/BalancedSystem.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.BalancedSystem",
+   "original_sha256": "56d928658ce0e911eafe122e6bbe513e7340ed17166beef24ee18d20516a2844",
+   "path": "OAI/Analysis/CharacterCriterion/BalancedSystem.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/CentralSequences.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.CentralSequences",
+   "original_sha256": "c15d2e7818afe2a314742c4aab8d6dc788187a67034e51607f36eaddcc7fed38",
+   "path": "OAI/Analysis/CharacterCriterion/CentralSequences.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/ConeCube.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.ConeCube",
+   "original_sha256": "44d698473f83441f3689108b5b7b0446b2e16c900cb9b7ab8b5e13e4d7bbcd8c",
+   "path": "OAI/Analysis/CharacterCriterion/ConeCube.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/ConeModel.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.ConeModel",
+   "original_sha256": "df016c394ec7ddbc806dafa2917d18a8a3f935108d57b3777a4854d164e4fad4",
+   "path": "OAI/Analysis/CharacterCriterion/ConeModel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/ConePauli.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.ConePauli",
+   "original_sha256": "165e7ed82040035a69aac129e25a2b1350fd98e6d26315a2a34d8fdba670a7b2",
+   "path": "OAI/Analysis/CharacterCriterion/ConePauli.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/CubeCalculus.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.CubeCalculus",
+   "original_sha256": "80adda45f170c53508ce7c9a983acc9e277cf3b7de14a86fd443b7a2bab5b00e",
+   "path": "OAI/Analysis/CharacterCriterion/CubeCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/CubeField.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.CubeField",
+   "original_sha256": "c28d73fc07f7e5e7b12db671a0850af0835df1441ecb5046433e38cb66ca9767",
+   "path": "OAI/Analysis/CharacterCriterion/CubeField.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/Definitions.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.Definitions",
+   "original_sha256": "4d73e05ea80c9ab1942e5fb373e75b099c3d200b4a9598601d5328e3b9f15fd2",
+   "path": "OAI/Analysis/CharacterCriterion/Definitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/DetectingSpaces.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.DetectingSpaces",
+   "original_sha256": "4b4b153439f420418ca5ee0ad9ec83bf141b6e4cd7042c9acf3a9b3d3bad43ca",
+   "path": "OAI/Analysis/CharacterCriterion/DetectingSpaces.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/DiagonalIteration.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.DiagonalIteration",
+   "original_sha256": "fd0f29529501d69d5fc4b8c5e19992ba82d54bdab49af40fe93aa7f54adb7a98",
+   "path": "OAI/Analysis/CharacterCriterion/DiagonalIteration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/DropSections.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.DropSections",
+   "original_sha256": "012354ad67b634e82f495ffc7ecfda836bda37dfdda48bb94756c231f36084dc",
+   "path": "OAI/Analysis/CharacterCriterion/DropSections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/EndpointMultiplicity.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.EndpointMultiplicity",
+   "original_sha256": "01624c6a59a6f8bf9fb7ac3363cea1d14ed6d5878ec5c7b47efe4dbfc5219b8d",
+   "path": "OAI/Analysis/CharacterCriterion/EndpointMultiplicity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/FactorIndependence.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.FactorIndependence",
+   "original_sha256": "d6162a00dd042cba2ec0532d63074c8ef5f49122c379f1cd2a49555ee29eb7e9",
+   "path": "OAI/Analysis/CharacterCriterion/FactorIndependence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/FieldCalculus.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.FieldCalculus",
+   "original_sha256": "e7abec6949a6104c85f7c0750ca0478cddc9041c81bc1dad5fbef7c8841bdca4",
+   "path": "OAI/Analysis/CharacterCriterion/FieldCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/FiniteDrop.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.FiniteDrop",
+   "original_sha256": "4114e205c3d3450e3ddd19046651ab59e7ddd92fc1055848a96ab8002544bac8",
+   "path": "OAI/Analysis/CharacterCriterion/FiniteDrop.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/FlipPath.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.FlipPath",
+   "original_sha256": "1f52aed978a993574da25beaa91955ddba3aaa45c4e0d896695a3a2071e41ebe",
+   "path": "OAI/Analysis/CharacterCriterion/FlipPath.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/FourLegSymmetries.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.FourLegSymmetries",
+   "original_sha256": "b6d5aa25094a4ccceef3a5eeb846fa36d23ee70eb51115d5177ce23b36e7a02b",
+   "path": "OAI/Analysis/CharacterCriterion/FourLegSymmetries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/FullComparison.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.FullComparison",
+   "original_sha256": "314b47f3fbc7e1e93e2bc238c360cea5b9f3f3ba4ee01f8be3a4ab9b62cb5844",
+   "path": "OAI/Analysis/CharacterCriterion/FullComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/Fullness.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.Fullness",
+   "original_sha256": "4937a5f410e2f0d3276cce2be378ece8dc3739744ffc3dbdcb3b090964280e1e",
+   "path": "OAI/Analysis/CharacterCriterion/Fullness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/FunctionalCalculus.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.FunctionalCalculus",
+   "original_sha256": "ede4262bc60e47f799db9002a1ea0de5749dca3f4681b4efc60c845413ee3979",
+   "path": "OAI/Analysis/CharacterCriterion/FunctionalCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/GeneralSystem.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.GeneralSystem",
+   "original_sha256": "0df0f63325b7788a319a6ee7deda94645c18f2c78ce3fac2ef57b7d2250f98aa",
+   "path": "OAI/Analysis/CharacterCriterion/GeneralSystem.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/HereditaryTransport.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.HereditaryTransport",
+   "original_sha256": "b17da10fac6207d5bb04f493c0568cc5a53c69da54f76307c89e3783baed1834",
+   "path": "OAI/Analysis/CharacterCriterion/HereditaryTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/InductiveLimit.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.InductiveLimit",
+   "original_sha256": "53885ff0243dda4d3140ed6a9e98a01cb4f22b36242ff898ba9690e79a5e1bf7",
+   "path": "OAI/Analysis/CharacterCriterion/InductiveLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/InfiniteTensor.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.InfiniteTensor",
+   "original_sha256": "e3d57cb7eaf70d75f75da094971fb7c4ffd2d6cde120301be3a545e74031c5ad",
+   "path": "OAI/Analysis/CharacterCriterion/InfiniteTensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/JiangSu.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.JiangSu",
+   "original_sha256": "164070cdd963809408d5ebb50b88ba3a35507bce96848948c453005fe7563796",
+   "path": "OAI/Analysis/CharacterCriterion/JiangSu.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/Main.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.Main",
+   "original_sha256": "0f5c7e5260c858034a13b02256ed02f9fe7fa622711300ac065b972d17596151",
+   "path": "OAI/Analysis/CharacterCriterion/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/MatrixPaths.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.MatrixPaths",
+   "original_sha256": "f9faba0fe6068f8d76ef36af9f3aa1a9c6e35564930d1e214f3db340775527c2",
+   "path": "OAI/Analysis/CharacterCriterion/MatrixPaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/MatrixSimplex.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.MatrixSimplex",
+   "original_sha256": "be8bc910f7a196c89c76ea2a9f5aad87ab73984e8f172fb1844a3aeb5e3c6158",
+   "path": "OAI/Analysis/CharacterCriterion/MatrixSimplex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/MaxTensor.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.MaxTensor",
+   "original_sha256": "a365b1d6da3a782d77e0ae0eaa7f2028b7447d0a3115c5abdf9aa94354a99b91",
+   "path": "OAI/Analysis/CharacterCriterion/MaxTensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/MinTensor.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.MinTensor",
+   "original_sha256": "60ab97f73e28b12f322359b1a51d55fd116d065d6ccc98d6c9679895a0aeede9",
+   "path": "OAI/Analysis/CharacterCriterion/MinTensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/MinimalFunctoriality.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.MinimalFunctoriality",
+   "original_sha256": "c8cd97074f19f6936fa4fe619e36054f91618da7b11d967686a428c74ff22e76",
+   "path": "OAI/Analysis/CharacterCriterion/MinimalFunctoriality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/MultiplicativeChannels.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.MultiplicativeChannels",
+   "original_sha256": "8198f0e6a36336fb85eaa85cb89313a1fd3cee4ac30367883e3e5e53ceb14ac3",
+   "path": "OAI/Analysis/CharacterCriterion/MultiplicativeChannels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/NoncommutingPair.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.NoncommutingPair",
+   "original_sha256": "7fcc36423499204c55f7daee79fb07836c89dd444656422f7e7bc9b9373a5dd7",
+   "path": "OAI/Analysis/CharacterCriterion/NoncommutingPair.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/NormUltrapower.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.NormUltrapower",
+   "original_sha256": "0f95b1c89618742e448d6f5334d32082bd31c3153315c19ee764e59ad976562f",
+   "path": "OAI/Analysis/CharacterCriterion/NormUltrapower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/OrderZero.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.OrderZero",
+   "original_sha256": "99b81bd35c1740aa197054153b24af314066272d61d3401964300fbd27459582",
+   "path": "OAI/Analysis/CharacterCriterion/OrderZero.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/OrderZeroPair.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.OrderZeroPair",
+   "original_sha256": "3aed5898888e1f998b8e09f5e24513ac74318dd0061d3560ddc9d149b82c6dff",
+   "path": "OAI/Analysis/CharacterCriterion/OrderZeroPair.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/Pauli.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.Pauli",
+   "original_sha256": "d088b29c8a8528ab061218f267a3e3a722ca0a7b99fa1005b87d5134ddfcc2d4",
+   "path": "OAI/Analysis/CharacterCriterion/Pauli.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/PrimeChannels.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.PrimeChannels",
+   "original_sha256": "52230bc606f386d8accfe3a85cd663c831a29b286340dda1b0e4db500f328d2b",
+   "path": "OAI/Analysis/CharacterCriterion/PrimeChannels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/PrimePresentation.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.PrimePresentation",
+   "original_sha256": "477b6eab3d6a8ea89592bb19c674572928e7bbe496408113bb875bf81dd31f5c",
+   "path": "OAI/Analysis/CharacterCriterion/PrimePresentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/PrimeSpectrum.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.PrimeSpectrum",
+   "original_sha256": "f2fb7446e0ab296555bc3b242d08416e90c4b0ce7cd9667389d36229142c7d9e",
+   "path": "OAI/Analysis/CharacterCriterion/PrimeSpectrum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/PrimeSquare.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.PrimeSquare",
+   "original_sha256": "8dcac934381d77788a2bf2a95bd1b64a27af939d400d02bca7764e2f65d80aef",
+   "path": "OAI/Analysis/CharacterCriterion/PrimeSquare.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/Projectionless.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.Projectionless",
+   "original_sha256": "be1c7006cea0caabe04479c5bcd9b27d67a82cd2c1db2821af2db9a4ada3441a",
+   "path": "OAI/Analysis/CharacterCriterion/Projectionless.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/Reindexing.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.Reindexing",
+   "original_sha256": "af59f7eb15614236d75896370cb074a71f67c7f7e1908ed420a5ba332d8a44b5",
+   "path": "OAI/Analysis/CharacterCriterion/Reindexing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/RepresentationTheory.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.RepresentationTheory",
+   "original_sha256": "3e59225fe4c45ddc7f02893ee3bddeefffc95f15dc86df7aac15c37e8c606863",
+   "path": "OAI/Analysis/CharacterCriterion/RepresentationTheory.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/Representations.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.Representations",
+   "original_sha256": "8b7bf6ba8e4e4f7dcdcb0d5b20e25a77bf7777da0d3570739b6cee1c216bfe61",
+   "path": "OAI/Analysis/CharacterCriterion/Representations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/RepresentedLabels.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.RepresentedLabels",
+   "original_sha256": "5f923a373c0f4d1420f1821f453346af4426829a8c377492a0f5e85acea12c4e",
+   "path": "OAI/Analysis/CharacterCriterion/RepresentedLabels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/SeparableReduction.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.SeparableReduction",
+   "original_sha256": "213cea3ace53d9403a8bda5030c3f8fe4f8e30b198c4b7a127584aff4b04779b",
+   "path": "OAI/Analysis/CharacterCriterion/SeparableReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/SignObstruction.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.SignObstruction",
+   "original_sha256": "8d9805ca6257de7958061079a6a9e7871fb5b1eb85546080478e9629bddae810",
+   "path": "OAI/Analysis/CharacterCriterion/SignObstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/SpatialTensor.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.SpatialTensor",
+   "original_sha256": "b0c687a21835e118e0e3619f2f3a77d79a94980921d1a84b3baac91a4f4e3917",
+   "path": "OAI/Analysis/CharacterCriterion/SpatialTensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/SquareZeroCone.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.SquareZeroCone",
+   "original_sha256": "0f7547168a845455aafdd3dad9ae2a49400876ced95bad7415157bb5d2f5c2b2",
+   "path": "OAI/Analysis/CharacterCriterion/SquareZeroCone.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/StandardPrime.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.StandardPrime",
+   "original_sha256": "9e13582bad81df7ec1e6adccc50ddae9792e25a5448139e68b8fe6a8132718ad",
+   "path": "OAI/Analysis/CharacterCriterion/StandardPrime.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/States.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.States",
+   "original_sha256": "e6f551d372bc18a22596fc068fc8b44dfdf0cf76abcb6a94cd89f1ad80ff1d6a",
+   "path": "OAI/Analysis/CharacterCriterion/States.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/SymmetryFlow.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.SymmetryFlow",
+   "original_sha256": "af756222541a666680f2906795b953dc070233e2793556f52a1ca156e9fae830",
+   "path": "OAI/Analysis/CharacterCriterion/SymmetryFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/TensorComparison.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.TensorComparison",
+   "original_sha256": "7de0750ffc58bfd63ed1701a279e89d9eda5fa3cc4e3412d059c878d0520afc2",
+   "path": "OAI/Analysis/CharacterCriterion/TensorComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/TensorSections.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.TensorSections",
+   "original_sha256": "8d7b994a7b9174cce47ed58aa4f3dfc4cdbf199181a997948a6346fa638e7b77",
+   "path": "OAI/Analysis/CharacterCriterion/TensorSections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/Traces.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.Traces",
+   "original_sha256": "f878ba2a948738e83c25b53247d25027b32585804f13b904036fe8bedb48c2f5",
+   "path": "OAI/Analysis/CharacterCriterion/Traces.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/UltrapowerSaturation.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.UltrapowerSaturation",
+   "original_sha256": "7faaaa3a4f9cebc45ef9f3bd0aaec2b5392f22584c2ac6b0c073416ef062e707",
+   "path": "OAI/Analysis/CharacterCriterion/UltrapowerSaturation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/CharacterCriterion/WeightedUnits.lean"
+   },
+   "module": "OAI.Analysis.CharacterCriterion.WeightedUnits",
+   "original_sha256": "fe30a144401a1de253e98a03204ba3083ae4ac8a47c5a0a8c33486fa976cbfda",
+   "path": "OAI/Analysis/CharacterCriterion/WeightedUnits.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.CharacterCriterion.Absorption",
+  "OAI.Analysis.CharacterCriterion.AmplifiedComparison",
+  "OAI.Analysis.CharacterCriterion.BalancedChannels",
+  "OAI.Analysis.CharacterCriterion.BalancedLimit",
+  "OAI.Analysis.CharacterCriterion.BalancedSystem",
+  "OAI.Analysis.CharacterCriterion.CentralSequences",
+  "OAI.Analysis.CharacterCriterion.ConeCube",
+  "OAI.Analysis.CharacterCriterion.ConeModel",
+  "OAI.Analysis.CharacterCriterion.ConePauli",
+  "OAI.Analysis.CharacterCriterion.CubeCalculus",
+  "OAI.Analysis.CharacterCriterion.CubeField",
+  "OAI.Analysis.CharacterCriterion.Definitions",
+  "OAI.Analysis.CharacterCriterion.DetectingSpaces",
+  "OAI.Analysis.CharacterCriterion.DiagonalIteration",
+  "OAI.Analysis.CharacterCriterion.DropSections",
+  "OAI.Analysis.CharacterCriterion.EndpointMultiplicity",
+  "OAI.Analysis.CharacterCriterion.FactorIndependence",
+  "OAI.Analysis.CharacterCriterion.FieldCalculus",
+  "OAI.Analysis.CharacterCriterion.FiniteDrop",
+  "OAI.Analysis.CharacterCriterion.FlipPath",
+  "OAI.Analysis.CharacterCriterion.FourLegSymmetries",
+  "OAI.Analysis.CharacterCriterion.FullComparison",
+  "OAI.Analysis.CharacterCriterion.Fullness",
+  "OAI.Analysis.CharacterCriterion.FunctionalCalculus",
+  "OAI.Analysis.CharacterCriterion.GeneralSystem",
+  "OAI.Analysis.CharacterCriterion.HereditaryTransport",
+  "OAI.Analysis.CharacterCriterion.InductiveLimit",
+  "OAI.Analysis.CharacterCriterion.InfiniteTensor",
+  "OAI.Analysis.CharacterCriterion.JiangSu",
+  "OAI.Analysis.CharacterCriterion.Main",
+  "OAI.Analysis.CharacterCriterion.MatrixPaths",
+  "OAI.Analysis.CharacterCriterion.MatrixSimplex",
+  "OAI.Analysis.CharacterCriterion.MaxTensor",
+  "OAI.Analysis.CharacterCriterion.MinTensor",
+  "OAI.Analysis.CharacterCriterion.MinimalFunctoriality",
+  "OAI.Analysis.CharacterCriterion.MultiplicativeChannels",
+  "OAI.Analysis.CharacterCriterion.NoncommutingPair",
+  "OAI.Analysis.CharacterCriterion.NormUltrapower",
+  "OAI.Analysis.CharacterCriterion.OrderZero",
+  "OAI.Analysis.CharacterCriterion.OrderZeroPair",
+  "OAI.Analysis.CharacterCriterion.Pauli",
+  "OAI.Analysis.CharacterCriterion.PrimeChannels",
+  "OAI.Analysis.CharacterCriterion.PrimePresentation",
+  "OAI.Analysis.CharacterCriterion.PrimeSpectrum",
+  "OAI.Analysis.CharacterCriterion.PrimeSquare",
+  "OAI.Analysis.CharacterCriterion.Projectionless",
+  "OAI.Analysis.CharacterCriterion.Reindexing",
+  "OAI.Analysis.CharacterCriterion.RepresentationTheory",
+  "OAI.Analysis.CharacterCriterion.Representations",
+  "OAI.Analysis.CharacterCriterion.RepresentedLabels",
+  "OAI.Analysis.CharacterCriterion.SeparableReduction",
+  "OAI.Analysis.CharacterCriterion.SignObstruction",
+  "OAI.Analysis.CharacterCriterion.SpatialTensor",
+  "OAI.Analysis.CharacterCriterion.SquareZeroCone",
+  "OAI.Analysis.CharacterCriterion.StandardPrime",
+  "OAI.Analysis.CharacterCriterion.States",
+  "OAI.Analysis.CharacterCriterion.SymmetryFlow",
+  "OAI.Analysis.CharacterCriterion.TensorComparison",
+  "OAI.Analysis.CharacterCriterion.TensorSections",
+  "OAI.Analysis.CharacterCriterion.Traces",
+  "OAI.Analysis.CharacterCriterion.UltrapowerSaturation",
+  "OAI.Analysis.CharacterCriterion.WeightedUnits"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/CharacterCriterion.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.CharacterCriterion.Main",
+   "name": "OAI.KirchbergRordam.character_criterion",
+   "statement_sha256": "68b4e5fe022504c8cd22acfcc487f585f63d2934224c43349078253c0b9eff54"
+  }
+ ],
+ "task_id": "oai-character-criterion",
+ "task_revision": 1,
+ "title": "OpenAI math: The Kirchberg–Rørdam character criterion and infinite tensor-power Jiang–Su stability: Kirchberg–Rørdam character criterion",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

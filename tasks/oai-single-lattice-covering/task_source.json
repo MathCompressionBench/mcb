@@ -1,0 +1,831 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 238674790
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.SingleLatticeCovering",
+  "challenge_sha256": "f2f6684141cab6c648c934f75685a3d85f12f37f3c2b0c83224155157a60dbcd",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SingleLatticeCovering.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.SingleLatticeCovering",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Geometry.LatticeCovering.Main",
+   "theorem_names": [
+    "OAI.SingleLatticeCovering.single_lattice_covering"
+   ]
+  },
+  "config_sha256": "a0d1f9444b4c21bd5edca089b48144df91cc8edb556eb522947e22abe2f7c798",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SingleLatticeCovering.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.SingleLatticeCovering.single_lattice_covering": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Assembly.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Assembly",
+   "original_sha256": "5d06f6cb9c3f8806d9e1e82026eb24cc5a6443052b5bb1db7e97088cf486d40c",
+   "path": "OAI/Geometry/LatticeCovering/Assembly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Bits.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Bits",
+   "original_sha256": "fa3d18373136b7d66c2ed20344059bc63378a679277e5737df05fa6503ff2281",
+   "path": "OAI/Geometry/LatticeCovering/Bits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/BrokenCircuits.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.BrokenCircuits",
+   "original_sha256": "2e40f0f5ff0851ca236e9eab1bca306132e21a938429cbc2cf51163d791c7f47",
+   "path": "OAI/Geometry/LatticeCovering/BrokenCircuits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Chains.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Chains",
+   "original_sha256": "dd57a60e3a36ec1bb1f0186963437cd42a745251bd6f5ec7b630d1eaedb50390",
+   "path": "OAI/Geometry/LatticeCovering/Chains.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/CircuitErrors.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.CircuitErrors",
+   "original_sha256": "707b9a4e70a6a4d40f62e81666ce04495a330c96a2efcc71b707f1c0a3d2c217",
+   "path": "OAI/Geometry/LatticeCovering/CircuitErrors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/CircuitLattices.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.CircuitLattices",
+   "original_sha256": "54c0b858043ff89ab41478f93848925549feca29dd719d3aac8b5857a28164ce",
+   "path": "OAI/Geometry/LatticeCovering/CircuitLattices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/CircuitSums.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.CircuitSums",
+   "original_sha256": "007d03657d3eb2d7721fc2aefe045e5c43af9657f5e623cc3a75f29464d11a71",
+   "path": "OAI/Geometry/LatticeCovering/CircuitSums.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/CircuitVolumes.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.CircuitVolumes",
+   "original_sha256": "95770f8ab37db5a9bb0639012ca18410b27c8f6e28a30e9511bac050fcd4886a",
+   "path": "OAI/Geometry/LatticeCovering/CircuitVolumes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Completion.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Completion",
+   "original_sha256": "8e489ddb738401c04838869975bba42a632566270018721a68bf07b30f14413b",
+   "path": "OAI/Geometry/LatticeCovering/Completion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Concentration.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Concentration",
+   "original_sha256": "076c7f37fa934e1942b3f8919b00cc03c8e623734c3e6defcb62fd2002a86faf",
+   "path": "OAI/Geometry/LatticeCovering/Concentration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Covering.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Covering",
+   "original_sha256": "598fb279cc2d137523e49636e5ae950fee5f8f3f6f59b939649d8924cff8a3b4",
+   "path": "OAI/Geometry/LatticeCovering/Covering.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Desmoothing.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Desmoothing",
+   "original_sha256": "d1a43bb5ee6b74ee269527b2a52a5774bc5bfe75c218f9eac1707900309db0cb",
+   "path": "OAI/Geometry/LatticeCovering/Desmoothing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Folded.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Folded",
+   "original_sha256": "468fa26bedd8821ddaebdd300e3460dd208699d49579841315f7c3e3596b3c39",
+   "path": "OAI/Geometry/LatticeCovering/Folded.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/GaussianMoments.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.GaussianMoments",
+   "original_sha256": "f065e4be230ebeeed47b18c12730d67173c94d74f5d40079ed03e2267953bbca",
+   "path": "OAI/Geometry/LatticeCovering/GaussianMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/GaussianPositions.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.GaussianPositions",
+   "original_sha256": "11baa094b4356b6c203ba58316c6c9d4a6e492cf8e2160bc9bc386136f2baba7",
+   "path": "OAI/Geometry/LatticeCovering/GaussianPositions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/GaussianRates.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.GaussianRates",
+   "original_sha256": "ab4aa9ac4be366673c178827a63bcbca2015c6b10fc2acff5f60eb7781dbe701",
+   "path": "OAI/Geometry/LatticeCovering/GaussianRates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/GaussianSections.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.GaussianSections",
+   "original_sha256": "d8b3fa86040993eaf32c2d15be7114a606352cc62a2bb99a5834ded239c32dd3",
+   "path": "OAI/Geometry/LatticeCovering/GaussianSections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/GaussianSmoothing.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.GaussianSmoothing",
+   "original_sha256": "63715272f9ea0fb3900f6b58fcd22290200a8952062e33927e1cbae373b4408a",
+   "path": "OAI/Geometry/LatticeCovering/GaussianSmoothing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/GridCounts.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.GridCounts",
+   "original_sha256": "76fb81a3463e58432156bbc45736da86853b1487dd129c340e8b7c6b98054e18",
+   "path": "OAI/Geometry/LatticeCovering/GridCounts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Horizontal.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Horizontal",
+   "original_sha256": "547eb0666c12fb1c83dfdb3b9690e729f435d50e1eb62679e5b2f595a30084df",
+   "path": "OAI/Geometry/LatticeCovering/Horizontal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Isotropy.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Isotropy",
+   "original_sha256": "a6b57265c1fb08746e95281208fb7f3e6b3cdbf6722b8d4eb794a3f588b6973c",
+   "path": "OAI/Geometry/LatticeCovering/Isotropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Lines.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Lines",
+   "original_sha256": "734bce6822db8bbf48e7adeee2b3c98021e8d8c1fc8ac305aca8e8a11ebc7871",
+   "path": "OAI/Geometry/LatticeCovering/Lines.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/LogConcavity.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.LogConcavity",
+   "original_sha256": "22a56871db658eefe5342acdb2ac692e26d8d403fb8ff0a67aff907470341bd8",
+   "path": "OAI/Geometry/LatticeCovering/LogConcavity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Main.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Main",
+   "original_sha256": "ad71e420e2106602e5d6b16d6278f7c28df84e76e2261f42c278e09db741535c",
+   "path": "OAI/Geometry/LatticeCovering/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Marginals.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Marginals",
+   "original_sha256": "2974aa6d2cc8b502ec4a05edad7fb071f8e6bd0b5c4fa933699b8789b6291648",
+   "path": "OAI/Geometry/LatticeCovering/Marginals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/MeanHoles.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.MeanHoles",
+   "original_sha256": "376569f5d2b08c199156aeed6637c0e3dc929f5582fab1e382ebe8fa8604c038",
+   "path": "OAI/Geometry/LatticeCovering/MeanHoles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Model.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Model",
+   "original_sha256": "8a6e268404d39b868497b94c4fc5d14a33e03be7878a6c8f926026b7943a794a",
+   "path": "OAI/Geometry/LatticeCovering/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Patterns.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Patterns",
+   "original_sha256": "220c523d5f86d1f01a9c19d9806858b9b52b8c1764183256ff77c36d102ef111",
+   "path": "OAI/Geometry/LatticeCovering/Patterns.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/PrimeGrids.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.PrimeGrids",
+   "original_sha256": "960bb51cb8abff758b25ef4f8ba89eebec6438b0de281db84b7112026ec1ebde",
+   "path": "OAI/Geometry/LatticeCovering/PrimeGrids.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/PrimeKernels.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.PrimeKernels",
+   "original_sha256": "4b494a75dd52e5cd8fb28a160b793dbb154e0aa56a515d9ea0828e682b98c03a",
+   "path": "OAI/Geometry/LatticeCovering/PrimeKernels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Products.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Products",
+   "original_sha256": "98267492957bc80faafb2b973ae0c766e502cc68300ffd54a6e7cc85c23dab70",
+   "path": "OAI/Geometry/LatticeCovering/Products.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/ProjectionBounds.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.ProjectionBounds",
+   "original_sha256": "599c70bd5619510d0d7ec58003ab0e947090f8a1be19b5e4c8b446c3de0eb8cc",
+   "path": "OAI/Geometry/LatticeCovering/ProjectionBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/RadialBounds.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.RadialBounds",
+   "original_sha256": "2330f853df021b8667f1865c0ce9c52358ef7c79d5d7e69d9bf2ecb5b32ec80d",
+   "path": "OAI/Geometry/LatticeCovering/RadialBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Rates.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Rates",
+   "original_sha256": "840a77c45d0c996046a2c617a056a60426ac6ee3d942088327187393e89ceb1d",
+   "path": "OAI/Geometry/LatticeCovering/Rates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Residuals.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Residuals",
+   "original_sha256": "1afc01d8dc72033cb82c493097df1a748dc8243557ab48d9951b61886024ae18",
+   "path": "OAI/Geometry/LatticeCovering/Residuals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Rounding.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Rounding",
+   "original_sha256": "3565dbec59d8bf37439263fe308ea5052ea66e5e58f6c3dc53060148a5855dce",
+   "path": "OAI/Geometry/LatticeCovering/Rounding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Sampling.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Sampling",
+   "original_sha256": "4f6144f553c16090771acfd9a81eb3201b45f49d67c0a60c98fde9e1d658498d",
+   "path": "OAI/Geometry/LatticeCovering/Sampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/SamplingBounds.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.SamplingBounds",
+   "original_sha256": "b936fa5304e90d8e7ae6a86b382799b46a0fe6e47cefc0debb7bd21bb83989da",
+   "path": "OAI/Geometry/LatticeCovering/SamplingBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Sections.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Sections",
+   "original_sha256": "2415ca3cd82c08e8641ace78c491ad1fbc51251c511a877f3ca9d5e31dd09687",
+   "path": "OAI/Geometry/LatticeCovering/Sections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Shears.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Shears",
+   "original_sha256": "3c81e907c9ba6dcfbda3e756b0e2c89fc3f429e228074edc3d7929c7e6effdf4",
+   "path": "OAI/Geometry/LatticeCovering/Shears.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/LatticeCovering/Transport.lean"
+   },
+   "module": "OAI.Geometry.LatticeCovering.Transport",
+   "original_sha256": "d098c786028bafecd9e3852d4942606d3ab390bde5bb27d23ef38b00ba6aa5d7",
+   "path": "OAI/Geometry/LatticeCovering/Transport.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Geometry.LatticeCovering.Assembly",
+  "OAI.Geometry.LatticeCovering.Bits",
+  "OAI.Geometry.LatticeCovering.BrokenCircuits",
+  "OAI.Geometry.LatticeCovering.Chains",
+  "OAI.Geometry.LatticeCovering.CircuitErrors",
+  "OAI.Geometry.LatticeCovering.CircuitLattices",
+  "OAI.Geometry.LatticeCovering.CircuitSums",
+  "OAI.Geometry.LatticeCovering.CircuitVolumes",
+  "OAI.Geometry.LatticeCovering.Completion",
+  "OAI.Geometry.LatticeCovering.Concentration",
+  "OAI.Geometry.LatticeCovering.Covering",
+  "OAI.Geometry.LatticeCovering.Desmoothing",
+  "OAI.Geometry.LatticeCovering.Folded",
+  "OAI.Geometry.LatticeCovering.GaussianMoments",
+  "OAI.Geometry.LatticeCovering.GaussianPositions",
+  "OAI.Geometry.LatticeCovering.GaussianRates",
+  "OAI.Geometry.LatticeCovering.GaussianSections",
+  "OAI.Geometry.LatticeCovering.GaussianSmoothing",
+  "OAI.Geometry.LatticeCovering.GridCounts",
+  "OAI.Geometry.LatticeCovering.Horizontal",
+  "OAI.Geometry.LatticeCovering.Isotropy",
+  "OAI.Geometry.LatticeCovering.Lines",
+  "OAI.Geometry.LatticeCovering.LogConcavity",
+  "OAI.Geometry.LatticeCovering.Main",
+  "OAI.Geometry.LatticeCovering.Marginals",
+  "OAI.Geometry.LatticeCovering.MeanHoles",
+  "OAI.Geometry.LatticeCovering.Model",
+  "OAI.Geometry.LatticeCovering.Patterns",
+  "OAI.Geometry.LatticeCovering.PrimeGrids",
+  "OAI.Geometry.LatticeCovering.PrimeKernels",
+  "OAI.Geometry.LatticeCovering.Products",
+  "OAI.Geometry.LatticeCovering.ProjectionBounds",
+  "OAI.Geometry.LatticeCovering.RadialBounds",
+  "OAI.Geometry.LatticeCovering.Rates",
+  "OAI.Geometry.LatticeCovering.Residuals",
+  "OAI.Geometry.LatticeCovering.Rounding",
+  "OAI.Geometry.LatticeCovering.Sampling",
+  "OAI.Geometry.LatticeCovering.SamplingBounds",
+  "OAI.Geometry.LatticeCovering.Sections",
+  "OAI.Geometry.LatticeCovering.Shears",
+  "OAI.Geometry.LatticeCovering.Transport"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/SingleLatticeCovering.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Geometry.LatticeCovering.Main",
+   "name": "OAI.SingleLatticeCovering.single_lattice_covering",
+   "statement_sha256": "640675190ddfc32d1dcb11ac10f7931f2c6734df2d43f1c868b1acb5d2dbfe02"
+  }
+ ],
+ "task_id": "oai-single-lattice-covering",
+ "task_revision": 1,
+ "title": "OpenAI math: The optimal order of convex-body covering density: Single-lattice covering bound",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

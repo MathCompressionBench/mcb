@@ -1,0 +1,761 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 52714778
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.C0Absorption",
+  "challenge_sha256": "a5d7375b335f7dd950c879f1d99d60cda553d2a4d7e68b0170a35c5657becdbe",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/C0Absorption.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.C0Absorption",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.C0Absorption.Main",
+   "theorem_names": [
+    "OAI.C0Absorption.main_result"
+   ]
+  },
+  "config_sha256": "874bc8d2370ec332fd743314e45b56bd530df1a962e6df4003b7fd98f4531555",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/C0Absorption.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.C0Absorption.main_result": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Absorption.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Absorption",
+   "original_sha256": "bde30ca59dfe04249b3947c1b3d7922f83b32ed472c4a99d46c5d7b40fd41045",
+   "path": "OAI/Analysis/C0Absorption/Absorption.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Aharoni.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Aharoni",
+   "original_sha256": "6eaeade361320423e69bbe30c8ba9b8e95769af68ef005f10682715b919df7b5",
+   "path": "OAI/Analysis/C0Absorption/Aharoni.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Angles.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Angles",
+   "original_sha256": "e938ff09e70ed9cf750c056e29765cc3086281f31abcb437d6317f5aa730cf7f",
+   "path": "OAI/Analysis/C0Absorption/Angles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Blocks.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Blocks",
+   "original_sha256": "ec555eddf34abbcb35a9b6862e19423271bff44377b44b1833df7176262cd04c",
+   "path": "OAI/Analysis/C0Absorption/Blocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Completion.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Completion",
+   "original_sha256": "34cfa97a26778746e9b5cd58af2a5725a444d48f190ee5999ba56f44f9c627a6",
+   "path": "OAI/Analysis/C0Absorption/Completion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Continuity.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Continuity",
+   "original_sha256": "468829298642dcf4f1c0a571efc6d3a327f31f7dc26dd120e3dc8d1b75d818ea",
+   "path": "OAI/Analysis/C0Absorption/Continuity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Coordinates.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Coordinates",
+   "original_sha256": "27cbc04aca7f910903907d355d93bc4f76c8a98446a1a9f98956d02103bee362",
+   "path": "OAI/Analysis/C0Absorption/Coordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Core.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Core",
+   "original_sha256": "7fdfb12bac51355a8ad8367de34e8ec811b36da4894d1ad16a3d6ab6009e49f8",
+   "path": "OAI/Analysis/C0Absorption/Core.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Correction.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Correction",
+   "original_sha256": "56a23b7fc38648a02e751d57387615cadd76c2c1a19a8cdf272f3c6200e3315c",
+   "path": "OAI/Analysis/C0Absorption/Correction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Detection.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Detection",
+   "original_sha256": "25bd1676ef4e1a46e0afaf5dd017d5bc712e2517b6ebe5953ad80686f839d111",
+   "path": "OAI/Analysis/C0Absorption/Detection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Duality.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Duality",
+   "original_sha256": "2c12023d8dc3267e234fd986920d2c6a8bd3029e1b537febd335a62f19bca86d",
+   "path": "OAI/Analysis/C0Absorption/Duality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Finite.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Finite",
+   "original_sha256": "a5c379001de943ae45807a7de3fa795f30cdc4c634bb3ce0ca968d7f5c0d33b5",
+   "path": "OAI/Analysis/C0Absorption/Finite.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/FiniteShift.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.FiniteShift",
+   "original_sha256": "f71b9da970b82873bea22d56e2af03274330239a3ccd9e2d9e7ae1414946a6ba",
+   "path": "OAI/Analysis/C0Absorption/FiniteShift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Frozen.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Frozen",
+   "original_sha256": "28e33a5b839638c3c0210cd4b56efc5c2670169ee0aa10f307fec1bed95561fb",
+   "path": "OAI/Analysis/C0Absorption/Frozen.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Grid.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Grid",
+   "original_sha256": "22f5c170ae5e7869fb712201e7c7a3be3dab25793ba64e8b8264942ce1f2f1fb",
+   "path": "OAI/Analysis/C0Absorption/Grid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Lists.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Lists",
+   "original_sha256": "993695ff70629a8610cd8af48ad956a3431bb7e0d157104fc380c056f9edea32",
+   "path": "OAI/Analysis/C0Absorption/Lists.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/LocalInverse.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.LocalInverse",
+   "original_sha256": "f43470f811a72b0c55518dc289bae666b60fef164c81ed2bf0b95132a4218777",
+   "path": "OAI/Analysis/C0Absorption/LocalInverse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Localization.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Localization",
+   "original_sha256": "ff32f8d56e8dcf3ca8065dcf014a466da9312fdb6d0e0bc08e65a654390047da",
+   "path": "OAI/Analysis/C0Absorption/Localization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Main.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Main",
+   "original_sha256": "d73f561fe7c1afa4b977c527d2618f145a4a116f0721f8f6eac7618a23ac77dc",
+   "path": "OAI/Analysis/C0Absorption/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Molecules.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Molecules",
+   "original_sha256": "1a3b3a0595d807a4535c74a3771e6dc76aceea2c955c12c339edfba0bfe1b7f5",
+   "path": "OAI/Analysis/C0Absorption/Molecules.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Norm.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Norm",
+   "original_sha256": "275b9a6b17916b4842bd4d73153a8da0c8a2c2918552ce6beedbc88cb612cf07",
+   "path": "OAI/Analysis/C0Absorption/Norm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Onto.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Onto",
+   "original_sha256": "71e2cf254ccb3e89b181591d8c8291045e3a2057b242c5f62e6fcb59c6a4b9b7",
+   "path": "OAI/Analysis/C0Absorption/Onto.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Operations.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Operations",
+   "original_sha256": "08c7fef3ce81cd01600eef5138c8d3a9892e937a557fcdfbcb76c6c42a6771c2",
+   "path": "OAI/Analysis/C0Absorption/Operations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Operators.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Operators",
+   "original_sha256": "8d5ddecc24188970308c109bd1cfee0d84e787bef3e7b9f0f1a1b9fc0554dcca",
+   "path": "OAI/Analysis/C0Absorption/Operators.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Pairings.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Pairings",
+   "original_sha256": "82a58b3600534e0d340820c2888d3f129261e6e2d652abb9f2e894ccc616cbbc",
+   "path": "OAI/Analysis/C0Absorption/Pairings.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Selection.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Selection",
+   "original_sha256": "c2166b3f1bc955ded475a11906d2c2927110e691f1a54b7be5eb3681837c8465",
+   "path": "OAI/Analysis/C0Absorption/Selection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Shift.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Shift",
+   "original_sha256": "0d32f315c3752ef8eddc13c30f5a2535f1d28599df5d9d92fbf0a8088b4455b7",
+   "path": "OAI/Analysis/C0Absorption/Shift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Signs.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Signs",
+   "original_sha256": "acedc0b7d769996eccf4a9ccf88792c14c63d3092c2a5f489c59c46d52210c82",
+   "path": "OAI/Analysis/C0Absorption/Signs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Space.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Space",
+   "original_sha256": "fdf905991ad9a77e677549ae46f7d4b61229fce1790030ac287a8c4ea9cf525f",
+   "path": "OAI/Analysis/C0Absorption/Space.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Supports.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Supports",
+   "original_sha256": "57f41013cdfa3e39d662cf8875689acf4762094fe0acc93c9fea59769a0305c0",
+   "path": "OAI/Analysis/C0Absorption/Supports.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Tags.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Tags",
+   "original_sha256": "687c893f94266310c9decf25ddc59800b5828cc39dbd4bb4d6866c08ca1f053e",
+   "path": "OAI/Analysis/C0Absorption/Tags.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Tests.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Tests",
+   "original_sha256": "badb29362753f7c196d890262e537dbeebb93fdafc4296c60f297894ad45f0ad",
+   "path": "OAI/Analysis/C0Absorption/Tests.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Triangular.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Triangular",
+   "original_sha256": "66bbcb6f752321ac8d5e258cac3c941b514c7a4e0a612db8f70647274919e80d",
+   "path": "OAI/Analysis/C0Absorption/Triangular.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/C0Absorption/Weights.lean"
+   },
+   "module": "OAI.Analysis.C0Absorption.Weights",
+   "original_sha256": "2005d0e268f33c0a438b6d4891666736c2122998a41e13c9aff7cc7da654eb4e",
+   "path": "OAI/Analysis/C0Absorption/Weights.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.C0Absorption.Absorption",
+  "OAI.Analysis.C0Absorption.Aharoni",
+  "OAI.Analysis.C0Absorption.Angles",
+  "OAI.Analysis.C0Absorption.Blocks",
+  "OAI.Analysis.C0Absorption.Completion",
+  "OAI.Analysis.C0Absorption.Continuity",
+  "OAI.Analysis.C0Absorption.Coordinates",
+  "OAI.Analysis.C0Absorption.Core",
+  "OAI.Analysis.C0Absorption.Correction",
+  "OAI.Analysis.C0Absorption.Detection",
+  "OAI.Analysis.C0Absorption.Duality",
+  "OAI.Analysis.C0Absorption.Finite",
+  "OAI.Analysis.C0Absorption.FiniteShift",
+  "OAI.Analysis.C0Absorption.Frozen",
+  "OAI.Analysis.C0Absorption.Grid",
+  "OAI.Analysis.C0Absorption.Lists",
+  "OAI.Analysis.C0Absorption.LocalInverse",
+  "OAI.Analysis.C0Absorption.Localization",
+  "OAI.Analysis.C0Absorption.Main",
+  "OAI.Analysis.C0Absorption.Molecules",
+  "OAI.Analysis.C0Absorption.Norm",
+  "OAI.Analysis.C0Absorption.Onto",
+  "OAI.Analysis.C0Absorption.Operations",
+  "OAI.Analysis.C0Absorption.Operators",
+  "OAI.Analysis.C0Absorption.Pairings",
+  "OAI.Analysis.C0Absorption.Selection",
+  "OAI.Analysis.C0Absorption.Shift",
+  "OAI.Analysis.C0Absorption.Signs",
+  "OAI.Analysis.C0Absorption.Space",
+  "OAI.Analysis.C0Absorption.Supports",
+  "OAI.Analysis.C0Absorption.Tags",
+  "OAI.Analysis.C0Absorption.Tests",
+  "OAI.Analysis.C0Absorption.Triangular",
+  "OAI.Analysis.C0Absorption.Weights"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/C0Absorption.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.C0Absorption.Main",
+   "name": "OAI.C0Absorption.main_result",
+   "statement_sha256": "4933d5c69422d76c4adae1feb3767633793952aafad369f54cf44cd95dd090e2"
+  }
+ ],
+ "task_id": "oai-c0-absorption",
+ "task_revision": 1,
+ "title": "OpenAI math: Lipschitz equivalent Banach spaces need not be linearly isomorphic: Bi-Lipschitz absorption of c_0",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

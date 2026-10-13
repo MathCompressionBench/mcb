@@ -1,0 +1,741 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 35508549
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.DiamondDistortion",
+  "challenge_sha256": "3d80ead1782f380ef2cc6f191d9802a7a150f35b30ffc5c0663cb8006a58f666",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/DiamondDistortion.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.DiamondDistortion",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.DiamondDistortion.Descent",
+   "theorem_names": [
+    "OAI.DiamondDistortion.headline_all_pairs"
+   ]
+  },
+  "config_sha256": "d2ec9360f04c9f4efb69885db8aa9976fa488763403a585029a32f5ffb20515d",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/DiamondDistortion.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.DiamondDistortion.headline_all_pairs": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/AMUC.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.AMUC",
+   "original_sha256": "69584146f948dab226792921ef08af7cf3ada2f70ff05f2744f092327f6c074a",
+   "path": "OAI/Analysis/DiamondDistortion/AMUC.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/Ancestry.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.Ancestry",
+   "original_sha256": "bc8eea5d68420dd417e073cbdf5a9a801ceb012f30e7315cde49ea6e934ae4be",
+   "path": "OAI/Analysis/DiamondDistortion/Ancestry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/Backward.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.Backward",
+   "original_sha256": "44bdf07edaf25b263722c6b9e9600a5ea2e2f1a505816f92204b5b28f1124660",
+   "path": "OAI/Analysis/DiamondDistortion/Backward.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/CoordinateDual.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.CoordinateDual",
+   "original_sha256": "150160d4835dce8379c69aa6bbcfa0f8a8b79b2abb56143f2782c03db9f561a0",
+   "path": "OAI/Analysis/DiamondDistortion/CoordinateDual.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/CoordinateSpace.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.CoordinateSpace",
+   "original_sha256": "0741d22b92bc1a3cf7d0411d47c762f8c1a1cb00b4b58ae1c8db1c0080fe2554",
+   "path": "OAI/Analysis/DiamondDistortion/CoordinateSpace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/Descent.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.Descent",
+   "original_sha256": "12daa597e73e40937295459412221590d377d3c22cd83756e4f3f86d37d7368b",
+   "path": "OAI/Analysis/DiamondDistortion/Descent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/DiamondGraph.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.DiamondGraph",
+   "original_sha256": "ae6a519c1dd9fe49c9f55615defccb3d4641638aa1b984dc857f1f66a80169e2",
+   "path": "OAI/Analysis/DiamondDistortion/DiamondGraph.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/DirectEnergy.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.DirectEnergy",
+   "original_sha256": "621862f04eb1cc3cdbc49c0f47d3a8cda1816298d9fe9ca6093f07286a17f1c3",
+   "path": "OAI/Analysis/DiamondDistortion/DirectEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/EquivalentNorm.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.EquivalentNorm",
+   "original_sha256": "332821225231ef1e641715ba7f0e23569fd15c20172f5c8eb23872ee392b3dbb",
+   "path": "OAI/Analysis/DiamondDistortion/EquivalentNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/FiniteAverage.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.FiniteAverage",
+   "original_sha256": "155921818ca5dea4ed7eaf13a7362fddec7ee690ce8b2350f27f00964ac61acb",
+   "path": "OAI/Analysis/DiamondDistortion/FiniteAverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/ForestModels.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.ForestModels",
+   "original_sha256": "e44145f9dc38c59fb7bbf0ab0eb3948fe4cd26159c2a8f925a03b6a5121203a7",
+   "path": "OAI/Analysis/DiamondDistortion/ForestModels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/HeadProjections.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.HeadProjections",
+   "original_sha256": "a4e6617ba2936ca923ed01f434a99836c74448cfe6c9edc68823de545aecf391",
+   "path": "OAI/Analysis/DiamondDistortion/HeadProjections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/Incomparable.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.Incomparable",
+   "original_sha256": "7b124c8f5893192599986e971b504a02ee6b29c5b734ee29e6bf2091a097feb2",
+   "path": "OAI/Analysis/DiamondDistortion/Incomparable.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/InfimalCost.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.InfimalCost",
+   "original_sha256": "44fb50cfed4aa234780105c12460bcf817eac7ffa085537d509c964b69c9fbc6",
+   "path": "OAI/Analysis/DiamondDistortion/InfimalCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/MidpointHeads.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.MidpointHeads",
+   "original_sha256": "c212a555f960695e66d4394c4958cb0ea687e7fbbb27bf266d38442d3c413413",
+   "path": "OAI/Analysis/DiamondDistortion/MidpointHeads.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/ModelMaps.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.ModelMaps",
+   "original_sha256": "bd19926e3ad061283cc859d01ac6a5f6d3bd03b37160a9794496fe6ddb951e44",
+   "path": "OAI/Analysis/DiamondDistortion/ModelMaps.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/Orthogonality.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.Orthogonality",
+   "original_sha256": "13cb84ac86cc1d509fe4bce1e4031c57a058226e5be482ccdc4e8d1b5a72c3a5",
+   "path": "OAI/Analysis/DiamondDistortion/Orthogonality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/PathBounds.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.PathBounds",
+   "original_sha256": "3a8988ae52c48cb9f0ce347316bd6b24e2b0e6c756a6fc885746d61931109723",
+   "path": "OAI/Analysis/DiamondDistortion/PathBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/PathLenses.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.PathLenses",
+   "original_sha256": "21b0e7ba54ba72772f9b09eb6c47debfb3f98bd774a951ed5c141e877cbb4e71",
+   "path": "OAI/Analysis/DiamondDistortion/PathLenses.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/PathModels.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.PathModels",
+   "original_sha256": "a689d767b3aa15f8a4eb8cd07de6b46bd078be45fb6b210558bfaee661b4c8cb",
+   "path": "OAI/Analysis/DiamondDistortion/PathModels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/RecursiveBounds.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.RecursiveBounds",
+   "original_sha256": "b7df82b4a3203eb79fdc9ecddfb01430a43fa6aaaea365aaee2388e6523075cc",
+   "path": "OAI/Analysis/DiamondDistortion/RecursiveBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/RecursiveLenses.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.RecursiveLenses",
+   "original_sha256": "68a2323f80aa3436f06a92c0fd95860706088ef256c76aaad0c9f42973ce47d9",
+   "path": "OAI/Analysis/DiamondDistortion/RecursiveLenses.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/RecursiveModels.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.RecursiveModels",
+   "original_sha256": "e8d9e43af2001e5ffd627d8839a8b884ce7021130e040d96cfd2ba509c58d921",
+   "path": "OAI/Analysis/DiamondDistortion/RecursiveModels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/Relations.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.Relations",
+   "original_sha256": "dc4a7836e4ab1b4976b6b5491459b02a37b9e16cdcb64b436bad0d7680acadb2",
+   "path": "OAI/Analysis/DiamondDistortion/Relations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/SegmentNorm.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.SegmentNorm",
+   "original_sha256": "3ba3a10fd7e9b6a454c96184826b4912274bd23e00e6bb0616e1e2e609771dbe",
+   "path": "OAI/Analysis/DiamondDistortion/SegmentNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/SignCube.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.SignCube",
+   "original_sha256": "9ac103a927927b52aa157e57f751d5b516d2e16300feabc4af7d4a85c8a90163",
+   "path": "OAI/Analysis/DiamondDistortion/SignCube.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/StartModels.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.StartModels",
+   "original_sha256": "e8b94cac114d005a2d48ebe78eb876c51bc8b39a6a28aa396440510e6c59fa16",
+   "path": "OAI/Analysis/DiamondDistortion/StartModels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/Stretch.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.Stretch",
+   "original_sha256": "5f5c69890adfb197a8b445320a687cd26e3a487e0b179e6af4500a87903f5c95",
+   "path": "OAI/Analysis/DiamondDistortion/Stretch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/Transfers.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.Transfers",
+   "original_sha256": "2ebcaaf77584b9532cc6e9783416939806876686dd15ed873f1f9f2b7e6eb274",
+   "path": "OAI/Analysis/DiamondDistortion/Transfers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/UpperFunction.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.UpperFunction",
+   "original_sha256": "3126c37ef4a7eb54f3955d6d184f73fc0a3fa0d81cbb38021b87d9e744708a65",
+   "path": "OAI/Analysis/DiamondDistortion/UpperFunction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/Vanishing.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.Vanishing",
+   "original_sha256": "6b1d033d1693d13b5c9e122840b844df6759216147da1c40cae4379132392925",
+   "path": "OAI/Analysis/DiamondDistortion/Vanishing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/DiamondDistortion/WeakLenses.lean"
+   },
+   "module": "OAI.Analysis.DiamondDistortion.WeakLenses",
+   "original_sha256": "5db1061aec22ab2c6f8d0c37497d9dd5de75a76ff578248eecac1cf2558eaea1",
+   "path": "OAI/Analysis/DiamondDistortion/WeakLenses.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.DiamondDistortion.AMUC",
+  "OAI.Analysis.DiamondDistortion.Ancestry",
+  "OAI.Analysis.DiamondDistortion.Backward",
+  "OAI.Analysis.DiamondDistortion.CoordinateDual",
+  "OAI.Analysis.DiamondDistortion.CoordinateSpace",
+  "OAI.Analysis.DiamondDistortion.Descent",
+  "OAI.Analysis.DiamondDistortion.DiamondGraph",
+  "OAI.Analysis.DiamondDistortion.DirectEnergy",
+  "OAI.Analysis.DiamondDistortion.EquivalentNorm",
+  "OAI.Analysis.DiamondDistortion.FiniteAverage",
+  "OAI.Analysis.DiamondDistortion.ForestModels",
+  "OAI.Analysis.DiamondDistortion.HeadProjections",
+  "OAI.Analysis.DiamondDistortion.Incomparable",
+  "OAI.Analysis.DiamondDistortion.InfimalCost",
+  "OAI.Analysis.DiamondDistortion.MidpointHeads",
+  "OAI.Analysis.DiamondDistortion.ModelMaps",
+  "OAI.Analysis.DiamondDistortion.Orthogonality",
+  "OAI.Analysis.DiamondDistortion.PathBounds",
+  "OAI.Analysis.DiamondDistortion.PathLenses",
+  "OAI.Analysis.DiamondDistortion.PathModels",
+  "OAI.Analysis.DiamondDistortion.RecursiveBounds",
+  "OAI.Analysis.DiamondDistortion.RecursiveLenses",
+  "OAI.Analysis.DiamondDistortion.RecursiveModels",
+  "OAI.Analysis.DiamondDistortion.Relations",
+  "OAI.Analysis.DiamondDistortion.SegmentNorm",
+  "OAI.Analysis.DiamondDistortion.SignCube",
+  "OAI.Analysis.DiamondDistortion.StartModels",
+  "OAI.Analysis.DiamondDistortion.Stretch",
+  "OAI.Analysis.DiamondDistortion.Transfers",
+  "OAI.Analysis.DiamondDistortion.UpperFunction",
+  "OAI.Analysis.DiamondDistortion.Vanishing",
+  "OAI.Analysis.DiamondDistortion.WeakLenses"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/DiamondDistortion.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.DiamondDistortion.Descent",
+   "name": "OAI.DiamondDistortion.headline_all_pairs",
+   "statement_sha256": "a665194d2270853e1ef3572e97e433af6361a8b3e4a4c7d1d9e9ec9be2001551"
+  }
+ ],
+ "task_id": "oai-diamond-distortion",
+ "task_revision": 1,
+ "title": "OpenAI math: Reflexive midpoint convexity and diamond distortion: All-pairs diamond distortion bound",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

@@ -1,0 +1,3111 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 352294154
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.BorsukNine",
+  "challenge_sha256": "c097288178f7b71023274b9cc3e5b600fad2e9b4c85bd635b7bf06c307fc631c",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/BorsukNine.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.BorsukNine",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Geometry.Borsuk.Main",
+   "theorem_names": [
+    "OAI.BorsukNine.main_theorem"
+   ]
+  },
+  "config_sha256": "166280fe4f1677ef284ff142354470b9fb18b030ce8ff5632d9790c8aa5e4f43",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/BorsukNine.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.BorsukNine.main_theorem": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Counterexample.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Counterexample",
+   "original_sha256": "d0eba420bfb1ea328656febc8f52fdc9709831729d114ce1785d2fff18da9ae8",
+   "path": "OAI/Geometry/Borsuk/Counterexample.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases001.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases001",
+   "original_sha256": "98b830a8244031b0a7bb02cd9f20d052cc10a14642e68337acc673779c607aa9",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases001.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases002.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases002",
+   "original_sha256": "62ff992d44137f7a034f530f677da693c36e298f30e144759b3bc49f68572dd8",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases002.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases003.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases003",
+   "original_sha256": "cf8f76ff2cc6594ff42ae0476fd0d9ce1adec8bb30471b91ed8feaa017bb709f",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases003.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases004.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases004",
+   "original_sha256": "9891ec94f92f36389996e9e261b7b8063560c076dfcfc63730d370e2edd3dce4",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases004.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases005.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases005",
+   "original_sha256": "6cbce79957d09d463c0ee7ae392d754c5ef1981e1b2f5659e789545471337086",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases005.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases006.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases006",
+   "original_sha256": "6bf9d359666b0295d490b1b14f71b32b10302a3709898b62ad95f48eb4ebd15e",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases006.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases007.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases007",
+   "original_sha256": "6b73a84cce9e87fc55fe615bb0de93eded06d3be191d492bfe35a65d4811ad65",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases007.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases008.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases008",
+   "original_sha256": "bf57f3bd79b25998120b3ef3047f98de5463eb7169d4c74c9e1a0895b01759c3",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases008.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases009.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases009",
+   "original_sha256": "673e25c1d80bef0a5e12f2c688696934c1d03f8c53901ee946edefd632975a66",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases009.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases010.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases010",
+   "original_sha256": "4a33e91c39c732b7031c052b94d599d0e4f85cb0cb82b9587184d919002f7b45",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases010.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases011.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases011",
+   "original_sha256": "f67782b8bbc26de7d1d07a263c82fbf79e4e50bcb696b13d8de866660802c2dd",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases011.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases012.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases012",
+   "original_sha256": "388dd01028ea94065f40e99e13888b49d9007721f38c854be7b2e4d078e2c8a5",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases012.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases013.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases013",
+   "original_sha256": "c713f0bc56757ee89cd590053098a3c9bea92090ebfcbcf313866ee780356848",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases013.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases014.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases014",
+   "original_sha256": "92f50961bea49eb48e31ad6e466974c120674f5e1ada0b5b234e7482f1eece1f",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases014.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases015.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases015",
+   "original_sha256": "5573147bef91778119af294bea95a650dde5a1096e515cb1b47cee13c04839fb",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases015.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases016.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases016",
+   "original_sha256": "4e1a1f8a947640d4a040ee993fe3e9162bad8a714c5535d810c73e93f529b2c8",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases016.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases017.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases017",
+   "original_sha256": "ec5b0d8741a74ae8d756902aedb3bbaf09ccb37bdac4ab223c1614791616d352",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases017.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases018.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases018",
+   "original_sha256": "09ff75995aec27c9fafd28f647a9152dad204021389eb889d170d3364f4871d0",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases018.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases019.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases019",
+   "original_sha256": "280275898fa293b2b28905598f8e2918c66dc4d160cf2b93b5b4a1ae740b5a4a",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases019.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases020.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases020",
+   "original_sha256": "24afcdf4b35eb23fd77ea34fabc0355b5041ef63ee96e8169490ad609301b6b9",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases020.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases021.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases021",
+   "original_sha256": "e8897e67cc4cb82deb281151f41f9018300831918fc05d15a974d433131ea4f5",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases021.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases022.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases022",
+   "original_sha256": "bd9f8c42b9087c592a1d581d4aa28a9e6ec77d6939263b5e749578ef0c9c2ed4",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases022.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases023.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases023",
+   "original_sha256": "932669489a0825fc9db2497e33d4856584069c6eb1a7f8288bfc722efc3f657d",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases023.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases024.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases024",
+   "original_sha256": "ab6a0126e6eb325c610ba7475846b6f98c74e87fd0db978ca38989b3dda00e01",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases024.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases025.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases025",
+   "original_sha256": "528f9e2ff27ec6fbb094b5439832bc27e093af6f7a7b753660fab65a310d594d",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases025.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases026.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases026",
+   "original_sha256": "4c2ed9df3c87e1ad922a03e8e2635c873ebcae488696e553260b7052445d1fb2",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases026.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases027.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases027",
+   "original_sha256": "2b25e6afe07d38e5b66f3c7394a0058e2ded47f1399f7406d442ecece07c2da6",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases027.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases028.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases028",
+   "original_sha256": "3cb978af799281cab413ba7fc98b9e6f6ee910c63edad32e8de7d0e7a0d030bb",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases028.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases029.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases029",
+   "original_sha256": "fa714bb68b3e35e0883c9cede1208ce39b86ff8eff561206e9e100b61466e531",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases029.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases030.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases030",
+   "original_sha256": "be4bf1110d70edcc8ff675e7774e893458631794c4055498ba4ae77aec11865c",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases030.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases031.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases031",
+   "original_sha256": "2ac1554fe25fcc31b4eec5419be2ac426e19e4cd711b415e56912c1f6d2d2f6b",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases031.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases032.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases032",
+   "original_sha256": "a879540ece6690891b9abad8b9f55ac6182221f2f8f570536fe0761146d2368b",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases032.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases033.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases033",
+   "original_sha256": "0c58ad6e2de49d9c278ad82cffcf96f39e789154b6fbb2ac76deb58412e71028",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases033.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases034.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases034",
+   "original_sha256": "56767a29fd3205823d0c20a598fbe47028fdd3285c044c53279339085d06a647",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases034.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases035.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases035",
+   "original_sha256": "825172a4e058b6c7d04267af677b512136bfdd555bc70cc93d37305d83aa6147",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases035.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases036.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases036",
+   "original_sha256": "fd038a74ef3dcedffedb50c9861aca4ade886eafcd6ea5520591f085c845a0a0",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases036.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases037.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases037",
+   "original_sha256": "95d37b815d39e5bc32f901448ec738a057ec9164ee715305ca1feebc4b964a65",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases037.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases038.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases038",
+   "original_sha256": "53f3804c344ba45c82751cc209f82d7cfbb02a3703d3725712b1cecdce7f7fd8",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases038.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases039.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases039",
+   "original_sha256": "23df6f4ede7c9dcd4c706dc414ebd72e53934280ec9b8e268f181b0af3c72256",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases039.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases040.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases040",
+   "original_sha256": "d967de3d9d865f15368497488bdd24e790fabc577cd726bced368d440e5543e7",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases040.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases041.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases041",
+   "original_sha256": "51b6514e1507ad8349a3e5a25696628463061bc753cafce10c87b9a8874aad4f",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases041.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases042.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases042",
+   "original_sha256": "aa6772e0afa0462a1f90f2088e283ba9ebc803840388e84b9e669f5abe8e2e64",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases042.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases043.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases043",
+   "original_sha256": "fd3ec337533c860259ad8a0706518292ee6db14c2cdbd8bebda49edb5ac8079f",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases043.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases044.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases044",
+   "original_sha256": "18fdb4e41373df34058f8c93f8732bbcdc39768a65a371084708f4edaae433ee",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases044.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases045.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases045",
+   "original_sha256": "480a6431da69acdcf42fc5711ea64f7b89e8fcf6a0c9d54caf09f506b2931aab",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases045.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases046.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases046",
+   "original_sha256": "f0a3309a78555640cc76c7a4fdbeca5afe31893c759259f298e5b3a2eee06ade",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases046.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases047.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases047",
+   "original_sha256": "26f452299a905ffe55d9d3b31df0c585bc57e7f89039fa2d9e8a7f8800d2f767",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases047.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases048.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases048",
+   "original_sha256": "8d9d724762ce0d730f69219630106061a9820d64e75101e0b4873218a0e7fee0",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases048.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases049.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases049",
+   "original_sha256": "767caae7abadd5fd8d31e6ff1f1525fdbc2824d67c48a9729690e05678366b10",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases049.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases050.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases050",
+   "original_sha256": "ad93bbee71954fea9bd4415e0d0746a100c63dec97c5cea33b665d089b340eea",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases050.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases051.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases051",
+   "original_sha256": "5d11097422cdc76e3eb02652f8204ba43cbbda79ef49d83ce1c448841fbd4e78",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases051.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases052.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases052",
+   "original_sha256": "3f3b6b45462f5d0e664b99d235fb43c06ceb1d2bfe5d7f3d117f548118d38194",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases052.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases053.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases053",
+   "original_sha256": "a26c31d306044a82bbe139cf38ec96918fcbd47d816446d28ba8cd9c937d4c4d",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases053.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases054.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases054",
+   "original_sha256": "ffb81516b8e1a93c359adf3dd0fd61d5189f8bede4a493ddb0c1eb4ba8fda75e",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases054.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases055.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases055",
+   "original_sha256": "1065c1bc346b321993f42b9420ff9f2b5ba3984f86a5d803fa53ddadbc753e09",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases055.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases056.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases056",
+   "original_sha256": "7f2e99c1091415a80ccf315d5b3ffb6881c8be5741b24954cc009d3aa7d00bd6",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases056.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases057.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases057",
+   "original_sha256": "10cdfe1ec8b979a117e7d9d450ca59bd0d62c0b7fe991a70964cf8362073ccb0",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases057.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases058.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases058",
+   "original_sha256": "e2355a5a25200cfc3926195de7e41410fb75d913d155d185fd59664ff19d3d82",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases058.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases059.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases059",
+   "original_sha256": "46ccb04ac0f076612027e548a923398de1ca9ff9a18f9112681e755cf45b2ec3",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases059.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases060.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases060",
+   "original_sha256": "5201742af97465f56440e0647e1f51a035c824b68d5621b73b84736cf650f14a",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases060.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases061.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases061",
+   "original_sha256": "c3c476c43a7ec27df0177ed3bc86d31dfe490925662fdebeb8cd14480bf18ab7",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases061.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases062.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases062",
+   "original_sha256": "5a52b6d90fe0c0eb14d61e6d6211c9d6430c643ec8057c40d721706962ed04ce",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases062.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases063.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases063",
+   "original_sha256": "c518f6e37358bccbc5835fc0586f400217cd472a29790b992f1c3126d039a26e",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases063.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases064.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases064",
+   "original_sha256": "f912bdbef89ad7bc581edfc5d933ca0a9fe96332d29e5ca95040f4821df05f33",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases064.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases065.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases065",
+   "original_sha256": "0efe0c39a4cb781de6f4e97df923161bb4f67cf6eb2dd134b1ef2fb319a1f495",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases065.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases066.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases066",
+   "original_sha256": "1cfd11f802e86df9010b9b6fc6b3b44cde706f0f45fc515e5ef1781c76c3064d",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases066.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases067.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases067",
+   "original_sha256": "574636b33132066cb1c4f495380356eac507fbe7aea3f9750869af10d33e24db",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases067.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases068.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases068",
+   "original_sha256": "ea80cce45f0008b08905700f1fddd99acf892b5939915fa0d5ef8aec284f89f4",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases068.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases069.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases069",
+   "original_sha256": "b767299769547685e6fc43fc87f7d122dc25fe387f6836ca397c8ada15556b33",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases069.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases070.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases070",
+   "original_sha256": "3f1bebe0b841f3036cbe5a6e616da782c21083518caaba4f2b97f635d61010b1",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases070.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases071.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases071",
+   "original_sha256": "02f4a2f8a2d66acaf23faf73541d12734b875ccb9dd59d308cb2dd64220b84f3",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases071.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases072.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases072",
+   "original_sha256": "3fc83a13c4f68669830fe222a52e55fdf61506373b5556eacbfe51bf84c9f6f3",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases072.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases073.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases073",
+   "original_sha256": "4914ba9fd53d496555bb271fb3890b120453db24a232c7965503916d72820ebd",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases073.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases074.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases074",
+   "original_sha256": "95d170d50985d9a42533135af10afbc051d2d779fbb4721d2cb59713c1c952dc",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases074.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases075.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases075",
+   "original_sha256": "4e09e650423e20c06b49efe599bc133bd68e6561e04dda2972edde22743083b8",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases075.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases076.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases076",
+   "original_sha256": "4c3fecdc3f60484125d46d58377d3a788238f17c098965661d023964bdfabf0c",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases076.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases077.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases077",
+   "original_sha256": "c46f2360f768a57da631947ebe43cc43f05627235b17f453c9e0a81665d280c5",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases077.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases078.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases078",
+   "original_sha256": "a91834cc8283bdeace8a7d3be321f299bea973c4ccd5e5abbcd9509837d97464",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases078.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases079.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases079",
+   "original_sha256": "d5ea11f048170254cb665fe2741aedde814704f4bec04573495644525e3bf80a",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases079.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases080.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases080",
+   "original_sha256": "51ce261dbbb0b78ff905b556735a138514d4d519c1d4d7a69e33d4e7b09580f3",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases080.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases081.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases081",
+   "original_sha256": "84f263e303289417dd9f5e327594df56bc044d0e900f47ec6619bf425e875844",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases081.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases082.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases082",
+   "original_sha256": "b6edec6fabf03868a7ac7e42e59d9dddcc68d79b08b7a61b225628e47fe3bf1a",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases082.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases083.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases083",
+   "original_sha256": "27eaa7e3795f7648026387af858b4c2ffb89297415a801a42bef8f826645f0d0",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases083.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases084.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases084",
+   "original_sha256": "fb29ff49efc3ee9948d3dc805c84ccb9bfe1b27ef75aabd9db99424c08f556dd",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases084.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases085.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases085",
+   "original_sha256": "d90b52b600a2f0dd51110f41300bf3937a5ce755e5153a0f3deaf1cab08b1aa0",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases085.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases086.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases086",
+   "original_sha256": "84d696c63e9d99395de3a10dfc908aa1df364eca2806d94596eabbe7c6e9e974",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases086.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases087.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases087",
+   "original_sha256": "714587b00bb7b5e9711b3e3347b09e2a8f4ca7534824bb47fd55273e8e207732",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases087.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases088.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases088",
+   "original_sha256": "3508697541d192ce7a87ac827ccd56d959e5fe4ffaad653f481a80678e025b8c",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases088.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases089.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases089",
+   "original_sha256": "e9b6b5f213b061686e49676531bc1ac207762539bf98c278733f0fe059833603",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases089.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases090.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases090",
+   "original_sha256": "a9c253af4d8ab682c3f8c37e4d5763652364a78974af346b2f43d0cc6d26ecef",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases090.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases091.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases091",
+   "original_sha256": "10d95fe6e4947837193d07742f908f0124c7012bbeeca55d4eaaf15798e27071",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases091.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases092.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases092",
+   "original_sha256": "84dbcf624e0f17f675c2e3ce606f4818334b89d894060f1e5bc4e4c667fb4ba9",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases092.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases093.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases093",
+   "original_sha256": "782b0bc2c008e20a5ac320849b7a02a9357df152360f54ebee94e951e7582347",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases093.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases094.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases094",
+   "original_sha256": "a31fa8da51f190387a9b394213df6aa050ffcbb162dc99307bf3484d2c970a58",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases094.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases095.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases095",
+   "original_sha256": "37333ad9d4bb25441fa7c8a1a7087b693c898749847dc01a706a65262210272c",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases095.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases096.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases096",
+   "original_sha256": "2339179208913e7ac04f7c99dfdb87327b30b43313599fdbe49cfc7c6777d03e",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases096.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases097.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases097",
+   "original_sha256": "df86358a0a6e3c2a40fbd61c8526ad698ebf3e84c11e11a59898f0939ed77db6",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases097.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases098.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases098",
+   "original_sha256": "500bbc524074b405584b2e49ed5f3c8596c0b86a1323943b6a42fb55cdde2aa7",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases098.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases099.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases099",
+   "original_sha256": "1c077c0c30cde38bd1b36d0f403125656c8a538499fc5194842336c774a8a3a8",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases099.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases100.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases100",
+   "original_sha256": "0afcb1620f1f49f0f9c194d487b35a802f160152315e192c37642bdab71e2357",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases100.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases101.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases101",
+   "original_sha256": "9da615ecfe4197618f7371c1bacc3fa43fcee3215f4e93f00ed9f881c04dee3f",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases101.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases102.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases102",
+   "original_sha256": "c4370a83239b0b3fb65e2bca2e2f5ceeba1226bd7934a024804d42a15ad62949",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases102.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases103.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases103",
+   "original_sha256": "cb73ad142500b18199d316b266aeec5abc788676c9ea47efcd040f44017ec326",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases103.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases104.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases104",
+   "original_sha256": "b55ff24223552c4623eead5c0c986742e5afd1245b10653e3a3f51eb36a5e688",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases104.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases105.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases105",
+   "original_sha256": "bf5ea5dcec4c83c1d3763c9ece2aedac78ef427d9c4b0b0e59b6efbdc40a68db",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases105.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases106.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases106",
+   "original_sha256": "9420debea6227473842dea26de5a708850e94048b5b1b0c800bd4fdb3c830add",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases106.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases107.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases107",
+   "original_sha256": "22317eea857ad0c2289c02a4e7d4cf631ccc0fe73e394a6daa89ce88a7da1d42",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases107.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases108.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases108",
+   "original_sha256": "3a7a7557ee36d9d1582fc7168de638dda2fedb9e4ce06ab8f93857c4300bfbb4",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases108.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases109.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases109",
+   "original_sha256": "80285a1f285828475786af3f7fa449eb6373e4f72c3010c0db00445983546c25",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases109.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases110.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases110",
+   "original_sha256": "d08743cb4394b891a2237311e17b15d460d2cf6b61c09fb4515451c15416e3b7",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases110.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases111.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases111",
+   "original_sha256": "bf1426a12469d8797bd113010fbcefa484f9b82ce822633b87fd5685a8f3951f",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases111.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases112.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases112",
+   "original_sha256": "f5898d980b2215e0edf88b50902833bc9f8fc787b61cbeec7bd1ed05ec281cee",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases112.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases113.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases113",
+   "original_sha256": "dee772078522574bbc7df8f87306347d71832a7afeeee4555e128cb23ac2e7f6",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases113.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases114.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases114",
+   "original_sha256": "315559cf95d83099d0c5b040d0e8f1477f41539997a4102c5c7a0529f3f8c075",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases114.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases115.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases115",
+   "original_sha256": "c4bbf72539cf33c7be466f2f9b14c8f8fd14410e36d7f8cb9031e254e8cf2638",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases115.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases116.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases116",
+   "original_sha256": "30d8a36c28da66c5d8cd0bc461cf94c1359352804c9d7e3b68f9a933a82ba66b",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases116.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases117.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases117",
+   "original_sha256": "3d450b1c1fc16f526e5334667a2da931fddd6a7259a2b5a8306c19f894e20c7c",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases117.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases118.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases118",
+   "original_sha256": "37f94174e06ab64ad769b50aa15b295f5f1643c1d830e16aaec8b5ebb2bf29c9",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases118.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases119.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases119",
+   "original_sha256": "3dbfb2fa6e833d9a7ae9aab6d0e73ff9ed84c3d1442266027ec942c026666478",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases119.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases120.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases120",
+   "original_sha256": "2acc4c9182259691cbd374d9d3ff470e35ac89773abf2182d071d3a394de3651",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases120.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases121.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases121",
+   "original_sha256": "b3f1d3cb766ca2a7a3401a9e34586e2395ef0a550cdbb267c48b688e0a199941",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases121.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases122.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases122",
+   "original_sha256": "38e9794f21548cfb7ef018e38bf9ed8cf0b99bbcc5120b7e935bd5763ec7a047",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases122.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases123.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases123",
+   "original_sha256": "f766f6f5dad2c894c7079f9accc502e02923eeaea1f751b9389e8769c99cc367",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases123.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases124.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases124",
+   "original_sha256": "046b4149b9ef3e424c72f866e04bd2514dc6493a831de6006839a6e9ba4026c9",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases124.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases125.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases125",
+   "original_sha256": "f1d9d573baa012a12ca72a613cba95981e9e9ebf690ef5332b58e9fc7f5a28fc",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases125.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases126.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases126",
+   "original_sha256": "e7e99b7ec1bd9ca5171fa08a26f4cbf25f9729ee51923d8342572ebbcba3c93c",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases126.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases127.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases127",
+   "original_sha256": "edf5d9d57b034cd29e0855d62ecddeeff4b147b092c805d48f9f0a17fe42084a",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases127.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases128.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases128",
+   "original_sha256": "cfa8297d04b58e382076e55160106c3363bb99cfbaa969a6367f0702bed8d4a4",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases128.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases129.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases129",
+   "original_sha256": "77a3ffbbebd3b5fb2029a6dc379cbe2034690235f624d11b19e0d0fd51dbe3b3",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases129.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases130.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases130",
+   "original_sha256": "f60ae773f0eb1ce0afcd9204326a01ab5e80fafa5a78a850ec965691a4125a67",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases130.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases131.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases131",
+   "original_sha256": "937099b44b768c27f0d2f400b10c4ed42ee526d06462aac0444182ad321d1f00",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases131.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases132.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases132",
+   "original_sha256": "906265fb6722736eb712694d619e4609b60a40afc1092c492056a45b81364585",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases132.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases133.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases133",
+   "original_sha256": "819b93ed0dad392b933b3921d34de598c68ec6ce71e3813dccc0160078b660bd",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases133.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases134.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases134",
+   "original_sha256": "f0a05900a3cf503c9641feb44a727d29500971e5c1a4d94b3c47b53824d30098",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases134.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases135.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases135",
+   "original_sha256": "09f11a92cd1417aaf84d6809c8472ac7691481e46b334eac62f013007b9836bc",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases135.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases136.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases136",
+   "original_sha256": "597d5ef2040a72a9e9de96dd8c1fb56fd14a54b4f43ac7f4d93ac6f448566c48",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases136.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases137.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases137",
+   "original_sha256": "e0ffa4bcc8538a3979b9399cb7afc1acdbe48b7a6204110b1f85768be51bf758",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases137.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases138.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases138",
+   "original_sha256": "0b7eb910e3eb9e022ff7509ac9b3e652943b3fe81383cace20964e279d6cc0cf",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases138.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases139.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases139",
+   "original_sha256": "d54c5daf2fd7a81cc877b6528688ebbb17d2c06b1b5bf6febb99680f4d86405d",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases139.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases140.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases140",
+   "original_sha256": "7a8054672986c36305ad51f057468dcea241fcbe5ba8e51156553e4b2908b842",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases140.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases141.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases141",
+   "original_sha256": "0420d0b9307bfb650a4e6266c801fd50cde415247841b7a68a91ea129bf9163d",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases141.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases142.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases142",
+   "original_sha256": "384a7a1256a9960644c4db5549a0c28f5f424329590f2f30a6742ca45c5ff3c1",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases142.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases143.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases143",
+   "original_sha256": "0cdfb9dca8e7e31e2acbd30330e624f8240c77454cc8bc403f6f2045f55a1ed7",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases143.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases144.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases144",
+   "original_sha256": "7b1d5719a2dfdabe0be1313a594afcfe0bd32f48297f86355da98c0283557c4e",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases144.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/FiniteCases/Cases145.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.FiniteCases.Cases145",
+   "original_sha256": "cb08b049ca67b43f65131392679699a7f6431a29f136dc422ad335379ed1aa6b",
+   "path": "OAI/Geometry/Borsuk/FiniteCases/Cases145.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/LocalParity/ChartRegular.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.LocalParity.ChartRegular",
+   "original_sha256": "110f6bf75575c2e1202375723cd0d59b6b15fa03ea59ee2f531e228f575e4556",
+   "path": "OAI/Geometry/Borsuk/LocalParity/ChartRegular.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/LocalParity/LocalModel.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.LocalParity.LocalModel",
+   "original_sha256": "88919f6fd72656c544257e7862e8881f7f194c6ef1e3c57c38b1ac84c115e9fd",
+   "path": "OAI/Geometry/Borsuk/LocalParity/LocalModel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/LocalParity/LocalRegular.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.LocalParity.LocalRegular",
+   "original_sha256": "b518526b4f914bbca98e867db0ccf2e6e6e8ffc5dcb17922834fe0822efb9a2d",
+   "path": "OAI/Geometry/Borsuk/LocalParity/LocalRegular.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/LocalParity/MatrixParity.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.LocalParity.MatrixParity",
+   "original_sha256": "7487d3cbe50a6a3fd74e5c0a9d6ab60227be28d5954540e031fb91d1b4aa7162",
+   "path": "OAI/Geometry/Borsuk/LocalParity/MatrixParity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/LocalParity/NoFreeRidge.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.LocalParity.NoFreeRidge",
+   "original_sha256": "f7462ddb0b84e8d3e5a7b78ac40c35ef340d20c3e2564546e43b77ae95bfb205",
+   "path": "OAI/Geometry/Borsuk/LocalParity/NoFreeRidge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/LocalParity/RegularBase.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.LocalParity.RegularBase",
+   "original_sha256": "6485efb28051f7188f730669b59b165844bbfd7460601d24e819a193d127d7fe",
+   "path": "OAI/Geometry/Borsuk/LocalParity/RegularBase.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/LocalParity/RegularModel.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.LocalParity.RegularModel",
+   "original_sha256": "767f7bcb25931e72a7b01e07d8b4d36f793e60985e124d070c3a5c5fbce5e313",
+   "path": "OAI/Geometry/Borsuk/LocalParity/RegularModel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/LocalParity/RegularPatch.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.LocalParity.RegularPatch",
+   "original_sha256": "8edd889b89e13c8d4a9b98c6e05b49f860307152f4e1c0c9764e86bf5d1472ba",
+   "path": "OAI/Geometry/Borsuk/LocalParity/RegularPatch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/LocalParity/Sard.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.LocalParity.Sard",
+   "original_sha256": "b39a13afbd6780fc5e9925cc8707ee343f0ff3d9d00e083b183ac1300b40828f",
+   "path": "OAI/Geometry/Borsuk/LocalParity/Sard.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/LocalParity/SphereBlock.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.LocalParity.SphereBlock",
+   "original_sha256": "08e15b28fe08f570dfeb55a433e697eb7af58ada90eb4c3f79bc5763a9c48114",
+   "path": "OAI/Geometry/Borsuk/LocalParity/SphereBlock.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/LocalParity/SphereNullPatch.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.LocalParity.SphereNullPatch",
+   "original_sha256": "0bdefae33aa160ddda9d73c2321ffb7b0b5bc5c89d8d206b6e5fb2620490fa3f",
+   "path": "OAI/Geometry/Borsuk/LocalParity/SphereNullPatch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/LocalParity/SphereParity.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.LocalParity.SphereParity",
+   "original_sha256": "2cd07027b4e539aae17c8f7f5b6a0ff5824b70396441f9967e61d1bc63c72ba7",
+   "path": "OAI/Geometry/Borsuk/LocalParity/SphereParity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/LocalParity/TraceLocalModels.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.LocalParity.TraceLocalModels",
+   "original_sha256": "8483cf047b2bcf0284727b262f0c56c865c5e22d7d2548cc626909313a333055",
+   "path": "OAI/Geometry/Borsuk/LocalParity/TraceLocalModels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Main.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Main",
+   "original_sha256": "ea004f8f339bb8d4f55ba3d05b7959e2169d2c8e712db7419002df6466b8eeae",
+   "path": "OAI/Geometry/Borsuk/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/BlockLine.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.BlockLine",
+   "original_sha256": "181fd09b2a2d9906fb100bddc0851c0b2378d2aed5fe769a9809d8f07cb57e55",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/BlockLine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/BlockParts.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.BlockParts",
+   "original_sha256": "d466c65869661a0b961297286c7ae323778b67b25ed564972adc02e4ac0639cc",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/BlockParts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/BlockVector.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.BlockVector",
+   "original_sha256": "0c814fd75170a205a09bcf7f1eae95f6f29b301cb0196092b6faefa6efba6a34",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/BlockVector.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/CenterApproximation.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.CenterApproximation",
+   "original_sha256": "0be503a8d9ba66ffde914940a511dea4558d1f81433a68b844bd0e0b717b2a69",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/CenterApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/FibreContinuity.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.FibreContinuity",
+   "original_sha256": "1550e2cafe051af5805f8839a296b796b35cfcab5113fb6116640221a2baabc4",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/FibreContinuity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/FibreHomotopy.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.FibreHomotopy",
+   "original_sha256": "8f8416a5bb4b4ccc6470643d26c6620cda3d3f8c1c7f90bd565f3d9261e09626",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/FibreHomotopy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/FibreTransport.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.FibreTransport",
+   "original_sha256": "186d0887c6a8f13a14aed85592d4b5b7d08252c3bfdc77d29bde1da4a346cdf6",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/FibreTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/FinitePositiveBound.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.FinitePositiveBound",
+   "original_sha256": "e77561eb5cd44e74930fdcccdc77e464d8d3e8ac63bcb31eaac8c4c73c51e35c",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/FinitePositiveBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/LineRepresentative.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.LineRepresentative",
+   "original_sha256": "38948dd95a4df997e16a88d32384a5d7fc8b45df2a882a3ab4370aef49e4a3cd",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/LineRepresentative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/MatrixCompression.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.MatrixCompression",
+   "original_sha256": "78ecd2678347f4d6635a92576c4607c60153385fe4b803c1b44d5e60b24eaa5c",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/MatrixCompression.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/MatrixFibre.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.MatrixFibre",
+   "original_sha256": "cb57bda0f650a43b2a0e04728075f699b80ea311e4741d74d9f5113864141b16",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/MatrixFibre.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/MatrixKernel.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.MatrixKernel",
+   "original_sha256": "cd69bd1887be2b24c5c9621a34a4f1cb15a009a9177806a299f9064a66f0f38b",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/MatrixKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/MatrixNorm.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.MatrixNorm",
+   "original_sha256": "815e98f66530cc5f712c52edfc12a6b42fc34345c4b55f2d239aaec4d8185284",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/MatrixNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/MatrixReflection.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.MatrixReflection",
+   "original_sha256": "c8dfd7fd9610ad19d9905d8de225561cdaf245deb8431620b4f9ef465f5e5b85",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/MatrixReflection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/MatrixTransport.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.MatrixTransport",
+   "original_sha256": "6e407ea5218c2eafc5ad2eba643128fd8ad2611e0ade5d5dc15503c2dcad80ac",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/MatrixTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/ModelRay.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.ModelRay",
+   "original_sha256": "a14450f799a41022e3cc339707d75686c0519ed3c5694765d74301e0ce333814",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/ModelRay.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/PositiveSlice.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.PositiveSlice",
+   "original_sha256": "d0e9ff3fd4c271d3c86ba18c0d4f3d0918b974b7df7646858f710b4a19b1ec8d",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/PositiveSlice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/Rank.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.Rank",
+   "original_sha256": "aca4595be4e823aed09f0fa6549bf0db48db51cb48a47d701a3cb99828340ae1",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/Rank.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/RankPreimage.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.RankPreimage",
+   "original_sha256": "8fe3284eb526808ea242cd5489ec06b4454651dbc5832f84a90adf977e565b40",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/RankPreimage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/ReflectionTransport.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.ReflectionTransport",
+   "original_sha256": "9f84eada958987ef049bd12792e3e5532959b5a52201469c639ac74b0c523432",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/ReflectionTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/SignedExtension.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.SignedExtension",
+   "original_sha256": "340127bf097e91e77f9fa32e742c8bd8fd6171fec633bae5edfb896ad5f955e9",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/SignedExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/SpectralChart.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.SpectralChart",
+   "original_sha256": "cc5b4bc5b361fb54adc68e7654abc99f6af90068ea4845945fa337f5092b6a02",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/SpectralChart.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/SymmetricCoordinates.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.SymmetricCoordinates",
+   "original_sha256": "b4a0fcfd73a00f187d109bf5c879fe439c4e1302d1ad83b578b755ef9cd12a88",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/SymmetricCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/SymmetricEntries.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.SymmetricEntries",
+   "original_sha256": "f17fb0e36cf9446f9213b3b77ebe93c3579b58bd228904a3bbc058cc75742a2c",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/SymmetricEntries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/TraceHomotopy.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.TraceHomotopy",
+   "original_sha256": "d7a71767ab4f4d00be99bdcdeabe120904f74affff0fd2fc61d8b7577fe5262a",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/TraceHomotopy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/MatrixGeometry/TracePatchModels.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.MatrixGeometry.TracePatchModels",
+   "original_sha256": "0511f7178b6f4bd0969009d66ce23136aec1c109889002f4fb15f1f1605d271d",
+   "path": "OAI/Geometry/Borsuk/MatrixGeometry/TracePatchModels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Model.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Model",
+   "original_sha256": "3203ab1c5b886a112c51452aa841391c0ea9e9ab2bf1d403d94869b9003da115",
+   "path": "OAI/Geometry/Borsuk/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Projectors/Basic.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Projectors.Basic",
+   "original_sha256": "3373eafbdd86750fc2cc75a4c24a160208c591e5a82e8d7ebfd2e9397e5db45a",
+   "path": "OAI/Geometry/Borsuk/Projectors/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Projectors/ChartSurgery.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Projectors.ChartSurgery",
+   "original_sha256": "5997fe2f974d448121cc506203a03c0aa87585d57af057484b0890d80a369eec",
+   "path": "OAI/Geometry/Borsuk/Projectors/ChartSurgery.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Projectors/CompactLocalHomotopy.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Projectors.CompactLocalHomotopy",
+   "original_sha256": "4bd19a5f43a4451477a522b0e780096e8052095511f827e85e0eaad7fa097f2f",
+   "path": "OAI/Geometry/Borsuk/Projectors/CompactLocalHomotopy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Projectors/CompactTargetHits.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Projectors.CompactTargetHits",
+   "original_sha256": "b1017d58ee1d99c3b4cfee5b6eb19ee16c9928a52525b3a3c112f1ed5d5d86b3",
+   "path": "OAI/Geometry/Borsuk/Projectors/CompactTargetHits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Projectors/CoordinateSum.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Projectors.CoordinateSum",
+   "original_sha256": "75e90373706196e5d5f608af4396583cff5709e6d1be00720bd817aff9bf6944",
+   "path": "OAI/Geometry/Borsuk/Projectors/CoordinateSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Projectors/FiniteClosedCutoffs.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Projectors.FiniteClosedCutoffs",
+   "original_sha256": "4fa723cede7ae1ea03d1df503516b933f71d7e4f26d22c62df5070b7e33fd476",
+   "path": "OAI/Geometry/Borsuk/Projectors/FiniteClosedCutoffs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Projectors/FiniteOpenGlue.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Projectors.FiniteOpenGlue",
+   "original_sha256": "274ba7b2b7c75cfddfb1ab34563ff45e46cc78d17b5cb7bfb10eede169d6ae7b",
+   "path": "OAI/Geometry/Borsuk/Projectors/FiniteOpenGlue.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Projectors/FinitePatch.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Projectors.FinitePatch",
+   "original_sha256": "7e235f95582eabf2b598b8d1e4de52795e08c108eb614948d5b9094f934540b9",
+   "path": "OAI/Geometry/Borsuk/Projectors/FinitePatch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Projectors/FiniteSmoothSliceMisses.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Projectors.FiniteSmoothSliceMisses",
+   "original_sha256": "03d6a20c93412b336942f19feebe15048e74f8e289b037be13b8549e8b6659c3",
+   "path": "OAI/Geometry/Borsuk/Projectors/FiniteSmoothSliceMisses.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Projectors/FiniteSmoothSliceMissesBounded.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Projectors.FiniteSmoothSliceMissesBounded",
+   "original_sha256": "f0eaf40efcf7e2677bc151f6cfcfafd675f8df348d4ada141e25c5e26ac6a32a",
+   "path": "OAI/Geometry/Borsuk/Projectors/FiniteSmoothSliceMissesBounded.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Projectors/NegativeQuadratic.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Projectors.NegativeQuadratic",
+   "original_sha256": "64233f2a9dd892db0e86e0858e20229d9b897d75c071bd34971a2b822e8feb2f",
+   "path": "OAI/Geometry/Borsuk/Projectors/NegativeQuadratic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Projectors/NullImage.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Projectors.NullImage",
+   "original_sha256": "836b4d045a82edee54c0a181d75fcce722906d371623120d36753b4eca2b44ef",
+   "path": "OAI/Geometry/Borsuk/Projectors/NullImage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Projectors/RaySet.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Projectors.RaySet",
+   "original_sha256": "899d2559978aa3d836f62baba9cf6942e50c20fe34596569fe54e23c20d8aa7e",
+   "path": "OAI/Geometry/Borsuk/Projectors/RaySet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Projectors/Restrict.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Projectors.Restrict",
+   "original_sha256": "841aa9408422089898fd3195b8c2fa624cc03a1f95f017018efd31fd6bb1273e",
+   "path": "OAI/Geometry/Borsuk/Projectors/Restrict.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Projectors/SimplexPoint.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Projectors.SimplexPoint",
+   "original_sha256": "41d5e0bd4dd8b0d7a15ec51240ee1eb44fa4613950d63c86422795e7addc2a31",
+   "path": "OAI/Geometry/Borsuk/Projectors/SimplexPoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Projectors/Tangent.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Projectors.Tangent",
+   "original_sha256": "b2435144e3d766690da67af78526956d33033c8ecb204fb13a6b351a6456ef93",
+   "path": "OAI/Geometry/Borsuk/Projectors/Tangent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Projectors/TenPure.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Projectors.TenPure",
+   "original_sha256": "e7a81e20732cb024e54e2fe8c97afa58f4066f91f52246b1d5f9b446ed2ac5e7",
+   "path": "OAI/Geometry/Borsuk/Projectors/TenPure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Projectors/Within.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Projectors.Within",
+   "original_sha256": "6e71be8516ba4d7c7426cbf34a857d81d191be7166ce51d8f3e5ff719b23468c",
+   "path": "OAI/Geometry/Borsuk/Projectors/Within.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/Approximation.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.Approximation",
+   "original_sha256": "0ebcaf1cade6e54ef3eaa744610d661a4ffe16a3dbb1ca533de053cfd0f75234",
+   "path": "OAI/Geometry/Borsuk/Simplicial/Approximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/BarycenterNeg.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.BarycenterNeg",
+   "original_sha256": "75c9c0645cf908db8f1f074cad111373b453e715622c7528fc069cfb49decff0",
+   "path": "OAI/Geometry/Borsuk/Simplicial/BarycenterNeg.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/BoolCubeConstant.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.BoolCubeConstant",
+   "original_sha256": "f2d6da40c2c9b02f15388822ab12d328ed750dab448d41fa4bf21212dbf9500e",
+   "path": "OAI/Geometry/Borsuk/Simplicial/BoolCubeConstant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/CharacteristicDegree.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.CharacteristicDegree",
+   "original_sha256": "6777dd658eb35705eea79c03b0fa69171351e56ecb17d33915eb669f47e6f708",
+   "path": "OAI/Geometry/Borsuk/Simplicial/CharacteristicDegree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/Coefficients.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.Coefficients",
+   "original_sha256": "3462bd08dc378c66d478701baa308271322b0fe6730f7e6b05d71ca2014bbef5",
+   "path": "OAI/Geometry/Borsuk/Simplicial/Coefficients.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/CompactAdditiveLocality.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.CompactAdditiveLocality",
+   "original_sha256": "47a96ced3b7c1f374c177e1bd1f44e0722d41907b7d87a312711492a1e7b43e0",
+   "path": "OAI/Geometry/Borsuk/Simplicial/CompactAdditiveLocality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/ContigSimplexBoundary.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.ContigSimplexBoundary",
+   "original_sha256": "ed30b958f97f432bfd9834264335a304034beb508c16e732c440318cff9a1922",
+   "path": "OAI/Geometry/Borsuk/Simplicial/ContigSimplexBoundary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/CrossChainDimensionBound.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.CrossChainDimensionBound",
+   "original_sha256": "a4a42a6d5fd867f359161137535263a48b50ee7b088c1d8b4d4155106dbf8773",
+   "path": "OAI/Geometry/Borsuk/Simplicial/CrossChainDimensionBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/CrossEmbedding.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.CrossEmbedding",
+   "original_sha256": "410d7d4aeac56b39250c7a0a4eecf956ce283c928b2c28f69738cec056304f7e",
+   "path": "OAI/Geometry/Borsuk/Simplicial/CrossEmbedding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/DoubleEraseSumFun.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.DoubleEraseSumFun",
+   "original_sha256": "d3f5ff9a75565f83b377fc39232e96c3cbdf7688d83d0f5c73597576cdda62c1",
+   "path": "OAI/Geometry/Borsuk/Simplicial/DoubleEraseSumFun.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/Equivariance.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.Equivariance",
+   "original_sha256": "9db79ad1e40f6d81a321a22f93b3c073ff35603a3f594d1bbc7d0ace2e483b20",
+   "path": "OAI/Geometry/Borsuk/Simplicial/Equivariance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/EventuallyFineSphereLabel.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.EventuallyFineSphereLabel",
+   "original_sha256": "85cac4904a1816c8c36da2b64f57a42cfa548e103a63f2d2feeb4c553d4d495b",
+   "path": "OAI/Geometry/Borsuk/Simplicial/EventuallyFineSphereLabel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/F2.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.F2",
+   "original_sha256": "7a1059cd375025a4adcd44dc21ee5208a960e5794a9423cad8a0703710a804f1",
+   "path": "OAI/Geometry/Borsuk/Simplicial/F2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/FineCrossMap.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.FineCrossMap",
+   "original_sha256": "2ff139e2e89efd945211e11e28566d7c6366bb32a2fc83ba1865f40ece9b7685",
+   "path": "OAI/Geometry/Borsuk/Simplicial/FineCrossMap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/FineCrossMapMesh.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.FineCrossMapMesh",
+   "original_sha256": "8401bf4e1308f1786a0d52a0bbcec09c53ea15b068aa93b4dbbdf702b5f5d186",
+   "path": "OAI/Geometry/Borsuk/Simplicial/FineCrossMapMesh.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/Flip.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.Flip",
+   "original_sha256": "9297c0f1041ce6800d67998dab936c034b18238f65b9afadf5758dfafa788702",
+   "path": "OAI/Geometry/Borsuk/Simplicial/Flip.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/GeneralTarget.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.GeneralTarget",
+   "original_sha256": "3fe0b471eed9722c22acca2492c117975f0b071db4b1506391294c8040d246f2",
+   "path": "OAI/Geometry/Borsuk/Simplicial/GeneralTarget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/LabelRegion.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.LabelRegion",
+   "original_sha256": "fb3e38e61d3ba78b9e259ea72b6ee00bc477cfa368d1f92e7793d1f93f62d690",
+   "path": "OAI/Geometry/Borsuk/Simplicial/LabelRegion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/LinearMapSupport.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.LinearMapSupport",
+   "original_sha256": "49a17023e0caf9079b5defdcff944b3d86dd2153be1564e53d9ee55a5a30ee36",
+   "path": "OAI/Geometry/Borsuk/Simplicial/LinearMapSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/MapChainsEquivSimplexAll.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.MapChainsEquivSimplexAll",
+   "original_sha256": "b291cc18aba109d1e299cbd63236908c704c86c5e39ef2446dd6e9867e4be168",
+   "path": "OAI/Geometry/Borsuk/Simplicial/MapChainsEquivSimplexAll.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/Maps.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.Maps",
+   "original_sha256": "7b9b6ec9cb09749cab59ea8fed3c97ec26454a3dcabfed1e5357e8d19c993079",
+   "path": "OAI/Geometry/Borsuk/Simplicial/Maps.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/MaxIndex.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.MaxIndex",
+   "original_sha256": "1b80dd0f110972e435eff7a96a0c1b5b86ac8d42ae9c011533f3531282cfde19",
+   "path": "OAI/Geometry/Borsuk/Simplicial/MaxIndex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/MemSupportSimplex.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.MemSupportSimplex",
+   "original_sha256": "8e97de452ff9bf37e83cb30967433a501909acdfddcbbf91b34e99c0ccebd9fb",
+   "path": "OAI/Geometry/Borsuk/Simplicial/MemSupportSimplex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/NormMap.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.NormMap",
+   "original_sha256": "b5ad77752c30891c6ecc65febc9f648c94f2a38f74aff2c2bd01a2badaed288a",
+   "path": "OAI/Geometry/Borsuk/Simplicial/NormMap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/NullHomotopyLocalModels.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.NullHomotopyLocalModels",
+   "original_sha256": "120b18206a5b2a7777dc7b2b0952826ad769e08b92c842a8f0fb581f095b8db2",
+   "path": "OAI/Geometry/Borsuk/Simplicial/NullHomotopyLocalModels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/OddHomotopySurjective.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.OddHomotopySurjective",
+   "original_sha256": "aa0a39e68a32f065ffcf24b4548dc67a34c8e23f15881093abd8571d919fbaf4",
+   "path": "OAI/Geometry/Borsuk/Simplicial/OddHomotopySurjective.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/OddSphereDimensionBoundFintype.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.OddSphereDimensionBoundFintype",
+   "original_sha256": "b0e9333b50a03b69b2632e3bdb169ec6657244b2488caee024c321ac35212b99",
+   "path": "OAI/Geometry/Borsuk/Simplicial/OddSphereDimensionBoundFintype.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/Refinement.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.Refinement",
+   "original_sha256": "35926d34d93e81f84de2738e4edbb004bdb6921f3725b75f2d30fbb4afab72fd",
+   "path": "OAI/Geometry/Borsuk/Simplicial/Refinement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/SignVector.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.SignVector",
+   "original_sha256": "81926294f97afacc10cfe7d2e30eabafcf751be77740b4ee134bace0fed8ef37",
+   "path": "OAI/Geometry/Borsuk/Simplicial/SignVector.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/SignedVertex.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.SignedVertex",
+   "original_sha256": "f6bdcfbf62bba594e1991ce3af0d5ddc6f012248b254474c8340da2f2e2cea54",
+   "path": "OAI/Geometry/Borsuk/Simplicial/SignedVertex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/SimplexMemDegreeAll.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.SimplexMemDegreeAll",
+   "original_sha256": "dca21a3753e96d5ca23881e56be2a108661e58e51d1a3a7cc7548ee004fb9fbe",
+   "path": "OAI/Geometry/Borsuk/Simplicial/SimplexMemDegreeAll.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/SubdivSimplex.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.SubdivSimplex",
+   "original_sha256": "568df98fecf73af526ffcb188d1bc5703b785168be9ff45037ce2c523655b864",
+   "path": "OAI/Geometry/Borsuk/Simplicial/SubdivSimplex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/Supports.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.Supports",
+   "original_sha256": "21c4cc8754efd9726f4e2004cf58517b44ea5e942c260a487f33284e42662785",
+   "path": "OAI/Geometry/Borsuk/Simplicial/Supports.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Simplicial/UnitRadial.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Simplicial.UnitRadial",
+   "original_sha256": "69cdd6de32f6fa21291b1484a5eb0671f6f5ae0826ee29a53e878f882d1078e0",
+   "path": "OAI/Geometry/Borsuk/Simplicial/UnitRadial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/SmithTheory/CharacteristicCochains.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.SmithTheory.CharacteristicCochains",
+   "original_sha256": "63fc4171c2b47f8831a2d2e4b66c69dfafd7bdb3f11ed850eb6c0e4f385bdfe7",
+   "path": "OAI/Geometry/Borsuk/SmithTheory/CharacteristicCochains.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/SmithTheory/Involution.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.SmithTheory.Involution",
+   "original_sha256": "f7fa9723ed6391b7a54c3fbb513407760ed23b844998df6b489657a6150822a3",
+   "path": "OAI/Geometry/Borsuk/SmithTheory/Involution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/SphereGeometry/HemisphereChart.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.SphereGeometry.HemisphereChart",
+   "original_sha256": "0df4b120b3f4abb3cb225117d383cfc1d6b31727e4cee5b97a8d099e84ca9668",
+   "path": "OAI/Geometry/Borsuk/SphereGeometry/HemisphereChart.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/SphereGeometry/HomogeneousLift.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.SphereGeometry.HomogeneousLift",
+   "original_sha256": "cb3cc661ea6e0b1043766b9413eaf154216bdc0d854eb8190bfd2ec48ecf4271",
+   "path": "OAI/Geometry/Borsuk/SphereGeometry/HomogeneousLift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/SphereGeometry/IntegralLift.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.SphereGeometry.IntegralLift",
+   "original_sha256": "a3dec8aaf8c197f207ab25a36c70a40cf1c993ac7cdc146ebed99388878b52a7",
+   "path": "OAI/Geometry/Borsuk/SphereGeometry/IntegralLift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/SphereGeometry/NormSphere.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.SphereGeometry.NormSphere",
+   "original_sha256": "111fb57350d49fa33f1ff6e8a42ec72f6dd3c68f143da1aac8b221351384d5ab",
+   "path": "OAI/Geometry/Borsuk/SphereGeometry/NormSphere.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/SphereGeometry/OddSphereMap.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.SphereGeometry.OddSphereMap",
+   "original_sha256": "3d7d0b1e48efa38e1d26fb3105e01e96b83cfa3544071d21a903119243017272",
+   "path": "OAI/Geometry/Borsuk/SphereGeometry/OddSphereMap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/SphereGeometry/SphereExtension.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.SphereGeometry.SphereExtension",
+   "original_sha256": "b9409bbf71c9aaa74f890056622fe52de896f4c3a381d9f45c7a4ca66e1475ca",
+   "path": "OAI/Geometry/Borsuk/SphereGeometry/SphereExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/SphereGeometry/SphereMeasure.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.SphereGeometry.SphereMeasure",
+   "original_sha256": "fa5a44b79f29c7e5730a3ab8d8e40cc5300bf557f52fe42694f3d13d3ea524e0",
+   "path": "OAI/Geometry/Borsuk/SphereGeometry/SphereMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/SphereGeometry/SphereMoments.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.SphereGeometry.SphereMoments",
+   "original_sha256": "3327408fefc8e847e4d1036a49b9b901a9d422282b890c1798f210e94faa298b",
+   "path": "OAI/Geometry/Borsuk/SphereGeometry/SphereMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/SphereGeometry/TraceSphere.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.SphereGeometry.TraceSphere",
+   "original_sha256": "24358fe72f274ecbed279b725a83ae85e57f4de20142b44c67ca74bfc9eb4714",
+   "path": "OAI/Geometry/Borsuk/SphereGeometry/TraceSphere.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Support/ActiveChambers.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Support.ActiveChambers",
+   "original_sha256": "fa648c977af96dcb0768fcd728ce03232be07cd98af4ea23f56b40f4bd24ebba",
+   "path": "OAI/Geometry/Borsuk/Support/ActiveChambers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Support/AllPairs.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Support.AllPairs",
+   "original_sha256": "a6a5810db41bc37a2b10e9fbf303a73577d00f7e7e5d7cab73a4918cbdb37c53",
+   "path": "OAI/Geometry/Borsuk/Support/AllPairs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Support/BalancedChart.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Support.BalancedChart",
+   "original_sha256": "03e00e7b2f2b5900a4f6aa857fb241f5440ca0c51de363764a742cc211f61fd6",
+   "path": "OAI/Geometry/Borsuk/Support/BalancedChart.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Support/ChamberPath.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Support.ChamberPath",
+   "original_sha256": "0cb94e0c51be92a88cd3d8eb3ab774cd204473510f60796d6ebf8dd546164b0b",
+   "path": "OAI/Geometry/Borsuk/Support/ChamberPath.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Support/Chambers.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Support.Chambers",
+   "original_sha256": "c8a882dd47fe4574091c2e661978a3c0a03d44848bf02914fb67ec4645ed5dd8",
+   "path": "OAI/Geometry/Borsuk/Support/Chambers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Support/DisjointChambers.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Support.DisjointChambers",
+   "original_sha256": "d3bb9c116c19febafbdf046b5ae541d406507a92d4ae14f261cf0140f29f3dbc",
+   "path": "OAI/Geometry/Borsuk/Support/DisjointChambers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Support/FacetTangent.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Support.FacetTangent",
+   "original_sha256": "dc00533dbdc36249bc34b44efe8910316e7ed48b9290779203676ccd9cc0bb75",
+   "path": "OAI/Geometry/Borsuk/Support/FacetTangent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Support/FullSupport.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Support.FullSupport",
+   "original_sha256": "df0d44ad6a023b11e5aa35b17456944511a8a7fbea27de5fc81bd48d1425bea7",
+   "path": "OAI/Geometry/Borsuk/Support/FullSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Support/LocalMix.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Support.LocalMix",
+   "original_sha256": "db33c6aa748b7708b316bf861c24876d54d6853800a818c09e281ad8428a5f82",
+   "path": "OAI/Geometry/Borsuk/Support/LocalMix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Support/MixedHits.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Support.MixedHits",
+   "original_sha256": "8cd50abb7b042a74cd465a7f6e1b3d5b86a3186fef932059b5b39c7f5993443b",
+   "path": "OAI/Geometry/Borsuk/Support/MixedHits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Support/MixedHomotopy.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Support.MixedHomotopy",
+   "original_sha256": "cd9bb15e9d45135ed47d1ab99df505c3802f8d6849f92c12c06888562ea3199a",
+   "path": "OAI/Geometry/Borsuk/Support/MixedHomotopy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Support/NegativeFibre.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Support.NegativeFibre",
+   "original_sha256": "dfcd6ff2a1eb9ee443050bd2e9824807ed847071c7653b1723c42d9be0c99ad2",
+   "path": "OAI/Geometry/Borsuk/Support/NegativeFibre.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Support/Purity.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Support.Purity",
+   "original_sha256": "ac2f13719ed0e9785525ebe3a874ff444bbac73e597f01fb16064e8fbbae6467",
+   "path": "OAI/Geometry/Borsuk/Support/Purity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Support/PurityChart.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Support.PurityChart",
+   "original_sha256": "eff561a39ad2f571bae5b15625a8b27d0ae86a3d0ad92627cdbd5641e79f23ed",
+   "path": "OAI/Geometry/Borsuk/Support/PurityChart.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Support/PurityGeometry.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Support.PurityGeometry",
+   "original_sha256": "82e8b87438c75922116eb8e758aadcb42241051287896782699a907d2e31ee9d",
+   "path": "OAI/Geometry/Borsuk/Support/PurityGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Support/SixFaces.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Support.SixFaces",
+   "original_sha256": "33695451fa0091fa9e423fa4927327054c1fa141c829889ad6df3e0b0c9815f6",
+   "path": "OAI/Geometry/Borsuk/Support/SixFaces.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Support/SpectralSupport.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Support.SpectralSupport",
+   "original_sha256": "5b496d24ea4d08cd933c23e9b5f7eecc02015476d57ce548879d6ae95e26e0e2",
+   "path": "OAI/Geometry/Borsuk/Support/SpectralSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/Support/SupportIncidence.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.Support.SupportIncidence",
+   "original_sha256": "b4953f62ce5edc1861cf6943f0d43c5df5abf74f86d8e5046080fca08039a46f",
+   "path": "OAI/Geometry/Borsuk/Support/SupportIncidence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Borsuk/TenLabels/Labels.lean"
+   },
+   "module": "OAI.Geometry.Borsuk.TenLabels.Labels",
+   "original_sha256": "2edf8f16845c943113b43f34542a4bcdd26872910067b35d184c76915882ebb0",
+   "path": "OAI/Geometry/Borsuk/TenLabels/Labels.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Geometry.Borsuk.Counterexample",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases001",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases002",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases003",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases004",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases005",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases006",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases007",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases008",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases009",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases010",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases011",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases012",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases013",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases014",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases015",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases016",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases017",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases018",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases019",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases020",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases021",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases022",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases023",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases024",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases025",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases026",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases027",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases028",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases029",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases030",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases031",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases032",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases033",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases034",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases035",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases036",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases037",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases038",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases039",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases040",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases041",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases042",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases043",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases044",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases045",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases046",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases047",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases048",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases049",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases050",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases051",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases052",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases053",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases054",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases055",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases056",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases057",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases058",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases059",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases060",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases061",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases062",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases063",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases064",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases065",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases066",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases067",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases068",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases069",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases070",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases071",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases072",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases073",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases074",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases075",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases076",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases077",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases078",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases079",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases080",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases081",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases082",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases083",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases084",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases085",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases086",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases087",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases088",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases089",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases090",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases091",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases092",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases093",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases094",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases095",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases096",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases097",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases098",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases099",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases100",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases101",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases102",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases103",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases104",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases105",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases106",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases107",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases108",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases109",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases110",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases111",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases112",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases113",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases114",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases115",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases116",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases117",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases118",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases119",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases120",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases121",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases122",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases123",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases124",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases125",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases126",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases127",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases128",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases129",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases130",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases131",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases132",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases133",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases134",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases135",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases136",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases137",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases138",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases139",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases140",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases141",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases142",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases143",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases144",
+  "OAI.Geometry.Borsuk.FiniteCases.Cases145",
+  "OAI.Geometry.Borsuk.LocalParity.ChartRegular",
+  "OAI.Geometry.Borsuk.LocalParity.LocalModel",
+  "OAI.Geometry.Borsuk.LocalParity.LocalRegular",
+  "OAI.Geometry.Borsuk.LocalParity.MatrixParity",
+  "OAI.Geometry.Borsuk.LocalParity.NoFreeRidge",
+  "OAI.Geometry.Borsuk.LocalParity.RegularBase",
+  "OAI.Geometry.Borsuk.LocalParity.RegularModel",
+  "OAI.Geometry.Borsuk.LocalParity.RegularPatch",
+  "OAI.Geometry.Borsuk.LocalParity.Sard",
+  "OAI.Geometry.Borsuk.LocalParity.SphereBlock",
+  "OAI.Geometry.Borsuk.LocalParity.SphereNullPatch",
+  "OAI.Geometry.Borsuk.LocalParity.SphereParity",
+  "OAI.Geometry.Borsuk.LocalParity.TraceLocalModels",
+  "OAI.Geometry.Borsuk.Main",
+  "OAI.Geometry.Borsuk.MatrixGeometry.BlockLine",
+  "OAI.Geometry.Borsuk.MatrixGeometry.BlockParts",
+  "OAI.Geometry.Borsuk.MatrixGeometry.BlockVector",
+  "OAI.Geometry.Borsuk.MatrixGeometry.CenterApproximation",
+  "OAI.Geometry.Borsuk.MatrixGeometry.FibreContinuity",
+  "OAI.Geometry.Borsuk.MatrixGeometry.FibreHomotopy",
+  "OAI.Geometry.Borsuk.MatrixGeometry.FibreTransport",
+  "OAI.Geometry.Borsuk.MatrixGeometry.FinitePositiveBound",
+  "OAI.Geometry.Borsuk.MatrixGeometry.LineRepresentative",
+  "OAI.Geometry.Borsuk.MatrixGeometry.MatrixCompression",
+  "OAI.Geometry.Borsuk.MatrixGeometry.MatrixFibre",
+  "OAI.Geometry.Borsuk.MatrixGeometry.MatrixKernel",
+  "OAI.Geometry.Borsuk.MatrixGeometry.MatrixNorm",
+  "OAI.Geometry.Borsuk.MatrixGeometry.MatrixReflection",
+  "OAI.Geometry.Borsuk.MatrixGeometry.MatrixTransport",
+  "OAI.Geometry.Borsuk.MatrixGeometry.ModelRay",
+  "OAI.Geometry.Borsuk.MatrixGeometry.PositiveSlice",
+  "OAI.Geometry.Borsuk.MatrixGeometry.Rank",
+  "OAI.Geometry.Borsuk.MatrixGeometry.RankPreimage",
+  "OAI.Geometry.Borsuk.MatrixGeometry.ReflectionTransport",
+  "OAI.Geometry.Borsuk.MatrixGeometry.SignedExtension",
+  "OAI.Geometry.Borsuk.MatrixGeometry.SpectralChart",
+  "OAI.Geometry.Borsuk.MatrixGeometry.SymmetricCoordinates",
+  "OAI.Geometry.Borsuk.MatrixGeometry.SymmetricEntries",
+  "OAI.Geometry.Borsuk.MatrixGeometry.TraceHomotopy",
+  "OAI.Geometry.Borsuk.MatrixGeometry.TracePatchModels",
+  "OAI.Geometry.Borsuk.Model",
+  "OAI.Geometry.Borsuk.Projectors.Basic",
+  "OAI.Geometry.Borsuk.Projectors.ChartSurgery",
+  "OAI.Geometry.Borsuk.Projectors.CompactLocalHomotopy",
+  "OAI.Geometry.Borsuk.Projectors.CompactTargetHits",
+  "OAI.Geometry.Borsuk.Projectors.CoordinateSum",
+  "OAI.Geometry.Borsuk.Projectors.FiniteClosedCutoffs",
+  "OAI.Geometry.Borsuk.Projectors.FiniteOpenGlue",
+  "OAI.Geometry.Borsuk.Projectors.FinitePatch",
+  "OAI.Geometry.Borsuk.Projectors.FiniteSmoothSliceMisses",
+  "OAI.Geometry.Borsuk.Projectors.FiniteSmoothSliceMissesBounded",
+  "OAI.Geometry.Borsuk.Projectors.NegativeQuadratic",
+  "OAI.Geometry.Borsuk.Projectors.NullImage",
+  "OAI.Geometry.Borsuk.Projectors.RaySet",
+  "OAI.Geometry.Borsuk.Projectors.Restrict",
+  "OAI.Geometry.Borsuk.Projectors.SimplexPoint",
+  "OAI.Geometry.Borsuk.Projectors.Tangent",
+  "OAI.Geometry.Borsuk.Projectors.TenPure",
+  "OAI.Geometry.Borsuk.Projectors.Within",
+  "OAI.Geometry.Borsuk.Simplicial.Approximation",
+  "OAI.Geometry.Borsuk.Simplicial.BarycenterNeg",
+  "OAI.Geometry.Borsuk.Simplicial.BoolCubeConstant",
+  "OAI.Geometry.Borsuk.Simplicial.CharacteristicDegree",
+  "OAI.Geometry.Borsuk.Simplicial.Coefficients",
+  "OAI.Geometry.Borsuk.Simplicial.CompactAdditiveLocality",
+  "OAI.Geometry.Borsuk.Simplicial.ContigSimplexBoundary",
+  "OAI.Geometry.Borsuk.Simplicial.CrossChainDimensionBound",
+  "OAI.Geometry.Borsuk.Simplicial.CrossEmbedding",
+  "OAI.Geometry.Borsuk.Simplicial.DoubleEraseSumFun",
+  "OAI.Geometry.Borsuk.Simplicial.Equivariance",
+  "OAI.Geometry.Borsuk.Simplicial.EventuallyFineSphereLabel",
+  "OAI.Geometry.Borsuk.Simplicial.F2",
+  "OAI.Geometry.Borsuk.Simplicial.FineCrossMap",
+  "OAI.Geometry.Borsuk.Simplicial.FineCrossMapMesh",
+  "OAI.Geometry.Borsuk.Simplicial.Flip",
+  "OAI.Geometry.Borsuk.Simplicial.GeneralTarget",
+  "OAI.Geometry.Borsuk.Simplicial.LabelRegion",
+  "OAI.Geometry.Borsuk.Simplicial.LinearMapSupport",
+  "OAI.Geometry.Borsuk.Simplicial.MapChainsEquivSimplexAll",
+  "OAI.Geometry.Borsuk.Simplicial.Maps",
+  "OAI.Geometry.Borsuk.Simplicial.MaxIndex",
+  "OAI.Geometry.Borsuk.Simplicial.MemSupportSimplex",
+  "OAI.Geometry.Borsuk.Simplicial.NormMap",
+  "OAI.Geometry.Borsuk.Simplicial.NullHomotopyLocalModels",
+  "OAI.Geometry.Borsuk.Simplicial.OddHomotopySurjective",
+  "OAI.Geometry.Borsuk.Simplicial.OddSphereDimensionBoundFintype",
+  "OAI.Geometry.Borsuk.Simplicial.Refinement",
+  "OAI.Geometry.Borsuk.Simplicial.SignVector",
+  "OAI.Geometry.Borsuk.Simplicial.SignedVertex",
+  "OAI.Geometry.Borsuk.Simplicial.SimplexMemDegreeAll",
+  "OAI.Geometry.Borsuk.Simplicial.SubdivSimplex",
+  "OAI.Geometry.Borsuk.Simplicial.Supports",
+  "OAI.Geometry.Borsuk.Simplicial.UnitRadial",
+  "OAI.Geometry.Borsuk.SmithTheory.CharacteristicCochains",
+  "OAI.Geometry.Borsuk.SmithTheory.Involution",
+  "OAI.Geometry.Borsuk.SphereGeometry.HemisphereChart",
+  "OAI.Geometry.Borsuk.SphereGeometry.HomogeneousLift",
+  "OAI.Geometry.Borsuk.SphereGeometry.IntegralLift",
+  "OAI.Geometry.Borsuk.SphereGeometry.NormSphere",
+  "OAI.Geometry.Borsuk.SphereGeometry.OddSphereMap",
+  "OAI.Geometry.Borsuk.SphereGeometry.SphereExtension",
+  "OAI.Geometry.Borsuk.SphereGeometry.SphereMeasure",
+  "OAI.Geometry.Borsuk.SphereGeometry.SphereMoments",
+  "OAI.Geometry.Borsuk.SphereGeometry.TraceSphere",
+  "OAI.Geometry.Borsuk.Support.ActiveChambers",
+  "OAI.Geometry.Borsuk.Support.AllPairs",
+  "OAI.Geometry.Borsuk.Support.BalancedChart",
+  "OAI.Geometry.Borsuk.Support.ChamberPath",
+  "OAI.Geometry.Borsuk.Support.Chambers",
+  "OAI.Geometry.Borsuk.Support.DisjointChambers",
+  "OAI.Geometry.Borsuk.Support.FacetTangent",
+  "OAI.Geometry.Borsuk.Support.FullSupport",
+  "OAI.Geometry.Borsuk.Support.LocalMix",
+  "OAI.Geometry.Borsuk.Support.MixedHits",
+  "OAI.Geometry.Borsuk.Support.MixedHomotopy",
+  "OAI.Geometry.Borsuk.Support.NegativeFibre",
+  "OAI.Geometry.Borsuk.Support.Purity",
+  "OAI.Geometry.Borsuk.Support.PurityChart",
+  "OAI.Geometry.Borsuk.Support.PurityGeometry",
+  "OAI.Geometry.Borsuk.Support.SixFaces",
+  "OAI.Geometry.Borsuk.Support.SpectralSupport",
+  "OAI.Geometry.Borsuk.Support.SupportIncidence",
+  "OAI.Geometry.Borsuk.TenLabels.Labels"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/BorsukNine.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Geometry.Borsuk.Counterexample",
+   "name": "OAI.BorsukNine.main_theorem",
+   "statement_sha256": "1ded1573aa90f65eb50f12099b57d28939a4cd9fae76d103cead5a583bb40df0"
+  }
+ ],
+ "task_id": "oai-borsuk-nine",
+ "task_revision": 1,
+ "title": "OpenAI math: Borsuk's conjecture fails in dimension nine: Nine-dimensional Borsuk counterexample",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

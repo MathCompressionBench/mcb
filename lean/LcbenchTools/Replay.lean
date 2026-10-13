@@ -337,7 +337,7 @@ def renameCopies (env : Environment) (order : Array Name)
 /-- Kernel replay of every owner module (see the module docstring). Initializers of imported modules never run.
 The shared environment's `.olean` regions are not freed: the process exits after the replay, and freeing them while
 the environment is still referenced would leave dangling objects. -/
-unsafe def replayOwners (owners : Array Name) (budget : Nat) : IO Report := do
+unsafe def replayOwners (owners : Array Name) (budget : Nat) (jobs : Nat := 1) : IO Report := do
   let mut partsOf : Std.HashMap Name (Array (ModuleData × CompactedRegion)) := {}
   let mut ownerImports : Std.HashMap Name (Array Name) := {}
   let mut constsOf : Std.HashMap Name (Std.HashMap Name ConstantInfo) := {}
@@ -358,11 +358,19 @@ unsafe def replayOwners (owners : Array Name) (budget : Nat) : IO Report := do
   let t1 ← IO.monoMsNow
   if let some reason := scopeProblem background order ownerImports constsOf then
     let mut report : Report := { mode := "per_module", fallbackReason := reason, importMs := t1 - t0, budget }
-    for o in owners do
-      let (row, error, overBudget) ← replayInChild o budget
-      report := { report with modules := report.modules.push row }
-      if let some e := error then
-        return { report with failure := some (o, e), overBudget }
+    -- `jobs` children at a time (each owner in a process of its own, as before); rows are read in owner order and the
+    -- report stops at the first owner the kernel rejects, so the report is the sequential one up to the times
+    let width := max jobs 1
+    let mut i := 0
+    while i < owners.size do
+      let chunk := owners.extract i (i + width)
+      let tasks ← chunk.mapM fun o => IO.asTask (replayInChild o budget) Task.Priority.dedicated
+      for (o, t) in chunk.zip tasks do
+        let (row, error, overBudget) ← IO.ofExcept (← IO.wait t)
+        report := { report with modules := report.modules.push row }
+        if let some e := error then
+          return { report with failure := some (o, e), overBudget }
+      i := i + width
     return report
   let (toReplay, copies) := renameCopies background order constsOf
   let mut env := background

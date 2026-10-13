@@ -1,0 +1,841 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 12419100
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.SensitivitySeparation",
+  "challenge_sha256": "76405c3a09039be254192bdb453af6121987ffd3a3236a7303fc4979d9361eae",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SensitivitySeparation.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.SensitivitySeparation",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Combinatorics.Sensitivity.Separation",
+   "theorem_names": [
+    "OAI.Paper320.quantitative_separation"
+   ]
+  },
+  "config_sha256": "d5ab43d4dc9111caf9c679c50d7127ee73f6aa1f831f8cc689a1de761fc99897",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SensitivitySeparation.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.Paper320.quantitative_separation": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/Basic.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.Basic",
+   "original_sha256": "0b5a775c881fb2681fb42f32d8ef686ac0d6f349dd71d69680ef79630aa30998",
+   "path": "OAI/Combinatorics/Sensitivity/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/Composition.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.Composition",
+   "original_sha256": "bcacfe0854692ad07fff5ff58371f1bc2cab5848bb6e10281c339d3a07fc19bc",
+   "path": "OAI/Combinatorics/Sensitivity/Composition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/ConstructedSeed.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.ConstructedSeed",
+   "original_sha256": "3f5ee421f85b00f3a45dcf059a011a3001d26ff268599023bc04f0bb4676dbc7",
+   "path": "OAI/Combinatorics/Sensitivity/ConstructedSeed.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/Construction.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.Construction",
+   "original_sha256": "847581170ac8031bd97316f7d314d2eadf790138c6709ec96d03acfecb813477",
+   "path": "OAI/Combinatorics/Sensitivity/Construction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/FixedCoordinates.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.FixedCoordinates",
+   "original_sha256": "e71af39ab20d366353dad5cdb4a48859b2e182e9d4e24baf50b3ee75fab616e6",
+   "path": "OAI/Combinatorics/Sensitivity/FixedCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/HammingBase.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.HammingBase",
+   "original_sha256": "e4232eff0d06000899554fbc8976f56893879357ec882e1becc8467e5838329b",
+   "path": "OAI/Combinatorics/Sensitivity/HammingBase.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/InitialPredicates.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.InitialPredicates",
+   "original_sha256": "117546a4193d60c2330ed85eee50de43a949d1d316eda149a6429aac3a4ac08e",
+   "path": "OAI/Combinatorics/Sensitivity/InitialPredicates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/Iterates.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.Iterates",
+   "original_sha256": "913b6322a7a7c28c7275a400cda697d5781dbd9de89e2805cbcb7be1c31de690",
+   "path": "OAI/Combinatorics/Sensitivity/Iterates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/Labeling.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.Labeling",
+   "original_sha256": "e4ab3692d90d1d9c1c0594336aa9b65adfd30271983f4ee61bff2ade3a00f321",
+   "path": "OAI/Combinatorics/Sensitivity/Labeling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/LabelingBounds.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.LabelingBounds",
+   "original_sha256": "97a41a0330eaf3ac6f59430a161f94d05279d2aa14f65ff4a6960abdf84e6f42",
+   "path": "OAI/Combinatorics/Sensitivity/LabelingBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/LabelingConstraints.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.LabelingConstraints",
+   "original_sha256": "aca543383b725818f1996f61e88e8339f99a30f2fc04425b331d434e21810c7e",
+   "path": "OAI/Combinatorics/Sensitivity/LabelingConstraints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/LabelingEstimate.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.LabelingEstimate",
+   "original_sha256": "a8678653402e7d41c6c2b435ab46b1f3597fe73b06d0f7e915b04df86164e52a",
+   "path": "OAI/Combinatorics/Sensitivity/LabelingEstimate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/LabelingEvents.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.LabelingEvents",
+   "original_sha256": "25178ca036da0e9b213f6660300ec3247c54f50f0901c24fadffbcc9e54e8275",
+   "path": "OAI/Combinatorics/Sensitivity/LabelingEvents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/Model.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.Model",
+   "original_sha256": "56384f0174a652dabf35dbdb0a0bfe74bdbe4054af36e1f93f393a1865d4e7cf",
+   "path": "OAI/Combinatorics/Sensitivity/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/Or.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.Or",
+   "original_sha256": "6150f829f003c0e027ecd18ef88f0d9ff7b719f7dde300a6d3b03ee593907bd6",
+   "path": "OAI/Combinatorics/Sensitivity/Or.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/ParameterBounds.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.ParameterBounds",
+   "original_sha256": "45c3a40dd11f75270a275adbdb1c47b31cfc5b830f3da0e83d36ac24a203533d",
+   "path": "OAI/Combinatorics/Sensitivity/ParameterBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/PowerAmplification.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.PowerAmplification",
+   "original_sha256": "818080ce3140ed410493b7d8e70c8518675f99c2f745d5dfb968887f5976d115",
+   "path": "OAI/Combinatorics/Sensitivity/PowerAmplification.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/ProfileArithmetic.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.ProfileArithmetic",
+   "original_sha256": "6cbde7cd86367b8f9f07a03a7121713b05ac0e65bc3a16e2a46f08d0db6ec87b",
+   "path": "OAI/Combinatorics/Sensitivity/ProfileArithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/QuantitativeProfiles.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.QuantitativeProfiles",
+   "original_sha256": "1aa70b0686564e53e70812c627df8c947f045e429bf9149f5dd6d49e51c66e96",
+   "path": "OAI/Combinatorics/Sensitivity/QuantitativeProfiles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/Recursive.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.Recursive",
+   "original_sha256": "494ee23e32dac7a454c59273439fd3876942d38ab01458a6ff183c1383bda48b",
+   "path": "OAI/Combinatorics/Sensitivity/Recursive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/RecursiveBlocks.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.RecursiveBlocks",
+   "original_sha256": "88d8058b297cc13333bef4c1cc4d8f8790ba1de7492c77d3b81ac399f9874ffa",
+   "path": "OAI/Combinatorics/Sensitivity/RecursiveBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/RecursiveCandidates.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.RecursiveCandidates",
+   "original_sha256": "2faa5de503793a792d3f3c88e73ee84b5a68bce2b9de21ab630eeceab4315df8",
+   "path": "OAI/Combinatorics/Sensitivity/RecursiveCandidates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/RecursiveChildren.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.RecursiveChildren",
+   "original_sha256": "1e3af197a06e9a0fb9b4eab78940010f066ba6c55c7f5cbb47e6bc0079adf5f8",
+   "path": "OAI/Combinatorics/Sensitivity/RecursiveChildren.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/RecursiveDefinitions.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.RecursiveDefinitions",
+   "original_sha256": "31a5146e0aec3721ed14f5c13fd68ce916616a9988ae43412caedc45321fc019",
+   "path": "OAI/Combinatorics/Sensitivity/RecursiveDefinitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/RecursiveFailures.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.RecursiveFailures",
+   "original_sha256": "22755d726a35448efcbabeadec07e369c5143958c7af7b87f3317941f62e78ad",
+   "path": "OAI/Combinatorics/Sensitivity/RecursiveFailures.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/RecursiveFlips.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.RecursiveFlips",
+   "original_sha256": "a7ff80531219a2cd601d830ccc0060a89170916ffd6486b8f49ea78edfee4b82",
+   "path": "OAI/Combinatorics/Sensitivity/RecursiveFlips.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/RecursiveJointZero.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.RecursiveJointZero",
+   "original_sha256": "6857e21703cc90dccc927f0419617e8d57ce09e5a06a729951c73fd2b25066b0",
+   "path": "OAI/Combinatorics/Sensitivity/RecursiveJointZero.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/RecursiveOne.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.RecursiveOne",
+   "original_sha256": "26254dba8f84f2a73f53bf641ac0fbbbd5b8bd6b13c1fa91698baac1d84c88f7",
+   "path": "OAI/Combinatorics/Sensitivity/RecursiveOne.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/RecursiveProfiles.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.RecursiveProfiles",
+   "original_sha256": "e9699f0bdb058570230062dbe8acaf56ab3843e114fd4d45e99220bad5fda7fb",
+   "path": "OAI/Combinatorics/Sensitivity/RecursiveProfiles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/RecursiveRepair.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.RecursiveRepair",
+   "original_sha256": "e77240f26ccc57e2d5b065ac64fd8e0f3afdbac82fe3ec79624a391722cc7fbd",
+   "path": "OAI/Combinatorics/Sensitivity/RecursiveRepair.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/RecursiveSets.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.RecursiveSets",
+   "original_sha256": "215e2c7d69121a38208b230477a10d6f21534536f900051d68948fb455bcba6f",
+   "path": "OAI/Combinatorics/Sensitivity/RecursiveSets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/RecursiveZero.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.RecursiveZero",
+   "original_sha256": "bf45aea78248cde889c2187e1b2ab5693eadec682ad7937c8374c6a19f91ea63",
+   "path": "OAI/Combinatorics/Sensitivity/RecursiveZero.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/Reindex.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.Reindex",
+   "original_sha256": "0421a8fced5a6f15b9b2f74110956175602fecba0deceeebd6f02c16183d73fc",
+   "path": "OAI/Combinatorics/Sensitivity/Reindex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/ScalarBounds.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.ScalarBounds",
+   "original_sha256": "d9b45e7963750727c16b1c3ba89b8081de958cc5c4762fc1af04bb479309bf43",
+   "path": "OAI/Combinatorics/Sensitivity/ScalarBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/SeedAmplification.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.SeedAmplification",
+   "original_sha256": "97a114f9b0b91ee137f7461a612eaf41bb52b40562cf66168f7fe11513f835a6",
+   "path": "OAI/Combinatorics/Sensitivity/SeedAmplification.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/Separation.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.Separation",
+   "original_sha256": "7e87439c7016f29521d7795779fe8ba94ea094ab8cd6539b4a139e9e7638ec0b",
+   "path": "OAI/Combinatorics/Sensitivity/Separation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/SeparationArithmetic.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.SeparationArithmetic",
+   "original_sha256": "8b5dd009390d40e8c7603fa344007253a2e1ce6a82b797021aad35341c9aff6e",
+   "path": "OAI/Combinatorics/Sensitivity/SeparationArithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/Tournament.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.Tournament",
+   "original_sha256": "9c07af57267c3533aa3a93df27993f30abf940b6252a1ddca826be07c3ae040d",
+   "path": "OAI/Combinatorics/Sensitivity/Tournament.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/TournamentCounts.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.TournamentCounts",
+   "original_sha256": "71af6d2b8f9efd2b04ce782ed128d2a567b887184d3ad39336f0ad550c405e06",
+   "path": "OAI/Combinatorics/Sensitivity/TournamentCounts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/TournamentCyclic.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.TournamentCyclic",
+   "original_sha256": "90d106dd4971876031d2ec6ac353352b14dcbabe7c1305b23bf798e6a3550ce2",
+   "path": "OAI/Combinatorics/Sensitivity/TournamentCyclic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/Tower.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.Tower",
+   "original_sha256": "b735c02e0b8fa4b319ae0b4b41e89e1fa841fa78a0871e66ab0a60ca0776f8f3",
+   "path": "OAI/Combinatorics/Sensitivity/Tower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Sensitivity/TowerProfiles.lean"
+   },
+   "module": "OAI.Combinatorics.Sensitivity.TowerProfiles",
+   "original_sha256": "0dab1c7d954d2747052beac5d98c75d1d04924b140a2fe7691a5d19e480d0223",
+   "path": "OAI/Combinatorics/Sensitivity/TowerProfiles.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.Sensitivity.Basic",
+  "OAI.Combinatorics.Sensitivity.Composition",
+  "OAI.Combinatorics.Sensitivity.ConstructedSeed",
+  "OAI.Combinatorics.Sensitivity.Construction",
+  "OAI.Combinatorics.Sensitivity.FixedCoordinates",
+  "OAI.Combinatorics.Sensitivity.HammingBase",
+  "OAI.Combinatorics.Sensitivity.InitialPredicates",
+  "OAI.Combinatorics.Sensitivity.Iterates",
+  "OAI.Combinatorics.Sensitivity.Labeling",
+  "OAI.Combinatorics.Sensitivity.LabelingBounds",
+  "OAI.Combinatorics.Sensitivity.LabelingConstraints",
+  "OAI.Combinatorics.Sensitivity.LabelingEstimate",
+  "OAI.Combinatorics.Sensitivity.LabelingEvents",
+  "OAI.Combinatorics.Sensitivity.Model",
+  "OAI.Combinatorics.Sensitivity.Or",
+  "OAI.Combinatorics.Sensitivity.ParameterBounds",
+  "OAI.Combinatorics.Sensitivity.PowerAmplification",
+  "OAI.Combinatorics.Sensitivity.ProfileArithmetic",
+  "OAI.Combinatorics.Sensitivity.QuantitativeProfiles",
+  "OAI.Combinatorics.Sensitivity.Recursive",
+  "OAI.Combinatorics.Sensitivity.RecursiveBlocks",
+  "OAI.Combinatorics.Sensitivity.RecursiveCandidates",
+  "OAI.Combinatorics.Sensitivity.RecursiveChildren",
+  "OAI.Combinatorics.Sensitivity.RecursiveDefinitions",
+  "OAI.Combinatorics.Sensitivity.RecursiveFailures",
+  "OAI.Combinatorics.Sensitivity.RecursiveFlips",
+  "OAI.Combinatorics.Sensitivity.RecursiveJointZero",
+  "OAI.Combinatorics.Sensitivity.RecursiveOne",
+  "OAI.Combinatorics.Sensitivity.RecursiveProfiles",
+  "OAI.Combinatorics.Sensitivity.RecursiveRepair",
+  "OAI.Combinatorics.Sensitivity.RecursiveSets",
+  "OAI.Combinatorics.Sensitivity.RecursiveZero",
+  "OAI.Combinatorics.Sensitivity.Reindex",
+  "OAI.Combinatorics.Sensitivity.ScalarBounds",
+  "OAI.Combinatorics.Sensitivity.SeedAmplification",
+  "OAI.Combinatorics.Sensitivity.Separation",
+  "OAI.Combinatorics.Sensitivity.SeparationArithmetic",
+  "OAI.Combinatorics.Sensitivity.Tournament",
+  "OAI.Combinatorics.Sensitivity.TournamentCounts",
+  "OAI.Combinatorics.Sensitivity.TournamentCyclic",
+  "OAI.Combinatorics.Sensitivity.Tower",
+  "OAI.Combinatorics.Sensitivity.TowerProfiles"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/SensitivitySeparation.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Combinatorics.Sensitivity.Separation",
+   "name": "OAI.Paper320.quantitative_separation",
+   "statement_sha256": "ad5f26e45f6fd0a8f69f6b9490fefd286044ab14a4660db54c77d88c7665256b"
+  }
+ ],
+ "task_id": "oai-sensitivity-separation",
+ "task_revision": 1,
+ "title": "OpenAI math: A superquadratic separation of sensitivity and block sensitivity: Superquadratic sensitivity separation",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

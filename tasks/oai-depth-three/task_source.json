@@ -1,0 +1,2171 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 53365253
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.DepthThree",
+  "challenge_sha256": "c12686c38119eb50c375790ebc28e0c806821714985431e59f18ae87649872a4",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/DepthThree.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.DepthThree",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Computability.DepthThree.Main",
+   "theorem_names": [
+    "OAI.DepthThreeLowerBound.exists_polynomial_time_language_depth_three_lower_bound"
+   ]
+  },
+  "config_sha256": "0b9ecec5cb9b079bf8f6b301604938a9b74758f6abeff6dd985e160c89f578b3",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/DepthThree.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.DepthThreeLowerBound.exists_polynomial_time_language_depth_three_lower_bound": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/AlgebraBits.lean"
+   },
+   "module": "OAI.Computability.DepthThree.AlgebraBits",
+   "original_sha256": "c2ed376ac3fa6a9eb73f6a9aa15d352926df6d8696da376560fcf1fa21dc3fb9",
+   "path": "OAI/Computability/DepthThree/AlgebraBits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/AlgebraFiniteFibers.lean"
+   },
+   "module": "OAI.Computability.DepthThree.AlgebraFiniteFibers",
+   "original_sha256": "ccda5a90705b9157c85ad402821c20dcbf7cfcff1eb4ec263bb54bd67631529d",
+   "path": "OAI/Computability/DepthThree/AlgebraFiniteFibers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/AlgebraLanguage.lean"
+   },
+   "module": "OAI.Computability.DepthThree.AlgebraLanguage",
+   "original_sha256": "3f0996c4967331c304a4b572c7780500bbb8cbeac2d589ebfcfd51f010bfc4ee",
+   "path": "OAI/Computability/DepthThree/AlgebraLanguage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/AlgebraPolynomial.lean"
+   },
+   "module": "OAI.Computability.DepthThree.AlgebraPolynomial",
+   "original_sha256": "b52649f46ca632785e0df45f9fd65a908ecae9780234128b367e800810f40b4b",
+   "path": "OAI/Computability/DepthThree/AlgebraPolynomial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/AlgebraQuotient.lean"
+   },
+   "module": "OAI.Computability.DepthThree.AlgebraQuotient",
+   "original_sha256": "ba0685b39c59bc3f8cea8640e392e9bee5066160e5d724953fd6be9150e6eb1b",
+   "path": "OAI/Computability/DepthThree/AlgebraQuotient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/AsymptoticBounds.lean"
+   },
+   "module": "OAI.Computability.DepthThree.AsymptoticBounds",
+   "original_sha256": "6d7b9a2dcc14a73d39d74f33ed03fadc64bfd8a0c915318690d5267154bcfee0",
+   "path": "OAI/Computability/DepthThree/AsymptoticBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/Circuit.lean"
+   },
+   "module": "OAI.Computability.DepthThree.Circuit",
+   "original_sha256": "d30faf30b152cdfd5befd6d32b997cb1b4577f59376b6b39df1e33c51a61efb6",
+   "path": "OAI/Computability/DepthThree/Circuit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/CircuitDeletion.lean"
+   },
+   "module": "OAI.Computability.DepthThree.CircuitDeletion",
+   "original_sha256": "96d198f16097c9543e30481d6616b3bb0b3a3cfff53a98fe5b1a7fa4b5e2b2cb",
+   "path": "OAI/Computability/DepthThree/CircuitDeletion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/CircuitDensity.lean"
+   },
+   "module": "OAI.Computability.DepthThree.CircuitDensity",
+   "original_sha256": "92ff4ab1ba3ff3a8fe0f7cb45ea19f08b3bcdda6effdc93efee08db49b2219c5",
+   "path": "OAI/Computability/DepthThree/CircuitDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/CircuitLowerBound.lean"
+   },
+   "module": "OAI.Computability.DepthThree.CircuitLowerBound",
+   "original_sha256": "42cd84b9bb7c98c33e2c60fff4a9fa003c8b905fb2591ddfd4aef07e63ed95a9",
+   "path": "OAI/Computability/DepthThree/CircuitLowerBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/CircuitNormalization.lean"
+   },
+   "module": "OAI.Computability.DepthThree.CircuitNormalization",
+   "original_sha256": "b7788a30500f98a2b7fcbdfe3bc06d5e632deb3f9ed63cdbdb2de4d4d84ba2e6",
+   "path": "OAI/Computability/DepthThree/CircuitNormalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/CircuitQuantitative.lean"
+   },
+   "module": "OAI.Computability.DepthThree.CircuitQuantitative",
+   "original_sha256": "b743d54d04bac3f7ea6b290225c099ce096287cc1c77a709998dc448d4ab4212",
+   "path": "OAI/Computability/DepthThree/CircuitQuantitative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/Core.lean"
+   },
+   "module": "OAI.Computability.DepthThree.Core",
+   "original_sha256": "f890618a13d63eb3d877d3f1cb82dd9f95e9bcddaf7fcf6c694a309ed5c9c71c",
+   "path": "OAI/Computability/DepthThree/Core.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/CorrelationTransfer.lean"
+   },
+   "module": "OAI.Computability.DepthThree.CorrelationTransfer",
+   "original_sha256": "df3f9f1e9928088e6b674d953839507a2ef3cf25b1d28204d1a7be7fa7b94996",
+   "path": "OAI/Computability/DepthThree/CorrelationTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/CylinderProbability.lean"
+   },
+   "module": "OAI.Computability.DepthThree.CylinderProbability",
+   "original_sha256": "c54d4fc18cc3510ebcb3baed2e806f1d4fa2aaa41b66972662534c5a6ddccfa4",
+   "path": "OAI/Computability/DepthThree/CylinderProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/Entropy.lean"
+   },
+   "module": "OAI.Computability.DepthThree.Entropy",
+   "original_sha256": "a3c98bb404a91e0f4569cabae4b0c617dc4241b8271a20138d43f97a443285b1",
+   "path": "OAI/Computability/DepthThree/Entropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/EntropyBits.lean"
+   },
+   "module": "OAI.Computability.DepthThree.EntropyBits",
+   "original_sha256": "0ae81ebe5bd385dc6f0cb8e1e3261980bce70183ed180a63e5d01de685f43592",
+   "path": "OAI/Computability/DepthThree/EntropyBits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/EntropyThreshold.lean"
+   },
+   "module": "OAI.Computability.DepthThree.EntropyThreshold",
+   "original_sha256": "cf2cfaf7b4e3ea771f4d3a55dae5d79c470c8c1de0d89bf2ee17a36dcd4f2a8a",
+   "path": "OAI/Computability/DepthThree/EntropyThreshold.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/FinalParameterBounds.lean"
+   },
+   "module": "OAI.Computability.DepthThree.FinalParameterBounds",
+   "original_sha256": "6c4c2ef6e8c1d4239636775c27085a6f61c154c6566c353811262e97563684bc",
+   "path": "OAI/Computability/DepthThree/FinalParameterBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/FiniteProbability.lean"
+   },
+   "module": "OAI.Computability.DepthThree.FiniteProbability",
+   "original_sha256": "18a4c0688c6c4054275edf2c6f5529ab7869d12316d85a75964e29df2d3e1d74",
+   "path": "OAI/Computability/DepthThree/FiniteProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/FiniteProbabilityBounds.lean"
+   },
+   "module": "OAI.Computability.DepthThree.FiniteProbabilityBounds",
+   "original_sha256": "77a31db61377e1310752b7fa8490046acae6c18e709a8bb44c74b9f5fca8dbb7",
+   "path": "OAI/Computability/DepthThree/FiniteProbabilityBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/HardSlice.lean"
+   },
+   "module": "OAI.Computability.DepthThree.HardSlice",
+   "original_sha256": "976ba8637ed880b292c84efe0985691af934faf48c2f802572666a8469fd2482",
+   "path": "OAI/Computability/DepthThree/HardSlice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/HardSliceEventual.lean"
+   },
+   "module": "OAI.Computability.DepthThree.HardSliceEventual",
+   "original_sha256": "7913049a72cd0239bfc1b285002c95a09f6ab173faea90e3509cfccc23b4cca2",
+   "path": "OAI/Computability/DepthThree/HardSliceEventual.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/HardSliceExistence.lean"
+   },
+   "module": "OAI.Computability.DepthThree.HardSliceExistence",
+   "original_sha256": "48d224c418e6ae9b814db21c2aa707e834c8f893d83d43341ae911160812467e",
+   "path": "OAI/Computability/DepthThree/HardSliceExistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/HardSliceMoment.lean"
+   },
+   "module": "OAI.Computability.DepthThree.HardSliceMoment",
+   "original_sha256": "cf335ae48500df6b5d362ec857dcb4216ffc8e93af97961206f11a0e5814df02",
+   "path": "OAI/Computability/DepthThree/HardSliceMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/HardSliceParameters.lean"
+   },
+   "module": "OAI.Computability.DepthThree.HardSliceParameters",
+   "original_sha256": "95112d3e173bf48e6a0ff9d17c466bec21bedfdb3fd2bcaf5e98f5a65e62bfa5",
+   "path": "OAI/Computability/DepthThree/HardSliceParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/HardSliceProbability.lean"
+   },
+   "module": "OAI.Computability.DepthThree.HardSliceProbability",
+   "original_sha256": "b108ceaf910efab63c44e97bc3a663de0ab4ced810eeac89f1a2ad3845cc294b",
+   "path": "OAI/Computability/DepthThree/HardSliceProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/HardSliceSelection.lean"
+   },
+   "module": "OAI.Computability.DepthThree.HardSliceSelection",
+   "original_sha256": "4108195e0c1d7186c8524acff353ff68008bf3a3c632b212266154bf621e89e2",
+   "path": "OAI/Computability/DepthThree/HardSliceSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/Hash.lean"
+   },
+   "module": "OAI.Computability.DepthThree.Hash",
+   "original_sha256": "10c5920044bb1f44ec36e6337a8e6b4edf0cbab8ef4cf8165a10a034a9812319",
+   "path": "OAI/Computability/DepthThree/Hash.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/HashAffine.lean"
+   },
+   "module": "OAI.Computability.DepthThree.HashAffine",
+   "original_sha256": "322ccfd255731d485ffb51cde0f9ef5ce2aa4d40b4bf2a81dad928d5391b1761",
+   "path": "OAI/Computability/DepthThree/HashAffine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/HashBool.lean"
+   },
+   "module": "OAI.Computability.DepthThree.HashBool",
+   "original_sha256": "8ee4a9d1bc26c79eb4c9810e6b5c2d3599a9ad0f535f4c81062f97f04d5fa630",
+   "path": "OAI/Computability/DepthThree/HashBool.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/HashFibers.lean"
+   },
+   "module": "OAI.Computability.DepthThree.HashFibers",
+   "original_sha256": "2e99ddf1b6b9e7a1616c7d8ceab3487e1d28cebacefaf5e3a9c8fc495c292a51",
+   "path": "OAI/Computability/DepthThree/HashFibers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/HashProbability.lean"
+   },
+   "module": "OAI.Computability.DepthThree.HashProbability",
+   "original_sha256": "2d225195633269a3c5b589c461c1703a12ceaa9ce93129fdaa5ca3c3a6ae8378",
+   "path": "OAI/Computability/DepthThree/HashProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/HashTriangular.lean"
+   },
+   "module": "OAI.Computability.DepthThree.HashTriangular",
+   "original_sha256": "f6befab7c9ac6ac18e7a1e4bd60c2435b4db17ada6898b2d0d5806f4618f5811",
+   "path": "OAI/Computability/DepthThree/HashTriangular.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/InterpolationEvaluation.lean"
+   },
+   "module": "OAI.Computability.DepthThree.InterpolationEvaluation",
+   "original_sha256": "f8f61574b15964b29842d172daba28e52175a95347f01ba12b5945e7d2ee9ed2",
+   "path": "OAI/Computability/DepthThree/InterpolationEvaluation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/InterpolationQuotient.lean"
+   },
+   "module": "OAI.Computability.DepthThree.InterpolationQuotient",
+   "original_sha256": "f7c6ff63d2b3ff4a52b19c084b6d2e12cf49f296ad81a6243d2170d5ccda1bab",
+   "path": "OAI/Computability/DepthThree/InterpolationQuotient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/InterpolationSigns.lean"
+   },
+   "module": "OAI.Computability.DepthThree.InterpolationSigns",
+   "original_sha256": "63cf61f44f7988cafa9454df7ae9230fe98772490babe298a0cd586ec72e5a80",
+   "path": "OAI/Computability/DepthThree/InterpolationSigns.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/IrreducibleEncoding.lean"
+   },
+   "module": "OAI.Computability.DepthThree.IrreducibleEncoding",
+   "original_sha256": "e177e15cfb1f7ecc59903dd0461eee83d72bbb112fc148d10905fcd918e1c0c4",
+   "path": "OAI/Computability/DepthThree/IrreducibleEncoding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/IrreduciblePolynomial.lean"
+   },
+   "module": "OAI.Computability.DepthThree.IrreduciblePolynomial",
+   "original_sha256": "51dd823ae055e2e4920eac878b211806b0175c306d44cb864a9e18e5007728c2",
+   "path": "OAI/Computability/DepthThree/IrreduciblePolynomial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/Language.lean"
+   },
+   "module": "OAI.Computability.DepthThree.Language",
+   "original_sha256": "6758d4b8e91a3c0d2df713430dc2b61046e5885ed5880095e8df7bd9d188cc5e",
+   "path": "OAI/Computability/DepthThree/Language.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/LanguageBitArithmetic.lean"
+   },
+   "module": "OAI.Computability.DepthThree.LanguageBitArithmetic",
+   "original_sha256": "08eed50d883752998ad610007be6064fbd4402e6a3846d50f2a8646cb8da5c3f",
+   "path": "OAI/Computability/DepthThree/LanguageBitArithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/LanguageBitConvolution.lean"
+   },
+   "module": "OAI.Computability.DepthThree.LanguageBitConvolution",
+   "original_sha256": "c41ec9861767694bd68dd9c77f255735a8a62fb14bf2b3ceeabaad99e5d158a7",
+   "path": "OAI/Computability/DepthThree/LanguageBitConvolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/LanguageBitConvolutionUpdates.lean"
+   },
+   "module": "OAI.Computability.DepthThree.LanguageBitConvolutionUpdates",
+   "original_sha256": "a24c065231123f456b9401ff8badae54a939e49b56c770364f8a578eddfdff7b",
+   "path": "OAI/Computability/DepthThree/LanguageBitConvolutionUpdates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/LanguageBitEvaluator.lean"
+   },
+   "module": "OAI.Computability.DepthThree.LanguageBitEvaluator",
+   "original_sha256": "40012740b221a957630ee3eaf8a78f9149dd94ef73342696d9a448dd99295301",
+   "path": "OAI/Computability/DepthThree/LanguageBitEvaluator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/LanguageBitHashUpdates.lean"
+   },
+   "module": "OAI.Computability.DepthThree.LanguageBitHashUpdates",
+   "original_sha256": "8fa53097863a07fc24c352323951b0a22c62834633e10d83d2dcdfc1f92f69ad",
+   "path": "OAI/Computability/DepthThree/LanguageBitHashUpdates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/LanguageBitHornerLoop.lean"
+   },
+   "module": "OAI.Computability.DepthThree.LanguageBitHornerLoop",
+   "original_sha256": "4c6fdf5b56b248ba044ef6d1da217774354d5ca80766b5fc5185bac5b8bfab1e",
+   "path": "OAI/Computability/DepthThree/LanguageBitHornerLoop.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/LanguageBitLoopInvariants.lean"
+   },
+   "module": "OAI.Computability.DepthThree.LanguageBitLoopInvariants",
+   "original_sha256": "fe7a00ed35f8669e8d80bf68b6b814b8a5e0707d78c633871233e8490c69414d",
+   "path": "OAI/Computability/DepthThree/LanguageBitLoopInvariants.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/LanguageBitReductionLoop.lean"
+   },
+   "module": "OAI.Computability.DepthThree.LanguageBitReductionLoop",
+   "original_sha256": "8349d992bbd1162ca319c21e84185bfa760091c39ee1b1cdcf89f5c700bae656",
+   "path": "OAI/Computability/DepthThree/LanguageBitReductionLoop.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/LanguageBitWord.lean"
+   },
+   "module": "OAI.Computability.DepthThree.LanguageBitWord",
+   "original_sha256": "83aab8db19ded7aa3c28a69ede8b5747cef5ce8854fc5ac177d98692edf12297",
+   "path": "OAI/Computability/DepthThree/LanguageBitWord.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/LanguageInputBlockLists.lean"
+   },
+   "module": "OAI.Computability.DepthThree.LanguageInputBlockLists",
+   "original_sha256": "a30e66498a9b086c7c59bf2608b6379fa9b4597cb6056e04053e0b6061b05aee",
+   "path": "OAI/Computability/DepthThree/LanguageInputBlockLists.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/LanguageInputBlockWords.lean"
+   },
+   "module": "OAI.Computability.DepthThree.LanguageInputBlockWords",
+   "original_sha256": "63173c443b87271ec68c0fb46715a5b5f2f660d7774020cc0dc1a4df83aa4252",
+   "path": "OAI/Computability/DepthThree/LanguageInputBlockWords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/LanguageLowerBound.lean"
+   },
+   "module": "OAI.Computability.DepthThree.LanguageLowerBound",
+   "original_sha256": "609a914c181515d77e535ca486a5839d1253300ee27dad18d41edc5aa4a88ca1",
+   "path": "OAI/Computability/DepthThree/LanguageLowerBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/LanguageParameterBounds.lean"
+   },
+   "module": "OAI.Computability.DepthThree.LanguageParameterBounds",
+   "original_sha256": "6abc124d663e4f1a618a22886c566de60af56b6e85bd79ec58f6e0b8c01ffc65",
+   "path": "OAI/Computability/DepthThree/LanguageParameterBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/LanguageParameters.lean"
+   },
+   "module": "OAI.Computability.DepthThree.LanguageParameters",
+   "original_sha256": "6d4a2fb179e52d836e44b83934fd8393d6e296eea0685707674b983610fbc971",
+   "path": "OAI/Computability/DepthThree/LanguageParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/LanguageParser.lean"
+   },
+   "module": "OAI.Computability.DepthThree.LanguageParser",
+   "original_sha256": "04c1a3b715727fd9eae9fc5a3fd5b828d0a939f2251f7bece6ab904a367294ad",
+   "path": "OAI/Computability/DepthThree/LanguageParser.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/LanguageSearchTests.lean"
+   },
+   "module": "OAI.Computability.DepthThree.LanguageSearchTests",
+   "original_sha256": "128f74df29118123d58276d6df992db54f5955ac4ddd46bb995a6b665053c409",
+   "path": "OAI/Computability/DepthThree/LanguageSearchTests.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/LanguageSlice.lean"
+   },
+   "module": "OAI.Computability.DepthThree.LanguageSlice",
+   "original_sha256": "1cf9a25118385eb81fe2d34bec7aee6ce094c170fcdad190712b6340426c5937",
+   "path": "OAI/Computability/DepthThree/LanguageSlice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/MachineBasic.lean"
+   },
+   "module": "OAI.Computability.DepthThree.MachineBasic",
+   "original_sha256": "423851de28f8d5ef0c568690c68d9f27d5c67b61f9dbdea87071d97be08b83bd",
+   "path": "OAI/Computability/DepthThree/MachineBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/MachineLanguage.lean"
+   },
+   "module": "OAI.Computability.DepthThree.MachineLanguage",
+   "original_sha256": "1dd00b0c2b9552177a82c2679b2dd9db947099ad79eedbe26dbedd1b72a0d969",
+   "path": "OAI/Computability/DepthThree/MachineLanguage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/Main.lean"
+   },
+   "module": "OAI.Computability.DepthThree.Main",
+   "original_sha256": "18fdab27f1f3df8f99389b1d6ac0ce3aac2644d5fd1ea585ee536a87bebbdd3a",
+   "path": "OAI/Computability/DepthThree/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/MarkerMixture.lean"
+   },
+   "module": "OAI.Computability.DepthThree.MarkerMixture",
+   "original_sha256": "77108730a393c87588ecce7cd00a9e7921230227d288e624d4ddc11ad17ef4c6",
+   "path": "OAI/Computability/DepthThree/MarkerMixture.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/MarkerPermutation.lean"
+   },
+   "module": "OAI.Computability.DepthThree.MarkerPermutation",
+   "original_sha256": "5de43017d57c1f809f8314895f25ef164e6f779912c6bb598ea4055b57709084",
+   "path": "OAI/Computability/DepthThree/MarkerPermutation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/Model.lean"
+   },
+   "module": "OAI.Computability.DepthThree.Model",
+   "original_sha256": "fad164c05abdada63efb6b3c5b310a2b141568e0727dd9bcaf0df94ccaa4ce07",
+   "path": "OAI/Computability/DepthThree/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/MomentBounds.lean"
+   },
+   "module": "OAI.Computability.DepthThree.MomentBounds",
+   "original_sha256": "e7d9d064d76c05a3de1e8a7dfebfd7b6d607433484ba0b6dedd419b6b23a2722",
+   "path": "OAI/Computability/DepthThree/MomentBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/MultiTapeMachine.lean"
+   },
+   "module": "OAI.Computability.DepthThree.MultiTapeMachine",
+   "original_sha256": "afb6dcbe6a327b59dceba719de6dab0be5c37e9879d45d36f20becf8b7bf49aa",
+   "path": "OAI/Computability/DepthThree/MultiTapeMachine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/Restriction.lean"
+   },
+   "module": "OAI.Computability.DepthThree.Restriction",
+   "original_sha256": "d2325932dc29ba796f336b0d34d676ae352883da37572c3eafeac8a87e217bc8",
+   "path": "OAI/Computability/DepthThree/Restriction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/RestrictionClause.lean"
+   },
+   "module": "OAI.Computability.DepthThree.RestrictionClause",
+   "original_sha256": "8ec0a314eecf64f87e833156b361328f51f7c63aa18ada08339e99748f30448d",
+   "path": "OAI/Computability/DepthThree/RestrictionClause.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/RestrictionCorrelation.lean"
+   },
+   "module": "OAI.Computability.DepthThree.RestrictionCorrelation",
+   "original_sha256": "e8c02357d0480ae638ea1e9528daf4060d016db71791f0fc5bfaf03fb4c80232",
+   "path": "OAI/Computability/DepthThree/RestrictionCorrelation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/RestrictionCostCorrelation.lean"
+   },
+   "module": "OAI.Computability.DepthThree.RestrictionCostCorrelation",
+   "original_sha256": "16168339a83f8a880086fa264250e5cf764350e63320afd69f5e30778bf9aea1",
+   "path": "OAI/Computability/DepthThree/RestrictionCostCorrelation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/RestrictionCountSplit.lean"
+   },
+   "module": "OAI.Computability.DepthThree.RestrictionCountSplit",
+   "original_sha256": "91e160737bc64196b6cf18e4e058025739607f8d286fbf66f8f5963c6f6a9e79",
+   "path": "OAI/Computability/DepthThree/RestrictionCountSplit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/RestrictionCylinders.lean"
+   },
+   "module": "OAI.Computability.DepthThree.RestrictionCylinders",
+   "original_sha256": "6b5cfb57f3439292e22e8b3f57c579c4df4449841b3bf10dd5248b2925d33a1c",
+   "path": "OAI/Computability/DepthThree/RestrictionCylinders.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/RestrictionEasyBase.lean"
+   },
+   "module": "OAI.Computability.DepthThree.RestrictionEasyBase",
+   "original_sha256": "942ca535038730783366e321f1c5b7be60979aad9e3c7bea53ef7626cc47bfe1",
+   "path": "OAI/Computability/DepthThree/RestrictionEasyBase.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/RestrictionExpansion.lean"
+   },
+   "module": "OAI.Computability.DepthThree.RestrictionExpansion",
+   "original_sha256": "a2fb55a88635881ae6a6ff7a3a716b73d86ecd4fcb0dbc880f44fbec375070a6",
+   "path": "OAI/Computability/DepthThree/RestrictionExpansion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/RestrictionExpectedCost.lean"
+   },
+   "module": "OAI.Computability.DepthThree.RestrictionExpectedCost",
+   "original_sha256": "157a80a4ee7edad3dda4538f2d2b26453604cf3490f0594a01743b1593c64fb5",
+   "path": "OAI/Computability/DepthThree/RestrictionExpectedCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/RestrictionKeepClause.lean"
+   },
+   "module": "OAI.Computability.DepthThree.RestrictionKeepClause",
+   "original_sha256": "de4e65e0850710dec5d1e3c0b2f4611ecae0b21b28c35aeeb0d755d9a2a1e601",
+   "path": "OAI/Computability/DepthThree/RestrictionKeepClause.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/RestrictionMarkerCNF.lean"
+   },
+   "module": "OAI.Computability.DepthThree.RestrictionMarkerCNF",
+   "original_sha256": "f0d0ecd87657c41a4fb22393158e03e47f0899e350f69c7e9bce7f1b17a55e43",
+   "path": "OAI/Computability/DepthThree/RestrictionMarkerCNF.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/RestrictionNormalization.lean"
+   },
+   "module": "OAI.Computability.DepthThree.RestrictionNormalization",
+   "original_sha256": "6e396fe2a94810144085bdf29f7068a698b21f85b3174e38b9a1204270eb1166",
+   "path": "OAI/Computability/DepthThree/RestrictionNormalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/RestrictionPathData.lean"
+   },
+   "module": "OAI.Computability.DepthThree.RestrictionPathData",
+   "original_sha256": "59fa61db4165f81da7f961fb4a57633fc9ec4fe0d01a5c7626c0693982b41b9c",
+   "path": "OAI/Computability/DepthThree/RestrictionPathData.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/RestrictionPathMixture.lean"
+   },
+   "module": "OAI.Computability.DepthThree.RestrictionPathMixture",
+   "original_sha256": "0e2eae7b8e21de03773019679d6f716489b042dedc063c3296a71edefe218914",
+   "path": "OAI/Computability/DepthThree/RestrictionPathMixture.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/RestrictionPathProducts.lean"
+   },
+   "module": "OAI.Computability.DepthThree.RestrictionPathProducts",
+   "original_sha256": "9659c19b12f592a4e6ac3e5ceda9d47e298723d6d91c39828d8607e72ac30571",
+   "path": "OAI/Computability/DepthThree/RestrictionPathProducts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/RestrictionPaths.lean"
+   },
+   "module": "OAI.Computability.DepthThree.RestrictionPaths",
+   "original_sha256": "1d3391557030499ebae657e212f6f573808906b0099017ee7ed53b0079ae19fb",
+   "path": "OAI/Computability/DepthThree/RestrictionPaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/RestrictionProbability.lean"
+   },
+   "module": "OAI.Computability.DepthThree.RestrictionProbability",
+   "original_sha256": "f564c5d39dd83f1687bf0cb221ed96d9dfacb13ed5221dd641903c6235118f0c",
+   "path": "OAI/Computability/DepthThree/RestrictionProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/RestrictionTails.lean"
+   },
+   "module": "OAI.Computability.DepthThree.RestrictionTails",
+   "original_sha256": "22a1919dc3bab2c380a7ce2ba1df0f0b5422e45163e7344cbaad8ed90910a95a",
+   "path": "OAI/Computability/DepthThree/RestrictionTails.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/ReversePathEncoding.lean"
+   },
+   "module": "OAI.Computability.DepthThree.ReversePathEncoding",
+   "original_sha256": "e4384a0912600697ae0f8fa99475dbd1ade6459f8f739f46531ae6b07eef8f0b",
+   "path": "OAI/Computability/DepthThree/ReversePathEncoding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/ReversePathRecurrence.lean"
+   },
+   "module": "OAI.Computability.DepthThree.ReversePathRecurrence",
+   "original_sha256": "d76e3e485372cd075d3ce6fd37c5f2bd102a52471432f0a2dd75b229dc17d432",
+   "path": "OAI/Computability/DepthThree/ReversePathRecurrence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/ReversePathWeights.lean"
+   },
+   "module": "OAI.Computability.DepthThree.ReversePathWeights",
+   "original_sha256": "fd0507b79925c0a824524646521a9630bbb7ef47f830be462fd186ea3f785a98",
+   "path": "OAI/Computability/DepthThree/ReversePathWeights.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/SparseBranch.lean"
+   },
+   "module": "OAI.Computability.DepthThree.SparseBranch",
+   "original_sha256": "b77f3c815843e5a0a7980e804f5029cc50eee1ec57068ca893729b217a743315",
+   "path": "OAI/Computability/DepthThree/SparseBranch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/SparseCorrelation.lean"
+   },
+   "module": "OAI.Computability.DepthThree.SparseCorrelation",
+   "original_sha256": "a3ac7545a1e0128380602e155de8066f6449fe2822357b19ef7e225106227dbf",
+   "path": "OAI/Computability/DepthThree/SparseCorrelation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/SparseCounting.lean"
+   },
+   "module": "OAI.Computability.DepthThree.SparseCounting",
+   "original_sha256": "1fe27b498803d108becdc1283355d50a0d05fb1669c37eeb0a01b2e9b4241e34",
+   "path": "OAI/Computability/DepthThree/SparseCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/SparseFiniteFamily.lean"
+   },
+   "module": "OAI.Computability.DepthThree.SparseFiniteFamily",
+   "original_sha256": "7c0f3663a3ec19f4f5832fda1d24785c6670338a0eeb4b82eb0bc2ef30f7ce29",
+   "path": "OAI/Computability/DepthThree/SparseFiniteFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/SparseLeafCNF.lean"
+   },
+   "module": "OAI.Computability.DepthThree.SparseLeafCNF",
+   "original_sha256": "696071be45aad98b28b74cc2731063596e84bbb61ac19e7bd0ca1f0c602c6e4f",
+   "path": "OAI/Computability/DepthThree/SparseLeafCNF.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/SparseLeafCount.lean"
+   },
+   "module": "OAI.Computability.DepthThree.SparseLeafCount",
+   "original_sha256": "b6a4f506695140b950db3d62f0acd8e3e2e8c48480b8ca8d3dfc874ade517ec3",
+   "path": "OAI/Computability/DepthThree/SparseLeafCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/SparseNormalize.lean"
+   },
+   "module": "OAI.Computability.DepthThree.SparseNormalize",
+   "original_sha256": "0593369d858d6b2eecb73cb4c033ef178815cb756e6a6f0c4879c004b4c64e41",
+   "path": "OAI/Computability/DepthThree/SparseNormalize.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/SparsePartition.lean"
+   },
+   "module": "OAI.Computability.DepthThree.SparsePartition",
+   "original_sha256": "2b4ee8962e44b9e85cc9ee9eb5dd92dfabed12d7e66cb1deabbfe3c0a284e839",
+   "path": "OAI/Computability/DepthThree/SparsePartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/SparsePrefix.lean"
+   },
+   "module": "OAI.Computability.DepthThree.SparsePrefix",
+   "original_sha256": "6ffe930768cb8354daf9e13991f2e98282b94479c20aba3cbda2d3066580e914",
+   "path": "OAI/Computability/DepthThree/SparsePrefix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/SparseStreams.lean"
+   },
+   "module": "OAI.Computability.DepthThree.SparseStreams",
+   "original_sha256": "c266fe4d7a32fdce443dcc5b8410fa9794124dcdf7b695d37bb0a11d697a60e7",
+   "path": "OAI/Computability/DepthThree/SparseStreams.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/SparseTailBounds.lean"
+   },
+   "module": "OAI.Computability.DepthThree.SparseTailBounds",
+   "original_sha256": "79767e49f998a9130282e4f0bedb3c99a88c11557a7b7e00ab325ff0aa00efb1",
+   "path": "OAI/Computability/DepthThree/SparseTailBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/SparseTestCodes.lean"
+   },
+   "module": "OAI.Computability.DepthThree.SparseTestCodes",
+   "original_sha256": "9f186674c12299fd4a23ee1a5565dc924c457d7b02500fe8c822dbecf1e9e1f0",
+   "path": "OAI/Computability/DepthThree/SparseTestCodes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/SparseThresholds.lean"
+   },
+   "module": "OAI.Computability.DepthThree.SparseThresholds",
+   "original_sha256": "4f9e3d328ce66e8f0e9dda72af5ab25d9c840d5124fe58562d92322a894105a2",
+   "path": "OAI/Computability/DepthThree/SparseThresholds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/SparseTree.lean"
+   },
+   "module": "OAI.Computability.DepthThree.SparseTree",
+   "original_sha256": "052a4a85a0889ef6e9f3e04883b60f0261cf933aed1cf089b5b57b359a16568b",
+   "path": "OAI/Computability/DepthThree/SparseTree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/Sunflower.lean"
+   },
+   "module": "OAI.Computability.DepthThree.Sunflower",
+   "original_sha256": "870baed4a6d40c0fc525c039fb80885b99c9ebe9a019a9a43322e8c1b2e57d5b",
+   "path": "OAI/Computability/DepthThree/Sunflower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeArithmetic.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeArithmetic",
+   "original_sha256": "c3dbf62540ce00bf9f31a2a07aa146ba5ce6d536101f157f67e8e41daa09e02b",
+   "path": "OAI/Computability/DepthThree/TapeArithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeArray.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeArray",
+   "original_sha256": "060d1d627af2fb1ca40e6e2ebfd755b3ee239a4b0f5a777f94b27fd8ec7da2a9",
+   "path": "OAI/Computability/DepthThree/TapeArray.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeBranch.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeBranch",
+   "original_sha256": "c37ca6048df26029fa9eefb61da6c3635606af8e93ed4d766446cfc79bb4907f",
+   "path": "OAI/Computability/DepthThree/TapeBranch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeCancel.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeCancel",
+   "original_sha256": "544f39a15b31965f5c87edd9a0413c5d32bbad3e2441e1fcaa0444fb342b53da",
+   "path": "OAI/Computability/DepthThree/TapeCancel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeCancelRow.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeCancelRow",
+   "original_sha256": "f56dcbeeafa6074e6ebefb92b077c4f6eaf79d0fce3db8aaf0171b3af29459dd",
+   "path": "OAI/Computability/DepthThree/TapeCancelRow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeCancelStep.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeCancelStep",
+   "original_sha256": "854df905a30faf1f44d820f578d8aa4b24a51d0c0e7f5344e20d5220260df10c",
+   "path": "OAI/Computability/DepthThree/TapeCancelStep.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeConvolutionPrepare.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeConvolutionPrepare",
+   "original_sha256": "4b1c029b7dbd729e178de00209ee5b8db9ad3627a010574447987b8732d92661",
+   "path": "OAI/Computability/DepthThree/TapeConvolutionPrepare.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeConvolutionRow.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeConvolutionRow",
+   "original_sha256": "0c716690bff038b4fc818dd027caba850b09ac76ad406064022774c3904e7731",
+   "path": "OAI/Computability/DepthThree/TapeConvolutionRow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeConvolutionRows.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeConvolutionRows",
+   "original_sha256": "be9784e556be8638633091a9c520a983e862f8f0d97bc25a2cb11caebf01ab88",
+   "path": "OAI/Computability/DepthThree/TapeConvolutionRows.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeConvolutionStep.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeConvolutionStep",
+   "original_sha256": "c352ad404227f202f0fd4f14b125fc46dab923e7d47882adbb77736f7c333994",
+   "path": "OAI/Computability/DepthThree/TapeConvolutionStep.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeConvolve.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeConvolve",
+   "original_sha256": "58db96d697efac7419a4a3d1a9c445d6c6e71496c89da55ef581c3506e8d7d74",
+   "path": "OAI/Computability/DepthThree/TapeConvolve.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeCopy.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeCopy",
+   "original_sha256": "17e18cc2f7f76f95085553f42a86eab736efdb5a2686e5344f4aa7ac74e4c7dc",
+   "path": "OAI/Computability/DepthThree/TapeCopy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeCopyAdd.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeCopyAdd",
+   "original_sha256": "58afebc1c231ae8a3272320eac3892f432a83f5aad49b97e3f07a126157a27ff",
+   "path": "OAI/Computability/DepthThree/TapeCopyAdd.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeDecodeBlock.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeDecodeBlock",
+   "original_sha256": "bf9eea71034c3f9a71f18fcc19e918c26f1d8ee3a39a7549e805717d509f8ec1",
+   "path": "OAI/Computability/DepthThree/TapeDecodeBlock.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeDecodeBlocks.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeDecodeBlocks",
+   "original_sha256": "22ace0e5235ef1ab509b9870d165bfe63a018e702778101696a717f243ae1f83",
+   "path": "OAI/Computability/DepthThree/TapeDecodeBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeDecodeParsed.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeDecodeParsed",
+   "original_sha256": "a0ae85d8f34c8a66b6bca397cf409bcc899cf9bd14ccfdf509807187d3e62631",
+   "path": "OAI/Computability/DepthThree/TapeDecodeParsed.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeDivideFive.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeDivideFive",
+   "original_sha256": "e3b5fb016370447ead0bcdc03149ec4b700542b29591990784261aecff3ce42c",
+   "path": "OAI/Computability/DepthThree/TapeDivideFive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeEncoding.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeEncoding",
+   "original_sha256": "eec5877f78e7d017c9826895338c26c7b038384fc6e594051946e4633a0adcb0",
+   "path": "OAI/Computability/DepthThree/TapeEncoding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeErase.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeErase",
+   "original_sha256": "721ee802e3f978bf428e12339f0914216598a0a001b7910c9fcf7fc0efa4210e",
+   "path": "OAI/Computability/DepthThree/TapeErase.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeEvaluation.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeEvaluation",
+   "original_sha256": "da2efccc1188204e7e41b0b03eef0ea955dbc7f5bf36485df6adfb9c2a723936",
+   "path": "OAI/Computability/DepthThree/TapeEvaluation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeFill.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeFill",
+   "original_sha256": "7cebf3b40b209cc626bbf62165e069ea229556d685e5995a60451a2fac8ea636",
+   "path": "OAI/Computability/DepthThree/TapeFill.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeForLoop.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeForLoop",
+   "original_sha256": "d43170a43e27387a155b73c9cafe3c54f1a6928c3ebdf7fce8524f761c591717",
+   "path": "OAI/Computability/DepthThree/TapeForLoop.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeHash.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeHash",
+   "original_sha256": "e593674a33bede35b222e4354ef3c0329a720bb43254c3a985dfb3a45144d974",
+   "path": "OAI/Computability/DepthThree/TapeHash.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeHashClean.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeHashClean",
+   "original_sha256": "abe10bd6f6b37e4fcb97fba7c29ccb62fd319528930b5668c84100d07aafe486",
+   "path": "OAI/Computability/DepthThree/TapeHashClean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeHashInitialize.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeHashInitialize",
+   "original_sha256": "e3b7087b7e5a9dc9633838f1ca53fd48fa529cb6046f3fa1d4bac1ec5a253330",
+   "path": "OAI/Computability/DepthThree/TapeHashInitialize.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeHashInner.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeHashInner",
+   "original_sha256": "3673d4468dbbb2e3b7185fc88f58972677a9f61bd22569c0b303120ef7488f39",
+   "path": "OAI/Computability/DepthThree/TapeHashInner.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeHashOuter.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeHashOuter",
+   "original_sha256": "85685cfa3ebfd54545cfccc85eb62f4d986d14d29b3cd13465dc0d1a30189c75",
+   "path": "OAI/Computability/DepthThree/TapeHashOuter.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeHashRow.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeHashRow",
+   "original_sha256": "286f7e9c0d28a21f9b7f36614a964074a131afb713b9d52281c37d998f205d47",
+   "path": "OAI/Computability/DepthThree/TapeHashRow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeHashStep.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeHashStep",
+   "original_sha256": "94a8f0f8766b46c4c54bbf4557ebbff0640cf1eaa0cd46b69b6281823ade58de",
+   "path": "OAI/Computability/DepthThree/TapeHashStep.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeHorner.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeHorner",
+   "original_sha256": "80ebc437ea66c4ea95825b5acff5bfa63b15ad200ed4fba18c9add8b7c776591",
+   "path": "OAI/Computability/DepthThree/TapeHorner.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeHornerBody.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeHornerBody",
+   "original_sha256": "4be38fabd9acdcc301ddf8050e8c6d3adcd3fa516be0fd42ee1f7c73213f4c2b",
+   "path": "OAI/Computability/DepthThree/TapeHornerBody.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeHornerExtract.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeHornerExtract",
+   "original_sha256": "e79a44bc17d173b390255c79dc3005522be07f1f115fdd107163babccb215f71",
+   "path": "OAI/Computability/DepthThree/TapeHornerExtract.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeHornerLoop.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeHornerLoop",
+   "original_sha256": "421f76a819201a27b9cd4b809d8a5dfc506244001114c724d1ce1e2a067556d2",
+   "path": "OAI/Computability/DepthThree/TapeHornerLoop.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeHornerMultiply.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeHornerMultiply",
+   "original_sha256": "9cf47e7455501d8c07c0391777019b3e9d161abccfb7949a778c68fe9f4a10f1",
+   "path": "OAI/Computability/DepthThree/TapeHornerMultiply.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeHornerPrepare.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeHornerPrepare",
+   "original_sha256": "a79059d532686dad58c9e2bd4f24f5b279ce385b1f2d1d18b524cbb709f33abd",
+   "path": "OAI/Computability/DepthThree/TapeHornerPrepare.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeHornerTake.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeHornerTake",
+   "original_sha256": "1ccc460d490d5db8066b69b0618e6fddbfcab2c1bbd79546923f313af3b6f7ab",
+   "path": "OAI/Computability/DepthThree/TapeHornerTake.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeInitialization.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeInitialization",
+   "original_sha256": "5230eaf0fab20679b243ef854a71164d383a7fa79e00f3bced36e30e9282f392",
+   "path": "OAI/Computability/DepthThree/TapeInitialization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeInputBlockLoop.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeInputBlockLoop",
+   "original_sha256": "af733ff880349a8f062b17ba1f0c647662209c29e35584e21b69d558256d8b89",
+   "path": "OAI/Computability/DepthThree/TapeInputBlockLoop.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeInputBlocks.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeInputBlocks",
+   "original_sha256": "c1cea79ed7eb8a95350b3932b51500deb16061e40a04bce2881edc2d1f7a10dc",
+   "path": "OAI/Computability/DepthThree/TapeInputBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeInputGuard.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeInputGuard",
+   "original_sha256": "c0357f091f65f273cc1b1b3471b44dda6612d5e57d6c768abd03f88a862ea859",
+   "path": "OAI/Computability/DepthThree/TapeInputGuard.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeInputGuardLength.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeInputGuardLength",
+   "original_sha256": "c7569280c740ca0ffd7b4b02a36c3de791167577893cbc0b06fea668238e4816",
+   "path": "OAI/Computability/DepthThree/TapeInputGuardLength.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeInputPrepare.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeInputPrepare",
+   "original_sha256": "ea16486b03f8979f820fc91068f91500216f46ab2f1dd3d680b45c0049d10574",
+   "path": "OAI/Computability/DepthThree/TapeInputPrepare.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeMultiProgram.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeMultiProgram",
+   "original_sha256": "225b563a69b1508f415e9a9002539a6937f00665a203a4715a5661a37dfb8608",
+   "path": "OAI/Computability/DepthThree/TapeMultiProgram.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeMultiRoutines.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeMultiRoutines",
+   "original_sha256": "59eb5c4d95d2af463a33809be17caf63ec57ba87c77019e3f77a492749ad1b0c",
+   "path": "OAI/Computability/DepthThree/TapeMultiRoutines.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeMultiply.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeMultiply",
+   "original_sha256": "6a3b322a14bb8869b4db6ea034b8ce1e3d45e225f1fec1eb54a8912bd99019e6",
+   "path": "OAI/Computability/DepthThree/TapeMultiply.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeNaturalAccess.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeNaturalAccess",
+   "original_sha256": "196ce405804006fc82502badd1e06e1b1581f2b39a972ecdc6a0f22f0d69f0ca",
+   "path": "OAI/Computability/DepthThree/TapeNaturalAccess.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeOutput.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeOutput",
+   "original_sha256": "fd724c52298b547172f2482ca7948f6dd9af7d358ad327c781ffa0f9ef966c94",
+   "path": "OAI/Computability/DepthThree/TapeOutput.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeParameterCost.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeParameterCost",
+   "original_sha256": "60f6dc06f6a5d4267109feaa5616500af329182aaa63276d084486c24759af7b",
+   "path": "OAI/Computability/DepthThree/TapeParameterCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeParameterSearch.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeParameterSearch",
+   "original_sha256": "846117c3be20a544400a7e1c3e134293922a95a6d494109ad06ab140b4d7ee86",
+   "path": "OAI/Computability/DepthThree/TapeParameterSearch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeParameters.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeParameters",
+   "original_sha256": "bdb4b1c828cd3437f97747c535fee20cc913ddb0e45b1b7bc1f1a49f8a4cc381",
+   "path": "OAI/Computability/DepthThree/TapeParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeParametersBound.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeParametersBound",
+   "original_sha256": "3de41bff104f9346c7c87b78797bdbb7c2ef2a12c36c3658217a9eca51fae325",
+   "path": "OAI/Computability/DepthThree/TapeParametersBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeParse.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeParse",
+   "original_sha256": "5d405a3e8ce2e96a58899893fee308ff4d7f61923cdd70cbbc150a4edfd5b82e",
+   "path": "OAI/Computability/DepthThree/TapeParse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapePower.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapePower",
+   "original_sha256": "f0c8de5ab34a5dffeceae0bce9fa800f7f6efdbe51c832fb20000a34d6bd98f4",
+   "path": "OAI/Computability/DepthThree/TapePower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapePowerCompare.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapePowerCompare",
+   "original_sha256": "154075b17a57d16bbf5056c2c2cd0e46061164253528b49b6d0dc8dfd812095b",
+   "path": "OAI/Computability/DepthThree/TapePowerCompare.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapePowerSearch.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapePowerSearch",
+   "original_sha256": "ad7c40e772197bc457268b1d8af474105dc3c6fa7d3c6c7027875b8603c2430c",
+   "path": "OAI/Computability/DepthThree/TapePowerSearch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeProductLength.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeProductLength",
+   "original_sha256": "d93cf44a45e0d1e794b4495fc41b8ce73b79b3d2fd358a50d88d5aebdb3d9b93",
+   "path": "OAI/Computability/DepthThree/TapeProductLength.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeProductTerm.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeProductTerm",
+   "original_sha256": "b465560f1ff5ff984211b9df0ecf65b4cb46e35014568d283e2d4cfd3dec9871",
+   "path": "OAI/Computability/DepthThree/TapeProductTerm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeReadPush.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeReadPush",
+   "original_sha256": "f53f6d6e782ee8cb4c1085af0de8b20da8a4a041010bfd39940fb5d132a18b97",
+   "path": "OAI/Computability/DepthThree/TapeReadPush.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeRemainder.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeRemainder",
+   "original_sha256": "f195a9385384e55c9850c99a546a7f18e58d71cbfe41b88f8ed80015814c6222",
+   "path": "OAI/Computability/DepthThree/TapeRemainder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeRemainderOuter.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeRemainderOuter",
+   "original_sha256": "8236baba3eb32abb5dec42f10be4ac53ded9ef27f9ccf271c48594b74ccaefdc",
+   "path": "OAI/Computability/DepthThree/TapeRemainderOuter.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeRemainderSetup.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeRemainderSetup",
+   "original_sha256": "1a0a54e52842d3174b52ab7c94d3f54ea9e77fa300e9c9300215b26176814947",
+   "path": "OAI/Computability/DepthThree/TapeRemainderSetup.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeRewind.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeRewind",
+   "original_sha256": "136bc86bcc50a7f7ab0d1c2c262cbdc9a658c58c74c6e9667abbda21559486c6",
+   "path": "OAI/Computability/DepthThree/TapeRewind.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeRouting.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeRouting",
+   "original_sha256": "80849aedb75f00ee818c2f55b097cc7bd86c773c76b0536fceeddd361537f4f9",
+   "path": "OAI/Computability/DepthThree/TapeRouting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeSearchBody.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeSearchBody",
+   "original_sha256": "1629060ad535251d23a16d53645b331de849bd034d0322f2738b9fed3e31680c",
+   "path": "OAI/Computability/DepthThree/TapeSearchBody.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeStoreRepresentation.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeStoreRepresentation",
+   "original_sha256": "9a574999c080b65db25502d573b9d11cf152c380cfb0cfd815507d930647b292",
+   "path": "OAI/Computability/DepthThree/TapeStoreRepresentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeUnary.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeUnary",
+   "original_sha256": "adaf23e8879ec7e3c5e9cd4d44a195722b52f972e5ef2f9fac46993eedb41ea2",
+   "path": "OAI/Computability/DepthThree/TapeUnary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeUnaryCompare.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeUnaryCompare",
+   "original_sha256": "3accfcc5de18954cdbeaf4980773c9a406445866439069aef1af3cd300393996",
+   "path": "OAI/Computability/DepthThree/TapeUnaryCompare.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeUnaryCompareScan.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeUnaryCompareScan",
+   "original_sha256": "55d3cd776addb3f865a1ae7ffe1910c6b3766217e7e4b70bc86d7571e82f81a3",
+   "path": "OAI/Computability/DepthThree/TapeUnaryCompareScan.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeWord.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeWord",
+   "original_sha256": "7707b0ac27b0e132ec9b1995227ceed1ef41699568a04262f9f655e065bae831",
+   "path": "OAI/Computability/DepthThree/TapeWord.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeWordRewind.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeWordRewind",
+   "original_sha256": "36b1c74ebae90cd6ddfe8838674ce9269c36f508965f00956f99002df174b54e",
+   "path": "OAI/Computability/DepthThree/TapeWordRewind.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TapeXor.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TapeXor",
+   "original_sha256": "5084b3b6a893b85a40ac94a67ab80f6a88971436b7b6905368d743ba5a393d3b",
+   "path": "OAI/Computability/DepthThree/TapeXor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/TupleCounting.lean"
+   },
+   "module": "OAI.Computability.DepthThree.TupleCounting",
+   "original_sha256": "dd03978e9f840ace21a97756980c418547c2d79b9ae4fdaf7e351398680b38ff",
+   "path": "OAI/Computability/DepthThree/TupleCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/UniformSparseBounds.lean"
+   },
+   "module": "OAI.Computability.DepthThree.UniformSparseBounds",
+   "original_sha256": "25144da0bb11321801e060d1f5d1e6fbd6068e383285511a445ea898495318e8",
+   "path": "OAI/Computability/DepthThree/UniformSparseBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/DepthThree/WideCorrelation.lean"
+   },
+   "module": "OAI.Computability.DepthThree.WideCorrelation",
+   "original_sha256": "6a0c8ccf0fe8b84b0fa1782a0dc75d72d1d7867c0555a4e69c049ee47c34304b",
+   "path": "OAI/Computability/DepthThree/WideCorrelation.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Computability.DepthThree.AlgebraBits",
+  "OAI.Computability.DepthThree.AlgebraFiniteFibers",
+  "OAI.Computability.DepthThree.AlgebraLanguage",
+  "OAI.Computability.DepthThree.AlgebraPolynomial",
+  "OAI.Computability.DepthThree.AlgebraQuotient",
+  "OAI.Computability.DepthThree.AsymptoticBounds",
+  "OAI.Computability.DepthThree.Circuit",
+  "OAI.Computability.DepthThree.CircuitDeletion",
+  "OAI.Computability.DepthThree.CircuitDensity",
+  "OAI.Computability.DepthThree.CircuitLowerBound",
+  "OAI.Computability.DepthThree.CircuitNormalization",
+  "OAI.Computability.DepthThree.CircuitQuantitative",
+  "OAI.Computability.DepthThree.Core",
+  "OAI.Computability.DepthThree.CorrelationTransfer",
+  "OAI.Computability.DepthThree.CylinderProbability",
+  "OAI.Computability.DepthThree.Entropy",
+  "OAI.Computability.DepthThree.EntropyBits",
+  "OAI.Computability.DepthThree.EntropyThreshold",
+  "OAI.Computability.DepthThree.FinalParameterBounds",
+  "OAI.Computability.DepthThree.FiniteProbability",
+  "OAI.Computability.DepthThree.FiniteProbabilityBounds",
+  "OAI.Computability.DepthThree.HardSlice",
+  "OAI.Computability.DepthThree.HardSliceEventual",
+  "OAI.Computability.DepthThree.HardSliceExistence",
+  "OAI.Computability.DepthThree.HardSliceMoment",
+  "OAI.Computability.DepthThree.HardSliceParameters",
+  "OAI.Computability.DepthThree.HardSliceProbability",
+  "OAI.Computability.DepthThree.HardSliceSelection",
+  "OAI.Computability.DepthThree.Hash",
+  "OAI.Computability.DepthThree.HashAffine",
+  "OAI.Computability.DepthThree.HashBool",
+  "OAI.Computability.DepthThree.HashFibers",
+  "OAI.Computability.DepthThree.HashProbability",
+  "OAI.Computability.DepthThree.HashTriangular",
+  "OAI.Computability.DepthThree.InterpolationEvaluation",
+  "OAI.Computability.DepthThree.InterpolationQuotient",
+  "OAI.Computability.DepthThree.InterpolationSigns",
+  "OAI.Computability.DepthThree.IrreducibleEncoding",
+  "OAI.Computability.DepthThree.IrreduciblePolynomial",
+  "OAI.Computability.DepthThree.Language",
+  "OAI.Computability.DepthThree.LanguageBitArithmetic",
+  "OAI.Computability.DepthThree.LanguageBitConvolution",
+  "OAI.Computability.DepthThree.LanguageBitConvolutionUpdates",
+  "OAI.Computability.DepthThree.LanguageBitEvaluator",
+  "OAI.Computability.DepthThree.LanguageBitHashUpdates",
+  "OAI.Computability.DepthThree.LanguageBitHornerLoop",
+  "OAI.Computability.DepthThree.LanguageBitLoopInvariants",
+  "OAI.Computability.DepthThree.LanguageBitReductionLoop",
+  "OAI.Computability.DepthThree.LanguageBitWord",
+  "OAI.Computability.DepthThree.LanguageInputBlockLists",
+  "OAI.Computability.DepthThree.LanguageInputBlockWords",
+  "OAI.Computability.DepthThree.LanguageLowerBound",
+  "OAI.Computability.DepthThree.LanguageParameterBounds",
+  "OAI.Computability.DepthThree.LanguageParameters",
+  "OAI.Computability.DepthThree.LanguageParser",
+  "OAI.Computability.DepthThree.LanguageSearchTests",
+  "OAI.Computability.DepthThree.LanguageSlice",
+  "OAI.Computability.DepthThree.MachineBasic",
+  "OAI.Computability.DepthThree.MachineLanguage",
+  "OAI.Computability.DepthThree.Main",
+  "OAI.Computability.DepthThree.MarkerMixture",
+  "OAI.Computability.DepthThree.MarkerPermutation",
+  "OAI.Computability.DepthThree.Model",
+  "OAI.Computability.DepthThree.MomentBounds",
+  "OAI.Computability.DepthThree.MultiTapeMachine",
+  "OAI.Computability.DepthThree.Restriction",
+  "OAI.Computability.DepthThree.RestrictionClause",
+  "OAI.Computability.DepthThree.RestrictionCorrelation",
+  "OAI.Computability.DepthThree.RestrictionCostCorrelation",
+  "OAI.Computability.DepthThree.RestrictionCountSplit",
+  "OAI.Computability.DepthThree.RestrictionCylinders",
+  "OAI.Computability.DepthThree.RestrictionEasyBase",
+  "OAI.Computability.DepthThree.RestrictionExpansion",
+  "OAI.Computability.DepthThree.RestrictionExpectedCost",
+  "OAI.Computability.DepthThree.RestrictionKeepClause",
+  "OAI.Computability.DepthThree.RestrictionMarkerCNF",
+  "OAI.Computability.DepthThree.RestrictionNormalization",
+  "OAI.Computability.DepthThree.RestrictionPathData",
+  "OAI.Computability.DepthThree.RestrictionPathMixture",
+  "OAI.Computability.DepthThree.RestrictionPathProducts",
+  "OAI.Computability.DepthThree.RestrictionPaths",
+  "OAI.Computability.DepthThree.RestrictionProbability",
+  "OAI.Computability.DepthThree.RestrictionTails",
+  "OAI.Computability.DepthThree.ReversePathEncoding",
+  "OAI.Computability.DepthThree.ReversePathRecurrence",
+  "OAI.Computability.DepthThree.ReversePathWeights",
+  "OAI.Computability.DepthThree.SparseBranch",
+  "OAI.Computability.DepthThree.SparseCorrelation",
+  "OAI.Computability.DepthThree.SparseCounting",
+  "OAI.Computability.DepthThree.SparseFiniteFamily",
+  "OAI.Computability.DepthThree.SparseLeafCNF",
+  "OAI.Computability.DepthThree.SparseLeafCount",
+  "OAI.Computability.DepthThree.SparseNormalize",
+  "OAI.Computability.DepthThree.SparsePartition",
+  "OAI.Computability.DepthThree.SparsePrefix",
+  "OAI.Computability.DepthThree.SparseStreams",
+  "OAI.Computability.DepthThree.SparseTailBounds",
+  "OAI.Computability.DepthThree.SparseTestCodes",
+  "OAI.Computability.DepthThree.SparseThresholds",
+  "OAI.Computability.DepthThree.SparseTree",
+  "OAI.Computability.DepthThree.Sunflower",
+  "OAI.Computability.DepthThree.TapeArithmetic",
+  "OAI.Computability.DepthThree.TapeArray",
+  "OAI.Computability.DepthThree.TapeBranch",
+  "OAI.Computability.DepthThree.TapeCancel",
+  "OAI.Computability.DepthThree.TapeCancelRow",
+  "OAI.Computability.DepthThree.TapeCancelStep",
+  "OAI.Computability.DepthThree.TapeConvolutionPrepare",
+  "OAI.Computability.DepthThree.TapeConvolutionRow",
+  "OAI.Computability.DepthThree.TapeConvolutionRows",
+  "OAI.Computability.DepthThree.TapeConvolutionStep",
+  "OAI.Computability.DepthThree.TapeConvolve",
+  "OAI.Computability.DepthThree.TapeCopy",
+  "OAI.Computability.DepthThree.TapeCopyAdd",
+  "OAI.Computability.DepthThree.TapeDecodeBlock",
+  "OAI.Computability.DepthThree.TapeDecodeBlocks",
+  "OAI.Computability.DepthThree.TapeDecodeParsed",
+  "OAI.Computability.DepthThree.TapeDivideFive",
+  "OAI.Computability.DepthThree.TapeEncoding",
+  "OAI.Computability.DepthThree.TapeErase",
+  "OAI.Computability.DepthThree.TapeEvaluation",
+  "OAI.Computability.DepthThree.TapeFill",
+  "OAI.Computability.DepthThree.TapeForLoop",
+  "OAI.Computability.DepthThree.TapeHash",
+  "OAI.Computability.DepthThree.TapeHashClean",
+  "OAI.Computability.DepthThree.TapeHashInitialize",
+  "OAI.Computability.DepthThree.TapeHashInner",
+  "OAI.Computability.DepthThree.TapeHashOuter",
+  "OAI.Computability.DepthThree.TapeHashRow",
+  "OAI.Computability.DepthThree.TapeHashStep",
+  "OAI.Computability.DepthThree.TapeHorner",
+  "OAI.Computability.DepthThree.TapeHornerBody",
+  "OAI.Computability.DepthThree.TapeHornerExtract",
+  "OAI.Computability.DepthThree.TapeHornerLoop",
+  "OAI.Computability.DepthThree.TapeHornerMultiply",
+  "OAI.Computability.DepthThree.TapeHornerPrepare",
+  "OAI.Computability.DepthThree.TapeHornerTake",
+  "OAI.Computability.DepthThree.TapeInitialization",
+  "OAI.Computability.DepthThree.TapeInputBlockLoop",
+  "OAI.Computability.DepthThree.TapeInputBlocks",
+  "OAI.Computability.DepthThree.TapeInputGuard",
+  "OAI.Computability.DepthThree.TapeInputGuardLength",
+  "OAI.Computability.DepthThree.TapeInputPrepare",
+  "OAI.Computability.DepthThree.TapeMultiProgram",
+  "OAI.Computability.DepthThree.TapeMultiRoutines",
+  "OAI.Computability.DepthThree.TapeMultiply",
+  "OAI.Computability.DepthThree.TapeNaturalAccess",
+  "OAI.Computability.DepthThree.TapeOutput",
+  "OAI.Computability.DepthThree.TapeParameterCost",
+  "OAI.Computability.DepthThree.TapeParameterSearch",
+  "OAI.Computability.DepthThree.TapeParameters",
+  "OAI.Computability.DepthThree.TapeParametersBound",
+  "OAI.Computability.DepthThree.TapeParse",
+  "OAI.Computability.DepthThree.TapePower",
+  "OAI.Computability.DepthThree.TapePowerCompare",
+  "OAI.Computability.DepthThree.TapePowerSearch",
+  "OAI.Computability.DepthThree.TapeProductLength",
+  "OAI.Computability.DepthThree.TapeProductTerm",
+  "OAI.Computability.DepthThree.TapeReadPush",
+  "OAI.Computability.DepthThree.TapeRemainder",
+  "OAI.Computability.DepthThree.TapeRemainderOuter",
+  "OAI.Computability.DepthThree.TapeRemainderSetup",
+  "OAI.Computability.DepthThree.TapeRewind",
+  "OAI.Computability.DepthThree.TapeRouting",
+  "OAI.Computability.DepthThree.TapeSearchBody",
+  "OAI.Computability.DepthThree.TapeStoreRepresentation",
+  "OAI.Computability.DepthThree.TapeUnary",
+  "OAI.Computability.DepthThree.TapeUnaryCompare",
+  "OAI.Computability.DepthThree.TapeUnaryCompareScan",
+  "OAI.Computability.DepthThree.TapeWord",
+  "OAI.Computability.DepthThree.TapeWordRewind",
+  "OAI.Computability.DepthThree.TapeXor",
+  "OAI.Computability.DepthThree.TupleCounting",
+  "OAI.Computability.DepthThree.UniformSparseBounds",
+  "OAI.Computability.DepthThree.WideCorrelation"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/DepthThree.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Computability.DepthThree.Main",
+   "name": "OAI.DepthThreeLowerBound.exists_polynomial_time_language_depth_three_lower_bound",
+   "statement_sha256": "bfc2b29b7455b21e4531e1febd7a069c41377d7dd4113c12d84e5585982d7b71"
+  }
+ ],
+ "task_id": "oai-depth-three",
+ "task_revision": 1,
+ "title": "OpenAI math: Beyond the square-root exponent for depth-three circuits: Depth-three circuit lower bound beyond every square-root constant",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

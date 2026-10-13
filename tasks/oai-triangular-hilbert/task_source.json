@@ -1,0 +1,1471 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 124550723
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.TriangularHilbert",
+  "challenge_sha256": "768eef032a27b868cbeba17c167787a2183aacb6368c2d1733b400d55d264acc",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/TriangularHilbert.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.TriangularHilbert",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.TriangularHilbert.Main",
+   "theorem_names": [
+    "OAI.TriangularHilbert.main_estimate"
+   ]
+  },
+  "config_sha256": "79a0bdc2c1be0ea4f51012679983d60b9e3fe72781293a49063e4e7a5c9a3dad",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/TriangularHilbert.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.TriangularHilbert.main_estimate": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/AbsCost.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.AbsCost",
+   "original_sha256": "ece1e91a1563b0cc3258448438e699dc3047a3e65318b3a8090a3877ed824b8d",
+   "path": "OAI/Analysis/TriangularHilbert/AbsCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/BoundedBox.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.BoundedBox",
+   "original_sha256": "4588947dd336607340382d202806068eb192cdd8281f8ec8858a3fb65aabe51c",
+   "path": "OAI/Analysis/TriangularHilbert/BoundedBox.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/CompactMoment.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.CompactMoment",
+   "original_sha256": "d76a74d6f21b69c28d9d835420b6c704e2156c4a1bd5e355fbc03c8528a5e6ce",
+   "path": "OAI/Analysis/TriangularHilbert/CompactMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/ContinuumMesh.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.ContinuumMesh",
+   "original_sha256": "a909db793fac50c5f19d7d9540f6d8ebdc5b652dd60f3dc9bb3de3d1ceb578eb",
+   "path": "OAI/Analysis/TriangularHilbert/ContinuumMesh.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/Coordinates.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.Coordinates",
+   "original_sha256": "b22158835d7aba847082be7f300c90ccae213c58f6f8696e5ae3e2b357bf4028",
+   "path": "OAI/Analysis/TriangularHilbert/Coordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/CostBlock.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.CostBlock",
+   "original_sha256": "50fb278075c4bbeffa46bcd5bc210cbccd473ed5d36532484c58761aa0f6fd38",
+   "path": "OAI/Analysis/TriangularHilbert/CostBlock.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/CubicApprox.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.CubicApprox",
+   "original_sha256": "ea2a956469f30ab6c528a75d4dd144cb0beda8ca0cb2838e6861c9d1d8a2e52a",
+   "path": "OAI/Analysis/TriangularHilbert/CubicApprox.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/CubicLimit.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.CubicLimit",
+   "original_sha256": "10b8c0778b1961d15607d3edb23dc3abfa9939f9eec05c8ef947585f9fe3a2aa",
+   "path": "OAI/Analysis/TriangularHilbert/CubicLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/CubicProduct.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.CubicProduct",
+   "original_sha256": "64772721874f45188262baabf774397ab2ba41f2e5a2711b10426296e84ccd82",
+   "path": "OAI/Analysis/TriangularHilbert/CubicProduct.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/CyclicCompact.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.CyclicCompact",
+   "original_sha256": "2b874f83eac452726aefcfb602612ff23d6c0dbc760bcc6d4d5372c47ea38fa0",
+   "path": "OAI/Analysis/TriangularHilbert/CyclicCompact.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/CyclicDensity.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.CyclicDensity",
+   "original_sha256": "3204b5eaefe27904d51553b9338965bfbc1c8edc8e06b3b0fa267589fb7f58c2",
+   "path": "OAI/Analysis/TriangularHilbert/CyclicDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/CyclicHomogeneity.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.CyclicHomogeneity",
+   "original_sha256": "f8c946963c012ce66a46c9066c44e8bc49216ffce127ef0970d60ce423a51a71",
+   "path": "OAI/Analysis/TriangularHilbert/CyclicHomogeneity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/CyclicMaxMoment.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.CyclicMaxMoment",
+   "original_sha256": "31d1976e04c61054f5041a27703b769ed80177e4ba4b2e4cd37bb647652d6d6d",
+   "path": "OAI/Analysis/TriangularHilbert/CyclicMaxMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/CyclicMeasurable.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.CyclicMeasurable",
+   "original_sha256": "475d4ffbceb462a66646e69f6300c117efd8f3a82af8122014146cdb30973917",
+   "path": "OAI/Analysis/TriangularHilbert/CyclicMeasurable.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/CyclicNorm.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.CyclicNorm",
+   "original_sha256": "0cfe24283ac382443daa7a967f2c3a8bdf9f3218c2ef1ac165b10c6fb82905f2",
+   "path": "OAI/Analysis/TriangularHilbert/CyclicNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/CyclicSlice.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.CyclicSlice",
+   "original_sha256": "7515cb2f57bc7e5ce8a68f1b9b830460c7efd1037519c9c54e8d94e5c26ebe81",
+   "path": "OAI/Analysis/TriangularHilbert/CyclicSlice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/DiscreteMax.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.DiscreteMax",
+   "original_sha256": "c28481cebcdf93040a2aae9c9a14a3fbfad3f147a97d0ef923ba5dae74266dfb",
+   "path": "OAI/Analysis/TriangularHilbert/DiscreteMax.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/DiscretePairing.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.DiscretePairing",
+   "original_sha256": "812e87ae7e628d51b17d9e2808ba58630121d8add1034a80d0cf845ad7fe2b98",
+   "path": "OAI/Analysis/TriangularHilbert/DiscretePairing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/DissipationAlgebra.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.DissipationAlgebra",
+   "original_sha256": "64a415fae46581d317ca1a6b75e89b8475cd127e76c9b0a5c3efc4b4ad6d04fe",
+   "path": "OAI/Analysis/TriangularHilbert/DissipationAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/EndpointContinuity.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.EndpointContinuity",
+   "original_sha256": "8efd73f7e1a3bc00aabe88c31dd19d54c8104f9f889872b8296d933a52ff93f6",
+   "path": "OAI/Analysis/TriangularHilbert/EndpointContinuity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/ErrorEnvelope.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.ErrorEnvelope",
+   "original_sha256": "ab731b89935c0f5e0bf065b6896905f0ddd5edf5162557551ebc15d27450360b",
+   "path": "OAI/Analysis/TriangularHilbert/ErrorEnvelope.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/ErrorPairing.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.ErrorPairing",
+   "original_sha256": "e5126554763eb1e6eb0c9cd76347e190e4d38193254bb4744ef5f1fbed666953",
+   "path": "OAI/Analysis/TriangularHilbert/ErrorPairing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/FiniteAbel.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.FiniteAbel",
+   "original_sha256": "18d093bef38bf3f756600b661b377c9e4cb41371bb748ac2df0799cb2a0c7503",
+   "path": "OAI/Analysis/TriangularHilbert/FiniteAbel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/FiniteDual.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.FiniteDual",
+   "original_sha256": "f803ca0dbf5e4a72a088cb064581c2ef23ba94c16358ac9e440747cdc7d90e54",
+   "path": "OAI/Analysis/TriangularHilbert/FiniteDual.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/FiniteLineMax.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.FiniteLineMax",
+   "original_sha256": "ef59ee79204e347e469901968a5e9f595bbf023621e335addceb3593227a3e3c",
+   "path": "OAI/Analysis/TriangularHilbert/FiniteLineMax.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/FiniteMoment.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.FiniteMoment",
+   "original_sha256": "ded9606e763eda71f186af564d31ad08c8516668a734002bb664f6d47af499f2",
+   "path": "OAI/Analysis/TriangularHilbert/FiniteMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/FiniteVitali.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.FiniteVitali",
+   "original_sha256": "aa50347cfb79b3af1d4d632f115e60735174713c313dc7b93ab458d2a51b0c42",
+   "path": "OAI/Analysis/TriangularHilbert/FiniteVitali.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/Gaussian.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.Gaussian",
+   "original_sha256": "f82091eb09d6956704b5d1a42c87cffed7f86b108b2c6012260f6fca04f8138f",
+   "path": "OAI/Analysis/TriangularHilbert/Gaussian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/GaussianConvolution.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.GaussianConvolution",
+   "original_sha256": "af0485d9cc4e7cf792c71c2bb331993eaa58a91498f0864bbb8998b0016bdde3",
+   "path": "OAI/Analysis/TriangularHilbert/GaussianConvolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/GaussianDom.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.GaussianDom",
+   "original_sha256": "574d916fe3cf0487ade334fd8e1ee2d6bca9548436ec91fc3876a21fa1965b36",
+   "path": "OAI/Analysis/TriangularHilbert/GaussianDom.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/GaussianExpectation.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.GaussianExpectation",
+   "original_sha256": "4dadaac6a3111ca869ea20840b7d5bd756b02cc057cb4cbcce7b5d4e5c2c55ab",
+   "path": "OAI/Analysis/TriangularHilbert/GaussianExpectation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/GaussianGram.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.GaussianGram",
+   "original_sha256": "af6a77dfec6bbdda091f2f763f51696168d196b6d42bfeb4c8bd4621a56e8572",
+   "path": "OAI/Analysis/TriangularHilbert/GaussianGram.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/GaussianMax.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.GaussianMax",
+   "original_sha256": "ffe47bc00e346a6e7cfca02d30b08c0eea5da08f8e56c6ffc89e4030ee1b2a1c",
+   "path": "OAI/Analysis/TriangularHilbert/GaussianMax.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/GaussianMoments.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.GaussianMoments",
+   "original_sha256": "5badea61af5fd9999360f8c7469c8d9a4062f0ad6bc2235e8661446d67abe4d6",
+   "path": "OAI/Analysis/TriangularHilbert/GaussianMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/GaussianRadial.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.GaussianRadial",
+   "original_sha256": "c2593ec7ea1371849185495b003fefbdc151815c132b2ee79ea9ad35e63aed15",
+   "path": "OAI/Analysis/TriangularHilbert/GaussianRadial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/GaussianTriple.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.GaussianTriple",
+   "original_sha256": "8fb9fed9c871f92cd1e034d21f69583a2a87a767944d2d01c9da090b8b4e3ffa",
+   "path": "OAI/Analysis/TriangularHilbert/GaussianTriple.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/GramDeriv.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.GramDeriv",
+   "original_sha256": "6fcf7279084b4f0e7b22a40eedf382a2241285bd82d0165e1fc2f2d82c03a973",
+   "path": "OAI/Analysis/TriangularHilbert/GramDeriv.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/GridCell.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.GridCell",
+   "original_sha256": "7f4aea81cc626a7849520c705c8f4604446416c7c85e37d9101cd950947eed06",
+   "path": "OAI/Analysis/TriangularHilbert/GridCell.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/GridLine.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.GridLine",
+   "original_sha256": "7563bcf25d76feeef2dd187613c2c7f3e161867d5723e6671b6850b81f57aec2",
+   "path": "OAI/Analysis/TriangularHilbert/GridLine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/GroupedGaussian.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.GroupedGaussian",
+   "original_sha256": "aaa69ae77170a3c0b783de765da8ae4aeb40bf29285723f8b25a587b801a63c0",
+   "path": "OAI/Analysis/TriangularHilbert/GroupedGaussian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/HardPairing.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.HardPairing",
+   "original_sha256": "77dce3ef45281d983e6ed45abe27f8fd61dfcb39eeea0f15397fa5a23ca2822c",
+   "path": "OAI/Analysis/TriangularHilbert/HardPairing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/HardScalar.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.HardScalar",
+   "original_sha256": "7b0450d28dce36232b371673ae21472b9884ad2b82431ddbcdcdd83dd6e10558",
+   "path": "OAI/Analysis/TriangularHilbert/HardScalar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/HeatBound.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.HeatBound",
+   "original_sha256": "624db2032ce56370aa19629a5f69717531ae0b99a7ca46e6dd9e9bf7f2c22e57",
+   "path": "OAI/Analysis/TriangularHilbert/HeatBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/HeatContinuous.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.HeatContinuous",
+   "original_sha256": "5b1a17b738e1343889d42881a694bac6e2c1f1665e0c013c953ee03d77a11d68",
+   "path": "OAI/Analysis/TriangularHilbert/HeatContinuous.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/HeatCost.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.HeatCost",
+   "original_sha256": "c785855a585b817b6705ae959f59531142573cce966d3a906e952dea6bb86f7c",
+   "path": "OAI/Analysis/TriangularHilbert/HeatCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/HeatInsert.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.HeatInsert",
+   "original_sha256": "e9b2eac91ae39c7f434fed79bce24c0ccf7257000e295a6a0deed8b37bd0c288",
+   "path": "OAI/Analysis/TriangularHilbert/HeatInsert.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/HeatStar.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.HeatStar",
+   "original_sha256": "8693e395e79af851681fae9b16711608222222602728632b7168bdeca6b3f09d",
+   "path": "OAI/Analysis/TriangularHilbert/HeatStar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/HeatTime.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.HeatTime",
+   "original_sha256": "8e4a9a7c0f79977d7dc0497140beac8e3a4af60d849ef4bcd41c827abfd81e5b",
+   "path": "OAI/Analysis/TriangularHilbert/HeatTime.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/InitialAlgebra.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.InitialAlgebra",
+   "original_sha256": "e4c4c405ee23b419e3de685a3de8b3b24e04a589730200edaaaf4bc1791342ef",
+   "path": "OAI/Analysis/TriangularHilbert/InitialAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/InitialPlane.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.InitialPlane",
+   "original_sha256": "abe1c4573eb7240a1d0493a89f9a60924c31630f538abf1289e4af78fafb1210",
+   "path": "OAI/Analysis/TriangularHilbert/InitialPlane.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/IntMax.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.IntMax",
+   "original_sha256": "99f4f2f9f7810f9186f530bf13a6f642f273bbde3bc880963a7c8865928ee254",
+   "path": "OAI/Analysis/TriangularHilbert/IntMax.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/IntStrong.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.IntStrong",
+   "original_sha256": "09b10e0a1b280671107115a32e0c7e61cdc1120a44db8c480772d8ac4e8576d8",
+   "path": "OAI/Analysis/TriangularHilbert/IntStrong.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/IntWeak.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.IntWeak",
+   "original_sha256": "ae264a3f20919f05c6f66d4d7044e5ed568d12e4616c65ba79fa76a9c9b16403",
+   "path": "OAI/Analysis/TriangularHilbert/IntWeak.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/IntegratedDissipation.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.IntegratedDissipation",
+   "original_sha256": "02728a1690a36e15f5630c1439b7531c72131d422582008c4338174bfaced454",
+   "path": "OAI/Analysis/TriangularHilbert/IntegratedDissipation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/IntervalMask.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.IntervalMask",
+   "original_sha256": "5e23ec98c2ee6fb64b969241a3a708e90a24f88155ca57e7808a50e5a4cf2d83",
+   "path": "OAI/Analysis/TriangularHilbert/IntervalMask.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/JointHeat.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.JointHeat",
+   "original_sha256": "22ea5bad09848058c76a734fde44d26b4ffd8e47d22017da71dc804447d24f58",
+   "path": "OAI/Analysis/TriangularHilbert/JointHeat.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/JointInsert.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.JointInsert",
+   "original_sha256": "1d01060116551f15309025cfa631a262c6bbe8b9a5b42cfe16b759b35cd58fed",
+   "path": "OAI/Analysis/TriangularHilbert/JointInsert.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/JointMeasurable.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.JointMeasurable",
+   "original_sha256": "0aa50979dfbd8d8fcf24f312767335e8d70c90e0e5c64e1ae157ddbcb25c99af",
+   "path": "OAI/Analysis/TriangularHilbert/JointMeasurable.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/JumpScalar.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.JumpScalar",
+   "original_sha256": "65bbdc862dc1aae72d1fbaac34edf03495e8a448459bf4ce811062b845c25b20",
+   "path": "OAI/Analysis/TriangularHilbert/JumpScalar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/Main.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.Main",
+   "original_sha256": "49dcd89df22c7a7567df9033079ca50e83ee41df1092be2a417ab6c54f66ed12",
+   "path": "OAI/Analysis/TriangularHilbert/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/MaskedActual.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.MaskedActual",
+   "original_sha256": "ee18fed6010497f5e4cc00c055160a413244bfd6357fcd3c5b9336acfbd714a9",
+   "path": "OAI/Analysis/TriangularHilbert/MaskedActual.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/MaskedDissipation.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.MaskedDissipation",
+   "original_sha256": "5c43e9f4a70978f23e3e2cbe5cdd6f42dcc5036383b9638c7a68a10240a6840c",
+   "path": "OAI/Analysis/TriangularHilbert/MaskedDissipation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/MassPlane.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.MassPlane",
+   "original_sha256": "4f61271257c28c092e436a11f75d06eb6027f7c2f70269efc2973bc4caf63524",
+   "path": "OAI/Analysis/TriangularHilbert/MassPlane.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/MatrixSupport.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.MatrixSupport",
+   "original_sha256": "44b8055b627e50b3af8760ac21abb4d7a4567552f23b6d405a08ae1aad68e4d8",
+   "path": "OAI/Analysis/TriangularHilbert/MatrixSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/MeshFinite.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.MeshFinite",
+   "original_sha256": "00f2893e9b798fd15952fd0cdde9c8bc9fda6d12a9948c50b2e10ab37ff3e198",
+   "path": "OAI/Analysis/TriangularHilbert/MeshFinite.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/MeshJump.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.MeshJump",
+   "original_sha256": "464faa5922e528677935a4db4c6c3db68b21cd22c778207a453e37fc681fb250",
+   "path": "OAI/Analysis/TriangularHilbert/MeshJump.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/MeshMass.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.MeshMass",
+   "original_sha256": "d76c1e58d51dfe69b9bbb8ad776cf054621c81a09775ea5cbf87059ee368d4c5",
+   "path": "OAI/Analysis/TriangularHilbert/MeshMass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/Model.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.Model",
+   "original_sha256": "36179689d7c6dabb16962ee0d37f8f002ce36606085e5306d221e1810af0c746",
+   "path": "OAI/Analysis/TriangularHilbert/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/MomentPower.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.MomentPower",
+   "original_sha256": "08121fa4a0ffb78ce7c1c921f0209c03c410b551d15894f2919145d59230aef2",
+   "path": "OAI/Analysis/TriangularHilbert/MomentPower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/NormBounds.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.NormBounds",
+   "original_sha256": "0a107dfbf48e57a057cbaed19f8db57c20aae472cc8a565744df12f516883adb",
+   "path": "OAI/Analysis/TriangularHilbert/NormBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/PlaneChart.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.PlaneChart",
+   "original_sha256": "493e3cac6445fe1184e92e7c3e299952bba1156aeb7c77ef17f5e16666d00644",
+   "path": "OAI/Analysis/TriangularHilbert/PlaneChart.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/PlaneDissipation.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.PlaneDissipation",
+   "original_sha256": "3166d0c7d44a6b50e00942dd818c560b5480c29adc0ca79ab13020d0083c92c1",
+   "path": "OAI/Analysis/TriangularHilbert/PlaneDissipation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/PlaneDom.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.PlaneDom",
+   "original_sha256": "4c2d94775fcad0d4077c9d26bf68f0577df78f92d7ad98cb78a7ac1680c35df4",
+   "path": "OAI/Analysis/TriangularHilbert/PlaneDom.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/PlaneIntegral.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.PlaneIntegral",
+   "original_sha256": "5e9e7e88c0f2dea5c7ee0e5e09e29f3b30cafab0a87cc5337f4be55dc1eaa9c5",
+   "path": "OAI/Analysis/TriangularHilbert/PlaneIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/PlaneInterval.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.PlaneInterval",
+   "original_sha256": "c40378dd9938ad8e4756c29af1a4af57eec821a34ad21aedde58582805328a6f",
+   "path": "OAI/Analysis/TriangularHilbert/PlaneInterval.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/PlaneTime.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.PlaneTime",
+   "original_sha256": "75d0083102034de300a0467c77e49686663501e8644ae440a2f3206e686b3f87",
+   "path": "OAI/Analysis/TriangularHilbert/PlaneTime.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/Quantization.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.Quantization",
+   "original_sha256": "d5e2072ed984585d6f6de8683aec16de6161e5c1d5f17d03be6e1bac100b4bc0",
+   "path": "OAI/Analysis/TriangularHilbert/Quantization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/RankJump.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.RankJump",
+   "original_sha256": "f2366c0ec06d090ba26169f63f49c25ddfcbcc884348b869993940b889dd9df9",
+   "path": "OAI/Analysis/TriangularHilbert/RankJump.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/RationalSup.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.RationalSup",
+   "original_sha256": "b4835d1d8b8852045e40ef528edb9a40fb71cdacc8b618edcebf960979a601a9",
+   "path": "OAI/Analysis/TriangularHilbert/RationalSup.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/SampledConvergence.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.SampledConvergence",
+   "original_sha256": "9307051062bf7f2925b0255a87e96d31667785a5bb7c15bca9fb739d708246a7",
+   "path": "OAI/Analysis/TriangularHilbert/SampledConvergence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/SampledMoment.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.SampledMoment",
+   "original_sha256": "ad73b244c4ce7d669c1d472d0c122212ed92d3403201fc79399d211898f8a387",
+   "path": "OAI/Analysis/TriangularHilbert/SampledMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/SampledOutput.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.SampledOutput",
+   "original_sha256": "a7eb0211c5f6834698ac5a24d4588475e0463ad84d9c610f67f9994781dc4e9f",
+   "path": "OAI/Analysis/TriangularHilbert/SampledOutput.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/SelectedScale.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.SelectedScale",
+   "original_sha256": "ac741302a84efb62b9d84ed1219d65d8a3c39ce4efd608f600fe1e8b657eb082",
+   "path": "OAI/Analysis/TriangularHilbert/SelectedScale.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/SignedCenter.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.SignedCenter",
+   "original_sha256": "d853addc56dc1acb84fb2aeb2937a7b3ac07676995975f7fbd4968aa117c5e36",
+   "path": "OAI/Analysis/TriangularHilbert/SignedCenter.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/SignedConvolution.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.SignedConvolution",
+   "original_sha256": "f6b5d081ff47214d36190a547281898e408c647c4920353fdfe8caf8c5912781",
+   "path": "OAI/Analysis/TriangularHilbert/SignedConvolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/SignedExpansion.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.SignedExpansion",
+   "original_sha256": "4c4ba114b711b94f9fc0684fde16720a8c945689b275e98fda4234c14eacef33",
+   "path": "OAI/Analysis/TriangularHilbert/SignedExpansion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/SignedTraceOrder.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.SignedTraceOrder",
+   "original_sha256": "097307194070e0ad1d5754d697cd4b129857f36be0ec9d92bf9bda170d284112",
+   "path": "OAI/Analysis/TriangularHilbert/SignedTraceOrder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/SignedWindowScalar.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.SignedWindowScalar",
+   "original_sha256": "07e965877b23071768162a7e5ecd40cd0219081b11ee630babe3f42a8716e916",
+   "path": "OAI/Analysis/TriangularHilbert/SignedWindowScalar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/SmoothFormula.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.SmoothFormula",
+   "original_sha256": "4a49a0f064b5567b040bf9ed02845da924ddb5a8d2d6c9274d03a3c61fc127ae",
+   "path": "OAI/Analysis/TriangularHilbert/SmoothFormula.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/SortedWindows.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.SortedWindows",
+   "original_sha256": "135574ce03ff3bcd0fec4ee0a2fb07b912b11df70d5f7ae19d33e99eed4221b9",
+   "path": "OAI/Analysis/TriangularHilbert/SortedWindows.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/StarInsertion.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.StarInsertion",
+   "original_sha256": "4e6211493c55215ebfa7354686949860e54b363e008ff4cd987094464f6d87be",
+   "path": "OAI/Analysis/TriangularHilbert/StarInsertion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/StarJump.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.StarJump",
+   "original_sha256": "7c39a06c56894fe5e59b2b13c03ba8143a2b7832da0daa0d16eec5f27fae8e39",
+   "path": "OAI/Analysis/TriangularHilbert/StarJump.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/StarNorm.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.StarNorm",
+   "original_sha256": "89ee0faa8314a77915da7b70ec7d08fed5ab1515a9323b8f5290d2dd28d46a3f",
+   "path": "OAI/Analysis/TriangularHilbert/StarNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/StrongLayer.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.StrongLayer",
+   "original_sha256": "d7d533ab789e43b76bb299bf1cae6421acea856c941065d4c989e39d94744b0d",
+   "path": "OAI/Analysis/TriangularHilbert/StrongLayer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/Support.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.Support",
+   "original_sha256": "0953197cc6b52d8e54a4a4113ca453efc710cd2ca136aa4315c560593b1d7f68",
+   "path": "OAI/Analysis/TriangularHilbert/Support.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/Switch.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.Switch",
+   "original_sha256": "8cbc072560cefa32b07cd1dcdf87f8f9074a903cd1b94005739a99cf953c18cc",
+   "path": "OAI/Analysis/TriangularHilbert/Switch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/TotalJump.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.TotalJump",
+   "original_sha256": "a434cbdf091b5f8606b5f896dcd39bbb77d8a094ff25991b9fc6e36e1ba64fc0",
+   "path": "OAI/Analysis/TriangularHilbert/TotalJump.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/TraceWeights.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.TraceWeights",
+   "original_sha256": "5742648ab1aa65f48f3196935f0a5f6b0fcf69de4f6f702e244323c2b787dddd",
+   "path": "OAI/Analysis/TriangularHilbert/TraceWeights.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/TruncationCoordinates.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.TruncationCoordinates",
+   "original_sha256": "230334bdde3b69007f43a43f0622b05957936ae4bf83096f9a6331ad5a5823b7",
+   "path": "OAI/Analysis/TriangularHilbert/TruncationCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/WeightSlice.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.WeightSlice",
+   "original_sha256": "f671094de980786a7dd32becc347cbc3d2a2d0872837b63a0d4a726332cc3ad5",
+   "path": "OAI/Analysis/TriangularHilbert/WeightSlice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/WeightedCompare.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.WeightedCompare",
+   "original_sha256": "9793c32ac9506cbc186b5fc7eb856702a2b6754d86a3415b1fa1e9dac6315273",
+   "path": "OAI/Analysis/TriangularHilbert/WeightedCompare.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/WeightedCubic.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.WeightedCubic",
+   "original_sha256": "ea8f52337fbebdcbe7faff402dfea4ca27019d18ce88c86f183981aa898ac33f",
+   "path": "OAI/Analysis/TriangularHilbert/WeightedCubic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/WeightedGram.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.WeightedGram",
+   "original_sha256": "b4c3e1bbabaa32d402b9fafee3761755b6b2fa6093173eba93f076716daafbca",
+   "path": "OAI/Analysis/TriangularHilbert/WeightedGram.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/WeightedStar.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.WeightedStar",
+   "original_sha256": "f1c968e24ce0ddd899b1aa3622d4633fc1063e82913e93a48c31637e5a432a93",
+   "path": "OAI/Analysis/TriangularHilbert/WeightedStar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TriangularHilbert/ZeroStar.lean"
+   },
+   "module": "OAI.Analysis.TriangularHilbert.ZeroStar",
+   "original_sha256": "93c82d955e335951d603f9065d4d2be2c49691e4adb57f04bfe95b131948ebea",
+   "path": "OAI/Analysis/TriangularHilbert/ZeroStar.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.TriangularHilbert.AbsCost",
+  "OAI.Analysis.TriangularHilbert.BoundedBox",
+  "OAI.Analysis.TriangularHilbert.CompactMoment",
+  "OAI.Analysis.TriangularHilbert.ContinuumMesh",
+  "OAI.Analysis.TriangularHilbert.Coordinates",
+  "OAI.Analysis.TriangularHilbert.CostBlock",
+  "OAI.Analysis.TriangularHilbert.CubicApprox",
+  "OAI.Analysis.TriangularHilbert.CubicLimit",
+  "OAI.Analysis.TriangularHilbert.CubicProduct",
+  "OAI.Analysis.TriangularHilbert.CyclicCompact",
+  "OAI.Analysis.TriangularHilbert.CyclicDensity",
+  "OAI.Analysis.TriangularHilbert.CyclicHomogeneity",
+  "OAI.Analysis.TriangularHilbert.CyclicMaxMoment",
+  "OAI.Analysis.TriangularHilbert.CyclicMeasurable",
+  "OAI.Analysis.TriangularHilbert.CyclicNorm",
+  "OAI.Analysis.TriangularHilbert.CyclicSlice",
+  "OAI.Analysis.TriangularHilbert.DiscreteMax",
+  "OAI.Analysis.TriangularHilbert.DiscretePairing",
+  "OAI.Analysis.TriangularHilbert.DissipationAlgebra",
+  "OAI.Analysis.TriangularHilbert.EndpointContinuity",
+  "OAI.Analysis.TriangularHilbert.ErrorEnvelope",
+  "OAI.Analysis.TriangularHilbert.ErrorPairing",
+  "OAI.Analysis.TriangularHilbert.FiniteAbel",
+  "OAI.Analysis.TriangularHilbert.FiniteDual",
+  "OAI.Analysis.TriangularHilbert.FiniteLineMax",
+  "OAI.Analysis.TriangularHilbert.FiniteMoment",
+  "OAI.Analysis.TriangularHilbert.FiniteVitali",
+  "OAI.Analysis.TriangularHilbert.Gaussian",
+  "OAI.Analysis.TriangularHilbert.GaussianConvolution",
+  "OAI.Analysis.TriangularHilbert.GaussianDom",
+  "OAI.Analysis.TriangularHilbert.GaussianExpectation",
+  "OAI.Analysis.TriangularHilbert.GaussianGram",
+  "OAI.Analysis.TriangularHilbert.GaussianMax",
+  "OAI.Analysis.TriangularHilbert.GaussianMoments",
+  "OAI.Analysis.TriangularHilbert.GaussianRadial",
+  "OAI.Analysis.TriangularHilbert.GaussianTriple",
+  "OAI.Analysis.TriangularHilbert.GramDeriv",
+  "OAI.Analysis.TriangularHilbert.GridCell",
+  "OAI.Analysis.TriangularHilbert.GridLine",
+  "OAI.Analysis.TriangularHilbert.GroupedGaussian",
+  "OAI.Analysis.TriangularHilbert.HardPairing",
+  "OAI.Analysis.TriangularHilbert.HardScalar",
+  "OAI.Analysis.TriangularHilbert.HeatBound",
+  "OAI.Analysis.TriangularHilbert.HeatContinuous",
+  "OAI.Analysis.TriangularHilbert.HeatCost",
+  "OAI.Analysis.TriangularHilbert.HeatInsert",
+  "OAI.Analysis.TriangularHilbert.HeatStar",
+  "OAI.Analysis.TriangularHilbert.HeatTime",
+  "OAI.Analysis.TriangularHilbert.InitialAlgebra",
+  "OAI.Analysis.TriangularHilbert.InitialPlane",
+  "OAI.Analysis.TriangularHilbert.IntMax",
+  "OAI.Analysis.TriangularHilbert.IntStrong",
+  "OAI.Analysis.TriangularHilbert.IntWeak",
+  "OAI.Analysis.TriangularHilbert.IntegratedDissipation",
+  "OAI.Analysis.TriangularHilbert.IntervalMask",
+  "OAI.Analysis.TriangularHilbert.JointHeat",
+  "OAI.Analysis.TriangularHilbert.JointInsert",
+  "OAI.Analysis.TriangularHilbert.JointMeasurable",
+  "OAI.Analysis.TriangularHilbert.JumpScalar",
+  "OAI.Analysis.TriangularHilbert.Main",
+  "OAI.Analysis.TriangularHilbert.MaskedActual",
+  "OAI.Analysis.TriangularHilbert.MaskedDissipation",
+  "OAI.Analysis.TriangularHilbert.MassPlane",
+  "OAI.Analysis.TriangularHilbert.MatrixSupport",
+  "OAI.Analysis.TriangularHilbert.MeshFinite",
+  "OAI.Analysis.TriangularHilbert.MeshJump",
+  "OAI.Analysis.TriangularHilbert.MeshMass",
+  "OAI.Analysis.TriangularHilbert.Model",
+  "OAI.Analysis.TriangularHilbert.MomentPower",
+  "OAI.Analysis.TriangularHilbert.NormBounds",
+  "OAI.Analysis.TriangularHilbert.PlaneChart",
+  "OAI.Analysis.TriangularHilbert.PlaneDissipation",
+  "OAI.Analysis.TriangularHilbert.PlaneDom",
+  "OAI.Analysis.TriangularHilbert.PlaneIntegral",
+  "OAI.Analysis.TriangularHilbert.PlaneInterval",
+  "OAI.Analysis.TriangularHilbert.PlaneTime",
+  "OAI.Analysis.TriangularHilbert.Quantization",
+  "OAI.Analysis.TriangularHilbert.RankJump",
+  "OAI.Analysis.TriangularHilbert.RationalSup",
+  "OAI.Analysis.TriangularHilbert.SampledConvergence",
+  "OAI.Analysis.TriangularHilbert.SampledMoment",
+  "OAI.Analysis.TriangularHilbert.SampledOutput",
+  "OAI.Analysis.TriangularHilbert.SelectedScale",
+  "OAI.Analysis.TriangularHilbert.SignedCenter",
+  "OAI.Analysis.TriangularHilbert.SignedConvolution",
+  "OAI.Analysis.TriangularHilbert.SignedExpansion",
+  "OAI.Analysis.TriangularHilbert.SignedTraceOrder",
+  "OAI.Analysis.TriangularHilbert.SignedWindowScalar",
+  "OAI.Analysis.TriangularHilbert.SmoothFormula",
+  "OAI.Analysis.TriangularHilbert.SortedWindows",
+  "OAI.Analysis.TriangularHilbert.StarInsertion",
+  "OAI.Analysis.TriangularHilbert.StarJump",
+  "OAI.Analysis.TriangularHilbert.StarNorm",
+  "OAI.Analysis.TriangularHilbert.StrongLayer",
+  "OAI.Analysis.TriangularHilbert.Support",
+  "OAI.Analysis.TriangularHilbert.Switch",
+  "OAI.Analysis.TriangularHilbert.TotalJump",
+  "OAI.Analysis.TriangularHilbert.TraceWeights",
+  "OAI.Analysis.TriangularHilbert.TruncationCoordinates",
+  "OAI.Analysis.TriangularHilbert.WeightSlice",
+  "OAI.Analysis.TriangularHilbert.WeightedCompare",
+  "OAI.Analysis.TriangularHilbert.WeightedCubic",
+  "OAI.Analysis.TriangularHilbert.WeightedGram",
+  "OAI.Analysis.TriangularHilbert.WeightedStar",
+  "OAI.Analysis.TriangularHilbert.ZeroStar"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/TriangularHilbert.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.TriangularHilbert.Main",
+   "name": "OAI.TriangularHilbert.main_estimate",
+   "statement_sha256": "d6d0eb116e8251f1ba3cea27236273e0f0f6e5e75e74b4fecc6f9c9037b6d4e2"
+  }
+ ],
+ "task_id": "oai-triangular-hilbert",
+ "task_revision": 1,
+ "title": "OpenAI math: Annular variation and dyadic absolute bounds for the triangular Hilbert transform: Maximal triangular Hilbert transform bound",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

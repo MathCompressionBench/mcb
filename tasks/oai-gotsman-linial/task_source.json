@@ -1,0 +1,641 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 12217385
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.GotsmanLinial",
+  "challenge_sha256": "5c63b62186354758cea448deb11dfd42a0e729a2260c6ef5b7df1c0be3b5dcfc",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/GotsmanLinial.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.GotsmanLinial",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Combinatorics.GotsmanLinial.Main",
+   "theorem_names": [
+    "OAI.LeanBlast.GotsmanLinial.gotsmanLinialStatement"
+   ]
+  },
+  "config_sha256": "984badd50d1b08ce2b0133740550f4207b64bc3ebf2a4c4cf249402c70dc8b59",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/GotsmanLinial.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.LeanBlast.GotsmanLinial.gotsmanLinialStatement": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/BinomialMoments.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.BinomialMoments",
+   "original_sha256": "2b63fe3cbcc23b470211fa3413e2c954f6a8eab5c24fb7aec204af217dac933f",
+   "path": "OAI/Combinatorics/GotsmanLinial/BinomialMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/BlockCoupling.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.BlockCoupling",
+   "original_sha256": "6226c36081740b1c231d435d43103a865f6b14f3fa2e209fab581a2e2367c88e",
+   "path": "OAI/Combinatorics/GotsmanLinial/BlockCoupling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/BlockVanishing.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.BlockVanishing",
+   "original_sha256": "fa7499e088055a8db4894b5c97dd5f88255cf82a6a859d60e26c5559ea197f48",
+   "path": "OAI/Combinatorics/GotsmanLinial/BlockVanishing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/Commutator.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.Commutator",
+   "original_sha256": "2dda489b60aee8314d006376bb93e2b84834ae2a158e2e397b271982f1d4a49e",
+   "path": "OAI/Combinatorics/GotsmanLinial/Commutator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/CoordinateDegree.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.CoordinateDegree",
+   "original_sha256": "4fee5b4ef11d9ed405dca9fd516104cd88cf1781b0c2a3f60b0ed8fd804ce628",
+   "path": "OAI/Combinatorics/GotsmanLinial/CoordinateDegree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/CoordinateMultipliers.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.CoordinateMultipliers",
+   "original_sha256": "a2d2d420141cc5ff270e074c6e45420ba59d86d60a2e8c0c498c515e37f7d3a3",
+   "path": "OAI/Combinatorics/GotsmanLinial/CoordinateMultipliers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/CubeOperators.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.CubeOperators",
+   "original_sha256": "83b04e520fd295cb964d59a478f0a0bda7df1fc2c432eeb3a697e1e3c5c8bf48",
+   "path": "OAI/Combinatorics/GotsmanLinial/CubeOperators.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/EdgeRecovery.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.EdgeRecovery",
+   "original_sha256": "a1e7b5ded693838283c303df6083d2b43b8434b0e44d848003383bf927377936",
+   "path": "OAI/Combinatorics/GotsmanLinial/EdgeRecovery.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/FiniteCoupling.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.FiniteCoupling",
+   "original_sha256": "9dc19d46ac3273b1078e1dbb37357b7e4daf3189279ab193945892803a64d5fb",
+   "path": "OAI/Combinatorics/GotsmanLinial/FiniteCoupling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/GradingShift.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.GradingShift",
+   "original_sha256": "4f92211b171a5ba77fa7cbf8aadb9dd827e79d867e33b2dd55fa89fb84150b04",
+   "path": "OAI/Combinatorics/GotsmanLinial/GradingShift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/HilbertSchmidt.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.HilbertSchmidt",
+   "original_sha256": "f614eb7c49b7cca5bb94316a554e47fab95920044d49e96a0438c804ce3f62fe",
+   "path": "OAI/Combinatorics/GotsmanLinial/HilbertSchmidt.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/Main.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.Main",
+   "original_sha256": "5e9f32c670a76d0e271b9f1565788533da99669bf85854ef1fe35ed02b554c0b",
+   "path": "OAI/Combinatorics/GotsmanLinial/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/Model.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.Model",
+   "original_sha256": "babc05672496b5525c163c87b9945597754a46f3fb89c98ab43e06fa52ba7f0d",
+   "path": "OAI/Combinatorics/GotsmanLinial/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/PolynomialDegree.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.PolynomialDegree",
+   "original_sha256": "37dbf1bf5a1c24366c87e06e252618763720e429e148d338ddf9445b9363e42d",
+   "path": "OAI/Combinatorics/GotsmanLinial/PolynomialDegree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/ProjectionBlocks.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.ProjectionBlocks",
+   "original_sha256": "127245dc3558d78b4622ea89f24ebe0e5356d8e38af636508831fc79b7d03a24",
+   "path": "OAI/Combinatorics/GotsmanLinial/ProjectionBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/ProjectionTrace.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.ProjectionTrace",
+   "original_sha256": "eddb2911e36fb0ef480c6baaa1d0f2aad47611703a2c37209a40c13608b9444b",
+   "path": "OAI/Combinatorics/GotsmanLinial/ProjectionTrace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/ScalarIncrements.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.ScalarIncrements",
+   "original_sha256": "dab60cca16eb978cb68d5cb755a56df9bbedab3e9ee84dfd770a45bc64bce708",
+   "path": "OAI/Combinatorics/GotsmanLinial/ScalarIncrements.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/SignParity.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.SignParity",
+   "original_sha256": "843ed2998242de9dd06132c45bbf9f4273a6e4383b639b6bc01251b4897c75d0",
+   "path": "OAI/Combinatorics/GotsmanLinial/SignParity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/Statement.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.Statement",
+   "original_sha256": "5f167d905dbf114b5a2c6bb8c335ef322189454a40e0aee53973bf0db3b5c7e7",
+   "path": "OAI/Combinatorics/GotsmanLinial/Statement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/Walsh.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.Walsh",
+   "original_sha256": "6a5f998019e8b9072c7f5e6030469945fc3d1dc5eaeb029a09de0f2d011eaa6e",
+   "path": "OAI/Combinatorics/GotsmanLinial/Walsh.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/WalshDimensions.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.WalshDimensions",
+   "original_sha256": "6928b531a5f2d53d3803f0a116662870938b5b93c283bff65fef78c7e6fbfcf3",
+   "path": "OAI/Combinatorics/GotsmanLinial/WalshDimensions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/GotsmanLinial/WeightedGrading.lean"
+   },
+   "module": "OAI.Combinatorics.GotsmanLinial.WeightedGrading",
+   "original_sha256": "f725f96617a613a3949a716f2835d0cb4192d0011298bf8aaf778a9710576a88",
+   "path": "OAI/Combinatorics/GotsmanLinial/WeightedGrading.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.GotsmanLinial.BinomialMoments",
+  "OAI.Combinatorics.GotsmanLinial.BlockCoupling",
+  "OAI.Combinatorics.GotsmanLinial.BlockVanishing",
+  "OAI.Combinatorics.GotsmanLinial.Commutator",
+  "OAI.Combinatorics.GotsmanLinial.CoordinateDegree",
+  "OAI.Combinatorics.GotsmanLinial.CoordinateMultipliers",
+  "OAI.Combinatorics.GotsmanLinial.CubeOperators",
+  "OAI.Combinatorics.GotsmanLinial.EdgeRecovery",
+  "OAI.Combinatorics.GotsmanLinial.FiniteCoupling",
+  "OAI.Combinatorics.GotsmanLinial.GradingShift",
+  "OAI.Combinatorics.GotsmanLinial.HilbertSchmidt",
+  "OAI.Combinatorics.GotsmanLinial.Main",
+  "OAI.Combinatorics.GotsmanLinial.Model",
+  "OAI.Combinatorics.GotsmanLinial.PolynomialDegree",
+  "OAI.Combinatorics.GotsmanLinial.ProjectionBlocks",
+  "OAI.Combinatorics.GotsmanLinial.ProjectionTrace",
+  "OAI.Combinatorics.GotsmanLinial.ScalarIncrements",
+  "OAI.Combinatorics.GotsmanLinial.SignParity",
+  "OAI.Combinatorics.GotsmanLinial.Statement",
+  "OAI.Combinatorics.GotsmanLinial.Walsh",
+  "OAI.Combinatorics.GotsmanLinial.WalshDimensions",
+  "OAI.Combinatorics.GotsmanLinial.WeightedGrading"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/GotsmanLinial.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Combinatorics.GotsmanLinial.Main",
+   "name": "OAI.LeanBlast.GotsmanLinial.gotsmanLinialStatement",
+   "statement_sha256": "3f8db5f1475df6a0610a6e3f616ee9bc8eb3ef37601bff5fceab0db3b69c166f"
+  }
+ ],
+ "task_id": "oai-gotsman-linial",
+ "task_revision": 1,
+ "title": "OpenAI math: Average sensitivity of polynomial threshold functions: Average sensitivity of polynomial threshold functions",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

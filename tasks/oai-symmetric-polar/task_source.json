@@ -1,0 +1,881 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 238965358
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.SymmetricPolar",
+  "challenge_sha256": "3683f15ea0cf510f677e40d0db8aff6c2b442bac325241984ff5a57ca4d9075a",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SymmetricPolar.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.SymmetricPolar",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Geometry.PolarProducts.Main",
+   "theorem_names": [
+    "OAI.SymmetricPolar.symmetric_polar_main"
+   ]
+  },
+  "config_sha256": "0665fbaed509ae1465a32ed1f1548988b1416b15a93f1c8eec10cdc633b06e95",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SymmetricPolar.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.SymmetricPolar.symmetric_polar_main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/CanonicalCoordinates.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.CanonicalCoordinates",
+   "original_sha256": "4cd992fb78416bb6640a0b0dc9f6158a363ade0ce6f6fb88b8c7ffdb67435034",
+   "path": "OAI/Geometry/PolarProducts/CanonicalCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/CanonicalCylinder.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.CanonicalCylinder",
+   "original_sha256": "67749e8383d997add66e26716f6b5a69a1da75d8754ab6b518a615e7c01ca790",
+   "path": "OAI/Geometry/PolarProducts/CanonicalCylinder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/CompleteFlow.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.CompleteFlow",
+   "original_sha256": "b6146aa5a0c41533cd7db848c4848c2c8f266b655bafbaeb0561ddf8c0109a7c",
+   "path": "OAI/Geometry/PolarProducts/CompleteFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/Contraction.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.Contraction",
+   "original_sha256": "2ebb8c3fc1058b921a123462ffcfd6bf05fcb10c7e200506df04e434df0a9b53",
+   "path": "OAI/Geometry/PolarProducts/Contraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/EmbeddingInverse.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.EmbeddingInverse",
+   "original_sha256": "2ae0d5605b5e3594638e45c16e86790ffd80189112b5722fb6b5c224c1746e46",
+   "path": "OAI/Geometry/PolarProducts/EmbeddingInverse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/ExteriorHamiltonian.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.ExteriorHamiltonian",
+   "original_sha256": "0b7b49cb99b7b5684b5d286afe58753f130af135e431a03087a61587f01ebea0",
+   "path": "OAI/Geometry/PolarProducts/ExteriorHamiltonian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/FiniteDescent.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.FiniteDescent",
+   "original_sha256": "5035f4388a2cdf6b24c317305043ea342049c72f456a5dd78c2bea3ea1be39c4",
+   "path": "OAI/Geometry/PolarProducts/FiniteDescent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/FourierIntegrals.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.FourierIntegrals",
+   "original_sha256": "4ca80258a6a0eefe413c3c33053c822da9091ac11803353d1907786acd0ce688",
+   "path": "OAI/Geometry/PolarProducts/FourierIntegrals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/FourierPaths.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.FourierPaths",
+   "original_sha256": "706e2b662a9fd0ec66892b7151f2350d59d37d46a81c3ab1536cc36173b3d948",
+   "path": "OAI/Geometry/PolarProducts/FourierPaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/GalerkinBounds.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.GalerkinBounds",
+   "original_sha256": "18ccc90dfbbe9d097130890eda58d36a93f5067178bfada5877fc2dcef353597",
+   "path": "OAI/Geometry/PolarProducts/GalerkinBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/GradientLinking.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.GradientLinking",
+   "original_sha256": "69c9f34a9f72a271a2f6f07ba1c8330b547f8745cfa7eb7666029d34ff14f3f7",
+   "path": "OAI/Geometry/PolarProducts/GradientLinking.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/HamiltonianGrowth.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.HamiltonianGrowth",
+   "original_sha256": "214cf959a0e34d7afc0f7b019a1fa0878d57f7fc3e10a110d316c55ca535a0ab",
+   "path": "OAI/Geometry/PolarProducts/HamiltonianGrowth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/HamiltonianODE.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.HamiltonianODE",
+   "original_sha256": "df7fa384ae88821e7d072f8ebff7132bd9f2cbe5c8a2553eb72cac3b8f0264d4",
+   "path": "OAI/Geometry/PolarProducts/HamiltonianODE.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/HolomorphicBalls.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.HolomorphicBalls",
+   "original_sha256": "8eaeb17494116c353fb2be73342dc32dbb7a381aeff7b86fc41349185153941c",
+   "path": "OAI/Geometry/PolarProducts/HolomorphicBalls.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/HorizontalIntegrals.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.HorizontalIntegrals",
+   "original_sha256": "cd4bc3dd2a7ea8290722ea7b3d0909079f31075f06fde06ea13c896acf498c68",
+   "path": "OAI/Geometry/PolarProducts/HorizontalIntegrals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/LensArea.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.LensArea",
+   "original_sha256": "1f789c40af715d5177419bc8aed063510a674d3b0b7802f02da82cb5367c967a",
+   "path": "OAI/Geometry/PolarProducts/LensArea.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/LensBounds.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.LensBounds",
+   "original_sha256": "0a5ee041cf9776bff5b0b40b5068b1ec70936063f2073f85f116ecb58d11548c",
+   "path": "OAI/Geometry/PolarProducts/LensBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/LensEstimates.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.LensEstimates",
+   "original_sha256": "6741309478878e770e99bfefb364204df221acf99714a51996b474b2f7aa65ce",
+   "path": "OAI/Geometry/PolarProducts/LensEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/LensMap.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.LensMap",
+   "original_sha256": "8b2d6d6d60a07f368afcc650ba827f919dd63cc937287e8e1df05012f88a68f5",
+   "path": "OAI/Geometry/PolarProducts/LensMap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/LocalODE.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.LocalODE",
+   "original_sha256": "a15ee74b03e386cb4cc3e385f4417ce058ee15602a00055da8dbdb9db7de83c2",
+   "path": "OAI/Geometry/PolarProducts/LocalODE.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/LogProfile.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.LogProfile",
+   "original_sha256": "03053ea15c3b376dfac16e1d88859bb7ba30ce70242cf31a4da4d89a432a8f20",
+   "path": "OAI/Geometry/PolarProducts/LogProfile.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/LowerBound.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.LowerBound",
+   "original_sha256": "dd34f9e9f510a4186e58f5a153b49c8022147c0fc24426f989364635027a9d93",
+   "path": "OAI/Geometry/PolarProducts/LowerBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/Main.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.Main",
+   "original_sha256": "0b698fe6edebe1859696b5bbf7f08e51bb16df6ab64993248710884e64bc5ae2",
+   "path": "OAI/Geometry/PolarProducts/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/Model.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.Model",
+   "original_sha256": "3f2bd39ee1a0aa0acd48d3d0f50025fcca820c3ea1806d57569c15c9c6f9cf3f",
+   "path": "OAI/Geometry/PolarProducts/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/MomentumBounds.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.MomentumBounds",
+   "original_sha256": "a389fb9a7bb340cc6fc0362fcda2130ec34bb931eeb0abd82f43b57a746142b1",
+   "path": "OAI/Geometry/PolarProducts/MomentumBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/MoserField.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.MoserField",
+   "original_sha256": "df087e6282a54fd6e6410efbf931db8940e2c969f6e43333b6b4dd13c7e581d1",
+   "path": "OAI/Geometry/PolarProducts/MoserField.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/MoserFlow.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.MoserFlow",
+   "original_sha256": "f1291bf29af7dc3654ac6c981b234227f3d9f97516a6020eeb64b40b7be28fc6",
+   "path": "OAI/Geometry/PolarProducts/MoserFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/Nonsqueezing.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.Nonsqueezing",
+   "original_sha256": "7cf2a004bd3695e3634ad9695f59adb30b6b1a4e137fcf2ad631ed1fd80a4bf4",
+   "path": "OAI/Geometry/PolarProducts/Nonsqueezing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/PeriodicFourier.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.PeriodicFourier",
+   "original_sha256": "4e16c1ab9de65bfcd732655b77796db76bb020ae1a0c3464cbca7dbb5b466872",
+   "path": "OAI/Geometry/PolarProducts/PeriodicFourier.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/PeriodicSolutions.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.PeriodicSolutions",
+   "original_sha256": "927bebfbdb5d8495aa0c12922a69e903194d7a4dbb123a847f32556636cadf7c",
+   "path": "OAI/Geometry/PolarProducts/PeriodicSolutions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/PlanarSquare.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.PlanarSquare",
+   "original_sha256": "6df98fea26a3769903c5c5b4b805d03cd27cf62f4c6b7ad37ddb878688e9c424",
+   "path": "OAI/Geometry/PolarProducts/PlanarSquare.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/PolarApproximation.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.PolarApproximation",
+   "original_sha256": "64a44bb2c427b72b486995a3ebc3b696d9e57dc1901cedacdd885f6d8abf420e",
+   "path": "OAI/Geometry/PolarProducts/PolarApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/PotentialDeformation.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.PotentialDeformation",
+   "original_sha256": "f0bf8d9f247e5aafbad41855f059fd25bad4a48bfd9afca0b96f348baa212b1d",
+   "path": "OAI/Geometry/PolarProducts/PotentialDeformation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/PotentialForms.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.PotentialForms",
+   "original_sha256": "7de1bc89ebcd98168b3a9b240b482752744e81372be6f719ea032a71ee179ef3",
+   "path": "OAI/Geometry/PolarProducts/PotentialForms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/QuadraticAction.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.QuadraticAction",
+   "original_sha256": "d5f7ca7d5167a852d0f247e07ec9937e73126491833b3dd488df7db76021c1de",
+   "path": "OAI/Geometry/PolarProducts/QuadraticAction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/RadialMap.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.RadialMap",
+   "original_sha256": "04cf06ab644676c1b5ed59a5d4e4ee6c305ecf2078b1eee526b683561e0e3c5c",
+   "path": "OAI/Geometry/PolarProducts/RadialMap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/RegularizedMaximum.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.RegularizedMaximum",
+   "original_sha256": "1bcbb577c4d11cbe89c51c36eb9d71578c629009cfb5d627826900a46ddd3633",
+   "path": "OAI/Geometry/PolarProducts/RegularizedMaximum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/SmoothDegree.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.SmoothDegree",
+   "original_sha256": "93158595899f6ca597981badc34b211588e2aed587006f34a45ab34b7bbfb523",
+   "path": "OAI/Geometry/PolarProducts/SmoothDegree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/SmoothFlow.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.SmoothFlow",
+   "original_sha256": "daddeeb831409181d397c289461d34ea898c6f6fb9c28c902831e3ac272a2d68",
+   "path": "OAI/Geometry/PolarProducts/SmoothFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/SmoothPaths.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.SmoothPaths",
+   "original_sha256": "293528116c0271e741a32c686d8026319d719e4f24c69e6c4b576165201462fd",
+   "path": "OAI/Geometry/PolarProducts/SmoothPaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/SmoothProfiles.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.SmoothProfiles",
+   "original_sha256": "0340bf547e8bc437eabb926c9f551337ce25c2101c674c99baf10697b59d1e58",
+   "path": "OAI/Geometry/PolarProducts/SmoothProfiles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/StripEmbedding.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.StripEmbedding",
+   "original_sha256": "8dae0faff925f5f6a09783f578b21fc07ee4fe8804d6e5562e521621898cd5b4",
+   "path": "OAI/Geometry/PolarProducts/StripEmbedding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/StripMaps.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.StripMaps",
+   "original_sha256": "3132d071b49ecc3e0979aaf079c3b3ec94d780936081760355d47f09b416354b",
+   "path": "OAI/Geometry/PolarProducts/StripMaps.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/TensorCalculus.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.TensorCalculus",
+   "original_sha256": "670893bf0e3303a75e9cef4eb1fed2b31717ffb8784f97a224c4badda1e30b8d",
+   "path": "OAI/Geometry/PolarProducts/TensorCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/TipEstimates.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.TipEstimates",
+   "original_sha256": "bfe90579805e3c2e4ce3a9bb8eb13b2a1b2ebda5aa97f5ef53f79009886213a1",
+   "path": "OAI/Geometry/PolarProducts/TipEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PolarProducts/UpperBound.lean"
+   },
+   "module": "OAI.Geometry.PolarProducts.UpperBound",
+   "original_sha256": "10f32aa4d1e7d57ab06736fb9b49dee233fdd1f828e88fbabb94d0034123ac8c",
+   "path": "OAI/Geometry/PolarProducts/UpperBound.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Geometry.PolarProducts.CanonicalCoordinates",
+  "OAI.Geometry.PolarProducts.CanonicalCylinder",
+  "OAI.Geometry.PolarProducts.CompleteFlow",
+  "OAI.Geometry.PolarProducts.Contraction",
+  "OAI.Geometry.PolarProducts.EmbeddingInverse",
+  "OAI.Geometry.PolarProducts.ExteriorHamiltonian",
+  "OAI.Geometry.PolarProducts.FiniteDescent",
+  "OAI.Geometry.PolarProducts.FourierIntegrals",
+  "OAI.Geometry.PolarProducts.FourierPaths",
+  "OAI.Geometry.PolarProducts.GalerkinBounds",
+  "OAI.Geometry.PolarProducts.GradientLinking",
+  "OAI.Geometry.PolarProducts.HamiltonianGrowth",
+  "OAI.Geometry.PolarProducts.HamiltonianODE",
+  "OAI.Geometry.PolarProducts.HolomorphicBalls",
+  "OAI.Geometry.PolarProducts.HorizontalIntegrals",
+  "OAI.Geometry.PolarProducts.LensArea",
+  "OAI.Geometry.PolarProducts.LensBounds",
+  "OAI.Geometry.PolarProducts.LensEstimates",
+  "OAI.Geometry.PolarProducts.LensMap",
+  "OAI.Geometry.PolarProducts.LocalODE",
+  "OAI.Geometry.PolarProducts.LogProfile",
+  "OAI.Geometry.PolarProducts.LowerBound",
+  "OAI.Geometry.PolarProducts.Main",
+  "OAI.Geometry.PolarProducts.Model",
+  "OAI.Geometry.PolarProducts.MomentumBounds",
+  "OAI.Geometry.PolarProducts.MoserField",
+  "OAI.Geometry.PolarProducts.MoserFlow",
+  "OAI.Geometry.PolarProducts.Nonsqueezing",
+  "OAI.Geometry.PolarProducts.PeriodicFourier",
+  "OAI.Geometry.PolarProducts.PeriodicSolutions",
+  "OAI.Geometry.PolarProducts.PlanarSquare",
+  "OAI.Geometry.PolarProducts.PolarApproximation",
+  "OAI.Geometry.PolarProducts.PotentialDeformation",
+  "OAI.Geometry.PolarProducts.PotentialForms",
+  "OAI.Geometry.PolarProducts.QuadraticAction",
+  "OAI.Geometry.PolarProducts.RadialMap",
+  "OAI.Geometry.PolarProducts.RegularizedMaximum",
+  "OAI.Geometry.PolarProducts.SmoothDegree",
+  "OAI.Geometry.PolarProducts.SmoothFlow",
+  "OAI.Geometry.PolarProducts.SmoothPaths",
+  "OAI.Geometry.PolarProducts.SmoothProfiles",
+  "OAI.Geometry.PolarProducts.StripEmbedding",
+  "OAI.Geometry.PolarProducts.StripMaps",
+  "OAI.Geometry.PolarProducts.TensorCalculus",
+  "OAI.Geometry.PolarProducts.TipEstimates",
+  "OAI.Geometry.PolarProducts.UpperBound"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/SymmetricPolar.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Geometry.PolarProducts.Main",
+   "name": "OAI.SymmetricPolar.symmetric_polar_main",
+   "statement_sha256": "3c34234668267e0cedae76d072444d598b3646f914f52ad429fce0148b4c526c"
+  }
+ ],
+ "task_id": "oai-symmetric-polar",
+ "task_revision": 1,
+ "title": "OpenAI math: The Mahler conjectures, functional inequalities and polar-product symplectic width: Gromov width of symmetric polar products",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

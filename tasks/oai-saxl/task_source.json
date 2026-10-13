@@ -1,0 +1,801 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 503170726
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.Saxl",
+  "challenge_sha256": "71917234c1dc2e7fe3b8912175f5bdbb30565803ff71a1bb5ce71c889c79d683",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/Saxl.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.Saxl",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.RepresentationTheory.Saxl.Main",
+   "theorem_names": [
+    "OAI.Saxl.saxl_conjecture"
+   ]
+  },
+  "config_sha256": "20c77d628ecc9ed20e3eea8bb033bcd7fedd02c42449e02f2a0573187b33a770",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/Saxl.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.Saxl.saxl_conjecture": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/BandFactorization.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.BandFactorization",
+   "original_sha256": "9e12fad0a351df8d534a4b66295a132e23a44d523ec68a599c8636efaae06240",
+   "path": "OAI/RepresentationTheory/Saxl/BandFactorization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/BandGlue.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.BandGlue",
+   "original_sha256": "8bef7e4f030fb3716b914b770a4f5c7092b70175fe2e7b8f96acae336ae30c25",
+   "path": "OAI/RepresentationTheory/Saxl/BandGlue.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/BandMatrices.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.BandMatrices",
+   "original_sha256": "1d8bd1142a42a1673d0c34d4ed8f3f79c14cefd02f47f1039bb3b9ff2f9822d3",
+   "path": "OAI/RepresentationTheory/Saxl/BandMatrices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/BandOrbit.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.BandOrbit",
+   "original_sha256": "633617eb0deb74a34d13cfa9a04539db80860af1cd3f72def5f90a4c72f5bb1e",
+   "path": "OAI/RepresentationTheory/Saxl/BandOrbit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/BandPairing.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.BandPairing",
+   "original_sha256": "a1fd365f0b2c57118f9d2b081a778c7d98a1563de3aea82abeca2bf1b0e05552",
+   "path": "OAI/RepresentationTheory/Saxl/BandPairing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/BandSupport.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.BandSupport",
+   "original_sha256": "b18c54674c2aca30ee4107d22f23f3bd2ec7f7f2ef02e3b18fe4ee2817614851",
+   "path": "OAI/RepresentationTheory/Saxl/BandSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/Basic.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.Basic",
+   "original_sha256": "2fe79e7fb88eb9ae2de602af57517d18bf1351c8797b16ba73b179b231a128d4",
+   "path": "OAI/RepresentationTheory/Saxl/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/ColumnContraction.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.ColumnContraction",
+   "original_sha256": "a17f8fa936c971130eb3a163d44a609d3478649a02e7bc3e602651785d4a5b16",
+   "path": "OAI/RepresentationTheory/Saxl/ColumnContraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/CoordinateSector.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.CoordinateSector",
+   "original_sha256": "775ae62f4775816886a393a6ea0b87178561da2b6fbb7dc2b1ad815a4cd8032c",
+   "path": "OAI/RepresentationTheory/Saxl/CoordinateSector.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/CyclicSector.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.CyclicSector",
+   "original_sha256": "72caca74383818ce1f751fc37a7d372b139b417729e3e346d601b054f46345de",
+   "path": "OAI/RepresentationTheory/Saxl/CyclicSector.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/CyclicTensor.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.CyclicTensor",
+   "original_sha256": "359d889c020a15bf38a5650251d892b1e0cf333eec1bde151e3ffe6b8f28adf3",
+   "path": "OAI/RepresentationTheory/Saxl/CyclicTensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/DominatedQuotient.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.DominatedQuotient",
+   "original_sha256": "03736998bf49afd6280d0b8b44f8ac1c78fc609c1db6973f95e458061ceeeb92",
+   "path": "OAI/RepresentationTheory/Saxl/DominatedQuotient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/DominatedSupport.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.DominatedSupport",
+   "original_sha256": "62d4aaed14af81b4d49d78f36612b76e75b9d5c5f6b4303c1301ac9f9bc31204",
+   "path": "OAI/RepresentationTheory/Saxl/DominatedSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/HighProjection.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.HighProjection",
+   "original_sha256": "00f27d4a83e32d23b8653c17dba958e5a778c21e1d9b00bc7074e58283fe5359",
+   "path": "OAI/RepresentationTheory/Saxl/HighProjection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/HorizontalRemoval.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.HorizontalRemoval",
+   "original_sha256": "afda38c3d9144737073f28b11554c17663ddf926301c749a2ccb2e014d51cbf6",
+   "path": "OAI/RepresentationTheory/Saxl/HorizontalRemoval.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/Main.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.Main",
+   "original_sha256": "d75823f7a9d4ec4cec8b0f8e445da4012da8508ad31056754210fd52781f61c0",
+   "path": "OAI/RepresentationTheory/Saxl/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/Model.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.Model",
+   "original_sha256": "b612d450e3d2b10d0f12a49915c4319641dc07ccf1a63a27f49a1a33a05def81",
+   "path": "OAI/RepresentationTheory/Saxl/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/PathAlternation.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.PathAlternation",
+   "original_sha256": "79cf89d5ad9a9b53486b21ca970db5b4b9b2907c553f492e691e115b86ae8550",
+   "path": "OAI/RepresentationTheory/Saxl/PathAlternation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/PathContraction.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.PathContraction",
+   "original_sha256": "5b9e7d369b9920ea9b711d8e0910035fda824cc9010b3ef3dd483b0db563dda9",
+   "path": "OAI/RepresentationTheory/Saxl/PathContraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/PieriRestriction.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.PieriRestriction",
+   "original_sha256": "a0e331a843fc064ec1201f44dd97fd8f94b3a9818ef7e66e1b19a45391551037",
+   "path": "OAI/RepresentationTheory/Saxl/PieriRestriction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/Polytabloid.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.Polytabloid",
+   "original_sha256": "457cd6a6e3590714c2e749a817a476aa415f4d19bc3549e1d86866691df45f31",
+   "path": "OAI/RepresentationTheory/Saxl/Polytabloid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/PositionSplit.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.PositionSplit",
+   "original_sha256": "10b460f2af9e6c32a23ffc4a086c2de34513f738f2f37c974833105092818b7b",
+   "path": "OAI/RepresentationTheory/Saxl/PositionSplit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/PositionTensor.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.PositionTensor",
+   "original_sha256": "9e2d11819f7671616f45f172c187dba59900358032b0b0c599305b4231e244b4",
+   "path": "OAI/RepresentationTheory/Saxl/PositionTensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/RepeatedProjection.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.RepeatedProjection",
+   "original_sha256": "1e8ee7c3e7c140a41aeb547949f1a4c8fd9b282b948327df7af91735de8e460a",
+   "path": "OAI/RepresentationTheory/Saxl/RepeatedProjection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/ShapeRigidity.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.ShapeRigidity",
+   "original_sha256": "89e106b01db2a07caee1f9fc1649abcc2c2671dd8778e94d316775d1f1b09bad",
+   "path": "OAI/RepresentationTheory/Saxl/ShapeRigidity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/SignEquivalence.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.SignEquivalence",
+   "original_sha256": "a357d16d801e9b48cfe04a56492dae04e776fea5bd41ed362bec18101395e9ed",
+   "path": "OAI/RepresentationTheory/Saxl/SignEquivalence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/SizedStrips.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.SizedStrips",
+   "original_sha256": "944877c957e85086d46f798f12733b5003af0ef7d400bc83b1781cdda5320d7a",
+   "path": "OAI/RepresentationTheory/Saxl/SizedStrips.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/SpechtClassification.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.SpechtClassification",
+   "original_sha256": "9dd00e49eca17816562306eb0a03fe3c474bfe2b4303dab0e1e6afa9590cb756",
+   "path": "OAI/RepresentationTheory/Saxl/SpechtClassification.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/SpechtDuality.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.SpechtDuality",
+   "original_sha256": "531af97b26940da22e1e093125bce71050019f16a5ca7c6750088cb975c8c66f",
+   "path": "OAI/RepresentationTheory/Saxl/SpechtDuality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/SpechtSubmodule.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.SpechtSubmodule",
+   "original_sha256": "d6f137f4b1e63c172f43d97dc33a137513b664bd783fbfb1d2642d40eb57453b",
+   "path": "OAI/RepresentationTheory/Saxl/SpechtSubmodule.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/StaircaseSign.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.StaircaseSign",
+   "original_sha256": "00ae0bf11d70cf7625f1e01e266a5fac7d5b23cca7c4648d30c7fe88600134f1",
+   "path": "OAI/RepresentationTheory/Saxl/StaircaseSign.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/StaircaseTensor.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.StaircaseTensor",
+   "original_sha256": "ab3154e1f2679bb4062176aeb301cff98c0a31a0e4357d31ffb29a9bda4cbb9a",
+   "path": "OAI/RepresentationTheory/Saxl/StaircaseTensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/StripExtension.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.StripExtension",
+   "original_sha256": "944fb8aac073d8deee58c76f2b41cc6c3caa0be694d44e1dd5eb5fbbce8f08d0",
+   "path": "OAI/RepresentationTheory/Saxl/StripExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/StripReduction.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.StripReduction",
+   "original_sha256": "554adbebea7003af936501976ae9b66c5901369cb892045b8230818186e78cbb",
+   "path": "OAI/RepresentationTheory/Saxl/StripReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/StripSupport.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.StripSupport",
+   "original_sha256": "dc37c86bf508f139a9ab8a88d9c39dfe181dda723108768e17d85847fa7c6400",
+   "path": "OAI/RepresentationTheory/Saxl/StripSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/SupportSeparation.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.SupportSeparation",
+   "original_sha256": "20818125d48e4c96891b8e6163cf1ef5835fe05ade340db6767618353bb18eb6",
+   "path": "OAI/RepresentationTheory/Saxl/SupportSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/TableauTransport.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.TableauTransport",
+   "original_sha256": "440aa223aef8aaf593adf7e85354bddaf81222ecc1130759913d344397f9b906",
+   "path": "OAI/RepresentationTheory/Saxl/TableauTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/Saxl/YoungRule.lean"
+   },
+   "module": "OAI.RepresentationTheory.Saxl.YoungRule",
+   "original_sha256": "e90a0ac63458595a3b5719a8e9c9f7eef5e48cd9086e1fb2b7dfe435ddf1b5e9",
+   "path": "OAI/RepresentationTheory/Saxl/YoungRule.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.RepresentationTheory.Saxl.BandFactorization",
+  "OAI.RepresentationTheory.Saxl.BandGlue",
+  "OAI.RepresentationTheory.Saxl.BandMatrices",
+  "OAI.RepresentationTheory.Saxl.BandOrbit",
+  "OAI.RepresentationTheory.Saxl.BandPairing",
+  "OAI.RepresentationTheory.Saxl.BandSupport",
+  "OAI.RepresentationTheory.Saxl.Basic",
+  "OAI.RepresentationTheory.Saxl.ColumnContraction",
+  "OAI.RepresentationTheory.Saxl.CoordinateSector",
+  "OAI.RepresentationTheory.Saxl.CyclicSector",
+  "OAI.RepresentationTheory.Saxl.CyclicTensor",
+  "OAI.RepresentationTheory.Saxl.DominatedQuotient",
+  "OAI.RepresentationTheory.Saxl.DominatedSupport",
+  "OAI.RepresentationTheory.Saxl.HighProjection",
+  "OAI.RepresentationTheory.Saxl.HorizontalRemoval",
+  "OAI.RepresentationTheory.Saxl.Main",
+  "OAI.RepresentationTheory.Saxl.Model",
+  "OAI.RepresentationTheory.Saxl.PathAlternation",
+  "OAI.RepresentationTheory.Saxl.PathContraction",
+  "OAI.RepresentationTheory.Saxl.PieriRestriction",
+  "OAI.RepresentationTheory.Saxl.Polytabloid",
+  "OAI.RepresentationTheory.Saxl.PositionSplit",
+  "OAI.RepresentationTheory.Saxl.PositionTensor",
+  "OAI.RepresentationTheory.Saxl.RepeatedProjection",
+  "OAI.RepresentationTheory.Saxl.ShapeRigidity",
+  "OAI.RepresentationTheory.Saxl.SignEquivalence",
+  "OAI.RepresentationTheory.Saxl.SizedStrips",
+  "OAI.RepresentationTheory.Saxl.SpechtClassification",
+  "OAI.RepresentationTheory.Saxl.SpechtDuality",
+  "OAI.RepresentationTheory.Saxl.SpechtSubmodule",
+  "OAI.RepresentationTheory.Saxl.StaircaseSign",
+  "OAI.RepresentationTheory.Saxl.StaircaseTensor",
+  "OAI.RepresentationTheory.Saxl.StripExtension",
+  "OAI.RepresentationTheory.Saxl.StripReduction",
+  "OAI.RepresentationTheory.Saxl.StripSupport",
+  "OAI.RepresentationTheory.Saxl.SupportSeparation",
+  "OAI.RepresentationTheory.Saxl.TableauTransport",
+  "OAI.RepresentationTheory.Saxl.YoungRule"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/Saxl.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.RepresentationTheory.Saxl.Main",
+   "name": "OAI.Saxl.saxl_conjecture",
+   "statement_sha256": "240b265f928d040d98c8895d2cfd228012054a0a8a8763c31a96f97d00d427ab"
+  }
+ ],
+ "task_id": "oai-saxl",
+ "task_revision": 1,
+ "title": "OpenAI math: Saxl’s conjecture and universal tensor squares: Saxl's conjecture",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

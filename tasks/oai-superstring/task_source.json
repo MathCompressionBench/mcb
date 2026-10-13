@@ -1,0 +1,931 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 181761512
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.Superstring",
+  "challenge_sha256": "8930f17794dfd3ca55e5c238019e5ccecf8c189d2df87df83773d00d1f4d1d3a",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/Superstring.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.Superstring",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Computability.Superstring.Main",
+   "theorem_names": [
+    "OAI.Superstring.main"
+   ]
+  },
+  "config_sha256": "e298a74e985c5ee46968c6c232061292bcf89ef6e93dd6a1a222b94db357c87a",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/Superstring.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.Superstring.main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Arithmetic.lean"
+   },
+   "module": "OAI.Computability.Superstring.Arithmetic",
+   "original_sha256": "a89adb6c68d286b969d2514173c1c397a1f3796ddcf5b94315017def980ae3da",
+   "path": "OAI/Computability/Superstring/Arithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Attachments.lean"
+   },
+   "module": "OAI.Computability.Superstring.Attachments",
+   "original_sha256": "236109787513d1f606460ca86063182e285cab74fefc0d04249991d89154d283",
+   "path": "OAI/Computability/Superstring/Attachments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/BlockClose.lean"
+   },
+   "module": "OAI.Computability.Superstring.BlockClose",
+   "original_sha256": "04d13079ad8916b2d5707519754218649e0f936a9213ca8ab0dbec5f24360f9d",
+   "path": "OAI/Computability/Superstring/BlockClose.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Clock.lean"
+   },
+   "module": "OAI.Computability.Superstring.Clock",
+   "original_sha256": "8840051f8a3e1cdffeff8aca3036b4554756ab261b88b75afbdbfa11452845f5",
+   "path": "OAI/Computability/Superstring/Clock.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/CollectionCode.lean"
+   },
+   "module": "OAI.Computability.Superstring.CollectionCode",
+   "original_sha256": "3d277db99daf4cfb7a6afc532239e40ebfbf22507781d76915c3a86b62561b6b",
+   "path": "OAI/Computability/Superstring/CollectionCode.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Collections.lean"
+   },
+   "module": "OAI.Computability.Superstring.Collections",
+   "original_sha256": "271fec3c9d7fead80213aca631f9d7f6b2f427087213a237e9af429945c5a8a0",
+   "path": "OAI/Computability/Superstring/Collections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Combinators.lean"
+   },
+   "module": "OAI.Computability.Superstring.Combinators",
+   "original_sha256": "f5f86a61518399058c77d121f857d879aed91f9165e59eabf49d43fbf7dca960",
+   "path": "OAI/Computability/Superstring/Combinators.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Computable.lean"
+   },
+   "module": "OAI.Computability.Superstring.Computable",
+   "original_sha256": "f65f4b6eec2038f59e60517e834bf770884947a0c1132beaff085e1b011f9a92",
+   "path": "OAI/Computability/Superstring/Computable.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/CountSort.lean"
+   },
+   "module": "OAI.Computability.Superstring.CountSort",
+   "original_sha256": "3988d79c02080a8fc2d2a7d67c10c4fb0c5b93b5b9fa64f2c1984a6de6b24256",
+   "path": "OAI/Computability/Superstring/CountSort.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Counting.lean"
+   },
+   "module": "OAI.Computability.Superstring.Counting",
+   "original_sha256": "ced559c154ed79973b6a34d4c14e2319388671628975c74af31e2ed3b68dd525",
+   "path": "OAI/Computability/Superstring/Counting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Counts.lean"
+   },
+   "module": "OAI.Computability.Superstring.Counts",
+   "original_sha256": "00c8ba99c1da36388c851fd5a7f485719550dbdb7a9388e016c005732321d03b",
+   "path": "OAI/Computability/Superstring/Counts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/DistributeCode.lean"
+   },
+   "module": "OAI.Computability.Superstring.DistributeCode",
+   "original_sha256": "1520b6a956ea6aa4d5ea0db6e7ad118996cbf0798f979fdd498d822e4181c516",
+   "path": "OAI/Computability/Superstring/DistributeCode.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Distribution.lean"
+   },
+   "module": "OAI.Computability.Superstring.Distribution",
+   "original_sha256": "bd6e3f2530b0d93bcea677930397cdb8fa981a08685a10a78318b4a68434f24d",
+   "path": "OAI/Computability/Superstring/Distribution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Encoding.lean"
+   },
+   "module": "OAI.Computability.Superstring.Encoding",
+   "original_sha256": "ba5b1171f113347bb46d7b4507649b32d03ab883698c1d48de362af195c3c37e",
+   "path": "OAI/Computability/Superstring/Encoding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/FactoryPoly.lean"
+   },
+   "module": "OAI.Computability.Superstring.FactoryPoly",
+   "original_sha256": "09277dda84f43cb33031ab19864507ed6e0c4f02700d19dc207a90cb3fb4e53e",
+   "path": "OAI/Computability/Superstring/FactoryPoly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/FibreSelect.lean"
+   },
+   "module": "OAI.Computability.Superstring.FibreSelect",
+   "original_sha256": "66a9236b1397813181c67c7809d208a336b7945000037869378b53f768eaa03e",
+   "path": "OAI/Computability/Superstring/FibreSelect.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/GeoCore.lean"
+   },
+   "module": "OAI.Computability.Superstring.GeoCore",
+   "original_sha256": "3857c60bef0161955f4ae276ea5b09b656a1a3e88fdce8fc57b2f92ac3a54d8f",
+   "path": "OAI/Computability/Superstring/GeoCore.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/GroupBridge.lean"
+   },
+   "module": "OAI.Computability.Superstring.GroupBridge",
+   "original_sha256": "f8d21c7f30dd7e79523a1cba12901899a1b9912a811a9d3a1aeaf20e5fada260",
+   "path": "OAI/Computability/Superstring/GroupBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/GroupPoly.lean"
+   },
+   "module": "OAI.Computability.Superstring.GroupPoly",
+   "original_sha256": "f373ec95bd56fb9cd772d9213b48fcb97a6c51605a226cb185397ec5e9af4ae4",
+   "path": "OAI/Computability/Superstring/GroupPoly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/GroupSupply.lean"
+   },
+   "module": "OAI.Computability.Superstring.GroupSupply",
+   "original_sha256": "2af633d3b82703a8ae5c6b0f73038ec1eb627f63c875af2d85d00b91b199b242",
+   "path": "OAI/Computability/Superstring/GroupSupply.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Groups.lean"
+   },
+   "module": "OAI.Computability.Superstring.Groups",
+   "original_sha256": "62a13c645c29666e2915e511cc51bf24eab1783e92e96e4e519866d3695aa620",
+   "path": "OAI/Computability/Superstring/Groups.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Hierarchical.lean"
+   },
+   "module": "OAI.Computability.Superstring.Hierarchical",
+   "original_sha256": "c08c910ac6d2244fbe02adbe7cd8c2caf7019540ec86357a8e2e15a9e01bf381",
+   "path": "OAI/Computability/Superstring/Hierarchical.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/HostComplete.lean"
+   },
+   "module": "OAI.Computability.Superstring.HostComplete",
+   "original_sha256": "a019124eb5f37036a747f97c8c304b9ef26b66aaf512e768846ba775b8866ab0",
+   "path": "OAI/Computability/Superstring/HostComplete.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/HostNormalization.lean"
+   },
+   "module": "OAI.Computability.Superstring.HostNormalization",
+   "original_sha256": "63778ebff5721896636ae20e15a7443779ab47d69823d510152071f9cd4da166",
+   "path": "OAI/Computability/Superstring/HostNormalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/HostNormalized.lean"
+   },
+   "module": "OAI.Computability.Superstring.HostNormalized",
+   "original_sha256": "d3ed478bf69670ddbb94e7517e1e5832b55c0c7d831c19375bb1e5ed5cb87485",
+   "path": "OAI/Computability/Superstring/HostNormalized.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Input.lean"
+   },
+   "module": "OAI.Computability.Superstring.Input",
+   "original_sha256": "bd5dfd838e56a4fc100dfcb8807ada9bad1161cde21d29ab6f687ef26d647b80",
+   "path": "OAI/Computability/Superstring/Input.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Instructions.lean"
+   },
+   "module": "OAI.Computability.Superstring.Instructions",
+   "original_sha256": "b11052276167aa09cc8784b2ab831f2057082c73cff7b68c1301863472227936",
+   "path": "OAI/Computability/Superstring/Instructions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Iteration.lean"
+   },
+   "module": "OAI.Computability.Superstring.Iteration",
+   "original_sha256": "08497a1155fa0047cfcd70482f09f5570bc81bd7a4a82522f79935e8a2834337",
+   "path": "OAI/Computability/Superstring/Iteration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/LayerBridge.lean"
+   },
+   "module": "OAI.Computability.Superstring.LayerBridge",
+   "original_sha256": "8dc7bec8006db49702c923da72a9f3903bd673676f446a3b6c4081290ef70843",
+   "path": "OAI/Computability/Superstring/LayerBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/LayerCode.lean"
+   },
+   "module": "OAI.Computability.Superstring.LayerCode",
+   "original_sha256": "9c3af420e7d2eed64299996fa2b7b225e2d80c46e194bdfad3e0c78b67e0fb3f",
+   "path": "OAI/Computability/Superstring/LayerCode.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/LexCode.lean"
+   },
+   "module": "OAI.Computability.Superstring.LexCode",
+   "original_sha256": "88ae694620afc2409522466deddd25683fc6f82a11e995742129c4accf0439d8",
+   "path": "OAI/Computability/Superstring/LexCode.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/LocalCode.lean"
+   },
+   "module": "OAI.Computability.Superstring.LocalCode",
+   "original_sha256": "d0f24f4779876f5dac25636b2908fcc067ac9c6a4fc692133a510c6cdb40db96",
+   "path": "OAI/Computability/Superstring/LocalCode.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Main.lean"
+   },
+   "module": "OAI.Computability.Superstring.Main",
+   "original_sha256": "ba9aa834c785f1472c9472f70941e2c4af032cb81e7e1fc59d60b434329b46f7",
+   "path": "OAI/Computability/Superstring/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Model.lean"
+   },
+   "module": "OAI.Computability.Superstring.Model",
+   "original_sha256": "adac6d38a18c2ad7f1d91ac92decfc228546d3cc3467567f2ef832773e2ce143",
+   "path": "OAI/Computability/Superstring/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Parsing.lean"
+   },
+   "module": "OAI.Computability.Superstring.Parsing",
+   "original_sha256": "4424de010392e945eeab1a88c98a001482d5d6f4dbb38da34820187f4c640afc",
+   "path": "OAI/Computability/Superstring/Parsing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Periods.lean"
+   },
+   "module": "OAI.Computability.Superstring.Periods",
+   "original_sha256": "e33d9f6ab0cace8f2e3f2085dfa24a1f09fa4d759e1b66528d0f326d73f3da7c",
+   "path": "OAI/Computability/Superstring/Periods.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/PolynomialTime.lean"
+   },
+   "module": "OAI.Computability.Superstring.PolynomialTime",
+   "original_sha256": "87c2c4e9361f11941abe92b95c6875c76b60744d133e1a39b44bb044b7197762",
+   "path": "OAI/Computability/Superstring/PolynomialTime.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/PrefixMatching.lean"
+   },
+   "module": "OAI.Computability.Superstring.PrefixMatching",
+   "original_sha256": "0469490b838661cc943dab76f1ffb35a123c8631fd4e1b0f36f54f922fef72f3",
+   "path": "OAI/Computability/Superstring/PrefixMatching.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Programs.lean"
+   },
+   "module": "OAI.Computability.Superstring.Programs",
+   "original_sha256": "4ed6071bb9daa3bc6f7d269819f132daffac122e1f67d46865ee12f2d2594c12",
+   "path": "OAI/Computability/Superstring/Programs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Records.lean"
+   },
+   "module": "OAI.Computability.Superstring.Records",
+   "original_sha256": "c1b0482fa6eec93a3cb78694857bcec247c58a4a29b73a9f2f97817fa00509d1",
+   "path": "OAI/Computability/Superstring/Records.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/RequestAttachment.lean"
+   },
+   "module": "OAI.Computability.Superstring.RequestAttachment",
+   "original_sha256": "ca4111a58746c89109baf1f331952ed0880b0a81f07ec7dacb7694dfe81b198c",
+   "path": "OAI/Computability/Superstring/RequestAttachment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Schedule.lean"
+   },
+   "module": "OAI.Computability.Superstring.Schedule",
+   "original_sha256": "83e449b3134f0c421fcbc6231dee526161373ecca2201da7beaec475346510e5",
+   "path": "OAI/Computability/Superstring/Schedule.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/SchedulerCode.lean"
+   },
+   "module": "OAI.Computability.Superstring.SchedulerCode",
+   "original_sha256": "49759412c9323c423bae4a3ab7214795a83f3e1148c6422253143581538876c8",
+   "path": "OAI/Computability/Superstring/SchedulerCode.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/SchedulerMachine.lean"
+   },
+   "module": "OAI.Computability.Superstring.SchedulerMachine",
+   "original_sha256": "8243cec94a3431f123199fb288e7b77985cebfbfd412b66a06b976a4836b1b06",
+   "path": "OAI/Computability/Superstring/SchedulerMachine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Tables.lean"
+   },
+   "module": "OAI.Computability.Superstring.Tables",
+   "original_sha256": "cad27ced5d26fbb6be96522ee26e963ed224929ecd7c71192cc78334fca5b6e5",
+   "path": "OAI/Computability/Superstring/Tables.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/ThreadSupport.lean"
+   },
+   "module": "OAI.Computability.Superstring.ThreadSupport",
+   "original_sha256": "5b816f4e5ff919ef646ec7be6f22407198484009a19ce87e21010a34c45b010e",
+   "path": "OAI/Computability/Superstring/ThreadSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Threads.lean"
+   },
+   "module": "OAI.Computability.Superstring.Threads",
+   "original_sha256": "0084f10f58ea52155eab6fef1b3edddba53236bcddf1545606d708f1040ba9c7",
+   "path": "OAI/Computability/Superstring/Threads.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/UpperController.lean"
+   },
+   "module": "OAI.Computability.Superstring.UpperController",
+   "original_sha256": "7ca94ffafb7250a7140eb413a503897065fa01bdfcd73094ba8a7d619aa39c34",
+   "path": "OAI/Computability/Superstring/UpperController.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/WalkCode.lean"
+   },
+   "module": "OAI.Computability.Superstring.WalkCode",
+   "original_sha256": "662fee69560ce15268da8886d1598d40b9649a756b3e5cd09487e72026f95035",
+   "path": "OAI/Computability/Superstring/WalkCode.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/WalkOutput.lean"
+   },
+   "module": "OAI.Computability.Superstring.WalkOutput",
+   "original_sha256": "8eea2435dbd604c0454cccd67bbf2c0e95d544fed90ba8def2611050e11131fb",
+   "path": "OAI/Computability/Superstring/WalkOutput.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/Superstring/Windows.lean"
+   },
+   "module": "OAI.Computability.Superstring.Windows",
+   "original_sha256": "487d20becbe91bd431b104ecc98ef0b96f12f4c227f53c2eee2a704d6a6443b5",
+   "path": "OAI/Computability/Superstring/Windows.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Computability.Superstring.Arithmetic",
+  "OAI.Computability.Superstring.Attachments",
+  "OAI.Computability.Superstring.BlockClose",
+  "OAI.Computability.Superstring.Clock",
+  "OAI.Computability.Superstring.CollectionCode",
+  "OAI.Computability.Superstring.Collections",
+  "OAI.Computability.Superstring.Combinators",
+  "OAI.Computability.Superstring.Computable",
+  "OAI.Computability.Superstring.CountSort",
+  "OAI.Computability.Superstring.Counting",
+  "OAI.Computability.Superstring.Counts",
+  "OAI.Computability.Superstring.DistributeCode",
+  "OAI.Computability.Superstring.Distribution",
+  "OAI.Computability.Superstring.Encoding",
+  "OAI.Computability.Superstring.FactoryPoly",
+  "OAI.Computability.Superstring.FibreSelect",
+  "OAI.Computability.Superstring.GeoCore",
+  "OAI.Computability.Superstring.GroupBridge",
+  "OAI.Computability.Superstring.GroupPoly",
+  "OAI.Computability.Superstring.GroupSupply",
+  "OAI.Computability.Superstring.Groups",
+  "OAI.Computability.Superstring.Hierarchical",
+  "OAI.Computability.Superstring.HostComplete",
+  "OAI.Computability.Superstring.HostNormalization",
+  "OAI.Computability.Superstring.HostNormalized",
+  "OAI.Computability.Superstring.Input",
+  "OAI.Computability.Superstring.Instructions",
+  "OAI.Computability.Superstring.Iteration",
+  "OAI.Computability.Superstring.LayerBridge",
+  "OAI.Computability.Superstring.LayerCode",
+  "OAI.Computability.Superstring.LexCode",
+  "OAI.Computability.Superstring.LocalCode",
+  "OAI.Computability.Superstring.Main",
+  "OAI.Computability.Superstring.Model",
+  "OAI.Computability.Superstring.Parsing",
+  "OAI.Computability.Superstring.Periods",
+  "OAI.Computability.Superstring.PolynomialTime",
+  "OAI.Computability.Superstring.PrefixMatching",
+  "OAI.Computability.Superstring.Programs",
+  "OAI.Computability.Superstring.Records",
+  "OAI.Computability.Superstring.RequestAttachment",
+  "OAI.Computability.Superstring.Schedule",
+  "OAI.Computability.Superstring.SchedulerCode",
+  "OAI.Computability.Superstring.SchedulerMachine",
+  "OAI.Computability.Superstring.Tables",
+  "OAI.Computability.Superstring.ThreadSupport",
+  "OAI.Computability.Superstring.Threads",
+  "OAI.Computability.Superstring.UpperController",
+  "OAI.Computability.Superstring.WalkCode",
+  "OAI.Computability.Superstring.WalkOutput",
+  "OAI.Computability.Superstring.Windows"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/Superstring.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Computability.Superstring.Main",
+   "name": "OAI.Superstring.main",
+   "statement_sha256": "faa5f09101ffadf628a44f5e5a4d640ee1b555eab47c24f15eb1f91a63a4b36a"
+  }
+ ],
+ "task_id": "oai-superstring",
+ "task_revision": 1,
+ "title": "OpenAI math: A factor-two approximation for shortest common superstring: Polynomial-time 2-approximation for shortest common superstring",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

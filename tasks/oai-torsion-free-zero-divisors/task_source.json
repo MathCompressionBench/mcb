@@ -1,0 +1,1651 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 344644404
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.TorsionFreeZeroDivisors",
+  "challenge_sha256": "f0fa4b50cb7bab116b37c75a74fdea60fb206a35f2b0590157468c054dfec3c2",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/TorsionFreeZeroDivisors.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.TorsionFreeZeroDivisors",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Algebra.GroupRing.Main",
+   "theorem_names": [
+    "OAI.TorsionFreeZeroDivisors.main"
+   ]
+  },
+  "config_sha256": "2b4e32790076384bd9c492bfdb032d0d9d6027bb98d4a6c728ebe3a5fe862f12",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/TorsionFreeZeroDivisors.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.TorsionFreeZeroDivisors.main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/AbsorbCells.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.AbsorbCells",
+   "original_sha256": "97b4456589978d65bf34739708cb0e25848f3f6160b743414556000f8360b47b",
+   "path": "OAI/Algebra/GroupRing/AbsorbCells.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/AbsorbTracks.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.AbsorbTracks",
+   "original_sha256": "b959c7142bfe39975c3a6eef164ab4f2159bbb7f2a74dbb4b3f9e4fd7bd19068",
+   "path": "OAI/Algebra/GroupRing/AbsorbTracks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/AffineIntervals.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.AffineIntervals",
+   "original_sha256": "e447ada9e40ae6ec65629a7bcf07b2a417e30da3ba8e269b029a506c3b8b4add",
+   "path": "OAI/Algebra/GroupRing/AffineIntervals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/AlgebraicPictures.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.AlgebraicPictures",
+   "original_sha256": "12ea5e5f5dd19776e08f51c6aa5e510e82cc66628edc2cb948af42eb5d8f51d1",
+   "path": "OAI/Algebra/GroupRing/AlgebraicPictures.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/Attachment.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.Attachment",
+   "original_sha256": "a5948a0e6e3e22fcfd1bb0d14f7118b441a1974ec306d42149115716e7a11ed8",
+   "path": "OAI/Algebra/GroupRing/Attachment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/AttachmentFurther.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.AttachmentFurther",
+   "original_sha256": "bfc2147c5b374535bfccd2cb5ee5262732cd041529421d14da839ba7693234b0",
+   "path": "OAI/Algebra/GroupRing/AttachmentFurther.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/AttachmentHEP.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.AttachmentHEP",
+   "original_sha256": "a2cc97838dcbbd491e1bc1909447cd62fd743a92291afefb287bfc620a63656f",
+   "path": "OAI/Algebra/GroupRing/AttachmentHEP.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/BFSTree.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.BFSTree",
+   "original_sha256": "115b999a4270c7f5ee673cd7b26ed5d0acb33cd9d77884b5e015f5626cf912e2",
+   "path": "OAI/Algebra/GroupRing/BFSTree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/BalancedPieces.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.BalancedPieces",
+   "original_sha256": "03c57b824a85e32f51a2b7d68f2bb8b3d0a949df1c481789aa89ed0e64428c24",
+   "path": "OAI/Algebra/GroupRing/BalancedPieces.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/BallCount.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.BallCount",
+   "original_sha256": "2efdde3b17318cd99d7d89a452a849a62c186a1de42bb274012f2347a929c432",
+   "path": "OAI/Algebra/GroupRing/BallCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/Basic.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.Basic",
+   "original_sha256": "1f71f7a5449f86e4a95e7dd1798f73e201ca07c26a9aef3bdecec78c29b3f3a3",
+   "path": "OAI/Algebra/GroupRing/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/BlockGrid.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.BlockGrid",
+   "original_sha256": "f152226a9ec7e3ac2749e57584e790426765c34c6579f4bc5a9ca7578dc19e88",
+   "path": "OAI/Algebra/GroupRing/BlockGrid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/BlockPropagation.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.BlockPropagation",
+   "original_sha256": "663f608ccf3afe177a1577ef5598a471332158105581336754ac55b3caa2d4dd",
+   "path": "OAI/Algebra/GroupRing/BlockPropagation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/BoundedSystem.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.BoundedSystem",
+   "original_sha256": "e54a32fa28f23186076375d6729863e74cb4df08808a5da2c22ace4b4ac47ac9",
+   "path": "OAI/Algebra/GroupRing/BoundedSystem.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/Cayley.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.Cayley",
+   "original_sha256": "ace88e3318b7ce301ae6e64cca5319f89b3f7402c919adb786816830eb2c48ef",
+   "path": "OAI/Algebra/GroupRing/Cayley.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/CayleyFurther.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.CayleyFurther",
+   "original_sha256": "cb73d41b8e7fc49ab04490e5eebaec3b5a8821c4e2de9494906428f34ce9b086",
+   "path": "OAI/Algebra/GroupRing/CayleyFurther.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/CellHEP.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.CellHEP",
+   "original_sha256": "1be2c0935904ea178b163790161fceb7e16153ae7489024cb2eab6c3fc2f85c1",
+   "path": "OAI/Algebra/GroupRing/CellHEP.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/CellModule.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.CellModule",
+   "original_sha256": "42bee6e317e574190b02079e4b677fb61f1fc5a60c99e724cf00b6d12835b415",
+   "path": "OAI/Algebra/GroupRing/CellModule.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/CellNorm.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.CellNorm",
+   "original_sha256": "7aaf6214094074179cdfa33709f2468827a6b0dcfe432e87749d7d509a867335",
+   "path": "OAI/Algebra/GroupRing/CellNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/Cellular.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.Cellular",
+   "original_sha256": "b2ed46d16f59976b1630dcf21a5b57ef42b1f9c9f5af363d24a1f33d7fccd82f",
+   "path": "OAI/Algebra/GroupRing/Cellular.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/CellularFurther.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.CellularFurther",
+   "original_sha256": "01f5bb41fed476f0134511d5d126724add492ea81fb4498355dae276c8042ae0",
+   "path": "OAI/Algebra/GroupRing/CellularFurther.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/CellularFurther2.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.CellularFurther2",
+   "original_sha256": "bee58be65c70bc952df4378a306a5cb548ba2474c5bbd0c9a8994f199e197437",
+   "path": "OAI/Algebra/GroupRing/CellularFurther2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ChainActiveStages.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ChainActiveStages",
+   "original_sha256": "61b5691316fd6918284c63691dbe72ac32c4dcde2ca698a47eae4b25d65b7f94",
+   "path": "OAI/Algebra/GroupRing/ChainActiveStages.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ChainCoverage.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ChainCoverage",
+   "original_sha256": "81f32ea0663eab534abecd234a002e448d09ac61d22de27ca269e922a8a8e714",
+   "path": "OAI/Algebra/GroupRing/ChainCoverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ChainUsage.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ChainUsage",
+   "original_sha256": "fa8e0b321a1ce077191892f59b39d63483c15dd976cf91180d4a3eff1921b4cc",
+   "path": "OAI/Algebra/GroupRing/ChainUsage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ChunkComparisons.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ChunkComparisons",
+   "original_sha256": "26c60f9011ae0a2fbdc973089e62f037ac24bd30c5fa768c5784da7b8f9d657a",
+   "path": "OAI/Algebra/GroupRing/ChunkComparisons.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ClosedWords.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ClosedWords",
+   "original_sha256": "69e7d79f5c91c0633dd01e6b1ef3256e7d3963e1b29df082cd317171a8d713dc",
+   "path": "OAI/Algebra/GroupRing/ClosedWords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ClusterLocalization.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ClusterLocalization",
+   "original_sha256": "713cad59a6dbe5792a0acfba4b37c5e11a41e13373232c87c3b97c2ffc2e8f92",
+   "path": "OAI/Algebra/GroupRing/ClusterLocalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ComparisonCoding.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ComparisonCoding",
+   "original_sha256": "8824c2fb98ffb66117ad0916154a928f98741890acd8a3cc0e5a2925adb809ad",
+   "path": "OAI/Algebra/GroupRing/ComparisonCoding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ConcreteGroup.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ConcreteGroup",
+   "original_sha256": "83cdd0077573d8e8347911a1ca6734936edd38e7ad0e9186a0748b6110460b3a",
+   "path": "OAI/Algebra/GroupRing/ConcreteGroup.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ConcreteModel.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ConcreteModel",
+   "original_sha256": "697c5563f89d1258432cc796929775eb008cbc1d122c2ae0aaae340706bda49b",
+   "path": "OAI/Algebra/GroupRing/ConcreteModel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ConcreteTorsion.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ConcreteTorsion",
+   "original_sha256": "57c711a7983d75d38ce3337e043e988dc561e8904bd28b3400dff3baa54a5a04",
+   "path": "OAI/Algebra/GroupRing/ConcreteTorsion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ConeArea.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ConeArea",
+   "original_sha256": "ab6f2b82429ac3340f84f2a2c1f4710e4c3e8e5120c0ff5424d1c9da45fba314",
+   "path": "OAI/Algebra/GroupRing/ConeArea.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ConeBoundaryPaths.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ConeBoundaryPaths",
+   "original_sha256": "d0e7996fee83cf6c686bddd7a9a07e5c2e6d72b0ded33d9fc94ab1f601dff071",
+   "path": "OAI/Algebra/GroupRing/ConeBoundaryPaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ConeCells.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ConeCells",
+   "original_sha256": "5169323f0d08ed82af3330c4ac1e408b6a8459baec3a57b3ff627c95db04b70f",
+   "path": "OAI/Algebra/GroupRing/ConeCells.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ConeChains.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ConeChains",
+   "original_sha256": "58cd28d0bf323b26cfad190dc4eef6a4ff16c03cda2d234d93b96303c98bb689",
+   "path": "OAI/Algebra/GroupRing/ConeChains.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ConePicture.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ConePicture",
+   "original_sha256": "4d1bad9450d73c86e8d9b63a60b6bb0b5c92abb98991cbea54b1ab191f76ec7b",
+   "path": "OAI/Algebra/GroupRing/ConePicture.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ConeSigned.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ConeSigned",
+   "original_sha256": "4bbb237f32c776b128c433d5c24f03e3b69e11145cbc57165637c17c68be66f9",
+   "path": "OAI/Algebra/GroupRing/ConeSigned.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ConeTorsion.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ConeTorsion",
+   "original_sha256": "4f00d16ece89e617889015b4bc9b72095068f5f22d096a4a968882a2c93f53c4",
+   "path": "OAI/Algebra/GroupRing/ConeTorsion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ConedMap.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ConedMap",
+   "original_sha256": "29fd1239c42822976ee274359d34804f7a5ef51f872bcceaf7b786ba7848eebd",
+   "path": "OAI/Algebra/GroupRing/ConedMap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ContiguousSplit.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ContiguousSplit",
+   "original_sha256": "d6f14485cc957b2b2d6abb3c1c42a4a5962998f666c9d3e15bf3d86e6d105933",
+   "path": "OAI/Algebra/GroupRing/ContiguousSplit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/CoreStripping.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.CoreStripping",
+   "original_sha256": "3af27785f675be1b33a95ee9ec12d0ece596d3134c88ae62aa840189ac68bf99",
+   "path": "OAI/Algebra/GroupRing/CoreStripping.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/CycleLists.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.CycleLists",
+   "original_sha256": "f5c0d03b75b57a6362d5062363afcb0fb40118bb057c7ed0d770b4f06568f5bb",
+   "path": "OAI/Algebra/GroupRing/CycleLists.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/DegreeTwoSuppression.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.DegreeTwoSuppression",
+   "original_sha256": "08a7df596dd3afb7f820e6f23881b557f5e19579165ba9ea426dbfce7fd7d885",
+   "path": "OAI/Algebra/GroupRing/DegreeTwoSuppression.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/DiskHomotopy.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.DiskHomotopy",
+   "original_sha256": "56403f25936a8aae8a5314a32fabf1318f31093ea37231afa69483e3e38fc6cd",
+   "path": "OAI/Algebra/GroupRing/DiskHomotopy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/DiskTracks.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.DiskTracks",
+   "original_sha256": "d359df82a59623fd876ea38ed31cef83ae21d140ccd65cefbf10392447531020",
+   "path": "OAI/Algebra/GroupRing/DiskTracks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/EntropyStages.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.EntropyStages",
+   "original_sha256": "1b551ce2a4e563bec6d7bc4335bc2a9650225eb15090f10e36e07a41e6df1558",
+   "path": "OAI/Algebra/GroupRing/EntropyStages.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ExpansionDiameter.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ExpansionDiameter",
+   "original_sha256": "dbf39e7c3066b760116a689ba553f36ecf833434a28940a483a43dfe5ed5c231",
+   "path": "OAI/Algebra/GroupRing/ExpansionDiameter.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/FiniteClusters.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.FiniteClusters",
+   "original_sha256": "5ea10a4bcdfd7bd09d5828f5cfb782749647e6f632da7bf3bd1aaff767280526",
+   "path": "OAI/Algebra/GroupRing/FiniteClusters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/FixedGraph.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.FixedGraph",
+   "original_sha256": "62a4afb0b717c96088737a212d57d18cddf3ae4db651664bf7e49467ffb2cedb",
+   "path": "OAI/Algebra/GroupRing/FixedGraph.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/FramedConjugators.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.FramedConjugators",
+   "original_sha256": "81f2b515466de1b5ed495da8af4303df4bfec7754567d61f2bf079707750d1cd",
+   "path": "OAI/Algebra/GroupRing/FramedConjugators.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/FramedLoopIdentities.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.FramedLoopIdentities",
+   "original_sha256": "60795d4ea73369f6806ab550bc5a05b4db4f5bb2e9ba9d4aed955e9f42c9ea8a",
+   "path": "OAI/Algebra/GroupRing/FramedLoopIdentities.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/FramedSpherical.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.FramedSpherical",
+   "original_sha256": "ba56e775867c189f14a1fde6bb2c007d530d11236bf93a6ee1d672531ebe87c2",
+   "path": "OAI/Algebra/GroupRing/FramedSpherical.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/FreeActionNorm.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.FreeActionNorm",
+   "original_sha256": "bf0a45d9a592c1586c5a6c110d5d4d8b90a1e43ef86d8359df9e9a3dcf449dcd",
+   "path": "OAI/Algebra/GroupRing/FreeActionNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/FullPairing.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.FullPairing",
+   "original_sha256": "02add0ced25a74ab29dcbd2c431b07e9cd4680536fa46b542d6523c05e84b1c1",
+   "path": "OAI/Algebra/GroupRing/FullPairing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/GeneralPosition.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.GeneralPosition",
+   "original_sha256": "8fb8a60d7c16200620008f01ee7dac20125b205428ad062f71a4de01b8549752",
+   "path": "OAI/Algebra/GroupRing/GeneralPosition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/GraphConeCW.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.GraphConeCW",
+   "original_sha256": "ecd10e51823a9e941c0af4bed7040ccadbabe2012d700b2c442e474557879e02",
+   "path": "OAI/Algebra/GroupRing/GraphConeCW.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/GraphConePresentation.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.GraphConePresentation",
+   "original_sha256": "f3c0ac9a4762df9fd6da18b2bc991140b24a7dfde4664e0ceed8f85c35e5c1e8",
+   "path": "OAI/Algebra/GroupRing/GraphConePresentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/GraphLabels.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.GraphLabels",
+   "original_sha256": "b33733887866fa8c0f030700c07d9a8a1eca54e994adce0c57f2481e13fefc04",
+   "path": "OAI/Algebra/GroupRing/GraphLabels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/GraphQuotient.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.GraphQuotient",
+   "original_sha256": "d9197ecb5b97485167016e86fda34a57f4f80d1a7fd16d3579d01b55b927a191",
+   "path": "OAI/Algebra/GroupRing/GraphQuotient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/GridUniform.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.GridUniform",
+   "original_sha256": "4fcaf03c6d04436066eadb69b7e7c33b15c15b6767eec15a9a8c6c129d89cfb3",
+   "path": "OAI/Algebra/GroupRing/GridUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/HomotopyFunctor.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.HomotopyFunctor",
+   "original_sha256": "6588b79affe5f5866ea737bea0336fa11c4f19d59f367e094f1d909c21333bc0",
+   "path": "OAI/Algebra/GroupRing/HomotopyFunctor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/HomotopyTracks.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.HomotopyTracks",
+   "original_sha256": "b423114b963df9254d90f3eb51eae7b6c18c73983c3955b3f4f9520c49886f6d",
+   "path": "OAI/Algebra/GroupRing/HomotopyTracks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/IndexedCells.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.IndexedCells",
+   "original_sha256": "eb5f0101a1f050abe7fcad5d8ab9cab3c324158b970285f5dacb5d25b11eaf9b",
+   "path": "OAI/Algebra/GroupRing/IndexedCells.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/IntervalSelfLinks.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.IntervalSelfLinks",
+   "original_sha256": "987c4018966e511668e97982f630886ae0fc7434bfe6209a06274888b71651da",
+   "path": "OAI/Algebra/GroupRing/IntervalSelfLinks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/Iso.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.Iso",
+   "original_sha256": "dcda38aa79fb6c23e94266c9291863be78fa08077a4d9615bfc46ba45dec18cb",
+   "path": "OAI/Algebra/GroupRing/Iso.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/LinkComponents.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.LinkComponents",
+   "original_sha256": "c1f44ad0f2b485575b3f7ffa8de507bf546f9d45baa358c47fa0488cb46c261b",
+   "path": "OAI/Algebra/GroupRing/LinkComponents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ListPassages.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ListPassages",
+   "original_sha256": "122daf4587485fdb7128151c622a68d65eece1b85ae026592c0d108b47b28f4d",
+   "path": "OAI/Algebra/GroupRing/ListPassages.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/LoopSphere.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.LoopSphere",
+   "original_sha256": "8eb2fb220a3937b873f1375206d9b894ec2627a93438bbb4190d3c751d6239bc",
+   "path": "OAI/Algebra/GroupRing/LoopSphere.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/LoopTracks.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.LoopTracks",
+   "original_sha256": "20ad60f5bfa8c67ba5b07793d1c70a610eb14b9dffb35e2ab2652a43e2fc44c9",
+   "path": "OAI/Algebra/GroupRing/LoopTracks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/LoopTranspose.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.LoopTranspose",
+   "original_sha256": "13b8e0be40d2bac11ce89c349209fcbaf71b1d7ce063426443bf892266836951",
+   "path": "OAI/Algebra/GroupRing/LoopTranspose.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/Main.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.Main",
+   "original_sha256": "f5abc82f86c664f3b8653142993229a1193406c6d964981d2ab5f25c3d680c82",
+   "path": "OAI/Algebra/GroupRing/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/MapEuler.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.MapEuler",
+   "original_sha256": "fd16c6d9ffd7f10a7685a61242da8f325d91745f9177d27319c0cc8ee382b5d5",
+   "path": "OAI/Algebra/GroupRing/MapEuler.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/MapRestrict.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.MapRestrict",
+   "original_sha256": "7aed7c69d7ba55126df23e473dadd3273358fb3c83c0d516015f5a56a5f08208",
+   "path": "OAI/Algebra/GroupRing/MapRestrict.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/MatchedLabels.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.MatchedLabels",
+   "original_sha256": "0417b2a7e82945ac827667f87ea4f1a9b4b528f26d959d65b199ae614c40be2b",
+   "path": "OAI/Algebra/GroupRing/MatchedLabels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/MatchingGraphs.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.MatchingGraphs",
+   "original_sha256": "cd7f3b67dc8d0f3cfb6e2458cf6aec8602c2a84aaa18b82587e4bfd2099049b4",
+   "path": "OAI/Algebra/GroupRing/MatchingGraphs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/Milnor.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.Milnor",
+   "original_sha256": "ac2a38f41e883e65756c6237b522082ef34c146764e8f49fff9493c9a84e2407",
+   "path": "OAI/Algebra/GroupRing/Milnor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/MultiplicityBound.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.MultiplicityBound",
+   "original_sha256": "fadd39120102caeb0f8fc34baec0fabe5751106fe59a27e942284a0f4d181190",
+   "path": "OAI/Algebra/GroupRing/MultiplicityBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/PartialLift.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.PartialLift",
+   "original_sha256": "1500fc1f5dc0c3cafa35eebbc8adf289fe981851bd818ccf9e5c2c9a487a9c76",
+   "path": "OAI/Algebra/GroupRing/PartialLift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/PartitionEntropy.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.PartitionEntropy",
+   "original_sha256": "b936145f754030c66d199ef4652a13cad43a0ac5aa6b8b6085bfe79bd1c5aa4a",
+   "path": "OAI/Algebra/GroupRing/PartitionEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/Path.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.Path",
+   "original_sha256": "787ec19188447168dee948ae7526f6c836f03a538fcaad452951ed6ca894785f",
+   "path": "OAI/Algebra/GroupRing/Path.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/PathCharges.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.PathCharges",
+   "original_sha256": "4bccab78a09332b1ac02c4513182d4de54a6d221129f993bccb9edabae713a1c",
+   "path": "OAI/Algebra/GroupRing/PathCharges.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/PathIncidences.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.PathIncidences",
+   "original_sha256": "9df958228063f7bee4e7b43c5923ae8acac40b318e6176cc9766800f51266c32",
+   "path": "OAI/Algebra/GroupRing/PathIncidences.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/PatternCount.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.PatternCount",
+   "original_sha256": "3302a19b0875952ce4ec10d6c46e38fec894e31da085de46055a35bff6b34db8",
+   "path": "OAI/Algebra/GroupRing/PatternCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/PatternTotalCoding.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.PatternTotalCoding",
+   "original_sha256": "0c597d2d271e58dd04340f0f1228660f69f0482f314468516585c6ee849174cb",
+   "path": "OAI/Algebra/GroupRing/PatternTotalCoding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/PatternUniform.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.PatternUniform",
+   "original_sha256": "df6bceadddb5a6ea2fbbc9180f7e0284db62613ace5ae22f3e747daf56008dc0",
+   "path": "OAI/Algebra/GroupRing/PatternUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/PictureChains.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.PictureChains",
+   "original_sha256": "c1b6b3eba6fbe4644920dbfa3f25c8c09eb93022e8540055e5d8f08b33284bf5",
+   "path": "OAI/Algebra/GroupRing/PictureChains.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/PlanarMap.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.PlanarMap",
+   "original_sha256": "0f6189f9242deddbb6954362469cd33d9b4c38e82edb6e8d310b48e2a3eba60b",
+   "path": "OAI/Algebra/GroupRing/PlanarMap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/PortSubdivision.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.PortSubdivision",
+   "original_sha256": "8790dafb6da58aa92ab8c12a47c3d1166a046cc6472ab23cda07d7960b539f79",
+   "path": "OAI/Algebra/GroupRing/PortSubdivision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/RawDecomposition.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.RawDecomposition",
+   "original_sha256": "25e5eed5fff13867f1ab4ce4e901611a600bd2c97c494bc67caf3326b4ff1d8b",
+   "path": "OAI/Algebra/GroupRing/RawDecomposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/RealizationTransport.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.RealizationTransport",
+   "original_sha256": "a83d9e524a68b109e311fa9a023b61887c666c40a31d32a320da07b5e3ec923c",
+   "path": "OAI/Algebra/GroupRing/RealizationTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/RelationArea.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.RelationArea",
+   "original_sha256": "fd68fcfc8c331d6f1989c15c8f0362b0cdd05653532da58eedc806975cd1db68",
+   "path": "OAI/Algebra/GroupRing/RelationArea.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/RelationSplit.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.RelationSplit",
+   "original_sha256": "5babf2cc08d630da28cf2dc5145461b31774cd3f0e721c8134aba04097e61f7d",
+   "path": "OAI/Algebra/GroupRing/RelationSplit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/RelationTorsion.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.RelationTorsion",
+   "original_sha256": "72846687542df54b1758e1fc85702831448268226fdf144d157ae68bb0286a99",
+   "path": "OAI/Algebra/GroupRing/RelationTorsion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/SeparatorLevels.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.SeparatorLevels",
+   "original_sha256": "da75b92da6337585a9067b668810c4b498cf284ee5339b8187a56a6266801017",
+   "path": "OAI/Algebra/GroupRing/SeparatorLevels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/ShortClosure.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.ShortClosure",
+   "original_sha256": "c3928e60f17b21c42f123586186096f9efc26bd05c41f94a185574720324a181",
+   "path": "OAI/Algebra/GroupRing/ShortClosure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/SidePins.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.SidePins",
+   "original_sha256": "9b2aa139c8f6f389fc8227fc15afade85532f630c13a899ec2c92313efc1fd54",
+   "path": "OAI/Algebra/GroupRing/SidePins.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/SimplexTopology.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.SimplexTopology",
+   "original_sha256": "16740981f6a5805aa91b39bb4ea68b4ead7e11cf007ee427f18800c12a6b0a38",
+   "path": "OAI/Algebra/GroupRing/SimplexTopology.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/Simplicial.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.Simplicial",
+   "original_sha256": "a508e56eee5f21d671790cef786cd7ea6319ad61dbdd3093c8f5fee9258aac42",
+   "path": "OAI/Algebra/GroupRing/Simplicial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/SphereTopology.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.SphereTopology",
+   "original_sha256": "b307fd6e77f6ea978273f704864338315100e4d0f018701a7a15eb5873036462",
+   "path": "OAI/Algebra/GroupRing/SphereTopology.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/SplitModel.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.SplitModel",
+   "original_sha256": "3890bad2272e1e94d7030f8aa0a4c24486f5a35a59377a1426c2f843c68c5eab",
+   "path": "OAI/Algebra/GroupRing/SplitModel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/StageBlocks.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.StageBlocks",
+   "original_sha256": "7da19072ba3df5c88b8f227020e8c3888ca07afb1b0c4455a4d6651a524baaf5",
+   "path": "OAI/Algebra/GroupRing/StageBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/StageEntropy.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.StageEntropy",
+   "original_sha256": "b9def8a99f2a238f12c1869fdf77f5f96b2ba77d20836ed21d9eebb9ba98b811",
+   "path": "OAI/Algebra/GroupRing/StageEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/StageExpectation.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.StageExpectation",
+   "original_sha256": "2c3bce7228753bc5dd93ea8f206df3ae9ce4a83a627127e9d4d25ffb73090a95",
+   "path": "OAI/Algebra/GroupRing/StageExpectation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/StageRealization.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.StageRealization",
+   "original_sha256": "84c4ed51a873b8d1819f0ed31832ccda4bcabaa1c2e35cb455ebd9ebfd44a779",
+   "path": "OAI/Algebra/GroupRing/StageRealization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/SupportedImage.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.SupportedImage",
+   "original_sha256": "22e20901b8e377dafcaccfd204b751c53ba437eb85bfa9eedfaaba2c7f257ad3",
+   "path": "OAI/Algebra/GroupRing/SupportedImage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/TreeCentroid.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.TreeCentroid",
+   "original_sha256": "bc1854c486bb08c07c9a6094dbc04bbd02ae17d2373dec6ce3f138ab0cb50201",
+   "path": "OAI/Algebra/GroupRing/TreeCentroid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/TwoSideFullStage.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.TwoSideFullStage",
+   "original_sha256": "5d8706dd18bdb242987ca73946d65eefbf174afd9624c9d1b3d3ad296cc07cff",
+   "path": "OAI/Algebra/GroupRing/TwoSideFullStage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/TypeWeights.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.TypeWeights",
+   "original_sha256": "50e7b6cbf51d9d79d264c192c75f5e5507d7c27f95dc010e9c17459384c4621d",
+   "path": "OAI/Algebra/GroupRing/TypeWeights.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/TypedComponent.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.TypedComponent",
+   "original_sha256": "6f8ec5e656d4e51dca8fe60f0b68b0b711d869d23aac1c62131de02be39e0812",
+   "path": "OAI/Algebra/GroupRing/TypedComponent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/TypedDiameter.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.TypedDiameter",
+   "original_sha256": "7ccb67fc48b903fa36c1fbf8a227fded10dd9ce5aa438f943401e93703cc6604",
+   "path": "OAI/Algebra/GroupRing/TypedDiameter.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/TypedGraphs.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.TypedGraphs",
+   "original_sha256": "bc37a4a716f43f06ecbbcdaeda397a8f939e251335009fa7071306b483dfb136",
+   "path": "OAI/Algebra/GroupRing/TypedGraphs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/VertexCollapse.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.VertexCollapse",
+   "original_sha256": "49ed4c0f4c9a203b0de7f545175d7b770f4c65edba05e93fb1cc3b5a51ea931e",
+   "path": "OAI/Algebra/GroupRing/VertexCollapse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/WeightedCycles.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.WeightedCycles",
+   "original_sha256": "32e7fb9f4283a9aa55f3d9e889d0089b66a6f67cff6c005046b01c455d143e5a",
+   "path": "OAI/Algebra/GroupRing/WeightedCycles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/WeightedGirth.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.WeightedGirth",
+   "original_sha256": "0a4b2b94f703d0855902b22bf9f920573454a17625d0f35992a2e436743c93b6",
+   "path": "OAI/Algebra/GroupRing/WeightedGirth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/WeightedPortMoore.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.WeightedPortMoore",
+   "original_sha256": "6b971c6f0380072b448a26818e53feb80f7ef741b92376a86b7cffe65d510317",
+   "path": "OAI/Algebra/GroupRing/WeightedPortMoore.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/WordBlocks.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.WordBlocks",
+   "original_sha256": "4eeb5df504a7e292163fe8cdf8a5ed7055171dbcd1a0416383ced37f4fdd47e7",
+   "path": "OAI/Algebra/GroupRing/WordBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/WordBlocksFurther.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.WordBlocksFurther",
+   "original_sha256": "8503aefb14b431fde25e8b96f55750d203defaaf7f499d7eb5b198d4ef0aa485",
+   "path": "OAI/Algebra/GroupRing/WordBlocksFurther.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/WordCursor.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.WordCursor",
+   "original_sha256": "f4b75fc08e64d77b8c7a2e41dac9700537ab36d6ee17cff1be4a082cc28fe258",
+   "path": "OAI/Algebra/GroupRing/WordCursor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/WordEstimate.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.WordEstimate",
+   "original_sha256": "e76c0aa98adabe2aa2b61c97d24926b51d038a18e3ab0b40dfdc4d9e9f3c6287",
+   "path": "OAI/Algebra/GroupRing/WordEstimate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/WordFrames.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.WordFrames",
+   "original_sha256": "b71e72df0dcc7569a29d8ac616d259438f836b648aea2938731f57c780a7b135",
+   "path": "OAI/Algebra/GroupRing/WordFrames.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/WordLiftSurgery.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.WordLiftSurgery",
+   "original_sha256": "1ba779544f05169c42b387ef37eac49929b7696220bde562641a399e9e832294",
+   "path": "OAI/Algebra/GroupRing/WordLiftSurgery.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/GroupRing/WordResponse.lean"
+   },
+   "module": "OAI.Algebra.GroupRing.WordResponse",
+   "original_sha256": "3595dde0c3a76d9ee31dfa90a87048d099752b92abc71f80c75789df4742459a",
+   "path": "OAI/Algebra/GroupRing/WordResponse.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Algebra.GroupRing.AbsorbCells",
+  "OAI.Algebra.GroupRing.AbsorbTracks",
+  "OAI.Algebra.GroupRing.AffineIntervals",
+  "OAI.Algebra.GroupRing.AlgebraicPictures",
+  "OAI.Algebra.GroupRing.Attachment",
+  "OAI.Algebra.GroupRing.AttachmentFurther",
+  "OAI.Algebra.GroupRing.AttachmentHEP",
+  "OAI.Algebra.GroupRing.BFSTree",
+  "OAI.Algebra.GroupRing.BalancedPieces",
+  "OAI.Algebra.GroupRing.BallCount",
+  "OAI.Algebra.GroupRing.Basic",
+  "OAI.Algebra.GroupRing.BlockGrid",
+  "OAI.Algebra.GroupRing.BlockPropagation",
+  "OAI.Algebra.GroupRing.BoundedSystem",
+  "OAI.Algebra.GroupRing.Cayley",
+  "OAI.Algebra.GroupRing.CayleyFurther",
+  "OAI.Algebra.GroupRing.CellHEP",
+  "OAI.Algebra.GroupRing.CellModule",
+  "OAI.Algebra.GroupRing.CellNorm",
+  "OAI.Algebra.GroupRing.Cellular",
+  "OAI.Algebra.GroupRing.CellularFurther",
+  "OAI.Algebra.GroupRing.CellularFurther2",
+  "OAI.Algebra.GroupRing.ChainActiveStages",
+  "OAI.Algebra.GroupRing.ChainCoverage",
+  "OAI.Algebra.GroupRing.ChainUsage",
+  "OAI.Algebra.GroupRing.ChunkComparisons",
+  "OAI.Algebra.GroupRing.ClosedWords",
+  "OAI.Algebra.GroupRing.ClusterLocalization",
+  "OAI.Algebra.GroupRing.ComparisonCoding",
+  "OAI.Algebra.GroupRing.ConcreteGroup",
+  "OAI.Algebra.GroupRing.ConcreteModel",
+  "OAI.Algebra.GroupRing.ConcreteTorsion",
+  "OAI.Algebra.GroupRing.ConeArea",
+  "OAI.Algebra.GroupRing.ConeBoundaryPaths",
+  "OAI.Algebra.GroupRing.ConeCells",
+  "OAI.Algebra.GroupRing.ConeChains",
+  "OAI.Algebra.GroupRing.ConePicture",
+  "OAI.Algebra.GroupRing.ConeSigned",
+  "OAI.Algebra.GroupRing.ConeTorsion",
+  "OAI.Algebra.GroupRing.ConedMap",
+  "OAI.Algebra.GroupRing.ContiguousSplit",
+  "OAI.Algebra.GroupRing.CoreStripping",
+  "OAI.Algebra.GroupRing.CycleLists",
+  "OAI.Algebra.GroupRing.DegreeTwoSuppression",
+  "OAI.Algebra.GroupRing.DiskHomotopy",
+  "OAI.Algebra.GroupRing.DiskTracks",
+  "OAI.Algebra.GroupRing.EntropyStages",
+  "OAI.Algebra.GroupRing.ExpansionDiameter",
+  "OAI.Algebra.GroupRing.FiniteClusters",
+  "OAI.Algebra.GroupRing.FixedGraph",
+  "OAI.Algebra.GroupRing.FramedConjugators",
+  "OAI.Algebra.GroupRing.FramedLoopIdentities",
+  "OAI.Algebra.GroupRing.FramedSpherical",
+  "OAI.Algebra.GroupRing.FreeActionNorm",
+  "OAI.Algebra.GroupRing.FullPairing",
+  "OAI.Algebra.GroupRing.GeneralPosition",
+  "OAI.Algebra.GroupRing.GraphConeCW",
+  "OAI.Algebra.GroupRing.GraphConePresentation",
+  "OAI.Algebra.GroupRing.GraphLabels",
+  "OAI.Algebra.GroupRing.GraphQuotient",
+  "OAI.Algebra.GroupRing.GridUniform",
+  "OAI.Algebra.GroupRing.HomotopyFunctor",
+  "OAI.Algebra.GroupRing.HomotopyTracks",
+  "OAI.Algebra.GroupRing.IndexedCells",
+  "OAI.Algebra.GroupRing.IntervalSelfLinks",
+  "OAI.Algebra.GroupRing.Iso",
+  "OAI.Algebra.GroupRing.LinkComponents",
+  "OAI.Algebra.GroupRing.ListPassages",
+  "OAI.Algebra.GroupRing.LoopSphere",
+  "OAI.Algebra.GroupRing.LoopTracks",
+  "OAI.Algebra.GroupRing.LoopTranspose",
+  "OAI.Algebra.GroupRing.Main",
+  "OAI.Algebra.GroupRing.MapEuler",
+  "OAI.Algebra.GroupRing.MapRestrict",
+  "OAI.Algebra.GroupRing.MatchedLabels",
+  "OAI.Algebra.GroupRing.MatchingGraphs",
+  "OAI.Algebra.GroupRing.Milnor",
+  "OAI.Algebra.GroupRing.MultiplicityBound",
+  "OAI.Algebra.GroupRing.PartialLift",
+  "OAI.Algebra.GroupRing.PartitionEntropy",
+  "OAI.Algebra.GroupRing.Path",
+  "OAI.Algebra.GroupRing.PathCharges",
+  "OAI.Algebra.GroupRing.PathIncidences",
+  "OAI.Algebra.GroupRing.PatternCount",
+  "OAI.Algebra.GroupRing.PatternTotalCoding",
+  "OAI.Algebra.GroupRing.PatternUniform",
+  "OAI.Algebra.GroupRing.PictureChains",
+  "OAI.Algebra.GroupRing.PlanarMap",
+  "OAI.Algebra.GroupRing.PortSubdivision",
+  "OAI.Algebra.GroupRing.RawDecomposition",
+  "OAI.Algebra.GroupRing.RealizationTransport",
+  "OAI.Algebra.GroupRing.RelationArea",
+  "OAI.Algebra.GroupRing.RelationSplit",
+  "OAI.Algebra.GroupRing.RelationTorsion",
+  "OAI.Algebra.GroupRing.SeparatorLevels",
+  "OAI.Algebra.GroupRing.ShortClosure",
+  "OAI.Algebra.GroupRing.SidePins",
+  "OAI.Algebra.GroupRing.SimplexTopology",
+  "OAI.Algebra.GroupRing.Simplicial",
+  "OAI.Algebra.GroupRing.SphereTopology",
+  "OAI.Algebra.GroupRing.SplitModel",
+  "OAI.Algebra.GroupRing.StageBlocks",
+  "OAI.Algebra.GroupRing.StageEntropy",
+  "OAI.Algebra.GroupRing.StageExpectation",
+  "OAI.Algebra.GroupRing.StageRealization",
+  "OAI.Algebra.GroupRing.SupportedImage",
+  "OAI.Algebra.GroupRing.TreeCentroid",
+  "OAI.Algebra.GroupRing.TwoSideFullStage",
+  "OAI.Algebra.GroupRing.TypeWeights",
+  "OAI.Algebra.GroupRing.TypedComponent",
+  "OAI.Algebra.GroupRing.TypedDiameter",
+  "OAI.Algebra.GroupRing.TypedGraphs",
+  "OAI.Algebra.GroupRing.VertexCollapse",
+  "OAI.Algebra.GroupRing.WeightedCycles",
+  "OAI.Algebra.GroupRing.WeightedGirth",
+  "OAI.Algebra.GroupRing.WeightedPortMoore",
+  "OAI.Algebra.GroupRing.WordBlocks",
+  "OAI.Algebra.GroupRing.WordBlocksFurther",
+  "OAI.Algebra.GroupRing.WordCursor",
+  "OAI.Algebra.GroupRing.WordEstimate",
+  "OAI.Algebra.GroupRing.WordFrames",
+  "OAI.Algebra.GroupRing.WordLiftSurgery",
+  "OAI.Algebra.GroupRing.WordResponse"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/TorsionFreeZeroDivisors.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Algebra.GroupRing.Main",
+   "name": "OAI.TorsionFreeZeroDivisors.main",
+   "statement_sha256": "f2343b1f76cd09af3ec347fbe2ebedf12093bcbbff5ac6ef9664ccf676002e45"
+  }
+ ],
+ "task_id": "oai-torsion-free-zero-divisors",
+ "task_revision": 1,
+ "title": "OpenAI math: A counterexample to Kaplansky’s zero-divisor conjecture: Torsion-free group-algebra counterexample",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

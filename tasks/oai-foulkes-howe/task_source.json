@@ -1,0 +1,1051 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 49161260
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.FoulkesHowe",
+  "challenge_sha256": "ef2a1c1ff39cc2caf381d5704476288fe35c00d316d02dd0571e3c5590e7df19",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/FoulkesHowe.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.FoulkesHowe",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.RepresentationTheory.FoulkesHowe.Stabilization",
+   "theorem_names": [
+    "OAI.Problem346.canonical_foulkes_howe_surjective"
+   ]
+  },
+  "config_sha256": "88d413f643d799a7663353e0ade1d0bb7572a5752e8414fb2ec117244005ff64",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/FoulkesHowe.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.Problem346.canonical_foulkes_howe_surjective": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/Actions.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.Actions",
+   "original_sha256": "1966d3643a9c370f3240e9bb47158ca72f22622832b858efdde246690f459d77",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/Actions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/AlgebraEvaluation.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.AlgebraEvaluation",
+   "original_sha256": "fd062875f7afbf176d64d9a79d2176150991c25f3445aa7b892aed1256141f04",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/AlgebraEvaluation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/Annihilator.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.Annihilator",
+   "original_sha256": "7390e03c5b382cc235a1a0a21745eee86ca37a0b8567feab8f3bd7a4d0bb8ded",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/Annihilator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/BackwardCancellation.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.BackwardCancellation",
+   "original_sha256": "6c5b45963b09ae187483a29cc9d5b630062b3e906f002948586ab00105c82ef1",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/BackwardCancellation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/BinaryFactorization.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.BinaryFactorization",
+   "original_sha256": "714125b8dab9b6c35639aac04b7d349551a70177c563757baac43a137769f119",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/BinaryFactorization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/BinaryVanishing.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.BinaryVanishing",
+   "original_sha256": "faa77efffa12beff8968c17df87b36daaa2987e50439db74519ccdd9a098010e",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/BinaryVanishing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/BlockInjectivity.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.BlockInjectivity",
+   "original_sha256": "84e9475462a22dcb70414a0f90c6a8995843fcaabebfa4127ff8af5dfbfc847f",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/BlockInjectivity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/BlockWeight.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.BlockWeight",
+   "original_sha256": "e2ca9601a7034ebb703f3e8947c5b4a6cbc008efd68895d886b4d96e3de52294",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/BlockWeight.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/CanonicalMap.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.CanonicalMap",
+   "original_sha256": "d836c6f3ba6cd9a720e089d3a8492cf8f81b282cd68586ba097a473023f66651",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/CanonicalMap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/DegreeOne.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.DegreeOne",
+   "original_sha256": "26227f51c07a604d05994d8a0c1a795ad575939a8e1cadbbe3c0ef066d84c62e",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/DegreeOne.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/DerivationInjectivity.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.DerivationInjectivity",
+   "original_sha256": "321a14be55fc88eda953b0feb0af388ec8a92ed78356ff95494f10b22cb5804c",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/DerivationInjectivity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/DiagonalCoefficient.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.DiagonalCoefficient",
+   "original_sha256": "f834d115ceda50101554a9c064d750b185ed26a348025bff8135198e7aa72b24",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/DiagonalCoefficient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/DiagonalPolarization.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.DiagonalPolarization",
+   "original_sha256": "6843b79b736bd706b408f5ba2517e107ed82d9c796698e3afb042960eb7db216",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/DiagonalPolarization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/DualEmbedding.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.DualEmbedding",
+   "original_sha256": "9d752a98f39890cff91fcc9599f635be520478d3c870d5172c0c637881f022aa",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/DualEmbedding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/EncodedCancellation.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.EncodedCancellation",
+   "original_sha256": "1e7f85d94af28a61fdbe8c5265d882e7e36b3fb94ab28fdc16610f81f2abfd72",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/EncodedCancellation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/EncodingHomogeneous.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.EncodingHomogeneous",
+   "original_sha256": "6362cd9855565261fe92a49e1bdb00c9225f2264f5e1fe4a53c9b7438f6b6f1f",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/EncodingHomogeneous.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/FiniteDimension.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.FiniteDimension",
+   "original_sha256": "7b4f809c37b85ab15f228930d96d7a9775a78170dc4b34d0b9249b38e9ca473e",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/FiniteDimension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/FirstCounts.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.FirstCounts",
+   "original_sha256": "32e02581be27f30f516dcd51cca1fb17b6b1aa7c628486ac5eac215b4ffdef79",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/FirstCounts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/FirstLabels.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.FirstLabels",
+   "original_sha256": "3074b817cf75076553ce3621fa544e73c8ed6003ab66be67e7ee3dda3ec47b77",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/FirstLabels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/FirstPolynomial.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.FirstPolynomial",
+   "original_sha256": "cb14505022986fb438887b00d96a59653ed85ffa2788e4a60327747877113595",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/FirstPolynomial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/FirstTransfer.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.FirstTransfer",
+   "original_sha256": "ee87329f401e74abb0e0d7af493f0bf57ab95558fc786dadd49699ecfdc2770d",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/FirstTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/FlattenedForm.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.FlattenedForm",
+   "original_sha256": "3bea645151e9229da6ae8053d4e17abdc24b350c13e590338463151bdd55647a",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/FlattenedForm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/FoulkesDiagonal.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.FoulkesDiagonal",
+   "original_sha256": "89d76f69e803e02f50bb4da8dec6c3a2af1f4b5de5b335b8a94f772cdf6f82f5",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/FoulkesDiagonal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/FoulkesMultilinear.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.FoulkesMultilinear",
+   "original_sha256": "3933eac94e097dc58364cc95039791c8af03f9f03a90db88189153fecbc56467",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/FoulkesMultilinear.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/FoulkesSymmetries.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.FoulkesSymmetries",
+   "original_sha256": "ab5eaad4d0bf4024ad38854d956a2a246644812e9a0b6c64c2d649ff618df1b0",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/FoulkesSymmetries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/Functoriality.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.Functoriality",
+   "original_sha256": "f87e357d2b819d807d8d6b998fa34a6d0635b30242718e04c2c6825fc7d48bf6",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/Functoriality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/GeneratorLift.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.GeneratorLift",
+   "original_sha256": "43b12f4a075e5855aa9e0d18608db64314cc5bcd5ae9631fa36b4a36b52dd038",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/GeneratorLift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/GridCancellation.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.GridCancellation",
+   "original_sha256": "ac0b449dd079ccc9a006c8623e2887a08b46d553f0cf68f0006ba09a779daa4e",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/GridCancellation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/LinearCase.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.LinearCase",
+   "original_sha256": "76945931c80ee93bbf908c97ff1d698a856602d97440932f711106bbfe576d6d",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/LinearCase.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/Model.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.Model",
+   "original_sha256": "30f641cb3f976ff6ba4967a8f35d9813d18b5352820fad4fdc67c0ec8584a8b4",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/MonomialCut.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.MonomialCut",
+   "original_sha256": "18cbf0ef919d5355c2fd381db7c9eda4019adc4062c0ec09d197d4622da3acd8",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/MonomialCut.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/MonomialMultilinear.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.MonomialMultilinear",
+   "original_sha256": "339cf6d23cabdc6f54bb6bd7f1c655738a309f73c186d5c0a26e792e1fcb9765",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/MonomialMultilinear.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/MultilinearPolynomial.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.MultilinearPolynomial",
+   "original_sha256": "c6d56cc731912574d5e25d0c730e606f828216017e72813d68db30a5f9ecef74",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/MultilinearPolynomial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/Multiplication.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.Multiplication",
+   "original_sha256": "4944ff3e31673dbde123ff7ed751564ad9423938246128bc32e03c36ca4e7563",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/Multiplication.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/Naturality.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.Naturality",
+   "original_sha256": "c79233318e89e27cbe3184cd6d293fe41d2c2a21645f7a8ea639a079933ec2ad",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/Naturality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/PairingConstruction.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.PairingConstruction",
+   "original_sha256": "6fbf0574e81efa12f33c0dbf7508b4d7d8c0ff9534fba75775054806dbf1fec5",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/PairingConstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/PermanentPairing.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.PermanentPairing",
+   "original_sha256": "e14212e5a94e4076a2932c4a97c68acc77df4b5a76d7bb20e30782342f0d3a6d",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/PermanentPairing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/PlethysmDual.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.PlethysmDual",
+   "original_sha256": "56f5725ee77b8d4babe359f22e15f5c4cf144b45e7a3832c4e41bcc97970a9e2",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/PlethysmDual.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/Polarization.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.Polarization",
+   "original_sha256": "d467e78847db361096e487f200c0c8ab1e929ae97f454046f3f5344a7a2b2d1d",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/Polarization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/PolynomialShift.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.PolynomialShift",
+   "original_sha256": "17cfa58f3453c193ad6243a49314b22ab45da1cbede8a52a30958820a64c4883",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/PolynomialShift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/PowerSpan.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.PowerSpan",
+   "original_sha256": "82a0581761430ce8db05afa8fc330007dad78f1235eab7c3e87dbd0e05001644",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/PowerSpan.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/ProductVanishing.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.ProductVanishing",
+   "original_sha256": "40e41b934dda0c88a0041c5f8fb3c5fcb6c343d5701fd9b56ff6efcdc8642c7f",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/ProductVanishing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/SecondCounts.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.SecondCounts",
+   "original_sha256": "ae76742cdff5d663083220b92213657e25ccc69836da4497f5642d4f3c259cf0",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/SecondCounts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/SecondEndpoints.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.SecondEndpoints",
+   "original_sha256": "9fec16b3ee292cac6731b06ab379c5c02031a045b2d9266b9187bf3dd207f112",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/SecondEndpoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/SecondLabels.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.SecondLabels",
+   "original_sha256": "4d5752a1c3f0fa3be25ecb52afdd65701d69cbb2353286ebb5de13f48375eb47",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/SecondLabels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/SecondSwap.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.SecondSwap",
+   "original_sha256": "219b979bc3a51d67a1315b6a05daf7f746dd5ea3c6f58d3a10ec3d430a91c82b",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/SecondSwap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/SecondTransfer.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.SecondTransfer",
+   "original_sha256": "2f52a29659e231f3fd7fc4a967f3a234ca6f457efa812cb603bf8af9cf579c5d",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/SecondTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/ShiftInjectivity.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.ShiftInjectivity",
+   "original_sha256": "b1db177828d32a95db9c5bc7971b0df7f5125efd7d11fff38822bd72a0a1cc91",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/ShiftInjectivity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/ShiftNilpotence.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.ShiftNilpotence",
+   "original_sha256": "f53534fc267c982054a700de6e74a515246a070276fc2adee6deb3b8a2d96fd7",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/ShiftNilpotence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/SlotDerivative.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.SlotDerivative",
+   "original_sha256": "5656c107f01f802d0d82ae39083475e16481203a99997d626c1759c25fc324ea",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/SlotDerivative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/Spanning.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.Spanning",
+   "original_sha256": "db4d472030627fcd1e76662b4f4b0cfce20af1deda83d3490281ff65418e1abf",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/Spanning.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/SpanningAgreement.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.SpanningAgreement",
+   "original_sha256": "b4ea6e81be7e761db6bc3a401c140e7cdec581f140fe6d9c4ae561a4735eecdc",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/SpanningAgreement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/Stabilization.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.Stabilization",
+   "original_sha256": "14360c9dda2885195e2ed9fbeabae30fa48b06689dce4954bda2a99a14275c92",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/Stabilization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/Surjectivity.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.Surjectivity",
+   "original_sha256": "42448e331759a679faee72c408bcb8d9d4e5eedebf964653f7def7e220fedb97",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/Surjectivity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/SymmetricDual.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.SymmetricDual",
+   "original_sha256": "428dc3f9c0a6c19e8b1b54defd76670b59656a42a15359174bb1e0857ba5e76d",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/SymmetricDual.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/SymmetricLift.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.SymmetricLift",
+   "original_sha256": "c820db84ce7ee8399fd3f80243b4195db4d50cddd053dbf67a5197b8b97723b7",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/SymmetricLift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/TensorPresentation.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.TensorPresentation",
+   "original_sha256": "e9df514e6b32a847e5753d4518d6e5355c95fe5e01e4663565322ed7f95669e3",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/TensorPresentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/TransferDerivative.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.TransferDerivative",
+   "original_sha256": "607b3522e8a7fd0e0a3dade186bef8db483ca4f0ad3579ba7cbdf9090970bc7d",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/TransferDerivative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/TransferEndpoints.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.TransferEndpoints",
+   "original_sha256": "04e971c200b4b2dc7be6e313497aa47cfa4158efcc5d5c17e2cd4f79689e55ad",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/TransferEndpoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/Vanishing.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.Vanishing",
+   "original_sha256": "83e4db4be8f68491ce4366bfcce7587d28c88b4ed30312c177a6b8741cc9fd63",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/Vanishing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/VanishingFirst.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.VanishingFirst",
+   "original_sha256": "db631fd7f6c40117f50cbef4d719b534520ace8469dccc2bd0beff9e6ed96ea1",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/VanishingFirst.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/VanishingInduction.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.VanishingInduction",
+   "original_sha256": "c0c7752c23330378577dca9349f5f5b4b3bf9cc680d8f1ebcb39e3c4cbd41e0c",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/VanishingInduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RepresentationTheory/FoulkesHowe/VanishingOne.lean"
+   },
+   "module": "OAI.RepresentationTheory.FoulkesHowe.VanishingOne",
+   "original_sha256": "279e84309539a78c7cc477e4007438d8248b4d9bfc1f63994b27d90f33a1e148",
+   "path": "OAI/RepresentationTheory/FoulkesHowe/VanishingOne.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.RepresentationTheory.FoulkesHowe.Actions",
+  "OAI.RepresentationTheory.FoulkesHowe.AlgebraEvaluation",
+  "OAI.RepresentationTheory.FoulkesHowe.Annihilator",
+  "OAI.RepresentationTheory.FoulkesHowe.BackwardCancellation",
+  "OAI.RepresentationTheory.FoulkesHowe.BinaryFactorization",
+  "OAI.RepresentationTheory.FoulkesHowe.BinaryVanishing",
+  "OAI.RepresentationTheory.FoulkesHowe.BlockInjectivity",
+  "OAI.RepresentationTheory.FoulkesHowe.BlockWeight",
+  "OAI.RepresentationTheory.FoulkesHowe.CanonicalMap",
+  "OAI.RepresentationTheory.FoulkesHowe.DegreeOne",
+  "OAI.RepresentationTheory.FoulkesHowe.DerivationInjectivity",
+  "OAI.RepresentationTheory.FoulkesHowe.DiagonalCoefficient",
+  "OAI.RepresentationTheory.FoulkesHowe.DiagonalPolarization",
+  "OAI.RepresentationTheory.FoulkesHowe.DualEmbedding",
+  "OAI.RepresentationTheory.FoulkesHowe.EncodedCancellation",
+  "OAI.RepresentationTheory.FoulkesHowe.EncodingHomogeneous",
+  "OAI.RepresentationTheory.FoulkesHowe.FiniteDimension",
+  "OAI.RepresentationTheory.FoulkesHowe.FirstCounts",
+  "OAI.RepresentationTheory.FoulkesHowe.FirstLabels",
+  "OAI.RepresentationTheory.FoulkesHowe.FirstPolynomial",
+  "OAI.RepresentationTheory.FoulkesHowe.FirstTransfer",
+  "OAI.RepresentationTheory.FoulkesHowe.FlattenedForm",
+  "OAI.RepresentationTheory.FoulkesHowe.FoulkesDiagonal",
+  "OAI.RepresentationTheory.FoulkesHowe.FoulkesMultilinear",
+  "OAI.RepresentationTheory.FoulkesHowe.FoulkesSymmetries",
+  "OAI.RepresentationTheory.FoulkesHowe.Functoriality",
+  "OAI.RepresentationTheory.FoulkesHowe.GeneratorLift",
+  "OAI.RepresentationTheory.FoulkesHowe.GridCancellation",
+  "OAI.RepresentationTheory.FoulkesHowe.LinearCase",
+  "OAI.RepresentationTheory.FoulkesHowe.Model",
+  "OAI.RepresentationTheory.FoulkesHowe.MonomialCut",
+  "OAI.RepresentationTheory.FoulkesHowe.MonomialMultilinear",
+  "OAI.RepresentationTheory.FoulkesHowe.MultilinearPolynomial",
+  "OAI.RepresentationTheory.FoulkesHowe.Multiplication",
+  "OAI.RepresentationTheory.FoulkesHowe.Naturality",
+  "OAI.RepresentationTheory.FoulkesHowe.PairingConstruction",
+  "OAI.RepresentationTheory.FoulkesHowe.PermanentPairing",
+  "OAI.RepresentationTheory.FoulkesHowe.PlethysmDual",
+  "OAI.RepresentationTheory.FoulkesHowe.Polarization",
+  "OAI.RepresentationTheory.FoulkesHowe.PolynomialShift",
+  "OAI.RepresentationTheory.FoulkesHowe.PowerSpan",
+  "OAI.RepresentationTheory.FoulkesHowe.ProductVanishing",
+  "OAI.RepresentationTheory.FoulkesHowe.SecondCounts",
+  "OAI.RepresentationTheory.FoulkesHowe.SecondEndpoints",
+  "OAI.RepresentationTheory.FoulkesHowe.SecondLabels",
+  "OAI.RepresentationTheory.FoulkesHowe.SecondSwap",
+  "OAI.RepresentationTheory.FoulkesHowe.SecondTransfer",
+  "OAI.RepresentationTheory.FoulkesHowe.ShiftInjectivity",
+  "OAI.RepresentationTheory.FoulkesHowe.ShiftNilpotence",
+  "OAI.RepresentationTheory.FoulkesHowe.SlotDerivative",
+  "OAI.RepresentationTheory.FoulkesHowe.Spanning",
+  "OAI.RepresentationTheory.FoulkesHowe.SpanningAgreement",
+  "OAI.RepresentationTheory.FoulkesHowe.Stabilization",
+  "OAI.RepresentationTheory.FoulkesHowe.Surjectivity",
+  "OAI.RepresentationTheory.FoulkesHowe.SymmetricDual",
+  "OAI.RepresentationTheory.FoulkesHowe.SymmetricLift",
+  "OAI.RepresentationTheory.FoulkesHowe.TensorPresentation",
+  "OAI.RepresentationTheory.FoulkesHowe.TransferDerivative",
+  "OAI.RepresentationTheory.FoulkesHowe.TransferEndpoints",
+  "OAI.RepresentationTheory.FoulkesHowe.Vanishing",
+  "OAI.RepresentationTheory.FoulkesHowe.VanishingFirst",
+  "OAI.RepresentationTheory.FoulkesHowe.VanishingInduction",
+  "OAI.RepresentationTheory.FoulkesHowe.VanishingOne"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/FoulkesHowe.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.RepresentationTheory.FoulkesHowe.Stabilization",
+   "name": "OAI.Problem346.canonical_foulkes_howe_surjective",
+   "statement_sha256": "f3ff566184c96995064accb82ecb58421f2b2de3326f9e35b8f1ee2b9cc578e3"
+  }
+ ],
+ "task_id": "oai-foulkes-howe",
+ "task_revision": 1,
+ "title": "OpenAI math: Foulkes' conjecture for sixth powers and quadratic stabilization: Quadratic stabilization of the canonical Foulkes–Howe map",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

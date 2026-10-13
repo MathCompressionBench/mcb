@@ -1,0 +1,831 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 100526767
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.GaussianMoat",
+  "challenge_sha256": "f1d2bdcb38ababb65d98dba286dfe13286c1709aea704d9dac58e2004ca80e84",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/GaussianMoat.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.GaussianMoat",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.NumberTheory.GaussianMoat.Main",
+   "theorem_names": [
+    "OAI.GaussianMoat.fullMain"
+   ]
+  },
+  "config_sha256": "b4a9fccc8f9ed173e7647456a587459e2dd10ff3b2a4f68ed7ed94b85ff2e143",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/GaussianMoat.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.GaussianMoat.fullMain": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/AccurateScales.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.AccurateScales",
+   "original_sha256": "629e02f43aecaaf810178f9a8ec809aee39523f496dd93bbd42bd15939c0dcae",
+   "path": "OAI/NumberTheory/GaussianMoat/AccurateScales.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/BackwardCoverage.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.BackwardCoverage",
+   "original_sha256": "ca92c9f32ce69f8dfa46ff00e1fad90babe13e17f1c9013b49b7217a5864a84f",
+   "path": "OAI/NumberTheory/GaussianMoat/BackwardCoverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/BatchCertificate.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.BatchCertificate",
+   "original_sha256": "d9862e913af5fb05361201428bb988f8d223512b398404bc363ec57a4d1c87a9",
+   "path": "OAI/NumberTheory/GaussianMoat/BatchCertificate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/BatchParameters.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.BatchParameters",
+   "original_sha256": "e2d7f7d05e7317ac445450fffbf8388f57beaa6fa86ef33804d9dc02c0b2e407",
+   "path": "OAI/NumberTheory/GaussianMoat/BatchParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/BooleanCube.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.BooleanCube",
+   "original_sha256": "7b0175b4908f34624f35950c498c40e54ed015db35925e3243f13f7c2ae07550",
+   "path": "OAI/NumberTheory/GaussianMoat/BooleanCube.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/CommonBlocks.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.CommonBlocks",
+   "original_sha256": "49b3c93e96b898564323cad9c3d209474c8a878230569f1983a2c5ac416f8c87",
+   "path": "OAI/NumberTheory/GaussianMoat/CommonBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/ConditionalSampling.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.ConditionalSampling",
+   "original_sha256": "319fd4fa0c0ffd32cf5154c1280f0141458a4fd29a952399c97a19fb1add4de0",
+   "path": "OAI/NumberTheory/GaussianMoat/ConditionalSampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/DenseBins.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.DenseBins",
+   "original_sha256": "79895aa006aa0af75ed74bf97ce3305d8d07da67db037100eab75d65c9d36d58",
+   "path": "OAI/NumberTheory/GaussianMoat/DenseBins.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/DifferenceSampling.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.DifferenceSampling",
+   "original_sha256": "99b86d87e14deb28265241d465425e520adbeaf58a82d69f8ee0d88c0293cc24",
+   "path": "OAI/NumberTheory/GaussianMoat/DifferenceSampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/DyadicSieve.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.DyadicSieve",
+   "original_sha256": "0c2cb9da2e6c7f2fc3bf2bea576408c07d64b4d41d1276395fa29ea7adae4b9c",
+   "path": "OAI/NumberTheory/GaussianMoat/DyadicSieve.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/EntropyBand.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.EntropyBand",
+   "original_sha256": "30602128a23e0658e2934514f66af882848a81c21803259e620c0fa0073c50e3",
+   "path": "OAI/NumberTheory/GaussianMoat/EntropyBand.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/FiniteEntropy.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.FiniteEntropy",
+   "original_sha256": "51272465eded40214c46e721bb4ce9146233596dfbdcf9dec073cddbeeff25db",
+   "path": "OAI/NumberTheory/GaussianMoat/FiniteEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/FiniteLaw.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.FiniteLaw",
+   "original_sha256": "8f054b20a391605baf1b8c19f3abe30ebb01bd590563796735b4cf5c43ccc880",
+   "path": "OAI/NumberTheory/GaussianMoat/FiniteLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/FreshEntropy.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.FreshEntropy",
+   "original_sha256": "94b94a004288f1d93b089d9ca064a370bff9b15d2554547641f5a1dbd8f4506e",
+   "path": "OAI/NumberTheory/GaussianMoat/FreshEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/GroupCoverage.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.GroupCoverage",
+   "original_sha256": "25208755f93cc14471aa4e5fd7d2dbd16e9b8b1804d833fba922ae44c3dba08d",
+   "path": "OAI/NumberTheory/GaussianMoat/GroupCoverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/Information.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.Information",
+   "original_sha256": "b601585ed5892399c1b9d03649e80ce35649cdc87eeadd5de0a0b263214252b6",
+   "path": "OAI/NumberTheory/GaussianMoat/Information.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/InformationTelescope.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.InformationTelescope",
+   "original_sha256": "c56a1138015f025bd79bbbc784da11d65f974c56e853dfa05e60713bf8857a5b",
+   "path": "OAI/NumberTheory/GaussianMoat/InformationTelescope.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/KernelComposition.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.KernelComposition",
+   "original_sha256": "9900cbe7a6b5150dd5eb0a875d0b91ada843fbca180ec1c8c3d723abfe38b896",
+   "path": "OAI/NumberTheory/GaussianMoat/KernelComposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/LatticeComponents.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.LatticeComponents",
+   "original_sha256": "5fdac286fcca5d6c0104c9ed26dd208eaf372149af8aa4320d56ee906a1d4d06",
+   "path": "OAI/NumberTheory/GaussianMoat/LatticeComponents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/Main.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.Main",
+   "original_sha256": "33d31a805d14d899ea5004004ffd9bb6021d877ccdc17322695360160914e3fd",
+   "path": "OAI/NumberTheory/GaussianMoat/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/Model.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.Model",
+   "original_sha256": "eb255edeea6644df662f4da2050c80c05be0bd90d0b10a441960e5a2ff51040d",
+   "path": "OAI/NumberTheory/GaussianMoat/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/MultiscaleSchedule.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.MultiscaleSchedule",
+   "original_sha256": "4e9f036dce9bc93d0540ff7aa8b380889e6f60ba7361c922064f252ccbe5eee4",
+   "path": "OAI/NumberTheory/GaussianMoat/MultiscaleSchedule.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/PassingInformation.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.PassingInformation",
+   "original_sha256": "e8d394181b425d1670fa593af9fe404e997f5d79e4e6c857e5a8a3391a4e2612",
+   "path": "OAI/NumberTheory/GaussianMoat/PassingInformation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/PointEnrichment.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.PointEnrichment",
+   "original_sha256": "20bd4687625b001dbf37f4a41acc92f4cc3b9fb34f0493c7d69b3e7d50d39376",
+   "path": "OAI/NumberTheory/GaussianMoat/PointEnrichment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/PosteriorSampling.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.PosteriorSampling",
+   "original_sha256": "3884777fece92c88ab5e48c6d3cf06b0a3de162b46d13a311cadc3111a97adb2",
+   "path": "OAI/NumberTheory/GaussianMoat/PosteriorSampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/PrimeMass.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.PrimeMass",
+   "original_sha256": "bd5f73342ff6a9b6d25fe63746fc7f0eee2ba479c8869319bd748319877fc002",
+   "path": "OAI/NumberTheory/GaussianMoat/PrimeMass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/ResidueQuotient.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.ResidueQuotient",
+   "original_sha256": "e9c4ffb2b30b0e9dd16669b4f557ed74eee344a85703a9b02cdae26a95a22925",
+   "path": "OAI/NumberTheory/GaussianMoat/ResidueQuotient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/SeparatedParameters.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.SeparatedParameters",
+   "original_sha256": "14e1f6a6ab1598f92b9194e19dfe35b32eecc7d43b96a8e73f3c2ea0f3618529",
+   "path": "OAI/NumberTheory/GaussianMoat/SeparatedParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/SieveCertificate.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.SieveCertificate",
+   "original_sha256": "fc72f71889dbb048ebddcb35ebb46e0b6aecc9c1c24d9cefb70de35bbf479403",
+   "path": "OAI/NumberTheory/GaussianMoat/SieveCertificate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/SieveSmoothing.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.SieveSmoothing",
+   "original_sha256": "4bee73d902949cf458ec26abe268b461c8afca81b6a1823cd56281589eb78519",
+   "path": "OAI/NumberTheory/GaussianMoat/SieveSmoothing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/SignConcentration.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.SignConcentration",
+   "original_sha256": "a4a2d005238254e0e8bf3c225315a0ecb9c1913c63892612ebffcefd8e5907f5",
+   "path": "OAI/NumberTheory/GaussianMoat/SignConcentration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/SignedArithmetic.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.SignedArithmetic",
+   "original_sha256": "aa7c20f24d97df4d41e51831310976bc444411178e61a79f1b71e128b204026d",
+   "path": "OAI/NumberTheory/GaussianMoat/SignedArithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/SignedGeometry.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.SignedGeometry",
+   "original_sha256": "f8ee0771c2fbdaec3e42d3c407ac8557a035900627d7248ddfba03af56a9e3ee",
+   "path": "OAI/NumberTheory/GaussianMoat/SignedGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/SignedResidues.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.SignedResidues",
+   "original_sha256": "d89b9ed261f2987450ef86ca76eb44e5722f2a3f7097d52472995c2680cebcff",
+   "path": "OAI/NumberTheory/GaussianMoat/SignedResidues.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/Smoothing.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.Smoothing",
+   "original_sha256": "b7749fc3934d5093eda0cf62f86f9affabdb0adac0f98e4bc8d96c3f16b50f33",
+   "path": "OAI/NumberTheory/GaussianMoat/Smoothing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/TimeLaw.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.TimeLaw",
+   "original_sha256": "bf52712ee5b09d57a6f13057947b36caf34714015a8a83222904237fedcb0119",
+   "path": "OAI/NumberTheory/GaussianMoat/TimeLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/WalkGeometry.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.WalkGeometry",
+   "original_sha256": "f3ff50f7f5e0d45f8eca6e180bd1eb00a3711abcabd0bebe5f74b2beee1cc53c",
+   "path": "OAI/NumberTheory/GaussianMoat/WalkGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/WalkPackage.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.WalkPackage",
+   "original_sha256": "3c666ff1a31648549adfef006b7dfddefc484819a2fd336f38e8809f54303bed",
+   "path": "OAI/NumberTheory/GaussianMoat/WalkPackage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/WalkWords.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.WalkWords",
+   "original_sha256": "5c35a8c63eae1db33be0679100ccf41738a0badd36f9c257084bb3516a7daf12",
+   "path": "OAI/NumberTheory/GaussianMoat/WalkWords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/WindowBatch.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.WindowBatch",
+   "original_sha256": "afaa2693046203d0eb9408ebfbbe94760071507e62466ea47788eadcc3e2cd51",
+   "path": "OAI/NumberTheory/GaussianMoat/WindowBatch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/GaussianMoat/WindowParameters.lean"
+   },
+   "module": "OAI.NumberTheory.GaussianMoat.WindowParameters",
+   "original_sha256": "a57a460b619fbf86dabe93d0add90fca6989762ba3cc3a3eb0796f38e40f6ed9",
+   "path": "OAI/NumberTheory/GaussianMoat/WindowParameters.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.NumberTheory.GaussianMoat.AccurateScales",
+  "OAI.NumberTheory.GaussianMoat.BackwardCoverage",
+  "OAI.NumberTheory.GaussianMoat.BatchCertificate",
+  "OAI.NumberTheory.GaussianMoat.BatchParameters",
+  "OAI.NumberTheory.GaussianMoat.BooleanCube",
+  "OAI.NumberTheory.GaussianMoat.CommonBlocks",
+  "OAI.NumberTheory.GaussianMoat.ConditionalSampling",
+  "OAI.NumberTheory.GaussianMoat.DenseBins",
+  "OAI.NumberTheory.GaussianMoat.DifferenceSampling",
+  "OAI.NumberTheory.GaussianMoat.DyadicSieve",
+  "OAI.NumberTheory.GaussianMoat.EntropyBand",
+  "OAI.NumberTheory.GaussianMoat.FiniteEntropy",
+  "OAI.NumberTheory.GaussianMoat.FiniteLaw",
+  "OAI.NumberTheory.GaussianMoat.FreshEntropy",
+  "OAI.NumberTheory.GaussianMoat.GroupCoverage",
+  "OAI.NumberTheory.GaussianMoat.Information",
+  "OAI.NumberTheory.GaussianMoat.InformationTelescope",
+  "OAI.NumberTheory.GaussianMoat.KernelComposition",
+  "OAI.NumberTheory.GaussianMoat.LatticeComponents",
+  "OAI.NumberTheory.GaussianMoat.Main",
+  "OAI.NumberTheory.GaussianMoat.Model",
+  "OAI.NumberTheory.GaussianMoat.MultiscaleSchedule",
+  "OAI.NumberTheory.GaussianMoat.PassingInformation",
+  "OAI.NumberTheory.GaussianMoat.PointEnrichment",
+  "OAI.NumberTheory.GaussianMoat.PosteriorSampling",
+  "OAI.NumberTheory.GaussianMoat.PrimeMass",
+  "OAI.NumberTheory.GaussianMoat.ResidueQuotient",
+  "OAI.NumberTheory.GaussianMoat.SeparatedParameters",
+  "OAI.NumberTheory.GaussianMoat.SieveCertificate",
+  "OAI.NumberTheory.GaussianMoat.SieveSmoothing",
+  "OAI.NumberTheory.GaussianMoat.SignConcentration",
+  "OAI.NumberTheory.GaussianMoat.SignedArithmetic",
+  "OAI.NumberTheory.GaussianMoat.SignedGeometry",
+  "OAI.NumberTheory.GaussianMoat.SignedResidues",
+  "OAI.NumberTheory.GaussianMoat.Smoothing",
+  "OAI.NumberTheory.GaussianMoat.TimeLaw",
+  "OAI.NumberTheory.GaussianMoat.WalkGeometry",
+  "OAI.NumberTheory.GaussianMoat.WalkPackage",
+  "OAI.NumberTheory.GaussianMoat.WalkWords",
+  "OAI.NumberTheory.GaussianMoat.WindowBatch",
+  "OAI.NumberTheory.GaussianMoat.WindowParameters"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/GaussianMoat.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.NumberTheory.GaussianMoat.Main",
+   "name": "OAI.GaussianMoat.fullMain",
+   "statement_sha256": "38d2b5daf0c8588eae78cf4a55460f3f175663d80edac594c7b0d364442d4b93"
+  }
+ ],
+ "task_id": "oai-gaussian-moat",
+ "task_revision": 1,
+ "title": "OpenAI math: Uniformly bounded components of Gaussian-prime graphs: Uniform bounds for bounded-step Gaussian-prime walks",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

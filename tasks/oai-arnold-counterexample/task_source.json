@@ -1,0 +1,781 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 1181870273
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.ArnoldCounterexample",
+  "challenge_sha256": "3f414804a720eb53310e3280e5d07e7a5c8511c56135d5228c0ee6ceb9bbab78",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ArnoldCounterexample.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.ArnoldCounterexample",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Geometry.Arnold.Main",
+   "theorem_names": [
+    "OAI.ArnoldCounterexample.main"
+   ]
+  },
+  "config_sha256": "6136c4b54dcc695ef9fe66f678206e2e6f94be96b97ac0ba922ad3aeedbd52cd",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ArnoldCounterexample.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.ArnoldCounterexample.main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/CompactField.lean"
+   },
+   "module": "OAI.Geometry.Arnold.CompactField",
+   "original_sha256": "d184117ffa3a971d6694172b3c3f424cc243d5bbe88a446d1ddc0c23b30fe6e3",
+   "path": "OAI/Geometry/Arnold/CompactField.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Coordinates.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Coordinates",
+   "original_sha256": "94d8d28722ceadcd0d41652e010f862c5613ac9b0c401a4533b94eaca47e49f2",
+   "path": "OAI/Geometry/Arnold/Coordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/CriticalLifts.lean"
+   },
+   "module": "OAI.Geometry.Arnold.CriticalLifts",
+   "original_sha256": "45632f473792a8fdc45ac2b264c00f6105c00321c4674d1826eaad36cd3f29d0",
+   "path": "OAI/Geometry/Arnold/CriticalLifts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Deformation.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Deformation",
+   "original_sha256": "125d82963caae08682ba9f26f78a849ee6f22cecebfb464a0e1201170675a017",
+   "path": "OAI/Geometry/Arnold/Deformation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Degeneracy.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Degeneracy",
+   "original_sha256": "62a4e55133a173ea7e20fd2bb3c2716aa25fad7ee6f71bb04088b54c1f9cf707",
+   "path": "OAI/Geometry/Arnold/Degeneracy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Descent.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Descent",
+   "original_sha256": "b339d94076b3102f314c9ee4a258907db07bc1f23840ed55d90033221ebf64b9",
+   "path": "OAI/Geometry/Arnold/Descent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Differentiation.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Differentiation",
+   "original_sha256": "6d023ab7d99d13285bdb66392f10464990c6bf38356a16f4218661a6356b9ca7",
+   "path": "OAI/Geometry/Arnold/Differentiation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Extension.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Extension",
+   "original_sha256": "f367a5baba827568771fc52af8010daefa05a1d8b17ed4d2759bc36f063c1b0f",
+   "path": "OAI/Geometry/Arnold/Extension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Exterior.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Exterior",
+   "original_sha256": "672203037b997174951d3536c552d5c26bf31de2c918dcf72a52a909c5e741ba",
+   "path": "OAI/Geometry/Arnold/Exterior.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Factors.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Factors",
+   "original_sha256": "7f9166055cb4f1fba8ac4da7d4a11229bdad937f6f33f8ce794edae5d4afccf4",
+   "path": "OAI/Geometry/Arnold/Factors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Field.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Field",
+   "original_sha256": "c12911dd2499e2a751700ade5610496391de75913ca2ea872b5eacedb7debf44",
+   "path": "OAI/Geometry/Arnold/Field.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/FieldAlgebra.lean"
+   },
+   "module": "OAI.Geometry.Arnold.FieldAlgebra",
+   "original_sha256": "9a3fcd216bf3490126b32680c52840ea50481e821f4fbe6bb9cdfeb5e70baef5",
+   "path": "OAI/Geometry/Arnold/FieldAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/FixedCount.lean"
+   },
+   "module": "OAI.Geometry.Arnold.FixedCount",
+   "original_sha256": "4d19e852a054e42722e6f6fca7d1c2a0a133a28fd248f17a0f40f5515ddce832",
+   "path": "OAI/Geometry/Arnold/FixedCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/FixedPoints.lean"
+   },
+   "module": "OAI.Geometry.Arnold.FixedPoints",
+   "original_sha256": "1178e3d1b6b7c4dbd8a7f5dadf852b15e5df5c7fad1af0307288e1d41772fff8",
+   "path": "OAI/Geometry/Arnold/FixedPoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Haar.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Haar",
+   "original_sha256": "4e9b9d36786a796546e389797a86c75e235ac97a2215dc9b38f90cec035e5818",
+   "path": "OAI/Geometry/Arnold/Haar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Hamiltonian.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Hamiltonian",
+   "original_sha256": "6c5e3ee85e45f16929bd538e000e614607ff21349abb612f9d828fc8f4db805a",
+   "path": "OAI/Geometry/Arnold/Hamiltonian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Hessian.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Hessian",
+   "original_sha256": "96a094d27de35c00a46cc5f48d92cf1787d18f7a1baea232686d5ccfb913371c",
+   "path": "OAI/Geometry/Arnold/Hessian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Homotopy.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Homotopy",
+   "original_sha256": "02fd84a75aa65226e94c23ba1081ab37bff87e95c3990cc56cec14b942f5fe1f",
+   "path": "OAI/Geometry/Arnold/Homotopy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Involution.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Involution",
+   "original_sha256": "705b203fd4285e342ddbe2a6d239995f06ea98eebb5a4f7930ef0d29cbc41984",
+   "path": "OAI/Geometry/Arnold/Involution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Kernel.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Kernel",
+   "original_sha256": "c1513ef365b83004c3609c4ec718a5165ed3dbdb04039b1e15644d16b53d95f3",
+   "path": "OAI/Geometry/Arnold/Kernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Main.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Main",
+   "original_sha256": "974d3800c5a3c5ee7622eea2f0a3dbf606b3e6db935c5194a196c9a51ede586c",
+   "path": "OAI/Geometry/Arnold/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Midpoint.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Midpoint",
+   "original_sha256": "e6886ef040e9fc1d5ab83cdc406b70c488e81e5d88f68aa1947788d57d38a5fb",
+   "path": "OAI/Geometry/Arnold/Midpoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/MidpointDerivative.lean"
+   },
+   "module": "OAI.Geometry.Arnold.MidpointDerivative",
+   "original_sha256": "c15c7e684c6e792cbcd36ab718d25e69942b693960ca9b567e0f953f5ef60b5d",
+   "path": "OAI/Geometry/Arnold/MidpointDerivative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/MidpointGeometry.lean"
+   },
+   "module": "OAI.Geometry.Arnold.MidpointGeometry",
+   "original_sha256": "6831a63ba48689f7a9a0078e2dbd65840de3a3653ff1fdd5ce2400bbb670bf77",
+   "path": "OAI/Geometry/Arnold/MidpointGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Model.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Model",
+   "original_sha256": "b40010db57766d8bcc6d942328d9f31d62cefe19638639012eebd0d65bc6efbc",
+   "path": "OAI/Geometry/Arnold/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Obstruction.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Obstruction",
+   "original_sha256": "fa692353ea7dbddddb421d71b29272c37d1274e2bdbd53b4a4190c796cd5483c",
+   "path": "OAI/Geometry/Arnold/Obstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Orbit.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Orbit",
+   "original_sha256": "7991302b421384c8037e835acb1ed3d66df646c66180698aa97c2d9ad5b2f9a4",
+   "path": "OAI/Geometry/Arnold/Orbit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Parameter.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Parameter",
+   "original_sha256": "bc5728ca1b6fcde5dd5d1ee4acd9be0b822399458d92a0e1590299876840bf34",
+   "path": "OAI/Geometry/Arnold/Parameter.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Projective.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Projective",
+   "original_sha256": "31c05b1c31eb7c273a8caef0886d9798c218855326641bfb411130ae5d82699f",
+   "path": "OAI/Geometry/Arnold/Projective.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Quotient.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Quotient",
+   "original_sha256": "336df133d2bf0034122780673f8c618f78ad73dddb0eb0282e935425278260a8",
+   "path": "OAI/Geometry/Arnold/Quotient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Rotation.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Rotation",
+   "original_sha256": "55f5be20931d91cae52ab25388bece512c48fdf39911d4850cd6b98edee340eb",
+   "path": "OAI/Geometry/Arnold/Rotation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Sphere.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Sphere",
+   "original_sha256": "ec09cce3df700c181f24fc7087efe82faef92d553b495ea64fc6dc31dcd47536",
+   "path": "OAI/Geometry/Arnold/Sphere.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Symplectic.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Symplectic",
+   "original_sha256": "377006f9871e3813cc26715421c77ec1323759b90b7a1f407355ca69554e4fa5",
+   "path": "OAI/Geometry/Arnold/Symplectic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Tangent.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Tangent",
+   "original_sha256": "7491447ed58e9e8916a6c05c194159e31dd7dd6cffa481f8a02fb34121532d65",
+   "path": "OAI/Geometry/Arnold/Tangent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/ThreePoints.lean"
+   },
+   "module": "OAI.Geometry.Arnold.ThreePoints",
+   "original_sha256": "9409aee266f71bc2e89bb1334058eae7255376a5461727bafcee6862dbb0f04a",
+   "path": "OAI/Geometry/Arnold/ThreePoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Arnold/Volume.lean"
+   },
+   "module": "OAI.Geometry.Arnold.Volume",
+   "original_sha256": "e446f320fbaa38ca44a0f9434c06b221d1f495f223b3c2957a42fe12f48f0c44",
+   "path": "OAI/Geometry/Arnold/Volume.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Geometry.Arnold.CompactField",
+  "OAI.Geometry.Arnold.Coordinates",
+  "OAI.Geometry.Arnold.CriticalLifts",
+  "OAI.Geometry.Arnold.Deformation",
+  "OAI.Geometry.Arnold.Degeneracy",
+  "OAI.Geometry.Arnold.Descent",
+  "OAI.Geometry.Arnold.Differentiation",
+  "OAI.Geometry.Arnold.Extension",
+  "OAI.Geometry.Arnold.Exterior",
+  "OAI.Geometry.Arnold.Factors",
+  "OAI.Geometry.Arnold.Field",
+  "OAI.Geometry.Arnold.FieldAlgebra",
+  "OAI.Geometry.Arnold.FixedCount",
+  "OAI.Geometry.Arnold.FixedPoints",
+  "OAI.Geometry.Arnold.Haar",
+  "OAI.Geometry.Arnold.Hamiltonian",
+  "OAI.Geometry.Arnold.Hessian",
+  "OAI.Geometry.Arnold.Homotopy",
+  "OAI.Geometry.Arnold.Involution",
+  "OAI.Geometry.Arnold.Kernel",
+  "OAI.Geometry.Arnold.Main",
+  "OAI.Geometry.Arnold.Midpoint",
+  "OAI.Geometry.Arnold.MidpointDerivative",
+  "OAI.Geometry.Arnold.MidpointGeometry",
+  "OAI.Geometry.Arnold.Model",
+  "OAI.Geometry.Arnold.Obstruction",
+  "OAI.Geometry.Arnold.Orbit",
+  "OAI.Geometry.Arnold.Parameter",
+  "OAI.Geometry.Arnold.Projective",
+  "OAI.Geometry.Arnold.Quotient",
+  "OAI.Geometry.Arnold.Rotation",
+  "OAI.Geometry.Arnold.Sphere",
+  "OAI.Geometry.Arnold.Symplectic",
+  "OAI.Geometry.Arnold.Tangent",
+  "OAI.Geometry.Arnold.ThreePoints",
+  "OAI.Geometry.Arnold.Volume"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/ArnoldCounterexample.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Geometry.Arnold.Main",
+   "name": "OAI.ArnoldCounterexample.main",
+   "statement_sha256": "b66a69449e8b224285589a4cc391e11b23d09f28fb8d74cc04e49a8a529d231e"
+  }
+ ],
+ "task_id": "oai-arnold-counterexample",
+ "task_revision": 1,
+ "title": "OpenAI math: Counterexamples to stable-Morse and strong Arnold fixed-point bounds: Three-fixed-point Arnold counterexample",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

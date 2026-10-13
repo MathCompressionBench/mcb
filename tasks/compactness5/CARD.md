@@ -24,13 +24,13 @@ On Linux x86_64:
 
 | step | wall time |
 |---|---|
-| ./check (clean dir) | 580 s |
-| make-task no_hint | 1,242 s |
-| make-task warm | 730 s |
-| make-task warm (second build) | 685 s |
+| ./check (clean dir) | 548 s |
+| make-task no_hint | 1,165 s |
+| make-task warm | 707 s |
+| make-task warm (second build) | 665 s |
 | start (with --deps) | 1 s |
 
-Peak memory of the job: 4,045 MB (source not recorded). ./check node count = 1,307,221,424 (exact).
-Warm tarball sha256 `0e6b3aee5f7fd2c69098a12635e4f5dd29dd3c290b04f1b25f21ce08361f768f`; no_hint `d089a0414f93339f8ba431169eec36b7fa5bf30ec4ae55a180ebdc45c18fad9a`.
+Peak memory of the job: 4,160 MB (source not recorded). ./check node count = 1,307,221,424 (exact).
+Warm tarball sha256 `77c706dc12f2068abe74c68a3cc0b6f747298393f370a5023abd97cf7aff6402`; no_hint `3bb0c3a52c0b34ffaa3dde6fe4c02d1aa3a9d2e0d007aba36993f8a3c2a1a029`.
 
 dag_nodes_v1 = 1,003,804 (recorded, not ranked).

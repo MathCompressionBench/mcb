@@ -1,0 +1,2341 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 1140218943
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.BinarySweep",
+  "challenge_sha256": "35f4267a40a62a9149855f7b067b5b8f2306ba0c3b522f113a078af07b2aba31",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/BinarySweep.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.BinarySweep",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ],
+   "solution_module": "OAI.Probability.BinarySweep.Main",
+   "theorem_names": [
+    "OAI.binary_sweep_contraction_and_mixing"
+   ]
+  },
+  "config_sha256": "25effc8adb0ada050f97be853249026cf6a5a97b603d99992ad27835d5b23e22",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/BinarySweep.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.binary_sweep_contraction_and_mixing": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Analytic/AnalyticTransfer.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Analytic.AnalyticTransfer",
+   "original_sha256": "cb436c9f6e350146d7ec26896ecbcbe995366535f6ec4c07052324e868872eee",
+   "path": "OAI/Probability/BinarySweep/Analytic/AnalyticTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Analytic/ComplexGrid.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Analytic.ComplexGrid",
+   "original_sha256": "8d65401b2cae454783d3585e544b5bc41dfcec50047c83c9a9cd10baff775f55",
+   "path": "OAI/Probability/BinarySweep/Analytic/ComplexGrid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Analytic/FiniteAverageGap.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Analytic.FiniteAverageGap",
+   "original_sha256": "5265150d77d08b53c9e59338a7060297c6826d07abe4579e708afdffbf276410",
+   "path": "OAI/Probability/BinarySweep/Analytic/FiniteAverageGap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Analytic/OneAxis.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Analytic.OneAxis",
+   "original_sha256": "9282e48354bb52f1b2a0dbf79989f0c3c2ca415714487250af559d0701abb5cd",
+   "path": "OAI/Probability/BinarySweep/Analytic/OneAxis.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Analytic/OneAxisBase.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Analytic.OneAxisBase",
+   "original_sha256": "1e97bf74efc7e7b73183ba60bb1f65f3f620f900481e39ac6c5ef7aeeed137b4",
+   "path": "OAI/Probability/BinarySweep/Analytic/OneAxisBase.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Analytic/OneAxisPerturbation.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Analytic.OneAxisPerturbation",
+   "original_sha256": "36534906027c01bc5dcb4962937a59974bb2b00f17dba30d861afe8748019866",
+   "path": "OAI/Probability/BinarySweep/Analytic/OneAxisPerturbation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Conditional/AugmentedBlock.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Conditional.AugmentedBlock",
+   "original_sha256": "98242f35a81c446c78dd9c075a00a183625ce4c2ae494ea6c491ebcc8947bbd7",
+   "path": "OAI/Probability/BinarySweep/Conditional/AugmentedBlock.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Conditional/AugmentedComplement.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Conditional.AugmentedComplement",
+   "original_sha256": "9e9b186638c1a94f0ba1aa4040d4096c0983d4f817b27d245d42ca36439d8ce2",
+   "path": "OAI/Probability/BinarySweep/Conditional/AugmentedComplement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Conditional/ComplementBlocks.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Conditional.ComplementBlocks",
+   "original_sha256": "59816d1d30c273dbb67ecb8b925f027e51a480532f1e2b133d6f0df9b193e27c",
+   "path": "OAI/Probability/BinarySweep/Conditional/ComplementBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Conditional/ConditionalAverage.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Conditional.ConditionalAverage",
+   "original_sha256": "2230b9e4a0164f2d904e7dd077c88ee76933d4f40bcdfae3cdb1f91cadc828b1",
+   "path": "OAI/Probability/BinarySweep/Conditional/ConditionalAverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Conditional/ConditionalSign.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Conditional.ConditionalSign",
+   "original_sha256": "0a75fcfb95a69d1880f02ef16a650f930514efd20a8a560886e671e4cb7acc8e",
+   "path": "OAI/Probability/BinarySweep/Conditional/ConditionalSign.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Conditional/ConditionalSpecht.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Conditional.ConditionalSpecht",
+   "original_sha256": "452a349329b9b65c037f8a12f4891e6123b40872fb6d3d8851bda13dbc65863d",
+   "path": "OAI/Probability/BinarySweep/Conditional/ConditionalSpecht.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Conditional/CycleAugmentation.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Conditional.CycleAugmentation",
+   "original_sha256": "2a8da5efdc3e91d1e6b6894044b995fe865d817398ece6c59c08150acd349242",
+   "path": "OAI/Probability/BinarySweep/Conditional/CycleAugmentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Conditional/MainEasyCases.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Conditional.MainEasyCases",
+   "original_sha256": "be6b6366eabd37ebbd7cdc472255ed5499cf7be7d70e7b1734dc182c27ead58d",
+   "path": "OAI/Probability/BinarySweep/Conditional/MainEasyCases.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Conditional/MainMomentInterface.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Conditional.MainMomentInterface",
+   "original_sha256": "b266879285b1c4ea752d11bceeeab700b2b731ed9a77b63c747fab282758e348",
+   "path": "OAI/Probability/BinarySweep/Conditional/MainMomentInterface.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Conditional/MomentOperatorBound.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Conditional.MomentOperatorBound",
+   "original_sha256": "ef5f37c09cc93b899039bc77f2128aeb513374971caaa6b47c5eb1d388b412e2",
+   "path": "OAI/Probability/BinarySweep/Conditional/MomentOperatorBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Conditional/Placement.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Conditional.Placement",
+   "original_sha256": "b451684bc871303de5cee7cf8471852696e448498d202ec7c642186b0dae5254",
+   "path": "OAI/Probability/BinarySweep/Conditional/Placement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Conditional/PlacementAlternation.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Conditional.PlacementAlternation",
+   "original_sha256": "00f936ea9765f506caaa3302f5150ce09237d7111edc16ff510d3e41e6b20f2b",
+   "path": "OAI/Probability/BinarySweep/Conditional/PlacementAlternation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Conditional/PlacementBlocks.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Conditional.PlacementBlocks",
+   "original_sha256": "4c8128c63b9310ab9bc7b4795164aeb04007c5be6844c9c13bcfe282284fcd3e",
+   "path": "OAI/Probability/BinarySweep/Conditional/PlacementBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Conditional/PlacementCycleMoment.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Conditional.PlacementCycleMoment",
+   "original_sha256": "6418203a402bb57b637376b90001781e971dc29afb83399a1af03b2a5fd161c7",
+   "path": "OAI/Probability/BinarySweep/Conditional/PlacementCycleMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Conditional/WeightedCycle.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Conditional.WeightedCycle",
+   "original_sha256": "e01dc34aff05b1cd42d9aeaf675793179e7d3227ff38cd4e1b33d8dfde2fc932",
+   "path": "OAI/Probability/BinarySweep/Conditional/WeightedCycle.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/ActiveTypes.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.ActiveTypes",
+   "original_sha256": "ef2a559de6f28bc0bff9eba659e9ce582ddab0283be599427cf44e0c13389a79",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/ActiveTypes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/AssignmentSign.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.AssignmentSign",
+   "original_sha256": "5fc406fe504550c77af425147f31adde7efd34e104311c9387e9146b556f57b2",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/AssignmentSign.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/BitBlocks.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.BitBlocks",
+   "original_sha256": "051d2f91da54492b123b3f3d669e5fa30ab25b50eb15d249a2cdc9d0ca9ad64f",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/BitBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/CyclicHolder.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.CyclicHolder",
+   "original_sha256": "4a0616c2e018b70905b1ae26cd602b04cd6f710c774882bf03097ead75a6077f",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/CyclicHolder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/FiniteLawAverage.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.FiniteLawAverage",
+   "original_sha256": "713b9485c97db012ec4d1322b917ee678d9d12b46ab90816d17fbb9870ead8f0",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/FiniteLawAverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/FiniteProductProbability.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.FiniteProductProbability",
+   "original_sha256": "c90706df507d2d573a69bd8f3cadee7c524f5311f06c736e982083a70e80bcc8",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/FiniteProductProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/HilbertMainCases.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.HilbertMainCases",
+   "original_sha256": "dd2f34b5bd424746a2d6bca027d7fcde3558d4192958014c31c6a0ad81c48db1",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/HilbertMainCases.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/HilbertTranspose.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.HilbertTranspose",
+   "original_sha256": "65fa4c87a58a518890c03fcc3cc94f7443304d26ef7fa6d4d37043347be9c3a8",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/HilbertTranspose.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/IndependentOperator.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.IndependentOperator",
+   "original_sha256": "64beeba1d4d257c207c833076167069a59b55ea6506d5e0ed3932b59f13be597",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/IndependentOperator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/IndependentPush.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.IndependentPush",
+   "original_sha256": "1c8e8f69d823e4b5fbad7753d7db9c78e7fe98ea7d5be0b3d064b6873f62c6a3",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/IndependentPush.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/LightLineBound.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.LightLineBound",
+   "original_sha256": "582ae15ed21fabf4d3ab8eeaba4ded0d55472ea469aa92c6cac12e15b27f343d",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/LightLineBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/LinearEvenMoment.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.LinearEvenMoment",
+   "original_sha256": "a55f61c6804b4e59afee0d86a31099bf4f0d96e303c438dd1abb94899f0dcd62",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/LinearEvenMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/MomentBounds.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.MomentBounds",
+   "original_sha256": "c1cbc097b2ae1223eb182227034cecd37b3d836ddbd6ed9d9c0d25dd56c6a1a1",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/MomentBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/OccurrenceMoment.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.OccurrenceMoment",
+   "original_sha256": "0d75254d2772b263bdbb70837aec4a5b3a1e426572ec195b502f92a25b9d43a3",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/OccurrenceMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/OneCard.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.OneCard",
+   "original_sha256": "be46e1e35ccd7f2f6bc53890ffa2a4c89916c8ea3784ca7d7064e90a8cadaa39",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/OneCard.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/PiCentrality.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.PiCentrality",
+   "original_sha256": "dc9e9bda8d8147d4ef4697ab577778a8e17b4f8e3e706d724aa6d357ec2d2835",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/PiCentrality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/QuantitativeMoment.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.QuantitativeMoment",
+   "original_sha256": "38daceed44d887ccde1ea867be83499bae226034641a355e452dfe8b2649af6f",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/QuantitativeMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/RemainingSign.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.RemainingSign",
+   "original_sha256": "e3436f434a10e7bf5e9b1c0b41a411f9d669c5417a8ee9704cc2f3cc1c5fe27a",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/RemainingSign.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/SampleMoment.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.SampleMoment",
+   "original_sha256": "e98ed905510e9281fd6a276b1c697e8844a17668ab12e5c78784281796934cdf",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/SampleMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/SoutheastDimension.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.SoutheastDimension",
+   "original_sha256": "33f67bf1a6187f5dc97d424b01e035d56a3de84fa0b132d4f48fb35b3f475db6",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/SoutheastDimension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/SumDite.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.SumDite",
+   "original_sha256": "6186a7222022b7e97ef3d9336cf6316ac2bc8a9ebc16ed8fc8e5e9de04b28392",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/SumDite.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/FiniteLaws/UniformFiniteProbability.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.FiniteLaws.UniformFiniteProbability",
+   "original_sha256": "07e2ff72e6920e9d39598212849cf10e8d537fb307484b3a2fc932ab71cd8f86",
+   "path": "OAI/Probability/BinarySweep/FiniteLaws/UniformFiniteProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/BalancedGrid.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.BalancedGrid",
+   "original_sha256": "69d03ccbef613c93ec785ac52199523f66e6531cda5ab432d64e50785bfa82c2",
+   "path": "OAI/Probability/BinarySweep/GridBounds/BalancedGrid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/BoardLaw.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.BoardLaw",
+   "original_sha256": "aa3d0b35deca3d0d9981d89cafa51c3d79315c3ee3bd501f91bba5ef7de735ab",
+   "path": "OAI/Probability/BinarySweep/GridBounds/BoardLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/BoardOverlap.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.BoardOverlap",
+   "original_sha256": "4c31486833edba0bd0cb21f5fc460dede061901a1807d233e79abcfe2356c441",
+   "path": "OAI/Probability/BinarySweep/GridBounds/BoardOverlap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/BoardProduct.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.BoardProduct",
+   "original_sha256": "d8b130049eec4d190e1ec04b37d641b0c2ffd7bb580b54c4037ce145de4f018c",
+   "path": "OAI/Probability/BinarySweep/GridBounds/BoardProduct.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/DenseAssembly.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.DenseAssembly",
+   "original_sha256": "0fbee1c1b54dca14973b1d5a545b75ead1808d9f0ee62ffb116a057c95dc49b7",
+   "path": "OAI/Probability/BinarySweep/GridBounds/DenseAssembly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/DenseClosing.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.DenseClosing",
+   "original_sha256": "8db75f67a3aaaed337d2883921e6250fc178298b03b7d75933bd1cdcd50fed9d",
+   "path": "OAI/Probability/BinarySweep/GridBounds/DenseClosing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/DiagonalDimension.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.DiagonalDimension",
+   "original_sha256": "981660be100a18e7075fbda64c1b58b0ed4154d55d44ddecc020ff77209fbc0b",
+   "path": "OAI/Probability/BinarySweep/GridBounds/DiagonalDimension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/DiagonalRigidity.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.DiagonalRigidity",
+   "original_sha256": "0db614a1e2ec9c5c170adb9aa038faf9e0708b90ea3e02cd442e602fd6f53e78",
+   "path": "OAI/Probability/BinarySweep/GridBounds/DiagonalRigidity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/EmptyGrid.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.EmptyGrid",
+   "original_sha256": "f4b69e1f295fd34020b0e7d62b7c26988556653d23e42e0b90c16f6aed385c92",
+   "path": "OAI/Probability/BinarySweep/GridBounds/EmptyGrid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/GridBoardAverage.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.GridBoardAverage",
+   "original_sha256": "711f5afaed8f884ee9e76ae3e8f921fa7f557166206d05eb74304e3b137eeabe",
+   "path": "OAI/Probability/BinarySweep/GridBounds/GridBoardAverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/GridChildAverage.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.GridChildAverage",
+   "original_sha256": "5bef5b0509b96743a794c35dca522dd77c7c42a2439138989e60d3e7e1ae4cc6",
+   "path": "OAI/Probability/BinarySweep/GridBounds/GridChildAverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/GridDenseCost.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.GridDenseCost",
+   "original_sha256": "f2fc0979edcbe55ed432fe5ac7a25d034abc2f22a3147a92ccbf8900ba4b6fd6",
+   "path": "OAI/Probability/BinarySweep/GridBounds/GridDenseCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/GridLaw.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.GridLaw",
+   "original_sha256": "6128daf5eb2d85471dae1b446d3da0e7e4f1e732e888347a4280ecfaa66a09cc",
+   "path": "OAI/Probability/BinarySweep/GridBounds/GridLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/GridProjectedMoment.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.GridProjectedMoment",
+   "original_sha256": "6e93731862156b399dc8cd07ee60baf652e54f4e140d42c8a8a74ceabcb67bb7",
+   "path": "OAI/Probability/BinarySweep/GridBounds/GridProjectedMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/GridSplit.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.GridSplit",
+   "original_sha256": "d2ce54c03936d983808f1e58d19e1048eaefee0cc785eb60ce8f499e7e162778",
+   "path": "OAI/Probability/BinarySweep/GridBounds/GridSplit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/GridSplitCost.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.GridSplitCost",
+   "original_sha256": "61c7fec9c780c091a2031d015a09234a54d0e7330e95da58dd1ec8554592d1bf",
+   "path": "OAI/Probability/BinarySweep/GridBounds/GridSplitCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/GridSplitFree.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.GridSplitFree",
+   "original_sha256": "b0aab5b7ce8adbc9422d18d264cb31c2d8c446cd10fff5a7fef3d4a19b827415",
+   "path": "OAI/Probability/BinarySweep/GridBounds/GridSplitFree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/GridSplitSweep.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.GridSplitSweep",
+   "original_sha256": "c74a54fb6ec76f43da20a038297559d22012795c82346b6ebb8d03a218a02022",
+   "path": "OAI/Probability/BinarySweep/GridBounds/GridSplitSweep.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/GridSplitWeights.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.GridSplitWeights",
+   "original_sha256": "b13b7195c414d01549e22e2aeeccfcd292a2c672b3e36e288095f78485620968",
+   "path": "OAI/Probability/BinarySweep/GridBounds/GridSplitWeights.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/GroupedLogBounds.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.GroupedLogBounds",
+   "original_sha256": "58e163897763f0d33f97510e5c5ff3f07c12115e5066f7be9f094931c593cecb",
+   "path": "OAI/Probability/BinarySweep/GridBounds/GroupedLogBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/GroupedMoments.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.GroupedMoments",
+   "original_sha256": "0fc851d25adbff0dbed8d25fa3976d1371547465930a1815d8dabd9d0a9a9c5d",
+   "path": "OAI/Probability/BinarySweep/GridBounds/GroupedMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/GroupedTypes.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.GroupedTypes",
+   "original_sha256": "a4945d7a31c60adba7a5d478c16a95f30d4af19b3c472432b893bb5e566c70f0",
+   "path": "OAI/Probability/BinarySweep/GridBounds/GroupedTypes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/GroupingGeometry.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.GroupingGeometry",
+   "original_sha256": "a31ca349f9c014c71a330aef23472badf39e7a6e57393fcba04bf71d423033ae",
+   "path": "OAI/Probability/BinarySweep/GridBounds/GroupingGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/GridBounds/ProjectionSplitting.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.GridBounds.ProjectionSplitting",
+   "original_sha256": "8832fa92f62f6d0ca588db6dee6848084511998aaaf9cff9186586c8f44780db",
+   "path": "OAI/Probability/BinarySweep/GridBounds/ProjectionSplitting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Main.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Main",
+   "original_sha256": "c3f26ca4ef921000005ec0eda4ed8a49208c3c1f98e9991fc06ff30f0e3c7bd9",
+   "path": "OAI/Probability/BinarySweep/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/BlockTrace.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.BlockTrace",
+   "original_sha256": "4f093200fdbb12bb556dcfeb64201b832d7112cba14826a7bdcc3e88c4189a82",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/BlockTrace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/CenteredMatrix.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.CenteredMatrix",
+   "original_sha256": "c62e173f4cbefa90664afb37933a52a5ad7c176fc6c179face6ff74e7f9a3fd8",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/CenteredMatrix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/FourierTrace.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.FourierTrace",
+   "original_sha256": "00a83e95dcaeea7eac123640513f28065f69c0f9f567da03d5f7b02a4d108ee0",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/FourierTrace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/HilbertBlockTrace.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.HilbertBlockTrace",
+   "original_sha256": "07c8814291514b580319a904c14cc9f371395b395b6f312292f27a1ab69ab01d",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/HilbertBlockTrace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/MatrixProjection.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.MatrixProjection",
+   "original_sha256": "1b931d9b6cd3fbf93234af8be883529b1125541fe9e1460bc2aa379e6cc3975c",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/MatrixProjection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/MatrixRegularize.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.MatrixRegularize",
+   "original_sha256": "63b81a52f712e8d10590685c32d86a2ee5c69b79a69983b172f46df5939dd305",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/MatrixRegularize.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/MatrixSqrtBlocks.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.MatrixSqrtBlocks",
+   "original_sha256": "cd87b8ee2387f5be70ca8c7ebb90ecea69a16bb9d7ecf59a1eea1f0eaf72b8dc",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/MatrixSqrtBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/PositiveTraceRestriction.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.PositiveTraceRestriction",
+   "original_sha256": "cffdebe9c54390d052a519a2d53b07b1c4b62240d3beb4eb8ee1e38c6515a6f0",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/PositiveTraceRestriction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/SchattenBasic.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.SchattenBasic",
+   "original_sha256": "1bbc88cab64347f2c075a3239f198ffe131f2bf0dd5d7b5719004351711731c1",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/SchattenBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/SchattenBounds.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.SchattenBounds",
+   "original_sha256": "b9906f716c4b5bbc6060d26ccfa6edf344fbc97839ffe2bd91185ffc4443e825",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/SchattenBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/SchattenTriangle.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.SchattenTriangle",
+   "original_sha256": "731d67e582fcd3a593c5b5fce52776faacbccfcbbbe15dc4c89c99a813f49b00",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/SchattenTriangle.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/SparsePinching.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.SparsePinching",
+   "original_sha256": "d740435f5ec57a3b2c750e744ba7bb68b6f15f91fa794ba427755d7af4afa3ee",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/SparsePinching.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/SpectralMoment.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.SpectralMoment",
+   "original_sha256": "9339afa53f0a47af8152f2d75ff7c9d58b80417537776cccfb39b134007f7350",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/SpectralMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/SymmetricDensity.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.SymmetricDensity",
+   "original_sha256": "7754b1e70c517790b637fffdc6b5eb513cfd8f6e5f58c670667931f4db8cdd2b",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/SymmetricDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/TraceConvex.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.TraceConvex",
+   "original_sha256": "24c1dcd97a288ce620861b10581d5b3a4d797e7a473b6697d753dfe5bceb4b75",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/TraceConvex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/TraceDensityComparison.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.TraceDensityComparison",
+   "original_sha256": "9c0377b0d37b595c5cf32c40629ed33333fb995b425c3881fcf908ae08f41ae5",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/TraceDensityComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/TraceHolder.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.TraceHolder",
+   "original_sha256": "16b4c38fc9979a46da315233b05a7b91b1adcc55df9d7cfa730a76e944618161",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/TraceHolder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/TraceInterpolation.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.TraceInterpolation",
+   "original_sha256": "fed84c2ffb3201cc39adcfd9d6f40b46e6d9c822dbe1fc5faf1f54d61a485521",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/TraceInterpolation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/MatrixBounds/Whitening.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.MatrixBounds.Whitening",
+   "original_sha256": "106994ed3279ecf6240f37cc4fa20f0806892304315e80ed004c9cada3787bd3",
+   "path": "OAI/Probability/BinarySweep/MatrixBounds/Whitening.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Mixing/BinaryContraction.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Mixing.BinaryContraction",
+   "original_sha256": "a96fc0f4f83a79b2c56bf1d9595016e91c6bd77ef92ba3185c617c8a98a01e93",
+   "path": "OAI/Probability/BinarySweep/Mixing/BinaryContraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Mixing/BinaryLineDisk.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Mixing.BinaryLineDisk",
+   "original_sha256": "440661a45c5481d47680c26b436ecdda2b840490f8a69cb591317c05ed074774",
+   "path": "OAI/Probability/BinarySweep/Mixing/BinaryLineDisk.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Mixing/BinaryMixingBounds.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Mixing.BinaryMixingBounds",
+   "original_sha256": "02c2aff773b642582b3e4b22824913a73b04f538d72c250cdac090d137efe5a3",
+   "path": "OAI/Probability/BinarySweep/Mixing/BinaryMixingBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Mixing/BinarySplitChoices.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Mixing.BinarySplitChoices",
+   "original_sha256": "580bc50612d1f7261110bf0ceac6dbfad44658712558def68b4ae003de49ba23",
+   "path": "OAI/Probability/BinarySweep/Mixing/BinarySplitChoices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Mixing/DimensionSeries.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Mixing.DimensionSeries",
+   "original_sha256": "e411cee6456443657faa4c1832be6c92cca16efaf2c28ca45009020a227de217",
+   "path": "OAI/Probability/BinarySweep/Mixing/DimensionSeries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Mixing/LongRowDimension.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Mixing.LongRowDimension",
+   "original_sha256": "23039bb80de17f2b9162f6d4070eb43514895578e9abaaf5118c77c010016314",
+   "path": "OAI/Probability/BinarySweep/Mixing/LongRowDimension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Mixing/ShapeDimension.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Mixing.ShapeDimension",
+   "original_sha256": "56e203a7349e68a83bb484e28020ea8fa05fd13dff717d9dc88fc28b8625e124",
+   "path": "OAI/Probability/BinarySweep/Mixing/ShapeDimension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Model.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Model",
+   "original_sha256": "72dfff1fe480da863cad1177fa0565ad9f61a6f55a17264ff7756a74c2d7e971",
+   "path": "OAI/Probability/BinarySweep/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Processes/AssignmentWeight.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Processes.AssignmentWeight",
+   "original_sha256": "ba4f06abbdfeea8d9032bbdbbcff2fcd4db97b782ac4368533725d41748963fd",
+   "path": "OAI/Probability/BinarySweep/Processes/AssignmentWeight.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Processes/Basic.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Processes.Basic",
+   "original_sha256": "1456213c9bc6523ffca740385f7a014ec4a20b2eac2aad230ae55e6514a97636",
+   "path": "OAI/Probability/BinarySweep/Processes/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Processes/CoordinateLayerEdgeSwap.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Processes.CoordinateLayerEdgeSwap",
+   "original_sha256": "1805bd0aadef0a11f167ad93bf154097e052f4cd5b1727346132a327690433cd",
+   "path": "OAI/Probability/BinarySweep/Processes/CoordinateLayerEdgeSwap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Processes/GridSweepPath.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Processes.GridSweepPath",
+   "original_sha256": "227af75d5a4055bfe3d67f9d3f83da86c7ee740b1db5dd93b58fffbf4765f0fd",
+   "path": "OAI/Probability/BinarySweep/Processes/GridSweepPath.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Processes/IndependentHistory.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Processes.IndependentHistory",
+   "original_sha256": "4e7004d2b9974e5de90402906e1a375aa0fbe83bce7ec020ecbf71082c563cbc",
+   "path": "OAI/Probability/BinarySweep/Processes/IndependentHistory.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Processes/LocalPathWeight.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Processes.LocalPathWeight",
+   "original_sha256": "9bbc563a77625652b49ced82895dea5c7ae97d3c7c2a1e1e256c6b4e4bed217a",
+   "path": "OAI/Probability/BinarySweep/Processes/LocalPathWeight.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Processes/PointMassOne.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Processes.PointMassOne",
+   "original_sha256": "afdee9b447f250aa93155be36a0110819caa6b3e1424d4acf810872c8de90138",
+   "path": "OAI/Probability/BinarySweep/Processes/PointMassOne.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Processes/SupportTimeBoundBounds.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Processes.SupportTimeBoundBounds",
+   "original_sha256": "b6de04a52ed5e85deebdb6af3bbb23ac933c87c0167e4bf01195c0d5b333e33c",
+   "path": "OAI/Probability/BinarySweep/Processes/SupportTimeBoundBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Representations/CharacterComplete.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Representations.CharacterComplete",
+   "original_sha256": "47aa6157cfa945187874519de8bc0a710c0f5a1c7b838a252eedf16aad9b6163",
+   "path": "OAI/Probability/BinarySweep/Representations/CharacterComplete.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Representations/FiniteUnitaryAverage.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Representations.FiniteUnitaryAverage",
+   "original_sha256": "9734205bcad92f60cd8ca91a70b9a7388eaf1421eb085e9ad7692409df7ddb2d",
+   "path": "OAI/Probability/BinarySweep/Representations/FiniteUnitaryAverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Representations/IrrepSupport.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Representations.IrrepSupport",
+   "original_sha256": "0edfc682405fa2c3e9e095b3690dbba8fa84f4742ff090991ede4e637b03ac1d",
+   "path": "OAI/Probability/BinarySweep/Representations/IrrepSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Representations/IrrepTransport.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Representations.IrrepTransport",
+   "original_sha256": "be85cbb7ddc7eea39a2e589cce94f2d0faa34bce8154b52f5421a2407cfd02c8",
+   "path": "OAI/Probability/BinarySweep/Representations/IrrepTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Representations/IsotypicCentrality.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Representations.IsotypicCentrality",
+   "original_sha256": "a2c60f697f79282f5db5674a5b806b6aa2c70a1fc1b4b3dc09559ac8cb46615e",
+   "path": "OAI/Probability/BinarySweep/Representations/IsotypicCentrality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Representations/IsotypicDensity.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Representations.IsotypicDensity",
+   "original_sha256": "febf9079384fc70cd37af2f5cbb3941f5578f166abda47921f626e5f74ca43ab",
+   "path": "OAI/Probability/BinarySweep/Representations/IsotypicDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Representations/IsotypicMoment.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Representations.IsotypicMoment",
+   "original_sha256": "9fe67a353b8fb5a4a291175a630a88deeeb7b47dc427e11e7563e26ef86f56b8",
+   "path": "OAI/Probability/BinarySweep/Representations/IsotypicMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Representations/IsotypicOrthogonal.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Representations.IsotypicOrthogonal",
+   "original_sha256": "0941f0059f91bdcc6283ad40c27fd4d51b3a3406045c314ce33d34ef9a5cee8d",
+   "path": "OAI/Probability/BinarySweep/Representations/IsotypicOrthogonal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Representations/IsotypicProjectionMoment.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Representations.IsotypicProjectionMoment",
+   "original_sha256": "697de82e20d972756e3847f4bde7972e4ff705e8f1fe5a9aa1b5700ca1f61446",
+   "path": "OAI/Probability/BinarySweep/Representations/IsotypicProjectionMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Representations/IsotypicSpectral.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Representations.IsotypicSpectral",
+   "original_sha256": "e5da3d788ba344f0057ee52669b97fbb527100d26ac23398f5da4ffbc2cf6b8d",
+   "path": "OAI/Probability/BinarySweep/Representations/IsotypicSpectral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Representations/IsotypicTrace.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Representations.IsotypicTrace",
+   "original_sha256": "599cca4a4663f26cfbb120a425a82bbad584a76996146306e3ba0b27964e2539",
+   "path": "OAI/Probability/BinarySweep/Representations/IsotypicTrace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Representations/MatrixIsotypicWhitening.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Representations.MatrixIsotypicWhitening",
+   "original_sha256": "24d67a007131668919b625ab0edf5df1e077e055cdbb4e973b4fc44e03324796",
+   "path": "OAI/Probability/BinarySweep/Representations/MatrixIsotypicWhitening.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Representations/MultiplicityBound.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Representations.MultiplicityBound",
+   "original_sha256": "6a6aa383c75a4c248b983244bd5bd8154e5958a8006de3f8cd43e3c28d9ac0ce",
+   "path": "OAI/Probability/BinarySweep/Representations/MultiplicityBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Representations/UnitaryTransport.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Representations.UnitaryTransport",
+   "original_sha256": "84d0c19873bbeec3bcc051776ad50aba52564315e3cc9e92f962209c4335471d",
+   "path": "OAI/Probability/BinarySweep/Representations/UnitaryTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/SparseBounds/CenteredLineMoment.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.SparseBounds.CenteredLineMoment",
+   "original_sha256": "eda763d8375a31ec3989343408ce661eca3aa1f06aed1902c1c0771975062e0a",
+   "path": "OAI/Probability/BinarySweep/SparseBounds/CenteredLineMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/SparseBounds/CenteredMoment.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.SparseBounds.CenteredMoment",
+   "original_sha256": "2c5dbce2e5c0cf86e9cff56a41d49a6fe0aa3fe796f63001f06376fe0d31fc16",
+   "path": "OAI/Probability/BinarySweep/SparseBounds/CenteredMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/SparseBounds/CenteredPlacement.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.SparseBounds.CenteredPlacement",
+   "original_sha256": "343a1eb575db3ceb1c58a73ed07b64611d77570b913b478b78d04f554bd1d7d2",
+   "path": "OAI/Probability/BinarySweep/SparseBounds/CenteredPlacement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/SparseBounds/CenteredReindex.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.SparseBounds.CenteredReindex",
+   "original_sha256": "ecafec2ff61e6fa866309d77ca60e880aea0ea43f8e861b477558781588324c3",
+   "path": "OAI/Probability/BinarySweep/SparseBounds/CenteredReindex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/SparseBounds/ConditionalCentered.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.SparseBounds.ConditionalCentered",
+   "original_sha256": "714830e3ceaba14b21c7dd959ebf73ff43892569463181fba9aafd3a52db0bec",
+   "path": "OAI/Probability/BinarySweep/SparseBounds/ConditionalCentered.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/SparseBounds/FewSparse.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.SparseBounds.FewSparse",
+   "original_sha256": "fd0d77467940fad9d858f0e6c2c0457128db697e62034d9ee097044902ac014e",
+   "path": "OAI/Probability/BinarySweep/SparseBounds/FewSparse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/SparseBounds/FewSparseBases.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.SparseBounds.FewSparseBases",
+   "original_sha256": "d40cda427ab978ab6332044099438976cd904a9b344ece759e6cb3d82f261d1a",
+   "path": "OAI/Probability/BinarySweep/SparseBounds/FewSparseBases.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/SparseBounds/FewSparseNumerics.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.SparseBounds.FewSparseNumerics",
+   "original_sha256": "f4865e4b4ca167fd880e37ee170c11436f3e9fe69f7a94d4b99f2f42d0f49591",
+   "path": "OAI/Probability/BinarySweep/SparseBounds/FewSparseNumerics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/SparseBounds/ManySparse.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.SparseBounds.ManySparse",
+   "original_sha256": "6438940f789adb56a05772feac28adad6599348a076f9fe12436a18a5d9e6562",
+   "path": "OAI/Probability/BinarySweep/SparseBounds/ManySparse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/SparseBounds/SparseAmplitude.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.SparseBounds.SparseAmplitude",
+   "original_sha256": "ce57cf7b95aea75c87c7cee2b620ab96e56c1c0e424821e40122747cbe3b94d1",
+   "path": "OAI/Probability/BinarySweep/SparseBounds/SparseAmplitude.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/SparseBounds/SparseKernel.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.SparseBounds.SparseKernel",
+   "original_sha256": "e3416874b1d545811bfbed2577f042628bd26e05736d4c0d459b4758b689f2ba",
+   "path": "OAI/Probability/BinarySweep/SparseBounds/SparseKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/SparseBounds/SparseNumerics.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.SparseBounds.SparseNumerics",
+   "original_sha256": "dcdde325c913481a0b611aaced422220a1151220acfceda61fccdf237e9ed700",
+   "path": "OAI/Probability/BinarySweep/SparseBounds/SparseNumerics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/SparseBounds/SparseReduction.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.SparseBounds.SparseReduction",
+   "original_sha256": "972d50815269e7f659f44e0314d8b44e17bd18a2cde8f631996d1f3bef4f1fbe",
+   "path": "OAI/Probability/BinarySweep/SparseBounds/SparseReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/SparseBounds/SparseSignGeometry.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.SparseBounds.SparseSignGeometry",
+   "original_sha256": "4e34395598125c4568df9fd456c459a4749a73299b54837b7c8ff4c34f0ce1f8",
+   "path": "OAI/Probability/BinarySweep/SparseBounds/SparseSignGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/TensorBounds/BlockTypes.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.TensorBounds.BlockTypes",
+   "original_sha256": "1611585447627069af31389f0f75e3f9be3cc13c5c14d3fd6e2b95d081a41e52",
+   "path": "OAI/Probability/BinarySweep/TensorBounds/BlockTypes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/TensorBounds/EmpiricalTensor.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.TensorBounds.EmpiricalTensor",
+   "original_sha256": "2395ba3a28cf52f33431043d43c669ecb87f909042da685ebd9bb71e58d7a6f7",
+   "path": "OAI/Probability/BinarySweep/TensorBounds/EmpiricalTensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/TensorBounds/EvenPostselection.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.TensorBounds.EvenPostselection",
+   "original_sha256": "43cdc6a81f506a9db008efefb01149bfed5e3ce876ffab6789a15b05454ca1ab",
+   "path": "OAI/Probability/BinarySweep/TensorBounds/EvenPostselection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/TensorBounds/PiTensorMatrices.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.TensorBounds.PiTensorMatrices",
+   "original_sha256": "45415ceebc673c0e23eca6f1060ed081266913f10f5add4b0012cccc9d695c52",
+   "path": "OAI/Probability/BinarySweep/TensorBounds/PiTensorMatrices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/TensorBounds/SignedBlock.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.TensorBounds.SignedBlock",
+   "original_sha256": "aeab46f546f25e7f10f0f39d21c903bf5c80f429fee80b4d36812a46b1e1e4d9",
+   "path": "OAI/Probability/BinarySweep/TensorBounds/SignedBlock.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/TensorBounds/SignedBlocks.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.TensorBounds.SignedBlocks",
+   "original_sha256": "049303f6264f944be687082f1a539100b29454cdb9ae8c4d763fdf8155a919f7",
+   "path": "OAI/Probability/BinarySweep/TensorBounds/SignedBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/TensorBounds/SignedCommutant.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.TensorBounds.SignedCommutant",
+   "original_sha256": "279fcd1a648f777caf55dbed4015d6446e42aaca4d69dd872175c4d6721265f0",
+   "path": "OAI/Probability/BinarySweep/TensorBounds/SignedCommutant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/TensorBounds/SignedConjugation.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.TensorBounds.SignedConjugation",
+   "original_sha256": "22179c56c9c1d537eada8c4f7cc383a79396d61b51fb6d32b81ef185ee03b15e",
+   "path": "OAI/Probability/BinarySweep/TensorBounds/SignedConjugation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/TensorBounds/SignedPinching.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.TensorBounds.SignedPinching",
+   "original_sha256": "01617f9032541b5ac81c646bdd54d56aabfde9bd48571da9b5c944d9d955fbb6",
+   "path": "OAI/Probability/BinarySweep/TensorBounds/SignedPinching.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/TensorBounds/SignedPlacement.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.TensorBounds.SignedPlacement",
+   "original_sha256": "19821be7a266b924b543b6bfbe0278205e142aa4166e832434ff233547c9a856",
+   "path": "OAI/Probability/BinarySweep/TensorBounds/SignedPlacement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/TensorBounds/SignedTypeCentrality.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.TensorBounds.SignedTypeCentrality",
+   "original_sha256": "f9b61c80a679874f698b043f2593acce585d8e5dde63cc3baa210e695e8971c4",
+   "path": "OAI/Probability/BinarySweep/TensorBounds/SignedTypeCentrality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/TensorBounds/SignedWhitening.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.TensorBounds.SignedWhitening",
+   "original_sha256": "1b78e4bb27590bae99d15ec88beec73b776a7ca96494b11c5dce954cc2565c47",
+   "path": "OAI/Probability/BinarySweep/TensorBounds/SignedWhitening.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/TensorBounds/TensorPhases.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.TensorBounds.TensorPhases",
+   "original_sha256": "42f73383fcd80b054b648b44dcc618582f995991fcfba58d4d3bf70a72d8ec2e",
+   "path": "OAI/Probability/BinarySweep/TensorBounds/TensorPhases.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/TensorBounds/TensorProductMatrices.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.TensorBounds.TensorProductMatrices",
+   "original_sha256": "a6326265515150bcebbdc1d3288eb63c1e12d50190dc72011711172de8e26c6a",
+   "path": "OAI/Probability/BinarySweep/TensorBounds/TensorProductMatrices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/TensorBounds/TensorReduction.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.TensorBounds.TensorReduction",
+   "original_sha256": "f6e28211498a8c42ebb729c87ab53c818b5c8703499d0c8522a0f4faa18c9990",
+   "path": "OAI/Probability/BinarySweep/TensorBounds/TensorReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/TensorBounds/TypeMass.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.TensorBounds.TypeMass",
+   "original_sha256": "69021857a55cc7074ed1f0a8e707a58b95c407b851f6971a451a52af49213e89",
+   "path": "OAI/Probability/BinarySweep/TensorBounds/TypeMass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Trajectories/EndpointEntryBound.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Trajectories.EndpointEntryBound",
+   "original_sha256": "0a7d441c8f0d28eb50db2af2668b2117032716c7ad6f7019b295665c82925735",
+   "path": "OAI/Probability/BinarySweep/Trajectories/EndpointEntryBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Trajectories/EndpointEvents.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Trajectories.EndpointEvents",
+   "original_sha256": "91208fe18b4bb2b1683fac0809cb0249e3bc44c4488bf5c5e5d90266c7c00674",
+   "path": "OAI/Probability/BinarySweep/Trajectories/EndpointEvents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Trajectories/EndpointFactors.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Trajectories.EndpointFactors",
+   "original_sha256": "de1933cf712986e4d9805804348a8ec1c694132f70f04c3d04b8a47a99a90c34",
+   "path": "OAI/Probability/BinarySweep/Trajectories/EndpointFactors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Trajectories/EndpointGood.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Trajectories.EndpointGood",
+   "original_sha256": "916ec9860283538eaba62f1748acf337b56717eb9d3aa8908b9ce0058dd0eb5c",
+   "path": "OAI/Probability/BinarySweep/Trajectories/EndpointGood.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Trajectories/EndpointOccupancy.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Trajectories.EndpointOccupancy",
+   "original_sha256": "bd46429db8e358c897f9ef7cbfa38dcb1490932159f2bf34b58019f553dcc1f7",
+   "path": "OAI/Probability/BinarySweep/Trajectories/EndpointOccupancy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Trajectories/EndpointPlacement.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Trajectories.EndpointPlacement",
+   "original_sha256": "049e16e93faf7562334c33f3bf3454cf41132174a29a98c8dcd20114eaecfd76",
+   "path": "OAI/Probability/BinarySweep/Trajectories/EndpointPlacement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Trajectories/EndpointValidity.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Trajectories.EndpointValidity",
+   "original_sha256": "94dd585dff39109d625f4bbc5afd7d6fe0d6cb51acb923e50dedb3b149f70244",
+   "path": "OAI/Probability/BinarySweep/Trajectories/EndpointValidity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Trajectories/FallingMoment.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Trajectories.FallingMoment",
+   "original_sha256": "e0fefd8b9c3f42930aad31243f0854473e92c8111e205cdd7e71b68e865fc340",
+   "path": "OAI/Probability/BinarySweep/Trajectories/FallingMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Trajectories/IsolatedCancellation.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Trajectories.IsolatedCancellation",
+   "original_sha256": "85ca99de1f8cbaaceab41ff8f7e093c9ab3324be34de2a9dc7bc4dfc193ec70f",
+   "path": "OAI/Probability/BinarySweep/Trajectories/IsolatedCancellation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Trajectories/PathExtension.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Trajectories.PathExtension",
+   "original_sha256": "d8b0e6252bd9a67762bbbd91e5cd78d075b2a27a29776a9dd4e946070c6ca9b8",
+   "path": "OAI/Probability/BinarySweep/Trajectories/PathExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Trajectories/PathMomentMixed.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Trajectories.PathMomentMixed",
+   "original_sha256": "95bdaf06f0eab743327e560e99d177caae43db4d2e9f02525ff1b22c2abf21fd",
+   "path": "OAI/Probability/BinarySweep/Trajectories/PathMomentMixed.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Trajectories/PathSign.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Trajectories.PathSign",
+   "original_sha256": "955b47c2779339e4c1fcd9a82870bf2bc02f9bf7c489ef23491bf776ba65613c",
+   "path": "OAI/Probability/BinarySweep/Trajectories/PathSign.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Trajectories/PathTelescope.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Trajectories.PathTelescope",
+   "original_sha256": "b4183fd2e1f09acc9f1ec1587f622faf4c52584db3b06db848df7552d8b9fb43",
+   "path": "OAI/Probability/BinarySweep/Trajectories/PathTelescope.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Trajectories/SharingProbability.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Trajectories.SharingProbability",
+   "original_sha256": "f832d51e5b7b7fa133e79827d8dded190a3625ae860ddb754a37fc5c58e87f3b",
+   "path": "OAI/Probability/BinarySweep/Trajectories/SharingProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Trajectories/SharingWitness.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Trajectories.SharingWitness",
+   "original_sha256": "a4221a233f57eb65284b144cfc37d8b381304bf52709a294790ec5528ff710f2",
+   "path": "OAI/Probability/BinarySweep/Trajectories/SharingWitness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Trajectories/SparseOccupancy.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Trajectories.SparseOccupancy",
+   "original_sha256": "65268031654a1da32286ee362bf3249c0670ac23758f59da5cbc7341d0e0f29e",
+   "path": "OAI/Probability/BinarySweep/Trajectories/SparseOccupancy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Trajectories/Trajectory.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Trajectories.Trajectory",
+   "original_sha256": "90c196a504b85146ab0f4f53c4926c92b48e228ce7b8f74d6fd73be5d45925b1",
+   "path": "OAI/Probability/BinarySweep/Trajectories/Trajectory.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/Trajectories/TrajectoryComplement.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.Trajectories.TrajectoryComplement",
+   "original_sha256": "453f44467f49d004c3c97246ea5d290dc55bb0ec2d5d0dba36e2ea1fa78f42d8",
+   "path": "OAI/Probability/BinarySweep/Trajectories/TrajectoryComplement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/CoindFibers.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.CoindFibers",
+   "original_sha256": "0557342baf13d536a1eab437ade067b3a1569a629774486a88dc6cd447909a5d",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/CoindFibers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/CoinductionTools.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.CoinductionTools",
+   "original_sha256": "2794ef146b76fcf20cb1d6ae4fe74efa70d705f56e7f577306cfe829aec6f6f5",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/CoinductionTools.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/CutBranching.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.CutBranching",
+   "original_sha256": "6197ef42c1a9bc4195e17ab5d50a4d7db48dca34334fe075d6d4a5ba972499e1",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/CutBranching.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/CutColumns.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.CutColumns",
+   "original_sha256": "c1e00daecc37812c26b186bc59632ec21bb282bb3965bcf63fe54e876451cc88",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/CutColumns.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/CutTensor.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.CutTensor",
+   "original_sha256": "00a5f08ce09604dac15376f8e9efb558b2465d8b287a42d6e34bcd6ac357d35f",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/CutTensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/GenericHookAux.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.GenericHookAux",
+   "original_sha256": "323ec18b9ebc9af4f38241e8925d7c027011b75bbaec77019e804136b48a6ae0",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/GenericHookAux.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/HookCut.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.HookCut",
+   "original_sha256": "265c4b33cbcb7d366b8b4351a9854025945c830c57bb884773834e161f7bc58d",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/HookCut.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/HookHilbertOccurrence.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.HookHilbertOccurrence",
+   "original_sha256": "9baeaa2e93c830c879a039a46d9e371a78ffb5be97a177eb36e4b79ec71cde74",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/HookHilbertOccurrence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/HookInducedMoment.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.HookInducedMoment",
+   "original_sha256": "89e8893d30c2edc2a7d8c2aef6458f97703ce8995d374ef4725efec2d5414ebb",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/HookInducedMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/HookScalar.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.HookScalar",
+   "original_sha256": "108c8e1705665dd49054fa0243bcdc1f1bbb5912c566f7a936e2a8c51cfb4420",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/HookScalar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/HookWord.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.HookWord",
+   "original_sha256": "c83d37ed882d2dec8a3dddc35f85facd3294e623af9259b573ce437e3c339265",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/HookWord.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/KoszulBlocks.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.KoszulBlocks",
+   "original_sha256": "2f6443737d470ee85ecf13927c3dfd51293fd9527ba076f16bae76216c00c645",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/KoszulBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/PhysicalHookInduced.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.PhysicalHookInduced",
+   "original_sha256": "c1390e533a0c1eeb77387e71a15b16dc490794b8d9694489adef6f80f91c23ac",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/PhysicalHookInduced.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/YoungAnti.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.YoungAnti",
+   "original_sha256": "e75583b04bec932321c3448a39ede05e64c15e3a9353ae9086c3e0aa6de85531",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/YoungAnti.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/YoungClassification.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.YoungClassification",
+   "original_sha256": "af1714e100f3baa67f60a02aec9db1265b9bc7647bcd9cf67644bf70c4c74da2",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/YoungClassification.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/YoungDimensionLower.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.YoungDimensionLower",
+   "original_sha256": "ca0191b50b5ffb80c495f8ccd520e7975fd40a89b79e3aff704b2ddffd5d6688",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/YoungDimensionLower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/YoungDominance.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.YoungDominance",
+   "original_sha256": "20cfb44722eda44430a0e810ede820fc77b2869397b54d5af9cc85b107f50493",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/YoungDominance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/YoungFactor.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.YoungFactor",
+   "original_sha256": "f104d63493ef541e5989ceb5afb77ef0c54230d2fc2cb7807032b8d0e515074c",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/YoungFactor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/YoungFinite.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.YoungFinite",
+   "original_sha256": "1aece68d023ec544fe2a87c8efb6187c8e66b405b4e7b1f2718b541e0817b11f",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/YoungFinite.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/YoungHilbert.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.YoungHilbert",
+   "original_sha256": "82fd241c8f1dcc8746c5a4eeab46a4672ef28f39f515dee2f3ba2218411aceb2",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/YoungHilbert.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/YoungInducedMap.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.YoungInducedMap",
+   "original_sha256": "96aff80b4660e4f77782b44402ad8d3ea01ae14f359c3fd5b6fb855b3bf4a8f1",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/YoungInducedMap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/YoungPartition.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.YoungPartition",
+   "original_sha256": "ef2bc82a6dd1d24d9acbf89fd9cd457f70ca72bee46528a05ae618dbf37d5907",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/YoungPartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/YoungPlacement.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.YoungPlacement",
+   "original_sha256": "f8dd875975cd53c2416c7cb2c6b3bfab6113b6c3e3b9b87fb3f625c883390346",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/YoungPlacement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/YoungResolution.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.YoungResolution",
+   "original_sha256": "e97abe5c6730f8cd1a02eb55137af5b31826a0e2dacd607598fb81fa9533d37a",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/YoungResolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/YoungSpecht.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.YoungSpecht",
+   "original_sha256": "c91b947b3af7009e79350f3a414ebde6fc4c418e54331a9c690a46793000f6e8",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/YoungSpecht.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/YoungTabloid.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.YoungTabloid",
+   "original_sha256": "2301290a063f0629095ce66b7f6b88584eec342d21c508332f338ee9d7f2d72d",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/YoungTabloid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/BinarySweep/YoungTheory/YoungTranspose.lean"
+   },
+   "module": "OAI.Probability.BinarySweep.YoungTheory.YoungTranspose",
+   "original_sha256": "1edb1eda45cfa89eeccaa42e15e01abeaa91c37a732ddcea8e93631b8011ae8e",
+   "path": "OAI/Probability/BinarySweep/YoungTheory/YoungTranspose.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Probability.BinarySweep.Analytic.AnalyticTransfer",
+  "OAI.Probability.BinarySweep.Analytic.ComplexGrid",
+  "OAI.Probability.BinarySweep.Analytic.FiniteAverageGap",
+  "OAI.Probability.BinarySweep.Analytic.OneAxis",
+  "OAI.Probability.BinarySweep.Analytic.OneAxisBase",
+  "OAI.Probability.BinarySweep.Analytic.OneAxisPerturbation",
+  "OAI.Probability.BinarySweep.Conditional.AugmentedBlock",
+  "OAI.Probability.BinarySweep.Conditional.AugmentedComplement",
+  "OAI.Probability.BinarySweep.Conditional.ComplementBlocks",
+  "OAI.Probability.BinarySweep.Conditional.ConditionalAverage",
+  "OAI.Probability.BinarySweep.Conditional.ConditionalSign",
+  "OAI.Probability.BinarySweep.Conditional.ConditionalSpecht",
+  "OAI.Probability.BinarySweep.Conditional.CycleAugmentation",
+  "OAI.Probability.BinarySweep.Conditional.MainEasyCases",
+  "OAI.Probability.BinarySweep.Conditional.MainMomentInterface",
+  "OAI.Probability.BinarySweep.Conditional.MomentOperatorBound",
+  "OAI.Probability.BinarySweep.Conditional.Placement",
+  "OAI.Probability.BinarySweep.Conditional.PlacementAlternation",
+  "OAI.Probability.BinarySweep.Conditional.PlacementBlocks",
+  "OAI.Probability.BinarySweep.Conditional.PlacementCycleMoment",
+  "OAI.Probability.BinarySweep.Conditional.WeightedCycle",
+  "OAI.Probability.BinarySweep.FiniteLaws.ActiveTypes",
+  "OAI.Probability.BinarySweep.FiniteLaws.AssignmentSign",
+  "OAI.Probability.BinarySweep.FiniteLaws.BitBlocks",
+  "OAI.Probability.BinarySweep.FiniteLaws.CyclicHolder",
+  "OAI.Probability.BinarySweep.FiniteLaws.FiniteLawAverage",
+  "OAI.Probability.BinarySweep.FiniteLaws.FiniteProductProbability",
+  "OAI.Probability.BinarySweep.FiniteLaws.HilbertMainCases",
+  "OAI.Probability.BinarySweep.FiniteLaws.HilbertTranspose",
+  "OAI.Probability.BinarySweep.FiniteLaws.IndependentOperator",
+  "OAI.Probability.BinarySweep.FiniteLaws.IndependentPush",
+  "OAI.Probability.BinarySweep.FiniteLaws.LightLineBound",
+  "OAI.Probability.BinarySweep.FiniteLaws.LinearEvenMoment",
+  "OAI.Probability.BinarySweep.FiniteLaws.MomentBounds",
+  "OAI.Probability.BinarySweep.FiniteLaws.OccurrenceMoment",
+  "OAI.Probability.BinarySweep.FiniteLaws.OneCard",
+  "OAI.Probability.BinarySweep.FiniteLaws.PiCentrality",
+  "OAI.Probability.BinarySweep.FiniteLaws.QuantitativeMoment",
+  "OAI.Probability.BinarySweep.FiniteLaws.RemainingSign",
+  "OAI.Probability.BinarySweep.FiniteLaws.SampleMoment",
+  "OAI.Probability.BinarySweep.FiniteLaws.SoutheastDimension",
+  "OAI.Probability.BinarySweep.FiniteLaws.SumDite",
+  "OAI.Probability.BinarySweep.FiniteLaws.UniformFiniteProbability",
+  "OAI.Probability.BinarySweep.GridBounds.BalancedGrid",
+  "OAI.Probability.BinarySweep.GridBounds.BoardLaw",
+  "OAI.Probability.BinarySweep.GridBounds.BoardOverlap",
+  "OAI.Probability.BinarySweep.GridBounds.BoardProduct",
+  "OAI.Probability.BinarySweep.GridBounds.DenseAssembly",
+  "OAI.Probability.BinarySweep.GridBounds.DenseClosing",
+  "OAI.Probability.BinarySweep.GridBounds.DiagonalDimension",
+  "OAI.Probability.BinarySweep.GridBounds.DiagonalRigidity",
+  "OAI.Probability.BinarySweep.GridBounds.EmptyGrid",
+  "OAI.Probability.BinarySweep.GridBounds.GridBoardAverage",
+  "OAI.Probability.BinarySweep.GridBounds.GridChildAverage",
+  "OAI.Probability.BinarySweep.GridBounds.GridDenseCost",
+  "OAI.Probability.BinarySweep.GridBounds.GridLaw",
+  "OAI.Probability.BinarySweep.GridBounds.GridProjectedMoment",
+  "OAI.Probability.BinarySweep.GridBounds.GridSplit",
+  "OAI.Probability.BinarySweep.GridBounds.GridSplitCost",
+  "OAI.Probability.BinarySweep.GridBounds.GridSplitFree",
+  "OAI.Probability.BinarySweep.GridBounds.GridSplitSweep",
+  "OAI.Probability.BinarySweep.GridBounds.GridSplitWeights",
+  "OAI.Probability.BinarySweep.GridBounds.GroupedLogBounds",
+  "OAI.Probability.BinarySweep.GridBounds.GroupedMoments",
+  "OAI.Probability.BinarySweep.GridBounds.GroupedTypes",
+  "OAI.Probability.BinarySweep.GridBounds.GroupingGeometry",
+  "OAI.Probability.BinarySweep.GridBounds.ProjectionSplitting",
+  "OAI.Probability.BinarySweep.Main",
+  "OAI.Probability.BinarySweep.MatrixBounds.BlockTrace",
+  "OAI.Probability.BinarySweep.MatrixBounds.CenteredMatrix",
+  "OAI.Probability.BinarySweep.MatrixBounds.FourierTrace",
+  "OAI.Probability.BinarySweep.MatrixBounds.HilbertBlockTrace",
+  "OAI.Probability.BinarySweep.MatrixBounds.MatrixProjection",
+  "OAI.Probability.BinarySweep.MatrixBounds.MatrixRegularize",
+  "OAI.Probability.BinarySweep.MatrixBounds.MatrixSqrtBlocks",
+  "OAI.Probability.BinarySweep.MatrixBounds.PositiveTraceRestriction",
+  "OAI.Probability.BinarySweep.MatrixBounds.SchattenBasic",
+  "OAI.Probability.BinarySweep.MatrixBounds.SchattenBounds",
+  "OAI.Probability.BinarySweep.MatrixBounds.SchattenTriangle",
+  "OAI.Probability.BinarySweep.MatrixBounds.SparsePinching",
+  "OAI.Probability.BinarySweep.MatrixBounds.SpectralMoment",
+  "OAI.Probability.BinarySweep.MatrixBounds.SymmetricDensity",
+  "OAI.Probability.BinarySweep.MatrixBounds.TraceConvex",
+  "OAI.Probability.BinarySweep.MatrixBounds.TraceDensityComparison",
+  "OAI.Probability.BinarySweep.MatrixBounds.TraceHolder",
+  "OAI.Probability.BinarySweep.MatrixBounds.TraceInterpolation",
+  "OAI.Probability.BinarySweep.MatrixBounds.Whitening",
+  "OAI.Probability.BinarySweep.Mixing.BinaryContraction",
+  "OAI.Probability.BinarySweep.Mixing.BinaryLineDisk",
+  "OAI.Probability.BinarySweep.Mixing.BinaryMixingBounds",
+  "OAI.Probability.BinarySweep.Mixing.BinarySplitChoices",
+  "OAI.Probability.BinarySweep.Mixing.DimensionSeries",
+  "OAI.Probability.BinarySweep.Mixing.LongRowDimension",
+  "OAI.Probability.BinarySweep.Mixing.ShapeDimension",
+  "OAI.Probability.BinarySweep.Model",
+  "OAI.Probability.BinarySweep.Processes.AssignmentWeight",
+  "OAI.Probability.BinarySweep.Processes.Basic",
+  "OAI.Probability.BinarySweep.Processes.CoordinateLayerEdgeSwap",
+  "OAI.Probability.BinarySweep.Processes.GridSweepPath",
+  "OAI.Probability.BinarySweep.Processes.IndependentHistory",
+  "OAI.Probability.BinarySweep.Processes.LocalPathWeight",
+  "OAI.Probability.BinarySweep.Processes.PointMassOne",
+  "OAI.Probability.BinarySweep.Processes.SupportTimeBoundBounds",
+  "OAI.Probability.BinarySweep.Representations.CharacterComplete",
+  "OAI.Probability.BinarySweep.Representations.FiniteUnitaryAverage",
+  "OAI.Probability.BinarySweep.Representations.IrrepSupport",
+  "OAI.Probability.BinarySweep.Representations.IrrepTransport",
+  "OAI.Probability.BinarySweep.Representations.IsotypicCentrality",
+  "OAI.Probability.BinarySweep.Representations.IsotypicDensity",
+  "OAI.Probability.BinarySweep.Representations.IsotypicMoment",
+  "OAI.Probability.BinarySweep.Representations.IsotypicOrthogonal",
+  "OAI.Probability.BinarySweep.Representations.IsotypicProjectionMoment",
+  "OAI.Probability.BinarySweep.Representations.IsotypicSpectral",
+  "OAI.Probability.BinarySweep.Representations.IsotypicTrace",
+  "OAI.Probability.BinarySweep.Representations.MatrixIsotypicWhitening",
+  "OAI.Probability.BinarySweep.Representations.MultiplicityBound",
+  "OAI.Probability.BinarySweep.Representations.UnitaryTransport",
+  "OAI.Probability.BinarySweep.SparseBounds.CenteredLineMoment",
+  "OAI.Probability.BinarySweep.SparseBounds.CenteredMoment",
+  "OAI.Probability.BinarySweep.SparseBounds.CenteredPlacement",
+  "OAI.Probability.BinarySweep.SparseBounds.CenteredReindex",
+  "OAI.Probability.BinarySweep.SparseBounds.ConditionalCentered",
+  "OAI.Probability.BinarySweep.SparseBounds.FewSparse",
+  "OAI.Probability.BinarySweep.SparseBounds.FewSparseBases",
+  "OAI.Probability.BinarySweep.SparseBounds.FewSparseNumerics",
+  "OAI.Probability.BinarySweep.SparseBounds.ManySparse",
+  "OAI.Probability.BinarySweep.SparseBounds.SparseAmplitude",
+  "OAI.Probability.BinarySweep.SparseBounds.SparseKernel",
+  "OAI.Probability.BinarySweep.SparseBounds.SparseNumerics",
+  "OAI.Probability.BinarySweep.SparseBounds.SparseReduction",
+  "OAI.Probability.BinarySweep.SparseBounds.SparseSignGeometry",
+  "OAI.Probability.BinarySweep.TensorBounds.BlockTypes",
+  "OAI.Probability.BinarySweep.TensorBounds.EmpiricalTensor",
+  "OAI.Probability.BinarySweep.TensorBounds.EvenPostselection",
+  "OAI.Probability.BinarySweep.TensorBounds.PiTensorMatrices",
+  "OAI.Probability.BinarySweep.TensorBounds.SignedBlock",
+  "OAI.Probability.BinarySweep.TensorBounds.SignedBlocks",
+  "OAI.Probability.BinarySweep.TensorBounds.SignedCommutant",
+  "OAI.Probability.BinarySweep.TensorBounds.SignedConjugation",
+  "OAI.Probability.BinarySweep.TensorBounds.SignedPinching",
+  "OAI.Probability.BinarySweep.TensorBounds.SignedPlacement",
+  "OAI.Probability.BinarySweep.TensorBounds.SignedTypeCentrality",
+  "OAI.Probability.BinarySweep.TensorBounds.SignedWhitening",
+  "OAI.Probability.BinarySweep.TensorBounds.TensorPhases",
+  "OAI.Probability.BinarySweep.TensorBounds.TensorProductMatrices",
+  "OAI.Probability.BinarySweep.TensorBounds.TensorReduction",
+  "OAI.Probability.BinarySweep.TensorBounds.TypeMass",
+  "OAI.Probability.BinarySweep.Trajectories.EndpointEntryBound",
+  "OAI.Probability.BinarySweep.Trajectories.EndpointEvents",
+  "OAI.Probability.BinarySweep.Trajectories.EndpointFactors",
+  "OAI.Probability.BinarySweep.Trajectories.EndpointGood",
+  "OAI.Probability.BinarySweep.Trajectories.EndpointOccupancy",
+  "OAI.Probability.BinarySweep.Trajectories.EndpointPlacement",
+  "OAI.Probability.BinarySweep.Trajectories.EndpointValidity",
+  "OAI.Probability.BinarySweep.Trajectories.FallingMoment",
+  "OAI.Probability.BinarySweep.Trajectories.IsolatedCancellation",
+  "OAI.Probability.BinarySweep.Trajectories.PathExtension",
+  "OAI.Probability.BinarySweep.Trajectories.PathMomentMixed",
+  "OAI.Probability.BinarySweep.Trajectories.PathSign",
+  "OAI.Probability.BinarySweep.Trajectories.PathTelescope",
+  "OAI.Probability.BinarySweep.Trajectories.SharingProbability",
+  "OAI.Probability.BinarySweep.Trajectories.SharingWitness",
+  "OAI.Probability.BinarySweep.Trajectories.SparseOccupancy",
+  "OAI.Probability.BinarySweep.Trajectories.Trajectory",
+  "OAI.Probability.BinarySweep.Trajectories.TrajectoryComplement",
+  "OAI.Probability.BinarySweep.YoungTheory.CoindFibers",
+  "OAI.Probability.BinarySweep.YoungTheory.CoinductionTools",
+  "OAI.Probability.BinarySweep.YoungTheory.CutBranching",
+  "OAI.Probability.BinarySweep.YoungTheory.CutColumns",
+  "OAI.Probability.BinarySweep.YoungTheory.CutTensor",
+  "OAI.Probability.BinarySweep.YoungTheory.GenericHookAux",
+  "OAI.Probability.BinarySweep.YoungTheory.HookCut",
+  "OAI.Probability.BinarySweep.YoungTheory.HookHilbertOccurrence",
+  "OAI.Probability.BinarySweep.YoungTheory.HookInducedMoment",
+  "OAI.Probability.BinarySweep.YoungTheory.HookScalar",
+  "OAI.Probability.BinarySweep.YoungTheory.HookWord",
+  "OAI.Probability.BinarySweep.YoungTheory.KoszulBlocks",
+  "OAI.Probability.BinarySweep.YoungTheory.PhysicalHookInduced",
+  "OAI.Probability.BinarySweep.YoungTheory.YoungAnti",
+  "OAI.Probability.BinarySweep.YoungTheory.YoungClassification",
+  "OAI.Probability.BinarySweep.YoungTheory.YoungDimensionLower",
+  "OAI.Probability.BinarySweep.YoungTheory.YoungDominance",
+  "OAI.Probability.BinarySweep.YoungTheory.YoungFactor",
+  "OAI.Probability.BinarySweep.YoungTheory.YoungFinite",
+  "OAI.Probability.BinarySweep.YoungTheory.YoungHilbert",
+  "OAI.Probability.BinarySweep.YoungTheory.YoungInducedMap",
+  "OAI.Probability.BinarySweep.YoungTheory.YoungPartition",
+  "OAI.Probability.BinarySweep.YoungTheory.YoungPlacement",
+  "OAI.Probability.BinarySweep.YoungTheory.YoungResolution",
+  "OAI.Probability.BinarySweep.YoungTheory.YoungSpecht",
+  "OAI.Probability.BinarySweep.YoungTheory.YoungTabloid",
+  "OAI.Probability.BinarySweep.YoungTheory.YoungTranspose"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/BinarySweep.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Probability.BinarySweep.Main",
+   "name": "OAI.binary_sweep_contraction_and_mixing",
+   "statement_sha256": "94647e4a3ac0d92081b0356af08ca4aed5e452634883e75b48f0c0a76ee022a6"
+  }
+ ],
+ "task_id": "oai-binary-sweep",
+ "task_revision": 1,
+ "title": "OpenAI math: Optimal logarithmic mixing of the Thorp shuffle: Binary sweep contraction and mixing",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

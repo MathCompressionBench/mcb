@@ -1,0 +1,1681 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 71632127
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.KaplanskyFinitelyPresented",
+  "challenge_sha256": "1f7ec0c0ee0fed8abd5fabd58dfeb116f5afc0bc37d7041b2975412aca4f1638",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/KaplanskyFinitelyPresented.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.KaplanskyFinitelyPresented",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.RingTheory.DirectFiniteness.FinitelyPresented",
+   "theorem_names": [
+    "OAI.KaplanskyCounterexample.finitelyPresented_counterexample"
+   ]
+  },
+  "config_sha256": "abb9081593480bf6cb2b2b4a76905ef0c14796470562285c36e9366fdf7a1c8c",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/KaplanskyFinitelyPresented.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.KaplanskyCounterexample.finitelyPresented_counterexample": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/AffineLines.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.AffineLines",
+   "original_sha256": "2ded404516c5cb7c05630fbfb9929c2892937eb50eab4ea405dc299f10d965bd",
+   "path": "OAI/RingTheory/DirectFiniteness/AffineLines.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/AlgebraicCriterion.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.AlgebraicCriterion",
+   "original_sha256": "849ce75ff35da642e7397ceb47285ce5f0b18d8e61e879a3c82a90e2e73a2f82",
+   "path": "OAI/RingTheory/DirectFiniteness/AlgebraicCriterion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/AlgebraicPacking.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.AlgebraicPacking",
+   "original_sha256": "c76d490bb7ba42e19ac45b3d0570fb25cb263bca9cc0f2006b820919c75c1099",
+   "path": "OAI/RingTheory/DirectFiniteness/AlgebraicPacking.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/Alteration.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.Alteration",
+   "original_sha256": "0d928603a5670e2ec96bafe3d2dde4b98f87c9d9ee1e330fe955cb2c72f0d349",
+   "path": "OAI/RingTheory/DirectFiniteness/Alteration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/AssignedDevelopment.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.AssignedDevelopment",
+   "original_sha256": "50111789d59653072425cb76f7103ff8f009ea807ca2668c224e646c15667484",
+   "path": "OAI/RingTheory/DirectFiniteness/AssignedDevelopment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/BalanceCoarsening.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.BalanceCoarsening",
+   "original_sha256": "1fd280af297ca874c4d0237fa18262a80c2d9bfc38a3275a52930ed6c02e5ac2",
+   "path": "OAI/RingTheory/DirectFiniteness/BalanceCoarsening.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/BalanceDetachment.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.BalanceDetachment",
+   "original_sha256": "ca0ce507362aa9101b552b51766cafc11723283dad4feaa855b832f17b266f15",
+   "path": "OAI/RingTheory/DirectFiniteness/BalanceDetachment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/BalanceObstruction.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.BalanceObstruction",
+   "original_sha256": "26befed2b53533dd0b9e7cf0b94915dd72ff5ab0ee022a45075c13b4cb06a50c",
+   "path": "OAI/RingTheory/DirectFiniteness/BalanceObstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/BalanceRestriction.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.BalanceRestriction",
+   "original_sha256": "b22eb06ccded464047412a34fc6770aa5d82414e3ae8c54753f8ebf666f2b522",
+   "path": "OAI/RingTheory/DirectFiniteness/BalanceRestriction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/BoundaryCycles.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.BoundaryCycles",
+   "original_sha256": "c4cb380ada2672132232812b4a821820a2727fbce52cc9f6f6bdf061433fcedb",
+   "path": "OAI/RingTheory/DirectFiniteness/BoundaryCycles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/BoundaryFilling.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.BoundaryFilling",
+   "original_sha256": "a7712b02d436a7cc05db8fbbd99e2f21426358fdfa7b73d2b85c5ea6ba19736f",
+   "path": "OAI/RingTheory/DirectFiniteness/BoundaryFilling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/BoundarySplitting.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.BoundarySplitting",
+   "original_sha256": "5a32cbb5f97d69c26b11e6c183fc8e2731412a498e2901ba50cdd20b91b51c71",
+   "path": "OAI/RingTheory/DirectFiniteness/BoundarySplitting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/CandidateBounds.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.CandidateBounds",
+   "original_sha256": "ee3e1c18cbdc7de1176fea9579791193c574b36d55fa2feb52c0e0481fc008b1",
+   "path": "OAI/RingTheory/DirectFiniteness/CandidateBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/CandidateClassification.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.CandidateClassification",
+   "original_sha256": "070db9671c180bc9b135bcb8cddb41ff9f6634525f7e300f3084b4488b836573",
+   "path": "OAI/RingTheory/DirectFiniteness/CandidateClassification.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/CandidateCounting.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.CandidateCounting",
+   "original_sha256": "e6395d466161815b029728a9a55e47d86401747002b38b81c05d8b4e1947f0fd",
+   "path": "OAI/RingTheory/DirectFiniteness/CandidateCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/CandidateDependencies.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.CandidateDependencies",
+   "original_sha256": "8c82b65336b42ce005ccd019491158892bc3d6de505da35207ee218a1c1f955c",
+   "path": "OAI/RingTheory/DirectFiniteness/CandidateDependencies.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/CandidateGeometry.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.CandidateGeometry",
+   "original_sha256": "b0416bbd724a7f2d4ca509ebcb7ca3c6f4d77703fd3829f26e6f3aed0756c0f1",
+   "path": "OAI/RingTheory/DirectFiniteness/CandidateGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/CandidateModel.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.CandidateModel",
+   "original_sha256": "c270d7170acd92f6cb6a4721fe480ee766f4033e3295c14b00d730ee64212723",
+   "path": "OAI/RingTheory/DirectFiniteness/CandidateModel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/CandidateRelations.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.CandidateRelations",
+   "original_sha256": "f22b6cacdd9faffa18296622ce2cc1f15555520054234e0581c2433c6dc62555",
+   "path": "OAI/RingTheory/DirectFiniteness/CandidateRelations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/CharacterFormulas.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.CharacterFormulas",
+   "original_sha256": "71e3b5cc36db19b91bf523a16b8588cf52bde2762462fad56a669db5be2d5b86",
+   "path": "OAI/RingTheory/DirectFiniteness/CharacterFormulas.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/CharacterIdempotents.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.CharacterIdempotents",
+   "original_sha256": "a30b6dffac0e1a55fc74184fbfd5ff18b38d254667b5f15647a20ded86625242",
+   "path": "OAI/RingTheory/DirectFiniteness/CharacterIdempotents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/CharacterTwist.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.CharacterTwist",
+   "original_sha256": "cbac9dfa72b99d64832be2e180d2a47c63af93448c8dd2367fd784116da1d1f1",
+   "path": "OAI/RingTheory/DirectFiniteness/CharacterTwist.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/ChosenCriterion.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.ChosenCriterion",
+   "original_sha256": "ef26cbd0075078b9d6b3e2dcce11c6d5a7bd2af18e1c69a070ed57a24ea5bb42",
+   "path": "OAI/RingTheory/DirectFiniteness/ChosenCriterion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/CoordinateCharacters.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.CoordinateCharacters",
+   "original_sha256": "d3c8f304f9e1372ad3ca6a3ef0fb7dc3d445c85003e50062b58047b9c57fc078",
+   "path": "OAI/RingTheory/DirectFiniteness/CoordinateCharacters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/CycleFactorization.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.CycleFactorization",
+   "original_sha256": "c259cb02f56ccbd0d2b1da4a29c714a146de720e1c039367e886db896a6a2008",
+   "path": "OAI/RingTheory/DirectFiniteness/CycleFactorization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/CycleSplitting.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.CycleSplitting",
+   "original_sha256": "339f139806cf1e8e651d9e7d8c890547624349206adf573a071341a7011477ad",
+   "path": "OAI/RingTheory/DirectFiniteness/CycleSplitting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/CycleSums.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.CycleSums",
+   "original_sha256": "83b15aaa0dfa3b049d34ed1c28029ca8d5e97d40d812c0b4469103f8ebb2e262",
+   "path": "OAI/RingTheory/DirectFiniteness/CycleSums.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/CyclicLabels.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.CyclicLabels",
+   "original_sha256": "82a33774155e710569a5c816762ca6cc0f5653b4366687cd637ddec4c81e431a",
+   "path": "OAI/RingTheory/DirectFiniteness/CyclicLabels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/DetachmentGenus.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.DetachmentGenus",
+   "original_sha256": "36b27b85a2ad8731fc2234901e395f3291cbcf316aacbb69dedbd89674ee74ca",
+   "path": "OAI/RingTheory/DirectFiniteness/DetachmentGenus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/DiagramDeletion.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.DiagramDeletion",
+   "original_sha256": "4310655661c3222d808714e71352bcfe9cf5a7ea47ac6141706a86a372f6e391",
+   "path": "OAI/RingTheory/DirectFiniteness/DiagramDeletion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/DiagramInsertion.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.DiagramInsertion",
+   "original_sha256": "7d3f30ca60084d619dcd8eb71e3e75b35fc0807644e2ec61dc112cba0965266d",
+   "path": "OAI/RingTheory/DirectFiniteness/DiagramInsertion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/DiagramJoining.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.DiagramJoining",
+   "original_sha256": "8943fcb82a8f0bcbbe6035614cf1f1a8b5198b4c3853dba0448f644b895c11ca",
+   "path": "OAI/RingTheory/DirectFiniteness/DiagramJoining.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/DiagramObstruction.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.DiagramObstruction",
+   "original_sha256": "0feb442d65a0976dd79d1f8a758cffdfd51c9316213a366196e5c90408311f33",
+   "path": "OAI/RingTheory/DirectFiniteness/DiagramObstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/DiagramReduction.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.DiagramReduction",
+   "original_sha256": "daead3206cbdfc5f675406e3fd587ae6f1e03a315b7d014eb74ed29dfd88aa4c",
+   "path": "OAI/RingTheory/DirectFiniteness/DiagramReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/DirectionCompleteness.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.DirectionCompleteness",
+   "original_sha256": "a99dfe10a3752d02dc4bacad454633356861a05e9b95778cad564faa9a3c70cb",
+   "path": "OAI/RingTheory/DirectFiniteness/DirectionCompleteness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/DirectionFrame.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.DirectionFrame",
+   "original_sha256": "a9959660067b078c6bbe5ce9016083ed372d9dc8e72329a4db25ac51828a2a25",
+   "path": "OAI/RingTheory/DirectFiniteness/DirectionFrame.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/DirectionSpaces.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.DirectionSpaces",
+   "original_sha256": "39d85b27f691a9d195e6d2e5b897c59593a4cea827f63d3f06f7fb1f16338b03",
+   "path": "OAI/RingTheory/DirectFiniteness/DirectionSpaces.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/EulerBound.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.EulerBound",
+   "original_sha256": "650c128cbe5f7005953a66a9a2049aa41b5008d5ba4c96ab35eaff5c7d283a37",
+   "path": "OAI/RingTheory/DirectFiniteness/EulerBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/EventLoad.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.EventLoad",
+   "original_sha256": "addf2ebb6902cace4021c2796b63f6ed9d5be13b06dab4609588d84067430801",
+   "path": "OAI/RingTheory/DirectFiniteness/EventLoad.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/FieldExtensions.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.FieldExtensions",
+   "original_sha256": "f19395ce80f183a12f99e30d33b55564e9a36a2e99368dde61183c71d3ebdb94",
+   "path": "OAI/RingTheory/DirectFiniteness/FieldExtensions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/FiniteAffine.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.FiniteAffine",
+   "original_sha256": "33cf1a899761fc0c4f8ef4ddf688d200631d757f40151506307ed61bc19241a6",
+   "path": "OAI/RingTheory/DirectFiniteness/FiniteAffine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/FiniteBlock.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.FiniteBlock",
+   "original_sha256": "251866824b9d5e44b54726be3875caaae43d0f9a37fdc4b6e6447a832324cc2a",
+   "path": "OAI/RingTheory/DirectFiniteness/FiniteBlock.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/FiniteGeneration.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.FiniteGeneration",
+   "original_sha256": "9cd0452fc94da01fdf92bd62a0448ad05eeb42ad7f960a9ea36b30c352eb967c",
+   "path": "OAI/RingTheory/DirectFiniteness/FiniteGeneration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/FiniteParameters.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.FiniteParameters",
+   "original_sha256": "61f289d847bb9ade2d4f7822163c4f2ee5411de1de4912fcd8e53b9c915b8ed9",
+   "path": "OAI/RingTheory/DirectFiniteness/FiniteParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/FinitePresentation.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.FinitePresentation",
+   "original_sha256": "f2e131dee09ad4a2f543d0750b845302f2c95431106fbe4df9f9755cdf6802ab",
+   "path": "OAI/RingTheory/DirectFiniteness/FinitePresentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/FinitelyPresented.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.FinitelyPresented",
+   "original_sha256": "b7a90d24bd01b71d1a31a4a07c32b722bca3788b981f1f9e58e67ecf602686b2",
+   "path": "OAI/RingTheory/DirectFiniteness/FinitelyPresented.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/FrameExistence.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.FrameExistence",
+   "original_sha256": "a8d79a90620d4f9521c2eafaed9b0304b0f9345359322c26feb19343d93b8966",
+   "path": "OAI/RingTheory/DirectFiniteness/FrameExistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/FrameTransport.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.FrameTransport",
+   "original_sha256": "652e34aee547ba95331cb732a962e4b51ed93b4a258e247a4b8d624b4d81ad7f",
+   "path": "OAI/RingTheory/DirectFiniteness/FrameTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/GluedGroup.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.GluedGroup",
+   "original_sha256": "291686cee2579d8356ba36784e2f2405ce24010e8c41f166b08d54e1bc22d754",
+   "path": "OAI/RingTheory/DirectFiniteness/GluedGroup.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/GluedWords.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.GluedWords",
+   "original_sha256": "6e43a38d8c643256b7628e50837a354678261ac0097c58fd941acc2e82bc4344",
+   "path": "OAI/RingTheory/DirectFiniteness/GluedWords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/GroupEmbedding.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.GroupEmbedding",
+   "original_sha256": "dff9971f12d16f0d98a8cb2b8f3692910a4602705906b13361e5f2707b9c5999",
+   "path": "OAI/RingTheory/DirectFiniteness/GroupEmbedding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/HNNPresentation.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.HNNPresentation",
+   "original_sha256": "3b2269ee4db97d08a2ecb5b3c7e3ce259f7bad5aed74f8b3744b36e6dc9e733e",
+   "path": "OAI/RingTheory/DirectFiniteness/HNNPresentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/HoleEvents.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.HoleEvents",
+   "original_sha256": "3e5b3f12e153769640d695b50cbe9c0d717ec0e97e6d2076c50e55bf9370f9b4",
+   "path": "OAI/RingTheory/DirectFiniteness/HoleEvents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/HoleExistence.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.HoleExistence",
+   "original_sha256": "91427b451394d164f7df34d4284b54edeb6f10f80760b63076cc7eeced96421b",
+   "path": "OAI/RingTheory/DirectFiniteness/HoleExistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/HoleNumerics.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.HoleNumerics",
+   "original_sha256": "3f773e2584f051d77da6787275affcc3ebe029e34f201f9d7fc594309c1216c9",
+   "path": "OAI/RingTheory/DirectFiniteness/HoleNumerics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/HoleSelection.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.HoleSelection",
+   "original_sha256": "b0276086b1635a623f70341f272fc053a28956a1c80493c965cb30cb439d7cd8",
+   "path": "OAI/RingTheory/DirectFiniteness/HoleSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/IncidenceCycles.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.IncidenceCycles",
+   "original_sha256": "4706b25c0f2cf73db23a78b89c810dd41b14a2add55291333ab6889abea68277",
+   "path": "OAI/RingTheory/DirectFiniteness/IncidenceCycles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/IncidenceDirections.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.IncidenceDirections",
+   "original_sha256": "4824eeb07b645d585b616bd9578d7b554097f0acc7647c3910f6146f93e99836",
+   "path": "OAI/RingTheory/DirectFiniteness/IncidenceDirections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/LabelSupport.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.LabelSupport",
+   "original_sha256": "86dc4a2bc295181999e3f3d97ef1b486076b40935e7104337c920b6fa88c9c44",
+   "path": "OAI/RingTheory/DirectFiniteness/LabelSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/LexicographicOrder.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.LexicographicOrder",
+   "original_sha256": "ace94020ca1f2b66dd8e6bef628803f4aa9770c19b0912b699ecc4e042ba1efd",
+   "path": "OAI/RingTheory/DirectFiniteness/LexicographicOrder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/Main.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.Main",
+   "original_sha256": "2520ae0523d460d73ef250faccf7073794da1b533027ef44c094d1cff95e10da",
+   "path": "OAI/RingTheory/DirectFiniteness/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/MatrixBlock.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.MatrixBlock",
+   "original_sha256": "6d12646ac1e2d845248a269c5397da30cb8c1debcd6b8c2123329d006d215058",
+   "path": "OAI/RingTheory/DirectFiniteness/MatrixBlock.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/Model.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.Model",
+   "original_sha256": "a5f3f5c135ffa3bfc3743e0f66f24c66f028d70759cb29d3eaeb3722f90aedec",
+   "path": "OAI/RingTheory/DirectFiniteness/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/ModelPartition.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.ModelPartition",
+   "original_sha256": "d6d4fc1f3e769efbf858ff8ed2ea363acb2d67dd38838f4ab515905194e69ee7",
+   "path": "OAI/RingTheory/DirectFiniteness/ModelPartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/MultiHNN.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.MultiHNN",
+   "original_sha256": "1439b0e8fa27b10a53cb0d7dcf53e1068601c60dccbfd5fd7594d1f83aa28d6c",
+   "path": "OAI/RingTheory/DirectFiniteness/MultiHNN.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/OddTorsion.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.OddTorsion",
+   "original_sha256": "613bcbbed23fb5f65f4b07f6edd0c7f291c78bca76fb86b63fdc59d07afcc890",
+   "path": "OAI/RingTheory/DirectFiniteness/OddTorsion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/OneCandidateCounting.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.OneCandidateCounting",
+   "original_sha256": "5f0b552ff1faf50facbccc77224676f23d0e913a9c505a51527b8bb4a0825eaf",
+   "path": "OAI/RingTheory/DirectFiniteness/OneCandidateCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/OpenDiagrams.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.OpenDiagrams",
+   "original_sha256": "a824244a1df1966b5a2a94437afa45066ede935d49d5d62ad0df325d01514e60",
+   "path": "OAI/RingTheory/DirectFiniteness/OpenDiagrams.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/PackingFormulas.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.PackingFormulas",
+   "original_sha256": "3f58ba51509f4c51169b603675a409b254b8d3fe7123875ba3a8dfd2f6fea435",
+   "path": "OAI/RingTheory/DirectFiniteness/PackingFormulas.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/Pairing.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.Pairing",
+   "original_sha256": "3e3000a62390c7dddf30ecf45ab9bfe36159f09985efcb7c0b4360279edec4dd",
+   "path": "OAI/RingTheory/DirectFiniteness/Pairing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/ParameterBounds.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.ParameterBounds",
+   "original_sha256": "4cad5b7a54e23a608a4bff1110d757c0dae91ee6aafa7d83e7ffdfb6f9c795ca",
+   "path": "OAI/RingTheory/DirectFiniteness/ParameterBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/PartialPartition.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.PartialPartition",
+   "original_sha256": "36a01d18399f6f079d52660f5e2035bfcfd5caf76aba1c8907b001551823b0db",
+   "path": "OAI/RingTheory/DirectFiniteness/PartialPartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/PartitionMerging.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.PartitionMerging",
+   "original_sha256": "674ce1be685fee3a696449b98cf2d56cf3be4d4045506c75778f4c5ee026f78d",
+   "path": "OAI/RingTheory/DirectFiniteness/PartitionMerging.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/PlanarBalance.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.PlanarBalance",
+   "original_sha256": "45fd5058b29b22b8738b75bf98b6a2ab6fbf6f8084a444cebaafa37e8dd7b142",
+   "path": "OAI/RingTheory/DirectFiniteness/PlanarBalance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/PlanarDiagrams.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.PlanarDiagrams",
+   "original_sha256": "45f17172d8c5edbc2d7c4492248df9185ac4fe52705f5abc912e75f56825e217",
+   "path": "OAI/RingTheory/DirectFiniteness/PlanarDiagrams.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/PlaneOperators.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.PlaneOperators",
+   "original_sha256": "7ee69861f87bc2b597819dbea6d62a22a59d1b4efc006d7638acb8dddb56f774",
+   "path": "OAI/RingTheory/DirectFiniteness/PlaneOperators.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/PrescribedData.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.PrescribedData",
+   "original_sha256": "c1f0c6f63cf11c3ae4866d80ba87fc571a1cff205aeebfe691238c451e09f893",
+   "path": "OAI/RingTheory/DirectFiniteness/PrescribedData.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/PrescribedDirections.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.PrescribedDirections",
+   "original_sha256": "81764d9d79eccae96eeb16ff42fe7e1a09e15df29d161c3f19625ad86963a0a2",
+   "path": "OAI/RingTheory/DirectFiniteness/PrescribedDirections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/PrescribedFields.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.PrescribedFields",
+   "original_sha256": "e79750485e6776c016f9b93fcf95ce573c59f9da96d4ee300023959ec72b8a5d",
+   "path": "OAI/RingTheory/DirectFiniteness/PrescribedFields.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/PrescribedIncidence.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.PrescribedIncidence",
+   "original_sha256": "748713c2f60dfbbf6e9d6c04d3dd7eb4f813e491b98bf382d7aece0895d410bf",
+   "path": "OAI/RingTheory/DirectFiniteness/PrescribedIncidence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/PrescribedOutputs.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.PrescribedOutputs",
+   "original_sha256": "b359ad10ed43855e02269d14fc079090832beab694fa5cf2b9ead53df2046c76",
+   "path": "OAI/RingTheory/DirectFiniteness/PrescribedOutputs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/PrescribedPairing.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.PrescribedPairing",
+   "original_sha256": "9824982f7ee47fc40048e6b4586879aa9d5e5f4f6a15ec561b319ee1d8c029d4",
+   "path": "OAI/RingTheory/DirectFiniteness/PrescribedPairing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/PrescribedParameters.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.PrescribedParameters",
+   "original_sha256": "0b71e68d48e2e830d9c152fceb00e7c055a24183960e23e17fa76f8d4baab61e",
+   "path": "OAI/RingTheory/DirectFiniteness/PrescribedParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/PrescribedPresentation.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.PrescribedPresentation",
+   "original_sha256": "d5d1dec690f9ce57874a529780bc2e986dc51fc549e12242952fa03d9f50c197",
+   "path": "OAI/RingTheory/DirectFiniteness/PrescribedPresentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/PrescribedSearch.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.PrescribedSearch",
+   "original_sha256": "fff7e9afc92cd217cc86519c7d8ee6c256bb0b6ab811af99e42aa52996848978",
+   "path": "OAI/RingTheory/DirectFiniteness/PrescribedSearch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/PrescribedSlots.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.PrescribedSlots",
+   "original_sha256": "5300db4c4a9241eae9c79613ef29f3f5d8079735ec6359c8cd8a371783443a26",
+   "path": "OAI/RingTheory/DirectFiniteness/PrescribedSlots.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/PrescribedSubfield.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.PrescribedSubfield",
+   "original_sha256": "b3cce7cd927a755f806337b7264012c6f3cf8833b1497e2cc5b974a665121a79",
+   "path": "OAI/RingTheory/DirectFiniteness/PrescribedSubfield.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/PrimeCertificate.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.PrimeCertificate",
+   "original_sha256": "2a24a50ef31f9f5c2c0ac55d3c07ab7e40581e1eb45a488fd0c2bb1119452093",
+   "path": "OAI/RingTheory/DirectFiniteness/PrimeCertificate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/ProductAlgebras.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.ProductAlgebras",
+   "original_sha256": "acc6f8ba978c7c92db290dc5d3f4ed9f8dad2c8f2d0018c152cdf697b5f5def6",
+   "path": "OAI/RingTheory/DirectFiniteness/ProductAlgebras.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/QuotientField.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.QuotientField",
+   "original_sha256": "45f985efcc4f3c64f3df374fcfb8aa824b7927ec0e94e0555ac6571f3638fe5d",
+   "path": "OAI/RingTheory/DirectFiniteness/QuotientField.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/Rectangular.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.Rectangular",
+   "original_sha256": "b5bd637cbde3c8d82925d2f17a0364f497971952b9e00c74f058be6cb8018e7b",
+   "path": "OAI/RingTheory/DirectFiniteness/Rectangular.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/ReducedWalks.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.ReducedWalks",
+   "original_sha256": "7f9f27b5247210af1a4a99977b0774bed15e5074a6113fbec6f87c91b764c004",
+   "path": "OAI/RingTheory/DirectFiniteness/ReducedWalks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/ReplacementGeometry.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.ReplacementGeometry",
+   "original_sha256": "491cefd77e9bf24ed64ee1b056d034ccc3af9e7803bf4f96840eafbba1227830",
+   "path": "OAI/RingTheory/DirectFiniteness/ReplacementGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/ReplacementPolygon.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.ReplacementPolygon",
+   "original_sha256": "109da84b51b4532abe127e38627762ff8df6e420c0c85310a1584fad242e056d",
+   "path": "OAI/RingTheory/DirectFiniteness/ReplacementPolygon.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/RibbonDetachment.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.RibbonDetachment",
+   "original_sha256": "1386136bb261cc4ea510726da6d1a681b8dc42f29f31a1a44e5986ad09ceec28",
+   "path": "OAI/RingTheory/DirectFiniteness/RibbonDetachment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/RibbonGeometry.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.RibbonGeometry",
+   "original_sha256": "7c8adc55ef01208038b1c25b78acebf478769bc3f0ae6ecb5a21bf8d0ebbb3ce",
+   "path": "OAI/RingTheory/DirectFiniteness/RibbonGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/RibbonRestriction.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.RibbonRestriction",
+   "original_sha256": "395eb9e4218ae2649fdb861d41598a800889338cd5ba5886bea077a428e570f9",
+   "path": "OAI/RingTheory/DirectFiniteness/RibbonRestriction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/RibbonSplitting.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.RibbonSplitting",
+   "original_sha256": "39339cf94d4a9a1db732ad539ab2b6a489bfecd9dc15ac1cf5faf9244d4461b4",
+   "path": "OAI/RingTheory/DirectFiniteness/RibbonSplitting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/RibbonSums.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.RibbonSums",
+   "original_sha256": "62082517789fb35aa12116ca973c7301e67bff2449035492332f10d3cbe148b4",
+   "path": "OAI/RingTheory/DirectFiniteness/RibbonSums.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/RibbonWheels.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.RibbonWheels",
+   "original_sha256": "f93c89787393480f135da328673408f7ecec62bc0da55920d9fd5b9ea2c837fb",
+   "path": "OAI/RingTheory/DirectFiniteness/RibbonWheels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/ScalarFormulas.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.ScalarFormulas",
+   "original_sha256": "7a7ee77da32330214dda9f5fc6d7a6382c61c3ed971cbb664eb23f1e205028d1",
+   "path": "OAI/RingTheory/DirectFiniteness/ScalarFormulas.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/ScalarWitnesses.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.ScalarWitnesses",
+   "original_sha256": "8e2bea098ccbadb90295debfca26063dec6ddd3d16f8ae33c1d2d5f9a84e82a0",
+   "path": "OAI/RingTheory/DirectFiniteness/ScalarWitnesses.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/ShortIndependence.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.ShortIndependence",
+   "original_sha256": "1e7904d82b4845fbf672bd11669b19fd7e195f432f6c24c1e5bc1ab463a6f817",
+   "path": "OAI/RingTheory/DirectFiniteness/ShortIndependence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/ShortRelators.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.ShortRelators",
+   "original_sha256": "fdc2cd218c57854a50f624ff83bfb0b94e781f2ee5b525c18d366ac3943006d5",
+   "path": "OAI/RingTheory/DirectFiniteness/ShortRelators.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/SimplexBound.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.SimplexBound",
+   "original_sha256": "69f281e10d1b9305d0c120d28ce3eeea761adc0c5f896f5465163b50e7d350f8",
+   "path": "OAI/RingTheory/DirectFiniteness/SimplexBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/SlabAssembly.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.SlabAssembly",
+   "original_sha256": "ef75b2c17d40e7cb9225a861e6bd197f533dabc16dd24a9c9898a952488eb5a6",
+   "path": "OAI/RingTheory/DirectFiniteness/SlabAssembly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/SlabAvoidance.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.SlabAvoidance",
+   "original_sha256": "902ff90abb321669ead978c87d991891c6688310d5360db829a379949768e7fe",
+   "path": "OAI/RingTheory/DirectFiniteness/SlabAvoidance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/SlabEvents.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.SlabEvents",
+   "original_sha256": "9453ea8e6b519749365647e136e77de7eea18b0b06fcd455dcb2dd0d8b40cdba",
+   "path": "OAI/RingTheory/DirectFiniteness/SlabEvents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/SlabHoleEvents.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.SlabHoleEvents",
+   "original_sha256": "d0b9a88878be026b65d87c5ad1276e993de037aa4e37408354c27bb2658255c6",
+   "path": "OAI/RingTheory/DirectFiniteness/SlabHoleEvents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/SlabKeys.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.SlabKeys",
+   "original_sha256": "2913aa80c6e62784ef540c7218f07b7e88dcf90d6ecc3e3aa9c3a9952141f31e",
+   "path": "OAI/RingTheory/DirectFiniteness/SlabKeys.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/SlabLoad.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.SlabLoad",
+   "original_sha256": "f95dcd98eba18505762035db6009d66a4107cf24bc6d634f6563493c783ce2d0",
+   "path": "OAI/RingTheory/DirectFiniteness/SlabLoad.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/SlabNumerics.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.SlabNumerics",
+   "original_sha256": "8f749dcb847a9e1266c0be13caf0b95c31adb7dfed0a45786aac961cfb82c86f",
+   "path": "OAI/RingTheory/DirectFiniteness/SlabNumerics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/SlabPartition.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.SlabPartition",
+   "original_sha256": "20152c4cac5c440b542e915e04a579f7a8cd567bb2f0c733ee3c8d167877f0e8",
+   "path": "OAI/RingTheory/DirectFiniteness/SlabPartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/SlabPatch.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.SlabPatch",
+   "original_sha256": "c98260a3324fceceaabe590e9ad8f5ebb42709921fb070b4000f10dbb27d7f78",
+   "path": "OAI/RingTheory/DirectFiniteness/SlabPatch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/TradeDegree.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.TradeDegree",
+   "original_sha256": "9eb50bb4f3ca251ec4678ce7f789c3f6bc59e15eb113782fe3d34af744a3726e",
+   "path": "OAI/RingTheory/DirectFiniteness/TradeDegree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/TradeFamily.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.TradeFamily",
+   "original_sha256": "4a4505a30ca9681b891cc4ced1a4f8604fe9609184524bcf8b08013df4e24c90",
+   "path": "OAI/RingTheory/DirectFiniteness/TradeFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/TradeGirth.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.TradeGirth",
+   "original_sha256": "f49dc68e7c06430f498206724301ffacc73640c1dce2c51db83ff099de5fe1b2",
+   "path": "OAI/RingTheory/DirectFiniteness/TradeGirth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/TradeLines.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.TradeLines",
+   "original_sha256": "2162a1d0dc53b1d4c313166223bb953ee160fa21d3182fac826f3080cd2f8172",
+   "path": "OAI/RingTheory/DirectFiniteness/TradeLines.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/TradePolygon.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.TradePolygon",
+   "original_sha256": "d88992ff41d9618a42213cad2500d7dd14771fabdd03f70de520f1fc39a3baca",
+   "path": "OAI/RingTheory/DirectFiniteness/TradePolygon.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/TranslatedUnits.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.TranslatedUnits",
+   "original_sha256": "669611604451788ef2d2c69e867c507dfb653264bdefbfaa915e31079c80b200",
+   "path": "OAI/RingTheory/DirectFiniteness/TranslatedUnits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/VertexMerging.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.VertexMerging",
+   "original_sha256": "a94d9c4096c45878314eb3bc9525896a2069456eb9ad448decffab4df45a1d23",
+   "path": "OAI/RingTheory/DirectFiniteness/VertexMerging.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/WeightTransfer.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.WeightTransfer",
+   "original_sha256": "83e93d88b129112a6b2549b7be5919b74530dc1e62ed18557123ea82ebcfb719",
+   "path": "OAI/RingTheory/DirectFiniteness/WeightTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/WordCycles.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.WordCycles",
+   "original_sha256": "32aef9bd80890a6db2a738a6faa00b3349ab22386be90e334072a3d277670309",
+   "path": "OAI/RingTheory/DirectFiniteness/WordCycles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/WordDiagrams.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.WordDiagrams",
+   "original_sha256": "3f2cd845c3197a6762accde4060c70aef5ef73b8ba6e8589f4f0efbb8c3c4eb1",
+   "path": "OAI/RingTheory/DirectFiniteness/WordDiagrams.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/WordReduction.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.WordReduction",
+   "original_sha256": "550de6b4de3150cef969867a935c78f83ab7c3a23d5fab3cb881743c9311af07",
+   "path": "OAI/RingTheory/DirectFiniteness/WordReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/DirectFiniteness/WordWheels.lean"
+   },
+   "module": "OAI.RingTheory.DirectFiniteness.WordWheels",
+   "original_sha256": "3e9eb92ea66e599b21b3f615bbd181545a41dbc4a931d0a3040604039aa8376a",
+   "path": "OAI/RingTheory/DirectFiniteness/WordWheels.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.RingTheory.DirectFiniteness.AffineLines",
+  "OAI.RingTheory.DirectFiniteness.AlgebraicCriterion",
+  "OAI.RingTheory.DirectFiniteness.AlgebraicPacking",
+  "OAI.RingTheory.DirectFiniteness.Alteration",
+  "OAI.RingTheory.DirectFiniteness.AssignedDevelopment",
+  "OAI.RingTheory.DirectFiniteness.BalanceCoarsening",
+  "OAI.RingTheory.DirectFiniteness.BalanceDetachment",
+  "OAI.RingTheory.DirectFiniteness.BalanceObstruction",
+  "OAI.RingTheory.DirectFiniteness.BalanceRestriction",
+  "OAI.RingTheory.DirectFiniteness.BoundaryCycles",
+  "OAI.RingTheory.DirectFiniteness.BoundaryFilling",
+  "OAI.RingTheory.DirectFiniteness.BoundarySplitting",
+  "OAI.RingTheory.DirectFiniteness.CandidateBounds",
+  "OAI.RingTheory.DirectFiniteness.CandidateClassification",
+  "OAI.RingTheory.DirectFiniteness.CandidateCounting",
+  "OAI.RingTheory.DirectFiniteness.CandidateDependencies",
+  "OAI.RingTheory.DirectFiniteness.CandidateGeometry",
+  "OAI.RingTheory.DirectFiniteness.CandidateModel",
+  "OAI.RingTheory.DirectFiniteness.CandidateRelations",
+  "OAI.RingTheory.DirectFiniteness.CharacterFormulas",
+  "OAI.RingTheory.DirectFiniteness.CharacterIdempotents",
+  "OAI.RingTheory.DirectFiniteness.CharacterTwist",
+  "OAI.RingTheory.DirectFiniteness.ChosenCriterion",
+  "OAI.RingTheory.DirectFiniteness.CoordinateCharacters",
+  "OAI.RingTheory.DirectFiniteness.CycleFactorization",
+  "OAI.RingTheory.DirectFiniteness.CycleSplitting",
+  "OAI.RingTheory.DirectFiniteness.CycleSums",
+  "OAI.RingTheory.DirectFiniteness.CyclicLabels",
+  "OAI.RingTheory.DirectFiniteness.DetachmentGenus",
+  "OAI.RingTheory.DirectFiniteness.DiagramDeletion",
+  "OAI.RingTheory.DirectFiniteness.DiagramInsertion",
+  "OAI.RingTheory.DirectFiniteness.DiagramJoining",
+  "OAI.RingTheory.DirectFiniteness.DiagramObstruction",
+  "OAI.RingTheory.DirectFiniteness.DiagramReduction",
+  "OAI.RingTheory.DirectFiniteness.DirectionCompleteness",
+  "OAI.RingTheory.DirectFiniteness.DirectionFrame",
+  "OAI.RingTheory.DirectFiniteness.DirectionSpaces",
+  "OAI.RingTheory.DirectFiniteness.EulerBound",
+  "OAI.RingTheory.DirectFiniteness.EventLoad",
+  "OAI.RingTheory.DirectFiniteness.FieldExtensions",
+  "OAI.RingTheory.DirectFiniteness.FiniteAffine",
+  "OAI.RingTheory.DirectFiniteness.FiniteBlock",
+  "OAI.RingTheory.DirectFiniteness.FiniteGeneration",
+  "OAI.RingTheory.DirectFiniteness.FiniteParameters",
+  "OAI.RingTheory.DirectFiniteness.FinitePresentation",
+  "OAI.RingTheory.DirectFiniteness.FinitelyPresented",
+  "OAI.RingTheory.DirectFiniteness.FrameExistence",
+  "OAI.RingTheory.DirectFiniteness.FrameTransport",
+  "OAI.RingTheory.DirectFiniteness.GluedGroup",
+  "OAI.RingTheory.DirectFiniteness.GluedWords",
+  "OAI.RingTheory.DirectFiniteness.GroupEmbedding",
+  "OAI.RingTheory.DirectFiniteness.HNNPresentation",
+  "OAI.RingTheory.DirectFiniteness.HoleEvents",
+  "OAI.RingTheory.DirectFiniteness.HoleExistence",
+  "OAI.RingTheory.DirectFiniteness.HoleNumerics",
+  "OAI.RingTheory.DirectFiniteness.HoleSelection",
+  "OAI.RingTheory.DirectFiniteness.IncidenceCycles",
+  "OAI.RingTheory.DirectFiniteness.IncidenceDirections",
+  "OAI.RingTheory.DirectFiniteness.LabelSupport",
+  "OAI.RingTheory.DirectFiniteness.LexicographicOrder",
+  "OAI.RingTheory.DirectFiniteness.Main",
+  "OAI.RingTheory.DirectFiniteness.MatrixBlock",
+  "OAI.RingTheory.DirectFiniteness.Model",
+  "OAI.RingTheory.DirectFiniteness.ModelPartition",
+  "OAI.RingTheory.DirectFiniteness.MultiHNN",
+  "OAI.RingTheory.DirectFiniteness.OddTorsion",
+  "OAI.RingTheory.DirectFiniteness.OneCandidateCounting",
+  "OAI.RingTheory.DirectFiniteness.OpenDiagrams",
+  "OAI.RingTheory.DirectFiniteness.PackingFormulas",
+  "OAI.RingTheory.DirectFiniteness.Pairing",
+  "OAI.RingTheory.DirectFiniteness.ParameterBounds",
+  "OAI.RingTheory.DirectFiniteness.PartialPartition",
+  "OAI.RingTheory.DirectFiniteness.PartitionMerging",
+  "OAI.RingTheory.DirectFiniteness.PlanarBalance",
+  "OAI.RingTheory.DirectFiniteness.PlanarDiagrams",
+  "OAI.RingTheory.DirectFiniteness.PlaneOperators",
+  "OAI.RingTheory.DirectFiniteness.PrescribedData",
+  "OAI.RingTheory.DirectFiniteness.PrescribedDirections",
+  "OAI.RingTheory.DirectFiniteness.PrescribedFields",
+  "OAI.RingTheory.DirectFiniteness.PrescribedIncidence",
+  "OAI.RingTheory.DirectFiniteness.PrescribedOutputs",
+  "OAI.RingTheory.DirectFiniteness.PrescribedPairing",
+  "OAI.RingTheory.DirectFiniteness.PrescribedParameters",
+  "OAI.RingTheory.DirectFiniteness.PrescribedPresentation",
+  "OAI.RingTheory.DirectFiniteness.PrescribedSearch",
+  "OAI.RingTheory.DirectFiniteness.PrescribedSlots",
+  "OAI.RingTheory.DirectFiniteness.PrescribedSubfield",
+  "OAI.RingTheory.DirectFiniteness.PrimeCertificate",
+  "OAI.RingTheory.DirectFiniteness.ProductAlgebras",
+  "OAI.RingTheory.DirectFiniteness.QuotientField",
+  "OAI.RingTheory.DirectFiniteness.Rectangular",
+  "OAI.RingTheory.DirectFiniteness.ReducedWalks",
+  "OAI.RingTheory.DirectFiniteness.ReplacementGeometry",
+  "OAI.RingTheory.DirectFiniteness.ReplacementPolygon",
+  "OAI.RingTheory.DirectFiniteness.RibbonDetachment",
+  "OAI.RingTheory.DirectFiniteness.RibbonGeometry",
+  "OAI.RingTheory.DirectFiniteness.RibbonRestriction",
+  "OAI.RingTheory.DirectFiniteness.RibbonSplitting",
+  "OAI.RingTheory.DirectFiniteness.RibbonSums",
+  "OAI.RingTheory.DirectFiniteness.RibbonWheels",
+  "OAI.RingTheory.DirectFiniteness.ScalarFormulas",
+  "OAI.RingTheory.DirectFiniteness.ScalarWitnesses",
+  "OAI.RingTheory.DirectFiniteness.ShortIndependence",
+  "OAI.RingTheory.DirectFiniteness.ShortRelators",
+  "OAI.RingTheory.DirectFiniteness.SimplexBound",
+  "OAI.RingTheory.DirectFiniteness.SlabAssembly",
+  "OAI.RingTheory.DirectFiniteness.SlabAvoidance",
+  "OAI.RingTheory.DirectFiniteness.SlabEvents",
+  "OAI.RingTheory.DirectFiniteness.SlabHoleEvents",
+  "OAI.RingTheory.DirectFiniteness.SlabKeys",
+  "OAI.RingTheory.DirectFiniteness.SlabLoad",
+  "OAI.RingTheory.DirectFiniteness.SlabNumerics",
+  "OAI.RingTheory.DirectFiniteness.SlabPartition",
+  "OAI.RingTheory.DirectFiniteness.SlabPatch",
+  "OAI.RingTheory.DirectFiniteness.TradeDegree",
+  "OAI.RingTheory.DirectFiniteness.TradeFamily",
+  "OAI.RingTheory.DirectFiniteness.TradeGirth",
+  "OAI.RingTheory.DirectFiniteness.TradeLines",
+  "OAI.RingTheory.DirectFiniteness.TradePolygon",
+  "OAI.RingTheory.DirectFiniteness.TranslatedUnits",
+  "OAI.RingTheory.DirectFiniteness.VertexMerging",
+  "OAI.RingTheory.DirectFiniteness.WeightTransfer",
+  "OAI.RingTheory.DirectFiniteness.WordCycles",
+  "OAI.RingTheory.DirectFiniteness.WordDiagrams",
+  "OAI.RingTheory.DirectFiniteness.WordReduction",
+  "OAI.RingTheory.DirectFiniteness.WordWheels"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/KaplanskyFinitelyPresented.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.RingTheory.DirectFiniteness.FinitelyPresented",
+   "name": "OAI.KaplanskyCounterexample.finitelyPresented_counterexample",
+   "statement_sha256": "616fa11cb0a43a80009e7c74da0af97965df084cc32d2bf0731fe42c6815777f"
+  }
+ ],
+ "task_id": "oai-kaplansky-finitely-presented",
+ "task_revision": 1,
+ "title": "OpenAI math: A torsion-free group algebra that is not directly finite: Finitely presented characteristic-two counterexample",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

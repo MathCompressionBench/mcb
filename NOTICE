@@ -7,7 +7,7 @@ https://github.com/MathCompressionBench/mcb).
 Third-party material
 ====================
 
-1. Task sources (Apache License 2.0)
+1. Task sources of the task set lcbench-v1 (Apache License 2.0)
 
 The task packages of the task set lcbench-v1 (the release assets <task>-warm.tar.gz and <task>-no_hint.tar.gz)
 contain Lean source files from the following repositories, each at the pinned commit below. Each repository is
@@ -36,7 +36,23 @@ Changes made to the files:
   declarations of the same files need as definitional lemmas are kept (25 in mathlib197, 54 in mathlib372); each
   package's TASK.json lists them under `no_hint.rfl_proofs_kept`.
 
-2. Lean 4 (Apache License 2.0)
+2. Task sources of the task set oai-v1 (Apache License 2.0)
+
+The task packages of the task set oai-v1 (the release assets oai-<task>-warm.tar.gz) contain Lean source files from
+https://github.com/openai/math at commit adc7f1241b42e322a6451854ab7e4b4c146bf78a (its lean/ folder), licensed under
+the Apache License, Version 2.0; a copy of the license is in the file LICENSE-Apache-2.0. The repository has no NOTICE
+file at that commit. Each task's files are listed, with their URL at that commit and their sha256, in
+tasks/<task>/task_source.json of the MathCompressionBench repository (the `editable` entries and their `fetch` URLs).
+The repository itself does not contain these files: `mcb make-task` downloads them from those URLs and checks their
+sha256.
+
+Changes made to the files:
+
+- The packages contain the files unchanged, under project/.
+- project/lake-manifest.json of each package is the upstream's lean/lake-manifest.json, and project/lakefile.toml is
+  derived from the upstream's lean/lakefile.lean (its `require` lines and Lean options).
+
+3. Lean 4 (Apache License 2.0)
 
 lean/LcbenchTools/BudgetReplay.lean (also in every task package, as .benchmark/tools/LcbenchTools/BudgetReplay.lean)
 contains `Lean.Environment.replay` from Lean 4 v4.32.0 (https://github.com/leanprover/lean4, src/Lean/Replay.lean,

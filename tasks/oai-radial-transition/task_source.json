@@ -1,0 +1,1451 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 182137271
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.RadialTransition",
+  "challenge_sha256": "305e7a1b2a0cb643b5bc8667dca0e2f138b64c3b375b3f79ffe169103dc7e8ad",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/RadialTransition.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.RadialTransition",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Probability.RadialTransition.Main",
+   "theorem_names": [
+    "OAI.RadialTransition.main"
+   ]
+  },
+  "config_sha256": "42edad6787773f71f917cc6e43b4eca05dc25488c6f82f611d1c61115a60a399",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/RadialTransition.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.RadialTransition.main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/BadRemoval.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.BadRemoval",
+   "original_sha256": "739a7b3451ead1be53b940b4ff3d12f79544b5567c4452a0921377aac3460d25",
+   "path": "OAI/Probability/RadialTransition/BadRemoval.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/BoltzmannMeasure.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.BoltzmannMeasure",
+   "original_sha256": "385cafcabd2c6f32e951a8f8e778a76bafc928ea74841689d1192cabbed7cb2d",
+   "path": "OAI/Probability/RadialTransition/BoltzmannMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/BoundedCore.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.BoundedCore",
+   "original_sha256": "dfb54269cb63376d009ec04e492177f1dec00e1e9e1ae3f57602d6d3e1b80927",
+   "path": "OAI/Probability/RadialTransition/BoundedCore.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/BoxEnsembles.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.BoxEnsembles",
+   "original_sha256": "dc7da33e537a3e4d355818bad7bb035ae999fe46aaeae36459b3e552a848eab6",
+   "path": "OAI/Probability/RadialTransition/BoxEnsembles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/BoxPressure.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.BoxPressure",
+   "original_sha256": "fdde71a65531c73c6615dc5471abec6cfda639225627533f28feb9b16d106a37",
+   "path": "OAI/Probability/RadialTransition/BoxPressure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/CanonicalCorner.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.CanonicalCorner",
+   "original_sha256": "6c848a16bc75b8ff40c095926f7c90acfc16800e6559dab2bf337a582d5571ca",
+   "path": "OAI/Probability/RadialTransition/CanonicalCorner.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/CanonicalCosts.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.CanonicalCosts",
+   "original_sha256": "a39830eebd8495b1ad8e02c5e2b0af8a3666d021caf7386712a908c4db0def63",
+   "path": "OAI/Probability/RadialTransition/CanonicalCosts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/CanonicalDuality.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.CanonicalDuality",
+   "original_sha256": "73246ade9d4cc99fae12e2cea6e8ab5b33ddb0f31a3aa866c0d2e6155c88e2fc",
+   "path": "OAI/Probability/RadialTransition/CanonicalDuality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/CanonicalLimit.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.CanonicalLimit",
+   "original_sha256": "1a6b88a5982d9ca794abde03f1cf8f9f378ec041e664edbfdc27d2c2ca4c342f",
+   "path": "OAI/Probability/RadialTransition/CanonicalLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/CellDifferences.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.CellDifferences",
+   "original_sha256": "c99227fea83758e63ba0548938d56a0c586103bf6129e06ad2675bdee9e7ea54",
+   "path": "OAI/Probability/RadialTransition/CellDifferences.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/CellIntegral.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.CellIntegral",
+   "original_sha256": "7c8dc80484d86946544583a624b43ac0159538e5bbc436fe7ac98a7f16aa3016",
+   "path": "OAI/Probability/RadialTransition/CellIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/CellInteractions.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.CellInteractions",
+   "original_sha256": "de5c43f993450f6f40b19ea6a94dd902649b3dfc729af34548566904e785515b",
+   "path": "OAI/Probability/RadialTransition/CellInteractions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/CellMoments.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.CellMoments",
+   "original_sha256": "b1ec3f23a4080e8e8ebd60eeb0f61e7aa6f70a07304ee4b34d9f3fa603d0d830",
+   "path": "OAI/Probability/RadialTransition/CellMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/CellStability.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.CellStability",
+   "original_sha256": "706ef45957d456b39be5575c98bcfceefe0816e1ded1a5312b4f5f3537ee0d83",
+   "path": "OAI/Probability/RadialTransition/CellStability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/ClusterConvolution.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.ClusterConvolution",
+   "original_sha256": "e90732636a6cb81adcb9b94bb191ccce10bff2c5013adda251d3b75991937fab",
+   "path": "OAI/Probability/RadialTransition/ClusterConvolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/ClusterEmbedding.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.ClusterEmbedding",
+   "original_sha256": "ba68af7dc365eb9f634f1ad46928de7bc991ee5c0fe4a4d66bc5903f367b488f",
+   "path": "OAI/Probability/RadialTransition/ClusterEmbedding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/ClusterWeights.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.ClusterWeights",
+   "original_sha256": "b3d323ff3c91a6b90ee82fbffa985b42fae5ca76813d3b81b6869b42c6459cb7",
+   "path": "OAI/Probability/RadialTransition/ClusterWeights.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/ConfigurationMaps.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.ConfigurationMaps",
+   "original_sha256": "e9590c8a06868356ae72efa053981cd580abe2cf5135987a7e7ad94c5103b68a",
+   "path": "OAI/Probability/RadialTransition/ConfigurationMaps.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/ConvolutionFock.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.ConvolutionFock",
+   "original_sha256": "a42c2aef3b7f37b25a8cfd262faa368c80f160543709ba86a97e165e1ab47736",
+   "path": "OAI/Probability/RadialTransition/ConvolutionFock.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/ConvolutionIntegral.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.ConvolutionIntegral",
+   "original_sha256": "65e09866480106619a81acf5267c648697598bf8196245ebcd28c26f99b8b9a8",
+   "path": "OAI/Probability/RadialTransition/ConvolutionIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/CoreConvergence.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.CoreConvergence",
+   "original_sha256": "d3aa28e46cdf6ac1f2b256b73c43c23f53d40b672f2942b1a3637e19738b545c",
+   "path": "OAI/Probability/RadialTransition/CoreConvergence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/CoreLocalLower.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.CoreLocalLower",
+   "original_sha256": "3e54828420194792599f7463c8462879ee82fe25fe53f671897598beaca5ca94",
+   "path": "OAI/Probability/RadialTransition/CoreLocalLower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/CorePressureLower.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.CorePressureLower",
+   "original_sha256": "dead562f7891f6bb1bd1dcfb9359d4eec7d09f73fd6bac038420584a041d3871",
+   "path": "OAI/Probability/RadialTransition/CorePressureLower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/CorePressureUpper.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.CorePressureUpper",
+   "original_sha256": "b8a1d193b3cd8e98535a94ca25e7eda746cf08df94c757546b276a2aa2c8ed78",
+   "path": "OAI/Probability/RadialTransition/CorePressureUpper.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/CoreUpper.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.CoreUpper",
+   "original_sha256": "c7ef6882f6cc8b6f34b6dd2fb3ffff709ed1f58e881f40dcfd8524b9d27c1100",
+   "path": "OAI/Probability/RadialTransition/CoreUpper.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/CountWeights.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.CountWeights",
+   "original_sha256": "81bc6fe55b842216dbfac756a988e2f8add0e567f2e8bf1d283aeefae96f551c",
+   "path": "OAI/Probability/RadialTransition/CountWeights.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/CroppedCells.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.CroppedCells",
+   "original_sha256": "0dcb9612dc326b3ec4b154feb61c511606d4e75e4dfaf4587c0927907ecaf1a1",
+   "path": "OAI/Probability/RadialTransition/CroppedCells.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/DeletedInteractions.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.DeletedInteractions",
+   "original_sha256": "d89df4c7a86a439ab651e5b70a8ba2ffebf35d8cd99d2682039c350be38787ca",
+   "path": "OAI/Probability/RadialTransition/DeletedInteractions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/DensityMixtures.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.DensityMixtures",
+   "original_sha256": "234e7c3d3a351b9a959eae64f62c6652b3f662e5c1aba1fb41eb9c816a35151b",
+   "path": "OAI/Probability/RadialTransition/DensityMixtures.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/EnvelopeSupport.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.EnvelopeSupport",
+   "original_sha256": "a76efaadf3331bbdd8c658c30869d731700a44bdd1a5d0d9042cababad2e354a",
+   "path": "OAI/Probability/RadialTransition/EnvelopeSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/FamilyControls.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.FamilyControls",
+   "original_sha256": "a4be77e476f1cf75ac4b2cdcab24dea7674a5f07304e1a4d2329eef4bc7fdfa7",
+   "path": "OAI/Probability/RadialTransition/FamilyControls.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/FamilyIdeal.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.FamilyIdeal",
+   "original_sha256": "e87ecc80ebf227979a944582336f26fc17f8baa2b3e26550eb9f9bcba18e7487",
+   "path": "OAI/Probability/RadialTransition/FamilyIdeal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/FamilyStep.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.FamilyStep",
+   "original_sha256": "6577e311e223781ab2b14508d081905e0ca483b1fe672e04a295650b4270af2c",
+   "path": "OAI/Probability/RadialTransition/FamilyStep.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/FinitePartition.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.FinitePartition",
+   "original_sha256": "e73816612b2bc5f54ac2faeba44e238b531db48afe6f2e0b628b12825ff20c6c",
+   "path": "OAI/Probability/RadialTransition/FinitePartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/FockIntegral.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.FockIntegral",
+   "original_sha256": "1759004afd4ae66d74e8361464298738b301dd689903055b61b4e1a905b041bc",
+   "path": "OAI/Probability/RadialTransition/FockIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/FreeClusterCover.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.FreeClusterCover",
+   "original_sha256": "73b3db2cb208f219dac2c6acc3be73728d4849c5913f99880a80325535c30c13",
+   "path": "OAI/Probability/RadialTransition/FreeClusterCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/FreeGeometry.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.FreeGeometry",
+   "original_sha256": "1f24ff90b4507ae24e323e4bd293fea061aab51ca44c02e8625162669a43cb01",
+   "path": "OAI/Probability/RadialTransition/FreeGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/GrandBounds.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.GrandBounds",
+   "original_sha256": "ae0f3863f8de90a6cc1075b7a08f8c7efe40b190d42f4308780767098177c042",
+   "path": "OAI/Probability/RadialTransition/GrandBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/GrandPartition.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.GrandPartition",
+   "original_sha256": "31f08303675ebf029fae431ca7c364e607ea4b34c8b8741a3763321737138e56",
+   "path": "OAI/Probability/RadialTransition/GrandPartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/GridPressure.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.GridPressure",
+   "original_sha256": "59801424a56b1f49d670c45396cf40e1810f053f4d1494f1fea780cf4b1bb9b3",
+   "path": "OAI/Probability/RadialTransition/GridPressure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/IdealAttainment.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.IdealAttainment",
+   "original_sha256": "a5cfbab5de9e4447f749b06d836f0a1bc8190136e582ba453c068c81de6f0e15",
+   "path": "OAI/Probability/RadialTransition/IdealAttainment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/IdealAttraction.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.IdealAttraction",
+   "original_sha256": "b18fe4e965a42229c438b304e442c41aaac76df94335ba55d4c3496846367bf0",
+   "path": "OAI/Probability/RadialTransition/IdealAttraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/IdealLimit.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.IdealLimit",
+   "original_sha256": "022d07f74a0a4518ae8c7274c7cf19e0477303932b260d5069ff247aec0c6d66",
+   "path": "OAI/Probability/RadialTransition/IdealLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/IdealSupports.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.IdealSupports",
+   "original_sha256": "31e05b70c2b40cfad8d0d5bdddab41782f4274675b1ed265d015fab6d61a5659",
+   "path": "OAI/Probability/RadialTransition/IdealSupports.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/IdealUniform.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.IdealUniform",
+   "original_sha256": "993741987a490106b0a139aa7eee88a58c5827503423b31bcec87e0eaa6e8d9b",
+   "path": "OAI/Probability/RadialTransition/IdealUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/InfiniteBall.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.InfiniteBall",
+   "original_sha256": "e68838454edb2f30a29eb6db2df07f2fe1ebf8b1d63a3bc00147f3e75ccda06f",
+   "path": "OAI/Probability/RadialTransition/InfiniteBall.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/InitialSeparation.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.InitialSeparation",
+   "original_sha256": "e203b18488e2048e1fb33e95648678dc40aeaea76fb79a90d98450e3095bdaee",
+   "path": "OAI/Probability/RadialTransition/InitialSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/InitialSlopes.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.InitialSlopes",
+   "original_sha256": "ce044904e21fd7c61dd607194bd07c202918683578e9c2abde0838feb3e537b5",
+   "path": "OAI/Probability/RadialTransition/InitialSlopes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/InteriorGrid.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.InteriorGrid",
+   "original_sha256": "aa3153fb8d229869ec36dfcc5762eb146aace2d7336229ba82a7c68bfbfe4077",
+   "path": "OAI/Probability/RadialTransition/InteriorGrid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/KacComparison.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.KacComparison",
+   "original_sha256": "9e8bfc8218582ca75bd01a62d0fb5ffe66496badee1ed83125a504a9c995c4a3",
+   "path": "OAI/Probability/RadialTransition/KacComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/KacDeletion.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.KacDeletion",
+   "original_sha256": "d0261794947daa420ef5a800ba1bb8a814d55be42193f6b0fb2994994f9313a3",
+   "path": "OAI/Probability/RadialTransition/KacDeletion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/KacPressure.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.KacPressure",
+   "original_sha256": "cd8b5c58915939756ae0fbeb0370c9118c16599c76b3771b71c35eabe33d62bf",
+   "path": "OAI/Probability/RadialTransition/KacPressure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/KacVariational.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.KacVariational",
+   "original_sha256": "68dd7a661d411fe70bba137d47501160dcfd9c0b28be51df0617addcf4d8a0b6",
+   "path": "OAI/Probability/RadialTransition/KacVariational.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/KernelError.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.KernelError",
+   "original_sha256": "d38307c450507e391a2722df1ad84eb37871d82e8e35c7d160588fdca17e862b",
+   "path": "OAI/Probability/RadialTransition/KernelError.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/LatticeStability.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.LatticeStability",
+   "original_sha256": "cd1aec984bc9c3a86d928c22c821353e2546e1942845a1a685b9cb4f962c821d",
+   "path": "OAI/Probability/RadialTransition/LatticeStability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/LinearInteractions.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.LinearInteractions",
+   "original_sha256": "ed541df2ba93fc9287493968a53b5d1f471f652dd052d1ced990f5f36d075c47",
+   "path": "OAI/Probability/RadialTransition/LinearInteractions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/MacroLower.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.MacroLower",
+   "original_sha256": "388fb2d859d25ece6a9459044997d1029d2489e59badc46b73d9be44c8a768b3",
+   "path": "OAI/Probability/RadialTransition/MacroLower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/MacroRegions.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.MacroRegions",
+   "original_sha256": "d64330e8b73879d62f026355210c47b46ff9540cc6f4da556e710c8ad70eebb5",
+   "path": "OAI/Probability/RadialTransition/MacroRegions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/MacroUpper.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.MacroUpper",
+   "original_sha256": "8c144a018464ba88c009646b58525d2f0ee0e695b17c54e5daaa60c7bf19a810",
+   "path": "OAI/Probability/RadialTransition/MacroUpper.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/Main.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.Main",
+   "original_sha256": "a01b8194beacc038e03f1e8fcd12c3a4787de18efceb67eee8706e8faeaedc08",
+   "path": "OAI/Probability/RadialTransition/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/MeasurableEnergy.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.MeasurableEnergy",
+   "original_sha256": "2681892392b1d3134e00b1469b7f29ce1b4337617a15d73d6881fb728946e893",
+   "path": "OAI/Probability/RadialTransition/MeasurableEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/MeasurableFock.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.MeasurableFock",
+   "original_sha256": "ba19f9fbb13910f717a3e9cc2513134ac54e23b5b52ce44d3749e3051cfdd28b",
+   "path": "OAI/Probability/RadialTransition/MeasurableFock.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/MeasurableProducts.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.MeasurableProducts",
+   "original_sha256": "a7f57c20ae9fcab474b1e9fa3904cae54dc55b06a7f387cbc6b0a6f5cb2451e2",
+   "path": "OAI/Probability/RadialTransition/MeasurableProducts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/MixtureBounds.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.MixtureBounds",
+   "original_sha256": "a5d93296877843421838527d575b4f4efb8d12e548aa7bbec066fc06342bef00",
+   "path": "OAI/Probability/RadialTransition/MixtureBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/Model.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.Model",
+   "original_sha256": "16c6e868323d33a379d65ba915d6d8815232e2db864027489b01fc40477d11b7",
+   "path": "OAI/Probability/RadialTransition/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/MultiConvolution.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.MultiConvolution",
+   "original_sha256": "16c95913f6a1900b53497da783f0340fdc90eee7d31a1c46b37bbaba214c8d45",
+   "path": "OAI/Probability/RadialTransition/MultiConvolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/MultiScale.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.MultiScale",
+   "original_sha256": "e7019b5f39c4a454c962d9d63c5d15eb583765da94288865c20971fbcf14800b",
+   "path": "OAI/Probability/RadialTransition/MultiScale.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/MultisetEnergy.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.MultisetEnergy",
+   "original_sha256": "ba8e05c081a3528ccdc9c88aa62a8bf2151f00bfc854253e093c701d6e82047e",
+   "path": "OAI/Probability/RadialTransition/MultisetEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/OccupationMoments.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.OccupationMoments",
+   "original_sha256": "837e3102d4622e5dd0897c5e7a7155cf70e05a2a2e771b7e9e5df9be0e14209b",
+   "path": "OAI/Probability/RadialTransition/OccupationMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/PackingBlob.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.PackingBlob",
+   "original_sha256": "ccaec6e693b5a49db7a780ad41cede17a11db89e2d5b5be3f42c18feefa0af34",
+   "path": "OAI/Probability/RadialTransition/PackingBlob.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/PackingLimit.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.PackingLimit",
+   "original_sha256": "4b28ee1368fbb7771fa3cb6428a3949a757ee1924e9fac53dfa257cc3a914b33",
+   "path": "OAI/Probability/RadialTransition/PackingLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/PairEnsembles.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.PairEnsembles",
+   "original_sha256": "5d8b8e8c3e9c8c10ca280d24c0a0759c4534dfdc0fb1a412245c9b2730944844",
+   "path": "OAI/Probability/RadialTransition/PairEnsembles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/ParameterPressure.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.ParameterPressure",
+   "original_sha256": "c93547db8fa6350caf8660499af9269b1c5ab24c03cc94d264d8aebbd8134968",
+   "path": "OAI/Probability/RadialTransition/ParameterPressure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/ParameterTools.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.ParameterTools",
+   "original_sha256": "4f6d475e60817ed57f030db8c749e54996445b5ac39f51158e8ec0906c78d400",
+   "path": "OAI/Probability/RadialTransition/ParameterTools.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/ParticleMeasure.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.ParticleMeasure",
+   "original_sha256": "a34d7620ca3b8fc015d85932202528caed4346ee3220c57993f7d62ac1b31b11",
+   "path": "OAI/Probability/RadialTransition/ParticleMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/PartitionReplication.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.PartitionReplication",
+   "original_sha256": "e03feaad0fe180e87bd5063fac59fec11c3d5524f17fff20603b4d173deddba5",
+   "path": "OAI/Probability/RadialTransition/PartitionReplication.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/PerturbationMoments.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.PerturbationMoments",
+   "original_sha256": "ad148c8a83ee6b64c37241a4ad4004edb9da2e70c9c72bdcc502c5d5af198671",
+   "path": "OAI/Probability/RadialTransition/PerturbationMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/PhaseGeometry.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.PhaseGeometry",
+   "original_sha256": "72b53a549ffa678f66a78e5e643e2ac9468a12c82f08dc43b45124d149be17eb",
+   "path": "OAI/Probability/RadialTransition/PhaseGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/PhysicalIteration.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.PhysicalIteration",
+   "original_sha256": "411b86950bdb6edbdbffb423bcbc8b9035aaeb4069f306e5694b3a9357495463",
+   "path": "OAI/Probability/RadialTransition/PhysicalIteration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/PressureBall.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.PressureBall",
+   "original_sha256": "b0baf38ec4694677e37b79739988bfa1176a518ab306c28c1815b1afaacf554d",
+   "path": "OAI/Probability/RadialTransition/PressureBall.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/PressureContinuity.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.PressureContinuity",
+   "original_sha256": "f833185b14b0032ae7c4afc0e20780e61cb2033d67c657b7ab1ce353cf9d2d4f",
+   "path": "OAI/Probability/RadialTransition/PressureContinuity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/ProductConfigurations.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.ProductConfigurations",
+   "original_sha256": "3edaf2c44f28fd3f4bad2739070d8a54eae25daa5746809603f1bd7ba70862d9",
+   "path": "OAI/Probability/RadialTransition/ProductConfigurations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/ProductFock.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.ProductFock",
+   "original_sha256": "fbd70b4aa7cf6b9b3236a5f66ecd58d2a81199449aad6a00b91fab9af00bddf6",
+   "path": "OAI/Probability/RadialTransition/ProductFock.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/Propagation.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.Propagation",
+   "original_sha256": "fd252df6a29a164e6302f1af2bc5ffd3563efd9a8f6cb53fecfb65ff083ebab3",
+   "path": "OAI/Probability/RadialTransition/Propagation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/RadialKernel.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.RadialKernel",
+   "original_sha256": "528da72f5a3832207bb8f63c3a2baf8fcf41be0c5c551c9db67230d4bc68bca1",
+   "path": "OAI/Probability/RadialTransition/RadialKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/RangeBounds.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.RangeBounds",
+   "original_sha256": "7fff23d51ec9cf7e72ee2da034d5c9622e70af28b9bf82ff7fa08833bd4169d1",
+   "path": "OAI/Probability/RadialTransition/RangeBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/ScaleBudgets.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.ScaleBudgets",
+   "original_sha256": "02738f4f3c9462eee9b4583d2e79b64581b020c3f85cb042d50bf6c954c09063",
+   "path": "OAI/Probability/RadialTransition/ScaleBudgets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/ScaleSequence.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.ScaleSequence",
+   "original_sha256": "f258e3ccb9edea8fb133d7fad355e02789d9c4589f5db108e63719b8a930cbb1",
+   "path": "OAI/Probability/RadialTransition/ScaleSequence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/ScaledKernels.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.ScaledKernels",
+   "original_sha256": "d8e0a2634dffc5246859791c709c38f9c96ea6a12db2232ee5436663a8e58a92",
+   "path": "OAI/Probability/RadialTransition/ScaledKernels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/ShellGeometry.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.ShellGeometry",
+   "original_sha256": "6605f318d782af8e9075fa3b4a77220f8afba844bf10d5199e1d349cfba80f0e",
+   "path": "OAI/Probability/RadialTransition/ShellGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/SpatialProducts.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.SpatialProducts",
+   "original_sha256": "aa532a4c0f1b88e809370ab509864a1668af84ff011eb2af156f2c24f0519a11",
+   "path": "OAI/Probability/RadialTransition/SpatialProducts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/SpatialReplication.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.SpatialReplication",
+   "original_sha256": "d7f8bd0b7dcdb9201afaecaaeb3a738939cc88cd9350647981b5ba748a716ace",
+   "path": "OAI/Probability/RadialTransition/SpatialReplication.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/SqrtGrid.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.SqrtGrid",
+   "original_sha256": "53b62405bf219a8ef787a34172e1c712d45b867af2cc80256a0ac1b51f07e30a",
+   "path": "OAI/Probability/RadialTransition/SqrtGrid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/StarIntegral.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.StarIntegral",
+   "original_sha256": "37036cf0e9137ceb64724eb95ddfae5e293b3b3abdc731c66ce188f1c3041468",
+   "path": "OAI/Probability/RadialTransition/StarIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/SupportControl.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.SupportControl",
+   "original_sha256": "2b786f98768af086063ccf8254b06e28772ad774d91fedae8407d8a68f34209d",
+   "path": "OAI/Probability/RadialTransition/SupportControl.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/SupportGeometry.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.SupportGeometry",
+   "original_sha256": "547a9a2c436d1e1b92111a53c6af11e545124edd85b17e7c6499ebdf33cdce67",
+   "path": "OAI/Probability/RadialTransition/SupportGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/TetraGeometry.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.TetraGeometry",
+   "original_sha256": "8d00a872a4cb72dc14f36b798b02ec208e198340606cd58155244b3424c9afc1",
+   "path": "OAI/Probability/RadialTransition/TetraGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/TetraIntegral.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.TetraIntegral",
+   "original_sha256": "22e1609e14329d99d92625b00ab5c6ee2e4a6bbcacfa4fdf79e6f6c5a6d95f8b",
+   "path": "OAI/Probability/RadialTransition/TetraIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/ThermodynamicLimit.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.ThermodynamicLimit",
+   "original_sha256": "2c2d0eecb443a97d145fba29d933a7294498bd609f68b67c0be92f7c26e0b182",
+   "path": "OAI/Probability/RadialTransition/ThermodynamicLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/TruncatedFamily.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.TruncatedFamily",
+   "original_sha256": "e27cc39fae07a37accef1d8ae5dea7208d8435233ba457fc770e05317262aca6",
+   "path": "OAI/Probability/RadialTransition/TruncatedFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/UniformConstants.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.UniformConstants",
+   "original_sha256": "64232142d0d24cd7821864225f9402378758b02af494bec8521e272f0871c379",
+   "path": "OAI/Probability/RadialTransition/UniformConstants.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/UniformKac.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.UniformKac",
+   "original_sha256": "24c0c18adbc36db992cdfe7019af1b80f316379bcd5a2b9bec6d624af6681428",
+   "path": "OAI/Probability/RadialTransition/UniformKac.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/RadialTransition/WindowLipschitz.lean"
+   },
+   "module": "OAI.Probability.RadialTransition.WindowLipschitz",
+   "original_sha256": "2b17671d73bed14d6bb2069c742be1fc2b3ee23cdfdc301ac5737cd6d265c9e6",
+   "path": "OAI/Probability/RadialTransition/WindowLipschitz.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Probability.RadialTransition.BadRemoval",
+  "OAI.Probability.RadialTransition.BoltzmannMeasure",
+  "OAI.Probability.RadialTransition.BoundedCore",
+  "OAI.Probability.RadialTransition.BoxEnsembles",
+  "OAI.Probability.RadialTransition.BoxPressure",
+  "OAI.Probability.RadialTransition.CanonicalCorner",
+  "OAI.Probability.RadialTransition.CanonicalCosts",
+  "OAI.Probability.RadialTransition.CanonicalDuality",
+  "OAI.Probability.RadialTransition.CanonicalLimit",
+  "OAI.Probability.RadialTransition.CellDifferences",
+  "OAI.Probability.RadialTransition.CellIntegral",
+  "OAI.Probability.RadialTransition.CellInteractions",
+  "OAI.Probability.RadialTransition.CellMoments",
+  "OAI.Probability.RadialTransition.CellStability",
+  "OAI.Probability.RadialTransition.ClusterConvolution",
+  "OAI.Probability.RadialTransition.ClusterEmbedding",
+  "OAI.Probability.RadialTransition.ClusterWeights",
+  "OAI.Probability.RadialTransition.ConfigurationMaps",
+  "OAI.Probability.RadialTransition.ConvolutionFock",
+  "OAI.Probability.RadialTransition.ConvolutionIntegral",
+  "OAI.Probability.RadialTransition.CoreConvergence",
+  "OAI.Probability.RadialTransition.CoreLocalLower",
+  "OAI.Probability.RadialTransition.CorePressureLower",
+  "OAI.Probability.RadialTransition.CorePressureUpper",
+  "OAI.Probability.RadialTransition.CoreUpper",
+  "OAI.Probability.RadialTransition.CountWeights",
+  "OAI.Probability.RadialTransition.CroppedCells",
+  "OAI.Probability.RadialTransition.DeletedInteractions",
+  "OAI.Probability.RadialTransition.DensityMixtures",
+  "OAI.Probability.RadialTransition.EnvelopeSupport",
+  "OAI.Probability.RadialTransition.FamilyControls",
+  "OAI.Probability.RadialTransition.FamilyIdeal",
+  "OAI.Probability.RadialTransition.FamilyStep",
+  "OAI.Probability.RadialTransition.FinitePartition",
+  "OAI.Probability.RadialTransition.FockIntegral",
+  "OAI.Probability.RadialTransition.FreeClusterCover",
+  "OAI.Probability.RadialTransition.FreeGeometry",
+  "OAI.Probability.RadialTransition.GrandBounds",
+  "OAI.Probability.RadialTransition.GrandPartition",
+  "OAI.Probability.RadialTransition.GridPressure",
+  "OAI.Probability.RadialTransition.IdealAttainment",
+  "OAI.Probability.RadialTransition.IdealAttraction",
+  "OAI.Probability.RadialTransition.IdealLimit",
+  "OAI.Probability.RadialTransition.IdealSupports",
+  "OAI.Probability.RadialTransition.IdealUniform",
+  "OAI.Probability.RadialTransition.InfiniteBall",
+  "OAI.Probability.RadialTransition.InitialSeparation",
+  "OAI.Probability.RadialTransition.InitialSlopes",
+  "OAI.Probability.RadialTransition.InteriorGrid",
+  "OAI.Probability.RadialTransition.KacComparison",
+  "OAI.Probability.RadialTransition.KacDeletion",
+  "OAI.Probability.RadialTransition.KacPressure",
+  "OAI.Probability.RadialTransition.KacVariational",
+  "OAI.Probability.RadialTransition.KernelError",
+  "OAI.Probability.RadialTransition.LatticeStability",
+  "OAI.Probability.RadialTransition.LinearInteractions",
+  "OAI.Probability.RadialTransition.MacroLower",
+  "OAI.Probability.RadialTransition.MacroRegions",
+  "OAI.Probability.RadialTransition.MacroUpper",
+  "OAI.Probability.RadialTransition.Main",
+  "OAI.Probability.RadialTransition.MeasurableEnergy",
+  "OAI.Probability.RadialTransition.MeasurableFock",
+  "OAI.Probability.RadialTransition.MeasurableProducts",
+  "OAI.Probability.RadialTransition.MixtureBounds",
+  "OAI.Probability.RadialTransition.Model",
+  "OAI.Probability.RadialTransition.MultiConvolution",
+  "OAI.Probability.RadialTransition.MultiScale",
+  "OAI.Probability.RadialTransition.MultisetEnergy",
+  "OAI.Probability.RadialTransition.OccupationMoments",
+  "OAI.Probability.RadialTransition.PackingBlob",
+  "OAI.Probability.RadialTransition.PackingLimit",
+  "OAI.Probability.RadialTransition.PairEnsembles",
+  "OAI.Probability.RadialTransition.ParameterPressure",
+  "OAI.Probability.RadialTransition.ParameterTools",
+  "OAI.Probability.RadialTransition.ParticleMeasure",
+  "OAI.Probability.RadialTransition.PartitionReplication",
+  "OAI.Probability.RadialTransition.PerturbationMoments",
+  "OAI.Probability.RadialTransition.PhaseGeometry",
+  "OAI.Probability.RadialTransition.PhysicalIteration",
+  "OAI.Probability.RadialTransition.PressureBall",
+  "OAI.Probability.RadialTransition.PressureContinuity",
+  "OAI.Probability.RadialTransition.ProductConfigurations",
+  "OAI.Probability.RadialTransition.ProductFock",
+  "OAI.Probability.RadialTransition.Propagation",
+  "OAI.Probability.RadialTransition.RadialKernel",
+  "OAI.Probability.RadialTransition.RangeBounds",
+  "OAI.Probability.RadialTransition.ScaleBudgets",
+  "OAI.Probability.RadialTransition.ScaleSequence",
+  "OAI.Probability.RadialTransition.ScaledKernels",
+  "OAI.Probability.RadialTransition.ShellGeometry",
+  "OAI.Probability.RadialTransition.SpatialProducts",
+  "OAI.Probability.RadialTransition.SpatialReplication",
+  "OAI.Probability.RadialTransition.SqrtGrid",
+  "OAI.Probability.RadialTransition.StarIntegral",
+  "OAI.Probability.RadialTransition.SupportControl",
+  "OAI.Probability.RadialTransition.SupportGeometry",
+  "OAI.Probability.RadialTransition.TetraGeometry",
+  "OAI.Probability.RadialTransition.TetraIntegral",
+  "OAI.Probability.RadialTransition.ThermodynamicLimit",
+  "OAI.Probability.RadialTransition.TruncatedFamily",
+  "OAI.Probability.RadialTransition.UniformConstants",
+  "OAI.Probability.RadialTransition.UniformKac",
+  "OAI.Probability.RadialTransition.WindowLipschitz"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/RadialTransition.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Probability.RadialTransition.Main",
+   "name": "OAI.RadialTransition.main",
+   "statement_sha256": "77481e2f50278a641a3b3a39188d0f082721462e101f05b56cb7308e2484c2ef"
+  }
+ ],
+ "task_id": "oai-radial-transition",
+ "task_revision": 1,
+ "title": "OpenAI math: Continuum phase transitions for radial pair potentials: Fixed-density radial continuum phase transition",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

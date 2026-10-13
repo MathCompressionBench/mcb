@@ -1,0 +1,681 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 354450426
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.ChoicelessPolynomialTime",
+  "challenge_sha256": "bca543a0526a28dd9c3466e5fcb1278436580a63f45320ab315f3b2a410866df",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ChoicelessPolynomialTime.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.ChoicelessPolynomialTime",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.ModelTheory.Choiceless.Separation",
+   "theorem_names": [
+    "OAI.CPTSeparation.main"
+   ]
+  },
+  "config_sha256": "6b7b0c476948208fa58011497df3ddcfb0d3ff08b7299141949da3240a21cf7a",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ChoicelessPolynomialTime.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.CPTSeparation.main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Bounds.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Bounds",
+   "original_sha256": "dfb06811f3f3f218e82bcd605ebab285bd6c5810607cae26056d3356ef844a13",
+   "path": "OAI/ModelTheory/Choiceless/Bounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Counters.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Counters",
+   "original_sha256": "d5deb448a958e852fe6b393229caeaaf383ed7fbf6ee181f5d15603be352deac",
+   "path": "OAI/ModelTheory/Choiceless/Counters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Counting.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Counting",
+   "original_sha256": "7ae17ae18e4fc90b76292c33943d6849f7de31721af7b38efda1b75885d94695",
+   "path": "OAI/ModelTheory/Choiceless/Counting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Definability.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Definability",
+   "original_sha256": "daa79feef380c101c8e7492ded3703f33d2967c00fe02603cd8c9d7665bf362e",
+   "path": "OAI/ModelTheory/Choiceless/Definability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Evaluation.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Evaluation",
+   "original_sha256": "b38b6197a5b3c9c1e31b168f5a5effabbdc6ffd3c5057f7e884540c24793fe34",
+   "path": "OAI/ModelTheory/Choiceless/Evaluation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Flows.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Flows",
+   "original_sha256": "e33eb2d16ce12c0b920a38d88161e96ffd147f22c6fd9967e54fef5bc2a6acfe",
+   "path": "OAI/ModelTheory/Choiceless/Flows.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Forms.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Forms",
+   "original_sha256": "65e200d6865ae96d12039bfb9d27f7f9668dea125ebf32fd0088ba8c2dff9083",
+   "path": "OAI/ModelTheory/Choiceless/Forms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/FullLanguage.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.FullLanguage",
+   "original_sha256": "0999102f330ab700149981acb9414a2dabba6c75a7cf6873504b0f96946d7aec",
+   "path": "OAI/ModelTheory/Choiceless/FullLanguage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/GaussMachine.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.GaussMachine",
+   "original_sha256": "203be2defd9bb3581a10e1f5e30de98f8e32a2cfba9a8c0a51ceb9b6759e4677",
+   "path": "OAI/ModelTheory/Choiceless/GaussMachine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Gaussian.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Gaussian",
+   "original_sha256": "58cecff3a30af4812bffb887551277afce50e5560905abb4ced80eb67dcb14f4",
+   "path": "OAI/ModelTheory/Choiceless/Gaussian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Grid.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Grid",
+   "original_sha256": "e8ad3593c9f3d61e1b0f48c1a1d1933fa19d77fe5f322e4a20749dff4c15ec1d",
+   "path": "OAI/ModelTheory/Choiceless/Grid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Hereditary.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Hereditary",
+   "original_sha256": "a16f56976fc9fd7b7d96a8ebabdd3b573610fc4445078b5cfde84a03d6129201",
+   "path": "OAI/ModelTheory/Choiceless/Hereditary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Interpretations.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Interpretations",
+   "original_sha256": "113e596b297e9e09cf9e9d1c5ef21fad926342d002de331e8d3ade1c1f7323c2",
+   "path": "OAI/ModelTheory/Choiceless/Interpretations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/LowerBound.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.LowerBound",
+   "original_sha256": "7bc9cb92144ccd820a9d6143f36e7067b9fd315d355fa66e8a2c1915fce85c90",
+   "path": "OAI/ModelTheory/Choiceless/LowerBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Matrix.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Matrix",
+   "original_sha256": "6e4c44e71e5e6fcd955aa12fae2f8b1749cf2e3d38c7c860fe2380e687b8e0f8",
+   "path": "OAI/ModelTheory/Choiceless/Matrix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Model.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Model",
+   "original_sha256": "14295f15eef06ab3c8c4cdc7ce26383e41ef1b9a7ec5221df5fdf413f4cbca16",
+   "path": "OAI/ModelTheory/Choiceless/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Observers.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Observers",
+   "original_sha256": "3eafde5f77860735ecb3aea7d9c0c091eb1672a56169572c004a4e3b02e0da36",
+   "path": "OAI/ModelTheory/Choiceless/Observers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Operational.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Operational",
+   "original_sha256": "437df9f67290983e57508de6f785b26574c57aaf219cb39af88f61ccac860594",
+   "path": "OAI/ModelTheory/Choiceless/Operational.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/QueryMachine.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.QueryMachine",
+   "original_sha256": "95769b84516ad0265d4f9fbb6718b02bf24a15c112666e0c070e1ea2656ee920",
+   "path": "OAI/ModelTheory/Choiceless/QueryMachine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Reachability.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Reachability",
+   "original_sha256": "9aca5e68d8eebc0cc3e926574a2a122641446dd089deded76d10eab0ba61276b",
+   "path": "OAI/ModelTheory/Choiceless/Reachability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Separation.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Separation",
+   "original_sha256": "262fb1f518fd36107152e73ba19054a61d32bdcccde3fba7a008f4895aaa9a98",
+   "path": "OAI/ModelTheory/Choiceless/Separation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Simulation.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Simulation",
+   "original_sha256": "d8489e0be90e56ee1724464a73af3a698a8f6800e76f807a095a5c3dcdd73c96",
+   "path": "OAI/ModelTheory/Choiceless/Simulation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Stack.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Stack",
+   "original_sha256": "8111ba9c34cdaee9ecc7256754fb081b3b0ed385f55c84a469eafa28ac2a87b1",
+   "path": "OAI/ModelTheory/Choiceless/Stack.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Support.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Support",
+   "original_sha256": "1298f9654c94d9d6d900480304b64f15b95e8da60ccbdf61926556e27f99c8f1",
+   "path": "OAI/ModelTheory/Choiceless/Support.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/TableMachine.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.TableMachine",
+   "original_sha256": "145f1f9f70d822cc700e4795a96553f6270a5288a82a7e5cadf9df8797d3e7e3",
+   "path": "OAI/ModelTheory/Choiceless/TableMachine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/ModelTheory/Choiceless/Traces.lean"
+   },
+   "module": "OAI.ModelTheory.Choiceless.Traces",
+   "original_sha256": "ccb8aacb89d296f2e1f056875393652b01cfe011a16e0b5a702c452a32242399",
+   "path": "OAI/ModelTheory/Choiceless/Traces.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.ModelTheory.Choiceless.Bounds",
+  "OAI.ModelTheory.Choiceless.Counters",
+  "OAI.ModelTheory.Choiceless.Counting",
+  "OAI.ModelTheory.Choiceless.Definability",
+  "OAI.ModelTheory.Choiceless.Evaluation",
+  "OAI.ModelTheory.Choiceless.Flows",
+  "OAI.ModelTheory.Choiceless.Forms",
+  "OAI.ModelTheory.Choiceless.FullLanguage",
+  "OAI.ModelTheory.Choiceless.GaussMachine",
+  "OAI.ModelTheory.Choiceless.Gaussian",
+  "OAI.ModelTheory.Choiceless.Grid",
+  "OAI.ModelTheory.Choiceless.Hereditary",
+  "OAI.ModelTheory.Choiceless.Interpretations",
+  "OAI.ModelTheory.Choiceless.LowerBound",
+  "OAI.ModelTheory.Choiceless.Matrix",
+  "OAI.ModelTheory.Choiceless.Model",
+  "OAI.ModelTheory.Choiceless.Observers",
+  "OAI.ModelTheory.Choiceless.Operational",
+  "OAI.ModelTheory.Choiceless.QueryMachine",
+  "OAI.ModelTheory.Choiceless.Reachability",
+  "OAI.ModelTheory.Choiceless.Separation",
+  "OAI.ModelTheory.Choiceless.Simulation",
+  "OAI.ModelTheory.Choiceless.Stack",
+  "OAI.ModelTheory.Choiceless.Support",
+  "OAI.ModelTheory.Choiceless.TableMachine",
+  "OAI.ModelTheory.Choiceless.Traces"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/ChoicelessPolynomialTime.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.ModelTheory.Choiceless.Separation",
+   "name": "OAI.CPTSeparation.main",
+   "statement_sha256": "fb3a265cedfa811110d81c65339ccdecae53d0e1c705829c8f389b8b272f76c2"
+  }
+ ],
+ "task_id": "oai-choiceless-polynomial-time",
+ "task_revision": 1,
+ "title": "OpenAI math: Separating choiceless counting from polynomial time and witnessed choice: Polynomial-time query outside choiceless polynomial time",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

@@ -1,0 +1,881 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 235234547
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.KahlerSplitting",
+  "challenge_sha256": "b162638c07040481a051d7e022965fba5f7181017d086f97735ed66477b9fc5b",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/KahlerSplitting.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.KahlerSplitting",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Geometry.KahlerSplitting.Main",
+   "theorem_names": [
+    "OAI.UniversalCoverSplitting.main"
+   ]
+  },
+  "config_sha256": "2fc5188b55f267ee3b5ad418c58506cc180ee67dec646a6a6cb4693b483649e5",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/KahlerSplitting.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.UniversalCoverSplitting.main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/AreaBounds.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.AreaBounds",
+   "original_sha256": "5c90eb2c82559a4cce342053804e3d4a320d210049bd522f6e52bd12f5e59518",
+   "path": "OAI/Geometry/KahlerSplitting/AreaBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/AxisContinuation.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.AxisContinuation",
+   "original_sha256": "90932368787b62a8159d35129cc45df3504c280d2c2681aeccc28950693127cc",
+   "path": "OAI/Geometry/KahlerSplitting/AxisContinuation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/Biholomorphism.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.Biholomorphism",
+   "original_sha256": "30238ae8442f3e5f5783bba51e1865d7998d886483d35f9440cd204f3d18c483",
+   "path": "OAI/Geometry/KahlerSplitting/Biholomorphism.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/BlockMaps.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.BlockMaps",
+   "original_sha256": "a5c89819ca026e1bc839748bacf441c49ac4b7dffa2a2b5c7a68b85e54b61370",
+   "path": "OAI/Geometry/KahlerSplitting/BlockMaps.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/BoundaryExtension.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.BoundaryExtension",
+   "original_sha256": "dad5aed89a8d938ca1b213a95b0f4ce031248542a4b4e0d8c704aeafafeb4155",
+   "path": "OAI/Geometry/KahlerSplitting/BoundaryExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/BoxGluing.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.BoxGluing",
+   "original_sha256": "9c94e143764dbdd84d29f97ce748f7b3f5a6d8830f8692944ed8184a575c4ca2",
+   "path": "OAI/Geometry/KahlerSplitting/BoxGluing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/Boxes.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.Boxes",
+   "original_sha256": "abca9b6a4a05ecdd8b1fd9f554273f683c3109ff6d8f5ad28199b0f6b5a4bb3a",
+   "path": "OAI/Geometry/KahlerSplitting/Boxes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/ClosedForm.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.ClosedForm",
+   "original_sha256": "18fa5ac5fd6c6768060db0c10167d7eda87f2d0a704a4ef2dac596c8c35902b1",
+   "path": "OAI/Geometry/KahlerSplitting/ClosedForm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/CommutingFlows.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.CommutingFlows",
+   "original_sha256": "62ab4c4263a126dc2fba2e3e845b3503d15b74227462d71d26ffe102d6dfef43",
+   "path": "OAI/Geometry/KahlerSplitting/CommutingFlows.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/CompactCurves.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.CompactCurves",
+   "original_sha256": "4a3180a2cfb48859ed273b672195c50022f157c45a7655e4097f2e7fb2fed2b4",
+   "path": "OAI/Geometry/KahlerSplitting/CompactCurves.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/ContinuousBoxes.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.ContinuousBoxes",
+   "original_sha256": "75e2c0d8ab4db0939758d606cfabcfde5ddeceb61847d7f38bd7831d635f6cb4",
+   "path": "OAI/Geometry/KahlerSplitting/ContinuousBoxes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/DiskArea.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.DiskArea",
+   "original_sha256": "75f5ee107679f07907e41db8951ee34eb66e040a59344587278d21519b8c8c41",
+   "path": "OAI/Geometry/KahlerSplitting/DiskArea.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/DiskAxes.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.DiskAxes",
+   "original_sha256": "2bc30490eb19cf8d3068e238568b048c25b497f3eac67369c2241604a9667493",
+   "path": "OAI/Geometry/KahlerSplitting/DiskAxes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/EtaleGerms.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.EtaleGerms",
+   "original_sha256": "7ae67fbfdde1ea4492dbf83102a898e4f9d630bdd145af0e3f8c2cdc2ea29927",
+   "path": "OAI/Geometry/KahlerSplitting/EtaleGerms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/FixedManifolds.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.FixedManifolds",
+   "original_sha256": "3bd0faa9bba95585e2a1b2a4367f98f25094de5dae78f21c333ad08037001711",
+   "path": "OAI/Geometry/KahlerSplitting/FixedManifolds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/FlowVariation.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.FlowVariation",
+   "original_sha256": "afdcb1fde2a123d5220ad5cb53aefb0f9be4477aabc665e285d9f88cee19cb10",
+   "path": "OAI/Geometry/KahlerSplitting/FlowVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/FormDerivatives.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.FormDerivatives",
+   "original_sha256": "f92b85ea34ae586ed356aa2bd3377f4e862ea2373fa512f58a641622decf9f1b",
+   "path": "OAI/Geometry/KahlerSplitting/FormDerivatives.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/Frobenius.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.Frobenius",
+   "original_sha256": "a674eaaacc822c52b9fdfd2ae12ee14eb3320d88edf9d85b6d525570a5bcd614",
+   "path": "OAI/Geometry/KahlerSplitting/Frobenius.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/GermTransport.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.GermTransport",
+   "original_sha256": "1a697bdc02dcc206ec6f1f9f96243ef6311f12010b8744d09926ee7c2d6fe82d",
+   "path": "OAI/Geometry/KahlerSplitting/GermTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/GlobalProjections.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.GlobalProjections",
+   "original_sha256": "687d36079860043ad6add01cc92750f3c19021c9854139e2124ae63e526c6c4d",
+   "path": "OAI/Geometry/KahlerSplitting/GlobalProjections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/Grid.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.Grid",
+   "original_sha256": "7be8522a81b615ba39b9b03af29d3b368e44997a425792cff23b4ee8d2cd3858",
+   "path": "OAI/Geometry/KahlerSplitting/Grid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/HolomorphicIdentity.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.HolomorphicIdentity",
+   "original_sha256": "c5d51f45deebe698e20950371e82fe297d1e710a33d5fdbe7ad709cb83bd5afc",
+   "path": "OAI/Geometry/KahlerSplitting/HolomorphicIdentity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/Main.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.Main",
+   "original_sha256": "6f27fd9bca424e51f6ecde437a51472f437e192a7e8251a571f9910443dbf875",
+   "path": "OAI/Geometry/KahlerSplitting/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/MetricBounds.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.MetricBounds",
+   "original_sha256": "8fb057a41b3250b1f2a03605835ecaead2dac855a00203c780ca56fc28a33401",
+   "path": "OAI/Geometry/KahlerSplitting/MetricBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/MixedShell.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.MixedShell",
+   "original_sha256": "7d5da802e037fbcf3c12a77341154da84a76348f782657c8c3c3d7eede600f3d",
+   "path": "OAI/Geometry/KahlerSplitting/MixedShell.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/Model.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.Model",
+   "original_sha256": "afb08b74cafb92ba744eb337033bf9fd77ad7ee034c11b115f647f35eb9913dc",
+   "path": "OAI/Geometry/KahlerSplitting/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/Monodromy.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.Monodromy",
+   "original_sha256": "72ae165713962fddc41dffe961933a90d4afb2db033af184d6a3803c8201661b",
+   "path": "OAI/Geometry/KahlerSplitting/Monodromy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/MovingStokes.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.MovingStokes",
+   "original_sha256": "26103b35bb3395e4a169f999c71ef392fa3278192d340d9950489efd00331d94",
+   "path": "OAI/Geometry/KahlerSplitting/MovingStokes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/ParameterGrid.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.ParameterGrid",
+   "original_sha256": "88b155179521fa510beacbdf2e3675b1cb9721bbb14b87a1b272de8b2a2ceade",
+   "path": "OAI/Geometry/KahlerSplitting/ParameterGrid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/PathBoxes.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.PathBoxes",
+   "original_sha256": "0dcdae1e5b78895994a42d8eef08f028fc7dd4decb225365eb8c892e351fc5de",
+   "path": "OAI/Geometry/KahlerSplitting/PathBoxes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/PathDerivatives.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.PathDerivatives",
+   "original_sha256": "affd30dddfd15846a3cd281ac5abbc80aaac8fd00612e348446c04ba70b7ce30",
+   "path": "OAI/Geometry/KahlerSplitting/PathDerivatives.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/PathLifts.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.PathLifts",
+   "original_sha256": "47cf1ec0bc879151236914f8470b3083531aeb74bda417e7a9b8d3e4844209c1",
+   "path": "OAI/Geometry/KahlerSplitting/PathLifts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/Picard.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.Picard",
+   "original_sha256": "dd970feede4d2ae476f53a2e39d56a4abea05a7e3355e92c8b92e2cdcec4181e",
+   "path": "OAI/Geometry/KahlerSplitting/Picard.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/PlaqueCharts.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.PlaqueCharts",
+   "original_sha256": "20a030d3ffa59e026640bbf9dfa8c89100b027de44f16ea361762d103cbaf265",
+   "path": "OAI/Geometry/KahlerSplitting/PlaqueCharts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/PolydiskAxes.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.PolydiskAxes",
+   "original_sha256": "1874fee1247d56c2250717a037950dd6e4562e738d944957b2567519a9948af5",
+   "path": "OAI/Geometry/KahlerSplitting/PolydiskAxes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/ProductCharts.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.ProductCharts",
+   "original_sha256": "ade6201946e8297c5251848ab69c315e0d0824000ca13a9ce51c5bfdcd965be3",
+   "path": "OAI/Geometry/KahlerSplitting/ProductCharts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/ProductLocal.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.ProductLocal",
+   "original_sha256": "d804e482bc8590f2c0f38ccb9510e3fc3ccb8032e157c0311ac64acba340c494",
+   "path": "OAI/Geometry/KahlerSplitting/ProductLocal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/ProductRetracts.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.ProductRetracts",
+   "original_sha256": "643d1fa5038690ec074328928ebbdc63bde5fe0f3fb9590a040426b82cfe03cf",
+   "path": "OAI/Geometry/KahlerSplitting/ProductRetracts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/ProjectionImages.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.ProjectionImages",
+   "original_sha256": "4e2b7e73d21b809b87898d418631f26d743efc8d7d456ca48de55d22a3f0660d",
+   "path": "OAI/Geometry/KahlerSplitting/ProjectionImages.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/Removable.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.Removable",
+   "original_sha256": "b40113ff9b0b0830dc462e8f6d30cb39c6b53e96f93c516e20353870c49cd242",
+   "path": "OAI/Geometry/KahlerSplitting/Removable.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/RetractCharts.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.RetractCharts",
+   "original_sha256": "036a95c56373ff04d461964dfd4a2416ea8966f804633d6ac9991d5870d04fb7",
+   "path": "OAI/Geometry/KahlerSplitting/RetractCharts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/ShellFilling.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.ShellFilling",
+   "original_sha256": "047816e33569005d2cad5dc8a071d9d30f671d1d358414bd7a0eb7a22802415e",
+   "path": "OAI/Geometry/KahlerSplitting/ShellFilling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/SmallAnnuli.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.SmallAnnuli",
+   "original_sha256": "c60257dd8041c77d5f5f399c2eceba1c473ff8a8603e5a439fbc16505ab21923",
+   "path": "OAI/Geometry/KahlerSplitting/SmallAnnuli.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/SmallArea.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.SmallArea",
+   "original_sha256": "d11f0e63ff95f09d0153c09a393237abbb8b44c96f3284c0a07e6334491bfeaa",
+   "path": "OAI/Geometry/KahlerSplitting/SmallArea.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/Superellipsoids.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.Superellipsoids",
+   "original_sha256": "ec0c8dd043a7a1bdca71c0c42ca9a5840441abaf53a1881fe3d72fad85eec1ad",
+   "path": "OAI/Geometry/KahlerSplitting/Superellipsoids.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/KahlerSplitting/SwapSplitting.lean"
+   },
+   "module": "OAI.Geometry.KahlerSplitting.SwapSplitting",
+   "original_sha256": "f7ba0b6b204455993b391c44bb2c0a0e2eac1591f49e7617cec4f603e2b46d5d",
+   "path": "OAI/Geometry/KahlerSplitting/SwapSplitting.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Geometry.KahlerSplitting.AreaBounds",
+  "OAI.Geometry.KahlerSplitting.AxisContinuation",
+  "OAI.Geometry.KahlerSplitting.Biholomorphism",
+  "OAI.Geometry.KahlerSplitting.BlockMaps",
+  "OAI.Geometry.KahlerSplitting.BoundaryExtension",
+  "OAI.Geometry.KahlerSplitting.BoxGluing",
+  "OAI.Geometry.KahlerSplitting.Boxes",
+  "OAI.Geometry.KahlerSplitting.ClosedForm",
+  "OAI.Geometry.KahlerSplitting.CommutingFlows",
+  "OAI.Geometry.KahlerSplitting.CompactCurves",
+  "OAI.Geometry.KahlerSplitting.ContinuousBoxes",
+  "OAI.Geometry.KahlerSplitting.DiskArea",
+  "OAI.Geometry.KahlerSplitting.DiskAxes",
+  "OAI.Geometry.KahlerSplitting.EtaleGerms",
+  "OAI.Geometry.KahlerSplitting.FixedManifolds",
+  "OAI.Geometry.KahlerSplitting.FlowVariation",
+  "OAI.Geometry.KahlerSplitting.FormDerivatives",
+  "OAI.Geometry.KahlerSplitting.Frobenius",
+  "OAI.Geometry.KahlerSplitting.GermTransport",
+  "OAI.Geometry.KahlerSplitting.GlobalProjections",
+  "OAI.Geometry.KahlerSplitting.Grid",
+  "OAI.Geometry.KahlerSplitting.HolomorphicIdentity",
+  "OAI.Geometry.KahlerSplitting.Main",
+  "OAI.Geometry.KahlerSplitting.MetricBounds",
+  "OAI.Geometry.KahlerSplitting.MixedShell",
+  "OAI.Geometry.KahlerSplitting.Model",
+  "OAI.Geometry.KahlerSplitting.Monodromy",
+  "OAI.Geometry.KahlerSplitting.MovingStokes",
+  "OAI.Geometry.KahlerSplitting.ParameterGrid",
+  "OAI.Geometry.KahlerSplitting.PathBoxes",
+  "OAI.Geometry.KahlerSplitting.PathDerivatives",
+  "OAI.Geometry.KahlerSplitting.PathLifts",
+  "OAI.Geometry.KahlerSplitting.Picard",
+  "OAI.Geometry.KahlerSplitting.PlaqueCharts",
+  "OAI.Geometry.KahlerSplitting.PolydiskAxes",
+  "OAI.Geometry.KahlerSplitting.ProductCharts",
+  "OAI.Geometry.KahlerSplitting.ProductLocal",
+  "OAI.Geometry.KahlerSplitting.ProductRetracts",
+  "OAI.Geometry.KahlerSplitting.ProjectionImages",
+  "OAI.Geometry.KahlerSplitting.Removable",
+  "OAI.Geometry.KahlerSplitting.RetractCharts",
+  "OAI.Geometry.KahlerSplitting.ShellFilling",
+  "OAI.Geometry.KahlerSplitting.SmallAnnuli",
+  "OAI.Geometry.KahlerSplitting.SmallArea",
+  "OAI.Geometry.KahlerSplitting.Superellipsoids",
+  "OAI.Geometry.KahlerSplitting.SwapSplitting"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/KahlerSplitting.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Geometry.KahlerSplitting.Main",
+   "name": "OAI.UniversalCoverSplitting.main",
+   "statement_sha256": "36a0032da66cf92350603bf1968997686681910552d208abca533a681d226e31"
+  }
+ ],
+ "task_id": "oai-kahler-splitting",
+ "task_revision": 1,
+ "title": "OpenAI math: Tangent splittings and product decompositions: Universal-cover product splitting",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

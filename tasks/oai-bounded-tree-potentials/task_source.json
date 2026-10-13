@@ -1,0 +1,881 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 11432102
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.BoundedTreePotentials",
+  "challenge_sha256": "2a0bfecab2bb3b3da07393f7dbe95f324a8351b1e5d6d1b38283376641c11875",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/BoundedTreePotentials.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.BoundedTreePotentials",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.TreePotential.Main",
+   "theorem_names": [
+    "OAI.BoundedTreePotentials.TreeCalculus.main_counterexample"
+   ]
+  },
+  "config_sha256": "fb79b609796648a1e4fb13dc0a1580919452b540c15182b291cb990227becb71",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/BoundedTreePotentials.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.BoundedTreePotentials.TreeCalculus.main_counterexample": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/Clipping.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.Clipping",
+   "original_sha256": "57abaa975ab1f72951c0947206c5749c1198d15e46bf763e57ab93b0d40423e8",
+   "path": "OAI/Analysis/TreePotential/Clipping.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/Completion.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.Completion",
+   "original_sha256": "2dbf3c73d77d4271c3037bfcb183e3a62f9ca0d7235780726850155e9dcb0f41",
+   "path": "OAI/Analysis/TreePotential/Completion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/Coordinates.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.Coordinates",
+   "original_sha256": "b3b4d5eb74e4ffd422e7b65b694ccf5ff94d724567d8c57372ec78a76e169555",
+   "path": "OAI/Analysis/TreePotential/Coordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/CostCompletion.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.CostCompletion",
+   "original_sha256": "118def3fe0e614b70cd5eab6c87169af490b189a3160779a38119889841de10a",
+   "path": "OAI/Analysis/TreePotential/CostCompletion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/CostGeometry.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.CostGeometry",
+   "original_sha256": "54d28929ecd620d55c1696bb438e794d6bd1a2d22be9fb0e06b0eb36fe60989d",
+   "path": "OAI/Analysis/TreePotential/CostGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/CostObstruction.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.CostObstruction",
+   "original_sha256": "ee36505a0310456ee5e9346348c124d8f8cd24a0e56fbf962dce4399e3f0a8ba",
+   "path": "OAI/Analysis/TreePotential/CostObstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/DualCoordinates.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.DualCoordinates",
+   "original_sha256": "af6cb7e774c3b6da7326b7c2ec2ae0ef010399c5d53726a3a98f1591203a1380",
+   "path": "OAI/Analysis/TreePotential/DualCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/Dyadic.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.Dyadic",
+   "original_sha256": "c75d4ba3e68aa56b3358f2e4864b17ec838d46d3e0e9cec0081501b5c210a9c6",
+   "path": "OAI/Analysis/TreePotential/Dyadic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/EndpointTransfer.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.EndpointTransfer",
+   "original_sha256": "416be74807990cb2070bf1098883d42a3c19f6021fa2f48d997aa4a51ae3eef6",
+   "path": "OAI/Analysis/TreePotential/EndpointTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/FiniteHeads.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.FiniteHeads",
+   "original_sha256": "10f9027ee7871e86f16e75a34d8a346ff9521af2c7dbaf8cf9dd560d4391715d",
+   "path": "OAI/Analysis/TreePotential/FiniteHeads.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/FiniteTree.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.FiniteTree",
+   "original_sha256": "211b580e082a0c8dcbc100a57934963df0f0c45307f2266e193dd3be22b198b5",
+   "path": "OAI/Analysis/TreePotential/FiniteTree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/FreeRoot.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.FreeRoot",
+   "original_sha256": "b36da9b2b08c82f490e9ae3831d6361951a8058f0cd67fd8fe3144f64730a9a3",
+   "path": "OAI/Analysis/TreePotential/FreeRoot.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/HilbertCompletion.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.HilbertCompletion",
+   "original_sha256": "ad7511ccacec1b3d889d92b78264f9463a671289776488f3e4403f18f9abe8b5",
+   "path": "OAI/Analysis/TreePotential/HilbertCompletion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/HilbertSum.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.HilbertSum",
+   "original_sha256": "60561fabed2a5ab03e409cb0def58a6de1cb805d7b0761a18273890c449d07f5",
+   "path": "OAI/Analysis/TreePotential/HilbertSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/Inward.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.Inward",
+   "original_sha256": "ed734df9cce46aca8ccf471429733253ce6ae2b77f5b0039809928db890e487e",
+   "path": "OAI/Analysis/TreePotential/Inward.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/Leakage.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.Leakage",
+   "original_sha256": "4031925227feca0d0fe95447a902c0ccca8cd5006a9286baf37c362f3d6894cf",
+   "path": "OAI/Analysis/TreePotential/Leakage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/LinearCost.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.LinearCost",
+   "original_sha256": "6af0dbef3495ad8c919bb49bfff5457d70433c49969689595552dc4ef17eb16d",
+   "path": "OAI/Analysis/TreePotential/LinearCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/Main.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.Main",
+   "original_sha256": "8e78731c17cd74a35c5c9c537af8dbdfda9a7272163b1af5041c8f63a7952664",
+   "path": "OAI/Analysis/TreePotential/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/Moduli.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.Moduli",
+   "original_sha256": "65cbba9e7a618473e07fba6b751ea1527652e361ad648debbaf27911ddceaf3d",
+   "path": "OAI/Analysis/TreePotential/Moduli.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/NormIdentities.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.NormIdentities",
+   "original_sha256": "a5864d24a1f30b296f3eb59c04de66c1995034a748849cbb1197b0f0bb49c396",
+   "path": "OAI/Analysis/TreePotential/NormIdentities.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/Normalization.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.Normalization",
+   "original_sha256": "f5ffe69d204c44ab2ab3f3475c97dcf74325a70af0a5c09e18dba3620cb8c1b6",
+   "path": "OAI/Analysis/TreePotential/Normalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/QuadraticCost.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.QuadraticCost",
+   "original_sha256": "4c0812c99a7ef6d3ddc67ce131042d8b355a8af880d272146df94d2d1eb23741",
+   "path": "OAI/Analysis/TreePotential/QuadraticCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/RealModuli.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.RealModuli",
+   "original_sha256": "6815d022ca0392bdcc2ae07fefa04efe51003dd9e7da50455f14155021ff5f82",
+   "path": "OAI/Analysis/TreePotential/RealModuli.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/SegmentBasic.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.SegmentBasic",
+   "original_sha256": "fa183c9c5687ba936d682b4a6a4ec53331a8e0fc0e04aad45812cf38728023d7",
+   "path": "OAI/Analysis/TreePotential/SegmentBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/SegmentCancellation.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.SegmentCancellation",
+   "original_sha256": "1a2650832d0586b84f99f63619d79eeae473722bbe8bdc0eea4206f9f0e5c4c5",
+   "path": "OAI/Analysis/TreePotential/SegmentCancellation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/SegmentComponents.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.SegmentComponents",
+   "original_sha256": "d2a6f80b02fbb95f23a1e10179d550d7f7a9f019cf9bf4c1cf729dd3b14d796a",
+   "path": "OAI/Analysis/TreePotential/SegmentComponents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/SegmentDual.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.SegmentDual",
+   "original_sha256": "c42af18417eb7ad67c93f526576f933382bb3e7f72bd9b54457468cdfc1a41cc",
+   "path": "OAI/Analysis/TreePotential/SegmentDual.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/SegmentEndpoints.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.SegmentEndpoints",
+   "original_sha256": "70525b406306b291eba8e0873384a84a2da99dd348a3e121aec3c3c48c1d44cf",
+   "path": "OAI/Analysis/TreePotential/SegmentEndpoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/SegmentHeads.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.SegmentHeads",
+   "original_sha256": "cd2862becebf926ab58dc356a61ab1600881f33802b8bf0cbde2bba1909e9d6b",
+   "path": "OAI/Analysis/TreePotential/SegmentHeads.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/SegmentMidpoint.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.SegmentMidpoint",
+   "original_sha256": "d7657b28caf3287f0387efa571ab62f004a052665d24edf68629038fcd0b55f0",
+   "path": "OAI/Analysis/TreePotential/SegmentMidpoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/SegmentMixtures.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.SegmentMixtures",
+   "original_sha256": "f93c636417cff4666695f88bc7d109cb6a050a6b1cf5f198798d36fcd33dd6b9",
+   "path": "OAI/Analysis/TreePotential/SegmentMixtures.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/SegmentPolar.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.SegmentPolar",
+   "original_sha256": "7affaa99493818774abf5e120eb33be8065fb193831a1086982440a22309c58b",
+   "path": "OAI/Analysis/TreePotential/SegmentPolar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/StartComponent.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.StartComponent",
+   "original_sha256": "ebd8fdbbb0d7fd34751b0dd9f1c66c8b00b845b338726006fa4a03ed6ad9603e",
+   "path": "OAI/Analysis/TreePotential/StartComponent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/StartEnergy.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.StartEnergy",
+   "original_sha256": "de5f8a686fb1b0ed0da89a49bb7ba33720ebd04ab12a7dc77bd70209b50cffc1",
+   "path": "OAI/Analysis/TreePotential/StartEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/StartMass.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.StartMass",
+   "original_sha256": "8767ace9f7a66bf737e9337e6682e79dd7541df894be4f4bf2b502fd262d1728",
+   "path": "OAI/Analysis/TreePotential/StartMass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/StartModulus.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.StartModulus",
+   "original_sha256": "51f3888dbaca1d807b85b5379f52f80656727e22952fee9482fe7aa076dc4763",
+   "path": "OAI/Analysis/TreePotential/StartModulus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/StartPolar.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.StartPolar",
+   "original_sha256": "b7bf8128f49ab4561badef8fc1f2904b2c85e054196b25b44ac0cdcac002d47d",
+   "path": "OAI/Analysis/TreePotential/StartPolar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/StartQuotient.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.StartQuotient",
+   "original_sha256": "235b6235fd19a386564079bf1c7abecf790d39d2c416aed271404e31b933a9dc",
+   "path": "OAI/Analysis/TreePotential/StartQuotient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/StartRepresentation.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.StartRepresentation",
+   "original_sha256": "a8d1281869714eb7502541b82c5a7ad2a7110f3a0ba7ae45d2467d19fc1fae35",
+   "path": "OAI/Analysis/TreePotential/StartRepresentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/TailEstimates.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.TailEstimates",
+   "original_sha256": "e601974adf59d77b17def9375bfcc55465358708f2725b57043553cbe71e132d",
+   "path": "OAI/Analysis/TreePotential/TailEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/TestNorm.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.TestNorm",
+   "original_sha256": "07215f473a72b6b840577717464a2c61629acee70598e871123e4f04468b27ee",
+   "path": "OAI/Analysis/TreePotential/TestNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/TreeObstruction.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.TreeObstruction",
+   "original_sha256": "2c892a7e4f1c018d07c60b95f7f2f1e8437b13865b8055cf0f005dd441a09404",
+   "path": "OAI/Analysis/TreePotential/TreeObstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/TreeTests.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.TreeTests",
+   "original_sha256": "1ff37da2b3c7368e4a91b69bf809e29144b508314807f96e0375d093bc7bbd7f",
+   "path": "OAI/Analysis/TreePotential/TreeTests.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/UniformAverages.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.UniformAverages",
+   "original_sha256": "bb2278b9c4f6275e643c2c1c7f8f5862c1df7eca336bffcc95a4807ba9bf3e42",
+   "path": "OAI/Analysis/TreePotential/UniformAverages.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/UniformProtocols.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.UniformProtocols",
+   "original_sha256": "342083b66c2e856eaac1f8461a70222e2a6161359812be683c1513a44d019041",
+   "path": "OAI/Analysis/TreePotential/UniformProtocols.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/TreePotential/WeakNull.lean"
+   },
+   "module": "OAI.Analysis.TreePotential.WeakNull",
+   "original_sha256": "ce89e05f65e2f97828be7b4ba37f074ec3d4ddebea361a29d07b9c56041f9938",
+   "path": "OAI/Analysis/TreePotential/WeakNull.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.TreePotential.Clipping",
+  "OAI.Analysis.TreePotential.Completion",
+  "OAI.Analysis.TreePotential.Coordinates",
+  "OAI.Analysis.TreePotential.CostCompletion",
+  "OAI.Analysis.TreePotential.CostGeometry",
+  "OAI.Analysis.TreePotential.CostObstruction",
+  "OAI.Analysis.TreePotential.DualCoordinates",
+  "OAI.Analysis.TreePotential.Dyadic",
+  "OAI.Analysis.TreePotential.EndpointTransfer",
+  "OAI.Analysis.TreePotential.FiniteHeads",
+  "OAI.Analysis.TreePotential.FiniteTree",
+  "OAI.Analysis.TreePotential.FreeRoot",
+  "OAI.Analysis.TreePotential.HilbertCompletion",
+  "OAI.Analysis.TreePotential.HilbertSum",
+  "OAI.Analysis.TreePotential.Inward",
+  "OAI.Analysis.TreePotential.Leakage",
+  "OAI.Analysis.TreePotential.LinearCost",
+  "OAI.Analysis.TreePotential.Main",
+  "OAI.Analysis.TreePotential.Moduli",
+  "OAI.Analysis.TreePotential.NormIdentities",
+  "OAI.Analysis.TreePotential.Normalization",
+  "OAI.Analysis.TreePotential.QuadraticCost",
+  "OAI.Analysis.TreePotential.RealModuli",
+  "OAI.Analysis.TreePotential.SegmentBasic",
+  "OAI.Analysis.TreePotential.SegmentCancellation",
+  "OAI.Analysis.TreePotential.SegmentComponents",
+  "OAI.Analysis.TreePotential.SegmentDual",
+  "OAI.Analysis.TreePotential.SegmentEndpoints",
+  "OAI.Analysis.TreePotential.SegmentHeads",
+  "OAI.Analysis.TreePotential.SegmentMidpoint",
+  "OAI.Analysis.TreePotential.SegmentMixtures",
+  "OAI.Analysis.TreePotential.SegmentPolar",
+  "OAI.Analysis.TreePotential.StartComponent",
+  "OAI.Analysis.TreePotential.StartEnergy",
+  "OAI.Analysis.TreePotential.StartMass",
+  "OAI.Analysis.TreePotential.StartModulus",
+  "OAI.Analysis.TreePotential.StartPolar",
+  "OAI.Analysis.TreePotential.StartQuotient",
+  "OAI.Analysis.TreePotential.StartRepresentation",
+  "OAI.Analysis.TreePotential.TailEstimates",
+  "OAI.Analysis.TreePotential.TestNorm",
+  "OAI.Analysis.TreePotential.TreeObstruction",
+  "OAI.Analysis.TreePotential.TreeTests",
+  "OAI.Analysis.TreePotential.UniformAverages",
+  "OAI.Analysis.TreePotential.UniformProtocols",
+  "OAI.Analysis.TreePotential.WeakNull"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/BoundedTreePotentials.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.TreePotential.Main",
+   "name": "OAI.BoundedTreePotentials.TreeCalculus.main_counterexample",
+   "statement_sha256": "f69201443c74bf8f180153b21f5f88c3ce6daa0cffcd9ed59035e807eea70885"
+  }
+ ],
+ "task_id": "oai-bounded-tree-potentials",
+ "task_revision": 1,
+ "title": "OpenAI math: Reflexive midpoint convexity and diamond distortion: Tree-potential midpoint convexity and renorming obstruction",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

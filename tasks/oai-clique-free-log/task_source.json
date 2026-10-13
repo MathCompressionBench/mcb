@@ -1,0 +1,731 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 35380100
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.CliqueFreeLog",
+  "challenge_sha256": "f2da8879eb520c1fcc7812d3d476f528b54dd7405c00a8f4c0488e212379c2d2",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/CliqueFreeLog.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.CliqueFreeLog",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Combinatorics.CliqueFree.Main",
+   "theorem_names": [
+    "OAI.CliqueFreeLog.logarithmic_independence_bound"
+   ]
+  },
+  "config_sha256": "ddfe72ae1b6d99817f05dd1b91ff8e178717abeecff667e08781df60c1faf56d",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/CliqueFreeLog.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.CliqueFreeLog.logarithmic_independence_bound": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/CrossBound.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.CrossBound",
+   "original_sha256": "b37d6f1e06f0e704064f34cbecc6a7dc6c7a911493a29cb6bd6cf5843db85421",
+   "path": "OAI/Combinatorics/CliqueFree/CrossBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/Deletion.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.Deletion",
+   "original_sha256": "9220cd0ed7bf01ed251c81c28b0bb26b85fb508c0019992392e824a6a799d941",
+   "path": "OAI/Combinatorics/CliqueFree/Deletion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/DisjointCross.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.DisjointCross",
+   "original_sha256": "139f334f834554c1497f2cac04ec3ed0cf2cc69a32d63441fea014138671e9ff",
+   "path": "OAI/Combinatorics/CliqueFree/DisjointCross.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/EdgeState.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.EdgeState",
+   "original_sha256": "15ccce8a76c218d098ab7ffe6e22edf79f2fb55d71a648b22736256d309f0ce2",
+   "path": "OAI/Combinatorics/CliqueFree/EdgeState.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/FiniteCoupling.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.FiniteCoupling",
+   "original_sha256": "329289df3af2e190f6c7326c3ea7ab07ea954bc6c20cc950c1d580a68ab1fdee",
+   "path": "OAI/Combinatorics/CliqueFree/FiniteCoupling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/FiniteEntropy.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.FiniteEntropy",
+   "original_sha256": "1c701e5a0344b102f4d42ffe04e674d1270504fe76e84abe645bba00b83f32aa",
+   "path": "OAI/Combinatorics/CliqueFree/FiniteEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/FiniteKernel.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.FiniteKernel",
+   "original_sha256": "eb5b53acc4f4b9eb4cb8495a3a89d8f958e3f100bc9f15a37a7f326fbbdf4a95",
+   "path": "OAI/Combinatorics/CliqueFree/FiniteKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/IndependentSet.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.IndependentSet",
+   "original_sha256": "244e1f880ce673975c5acdcc68d7bff1e53a5a0047780e2a54f3fbceaa1a4488",
+   "path": "OAI/Combinatorics/CliqueFree/IndependentSet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/LocalWalk.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.LocalWalk",
+   "original_sha256": "2e265da4d33979de1b731792f01b37ea133cfc433ccef642a06ab783b2dbe921",
+   "path": "OAI/Combinatorics/CliqueFree/LocalWalk.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/Lottery.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.Lottery",
+   "original_sha256": "1c2e7e5cc268588f694ee4ca44411a0a5d6685a0f027f43e67da317a3cf23bf9",
+   "path": "OAI/Combinatorics/CliqueFree/Lottery.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/Main.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.Main",
+   "original_sha256": "6d5bc17478c824c2f8a4ef87e6618a234d651238c33843ab0fbdf2a7ba6a3745",
+   "path": "OAI/Combinatorics/CliqueFree/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/MaxDegree.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.MaxDegree",
+   "original_sha256": "9ed3feb7783c0aa7cfa680939ca7b04b3e6b2ea71ae57c5ae161d11f5c7ae9fa",
+   "path": "OAI/Combinatorics/CliqueFree/MaxDegree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/Model.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.Model",
+   "original_sha256": "3b5c250c7eb12764ce13c340ae0c0c1841eab51d15b004d54dd353d249a1785a",
+   "path": "OAI/Combinatorics/CliqueFree/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/MultiplierLaw.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.MultiplierLaw",
+   "original_sha256": "f7143666a8f8db0c2a48c85d8abac2eda799889d11197f811e30ae90c6112087",
+   "path": "OAI/Combinatorics/CliqueFree/MultiplierLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/Numerical.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.Numerical",
+   "original_sha256": "69f6cb11e82bed718a7aca87e1a0a4d9eb1fa7691010314caaa18e83d2ee3193",
+   "path": "OAI/Combinatorics/CliqueFree/Numerical.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/Optimizer.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.Optimizer",
+   "original_sha256": "66ae5fbcbd8ad96bdb63c59165c6b7a1b39450241ec7599e76ba45e1f2f890e2",
+   "path": "OAI/Combinatorics/CliqueFree/Optimizer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/OptimizerBounds.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.OptimizerBounds",
+   "original_sha256": "a3f44ae0b7585bfd8c86f00db529172cc306a8c774f3d98a470293102ff509aa",
+   "path": "OAI/Combinatorics/CliqueFree/OptimizerBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/Packing.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.Packing",
+   "original_sha256": "9880d820ca7905c3f5cc12c36430a5c1bb277b6fb6e1a92167987e2d96e1658c",
+   "path": "OAI/Combinatorics/CliqueFree/Packing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/Peeling.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.Peeling",
+   "original_sha256": "871a4969317daa5eca59fbf08ac803e9b6da4e8e958771c6604b11b3c95471b1",
+   "path": "OAI/Combinatorics/CliqueFree/Peeling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/Projection.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.Projection",
+   "original_sha256": "b0c39615a02afa5f22e329e4aedb061ca2362bcd7d2c1efbd74b5981301e0dee",
+   "path": "OAI/Combinatorics/CliqueFree/Projection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/Reach.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.Reach",
+   "original_sha256": "296039d5899235daa644077c8d39bbe5104e714266bf7e4c48cad6015a74330a",
+   "path": "OAI/Combinatorics/CliqueFree/Reach.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/SparseMultipliers.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.SparseMultipliers",
+   "original_sha256": "87f0668469a186a0147fd0f66ab235f6e7b7beab5a39e3955eabb225f87a3f7e",
+   "path": "OAI/Combinatorics/CliqueFree/SparseMultipliers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/Splitting.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.Splitting",
+   "original_sha256": "7ef785188f4f8cb9b05713278a0eeb8dddbd83432fab8f8fddd454379ed94853",
+   "path": "OAI/Combinatorics/CliqueFree/Splitting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/SplittingLoss.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.SplittingLoss",
+   "original_sha256": "9628fadb1de377ceefa16dd1db400f29bce00ca28f73f19bd2d3f9dd9b4b1ab0",
+   "path": "OAI/Combinatorics/CliqueFree/SplittingLoss.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/TriangleBound.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.TriangleBound",
+   "original_sha256": "8d6a7150b2ca94156ec044894e2ba8eba5f1ae25dc6db541c38a8ad152d7c577",
+   "path": "OAI/Combinatorics/CliqueFree/TriangleBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/TriangleState.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.TriangleState",
+   "original_sha256": "46858e735afc6849bce0f0ad58ef3098a36d62e70d4b9f98ceaa5a1eefdf4697",
+   "path": "OAI/Combinatorics/CliqueFree/TriangleState.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/VariationalCross.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.VariationalCross",
+   "original_sha256": "9e99bdcc6edb06ac979b89e281d5d7860fffdcc4699beba058a1597cc5ae74f4",
+   "path": "OAI/Combinatorics/CliqueFree/VariationalCross.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/VertexSplitting.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.VertexSplitting",
+   "original_sha256": "614651feaff709931daaf67a9167a33b7c770403bf108eee63c7c4c78c5d4f0c",
+   "path": "OAI/Combinatorics/CliqueFree/VertexSplitting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/WalkCoupling.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.WalkCoupling",
+   "original_sha256": "1ea99afd8289db4880eb2a5761030e2e5a1dfd3e10c94e1042ac23553bf1dd36",
+   "path": "OAI/Combinatorics/CliqueFree/WalkCoupling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/WalkEntropy.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.WalkEntropy",
+   "original_sha256": "a8d6066acd46ded5b1709321800dfa23315daddca60dde0087ea18324697fbf3",
+   "path": "OAI/Combinatorics/CliqueFree/WalkEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CliqueFree/WeightedGraph.lean"
+   },
+   "module": "OAI.Combinatorics.CliqueFree.WeightedGraph",
+   "original_sha256": "511dabbf4796ce92e2010300817b71d63c3803dda0bd924ff74c4b897e253576",
+   "path": "OAI/Combinatorics/CliqueFree/WeightedGraph.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.CliqueFree.CrossBound",
+  "OAI.Combinatorics.CliqueFree.Deletion",
+  "OAI.Combinatorics.CliqueFree.DisjointCross",
+  "OAI.Combinatorics.CliqueFree.EdgeState",
+  "OAI.Combinatorics.CliqueFree.FiniteCoupling",
+  "OAI.Combinatorics.CliqueFree.FiniteEntropy",
+  "OAI.Combinatorics.CliqueFree.FiniteKernel",
+  "OAI.Combinatorics.CliqueFree.IndependentSet",
+  "OAI.Combinatorics.CliqueFree.LocalWalk",
+  "OAI.Combinatorics.CliqueFree.Lottery",
+  "OAI.Combinatorics.CliqueFree.Main",
+  "OAI.Combinatorics.CliqueFree.MaxDegree",
+  "OAI.Combinatorics.CliqueFree.Model",
+  "OAI.Combinatorics.CliqueFree.MultiplierLaw",
+  "OAI.Combinatorics.CliqueFree.Numerical",
+  "OAI.Combinatorics.CliqueFree.Optimizer",
+  "OAI.Combinatorics.CliqueFree.OptimizerBounds",
+  "OAI.Combinatorics.CliqueFree.Packing",
+  "OAI.Combinatorics.CliqueFree.Peeling",
+  "OAI.Combinatorics.CliqueFree.Projection",
+  "OAI.Combinatorics.CliqueFree.Reach",
+  "OAI.Combinatorics.CliqueFree.SparseMultipliers",
+  "OAI.Combinatorics.CliqueFree.Splitting",
+  "OAI.Combinatorics.CliqueFree.SplittingLoss",
+  "OAI.Combinatorics.CliqueFree.TriangleBound",
+  "OAI.Combinatorics.CliqueFree.TriangleState",
+  "OAI.Combinatorics.CliqueFree.VariationalCross",
+  "OAI.Combinatorics.CliqueFree.VertexSplitting",
+  "OAI.Combinatorics.CliqueFree.WalkCoupling",
+  "OAI.Combinatorics.CliqueFree.WalkEntropy",
+  "OAI.Combinatorics.CliqueFree.WeightedGraph"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/CliqueFreeLog.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Combinatorics.CliqueFree.Main",
+   "name": "OAI.CliqueFreeLog.logarithmic_independence_bound",
+   "statement_sha256": "ebe0cf68be9cc570498ce2a08cf5bbbd04c06609bfc865a5a3c868a24853d48e"
+  }
+ ],
+ "task_id": "oai-clique-free-log",
+ "task_revision": 1,
+ "title": "OpenAI math: Correspondence coloring with a fixed forbidden subgraph: Logarithmic independence bound for clique-free graphs",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

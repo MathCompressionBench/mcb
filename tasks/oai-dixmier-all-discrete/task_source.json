@@ -1,0 +1,811 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 299369244
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.DixmierAllDiscrete",
+  "challenge_sha256": "b87f008ef0a48e93cd3946df5729929fff873aa11d5522b1eef05653cf1e773e",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/DixmierAllDiscrete.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.DixmierAllDiscrete",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ],
+   "solution_module": "OAI.Analysis.Unitarizability.AllDiscrete",
+   "theorem_names": [
+    "OAI.Dixmier.current_main_theorem"
+   ]
+  },
+  "config_sha256": "8072f74263ac840a87fd90ce9756c7d308ce67af731bae36ef577f0a16156aa8",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/DixmierAllDiscrete.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.Dixmier.current_main_theorem": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/AllDiscrete.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.AllDiscrete",
+   "original_sha256": "ac9a1a1473614df13753cad5a9ca26d2a7a814ba01f73d5049a9c5d6c42569c5",
+   "path": "OAI/Analysis/Unitarizability/AllDiscrete.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/Amenable.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.Amenable",
+   "original_sha256": "80957c67a488228bdf5714615d84e75a47f05f0b2d4b0a406a429445581ad916",
+   "path": "OAI/Analysis/Unitarizability/Amenable.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/Average.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.Average",
+   "original_sha256": "acf2195b6f8f3fe571c224203305370c6b2320b018932646f4c9ac0df350cca2",
+   "path": "OAI/Analysis/Unitarizability/Average.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/AveragedForm.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.AveragedForm",
+   "original_sha256": "5e2a7bc5bb52e5395a89f56bb9e1cac6118f4c74f8cc998afad8c8c34c77367b",
+   "path": "OAI/Analysis/Unitarizability/AveragedForm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/Cocycle.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.Cocycle",
+   "original_sha256": "b33bc52da9decec5930dc7e9b99f4fab334743a23a77f20d2b806436719b6038",
+   "path": "OAI/Analysis/Unitarizability/Cocycle.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/CompactMean.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.CompactMean",
+   "original_sha256": "96d6c9e211c323596fdf6ccd87519314569ef883ad0aa3d1f2b81c7b5156ebc9",
+   "path": "OAI/Analysis/Unitarizability/CompactMean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/ComplexFrames.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.ComplexFrames",
+   "original_sha256": "21da93f4a16b2ca1907de6ece933f2ef2dba5b49f4a47d85f486943d28a56b50",
+   "path": "OAI/Analysis/Unitarizability/ComplexFrames.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/Contracting.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.Contracting",
+   "original_sha256": "ff5cae062983f97b6b59c6ea2bba019d86b9301db809c29bb5e8ee0da53f2e5c",
+   "path": "OAI/Analysis/Unitarizability/Contracting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/DiscreteModel.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.DiscreteModel",
+   "original_sha256": "cd58b69444ce029776cab1a8619b1c61b8615b35c90ce8a18ce7f57dc1dca237",
+   "path": "OAI/Analysis/Unitarizability/DiscreteModel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/EndpointAssignment.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.EndpointAssignment",
+   "original_sha256": "dba4a2add30c325d8ee1ecef8a1a89b9ccb2a53f297eead56e5ca9274e951e6b",
+   "path": "OAI/Analysis/Unitarizability/EndpointAssignment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/FiniteSigns.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.FiniteSigns",
+   "original_sha256": "92daeebbc6fc23e979b66003a3eeadd59b20b5a089a4ef1fad4674adb4a4ceef",
+   "path": "OAI/Analysis/Unitarizability/FiniteSigns.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/FiniteSynthesis.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.FiniteSynthesis",
+   "original_sha256": "1838b59873a7d0e870554c4b4c2b623ca861417e54cc27232014c292475e5332",
+   "path": "OAI/Analysis/Unitarizability/FiniteSynthesis.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/FrameParameters.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.FrameParameters",
+   "original_sha256": "4d59339fabd43da105a4de2ed89c678168c4604b09ed538f68fdf8ed939dee80",
+   "path": "OAI/Analysis/Unitarizability/FrameParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/FrameSelection.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.FrameSelection",
+   "original_sha256": "728819c3c20b14e5dc1f2596ba86ca6e3699541d2f99481b017f7296dadcb3e3",
+   "path": "OAI/Analysis/Unitarizability/FrameSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/Frames.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.Frames",
+   "original_sha256": "6393d943979bc3ba760dc047027f1434311067b464fe24c0b9ae44d4e720716f",
+   "path": "OAI/Analysis/Unitarizability/Frames.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/HilbertSum.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.HilbertSum",
+   "original_sha256": "b8e6d46bee1c0f14cb4ea22a00a02956849226dd62725253fdb5b1171b00bc09",
+   "path": "OAI/Analysis/Unitarizability/HilbertSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/InvariantProjection.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.InvariantProjection",
+   "original_sha256": "c959cb2895b8b02fdc1a0115993e40ef19551fcbbc05eca810cff085f088fad6",
+   "path": "OAI/Analysis/Unitarizability/InvariantProjection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/KernelEnergy.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.KernelEnergy",
+   "original_sha256": "83491f73c4270b65f1d7bb4c3b8bbaff5cc221bd160d3d5e1719f8eb1783adf8",
+   "path": "OAI/Analysis/Unitarizability/KernelEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/KernelObstruction.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.KernelObstruction",
+   "original_sha256": "3dbcd4e0640a9bff484064b8e7ee33f69eeca809f4cb37e4e8e186eb1a25f183",
+   "path": "OAI/Analysis/Unitarizability/KernelObstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/LocalBounds.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.LocalBounds",
+   "original_sha256": "18ff223814f063ce3eadaa221a8828d6831a4a291871ffc8f7059ce94fecdee0",
+   "path": "OAI/Analysis/Unitarizability/LocalBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/Main.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.Main",
+   "original_sha256": "93773922266ec224d96e460fbc6c16468b3d1bf4cf4fdd6912d079471c7b11b2",
+   "path": "OAI/Analysis/Unitarizability/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/MaskAlgebra.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.MaskAlgebra",
+   "original_sha256": "8f0c42338dc33e283511f1532054db5deedf28292318ddad6e0754e293fd287b",
+   "path": "OAI/Analysis/Unitarizability/MaskAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/Masked.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.Masked",
+   "original_sha256": "7eb185f9c87b632da1e9783dee134d60027e00eb2a484d69961785b7f93b09f8",
+   "path": "OAI/Analysis/Unitarizability/Masked.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/MeanBounds.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.MeanBounds",
+   "original_sha256": "e3f4afcf1772aabb5187494ccbd887afd2cdd037555fb905112e967f61fe0558",
+   "path": "OAI/Analysis/Unitarizability/MeanBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/Model.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.Model",
+   "original_sha256": "82a16fdf0b0df5c4e1d86770a1c2b4899a2aa28c7ca0cfa7cec193d3fcfd53b3",
+   "path": "OAI/Analysis/Unitarizability/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/NearOne.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.NearOne",
+   "original_sha256": "c22d85877a3056a45e49092d4ef9a16018abd9894761d67cc25777d595269457",
+   "path": "OAI/Analysis/Unitarizability/NearOne.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/NetOperator.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.NetOperator",
+   "original_sha256": "e0d18b1290f6b380d1467ec66f4d60ef1c069e2ef1311186b067ab39ed1971a9",
+   "path": "OAI/Analysis/Unitarizability/NetOperator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/Parameters.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.Parameters",
+   "original_sha256": "8613229a6e35e596003de9d783e5704a1846ef8e0e5c3fcf6b539c7145ecfca7",
+   "path": "OAI/Analysis/Unitarizability/Parameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/Regular.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.Regular",
+   "original_sha256": "87613b0719003d187da4550de3a4f51f5f979893fd3308df35cfea4846e9712d",
+   "path": "OAI/Analysis/Unitarizability/Regular.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/ScaledObstruction.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.ScaledObstruction",
+   "original_sha256": "3a33bc337388872d9ab7ab68dd981178de90512e376a3e9b24d0aaa79e4c9712",
+   "path": "OAI/Analysis/Unitarizability/ScaledObstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/SignMatrix.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.SignMatrix",
+   "original_sha256": "95cde70369a4d82397f53eb58225f300582ce2f0308cacfaae45545e73840883",
+   "path": "OAI/Analysis/Unitarizability/SignMatrix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/SparseMask.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.SparseMask",
+   "original_sha256": "fab5d4ba1388d0bf72377c801f64b87bf0f83e4ec8641e45704a3821124c6679",
+   "path": "OAI/Analysis/Unitarizability/SparseMask.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/SparseSplitting.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.SparseSplitting",
+   "original_sha256": "b832ddb6f301cd16b9724d2f8c361f49efeb380c0adca83adae649b63967a127",
+   "path": "OAI/Analysis/Unitarizability/SparseSplitting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/SphereNet.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.SphereNet",
+   "original_sha256": "ac76f81901c8ec7e21ac2de6d54ea3c6d7460d587c60e294a93bf88239cf77a6",
+   "path": "OAI/Analysis/Unitarizability/SphereNet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/SumObstruction.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.SumObstruction",
+   "original_sha256": "f0b2ee505d139a031b1268cb709b46a393154fc629ae8a290406b6b7350d3bee",
+   "path": "OAI/Analysis/Unitarizability/SumObstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/Triangular.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.Triangular",
+   "original_sha256": "929d6e2ebd831f1b53ade3a756ed5ed2ca25672aeb24c322b634792cbf5eacc3",
+   "path": "OAI/Analysis/Unitarizability/Triangular.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/Unitarizer.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.Unitarizer",
+   "original_sha256": "f293b441a8aab858799eeeb9c5a597d28277992846a580e885a3330294c8df77",
+   "path": "OAI/Analysis/Unitarizability/Unitarizer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/UniverseTransport.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.UniverseTransport",
+   "original_sha256": "4b6210949afd9aa76ce526fd201966f2b6b789defcbb370e2edde77796297da3",
+   "path": "OAI/Analysis/Unitarizability/UniverseTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Unitarizability/VectorMean.lean"
+   },
+   "module": "OAI.Analysis.Unitarizability.VectorMean",
+   "original_sha256": "c0065aad5b3fb6c387a7eb916fb473268ea35a307d6e280135dd128aa3331a37",
+   "path": "OAI/Analysis/Unitarizability/VectorMean.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.Unitarizability.AllDiscrete",
+  "OAI.Analysis.Unitarizability.Amenable",
+  "OAI.Analysis.Unitarizability.Average",
+  "OAI.Analysis.Unitarizability.AveragedForm",
+  "OAI.Analysis.Unitarizability.Cocycle",
+  "OAI.Analysis.Unitarizability.CompactMean",
+  "OAI.Analysis.Unitarizability.ComplexFrames",
+  "OAI.Analysis.Unitarizability.Contracting",
+  "OAI.Analysis.Unitarizability.DiscreteModel",
+  "OAI.Analysis.Unitarizability.EndpointAssignment",
+  "OAI.Analysis.Unitarizability.FiniteSigns",
+  "OAI.Analysis.Unitarizability.FiniteSynthesis",
+  "OAI.Analysis.Unitarizability.FrameParameters",
+  "OAI.Analysis.Unitarizability.FrameSelection",
+  "OAI.Analysis.Unitarizability.Frames",
+  "OAI.Analysis.Unitarizability.HilbertSum",
+  "OAI.Analysis.Unitarizability.InvariantProjection",
+  "OAI.Analysis.Unitarizability.KernelEnergy",
+  "OAI.Analysis.Unitarizability.KernelObstruction",
+  "OAI.Analysis.Unitarizability.LocalBounds",
+  "OAI.Analysis.Unitarizability.Main",
+  "OAI.Analysis.Unitarizability.MaskAlgebra",
+  "OAI.Analysis.Unitarizability.Masked",
+  "OAI.Analysis.Unitarizability.MeanBounds",
+  "OAI.Analysis.Unitarizability.Model",
+  "OAI.Analysis.Unitarizability.NearOne",
+  "OAI.Analysis.Unitarizability.NetOperator",
+  "OAI.Analysis.Unitarizability.Parameters",
+  "OAI.Analysis.Unitarizability.Regular",
+  "OAI.Analysis.Unitarizability.ScaledObstruction",
+  "OAI.Analysis.Unitarizability.SignMatrix",
+  "OAI.Analysis.Unitarizability.SparseMask",
+  "OAI.Analysis.Unitarizability.SparseSplitting",
+  "OAI.Analysis.Unitarizability.SphereNet",
+  "OAI.Analysis.Unitarizability.SumObstruction",
+  "OAI.Analysis.Unitarizability.Triangular",
+  "OAI.Analysis.Unitarizability.Unitarizer",
+  "OAI.Analysis.Unitarizability.UniverseTransport",
+  "OAI.Analysis.Unitarizability.VectorMean"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Classical.choice",
+   "Quot.sound"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/DixmierAllDiscrete.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.Unitarizability.AllDiscrete",
+   "name": "OAI.Dixmier.current_main_theorem",
+   "statement_sha256": "249778f0c28be0bf0c8192b12304f0abbc67c974da79a755c6fe7028ea104e7c"
+  }
+ ],
+ "task_id": "oai-dixmier-all-discrete",
+ "task_revision": 1,
+ "title": "OpenAI math: Amenability, unitarizability, and strong Ulam stability: Unitarizability for all discrete groups",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

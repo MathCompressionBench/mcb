@@ -1,0 +1,801 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 176104688
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.Brennan",
+  "challenge_sha256": "07ad707efc006317e91d7357ff390308e2c50402c636d0ffba2e87b88ffe570d",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/Brennan.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.Brennan",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.IntegralMeans.Main",
+   "theorem_names": [
+    "OAI.Brennan.main_theorem"
+   ]
+  },
+  "config_sha256": "1973310cc46409cf180cd7811611407a727175932ce26ea6bc9b6dcb4dd6b553",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/Brennan.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.Brennan.main_theorem": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/AffineLaw.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.AffineLaw",
+   "original_sha256": "44bb449e4ca969c5397249b266b109fb5de2c4e8af70808891568fe2ef6088d8",
+   "path": "OAI/Analysis/IntegralMeans/AffineLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/AreaTransport.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.AreaTransport",
+   "original_sha256": "ba2baf3d8ea140f55da83ae8008ae6d1662a2ea9120279f4a51aad25fd96d5db",
+   "path": "OAI/Analysis/IntegralMeans/AreaTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/BorelPairing.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.BorelPairing",
+   "original_sha256": "260ab3588d19b141f62567e7fa6dbd5a6927c1856a8d9a09d8357902de6e5936",
+   "path": "OAI/Analysis/IntegralMeans/BorelPairing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/BoundaryEscape.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.BoundaryEscape",
+   "original_sha256": "35a3396ec2db6677e28c5880d04dae2b4c1a3870ac4f4d83010e8e09a1060348",
+   "path": "OAI/Analysis/IntegralMeans/BoundaryEscape.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/BoundaryTail.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.BoundaryTail",
+   "original_sha256": "14fb064ea5796143b3769f549250a2848b49763e4e799e17cf0ac2fbef6f5ab5",
+   "path": "OAI/Analysis/IntegralMeans/BoundaryTail.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/CircleBounds.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.CircleBounds",
+   "original_sha256": "6f2d88675e5fca20dfe1f5b2d04297fe53a0c9e140ae88ceb6cc6c27f0eb2ad4",
+   "path": "OAI/Analysis/IntegralMeans/CircleBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/CompactClass.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.CompactClass",
+   "original_sha256": "2ad70c2f4581b0cfdd60780b6e9cf45958ba0b380a0b318a81d3a81a1543e863",
+   "path": "OAI/Analysis/IntegralMeans/CompactClass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/CriticalCount.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.CriticalCount",
+   "original_sha256": "10fb1a84aba4d761703751ea41c7bbae0f17f5d310845c364a5d53dc60808a1f",
+   "path": "OAI/Analysis/IntegralMeans/CriticalCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/CriticalMap.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.CriticalMap",
+   "original_sha256": "b855ee8636768f27dd332923e867acde0a04b67eea78b6f02b9556580a007159",
+   "path": "OAI/Analysis/IntegralMeans/CriticalMap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/CriticalPoint.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.CriticalPoint",
+   "original_sha256": "c10117514d4441664dbbb434976b75534d5229696da7591a5a138b8c9c931f18",
+   "path": "OAI/Analysis/IntegralMeans/CriticalPoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/Degree.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.Degree",
+   "original_sha256": "0c379d44b89b1280040e5796e24bed0f63dc8bbba5d6669ac59ad806439f3cf0",
+   "path": "OAI/Analysis/IntegralMeans/Degree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/Distortion.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.Distortion",
+   "original_sha256": "63e839852c07bb13804294d17a4b0ca6f9cbd7d692a3586f3d96a215debc5f59",
+   "path": "OAI/Analysis/IntegralMeans/Distortion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/DomainArea.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.DomainArea",
+   "original_sha256": "fcef16a4a322382d895af85fa1bdce24cf76558f29b5f9945b1571091045ad9f",
+   "path": "OAI/Analysis/IntegralMeans/DomainArea.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/Eigenmeasure.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.Eigenmeasure",
+   "original_sha256": "07584cbd3da21d9b5adda819b4288c9798c9ae49d4662c8cdfa11bace2d91b84",
+   "path": "OAI/Analysis/IntegralMeans/Eigenmeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/ExpectedDensity.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.ExpectedDensity",
+   "original_sha256": "a8abd7d41a70e0ece93de6fed175a1639aac0b26de584ba5bd49b3638b5ae7e0",
+   "path": "OAI/Analysis/IntegralMeans/ExpectedDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/ExpectedTransport.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.ExpectedTransport",
+   "original_sha256": "7e5b1241cd32ef282c1b9412d51dcc20920226c1d05c8d48ee1be6a84587043e",
+   "path": "OAI/Analysis/IntegralMeans/ExpectedTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/GoodPairs.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.GoodPairs",
+   "original_sha256": "71726a00e76af34ea25a6a481e55d28a3267f456f8ad99d9613da3aaa2c28248",
+   "path": "OAI/Analysis/IntegralMeans/GoodPairs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/HalfPlane.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.HalfPlane",
+   "original_sha256": "265a6317d9d0f72510f13203bd5ccd3c4504191803438a4ee4a14b892a66b465",
+   "path": "OAI/Analysis/IntegralMeans/HalfPlane.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/InverseDensity.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.InverseDensity",
+   "original_sha256": "4129a763bf46fc0a69affd225c143aece471a7ec59105e8bf4d5768557a7ea4b",
+   "path": "OAI/Analysis/IntegralMeans/InverseDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/Koebe.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.Koebe",
+   "original_sha256": "f4c82478943d1b6779a53181cfb21310afa453fc7ac0fa890979a33c8205091c",
+   "path": "OAI/Analysis/IntegralMeans/Koebe.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/LevelCurve.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.LevelCurve",
+   "original_sha256": "0d081e1627e941c7dd610115ae70b46d0fcd756dc163a174633f34860932b42d",
+   "path": "OAI/Analysis/IntegralMeans/LevelCurve.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/LevelIndex.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.LevelIndex",
+   "original_sha256": "988fdf51e33589404c01fe2dc52acbfbd06616216729aa7bad7c97d7221aa80c",
+   "path": "OAI/Analysis/IntegralMeans/LevelIndex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/LogIncrement.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.LogIncrement",
+   "original_sha256": "1cf1baa89b1495fc80e971b09ed62483308774aa24ecc5b7e749837a674f201f",
+   "path": "OAI/Analysis/IntegralMeans/LogIncrement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/Main.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.Main",
+   "original_sha256": "da8ecd819e078b7d0c1c6099343073acd9be31d6075b9d44f23cb65b43c87c7d",
+   "path": "OAI/Analysis/IntegralMeans/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/Model.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.Model",
+   "original_sha256": "a1e3710129d23c307ba887296acaef560c96e22f968ce936aa18614c7f7d1869",
+   "path": "OAI/Analysis/IntegralMeans/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/Moments.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.Moments",
+   "original_sha256": "26d27812a7e45d592190e39589d2c92dbad0c6b0c1ca4cc5ce222834424b2aef",
+   "path": "OAI/Analysis/IntegralMeans/Moments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/NegativeArea.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.NegativeArea",
+   "original_sha256": "9820ceb99aa677745b2355a24c400d69c8742d782a9d70661775a5a98c2f047f",
+   "path": "OAI/Analysis/IntegralMeans/NegativeArea.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/PositiveArea.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.PositiveArea",
+   "original_sha256": "92c9a9c8544513c745d48b506f9dcf3076fd489b4cc3db3b1417e97b5220ebad",
+   "path": "OAI/Analysis/IntegralMeans/PositiveArea.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/RankPairing.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.RankPairing",
+   "original_sha256": "1d3ae36fac071307c245eb1aa5fce2c027c2ad2635668f1629bfefcabcd59f54",
+   "path": "OAI/Analysis/IntegralMeans/RankPairing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/SmoothMeans.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.SmoothMeans",
+   "original_sha256": "9dc486e84fa3bf03ea3333277ad99990cbd1dd59921e9df0523ae13d0389b001",
+   "path": "OAI/Analysis/IntegralMeans/SmoothMeans.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/Spectrum.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.Spectrum",
+   "original_sha256": "bd4b5e9b14e39bff043a3c76b3d20b7f35ec20843de98075d56944cc04bb6786",
+   "path": "OAI/Analysis/IntegralMeans/Spectrum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/TraceBounds.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.TraceBounds",
+   "original_sha256": "158a0e01584c1d757583f5b667e8544e042ae5dbc22871b12afe097b83902427",
+   "path": "OAI/Analysis/IntegralMeans/TraceBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/TraceIdentity.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.TraceIdentity",
+   "original_sha256": "ede1b87fa95e089720ebfcbbe9997b80fceaa1f36b97daa0b451530fb9614c0f",
+   "path": "OAI/Analysis/IntegralMeans/TraceIdentity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/TransferOperator.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.TransferOperator",
+   "original_sha256": "441609ea9249b755fae8943127a3710abe8d1135d4b0d92418516d1c41235c95",
+   "path": "OAI/Analysis/IntegralMeans/TransferOperator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/TransportBoxes.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.TransportBoxes",
+   "original_sha256": "87e0845bbcd54d8f063ebf6f4494385210bc72b26599a0f4635495b495b30a68",
+   "path": "OAI/Analysis/IntegralMeans/TransportBoxes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/Turning.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.Turning",
+   "original_sha256": "97de2a08368ead25c3de1eb50225507376b8f3712a030009651570ac3b48b22a",
+   "path": "OAI/Analysis/IntegralMeans/Turning.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/UnivalentArea.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.UnivalentArea",
+   "original_sha256": "5cdfd70fac958f77330301ead1c4b13a53824bbf8524868bb42c60b6e597e2fa",
+   "path": "OAI/Analysis/IntegralMeans/UnivalentArea.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/IntegralMeans/Winding.lean"
+   },
+   "module": "OAI.Analysis.IntegralMeans.Winding",
+   "original_sha256": "b729bb42878824450070fb7e27556b572c7dbf4029674049873166a37db69952",
+   "path": "OAI/Analysis/IntegralMeans/Winding.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.IntegralMeans.AffineLaw",
+  "OAI.Analysis.IntegralMeans.AreaTransport",
+  "OAI.Analysis.IntegralMeans.BorelPairing",
+  "OAI.Analysis.IntegralMeans.BoundaryEscape",
+  "OAI.Analysis.IntegralMeans.BoundaryTail",
+  "OAI.Analysis.IntegralMeans.CircleBounds",
+  "OAI.Analysis.IntegralMeans.CompactClass",
+  "OAI.Analysis.IntegralMeans.CriticalCount",
+  "OAI.Analysis.IntegralMeans.CriticalMap",
+  "OAI.Analysis.IntegralMeans.CriticalPoint",
+  "OAI.Analysis.IntegralMeans.Degree",
+  "OAI.Analysis.IntegralMeans.Distortion",
+  "OAI.Analysis.IntegralMeans.DomainArea",
+  "OAI.Analysis.IntegralMeans.Eigenmeasure",
+  "OAI.Analysis.IntegralMeans.ExpectedDensity",
+  "OAI.Analysis.IntegralMeans.ExpectedTransport",
+  "OAI.Analysis.IntegralMeans.GoodPairs",
+  "OAI.Analysis.IntegralMeans.HalfPlane",
+  "OAI.Analysis.IntegralMeans.InverseDensity",
+  "OAI.Analysis.IntegralMeans.Koebe",
+  "OAI.Analysis.IntegralMeans.LevelCurve",
+  "OAI.Analysis.IntegralMeans.LevelIndex",
+  "OAI.Analysis.IntegralMeans.LogIncrement",
+  "OAI.Analysis.IntegralMeans.Main",
+  "OAI.Analysis.IntegralMeans.Model",
+  "OAI.Analysis.IntegralMeans.Moments",
+  "OAI.Analysis.IntegralMeans.NegativeArea",
+  "OAI.Analysis.IntegralMeans.PositiveArea",
+  "OAI.Analysis.IntegralMeans.RankPairing",
+  "OAI.Analysis.IntegralMeans.SmoothMeans",
+  "OAI.Analysis.IntegralMeans.Spectrum",
+  "OAI.Analysis.IntegralMeans.TraceBounds",
+  "OAI.Analysis.IntegralMeans.TraceIdentity",
+  "OAI.Analysis.IntegralMeans.TransferOperator",
+  "OAI.Analysis.IntegralMeans.TransportBoxes",
+  "OAI.Analysis.IntegralMeans.Turning",
+  "OAI.Analysis.IntegralMeans.UnivalentArea",
+  "OAI.Analysis.IntegralMeans.Winding"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/Brennan.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.IntegralMeans.Main",
+   "name": "OAI.Brennan.main_theorem",
+   "statement_sha256": "34e067568faefb6011c56e45d5faf38deeadcf2f5ceedad316650746f1b8fe8b"
+  }
+ ],
+ "task_id": "oai-brennan",
+ "task_revision": 1,
+ "title": "OpenAI math: Brennan's conjecture and the integral-means spectrum: Brennan and inverse-square integral-means bounds",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

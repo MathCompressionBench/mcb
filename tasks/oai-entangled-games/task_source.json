@@ -1,0 +1,721 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 46224617
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.EntangledGames",
+  "challenge_sha256": "b3957e18f10af74244e7a2fc1b6cf12b14c9dc4b036f7ffe2ef2b2810e6697c0",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/EntangledGames.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.EntangledGames",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Probability.EntangledGames.Main",
+   "theorem_names": [
+    "OAI.ThresholdParallelRepetition.threshold_parallel_repetition"
+   ]
+  },
+  "config_sha256": "cb52a10bf682ae1e2bb84d645be13e4c18c0539b8e0b847b565a217e06d51054",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/EntangledGames.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.ThresholdParallelRepetition.threshold_parallel_repetition": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/Basic.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.Basic",
+   "original_sha256": "0c15c7987fc01d0ea5d73b1797617bfd932adf854d1218cfa8fd7ad9bbf2eaf1",
+   "path": "OAI/Probability/EntangledGames/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/BlockStates.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.BlockStates",
+   "original_sha256": "15f624c2b9dfddb2cca6e0a99f24ef4d8f5743e84c9cdb1196929649e6ae4a72",
+   "path": "OAI/Probability/EntangledGames/BlockStates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/CoherentFilters.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.CoherentFilters",
+   "original_sha256": "683393bc84b65659740c0f2da691d78f2b90f8d60963f7ff75e82be265a9e1b8",
+   "path": "OAI/Probability/EntangledGames/CoherentFilters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/ConditionedStep.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.ConditionedStep",
+   "original_sha256": "1665e9d2892f0e5dc70cdc32e5307de295f2e3d7dc887d317c257ab877cf5def",
+   "path": "OAI/Probability/EntangledGames/ConditionedStep.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/CorrelatedSampling.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.CorrelatedSampling",
+   "original_sha256": "dfb54a65f5c01b2f300a3be126c473cfd949db491ff2822529e82a816fb5d626",
+   "path": "OAI/Probability/EntangledGames/CorrelatedSampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/EffectExposure.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.EffectExposure",
+   "original_sha256": "4457cc1dd55c40e661622028b3a0d50b5079883625c171731139aa8fa558a4ae",
+   "path": "OAI/Probability/EntangledGames/EffectExposure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/ExponentialBounds.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.ExponentialBounds",
+   "original_sha256": "d24cbc01184e33a3d5331d66ade18cb55851b53eeaae4bec6441ab58600f402c",
+   "path": "OAI/Probability/EntangledGames/ExponentialBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/ExposureChain.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.ExposureChain",
+   "original_sha256": "7caf151f70743e2db2aa71f362f120b44807cdcb23f3a89394ebc75c10c23e66",
+   "path": "OAI/Probability/EntangledGames/ExposureChain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/ExposureData.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.ExposureData",
+   "original_sha256": "31f49af5719d4d48ae41f9dd13c1750981ce8da1ae73a13d14a8c580f191c0dd",
+   "path": "OAI/Probability/EntangledGames/ExposureData.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/ExposureErrors.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.ExposureErrors",
+   "original_sha256": "0d1eb9df1c033f5dbf9790df6439e63ef86eb758026e188b2fe6507307631329",
+   "path": "OAI/Probability/EntangledGames/ExposureErrors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/FiniteProbability.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.FiniteProbability",
+   "original_sha256": "60e8369a5f126b69688f5d1d154bc6454e9a9e6727d16048effc8ad5ac06aa73",
+   "path": "OAI/Probability/EntangledGames/FiniteProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/FreshStates.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.FreshStates",
+   "original_sha256": "e74305906144e13b103f9faa9d728f618da3a6350374408a04ab0c2c0664b498",
+   "path": "OAI/Probability/EntangledGames/FreshStates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/HilbertSchmidt.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.HilbertSchmidt",
+   "original_sha256": "da23e8a3ab53535879be00acc894e78b85184bf6067cc6182d836ca159987a9b",
+   "path": "OAI/Probability/EntangledGames/HilbertSchmidt.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/Main.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.Main",
+   "original_sha256": "b6772bda0a22b9413609e23a487ed8bd990d92d899fa46a78f334cc0cfde728e",
+   "path": "OAI/Probability/EntangledGames/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/MeasurementTransport.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.MeasurementTransport",
+   "original_sha256": "7fc66470c1aaa2fe0509aec1da49e2dd66a385b55f71966e81e91dd4c1e29b35",
+   "path": "OAI/Probability/EntangledGames/MeasurementTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/MixedExposure.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.MixedExposure",
+   "original_sha256": "a80be48152b31a2d84944e6350f6b66635008fd41764a441183466963e7c9398",
+   "path": "OAI/Probability/EntangledGames/MixedExposure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/Model.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.Model",
+   "original_sha256": "cad96dcc3811eba6d3539540ce7bf933f417e3a472c1400521fc7e1b624dfee2",
+   "path": "OAI/Probability/EntangledGames/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/Purification.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.Purification",
+   "original_sha256": "d93bd4e7851e65f3972157f3f85d3f95ce4e570f0d182beff8d37784ee213432",
+   "path": "OAI/Probability/EntangledGames/Purification.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/Refinement.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.Refinement",
+   "original_sha256": "56c897413b170166ea24ed62d55388e3bf417b700204fa655fc05eeb5b7ab3f4",
+   "path": "OAI/Probability/EntangledGames/Refinement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/RelativeEntropy.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.RelativeEntropy",
+   "original_sha256": "21d2963c2a8ec953af2f086c1359e1839880fdda37a28364540608049f046dd2",
+   "path": "OAI/Probability/EntangledGames/RelativeEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/RepeatedModel.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.RepeatedModel",
+   "original_sha256": "bb593cdb7a47a68bd27e67ecf35a4c6d32e05a8b7bfea207eded752e014cd35f",
+   "path": "OAI/Probability/EntangledGames/RepeatedModel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/Resampling.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.Resampling",
+   "original_sha256": "2fe6a4340b553fc90a956f8d47994bae647d9367edffc85dd12e375825c15694",
+   "path": "OAI/Probability/EntangledGames/Resampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/Resolvent.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.Resolvent",
+   "original_sha256": "47f56a4c348fac1b2a0126c28f647cf92a17a83cdd73d32a5201b0ad8b7345d3",
+   "path": "OAI/Probability/EntangledGames/Resolvent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/Rounding.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.Rounding",
+   "original_sha256": "c49bf21602795b51f0216fe1c3f116cef1409e8bedb42911b454f38699889fbc",
+   "path": "OAI/Probability/EntangledGames/Rounding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/SamplingStrategy.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.SamplingStrategy",
+   "original_sha256": "6aa3736809cb3552206780b1dc4caeda9df13e97417c54ce1784a6f1c42a8be5",
+   "path": "OAI/Probability/EntangledGames/SamplingStrategy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/SpectralBins.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.SpectralBins",
+   "original_sha256": "e0e01b1f60277cbd7f6b1e40cdcd834f5aaee2174784d4d6be81f125e91c7a7e",
+   "path": "OAI/Probability/EntangledGames/SpectralBins.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/SpectralEntropy.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.SpectralEntropy",
+   "original_sha256": "67e9f04d8f941fb58a4b9fc55ef0ea441944d4a530ca51f209e6b3c270b0ba95",
+   "path": "OAI/Probability/EntangledGames/SpectralEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/StrategyBridge.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.StrategyBridge",
+   "original_sha256": "77a0c0d6e23c2b7241303b863d200a42a28687bed638ac6d3538b2ec5befaafd",
+   "path": "OAI/Probability/EntangledGames/StrategyBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/TestExtraction.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.TestExtraction",
+   "original_sha256": "4cf8b813ed2629a44fa82a64c1b111e5cc188bb7802b3a8530d035c2d388e8b1",
+   "path": "OAI/Probability/EntangledGames/TestExtraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/EntangledGames/TestMoments.lean"
+   },
+   "module": "OAI.Probability.EntangledGames.TestMoments",
+   "original_sha256": "9e7a2913133f204eb38850f63fc5a33ec9ddb87997e3c3852172a47c6c280e54",
+   "path": "OAI/Probability/EntangledGames/TestMoments.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Probability.EntangledGames.Basic",
+  "OAI.Probability.EntangledGames.BlockStates",
+  "OAI.Probability.EntangledGames.CoherentFilters",
+  "OAI.Probability.EntangledGames.ConditionedStep",
+  "OAI.Probability.EntangledGames.CorrelatedSampling",
+  "OAI.Probability.EntangledGames.EffectExposure",
+  "OAI.Probability.EntangledGames.ExponentialBounds",
+  "OAI.Probability.EntangledGames.ExposureChain",
+  "OAI.Probability.EntangledGames.ExposureData",
+  "OAI.Probability.EntangledGames.ExposureErrors",
+  "OAI.Probability.EntangledGames.FiniteProbability",
+  "OAI.Probability.EntangledGames.FreshStates",
+  "OAI.Probability.EntangledGames.HilbertSchmidt",
+  "OAI.Probability.EntangledGames.Main",
+  "OAI.Probability.EntangledGames.MeasurementTransport",
+  "OAI.Probability.EntangledGames.MixedExposure",
+  "OAI.Probability.EntangledGames.Model",
+  "OAI.Probability.EntangledGames.Purification",
+  "OAI.Probability.EntangledGames.Refinement",
+  "OAI.Probability.EntangledGames.RelativeEntropy",
+  "OAI.Probability.EntangledGames.RepeatedModel",
+  "OAI.Probability.EntangledGames.Resampling",
+  "OAI.Probability.EntangledGames.Resolvent",
+  "OAI.Probability.EntangledGames.Rounding",
+  "OAI.Probability.EntangledGames.SamplingStrategy",
+  "OAI.Probability.EntangledGames.SpectralBins",
+  "OAI.Probability.EntangledGames.SpectralEntropy",
+  "OAI.Probability.EntangledGames.StrategyBridge",
+  "OAI.Probability.EntangledGames.TestExtraction",
+  "OAI.Probability.EntangledGames.TestMoments"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/EntangledGames.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Probability.EntangledGames.Main",
+   "name": "OAI.ThresholdParallelRepetition.threshold_parallel_repetition",
+   "statement_sha256": "61b788f629856b70ff37d4ad828a1af3d045afd3abb11bd76a85a25618223d70"
+  }
+ ],
+ "task_id": "oai-entangled-games",
+ "task_revision": 1,
+ "title": "OpenAI math: Threshold repetition for entangled games: Threshold parallel repetition for entangled games",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

@@ -1,0 +1,711 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 379147329
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.SteinitzBergstrom",
+  "challenge_sha256": "c36334eff43ee1dc46d565c80a4a537fea67951e727ab7b88b5c64fca0dfe63d",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SteinitzBergstrom.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.SteinitzBergstrom",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.Steinitz.Main",
+   "theorem_names": [
+    "OAI.EuclideanSteinitzBergstrom.main"
+   ]
+  },
+  "config_sha256": "a1ddb4bf687734bb38468666b4b1b8d3194d974614786e85cfc5b4aa77532195",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SteinitzBergstrom.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.EuclideanSteinitzBergstrom.main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/Adaptive.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.Adaptive",
+   "original_sha256": "f2965ac84b2576a27131b9395b1dad7ae741bca64cf132749282e480adbc7831",
+   "path": "OAI/Analysis/Steinitz/Adaptive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/Chaining.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.Chaining",
+   "original_sha256": "45ff58da2b7f13ac907fecb56f6e3ffec8724391784ece340ef1e8bcdef4d16c",
+   "path": "OAI/Analysis/Steinitz/Chaining.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/Coefficients.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.Coefficients",
+   "original_sha256": "de9f001244af86e539df0b2b6f19d07ede551ca79354964f5d961d353e052d05",
+   "path": "OAI/Analysis/Steinitz/Coefficients.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/Correlation.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.Correlation",
+   "original_sha256": "1f10ead7152fd87aaa006d65831a004b3e3556ab5babed59577dcda2389b5cfb",
+   "path": "OAI/Analysis/Steinitz/Correlation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/Energy.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.Energy",
+   "original_sha256": "707bafa43cdc70752423e92584fcfb3874f1837e7a949eeda3fd934d4ac0816c",
+   "path": "OAI/Analysis/Steinitz/Energy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/Filter.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.Filter",
+   "original_sha256": "f7a5721484fb958b662af96714f02f8f50ee0ffb3912d4eef8c1e1c76c7d1dc0",
+   "path": "OAI/Analysis/Steinitz/Filter.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/FilterMoments.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.FilterMoments",
+   "original_sha256": "98693737c6ea4cf7e4ca720c67d56a3f0f4fa02add95e2bb07f239f96ba0ab0a",
+   "path": "OAI/Analysis/Steinitz/FilterMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/FilteredBody.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.FilteredBody",
+   "original_sha256": "7186eaf06f36140c7e8af29ec03b65b905dd164728680f61b9432dee6ab537f7",
+   "path": "OAI/Analysis/Steinitz/FilteredBody.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/Gain.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.Gain",
+   "original_sha256": "05afdacaabb1c7d81d1a7f4fecf1cb6de41a4a2989ecc125a9eca02d807155f2",
+   "path": "OAI/Analysis/Steinitz/Gain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/GaussianKernel.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.GaussianKernel",
+   "original_sha256": "da9028712b041669b514f6eecf390ad8a25d19cc6674c4588a529580384b26a8",
+   "path": "OAI/Analysis/Steinitz/GaussianKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/GaussianProcess.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.GaussianProcess",
+   "original_sha256": "c273d36cc2a675ad306486128daf387dcda124bbeb5bcda4e8d08056da0186a0",
+   "path": "OAI/Analysis/Steinitz/GaussianProcess.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/GaussianTail.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.GaussianTail",
+   "original_sha256": "fcd87787a108630a81101cda2df2c3eb5ebc33289237a5b7aee3eeae968aa429",
+   "path": "OAI/Analysis/Steinitz/GaussianTail.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/HeatEnergy.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.HeatEnergy",
+   "original_sha256": "15df2c807005b55924d6d082c3c158a4681252edeb60f13acba1dc2f533b889a",
+   "path": "OAI/Analysis/Steinitz/HeatEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/HeatL2.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.HeatL2",
+   "original_sha256": "14bb877100505ffac2d87555d03694e4411b1e6bf67b8f6a17315cf57d56734d",
+   "path": "OAI/Analysis/Steinitz/HeatL2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/KernelConvexity.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.KernelConvexity",
+   "original_sha256": "32ffeb58a33c13752bb7b89ae9869398fe84cc45affb567011740e515aca8433",
+   "path": "OAI/Analysis/Steinitz/KernelConvexity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/LiftedRearrangement.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.LiftedRearrangement",
+   "original_sha256": "53c01960edb3a45f3ffcc0eca848dcc4e3c663b373a3d27ab7957ebd0f10af96",
+   "path": "OAI/Analysis/Steinitz/LiftedRearrangement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/Main.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.Main",
+   "original_sha256": "d234f843e8611d4725da6bff2cf0aac2ce5ec1d36db623a97a98878ef1871b51",
+   "path": "OAI/Analysis/Steinitz/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/MatrixEnergy.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.MatrixEnergy",
+   "original_sha256": "00c3d0f06c1dbef7bf1053ce2df6b8e3a45369586a57fb5f6da7b9a8611814b0",
+   "path": "OAI/Analysis/Steinitz/MatrixEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/Model.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.Model",
+   "original_sha256": "89d7355906e1af7dfc91ef05884210b1789ea2ad629801459201e7a68a3f3723",
+   "path": "OAI/Analysis/Steinitz/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/PathLaws.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.PathLaws",
+   "original_sha256": "61cef7d1d94a4b6761bf628a50b3921a9c771dd02fe9b124740983473a2766e3",
+   "path": "OAI/Analysis/Steinitz/PathLaws.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/Predictor.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.Predictor",
+   "original_sha256": "34957058a6d2c1c026cacb9c294064acd1adf33b4a0d2acb0e613bf12a7606eb",
+   "path": "OAI/Analysis/Steinitz/Predictor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/Prekopa.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.Prekopa",
+   "original_sha256": "d5400f79baebcfce7e93ddf0faacb0798d96ec98b203a1a162c748e6fe94d32a",
+   "path": "OAI/Analysis/Steinitz/Prekopa.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/Rearrangement.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.Rearrangement",
+   "original_sha256": "3136ad79ad3ca16ee44c624f66ce0239f2c1ba9714654f547ada86276bde0f91",
+   "path": "OAI/Analysis/Steinitz/Rearrangement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/Scales.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.Scales",
+   "original_sha256": "49f5330054af1c0bc92ab1fa5474d683d07d8f989ec7430f31b3be472c8a30c9",
+   "path": "OAI/Analysis/Steinitz/Scales.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/SectionEnergy.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.SectionEnergy",
+   "original_sha256": "5fd618ee11b548aeeb3d90f144ca30392059028c2a39a226b97d24f12bd5260a",
+   "path": "OAI/Analysis/Steinitz/SectionEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/SigningData.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.SigningData",
+   "original_sha256": "d5266dc1fb0a1b208051638efa5747e07223e6472ab8a057aae39e89801227ce",
+   "path": "OAI/Analysis/Steinitz/SigningData.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/Spectral.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.Spectral",
+   "original_sha256": "81fd3ea8b655c5c8fde0e4685577a81d5e5a260d9a6f47a344f1c1a6a4408319",
+   "path": "OAI/Analysis/Steinitz/Spectral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/Survival.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.Survival",
+   "original_sha256": "12b881f53100725bb998b158c6676c46ee916000d792b45d50f08e1f4967eaca",
+   "path": "OAI/Analysis/Steinitz/Survival.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Steinitz/Transference.lean"
+   },
+   "module": "OAI.Analysis.Steinitz.Transference",
+   "original_sha256": "207e3e489d1d70996acbab2dde6204c52c959280b093b4e139039c6cf5e26210",
+   "path": "OAI/Analysis/Steinitz/Transference.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.Steinitz.Adaptive",
+  "OAI.Analysis.Steinitz.Chaining",
+  "OAI.Analysis.Steinitz.Coefficients",
+  "OAI.Analysis.Steinitz.Correlation",
+  "OAI.Analysis.Steinitz.Energy",
+  "OAI.Analysis.Steinitz.Filter",
+  "OAI.Analysis.Steinitz.FilterMoments",
+  "OAI.Analysis.Steinitz.FilteredBody",
+  "OAI.Analysis.Steinitz.Gain",
+  "OAI.Analysis.Steinitz.GaussianKernel",
+  "OAI.Analysis.Steinitz.GaussianProcess",
+  "OAI.Analysis.Steinitz.GaussianTail",
+  "OAI.Analysis.Steinitz.HeatEnergy",
+  "OAI.Analysis.Steinitz.HeatL2",
+  "OAI.Analysis.Steinitz.KernelConvexity",
+  "OAI.Analysis.Steinitz.LiftedRearrangement",
+  "OAI.Analysis.Steinitz.Main",
+  "OAI.Analysis.Steinitz.MatrixEnergy",
+  "OAI.Analysis.Steinitz.Model",
+  "OAI.Analysis.Steinitz.PathLaws",
+  "OAI.Analysis.Steinitz.Predictor",
+  "OAI.Analysis.Steinitz.Prekopa",
+  "OAI.Analysis.Steinitz.Rearrangement",
+  "OAI.Analysis.Steinitz.Scales",
+  "OAI.Analysis.Steinitz.SectionEnergy",
+  "OAI.Analysis.Steinitz.SigningData",
+  "OAI.Analysis.Steinitz.Spectral",
+  "OAI.Analysis.Steinitz.Survival",
+  "OAI.Analysis.Steinitz.Transference"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/SteinitzBergstrom.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.Steinitz.Main",
+   "name": "OAI.EuclideanSteinitzBergstrom.main",
+   "statement_sha256": "d0d6dd3380f701ee3dbfdd973198b8f5a9f5d0c0725a124e3c4dc532d212cad1"
+  }
+ ],
+ "task_id": "oai-steinitz-bergstrom",
+ "task_revision": 1,
+ "title": "OpenAI math: The Euclidean Steinitz–Bergström bound: Euclidean signed and reordered prefix bounds",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

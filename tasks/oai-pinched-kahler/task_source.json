@@ -1,0 +1,1625 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 382059084
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.PinchedKahler",
+  "challenge_sha256": "439f02fda8b7d65c54301a320565c07c0ebe8d02d53ec1354d943bd8e9caae96",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/PinchedKahler.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.PinchedKahler",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Geometry.Kahler.Main",
+   "theorem_names": [
+    "OAI.PinchedHartogs.main_theorem",
+    "OAI.PinchedHartogs.controlled_potential",
+    "OAI.PinchedHartogs.metric_transfer"
+   ]
+  },
+  "config_sha256": "9d6298ec1b435c84e4f180e31510243a4ad012e7d4140f2a70025f72c6b12c8a",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/PinchedKahler.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.PinchedHartogs.controlled_potential": "equal",
+   "OAI.PinchedHartogs.main_theorem": "equal",
+   "OAI.PinchedHartogs.metric_transfer": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseAdaptedHopf.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseAdaptedHopf",
+   "original_sha256": "03076224dca1863c8df5af42ef1f26f25beef5d0268e0590fc66386daeac8c8b",
+   "path": "OAI/Geometry/Kahler/BaseAdaptedHopf.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseAnisotropic.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseAnisotropic",
+   "original_sha256": "b649e961e4fe6ef8be5a48dea1ee2bf836779b7a49970330538eae0b0423034d",
+   "path": "OAI/Geometry/Kahler/BaseAnisotropic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseCauchyJets.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseCauchyJets",
+   "original_sha256": "a3ec100b16d0d4ee678c0cf2ab896b4811cde0a2419a32092c86cb78ce3c9469",
+   "path": "OAI/Geometry/Kahler/BaseCauchyJets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseCentralComparison.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseCentralComparison",
+   "original_sha256": "47b761130eb9600cdbc5a19479b9e39cf2294f8baac427a1388b294d596aea71",
+   "path": "OAI/Geometry/Kahler/BaseCentralComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseCentralSecond.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseCentralSecond",
+   "original_sha256": "3f3cc377f8f21695059a6de478f71ba5d0934fcbf2981eb87d537b9fc00f1fe2",
+   "path": "OAI/Geometry/Kahler/BaseCentralSecond.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseChartJets.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseChartJets",
+   "original_sha256": "1989c2d2aa154210faef3c996ac2ad883223d3ada83c91635c4f491fdbc0b15f",
+   "path": "OAI/Geometry/Kahler/BaseChartJets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseChartLow.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseChartLow",
+   "original_sha256": "c6f82bde7d82fa863fa579ee4e49ddc17189bc99f8835d0e62d328ff58394cf2",
+   "path": "OAI/Geometry/Kahler/BaseChartLow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseChartNormalization.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseChartNormalization",
+   "original_sha256": "e90b49d10ded09974dfc309506a1ba8032f2725d740c4d2d8f78dc115f0bd13b",
+   "path": "OAI/Geometry/Kahler/BaseChartNormalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseChartScale.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseChartScale",
+   "original_sha256": "86ad92b1094caf4b72637287e535ff67176acbfcc64bada209b2995e18b7bde0",
+   "path": "OAI/Geometry/Kahler/BaseChartScale.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseChartSeries.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseChartSeries",
+   "original_sha256": "779d7a1b784fd37ab28f700cee63c8957a2e4a4f7390dcd32d053f153a9c5e4b",
+   "path": "OAI/Geometry/Kahler/BaseChartSeries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseChartUniform.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseChartUniform",
+   "original_sha256": "056d73d769f194ff6e2c31786b94988002378e0a50e3f743b3fdb1127cde2b2e",
+   "path": "OAI/Geometry/Kahler/BaseChartUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseCircleLog.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseCircleLog",
+   "original_sha256": "790d98e3fd694e945e13522285c3f1531112c85959c781c23bc7e61357e46c43",
+   "path": "OAI/Geometry/Kahler/BaseCircleLog.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseCirclePowerLog.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseCirclePowerLog",
+   "original_sha256": "58f64ba4ba13eded61c0c2de8f74fc0fea1a4da4949c2cace5c7395b49a7255c",
+   "path": "OAI/Geometry/Kahler/BaseCirclePowerLog.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseCompositionJets.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseCompositionJets",
+   "original_sha256": "e37869fde685bac1c31ae30d157fe2832d973435b90e7800c5c533c465e6bc93",
+   "path": "OAI/Geometry/Kahler/BaseCompositionJets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseCorrectionDifferential.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseCorrectionDifferential",
+   "original_sha256": "4f85030de87d5c588aa6024e3241314e0fe1f5520e5d212555538c8240adcc5a",
+   "path": "OAI/Geometry/Kahler/BaseCorrectionDifferential.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseCorrectionEstimate.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseCorrectionEstimate",
+   "original_sha256": "ec1dcf8b5606ba0b79536ab566f361c2677a74ab0303c6381bb1f09c8a706c0d",
+   "path": "OAI/Geometry/Kahler/BaseCorrectionEstimate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseCorrectionMoments.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseCorrectionMoments",
+   "original_sha256": "d6d82b8adf514d77f1a409b7d028fbc56df3361ccf6cce301db3d0a562912b22",
+   "path": "OAI/Geometry/Kahler/BaseCorrectionMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseDensityBandwidth.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseDensityBandwidth",
+   "original_sha256": "32d94ebb96c1a8e2fd08ab798d3d5eaf724d9db83bfdcacbf08dfa272e184a27",
+   "path": "OAI/Geometry/Kahler/BaseDensityBandwidth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseDensityDefinitions.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseDensityDefinitions",
+   "original_sha256": "8222cc4515fb04c9334df09bbdb037f1d5e5d6cdf3ad204cc26c816163180b90",
+   "path": "OAI/Geometry/Kahler/BaseDensityDefinitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseDensityFourier.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseDensityFourier",
+   "original_sha256": "a3c4b7845965f3725850f07f6539811f649dcb5487c285f7cccae462597d6e12",
+   "path": "OAI/Geometry/Kahler/BaseDensityFourier.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseDensityInduction.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseDensityInduction",
+   "original_sha256": "18589e25043df8b508219c908322de41679002379f1516d7beffb9317d2f701a",
+   "path": "OAI/Geometry/Kahler/BaseDensityInduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseDensityLowMoments.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseDensityLowMoments",
+   "original_sha256": "d1de93762d45a2a3df79cb22520076abb30fef8b33add24842ae9a3bdb325426",
+   "path": "OAI/Geometry/Kahler/BaseDensityLowMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseDensityMeasure.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseDensityMeasure",
+   "original_sha256": "6fd9afcb3dd1032acca9076f646718e032e002078a71671df00cf32b11e4e3e7",
+   "path": "OAI/Geometry/Kahler/BaseDensityMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseDensityMoments.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseDensityMoments",
+   "original_sha256": "940cee366bade5b1b6f5df8068906514b9bf7ebfe02b8b8f65f56cce73cd201f",
+   "path": "OAI/Geometry/Kahler/BaseDensityMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseDensityPatchEstimates.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseDensityPatchEstimates",
+   "original_sha256": "f2113d34bb98ab66aea691933f1aab384543f8865b9e6b8c0216db5f2aba8fe6",
+   "path": "OAI/Geometry/Kahler/BaseDensityPatchEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseDensityScales.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseDensityScales",
+   "original_sha256": "ff2b9edee5d6dee9b0a25931fc00a61d0f4b40efcfb4bbc2bbae323282173425",
+   "path": "OAI/Geometry/Kahler/BaseDensityScales.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseDensityStep.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseDensityStep",
+   "original_sha256": "df1d42967818229e54a696f93c616c6384ff254dc5f2ebe0427afe6235a53d49",
+   "path": "OAI/Geometry/Kahler/BaseDensityStep.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseDensityStepSupport.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseDensityStepSupport",
+   "original_sha256": "8203270b139bc0aa8eda53ea06d88b3dc841b88c7bf08ec340c8029e9bbc0a31",
+   "path": "OAI/Geometry/Kahler/BaseDensityStepSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseDensityTheorem.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseDensityTheorem",
+   "original_sha256": "414156493df481e4a0c9fb82b598a0e4db2e81f4a17d6faa46318c418f32b3a0",
+   "path": "OAI/Geometry/Kahler/BaseDensityTheorem.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseDensityThreshold.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseDensityThreshold",
+   "original_sha256": "20deb1d85f8d8bc640b38c9f90cbebb2a6bc1170433da0db06bf6675d4bcfe50",
+   "path": "OAI/Geometry/Kahler/BaseDensityThreshold.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseDensityUpdate.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseDensityUpdate",
+   "original_sha256": "bc26d74a95b3bc4a2079e7e6c2976efabbcbe63b573110c6bd222282464589a9",
+   "path": "OAI/Geometry/Kahler/BaseDensityUpdate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseGaussian.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseGaussian",
+   "original_sha256": "4c5751c64a957dc4d4d5887de056c3a08f27b5ff769b89ed33b169cdc3f95c03",
+   "path": "OAI/Geometry/Kahler/BaseGaussian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseHessianJet.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseHessianJet",
+   "original_sha256": "706c7ba89936ab0546b8d85a543211235dfbb7a5149a843b9ae6312aba1ca969",
+   "path": "OAI/Geometry/Kahler/BaseHessianJet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseHopf.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseHopf",
+   "original_sha256": "c63269e37b1256be480451df6a3864ce4acd67bcfb709bdda9c980b16abfc91c",
+   "path": "OAI/Geometry/Kahler/BaseHopf.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseHorizontalArc.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseHorizontalArc",
+   "original_sha256": "7cfffd91ebb949bb09d2ab413a5c96992a85d43256e21514fe7eedcace161229",
+   "path": "OAI/Geometry/Kahler/BaseHorizontalArc.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseHorizontalGeometry.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseHorizontalGeometry",
+   "original_sha256": "407e86b5ac5f5091f534b7e18c8e422b92dda6cf22c27e69a027127e1a829c79",
+   "path": "OAI/Geometry/Kahler/BaseHorizontalGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseJetNorms.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseJetNorms",
+   "original_sha256": "1581855d57f4d94343e8dd0ee190a5a3acb611cfcdcc5b2eba2dfb4003ac16d9",
+   "path": "OAI/Geometry/Kahler/BaseJetNorms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseLaterComparison.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseLaterComparison",
+   "original_sha256": "eb05efe1e6f08497aefacf4abece2299459f59905b95f98da45b18885da9cea8",
+   "path": "OAI/Geometry/Kahler/BaseLaterComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseLaterMoments.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseLaterMoments",
+   "original_sha256": "350de2cf33b0b60faefb382938cf29aac5325701dc930ae1721027c93e810df4",
+   "path": "OAI/Geometry/Kahler/BaseLaterMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseLaterNegative.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseLaterNegative",
+   "original_sha256": "0724123bd75eac9d4ece36e5a1db4a136aa8d3d089f875a351252ba416ff47a0",
+   "path": "OAI/Geometry/Kahler/BaseLaterNegative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseLocalSmoothSeries.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseLocalSmoothSeries",
+   "original_sha256": "c90a1cd1bcc6d91ce8d6805db7b4d3dd163154f978320308da98da973c9f3f85",
+   "path": "OAI/Geometry/Kahler/BaseLocalSmoothSeries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseLocalSmoothSeriesOn.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseLocalSmoothSeriesOn",
+   "original_sha256": "e3d2da91b02e413374dc1f6f22a0806dafd2fbb4ed67d436523292eb786dc90a",
+   "path": "OAI/Geometry/Kahler/BaseLocalSmoothSeriesOn.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseLogApproximation.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseLogApproximation",
+   "original_sha256": "9072fb24495a40bdb0369f64247cca7d1d8fbb881ae6037d62b9f19f9ce607c6",
+   "path": "OAI/Geometry/Kahler/BaseLogApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseLogBounds.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseLogBounds",
+   "original_sha256": "aa351c499cd3ab886bc76e5317336a7ff178df051e3fe69e586eabb62ecb5c86",
+   "path": "OAI/Geometry/Kahler/BaseLogBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseLogFactor.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseLogFactor",
+   "original_sha256": "2e71897e5021fcf436044505600a204377fd63b3145281cec1d0ff7747ac99a0",
+   "path": "OAI/Geometry/Kahler/BaseLogFactor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseLogJetBounds.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseLogJetBounds",
+   "original_sha256": "6d3cb039487e66a831baca12e0333bd60ed771a2543f0352701ef254c71e7f42",
+   "path": "OAI/Geometry/Kahler/BaseLogJetBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseLogPhase.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseLogPhase",
+   "original_sha256": "c8fd8f703f63ecfc9b1930b66c40a5f06e20d9146e30136cc044a6f3a2971b11",
+   "path": "OAI/Geometry/Kahler/BaseLogPhase.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseLogTests.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseLogTests",
+   "original_sha256": "c82c7626d228d6a5c95d0b001486c76b14edf13efe3897a6391fbb3fcc2d3a56",
+   "path": "OAI/Geometry/Kahler/BaseLogTests.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseMeans.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseMeans",
+   "original_sha256": "90bcd73d5237faeaa1c0e8ba099bc9bcf6e47df32244943229790ad25dd753b7",
+   "path": "OAI/Geometry/Kahler/BaseMeans.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseMinorant.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseMinorant",
+   "original_sha256": "ba73002182b2badeae43f8978c2a840e5636763a0d114f8108b2c7b593951eab",
+   "path": "OAI/Geometry/Kahler/BaseMinorant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseModelParameters.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseModelParameters",
+   "original_sha256": "061246006bd0c2052f1acc04c29729b15e3f59979d70632cb74f7709cb277418",
+   "path": "OAI/Geometry/Kahler/BaseModelParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseModelSign.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseModelSign",
+   "original_sha256": "140b676a2d78c266e3747c607c9d7e970cbc48b126b6bfb2ca63276d86a605ca",
+   "path": "OAI/Geometry/Kahler/BaseModelSign.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseNegativeScaleBound.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseNegativeScaleBound",
+   "original_sha256": "ade149761611f8c997d82998a35f67fb1c44f5724d0f8bf58904d9dea9ad1052",
+   "path": "OAI/Geometry/Kahler/BaseNegativeScaleBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseNegativeThreshold.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseNegativeThreshold",
+   "original_sha256": "31ec49096cc275a13ace659100683b159145bdf20115ccebf343716519a608f5",
+   "path": "OAI/Geometry/Kahler/BaseNegativeThreshold.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseOffPatchMean.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseOffPatchMean",
+   "original_sha256": "d2eca9d9dbe741745b045c4ed1580381487154c3e3df794e80e6e61253646dea",
+   "path": "OAI/Geometry/Kahler/BaseOffPatchMean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseOrbitGrowth.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseOrbitGrowth",
+   "original_sha256": "e78ffecc597516ddaeabf2e1bc6f9c5709f35f9e0c316fd666e2ffb21eb3ccf4",
+   "path": "OAI/Geometry/Kahler/BaseOrbitGrowth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BasePacking.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BasePacking",
+   "original_sha256": "83265f7ad79888b6595d551425f5da0ce20ca9156f91e40d3ea0b0c0d94685a3",
+   "path": "OAI/Geometry/Kahler/BasePacking.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BasePatchComparison.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BasePatchComparison",
+   "original_sha256": "2ddb095826cddc28c0c48b83f20eda48d776abcf02ef960b864dcd6bbdc9f38f",
+   "path": "OAI/Geometry/Kahler/BasePatchComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BasePatchDecomposition.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BasePatchDecomposition",
+   "original_sha256": "e3724b518e599251a4c7291addd580ab14f53760df3a914c2450146b23d9bb19",
+   "path": "OAI/Geometry/Kahler/BasePatchDecomposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BasePatchModel.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BasePatchModel",
+   "original_sha256": "f21c85f2c2ca9c581fb687f2adcf73ebb2d4351931963829daa139a8731b1098",
+   "path": "OAI/Geometry/Kahler/BasePatchModel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BasePatchPhase.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BasePatchPhase",
+   "original_sha256": "d480ec6001d366e823ba8c7b0cac6e5cd7db757f527fe89aeb268d8635eae1b3",
+   "path": "OAI/Geometry/Kahler/BasePatchPhase.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BasePatches.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BasePatches",
+   "original_sha256": "1c944f5b404838db2cd0bc6179ea21cccec0254a315b4f55a9de38bb31aea381",
+   "path": "OAI/Geometry/Kahler/BasePatches.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BasePeakBounds.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BasePeakBounds",
+   "original_sha256": "44d4d1779cf4053a7b542ec52901ee7546dda742d82597cda0d28303fda23ebf",
+   "path": "OAI/Geometry/Kahler/BasePeakBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BasePhaseAveraging.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BasePhaseAveraging",
+   "original_sha256": "a013a3063165f764ceebafa70b80c79236b19cf8a4de4a54778ce83b4bcebd26",
+   "path": "OAI/Geometry/Kahler/BasePhaseAveraging.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BasePhaseDerivatives.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BasePhaseDerivatives",
+   "original_sha256": "1837d4ec9aac21b2aecda8ee5060ba3e24f8649ff202e61bb585b4715cc6ec06",
+   "path": "OAI/Geometry/Kahler/BasePhaseDerivatives.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BasePhaseDifferential.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BasePhaseDifferential",
+   "original_sha256": "a8896aaa55929850014949f28fffb6cd2cdd1eecccf1b7654e2a7bebaecd64d6",
+   "path": "OAI/Geometry/Kahler/BasePhaseDifferential.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BasePhaseFourier.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BasePhaseFourier",
+   "original_sha256": "cb261a82a905f627aa89f680fa595286d59aa818c113d4d308473525576ecf95",
+   "path": "OAI/Geometry/Kahler/BasePhaseFourier.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BasePhaseMoments.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BasePhaseMoments",
+   "original_sha256": "12753f4f78ad79dfb937b08aeb0cac8d7670037cf68cc5e9a08e09329fd202b2",
+   "path": "OAI/Geometry/Kahler/BasePhaseMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BasePhaseReal.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BasePhaseReal",
+   "original_sha256": "5b6acd29af9c2c5bea85c09eb5b5b04256aecf1b279130b8d5cee6f200b265d2",
+   "path": "OAI/Geometry/Kahler/BasePhaseReal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BasePhaseSupport.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BasePhaseSupport",
+   "original_sha256": "83b63f3d1f0fa02551e6f3c6807690a6190b1397927161df8c8327865da32dc8",
+   "path": "OAI/Geometry/Kahler/BasePhaseSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BasePolynomialChange.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BasePolynomialChange",
+   "original_sha256": "13ea74f54c415c50fb44152a43e48cd22c024c5e974acf96aa1be9e5ac4a2f09",
+   "path": "OAI/Geometry/Kahler/BasePolynomialChange.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BasePotentialControl.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BasePotentialControl",
+   "original_sha256": "fdbfd53319d2edc49fe732728ff17193a4a3b385179ff7b98e0849bb29f447bf",
+   "path": "OAI/Geometry/Kahler/BasePotentialControl.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BasePotentialSmooth.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BasePotentialSmooth",
+   "original_sha256": "3acbf579f2b019b591eefe665d8d09d40a61980ac5a9b03ea01ecc827415a52f",
+   "path": "OAI/Geometry/Kahler/BasePotentialSmooth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseProfileBounds.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseProfileBounds",
+   "original_sha256": "6bad46de400386db5f3bdbdbe4a7c36a97df57af010c4a1249bed47605fc5625",
+   "path": "OAI/Geometry/Kahler/BaseProfileBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseProfiles.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseProfiles",
+   "original_sha256": "26949a949398869ebf563f7db8627090f215690bc66de02dad9f8c3da4c3c75c",
+   "path": "OAI/Geometry/Kahler/BaseProfiles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseProjective.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseProjective",
+   "original_sha256": "8680a38dfcc33a7fdd970bc3266d728f84a800aabc4914d728381bc4e49d2cac",
+   "path": "OAI/Geometry/Kahler/BaseProjective.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseRadialCancellation.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseRadialCancellation",
+   "original_sha256": "3f45b6b0b5def31eb2547e5cb8c3c3a30475edbb282381e23dfeed3d69858c4f",
+   "path": "OAI/Geometry/Kahler/BaseRadialCancellation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseRadialLaw.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseRadialLaw",
+   "original_sha256": "826fbd9fc385b0cb17b7151219800f908f53223bf1b9abe43259a51d42562147",
+   "path": "OAI/Geometry/Kahler/BaseRadialLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseRadialMeasure.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseRadialMeasure",
+   "original_sha256": "0a36cc3939cfc182ef83b4b37e41d3169fc2f7bcfcaa10a3d55a2fa334bbe6d7",
+   "path": "OAI/Geometry/Kahler/BaseRadialMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseRadialModelError.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseRadialModelError",
+   "original_sha256": "ac4c2bd8c2e0140aece2ff23dad02bacc509a8e59bc29b007eb368215496d9f4",
+   "path": "OAI/Geometry/Kahler/BaseRadialModelError.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseRadialMoments.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseRadialMoments",
+   "original_sha256": "6ad03aa316709aaf9eb94d0a98fc42ee0cc1ced1d514f9b6b7f2812e2aa82a17",
+   "path": "OAI/Geometry/Kahler/BaseRadialMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseRadialPatch.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseRadialPatch",
+   "original_sha256": "0a523281d3d093550d41ef06b04753e712aff9621869f2efb58cdab8e2e739ff",
+   "path": "OAI/Geometry/Kahler/BaseRadialPatch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseRadialSubstitution.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseRadialSubstitution",
+   "original_sha256": "f9c7c0bf4d0dbbda4874c85339e13395432156a3bb9ded2199b76fb893341d70",
+   "path": "OAI/Geometry/Kahler/BaseRadialSubstitution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseRadii.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseRadii",
+   "original_sha256": "fa25b56cf96cf710ed120d57d52f271cd05af2480db15deb7c567ce758348b98",
+   "path": "OAI/Geometry/Kahler/BaseRadii.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseRootAveraging.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseRootAveraging",
+   "original_sha256": "79edafc2ab3be0b767ae2d3c33a58d5a7ab260405dbf216003f6114e39da1f50",
+   "path": "OAI/Geometry/Kahler/BaseRootAveraging.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseScaleSum.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseScaleSum",
+   "original_sha256": "546039308e62aa45792d2419577c53b0af6c7e7946f6b584f482bed2ef92b602",
+   "path": "OAI/Geometry/Kahler/BaseScaleSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseSeriesBounds.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseSeriesBounds",
+   "original_sha256": "103de4d61c45138b568078ad30937e19778f2f745dc5eca7f229c8af54fdf344",
+   "path": "OAI/Geometry/Kahler/BaseSeriesBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseShiftAveraging.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseShiftAveraging",
+   "original_sha256": "f78bd665da6c97c16ff0ffab33c0678c5935c3027411d47ce9f8a85c70c2c1b8",
+   "path": "OAI/Geometry/Kahler/BaseShiftAveraging.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseSphere.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseSphere",
+   "original_sha256": "ea2d5fa67c1a06133dfbdd7be52b25e97c2678fddd8caf07ea50b0219f8e47d4",
+   "path": "OAI/Geometry/Kahler/BaseSphere.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseTestAveraging.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseTestAveraging",
+   "original_sha256": "2959c5a06a3ea2e497e5d6635500c7807e888f870b69d8419c45621b10bbb9a3",
+   "path": "OAI/Geometry/Kahler/BaseTestAveraging.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseTestSystem.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseTestSystem",
+   "original_sha256": "3d0ecccabe6e6ac7a63a455cd0b0713d8c7574fe71dd3a6ce4a2b7245fe93a77",
+   "path": "OAI/Geometry/Kahler/BaseTestSystem.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/BaseWeightedDerivative.lean"
+   },
+   "module": "OAI.Geometry.Kahler.BaseWeightedDerivative",
+   "original_sha256": "f2cd41be8f3c97e9113fd7734b9c1a185947f01577c47eeba8e7a815e7525757",
+   "path": "OAI/Geometry/Kahler/BaseWeightedDerivative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/Definitions.lean"
+   },
+   "module": "OAI.Geometry.Kahler.Definitions",
+   "original_sha256": "d28fc3699b29cb4c428f0fd917efc019c345ad727417ad26fe6d8c604c61dee6",
+   "path": "OAI/Geometry/Kahler/Definitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsCharts.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsCharts",
+   "original_sha256": "2c94847c8799b1949621250e108e6609b2e9b109aa7cc1503d9070985eeac30d",
+   "path": "OAI/Geometry/Kahler/HartogsCharts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsCompletenessSupport.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsCompletenessSupport",
+   "original_sha256": "6ed6ff13d6078d6f78330e6a95a6d80c44a46936bd006f49ad95602a100af9b9",
+   "path": "OAI/Geometry/Kahler/HartogsCompletenessSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsCurvature.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsCurvature",
+   "original_sha256": "c9170ab9759705a7934004965916380472f99fc99b4ea5e88f2d3e8f2e61d5c4",
+   "path": "OAI/Geometry/Kahler/HartogsCurvature.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsCurvatureContinuity.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsCurvatureContinuity",
+   "original_sha256": "e5039e55794d7616221aac350b1c50d2f6979fb5039cc3931df317d833e8269a",
+   "path": "OAI/Geometry/Kahler/HartogsCurvatureContinuity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsErrorBounds.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsErrorBounds",
+   "original_sha256": "6ef9cbebb9b22d298cfe8d19bc2049dcc3f91891d366d7da5a52a758eea7c3e5",
+   "path": "OAI/Geometry/Kahler/HartogsErrorBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsFrame.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsFrame",
+   "original_sha256": "a9f7c267797eba55774729f0fcbb78736c7af407b00385243965434d002ac1b1",
+   "path": "OAI/Geometry/Kahler/HartogsFrame.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsGauge.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsGauge",
+   "original_sha256": "d1f963de9156256b6c9c19e41cddb5197328ecfbf759be2e9e5f89e3a51e9d7c",
+   "path": "OAI/Geometry/Kahler/HartogsGauge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsGaugeTransfer.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsGaugeTransfer",
+   "original_sha256": "1b2ef35724b1a4768b9915873484da5426534de1df5e82ac29f6bc9fefb23f26",
+   "path": "OAI/Geometry/Kahler/HartogsGaugeTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsJetLinearity.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsJetLinearity",
+   "original_sha256": "4825f2e39e9cbb458b04c5dd6f2c4246d6a884aaa8bf8287699c1540ea6ba4f5",
+   "path": "OAI/Geometry/Kahler/HartogsJetLinearity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsJets.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsJets",
+   "original_sha256": "0457103420a34b54ea5606344bcbd7c16ef62c363041109c28cf00f49d46dd7a",
+   "path": "OAI/Geometry/Kahler/HartogsJets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsLiftedJets.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsLiftedJets",
+   "original_sha256": "09618790ed5c49ceae217c2f7149b021b7db74019033ddbe2af99ff1d57354a2",
+   "path": "OAI/Geometry/Kahler/HartogsLiftedJets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsMatrixBounds.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsMatrixBounds",
+   "original_sha256": "d910f1502ee1d321e4542c54cba6e99f0d9e529d6c8cc406a83f80eb531160d3",
+   "path": "OAI/Geometry/Kahler/HartogsMatrixBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsModelBridge.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsModelBridge",
+   "original_sha256": "cdd8f1e276c3a98454d6e788c8d37bdfd142c8b08e438039f075ae5cfd01baca",
+   "path": "OAI/Geometry/Kahler/HartogsModelBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsNormalBlocks.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsNormalBlocks",
+   "original_sha256": "6c74d83ab00d4dce45dc297da999801aa420d092a69ebd284ca2b8887e857c4c",
+   "path": "OAI/Geometry/Kahler/HartogsNormalBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsNormalCurvature.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsNormalCurvature",
+   "original_sha256": "6f98ecc4348c309fbfafd150fa6cad45127f87171744de9af7af1226224df68c",
+   "path": "OAI/Geometry/Kahler/HartogsNormalCurvature.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsNormalJets.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsNormalJets",
+   "original_sha256": "f9d938803cebfd30bdc1206b3697a268ce90eea6a02768daa716d28b144cd93d",
+   "path": "OAI/Geometry/Kahler/HartogsNormalJets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsNormalTables.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsNormalTables",
+   "original_sha256": "98ccb325f7eccf4f8544780134a79929f213e64ebfc95383f8e9e272d38d0ac4",
+   "path": "OAI/Geometry/Kahler/HartogsNormalTables.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsPinching.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsPinching",
+   "original_sha256": "01e0fadba55e068459a005e19e0ed335b6e6bb2676e4f13c402fb9bd13b35633",
+   "path": "OAI/Geometry/Kahler/HartogsPinching.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsTensorSymmetry.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsTensorSymmetry",
+   "original_sha256": "48d57ccf8c4bab7da767053f5074059f72af443ff0f7949f76afae8431906aa7",
+   "path": "OAI/Geometry/Kahler/HartogsTensorSymmetry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsTopologySupport.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsTopologySupport",
+   "original_sha256": "dec02f7f5502f7d30aff69f79609d2a0386c95a5a7b825476469c63373c0c86a",
+   "path": "OAI/Geometry/Kahler/HartogsTopologySupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsTransfer.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsTransfer",
+   "original_sha256": "bd26f6f7cde971b6ac4402ac5b1a7db56c061bbcb4a028fe8b7235b8b9444a52",
+   "path": "OAI/Geometry/Kahler/HartogsTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/HartogsTransferTools.lean"
+   },
+   "module": "OAI.Geometry.Kahler.HartogsTransferTools",
+   "original_sha256": "beabacf3c074526fb7d59b92c7bf1e6fc22dbd7ecbf60f1498df3839a848973b",
+   "path": "OAI/Geometry/Kahler/HartogsTransferTools.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/Main.lean"
+   },
+   "module": "OAI.Geometry.Kahler.Main",
+   "original_sha256": "2783eeef8c9fe7425c87fa9bb3b4cf9a1fc9a1cfa33acee287749fb1ec24f530",
+   "path": "OAI/Geometry/Kahler/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/MetricCalculus.lean"
+   },
+   "module": "OAI.Geometry.Kahler.MetricCalculus",
+   "original_sha256": "337bdfa4b55a5501450962e1ab3ba750af5daac0a7b7fdfef1bc86000f819ff0",
+   "path": "OAI/Geometry/Kahler/MetricCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/Obstruction.lean"
+   },
+   "module": "OAI.Geometry.Kahler.Obstruction",
+   "original_sha256": "280b113cae620a2af5c70a25a8ed9774fa1d77d606cb33582b81655ff1071503",
+   "path": "OAI/Geometry/Kahler/Obstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/Kahler/PinchingCompact.lean"
+   },
+   "module": "OAI.Geometry.Kahler.PinchingCompact",
+   "original_sha256": "89cb1cd1c86386bcda1e41ba983be1a37cb99e05358983077ab56787dac2fdef",
+   "path": "OAI/Geometry/Kahler/PinchingCompact.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Geometry.Kahler.BaseAdaptedHopf",
+  "OAI.Geometry.Kahler.BaseAnisotropic",
+  "OAI.Geometry.Kahler.BaseCauchyJets",
+  "OAI.Geometry.Kahler.BaseCentralComparison",
+  "OAI.Geometry.Kahler.BaseCentralSecond",
+  "OAI.Geometry.Kahler.BaseChartJets",
+  "OAI.Geometry.Kahler.BaseChartLow",
+  "OAI.Geometry.Kahler.BaseChartNormalization",
+  "OAI.Geometry.Kahler.BaseChartScale",
+  "OAI.Geometry.Kahler.BaseChartSeries",
+  "OAI.Geometry.Kahler.BaseChartUniform",
+  "OAI.Geometry.Kahler.BaseCircleLog",
+  "OAI.Geometry.Kahler.BaseCirclePowerLog",
+  "OAI.Geometry.Kahler.BaseCompositionJets",
+  "OAI.Geometry.Kahler.BaseCorrectionDifferential",
+  "OAI.Geometry.Kahler.BaseCorrectionEstimate",
+  "OAI.Geometry.Kahler.BaseCorrectionMoments",
+  "OAI.Geometry.Kahler.BaseDensityBandwidth",
+  "OAI.Geometry.Kahler.BaseDensityDefinitions",
+  "OAI.Geometry.Kahler.BaseDensityFourier",
+  "OAI.Geometry.Kahler.BaseDensityInduction",
+  "OAI.Geometry.Kahler.BaseDensityLowMoments",
+  "OAI.Geometry.Kahler.BaseDensityMeasure",
+  "OAI.Geometry.Kahler.BaseDensityMoments",
+  "OAI.Geometry.Kahler.BaseDensityPatchEstimates",
+  "OAI.Geometry.Kahler.BaseDensityScales",
+  "OAI.Geometry.Kahler.BaseDensityStep",
+  "OAI.Geometry.Kahler.BaseDensityStepSupport",
+  "OAI.Geometry.Kahler.BaseDensityTheorem",
+  "OAI.Geometry.Kahler.BaseDensityThreshold",
+  "OAI.Geometry.Kahler.BaseDensityUpdate",
+  "OAI.Geometry.Kahler.BaseGaussian",
+  "OAI.Geometry.Kahler.BaseHessianJet",
+  "OAI.Geometry.Kahler.BaseHopf",
+  "OAI.Geometry.Kahler.BaseHorizontalArc",
+  "OAI.Geometry.Kahler.BaseHorizontalGeometry",
+  "OAI.Geometry.Kahler.BaseJetNorms",
+  "OAI.Geometry.Kahler.BaseLaterComparison",
+  "OAI.Geometry.Kahler.BaseLaterMoments",
+  "OAI.Geometry.Kahler.BaseLaterNegative",
+  "OAI.Geometry.Kahler.BaseLocalSmoothSeries",
+  "OAI.Geometry.Kahler.BaseLocalSmoothSeriesOn",
+  "OAI.Geometry.Kahler.BaseLogApproximation",
+  "OAI.Geometry.Kahler.BaseLogBounds",
+  "OAI.Geometry.Kahler.BaseLogFactor",
+  "OAI.Geometry.Kahler.BaseLogJetBounds",
+  "OAI.Geometry.Kahler.BaseLogPhase",
+  "OAI.Geometry.Kahler.BaseLogTests",
+  "OAI.Geometry.Kahler.BaseMeans",
+  "OAI.Geometry.Kahler.BaseMinorant",
+  "OAI.Geometry.Kahler.BaseModelParameters",
+  "OAI.Geometry.Kahler.BaseModelSign",
+  "OAI.Geometry.Kahler.BaseNegativeScaleBound",
+  "OAI.Geometry.Kahler.BaseNegativeThreshold",
+  "OAI.Geometry.Kahler.BaseOffPatchMean",
+  "OAI.Geometry.Kahler.BaseOrbitGrowth",
+  "OAI.Geometry.Kahler.BasePacking",
+  "OAI.Geometry.Kahler.BasePatchComparison",
+  "OAI.Geometry.Kahler.BasePatchDecomposition",
+  "OAI.Geometry.Kahler.BasePatchModel",
+  "OAI.Geometry.Kahler.BasePatchPhase",
+  "OAI.Geometry.Kahler.BasePatches",
+  "OAI.Geometry.Kahler.BasePeakBounds",
+  "OAI.Geometry.Kahler.BasePhaseAveraging",
+  "OAI.Geometry.Kahler.BasePhaseDerivatives",
+  "OAI.Geometry.Kahler.BasePhaseDifferential",
+  "OAI.Geometry.Kahler.BasePhaseFourier",
+  "OAI.Geometry.Kahler.BasePhaseMoments",
+  "OAI.Geometry.Kahler.BasePhaseReal",
+  "OAI.Geometry.Kahler.BasePhaseSupport",
+  "OAI.Geometry.Kahler.BasePolynomialChange",
+  "OAI.Geometry.Kahler.BasePotentialControl",
+  "OAI.Geometry.Kahler.BasePotentialSmooth",
+  "OAI.Geometry.Kahler.BaseProfileBounds",
+  "OAI.Geometry.Kahler.BaseProfiles",
+  "OAI.Geometry.Kahler.BaseProjective",
+  "OAI.Geometry.Kahler.BaseRadialCancellation",
+  "OAI.Geometry.Kahler.BaseRadialLaw",
+  "OAI.Geometry.Kahler.BaseRadialMeasure",
+  "OAI.Geometry.Kahler.BaseRadialModelError",
+  "OAI.Geometry.Kahler.BaseRadialMoments",
+  "OAI.Geometry.Kahler.BaseRadialPatch",
+  "OAI.Geometry.Kahler.BaseRadialSubstitution",
+  "OAI.Geometry.Kahler.BaseRadii",
+  "OAI.Geometry.Kahler.BaseRootAveraging",
+  "OAI.Geometry.Kahler.BaseScaleSum",
+  "OAI.Geometry.Kahler.BaseSeriesBounds",
+  "OAI.Geometry.Kahler.BaseShiftAveraging",
+  "OAI.Geometry.Kahler.BaseSphere",
+  "OAI.Geometry.Kahler.BaseTestAveraging",
+  "OAI.Geometry.Kahler.BaseTestSystem",
+  "OAI.Geometry.Kahler.BaseWeightedDerivative",
+  "OAI.Geometry.Kahler.Definitions",
+  "OAI.Geometry.Kahler.HartogsCharts",
+  "OAI.Geometry.Kahler.HartogsCompletenessSupport",
+  "OAI.Geometry.Kahler.HartogsCurvature",
+  "OAI.Geometry.Kahler.HartogsCurvatureContinuity",
+  "OAI.Geometry.Kahler.HartogsErrorBounds",
+  "OAI.Geometry.Kahler.HartogsFrame",
+  "OAI.Geometry.Kahler.HartogsGauge",
+  "OAI.Geometry.Kahler.HartogsGaugeTransfer",
+  "OAI.Geometry.Kahler.HartogsJetLinearity",
+  "OAI.Geometry.Kahler.HartogsJets",
+  "OAI.Geometry.Kahler.HartogsLiftedJets",
+  "OAI.Geometry.Kahler.HartogsMatrixBounds",
+  "OAI.Geometry.Kahler.HartogsModelBridge",
+  "OAI.Geometry.Kahler.HartogsNormalBlocks",
+  "OAI.Geometry.Kahler.HartogsNormalCurvature",
+  "OAI.Geometry.Kahler.HartogsNormalJets",
+  "OAI.Geometry.Kahler.HartogsNormalTables",
+  "OAI.Geometry.Kahler.HartogsPinching",
+  "OAI.Geometry.Kahler.HartogsTensorSymmetry",
+  "OAI.Geometry.Kahler.HartogsTopologySupport",
+  "OAI.Geometry.Kahler.HartogsTransfer",
+  "OAI.Geometry.Kahler.HartogsTransferTools",
+  "OAI.Geometry.Kahler.Main",
+  "OAI.Geometry.Kahler.MetricCalculus",
+  "OAI.Geometry.Kahler.Obstruction",
+  "OAI.Geometry.Kahler.PinchingCompact"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/PinchedKahler.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Geometry.Kahler.Main",
+   "name": "OAI.PinchedHartogs.main_theorem",
+   "statement_sha256": "4a15adc3f491b0146802f66e936899e99869c7fe630545ac6bc81986e4c4c052"
+  },
+  {
+   "module": "OAI.Geometry.Kahler.Main",
+   "name": "OAI.PinchedHartogs.controlled_potential",
+   "statement_sha256": "a8434e2e070e931ea059147412fc2c6df6533f14982708141e9c2d664385e953"
+  },
+  {
+   "module": "OAI.Geometry.Kahler.HartogsTransfer",
+   "name": "OAI.PinchedHartogs.metric_transfer",
+   "statement_sha256": "4a345f84d8a21bcc1eaa4d0f2772a5ead58245335e4770faaca6dc4a047ac0ab"
+  }
+ ],
+ "task_id": "oai-pinched-kahler",
+ "task_revision": 1,
+ "title": "OpenAI math: Negative Kähler curvature without bounded holomorphic coordinates: Negatively pinched Kähler threefold without bounded coordinates",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

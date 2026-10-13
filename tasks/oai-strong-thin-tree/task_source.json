@@ -1,0 +1,1141 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 129689050
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.StrongThinTree",
+  "challenge_sha256": "f8ca2f8c8078052bbd345b09087ad6c821d4a1db62fbaa163604e03d8c745980",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/StrongThinTree.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.StrongThinTree",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Combinatorics.ThinTrees.Main",
+   "theorem_names": [
+    "OAI.StrongThinTree.strongThinTree"
+   ]
+  },
+  "config_sha256": "c53fcd5c5352e0bda675135dfaa473672c27017d70a7f34df494634b5f3d30e7",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/StrongThinTree.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.StrongThinTree.strongThinTree": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Affine.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Affine",
+   "original_sha256": "6f92f2502a7e7469bb1379132a824560e5ddacee1906bbe85e2bd93e4702d19e",
+   "path": "OAI/Combinatorics/ThinTrees/Affine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/AssignedFamilies.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.AssignedFamilies",
+   "original_sha256": "e6a445d398f7e09eb49765ac9cdb4c2de67100af032adf5359bb02622c306b0c",
+   "path": "OAI/Combinatorics/ThinTrees/AssignedFamilies.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Assignment.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Assignment",
+   "original_sha256": "52b977ce93e6d46ce5a10381fc2d0e7932be6046f7561c1410e38cf70aa97267",
+   "path": "OAI/Combinatorics/ThinTrees/Assignment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/BagBounds.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.BagBounds",
+   "original_sha256": "6209a109cc562c6cb0fc042e0ab637a725fac2ffda4c874df7dcd7f2a60e8069",
+   "path": "OAI/Combinatorics/ThinTrees/BagBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/BagConstruction.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.BagConstruction",
+   "original_sha256": "4e3501a597d81bdc333f2f4cce47229e61eda204fff1419a96da5cabd821cb96",
+   "path": "OAI/Combinatorics/ThinTrees/BagConstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/BagGeometry.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.BagGeometry",
+   "original_sha256": "ca064aa6cd746c238b387db766a186d1e04e5139e27d79bebd740dac868d69c8",
+   "path": "OAI/Combinatorics/ThinTrees/BagGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Barrier.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Barrier",
+   "original_sha256": "d58307b0eef07a2e0f4014f9de9e486a817a5f8f791bc9b796694c2100f233d6",
+   "path": "OAI/Combinatorics/ThinTrees/Barrier.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/BasePacking.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.BasePacking",
+   "original_sha256": "866f18a74c398833c7b5117fc10f5631d460db08ae680a05c14a8c4cb19a0ffd",
+   "path": "OAI/Combinatorics/ThinTrees/BasePacking.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Blocks.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Blocks",
+   "original_sha256": "3f507ac21cada7158bf646fb8256d4f7b198bbca3c3e71e9d0f3a2be983f35c3",
+   "path": "OAI/Combinatorics/ThinTrees/Blocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Capture.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Capture",
+   "original_sha256": "c25257e47a02a7b8713feaae4fc5796ddeaa3fff8679d046c3225064dd36d46d",
+   "path": "OAI/Combinatorics/ThinTrees/Capture.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/ChainEdges.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.ChainEdges",
+   "original_sha256": "326f417b99c4373849bbf48e4cf512528ed2ea3ac4460b630e84c54f1b75cc35",
+   "path": "OAI/Combinatorics/ThinTrees/ChainEdges.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Characteristic.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Characteristic",
+   "original_sha256": "4cb6335c7b0cffc2b678be027e07bb8bea26421e8b0f9ea8ddc160a0483343db",
+   "path": "OAI/Combinatorics/ThinTrees/Characteristic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Coarea.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Coarea",
+   "original_sha256": "9c7974d328443628457ab23932c2fc9fd8c87348c3be10d6ac4cc8fe7a59d4ab",
+   "path": "OAI/Combinatorics/ThinTrees/Coarea.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/CompactPacking.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.CompactPacking",
+   "original_sha256": "0351632adb4ba73d3be022b75f6c2317094271328f9889548e891d7e22f0cc03",
+   "path": "OAI/Combinatorics/ThinTrees/CompactPacking.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Density.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Density",
+   "original_sha256": "039704aff4fe18080a7ad1761715ef1128cf0219ff3f4a4d764f6f6e07f99d5e",
+   "path": "OAI/Combinatorics/ThinTrees/Density.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/DeterminantCalculus.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.DeterminantCalculus",
+   "original_sha256": "7d9561cc3208f5f99e2f3fef87038eda003cb2e8982b6ffa26ce66300bd1d202",
+   "path": "OAI/Combinatorics/ThinTrees/DeterminantCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Duality.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Duality",
+   "original_sha256": "0626e9431735b85e0459028bf732565622f7dc767154fba4cb99fb30585dce0f",
+   "path": "OAI/Combinatorics/ThinTrees/Duality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/DyadicSelection.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.DyadicSelection",
+   "original_sha256": "bf8965a0b9d155aa173d9547755d9c3566c24766a47dfea74cb205f431b08902",
+   "path": "OAI/Combinatorics/ThinTrees/DyadicSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Expectation.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Expectation",
+   "original_sha256": "4aac4c688cbf460823fcfb46796bc6d651418f84910684f99a40ba843b877a45",
+   "path": "OAI/Combinatorics/ThinTrees/Expectation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Extraction.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Extraction",
+   "original_sha256": "ece6cf759918d08721c3cb7972863479600dcfac2904c6c4fda7b0461187fda6",
+   "path": "OAI/Combinatorics/ThinTrees/Extraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/ExtractionBounds.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.ExtractionBounds",
+   "original_sha256": "e8fa50e1c16db1a9439fb09894ef768b12e8ec8a0a346a0f150297f3ee20a244",
+   "path": "OAI/Combinatorics/ThinTrees/ExtractionBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/ExtractionCriterion.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.ExtractionCriterion",
+   "original_sha256": "891d736b32de337849336b4e4aeb923641138bd2f938d1d9fbe85e3b77e3743c",
+   "path": "OAI/Combinatorics/ThinTrees/ExtractionCriterion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/ExtractionLimit.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.ExtractionLimit",
+   "original_sha256": "29030626fb959e4014ed88cd77da5bd66f3fc4adb9174008d68b4ea3032deea6",
+   "path": "OAI/Combinatorics/ThinTrees/ExtractionLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/FiniteSelection.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.FiniteSelection",
+   "original_sha256": "97a7b02299bb41a8b5e9cdc085e892ee8b517a25e059e23f6feb6d7258887fdf",
+   "path": "OAI/Combinatorics/ThinTrees/FiniteSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/FixedPoint.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.FixedPoint",
+   "original_sha256": "ac4f5ca38d6c7691c01f202682afd77e2eb1343869bb791f3b1150153f9e689c",
+   "path": "OAI/Combinatorics/ThinTrees/FixedPoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/GraphMatrix.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.GraphMatrix",
+   "original_sha256": "a3bc1835dcc5c4357aadf7d012b7c9b7289965ce276a5bd6a89c1fd942e38f91",
+   "path": "OAI/Combinatorics/ThinTrees/GraphMatrix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Hierarchy.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Hierarchy",
+   "original_sha256": "cf3bccfbd6b325a1a2f93cd87da20cfb78f02dd8c1a98820329ef33629f808ef",
+   "path": "OAI/Combinatorics/ThinTrees/Hierarchy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/HierarchyBounds.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.HierarchyBounds",
+   "original_sha256": "8ff28579dd3a1ab6efcc29022fb93be69a2860703aefe04e923cd3da3287267b",
+   "path": "OAI/Combinatorics/ThinTrees/HierarchyBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/HierarchyBuilder.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.HierarchyBuilder",
+   "original_sha256": "eca4b8dd92b0932a1b0dd8db8b4cdb82f749a0a7d7f5b56cc08c1479d064dec7",
+   "path": "OAI/Combinatorics/ThinTrees/HierarchyBuilder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/HierarchyResponse.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.HierarchyResponse",
+   "original_sha256": "9be773adbf95f6f6a9cfd4dc4a1590d1c6d9c35ed394d13a485bae8a6b744f55",
+   "path": "OAI/Combinatorics/ThinTrees/HierarchyResponse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/IndependentVectors.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.IndependentVectors",
+   "original_sha256": "257dc99c5ec34e08f44b647c96ccdd1b9dee89c3b7a4861f65a607f6e8bd4138",
+   "path": "OAI/Combinatorics/ThinTrees/IndependentVectors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Interlacing.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Interlacing",
+   "original_sha256": "2032300c2c90586a774fd558114b0317cc42a7f769bce4c8d5f3ad70507f2f96",
+   "path": "OAI/Combinatorics/ThinTrees/Interlacing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Iteration.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Iteration",
+   "original_sha256": "fa8e2c7719c283f388c3e56750dd862194adabac530122d17363c59e2a4a427e",
+   "path": "OAI/Combinatorics/ThinTrees/Iteration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/IterationBounds.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.IterationBounds",
+   "original_sha256": "1a05398ba51e15f1aac30642cfe0e1a5a2a8d30590ef1d0a385cda223dde69a5",
+   "path": "OAI/Combinatorics/ThinTrees/IterationBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Main.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Main",
+   "original_sha256": "ad1ebfbabac088b6ac4d232a864055f5231341cfb9a717ccdc8dcf50b017d3d6",
+   "path": "OAI/Combinatorics/ThinTrees/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Matrix.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Matrix",
+   "original_sha256": "5f802a778d674133fefce0f3861d43c174a4a1986d8a04ab4afbda70d4398818",
+   "path": "OAI/Combinatorics/ThinTrees/Matrix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/MatrixDomain.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.MatrixDomain",
+   "original_sha256": "dee2746a06404b035a01c8bdff553e3766168381f3f5439a11f82ff347487754",
+   "path": "OAI/Combinatorics/ThinTrees/MatrixDomain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/MatrixMixture.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.MatrixMixture",
+   "original_sha256": "e7463ed53d51a9471ae0c3fb4c4b4cd657349696160612a03bbd5328b45fe3d1",
+   "path": "OAI/Combinatorics/ThinTrees/MatrixMixture.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/MixedPolynomial.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.MixedPolynomial",
+   "original_sha256": "c2e2187a217c7f4e8e53c1edf17d65a328960aad0e6870ebb798dd6ff88e89c3",
+   "path": "OAI/Combinatorics/ThinTrees/MixedPolynomial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Model.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Model",
+   "original_sha256": "febdbb6524cb08a14678238ffcd5350f16e7705dc9e27991afd3f7515ec60190",
+   "path": "OAI/Combinatorics/ThinTrees/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Monicity.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Monicity",
+   "original_sha256": "cfd8498ecd8d6085ee198528fb13c65f82883358634ec68384f3b2ba39b8ddf9",
+   "path": "OAI/Combinatorics/ThinTrees/Monicity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Normalization.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Normalization",
+   "original_sha256": "c27f67f65336331a773ff05c528790fd1f35c1a35836e917768c3837b774ea64",
+   "path": "OAI/Combinatorics/ThinTrees/Normalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/OptionalDirections.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.OptionalDirections",
+   "original_sha256": "0619f3c75aa68afa85ebdc29ecf88d5fefc61ef8d0ab905c55312292d18c483a",
+   "path": "OAI/Combinatorics/ThinTrees/OptionalDirections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Padding.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Padding",
+   "original_sha256": "d437cb74921299dc2a0c36c6324a37d9f6e41e0194926ad0e0e935afcd72e1dd",
+   "path": "OAI/Combinatorics/ThinTrees/Padding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/PartialFractions.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.PartialFractions",
+   "original_sha256": "d1299156c26642ebac0ff4550869dc78c20dd7f4d6dcd26a8074992a6b03a996",
+   "path": "OAI/Combinatorics/ThinTrees/PartialFractions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/PartitionHierarchy.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.PartitionHierarchy",
+   "original_sha256": "26287e090c2e00c676c23394d06cde543061e2e934cd2a0a5bb05ca33bd28c96",
+   "path": "OAI/Combinatorics/ThinTrees/PartitionHierarchy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/PartitionRank.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.PartitionRank",
+   "original_sha256": "f784da2dfa6f31c8c438cb1e9f71d978d8e82e7f85018ec1d1b3f02181260657",
+   "path": "OAI/Combinatorics/ThinTrees/PartitionRank.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Partitions.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Partitions",
+   "original_sha256": "4e9825eae2f7e96b9702318295e1f2971f7e4d6d16aa9fbc98a6c2d717536067",
+   "path": "OAI/Combinatorics/ThinTrees/Partitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Phases.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Phases",
+   "original_sha256": "9246df1d3cf82b11b4a61770ba989d241c9b11f34e25720358231e2b21d47a71",
+   "path": "OAI/Combinatorics/ThinTrees/Phases.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/RankOne.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.RankOne",
+   "original_sha256": "7b1193f1d8983f23b2aa4f088c8da23553327b064c8934878a1ed572376d861b",
+   "path": "OAI/Combinatorics/ThinTrees/RankOne.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/RealRoots.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.RealRoots",
+   "original_sha256": "cd5496bf6a927e681761a2e45ed7e87f9c2de37e6599cc2ac604574c125d5694",
+   "path": "OAI/Combinatorics/ThinTrees/RealRoots.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Records.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Records",
+   "original_sha256": "ac8ee5e7f0ce8684e25e0be6444d9a8857ffeac35f4a5f19ea164070a8b2f61c",
+   "path": "OAI/Combinatorics/ThinTrees/Records.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Representation.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Representation",
+   "original_sha256": "9c2d9e23cf26f200f5f7ddcd39e4173e9e9fce86cb2b01447bb829ace6177aaa",
+   "path": "OAI/Combinatorics/ThinTrees/Representation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/ResponseBounds.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.ResponseBounds",
+   "original_sha256": "207a6e7f1f7612e4932dd41254a59f374974b3fd6080d631722fb61ab9dbdc96",
+   "path": "OAI/Combinatorics/ThinTrees/ResponseBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/ResponseFixedPoint.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.ResponseFixedPoint",
+   "original_sha256": "251ef165be3cf0b48653886885ff26b142ab155c97ece66a8f040f8b53f62ac9",
+   "path": "OAI/Combinatorics/ThinTrees/ResponseFixedPoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Restriction.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Restriction",
+   "original_sha256": "7c2a88301e229650d9ae818a5fbdad167f2ad2315870c4c2f643717633b311e1",
+   "path": "OAI/Combinatorics/ThinTrees/Restriction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/RootBound.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.RootBound",
+   "original_sha256": "49acb71f943738860b99d520b9b5d0b55524588bb620f481c52a75af5acfa481",
+   "path": "OAI/Combinatorics/ThinTrees/RootBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Selection.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Selection",
+   "original_sha256": "2446bc0c2678870bd9362cd25716d3e1d352aaa2ef27c3ef473a3186e42f363f",
+   "path": "OAI/Combinatorics/ThinTrees/Selection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Shells.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Shells",
+   "original_sha256": "dcf20d1f1aca7ec3ee072fe7b9b041e6a2cd03c5d213054b66a5b2ea713bdbc4",
+   "path": "OAI/Combinatorics/ThinTrees/Shells.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/ShortcutDuality.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.ShortcutDuality",
+   "original_sha256": "5a7debd0201e6dc86d19c0f5fd96fc8319072237c1141cd8addd4d44f3253e07",
+   "path": "OAI/Combinatorics/ThinTrees/ShortcutDuality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/SimultaneousResponse.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.SimultaneousResponse",
+   "original_sha256": "0174efc68999ef96faf8ea23ba60487d6ff6f09fdd94850ac7618e7e9044158e",
+   "path": "OAI/Combinatorics/ThinTrees/SimultaneousResponse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Sparsification.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Sparsification",
+   "original_sha256": "3f90b4924adc8d668acd88c4cc2a9932a11f9752ade6479c765c203af55f9f67",
+   "path": "OAI/Combinatorics/ThinTrees/Sparsification.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/SparsifyGeometry.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.SparsifyGeometry",
+   "original_sha256": "c672a0e7e9223edfb675ccb92742f0d07584786f3cad2db55e0f0737fd655afe",
+   "path": "OAI/Combinatorics/ThinTrees/SparsifyGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/SpectralPacking.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.SpectralPacking",
+   "original_sha256": "a8006746a27fb4c9bbe8f5eb84a9f0c4726514e87e7e55e82dbbb78417db6207",
+   "path": "OAI/Combinatorics/ThinTrees/SpectralPacking.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/SpectralSplit.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.SpectralSplit",
+   "original_sha256": "ccbbf99fc7e6ad85109574d0814ab2abe1b8477d990302b7d83a895f906eaa53",
+   "path": "OAI/Combinatorics/ThinTrees/SpectralSplit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Stability.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Stability",
+   "original_sha256": "4146a98a85eba3a68b75c0887e5e6b1ff8e223c69929c970b2828efe8ddaba48",
+   "path": "OAI/Combinatorics/ThinTrees/Stability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/StepBounds.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.StepBounds",
+   "original_sha256": "e7dbb43441e33552fe6578a06b3d67dd504dbbb846067f65a27def51b72db607",
+   "path": "OAI/Combinatorics/ThinTrees/StepBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Subisotropic.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Subisotropic",
+   "original_sha256": "f76d0923f48076093d2a4efd74bede19a63d07a8b03093bbfdc12e4b9f6991f5",
+   "path": "OAI/Combinatorics/ThinTrees/Subisotropic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/ThresholdChain.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.ThresholdChain",
+   "original_sha256": "95fe45baaf6e68a6282130ec76397c680de4fcf56582b79abc4afc1f39eeddb7",
+   "path": "OAI/Combinatorics/ThinTrees/ThresholdChain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Translation.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Translation",
+   "original_sha256": "4ff052c1bba4434aa68b4b1b439568f5b8688b1294053defa2ec23adc42aec3d",
+   "path": "OAI/Combinatorics/ThinTrees/Translation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/Truncation.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.Truncation",
+   "original_sha256": "5799395ddebac462a4467004dddd6e4bf63890a5a45ffeb41f140fd1bbf0733d",
+   "path": "OAI/Combinatorics/ThinTrees/Truncation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ThinTrees/TwoSystems.lean"
+   },
+   "module": "OAI.Combinatorics.ThinTrees.TwoSystems",
+   "original_sha256": "7f7320a4f3a207dde7491b9c49fea641362d26d12fa2687094e9db21dd3fde11",
+   "path": "OAI/Combinatorics/ThinTrees/TwoSystems.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.ThinTrees.Affine",
+  "OAI.Combinatorics.ThinTrees.AssignedFamilies",
+  "OAI.Combinatorics.ThinTrees.Assignment",
+  "OAI.Combinatorics.ThinTrees.BagBounds",
+  "OAI.Combinatorics.ThinTrees.BagConstruction",
+  "OAI.Combinatorics.ThinTrees.BagGeometry",
+  "OAI.Combinatorics.ThinTrees.Barrier",
+  "OAI.Combinatorics.ThinTrees.BasePacking",
+  "OAI.Combinatorics.ThinTrees.Blocks",
+  "OAI.Combinatorics.ThinTrees.Capture",
+  "OAI.Combinatorics.ThinTrees.ChainEdges",
+  "OAI.Combinatorics.ThinTrees.Characteristic",
+  "OAI.Combinatorics.ThinTrees.Coarea",
+  "OAI.Combinatorics.ThinTrees.CompactPacking",
+  "OAI.Combinatorics.ThinTrees.Density",
+  "OAI.Combinatorics.ThinTrees.DeterminantCalculus",
+  "OAI.Combinatorics.ThinTrees.Duality",
+  "OAI.Combinatorics.ThinTrees.DyadicSelection",
+  "OAI.Combinatorics.ThinTrees.Expectation",
+  "OAI.Combinatorics.ThinTrees.Extraction",
+  "OAI.Combinatorics.ThinTrees.ExtractionBounds",
+  "OAI.Combinatorics.ThinTrees.ExtractionCriterion",
+  "OAI.Combinatorics.ThinTrees.ExtractionLimit",
+  "OAI.Combinatorics.ThinTrees.FiniteSelection",
+  "OAI.Combinatorics.ThinTrees.FixedPoint",
+  "OAI.Combinatorics.ThinTrees.GraphMatrix",
+  "OAI.Combinatorics.ThinTrees.Hierarchy",
+  "OAI.Combinatorics.ThinTrees.HierarchyBounds",
+  "OAI.Combinatorics.ThinTrees.HierarchyBuilder",
+  "OAI.Combinatorics.ThinTrees.HierarchyResponse",
+  "OAI.Combinatorics.ThinTrees.IndependentVectors",
+  "OAI.Combinatorics.ThinTrees.Interlacing",
+  "OAI.Combinatorics.ThinTrees.Iteration",
+  "OAI.Combinatorics.ThinTrees.IterationBounds",
+  "OAI.Combinatorics.ThinTrees.Main",
+  "OAI.Combinatorics.ThinTrees.Matrix",
+  "OAI.Combinatorics.ThinTrees.MatrixDomain",
+  "OAI.Combinatorics.ThinTrees.MatrixMixture",
+  "OAI.Combinatorics.ThinTrees.MixedPolynomial",
+  "OAI.Combinatorics.ThinTrees.Model",
+  "OAI.Combinatorics.ThinTrees.Monicity",
+  "OAI.Combinatorics.ThinTrees.Normalization",
+  "OAI.Combinatorics.ThinTrees.OptionalDirections",
+  "OAI.Combinatorics.ThinTrees.Padding",
+  "OAI.Combinatorics.ThinTrees.PartialFractions",
+  "OAI.Combinatorics.ThinTrees.PartitionHierarchy",
+  "OAI.Combinatorics.ThinTrees.PartitionRank",
+  "OAI.Combinatorics.ThinTrees.Partitions",
+  "OAI.Combinatorics.ThinTrees.Phases",
+  "OAI.Combinatorics.ThinTrees.RankOne",
+  "OAI.Combinatorics.ThinTrees.RealRoots",
+  "OAI.Combinatorics.ThinTrees.Records",
+  "OAI.Combinatorics.ThinTrees.Representation",
+  "OAI.Combinatorics.ThinTrees.ResponseBounds",
+  "OAI.Combinatorics.ThinTrees.ResponseFixedPoint",
+  "OAI.Combinatorics.ThinTrees.Restriction",
+  "OAI.Combinatorics.ThinTrees.RootBound",
+  "OAI.Combinatorics.ThinTrees.Selection",
+  "OAI.Combinatorics.ThinTrees.Shells",
+  "OAI.Combinatorics.ThinTrees.ShortcutDuality",
+  "OAI.Combinatorics.ThinTrees.SimultaneousResponse",
+  "OAI.Combinatorics.ThinTrees.Sparsification",
+  "OAI.Combinatorics.ThinTrees.SparsifyGeometry",
+  "OAI.Combinatorics.ThinTrees.SpectralPacking",
+  "OAI.Combinatorics.ThinTrees.SpectralSplit",
+  "OAI.Combinatorics.ThinTrees.Stability",
+  "OAI.Combinatorics.ThinTrees.StepBounds",
+  "OAI.Combinatorics.ThinTrees.Subisotropic",
+  "OAI.Combinatorics.ThinTrees.ThresholdChain",
+  "OAI.Combinatorics.ThinTrees.Translation",
+  "OAI.Combinatorics.ThinTrees.Truncation",
+  "OAI.Combinatorics.ThinTrees.TwoSystems"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/StrongThinTree.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Combinatorics.ThinTrees.Main",
+   "name": "OAI.StrongThinTree.strongThinTree",
+   "statement_sha256": "74cc66378346e633f5ef42ae53a98937a3947b21509568f66c4ba12f1c104fc1"
+  }
+ ],
+ "task_id": "oai-strong-thin-tree",
+ "task_revision": 1,
+ "title": "OpenAI math: Deterministic construction of strong thin spanning trees: Strong thin-tree bound",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

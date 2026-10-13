@@ -1,0 +1,1021 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 1473207324
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.StructuralCrouzeix",
+  "challenge_sha256": "f7c09beafdb635221e63e9846043df4347994d7df7f8d7858ead113cf049f205",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/StructuralCrouzeix.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.StructuralCrouzeix",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.StructuralCrouzeix.Endpoint",
+   "theorem_names": [
+    "OAI.StructuralCrouzeixReference.challenge"
+   ]
+  },
+  "config_sha256": "bb8e7bf4a71d8064a57ea0099e299caa456fdea7d2fac8f73d74845bb163b4ba",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/StructuralCrouzeix.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.StructuralCrouzeixReference.challenge": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/AnalyticCharts.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.AnalyticCharts",
+   "original_sha256": "c135e0b9044d48b32008e62618a88167b1cf07427aa974b290c3426a5fd59a41",
+   "path": "OAI/Analysis/NumericalRange/AnalyticCharts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/BoundaryCalculus.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.BoundaryCalculus",
+   "original_sha256": "246e6c4f4c700cc4b257f7c1383993fbde34379d32653612b1b93eded69a5889",
+   "path": "OAI/Analysis/NumericalRange/BoundaryCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/BoundaryNormals.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.BoundaryNormals",
+   "original_sha256": "6de0ff4eabbd4216244b1395e56a00d70774f64db2f29c73ec65444f642a1301",
+   "path": "OAI/Analysis/NumericalRange/BoundaryNormals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/BoundaryRepresentation.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.BoundaryRepresentation",
+   "original_sha256": "d5479d398c7109c32186c45cac3e6c0afcfa276f9c2331afd29b03c897e2a8ab",
+   "path": "OAI/Analysis/NumericalRange/BoundaryRepresentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/CauchyEvaluation.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.CauchyEvaluation",
+   "original_sha256": "0e7b9e83600e744c576cc3fe355d485f989d529be4717d43d4beaf612977e6fb",
+   "path": "OAI/Analysis/NumericalRange/CauchyEvaluation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/CauchyProjection.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.CauchyProjection",
+   "original_sha256": "4c8d0db4bce7398314cfababd79f6bf32ddeea956b2daf9cc6c4d70dd81c8b38",
+   "path": "OAI/Analysis/NumericalRange/CauchyProjection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/CircleIntegrals.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.CircleIntegrals",
+   "original_sha256": "8d3646d2f53f1c32cb181cb7a92eb0943a81ea4cf711b524296e9ea265c6baa7",
+   "path": "OAI/Analysis/NumericalRange/CircleIntegrals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/CompleteResolvent.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.CompleteResolvent",
+   "original_sha256": "ba56485b3691e0108bbbd974495b2e97fac06d12a7ee7afc1eade45165cd60e7",
+   "path": "OAI/Analysis/NumericalRange/CompleteResolvent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/ConformalGluing.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.ConformalGluing",
+   "original_sha256": "ca41f6ec91e4a783b9105338d120147c74cd1fdea861ab933e8d6d4930c0fc0f",
+   "path": "OAI/Analysis/NumericalRange/ConformalGluing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/ConformalJacobian.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.ConformalJacobian",
+   "original_sha256": "3f69b24930c2969b534b33ff4ad725670304cc5c81d001c4ea074fd4582d0204",
+   "path": "OAI/Analysis/NumericalRange/ConformalJacobian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/ConformalWinding.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.ConformalWinding",
+   "original_sha256": "883e20d6fb82247e0c8cdb8c8bd991fc1a404e3f328fffaf57d18d602681946e",
+   "path": "OAI/Analysis/NumericalRange/ConformalWinding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/ConvexBarrier.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.ConvexBarrier",
+   "original_sha256": "d346d4f54df369ac64645cacc3b00d055b2da3c58e4b53e2e15b4de66f9f6181",
+   "path": "OAI/Analysis/NumericalRange/ConvexBarrier.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/ConvexExterior.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.ConvexExterior",
+   "original_sha256": "4e614053d90036a5f11c9b25df2d400b301a9a9d10f2976adfd134d055c46034",
+   "path": "OAI/Analysis/NumericalRange/ConvexExterior.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/Convexity.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.Convexity",
+   "original_sha256": "b44db0cd936db97bca70c0d57f1177aed4502a9fde017f889c848b6db208f9ee",
+   "path": "OAI/Analysis/NumericalRange/Convexity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/DensityAdjoints.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.DensityAdjoints",
+   "original_sha256": "79d19261c7632f09189eaf5116bb5a08b431829033f41a8b4d37805d65f45379",
+   "path": "OAI/Analysis/NumericalRange/DensityAdjoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/DensityComparison.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.DensityComparison",
+   "original_sha256": "9af07e5a0b8aea5301957316a5cf749c331f2300039e4cc7cfb30fa757a01c33",
+   "path": "OAI/Analysis/NumericalRange/DensityComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/DensityIdentification.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.DensityIdentification",
+   "original_sha256": "7b4b75d36e1a31abbc827e0ec8c376fc305e42a0b14f07da7ada66a5b3d643a9",
+   "path": "OAI/Analysis/NumericalRange/DensityIdentification.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/DensityTransport.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.DensityTransport",
+   "original_sha256": "0f96c775ae6675b3949fbb43f678be7fb1e591ecebedbe060db40d8ca525bada",
+   "path": "OAI/Analysis/NumericalRange/DensityTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/DilationDensity.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.DilationDensity",
+   "original_sha256": "63f59e2a299cabf540ee5f962759f079c477908557c6eedb491dc185107e1206",
+   "path": "OAI/Analysis/NumericalRange/DilationDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/DiskCalculus.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.DiskCalculus",
+   "original_sha256": "586920d3b73386dc94196182c0abf7f854863daa563fe92acf8c2388850c9bb4",
+   "path": "OAI/Analysis/NumericalRange/DiskCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/DiskMapping.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.DiskMapping",
+   "original_sha256": "9860fbd46774aaef77e39da6006846f08b5c187bf164fb990b7019a243acb393",
+   "path": "OAI/Analysis/NumericalRange/DiskMapping.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/DomainBound.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.DomainBound",
+   "original_sha256": "d95d4963abbe8435340d1b24f2dee1ec43016f4f1d73947d9b196fef074485aa",
+   "path": "OAI/Analysis/NumericalRange/DomainBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/DomainCalculus.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.DomainCalculus",
+   "original_sha256": "3010a5bc73d2b43c2e049e433a56124b227858ffe33c864b668490c1e555b987",
+   "path": "OAI/Analysis/NumericalRange/DomainCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/DualSeparation.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.DualSeparation",
+   "original_sha256": "738b7d8d35cdcb6cbf8c78fe20742abbf81986ba674c24cab662928626e639e0",
+   "path": "OAI/Analysis/NumericalRange/DualSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/ExteriorKernel.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.ExteriorKernel",
+   "original_sha256": "f0cbb45f7ad472d665c79cd034f49785672fe2d9b5d26cf3aa100e328e916f31",
+   "path": "OAI/Analysis/NumericalRange/ExteriorKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/ExteriorProjection.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.ExteriorProjection",
+   "original_sha256": "b6b24f3fb7b92870728688d9a1898cbbad4cb43396f82a97603ed39d49cbf09e",
+   "path": "OAI/Analysis/NumericalRange/ExteriorProjection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/FourierExtension.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.FourierExtension",
+   "original_sha256": "1b6aa7fb5c73a5eab4dc5c044af101031d4040126a9321656a72012c74850200",
+   "path": "OAI/Analysis/NumericalRange/FourierExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/FourierResolution.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.FourierResolution",
+   "original_sha256": "2bc784fe9cfacbe70fecfe48fc85ad224f164218d2109cf17a02d2386eda9f3e",
+   "path": "OAI/Analysis/NumericalRange/FourierResolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/HerglotzReflection.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.HerglotzReflection",
+   "original_sha256": "d749b49fc3c26e3107a8b2218b7fbe50064254bf27c24b888a9c3b8f3d155f19",
+   "path": "OAI/Analysis/NumericalRange/HerglotzReflection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/HilbertSchmidt.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.HilbertSchmidt",
+   "original_sha256": "369236cb9a8113ac52859572e727d5e41316e3b1c10266a829de6b336282f7c8",
+   "path": "OAI/Analysis/NumericalRange/HilbertSchmidt.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/HolomorphicEvaluation.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.HolomorphicEvaluation",
+   "original_sha256": "fcdb5a2561d336ae27c1153f1b1f0f58f44576052c58d8a8eff19bc318523bb1",
+   "path": "OAI/Analysis/NumericalRange/HolomorphicEvaluation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/Main.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.Main",
+   "original_sha256": "fbbd1e3e5006b9a851b91899e9544793d6e426cf92ab8216a68e4136bf80a8b4",
+   "path": "OAI/Analysis/NumericalRange/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/MarkovOperator.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.MarkovOperator",
+   "original_sha256": "2a9b928fdda7324ba56573d81a989f3df023d11504e50dbbcf2c6b0d2a92d636",
+   "path": "OAI/Analysis/NumericalRange/MarkovOperator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/MetricFeasibility.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.MetricFeasibility",
+   "original_sha256": "ade230370818eb002dc51c15d1da54a4354d7ca287176dad0c13fd437be4f72f",
+   "path": "OAI/Analysis/NumericalRange/MetricFeasibility.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/MetricNorm.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.MetricNorm",
+   "original_sha256": "2103d1f571a62db7c82cf8f65784c523ec4e680f95d4858a1c9450c90cc14630",
+   "path": "OAI/Analysis/NumericalRange/MetricNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/Model.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.Model",
+   "original_sha256": "dbfc2975e7a514e020902975fecf031fc7e55a7954fa74e10d5f10ae91b16bc5",
+   "path": "OAI/Analysis/NumericalRange/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/OptimalExtremal.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.OptimalExtremal",
+   "original_sha256": "0bb6238e69872669ae72556cd3522455c95850e96db2f8fdd6ac124f222edafb",
+   "path": "OAI/Analysis/NumericalRange/OptimalExtremal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/OrderedDensities.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.OrderedDensities",
+   "original_sha256": "c3d57647d6b94e0556ac8875b869877823aa32ad896e25ca0b0f8d5acbed60f3",
+   "path": "OAI/Analysis/NumericalRange/OrderedDensities.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/OrderedMultiplication.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.OrderedMultiplication",
+   "original_sha256": "4ce7db4e4ddc1843920ee0ae7199dd427b0881025fafad07bbea01e36dcfafe9",
+   "path": "OAI/Analysis/NumericalRange/OrderedMultiplication.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/OuterNeighborhood.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.OuterNeighborhood",
+   "original_sha256": "a795eeb0f4e3069ce98d29bd43f78eef1f77006388a47da8cfc229e30b8e8141",
+   "path": "OAI/Analysis/NumericalRange/OuterNeighborhood.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/PoissonBoundary.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.PoissonBoundary",
+   "original_sha256": "45a3820ca2e00ff68dd3f2d1ca94ecb0fcca42407bfafb94c0996c9912020746",
+   "path": "OAI/Analysis/NumericalRange/PoissonBoundary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/PolynomialCalculus.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.PolynomialCalculus",
+   "original_sha256": "22cb147d446e45882c60e6e8abfe120576f256b37d69f54dceb6d427753b257c",
+   "path": "OAI/Analysis/NumericalRange/PolynomialCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/PositiveDensity.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.PositiveDensity",
+   "original_sha256": "6d600da4c40eba71dfd2d40ef0ee7c704a826054c32ace192aae5e9dd37b2372",
+   "path": "OAI/Analysis/NumericalRange/PositiveDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/PulledDensity.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.PulledDensity",
+   "original_sha256": "b3c0a23aff7c2d309ab30b1212d895bd21c42d0f2c133379c9fc04cc5b0ba067",
+   "path": "OAI/Analysis/NumericalRange/PulledDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/ResolventPositivity.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.ResolventPositivity",
+   "original_sha256": "384233dcd3df74619679b866b11c7d739688a3a0ddafbac0f7636811f5478cf0",
+   "path": "OAI/Analysis/NumericalRange/ResolventPositivity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/Sharpness.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.Sharpness",
+   "original_sha256": "f1bffae155f5647b7b28ae490ac1dce0ea04992c5726ff23019edb8658d664d6",
+   "path": "OAI/Analysis/NumericalRange/Sharpness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/TestingAlgebra.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.TestingAlgebra",
+   "original_sha256": "8cfcc0d5fa080e862d5164baa55bca6edceabbde2d56c83c16c6d7300a42092e",
+   "path": "OAI/Analysis/NumericalRange/TestingAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/NumericalRange/UnitaryRealization.lean"
+   },
+   "module": "OAI.Analysis.NumericalRange.UnitaryRealization",
+   "original_sha256": "1930176754b3e53c6208869b2049ac4866a304e49f05e85936efd597a8e2708f",
+   "path": "OAI/Analysis/NumericalRange/UnitaryRealization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/StructuralCrouzeix/ClosedSide.lean"
+   },
+   "module": "OAI.Analysis.StructuralCrouzeix.ClosedSide",
+   "original_sha256": "75a2b8decdd092338c8d060c63884da0db724ce820a6c3d0570156b1edf37f67",
+   "path": "OAI/Analysis/StructuralCrouzeix/ClosedSide.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/StructuralCrouzeix/Endpoint.lean"
+   },
+   "module": "OAI.Analysis.StructuralCrouzeix.Endpoint",
+   "original_sha256": "9fcce1d3babe276a302041c177e25b5e09093e4051220bb59c8add28dc3a07c3",
+   "path": "OAI/Analysis/StructuralCrouzeix/Endpoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/StructuralCrouzeix/ExteriorSupport.lean"
+   },
+   "module": "OAI.Analysis.StructuralCrouzeix.ExteriorSupport",
+   "original_sha256": "f5e891cd079a6b33405a5e8b6fe7c21f375f54ee882e2c325b4594cec32ac670",
+   "path": "OAI/Analysis/StructuralCrouzeix/ExteriorSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/StructuralCrouzeix/GeometryBasics.lean"
+   },
+   "module": "OAI.Analysis.StructuralCrouzeix.GeometryBasics",
+   "original_sha256": "93c94c9f3100dd7a35e384f4d67f73520abe12ba83c63309cd02c2dfd83d51f0",
+   "path": "OAI/Analysis/StructuralCrouzeix/GeometryBasics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/StructuralCrouzeix/Main.lean"
+   },
+   "module": "OAI.Analysis.StructuralCrouzeix.Main",
+   "original_sha256": "e802f96181bcb5bf5bb5e9861dc7265d1d0f3ce7e573b2c8f527d8da53d353f0",
+   "path": "OAI/Analysis/StructuralCrouzeix/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/StructuralCrouzeix/Model.lean"
+   },
+   "module": "OAI.Analysis.StructuralCrouzeix.Model",
+   "original_sha256": "be56d78038ad45ed67aff1e48e1a2215072d4011373044bfd448f4b841daabb7",
+   "path": "OAI/Analysis/StructuralCrouzeix/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/StructuralCrouzeix/OptimizerAssembly.lean"
+   },
+   "module": "OAI.Analysis.StructuralCrouzeix.OptimizerAssembly",
+   "original_sha256": "efe43a8c617f60022283056f6e2305a83c9487ea2949ac6dea1bdca63f477564",
+   "path": "OAI/Analysis/StructuralCrouzeix/OptimizerAssembly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/StructuralCrouzeix/OrientBoundary.lean"
+   },
+   "module": "OAI.Analysis.StructuralCrouzeix.OrientBoundary",
+   "original_sha256": "d2e1e0ac16e9e3e3d4c48eb20129d48c381d09d07eab671cb032844cd1d0e563",
+   "path": "OAI/Analysis/StructuralCrouzeix/OrientBoundary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/StructuralCrouzeix/SharedDensity.lean"
+   },
+   "module": "OAI.Analysis.StructuralCrouzeix.SharedDensity",
+   "original_sha256": "035320a6b57d5101ee3af8b1a9136d95532592569d790ad3ae66654771c313c1",
+   "path": "OAI/Analysis/StructuralCrouzeix/SharedDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/StructuralCrouzeix/SharedMaximum.lean"
+   },
+   "module": "OAI.Analysis.StructuralCrouzeix.SharedMaximum",
+   "original_sha256": "cbb12e8e1ad6bd00dfdeb77de5311c0d0c95ca0273adbeba90b7dbbb811d7167",
+   "path": "OAI/Analysis/StructuralCrouzeix/SharedMaximum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/StructuralCrouzeix/SimilarityMinimum.lean"
+   },
+   "module": "OAI.Analysis.StructuralCrouzeix.SimilarityMinimum",
+   "original_sha256": "3f2a31959a81285f7c9a4e6385f455f0b01a3eca24896a5a6d8afb310bb0314c",
+   "path": "OAI/Analysis/StructuralCrouzeix/SimilarityMinimum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/StructuralCrouzeix/UnitDisk.lean"
+   },
+   "module": "OAI.Analysis.StructuralCrouzeix.UnitDisk",
+   "original_sha256": "160f0a655f1b555fd280ad94727f580326cb78071433c6ffc663063fec75925d",
+   "path": "OAI/Analysis/StructuralCrouzeix/UnitDisk.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.NumericalRange.AnalyticCharts",
+  "OAI.Analysis.NumericalRange.BoundaryCalculus",
+  "OAI.Analysis.NumericalRange.BoundaryNormals",
+  "OAI.Analysis.NumericalRange.BoundaryRepresentation",
+  "OAI.Analysis.NumericalRange.CauchyEvaluation",
+  "OAI.Analysis.NumericalRange.CauchyProjection",
+  "OAI.Analysis.NumericalRange.CircleIntegrals",
+  "OAI.Analysis.NumericalRange.CompleteResolvent",
+  "OAI.Analysis.NumericalRange.ConformalGluing",
+  "OAI.Analysis.NumericalRange.ConformalJacobian",
+  "OAI.Analysis.NumericalRange.ConformalWinding",
+  "OAI.Analysis.NumericalRange.ConvexBarrier",
+  "OAI.Analysis.NumericalRange.ConvexExterior",
+  "OAI.Analysis.NumericalRange.Convexity",
+  "OAI.Analysis.NumericalRange.DensityAdjoints",
+  "OAI.Analysis.NumericalRange.DensityComparison",
+  "OAI.Analysis.NumericalRange.DensityIdentification",
+  "OAI.Analysis.NumericalRange.DensityTransport",
+  "OAI.Analysis.NumericalRange.DilationDensity",
+  "OAI.Analysis.NumericalRange.DiskCalculus",
+  "OAI.Analysis.NumericalRange.DiskMapping",
+  "OAI.Analysis.NumericalRange.DomainBound",
+  "OAI.Analysis.NumericalRange.DomainCalculus",
+  "OAI.Analysis.NumericalRange.DualSeparation",
+  "OAI.Analysis.NumericalRange.ExteriorKernel",
+  "OAI.Analysis.NumericalRange.ExteriorProjection",
+  "OAI.Analysis.NumericalRange.FourierExtension",
+  "OAI.Analysis.NumericalRange.FourierResolution",
+  "OAI.Analysis.NumericalRange.HerglotzReflection",
+  "OAI.Analysis.NumericalRange.HilbertSchmidt",
+  "OAI.Analysis.NumericalRange.HolomorphicEvaluation",
+  "OAI.Analysis.NumericalRange.Main",
+  "OAI.Analysis.NumericalRange.MarkovOperator",
+  "OAI.Analysis.NumericalRange.MetricFeasibility",
+  "OAI.Analysis.NumericalRange.MetricNorm",
+  "OAI.Analysis.NumericalRange.Model",
+  "OAI.Analysis.NumericalRange.OptimalExtremal",
+  "OAI.Analysis.NumericalRange.OrderedDensities",
+  "OAI.Analysis.NumericalRange.OrderedMultiplication",
+  "OAI.Analysis.NumericalRange.OuterNeighborhood",
+  "OAI.Analysis.NumericalRange.PoissonBoundary",
+  "OAI.Analysis.NumericalRange.PolynomialCalculus",
+  "OAI.Analysis.NumericalRange.PositiveDensity",
+  "OAI.Analysis.NumericalRange.PulledDensity",
+  "OAI.Analysis.NumericalRange.ResolventPositivity",
+  "OAI.Analysis.NumericalRange.Sharpness",
+  "OAI.Analysis.NumericalRange.TestingAlgebra",
+  "OAI.Analysis.NumericalRange.UnitaryRealization",
+  "OAI.Analysis.StructuralCrouzeix.ClosedSide",
+  "OAI.Analysis.StructuralCrouzeix.Endpoint",
+  "OAI.Analysis.StructuralCrouzeix.ExteriorSupport",
+  "OAI.Analysis.StructuralCrouzeix.GeometryBasics",
+  "OAI.Analysis.StructuralCrouzeix.Main",
+  "OAI.Analysis.StructuralCrouzeix.Model",
+  "OAI.Analysis.StructuralCrouzeix.OptimizerAssembly",
+  "OAI.Analysis.StructuralCrouzeix.OrientBoundary",
+  "OAI.Analysis.StructuralCrouzeix.SharedDensity",
+  "OAI.Analysis.StructuralCrouzeix.SharedMaximum",
+  "OAI.Analysis.StructuralCrouzeix.SimilarityMinimum",
+  "OAI.Analysis.StructuralCrouzeix.UnitDisk"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/StructuralCrouzeix.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.StructuralCrouzeix.Endpoint",
+   "name": "OAI.StructuralCrouzeixReference.challenge",
+   "statement_sha256": "4de31345d288d5ae4578b1b0aa0fae4bb7232da18e2fec34d3e62eae78e5a570"
+  }
+ ],
+ "task_id": "oai-structural-crouzeix",
+ "task_revision": 1,
+ "title": "OpenAI math: The complete Crouzeix conjecture: Optimal similarity and boundary representation",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

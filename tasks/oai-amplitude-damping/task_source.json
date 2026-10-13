@@ -1,0 +1,771 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 165660849
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.AmplitudeDamping",
+  "challenge_sha256": "fa10657ef13d9a869fb057e0a166b21fe24a538d02211b8b62c29bc7a03588bd",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/AmplitudeDamping.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.AmplitudeDamping",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.InformationTheory.AmplitudeDamping.Main",
+   "theorem_names": [
+    "OAI.GAD.main"
+   ]
+  },
+  "config_sha256": "d5fd3b206d67df3786b22e25c25e9a7364ea70ee02a6d2d8b478b76e9ef7d70b",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/AmplitudeDamping.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.GAD.main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/BlockFactors.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.BlockFactors",
+   "original_sha256": "019740e317538e31c5cf9a8d51e41867a22d122e37ef2bee60fe11cda6d056db",
+   "path": "OAI/InformationTheory/AmplitudeDamping/BlockFactors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/CapacityAchievability.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.CapacityAchievability",
+   "original_sha256": "dee3c47519f33318f9240cc60328f70b8a7fe26193c6b410e775595c781d16a8",
+   "path": "OAI/InformationTheory/AmplitudeDamping/CapacityAchievability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/CapacityConverse.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.CapacityConverse",
+   "original_sha256": "25985e7bf3b013bdc16c362bd53d035ea9359220686a7c8041056487add1c2f4",
+   "path": "OAI/InformationTheory/AmplitudeDamping/CapacityConverse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/Channel.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.Channel",
+   "original_sha256": "e172ad790e4e02bf10e028b59e87d3339e148be0d208e7638cf9eb391f7cc35d",
+   "path": "OAI/InformationTheory/AmplitudeDamping/Channel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/CodingAsymptotics.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.CodingAsymptotics",
+   "original_sha256": "a85f331dad97ced5fde30c7775740e913fa74dca80eeebaee5cf0b7800feb351",
+   "path": "OAI/InformationTheory/AmplitudeDamping/CodingAsymptotics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/EnsembleBounds.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.EnsembleBounds",
+   "original_sha256": "5cb9502b4693e5d5a08493c77507d556db2335ac2ca4a0c80e626c631c86c054",
+   "path": "OAI/InformationTheory/AmplitudeDamping/EnsembleBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/EntropyContinuity.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.EntropyContinuity",
+   "original_sha256": "84907d3159588660de83a427d8d6903021a29e78b09a3f15df7715bb4a4c125c",
+   "path": "OAI/InformationTheory/AmplitudeDamping/EntropyContinuity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/FinitePacking.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.FinitePacking",
+   "original_sha256": "82be3f80a04c41c283dd191d9e5dcf4b3ee35417ae23de6c5e4ffa6ff364e694",
+   "path": "OAI/InformationTheory/AmplitudeDamping/FinitePacking.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/GramMatrices.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.GramMatrices",
+   "original_sha256": "bf23ccf388980a1489f8b06556e399613383c45c6cfcca7d3508bb2047965327",
+   "path": "OAI/InformationTheory/AmplitudeDamping/GramMatrices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/Holevo.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.Holevo",
+   "original_sha256": "d8ab03476903bee9fa5f1ea9115a23fd5afc449f7807c79ee7e753caf963756a",
+   "path": "OAI/InformationTheory/AmplitudeDamping/Holevo.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/HolevoInformation.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.HolevoInformation",
+   "original_sha256": "9732bde3179826e0581afb2bcbc414f4f9847e25dd8ae4cc2fa5534f9d799f0c",
+   "path": "OAI/InformationTheory/AmplitudeDamping/HolevoInformation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/LogDetConvexity.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.LogDetConvexity",
+   "original_sha256": "4639b0d4161d0c61c921b00860b3899f3b64e86c15d69a7b19334f92bef1aff4",
+   "path": "OAI/InformationTheory/AmplitudeDamping/LogDetConvexity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/LogDetEntropy.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.LogDetEntropy",
+   "original_sha256": "31a07f393b17d0bb7aacc58a4108ff684ee158a9eca7bb8e63d3a1ad1359fd95",
+   "path": "OAI/InformationTheory/AmplitudeDamping/LogDetEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/Main.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.Main",
+   "original_sha256": "24aeebc34cbc3932d57e82236613dd086c1233a27c461717a5337facc7a31d87",
+   "path": "OAI/InformationTheory/AmplitudeDamping/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/MatrixDifferentiation.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.MatrixDifferentiation",
+   "original_sha256": "baf422c71cce563371a444914f7ccaf562cb323426a6ded837fa049ea241de45",
+   "path": "OAI/InformationTheory/AmplitudeDamping/MatrixDifferentiation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/Model.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.Model",
+   "original_sha256": "709ab56f351cb6ebee2497f58ecfb722c4828d60cf3d6cd68f9358d8d7551f08",
+   "path": "OAI/InformationTheory/AmplitudeDamping/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/Naimark.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.Naimark",
+   "original_sha256": "67aa789103be983f913d6a3e9b7f08f89d3ec92bcc6e91dd4b12c376e68e201a",
+   "path": "OAI/InformationTheory/AmplitudeDamping/Naimark.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/OutputConvexity.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.OutputConvexity",
+   "original_sha256": "e6a3c93d567faeb3005c60ffadb376f15172dc614788e6c4968273c83b5d0a82",
+   "path": "OAI/InformationTheory/AmplitudeDamping/OutputConvexity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/OutputEntropy.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.OutputEntropy",
+   "original_sha256": "9c66a4d73e07641e9eda9aa0b453012b9010f9b7abc5acf24d0b27b1e1c86036",
+   "path": "OAI/InformationTheory/AmplitudeDamping/OutputEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/PhaseCoding.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.PhaseCoding",
+   "original_sha256": "afe3e0e3b99438406e6bc8d928fc8b8c7725a29a6c7a467859042120717c076f",
+   "path": "OAI/InformationTheory/AmplitudeDamping/PhaseCoding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/PhaseProducts.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.PhaseProducts",
+   "original_sha256": "c4a644910277957bf08ab4fb5cb0a8b8dc44070ca04f744e03568c440c24a943",
+   "path": "OAI/InformationTheory/AmplitudeDamping/PhaseProducts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/PhaseStates.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.PhaseStates",
+   "original_sha256": "9d3c728ebc39793421e4b5157ccf781cb315816e3e7d9472ab5fefe64d6f7f14",
+   "path": "OAI/InformationTheory/AmplitudeDamping/PhaseStates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/Pinching.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.Pinching",
+   "original_sha256": "469951164dfc8e9f7a0a120f9044f7c571bf62e074d175d96268a824cff12d30",
+   "path": "OAI/InformationTheory/AmplitudeDamping/Pinching.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/PureRecursion.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.PureRecursion",
+   "original_sha256": "0b8515899f78a39a63283243012fd5127e48f3b82dbab3af6daaf89c92ac083e",
+   "path": "OAI/InformationTheory/AmplitudeDamping/PureRecursion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/ScalarDeficit.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.ScalarDeficit",
+   "original_sha256": "8018ac88e53e7a7967c44ba8ddb4f219a7d120b38d89b8529ee641e48c9fcbb0",
+   "path": "OAI/InformationTheory/AmplitudeDamping/ScalarDeficit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/SequentialDecoder.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.SequentialDecoder",
+   "original_sha256": "5e0819df6d09ab219814796083afe07b81afd8effece0fa962a1d7d968d71114",
+   "path": "OAI/InformationTheory/AmplitudeDamping/SequentialDecoder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/SequentialMatrices.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.SequentialMatrices",
+   "original_sha256": "c5584c5ebf965d11b903cd379a9dc66253234966ba81176e8e986c2c38ef15c8",
+   "path": "OAI/InformationTheory/AmplitudeDamping/SequentialMatrices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/SequentialProjections.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.SequentialProjections",
+   "original_sha256": "d6fd893314409a676036fa98cfe2a8b2273593540e2a74a7faa791dc1704d4c1",
+   "path": "OAI/InformationTheory/AmplitudeDamping/SequentialProjections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/SpectralEntropy.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.SpectralEntropy",
+   "original_sha256": "75428c74d063ebeae10a7087fa14e648b6301f39f953c1a6c31a92174dd52d58",
+   "path": "OAI/InformationTheory/AmplitudeDamping/SpectralEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/StateEntropy.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.StateEntropy",
+   "original_sha256": "132abea0888d1329d606405dbf99f75b939bfc51cdb4d09d7650ea27284ef8bd",
+   "path": "OAI/InformationTheory/AmplitudeDamping/StateEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/TensorEntropy.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.TensorEntropy",
+   "original_sha256": "f91b303cbbc04983d53dca68e8c3e85913bfe9b650941568c595625ac6eab24f",
+   "path": "OAI/InformationTheory/AmplitudeDamping/TensorEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/ThermalEntropy.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.ThermalEntropy",
+   "original_sha256": "5c8c220a3898e8f09cd2e8acc84f05226d0671538b8fc75b7ef60d3533e5eabb",
+   "path": "OAI/InformationTheory/AmplitudeDamping/ThermalEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/TypicalProjectors.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.TypicalProjectors",
+   "original_sha256": "c747e62534fdd2d20e82adf2bfb0c84b00c91eb70ef38addc0ca0439df3d0eca",
+   "path": "OAI/InformationTheory/AmplitudeDamping/TypicalProjectors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/TypicalSets.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.TypicalSets",
+   "original_sha256": "30a8843a5a95eb1f80fbc8f6b12d0c12bf4b1c94db1bde436e9635bb0582bebe",
+   "path": "OAI/InformationTheory/AmplitudeDamping/TypicalSets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/ZeroBlockEntropy.lean"
+   },
+   "module": "OAI.InformationTheory.AmplitudeDamping.ZeroBlockEntropy",
+   "original_sha256": "d29bf5423b19b1beb2260d7c801bb885fa0b7c924615fd9b9e863b19f5e5ed33",
+   "path": "OAI/InformationTheory/AmplitudeDamping/ZeroBlockEntropy.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.InformationTheory.AmplitudeDamping.BlockFactors",
+  "OAI.InformationTheory.AmplitudeDamping.CapacityAchievability",
+  "OAI.InformationTheory.AmplitudeDamping.CapacityConverse",
+  "OAI.InformationTheory.AmplitudeDamping.Channel",
+  "OAI.InformationTheory.AmplitudeDamping.CodingAsymptotics",
+  "OAI.InformationTheory.AmplitudeDamping.EnsembleBounds",
+  "OAI.InformationTheory.AmplitudeDamping.EntropyContinuity",
+  "OAI.InformationTheory.AmplitudeDamping.FinitePacking",
+  "OAI.InformationTheory.AmplitudeDamping.GramMatrices",
+  "OAI.InformationTheory.AmplitudeDamping.Holevo",
+  "OAI.InformationTheory.AmplitudeDamping.HolevoInformation",
+  "OAI.InformationTheory.AmplitudeDamping.LogDetConvexity",
+  "OAI.InformationTheory.AmplitudeDamping.LogDetEntropy",
+  "OAI.InformationTheory.AmplitudeDamping.Main",
+  "OAI.InformationTheory.AmplitudeDamping.MatrixDifferentiation",
+  "OAI.InformationTheory.AmplitudeDamping.Model",
+  "OAI.InformationTheory.AmplitudeDamping.Naimark",
+  "OAI.InformationTheory.AmplitudeDamping.OutputConvexity",
+  "OAI.InformationTheory.AmplitudeDamping.OutputEntropy",
+  "OAI.InformationTheory.AmplitudeDamping.PhaseCoding",
+  "OAI.InformationTheory.AmplitudeDamping.PhaseProducts",
+  "OAI.InformationTheory.AmplitudeDamping.PhaseStates",
+  "OAI.InformationTheory.AmplitudeDamping.Pinching",
+  "OAI.InformationTheory.AmplitudeDamping.PureRecursion",
+  "OAI.InformationTheory.AmplitudeDamping.ScalarDeficit",
+  "OAI.InformationTheory.AmplitudeDamping.SequentialDecoder",
+  "OAI.InformationTheory.AmplitudeDamping.SequentialMatrices",
+  "OAI.InformationTheory.AmplitudeDamping.SequentialProjections",
+  "OAI.InformationTheory.AmplitudeDamping.SpectralEntropy",
+  "OAI.InformationTheory.AmplitudeDamping.StateEntropy",
+  "OAI.InformationTheory.AmplitudeDamping.TensorEntropy",
+  "OAI.InformationTheory.AmplitudeDamping.ThermalEntropy",
+  "OAI.InformationTheory.AmplitudeDamping.TypicalProjectors",
+  "OAI.InformationTheory.AmplitudeDamping.TypicalSets",
+  "OAI.InformationTheory.AmplitudeDamping.ZeroBlockEntropy"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/AmplitudeDamping.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.InformationTheory.AmplitudeDamping.Main",
+   "name": "OAI.GAD.main",
+   "statement_sha256": "a2a33290558ffc42d8e3a07071ea335e81973e7cab2358f4c12e088db1e5a1b9"
+  }
+ ],
+ "task_id": "oai-amplitude-damping",
+ "task_revision": 1,
+ "title": "OpenAI math: Classical capacity of generalized amplitude damping: Additivity and capacity for generalized amplitude damping",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

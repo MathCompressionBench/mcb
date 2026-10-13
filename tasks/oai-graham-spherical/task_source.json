@@ -1,0 +1,601 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 95088914
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.GrahamSpherical",
+  "challenge_sha256": "9f3f1b2871826ef17cee8672fe2a9be1c50c2337e88213635474bbb28d75c170",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/GrahamSpherical.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.GrahamSpherical",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Combinatorics.SphericalRamsey.Main",
+   "theorem_names": [
+    "OAI.GrahamSpherical.full_main"
+   ]
+  },
+  "config_sha256": "585ed05f1d4cf2b416ac615acd50d80d5837ad107ccafedc6d318b7113cedaf6",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/GrahamSpherical.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.GrahamSpherical.full_main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SphericalRamsey/AffineCopy.lean"
+   },
+   "module": "OAI.Combinatorics.SphericalRamsey.AffineCopy",
+   "original_sha256": "18d7fecaacd28fe9dc15405c853897f63868e56fb202826a4648a0e183b7de73",
+   "path": "OAI/Combinatorics/SphericalRamsey/AffineCopy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SphericalRamsey/AffineCopyCore.lean"
+   },
+   "module": "OAI.Combinatorics.SphericalRamsey.AffineCopyCore",
+   "original_sha256": "f3e47401e431da7ca69574e10210a281ec8cab60acb4763528f771e6c7b7d99c",
+   "path": "OAI/Combinatorics/SphericalRamsey/AffineCopyCore.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SphericalRamsey/AlgebraicExtension.lean"
+   },
+   "module": "OAI.Combinatorics.SphericalRamsey.AlgebraicExtension",
+   "original_sha256": "7081c4259a4ff166fde484fec15a55b17e2550231f0b5f81c764be19aa0ce99e",
+   "path": "OAI/Combinatorics/SphericalRamsey/AlgebraicExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SphericalRamsey/BasisDerivation.lean"
+   },
+   "module": "OAI.Combinatorics.SphericalRamsey.BasisDerivation",
+   "original_sha256": "4fcbdec83d622cdfc22c50e12cd857634925ce8dcebbc7278051c29cbbf66bda",
+   "path": "OAI/Combinatorics/SphericalRamsey/BasisDerivation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SphericalRamsey/Coloring.lean"
+   },
+   "module": "OAI.Combinatorics.SphericalRamsey.Coloring",
+   "original_sha256": "816afdd65a3c699b63ffe9a37933c6aff96304146ee06d4e16b51be960bb6d5a",
+   "path": "OAI/Combinatorics/SphericalRamsey/Coloring.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SphericalRamsey/CopyInvariant.lean"
+   },
+   "module": "OAI.Combinatorics.SphericalRamsey.CopyInvariant",
+   "original_sha256": "ac313e236f85e42b519ba3c7922e3c71279c55645dc7e2831d23e25f8d639e55",
+   "path": "OAI/Combinatorics/SphericalRamsey/CopyInvariant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SphericalRamsey/DerivationCoordinates.lean"
+   },
+   "module": "OAI.Combinatorics.SphericalRamsey.DerivationCoordinates",
+   "original_sha256": "20598a5cd6bc36f0498f44937d9ecd1b5755618fcb8620927eec5451e9c511e2",
+   "path": "OAI/Combinatorics/SphericalRamsey/DerivationCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SphericalRamsey/EnergyIdentity.lean"
+   },
+   "module": "OAI.Combinatorics.SphericalRamsey.EnergyIdentity",
+   "original_sha256": "f5503ef668e01d90848482596245309f6f989df44c1ff9afef204c052f6ad9b9",
+   "path": "OAI/Combinatorics/SphericalRamsey/EnergyIdentity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SphericalRamsey/Main.lean"
+   },
+   "module": "OAI.Combinatorics.SphericalRamsey.Main",
+   "original_sha256": "d3921c8b59e52a654b6ba1908103fc890e62fe7935e689f7ce2fad15fc4dd6b4",
+   "path": "OAI/Combinatorics/SphericalRamsey/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SphericalRamsey/Model.lean"
+   },
+   "module": "OAI.Combinatorics.SphericalRamsey.Model",
+   "original_sha256": "ea48c1c522c7e892c00ac1c64ff671e3e9270565d4ac92edc0bb1df38b2c4ece",
+   "path": "OAI/Combinatorics/SphericalRamsey/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SphericalRamsey/MonochromaticObstruction.lean"
+   },
+   "module": "OAI.Combinatorics.SphericalRamsey.MonochromaticObstruction",
+   "original_sha256": "e6985f18c3fa97529d89eb5a919aad6c51f1ad65772f430832cc7300fd9a403c",
+   "path": "OAI/Combinatorics/SphericalRamsey/MonochromaticObstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SphericalRamsey/Parameter.lean"
+   },
+   "module": "OAI.Combinatorics.SphericalRamsey.Parameter",
+   "original_sha256": "f430d2fa7863d60570af8a09c602ab7946e950efd81a19d66ffd5519f252ef78",
+   "path": "OAI/Combinatorics/SphericalRamsey/Parameter.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SphericalRamsey/Ramsey.lean"
+   },
+   "module": "OAI.Combinatorics.SphericalRamsey.Ramsey",
+   "original_sha256": "c492b8dccfb0b99098f7039e80582946957bfe9be97714639310bbace521ca97",
+   "path": "OAI/Combinatorics/SphericalRamsey/Ramsey.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SphericalRamsey/RealDerivation.lean"
+   },
+   "module": "OAI.Combinatorics.SphericalRamsey.RealDerivation",
+   "original_sha256": "48b28a40e99507ba3b42b660dd533851ce6dd5d5dca920149ec1a08ed64464b7",
+   "path": "OAI/Combinatorics/SphericalRamsey/RealDerivation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SphericalRamsey/RealTranscendenceBasis.lean"
+   },
+   "module": "OAI.Combinatorics.SphericalRamsey.RealTranscendenceBasis",
+   "original_sha256": "9a34683d9cb1f4e1603ced381092c1e1e8778c9e9cead316ba181ea19d0955d4",
+   "path": "OAI/Combinatorics/SphericalRamsey/RealTranscendenceBasis.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SphericalRamsey/Specification.lean"
+   },
+   "module": "OAI.Combinatorics.SphericalRamsey.Specification",
+   "original_sha256": "e23deee3c8d09c78aecdbb0d39657edd0ea571c898ca68df9eb79a4eab281b29",
+   "path": "OAI/Combinatorics/SphericalRamsey/Specification.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SphericalRamsey/WitnessCoordinates.lean"
+   },
+   "module": "OAI.Combinatorics.SphericalRamsey.WitnessCoordinates",
+   "original_sha256": "cbf1e48e64d304c24f4bc0eccf695c0dfa476a2df05ea6c09567cb2ba4bc2458",
+   "path": "OAI/Combinatorics/SphericalRamsey/WitnessCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SphericalRamsey/WitnessScalars.lean"
+   },
+   "module": "OAI.Combinatorics.SphericalRamsey.WitnessScalars",
+   "original_sha256": "942e4c13811908a18944c84355edf8eecfa80c76db29f565f5fa80d9e511f863",
+   "path": "OAI/Combinatorics/SphericalRamsey/WitnessScalars.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.SphericalRamsey.AffineCopy",
+  "OAI.Combinatorics.SphericalRamsey.AffineCopyCore",
+  "OAI.Combinatorics.SphericalRamsey.AlgebraicExtension",
+  "OAI.Combinatorics.SphericalRamsey.BasisDerivation",
+  "OAI.Combinatorics.SphericalRamsey.Coloring",
+  "OAI.Combinatorics.SphericalRamsey.CopyInvariant",
+  "OAI.Combinatorics.SphericalRamsey.DerivationCoordinates",
+  "OAI.Combinatorics.SphericalRamsey.EnergyIdentity",
+  "OAI.Combinatorics.SphericalRamsey.Main",
+  "OAI.Combinatorics.SphericalRamsey.Model",
+  "OAI.Combinatorics.SphericalRamsey.MonochromaticObstruction",
+  "OAI.Combinatorics.SphericalRamsey.Parameter",
+  "OAI.Combinatorics.SphericalRamsey.Ramsey",
+  "OAI.Combinatorics.SphericalRamsey.RealDerivation",
+  "OAI.Combinatorics.SphericalRamsey.RealTranscendenceBasis",
+  "OAI.Combinatorics.SphericalRamsey.Specification",
+  "OAI.Combinatorics.SphericalRamsey.WitnessCoordinates",
+  "OAI.Combinatorics.SphericalRamsey.WitnessScalars"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/GrahamSpherical.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Combinatorics.SphericalRamsey.Main",
+   "name": "OAI.GrahamSpherical.full_main",
+   "statement_sha256": "211141e9eb8b51a3781c5b3c943ba8ca025e9a8ebbbd18da850d25efa3245360"
+  }
+ ],
+ "task_id": "oai-graham-spherical",
+ "task_revision": 1,
+ "title": "OpenAI math: Classification of finite Euclidean Ramsey configurations: Twelve-point spherical non-Ramsey example",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

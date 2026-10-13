@@ -1,0 +1,2521 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 916150041
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.WeakMTWGlobalSupport",
+  "challenge_sha256": "7cb7b3cb07bfd7a6ba8f2e289dcf95e7dc7b722a6b2f679a47ecec0da7e34f35",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/WeakMTWGlobalSupport.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.WeakMTWGlobalSupport",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Geometry.WeakMTW.Main",
+   "theorem_names": [
+    "OAI.WeakMTWGlobalSupport.current_main_convexity"
+   ]
+  },
+  "config_sha256": "deb8a523598d086b146fe7908bfa641c4654f9f1c20e58b84036b1e4ee334385",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/WeakMTWGlobalSupport.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.WeakMTWGlobalSupport.current_main_convexity": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Analysis/CurveComposition.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Analysis.CurveComposition",
+   "original_sha256": "67c0ee3c3c9414d64f603df0df374331ef96981b1b4787ceb22fe61f70539d0d",
+   "path": "OAI/Geometry/WeakMTW/Analysis/CurveComposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Analysis/IntegralEquation.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Analysis.IntegralEquation",
+   "original_sha256": "f440a8c72a7f5e9e43d0cd1a8c768f56b4451ba54f6f7bd5d0348189860e7d9a",
+   "path": "OAI/Geometry/WeakMTW/Analysis/IntegralEquation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Analysis/SmoothFlow.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Analysis.SmoothFlow",
+   "original_sha256": "0bddfbda90ee9ba9d106ab22ee061111911dee215e8989bf3784382c93b31f4d",
+   "path": "OAI/Geometry/WeakMTW/Analysis/SmoothFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Convexity.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Convexity",
+   "original_sha256": "8e48dafc02f24b0eeca65e202be53cf0da0c8f04ee90811f455ba03b90368ab6",
+   "path": "OAI/Geometry/WeakMTW/Convexity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/ChartGlobalVariation.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.ChartGlobalVariation",
+   "original_sha256": "d65646735277991a8bfe77acf876af60bf3674f26006a6fffe0aad60e6bc1912",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/ChartGlobalVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/ChartLength.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.ChartLength",
+   "original_sha256": "fb722a8afbc2db4f7feac2a49e2762076f31c63203ce303e2879535351b3fc4e",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/ChartLength.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/ChartMetric.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.ChartMetric",
+   "original_sha256": "c2594b726fe228d49818431ec5ecf59cab565f550855e202475f77364638d5c8",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/ChartMetric.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/ChartPairing.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.ChartPairing",
+   "original_sha256": "0c45457b376f9fde043539a7bf955f9a992c6338362aec500cee7e120bd08ed2",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/ChartPairing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/ChartScaling.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.ChartScaling",
+   "original_sha256": "52030f25b494f2f94700bf0ae8b973aab5ecc3c4d07f13834aa2f69f4d7b44d2",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/ChartScaling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/CoerciveMetric.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.CoerciveMetric",
+   "original_sha256": "fd52e48e508681c82e133439c09d7feb6b5ce66ed06354b3f5eca060911ac720",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/CoerciveMetric.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/CoordinateEquation.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.CoordinateEquation",
+   "original_sha256": "6e1846f45478ec8ca8e329a949afe9fca1ed8f1d48d230178c937af133ec0cce",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/CoordinateEquation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/CoordinateExistence.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.CoordinateExistence",
+   "original_sha256": "24a10e2c6f9f4f42d4641d9875e97b22049c05a00ee43e6276549d26cbd537c8",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/CoordinateExistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/CoordinateGeometry.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.CoordinateGeometry",
+   "original_sha256": "e1edfa97bc469c54dd0475a4505c9fa3b2e6ce3355d61244aa3aacf4f76ae3e5",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/CoordinateGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/CoordinateIdentification.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.CoordinateIdentification",
+   "original_sha256": "8f7801354d8be6594be9793f0bebe1c7794cb8a3148469066c86c27252a8eca3",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/CoordinateIdentification.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/CoordinateLocal.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.CoordinateLocal",
+   "original_sha256": "0a9d24b242958e9b4fe835171b9e5061e463e41903386e1c5aff027a40388db8",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/CoordinateLocal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/CostEndpointAction.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.CostEndpointAction",
+   "original_sha256": "159929e0e7bb4493a9409c3c49ac422d45a7578fcdc1888541c041b682f62b15",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/CostEndpointAction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/CostFirstTaylor.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.CostFirstTaylor",
+   "original_sha256": "fc4d761dccea83b04eef3ccd0ee25b818a1c2905af5f8bd22fd92583b4a05d31",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/CostFirstTaylor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/CostNormalGradient.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.CostNormalGradient",
+   "original_sha256": "b8a2a07dc667103edf287e656011cfae02657d966c5c8a50ebc8aa3e2b94ea37",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/CostNormalGradient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/EndpointAction.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.EndpointAction",
+   "original_sha256": "ad4131a8c042b1cd98627bab7846e15618da6fdb569d274f7c1219c51b9312c7",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/EndpointAction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/FanCoordinates.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.FanCoordinates",
+   "original_sha256": "eca2320d3c35950a27eddae4c560f81e195fe2426a3d10a3c6adb9eee381101a",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/FanCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/FocalCoordinates.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.FocalCoordinates",
+   "original_sha256": "49d5ebe84c5efcecac7245129861a3621be6b79bdf0d88dee5b9dc546bd0eb49",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/FocalCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/InteriorCost.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.InteriorCost",
+   "original_sha256": "baf221cb181239889d2bf9ba7a2dd427dab1aa4265c5216127d9b7bc38679b1f",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/InteriorCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/IntrinsicNormal.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.IntrinsicNormal",
+   "original_sha256": "145a3575c560145c6648ed2c57ea794ffeb5f4f035684543737ad5953bc084f2",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/IntrinsicNormal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/LocalCost.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.LocalCost",
+   "original_sha256": "a53ba9018cb96807b98f7212a4a96132890078969bc2cfee08c88ede9717ccc9",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/LocalCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/LocalDistance.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.LocalDistance",
+   "original_sha256": "1a8d307ab2f9a11ddcad87a9422ff667352578b03e430cfc81e1ac75489debff",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/LocalDistance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/NormalAction.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.NormalAction",
+   "original_sha256": "17047c776b69f7507a57159f90b7d7dae7958315e9ba675dfed100dbd133b174",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/NormalAction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/NormalCoordinates.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.NormalCoordinates",
+   "original_sha256": "5af093d7a6e412728cf66a1065b7f28826d2bee270ec2286f0f1922f5f4c61c0",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/NormalCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/NormalCurve.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.NormalCurve",
+   "original_sha256": "6ccc8a3cc4138cb50baf2f538aaf2e94c801b1dffc14e61ea7126e5d990c3ba0",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/NormalCurve.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/NormalDifferential.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.NormalDifferential",
+   "original_sha256": "aeec62a1424bddb7ce22daa8620680f46ed125745a74e5e59d4e47c4cd541052",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/NormalDifferential.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/NormalEndpoint.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.NormalEndpoint",
+   "original_sha256": "519f83dde1a6c98228c396caed1cd5ef2ed1dcb7f9cd834f34b1c987cbbf0492",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/NormalEndpoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/NormalFlowLength.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.NormalFlowLength",
+   "original_sha256": "48874b0f4615943d2c71f51f89585ecd1696b34f959e58456bba569982c2c917",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/NormalFlowLength.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/NormalLength.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.NormalLength",
+   "original_sha256": "265f6f5e165eab80898c6b3e095144e60a39544675c32a02343326eba26c1ea6",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/NormalLength.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/NormalMetricSpeed.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.NormalMetricSpeed",
+   "original_sha256": "088889b7162194c7ca1f38ed04148093cb16585afce0c6915b50a9658667e008",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/NormalMetricSpeed.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/NormalNeighborhood.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.NormalNeighborhood",
+   "original_sha256": "87b18aaa701b2c1d96f558375a04fc18f8fbe65003111654d3219bb83a3001b4",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/NormalNeighborhood.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/NormalRigidity.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.NormalRigidity",
+   "original_sha256": "01ca63903aa0fdfe12cb9b4e10a79b126049f7fa338940b553810a07198188f8",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/NormalRigidity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/NormalState.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.NormalState",
+   "original_sha256": "56e05a7a794bf75b256d182f47fcaf1c107ab4c3c7d29bf2bd02f627591abf28",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/NormalState.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/PairExpCoordinates.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.PairExpCoordinates",
+   "original_sha256": "b0e25a7c2832cec0bd8eb322f81c0bfa959f9a0430310c7bc9b66b18afec7d36",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/PairExpCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/PairNormalDistance.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.PairNormalDistance",
+   "original_sha256": "ef73a496c253c2b879536a6db684adb0dec39df113111e1a2a166e7e7bd11092",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/PairNormalDistance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/RadialCoordinates.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.RadialCoordinates",
+   "original_sha256": "1a762a969e732f46d610cb20ab50dc6deca90481b027bca7803028af7169bb3a",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/RadialCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/RadialLength.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.RadialLength",
+   "original_sha256": "12b82d6f682313e1772fcbec394a7f7c9a7f7716e778cfa78fdeabe1048868be",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/RadialLength.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/RadialRigidity.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.RadialRigidity",
+   "original_sha256": "16a48e4211b69298e0f3867b7e4a967ddafb97313772fb6d3b5172e53cc17d14",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/RadialRigidity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/TangentCoordinates.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.TangentCoordinates",
+   "original_sha256": "15b3e466fd78ba438ec5a445a0a564604134a8e8ebeec4826cf3a5589ab79c52",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/TangentCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/TangentDiskCompact.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.TangentDiskCompact",
+   "original_sha256": "865fffb43d98ac2a341a433166bc6d6e7bf6ec9669244192a7e7bf3ca06b9cf4",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/TangentDiskCompact.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/TangentScaling.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.TangentScaling",
+   "original_sha256": "30dd339c4f1a0eb52ca36f5c07a11bfb9ee120de8c2464772adbf7a5afab2b87",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/TangentScaling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/TwoPointSpeed.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.TwoPointSpeed",
+   "original_sha256": "dfe75fc55c043b2fe32d89011cacb6572c16feaa7aa1db0f2406dd555c901f54",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/TwoPointSpeed.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Coordinates/UnitNormal.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Coordinates.UnitNormal",
+   "original_sha256": "c3aefad18f5eacef705709f51f8542c7af0d4049dbd214462efc5dadff0d6fb8",
+   "path": "OAI/Geometry/WeakMTW/Coordinates/UnitNormal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Domains/Definitions.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Domains.Definitions",
+   "original_sha256": "28b8e8aff24c6c4ae0ddbbed0f960bed4f66eb0a85b0c21e08cb0c92dbf5ef96",
+   "path": "OAI/Geometry/WeakMTW/Domains/Definitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Endpoints.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Endpoints",
+   "original_sha256": "7dbb78f0e96e4becfe3ce863a215570352749e97c94862da50c4068449cfbb0e",
+   "path": "OAI/Geometry/WeakMTW/Endpoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/BundleMinimizerCompactness.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.BundleMinimizerCompactness",
+   "original_sha256": "4707a3294d7a2c681c386bf12200ec801a16c51a7bb38028bfb471b5b4e95c8a",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/BundleMinimizerCompactness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/CompactGeodesic.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.CompactGeodesic",
+   "original_sha256": "4286737676e4fff9668c1a6f54fd076820e0507cfda4aafe6fe72ad73ab11b3a",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/CompactGeodesic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/CompleteExistence.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.CompleteExistence",
+   "original_sha256": "dc4fd53c70cb0ecbae1f668609095af3345f63090fdd8cc40c9f71ee09976502",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/CompleteExistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/CostGeodesicTaylor.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.CostGeodesicTaylor",
+   "original_sha256": "6b9ca4c5b33252c03941dadc544ab2f73a3af96ae12b49fcab99226569063068",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/CostGeodesicTaylor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/DistanceSplitting.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.DistanceSplitting",
+   "original_sha256": "6a008a790bdf74427afad0eb3ab53c53276112d05933bbcf16a28aa9db43baa4",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/DistanceSplitting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/EnergyFirstVariation.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.EnergyFirstVariation",
+   "original_sha256": "740c54a30892705d783cbef9d141b6d88d5e60c367b5f1362bba446874c2aa97",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/EnergyFirstVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/ExtendedMinimizers.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.ExtendedMinimizers",
+   "original_sha256": "0cf0d72441b7b330151e1826ef23fbec385562e25d1ca56b808dda6bf027bb12",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/ExtendedMinimizers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/FanEnergySmooth.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.FanEnergySmooth",
+   "original_sha256": "e06c72fd526c5665f3bcadeca7a56a11f9207089e38a537486660fa0ce883221",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/FanEnergySmooth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/FiberSmooth.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.FiberSmooth",
+   "original_sha256": "3220126e61e9fadc4ad8206ea7d0174cf5adc2976edcc47cc1eaf76a2ba10d18",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/FiberSmooth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/FibreNonfocal.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.FibreNonfocal",
+   "original_sha256": "0c1dfb212e57d48bc0b5e30fa9dd231354df7690ad4f25bdff28d27bca1e7d4a",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/FibreNonfocal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/FlowFirstVariation.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.FlowFirstVariation",
+   "original_sha256": "bd827f569fdff41bd1d33377e2daabe6fd548570be2c8ab6646f5c298a44c123",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/FlowFirstVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/FlowVariationInjective.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.FlowVariationInjective",
+   "original_sha256": "a033b279c430d3f115ebf1d164ed5cfd74b65f08e4f7cda6a24dfe0bcb49bdce",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/FlowVariationInjective.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/GaussChartFan.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.GaussChartFan",
+   "original_sha256": "615ee31df26fd3c8f24fd108f5f9a51389035a3dd0a13b467b47f62600a4790e",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/GaussChartFan.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/GaussGlobal.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.GaussGlobal",
+   "original_sha256": "a1dc2327514305b534c4409afd92e15824adfd254616d6b816481f9d407c0b06",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/GaussGlobal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/GaussLemma.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.GaussLemma",
+   "original_sha256": "13b43942acbb48772b36592f5eca11023eaf401d8b307ef73e8f201e6c613a09",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/GaussLemma.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/GeneralFirstVariation.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.GeneralFirstVariation",
+   "original_sha256": "7791b49a3b3c670fd20b72f2c5bfb9938e85a3e2f44ae01c0922144892c57ee7",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/GeneralFirstVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/GeodesicDistance.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.GeodesicDistance",
+   "original_sha256": "a60bf684c557b9c0e2d4e0668f9f6ebd09b86ec3bac50c31e1ab7cd97a378ec8",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/GeodesicDistance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/GeodesicFlow.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.GeodesicFlow",
+   "original_sha256": "e6058732ea08c330ce756cb81c2a3360e396f66f6a32366069059a7c05abf6e5",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/GeodesicFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/GeodesicScaling.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.GeodesicScaling",
+   "original_sha256": "5089c155adbac897fff00b6266829af30480ef17cc4be7aa75ca626896e716be",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/GeodesicScaling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/GlobalFirstVariation.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.GlobalFirstVariation",
+   "original_sha256": "b973f4f57a33fd921e7e7269cec2ccaa966ac944987527d3afec438fc10b13e8",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/GlobalFirstVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/GlobalFlow.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.GlobalFlow",
+   "original_sha256": "41b35f624e3de81db5eae1d4b4bd4cf58fa1c539afe79b8689a983d09b07623d",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/GlobalFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/HopfRinow.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.HopfRinow",
+   "original_sha256": "69755ef2eb8fcd6ce71ec766cd17b4d8088ff4d6ae19ae78ac6a8825ea494e04",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/HopfRinow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/InitialScaling.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.InitialScaling",
+   "original_sha256": "ec4b390344d5f8983428701695f2839bf85ff32747f8cd7919b63d6391510bcc",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/InitialScaling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/InjectivityUniqueness.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.InjectivityUniqueness",
+   "original_sha256": "0d678c1caeeb5a7c1435c3186bf42a900d43d9b05d38c85875b34525029ee042",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/InjectivityUniqueness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/IntrinsicExistence.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.IntrinsicExistence",
+   "original_sha256": "8aeea7025edfca10a9e124119c3ecd1ca0355d507ac7216ef823ddada0fc05d0",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/IntrinsicExistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/IntrinsicExp.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.IntrinsicExp",
+   "original_sha256": "ae673db4143c3eae688229a0c5cf0e3a40c4f5ad5436b0e4da76bf96043f353a",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/IntrinsicExp.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/IntrinsicGlue.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.IntrinsicGlue",
+   "original_sha256": "70689c31a13135aba4db43137e4c5f7b272f00378770ba70103c0d0abeedd730",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/IntrinsicGlue.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/IntrinsicOn.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.IntrinsicOn",
+   "original_sha256": "0b666033162eb2b75b84b9e80f9e9fed6b5e406304dc85320854178719395255",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/IntrinsicOn.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/IntrinsicUniqueness.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.IntrinsicUniqueness",
+   "original_sha256": "e10398806d6d01004cffc57a434ca535144ea7932276cfc1f40f2182be8e8d9c",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/IntrinsicUniqueness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/LocalFanVariation.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.LocalFanVariation",
+   "original_sha256": "e986b070bb4e63b3e9a1057fa6eaaad996a25c94ba3af8de8e58d34d820f94be",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/LocalFanVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/LocalFlow.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.LocalFlow",
+   "original_sha256": "54b09dfd110b2f587e68e14f9629af45bde2770d35ee1ffc38dbc62e47fc4222",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/LocalFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/LocalGeodesic.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.LocalGeodesic",
+   "original_sha256": "9722db6175c6d16ee45282d005926cc69a05f5dadcccb3eba66f8532708b9988",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/LocalGeodesic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/MinimizerCapture.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.MinimizerCapture",
+   "original_sha256": "01171379b28410bbd2a290741ec78dfd68941d7eb4f4c6ffae6144e66ab38a4a",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/MinimizerCapture.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/MinimizerCompactness.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.MinimizerCompactness",
+   "original_sha256": "a8c6487c0afb243571b640f2d4bcdb607dfee2b5a68e2e30a2f0e395f2d6a7a2",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/MinimizerCompactness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/MinimizingCorner.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.MinimizingCorner",
+   "original_sha256": "b68407152f1003a0831c6db6436ede042b1582e75d61b5c4c5878c913746a737",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/MinimizingCorner.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/MinimizingSegments.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.MinimizingSegments",
+   "original_sha256": "c3488b5ef00f087369e272c56d2e996a806a567fd28d6f75bd585e4cd6eac0d5",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/MinimizingSegments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/NoCorner.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.NoCorner",
+   "original_sha256": "bafcf6d6ce8abad87c3b20b4485a8316bf9f607cdd11f708c62afda838a62e04",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/NoCorner.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/NonconjugateBranches.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.NonconjugateBranches",
+   "original_sha256": "c54fae0e39ab97d373ee35c7aac35d157ba439b103950274624f14cc5c29cef4",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/NonconjugateBranches.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/ShortChartAction.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.ShortChartAction",
+   "original_sha256": "0add1404531a81020f980ff7ce0e40a0d47ec641d91ddbad652205f59f2b2494",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/ShortChartAction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/ShortFan.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.ShortFan",
+   "original_sha256": "d527714f7ac0e51145cc5aad85a447ec87b9469e74d4d4b6b4a1c1e483ec89e8",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/ShortFan.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/ShortFlowCoordinates.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.ShortFlowCoordinates",
+   "original_sha256": "3b99ae90cef64bf00c35ce8bb9a9be83889f2b3306e261d6c437e07c16d52123",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/ShortFlowCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/ShortStates.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.ShortStates",
+   "original_sha256": "5cd0e04375d06e3b736b179452dfe9b3fe81d4f8b757e74cc388cc98c58f9e15",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/ShortStates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Geodesics/UniformNormal.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Geodesics.UniformNormal",
+   "original_sha256": "2dfd3024ec796aadac3df423f038ee4850bfceecdeb3f63c9886d1b99c3475b4",
+   "path": "OAI/Geometry/WeakMTW/Geodesics/UniformNormal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Main.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Main",
+   "original_sha256": "611a41083c6068d0897e25be171d11bf7a97a8daa70fefeab59de31961dde2c4",
+   "path": "OAI/Geometry/WeakMTW/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Model.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Model",
+   "original_sha256": "7796975fe15f9ef94cb429465a12c09ed447ecc65546d5375e03a5921865be8d",
+   "path": "OAI/Geometry/WeakMTW/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/ChartForwardLipschitz.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.ChartForwardLipschitz",
+   "original_sha256": "2cc623f8b5b24606182fb03a485e753fb1b4468041f9000045b985cef41c9b41",
+   "path": "OAI/Geometry/WeakMTW/Potentials/ChartForwardLipschitz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/ChartLocalLipschitz.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.ChartLocalLipschitz",
+   "original_sha256": "55f3fc6bc4d9ab89b6523e664cf0d3b59b5233cb2b051e55416602c5db7ef368",
+   "path": "OAI/Geometry/WeakMTW/Potentials/ChartLocalLipschitz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/CompactFamilyControl.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.CompactFamilyControl",
+   "original_sha256": "180404731a628f8abcc7458f544975b5eb03f05f95010d04d50132965c5f8ae0",
+   "path": "OAI/Geometry/WeakMTW/Potentials/CompactFamilyControl.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/CompactSmoothControl.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.CompactSmoothControl",
+   "original_sha256": "bc186573b3de5ae8fe21288a69ca544a9099be4fd4fa0ee7d7739c2ae56f86c6",
+   "path": "OAI/Geometry/WeakMTW/Potentials/CompactSmoothControl.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/CovectorFlow.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.CovectorFlow",
+   "original_sha256": "967a45e49b3358ac5765cda1130ca69c2c9c22abaf0721ec9eb8d8f898515270",
+   "path": "OAI/Geometry/WeakMTW/Potentials/CovectorFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/DiagonalEnvelope.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.DiagonalEnvelope",
+   "original_sha256": "622cefcbd5b369ae3a9ce93889c931467522ec4d80616bca9ca5c918abf554d4",
+   "path": "OAI/Geometry/WeakMTW/Potentials/DiagonalEnvelope.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/FiniteGlobalSupport.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.FiniteGlobalSupport",
+   "original_sha256": "b45a9a75c4139d4ac843c302649b0c6b99b729271ff88c4e3c8917eab2319d75",
+   "path": "OAI/Geometry/WeakMTW/Potentials/FiniteGlobalSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/GlobalSupportTheorem.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.GlobalSupportTheorem",
+   "original_sha256": "88118c4afb488d70641374f94332f965608d98817e3db79cd7ba625a5acb5a5a",
+   "path": "OAI/Geometry/WeakMTW/Potentials/GlobalSupportTheorem.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/GradientCoordinates.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.GradientCoordinates",
+   "original_sha256": "c995e6656047de8e3de3bb70af19cc9ccb5be5d2de0c11a1acc41d325b07ee22",
+   "path": "OAI/Geometry/WeakMTW/Potentials/GradientCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/IntermediateAtlas.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.IntermediateAtlas",
+   "original_sha256": "70e85501696ff9a36e85fe2f9b5051d8351db4c99e0060f3c55abaaadeebe997",
+   "path": "OAI/Geometry/WeakMTW/Potentials/IntermediateAtlas.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/IntermediateCoordinates.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.IntermediateCoordinates",
+   "original_sha256": "3a5126d6754004fcd89eca119ae62d01def3c0da04ea87f63b302d8ab3d373a7",
+   "path": "OAI/Geometry/WeakMTW/Potentials/IntermediateCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/IntermediateCovectors.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.IntermediateCovectors",
+   "original_sha256": "6091ca5654b7c77cf6d854f43dc54584699c62875a2f4b47f037be8fb2c54be8",
+   "path": "OAI/Geometry/WeakMTW/Potentials/IntermediateCovectors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/IntermediateDefinitions.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.IntermediateDefinitions",
+   "original_sha256": "c1fa0a4a562285d9fca0bfd0f4b24cdf1e7aebdd5c4f695b69832e711abd027a",
+   "path": "OAI/Geometry/WeakMTW/Potentials/IntermediateDefinitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/IntermediateDuality.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.IntermediateDuality",
+   "original_sha256": "778a172a1b85c24014c307530f1eaca66de7fd1fd954af1da29b5a21d21ab803",
+   "path": "OAI/Geometry/WeakMTW/Potentials/IntermediateDuality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/IntermediateGradient.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.IntermediateGradient",
+   "original_sha256": "88bbfd138b812c37b0a5dc44451e9c311333d4cfb221196a037bc2b937cdd9f9",
+   "path": "OAI/Geometry/WeakMTW/Potentials/IntermediateGradient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/IntermediateGrowth.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.IntermediateGrowth",
+   "original_sha256": "343b2633546f4c3acaa9976b90e4cc6ca2aa894b57ff2eb0da3334a7940911ee",
+   "path": "OAI/Geometry/WeakMTW/Potentials/IntermediateGrowth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/IntermediateGrowthLocal.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.IntermediateGrowthLocal",
+   "original_sha256": "94e76b23074e856b6f726015a700b73df3eaf4cf4b2018eb45b08afcec265555",
+   "path": "OAI/Geometry/WeakMTW/Potentials/IntermediateGrowthLocal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/IntermediateGrowthMetric.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.IntermediateGrowthMetric",
+   "original_sha256": "b177655541bad9fb6cbd280d132d92195cf63d5d29433b4a76b6ad108227f636",
+   "path": "OAI/Geometry/WeakMTW/Potentials/IntermediateGrowthMetric.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/IntermediateMomentumLipschitz.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.IntermediateMomentumLipschitz",
+   "original_sha256": "accff8616924318561585503e823682744fd81f03eebbf6f16af4bb9a5d47b2b",
+   "path": "OAI/Geometry/WeakMTW/Potentials/IntermediateMomentumLipschitz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/IntermediateParameterFamily.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.IntermediateParameterFamily",
+   "original_sha256": "c5e31dacc75030b1b67c1818285744290fe9326f7c56d3826e08eb3765a7497f",
+   "path": "OAI/Geometry/WeakMTW/Potentials/IntermediateParameterFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/IntermediatePoleLipschitz.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.IntermediatePoleLipschitz",
+   "original_sha256": "7b587f32e1b56a39c2c062741e13da9d82dd5749376679883cd5cba33280a366",
+   "path": "OAI/Geometry/WeakMTW/Potentials/IntermediatePoleLipschitz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/IntermediateRegularity.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.IntermediateRegularity",
+   "original_sha256": "c3b8387051688c79a9e42b9470f53e6561135093addbd612da50bfdf36d349ec",
+   "path": "OAI/Geometry/WeakMTW/Potentials/IntermediateRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/IntermediateStatement.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.IntermediateStatement",
+   "original_sha256": "7f893aee25fbd7fdc5a5a38d11970cbb79f56189466c9eef1362b339cc729829",
+   "path": "OAI/Geometry/WeakMTW/Potentials/IntermediateStatement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/IntermediateTheorem.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.IntermediateTheorem",
+   "original_sha256": "c0a88bdcc6ae7593a811636bdac64b9628dfa7374fcd8278380189b69cf2df7b",
+   "path": "OAI/Geometry/WeakMTW/Potentials/IntermediateTheorem.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/IntermediateUniformBounds.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.IntermediateUniformBounds",
+   "original_sha256": "71466534d0cdc5fd5a0cc206c33ebfd0c77197f07c9ad9c5b31eeb6a4f067bcb",
+   "path": "OAI/Geometry/WeakMTW/Potentials/IntermediateUniformBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/IntermediateUniformLipschitz.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.IntermediateUniformLipschitz",
+   "original_sha256": "4a40168eab9f6ceddd95f1067e54d75777d6712862358428801282e3db8981cc",
+   "path": "OAI/Geometry/WeakMTW/Potentials/IntermediateUniformLipschitz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/IntermediateUniformRegularity.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.IntermediateUniformRegularity",
+   "original_sha256": "6356c542a543a7c8857402bcb3e213157132b1eea4f5efbb307c5ed8faeab68b",
+   "path": "OAI/Geometry/WeakMTW/Potentials/IntermediateUniformRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/LiftedSectionDefinitions.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.LiftedSectionDefinitions",
+   "original_sha256": "2948ec7c31eaf792149d0bd7161b2909fcdccb662a1372b6baea3bfdca534abd",
+   "path": "OAI/Geometry/WeakMTW/Potentials/LiftedSectionDefinitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/LiftedSections.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.LiftedSections",
+   "original_sha256": "047c705c284b4754c6cee63d4613dbb8b27cfd33f69d17a872cab3ca078663b6",
+   "path": "OAI/Geometry/WeakMTW/Potentials/LiftedSections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/LiftedSectionsTheorem.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.LiftedSectionsTheorem",
+   "original_sha256": "f765ce15a69122a6cd4281c5c17b7fa13d95fe515ba72ae8f31272deef5daf37",
+   "path": "OAI/Geometry/WeakMTW/Potentials/LiftedSectionsTheorem.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/OrdinarySubgradientCapture.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.OrdinarySubgradientCapture",
+   "original_sha256": "e3c61442fc3b8ccef14b8c53bbbbb39b4df197257d7a0fbbbb1ff8b20db7ee46",
+   "path": "OAI/Geometry/WeakMTW/Potentials/OrdinarySubgradientCapture.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/OrdinarySubgradientIdentity.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.OrdinarySubgradientIdentity",
+   "original_sha256": "37bd3b232593c4579160026ee42311d2722b1e36978fbbfd3e22a6f3190c249c",
+   "path": "OAI/Geometry/WeakMTW/Potentials/OrdinarySubgradientIdentity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/ParametricEnvelopeBounds.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.ParametricEnvelopeBounds",
+   "original_sha256": "08b2b45d7f324387f779bc5be3a8d384d4e9817c567d0dcad459b7ffcb8cb929",
+   "path": "OAI/Geometry/WeakMTW/Potentials/ParametricEnvelopeBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/PositiveEnvelope.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.PositiveEnvelope",
+   "original_sha256": "434d18f58d1402488c8c8eafc863c57fb98ae22c69be78a7436f35f09a876c97",
+   "path": "OAI/Geometry/WeakMTW/Potentials/PositiveEnvelope.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/PotentialActiveLogs.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.PotentialActiveLogs",
+   "original_sha256": "72e315fff3e7cc01263316ad049e38589f2bc042fb00577e764bae49c4b6d601",
+   "path": "OAI/Geometry/WeakMTW/Potentials/PotentialActiveLogs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/PotentialDefinitions.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.PotentialDefinitions",
+   "original_sha256": "2722a54b403d4571c2fe28e37af008873e7d2d0f5594466b4c1da57f6c72ee4a",
+   "path": "OAI/Geometry/WeakMTW/Potentials/PotentialDefinitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/PotentialFiniteReduction.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.PotentialFiniteReduction",
+   "original_sha256": "8a539910c94ffcbf2f643b00ccda4d2117941263cfd72c44678c89f7df2cbce4",
+   "path": "OAI/Geometry/WeakMTW/Potentials/PotentialFiniteReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/PotentialGraphGlobal.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.PotentialGraphGlobal",
+   "original_sha256": "07ce30714e2253d1f9ecf88559ebc63ad0aad046d571d44251924cb0c6dea925",
+   "path": "OAI/Geometry/WeakMTW/Potentials/PotentialGraphGlobal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/QuadraticEnvelope.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.QuadraticEnvelope",
+   "original_sha256": "899d86d446ef247913761d16d192d9189ee66e273b28361a0f256d87db60c5ff",
+   "path": "OAI/Geometry/WeakMTW/Potentials/QuadraticEnvelope.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/ReverseGeodesic.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.ReverseGeodesic",
+   "original_sha256": "20f8bb054916f42af08a82695482e7be1067ba0f35031a12d126bdf41d479afd",
+   "path": "OAI/Geometry/WeakMTW/Potentials/ReverseGeodesic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/SmoothEnvelope.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.SmoothEnvelope",
+   "original_sha256": "aae0026d3fccb3e5d13d22842bcd300abc115d1cc501e049d7c27230c6632137",
+   "path": "OAI/Geometry/WeakMTW/Potentials/SmoothEnvelope.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/SmoothMetricLipschitz.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.SmoothMetricLipschitz",
+   "original_sha256": "b22495e067c0dc12f17edadb7a3e5b578e7ae6adb059b9fab28b96d95322cfba",
+   "path": "OAI/Geometry/WeakMTW/Potentials/SmoothMetricLipschitz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Potentials/UniformLocalLipschitz.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Potentials.UniformLocalLipschitz",
+   "original_sha256": "0ad6b4d16db0e6d3c90d2ad425d4d179a414eae089cb4ec4273a8865246fb01a",
+   "path": "OAI/Geometry/WeakMTW/Potentials/UniformLocalLipschitz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/ActiveCollisionExclusion.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.ActiveCollisionExclusion",
+   "original_sha256": "0a0999387c4cd245fe8a0c706ab2d54c1d43e635d7aff87e3de988cc36ffef9d",
+   "path": "OAI/Geometry/WeakMTW/Support/ActiveCollisionExclusion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/ActiveContinuation.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.ActiveContinuation",
+   "original_sha256": "ba974aca96e3a2b7fcc07831ad946094c21eb1fc20d343b6beaddc0ab274687a",
+   "path": "OAI/Geometry/WeakMTW/Support/ActiveContinuation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/ActiveGraphLimits.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.ActiveGraphLimits",
+   "original_sha256": "d1c708f7d39cd2ebb5108d4b1bf5026e2afcaa27c052a7c63f2ff4e508757b6d",
+   "path": "OAI/Geometry/WeakMTW/Support/ActiveGraphLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/ActiveRepresentation.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.ActiveRepresentation",
+   "original_sha256": "080547fcd20fdad156ba18d3c3b801f5c8e132febae91d644baedcd9c1a83955",
+   "path": "OAI/Geometry/WeakMTW/Support/ActiveRepresentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/ActiveSmallScale.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.ActiveSmallScale",
+   "original_sha256": "24016e8eb90352961fe30419f1598616eff3a5557bb470599d8ffdfc0eed0cf6",
+   "path": "OAI/Geometry/WeakMTW/Support/ActiveSmallScale.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/ActiveSupports.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.ActiveSupports",
+   "original_sha256": "6499d50ffa7fb208f44174b51d7973d9c3307ceca20f5eded20b3e674068ee90",
+   "path": "OAI/Geometry/WeakMTW/Support/ActiveSupports.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/AllScales.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.AllScales",
+   "original_sha256": "8e0fa8b6285deb6f55552fac41515f4a906bb168d577ffcf4330fbda8223d1f8",
+   "path": "OAI/Geometry/WeakMTW/Support/AllScales.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/BranchCollisionLimits.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.BranchCollisionLimits",
+   "original_sha256": "5edfa007916f3cefe391245fad52c7e46f9af09ca985466d9733f91a28244f24",
+   "path": "OAI/Geometry/WeakMTW/Support/BranchCollisionLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/CollisionBranches.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.CollisionBranches",
+   "original_sha256": "9714d5fc939ae82174f32266173ed9b021ef31fb2268289170baa3e67acaac73",
+   "path": "OAI/Geometry/WeakMTW/Support/CollisionBranches.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/CollisionCalculus.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.CollisionCalculus",
+   "original_sha256": "b3c65992e77f2cf39147fc696b466d887e265d4424336ce1fa605529c7bbbb58",
+   "path": "OAI/Geometry/WeakMTW/Support/CollisionCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/CollisionGeometry.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.CollisionGeometry",
+   "original_sha256": "e7473a8c3c587bb9a92c372109854460a695338262b6beece8e4256b679452a9",
+   "path": "OAI/Geometry/WeakMTW/Support/CollisionGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/CollisionGradient.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.CollisionGradient",
+   "original_sha256": "1794b00cf922f9014f3d8d4763306e4a3bb9ad38d8b34fc75e06c9f3e5ada006",
+   "path": "OAI/Geometry/WeakMTW/Support/CollisionGradient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/CollisionStrictGap.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.CollisionStrictGap",
+   "original_sha256": "b468be2f576cca2b4e210ef004d8ac606e4aa7f44dd93972844214cd8dd64c84",
+   "path": "OAI/Geometry/WeakMTW/Support/CollisionStrictGap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/CollisionTangentCoordinates.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.CollisionTangentCoordinates",
+   "original_sha256": "17da9e706e34688069b94a43930a2d528cca45522f9985b43931015ba0698abf",
+   "path": "OAI/Geometry/WeakMTW/Support/CollisionTangentCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/CompactHomotopyContinuation.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.CompactHomotopyContinuation",
+   "original_sha256": "09ae9047defea868d566296c9e33790d7b1f2b41616a47e19d8f5ce885cac5e7",
+   "path": "OAI/Geometry/WeakMTW/Support/CompactHomotopyContinuation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/CompactLimitInjectivity.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.CompactLimitInjectivity",
+   "original_sha256": "c144100bf4e879a1eff2b89cb7a0b436a6f5fd90778ce4d9466a188179788194",
+   "path": "OAI/Geometry/WeakMTW/Support/CompactLimitInjectivity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/ConvexRepresentation.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.ConvexRepresentation",
+   "original_sha256": "5597cc25e646a14481386a0565d136e24e56a6e7fac6636a71489385fd8d41cd",
+   "path": "OAI/Geometry/WeakMTW/Support/ConvexRepresentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/CriticalCollision.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.CriticalCollision",
+   "original_sha256": "38e9a0d9da755a2abb024ce3f79f442ae7e3aec9866ce9879509c1f99943d242",
+   "path": "OAI/Geometry/WeakMTW/Support/CriticalCollision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/CriticalHessianGap.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.CriticalHessianGap",
+   "original_sha256": "08db70c24e9cd8542a52709ae03fe65951be21040d20e8f6ed0c7c7a8e1ce492",
+   "path": "OAI/Geometry/WeakMTW/Support/CriticalHessianGap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/CriticalJensen.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.CriticalJensen",
+   "original_sha256": "a4e05519c20b31576c469a77c3bfd229a3645a38ed07938f009158b2a02904f1",
+   "path": "OAI/Geometry/WeakMTW/Support/CriticalJensen.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/CriticalLocalTheorem.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.CriticalLocalTheorem",
+   "original_sha256": "2f056c9a1a5aab665f84a058a65e9352ef16bdcda3e7867ea4e97da74c4a52df",
+   "path": "OAI/Geometry/WeakMTW/Support/CriticalLocalTheorem.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/CriticalNonconjugacy.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.CriticalNonconjugacy",
+   "original_sha256": "80fdfbc6d3c0473007d0a4ec2e4e0a8e7d5a8e5b76846aa61ecf29ece6d3bd92",
+   "path": "OAI/Geometry/WeakMTW/Support/CriticalNonconjugacy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/FiberHullCompact.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.FiberHullCompact",
+   "original_sha256": "68be4748466c781db6ea9a7169133542923392645a2ddfac5426a1cd92aa4523",
+   "path": "OAI/Geometry/WeakMTW/Support/FiberHullCompact.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/FiniteActiveGraph.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.FiniteActiveGraph",
+   "original_sha256": "fd11e0b261a9ca033c28466ee8b79a05bff4b3b4be0468b95078fa6a2f0fe460",
+   "path": "OAI/Geometry/WeakMTW/Support/FiniteActiveGraph.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/FirstCutSupport.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.FirstCutSupport",
+   "original_sha256": "70023ce6b120fd7abb73851a892fa3ee5760a8e4c4f816c23f2c90904312c040",
+   "path": "OAI/Geometry/WeakMTW/Support/FirstCutSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/FirstScale.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.FirstScale",
+   "original_sha256": "634f153b38ab3567d554b111bf551cabaaa885264175826c2b9444176cb94d23",
+   "path": "OAI/Geometry/WeakMTW/Support/FirstScale.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/InteriorCharacterization.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.InteriorCharacterization",
+   "original_sha256": "ceed046c831873f489f634ca0b896656f5328c1ae32678257a66e9b150685539",
+   "path": "OAI/Geometry/WeakMTW/Support/InteriorCharacterization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/NormalizedSeparation.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.NormalizedSeparation",
+   "original_sha256": "29b658a8c97737f2e66b993b081c4e2ff00e47dbcc3cb8b3fa4d282181cb2293",
+   "path": "OAI/Geometry/WeakMTW/Support/NormalizedSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/TangentHullCompact.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.TangentHullCompact",
+   "original_sha256": "3f60fed3a0ea77f24c0cc0b49553291245d55165d23c9ea00fc913d2f0c426e1",
+   "path": "OAI/Geometry/WeakMTW/Support/TangentHullCompact.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/TotalInterior.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.TotalInterior",
+   "original_sha256": "eec997ecb44690e5eb2bfe955b7c7c581bc9b78ba43a9577f7697a600477687e",
+   "path": "OAI/Geometry/WeakMTW/Support/TotalInterior.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Support/TransverseJensen.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Support.TransverseJensen",
+   "original_sha256": "d1d67c8a47fb631a55c4af629a19fef235bf7cb6d7a11c15b6352daf37630c9b",
+   "path": "OAI/Geometry/WeakMTW/Support/TransverseJensen.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/ActionBranch.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.ActionBranch",
+   "original_sha256": "0f84aa3b8e179e3ae9465bb9972becf4d82d4cadc4ef9702e1a94ccd22276f77",
+   "path": "OAI/Geometry/WeakMTW/Variations/ActionBranch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/ActionHessian.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.ActionHessian",
+   "original_sha256": "c418783df36049d906f6f0666b6475bfc24e187f185bb2f121136d3d62da517c",
+   "path": "OAI/Geometry/WeakMTW/Variations/ActionHessian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/BranchAction.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.BranchAction",
+   "original_sha256": "8796c9c5e548e30a0ade889c192ad13fb30dd1ef9a12de5abf970608c3255bb7",
+   "path": "OAI/Geometry/WeakMTW/Variations/BranchAction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/BranchHessian.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.BranchHessian",
+   "original_sha256": "94ed97620ea1d6d7525e8dfeed32256e8a7258bb77c362f352c27f99f7dc928f",
+   "path": "OAI/Geometry/WeakMTW/Variations/BranchHessian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/BranchInitialGeometry.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.BranchInitialGeometry",
+   "original_sha256": "c85c6235ca76fe4bfbb1a4a0b3c979fa6309234811cd60bb075c835bc92a707b",
+   "path": "OAI/Geometry/WeakMTW/Variations/BranchInitialGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/BrokenActionCalculus.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.BrokenActionCalculus",
+   "original_sha256": "6a4e6de04704818c9a8bff02b69698143a71244f5f702589042d4cfe102da882",
+   "path": "OAI/Geometry/WeakMTW/Variations/BrokenActionCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/BrokenActionMinimum.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.BrokenActionMinimum",
+   "original_sha256": "1d62bd64f98c52f0511f90a6b2c95c1bfb5b8be52531c5c0d5d3d1dc51df14ef",
+   "path": "OAI/Geometry/WeakMTW/Variations/BrokenActionMinimum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/CostSplitting.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.CostSplitting",
+   "original_sha256": "907d25cfe6c6cc9710a6d6716826f4ce0079738579efda5b0b05eb8940a1a71f",
+   "path": "OAI/Geometry/WeakMTW/Variations/CostSplitting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/CovariantActionHessian.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.CovariantActionHessian",
+   "original_sha256": "8261bfd769ba013ea587bfdabd14eb56b67d5a894c04f72cb39c30601a486ecf",
+   "path": "OAI/Geometry/WeakMTW/Variations/CovariantActionHessian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/CurveCalculus.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.CurveCalculus",
+   "original_sha256": "64159269c5934520e697c1ec3752c3779fcba365033e254ef9b062c1909f0d66",
+   "path": "OAI/Geometry/WeakMTW/Variations/CurveCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/CurveVariation.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.CurveVariation",
+   "original_sha256": "213a4a4568e0c9179b5f6f8f70d66860518f6103a4ad4636a65e2d1018bef6ba",
+   "path": "OAI/Geometry/WeakMTW/Variations/CurveVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/DiscreteVariationalCalculus.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.DiscreteVariationalCalculus",
+   "original_sha256": "57717fb609eabf0d05decff998fcc74ef89458bacff42a48b05b3b9b2ab573eb",
+   "path": "OAI/Geometry/WeakMTW/Variations/DiscreteVariationalCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/FirstVariation.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.FirstVariation",
+   "original_sha256": "cf7a6efff70dabe0fba7525229901055ca26134d1f099c96b720039b9e8b3b79",
+   "path": "OAI/Geometry/WeakMTW/Variations/FirstVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/FlowLinearization.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.FlowLinearization",
+   "original_sha256": "f6eff3208d50ca9680725c910477cd7be217383a8df6ffe44f88fdc971f74cd6",
+   "path": "OAI/Geometry/WeakMTW/Variations/FlowLinearization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/FocalPole.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.FocalPole",
+   "original_sha256": "fab7512215c93c91bd7329ef18d36310c410b038c3baa36f62fb823ad50d1456",
+   "path": "OAI/Geometry/WeakMTW/Variations/FocalPole.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/GeneratingAction.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.GeneratingAction",
+   "original_sha256": "ea6efb083f5f17de40ef171f09cd33cae4a3e2aaf23ba339f5200dd075ba7f97",
+   "path": "OAI/Geometry/WeakMTW/Variations/GeneratingAction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/GeneratingActionBound.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.GeneratingActionBound",
+   "original_sha256": "3eef4992c90cf5ca154082a32558bc38774cc23fd8a91e47106d15ea8bae9276",
+   "path": "OAI/Geometry/WeakMTW/Variations/GeneratingActionBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/GeneratingFocalCalculus.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.GeneratingFocalCalculus",
+   "original_sha256": "94a36b2f43f95a2994dc0f68540ba2186f74be68d3990b20f3a8654611cde3bd",
+   "path": "OAI/Geometry/WeakMTW/Variations/GeneratingFocalCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/GeneratingHessian.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.GeneratingHessian",
+   "original_sha256": "02bd028ca9269543339a679d3e4ee0bd59857160192d73163edf5a105c62b8bf",
+   "path": "OAI/Geometry/WeakMTW/Variations/GeneratingHessian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/GeneratingNeighborhood.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.GeneratingNeighborhood",
+   "original_sha256": "5a46a5ee56a2619592b9e14c9c245ce57faab8d7bc7a30bc4ccef77249954f07",
+   "path": "OAI/Geometry/WeakMTW/Variations/GeneratingNeighborhood.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/GeneratingQuadratic.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.GeneratingQuadratic",
+   "original_sha256": "9d15eb395c61dce56d2f4cc542e8f72343c6f75723cedc12a61a8a6820f7954a",
+   "path": "OAI/Geometry/WeakMTW/Variations/GeneratingQuadratic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/GeneratingTrial.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.GeneratingTrial",
+   "original_sha256": "e447eeba19e5939367c0574d1572d9f4489eb84d74f9e0f69ca10eae6957ac21",
+   "path": "OAI/Geometry/WeakMTW/Variations/GeneratingTrial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/GeodesicSecondCoordinates.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.GeodesicSecondCoordinates",
+   "original_sha256": "d5c6700c141f0c20d2122ca027d8dccc0bbe2913109006f016aae914523f58df",
+   "path": "OAI/Geometry/WeakMTW/Variations/GeodesicSecondCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/GeometricFirstCut.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.GeometricFirstCut",
+   "original_sha256": "9353c761aef998f29b6c30e15fa0e633552874b1f8dcd5fc05f1bc798ac884c6",
+   "path": "OAI/Geometry/WeakMTW/Variations/GeometricFirstCut.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/HessianLinear.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.HessianLinear",
+   "original_sha256": "6b361c400bf358befe2c7ab31129e7059fcf479da35d1f4e1986986f20889af6",
+   "path": "OAI/Geometry/WeakMTW/Variations/HessianLinear.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/HessianNull.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.HessianNull",
+   "original_sha256": "ce959acf468b8d8776ab0dde4539df61180ed07e2134f4122f3353fc93cec4b4",
+   "path": "OAI/Geometry/WeakMTW/Variations/HessianNull.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/HullNonconjugacy.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.HullNonconjugacy",
+   "original_sha256": "f962160fa651d4a65befc644453c89285a79e7590538e62cad7a3496c09d8600",
+   "path": "OAI/Geometry/WeakMTW/Variations/HullNonconjugacy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/InwardHessianBound.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.InwardHessianBound",
+   "original_sha256": "ff1b592c5d6237c6cd6d95f347055e1e9dcf37e662c83519875ebe6d9f01abb6",
+   "path": "OAI/Geometry/WeakMTW/Variations/InwardHessianBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/LineTaylor.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.LineTaylor",
+   "original_sha256": "e41734b54c21297e4305cfaacc53b05601e9fa2ff479352610eac92dd0026515",
+   "path": "OAI/Geometry/WeakMTW/Variations/LineTaylor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/MTWConcavity.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.MTWConcavity",
+   "original_sha256": "4e8c6e5fdb1165e31b610472c25fd9548866ab21e7ba3b953f57121562613961",
+   "path": "OAI/Geometry/WeakMTW/Variations/MTWConcavity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/MajorantHessian.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.MajorantHessian",
+   "original_sha256": "e4abcba460276ddce5181b8a754dfd70aca79f2a1129b79151311d16aa927c81",
+   "path": "OAI/Geometry/WeakMTW/Variations/MajorantHessian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/MomentumSeparation.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.MomentumSeparation",
+   "original_sha256": "375ab0772dce30e355292f5fc949fdc937f2e70a8acd80cbe2d289b53528a57f",
+   "path": "OAI/Geometry/WeakMTW/Variations/MomentumSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/MovingTaylor.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.MovingTaylor",
+   "original_sha256": "1fb912a64c402175c37a0f5dada8c168ea002c34c8cda2cf63a8a8af8b1ca544",
+   "path": "OAI/Geometry/WeakMTW/Variations/MovingTaylor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/NoFocalCalculus.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.NoFocalCalculus",
+   "original_sha256": "d17e14aa1c1818b63c6baae31fffdd5d12a62159f318851aa6a4b9291c078271",
+   "path": "OAI/Geometry/WeakMTW/Variations/NoFocalCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/ParametricTaylor.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.ParametricTaylor",
+   "original_sha256": "142b70e23b0260e41ea7ed4ae819ac5460c7bf2b804eb3bfdede079c3ff32377",
+   "path": "OAI/Geometry/WeakMTW/Variations/ParametricTaylor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/QuadraticHessian.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.QuadraticHessian",
+   "original_sha256": "f089acb49bbc8d90e391b75a4f9c9ad4d99ba2646abb74396553c4b683d67566",
+   "path": "OAI/Geometry/WeakMTW/Variations/QuadraticHessian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/RadialComparison.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.RadialComparison",
+   "original_sha256": "d9889338e6eff1fffba60a8e68fbdcbeb60a4a610750f166cf6e57c3d5b94165",
+   "path": "OAI/Geometry/WeakMTW/Variations/RadialComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/RadialComparisonCalculus.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.RadialComparisonCalculus",
+   "original_sha256": "de4d77232bd6755342cb33d8813880d73c277a05dd2a40a0b17496e835fbde0c",
+   "path": "OAI/Geometry/WeakMTW/Variations/RadialComparisonCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/RadialHessianCalculus.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.RadialHessianCalculus",
+   "original_sha256": "586e7e41b05d5f690c69f3578c76f53a014713761bf52fd87780707be90cb78a",
+   "path": "OAI/Geometry/WeakMTW/Variations/RadialHessianCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/RadialSplitAction.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.RadialSplitAction",
+   "original_sha256": "858442e48ae02bd067a0f6064f90f3a79c1d00ee11eb09b5a2f82790229b62f4",
+   "path": "OAI/Geometry/WeakMTW/Variations/RadialSplitAction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/SecondCurveChain.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.SecondCurveChain",
+   "original_sha256": "6824657aaf2c7ea7d2e6a5ff751d0729a011f54926a7b38f76949c3250ac2570",
+   "path": "OAI/Geometry/WeakMTW/Variations/SecondCurveChain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/SegmentNonconjugacy.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.SegmentNonconjugacy",
+   "original_sha256": "124d0219204042f0e1a2e2fefaadf018d535b599f4f9434d5e68575969a82b0e",
+   "path": "OAI/Geometry/WeakMTW/Variations/SegmentNonconjugacy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/WeakMTW/Variations/ZeroActionHessian.lean"
+   },
+   "module": "OAI.Geometry.WeakMTW.Variations.ZeroActionHessian",
+   "original_sha256": "343cd2a3f83378130aece5d4b8b73bfc49b227b96212666fc3a6b53bfa972be9",
+   "path": "OAI/Geometry/WeakMTW/Variations/ZeroActionHessian.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Geometry.WeakMTW.Analysis.CurveComposition",
+  "OAI.Geometry.WeakMTW.Analysis.IntegralEquation",
+  "OAI.Geometry.WeakMTW.Analysis.SmoothFlow",
+  "OAI.Geometry.WeakMTW.Convexity",
+  "OAI.Geometry.WeakMTW.Coordinates.ChartGlobalVariation",
+  "OAI.Geometry.WeakMTW.Coordinates.ChartLength",
+  "OAI.Geometry.WeakMTW.Coordinates.ChartMetric",
+  "OAI.Geometry.WeakMTW.Coordinates.ChartPairing",
+  "OAI.Geometry.WeakMTW.Coordinates.ChartScaling",
+  "OAI.Geometry.WeakMTW.Coordinates.CoerciveMetric",
+  "OAI.Geometry.WeakMTW.Coordinates.CoordinateEquation",
+  "OAI.Geometry.WeakMTW.Coordinates.CoordinateExistence",
+  "OAI.Geometry.WeakMTW.Coordinates.CoordinateGeometry",
+  "OAI.Geometry.WeakMTW.Coordinates.CoordinateIdentification",
+  "OAI.Geometry.WeakMTW.Coordinates.CoordinateLocal",
+  "OAI.Geometry.WeakMTW.Coordinates.CostEndpointAction",
+  "OAI.Geometry.WeakMTW.Coordinates.CostFirstTaylor",
+  "OAI.Geometry.WeakMTW.Coordinates.CostNormalGradient",
+  "OAI.Geometry.WeakMTW.Coordinates.EndpointAction",
+  "OAI.Geometry.WeakMTW.Coordinates.FanCoordinates",
+  "OAI.Geometry.WeakMTW.Coordinates.FocalCoordinates",
+  "OAI.Geometry.WeakMTW.Coordinates.InteriorCost",
+  "OAI.Geometry.WeakMTW.Coordinates.IntrinsicNormal",
+  "OAI.Geometry.WeakMTW.Coordinates.LocalCost",
+  "OAI.Geometry.WeakMTW.Coordinates.LocalDistance",
+  "OAI.Geometry.WeakMTW.Coordinates.NormalAction",
+  "OAI.Geometry.WeakMTW.Coordinates.NormalCoordinates",
+  "OAI.Geometry.WeakMTW.Coordinates.NormalCurve",
+  "OAI.Geometry.WeakMTW.Coordinates.NormalDifferential",
+  "OAI.Geometry.WeakMTW.Coordinates.NormalEndpoint",
+  "OAI.Geometry.WeakMTW.Coordinates.NormalFlowLength",
+  "OAI.Geometry.WeakMTW.Coordinates.NormalLength",
+  "OAI.Geometry.WeakMTW.Coordinates.NormalMetricSpeed",
+  "OAI.Geometry.WeakMTW.Coordinates.NormalNeighborhood",
+  "OAI.Geometry.WeakMTW.Coordinates.NormalRigidity",
+  "OAI.Geometry.WeakMTW.Coordinates.NormalState",
+  "OAI.Geometry.WeakMTW.Coordinates.PairExpCoordinates",
+  "OAI.Geometry.WeakMTW.Coordinates.PairNormalDistance",
+  "OAI.Geometry.WeakMTW.Coordinates.RadialCoordinates",
+  "OAI.Geometry.WeakMTW.Coordinates.RadialLength",
+  "OAI.Geometry.WeakMTW.Coordinates.RadialRigidity",
+  "OAI.Geometry.WeakMTW.Coordinates.TangentCoordinates",
+  "OAI.Geometry.WeakMTW.Coordinates.TangentDiskCompact",
+  "OAI.Geometry.WeakMTW.Coordinates.TangentScaling",
+  "OAI.Geometry.WeakMTW.Coordinates.TwoPointSpeed",
+  "OAI.Geometry.WeakMTW.Coordinates.UnitNormal",
+  "OAI.Geometry.WeakMTW.Domains.Definitions",
+  "OAI.Geometry.WeakMTW.Endpoints",
+  "OAI.Geometry.WeakMTW.Geodesics.BundleMinimizerCompactness",
+  "OAI.Geometry.WeakMTW.Geodesics.CompactGeodesic",
+  "OAI.Geometry.WeakMTW.Geodesics.CompleteExistence",
+  "OAI.Geometry.WeakMTW.Geodesics.CostGeodesicTaylor",
+  "OAI.Geometry.WeakMTW.Geodesics.DistanceSplitting",
+  "OAI.Geometry.WeakMTW.Geodesics.EnergyFirstVariation",
+  "OAI.Geometry.WeakMTW.Geodesics.ExtendedMinimizers",
+  "OAI.Geometry.WeakMTW.Geodesics.FanEnergySmooth",
+  "OAI.Geometry.WeakMTW.Geodesics.FiberSmooth",
+  "OAI.Geometry.WeakMTW.Geodesics.FibreNonfocal",
+  "OAI.Geometry.WeakMTW.Geodesics.FlowFirstVariation",
+  "OAI.Geometry.WeakMTW.Geodesics.FlowVariationInjective",
+  "OAI.Geometry.WeakMTW.Geodesics.GaussChartFan",
+  "OAI.Geometry.WeakMTW.Geodesics.GaussGlobal",
+  "OAI.Geometry.WeakMTW.Geodesics.GaussLemma",
+  "OAI.Geometry.WeakMTW.Geodesics.GeneralFirstVariation",
+  "OAI.Geometry.WeakMTW.Geodesics.GeodesicDistance",
+  "OAI.Geometry.WeakMTW.Geodesics.GeodesicFlow",
+  "OAI.Geometry.WeakMTW.Geodesics.GeodesicScaling",
+  "OAI.Geometry.WeakMTW.Geodesics.GlobalFirstVariation",
+  "OAI.Geometry.WeakMTW.Geodesics.GlobalFlow",
+  "OAI.Geometry.WeakMTW.Geodesics.HopfRinow",
+  "OAI.Geometry.WeakMTW.Geodesics.InitialScaling",
+  "OAI.Geometry.WeakMTW.Geodesics.InjectivityUniqueness",
+  "OAI.Geometry.WeakMTW.Geodesics.IntrinsicExistence",
+  "OAI.Geometry.WeakMTW.Geodesics.IntrinsicExp",
+  "OAI.Geometry.WeakMTW.Geodesics.IntrinsicGlue",
+  "OAI.Geometry.WeakMTW.Geodesics.IntrinsicOn",
+  "OAI.Geometry.WeakMTW.Geodesics.IntrinsicUniqueness",
+  "OAI.Geometry.WeakMTW.Geodesics.LocalFanVariation",
+  "OAI.Geometry.WeakMTW.Geodesics.LocalFlow",
+  "OAI.Geometry.WeakMTW.Geodesics.LocalGeodesic",
+  "OAI.Geometry.WeakMTW.Geodesics.MinimizerCapture",
+  "OAI.Geometry.WeakMTW.Geodesics.MinimizerCompactness",
+  "OAI.Geometry.WeakMTW.Geodesics.MinimizingCorner",
+  "OAI.Geometry.WeakMTW.Geodesics.MinimizingSegments",
+  "OAI.Geometry.WeakMTW.Geodesics.NoCorner",
+  "OAI.Geometry.WeakMTW.Geodesics.NonconjugateBranches",
+  "OAI.Geometry.WeakMTW.Geodesics.ShortChartAction",
+  "OAI.Geometry.WeakMTW.Geodesics.ShortFan",
+  "OAI.Geometry.WeakMTW.Geodesics.ShortFlowCoordinates",
+  "OAI.Geometry.WeakMTW.Geodesics.ShortStates",
+  "OAI.Geometry.WeakMTW.Geodesics.UniformNormal",
+  "OAI.Geometry.WeakMTW.Main",
+  "OAI.Geometry.WeakMTW.Model",
+  "OAI.Geometry.WeakMTW.Potentials.ChartForwardLipschitz",
+  "OAI.Geometry.WeakMTW.Potentials.ChartLocalLipschitz",
+  "OAI.Geometry.WeakMTW.Potentials.CompactFamilyControl",
+  "OAI.Geometry.WeakMTW.Potentials.CompactSmoothControl",
+  "OAI.Geometry.WeakMTW.Potentials.CovectorFlow",
+  "OAI.Geometry.WeakMTW.Potentials.DiagonalEnvelope",
+  "OAI.Geometry.WeakMTW.Potentials.FiniteGlobalSupport",
+  "OAI.Geometry.WeakMTW.Potentials.GlobalSupportTheorem",
+  "OAI.Geometry.WeakMTW.Potentials.GradientCoordinates",
+  "OAI.Geometry.WeakMTW.Potentials.IntermediateAtlas",
+  "OAI.Geometry.WeakMTW.Potentials.IntermediateCoordinates",
+  "OAI.Geometry.WeakMTW.Potentials.IntermediateCovectors",
+  "OAI.Geometry.WeakMTW.Potentials.IntermediateDefinitions",
+  "OAI.Geometry.WeakMTW.Potentials.IntermediateDuality",
+  "OAI.Geometry.WeakMTW.Potentials.IntermediateGradient",
+  "OAI.Geometry.WeakMTW.Potentials.IntermediateGrowth",
+  "OAI.Geometry.WeakMTW.Potentials.IntermediateGrowthLocal",
+  "OAI.Geometry.WeakMTW.Potentials.IntermediateGrowthMetric",
+  "OAI.Geometry.WeakMTW.Potentials.IntermediateMomentumLipschitz",
+  "OAI.Geometry.WeakMTW.Potentials.IntermediateParameterFamily",
+  "OAI.Geometry.WeakMTW.Potentials.IntermediatePoleLipschitz",
+  "OAI.Geometry.WeakMTW.Potentials.IntermediateRegularity",
+  "OAI.Geometry.WeakMTW.Potentials.IntermediateStatement",
+  "OAI.Geometry.WeakMTW.Potentials.IntermediateTheorem",
+  "OAI.Geometry.WeakMTW.Potentials.IntermediateUniformBounds",
+  "OAI.Geometry.WeakMTW.Potentials.IntermediateUniformLipschitz",
+  "OAI.Geometry.WeakMTW.Potentials.IntermediateUniformRegularity",
+  "OAI.Geometry.WeakMTW.Potentials.LiftedSectionDefinitions",
+  "OAI.Geometry.WeakMTW.Potentials.LiftedSections",
+  "OAI.Geometry.WeakMTW.Potentials.LiftedSectionsTheorem",
+  "OAI.Geometry.WeakMTW.Potentials.OrdinarySubgradientCapture",
+  "OAI.Geometry.WeakMTW.Potentials.OrdinarySubgradientIdentity",
+  "OAI.Geometry.WeakMTW.Potentials.ParametricEnvelopeBounds",
+  "OAI.Geometry.WeakMTW.Potentials.PositiveEnvelope",
+  "OAI.Geometry.WeakMTW.Potentials.PotentialActiveLogs",
+  "OAI.Geometry.WeakMTW.Potentials.PotentialDefinitions",
+  "OAI.Geometry.WeakMTW.Potentials.PotentialFiniteReduction",
+  "OAI.Geometry.WeakMTW.Potentials.PotentialGraphGlobal",
+  "OAI.Geometry.WeakMTW.Potentials.QuadraticEnvelope",
+  "OAI.Geometry.WeakMTW.Potentials.ReverseGeodesic",
+  "OAI.Geometry.WeakMTW.Potentials.SmoothEnvelope",
+  "OAI.Geometry.WeakMTW.Potentials.SmoothMetricLipschitz",
+  "OAI.Geometry.WeakMTW.Potentials.UniformLocalLipschitz",
+  "OAI.Geometry.WeakMTW.Support.ActiveCollisionExclusion",
+  "OAI.Geometry.WeakMTW.Support.ActiveContinuation",
+  "OAI.Geometry.WeakMTW.Support.ActiveGraphLimits",
+  "OAI.Geometry.WeakMTW.Support.ActiveRepresentation",
+  "OAI.Geometry.WeakMTW.Support.ActiveSmallScale",
+  "OAI.Geometry.WeakMTW.Support.ActiveSupports",
+  "OAI.Geometry.WeakMTW.Support.AllScales",
+  "OAI.Geometry.WeakMTW.Support.BranchCollisionLimits",
+  "OAI.Geometry.WeakMTW.Support.CollisionBranches",
+  "OAI.Geometry.WeakMTW.Support.CollisionCalculus",
+  "OAI.Geometry.WeakMTW.Support.CollisionGeometry",
+  "OAI.Geometry.WeakMTW.Support.CollisionGradient",
+  "OAI.Geometry.WeakMTW.Support.CollisionStrictGap",
+  "OAI.Geometry.WeakMTW.Support.CollisionTangentCoordinates",
+  "OAI.Geometry.WeakMTW.Support.CompactHomotopyContinuation",
+  "OAI.Geometry.WeakMTW.Support.CompactLimitInjectivity",
+  "OAI.Geometry.WeakMTW.Support.ConvexRepresentation",
+  "OAI.Geometry.WeakMTW.Support.CriticalCollision",
+  "OAI.Geometry.WeakMTW.Support.CriticalHessianGap",
+  "OAI.Geometry.WeakMTW.Support.CriticalJensen",
+  "OAI.Geometry.WeakMTW.Support.CriticalLocalTheorem",
+  "OAI.Geometry.WeakMTW.Support.CriticalNonconjugacy",
+  "OAI.Geometry.WeakMTW.Support.FiberHullCompact",
+  "OAI.Geometry.WeakMTW.Support.FiniteActiveGraph",
+  "OAI.Geometry.WeakMTW.Support.FirstCutSupport",
+  "OAI.Geometry.WeakMTW.Support.FirstScale",
+  "OAI.Geometry.WeakMTW.Support.InteriorCharacterization",
+  "OAI.Geometry.WeakMTW.Support.NormalizedSeparation",
+  "OAI.Geometry.WeakMTW.Support.TangentHullCompact",
+  "OAI.Geometry.WeakMTW.Support.TotalInterior",
+  "OAI.Geometry.WeakMTW.Support.TransverseJensen",
+  "OAI.Geometry.WeakMTW.Variations.ActionBranch",
+  "OAI.Geometry.WeakMTW.Variations.ActionHessian",
+  "OAI.Geometry.WeakMTW.Variations.BranchAction",
+  "OAI.Geometry.WeakMTW.Variations.BranchHessian",
+  "OAI.Geometry.WeakMTW.Variations.BranchInitialGeometry",
+  "OAI.Geometry.WeakMTW.Variations.BrokenActionCalculus",
+  "OAI.Geometry.WeakMTW.Variations.BrokenActionMinimum",
+  "OAI.Geometry.WeakMTW.Variations.CostSplitting",
+  "OAI.Geometry.WeakMTW.Variations.CovariantActionHessian",
+  "OAI.Geometry.WeakMTW.Variations.CurveCalculus",
+  "OAI.Geometry.WeakMTW.Variations.CurveVariation",
+  "OAI.Geometry.WeakMTW.Variations.DiscreteVariationalCalculus",
+  "OAI.Geometry.WeakMTW.Variations.FirstVariation",
+  "OAI.Geometry.WeakMTW.Variations.FlowLinearization",
+  "OAI.Geometry.WeakMTW.Variations.FocalPole",
+  "OAI.Geometry.WeakMTW.Variations.GeneratingAction",
+  "OAI.Geometry.WeakMTW.Variations.GeneratingActionBound",
+  "OAI.Geometry.WeakMTW.Variations.GeneratingFocalCalculus",
+  "OAI.Geometry.WeakMTW.Variations.GeneratingHessian",
+  "OAI.Geometry.WeakMTW.Variations.GeneratingNeighborhood",
+  "OAI.Geometry.WeakMTW.Variations.GeneratingQuadratic",
+  "OAI.Geometry.WeakMTW.Variations.GeneratingTrial",
+  "OAI.Geometry.WeakMTW.Variations.GeodesicSecondCoordinates",
+  "OAI.Geometry.WeakMTW.Variations.GeometricFirstCut",
+  "OAI.Geometry.WeakMTW.Variations.HessianLinear",
+  "OAI.Geometry.WeakMTW.Variations.HessianNull",
+  "OAI.Geometry.WeakMTW.Variations.HullNonconjugacy",
+  "OAI.Geometry.WeakMTW.Variations.InwardHessianBound",
+  "OAI.Geometry.WeakMTW.Variations.LineTaylor",
+  "OAI.Geometry.WeakMTW.Variations.MTWConcavity",
+  "OAI.Geometry.WeakMTW.Variations.MajorantHessian",
+  "OAI.Geometry.WeakMTW.Variations.MomentumSeparation",
+  "OAI.Geometry.WeakMTW.Variations.MovingTaylor",
+  "OAI.Geometry.WeakMTW.Variations.NoFocalCalculus",
+  "OAI.Geometry.WeakMTW.Variations.ParametricTaylor",
+  "OAI.Geometry.WeakMTW.Variations.QuadraticHessian",
+  "OAI.Geometry.WeakMTW.Variations.RadialComparison",
+  "OAI.Geometry.WeakMTW.Variations.RadialComparisonCalculus",
+  "OAI.Geometry.WeakMTW.Variations.RadialHessianCalculus",
+  "OAI.Geometry.WeakMTW.Variations.RadialSplitAction",
+  "OAI.Geometry.WeakMTW.Variations.SecondCurveChain",
+  "OAI.Geometry.WeakMTW.Variations.SegmentNonconjugacy",
+  "OAI.Geometry.WeakMTW.Variations.ZeroActionHessian"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/WeakMTWGlobalSupport.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Geometry.WeakMTW.Convexity",
+   "name": "OAI.WeakMTWGlobalSupport.current_main_convexity",
+   "statement_sha256": "53be6906cff5c52e41770eb734c287091c89fdbc54c814dabff53125592491a3"
+  }
+ ],
+ "task_id": "oai-weak-mtw-global-support",
+ "task_revision": 1,
+ "title": "OpenAI math: Weak MTW curvature gives convexity and regular optimal transport: Convex injectivity domains under weak MTW",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

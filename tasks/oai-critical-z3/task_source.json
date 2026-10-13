@@ -1,0 +1,761 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 57229344
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.CriticalZ3",
+  "challenge_sha256": "34ea3ff4648b6ea92c3e7d94bcb7b66047a9d0fbd1f583c461c34636cbb854d8",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/CriticalZ3.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.CriticalZ3",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Probability.CriticalZ3.Main",
+   "theorem_names": [
+    "OAI.CriticalZ3.critical_no_infinite"
+   ]
+  },
+  "config_sha256": "ab3de20c993f7c3823a26577052b8bf950e310841e990ea604a4bdaa83b85e4c",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/CriticalZ3.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.CriticalZ3.critical_no_infinite": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/AdaptiveReveals.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.AdaptiveReveals",
+   "original_sha256": "4801af78dd838adb28c11da5d021e377d97c2aa124da9810b4534c6044082b0b",
+   "path": "OAI/Probability/CriticalZ3/AdaptiveReveals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/Basic.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.Basic",
+   "original_sha256": "6fa91066263caf15963711cdc050cc0f6a1f21609ff11c017fcfe354d5ebf709",
+   "path": "OAI/Probability/CriticalZ3/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/BoxGeometry.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.BoxGeometry",
+   "original_sha256": "06ff4348d3af815e544830304239ba657f57b1f7d362c313783015bef64145d4",
+   "path": "OAI/Probability/CriticalZ3/BoxGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/Coarse.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.Coarse",
+   "original_sha256": "b4b71c432da0ebf24b33efa838d1b594799ef4d2d6bebff09c37701643f8efa7",
+   "path": "OAI/Probability/CriticalZ3/Coarse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/ConditionalQuality.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.ConditionalQuality",
+   "original_sha256": "299f1fe2eefc8c4f242460516d6d55671e457d0a1ab669b0727b954c605aa427",
+   "path": "OAI/Probability/CriticalZ3/ConditionalQuality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/Conditioning.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.Conditioning",
+   "original_sha256": "cc9787e3f39a63b883d376fad6297bbf0abdd3d3723a7438120bf12b258c0e63",
+   "path": "OAI/Probability/CriticalZ3/Conditioning.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/EntryLayers.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.EntryLayers",
+   "original_sha256": "a455e08feb0153736cba4048feac2548cdd73db7ec44b7e4a784c0d43a421da2",
+   "path": "OAI/Probability/CriticalZ3/EntryLayers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/Exploration.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.Exploration",
+   "original_sha256": "45edc168e72077b59276ac6a980ecffefe2ba7be50822680885db5054a1963a5",
+   "path": "OAI/Probability/CriticalZ3/Exploration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/ExplorationConnectivity.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.ExplorationConnectivity",
+   "original_sha256": "bd5fb81ff28de037af16cf32aab79d50d51be981fbe99d2619abcab8aca84c07",
+   "path": "OAI/Probability/CriticalZ3/ExplorationConnectivity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/ExplorationInvariant.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.ExplorationInvariant",
+   "original_sha256": "b0cebfcf1c79627f9b772ce2bc5c7439a082cb74d4ba8695326ea829e632d3c4",
+   "path": "OAI/Probability/CriticalZ3/ExplorationInvariant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/ExplorationProbability.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.ExplorationProbability",
+   "original_sha256": "6489317f72ab369e426b5236c2b0340c9e637d2454caf30e2f5813bcc44ae9c3",
+   "path": "OAI/Probability/CriticalZ3/ExplorationProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/ExplorationSurvival.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.ExplorationSurvival",
+   "original_sha256": "9ef4bdb3546f82df3ecf7640f0205b45ba7dd6eb8a245f7c3b25616e2751216d",
+   "path": "OAI/Probability/CriticalZ3/ExplorationSurvival.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/Extension.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.Extension",
+   "original_sha256": "7dbfc0c49cf45736f5c944fc84b82a9f62c31eb81e34c78dfae8063751fae5e1",
+   "path": "OAI/Probability/CriticalZ3/Extension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/FiniteTrails.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.FiniteTrails",
+   "original_sha256": "dcfbd2da9dd4155f027a27b2a4b5fdc38972f90a1a25a6fb6abe2bb3be85b62e",
+   "path": "OAI/Probability/CriticalZ3/FiniteTrails.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/HyperedgeComparison.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.HyperedgeComparison",
+   "original_sha256": "17f3259bb6f24e08a412e33d31d8c2dbad26e41cf726a5da649288349d01364b",
+   "path": "OAI/Probability/CriticalZ3/HyperedgeComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/LatticeGraph.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.LatticeGraph",
+   "original_sha256": "581a7d6c1076e5658623fbc4d5e95de3577eb63a26e145977010d58618e41a3f",
+   "path": "OAI/Probability/CriticalZ3/LatticeGraph.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/LatticePaths.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.LatticePaths",
+   "original_sha256": "042e046acc87d33100743e238bfbfd78c7b6cfda1a69e786aa462d0724a41e1f",
+   "path": "OAI/Probability/CriticalZ3/LatticePaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/Main.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.Main",
+   "original_sha256": "96577659112104cc08377ee04238d9aa7ab0ddb6275eacb7d323201331b6f212",
+   "path": "OAI/Probability/CriticalZ3/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/Matching.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.Matching",
+   "original_sha256": "00c20948dba4939eec1082b26d1a2ae7b9c8de2f3200d182ff80433b83b9e02c",
+   "path": "OAI/Probability/CriticalZ3/Matching.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/Model.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.Model",
+   "original_sha256": "4ac9398d56276a4cab4a95770e1dc529936651ec97f8dba05e4f77b2025e2d2e",
+   "path": "OAI/Probability/CriticalZ3/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/Peierls.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.Peierls",
+   "original_sha256": "32ba58b8e6d5a130eb29ba0b20c8c16dfa77bca84218ff6b3507858cb9c5354c",
+   "path": "OAI/Probability/CriticalZ3/Peierls.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/PlanarBoundary.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.PlanarBoundary",
+   "original_sha256": "f64628cf7600ed424426b52b25f18f4c7588faa7798d7fee9c629360acc6de19",
+   "path": "OAI/Probability/CriticalZ3/PlanarBoundary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/ProductCylinder.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.ProductCylinder",
+   "original_sha256": "955ad0af9d3e066b31e33aea7d7ac4880cf65d620145d0117cd847fb6c8e405f",
+   "path": "OAI/Probability/CriticalZ3/ProductCylinder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/QuarterFaces.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.QuarterFaces",
+   "original_sha256": "6f7da1cb0a733d26e4582179ad2522e9c6df26344afcee00d0da39c694553807",
+   "path": "OAI/Probability/CriticalZ3/QuarterFaces.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/Relay.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.Relay",
+   "original_sha256": "b60c18d833a51d7af54fb64476ff94facd91575f3bf9d39ecae0d6f5ec4b0e39",
+   "path": "OAI/Probability/CriticalZ3/Relay.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/RelayProbability.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.RelayProbability",
+   "original_sha256": "c2409a8d8e36e5f315d6fd5dd482c053e399f9dc1f0e3e56aede3591630ed0b4",
+   "path": "OAI/Probability/CriticalZ3/RelayProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/Resampling.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.Resampling",
+   "original_sha256": "1edcee08e9f0fecf373a04885b4c3f9a36e6e43aa16e55b4750f28b1067d37c6",
+   "path": "OAI/Probability/CriticalZ3/Resampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/Scales.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.Scales",
+   "original_sha256": "2d682fe808fbf2d5bd8a13a3970658d53d9cd494306e119037d7aca7f8c4ecd0",
+   "path": "OAI/Probability/CriticalZ3/Scales.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/SeedQuality.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.SeedQuality",
+   "original_sha256": "bf06e9072fb3b941fe66f67c137908ac274237417afe26983c8fbdcf9f9f5c0a",
+   "path": "OAI/Probability/CriticalZ3/SeedQuality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/SeedTrials.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.SeedTrials",
+   "original_sha256": "5ba47407faaea832cb9f6f8d877475984da2c62cfcc49c20b2744e4f234413c3",
+   "path": "OAI/Probability/CriticalZ3/SeedTrials.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/ShellProbability.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.ShellProbability",
+   "original_sha256": "5671a852971f24da0d1db84ea66dad83b9a1367d7c6db334bfb1494ae5059805",
+   "path": "OAI/Probability/CriticalZ3/ShellProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/Subunit.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.Subunit",
+   "original_sha256": "38b58c53bd25155781bb821b1afaac106aa793b206cbc7f89a19b398c37b8335",
+   "path": "OAI/Probability/CriticalZ3/Subunit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/Symmetry.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.Symmetry",
+   "original_sha256": "5e457963a98808d4fca03c3741621f350d647634808aad6f44d8ba8377d92c76",
+   "path": "OAI/Probability/CriticalZ3/Symmetry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/CriticalZ3/TrialCounts.lean"
+   },
+   "module": "OAI.Probability.CriticalZ3.TrialCounts",
+   "original_sha256": "f7819f4ebe53d4de6148275a43040b5e912e5b5868113fcc800f59d972028a78",
+   "path": "OAI/Probability/CriticalZ3/TrialCounts.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Probability.CriticalZ3.AdaptiveReveals",
+  "OAI.Probability.CriticalZ3.Basic",
+  "OAI.Probability.CriticalZ3.BoxGeometry",
+  "OAI.Probability.CriticalZ3.Coarse",
+  "OAI.Probability.CriticalZ3.ConditionalQuality",
+  "OAI.Probability.CriticalZ3.Conditioning",
+  "OAI.Probability.CriticalZ3.EntryLayers",
+  "OAI.Probability.CriticalZ3.Exploration",
+  "OAI.Probability.CriticalZ3.ExplorationConnectivity",
+  "OAI.Probability.CriticalZ3.ExplorationInvariant",
+  "OAI.Probability.CriticalZ3.ExplorationProbability",
+  "OAI.Probability.CriticalZ3.ExplorationSurvival",
+  "OAI.Probability.CriticalZ3.Extension",
+  "OAI.Probability.CriticalZ3.FiniteTrails",
+  "OAI.Probability.CriticalZ3.HyperedgeComparison",
+  "OAI.Probability.CriticalZ3.LatticeGraph",
+  "OAI.Probability.CriticalZ3.LatticePaths",
+  "OAI.Probability.CriticalZ3.Main",
+  "OAI.Probability.CriticalZ3.Matching",
+  "OAI.Probability.CriticalZ3.Model",
+  "OAI.Probability.CriticalZ3.Peierls",
+  "OAI.Probability.CriticalZ3.PlanarBoundary",
+  "OAI.Probability.CriticalZ3.ProductCylinder",
+  "OAI.Probability.CriticalZ3.QuarterFaces",
+  "OAI.Probability.CriticalZ3.Relay",
+  "OAI.Probability.CriticalZ3.RelayProbability",
+  "OAI.Probability.CriticalZ3.Resampling",
+  "OAI.Probability.CriticalZ3.Scales",
+  "OAI.Probability.CriticalZ3.SeedQuality",
+  "OAI.Probability.CriticalZ3.SeedTrials",
+  "OAI.Probability.CriticalZ3.ShellProbability",
+  "OAI.Probability.CriticalZ3.Subunit",
+  "OAI.Probability.CriticalZ3.Symmetry",
+  "OAI.Probability.CriticalZ3.TrialCounts"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/CriticalZ3.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Probability.CriticalZ3.Main",
+   "name": "OAI.CriticalZ3.critical_no_infinite",
+   "statement_sha256": "4de0d2edf4fcc75142f10e08faa034a7a2d14e7fe9a132ab2436e42179d80567"
+  }
+ ],
+ "task_id": "oai-critical-z3",
+ "task_revision": 1,
+ "title": "OpenAI math: Critical percolation on every quasi-transitive graph: No infinite critical clusters on \\mathbb Z^3",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

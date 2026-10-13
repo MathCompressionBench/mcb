@@ -1,0 +1,715 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 441460328
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.DaugavetModuli",
+  "challenge_sha256": "b80afc577219cb0314de348626d6dadbf25eecf4e727de3a73d3f3adc90968a9",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/DaugavetModuli.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.DaugavetModuli",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.Daugavet.Main",
+   "theorem_names": [
+    "OAI.ExactModuli.exact_main",
+    "OAI.ExactModuli.kadets_werner_existence",
+    "OAI.ExactModuli.exact_example"
+   ]
+  },
+  "config_sha256": "351b9e76846a012f194810e1d39366e5a6d5156496dc83a76a429c5890269bff",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/DaugavetModuli.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.ExactModuli.exact_example": "equal",
+   "OAI.ExactModuli.exact_main": "equal",
+   "OAI.ExactModuli.kadets_werner_existence": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/Clipping.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.Clipping",
+   "original_sha256": "ba6226149e77e5024d2618e78d896e809995a1e57db7c418e825a7bbb23fdc5f",
+   "path": "OAI/Analysis/Daugavet/Clipping.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/ClosedUnion.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.ClosedUnion",
+   "original_sha256": "cb7376cae57cc2322274c6a306e94c80751e1f7b401a3521c037235d7a04d15a",
+   "path": "OAI/Analysis/Daugavet/ClosedUnion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/Diameter.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.Diameter",
+   "original_sha256": "f9369fec38cdb293fc65169318cf09bed5070f9498699419d7f09bb67406bd23",
+   "path": "OAI/Analysis/Daugavet/Diameter.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/Enlargement.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.Enlargement",
+   "original_sha256": "30268a3788af77e00ad4d3058d81a5a0ea1de47f65f088346b461288359a40f4",
+   "path": "OAI/Analysis/Daugavet/Enlargement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/EquivalentNorm.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.EquivalentNorm",
+   "original_sha256": "4e3547bc290751e8e4163cf43d99aa3c4d5f905bde2d8a6a8a8993e21fd441ee",
+   "path": "OAI/Analysis/Daugavet/EquivalentNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/ExactModuli.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.ExactModuli",
+   "original_sha256": "e7de53b9c3ead5a19d24a9eff3be3cdf75698e05cef1db68f973633a7dc72ad6",
+   "path": "OAI/Analysis/Daugavet/ExactModuli.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/FiniteCoordinates.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.FiniteCoordinates",
+   "original_sha256": "73857a911d297e2337ed06e9e8c696b02120e73f76d3c968e27eb12cec78af7b",
+   "path": "OAI/Analysis/Daugavet/FiniteCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/HeavyTails.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.HeavyTails",
+   "original_sha256": "40b2467c01f1197f1a92aa56caa1a4d188361a1376f8f0e63bdbb0b8bd08c074",
+   "path": "OAI/Analysis/Daugavet/HeavyTails.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/Joining.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.Joining",
+   "original_sha256": "15c0d41347090ddc4250a8a0869267e1ed7ec290d47c7ec5258c754df86d6465",
+   "path": "OAI/Analysis/Daugavet/Joining.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/LimitingSlices.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.LimitingSlices",
+   "original_sha256": "e684f2e5e184fca3d75fc76a32c0bacd2cb9b2cadd6d7aab0686919014038e55",
+   "path": "OAI/Analysis/Daugavet/LimitingSlices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/LowerBounds.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.LowerBounds",
+   "original_sha256": "0a2056817d14885419208771860047e0bc62a9f45dbe98a1c87982cefe971811",
+   "path": "OAI/Analysis/Daugavet/LowerBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/Main.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.Main",
+   "original_sha256": "6b76519001931d9ecb5b323098665f95350d2e9e6725358581a198082a423356",
+   "path": "OAI/Analysis/Daugavet/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/MeasureDistance.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.MeasureDistance",
+   "original_sha256": "0b38fdcf18d33ba57574e8c1ca0a9805a42739e8eac15068faf54f6f5a334c00",
+   "path": "OAI/Analysis/Daugavet/MeasureDistance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/Model.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.Model",
+   "original_sha256": "cac2a04870ce13ef62eb45c4770adcbfdc0612d643a5ac11c19b6f6a0c0771ef",
+   "path": "OAI/Analysis/Daugavet/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/Multipliers.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.Multipliers",
+   "original_sha256": "24c1bbd9c13531fa30bbb0eeef58b98679b7d0a9a38c13e5ff48e4d28888f07d",
+   "path": "OAI/Analysis/Daugavet/Multipliers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/ProductApproximation.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.ProductApproximation",
+   "original_sha256": "b77ae782ffb5ebfd1086699a24fa2d9d748ef02a2e248017062d25ca6eeeef5a",
+   "path": "OAI/Analysis/Daugavet/ProductApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/ProductModels.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.ProductModels",
+   "original_sha256": "edd4f8950034da7de8fb1816720dbee8abf66d430ed34c3eb3ba41361e2573bd",
+   "path": "OAI/Analysis/Daugavet/ProductModels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/ProductOperators.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.ProductOperators",
+   "original_sha256": "33427add75f1b2b2064618f87d47769283bdacb036ffe0df3d1c17ed2c18fd93",
+   "path": "OAI/Analysis/Daugavet/ProductOperators.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/ProductSeparation.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.ProductSeparation",
+   "original_sha256": "59a2040413840b0cbb79080b669373c1b353d1c3483240e6fba84dacdb72a54f",
+   "path": "OAI/Analysis/Daugavet/ProductSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/Recovery.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.Recovery",
+   "original_sha256": "606030099e6d0a83c2a564880360680e7e6fddfa9202208a780c12b52f8e5df4",
+   "path": "OAI/Analysis/Daugavet/Recovery.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/SignAverages.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.SignAverages",
+   "original_sha256": "2bb19e3e1d58b3afbb7b827c3e9ea5dea5d4826748df0741bc656c0cc2e12e49",
+   "path": "OAI/Analysis/Daugavet/SignAverages.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/SliceCharacterization.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.SliceCharacterization",
+   "original_sha256": "382ff209d1f4f55bcb3aa389db6a6bf8d1ae47b39d619d4b56f6b856153a8fb0",
+   "path": "OAI/Analysis/Daugavet/SliceCharacterization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/Slices.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.Slices",
+   "original_sha256": "edaa98d2a74ed45643e625078f348c81dbc02954065a7248c2b2c546136b5990",
+   "path": "OAI/Analysis/Daugavet/Slices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/Stages.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.Stages",
+   "original_sha256": "e176619984ba96c80dfbce474a012be4eea17adcdb00fa8ed555b5a53d71b9de",
+   "path": "OAI/Analysis/Daugavet/Stages.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/TailEstimates.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.TailEstimates",
+   "original_sha256": "36155aa78df72df72e570de67b8f7269c45e591ceeea40fd0e508944783dcc95",
+   "path": "OAI/Analysis/Daugavet/TailEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/UpperBounds.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.UpperBounds",
+   "original_sha256": "0c4d25863d65c2e392773a2ebe12b7c4c397f32db4b30fb7e9448ef75cfc2701",
+   "path": "OAI/Analysis/Daugavet/UpperBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/WholeBallCoefficients.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.WholeBallCoefficients",
+   "original_sha256": "2f2f3043512f749224c98abf04e19811e54c52bddbcddee15508095f31efa8cd",
+   "path": "OAI/Analysis/Daugavet/WholeBallCoefficients.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Daugavet/WholeBallConcentration.lean"
+   },
+   "module": "OAI.Analysis.Daugavet.WholeBallConcentration",
+   "original_sha256": "b87c0d356771f553d2654161c5bc11c8f7d595fc6eb239ba303466d569f7ee00",
+   "path": "OAI/Analysis/Daugavet/WholeBallConcentration.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.Daugavet.Clipping",
+  "OAI.Analysis.Daugavet.ClosedUnion",
+  "OAI.Analysis.Daugavet.Diameter",
+  "OAI.Analysis.Daugavet.Enlargement",
+  "OAI.Analysis.Daugavet.EquivalentNorm",
+  "OAI.Analysis.Daugavet.ExactModuli",
+  "OAI.Analysis.Daugavet.FiniteCoordinates",
+  "OAI.Analysis.Daugavet.HeavyTails",
+  "OAI.Analysis.Daugavet.Joining",
+  "OAI.Analysis.Daugavet.LimitingSlices",
+  "OAI.Analysis.Daugavet.LowerBounds",
+  "OAI.Analysis.Daugavet.Main",
+  "OAI.Analysis.Daugavet.MeasureDistance",
+  "OAI.Analysis.Daugavet.Model",
+  "OAI.Analysis.Daugavet.Multipliers",
+  "OAI.Analysis.Daugavet.ProductApproximation",
+  "OAI.Analysis.Daugavet.ProductModels",
+  "OAI.Analysis.Daugavet.ProductOperators",
+  "OAI.Analysis.Daugavet.ProductSeparation",
+  "OAI.Analysis.Daugavet.Recovery",
+  "OAI.Analysis.Daugavet.SignAverages",
+  "OAI.Analysis.Daugavet.SliceCharacterization",
+  "OAI.Analysis.Daugavet.Slices",
+  "OAI.Analysis.Daugavet.Stages",
+  "OAI.Analysis.Daugavet.TailEstimates",
+  "OAI.Analysis.Daugavet.UpperBounds",
+  "OAI.Analysis.Daugavet.WholeBallCoefficients",
+  "OAI.Analysis.Daugavet.WholeBallConcentration"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/DaugavetModuli.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.Daugavet.ExactModuli",
+   "name": "OAI.ExactModuli.exact_main",
+   "statement_sha256": "436d8d8485f1761e928214b7064ab19cbf3e58a42af16ec1162b057ccb6907b9"
+  },
+  {
+   "module": "OAI.Analysis.Daugavet.Main",
+   "name": "OAI.ExactModuli.kadets_werner_existence",
+   "statement_sha256": "9064452cc56cae0c37912944b456a5e1d225b0ed6b780ba6f236b2bdb3ed786e"
+  },
+  {
+   "module": "OAI.Analysis.Daugavet.Main",
+   "name": "OAI.ExactModuli.exact_example",
+   "statement_sha256": "48b7fe194186bf822ac2a05bb23fbfe2eb4812b639bc2a3baab5784a68cc49f7"
+  }
+ ],
+ "task_id": "oai-daugavet-moduli",
+ "task_revision": 1,
+ "title": "OpenAI math: Reflexive midpoint convexity and diamond distortion: Exact asymptotic moduli and a Daugavet example",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

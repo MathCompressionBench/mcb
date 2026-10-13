@@ -1,0 +1,1051 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 548421843
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.PlanarL1",
+  "challenge_sha256": "e902947b3b86e48e2eb3052f5832ee4a3ac5fb4e4ffd3ad0b8ad16f66344c3c3",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/PlanarL1.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.PlanarL1",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Combinatorics.PlanarL1.Embedding",
+   "theorem_names": [
+    "OAI.PlanarL1.planar_graph_metrics_embed_L1"
+   ]
+  },
+  "config_sha256": "0043ad85e76dc9e2472f49d8a3d6c189093effa9e83170ae60c6c28f677349ce",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/PlanarL1.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.PlanarL1.planar_graph_metrics_embed_L1": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Ambient.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Ambient",
+   "original_sha256": "c44347757653f0b3945f716e617664a884f69df14248de103716da1793fa3e03",
+   "path": "OAI/Combinatorics/PlanarL1/Ambient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/BandTrees.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.BandTrees",
+   "original_sha256": "e90ddaea04595a5d11a8124c7e511ef797d1eafc522b80e9b8065c81d1415e35",
+   "path": "OAI/Combinatorics/PlanarL1/BandTrees.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Bands.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Bands",
+   "original_sha256": "de7291928c63416dcaa70bac44093b2ecdbb92577d877f849ec0bf07132d9363",
+   "path": "OAI/Combinatorics/PlanarL1/Bands.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Clipping.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Clipping",
+   "original_sha256": "36f71a0b9ab0474f3040b49eb35b5d7f995f02de9c8488ac6e93b68d26d1593c",
+   "path": "OAI/Combinatorics/PlanarL1/Clipping.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Columns.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Columns",
+   "original_sha256": "4933319c487b883c96f71a06a7a50fad3adbb044bb902ea1cc18db9419c1deec",
+   "path": "OAI/Combinatorics/PlanarL1/Columns.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/CoupledState.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.CoupledState",
+   "original_sha256": "899b7a48672d01ad6dc80466eb1b6374fd2f63ac91247a34a4ca0212501dba33",
+   "path": "OAI/Combinatorics/PlanarL1/CoupledState.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Crossings.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Crossings",
+   "original_sha256": "90e5fb1219dbc8927bfa9ad5fb1d0275d48403787f5e2d8054748870d8a413fa",
+   "path": "OAI/Combinatorics/PlanarL1/Crossings.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/CutExtraction.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.CutExtraction",
+   "original_sha256": "79173048700f27d7673003d996d44dae8f0037be12082118a9bbc1ae34e5f2e6",
+   "path": "OAI/Combinatorics/PlanarL1/CutExtraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Cuts.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Cuts",
+   "original_sha256": "50f9b0a35b17c9699a553bec5c6d1d1d2a28201cd81f4ec94a062a039e50535c",
+   "path": "OAI/Combinatorics/PlanarL1/Cuts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Dilation.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Dilation",
+   "original_sha256": "c8f616337d566251545c3ad7a5ea8c50a0d6583b491a89caa97b05fa93c1f6a2",
+   "path": "OAI/Combinatorics/PlanarL1/Dilation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/DiskCrossing.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.DiskCrossing",
+   "original_sha256": "092ba8268790f3f1a788181336f7315ac113d4ec704acc606d41dd4be37417c6",
+   "path": "OAI/Combinatorics/PlanarL1/DiskCrossing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Distance.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Distance",
+   "original_sha256": "1cbd6be4cec00c553d8a2f2e1cc6d256eb756ca38810beca08e1f38f040f6a34",
+   "path": "OAI/Combinatorics/PlanarL1/Distance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Drawing.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Drawing",
+   "original_sha256": "f69bb355ca04098355409569becd9c4c731b5f0d3583ac564cc9adbc2cd0832e",
+   "path": "OAI/Combinatorics/PlanarL1/Drawing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Embedding.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Embedding",
+   "original_sha256": "a381374bfac8f35fca2f6f8e1ceba38507475c7c513c401cba1ea672b458b2ae",
+   "path": "OAI/Combinatorics/PlanarL1/Embedding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Execution.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Execution",
+   "original_sha256": "6f5a52f8f7e2681c7e01e0eb0ffe32a67ff379f03643a5d0007c98a915f45980",
+   "path": "OAI/Combinatorics/PlanarL1/Execution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/FamilyPersistence.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.FamilyPersistence",
+   "original_sha256": "cdb2094b51e089c5a24fd5c34a2752b7b9001b70be9f540ff48c36bfbd85bd49",
+   "path": "OAI/Combinatorics/PlanarL1/FamilyPersistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Fields.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Fields",
+   "original_sha256": "3c878e437e9f1ffcae78ef632c96c77b4673063e22c55b88f9cde474215f4449",
+   "path": "OAI/Combinatorics/PlanarL1/Fields.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/FiniteL1.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.FiniteL1",
+   "original_sha256": "f9a248eda4b3dc6fdcf519fda31cffd50c359dc821f20dbaf5ccea061f4abbf5",
+   "path": "OAI/Combinatorics/PlanarL1/FiniteL1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Gluing.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Gluing",
+   "original_sha256": "60ab9e4e3189f1b2729f12ca9fb11cccf14ab07a2640fdeee57230843d9ef134",
+   "path": "OAI/Combinatorics/PlanarL1/Gluing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Growth.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Growth",
+   "original_sha256": "d08b5ccbb7cde6ad469e4b8f2b6db5cb8ca6b773e83f2c2070b310c35fa1d2f3",
+   "path": "OAI/Combinatorics/PlanarL1/Growth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/HeightTree.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.HeightTree",
+   "original_sha256": "98245c61b544b7bc9f2e160f98087a2d1e502c4312c591ab3d5ee3e4ea21125f",
+   "path": "OAI/Combinatorics/PlanarL1/HeightTree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Increments.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Increments",
+   "original_sha256": "fb99e66c161dc1339bd44fe14161eb72eafe0497a3355d5b3581e4c3d2215454",
+   "path": "OAI/Combinatorics/PlanarL1/Increments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Interpolation.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Interpolation",
+   "original_sha256": "bfe6386894d4b3a3dd9637da9efeaf3be263b23506657900fc6fddf306252e36",
+   "path": "OAI/Combinatorics/PlanarL1/Interpolation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Layout.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Layout",
+   "original_sha256": "ea4f5b33927e97df3a5dac724c8eaf63e612d5723a6760d0111a241b86210295",
+   "path": "OAI/Combinatorics/PlanarL1/Layout.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/LocalPersistence.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.LocalPersistence",
+   "original_sha256": "9b3a4c2b2de12859d322013affb683d08233ca93e0e5fb715fbcab710d5f1147",
+   "path": "OAI/Combinatorics/PlanarL1/LocalPersistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/MainCells.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.MainCells",
+   "original_sha256": "db196c4133ebac069bdbdd3628222a206d310bf3bf276fc5c043142295ec7767",
+   "path": "OAI/Combinatorics/PlanarL1/MainCells.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/MainFamily.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.MainFamily",
+   "original_sha256": "cea696e12b73b5b05cb0532a496279d1e39bfb723a035138d02122bf93c87f5a",
+   "path": "OAI/Combinatorics/PlanarL1/MainFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/MainGain.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.MainGain",
+   "original_sha256": "60b487f0ce512830e7592445e5f4724341204927959c78aa7c6034d11c470464",
+   "path": "OAI/Combinatorics/PlanarL1/MainGain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/MainPersistence.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.MainPersistence",
+   "original_sha256": "e7c67559e1c435ccac97a0da981421ea45dc826e44b2a4f9fd2ff17ee2aa139e",
+   "path": "OAI/Combinatorics/PlanarL1/MainPersistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/MainStep.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.MainStep",
+   "original_sha256": "a8627f8b157ff0471b10b58d5141e0471a24b6e3b2bf515aa5aad788e31ac14e",
+   "path": "OAI/Combinatorics/PlanarL1/MainStep.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Movement.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Movement",
+   "original_sha256": "6bee19d6cadd5e202977151881986e12e8a7b223876c27a5ea89f9a97dc248e8",
+   "path": "OAI/Combinatorics/PlanarL1/Movement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Noncrossing.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Noncrossing",
+   "original_sha256": "838bba576b069ccc8a15bee3b60cdc783a657806ced0ef3ce47b8aef4b21f808",
+   "path": "OAI/Combinatorics/PlanarL1/Noncrossing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Order.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Order",
+   "original_sha256": "4e0d69bbeae19ce18abaceb4ebded350b81911b4eef93a4beeb57c3e406bcd23",
+   "path": "OAI/Combinatorics/PlanarL1/Order.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/OrderedState.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.OrderedState",
+   "original_sha256": "7b1b3b4c454134ed05faf969f17885ecdb466b7da3a3363dc53c8622bd591796",
+   "path": "OAI/Combinatorics/PlanarL1/OrderedState.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/OrdinaryState.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.OrdinaryState",
+   "original_sha256": "16e0a570ec09d0b3c49615fdfb71d686ee05a16b8ed9e2a2ac99f42b237e34ab",
+   "path": "OAI/Combinatorics/PlanarL1/OrdinaryState.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/PairGeometry.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.PairGeometry",
+   "original_sha256": "261853bd6c069bdb9d1bd6ffd3268bec8ffa3fddf5cb3add68f4e2f3aef6f671",
+   "path": "OAI/Combinatorics/PlanarL1/PairGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/PairSelection.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.PairSelection",
+   "original_sha256": "6697aaa2c5b6f74b5519b06189aaf47cbf83bc61d23bbbcec921932813ad9714",
+   "path": "OAI/Combinatorics/PlanarL1/PairSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Parameters.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Parameters",
+   "original_sha256": "7cc492f0aa7f5f9877ae046b531f05632eed54330f6ec148d7d284b6f59791c5",
+   "path": "OAI/Combinatorics/PlanarL1/Parameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Persistence.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Persistence",
+   "original_sha256": "9ed45442eedb972b6bfa77c53e2418e50c0b227c94f77fd4d0494c01d9b9d5e5",
+   "path": "OAI/Combinatorics/PlanarL1/Persistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/PlanarMetric.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.PlanarMetric",
+   "original_sha256": "6884f30244fc4c6ce18c9d06c05b22bf69f4407bafec239a74d84c45faa65bff",
+   "path": "OAI/Combinatorics/PlanarL1/PlanarMetric.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Polygonal.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Polygonal",
+   "original_sha256": "12a04bde52e6877fb3a8c42cc90ffbfe4399f6acf31abec5756972404d10cc47",
+   "path": "OAI/Combinatorics/PlanarL1/Polygonal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Probability.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Probability",
+   "original_sha256": "b36aee4b44c18f252fd6abc7d9e7b1e7d5120b9b4eff13ae57148e95650f424c",
+   "path": "OAI/Combinatorics/PlanarL1/Probability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/RadialTree.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.RadialTree",
+   "original_sha256": "43001a99c93af0325eb508237511b0e14f82ec5e8895115f4dbc944a653537c1",
+   "path": "OAI/Combinatorics/PlanarL1/RadialTree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Retubing.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Retubing",
+   "original_sha256": "06e5c36694beadb32b972347faf4cf6f40f1b85de7f613ae1450676fe9dda774",
+   "path": "OAI/Combinatorics/PlanarL1/Retubing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/ScaleHistory.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.ScaleHistory",
+   "original_sha256": "4e9d691eb98ce893aca398e74d998ffa7961dac074e75faaaff8cfae4e5da09d",
+   "path": "OAI/Combinatorics/PlanarL1/ScaleHistory.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Schedule.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Schedule",
+   "original_sha256": "aa8264ef9ab95f7f8de06bd91146240840ffec505ea976a869556501c803e881",
+   "path": "OAI/Combinatorics/PlanarL1/Schedule.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/SecondaryBatch.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.SecondaryBatch",
+   "original_sha256": "f84716c97cd32080c2ae86a913ed78fcadacddb5e5a84b91ad71aec2d9c4c1b0",
+   "path": "OAI/Combinatorics/PlanarL1/SecondaryBatch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/SecondaryCells.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.SecondaryCells",
+   "original_sha256": "101aa4001763f2fc6ac04fd428165c27766cca702d11d25e2d831d5d75e88717",
+   "path": "OAI/Combinatorics/PlanarL1/SecondaryCells.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/SecondaryFamily.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.SecondaryFamily",
+   "original_sha256": "cc5bf0cc30b6c814a70f535626b88f7bc1ae4974e8ca975418af60286acec6c8",
+   "path": "OAI/Combinatorics/PlanarL1/SecondaryFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/SecondaryGain.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.SecondaryGain",
+   "original_sha256": "1c8f827b2f6cb9a045e43f1faccc96683f8c0b09810f5eddac242944f4498313",
+   "path": "OAI/Combinatorics/PlanarL1/SecondaryGain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/SecondaryStep.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.SecondaryStep",
+   "original_sha256": "18900e1073064d265cbfe890f252e8a58b7ff0922d73149d5782873c230d8830",
+   "path": "OAI/Combinatorics/PlanarL1/SecondaryStep.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/SeedPacking.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.SeedPacking",
+   "original_sha256": "e73adf254fae0dd0290b05935ae91878bb1acef8f67888644a313a1fd0984a47",
+   "path": "OAI/Combinatorics/PlanarL1/SeedPacking.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/SelectedGain.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.SelectedGain",
+   "original_sha256": "785dfc372fbd7d6e86274779c3f82d93c1ea470d7699987780e1ba88443a5520",
+   "path": "OAI/Combinatorics/PlanarL1/SelectedGain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Separation.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Separation",
+   "original_sha256": "37a04bc47a1c1be90219c277933461a16dc5bdf67c4a12bf3e419420c7cd0a87",
+   "path": "OAI/Combinatorics/PlanarL1/Separation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Statement.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Statement",
+   "original_sha256": "b7964c47cdc7ae55383e5b0c34741ef571e2d1fbd97afafd9d8d11aafea15020",
+   "path": "OAI/Combinatorics/PlanarL1/Statement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Stem.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Stem",
+   "original_sha256": "1f1448a8dc2d9a50e88ea6a8222dfc8a67dcaa6d4f7de981b30dd9129bfb5d63",
+   "path": "OAI/Combinatorics/PlanarL1/Stem.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/StepSuccess.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.StepSuccess",
+   "original_sha256": "8b41369f1c30fd8e585d57d82ab3d7bf8f21112f3eb6451b51ae0282f63dc129",
+   "path": "OAI/Combinatorics/PlanarL1/StepSuccess.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Surgery.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Surgery",
+   "original_sha256": "8f6b7348c6dfacb45d9beb6fa81cc6c6de3209f3920a0aa46b07914c0b2469a4",
+   "path": "OAI/Combinatorics/PlanarL1/Surgery.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/SurvivingSeeds.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.SurvivingSeeds",
+   "original_sha256": "170bacdc5cd7fc29a8cf8204090a6a94306441e055d046268d9be4beccd84461",
+   "path": "OAI/Combinatorics/PlanarL1/SurvivingSeeds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Threshold.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Threshold",
+   "original_sha256": "aa787432a3e7b9183b2b4ef650a1f63378bc78bcee1b0e859c80b410a7b0ac99",
+   "path": "OAI/Combinatorics/PlanarL1/Threshold.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/Tiling.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.Tiling",
+   "original_sha256": "7b1ada73698aa94439f76c181cfe3869745599ff608456f9fe95ef2a283a3086",
+   "path": "OAI/Combinatorics/PlanarL1/Tiling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/TreeDisk.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.TreeDisk",
+   "original_sha256": "9887cdf0e5a425030dfc74417e3afafa0271fd07ba410864600fbc0ba715a70b",
+   "path": "OAI/Combinatorics/PlanarL1/TreeDisk.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/PlanarL1/WeightedMetric.lean"
+   },
+   "module": "OAI.Combinatorics.PlanarL1.WeightedMetric",
+   "original_sha256": "be850e9f91fe2d389e776957507eaa3d918f1864aa1945744d08e08eda65fbe5",
+   "path": "OAI/Combinatorics/PlanarL1/WeightedMetric.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.PlanarL1.Ambient",
+  "OAI.Combinatorics.PlanarL1.BandTrees",
+  "OAI.Combinatorics.PlanarL1.Bands",
+  "OAI.Combinatorics.PlanarL1.Clipping",
+  "OAI.Combinatorics.PlanarL1.Columns",
+  "OAI.Combinatorics.PlanarL1.CoupledState",
+  "OAI.Combinatorics.PlanarL1.Crossings",
+  "OAI.Combinatorics.PlanarL1.CutExtraction",
+  "OAI.Combinatorics.PlanarL1.Cuts",
+  "OAI.Combinatorics.PlanarL1.Dilation",
+  "OAI.Combinatorics.PlanarL1.DiskCrossing",
+  "OAI.Combinatorics.PlanarL1.Distance",
+  "OAI.Combinatorics.PlanarL1.Drawing",
+  "OAI.Combinatorics.PlanarL1.Embedding",
+  "OAI.Combinatorics.PlanarL1.Execution",
+  "OAI.Combinatorics.PlanarL1.FamilyPersistence",
+  "OAI.Combinatorics.PlanarL1.Fields",
+  "OAI.Combinatorics.PlanarL1.FiniteL1",
+  "OAI.Combinatorics.PlanarL1.Gluing",
+  "OAI.Combinatorics.PlanarL1.Growth",
+  "OAI.Combinatorics.PlanarL1.HeightTree",
+  "OAI.Combinatorics.PlanarL1.Increments",
+  "OAI.Combinatorics.PlanarL1.Interpolation",
+  "OAI.Combinatorics.PlanarL1.Layout",
+  "OAI.Combinatorics.PlanarL1.LocalPersistence",
+  "OAI.Combinatorics.PlanarL1.MainCells",
+  "OAI.Combinatorics.PlanarL1.MainFamily",
+  "OAI.Combinatorics.PlanarL1.MainGain",
+  "OAI.Combinatorics.PlanarL1.MainPersistence",
+  "OAI.Combinatorics.PlanarL1.MainStep",
+  "OAI.Combinatorics.PlanarL1.Movement",
+  "OAI.Combinatorics.PlanarL1.Noncrossing",
+  "OAI.Combinatorics.PlanarL1.Order",
+  "OAI.Combinatorics.PlanarL1.OrderedState",
+  "OAI.Combinatorics.PlanarL1.OrdinaryState",
+  "OAI.Combinatorics.PlanarL1.PairGeometry",
+  "OAI.Combinatorics.PlanarL1.PairSelection",
+  "OAI.Combinatorics.PlanarL1.Parameters",
+  "OAI.Combinatorics.PlanarL1.Persistence",
+  "OAI.Combinatorics.PlanarL1.PlanarMetric",
+  "OAI.Combinatorics.PlanarL1.Polygonal",
+  "OAI.Combinatorics.PlanarL1.Probability",
+  "OAI.Combinatorics.PlanarL1.RadialTree",
+  "OAI.Combinatorics.PlanarL1.Retubing",
+  "OAI.Combinatorics.PlanarL1.ScaleHistory",
+  "OAI.Combinatorics.PlanarL1.Schedule",
+  "OAI.Combinatorics.PlanarL1.SecondaryBatch",
+  "OAI.Combinatorics.PlanarL1.SecondaryCells",
+  "OAI.Combinatorics.PlanarL1.SecondaryFamily",
+  "OAI.Combinatorics.PlanarL1.SecondaryGain",
+  "OAI.Combinatorics.PlanarL1.SecondaryStep",
+  "OAI.Combinatorics.PlanarL1.SeedPacking",
+  "OAI.Combinatorics.PlanarL1.SelectedGain",
+  "OAI.Combinatorics.PlanarL1.Separation",
+  "OAI.Combinatorics.PlanarL1.Statement",
+  "OAI.Combinatorics.PlanarL1.Stem",
+  "OAI.Combinatorics.PlanarL1.StepSuccess",
+  "OAI.Combinatorics.PlanarL1.Surgery",
+  "OAI.Combinatorics.PlanarL1.SurvivingSeeds",
+  "OAI.Combinatorics.PlanarL1.Threshold",
+  "OAI.Combinatorics.PlanarL1.Tiling",
+  "OAI.Combinatorics.PlanarL1.TreeDisk",
+  "OAI.Combinatorics.PlanarL1.WeightedMetric"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/PlanarL1.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Combinatorics.PlanarL1.Embedding",
+   "name": "OAI.PlanarL1.planar_graph_metrics_embed_L1",
+   "statement_sha256": "6aa453a23be9c1af973a6804142bc967b4d2adb6c5446e6c68236e99dea2b4c1"
+  }
+ ],
+ "task_id": "oai-planar-l1",
+ "task_revision": 1,
+ "title": "OpenAI math: Bounded-distortion <i>L</i><sub>1</sub> embeddings of planar and bounded-treewidth graphs: Planar graph metrics in L_1",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

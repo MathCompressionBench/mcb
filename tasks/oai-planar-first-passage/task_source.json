@@ -1,0 +1,2371 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 199583087
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.PlanarFirstPassage",
+  "challenge_sha256": "0fcdfe4b24b1018585edf0cf3fa0ab4f7db78fc774ddd670ae5b6d454ee706de",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/PlanarFirstPassage.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.PlanarFirstPassage",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Probability.FirstPassage.BoundaryCurve",
+   "theorem_names": [
+    "OAI.PlanarFPP.manuscriptMain"
+   ]
+  },
+  "config_sha256": "1171ec43edeecf996dcc2fa843e5d0034dc530fa83811ea96c010c7f627cabdf",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/PlanarFirstPassage.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.PlanarFPP.manuscriptMain": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ActualNoCorner.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ActualNoCorner",
+   "original_sha256": "e9dfcf1547b082d1769a203556632e70976a70b22903fde16c184375079050b5",
+   "path": "OAI/Probability/FirstPassage/ActualNoCorner.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ActualTimeConstant.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ActualTimeConstant",
+   "original_sha256": "96325ef896ff37f7c4c5099eb1f8a440a86c5f89458c42c7bf88d21226dff6b1",
+   "path": "OAI/Probability/FirstPassage/ActualTimeConstant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ActualWitnessScale.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ActualWitnessScale",
+   "original_sha256": "fb77bf4e5da90bb41cca6263aa15b4a7f923a931f87d44f53b8061015a0d7106",
+   "path": "OAI/Probability/FirstPassage/ActualWitnessScale.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/AttachmentGeometry.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.AttachmentGeometry",
+   "original_sha256": "09cfd0faf7448a15b504c8122b76c239af08d9ad43dd98e287eab89453f156b3",
+   "path": "OAI/Probability/FirstPassage/AttachmentGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/BKBinaryRanks.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.BKBinaryRanks",
+   "original_sha256": "43b0edcf060b0095129ef29b9dd583b8938762c18e1d6648609ddd7946f29527",
+   "path": "OAI/Probability/FirstPassage/BKBinaryRanks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/BKBitLaw.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.BKBitLaw",
+   "original_sha256": "6f25e585d851b0fd491b04cc1b79fb6bc2b7a96a287f120ee0c6c50e44644308",
+   "path": "OAI/Probability/FirstPassage/BKBitLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/BKContinuous.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.BKContinuous",
+   "original_sha256": "46499ca090d5e0c417fa4937bf29d03eb4da1863e128ee832e666d8b4423078d",
+   "path": "OAI/Probability/FirstPassage/BKContinuous.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/BKDyadicPaths.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.BKDyadicPaths",
+   "original_sha256": "72d9989abe3e803429a0c56979bf90c3cb89ec7516cbd9326d710ce26b2b5f30",
+   "path": "OAI/Probability/FirstPassage/BKDyadicPaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/BKExponentialQuantiles.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.BKExponentialQuantiles",
+   "original_sha256": "9c4557b5da83b5e391b2557f1716b499edb6548a16ef098449d7c816f002b18b",
+   "path": "OAI/Probability/FirstPassage/BKExponentialQuantiles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/BKFamilies.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.BKFamilies",
+   "original_sha256": "d4ebedc6db64ec2116dbf1c1d3a2fb8e7c3a1b0e045916ec6e79f56a8f2ae606",
+   "path": "OAI/Probability/FirstPassage/BKFamilies.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/BKForcing.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.BKForcing",
+   "original_sha256": "cef30bbe1104f246a35fdb3f38c058a762047f78958d8636a59282aec4b2303f",
+   "path": "OAI/Probability/FirstPassage/BKForcing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/BKLimit.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.BKLimit",
+   "original_sha256": "a28572885f3b784bf03bbdf5646781f2a80131284e53bc88da2659d67d41899a",
+   "path": "OAI/Probability/FirstPassage/BKLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/BKPathMeasurability.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.BKPathMeasurability",
+   "original_sha256": "0e3e4f7493bc6b9e1f09c62892bfb3a7f3d50d01ffc00422ef875f8a3add2c19",
+   "path": "OAI/Probability/FirstPassage/BKPathMeasurability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/BKQuantization.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.BKQuantization",
+   "original_sha256": "ec790a7dd3ace1f0c04e7f0ae15aecf176683b633143d61e3f3454b94fe90cda",
+   "path": "OAI/Probability/FirstPassage/BKQuantization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/BKRepeated.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.BKRepeated",
+   "original_sha256": "0616ae0413286b714cfacb075130cd39b37e8a5927069c076592eb023981bd28",
+   "path": "OAI/Probability/FirstPassage/BKRepeated.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/BallTravel.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.BallTravel",
+   "original_sha256": "81d750adc5c91fae8cdccc11e7549bdf60c47c3688a0c1c10cbc563c955120db",
+   "path": "OAI/Probability/FirstPassage/BallTravel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/BoundaryCurve.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.BoundaryCurve",
+   "original_sha256": "155353bf6cc2e6de1fec40c42e77bb77075758efc6c75718c272989bc914f053",
+   "path": "OAI/Probability/FirstPassage/BoundaryCurve.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/BoundaryCycles.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.BoundaryCycles",
+   "original_sha256": "7d36afeeef27a9a38be2609c2ed4da0953951c1a764fe3d4d95cfa4444fb7e13",
+   "path": "OAI/Probability/FirstPassage/BoundaryCycles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/BoundaryGeometry.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.BoundaryGeometry",
+   "original_sha256": "17c3212ecbe5525a1e118fbeae85838da27c22306bb1b98f38207a908f8e9cc6",
+   "path": "OAI/Probability/FirstPassage/BoundaryGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/BoundaryWinding.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.BoundaryWinding",
+   "original_sha256": "f863bce210bbe4225a0d8233c585f09b4ecace2a41158c0cff247215c05be627",
+   "path": "OAI/Probability/FirstPassage/BoundaryWinding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/CharacteristicLengths.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.CharacteristicLengths",
+   "original_sha256": "9e7383b824e58475e9607790e1717d85f2d911940eb6dd21be6b7115b63ddf51",
+   "path": "OAI/Probability/FirstPassage/CharacteristicLengths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/CompanionModel.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.CompanionModel",
+   "original_sha256": "09d36fafd061843dd201fb2d99a4f5888eb90fb862a37fc5c4dfd8888e48b91d",
+   "path": "OAI/Probability/FirstPassage/CompanionModel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ConnectorEvents.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ConnectorEvents",
+   "original_sha256": "0aff51148d0d7f6431f87ace6a8144143332c6428845210e2806573e111d63f8",
+   "path": "OAI/Probability/FirstPassage/ConnectorEvents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ConnectorGeometry.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ConnectorGeometry",
+   "original_sha256": "f7912bf72821d2055f94238c6faf84db090ae52c440a9304975aa8b3e55ec53b",
+   "path": "OAI/Probability/FirstPassage/ConnectorGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ConnectorProbability.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ConnectorProbability",
+   "original_sha256": "cdfb94210696fc02bfea343f7551c97ae333b0507a77c843e49f9cccad2be6be",
+   "path": "OAI/Probability/FirstPassage/ConnectorProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ContiguousWitnesses.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ContiguousWitnesses",
+   "original_sha256": "e2f474cb54224a6ed26a8ab50456964f4d2ca2e6318d0889dad6042ed4e0b1af",
+   "path": "OAI/Probability/FirstPassage/ContiguousWitnesses.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ContourCounts.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ContourCounts",
+   "original_sha256": "71449f540704169ad1145e82fc87888da3f6c8c51675cd08840ffa1b663e8dec",
+   "path": "OAI/Probability/FirstPassage/ContourCounts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ContourEnumeration.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ContourEnumeration",
+   "original_sha256": "45124bd495fe86cce4e2237e533c0c4613c37973a7a2765d01016e5236a4fbfe",
+   "path": "OAI/Probability/FirstPassage/ContourEnumeration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ContourLocalization.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ContourLocalization",
+   "original_sha256": "dedb38d6f4595f764ae254de4cc28d95840c3f30b697f698319022bf7a76db58",
+   "path": "OAI/Probability/FirstPassage/ContourLocalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ConvexC1.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ConvexC1",
+   "original_sha256": "022b2fbd510ab3ecba087ae058c3da6ec7f5c1c8c5171214abde8a1d1f3ac5bb",
+   "path": "OAI/Probability/FirstPassage/ConvexC1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/CoordinateTails.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.CoordinateTails",
+   "original_sha256": "cc815508c37e662eaa7eed6a8eb000aa5105385b801dfa12fc65699f5ce3265a",
+   "path": "OAI/Probability/FirstPassage/CoordinateTails.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/CrossingChain.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.CrossingChain",
+   "original_sha256": "24a7d5a659e8e5b70a00c496c71795ad173816201dbd068a8d48ac56e7fa0910",
+   "path": "OAI/Probability/FirstPassage/CrossingChain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/CrossingEndpointBounds.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.CrossingEndpointBounds",
+   "original_sha256": "63cd534dfdb55c8c50f440963f429f0ff0ca1940ff5c4ac622f3ec6443c7a897",
+   "path": "OAI/Probability/FirstPassage/CrossingEndpointBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/CrossingTilt.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.CrossingTilt",
+   "original_sha256": "39a9a139b3f64bed0b8808ababbe8a5d908b05f27d5ee12f5928f68916cacd43",
+   "path": "OAI/Probability/FirstPassage/CrossingTilt.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/CrossingTrialGeometry.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.CrossingTrialGeometry",
+   "original_sha256": "c0978a8069ba9762b37b8660178ce23cadbc94e67217d08115969c3562885b3e",
+   "path": "OAI/Probability/FirstPassage/CrossingTrialGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EnclosingContour.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EnclosingContour",
+   "original_sha256": "bdf03a24ebf31c778831a4e4087f271d36e4fc25b5eed4565b5efb1dff4f2c8f",
+   "path": "OAI/Probability/FirstPassage/EnclosingContour.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EndpointAsymptotics.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EndpointAsymptotics",
+   "original_sha256": "4b18246a484fdd730c9553a5707f99823aa30971f502dff49ed3233282efd342",
+   "path": "OAI/Probability/FirstPassage/EndpointAsymptotics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EndpointBlocks.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EndpointBlocks",
+   "original_sha256": "d5794f59e0533c8081853b7d8aeda318a634a75d4795d5f7cb46140bfe0dede2",
+   "path": "OAI/Probability/FirstPassage/EndpointBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EndpointBounds.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EndpointBounds",
+   "original_sha256": "83599a244e442b67c1ea6c622cffee09e0578572852922d9ca726569e9398140",
+   "path": "OAI/Probability/FirstPassage/EndpointBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EndpointCoarse.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EndpointCoarse",
+   "original_sha256": "1cc9b4c316ee88aad009204b0db6303434346e6c1e90fb4e5a429fad800df503",
+   "path": "OAI/Probability/FirstPassage/EndpointCoarse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EndpointCoarseGeometry.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EndpointCoarseGeometry",
+   "original_sha256": "c5a66c0666ea97bdaaf6df58502d2e6142cd82a03e96ba5c88016422501381a5",
+   "path": "OAI/Probability/FirstPassage/EndpointCoarseGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EndpointConnection.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EndpointConnection",
+   "original_sha256": "8e435b70b0e22c1fa93bc0f37307a80c9c07887f47aab17e67ff12a24ff64a29",
+   "path": "OAI/Probability/FirstPassage/EndpointConnection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EndpointEntrance.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EndpointEntrance",
+   "original_sha256": "03d16c55a670d0ea5bdd7083dd2aba86a62e1cf7a3095d233cf495424e80d12a",
+   "path": "OAI/Probability/FirstPassage/EndpointEntrance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EndpointEvents.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EndpointEvents",
+   "original_sha256": "394005a40ce611e0bb0c5f7cf0952e2c4ce64eb35ee0ab74cd925334c5f718eb",
+   "path": "OAI/Probability/FirstPassage/EndpointEvents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EndpointExit.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EndpointExit",
+   "original_sha256": "ac6f7939698c0307af0ea7c2c3b35e74be0a4157dac450680166bbcf11deb038",
+   "path": "OAI/Probability/FirstPassage/EndpointExit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EndpointExtensions.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EndpointExtensions",
+   "original_sha256": "9bad39ec27773eca5284faceebf5b5c1d5158d9314ddf8d5082ead967cb913c5",
+   "path": "OAI/Probability/FirstPassage/EndpointExtensions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EndpointGeometry.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EndpointGeometry",
+   "original_sha256": "9ac63ebf4ddb0a5c169e44f18decd088cfbcaeffccfcb6583833ff40c6eeda5e",
+   "path": "OAI/Probability/FirstPassage/EndpointGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EndpointLimit.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EndpointLimit",
+   "original_sha256": "8c65e6f4e07e22ed09d30717bc1e9a7af1818af8e59a5448ff6433eae197a843",
+   "path": "OAI/Probability/FirstPassage/EndpointLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EndpointMesh.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EndpointMesh",
+   "original_sha256": "26496209817a6631d16b5ccd8b5a39707dc8ceca7630843dd0698c89aa1166a6",
+   "path": "OAI/Probability/FirstPassage/EndpointMesh.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EndpointNet.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EndpointNet",
+   "original_sha256": "f5b3811e298cd42c19232bc108e8e8877cb44aa62f7bb9c137512bfae972695e",
+   "path": "OAI/Probability/FirstPassage/EndpointNet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EndpointProbability.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EndpointProbability",
+   "original_sha256": "92e575c5ad24ac79b0c894f7f98536340a10bedea962c1a73fa718885ec48f82",
+   "path": "OAI/Probability/FirstPassage/EndpointProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EndpointRecords.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EndpointRecords",
+   "original_sha256": "267a870bfd3270ff49487356bfc9a61f6fd4f18c14dd0ea8e6ffc39ff6917f86",
+   "path": "OAI/Probability/FirstPassage/EndpointRecords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EndpointTail.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EndpointTail",
+   "original_sha256": "5f449ca54830e83483ce5a6533680f9d2af7180e46f08bb1f4a3528985c8e9b6",
+   "path": "OAI/Probability/FirstPassage/EndpointTail.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/EndpointTranslation.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.EndpointTranslation",
+   "original_sha256": "ebd5b5faf1d94ba7ead33f54fb05b559a65c3b175ed2b1f057c69e412cffe811",
+   "path": "OAI/Probability/FirstPassage/EndpointTranslation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ExponentialTilt.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ExponentialTilt",
+   "original_sha256": "723751eb2a4fa4a52470b6737b5001f728208cb1097953de8a356b3797dfeecc",
+   "path": "OAI/Probability/FirstPassage/ExponentialTilt.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ExponentialTiltLaw.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ExponentialTiltLaw",
+   "original_sha256": "62a58b94c23d768d46cdfa0b2b2c5ba02b3c712fab81b6b0a6f98977068d078e",
+   "path": "OAI/Probability/FirstPassage/ExponentialTiltLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ExtremeSlopes.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ExtremeSlopes",
+   "original_sha256": "f65eaa3d85c47346be14ad7deb340063bfbb1cb177f92828ae920f3c3e614d75",
+   "path": "OAI/Probability/FirstPassage/ExtremeSlopes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/FiniteEdgeEvents.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.FiniteEdgeEvents",
+   "original_sha256": "2fccfd98c156325b2dff9b8bfef541b91dd4c9b4dea1c7aabfa9b2d4745c2325",
+   "path": "OAI/Probability/FirstPassage/FiniteEdgeEvents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/FiniteEdgeTilt.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.FiniteEdgeTilt",
+   "original_sha256": "7da5961559db0b2bf26dc0eb9fb37154eff752f0421c11b758966d983bccd061",
+   "path": "OAI/Probability/FirstPassage/FiniteEdgeTilt.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/FiniteNet.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.FiniteNet",
+   "original_sha256": "8018c8a03df7c35d87905a217d48b53afb1ed18ab3086bc86d371532905fc4b4",
+   "path": "OAI/Probability/FirstPassage/FiniteNet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/FiniteTiltLaw.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.FiniteTiltLaw",
+   "original_sha256": "0b17da2779906f7befe313303e80e4f79094f7a35dce63abe23d4cd0a1d70339",
+   "path": "OAI/Probability/FirstPassage/FiniteTiltLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/GlobalDifferentiability.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.GlobalDifferentiability",
+   "original_sha256": "8650cb3c536c5fa88e89b3bb83174876607f8d0aba9da041ffd2e597a27c6719",
+   "path": "OAI/Probability/FirstPassage/GlobalDifferentiability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/GoodSiteEvents.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.GoodSiteEvents",
+   "original_sha256": "b25bb371b759c74514c2677732ab365ff04a14a900e3ab4d2f0f0454cbc55ca4",
+   "path": "OAI/Probability/FirstPassage/GoodSiteEvents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/GoodSitePaths.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.GoodSitePaths",
+   "original_sha256": "7f8fbdd314c6e672156a0eed38878446adafa672af9395398b076e619be533d4",
+   "path": "OAI/Probability/FirstPassage/GoodSitePaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/GoodSiteProbability.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.GoodSiteProbability",
+   "original_sha256": "ade753f4c25d89dd4fe80a5ef073e06049b22d286636e8b187a92016bdc548dc",
+   "path": "OAI/Probability/FirstPassage/GoodSiteProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/GridConnectionGeometry.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.GridConnectionGeometry",
+   "original_sha256": "33f22aa15266a63ba656b2731baa82fe63da06e7fbfbd853a3c811bb0773ddc1",
+   "path": "OAI/Probability/FirstPassage/GridConnectionGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/GridConnections.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.GridConnections",
+   "original_sha256": "d1ca7e016f6f88a04fbc953a195979fe6cf730e9afb982c502d6b5d97a14afa9",
+   "path": "OAI/Probability/FirstPassage/GridConnections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/GridCounting.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.GridCounting",
+   "original_sha256": "04c556c311088cf14d9a3312babd2376195a7f309aac8fc4fa8fd158464c2cb9",
+   "path": "OAI/Probability/FirstPassage/GridCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/GridMeshes.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.GridMeshes",
+   "original_sha256": "a344072c9978b82c0d582ce31d4699ed0fb231dfa5afadb5b15eec626fbb61dd",
+   "path": "OAI/Probability/FirstPassage/GridMeshes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/GridProbability.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.GridProbability",
+   "original_sha256": "5aa45f83d77823b5f4b2139cd2129c60e11d00fae7f3f674100ff174aabc30ac",
+   "path": "OAI/Probability/FirstPassage/GridProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/GridTail.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.GridTail",
+   "original_sha256": "97193c18967d8bd3b1d007cb2a4b039b6e711cafa6ae4b92f3d682030d7e3ec6",
+   "path": "OAI/Probability/FirstPassage/GridTail.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/GridTrials.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.GridTrials",
+   "original_sha256": "3aa4f7608116b621faf65ebe4c934e5dae1398dc2d59bb77937cca837f18ae00",
+   "path": "OAI/Probability/FirstPassage/GridTrials.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/HighDensityOriented.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.HighDensityOriented",
+   "original_sha256": "331acb7fb8641981dd011d22afecf29480c58b8f07650307e508c59d22e7a400",
+   "path": "OAI/Probability/FirstPassage/HighDensityOriented.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/IntervalTravel.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.IntervalTravel",
+   "original_sha256": "5f5980d53c5741a967136e5b567b8918cc24cef4702d7d820e188a146c49631b",
+   "path": "OAI/Probability/FirstPassage/IntervalTravel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/LatticeGeometry.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.LatticeGeometry",
+   "original_sha256": "62132eb478977883b74aa483a670a23c67ba60dcf8f3c16124418a1d5938cd5b",
+   "path": "OAI/Probability/FirstPassage/LatticeGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/LatticeLimitExtension.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.LatticeLimitExtension",
+   "original_sha256": "82c140ce39ce7b50f6ace854b32e40f6518fe70480f62c3347354bb1d9116945",
+   "path": "OAI/Probability/FirstPassage/LatticeLimitExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/LatticeSwap.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.LatticeSwap",
+   "original_sha256": "97ce6d6b8af678a9b6048226a2db4a33fe1eabf9d4d87a12c77f4d9ff2b62030",
+   "path": "OAI/Probability/FirstPassage/LatticeSwap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/LocalDifferentiability.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.LocalDifferentiability",
+   "original_sha256": "491e9d164c4a0c0b82e8acf2b5bdfe8084a641051f8e3c635f380a599390f066",
+   "path": "OAI/Probability/FirstPassage/LocalDifferentiability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/LocalTravel.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.LocalTravel",
+   "original_sha256": "0a9a61d68cf9fd71bf028a7a22dc04798274392ad729712f71c620bdc19bf2c5",
+   "path": "OAI/Probability/FirstPassage/LocalTravel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/Localization.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.Localization",
+   "original_sha256": "127af285c8cabec2d74f43ca7d1f10add67be49536b35e8c41351a7e576bb277",
+   "path": "OAI/Probability/FirstPassage/Localization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/LocalizedEvents.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.LocalizedEvents",
+   "original_sha256": "62e66ccb17d0fd16ba223e4defb96562c99adbd15d4565839b48dfe82fd52c94",
+   "path": "OAI/Probability/FirstPassage/LocalizedEvents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/MainTheorem.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.MainTheorem",
+   "original_sha256": "0c96d2e1d7135dca1733a217b539efba3e9dc54b66852b9a85dea63d36ad1785",
+   "path": "OAI/Probability/FirstPassage/MainTheorem.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/NoCornerContradiction.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.NoCornerContradiction",
+   "original_sha256": "e9fb1497ca8efc2ad061a6117057c30d0b9fb8d84bd88361b01780e5f113211c",
+   "path": "OAI/Probability/FirstPassage/NoCornerContradiction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/NormBoundary.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.NormBoundary",
+   "original_sha256": "9925cd24769244faae5ec9bdd9c0876c598906d4dda590a5b713330c21ec3000",
+   "path": "OAI/Probability/FirstPassage/NormBoundary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/OrientedCompactness.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.OrientedCompactness",
+   "original_sha256": "ec4881e2a719592ab57dbf940eb7bc2d180a09f629d553456d93a9ac72b40a9f",
+   "path": "OAI/Probability/FirstPassage/OrientedCompactness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/OrientedProbability.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.OrientedProbability",
+   "original_sha256": "000fef863ce36d3a371e8c77401d9cd07901bce3f6c69f205ac06cfea3dec17c",
+   "path": "OAI/Probability/FirstPassage/OrientedProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/PassageTime.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.PassageTime",
+   "original_sha256": "7e46548d6103d7738ed57d98ebd09434705fea0060497f1d7b3dd9b877d65282",
+   "path": "OAI/Probability/FirstPassage/PassageTime.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/PathColumnCrossing.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.PathColumnCrossing",
+   "original_sha256": "bc8d94548a5deea76ddb696a2f11db5174a7fc0758bfc2b9bb276a8d799a4262",
+   "path": "OAI/Probability/FirstPassage/PathColumnCrossing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/PathConcatenation.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.PathConcatenation",
+   "original_sha256": "acac5912c3ff73c4cc4f0dd504405d5c13ae94e1335bdced436ce2555d471f8c",
+   "path": "OAI/Probability/FirstPassage/PathConcatenation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/PathSubpaths.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.PathSubpaths",
+   "original_sha256": "b2dfd7b282d0d62dc27fe82558de030b60d7104797fe2f298583a951c79e731d",
+   "path": "OAI/Probability/FirstPassage/PathSubpaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/PathWitnesses.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.PathWitnesses",
+   "original_sha256": "c3d038ceacb86ad0c7e707d441afbaa467a11b85872c26907222ff602aad3937",
+   "path": "OAI/Probability/FirstPassage/PathWitnesses.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/Paths.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.Paths",
+   "original_sha256": "c43458f3f55de4dd54f7359fe1dc65a843b5f61f1af5c35606362d050c11b119",
+   "path": "OAI/Probability/FirstPassage/Paths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/PlaneGeometry.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.PlaneGeometry",
+   "original_sha256": "cd72035ab63416560de8ad115f9eba327ec156fc08437bbc237160e0ae1d537b",
+   "path": "OAI/Probability/FirstPassage/PlaneGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/PositiveMoment.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.PositiveMoment",
+   "original_sha256": "a1e7a8e2ea8ac23ca17d860a09e731a9fc2cf3e2cb7035538d060e956fbc950a",
+   "path": "OAI/Probability/FirstPassage/PositiveMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ProbabilityFoundations.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ProbabilityFoundations",
+   "original_sha256": "8be41f424bf68007e32f2371979a4fdc023f4a1f6a4fc7d9c45b29fea1c149e4",
+   "path": "OAI/Probability/FirstPassage/ProbabilityFoundations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/RareFast.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.RareFast",
+   "original_sha256": "7e181535e3b466884edc5a6fc441cc2e48d99197c93dc3e1956e16d35569c2d8",
+   "path": "OAI/Probability/FirstPassage/RareFast.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/RareFastEvents.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.RareFastEvents",
+   "original_sha256": "d453e11bf943be61e2a2dc5bd6225d7e538a089776f13c7d78a6078d01a945cb",
+   "path": "OAI/Probability/FirstPassage/RareFastEvents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/RareFastGeometry.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.RareFastGeometry",
+   "original_sha256": "30a9139ace82267fed2eaf550e73f77ccbf8173128ed0afd9c497348f55fba8c",
+   "path": "OAI/Probability/FirstPassage/RareFastGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/RealScaleConnections.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.RealScaleConnections",
+   "original_sha256": "89c75d1bd5b0899495154d28e202fc238da0f044a0f57f782720de137b0e659a",
+   "path": "OAI/Probability/FirstPassage/RealScaleConnections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/RecordScales.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.RecordScales",
+   "original_sha256": "a369d6e7b6a73291c53fe1bda32ed105dcd7fd87aab192c8931a1c9cfb604a66",
+   "path": "OAI/Probability/FirstPassage/RecordScales.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/Reversal.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.Reversal",
+   "original_sha256": "fb5f91ec61792b670d02983f594cb7874b808700cbd36af0d8a7cc9709bab46e",
+   "path": "OAI/Probability/FirstPassage/Reversal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/SeparatedSelection.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.SeparatedSelection",
+   "original_sha256": "75b5c2f8715c73387241a7e409bb59e20df9c8f612f8c631e6d2687ddf02c2dd",
+   "path": "OAI/Probability/FirstPassage/SeparatedSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ShapeDeficit.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ShapeDeficit",
+   "original_sha256": "1a6a251608db62a60377ba2a0bb3913239b131ddc1fc6395852550405cb449e5",
+   "path": "OAI/Probability/FirstPassage/ShapeDeficit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ShapeProbability.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ShapeProbability",
+   "original_sha256": "72cc2313d219a9359315beadd927dedd1f6ec7a521cc4375f7aa01bf384562e4",
+   "path": "OAI/Probability/FirstPassage/ShapeProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ShortCrossingGeometry.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ShortCrossingGeometry",
+   "original_sha256": "c8dc78a3704cbf0ac41ff2aa1efde2e2dd5d01f4e09dc0238fb8c699855c0252",
+   "path": "OAI/Probability/FirstPassage/ShortCrossingGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/ShortCrossingProbability.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.ShortCrossingProbability",
+   "original_sha256": "6f3ec4be4a687cfc7763486df36d6fbab40d68d2603e7703a8627828343e976a",
+   "path": "OAI/Probability/FirstPassage/ShortCrossingProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/SimplePathApproximation.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.SimplePathApproximation",
+   "original_sha256": "ac23abe407643103a51e4254779c67b00328b433b6ba127f742ad6a93b07a096",
+   "path": "OAI/Probability/FirstPassage/SimplePathApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/SourceTilt.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.SourceTilt",
+   "original_sha256": "1ede352989a7e738e039987f8ff66995e8cdfceb5545e491de9c17247b996bd5",
+   "path": "OAI/Probability/FirstPassage/SourceTilt.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/SpatialBadPathCover.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.SpatialBadPathCover",
+   "original_sha256": "8e2c0e0f6618928ed02cff30a6ad9e2ebeb9b0de799d8d99003fee4cfd8921fd",
+   "path": "OAI/Probability/FirstPassage/SpatialBadPathCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/SpatialChunkGeometry.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.SpatialChunkGeometry",
+   "original_sha256": "de4aa65bc5738c053fe77b0c3ff33593e53c960116b0c32949ed1ee86aea056e",
+   "path": "OAI/Probability/FirstPassage/SpatialChunkGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/SpatialChunkWitness.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.SpatialChunkWitness",
+   "original_sha256": "4f106308bd80a782ff6c20ca14043c712031ad51491ad6cd34c861a0bbef219d",
+   "path": "OAI/Probability/FirstPassage/SpatialChunkWitness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/SpatialChunks.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.SpatialChunks",
+   "original_sha256": "a92da808f9e447ab7e1fba5a6e3b3cdcbd476f897bf86bb3f62f63a5985dd5ba",
+   "path": "OAI/Probability/FirstPassage/SpatialChunks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/SpatialCrossingGeometry.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.SpatialCrossingGeometry",
+   "original_sha256": "fd1b6f2929bb947a8d661063f0a2a6b47a81aa39aeafd60a098f1a9d861f9850",
+   "path": "OAI/Probability/FirstPassage/SpatialCrossingGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/SpatialEntropyProbability.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.SpatialEntropyProbability",
+   "original_sha256": "3fa0ff2cc133d7a090c380bc237c8560ed02172c6d06a307bed41948c5c46cee",
+   "path": "OAI/Probability/FirstPassage/SpatialEntropyProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/SpatialFirstExit.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.SpatialFirstExit",
+   "original_sha256": "cb6a9863460e38558e0433aecafca58fbe5536bf52c09e3b9e9d9c215eca5b4f",
+   "path": "OAI/Probability/FirstPassage/SpatialFirstExit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/SpatialModulus.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.SpatialModulus",
+   "original_sha256": "b91fcbe92c8687bd6fd84a1068d7460a9fa7c901f7c76b4304d1eec77876a047",
+   "path": "OAI/Probability/FirstPassage/SpatialModulus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/SpatialPositiveChunk.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.SpatialPositiveChunk",
+   "original_sha256": "1ce562a0bc8b3fa623ddcfe8fc1aa1eaa3abf5af3a88d101198ae8171c827515",
+   "path": "OAI/Probability/FirstPassage/SpatialPositiveChunk.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/SpatialRareEvents.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.SpatialRareEvents",
+   "original_sha256": "9d951981c384d3e3d9c146be0d0d93335b6317f9a2e18d8828f302f467440e7b",
+   "path": "OAI/Probability/FirstPassage/SpatialRareEvents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/SpatialWitnessCounts.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.SpatialWitnessCounts",
+   "original_sha256": "dfe2e41f6ef7df6764781173b063d3a52da18e23f995043df2f4a916bece657b",
+   "path": "OAI/Probability/FirstPassage/SpatialWitnessCounts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/SpatialWitnesses.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.SpatialWitnesses",
+   "original_sha256": "6f7a27be8ccd02130f79a28be7fc9f94d41d3be440627676bdfcff56a6469c9e",
+   "path": "OAI/Probability/FirstPassage/SpatialWitnesses.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/SphereCharts.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.SphereCharts",
+   "original_sha256": "9c270bf7697d5036a86e83ed4574b685d3d97cec3e8a8d01e5bc368ece62d87c",
+   "path": "OAI/Probability/FirstPassage/SphereCharts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/SquareLoops.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.SquareLoops",
+   "original_sha256": "b7918e65a1fc3914756ff0ce4ec7e974eebb86f03468c6b712c742fa08cd8aad",
+   "path": "OAI/Probability/FirstPassage/SquareLoops.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/SupportContactEstimate.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.SupportContactEstimate",
+   "original_sha256": "b5866b9378315c2c43a9c3ac97628dca311dbb106a7d04c0029590815566fd1d",
+   "path": "OAI/Probability/FirstPassage/SupportContactEstimate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/Supports.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.Supports",
+   "original_sha256": "bc3c5dc952efa666f640e8ebae04070c32dece8851103651c055390deb6f9462",
+   "path": "OAI/Probability/FirstPassage/Supports.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/Target.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.Target",
+   "original_sha256": "33135de7cc204147386aeaa3917c311a7603babad43b4d6649cd4d71bd329c31",
+   "path": "OAI/Probability/FirstPassage/Target.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/TiltComparison.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.TiltComparison",
+   "original_sha256": "8acca5889c050eff321dbe21811896206694f669ab7d836c5845c9574bb52573",
+   "path": "OAI/Probability/FirstPassage/TiltComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/TiltPath.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.TiltPath",
+   "original_sha256": "0fceab55fcd6a42c539a541db3005aa359a10a71bb3cf164380b0f7455cfdadb",
+   "path": "OAI/Probability/FirstPassage/TiltPath.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/TiltRegionCount.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.TiltRegionCount",
+   "original_sha256": "8eac1009fbf1b4ec0112127e88f1966838b717cea775791e658118d6060a2e2e",
+   "path": "OAI/Probability/FirstPassage/TiltRegionCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/TiltedRegions.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.TiltedRegions",
+   "original_sha256": "9eee118a4921563f8cda2e16389c6d2cab7fecbdf341a69f7bfb7c34b826de8a",
+   "path": "OAI/Probability/FirstPassage/TiltedRegions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/TimeConstantObligation.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.TimeConstantObligation",
+   "original_sha256": "7a66cf1f8c1ac181cf0729b3ebdd6d68bcf1263e9927ba6a02eb1ecb9e355532",
+   "path": "OAI/Probability/FirstPassage/TimeConstantObligation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/Translation.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.Translation",
+   "original_sha256": "c1973d05734f335b610cd20b62a47a73651856179f2c145c34e945c1233805ed",
+   "path": "OAI/Probability/FirstPassage/Translation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/UniformShape.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.UniformShape",
+   "original_sha256": "9f21818ccbeff17c64b79db128fb13337f62474355a7bcf52d82b61fa4912b55",
+   "path": "OAI/Probability/FirstPassage/UniformShape.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/UniqueSupports.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.UniqueSupports",
+   "original_sha256": "b34613c8c76d6a1b19090581d82554d95aec1e03380d991e17b80bced98dbcc3",
+   "path": "OAI/Probability/FirstPassage/UniqueSupports.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/UnitSphereC1.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.UnitSphereC1",
+   "original_sha256": "0c46d6a3ad0091f987dc5e10e441d459817a3e771410c96277bf23b4b873ebcf",
+   "path": "OAI/Probability/FirstPassage/UnitSphereC1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/VerticalIntervals.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.VerticalIntervals",
+   "original_sha256": "9a10feb2d0ffb9662469c0ebdc500be26bdbe3c8ba0e9d949cbb01854b7f6e32",
+   "path": "OAI/Probability/FirstPassage/VerticalIntervals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/Waypoints.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.Waypoints",
+   "original_sha256": "cb9b7d9cd2f79eaf64366a21266b99813e16656c65527284d8d33e3381f5e3ac",
+   "path": "OAI/Probability/FirstPassage/Waypoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/WitnessBorelCantelli.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.WitnessBorelCantelli",
+   "original_sha256": "08ce187febf21a77c1ef850a4d0a261d2002a1f8dd5a415074f7927d273da403",
+   "path": "OAI/Probability/FirstPassage/WitnessBorelCantelli.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/WitnessDecomposition.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.WitnessDecomposition",
+   "original_sha256": "175c075e6d1d7d0720d5afde1ac301c626bdd0a4a1fd500eece046bfbdb21293",
+   "path": "OAI/Probability/FirstPassage/WitnessDecomposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/WitnessEntropy.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.WitnessEntropy",
+   "original_sha256": "2dbd26da298e80dd85f8f594c1192e4d713ce660ee52e61fa19063c63758577a",
+   "path": "OAI/Probability/FirstPassage/WitnessEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/FirstPassage/WitnessSelection.lean"
+   },
+   "module": "OAI.Probability.FirstPassage.WitnessSelection",
+   "original_sha256": "c17bdf61824cfd90c0a8ecec89941dbf994a51ba15665c7aa08580625f27b1d5",
+   "path": "OAI/Probability/FirstPassage/WitnessSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/BoundedCost.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.BoundedCost",
+   "original_sha256": "8f170835569eecb94b332b90ccd308dab2760584fcdd81dabb5c5d4ee27c077e",
+   "path": "OAI/Probability/LatticePassage/BoundedCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/BoundedEfronStein.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.BoundedEfronStein",
+   "original_sha256": "e27be53788a1ffb36448c1b74aa01d64b944a514cb15cae568e6193d3cda3d2d",
+   "path": "OAI/Probability/LatticePassage/BoundedEfronStein.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/CalibrationL2.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.CalibrationL2",
+   "original_sha256": "e646a5cc74be3ef2db4d21c0f354159117359d06f4c29d52a9c0a7c37e0df452",
+   "path": "OAI/Probability/LatticePassage/CalibrationL2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/CalibrationMean.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.CalibrationMean",
+   "original_sha256": "641fc2786b23d96350eca049846c87bbe276547f38cf8c2f80db3dc8e69266de",
+   "path": "OAI/Probability/LatticePassage/CalibrationMean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/CalibrationShift.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.CalibrationShift",
+   "original_sha256": "7805d8bf43723cd69ac66d31c412c764e54cace1ef2458c9a462143fcb5f0504",
+   "path": "OAI/Probability/LatticePassage/CalibrationShift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/CenteredConcentration.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.CenteredConcentration",
+   "original_sha256": "8c47523b688141533f948013a0160d5aecced0a9c7ac41e0437319472c5c01aa",
+   "path": "OAI/Probability/LatticePassage/CenteredConcentration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/CenteredLocalization.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.CenteredLocalization",
+   "original_sha256": "5e84c23c0fa9c284fba5e2a5fe9c5b85f08da7e53da43e89e972345700e87a97",
+   "path": "OAI/Probability/LatticePassage/CenteredLocalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/CheapPath.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.CheapPath",
+   "original_sha256": "19e96a36b515ae10d345c7133081d9198033122282ff6f69a87c6cf20e2060a9",
+   "path": "OAI/Probability/LatticePassage/CheapPath.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/CoordinatePath.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.CoordinatePath",
+   "original_sha256": "866501ffccbc36925b07f819bb7a3b8403f65fd11674481dab62d708786b954a",
+   "path": "OAI/Probability/LatticePassage/CoordinatePath.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/DirectionalConvergence.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.DirectionalConvergence",
+   "original_sha256": "54495caed4cbd5326baf7d6c56ac5b8f29f77b5268093e0cfc48c9500cef1e26",
+   "path": "OAI/Probability/LatticePassage/DirectionalConvergence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/DyadicMGF.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.DyadicMGF",
+   "original_sha256": "84c9765241ecafd953692f782aa41be4b2b6714c9f17e67124cb2d8e710d8b1f",
+   "path": "OAI/Probability/LatticePassage/DyadicMGF.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/EdgeInfluence.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.EdgeInfluence",
+   "original_sha256": "e5e0d27b8784abb28b21e51dbbb86a06648fdf0a79ea409004e5879649eb4537",
+   "path": "OAI/Probability/LatticePassage/EdgeInfluence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/EfronStein.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.EfronStein",
+   "original_sha256": "c536499bc9e5849579f50c2ad23ca7e3690ceae70ab23e720685f1fab33f850d",
+   "path": "OAI/Probability/LatticePassage/EfronStein.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/Environment.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.Environment",
+   "original_sha256": "83685d624bc3753f63571ee357c837b6b218c5e5a4669913eb49fbbf1361ab09",
+   "path": "OAI/Probability/LatticePassage/Environment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/ExponentialEnergy.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.ExponentialEnergy",
+   "original_sha256": "016b68b9d3b831595755408fda40057ceb687a0220b85133225304e49fe77d58",
+   "path": "OAI/Probability/LatticePassage/ExponentialEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/ExponentialIncrement.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.ExponentialIncrement",
+   "original_sha256": "bc8391550a03a0f1fcf0e675e042fdf450570b5ea0deb8f15c35cb9fbe3b918c",
+   "path": "OAI/Probability/LatticePassage/ExponentialIncrement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/ExponentialMoment.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.ExponentialMoment",
+   "original_sha256": "6d5624a3fd9a21289ad388c82f8502f829d0eb261134ce0bdf4bafbef15b8a09",
+   "path": "OAI/Probability/LatticePassage/ExponentialMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/FiniteProduct.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.FiniteProduct",
+   "original_sha256": "86da3f1b41e756792dff2b8214f847634deee9ab008e1648c66386d8497c5d28",
+   "path": "OAI/Probability/LatticePassage/FiniteProduct.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/FiniteResampling.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.FiniteResampling",
+   "original_sha256": "6a8d70dfe62696b13e23410ed196b5b3025766dc54c8238ede3477f0d0db5098",
+   "path": "OAI/Probability/LatticePassage/FiniteResampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/FiniteVariance.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.FiniteVariance",
+   "original_sha256": "560f228fe207c2ac5e89ae16aacb8c3f9a4a2bb5a6556358db5a8a950da13049",
+   "path": "OAI/Probability/LatticePassage/FiniteVariance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/Geodesic.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.Geodesic",
+   "original_sha256": "71fa164f8298dbfec3a4f257dd1dd585368b8e2f8a71223606af981e8b56687c",
+   "path": "OAI/Probability/LatticePassage/Geodesic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/GeodesicSimple.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.GeodesicSimple",
+   "original_sha256": "1baeee59d4f85e42392a15077eae4d64f937b05f618f8eb0f15d0ca9609e4a41",
+   "path": "OAI/Probability/LatticePassage/GeodesicSimple.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/GeodesicTail.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.GeodesicTail",
+   "original_sha256": "9b90557c95d971db4bcebfb9fa6c54155a1432f38de88715efa3773b43e64559",
+   "path": "OAI/Probability/LatticePassage/GeodesicTail.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/HilbertWeakCompactness.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.HilbertWeakCompactness",
+   "original_sha256": "ae1f90d79c76ec85343151fcb513400a759858d68959fa1c97d417c7642b63e4",
+   "path": "OAI/Probability/LatticePassage/HilbertWeakCompactness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/Lattice.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.Lattice",
+   "original_sha256": "851d46234b71a976855795be8c3eca25612e58f4f5db1b927bb3a3993d676ebd",
+   "path": "OAI/Probability/LatticePassage/Lattice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/LatticeMetric.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.LatticeMetric",
+   "original_sha256": "f6febc24b563bdfc69faeb9686e46174d3ee7a2ffc6d8e4d020c78a8a0e180c2",
+   "path": "OAI/Probability/LatticePassage/LatticeMetric.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/LocalCovariance.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.LocalCovariance",
+   "original_sha256": "ba2919f7a7ee60e67cbae5d1a83357d8932a4490858ef165ddebce89491523f6",
+   "path": "OAI/Probability/LatticePassage/LocalCovariance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/LocalPassage.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.LocalPassage",
+   "original_sha256": "f37cbc09e7329e82d43ddc44532cdd853b0b67b4eba898cf2f69fb33c801d612",
+   "path": "OAI/Probability/LatticePassage/LocalPassage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/LocalSelection.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.LocalSelection",
+   "original_sha256": "dfb9330f785d8cab99e870de01227417b87d56fb0a149fa3d66db193225c7c71",
+   "path": "OAI/Probability/LatticePassage/LocalSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/LocalizationMean.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.LocalizationMean",
+   "original_sha256": "a0ec07ced1fd5a3649c518c9d37315a5fbf83cf8f0e8c0866cadedaaa31d07b7",
+   "path": "OAI/Probability/LatticePassage/LocalizationMean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/MeanPositivity.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.MeanPositivity",
+   "original_sha256": "bdae01d16e3585a5c1a8da0bda8cf16ae6bb11ce66559ef6846bcaf0484b7aa9",
+   "path": "OAI/Probability/LatticePassage/MeanPositivity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/MeanTimeConstant.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.MeanTimeConstant",
+   "original_sha256": "824ee83eaf37766db4bfd34ade4300f879e6a11fd3f33817f4e9081afab6dfed",
+   "path": "OAI/Probability/LatticePassage/MeanTimeConstant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/MetricCalibration.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.MetricCalibration",
+   "original_sha256": "9f2f88168aa55ec59c816e2698e23fbe0f171a27dc70ab743ab35da4b4b7ad10",
+   "path": "OAI/Probability/LatticePassage/MetricCalibration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/MetricConcentration.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.MetricConcentration",
+   "original_sha256": "e0c1c4e2a00671b12bf9ed6bbc380d4a3b30f03fff56bf78e7006ce051013571",
+   "path": "OAI/Probability/LatticePassage/MetricConcentration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/Model.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.Model",
+   "original_sha256": "4976242f2941b366296dc0417c3c398188969deaeeac2b5da0d006e4f5baf70d",
+   "path": "OAI/Probability/LatticePassage/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/NaturalMoment.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.NaturalMoment",
+   "original_sha256": "a6d12739debe47b43facabf6aab9abeee98a09d11ecc435a297a627594df837c",
+   "path": "OAI/Probability/LatticePassage/NaturalMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/OffsetCalibration.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.OffsetCalibration",
+   "original_sha256": "0d160e2f311e2f2575eeeed052f03ba8d17f0c8be6a3ddd99883f19496a60ef0",
+   "path": "OAI/Probability/LatticePassage/OffsetCalibration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/PassageMGF.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.PassageMGF",
+   "original_sha256": "5b66034b44f33a43eda4f652689343791b774e3ed82014a5372f3063300df335",
+   "path": "OAI/Probability/LatticePassage/PassageMGF.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/PassageRegularity.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.PassageRegularity",
+   "original_sha256": "042573ce8b0baf7d099cc72cfcfa7f87e5609c73080212b8a14f9a7685fc4cc7",
+   "path": "OAI/Probability/LatticePassage/PassageRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/PassageVariance.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.PassageVariance",
+   "original_sha256": "e41b836af60d47f0592104b1b84b059cd060fdb2b7073b3daffa5d4a08d6c63e",
+   "path": "OAI/Probability/LatticePassage/PassageVariance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/PathCounting.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.PathCounting",
+   "original_sha256": "644dc50eb11c91e7fe578506b65266eb22f09a9583bfed0a7a6af9251cc19969",
+   "path": "OAI/Probability/LatticePassage/PathCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/Paths.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.Paths",
+   "original_sha256": "ac904629298276ffbc4487e4cd43fce74f7568baaf772009f9fc8a3b7edf6b20",
+   "path": "OAI/Probability/LatticePassage/Paths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/PlanarCalibration.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.PlanarCalibration",
+   "original_sha256": "182e90f6006aad5d470ca841e06446dca659ccffb2bfc5e8b08dba0442490640",
+   "path": "OAI/Probability/LatticePassage/PlanarCalibration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/PositiveMoment.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.PositiveMoment",
+   "original_sha256": "806758ebf8772d763fd45b169f774593dbf87b6f56093beb2dd8a3780e8f01d0",
+   "path": "OAI/Probability/LatticePassage/PositiveMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/ProductVariance.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.ProductVariance",
+   "original_sha256": "6573511286158a0daa17a784c16fbeb9988fb5a5c854cfe3efcb9d9c7c62a144",
+   "path": "OAI/Probability/LatticePassage/ProductVariance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/RectangleCalibration.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.RectangleCalibration",
+   "original_sha256": "5b22bfb56ffff742cd00c6fc0c25666aae6fa13ff71ac189cacc1bb9d2fb638d",
+   "path": "OAI/Probability/LatticePassage/RectangleCalibration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/ResamplingMoment.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.ResamplingMoment",
+   "original_sha256": "b1e82d9897cb0b97a38af22fd3d33cde5bdbc8580fbfe3b99d07f5540bb9e43b",
+   "path": "OAI/Probability/LatticePassage/ResamplingMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/ResamplingSymmetry.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.ResamplingSymmetry",
+   "original_sha256": "1f19e78a6d067939d4fa597f72115cb0b66ff20365d72a05c8f5e19c88ccea5b",
+   "path": "OAI/Probability/LatticePassage/ResamplingSymmetry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/ResamplingTransform.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.ResamplingTransform",
+   "original_sha256": "9741f7cf56d24cf653adddf90bfc711804e0646e71438453dc9c8bc69bd34ee7",
+   "path": "OAI/Probability/LatticePassage/ResamplingTransform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/SecondMoment.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.SecondMoment",
+   "original_sha256": "bd4a29f96624b2dbda43cebe4358c8eea14d8e9af9cb6184d9d3cf167c25a6ce",
+   "path": "OAI/Probability/LatticePassage/SecondMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/Stationarity.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.Stationarity",
+   "original_sha256": "0d425a540e06d382918968f20c70ba0474300f6b15e41c93c557abe3fb32e732",
+   "path": "OAI/Probability/LatticePassage/Stationarity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/StationaryCalibration.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.StationaryCalibration",
+   "original_sha256": "898a22a753488a70279320e3595ca4e05bf49a771707efa0db246ff7dec7d647",
+   "path": "OAI/Probability/LatticePassage/StationaryCalibration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/TimeConstantNorm.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.TimeConstantNorm",
+   "original_sha256": "87d7136dcfa2fcd208a8cf0128e7daac26161867463f8d3477780ac5196accac",
+   "path": "OAI/Probability/LatticePassage/TimeConstantNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/UniformCheapPaths.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.UniformCheapPaths",
+   "original_sha256": "c31ad5dec9eee491be656484a25965ad5f326a10845bba799ed54d3c8e3b7f20",
+   "path": "OAI/Probability/LatticePassage/UniformCheapPaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LatticePassage/WeakCalibration.lean"
+   },
+   "module": "OAI.Probability.LatticePassage.WeakCalibration",
+   "original_sha256": "97b4953f8e1af848b3c1d88164686c4bc7886e65e8b055e5f729ae031d460bea",
+   "path": "OAI/Probability/LatticePassage/WeakCalibration.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Probability.FirstPassage.ActualNoCorner",
+  "OAI.Probability.FirstPassage.ActualTimeConstant",
+  "OAI.Probability.FirstPassage.ActualWitnessScale",
+  "OAI.Probability.FirstPassage.AttachmentGeometry",
+  "OAI.Probability.FirstPassage.BKBinaryRanks",
+  "OAI.Probability.FirstPassage.BKBitLaw",
+  "OAI.Probability.FirstPassage.BKContinuous",
+  "OAI.Probability.FirstPassage.BKDyadicPaths",
+  "OAI.Probability.FirstPassage.BKExponentialQuantiles",
+  "OAI.Probability.FirstPassage.BKFamilies",
+  "OAI.Probability.FirstPassage.BKForcing",
+  "OAI.Probability.FirstPassage.BKLimit",
+  "OAI.Probability.FirstPassage.BKPathMeasurability",
+  "OAI.Probability.FirstPassage.BKQuantization",
+  "OAI.Probability.FirstPassage.BKRepeated",
+  "OAI.Probability.FirstPassage.BallTravel",
+  "OAI.Probability.FirstPassage.BoundaryCurve",
+  "OAI.Probability.FirstPassage.BoundaryCycles",
+  "OAI.Probability.FirstPassage.BoundaryGeometry",
+  "OAI.Probability.FirstPassage.BoundaryWinding",
+  "OAI.Probability.FirstPassage.CharacteristicLengths",
+  "OAI.Probability.FirstPassage.CompanionModel",
+  "OAI.Probability.FirstPassage.ConnectorEvents",
+  "OAI.Probability.FirstPassage.ConnectorGeometry",
+  "OAI.Probability.FirstPassage.ConnectorProbability",
+  "OAI.Probability.FirstPassage.ContiguousWitnesses",
+  "OAI.Probability.FirstPassage.ContourCounts",
+  "OAI.Probability.FirstPassage.ContourEnumeration",
+  "OAI.Probability.FirstPassage.ContourLocalization",
+  "OAI.Probability.FirstPassage.ConvexC1",
+  "OAI.Probability.FirstPassage.CoordinateTails",
+  "OAI.Probability.FirstPassage.CrossingChain",
+  "OAI.Probability.FirstPassage.CrossingEndpointBounds",
+  "OAI.Probability.FirstPassage.CrossingTilt",
+  "OAI.Probability.FirstPassage.CrossingTrialGeometry",
+  "OAI.Probability.FirstPassage.EnclosingContour",
+  "OAI.Probability.FirstPassage.EndpointAsymptotics",
+  "OAI.Probability.FirstPassage.EndpointBlocks",
+  "OAI.Probability.FirstPassage.EndpointBounds",
+  "OAI.Probability.FirstPassage.EndpointCoarse",
+  "OAI.Probability.FirstPassage.EndpointCoarseGeometry",
+  "OAI.Probability.FirstPassage.EndpointConnection",
+  "OAI.Probability.FirstPassage.EndpointEntrance",
+  "OAI.Probability.FirstPassage.EndpointEvents",
+  "OAI.Probability.FirstPassage.EndpointExit",
+  "OAI.Probability.FirstPassage.EndpointExtensions",
+  "OAI.Probability.FirstPassage.EndpointGeometry",
+  "OAI.Probability.FirstPassage.EndpointLimit",
+  "OAI.Probability.FirstPassage.EndpointMesh",
+  "OAI.Probability.FirstPassage.EndpointNet",
+  "OAI.Probability.FirstPassage.EndpointProbability",
+  "OAI.Probability.FirstPassage.EndpointRecords",
+  "OAI.Probability.FirstPassage.EndpointTail",
+  "OAI.Probability.FirstPassage.EndpointTranslation",
+  "OAI.Probability.FirstPassage.ExponentialTilt",
+  "OAI.Probability.FirstPassage.ExponentialTiltLaw",
+  "OAI.Probability.FirstPassage.ExtremeSlopes",
+  "OAI.Probability.FirstPassage.FiniteEdgeEvents",
+  "OAI.Probability.FirstPassage.FiniteEdgeTilt",
+  "OAI.Probability.FirstPassage.FiniteNet",
+  "OAI.Probability.FirstPassage.FiniteTiltLaw",
+  "OAI.Probability.FirstPassage.GlobalDifferentiability",
+  "OAI.Probability.FirstPassage.GoodSiteEvents",
+  "OAI.Probability.FirstPassage.GoodSitePaths",
+  "OAI.Probability.FirstPassage.GoodSiteProbability",
+  "OAI.Probability.FirstPassage.GridConnectionGeometry",
+  "OAI.Probability.FirstPassage.GridConnections",
+  "OAI.Probability.FirstPassage.GridCounting",
+  "OAI.Probability.FirstPassage.GridMeshes",
+  "OAI.Probability.FirstPassage.GridProbability",
+  "OAI.Probability.FirstPassage.GridTail",
+  "OAI.Probability.FirstPassage.GridTrials",
+  "OAI.Probability.FirstPassage.HighDensityOriented",
+  "OAI.Probability.FirstPassage.IntervalTravel",
+  "OAI.Probability.FirstPassage.LatticeGeometry",
+  "OAI.Probability.FirstPassage.LatticeLimitExtension",
+  "OAI.Probability.FirstPassage.LatticeSwap",
+  "OAI.Probability.FirstPassage.LocalDifferentiability",
+  "OAI.Probability.FirstPassage.LocalTravel",
+  "OAI.Probability.FirstPassage.Localization",
+  "OAI.Probability.FirstPassage.LocalizedEvents",
+  "OAI.Probability.FirstPassage.MainTheorem",
+  "OAI.Probability.FirstPassage.NoCornerContradiction",
+  "OAI.Probability.FirstPassage.NormBoundary",
+  "OAI.Probability.FirstPassage.OrientedCompactness",
+  "OAI.Probability.FirstPassage.OrientedProbability",
+  "OAI.Probability.FirstPassage.PassageTime",
+  "OAI.Probability.FirstPassage.PathColumnCrossing",
+  "OAI.Probability.FirstPassage.PathConcatenation",
+  "OAI.Probability.FirstPassage.PathSubpaths",
+  "OAI.Probability.FirstPassage.PathWitnesses",
+  "OAI.Probability.FirstPassage.Paths",
+  "OAI.Probability.FirstPassage.PlaneGeometry",
+  "OAI.Probability.FirstPassage.PositiveMoment",
+  "OAI.Probability.FirstPassage.ProbabilityFoundations",
+  "OAI.Probability.FirstPassage.RareFast",
+  "OAI.Probability.FirstPassage.RareFastEvents",
+  "OAI.Probability.FirstPassage.RareFastGeometry",
+  "OAI.Probability.FirstPassage.RealScaleConnections",
+  "OAI.Probability.FirstPassage.RecordScales",
+  "OAI.Probability.FirstPassage.Reversal",
+  "OAI.Probability.FirstPassage.SeparatedSelection",
+  "OAI.Probability.FirstPassage.ShapeDeficit",
+  "OAI.Probability.FirstPassage.ShapeProbability",
+  "OAI.Probability.FirstPassage.ShortCrossingGeometry",
+  "OAI.Probability.FirstPassage.ShortCrossingProbability",
+  "OAI.Probability.FirstPassage.SimplePathApproximation",
+  "OAI.Probability.FirstPassage.SourceTilt",
+  "OAI.Probability.FirstPassage.SpatialBadPathCover",
+  "OAI.Probability.FirstPassage.SpatialChunkGeometry",
+  "OAI.Probability.FirstPassage.SpatialChunkWitness",
+  "OAI.Probability.FirstPassage.SpatialChunks",
+  "OAI.Probability.FirstPassage.SpatialCrossingGeometry",
+  "OAI.Probability.FirstPassage.SpatialEntropyProbability",
+  "OAI.Probability.FirstPassage.SpatialFirstExit",
+  "OAI.Probability.FirstPassage.SpatialModulus",
+  "OAI.Probability.FirstPassage.SpatialPositiveChunk",
+  "OAI.Probability.FirstPassage.SpatialRareEvents",
+  "OAI.Probability.FirstPassage.SpatialWitnessCounts",
+  "OAI.Probability.FirstPassage.SpatialWitnesses",
+  "OAI.Probability.FirstPassage.SphereCharts",
+  "OAI.Probability.FirstPassage.SquareLoops",
+  "OAI.Probability.FirstPassage.SupportContactEstimate",
+  "OAI.Probability.FirstPassage.Supports",
+  "OAI.Probability.FirstPassage.Target",
+  "OAI.Probability.FirstPassage.TiltComparison",
+  "OAI.Probability.FirstPassage.TiltPath",
+  "OAI.Probability.FirstPassage.TiltRegionCount",
+  "OAI.Probability.FirstPassage.TiltedRegions",
+  "OAI.Probability.FirstPassage.TimeConstantObligation",
+  "OAI.Probability.FirstPassage.Translation",
+  "OAI.Probability.FirstPassage.UniformShape",
+  "OAI.Probability.FirstPassage.UniqueSupports",
+  "OAI.Probability.FirstPassage.UnitSphereC1",
+  "OAI.Probability.FirstPassage.VerticalIntervals",
+  "OAI.Probability.FirstPassage.Waypoints",
+  "OAI.Probability.FirstPassage.WitnessBorelCantelli",
+  "OAI.Probability.FirstPassage.WitnessDecomposition",
+  "OAI.Probability.FirstPassage.WitnessEntropy",
+  "OAI.Probability.FirstPassage.WitnessSelection",
+  "OAI.Probability.LatticePassage.BoundedCost",
+  "OAI.Probability.LatticePassage.BoundedEfronStein",
+  "OAI.Probability.LatticePassage.CalibrationL2",
+  "OAI.Probability.LatticePassage.CalibrationMean",
+  "OAI.Probability.LatticePassage.CalibrationShift",
+  "OAI.Probability.LatticePassage.CenteredConcentration",
+  "OAI.Probability.LatticePassage.CenteredLocalization",
+  "OAI.Probability.LatticePassage.CheapPath",
+  "OAI.Probability.LatticePassage.CoordinatePath",
+  "OAI.Probability.LatticePassage.DirectionalConvergence",
+  "OAI.Probability.LatticePassage.DyadicMGF",
+  "OAI.Probability.LatticePassage.EdgeInfluence",
+  "OAI.Probability.LatticePassage.EfronStein",
+  "OAI.Probability.LatticePassage.Environment",
+  "OAI.Probability.LatticePassage.ExponentialEnergy",
+  "OAI.Probability.LatticePassage.ExponentialIncrement",
+  "OAI.Probability.LatticePassage.ExponentialMoment",
+  "OAI.Probability.LatticePassage.FiniteProduct",
+  "OAI.Probability.LatticePassage.FiniteResampling",
+  "OAI.Probability.LatticePassage.FiniteVariance",
+  "OAI.Probability.LatticePassage.Geodesic",
+  "OAI.Probability.LatticePassage.GeodesicSimple",
+  "OAI.Probability.LatticePassage.GeodesicTail",
+  "OAI.Probability.LatticePassage.HilbertWeakCompactness",
+  "OAI.Probability.LatticePassage.Lattice",
+  "OAI.Probability.LatticePassage.LatticeMetric",
+  "OAI.Probability.LatticePassage.LocalCovariance",
+  "OAI.Probability.LatticePassage.LocalPassage",
+  "OAI.Probability.LatticePassage.LocalSelection",
+  "OAI.Probability.LatticePassage.LocalizationMean",
+  "OAI.Probability.LatticePassage.MeanPositivity",
+  "OAI.Probability.LatticePassage.MeanTimeConstant",
+  "OAI.Probability.LatticePassage.MetricCalibration",
+  "OAI.Probability.LatticePassage.MetricConcentration",
+  "OAI.Probability.LatticePassage.Model",
+  "OAI.Probability.LatticePassage.NaturalMoment",
+  "OAI.Probability.LatticePassage.OffsetCalibration",
+  "OAI.Probability.LatticePassage.PassageMGF",
+  "OAI.Probability.LatticePassage.PassageRegularity",
+  "OAI.Probability.LatticePassage.PassageVariance",
+  "OAI.Probability.LatticePassage.PathCounting",
+  "OAI.Probability.LatticePassage.Paths",
+  "OAI.Probability.LatticePassage.PlanarCalibration",
+  "OAI.Probability.LatticePassage.PositiveMoment",
+  "OAI.Probability.LatticePassage.ProductVariance",
+  "OAI.Probability.LatticePassage.RectangleCalibration",
+  "OAI.Probability.LatticePassage.ResamplingMoment",
+  "OAI.Probability.LatticePassage.ResamplingSymmetry",
+  "OAI.Probability.LatticePassage.ResamplingTransform",
+  "OAI.Probability.LatticePassage.SecondMoment",
+  "OAI.Probability.LatticePassage.Stationarity",
+  "OAI.Probability.LatticePassage.StationaryCalibration",
+  "OAI.Probability.LatticePassage.TimeConstantNorm",
+  "OAI.Probability.LatticePassage.UniformCheapPaths",
+  "OAI.Probability.LatticePassage.WeakCalibration"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/PlanarFirstPassage.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Probability.FirstPassage.BoundaryCurve",
+   "name": "OAI.PlanarFPP.manuscriptMain",
+   "statement_sha256": "a10c3e8dbbdfbbe0c8ac6158a2e0e3d02a13dff21f3c36fa416a94b2a8913cf2"
+  }
+ ],
+ "task_id": "oai-planar-first-passage",
+ "task_revision": 1,
+ "title": "OpenAI math: Planar first-passage geometry and the absence of bigeodesics: Differentiability of the exponential first-passage limit shape",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

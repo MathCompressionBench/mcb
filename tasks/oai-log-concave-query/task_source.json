@@ -1,0 +1,3681 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 796578819
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.LogConcaveQuery",
+  "challenge_sha256": "e35be4c9d8352ba082385717f8209296b6ddf264fbe03228df4daee47f7aedf2",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/LogConcaveQuery.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.LogConcaveQuery",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Probability.LogConcave.Main",
+   "theorem_names": [
+    "OAI.LogConcaveSampling.exact_source_main"
+   ]
+  },
+  "config_sha256": "5a0e43007406bf58e647ffa64a7aa89ec8c37c68535ad6193723ccf0aa6620e7",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/LogConcaveQuery.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.LogConcaveSampling.exact_source_main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/AffinePotential.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.AffinePotential",
+   "original_sha256": "2fe7a024c471d7308be013d1591aad6c74a7a5841b2ae614d07ba995a01b28e6",
+   "path": "OAI/Probability/LogConcave/Analysis/AffinePotential.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/CenteringPotential.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.CenteringPotential",
+   "original_sha256": "9460ecf5e01a326df772ff1a1e9a86a8e17001e60240d47366267de1459cefe6",
+   "path": "OAI/Probability/LogConcave/Analysis/CenteringPotential.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/CompactGibbsIbp.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.CompactGibbsIbp",
+   "original_sha256": "85b92b27e9819d5a72cb485284384cebb502791efac30fc197c6e0d3d9c4b1d4",
+   "path": "OAI/Probability/LogConcave/Analysis/CompactGibbsIbp.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/ConditionalPotential.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.ConditionalPotential",
+   "original_sha256": "e4f2fb9ca9a33b1f441590c39d1ebd31df3729490c42a2d21384c536f002bb10",
+   "path": "OAI/Probability/LogConcave/Analysis/ConditionalPotential.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/EulerDrift.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.EulerDrift",
+   "original_sha256": "3af0172732ed41087006de55ec4192807e88727c6fc3068321de61e55d50d501",
+   "path": "OAI/Probability/LogConcave/Analysis/EulerDrift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/GaussianAffineNormMoment.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.GaussianAffineNormMoment",
+   "original_sha256": "cc1ac53009483e116a18337095e536db41b49055f01ea347038e3fbe5d5bf528",
+   "path": "OAI/Probability/LogConcave/Analysis/GaussianAffineNormMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/GaussianCoefficient.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.GaussianCoefficient",
+   "original_sha256": "8ebf91026e95f18c3bbffd8219f0f380dfbbbb07d73418273289bb66a917b0cf",
+   "path": "OAI/Probability/LogConcave/Analysis/GaussianCoefficient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/GaussianMarginalLowerTail.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.GaussianMarginalLowerTail",
+   "original_sha256": "06f430ca65b722a777016933200037bc117b55289c3942c1cf50c73d0157534e",
+   "path": "OAI/Probability/LogConcave/Analysis/GaussianMarginalLowerTail.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/GaussianPairSumLaw.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.GaussianPairSumLaw",
+   "original_sha256": "f1bb83adb59aaeef20f53578024ffec6e47201926ec3cb3b4df9d4cbc4d0cf4e",
+   "path": "OAI/Probability/LogConcave/Analysis/GaussianPairSumLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/GaussianProposalPotential.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.GaussianProposalPotential",
+   "original_sha256": "2ce0b2e1b95da504ed8f289bc5c47d1edcb1e790bcb537aaf4f47b86fcb6b917",
+   "path": "OAI/Probability/LogConcave/Analysis/GaussianProposalPotential.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/GibbsOpenPos.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.GibbsOpenPos",
+   "original_sha256": "03aa60487e764e6699542de4f42ba7363865a63684969d3c5c1ce404f85284bc",
+   "path": "OAI/Probability/LogConcave/Analysis/GibbsOpenPos.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/GibbsProportional.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.GibbsProportional",
+   "original_sha256": "76add0828990b2d60c8bc456b714d8ffcdf32bcc9fad0f2436b6dc7adcebe2e7",
+   "path": "OAI/Probability/LogConcave/Analysis/GibbsProportional.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/GrowthInnerGradient.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.GrowthInnerGradient",
+   "original_sha256": "7f83ff40ffaaa4c327796178d58343700b907e2e78a789d94e6eb4ff164c5476",
+   "path": "OAI/Probability/LogConcave/Analysis/GrowthInnerGradient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/InterpolationHessianBudget.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.InterpolationHessianBudget",
+   "original_sha256": "4a94bd03c712202c85e2591533a479e5d6c0f10a632246a79d5fb5be4767ac40",
+   "path": "OAI/Probability/LogConcave/Analysis/InterpolationHessianBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/InterpolationPotential.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.InterpolationPotential",
+   "original_sha256": "a6b3bd42785f7e951ee5c330c2e1780f303ce20c6d7b80d234bc34623b9bf1b6",
+   "path": "OAI/Probability/LogConcave/Analysis/InterpolationPotential.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/Law.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.Law",
+   "original_sha256": "98ea7939c392ca7b9821840697db9f626e1960831bbeaed23c12d235859f353c",
+   "path": "OAI/Probability/LogConcave/Analysis/Law.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/Operator.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.Operator",
+   "original_sha256": "64905ce0e079b93ee352c4f32925ff06b396bcb12afff4501e577b1879228947",
+   "path": "OAI/Probability/LogConcave/Analysis/Operator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/Poincare.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.Poincare",
+   "original_sha256": "1d43dcb73f545a14c82aa985ee3185b4af685b3d6be037efbfe6701d20b5dde7",
+   "path": "OAI/Probability/LogConcave/Analysis/Poincare.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/PoincareVectorVariance.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.PoincareVectorVariance",
+   "original_sha256": "95b0c1e1f2a9cf2a745ac01fa81567e40f984dc81a3ba60c776e2b96dfbd949b",
+   "path": "OAI/Probability/LogConcave/Analysis/PoincareVectorVariance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/PrimitivePotentialModeBounds.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.PrimitivePotentialModeBounds",
+   "original_sha256": "100ef35db99f24b95db788036a89dfcb874395f466a416cc92420e76c9158e92",
+   "path": "OAI/Probability/LogConcave/Analysis/PrimitivePotentialModeBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/ProductPotentialMeasurable.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.ProductPotentialMeasurable",
+   "original_sha256": "720896bf6bd165160a1043e8c43101b8ea10163915561ef38dc59aaf9a49988c",
+   "path": "OAI/Probability/LogConcave/Analysis/ProductPotentialMeasurable.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/ProposalLog.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.ProposalLog",
+   "original_sha256": "af46436094c9cf0a9716bd6dc97eba6db4ca067436a0fc287c03687f371050b6",
+   "path": "OAI/Probability/LogConcave/Analysis/ProposalLog.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Analysis/SymmetricGradientDerivative.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Analysis.SymmetricGradientDerivative",
+   "original_sha256": "ece3c648404bc098424abe44e4f21695ca7e5e55545e45a439ed16f4987898c8",
+   "path": "OAI/Probability/LogConcave/Analysis/SymmetricGradientDerivative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Complexity/CenteringStateBudget.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Complexity.CenteringStateBudget",
+   "original_sha256": "7462ae4d17d22b943ec44e4e0a4eafcea30fb7e5b24501e951ed50334e637eef",
+   "path": "OAI/Probability/LogConcave/Complexity/CenteringStateBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Complexity/CenteringStateBudgetNonneg.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Complexity.CenteringStateBudgetNonneg",
+   "original_sha256": "409e50e6810f031fcf458b6a3a111537a909eb255efd660e39fe80b97a9d3218",
+   "path": "OAI/Probability/LogConcave/Complexity/CenteringStateBudgetNonneg.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Complexity/Envelope.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Complexity.Envelope",
+   "original_sha256": "b1b2505684adfec06cd10e967f1d5c610587c86ee374735df644d1a5eca9475b",
+   "path": "OAI/Probability/LogConcave/Complexity/Envelope.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Complexity/EventuallySequences.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Complexity.EventuallySequences",
+   "original_sha256": "dfd775a0e95a729c5a26ca377be44eba253d75022d720cd989afbb1f764841fd",
+   "path": "OAI/Probability/LogConcave/Complexity/EventuallySequences.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Complexity/HarmonicCorrectionBudget.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Complexity.HarmonicCorrectionBudget",
+   "original_sha256": "e8ab5071e80e18919e6b2ea9d7587eaf357d3798a82227626f2d7851757bad29",
+   "path": "OAI/Probability/LogConcave/Complexity/HarmonicCorrectionBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Complexity/KernelActionNormalizedBudget.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Complexity.KernelActionNormalizedBudget",
+   "original_sha256": "07058ba5f1e3ab324326c7010370d36b57b41ca9094889a1a59eb611ae848075",
+   "path": "OAI/Probability/LogConcave/Complexity/KernelActionNormalizedBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Complexity/KernelActionRmsBudget.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Complexity.KernelActionRmsBudget",
+   "original_sha256": "467d2e7115b637eb5925af011db701282d1919dbc50527a2d3fb9b1e8bac30c0",
+   "path": "OAI/Probability/LogConcave/Complexity/KernelActionRmsBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Complexity/KernelAnalyticBudget.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Complexity.KernelAnalyticBudget",
+   "original_sha256": "c97fcd1eed1c6b2b51557dc9e96d5a61aceff134692bedfa17fa9f326d61389b",
+   "path": "OAI/Probability/LogConcave/Complexity/KernelAnalyticBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Complexity/KernelAnalyticNormalizedBudget.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Complexity.KernelAnalyticNormalizedBudget",
+   "original_sha256": "09bc9ebecfe6a250156c12d9cd920aba9008c3b4acfad9fa05fac17758064390",
+   "path": "OAI/Probability/LogConcave/Complexity/KernelAnalyticNormalizedBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Complexity/KernelValueRmsBudget.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Complexity.KernelValueRmsBudget",
+   "original_sha256": "583dbbe613355e77976af0040fbba96303dda77aca608355e5b87dbf43deaaf4",
+   "path": "OAI/Probability/LogConcave/Complexity/KernelValueRmsBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Complexity/OccurrenceBudget.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Complexity.OccurrenceBudget",
+   "original_sha256": "50f00288579f10f407dce4763b82de5594ba071899aa1fd60a8a065fd0cc631d",
+   "path": "OAI/Probability/LogConcave/Complexity/OccurrenceBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Complexity/PolynomialBudget.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Complexity.PolynomialBudget",
+   "original_sha256": "ec4421549e147d193bbe4b5318bae65b34576c04944e793d3e49f09ae6fdbde4",
+   "path": "OAI/Probability/LogConcave/Complexity/PolynomialBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Complexity/ProbabilityRmsBudget.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Complexity.ProbabilityRmsBudget",
+   "original_sha256": "861f914ecc81b348ba2794d6c62e7ef3183ae2548a811513974a52322580d65f",
+   "path": "OAI/Probability/LogConcave/Complexity/ProbabilityRmsBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Complexity/ProductEnergyBudgetScaled.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Complexity.ProductEnergyBudgetScaled",
+   "original_sha256": "c55f8e8722dd906907de88547f53b82d8210451b8b24aa73efed840d25719f4a",
+   "path": "OAI/Probability/LogConcave/Complexity/ProductEnergyBudgetScaled.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Complexity/SingleCellBasisBudget.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Complexity.SingleCellBasisBudget",
+   "original_sha256": "1b8355574a02874fc8848b4d8c758b9026bfc56b46c6ccd655caec1ef8df8f00",
+   "path": "OAI/Probability/LogConcave/Complexity/SingleCellBasisBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Complexity/TerminalDerivativeBudget.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Complexity.TerminalDerivativeBudget",
+   "original_sha256": "14cf6660542937648a006e605eb2e158130517f513363546d828b6ad51a87b3b",
+   "path": "OAI/Probability/LogConcave/Complexity/TerminalDerivativeBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Complexity/VelocityNormalizedBudgetCalibrated.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Complexity.VelocityNormalizedBudgetCalibrated",
+   "original_sha256": "b937dfe3ae75d15bbcd7907b363aa62e6d3ef359a8a1992fd3ea5006ea32f70d",
+   "path": "OAI/Probability/LogConcave/Complexity/VelocityNormalizedBudgetCalibrated.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/AbsorbFixed.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.AbsorbFixed",
+   "original_sha256": "f99e295aac2edf2fd3fc25d57b5ec6bc9eb18d3eb6f573dab966671febfd9b1d",
+   "path": "OAI/Probability/LogConcave/Dynamics/AbsorbFixed.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/ActualJointCenteringFlow.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.ActualJointCenteringFlow",
+   "original_sha256": "8433ee955514e7ccbc8c47a1785816f7d5625e93285dd7f7dc6711f14743fb47",
+   "path": "OAI/Probability/LogConcave/Dynamics/ActualJointCenteringFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/ConditionalHarmonicFlow.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.ConditionalHarmonicFlow",
+   "original_sha256": "7e00e58882418a5abb77a5881cb4b417ea5ef5739f5ea0d602c90098d192a42a",
+   "path": "OAI/Probability/LogConcave/Dynamics/ConditionalHarmonicFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/Curve.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.Curve",
+   "original_sha256": "b2f006645f530330d0439f958291562fc13c50532c1f150349b792feeb51cc63",
+   "path": "OAI/Probability/LogConcave/Dynamics/Curve.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/DistanceCoupled.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.DistanceCoupled",
+   "original_sha256": "642fd43ee7a99583e115e4b6297d086a548f9c9e1436b6f1b45f37cd93f4eb47",
+   "path": "OAI/Probability/LogConcave/Dynamics/DistanceCoupled.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/FlowRestrict.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.FlowRestrict",
+   "original_sha256": "dd643d8a2aa4a8d4f66285add04826e8f8590078d186083f3c6e16d90f6f606b",
+   "path": "OAI/Probability/LogConcave/Dynamics/FlowRestrict.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/FullProbabilityFlow.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.FullProbabilityFlow",
+   "original_sha256": "ee2a5a2c710cf269168d5ffd2d474343f69475da0e3f756b5859ee44328b3ece",
+   "path": "OAI/Probability/LogConcave/Dynamics/FullProbabilityFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/HarmonicFlow.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.HarmonicFlow",
+   "original_sha256": "1068c264bfa954d64b8093a2480ea6af7c67e33917d3cffffca691ea342a528f",
+   "path": "OAI/Probability/LogConcave/Dynamics/HarmonicFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/IntegralLipschitz.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.IntegralLipschitz",
+   "original_sha256": "dc7df96e9f861c13a306ead8b8a714c46d7ca90cb7d585f0d3a335f64f8e1327",
+   "path": "OAI/Probability/LogConcave/Dynamics/IntegralLipschitz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/JointHarmonicFlow.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.JointHarmonicFlow",
+   "original_sha256": "29c3523da6a9e3a6d0197826148156518442bac37f99ba28f7e0ac2481914261",
+   "path": "OAI/Probability/LogConcave/Dynamics/JointHarmonicFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/NormSubSqThree.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.NormSubSqThree",
+   "original_sha256": "5d06772911f14a9e4a8965ca96a4e1b65533d51675915dd9edb31ddda728ba88",
+   "path": "OAI/Probability/LogConcave/Dynamics/NormSubSqThree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/ObservableIntegralMeasurable.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.ObservableIntegralMeasurable",
+   "original_sha256": "5af7ad6d29802a93e980f5acc6b3945a5370ee7187b7c1c7b6cb765df1b072bf",
+   "path": "OAI/Probability/LogConcave/Dynamics/ObservableIntegralMeasurable.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/ProbabilityFlowGrowth.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.ProbabilityFlowGrowth",
+   "original_sha256": "990a95cd3cbc2bbafa791a1a037ce7e06267cd2d9444834422e344e9573e7092",
+   "path": "OAI/Probability/LogConcave/Dynamics/ProbabilityFlowGrowth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/ProbabilityFlowIntegral.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.ProbabilityFlowIntegral",
+   "original_sha256": "e27cb1256f79720ad3b4a7f008a593d4655b45954e22d6a1da16f3715f799ea4",
+   "path": "OAI/Probability/LogConcave/Dynamics/ProbabilityFlowIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/ProbabilityFlowPushforward.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.ProbabilityFlowPushforward",
+   "original_sha256": "eca4b5dcbdebb7713cef35c951f12f8f193b964651776ff21df8d63dc6171402",
+   "path": "OAI/Probability/LogConcave/Dynamics/ProbabilityFlowPushforward.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/SameLaw.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.SameLaw",
+   "original_sha256": "e04ea67aa4b48fecced24a58cf41ffc495ae828c33cb29af3ac5b26a55ee93f4",
+   "path": "OAI/Probability/LogConcave/Dynamics/SameLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/SharedLipschitz.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.SharedLipschitz",
+   "original_sha256": "ad7ff6c4574449d3e93e3f6fdcbbde319500b3fa61c07f2ac7a71fa8661deacc",
+   "path": "OAI/Probability/LogConcave/Dynamics/SharedLipschitz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/SmoothFlowJoint.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.SmoothFlowJoint",
+   "original_sha256": "c50a4367f5c14abfb03339be8f66e400c8bd6ba230603b8c0b6d96fd0418e5ce",
+   "path": "OAI/Probability/LogConcave/Dynamics/SmoothFlowJoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/SpaceTimeForward.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.SpaceTimeForward",
+   "original_sha256": "6924d0c681a0f72a0c64d5e8deb967fb2c790227fb3430c288d678e70f52885a",
+   "path": "OAI/Probability/LogConcave/Dynamics/SpaceTimeForward.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/Squared.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.Squared",
+   "original_sha256": "cbf4b3b517fe915977ceceea310bf7fde00da0c9741df360d20c5b66cee4bfc1",
+   "path": "OAI/Probability/LogConcave/Dynamics/Squared.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/StationaryIntegral.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.StationaryIntegral",
+   "original_sha256": "59bed66ecff4750881a475b8a4d21cce15b49b2669be9b5a4e5b46f0a3d601f2",
+   "path": "OAI/Probability/LogConcave/Dynamics/StationaryIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/StationaryPath.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.StationaryPath",
+   "original_sha256": "9f605513a0924eec20bc75a2ef86da4ae67ad653e1bed07077a0c8e0fb8a5b12",
+   "path": "OAI/Probability/LogConcave/Dynamics/StationaryPath.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/TriangularEquiv.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.TriangularEquiv",
+   "original_sha256": "e988fa4da14ba11d1ffbaf176c3e243f544c3dc353a1e9d4c3d89c95799ed7e7",
+   "path": "OAI/Probability/LogConcave/Dynamics/TriangularEquiv.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/Truncated.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.Truncated",
+   "original_sha256": "ed0d48d3e00b71a374ae4c6df00a881e0728453ecf4010f9f867c4b82eaf4a06",
+   "path": "OAI/Probability/LogConcave/Dynamics/Truncated.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Dynamics/VariationalField.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Dynamics.VariationalField",
+   "original_sha256": "d891e70d594aa6e8ddfe14c4d16064fea4059ce45c9dab03e219c4455029628c",
+   "path": "OAI/Probability/LogConcave/Dynamics/VariationalField.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/AllSplitBound.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.AllSplitBound",
+   "original_sha256": "9d81ff5a1233c59853e7b81f859c51025f1a86feeb7aa9b5ff97ab93d5cb7dda",
+   "path": "OAI/Probability/LogConcave/JetEstimates/AllSplitBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/ArrayComponentPolySmooth.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.ArrayComponentPolySmooth",
+   "original_sha256": "c33defa15fc2a7ca85e0b291874655c854c8785d84bc08397526668e86c7c84e",
+   "path": "OAI/Probability/LogConcave/JetEstimates/ArrayComponentPolySmooth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/ArrayMatrix.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.ArrayMatrix",
+   "original_sha256": "a70270a6220db0cbd564d07a61aeafd98453bcc1ccb89550aebdee83e3a582d6",
+   "path": "OAI/Probability/LogConcave/JetEstimates/ArrayMatrix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/ArrayRelabel.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.ArrayRelabel",
+   "original_sha256": "5e02bf81d6be3462976e8f4cfa31ab5222dd88fbc964e84a6e38618e18ae5a1f",
+   "path": "OAI/Probability/LogConcave/JetEstimates/ArrayRelabel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/AssignmentsFinset.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.AssignmentsFinset",
+   "original_sha256": "5032f9d8e82480d0fa387a0560f4b2a52399554fe3609fe8aa791c3f477194a5",
+   "path": "OAI/Probability/LogConcave/JetEstimates/AssignmentsFinset.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/Bound.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.Bound",
+   "original_sha256": "3b25cfbd323ddbc2fc92c3ff0824f8ea2d4995c8781345e29a5640955f692c0d",
+   "path": "OAI/Probability/LogConcave/JetEstimates/Bound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/ClosedWireLintegralBound.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.ClosedWireLintegralBound",
+   "original_sha256": "cd17b60591fdc9472727e21197d11acd9f70b7dccad1cd37e2bcc1c8f5e9de83",
+   "path": "OAI/Probability/LogConcave/JetEstimates/ClosedWireLintegralBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/CompLinear.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.CompLinear",
+   "original_sha256": "c9508af7e2413d21e106e7ae8986cdd00987df3e24d96f7d9307068545d4c351",
+   "path": "OAI/Probability/LogConcave/JetEstimates/CompLinear.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/ContractLeftSplit.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.ContractLeftSplit",
+   "original_sha256": "52367d7bdb8c177e90a12a1954c8cb1b4a5a35da0593506aaba02a1f35505751",
+   "path": "OAI/Probability/LogConcave/JetEstimates/ContractLeftSplit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/CrossMoment.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.CrossMoment",
+   "original_sha256": "5a3ca68a9a6c393b3ca65f4b4603f58727cf3c26876efbc64962dc90436c3a20",
+   "path": "OAI/Probability/LogConcave/JetEstimates/CrossMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/DirLogLaplace.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.DirLogLaplace",
+   "original_sha256": "6c2464402fb9b401e8bcb4756815ba122d4b2c3ad6a0df445288fd4971a2db69",
+   "path": "OAI/Probability/LogConcave/JetEstimates/DirLogLaplace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/Extend.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.Extend",
+   "original_sha256": "90ea05bd5b5d853f40234cb26849417266e6eb36c77421c27005868d4a32cb70",
+   "path": "OAI/Probability/LogConcave/JetEstimates/Extend.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/Extension.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.Extension",
+   "original_sha256": "cafcb5f1231519553b00c436bf2f944f61396c50379db1efd3325c2bc5ed2bae",
+   "path": "OAI/Probability/LogConcave/JetEstimates/Extension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/FlowJetMajorant.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.FlowJetMajorant",
+   "original_sha256": "b0b857dc3e481fb44b6c26992ea801ad87ce27a4e39a621138f29eaac08bc8c3",
+   "path": "OAI/Probability/LogConcave/JetEstimates/FlowJetMajorant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/ForestTensor.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.ForestTensor",
+   "original_sha256": "030827de0f10d1e19fd4618246b0e19695dac562089ba7b82a7c2efabfc58fb0",
+   "path": "OAI/Probability/LogConcave/JetEstimates/ForestTensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/GadjScalar.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.GadjScalar",
+   "original_sha256": "ea6a4131b7558b082dc5daa435e60e4a6b005a33fc154b9a43f4d3af356bb467",
+   "path": "OAI/Probability/LogConcave/JetEstimates/GadjScalar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/Growth.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.Growth",
+   "original_sha256": "3342be921680bfad2882ca49d53f53292d210fa8ad561d203ee93fe6026935b6",
+   "path": "OAI/Probability/LogConcave/JetEstimates/Growth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/JetCompactIntegral.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.JetCompactIntegral",
+   "original_sha256": "d47e58734344a183193dca8ad1b26e2c98dc0ddb1789c68028574445974734d9",
+   "path": "OAI/Probability/LogConcave/JetEstimates/JetCompactIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/JetCongrList.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.JetCongrList",
+   "original_sha256": "4bc09a7cbe47b986e263afcab2885c95ddcbd586bc33d6b0578de3061ad26794",
+   "path": "OAI/Probability/LogConcave/JetEstimates/JetCongrList.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/JetMapPositions.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.JetMapPositions",
+   "original_sha256": "5a77a819ded9834d25b21b73eb6c550744e6471e75f8d9774d1853a7b432a732",
+   "path": "OAI/Probability/LogConcave/JetEstimates/JetMapPositions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/JetMaterial.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.JetMaterial",
+   "original_sha256": "070adab63de955c534b0317a2e19769c6e8a9d9aac07a0b9258beb822693c8ff",
+   "path": "OAI/Probability/LogConcave/JetEstimates/JetMaterial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/JetNormalizedLaplaceMoments.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.JetNormalizedLaplaceMoments",
+   "original_sha256": "ff19b6e48a1e57659bcc95cf10e724a02dee919ebc57c5d474ee258a1ce5235a",
+   "path": "OAI/Probability/LogConcave/JetEstimates/JetNormalizedLaplaceMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/JetRightSlice.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.JetRightSlice",
+   "original_sha256": "b0a02b8397dcc329bd32732768c99a99033ed4f884e760085f5663c7109a0f6c",
+   "path": "OAI/Probability/LogConcave/JetEstimates/JetRightSlice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/Lipschitz.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.Lipschitz",
+   "original_sha256": "9ceebd25b3b8cbd527d326e8c1cf76a5e87f77de3b7e66bf12a7e7e4011d5cf9",
+   "path": "OAI/Probability/LogConcave/JetEstimates/Lipschitz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/LogDegree.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.LogDegree",
+   "original_sha256": "6fd752c05efbab066b294cf69cb8f0785adf5687da5180eb5a489d5c45aff2a3",
+   "path": "OAI/Probability/LogConcave/JetEstimates/LogDegree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/Material.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.Material",
+   "original_sha256": "b12c19dcb088cbb8b4af7805383678db1a1a12d863f8081ed6e011c42996ea91",
+   "path": "OAI/Probability/LogConcave/JetEstimates/Material.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/MatrixArray.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.MatrixArray",
+   "original_sha256": "72ff778ea4cb984730a9ef8fb51fbbd85b4c89df39bf95855d9648b354bd3bb3",
+   "path": "OAI/Probability/LogConcave/JetEstimates/MatrixArray.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/Mdir.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.Mdir",
+   "original_sha256": "12d1a428e7884cb79b45a76cce1fd7321db75cfa9149a54197b98a8f95ce89f9",
+   "path": "OAI/Probability/LogConcave/JetEstimates/Mdir.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/MixedJetAdd.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.MixedJetAdd",
+   "original_sha256": "56a82bee7a68ef498e6df1b2c1521aafdb4c0d411facd44e3f3b595011f4cb89",
+   "path": "OAI/Probability/LogConcave/JetEstimates/MixedJetAdd.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/MultisetProd.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.MultisetProd",
+   "original_sha256": "9f2e98b348da6484a1f289ef7bfe17ed87aae4b8e6cba9db2dde3b7130a813e7",
+   "path": "OAI/Probability/LogConcave/JetEstimates/MultisetProd.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/MultisetProd2.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.MultisetProd2",
+   "original_sha256": "802190059e01605d3ed85e4a4e59172bcac1695695b78a2f4bb4f7759308d89a",
+   "path": "OAI/Probability/LogConcave/JetEstimates/MultisetProd2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/NormalizedLaplace.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.NormalizedLaplace",
+   "original_sha256": "4d25432b0b3ba8e03a949549db0a0c0718fd4e259e2bea216b0c3cb29e6f10c4",
+   "path": "OAI/Probability/LogConcave/JetEstimates/NormalizedLaplace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/PolyC1.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.PolyC1",
+   "original_sha256": "73a5cabb035abf0002ad0a296d0964b677c7f4e5ae7e5aa77927676cff69aa33",
+   "path": "OAI/Probability/LogConcave/JetEstimates/PolyC1.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/PolySmooth.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.PolySmooth",
+   "original_sha256": "a6d264e1128505b71e4990fab38f8137edd99d3dc131c7330b565b09e95df274",
+   "path": "OAI/Probability/LogConcave/JetEstimates/PolySmooth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/ProperSplit.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.ProperSplit",
+   "original_sha256": "fbf46ab23a870ed04655cec276fee1c42d29cd504962ad5ba1864528e4d62ff3",
+   "path": "OAI/Probability/LogConcave/JetEstimates/ProperSplit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/ProperSplitCard.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.ProperSplitCard",
+   "original_sha256": "d040864fa388a8c72f4fc6e709ef6259697c6b2208c36d2a731d54739a85d618",
+   "path": "OAI/Probability/LogConcave/JetEstimates/ProperSplitCard.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/Reindex.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.Reindex",
+   "original_sha256": "a3df0e4d674e35162a38ed16ef65060a888a2c4d1ba7b9cbb321ea7c3c68b564",
+   "path": "OAI/Probability/LogConcave/JetEstimates/Reindex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/ReindexedMatrix.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.ReindexedMatrix",
+   "original_sha256": "99a739de47613096730d2dbc9487d9ba698ebf30e0bf1455907b459c1b8c2dac",
+   "path": "OAI/Probability/LogConcave/JetEstimates/ReindexedMatrix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/Slice.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.Slice",
+   "original_sha256": "b8d37c73ec6a4c3907610e9e7d70f1f89ebf0723e8e5f7492c73e7883975e67e",
+   "path": "OAI/Probability/LogConcave/JetEstimates/Slice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/SmoothTensorCurve.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.SmoothTensorCurve",
+   "original_sha256": "18c60c9656af4e3c08e73bd14eeff0163dae5f812642c5b23534cbd255d64007",
+   "path": "OAI/Probability/LogConcave/JetEstimates/SmoothTensorCurve.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/SpaceBasis.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.SpaceBasis",
+   "original_sha256": "4779079c91f490f308eee55f31a9ffecffe60f1d189e55fe9b0b0f7eff7bfeb0",
+   "path": "OAI/Probability/LogConcave/JetEstimates/SpaceBasis.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/SplitBundle.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.SplitBundle",
+   "original_sha256": "118e1e12ac10cf4ee03baa5569ae22df6d78429d30a15f24d5e52c787755a7d9",
+   "path": "OAI/Probability/LogConcave/JetEstimates/SplitBundle.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/SplitIndex.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.SplitIndex",
+   "original_sha256": "e806d8db29e3c2476150c559552e4ae809a1a3760ede7e35767b7d22d0ef3467",
+   "path": "OAI/Probability/LogConcave/JetEstimates/SplitIndex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/Squared.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.Squared",
+   "original_sha256": "0d4241da6a8fc617fc76147f04bc65bb6fe2547e8a3fd2fa1d20eeedf32ef2b6",
+   "path": "OAI/Probability/LogConcave/JetEstimates/Squared.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/TensorExpression.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.TensorExpression",
+   "original_sha256": "a11c19fa6ef09f826b07de98231ca4b4f639c1b2e76c25eadb8b9a1c5ebcf68b",
+   "path": "OAI/Probability/LogConcave/JetEstimates/TensorExpression.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/TensorTerm.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.TensorTerm",
+   "original_sha256": "d525a222aa97e1f71a705856454353782cf17a54fe6d693b1ce427b478b72b11",
+   "path": "OAI/Probability/LogConcave/JetEstimates/TensorTerm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/JetEstimates/WireStep.lean"
+   },
+   "module": "OAI.Probability.LogConcave.JetEstimates.WireStep",
+   "original_sha256": "7af671122cf06f3bed723f92e1fb3b822f8a2e27bc7a0f287e8bd0207d1e9c99",
+   "path": "OAI/Probability/LogConcave/JetEstimates/WireStep.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/LowerBounds/CouplingNoise.lean"
+   },
+   "module": "OAI.Probability.LogConcave.LowerBounds.CouplingNoise",
+   "original_sha256": "9be14be0eaaa87f7ff6c52e99a92e3dd8e9bfa9e5129d1ea5693b1110f89f570",
+   "path": "OAI/Probability/LogConcave/LowerBounds/CouplingNoise.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/LowerBounds/DensityCoefficient.lean"
+   },
+   "module": "OAI.Probability.LogConcave.LowerBounds.DensityCoefficient",
+   "original_sha256": "05dd9394a8a3e160616453e4f86f90cd00b26f76e525489960885ae3622ab765",
+   "path": "OAI/Probability/LogConcave/LowerBounds/DensityCoefficient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/LowerBounds/FrameTransport.lean"
+   },
+   "module": "OAI.Probability.LogConcave.LowerBounds.FrameTransport",
+   "original_sha256": "1f752f4a1eafa6ba0ca1df85780f438bbfc3d10aa0f23b3d362fb866261fbbc8",
+   "path": "OAI/Probability/LogConcave/LowerBounds/FrameTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/LowerBounds/HardEigenOutput.lean"
+   },
+   "module": "OAI.Probability.LogConcave.LowerBounds.HardEigenOutput",
+   "original_sha256": "1f7c181f88f7207fefe4235c783aa410c4fe0a6b4d904e65c77b251de523362a",
+   "path": "OAI/Probability/LogConcave/LowerBounds/HardEigenOutput.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/LowerBounds/LinearHistory.lean"
+   },
+   "module": "OAI.Probability.LogConcave.LowerBounds.LinearHistory",
+   "original_sha256": "057584cba765e2bd5624229d14388a63446d384cffb9c7a4b99d418f9f927dda",
+   "path": "OAI/Probability/LogConcave/LowerBounds/LinearHistory.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/LowerBounds/PrefixSpace.lean"
+   },
+   "module": "OAI.Probability.LogConcave.LowerBounds.PrefixSpace",
+   "original_sha256": "4c947ef35e125d81e459b47c9006c614da59699df3c99b97e8db4c3100591449",
+   "path": "OAI/Probability/LogConcave/LowerBounds/PrefixSpace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/LowerBounds/RevealRotation.lean"
+   },
+   "module": "OAI.Probability.LogConcave.LowerBounds.RevealRotation",
+   "original_sha256": "86d5cd82cb737e93d5decfd3a531a3d1c181aa4e33f7d17d75dec4437b1daff3",
+   "path": "OAI/Probability/LogConcave/LowerBounds/RevealRotation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/LowerBounds/RotationIsometry.lean"
+   },
+   "module": "OAI.Probability.LogConcave.LowerBounds.RotationIsometry",
+   "original_sha256": "a62750e156a70d4a9c133acb968d622c5f3b57467ec732c9f765ca7d813524ef",
+   "path": "OAI/Probability/LogConcave/LowerBounds/RotationIsometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/LowerBounds/RoundFrames.lean"
+   },
+   "module": "OAI.Probability.LogConcave.LowerBounds.RoundFrames",
+   "original_sha256": "d42acb7bc15701c38cfd55b309d47be21196c5af600ecda78970154fca08bc4d",
+   "path": "OAI/Probability/LogConcave/LowerBounds/RoundFrames.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/LowerBounds/SpectrumOperator.lean"
+   },
+   "module": "OAI.Probability.LogConcave.LowerBounds.SpectrumOperator",
+   "original_sha256": "a6f7237f6a25500068ff8426af1c438d36e6ce912e1ac44eae173fca8753bdd6",
+   "path": "OAI/Probability/LogConcave/LowerBounds/SpectrumOperator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/LowerBounds/Theta.lean"
+   },
+   "module": "OAI.Probability.LogConcave.LowerBounds.Theta",
+   "original_sha256": "1b306ba5e73d25e5f6467b3fbccabc5a0229def290660fb0851e553076d1ac80",
+   "path": "OAI/Probability/LogConcave/LowerBounds/Theta.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/LowerBounds/TranscriptRejection.lean"
+   },
+   "module": "OAI.Probability.LogConcave.LowerBounds.TranscriptRejection",
+   "original_sha256": "d1575c77324ce925947dafa227a30e17437d1e989d0b0a5c7e4b03d6f2f84f93",
+   "path": "OAI/Probability/LogConcave/LowerBounds/TranscriptRejection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/LowerBounds/WeightedEvaluation.lean"
+   },
+   "module": "OAI.Probability.LogConcave.LowerBounds.WeightedEvaluation",
+   "original_sha256": "b6533bcf2877a63f9af43d390e23946066ca8b2ce7e362a90440414450871ded",
+   "path": "OAI/Probability/LogConcave/LowerBounds/WeightedEvaluation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Main.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Main",
+   "original_sha256": "3587973a46d608f46a49cf68a138c9f4efb3e17e94784b96ac00d71eda7fdc48",
+   "path": "OAI/Probability/LogConcave/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Model.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Model",
+   "original_sha256": "9da5d4e0201d68e4aea7384b9d6ed1ad9bd6e2a3c6aaedc3ff6cef61330e6be9",
+   "path": "OAI/Probability/LogConcave/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/BaseVariation.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.BaseVariation",
+   "original_sha256": "c26c4d7a06d11c924da97d60d554a5767a186b4fcc091b657cfe062c73048b52",
+   "path": "OAI/Probability/LogConcave/Numerics/BaseVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/BaseVariationCenters.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.BaseVariationCenters",
+   "original_sha256": "403609fb14f0e6f8a88fea03451d75418dd1c57c64e0f0103a9a8c9e346d0c6b",
+   "path": "OAI/Probability/LogConcave/Numerics/BaseVariationCenters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/Basis.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.Basis",
+   "original_sha256": "a97d0612054f750d3fc9545b76f5348dc96d8f27c65b5b23e3e2be197b63c3ad",
+   "path": "OAI/Probability/LogConcave/Numerics/Basis.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/BasisDerivative.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.BasisDerivative",
+   "original_sha256": "95a0b4f0c919a987c3d0f8d2656fea66bf7745debfca589d3981459595c2d01a",
+   "path": "OAI/Probability/LogConcave/Numerics/BasisDerivative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/CenterValuesMono.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.CenterValuesMono",
+   "original_sha256": "2fe06985415b299f5e3ab7eb3ed6d29e06fd76d643380bc4bc85273de8f0f2e1",
+   "path": "OAI/Probability/LogConcave/Numerics/CenterValuesMono.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/CenteringStateQuadratureBudget.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.CenteringStateQuadratureBudget",
+   "original_sha256": "12e585d0d819df244d1dcfd75829e74b45db98bfe5b1855daa87d45bed1f0ac6",
+   "path": "OAI/Probability/LogConcave/Numerics/CenteringStateQuadratureBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/CenteringVelocityPicard.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.CenteringVelocityPicard",
+   "original_sha256": "caaef31548798b710049b728a1444689f6f3b1d752bc90f461205734b41706fc",
+   "path": "OAI/Probability/LogConcave/Numerics/CenteringVelocityPicard.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/CentersBoundPicard.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.CentersBoundPicard",
+   "original_sha256": "6f9682fa82a4024f02fe6885a833cc9a65a5d3a827b7be076b66f1aef5201036",
+   "path": "OAI/Probability/LogConcave/Numerics/CentersBoundPicard.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/ChainTaylor.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.ChainTaylor",
+   "original_sha256": "1fd6b54d7ca0609482d299e741608bb092f7d8abf15088bb0d9762b6887967b5",
+   "path": "OAI/Probability/LogConcave/Numerics/ChainTaylor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/ChildNoise.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.ChildNoise",
+   "original_sha256": "f1c7eef69adf811522ac3f0a121248315da50b7c99fd7b6c742328c00c38d55e",
+   "path": "OAI/Probability/LogConcave/Numerics/ChildNoise.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/CompileDeclaredRootNormalized.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.CompileDeclaredRootNormalized",
+   "original_sha256": "57f970ac523944f97626ec2c48215db0f04251451f3082d3e401093f982c2add",
+   "path": "OAI/Probability/LogConcave/Numerics/CompileDeclaredRootNormalized.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/CompileDeclaredRootShift.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.CompileDeclaredRootShift",
+   "original_sha256": "dae58acdf99d2569c0402760306e4efdc9b85162429a5a062d437f714bf99c65",
+   "path": "OAI/Probability/LogConcave/Numerics/CompileDeclaredRootShift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/CompositeAngle.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.CompositeAngle",
+   "original_sha256": "773afe14d32692dff3229a5c6a44ca055b37cf6367beb049a72c8c009146912b",
+   "path": "OAI/Probability/LogConcave/Numerics/CompositeAngle.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/Correction.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.Correction",
+   "original_sha256": "a079362521f1830ede43364d799fbffe83bbf87307c8297a87931e1c20e64a96",
+   "path": "OAI/Probability/LogConcave/Numerics/Correction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/Cost.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.Cost",
+   "original_sha256": "fa720307b4dfc33483456d7f89e37b0f20ff66404ddca810cc2d9c7d35a8091c",
+   "path": "OAI/Probability/LogConcave/Numerics/Cost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/DerivSetIntegral.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.DerivSetIntegral",
+   "original_sha256": "c328a1393d47cdddc0488f1e8dd7558fb906558ec0d461c298c080aefeb7d9d6",
+   "path": "OAI/Probability/LogConcave/Numerics/DerivSetIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/EvalLipschitz.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.EvalLipschitz",
+   "original_sha256": "b69a8302e01986b018da8203237fbf792101fc1843ff063bed22accc54a3f1e1",
+   "path": "OAI/Probability/LogConcave/Numerics/EvalLipschitz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/Forward.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.Forward",
+   "original_sha256": "fe2305569dbd054d3420734ab4f5d183d6168786f5cee3e546faf483ee06f41b",
+   "path": "OAI/Probability/LogConcave/Numerics/Forward.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/GradientBound.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.GradientBound",
+   "original_sha256": "43ba38fe5cf5789dfefde95bcec6c2094acacff923d55375b1795f9bf9bb2fb3",
+   "path": "OAI/Probability/LogConcave/Numerics/GradientBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/KernelActionPicardRms.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.KernelActionPicardRms",
+   "original_sha256": "af9be61a4b519a29b9a465ff94443e675a2d61dbeaeb96f2d230030def44a5fa",
+   "path": "OAI/Probability/LogConcave/Numerics/KernelActionPicardRms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/KernelCorrectionPicard.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.KernelCorrectionPicard",
+   "original_sha256": "4713894621db671c31743fa6e706743074980b4512d5863e8e67f37da60124e9",
+   "path": "OAI/Probability/LogConcave/Numerics/KernelCorrectionPicard.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/LogMeshLength.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.LogMeshLength",
+   "original_sha256": "84739a046a642793a7d993069f60aff234c01dc2dd8477f81bd61cbc3022ee62",
+   "path": "OAI/Probability/LogConcave/Numerics/LogMeshLength.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/MeanTree.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.MeanTree",
+   "original_sha256": "c691d715186f9ffcf4350b6c4a060ced445ab59c0dc65e0ca7fbaceffdd4f051",
+   "path": "OAI/Probability/LogConcave/Numerics/MeanTree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/NodeLp.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.NodeLp",
+   "original_sha256": "92431a90520c608cfec8c9a382d0c3d95e7e0f0f5c2cc47add342891c531eb35",
+   "path": "OAI/Probability/LogConcave/Numerics/NodeLp.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/NodePolynomial.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.NodePolynomial",
+   "original_sha256": "8f25c83871cf30786a68b6674e3acccdd573c84fdece5bd367825c237920d10e",
+   "path": "OAI/Probability/LogConcave/Numerics/NodePolynomial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/NodesContinuous.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.NodesContinuous",
+   "original_sha256": "89928aafc395f171e39a35f931d2a9826b7e2df2cb176f603434c0953712b8f8",
+   "path": "OAI/Probability/LogConcave/Numerics/NodesContinuous.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/NormSubSqTwo.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.NormSubSqTwo",
+   "original_sha256": "6df4d5e204887a1c5507d2a9ba3b7d3ea95f043f1e212c276d8b8d2e660b84c7",
+   "path": "OAI/Probability/LogConcave/Numerics/NormSubSqTwo.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/OrdinaryDerivativeWeight.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.OrdinaryDerivativeWeight",
+   "original_sha256": "3fa2ccffa58b207bf1889ae8f957bd8b1fcf097e006f31924924f525922bc8db",
+   "path": "OAI/Probability/LogConcave/Numerics/OrdinaryDerivativeWeight.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/ParametricFDeriv.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.ParametricFDeriv",
+   "original_sha256": "bd6b8fd6b57cd8e6bfecbbd64a0edbd0b6e436e85863ae1a14081a699b937316",
+   "path": "OAI/Probability/LogConcave/Numerics/ParametricFDeriv.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/Picard.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.Picard",
+   "original_sha256": "4fc61ae0cc2ec49a0fdcf0df3ff613ec263a24f5529733f25a1748915af72803",
+   "path": "OAI/Probability/LogConcave/Numerics/Picard.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/ReanchorWeight.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.ReanchorWeight",
+   "original_sha256": "cf31c1ce9af261cc7dcb77de9bf7f46d180b1ee289cfc61c102f61f127663d0b",
+   "path": "OAI/Probability/LogConcave/Numerics/ReanchorWeight.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/Remainder.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.Remainder",
+   "original_sha256": "f622416f8a8a30ba146858a9e09cbd7fcb27fbbd46f0ca1a3b329464102a8a2a",
+   "path": "OAI/Probability/LogConcave/Numerics/Remainder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/RowGaussian.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.RowGaussian",
+   "original_sha256": "d090c9157ea269a8b7fbcaea5a132e556c1033b83df9f6fc80f3ded8a3c254e9",
+   "path": "OAI/Probability/LogConcave/Numerics/RowGaussian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/RowTape.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.RowTape",
+   "original_sha256": "62bb55584bf06bcc6164478a212200c1e875cd5c0d0121c9b473cf5f3faf2fd2",
+   "path": "OAI/Probability/LogConcave/Numerics/RowTape.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/ScalarPicard.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.ScalarPicard",
+   "original_sha256": "1d67e4398eebfb791d2539d49eb0065d3a52bcf7f6c03f5a218dab30bed79059",
+   "path": "OAI/Probability/LogConcave/Numerics/ScalarPicard.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/TaylorRemainderRms.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.TaylorRemainderRms",
+   "original_sha256": "e3d9ffb5190d6043f1b889b37c62becf0a9fcf2d10199a3736f8f726042e0044",
+   "path": "OAI/Probability/LogConcave/Numerics/TaylorRemainderRms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/TwoendsContinuous.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.TwoendsContinuous",
+   "original_sha256": "df742f01ef2fd85c1d3638db5c785d9a630f4bcd1dc3aafc7d4f4815ec141c68",
+   "path": "OAI/Probability/LogConcave/Numerics/TwoendsContinuous.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Numerics/VelocityWorkCoefficient.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Numerics.VelocityWorkCoefficient",
+   "original_sha256": "3a8d6cc927540f95eaaf0bb1e93c867b5756f43483cfc5006acfa9fab6dae607",
+   "path": "OAI/Probability/LogConcave/Numerics/VelocityWorkCoefficient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/CalibratedMeanCircuit.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.CalibratedMeanCircuit",
+   "original_sha256": "75f53ec76edb8be51c242a6d6190f4616e03835a41067e09a8b7d3528dd9548d",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/CalibratedMeanCircuit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/CenteringMeanCircuit.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.CenteringMeanCircuit",
+   "original_sha256": "eed38c0d0f1b94c3c42307718702bad84ad66ca8c1384266782fe3823e01bfe2",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/CenteringMeanCircuit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/CenteringMeanCircuitFull.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.CenteringMeanCircuitFull",
+   "original_sha256": "7f213d25ed2d107bffecf4cc0f79e5f1c002e1b5b94ae2ddc2bfe0feb10a2e3c",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/CenteringMeanCircuitFull.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/CircuitBoundUpto.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.CircuitBoundUpto",
+   "original_sha256": "0ce72299900795b860cda2ca49e466bc16c435648028b42750f41934d5496ef6",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/CircuitBoundUpto.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/CircuitD.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.CircuitD",
+   "original_sha256": "bc99424b3e1eeb99d8c041cac6e04ee5a023ae95480764618d845e983f431c07",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/CircuitD.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/CircuitParameters.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.CircuitParameters",
+   "original_sha256": "f7bb385be5b6587302e16b98cfbf7e6ce0667bc0561dfccb8a1bed6876ef5cbb",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/CircuitParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/DampingCoefficient.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.DampingCoefficient",
+   "original_sha256": "6ae5de1a01af0cfac13832923a90637a62c84ee5da43af4e06bca94992cc198a",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/DampingCoefficient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/Expression.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.Expression",
+   "original_sha256": "9e82e42fbc35db878ee086d36cac63b2fa6d421384fc895ba49013627d03babf",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/Expression.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/Fresh.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.Fresh",
+   "original_sha256": "6291989fb6f8389377756a88a926a682e847d03c3b0bd54892ebbd3bfc631686",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/Fresh.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/FullTape.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.FullTape",
+   "original_sha256": "07eae03207870b1c6ade1b3ed9c46d339aea0cf4e02e2059991fe6a945d74b9f",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/FullTape.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/IndependentSeq.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.IndependentSeq",
+   "original_sha256": "c60a1ad7709fc1810366fd40e0903d0e5a14f3426dd9d7676f47f4bddd68b446",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/IndependentSeq.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/MeanCorrect.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.MeanCorrect",
+   "original_sha256": "01289dec0007f0c9ea5e1c0ae074aef58b14cc32a0e0b13c9d315d602e6ed853",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/MeanCorrect.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/MeanSize.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.MeanSize",
+   "original_sha256": "a07ae56e43157ef921bff1055231f6f7e0e00b166648006bdb563c99b82acd7d",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/MeanSize.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/MeanTreeBase.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.MeanTreeBase",
+   "original_sha256": "ec6e6c0c31c03248a9d7edbbd2674c77d614afb9f7038eca8e6c1e12479b4d61",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/MeanTreeBase.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/NoisyCenterSquaredError.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.NoisyCenterSquaredError",
+   "original_sha256": "07f5199ab6363230e1fbbaa733757fc3f62deeb4e69a6f67f56ebaac54c68b9b",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/NoisyCenterSquaredError.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/NoisyCircuit.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.NoisyCircuit",
+   "original_sha256": "58bbc75b4b7453a08080c6718f2e6f5e530e30e59201def3746abdfa4027b8d7",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/NoisyCircuit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/PairDistBounds.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.PairDistBounds",
+   "original_sha256": "97090a25de8772a0889de3efee992e3014d5847ffeafba02fa1e2b9817b4318d",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/PairDistBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/PrimitiveProducer.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.PrimitiveProducer",
+   "original_sha256": "83326364c017a0ebc0866444d232ee76d18b3014b0299c0ba2351ff59b768c74",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/PrimitiveProducer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/Program.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.Program",
+   "original_sha256": "2db90ca449661b0b7da985e42964ff628b227788233c39abe292525acfd43522",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/Program.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/ReservedProgram.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.ReservedProgram",
+   "original_sha256": "9e280c9299cc485e0967c10101b5932ba9d5efd82edddd335d5f9feaeadea79d",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/ReservedProgram.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/RoutineBudget.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.RoutineBudget",
+   "original_sha256": "2ff198a6f2d69139b7821bc8a880c5fae3e3b1cba2dca548fc9c724098c0f36d",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/RoutineBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/RoutineKind.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.RoutineKind",
+   "original_sha256": "1db5fb24e6a1196f136689cae08427b35c6f52fdf648bf9b1d533819e3a02499",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/RoutineKind.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/SampleCorrect.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.SampleCorrect",
+   "original_sha256": "a6e1febc584666f6a9ed71fbb6c14e20212fcefa99dab34ff39cb9172d9d1c8e",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/SampleCorrect.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/SampleParentEquivariant.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.SampleParentEquivariant",
+   "original_sha256": "6e1a44e566ed45db9fd76f265eda795b601b00b6cbbe39da6a1e5395b70cb9b4",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/SampleParentEquivariant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/SeedProgram.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.SeedProgram",
+   "original_sha256": "20c9a33d52499de2078173ad1d2aee2816946b0c0aadccf55ccd33d50260a492",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/SeedProgram.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/Shape.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.Shape",
+   "original_sha256": "9c3d8cedd6235b6c8a8f11f5e9a914800d76f13d711324615a802719633d8213",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/Shape.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/ShiftInvariant.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.ShiftInvariant",
+   "original_sha256": "2ad57289b362a62f3e97882f8375bc7320de744ee39b2013c23c3195dc98c5fc",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/ShiftInvariant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/SlotTransformAddShift.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.SlotTransformAddShift",
+   "original_sha256": "d104d97a591cfd980a82ca4c0e5f18a5ba8acfe9cbe0d216041c230dbf676f38",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/SlotTransformAddShift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/StandaloneCorrect.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.StandaloneCorrect",
+   "original_sha256": "dcb33a286d652711e741a7bbe1e3e0fd937f1d321fe13361612ae7d4a92052f8",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/StandaloneCorrect.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/TerminalMean.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.TerminalMean",
+   "original_sha256": "248049ca9d8f1bf114fdbdf68be21326d212ffbf725d298921e3c05934128568",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/TerminalMean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/TerminalMeanEquivariant.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.TerminalMeanEquivariant",
+   "original_sha256": "c9671f726c278a4c581fb3dc8008a60a5f3ee0bb8e6699d04a2d3625da33b832",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/TerminalMeanEquivariant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/TerminalMeanProgram.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.TerminalMeanProgram",
+   "original_sha256": "340f3f56c1b35be3a5879e0e97c88f172844b4751996077296d063683a6be981",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/TerminalMeanProgram.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/TopProgram.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.TopProgram",
+   "original_sha256": "9e230fc815f32ea6ab55e3cd890aff2a1566a06a839ef0c3ec90ee8277f84893",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/TopProgram.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/OraclePrograms/TvPre.lean"
+   },
+   "module": "OAI.Probability.LogConcave.OraclePrograms.TvPre",
+   "original_sha256": "04291ef73bc2495010c929701784791dc89ceb9da472e8fecb8028b01c62c941",
+   "path": "OAI/Probability/LogConcave/OraclePrograms/TvPre.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/AdjointCoordinateContinuous.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.AdjointCoordinateContinuous",
+   "original_sha256": "86c6a0cdb3187ecad670a04d2caf4877b5ca4ca5438c970f881ae0ad2a7c170c",
+   "path": "OAI/Probability/LogConcave/Sampling/AdjointCoordinateContinuous.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/AdjointCoordinateProductLeft.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.AdjointCoordinateProductLeft",
+   "original_sha256": "54813661f3e96561a1771bd9d8a69a0d8c9904302aff7af7db0e2a37115526d1",
+   "path": "OAI/Probability/LogConcave/Sampling/AdjointCoordinateProductLeft.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/AnalyticBase.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.AnalyticBase",
+   "original_sha256": "56ff036f11374d5be12a1655d2b034a6b9ddb89918a8135e165109d868873695",
+   "path": "OAI/Probability/LogConcave/Sampling/AnalyticBase.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/AnchorGauge.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.AnchorGauge",
+   "original_sha256": "8c5308e55c1fed9f57bc24c2a5c08fc056a162147f9c289124ec7af2dce45839",
+   "path": "OAI/Probability/LogConcave/Sampling/AnchorGauge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/AngleNodes.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.AngleNodes",
+   "original_sha256": "0054256cbdecd8f3d4fcff55910f8e37e8ba0fe98c5468027e22a0c534e40cc3",
+   "path": "OAI/Probability/LogConcave/Sampling/AngleNodes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/AverageLipschitz.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.AverageLipschitz",
+   "original_sha256": "596ea50726ab4fdc666688d3a6ac770e1e1aedaa74d3207c560b0be211167815",
+   "path": "OAI/Probability/LogConcave/Sampling/AverageLipschitz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/CenteringJointLaw.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.CenteringJointLaw",
+   "original_sha256": "793568dbda6136625b120f564ea86b6be4a357a1a9bfa0c2829bc2b362a71363",
+   "path": "OAI/Probability/LogConcave/Sampling/CenteringJointLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/CenteringOutputLaw.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.CenteringOutputLaw",
+   "original_sha256": "01a13dffe19d1d9a6ae49b75329b5789afafbc06130825fbdb0fc83c5b6059d2",
+   "path": "OAI/Probability/LogConcave/Sampling/CenteringOutputLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/CenteringVelocityInterpolationRms.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.CenteringVelocityInterpolationRms",
+   "original_sha256": "24fd51d09c7f63d6b1062ee0f5218005bf6979b4ce726748e7282e3a78b1ef23",
+   "path": "OAI/Probability/LogConcave/Sampling/CenteringVelocityInterpolationRms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/CenteringVelocityJoint.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.CenteringVelocityJoint",
+   "original_sha256": "1a1c610ec7f1066b780555636493fc606745242cccd79a2a02be7f6c2cf7777e",
+   "path": "OAI/Probability/LogConcave/Sampling/CenteringVelocityJoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ChangingChain.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ChangingChain",
+   "original_sha256": "f2d4ea6fb184a913b4158765299d1d5696f5244c1a364cb4f45c9fa5ec0607fc",
+   "path": "OAI/Probability/LogConcave/Sampling/ChangingChain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ClosedFieldMean.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ClosedFieldMean",
+   "original_sha256": "4497c771f35e328c36c69e82cae3abb6c5b6c64da171894dd7924b278f7bc3b8",
+   "path": "OAI/Probability/LogConcave/Sampling/ClosedFieldMean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ComposedJetMajorant.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ComposedJetMajorant",
+   "original_sha256": "1ff09acf7b7a3edfdb8d330a27b4be7af74ac7f71039485bf0f2a39ed1017a03",
+   "path": "OAI/Probability/LogConcave/Sampling/ComposedJetMajorant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ConditionalFieldMean.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ConditionalFieldMean",
+   "original_sha256": "69b6b420827ede045fadca72c77aa746474b47c332ed00296f9ec95b9ae78c4e",
+   "path": "OAI/Probability/LogConcave/Sampling/ConditionalFieldMean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ConditionalMeanArray.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ConditionalMeanArray",
+   "original_sha256": "3fcd115771a8814dbb0d17f553af9d8c2984cf88dcae4fbc651705b15fc1cfe7",
+   "path": "OAI/Probability/LogConcave/Sampling/ConditionalMeanArray.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ConditionalMeanScalar.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ConditionalMeanScalar",
+   "original_sha256": "238c0df10db5a31c816661898a150eb6931d1ba3c79a66c78a974f312513491c",
+   "path": "OAI/Probability/LogConcave/Sampling/ConditionalMeanScalar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ConditionalPositionMoment.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ConditionalPositionMoment",
+   "original_sha256": "a8d3eca1734077fd4ac8279c845fe71c1e864841f722f372db2406253a6f31ea",
+   "path": "OAI/Probability/LogConcave/Sampling/ConditionalPositionMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ConditionalSlotEmbedding.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ConditionalSlotEmbedding",
+   "original_sha256": "62d56dbc2478d9b11b7d01e9c5708a95b21d372b526824e9922bc1381a240f74",
+   "path": "OAI/Probability/LogConcave/Sampling/ConditionalSlotEmbedding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ContinuousFirstOrderReply.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ContinuousFirstOrderReply",
+   "original_sha256": "59b3b70f45948c6c8e9ad717cfa8d2e314979a902ee62fb66803c280b202f361",
+   "path": "OAI/Probability/LogConcave/Sampling/ContinuousFirstOrderReply.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/CoordinateProjection.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.CoordinateProjection",
+   "original_sha256": "a0565bc813d765d9a4ad9ef8265e449b68d655f9065a473deae1ae27f17cbd9a",
+   "path": "OAI/Probability/LogConcave/Sampling/CoordinateProjection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/CoordinateRank.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.CoordinateRank",
+   "original_sha256": "3f56195e65c381e0cce2c669eaaf70a5a423f41ec9671e6a5cf223ecd30778bf",
+   "path": "OAI/Probability/LogConcave/Sampling/CoordinateRank.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/Correlation.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.Correlation",
+   "original_sha256": "83991ae716a06298ec4318b379da318b61a125bcdf4f0b2d9df3eafaafea5cfa",
+   "path": "OAI/Probability/LogConcave/Sampling/Correlation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/Directional.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.Directional",
+   "original_sha256": "0f832190145c8ae13725108a0a215ffc32854e6b9c8114437927af38b91f684f",
+   "path": "OAI/Probability/LogConcave/Sampling/Directional.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/DirectionalAdjointCoordinate.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.DirectionalAdjointCoordinate",
+   "original_sha256": "02b66ca288957215d6162bcb7df0a0f628e218d2d8386a49cc6e26a217662fa3",
+   "path": "OAI/Probability/LogConcave/Sampling/DirectionalAdjointCoordinate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/DirectionalBasisSum.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.DirectionalBasisSum",
+   "original_sha256": "c0d6f4ffcba0c847ea8b71d10d24a88ce7e6f1bd5b781d7fd51d6b8c154d35b5",
+   "path": "OAI/Probability/LogConcave/Sampling/DirectionalBasisSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/FDerivTimePartial.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.FDerivTimePartial",
+   "original_sha256": "a16839303ea595863728a47deb53a879640c9f01e5ccd641d594a25c8256f960",
+   "path": "OAI/Probability/LogConcave/Sampling/FDerivTimePartial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/FinSnocSlots.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.FinSnocSlots",
+   "original_sha256": "cf74eae648b900c48f2c06baff4e67a4f71a5f6b1b12c7ca7ffa17e90eeed9ac",
+   "path": "OAI/Probability/LogConcave/Sampling/FinSnocSlots.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/FinsetSumSum.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.FinsetSumSum",
+   "original_sha256": "36154ce6eea7e292223287ba7f6db5d80df4bb036f9da3fceb6501ce931345e1",
+   "path": "OAI/Probability/LogConcave/Sampling/FinsetSumSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/HarmonicKernel.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.HarmonicKernel",
+   "original_sha256": "b7dcebe739dda187fd245e21fee3d01b95589ebca788e40bfa94fd0064f7cd8d",
+   "path": "OAI/Probability/LogConcave/Sampling/HarmonicKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/HarmonicMeanDefect.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.HarmonicMeanDefect",
+   "original_sha256": "340238790ecb523b121d74b2e74537fc6af26d4c0a518a5a068a7cdc8b105266",
+   "path": "OAI/Probability/LogConcave/Sampling/HarmonicMeanDefect.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/HarmonicMeanTaylorRms.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.HarmonicMeanTaylorRms",
+   "original_sha256": "e1b44808ee7e569b069d82b18f4e988a7dba82b6a2ec44e8a1efa99553c28b15",
+   "path": "OAI/Probability/LogConcave/Sampling/HarmonicMeanTaylorRms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/HarmonicPositionDeriv.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.HarmonicPositionDeriv",
+   "original_sha256": "120e5c42d79d1c7c06b5663b7050d014c9133207cd5046d6ab93677ff2b35ef2",
+   "path": "OAI/Probability/LogConcave/Sampling/HarmonicPositionDeriv.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/HarmonicStationaryMoment.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.HarmonicStationaryMoment",
+   "original_sha256": "f789fc70320b54a9ea39af5081995c8d7ebd38baabdda9d0395ce978b8fae261",
+   "path": "OAI/Probability/LogConcave/Sampling/HarmonicStationaryMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/IdentityOutputEmbedding.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.IdentityOutputEmbedding",
+   "original_sha256": "ba9d28f4be1999d962dcd4a3fb86a03e249b69769f699725d489d626958e4b8c",
+   "path": "OAI/Probability/LogConcave/Sampling/IdentityOutputEmbedding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/InnerBasisCoordinate.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.InnerBasisCoordinate",
+   "original_sha256": "fb89ca146a9f3d0a1dd657afd62d002654ac8cedd25effd6a7a0e750135cabf6",
+   "path": "OAI/Probability/LogConcave/Sampling/InnerBasisCoordinate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/InterpolationResidual.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.InterpolationResidual",
+   "original_sha256": "811d7829749c6b79bedc08935588bff5f41b2394b240992597a79bef49932d02",
+   "path": "OAI/Probability/LogConcave/Sampling/InterpolationResidual.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/IterTensorLie.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.IterTensorLie",
+   "original_sha256": "39213784e22166b34a9a9e53ff0f5bf3eeedc4b34ff281f591602be401fa5786",
+   "path": "OAI/Probability/LogConcave/Sampling/IterTensorLie.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/Jet.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.Jet",
+   "original_sha256": "1081c47b2aa1e635471c008a0ad90c7f6af43331df7751dc112f97e125f0b45f",
+   "path": "OAI/Probability/LogConcave/Sampling/Jet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/JointConditionalLawProperties.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.JointConditionalLawProperties",
+   "original_sha256": "9de2e8e29acdac046bbd2bfa69a3e4888945a4a757ef445c54095f23711c4895",
+   "path": "OAI/Probability/LogConcave/Sampling/JointConditionalLawProperties.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/JointInterpolationLaw.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.JointInterpolationLaw",
+   "original_sha256": "ac20bd6854b39d927f6321f74d316afdf60e67a176d2c32c0898b668c7790339",
+   "path": "OAI/Probability/LogConcave/Sampling/JointInterpolationLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/JointMeanMaterial.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.JointMeanMaterial",
+   "original_sha256": "e25ea4718106c7b910da24a006a585805180c0df21c07ecb93113916c6d44b91",
+   "path": "OAI/Probability/LogConcave/Sampling/JointMeanMaterial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/JointPosition.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.JointPosition",
+   "original_sha256": "89325c77da33f223ad14d683f0ab9351a1c8f94cf8dea227de69cf71e910981f",
+   "path": "OAI/Probability/LogConcave/Sampling/JointPosition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/JointSpace.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.JointSpace",
+   "original_sha256": "689badb30a09882f1b90503282fef9e7654b7e77c9b7d8fdf27f7f8424e0ec49",
+   "path": "OAI/Probability/LogConcave/Sampling/JointSpace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/JointU.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.JointU",
+   "original_sha256": "1dad170a712f322ee8cc46a1724a0e54fe448018582de7975dca692abc9f644d",
+   "path": "OAI/Probability/LogConcave/Sampling/JointU.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/KernelTransportAction.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.KernelTransportAction",
+   "original_sha256": "3bdc8eb29278c3688ead0e26b774040c20eb315c3f63e1de543bc2d37a9448fb",
+   "path": "OAI/Probability/LogConcave/Sampling/KernelTransportAction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/LintegralFinNatProd.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.LintegralFinNatProd",
+   "original_sha256": "9fce314c7657141d3f0e2426d4e87e33c416e634cdfba1bc11885426023983ed",
+   "path": "OAI/Probability/LogConcave/Sampling/LintegralFinNatProd.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/LogMeshCountRate.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.LogMeshCountRate",
+   "original_sha256": "1d2e2a42554a0dbc52db2804eb4888ade86b4d0fef834eef1eede9307af38b8c",
+   "path": "OAI/Probability/LogConcave/Sampling/LogMeshCountRate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/Map.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.Map",
+   "original_sha256": "41044f0a850af36c18b73bc6fbb8a8bb2afec03fcf26d47db86f7d37a95fc171",
+   "path": "OAI/Probability/LogConcave/Sampling/Map.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/MapProdFiberLaw.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.MapProdFiberLaw",
+   "original_sha256": "4ac3bbc2afb38f6a3423a0b31b2dc7f575343e18c5e5e81b0b3680b761cae3fd",
+   "path": "OAI/Probability/LogConcave/Sampling/MapProdFiberLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/MapProdSecondFiber.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.MapProdSecondFiber",
+   "original_sha256": "63861f0efc20b8e2155516af7b26535b4904db53f0b4dd582142caea043c8d93",
+   "path": "OAI/Probability/LogConcave/Sampling/MapProdSecondFiber.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/MaterialScalar.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.MaterialScalar",
+   "original_sha256": "1db72388e01e20f75e278bdf2f0803f0685f03d04a94947657accd096ca8a1f4",
+   "path": "OAI/Probability/LogConcave/Sampling/MaterialScalar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/MatrixArrayAdjoint.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.MatrixArrayAdjoint",
+   "original_sha256": "52c2bbe46c590455d815ca287ab1d78ee335f719a2a9ac05971248551415f12a",
+   "path": "OAI/Probability/LogConcave/Sampling/MatrixArrayAdjoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/MatrixColor.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.MatrixColor",
+   "original_sha256": "26b9b93da6e56c6f482fa07f872cd7d897259705ba929a374a1b24e074edcdf7",
+   "path": "OAI/Probability/LogConcave/Sampling/MatrixColor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/MeanMaterialL2.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.MeanMaterialL2",
+   "original_sha256": "83f1d624e0a06f0e246a42d0e1c73925fd6ed0fcd1ff1110c8d9056c0fdfe7b2",
+   "path": "OAI/Probability/LogConcave/Sampling/MeanMaterialL2.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/MeanMaterialVector.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.MeanMaterialVector",
+   "original_sha256": "285034437eb6d504a0659ecf82bcdf761767cf71a9907c56944c3748fa2c3dd7",
+   "path": "OAI/Probability/LogConcave/Sampling/MeanMaterialVector.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/MeasureSmoothLipschitz.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.MeasureSmoothLipschitz",
+   "original_sha256": "331f6d902817caa5f27c66d20e6b1fd00071f6b139505618ed1575596fc75fbc",
+   "path": "OAI/Probability/LogConcave/Sampling/MeasureSmoothLipschitz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/MixingEnvelope.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.MixingEnvelope",
+   "original_sha256": "061067e0f956829da69e7dd79031174111ccb269dd21162b15ccc07b1762ce5c",
+   "path": "OAI/Probability/LogConcave/Sampling/MixingEnvelope.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/NaturalMomentNorm.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.NaturalMomentNorm",
+   "original_sha256": "faff63403ea813d9e35c3abb43e4a9849b34534577f6eabc3d07334513daacca",
+   "path": "OAI/Probability/LogConcave/Sampling/NaturalMomentNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/NoiseKernel.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.NoiseKernel",
+   "original_sha256": "a692c3364922863d100cabdf6b23f58474052ce92feb4ec7697aa1dd1e2b85df",
+   "path": "OAI/Probability/LogConcave/Sampling/NoiseKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/NormalizedDirection.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.NormalizedDirection",
+   "original_sha256": "23ffc17396ccdc5e91298420eae1a287e5b0690450ddd56e2712d86d502a9ea1",
+   "path": "OAI/Probability/LogConcave/Sampling/NormalizedDirection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/NormalizedScoreMajorant.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.NormalizedScoreMajorant",
+   "original_sha256": "adb7c431f255d4d525c7f73a5d6cc69fb1483516809516790adc05330004d823",
+   "path": "OAI/Probability/LogConcave/Sampling/NormalizedScoreMajorant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/NormalizedTensor.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.NormalizedTensor",
+   "original_sha256": "abbdc85e9365132e74dce7dc9d4466156ebbc6c668c9e40ae8f0ad4bfda4ba3c",
+   "path": "OAI/Probability/LogConcave/Sampling/NormalizedTensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/NormalizedTensorMajorantScale.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.NormalizedTensorMajorantScale",
+   "original_sha256": "09418cb26c6c509f6ee666a99f691e8396c1ac8414dbb34503697d779322e475",
+   "path": "OAI/Probability/LogConcave/Sampling/NormalizedTensorMajorantScale.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/NumericalLayerCount.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.NumericalLayerCount",
+   "original_sha256": "87b75da05ef29d176bdae8997d750a3d89d198b40b6f276867c26f262699ca5d",
+   "path": "OAI/Probability/LogConcave/Sampling/NumericalLayerCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/NumericalScalars.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.NumericalScalars",
+   "original_sha256": "e13f722a5d8cce382ca8bf9a27a60cd58564f53431911183c601aa479644d10f",
+   "path": "OAI/Probability/LogConcave/Sampling/NumericalScalars.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/PairGauge.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.PairGauge",
+   "original_sha256": "ef81ac705ca72bbdb99b875e3dd70b7b60e0b9d70aa55ee861537fa758f0fe17",
+   "path": "OAI/Probability/LogConcave/Sampling/PairGauge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/PiAppendLaw.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.PiAppendLaw",
+   "original_sha256": "2e5ac0ca66f4dcc30487dc546b7c15e2c3b5aee546d1699ff7f33b9fa7c15f4d",
+   "path": "OAI/Probability/LogConcave/Sampling/PiAppendLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/PolynomialGrowth.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.PolynomialGrowth",
+   "original_sha256": "21e784e7381c82c09b568a8357fab36727564a9c379cf1f6031b96c3192a9d5d",
+   "path": "OAI/Probability/LogConcave/Sampling/PolynomialGrowth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/PosteriorJointIntegral.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.PosteriorJointIntegral",
+   "original_sha256": "2b572922c68d4a6c116b02e7fb6307bd3c8cda00ba6ef8b30d74f4f88ff366e9",
+   "path": "OAI/Probability/LogConcave/Sampling/PosteriorJointIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/PrependTape.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.PrependTape",
+   "original_sha256": "2439057f4e583aee33b25c2656848f8f92c512932cddfd476879624a5c745535",
+   "path": "OAI/Probability/LogConcave/Sampling/PrependTape.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/Primitive.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.Primitive",
+   "original_sha256": "58127fb02414efe46abb8d41e7cc73235c86aacbf713de8ae1e1dc520a3fa620",
+   "path": "OAI/Probability/LogConcave/Sampling/Primitive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/PrimitiveExpectedField.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.PrimitiveExpectedField",
+   "original_sha256": "b5a51c6be46b4c1575b3db9ed28ffe2f406ceec936809c4a370f51fc9e327009",
+   "path": "OAI/Probability/LogConcave/Sampling/PrimitiveExpectedField.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/PrimitiveExpectedFieldLipschitz.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.PrimitiveExpectedFieldLipschitz",
+   "original_sha256": "5550ae3f85c569b90b14cb144aa04bc7df6ec1e270a33e7b56606a49bde26fc5",
+   "path": "OAI/Probability/LogConcave/Sampling/PrimitiveExpectedFieldLipschitz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/PrimitiveField.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.PrimitiveField",
+   "original_sha256": "b51a19bcbcc3b4de838fda40ef64d2249d715e4a748697bec5e612dcc4807df7",
+   "path": "OAI/Probability/LogConcave/Sampling/PrimitiveField.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ProbabilityEndpoint.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ProbabilityEndpoint",
+   "original_sha256": "dd2654d0a33e4eaab919bb964038e68695e6447c5fa53032331c736feaf0053e",
+   "path": "OAI/Probability/LogConcave/Sampling/ProbabilityEndpoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ProbabilityInitialRms.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ProbabilityInitialRms",
+   "original_sha256": "d2a5a104099499c4c59d63a380e452991d1b30d3caf7e92c17278a5dbbbed1a6",
+   "path": "OAI/Probability/LogConcave/Sampling/ProbabilityInitialRms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ProbabilityNodes.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ProbabilityNodes",
+   "original_sha256": "2eb1189b7666734a029f6e2f1745b1f7bc38a9df7fcfa4f8d9abb889350b19ad",
+   "path": "OAI/Probability/LogConcave/Sampling/ProbabilityNodes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ProbabilityNormalizedTerm.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ProbabilityNormalizedTerm",
+   "original_sha256": "2b2dfc0d1e73ac1ffee0edb1501d4a456e7ae6e99e6127e9d15aff079b4a7c8b",
+   "path": "OAI/Probability/LogConcave/Sampling/ProbabilityNormalizedTerm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ProbabilityTransportTrajectory.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ProbabilityTransportTrajectory",
+   "original_sha256": "47f7b1e0dc523bd6d20a5c53a1b4ca1b6dae4be40bfa841d7854aa59551bb261",
+   "path": "OAI/Probability/LogConcave/Sampling/ProbabilityTransportTrajectory.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ProbabilityVelocity.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ProbabilityVelocity",
+   "original_sha256": "4439d17f541ce6fbae70206a50d399f2dbefbc0076d8de5bad78bf4c990b95eb",
+   "path": "OAI/Probability/LogConcave/Sampling/ProbabilityVelocity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ProdMapEventReal.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ProdMapEventReal",
+   "original_sha256": "3c467a16f550bc0fe832967420efe21306635e39a8c838a64f161d50e133781a",
+   "path": "OAI/Probability/LogConcave/Sampling/ProdMapEventReal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/QuadraticExpectation.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.QuadraticExpectation",
+   "original_sha256": "6ff4fb86b33363efc40715b8c2314b26408d65a1ab6cc26f2d420104473f1e16",
+   "path": "OAI/Probability/LogConcave/Sampling/QuadraticExpectation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/Reindex.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.Reindex",
+   "original_sha256": "bfa572080f52860108634a92a72dbbe4cda90cd3bfaf8d8f74d94c5b670784dc",
+   "path": "OAI/Probability/LogConcave/Sampling/Reindex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/SampleCorrelation.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.SampleCorrelation",
+   "original_sha256": "4b82d0a5c06b27cf6823f536c8b7abea6d00c1c7bb058fb497ac554649931fce",
+   "path": "OAI/Probability/LogConcave/Sampling/SampleCorrelation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ScaledMeanJet.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ScaledMeanJet",
+   "original_sha256": "96104b8e1669a9c27b13fa5b5d5bc43c8110cb6e8d6f98011177cd6b76ec6f02",
+   "path": "OAI/Probability/LogConcave/Sampling/ScaledMeanJet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ScoreAugmented.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ScoreAugmented",
+   "original_sha256": "1a2f950fa4ee98910ba77e9e12601e54106736ad71d1be55137af6df00f3ecb6",
+   "path": "OAI/Probability/LogConcave/Sampling/ScoreAugmented.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/ScoreSlots.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.ScoreSlots",
+   "original_sha256": "1db6ec313b0b6b1244670f9f0cbd2413b34acbf7bb564e40f3988c122d51eaf3",
+   "path": "OAI/Probability/LogConcave/Sampling/ScoreSlots.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/SkewCenteringField.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.SkewCenteringField",
+   "original_sha256": "7d1cf2475ae7ba8eb1c30af01c641593e679174ddf6c15e039fadf06c9556081",
+   "path": "OAI/Probability/LogConcave/Sampling/SkewCenteringField.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/SkewCenteringFieldSmooth.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.SkewCenteringFieldSmooth",
+   "original_sha256": "c36f4b6d020799bcfe2eb44bd6dcf4187360814950d63bb147590043f59811b1",
+   "path": "OAI/Probability/LogConcave/Sampling/SkewCenteringFieldSmooth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/SmoothTimeLocalization.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.SmoothTimeLocalization",
+   "original_sha256": "f38f1c99e87f3ed31036c757c497104d50217487f586b05fb83145187f90c733",
+   "path": "OAI/Probability/LogConcave/Sampling/SmoothTimeLocalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/SpatialJacobianTimeDeriv.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.SpatialJacobianTimeDeriv",
+   "original_sha256": "922346272b2dd06bec65c9ecf7df15e8a048d2367504dc8e4a189f22473f5eb9",
+   "path": "OAI/Probability/LogConcave/Sampling/SpatialJacobianTimeDeriv.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/SpatialTensor.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.SpatialTensor",
+   "original_sha256": "9de408720bd152dcc345011308b198aeae08ac54131c1e712932ed4c20277644",
+   "path": "OAI/Probability/LogConcave/Sampling/SpatialTensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/SpatialTensorArrayBound.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.SpatialTensorArrayBound",
+   "original_sha256": "9d36e2cc9ef393480d7a008047a6b6fb3abcecca3a419e8db6249767cb00c94a",
+   "path": "OAI/Probability/LogConcave/Sampling/SpatialTensorArrayBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/SpatialTensorContinuous.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.SpatialTensorContinuous",
+   "original_sha256": "3948cdb922d1fec9ba4e293c8e0b9c6b5cbe9e19d6a8c58ffeccf8336e547ecd",
+   "path": "OAI/Probability/LogConcave/Sampling/SpatialTensorContinuous.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/SpatialTransport.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.SpatialTransport",
+   "original_sha256": "b177c247c0129355b26180b3851d4529f1f86cc9e29a5e290668d9e742b08b6f",
+   "path": "OAI/Probability/LogConcave/Sampling/SpatialTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/StateLaw.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.StateLaw",
+   "original_sha256": "e5afe746188c021bf04e0f5169883c90d20d5d014b99c81f1aeb93a72cd1497d",
+   "path": "OAI/Probability/LogConcave/Sampling/StateLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/StationaryMeanTarget.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.StationaryMeanTarget",
+   "original_sha256": "aa56c08b7aadf8f8e83e8e6458c8484c8dc86def0bd4b5de901d4141ef5445d6",
+   "path": "OAI/Probability/LogConcave/Sampling/StationaryMeanTarget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/StationaryTensorVectorRms.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.StationaryTensorVectorRms",
+   "original_sha256": "6153315102459c3dac30273aa9c2a92a328c23c97dbee6a4bb0c8a4cc1d674f6",
+   "path": "OAI/Probability/LogConcave/Sampling/StationaryTensorVectorRms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/TapeSnocEquiv.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.TapeSnocEquiv",
+   "original_sha256": "cbb92254f3fc0c9405fd6b92aedd5037a1f74df00588df9be501c5af11e20685",
+   "path": "OAI/Probability/LogConcave/Sampling/TapeSnocEquiv.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/TensorGrad.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.TensorGrad",
+   "original_sha256": "81d1047fbeea20c5a34ac5bb9e0019c37891f2bc31340516376027c36c16aef2",
+   "path": "OAI/Probability/LogConcave/Sampling/TensorGrad.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/TensorVector.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.TensorVector",
+   "original_sha256": "a0b4699d41fa3ae85e77855ed4f08d85b4aa78601f656b2e2d1c9326c64fa3a3",
+   "path": "OAI/Probability/LogConcave/Sampling/TensorVector.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/TerminalActionChainQuotient.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.TerminalActionChainQuotient",
+   "original_sha256": "410c9f7d4f9edad0cd76e801343b785b8d20703a41856d927fe490b0648f47fd",
+   "path": "OAI/Probability/LogConcave/Sampling/TerminalActionChainQuotient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/TerminalBackward.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.TerminalBackward",
+   "original_sha256": "38baf7b37b304961c4165f1ad0f36a0bb0b0094e9605302041bc63382ddb2883",
+   "path": "OAI/Probability/LogConcave/Sampling/TerminalBackward.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/TerminalJacobianInverse.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.TerminalJacobianInverse",
+   "original_sha256": "996c330b1f655fc7fa150bbb8f79abe15906ce9df6968ec013b8de5f8ce82643",
+   "path": "OAI/Probability/LogConcave/Sampling/TerminalJacobianInverse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/TerminalMean.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.TerminalMean",
+   "original_sha256": "366691bc98a209a524003ef290d596ade36e67d5f268064dac0955f95aec16eb",
+   "path": "OAI/Probability/LogConcave/Sampling/TerminalMean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/TerminalTransportConstant.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.TerminalTransportConstant",
+   "original_sha256": "6bbcaee264686dc3588e7e74281aed1f7ebd070bc453d4b03006216c1af507d9",
+   "path": "OAI/Probability/LogConcave/Sampling/TerminalTransportConstant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/TiltedExpectation.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.TiltedExpectation",
+   "original_sha256": "f320c182573c0e0151f78e469d6c592ad9d30e11d54a92a8904f61fd5e76965f",
+   "path": "OAI/Probability/LogConcave/Sampling/TiltedExpectation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/TimeBump.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.TimeBump",
+   "original_sha256": "eb34ec951136334eeeec6f3c2c2a99f9e6587295ddb245ad4a2f9d9c0e28e2bd",
+   "path": "OAI/Probability/LogConcave/Sampling/TimeBump.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/TopScale.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.TopScale",
+   "original_sha256": "6cc4694a3853935bcb75bec800349b579f329a80990412bd9a63a4d2a7b09d4a",
+   "path": "OAI/Probability/LogConcave/Sampling/TopScale.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/TranslationIntegrationByParts.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.TranslationIntegrationByParts",
+   "original_sha256": "357eff46b38a8a522bc6bff0fc1fa2d1e00e1b2256e96cbd77edda87384207b5",
+   "path": "OAI/Probability/LogConcave/Sampling/TranslationIntegrationByParts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/TransportCorrectionMajorant.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.TransportCorrectionMajorant",
+   "original_sha256": "d6e8aadd013723c599e78b4aa5f9c2d2239d705be62cedbdf89f6e3f87650620",
+   "path": "OAI/Probability/LogConcave/Sampling/TransportCorrectionMajorant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/TransportMajorant.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.TransportMajorant",
+   "original_sha256": "2906d6f239855052dc5be8d2e5b48c7180ad9543a62a22bb66ff2d0e84d22633",
+   "path": "OAI/Probability/LogConcave/Sampling/TransportMajorant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/UnitUniform.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.UnitUniform",
+   "original_sha256": "da893db9f1ec8722582ccae31e7e3d37e64fcaad5b476f9ccd06e7fd2a346b99",
+   "path": "OAI/Probability/LogConcave/Sampling/UnitUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/Sampling/VelocityJointLip.lean"
+   },
+   "module": "OAI.Probability.LogConcave.Sampling.VelocityJointLip",
+   "original_sha256": "f15901ba34083e92e646548353fd9ad130c6776a9e43f3b02bc46e772cf0b0eb",
+   "path": "OAI/Probability/LogConcave/Sampling/VelocityJointLip.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/TensorGraphs/AdjointMatrix.lean"
+   },
+   "module": "OAI.Probability.LogConcave.TensorGraphs.AdjointMatrix",
+   "original_sha256": "146556074a753b8bbc516d1d67fb96cf76cdd098fed700cb96a7b922ff6568b2",
+   "path": "OAI/Probability/LogConcave/TensorGraphs/AdjointMatrix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/TensorGraphs/Chain.lean"
+   },
+   "module": "OAI.Probability.LogConcave.TensorGraphs.Chain",
+   "original_sha256": "a228e77900f7b2ced3ddf02ec30303b98d0a881a56cbc80278ce3bf9dcf0b034",
+   "path": "OAI/Probability/LogConcave/TensorGraphs/Chain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/TensorGraphs/ColoringSplit.lean"
+   },
+   "module": "OAI.Probability.LogConcave.TensorGraphs.ColoringSplit",
+   "original_sha256": "4b2570ba6db8648484ce28b8249c137351fc35fc9c7f02f595a41ce364a8df40",
+   "path": "OAI/Probability/LogConcave/TensorGraphs/ColoringSplit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/TensorGraphs/FieldPosition.lean"
+   },
+   "module": "OAI.Probability.LogConcave.TensorGraphs.FieldPosition",
+   "original_sha256": "dc4af97a48aeeb82c066b585c424a762078f3ee932afe59839881766bae731a9",
+   "path": "OAI/Probability/LogConcave/TensorGraphs/FieldPosition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/TensorGraphs/HessianIncidenceTensor.lean"
+   },
+   "module": "OAI.Probability.LogConcave.TensorGraphs.HessianIncidenceTensor",
+   "original_sha256": "16e25192cdf5b76ccb9246fb366bbabaafd1fbf208c0940da2b419f80af2dcd2",
+   "path": "OAI/Probability/LogConcave/TensorGraphs/HessianIncidenceTensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/TensorGraphs/HessianIncidentEquiv.lean"
+   },
+   "module": "OAI.Probability.LogConcave.TensorGraphs.HessianIncidentEquiv",
+   "original_sha256": "4f8c765ec1a0859768eb1e4b4369167cf564c1279c3034a980476e50ed5aa439",
+   "path": "OAI/Probability/LogConcave/TensorGraphs/HessianIncidentEquiv.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/TensorGraphs/History.lean"
+   },
+   "module": "OAI.Probability.LogConcave.TensorGraphs.History",
+   "original_sha256": "7c516da2d94891062300501fb0bb3430f6e3aa38c088977a75311a70d667253e",
+   "path": "OAI/Probability/LogConcave/TensorGraphs/History.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/TensorGraphs/IncidentMatrix.lean"
+   },
+   "module": "OAI.Probability.LogConcave.TensorGraphs.IncidentMatrix",
+   "original_sha256": "b901ba6f6b5e94a52e6cdfe3af45dcb2d11e1fb58dd8eaf3265bdd42770491dd",
+   "path": "OAI/Probability/LogConcave/TensorGraphs/IncidentMatrix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/TensorGraphs/Inside.lean"
+   },
+   "module": "OAI.Probability.LogConcave.TensorGraphs.Inside",
+   "original_sha256": "467a43d7c314e7dd1dece7b628072c0f37c8fe67418d84dea237fa743dcdbaab",
+   "path": "OAI/Probability/LogConcave/TensorGraphs/Inside.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/TensorGraphs/Live.lean"
+   },
+   "module": "OAI.Probability.LogConcave.TensorGraphs.Live",
+   "original_sha256": "8a4256255f5e6fe1ba14e009e958dbf67f21ac7afb98ce26927ac33cbcd7a6a4",
+   "path": "OAI/Probability/LogConcave/TensorGraphs/Live.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/TensorGraphs/PrimaryPositionTensor.lean"
+   },
+   "module": "OAI.Probability.LogConcave.TensorGraphs.PrimaryPositionTensor",
+   "original_sha256": "51cd5d23dde4850ce06f44ea4f648831bcfa8981f7f20871b48f5f654f227cf1",
+   "path": "OAI/Probability/LogConcave/TensorGraphs/PrimaryPositionTensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/TensorGraphs/RankEquiv.lean"
+   },
+   "module": "OAI.Probability.LogConcave.TensorGraphs.RankEquiv",
+   "original_sha256": "6937f87f6401279f30e5c13b44218ed508bb11cca979129b949869df245a3b58",
+   "path": "OAI/Probability/LogConcave/TensorGraphs/RankEquiv.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/LogConcave/TensorGraphs/Vertex.lean"
+   },
+   "module": "OAI.Probability.LogConcave.TensorGraphs.Vertex",
+   "original_sha256": "828011135adab59de33d8cdfd7a83e147e0b4c82bc83243230a14dfa481f6ed7",
+   "path": "OAI/Probability/LogConcave/TensorGraphs/Vertex.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 65536
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Probability.LogConcave.Analysis.AffinePotential",
+  "OAI.Probability.LogConcave.Analysis.CenteringPotential",
+  "OAI.Probability.LogConcave.Analysis.CompactGibbsIbp",
+  "OAI.Probability.LogConcave.Analysis.ConditionalPotential",
+  "OAI.Probability.LogConcave.Analysis.EulerDrift",
+  "OAI.Probability.LogConcave.Analysis.GaussianAffineNormMoment",
+  "OAI.Probability.LogConcave.Analysis.GaussianCoefficient",
+  "OAI.Probability.LogConcave.Analysis.GaussianMarginalLowerTail",
+  "OAI.Probability.LogConcave.Analysis.GaussianPairSumLaw",
+  "OAI.Probability.LogConcave.Analysis.GaussianProposalPotential",
+  "OAI.Probability.LogConcave.Analysis.GibbsOpenPos",
+  "OAI.Probability.LogConcave.Analysis.GibbsProportional",
+  "OAI.Probability.LogConcave.Analysis.GrowthInnerGradient",
+  "OAI.Probability.LogConcave.Analysis.InterpolationHessianBudget",
+  "OAI.Probability.LogConcave.Analysis.InterpolationPotential",
+  "OAI.Probability.LogConcave.Analysis.Law",
+  "OAI.Probability.LogConcave.Analysis.Operator",
+  "OAI.Probability.LogConcave.Analysis.Poincare",
+  "OAI.Probability.LogConcave.Analysis.PoincareVectorVariance",
+  "OAI.Probability.LogConcave.Analysis.PrimitivePotentialModeBounds",
+  "OAI.Probability.LogConcave.Analysis.ProductPotentialMeasurable",
+  "OAI.Probability.LogConcave.Analysis.ProposalLog",
+  "OAI.Probability.LogConcave.Analysis.SymmetricGradientDerivative",
+  "OAI.Probability.LogConcave.Complexity.CenteringStateBudget",
+  "OAI.Probability.LogConcave.Complexity.CenteringStateBudgetNonneg",
+  "OAI.Probability.LogConcave.Complexity.Envelope",
+  "OAI.Probability.LogConcave.Complexity.EventuallySequences",
+  "OAI.Probability.LogConcave.Complexity.HarmonicCorrectionBudget",
+  "OAI.Probability.LogConcave.Complexity.KernelActionNormalizedBudget",
+  "OAI.Probability.LogConcave.Complexity.KernelActionRmsBudget",
+  "OAI.Probability.LogConcave.Complexity.KernelAnalyticBudget",
+  "OAI.Probability.LogConcave.Complexity.KernelAnalyticNormalizedBudget",
+  "OAI.Probability.LogConcave.Complexity.KernelValueRmsBudget",
+  "OAI.Probability.LogConcave.Complexity.OccurrenceBudget",
+  "OAI.Probability.LogConcave.Complexity.PolynomialBudget",
+  "OAI.Probability.LogConcave.Complexity.ProbabilityRmsBudget",
+  "OAI.Probability.LogConcave.Complexity.ProductEnergyBudgetScaled",
+  "OAI.Probability.LogConcave.Complexity.SingleCellBasisBudget",
+  "OAI.Probability.LogConcave.Complexity.TerminalDerivativeBudget",
+  "OAI.Probability.LogConcave.Complexity.VelocityNormalizedBudgetCalibrated",
+  "OAI.Probability.LogConcave.Dynamics.AbsorbFixed",
+  "OAI.Probability.LogConcave.Dynamics.ActualJointCenteringFlow",
+  "OAI.Probability.LogConcave.Dynamics.ConditionalHarmonicFlow",
+  "OAI.Probability.LogConcave.Dynamics.Curve",
+  "OAI.Probability.LogConcave.Dynamics.DistanceCoupled",
+  "OAI.Probability.LogConcave.Dynamics.FlowRestrict",
+  "OAI.Probability.LogConcave.Dynamics.FullProbabilityFlow",
+  "OAI.Probability.LogConcave.Dynamics.HarmonicFlow",
+  "OAI.Probability.LogConcave.Dynamics.IntegralLipschitz",
+  "OAI.Probability.LogConcave.Dynamics.JointHarmonicFlow",
+  "OAI.Probability.LogConcave.Dynamics.NormSubSqThree",
+  "OAI.Probability.LogConcave.Dynamics.ObservableIntegralMeasurable",
+  "OAI.Probability.LogConcave.Dynamics.ProbabilityFlowGrowth",
+  "OAI.Probability.LogConcave.Dynamics.ProbabilityFlowIntegral",
+  "OAI.Probability.LogConcave.Dynamics.ProbabilityFlowPushforward",
+  "OAI.Probability.LogConcave.Dynamics.SameLaw",
+  "OAI.Probability.LogConcave.Dynamics.SharedLipschitz",
+  "OAI.Probability.LogConcave.Dynamics.SmoothFlowJoint",
+  "OAI.Probability.LogConcave.Dynamics.SpaceTimeForward",
+  "OAI.Probability.LogConcave.Dynamics.Squared",
+  "OAI.Probability.LogConcave.Dynamics.StationaryIntegral",
+  "OAI.Probability.LogConcave.Dynamics.StationaryPath",
+  "OAI.Probability.LogConcave.Dynamics.TriangularEquiv",
+  "OAI.Probability.LogConcave.Dynamics.Truncated",
+  "OAI.Probability.LogConcave.Dynamics.VariationalField",
+  "OAI.Probability.LogConcave.JetEstimates.AllSplitBound",
+  "OAI.Probability.LogConcave.JetEstimates.ArrayComponentPolySmooth",
+  "OAI.Probability.LogConcave.JetEstimates.ArrayMatrix",
+  "OAI.Probability.LogConcave.JetEstimates.ArrayRelabel",
+  "OAI.Probability.LogConcave.JetEstimates.AssignmentsFinset",
+  "OAI.Probability.LogConcave.JetEstimates.Bound",
+  "OAI.Probability.LogConcave.JetEstimates.ClosedWireLintegralBound",
+  "OAI.Probability.LogConcave.JetEstimates.CompLinear",
+  "OAI.Probability.LogConcave.JetEstimates.ContractLeftSplit",
+  "OAI.Probability.LogConcave.JetEstimates.CrossMoment",
+  "OAI.Probability.LogConcave.JetEstimates.DirLogLaplace",
+  "OAI.Probability.LogConcave.JetEstimates.Extend",
+  "OAI.Probability.LogConcave.JetEstimates.Extension",
+  "OAI.Probability.LogConcave.JetEstimates.FlowJetMajorant",
+  "OAI.Probability.LogConcave.JetEstimates.ForestTensor",
+  "OAI.Probability.LogConcave.JetEstimates.GadjScalar",
+  "OAI.Probability.LogConcave.JetEstimates.Growth",
+  "OAI.Probability.LogConcave.JetEstimates.JetCompactIntegral",
+  "OAI.Probability.LogConcave.JetEstimates.JetCongrList",
+  "OAI.Probability.LogConcave.JetEstimates.JetMapPositions",
+  "OAI.Probability.LogConcave.JetEstimates.JetMaterial",
+  "OAI.Probability.LogConcave.JetEstimates.JetNormalizedLaplaceMoments",
+  "OAI.Probability.LogConcave.JetEstimates.JetRightSlice",
+  "OAI.Probability.LogConcave.JetEstimates.Lipschitz",
+  "OAI.Probability.LogConcave.JetEstimates.LogDegree",
+  "OAI.Probability.LogConcave.JetEstimates.Material",
+  "OAI.Probability.LogConcave.JetEstimates.MatrixArray",
+  "OAI.Probability.LogConcave.JetEstimates.Mdir",
+  "OAI.Probability.LogConcave.JetEstimates.MixedJetAdd",
+  "OAI.Probability.LogConcave.JetEstimates.MultisetProd",
+  "OAI.Probability.LogConcave.JetEstimates.MultisetProd2",
+  "OAI.Probability.LogConcave.JetEstimates.NormalizedLaplace",
+  "OAI.Probability.LogConcave.JetEstimates.PolyC1",
+  "OAI.Probability.LogConcave.JetEstimates.PolySmooth",
+  "OAI.Probability.LogConcave.JetEstimates.ProperSplit",
+  "OAI.Probability.LogConcave.JetEstimates.ProperSplitCard",
+  "OAI.Probability.LogConcave.JetEstimates.Reindex",
+  "OAI.Probability.LogConcave.JetEstimates.ReindexedMatrix",
+  "OAI.Probability.LogConcave.JetEstimates.Slice",
+  "OAI.Probability.LogConcave.JetEstimates.SmoothTensorCurve",
+  "OAI.Probability.LogConcave.JetEstimates.SpaceBasis",
+  "OAI.Probability.LogConcave.JetEstimates.SplitBundle",
+  "OAI.Probability.LogConcave.JetEstimates.SplitIndex",
+  "OAI.Probability.LogConcave.JetEstimates.Squared",
+  "OAI.Probability.LogConcave.JetEstimates.TensorExpression",
+  "OAI.Probability.LogConcave.JetEstimates.TensorTerm",
+  "OAI.Probability.LogConcave.JetEstimates.WireStep",
+  "OAI.Probability.LogConcave.LowerBounds.CouplingNoise",
+  "OAI.Probability.LogConcave.LowerBounds.DensityCoefficient",
+  "OAI.Probability.LogConcave.LowerBounds.FrameTransport",
+  "OAI.Probability.LogConcave.LowerBounds.HardEigenOutput",
+  "OAI.Probability.LogConcave.LowerBounds.LinearHistory",
+  "OAI.Probability.LogConcave.LowerBounds.PrefixSpace",
+  "OAI.Probability.LogConcave.LowerBounds.RevealRotation",
+  "OAI.Probability.LogConcave.LowerBounds.RotationIsometry",
+  "OAI.Probability.LogConcave.LowerBounds.RoundFrames",
+  "OAI.Probability.LogConcave.LowerBounds.SpectrumOperator",
+  "OAI.Probability.LogConcave.LowerBounds.Theta",
+  "OAI.Probability.LogConcave.LowerBounds.TranscriptRejection",
+  "OAI.Probability.LogConcave.LowerBounds.WeightedEvaluation",
+  "OAI.Probability.LogConcave.Main",
+  "OAI.Probability.LogConcave.Model",
+  "OAI.Probability.LogConcave.Numerics.BaseVariation",
+  "OAI.Probability.LogConcave.Numerics.BaseVariationCenters",
+  "OAI.Probability.LogConcave.Numerics.Basis",
+  "OAI.Probability.LogConcave.Numerics.BasisDerivative",
+  "OAI.Probability.LogConcave.Numerics.CenterValuesMono",
+  "OAI.Probability.LogConcave.Numerics.CenteringStateQuadratureBudget",
+  "OAI.Probability.LogConcave.Numerics.CenteringVelocityPicard",
+  "OAI.Probability.LogConcave.Numerics.CentersBoundPicard",
+  "OAI.Probability.LogConcave.Numerics.ChainTaylor",
+  "OAI.Probability.LogConcave.Numerics.ChildNoise",
+  "OAI.Probability.LogConcave.Numerics.CompileDeclaredRootNormalized",
+  "OAI.Probability.LogConcave.Numerics.CompileDeclaredRootShift",
+  "OAI.Probability.LogConcave.Numerics.CompositeAngle",
+  "OAI.Probability.LogConcave.Numerics.Correction",
+  "OAI.Probability.LogConcave.Numerics.Cost",
+  "OAI.Probability.LogConcave.Numerics.DerivSetIntegral",
+  "OAI.Probability.LogConcave.Numerics.EvalLipschitz",
+  "OAI.Probability.LogConcave.Numerics.Forward",
+  "OAI.Probability.LogConcave.Numerics.GradientBound",
+  "OAI.Probability.LogConcave.Numerics.KernelActionPicardRms",
+  "OAI.Probability.LogConcave.Numerics.KernelCorrectionPicard",
+  "OAI.Probability.LogConcave.Numerics.LogMeshLength",
+  "OAI.Probability.LogConcave.Numerics.MeanTree",
+  "OAI.Probability.LogConcave.Numerics.NodeLp",
+  "OAI.Probability.LogConcave.Numerics.NodePolynomial",
+  "OAI.Probability.LogConcave.Numerics.NodesContinuous",
+  "OAI.Probability.LogConcave.Numerics.NormSubSqTwo",
+  "OAI.Probability.LogConcave.Numerics.OrdinaryDerivativeWeight",
+  "OAI.Probability.LogConcave.Numerics.ParametricFDeriv",
+  "OAI.Probability.LogConcave.Numerics.Picard",
+  "OAI.Probability.LogConcave.Numerics.ReanchorWeight",
+  "OAI.Probability.LogConcave.Numerics.Remainder",
+  "OAI.Probability.LogConcave.Numerics.RowGaussian",
+  "OAI.Probability.LogConcave.Numerics.RowTape",
+  "OAI.Probability.LogConcave.Numerics.ScalarPicard",
+  "OAI.Probability.LogConcave.Numerics.TaylorRemainderRms",
+  "OAI.Probability.LogConcave.Numerics.TwoendsContinuous",
+  "OAI.Probability.LogConcave.Numerics.VelocityWorkCoefficient",
+  "OAI.Probability.LogConcave.OraclePrograms.CalibratedMeanCircuit",
+  "OAI.Probability.LogConcave.OraclePrograms.CenteringMeanCircuit",
+  "OAI.Probability.LogConcave.OraclePrograms.CenteringMeanCircuitFull",
+  "OAI.Probability.LogConcave.OraclePrograms.CircuitBoundUpto",
+  "OAI.Probability.LogConcave.OraclePrograms.CircuitD",
+  "OAI.Probability.LogConcave.OraclePrograms.CircuitParameters",
+  "OAI.Probability.LogConcave.OraclePrograms.DampingCoefficient",
+  "OAI.Probability.LogConcave.OraclePrograms.Expression",
+  "OAI.Probability.LogConcave.OraclePrograms.Fresh",
+  "OAI.Probability.LogConcave.OraclePrograms.FullTape",
+  "OAI.Probability.LogConcave.OraclePrograms.IndependentSeq",
+  "OAI.Probability.LogConcave.OraclePrograms.MeanCorrect",
+  "OAI.Probability.LogConcave.OraclePrograms.MeanSize",
+  "OAI.Probability.LogConcave.OraclePrograms.MeanTreeBase",
+  "OAI.Probability.LogConcave.OraclePrograms.NoisyCenterSquaredError",
+  "OAI.Probability.LogConcave.OraclePrograms.NoisyCircuit",
+  "OAI.Probability.LogConcave.OraclePrograms.PairDistBounds",
+  "OAI.Probability.LogConcave.OraclePrograms.PrimitiveProducer",
+  "OAI.Probability.LogConcave.OraclePrograms.Program",
+  "OAI.Probability.LogConcave.OraclePrograms.ReservedProgram",
+  "OAI.Probability.LogConcave.OraclePrograms.RoutineBudget",
+  "OAI.Probability.LogConcave.OraclePrograms.RoutineKind",
+  "OAI.Probability.LogConcave.OraclePrograms.SampleCorrect",
+  "OAI.Probability.LogConcave.OraclePrograms.SampleParentEquivariant",
+  "OAI.Probability.LogConcave.OraclePrograms.SeedProgram",
+  "OAI.Probability.LogConcave.OraclePrograms.Shape",
+  "OAI.Probability.LogConcave.OraclePrograms.ShiftInvariant",
+  "OAI.Probability.LogConcave.OraclePrograms.SlotTransformAddShift",
+  "OAI.Probability.LogConcave.OraclePrograms.StandaloneCorrect",
+  "OAI.Probability.LogConcave.OraclePrograms.TerminalMean",
+  "OAI.Probability.LogConcave.OraclePrograms.TerminalMeanEquivariant",
+  "OAI.Probability.LogConcave.OraclePrograms.TerminalMeanProgram",
+  "OAI.Probability.LogConcave.OraclePrograms.TopProgram",
+  "OAI.Probability.LogConcave.OraclePrograms.TvPre",
+  "OAI.Probability.LogConcave.Sampling.AdjointCoordinateContinuous",
+  "OAI.Probability.LogConcave.Sampling.AdjointCoordinateProductLeft",
+  "OAI.Probability.LogConcave.Sampling.AnalyticBase",
+  "OAI.Probability.LogConcave.Sampling.AnchorGauge",
+  "OAI.Probability.LogConcave.Sampling.AngleNodes",
+  "OAI.Probability.LogConcave.Sampling.AverageLipschitz",
+  "OAI.Probability.LogConcave.Sampling.CenteringJointLaw",
+  "OAI.Probability.LogConcave.Sampling.CenteringOutputLaw",
+  "OAI.Probability.LogConcave.Sampling.CenteringVelocityInterpolationRms",
+  "OAI.Probability.LogConcave.Sampling.CenteringVelocityJoint",
+  "OAI.Probability.LogConcave.Sampling.ChangingChain",
+  "OAI.Probability.LogConcave.Sampling.ClosedFieldMean",
+  "OAI.Probability.LogConcave.Sampling.ComposedJetMajorant",
+  "OAI.Probability.LogConcave.Sampling.ConditionalFieldMean",
+  "OAI.Probability.LogConcave.Sampling.ConditionalMeanArray",
+  "OAI.Probability.LogConcave.Sampling.ConditionalMeanScalar",
+  "OAI.Probability.LogConcave.Sampling.ConditionalPositionMoment",
+  "OAI.Probability.LogConcave.Sampling.ConditionalSlotEmbedding",
+  "OAI.Probability.LogConcave.Sampling.ContinuousFirstOrderReply",
+  "OAI.Probability.LogConcave.Sampling.CoordinateProjection",
+  "OAI.Probability.LogConcave.Sampling.CoordinateRank",
+  "OAI.Probability.LogConcave.Sampling.Correlation",
+  "OAI.Probability.LogConcave.Sampling.Directional",
+  "OAI.Probability.LogConcave.Sampling.DirectionalAdjointCoordinate",
+  "OAI.Probability.LogConcave.Sampling.DirectionalBasisSum",
+  "OAI.Probability.LogConcave.Sampling.FDerivTimePartial",
+  "OAI.Probability.LogConcave.Sampling.FinSnocSlots",
+  "OAI.Probability.LogConcave.Sampling.FinsetSumSum",
+  "OAI.Probability.LogConcave.Sampling.HarmonicKernel",
+  "OAI.Probability.LogConcave.Sampling.HarmonicMeanDefect",
+  "OAI.Probability.LogConcave.Sampling.HarmonicMeanTaylorRms",
+  "OAI.Probability.LogConcave.Sampling.HarmonicPositionDeriv",
+  "OAI.Probability.LogConcave.Sampling.HarmonicStationaryMoment",
+  "OAI.Probability.LogConcave.Sampling.IdentityOutputEmbedding",
+  "OAI.Probability.LogConcave.Sampling.InnerBasisCoordinate",
+  "OAI.Probability.LogConcave.Sampling.InterpolationResidual",
+  "OAI.Probability.LogConcave.Sampling.IterTensorLie",
+  "OAI.Probability.LogConcave.Sampling.Jet",
+  "OAI.Probability.LogConcave.Sampling.JointConditionalLawProperties",
+  "OAI.Probability.LogConcave.Sampling.JointInterpolationLaw",
+  "OAI.Probability.LogConcave.Sampling.JointMeanMaterial",
+  "OAI.Probability.LogConcave.Sampling.JointPosition",
+  "OAI.Probability.LogConcave.Sampling.JointSpace",
+  "OAI.Probability.LogConcave.Sampling.JointU",
+  "OAI.Probability.LogConcave.Sampling.KernelTransportAction",
+  "OAI.Probability.LogConcave.Sampling.LintegralFinNatProd",
+  "OAI.Probability.LogConcave.Sampling.LogMeshCountRate",
+  "OAI.Probability.LogConcave.Sampling.Map",
+  "OAI.Probability.LogConcave.Sampling.MapProdFiberLaw",
+  "OAI.Probability.LogConcave.Sampling.MapProdSecondFiber",
+  "OAI.Probability.LogConcave.Sampling.MaterialScalar",
+  "OAI.Probability.LogConcave.Sampling.MatrixArrayAdjoint",
+  "OAI.Probability.LogConcave.Sampling.MatrixColor",
+  "OAI.Probability.LogConcave.Sampling.MeanMaterialL2",
+  "OAI.Probability.LogConcave.Sampling.MeanMaterialVector",
+  "OAI.Probability.LogConcave.Sampling.MeasureSmoothLipschitz",
+  "OAI.Probability.LogConcave.Sampling.MixingEnvelope",
+  "OAI.Probability.LogConcave.Sampling.NaturalMomentNorm",
+  "OAI.Probability.LogConcave.Sampling.NoiseKernel",
+  "OAI.Probability.LogConcave.Sampling.NormalizedDirection",
+  "OAI.Probability.LogConcave.Sampling.NormalizedScoreMajorant",
+  "OAI.Probability.LogConcave.Sampling.NormalizedTensor",
+  "OAI.Probability.LogConcave.Sampling.NormalizedTensorMajorantScale",
+  "OAI.Probability.LogConcave.Sampling.NumericalLayerCount",
+  "OAI.Probability.LogConcave.Sampling.NumericalScalars",
+  "OAI.Probability.LogConcave.Sampling.PairGauge",
+  "OAI.Probability.LogConcave.Sampling.PiAppendLaw",
+  "OAI.Probability.LogConcave.Sampling.PolynomialGrowth",
+  "OAI.Probability.LogConcave.Sampling.PosteriorJointIntegral",
+  "OAI.Probability.LogConcave.Sampling.PrependTape",
+  "OAI.Probability.LogConcave.Sampling.Primitive",
+  "OAI.Probability.LogConcave.Sampling.PrimitiveExpectedField",
+  "OAI.Probability.LogConcave.Sampling.PrimitiveExpectedFieldLipschitz",
+  "OAI.Probability.LogConcave.Sampling.PrimitiveField",
+  "OAI.Probability.LogConcave.Sampling.ProbabilityEndpoint",
+  "OAI.Probability.LogConcave.Sampling.ProbabilityInitialRms",
+  "OAI.Probability.LogConcave.Sampling.ProbabilityNodes",
+  "OAI.Probability.LogConcave.Sampling.ProbabilityNormalizedTerm",
+  "OAI.Probability.LogConcave.Sampling.ProbabilityTransportTrajectory",
+  "OAI.Probability.LogConcave.Sampling.ProbabilityVelocity",
+  "OAI.Probability.LogConcave.Sampling.ProdMapEventReal",
+  "OAI.Probability.LogConcave.Sampling.QuadraticExpectation",
+  "OAI.Probability.LogConcave.Sampling.Reindex",
+  "OAI.Probability.LogConcave.Sampling.SampleCorrelation",
+  "OAI.Probability.LogConcave.Sampling.ScaledMeanJet",
+  "OAI.Probability.LogConcave.Sampling.ScoreAugmented",
+  "OAI.Probability.LogConcave.Sampling.ScoreSlots",
+  "OAI.Probability.LogConcave.Sampling.SkewCenteringField",
+  "OAI.Probability.LogConcave.Sampling.SkewCenteringFieldSmooth",
+  "OAI.Probability.LogConcave.Sampling.SmoothTimeLocalization",
+  "OAI.Probability.LogConcave.Sampling.SpatialJacobianTimeDeriv",
+  "OAI.Probability.LogConcave.Sampling.SpatialTensor",
+  "OAI.Probability.LogConcave.Sampling.SpatialTensorArrayBound",
+  "OAI.Probability.LogConcave.Sampling.SpatialTensorContinuous",
+  "OAI.Probability.LogConcave.Sampling.SpatialTransport",
+  "OAI.Probability.LogConcave.Sampling.StateLaw",
+  "OAI.Probability.LogConcave.Sampling.StationaryMeanTarget",
+  "OAI.Probability.LogConcave.Sampling.StationaryTensorVectorRms",
+  "OAI.Probability.LogConcave.Sampling.TapeSnocEquiv",
+  "OAI.Probability.LogConcave.Sampling.TensorGrad",
+  "OAI.Probability.LogConcave.Sampling.TensorVector",
+  "OAI.Probability.LogConcave.Sampling.TerminalActionChainQuotient",
+  "OAI.Probability.LogConcave.Sampling.TerminalBackward",
+  "OAI.Probability.LogConcave.Sampling.TerminalJacobianInverse",
+  "OAI.Probability.LogConcave.Sampling.TerminalMean",
+  "OAI.Probability.LogConcave.Sampling.TerminalTransportConstant",
+  "OAI.Probability.LogConcave.Sampling.TiltedExpectation",
+  "OAI.Probability.LogConcave.Sampling.TimeBump",
+  "OAI.Probability.LogConcave.Sampling.TopScale",
+  "OAI.Probability.LogConcave.Sampling.TranslationIntegrationByParts",
+  "OAI.Probability.LogConcave.Sampling.TransportCorrectionMajorant",
+  "OAI.Probability.LogConcave.Sampling.TransportMajorant",
+  "OAI.Probability.LogConcave.Sampling.UnitUniform",
+  "OAI.Probability.LogConcave.Sampling.VelocityJointLip",
+  "OAI.Probability.LogConcave.TensorGraphs.AdjointMatrix",
+  "OAI.Probability.LogConcave.TensorGraphs.Chain",
+  "OAI.Probability.LogConcave.TensorGraphs.ColoringSplit",
+  "OAI.Probability.LogConcave.TensorGraphs.FieldPosition",
+  "OAI.Probability.LogConcave.TensorGraphs.HessianIncidenceTensor",
+  "OAI.Probability.LogConcave.TensorGraphs.HessianIncidentEquiv",
+  "OAI.Probability.LogConcave.TensorGraphs.History",
+  "OAI.Probability.LogConcave.TensorGraphs.IncidentMatrix",
+  "OAI.Probability.LogConcave.TensorGraphs.Inside",
+  "OAI.Probability.LogConcave.TensorGraphs.Live",
+  "OAI.Probability.LogConcave.TensorGraphs.PrimaryPositionTensor",
+  "OAI.Probability.LogConcave.TensorGraphs.RankEquiv",
+  "OAI.Probability.LogConcave.TensorGraphs.Vertex"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/LogConcaveQuery.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Probability.LogConcave.Main",
+   "name": "OAI.LogConcaveSampling.exact_source_main",
+   "statement_sha256": "ccb8af94282015f03f0e962c323b55e8fe487993380abf9a65f97e5a45a1b4d0"
+  }
+ ],
+ "task_id": "oai-log-concave-query",
+ "task_revision": 1,
+ "title": "OpenAI math: Subpolynomial query complexity for log-concave sampling: Subpolynomial query complexity for log-concave sampling",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

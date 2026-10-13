@@ -47,14 +47,23 @@ their packages (the task sha256 the set records), not their original node counts
 
 - `lcbench-v1` is the seven tasks of the study: ramsey96, slt26, slt49, permanent2, compactness5, mathlib197 and
   mathlib372 ([sets/lcbench-v1.json](../sets/lcbench-v1.json)). Submissions use their `warm` packages, for example
-  `ramsey96-warm`. This release is the release candidate `lcbench-v1-rc.10.3`: its packages, built by scorer
-  `1.0.0-rc.10.3`, are the assets of the GitHub release of that name, and the set's status is `candidate` until the
+  `ramsey96-warm`. This release is the release candidate `lcbench-v1-rc.11`: its packages, built by scorer
+  `1.0.0-rc.11`, are the assets of the GitHub release of that name, and the set's status is `candidate` until the
   final release freezes it. Each task's no_hint package is open too; an untouched no_hint package reports INVALID
-  (its target proofs are `sorry`) until your proofs replace them. The packages of the earlier release candidate
-  `lcbench-v1-rc.10.2` (scorer `1.0.0-rc.10.2`, the same node counts) are still accepted; the organizers verify their
-  bundles with the tools of that release.
-- More task sets will be added later, for example the published math challenges. A new set never changes an
-  existing one.
+  (its target proofs are `sorry`) until your proofs replace them. The packages of the earlier release candidates
+  `lcbench-v1-rc.10.3` and `lcbench-v1-rc.10.2` (the same node counts) are still accepted; the organizers verify
+  their bundles with the tools of those releases. These tasks use Lean v4.32.0.
+- `oai-v1` is 175 tasks made from the published math challenges of https://github.com/openai/math (its `lean/` folder
+  at commit `adc7f1241b42e322a6451854ab7e4b4c146bf78a`), one task per challenge of its main results
+  ([sets/oai-v1.json](../sets/oai-v1.json); each task's card, for example
+  [tasks/oai-matrix-fields/CARD.md](../tasks/oai-matrix-fields/CARD.md), describes it). These tasks use Lean v4.34.1.
+  Submissions use their `warm` packages, for example `oai-matrix-fields-warm`; there are no no_hint packages, because
+  a target's proof usually lives in lemmas of other editable files, so erasing the targets alone would not hide it.
+  Its packages, built by scorer `1.0.0-rc.11`, are the assets of the GitHub release `oai-v1-rc.11`, and the set's
+  status is `candidate` until the final release freezes it. Three challenges are not tasks: in each, a target
+  statement differs from the challenge's only in the names of bound variables, and a task requires the exact
+  statement (the set file lists them under `excluded`).
+- More task sets may be added later. A new set never changes an existing one.
 - Every leaderboard is per task set and per track. A result counts on a set only when its bundle was made from the
   package that set records.
 - Which tasks are open for submissions is listed in the submissions repository's README. The toy task
@@ -242,7 +251,7 @@ edits it when the status changes. It shows:
 A refused pull request gets the reasons instead. Push a new commit to fix it; the newest commit is checked again. For
 example, after the check of one toy bundle on `open` (a file shortened by hand, so `human_assisted: true`). The bundle,
 the scores and the receipt are real: the organizers' receipt of the toy file `tests/fixtures/toy/ToyArithHand_Basic.lean`
-at scorer `1.0.0-rc.10.3`. Only the verifier commit is shown as a placeholder: it is the commit of the MathCompressionBench checkout
+at scorer `1.0.0-rc.11`. Only the verifier commit is shown as a placeholder: it is the commit of the MathCompressionBench checkout
 that ran the check. `verifier_sha256` names the verifier's code itself; [VERIFY.md](VERIFY.md) shows how to compute it
 from your checkout.
 
@@ -263,23 +272,23 @@ from your checkout.
 | attempts per task | `3` |
 | links | `https://example.org/acme` |
 
-- toyarith-warm/c5349e772879080a8037e3948bbfe81a24629bcf88e7f0c1400205b478610758: verified (8,331 nodes; baseline 20,190) (the verified receipt matches the self-report)
+- toyarith-warm/91ad2fa10ad2363b52d2f1db75b0d5bf32822fe428750b077e8f6fc1cf8cd0f5: verified (8,331 nodes; baseline 20,190) (the verified receipt matches the self-report)
 
 **Receipts** (the organizers' receipts; each one is in their append-only receipt log):
 
 | task | submission | result | node count | receipt root | log entry |
 |---|---|---|---|---|---|
-| toyarith-warm | `c5349e772879080a` | verified | 8,331 | `4e0e4294ccc82a0c` | 1 |
+| toyarith-warm | `91ad2fa10ad2363b` | verified | 8,331 | `3c17e0c77ec8c4f9` | 1 |
 
-<details><summary>receipt of toyarith-warm/c5349e772879080a</summary>
+<details><summary>receipt of toyarith-warm/91ad2fa10ad2363b</summary>
 
 ```json
 {
- "bundle_sha256": "c5349e772879080a8037e3948bbfe81a24629bcf88e7f0c1400205b478610758",
+ "bundle_sha256": "91ad2fa10ad2363b52d2f1db75b0d5bf32822fe428750b077e8f6fc1cf8cd0f5",
  "problems": [],
  "receipt_log_entry": 1,
- "receipt_root": "4e0e4294ccc82a0ca1a74d2c3a9bf6d4fd38e05309c372cc1aeb45b8269a05e7",
- "receipt_sha256": "066c1eadae45fa0cef648a629014d815d545d5739c54079fe6f50ebb2515610f",
+ "receipt_root": "3c17e0c77ec8c4f9e182f4aa7a26abc322fd9c4cc9d0a2d9c8be0da61023aa48",
+ "receipt_sha256": "a4da116555baebbf13c95d8d7e08c6bc4a4a0a1425230e1559d165cd09462da8",
  "run": {
   "budget_seconds": "unlimited",
   "elapsed_seconds": null
@@ -291,13 +300,13 @@ from your checkout.
  },
  "status": "verified",
  "task_name": "toyarith-warm",
- "task_sha256": "a31d5e234130f7004defd452dd377ede58342e23dddc7741722afcaac41ba4cb",
+ "task_sha256": "6c2561ebc63ad9e5004aaadf6abd1a94fe5b949f230e3687df4897b8a517e55f",
  "track": null,
  "verdict": "ACCEPT",
  "verifier": {
   "commit": "<the MathCompressionBench commit that checked it>",
-  "scorer_version": "1.0.0-rc.10.3",
-  "verifier_sha256": "a10e8d62c30d7971c5e3795681ca66b90cb129ff949fdeb077c18ecb7b0953ba"
+  "scorer_version": "1.0.0-rc.11",
+  "verifier_sha256": "a891571ca685c3acd491f394349ca72c03f0ab7233005869222e20b049021a52"
  }
 }
 ```

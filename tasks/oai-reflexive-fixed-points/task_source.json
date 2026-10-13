@@ -1,0 +1,1281 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 20664671
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.ReflexiveFixedPoints",
+  "challenge_sha256": "e82d18ae968de9efbb0ea83aa401e95302a4b80686949107a3d0223335718d0d",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ReflexiveFixedPoints.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.ReflexiveFixedPoints",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.Nonexpansive.Main",
+   "theorem_names": [
+    "OAI.ReflexiveFixedPoints.exists_fixedPoint_of_canonicallyReflexive"
+   ]
+  },
+  "config_sha256": "9f178244093f7f2f109a6421da773b4f655512b030a965aca11257626c840537",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ReflexiveFixedPoints.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.ReflexiveFixedPoints.exists_fixedPoint_of_canonicallyReflexive": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/AdaptiveConvexPrefix.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.AdaptiveConvexPrefix",
+   "original_sha256": "64b8db848c4cf4e9006c9c3222104fcd37ef7fa02e2e82541034e16490b5894e",
+   "path": "OAI/Analysis/Nonexpansive/AdaptiveConvexPrefix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/AdaptiveParentReturn.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.AdaptiveParentReturn",
+   "original_sha256": "39e10d82ca351c8b951b959a9de1d16c88bef7d74d170fd387462a7d1df08fe6",
+   "path": "OAI/Analysis/Nonexpansive/AdaptiveParentReturn.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/AdaptiveRun.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.AdaptiveRun",
+   "original_sha256": "4963e640dc0846270f54da7a31d3320b69b7bc4005147fa094cb731542b4b220",
+   "path": "OAI/Analysis/Nonexpansive/AdaptiveRun.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/AdaptiveSelection.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.AdaptiveSelection",
+   "original_sha256": "a10a404c00a85e56abbb86a32267ab76efb0a97b02f0f574710703d6537252a5",
+   "path": "OAI/Analysis/Nonexpansive/AdaptiveSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/Anchor.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.Anchor",
+   "original_sha256": "8647be3c7c82077bb5206bc24a5ecabf96e50f2677fa5ca85db784acc404da8e",
+   "path": "OAI/Analysis/Nonexpansive/Anchor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/AnchorAdaptiveSelection.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.AnchorAdaptiveSelection",
+   "original_sha256": "21775ca3a3e58548fdfcded2541a68708b17a1dd5dec5600e5b3be85a4cba4df",
+   "path": "OAI/Analysis/Nonexpansive/AnchorAdaptiveSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/Basic.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.Basic",
+   "original_sha256": "d0711285fe696b2092c927b31ffff820f795f9ad60d8af451244b184ca96c980",
+   "path": "OAI/Analysis/Nonexpansive/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/BlockBefore.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.BlockBefore",
+   "original_sha256": "0d0132aa3ec9ee74b7bf5838d2c7b4f5763469e120a2c8e3a316c671b2558597",
+   "path": "OAI/Analysis/Nonexpansive/BlockBefore.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/BlockEstimates.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.BlockEstimates",
+   "original_sha256": "69a606726df61a03cc4d82a12bce1db494ee3261419666590844b4643fc5688d",
+   "path": "OAI/Analysis/Nonexpansive/BlockEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/BranchContradiction.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.BranchContradiction",
+   "original_sha256": "14c5725765638e9f258c1b67e5e8e0b2b4e1875cb2b9d8325f967914017e81a2",
+   "path": "OAI/Analysis/Nonexpansive/BranchContradiction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/CandidateAncestors.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.CandidateAncestors",
+   "original_sha256": "bfdef7063a64d5c4e1ece5c2a481e2f5c5b1abb58a98a445b7fe706f8e896f94",
+   "path": "OAI/Analysis/Nonexpansive/CandidateAncestors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/CandidateDetectors.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.CandidateDetectors",
+   "original_sha256": "e643b4f95f40b171fa985c29e90205ea668d72c959746fc112cbab51035ead5e",
+   "path": "OAI/Analysis/Nonexpansive/CandidateDetectors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/CandidateLabels.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.CandidateLabels",
+   "original_sha256": "5cb37dd69ec1b0ccd5718cea3baa78818b44ea4a9ec1aa9fd25e8a8ed83f4682",
+   "path": "OAI/Analysis/Nonexpansive/CandidateLabels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/CandidateLedger.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.CandidateLedger",
+   "original_sha256": "a53a0d03761e1179c433a773f0ca484a206036ee425a9451d1dcd00a20146801",
+   "path": "OAI/Analysis/Nonexpansive/CandidateLedger.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/CandidateLedgerJoin.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.CandidateLedgerJoin",
+   "original_sha256": "60710bd0af636d1d6c8d254d26045fe4b1515f58deb0638e04b6c610bd6aa07d",
+   "path": "OAI/Analysis/Nonexpansive/CandidateLedgerJoin.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/CandidateLevel.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.CandidateLevel",
+   "original_sha256": "f8302fea3b2e725f2ff74f00b20e7d994724db8e6c8ab07f68f44eb25157fc78",
+   "path": "OAI/Analysis/Nonexpansive/CandidateLevel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/CandidateLevelHistory.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.CandidateLevelHistory",
+   "original_sha256": "f3ab593c13f33d5def4c1c02d589ca6ee49cd8444e29d7ab469bd92475915310",
+   "path": "OAI/Analysis/Nonexpansive/CandidateLevelHistory.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/CandidatePredictions.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.CandidatePredictions",
+   "original_sha256": "35b684e3635b85fe72fa1f41a3ccd156b0e59e118552b1189a96917afb311d12",
+   "path": "OAI/Analysis/Nonexpansive/CandidatePredictions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/CandidatePreparation.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.CandidatePreparation",
+   "original_sha256": "da310219522def3634bdaf17aeb41671542fbf046ead6bbf5121b4b487e10f71",
+   "path": "OAI/Analysis/Nonexpansive/CandidatePreparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/CandidateRecords.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.CandidateRecords",
+   "original_sha256": "3c540c1167b9b7ce21e83ff8bf3bbd250c911ca7d89ff9acd94d3beda6cc58ca",
+   "path": "OAI/Analysis/Nonexpansive/CandidateRecords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/CandidateSelection.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.CandidateSelection",
+   "original_sha256": "a9bccc7979dceefc7826e778b1f275fd6544b32c7acc3ea041b8114ee71f4dd4",
+   "path": "OAI/Analysis/Nonexpansive/CandidateSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/CandidateStages.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.CandidateStages",
+   "original_sha256": "02a126e885338cb25897e8a096cc3177436d8490f980f85e4404562d8abc777e",
+   "path": "OAI/Analysis/Nonexpansive/CandidateStages.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/CandidateThreshold.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.CandidateThreshold",
+   "original_sha256": "075b6520152078df4a6905b42706f2047c2daa3a95b603f20a643f87f8a1f2de",
+   "path": "OAI/Analysis/Nonexpansive/CandidateThreshold.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/CandidateTolerance.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.CandidateTolerance",
+   "original_sha256": "09278f2c350569b00660da999b232edc747e976fcfea2a400a4ecd50582bb642",
+   "path": "OAI/Analysis/Nonexpansive/CandidateTolerance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/CandidateTreeTolerance.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.CandidateTreeTolerance",
+   "original_sha256": "95938cad9bec17d1e2bdf04c08f8df0931eaf23bdd55a92a82f95c95b6f735c5",
+   "path": "OAI/Analysis/Nonexpansive/CandidateTreeTolerance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/CommonTerminal.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.CommonTerminal",
+   "original_sha256": "e9abd4d05637bca03413f8674ed36bb4314ffb32da3bba8214d46b64b5121c88",
+   "path": "OAI/Analysis/Nonexpansive/CommonTerminal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/CompactDetector.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.CompactDetector",
+   "original_sha256": "08680c2cef4b2b9b8339990713d396223ab23fb3bed41b43acedd3b7ff00520e",
+   "path": "OAI/Analysis/Nonexpansive/CompactDetector.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/CompactMapSemigroup.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.CompactMapSemigroup",
+   "original_sha256": "625921dc917e6976f4994072b0febd6f45ac420f3466231fc4ef1487ad4108f1",
+   "path": "OAI/Analysis/Nonexpansive/CompactMapSemigroup.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/DenseDifferences.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.DenseDifferences",
+   "original_sha256": "b66c5c9b325ff8b7cb0171fdc329cd22d7e28dd76ef46d6a8d89530bac69c723",
+   "path": "OAI/Analysis/Nonexpansive/DenseDifferences.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/Diametral.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.Diametral",
+   "original_sha256": "c1cd71ee51391b6c8a816da39802c9f89e946e2c8515b6d336c901ac2ced4e11",
+   "path": "OAI/Analysis/Nonexpansive/Diametral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/FeasibleBranch.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.FeasibleBranch",
+   "original_sha256": "e3ddca043a9af7b50f7acc575b3fac50be974500dfe400542ca63273c7974261",
+   "path": "OAI/Analysis/Nonexpansive/FeasibleBranch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/FinitePrefixEmbedding.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.FinitePrefixEmbedding",
+   "original_sha256": "a9d73717114b4871acfe85b41e06f0b14b9d1b30c33bd439706843999714ddeb",
+   "path": "OAI/Analysis/Nonexpansive/FinitePrefixEmbedding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/FiniteWitness.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.FiniteWitness",
+   "original_sha256": "6f012ac1c665f9403333c7799cf289675de3b08daee496653c359af8c85ee714",
+   "path": "OAI/Analysis/Nonexpansive/FiniteWitness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/FrontierFromGroups.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.FrontierFromGroups",
+   "original_sha256": "180475af1bf19414f67c61aad0640110b8239a90ef6f99818ac1b834c4802b72",
+   "path": "OAI/Analysis/Nonexpansive/FrontierFromGroups.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/FrontierTower.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.FrontierTower",
+   "original_sha256": "52017dda5aac5e55a917240036f571db18c59933edf40e53ebed96bab8cab874",
+   "path": "OAI/Analysis/Nonexpansive/FrontierTower.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/FunctionalVanishing.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.FunctionalVanishing",
+   "original_sha256": "d07bc62de7c825bc3109229c3a7223f5a00ba4f8850b31c8c4e21475120ffcab",
+   "path": "OAI/Analysis/Nonexpansive/FunctionalVanishing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/GeneratedMaps.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.GeneratedMaps",
+   "original_sha256": "347ebbbfcf32784b0b54002d8ff3d8fac60614978db9441e301da9731b190ba4",
+   "path": "OAI/Analysis/Nonexpansive/GeneratedMaps.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/GlobalCandidateOrdinals.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.GlobalCandidateOrdinals",
+   "original_sha256": "364e732ced5cfe8c5c149b6821877d0e6323a8f7452f0510efba9b79cf9cbc0c",
+   "path": "OAI/Analysis/Nonexpansive/GlobalCandidateOrdinals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/LedgerPredictionLimits.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.LedgerPredictionLimits",
+   "original_sha256": "947273bb59c7d92439d7745c8343ccaf22181e08b7e9b4039a2c0ad59c9f6b7c",
+   "path": "OAI/Analysis/Nonexpansive/LedgerPredictionLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/ListRunPrefix.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.ListRunPrefix",
+   "original_sha256": "df18748b388051279debc7178d14eba4c409ef6772e354a4870fdac923e19ea1",
+   "path": "OAI/Analysis/Nonexpansive/ListRunPrefix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/Main.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.Main",
+   "original_sha256": "02b364de8f10014d374fd1260635240e7977a1646c92f82257919baf604dd66a",
+   "path": "OAI/Analysis/Nonexpansive/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/MinimalInvariant.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.MinimalInvariant",
+   "original_sha256": "2c805e533aa7667e406f2cf15f4585b9372a9ed7423baf5a78e0b160343ee4aa",
+   "path": "OAI/Analysis/Nonexpansive/MinimalInvariant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/Model.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.Model",
+   "original_sha256": "518f73018b8853c0ce2ee6dee618c37e803048ec93adea05250bae09d6a4a0da",
+   "path": "OAI/Analysis/Nonexpansive/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/NormalizedContradiction.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.NormalizedContradiction",
+   "original_sha256": "259af8a8b5484524c25fd4036e00b701a45fca1b5992ebef7c141b4de4f37bb5",
+   "path": "OAI/Analysis/Nonexpansive/NormalizedContradiction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/OrderedGroupConcat.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.OrderedGroupConcat",
+   "original_sha256": "0dd0a737c24e98b51c717dbee0b4d3702b5264191a6d35e275d6e0be9593a3eb",
+   "path": "OAI/Analysis/Nonexpansive/OrderedGroupConcat.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/OrderedTree.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.OrderedTree",
+   "original_sha256": "957acf57e9d24d3cfc68f016e9ba8ec14c50ffe6fadd7bf37f30e870cafe3ae2",
+   "path": "OAI/Analysis/Nonexpansive/OrderedTree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/OrderedTreeIntervals.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.OrderedTreeIntervals",
+   "original_sha256": "8a02459f011b2114c94fcb0b848d4cd99fa49b33ef8e49234a3d4c1c3ea9225b",
+   "path": "OAI/Analysis/Nonexpansive/OrderedTreeIntervals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/OriginalNorm.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.OriginalNorm",
+   "original_sha256": "0ced20cece54d415a84988ab22195d09ef0a28c830a8998a3ae01e4f6a79c8ab",
+   "path": "OAI/Analysis/Nonexpansive/OriginalNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/ParentReturnHistory.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.ParentReturnHistory",
+   "original_sha256": "de692e16f88f3c69ea90436cebbe295c1fd2a3840a955839d5873bb4f31f633b",
+   "path": "OAI/Analysis/Nonexpansive/ParentReturnHistory.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/PointwiseWeakApproximation.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.PointwiseWeakApproximation",
+   "original_sha256": "b81e3c00abc0e1989e3662a2e1a35662b637cea230fc307e46844968fb042b3b",
+   "path": "OAI/Analysis/Nonexpansive/PointwiseWeakApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/PredictionCompact.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.PredictionCompact",
+   "original_sha256": "2456393978ac832f5c9b152ffaf12026044ad22f206c4d52a242532451c96433",
+   "path": "OAI/Analysis/Nonexpansive/PredictionCompact.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/PredictionCutoff.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.PredictionCutoff",
+   "original_sha256": "0bb1900a29bec758c68d6a58fb2581cef96597d6a70a3593f7675fa8964968e3",
+   "path": "OAI/Analysis/Nonexpansive/PredictionCutoff.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/PredictionOutputs.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.PredictionOutputs",
+   "original_sha256": "dba75daf63d1ce2eeb5f210fd1d1e3a4a3c8c8b63d5ffc5f87022022c875b768",
+   "path": "OAI/Analysis/Nonexpansive/PredictionOutputs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/PrefixPredictionOutputs.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.PrefixPredictionOutputs",
+   "original_sha256": "efa2475c7eec1f2f8b30251f8c86ea0bef6c17fda5ca3248dd480f18963502fa",
+   "path": "OAI/Analysis/Nonexpansive/PrefixPredictionOutputs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/PrefixPredictionReindex.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.PrefixPredictionReindex",
+   "original_sha256": "3391b2b4685ac1f9cfd48b61a8ec7853a63c6c90f3ce2c5bab4e5b7e40defc3e",
+   "path": "OAI/Analysis/Nonexpansive/PrefixPredictionReindex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/Reduction.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.Reduction",
+   "original_sha256": "2dfe708b1e9a0d2f8b0be283b5d8c2d2cac0e1a42f34a162d342e832d805e89c",
+   "path": "OAI/Analysis/Nonexpansive/Reduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/Resolvents.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.Resolvents",
+   "original_sha256": "77f054a8c1c94868323e3117c672a24e21fedf6030661a002742d97d06b97bf7",
+   "path": "OAI/Analysis/Nonexpansive/Resolvents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/ScalarNormalization.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.ScalarNormalization",
+   "original_sha256": "a0b69b0d9a0290e6a39ac4f9846b69a628f2306467958b52d460abc36a36ab9d",
+   "path": "OAI/Analysis/Nonexpansive/ScalarNormalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/SeparableInvariant.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.SeparableInvariant",
+   "original_sha256": "59ceb7cf640dafd6f2d7e9ba6d5d3c0df5a4db32cef3fd1c916590e48caf8938",
+   "path": "OAI/Analysis/Nonexpansive/SeparableInvariant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/SequentialHistory.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.SequentialHistory",
+   "original_sha256": "be28316c688c25f7fe5f9b336b3297ec7379a6dda56f7c52776a8834ac2982bf",
+   "path": "OAI/Analysis/Nonexpansive/SequentialHistory.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/SubtreeErrors.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.SubtreeErrors",
+   "original_sha256": "5cb4f214f45ea34e0e14674e6faf2748a63a6f4c614bf9c787abfc905a598784",
+   "path": "OAI/Analysis/Nonexpansive/SubtreeErrors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/SubtreeEvaluation.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.SubtreeEvaluation",
+   "original_sha256": "a8d42fd4d633f25cf59974cc99e2435d963bb8b29f39f22b7267c421d3a0b36b",
+   "path": "OAI/Analysis/Nonexpansive/SubtreeEvaluation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/SwitchingBlocks.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.SwitchingBlocks",
+   "original_sha256": "3d27139ac0cfedf658f204219d169d1c6e07f7744c76c2277dac43fa5654fd91",
+   "path": "OAI/Analysis/Nonexpansive/SwitchingBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/SwitchingNorm.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.SwitchingNorm",
+   "original_sha256": "117186435c35d8373c65bf5ea755bda8edd86c7c5a27326995144c85d21a4821",
+   "path": "OAI/Analysis/Nonexpansive/SwitchingNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/SwitchingScalar.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.SwitchingScalar",
+   "original_sha256": "13a73658aa4ca4dfe36e9c7e7bd7e5aa2b7b674239a9302e1ba90eb0835b2af9",
+   "path": "OAI/Analysis/Nonexpansive/SwitchingScalar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/SwitchingStates.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.SwitchingStates",
+   "original_sha256": "85caee04f57c1e61177ffbab73c7f4c380160bbbf5441c9ff683b0a1b8b0f8e6",
+   "path": "OAI/Analysis/Nonexpansive/SwitchingStates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/SwitchingTreeData.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.SwitchingTreeData",
+   "original_sha256": "108fec4e3460db955a5a2113df6972aafd134c73d9e0a401447c285bec3779ff",
+   "path": "OAI/Analysis/Nonexpansive/SwitchingTreeData.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/TailMapSemigroup.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.TailMapSemigroup",
+   "original_sha256": "52fa04ae586e19f7fc08d3034d88cb1c9d72c90b1ec3e13010ae82f86fb27fa7",
+   "path": "OAI/Analysis/Nonexpansive/TailMapSemigroup.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/TailMaps.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.TailMaps",
+   "original_sha256": "11b68e31ce3f44edcfb1f7db59a230e5c1ca4710b9e42d33ddd52d96ba37efd2",
+   "path": "OAI/Analysis/Nonexpansive/TailMaps.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/TerminalSequence.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.TerminalSequence",
+   "original_sha256": "fb687c4ade0ff47713536e2f96283a6049e0696df6cb90effefb5ea1229fa1de",
+   "path": "OAI/Analysis/Nonexpansive/TerminalSequence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/TransmittedSubtreeErrors.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.TransmittedSubtreeErrors",
+   "original_sha256": "765996b2dbd669701d249979640a9a766e513fa87d0068cf2401da2893d96b0a",
+   "path": "OAI/Analysis/Nonexpansive/TransmittedSubtreeErrors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/TreeBudget.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.TreeBudget",
+   "original_sha256": "e4594e3ab845bf913ab5f3736e34c7b02ca2a1020b9afab292af3b3b19bbb441",
+   "path": "OAI/Analysis/Nonexpansive/TreeBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/TreeEvaluation.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.TreeEvaluation",
+   "original_sha256": "6b98983a1cc6b593ddcb3a2c9a7061e58e2778691db061aae2154b000bb14422",
+   "path": "OAI/Analysis/Nonexpansive/TreeEvaluation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/TreeFiniteWitness.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.TreeFiniteWitness",
+   "original_sha256": "07e24b76264e538a872c1c82a8bd3fd88c2a3ab7b4e0e7253f4a07209fdbb912",
+   "path": "OAI/Analysis/Nonexpansive/TreeFiniteWitness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/TreeFrontier.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.TreeFrontier",
+   "original_sha256": "7cf789cc30cdb0768956e5e236611709e6e6b18b0270c56c93fe921d4b7fd42a",
+   "path": "OAI/Analysis/Nonexpansive/TreeFrontier.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/TreeProducer.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.TreeProducer",
+   "original_sha256": "1eaf8be7c64691544f6cc6a9490192953c27504415e246ecc6c8a11cecf4e284",
+   "path": "OAI/Analysis/Nonexpansive/TreeProducer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/TreeTerminal.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.TreeTerminal",
+   "original_sha256": "4f864b23ddaecd91f1932b7daa1b51e4109143ccc2a309a8ce205a86ab6b917a",
+   "path": "OAI/Analysis/Nonexpansive/TreeTerminal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/TreeTolerance.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.TreeTolerance",
+   "original_sha256": "7db4a4cd31912a27c281311fb8e59741a75c8829a21c49f78aa624794fbb3744",
+   "path": "OAI/Analysis/Nonexpansive/TreeTolerance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/WeakBranchIntersection.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.WeakBranchIntersection",
+   "original_sha256": "6d50f045526b271ffc66b856d66bd83da07b9204685f8a03c92427e63d29fe46",
+   "path": "OAI/Analysis/Nonexpansive/WeakBranchIntersection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/WeakCommonTerminal.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.WeakCommonTerminal",
+   "original_sha256": "06cf2526639da45b8d3621683d106296490ef006348369a792e525c43d175ef2",
+   "path": "OAI/Analysis/Nonexpansive/WeakCommonTerminal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/WeakCompactness.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.WeakCompactness",
+   "original_sha256": "0cc39538f704d71bd98b712c00773fcf860d76f3ebb225e1fcd524453fc5b497",
+   "path": "OAI/Analysis/Nonexpansive/WeakCompactness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/WeakMetric.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.WeakMetric",
+   "original_sha256": "fdf774c3d3593c3268f310ab383292b925722d5cc406b442db4ff343fa0a4095",
+   "path": "OAI/Analysis/Nonexpansive/WeakMetric.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/WeakNestedConvexHull.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.WeakNestedConvexHull",
+   "original_sha256": "eca9fbbdf5c1d671d727829db54e4b2361bee4da9adf06a9389cf74a02a15828",
+   "path": "OAI/Analysis/Nonexpansive/WeakNestedConvexHull.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/WeakSelfMap.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.WeakSelfMap",
+   "original_sha256": "4532be1472e10882f865026837ad08b21514172f800be084ca1e72ea7bc0c5f1",
+   "path": "OAI/Analysis/Nonexpansive/WeakSelfMap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/WeightedDeficit.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.WeightedDeficit",
+   "original_sha256": "bac82fe68285d3193d592188e1e15cd7e86503fa7df7171155ebb92637785f3c",
+   "path": "OAI/Analysis/Nonexpansive/WeightedDeficit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/Nonexpansive/WeightedTree.lean"
+   },
+   "module": "OAI.Analysis.Nonexpansive.WeightedTree",
+   "original_sha256": "d3932ea17ba4ad1caa4c65ba6a6fad3eff9ed0964b4abe1f7d0a1752f0b0d8a4",
+   "path": "OAI/Analysis/Nonexpansive/WeightedTree.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.Nonexpansive.AdaptiveConvexPrefix",
+  "OAI.Analysis.Nonexpansive.AdaptiveParentReturn",
+  "OAI.Analysis.Nonexpansive.AdaptiveRun",
+  "OAI.Analysis.Nonexpansive.AdaptiveSelection",
+  "OAI.Analysis.Nonexpansive.Anchor",
+  "OAI.Analysis.Nonexpansive.AnchorAdaptiveSelection",
+  "OAI.Analysis.Nonexpansive.Basic",
+  "OAI.Analysis.Nonexpansive.BlockBefore",
+  "OAI.Analysis.Nonexpansive.BlockEstimates",
+  "OAI.Analysis.Nonexpansive.BranchContradiction",
+  "OAI.Analysis.Nonexpansive.CandidateAncestors",
+  "OAI.Analysis.Nonexpansive.CandidateDetectors",
+  "OAI.Analysis.Nonexpansive.CandidateLabels",
+  "OAI.Analysis.Nonexpansive.CandidateLedger",
+  "OAI.Analysis.Nonexpansive.CandidateLedgerJoin",
+  "OAI.Analysis.Nonexpansive.CandidateLevel",
+  "OAI.Analysis.Nonexpansive.CandidateLevelHistory",
+  "OAI.Analysis.Nonexpansive.CandidatePredictions",
+  "OAI.Analysis.Nonexpansive.CandidatePreparation",
+  "OAI.Analysis.Nonexpansive.CandidateRecords",
+  "OAI.Analysis.Nonexpansive.CandidateSelection",
+  "OAI.Analysis.Nonexpansive.CandidateStages",
+  "OAI.Analysis.Nonexpansive.CandidateThreshold",
+  "OAI.Analysis.Nonexpansive.CandidateTolerance",
+  "OAI.Analysis.Nonexpansive.CandidateTreeTolerance",
+  "OAI.Analysis.Nonexpansive.CommonTerminal",
+  "OAI.Analysis.Nonexpansive.CompactDetector",
+  "OAI.Analysis.Nonexpansive.CompactMapSemigroup",
+  "OAI.Analysis.Nonexpansive.DenseDifferences",
+  "OAI.Analysis.Nonexpansive.Diametral",
+  "OAI.Analysis.Nonexpansive.FeasibleBranch",
+  "OAI.Analysis.Nonexpansive.FinitePrefixEmbedding",
+  "OAI.Analysis.Nonexpansive.FiniteWitness",
+  "OAI.Analysis.Nonexpansive.FrontierFromGroups",
+  "OAI.Analysis.Nonexpansive.FrontierTower",
+  "OAI.Analysis.Nonexpansive.FunctionalVanishing",
+  "OAI.Analysis.Nonexpansive.GeneratedMaps",
+  "OAI.Analysis.Nonexpansive.GlobalCandidateOrdinals",
+  "OAI.Analysis.Nonexpansive.LedgerPredictionLimits",
+  "OAI.Analysis.Nonexpansive.ListRunPrefix",
+  "OAI.Analysis.Nonexpansive.Main",
+  "OAI.Analysis.Nonexpansive.MinimalInvariant",
+  "OAI.Analysis.Nonexpansive.Model",
+  "OAI.Analysis.Nonexpansive.NormalizedContradiction",
+  "OAI.Analysis.Nonexpansive.OrderedGroupConcat",
+  "OAI.Analysis.Nonexpansive.OrderedTree",
+  "OAI.Analysis.Nonexpansive.OrderedTreeIntervals",
+  "OAI.Analysis.Nonexpansive.OriginalNorm",
+  "OAI.Analysis.Nonexpansive.ParentReturnHistory",
+  "OAI.Analysis.Nonexpansive.PointwiseWeakApproximation",
+  "OAI.Analysis.Nonexpansive.PredictionCompact",
+  "OAI.Analysis.Nonexpansive.PredictionCutoff",
+  "OAI.Analysis.Nonexpansive.PredictionOutputs",
+  "OAI.Analysis.Nonexpansive.PrefixPredictionOutputs",
+  "OAI.Analysis.Nonexpansive.PrefixPredictionReindex",
+  "OAI.Analysis.Nonexpansive.Reduction",
+  "OAI.Analysis.Nonexpansive.Resolvents",
+  "OAI.Analysis.Nonexpansive.ScalarNormalization",
+  "OAI.Analysis.Nonexpansive.SeparableInvariant",
+  "OAI.Analysis.Nonexpansive.SequentialHistory",
+  "OAI.Analysis.Nonexpansive.SubtreeErrors",
+  "OAI.Analysis.Nonexpansive.SubtreeEvaluation",
+  "OAI.Analysis.Nonexpansive.SwitchingBlocks",
+  "OAI.Analysis.Nonexpansive.SwitchingNorm",
+  "OAI.Analysis.Nonexpansive.SwitchingScalar",
+  "OAI.Analysis.Nonexpansive.SwitchingStates",
+  "OAI.Analysis.Nonexpansive.SwitchingTreeData",
+  "OAI.Analysis.Nonexpansive.TailMapSemigroup",
+  "OAI.Analysis.Nonexpansive.TailMaps",
+  "OAI.Analysis.Nonexpansive.TerminalSequence",
+  "OAI.Analysis.Nonexpansive.TransmittedSubtreeErrors",
+  "OAI.Analysis.Nonexpansive.TreeBudget",
+  "OAI.Analysis.Nonexpansive.TreeEvaluation",
+  "OAI.Analysis.Nonexpansive.TreeFiniteWitness",
+  "OAI.Analysis.Nonexpansive.TreeFrontier",
+  "OAI.Analysis.Nonexpansive.TreeProducer",
+  "OAI.Analysis.Nonexpansive.TreeTerminal",
+  "OAI.Analysis.Nonexpansive.TreeTolerance",
+  "OAI.Analysis.Nonexpansive.WeakBranchIntersection",
+  "OAI.Analysis.Nonexpansive.WeakCommonTerminal",
+  "OAI.Analysis.Nonexpansive.WeakCompactness",
+  "OAI.Analysis.Nonexpansive.WeakMetric",
+  "OAI.Analysis.Nonexpansive.WeakNestedConvexHull",
+  "OAI.Analysis.Nonexpansive.WeakSelfMap",
+  "OAI.Analysis.Nonexpansive.WeightedDeficit",
+  "OAI.Analysis.Nonexpansive.WeightedTree"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/ReflexiveFixedPoints.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.Nonexpansive.Main",
+   "name": "OAI.ReflexiveFixedPoints.exists_fixedPoint_of_canonicallyReflexive",
+   "statement_sha256": "1d59aba0030563d046bce16eebc7951ae63beec978f13d8ae35978e748b01847"
+  }
+ ],
+ "task_id": "oai-reflexive-fixed-points",
+ "task_revision": 1,
+ "title": "OpenAI math: Nonexpansive fixed points in reflexive Banach spaces: Nonexpansive fixed points in reflexive spaces",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

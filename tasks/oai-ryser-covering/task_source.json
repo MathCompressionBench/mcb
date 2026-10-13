@@ -1,0 +1,2591 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 78530143
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.RyserCovering",
+  "challenge_sha256": "ce109f1b71b5131eae54916ffb0aabd36a3b90eaf0780bf2a58afec1aaf4ebe4",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/RyserCovering.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.RyserCovering",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Combinatorics.Ryser.Construction.Main",
+   "theorem_names": [
+    "OAI.RyserCoveringCounterexample.exists_prime_eventually_counterexampleRank"
+   ]
+  },
+  "config_sha256": "496544b0aed472d462671c4902146331b0f0e4a4067ea1ba72a7a992f68d2864",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/RyserCovering.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.RyserCoveringCounterexample.exists_prime_eventually_counterexampleRank": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/ActualHypergraph.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.ActualHypergraph",
+   "original_sha256": "33493c3f86a0fcb223250127e89291b705f8f7409a676a1f8a727c360e0a3ea6",
+   "path": "OAI/Combinatorics/Ryser/Construction/ActualHypergraph.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/AmbientDeletionGeometry.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.AmbientDeletionGeometry",
+   "original_sha256": "545879537a70008bbf0e543afdc09f744b2a5ff196dc5ef6797b8b00d4257ad0",
+   "path": "OAI/Combinatorics/Ryser/Construction/AmbientDeletionGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/AmbientDeletionNumerics.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.AmbientDeletionNumerics",
+   "original_sha256": "7ff12838504d9987535c8467821004582fed223981a6260c53250e2b4919ec31",
+   "path": "OAI/Combinatorics/Ryser/Construction/AmbientDeletionNumerics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/AmbientDeletionPoolLaw.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.AmbientDeletionPoolLaw",
+   "original_sha256": "c0368144cebe6436fc183d9e89977d6492e77eb4546ba52e7c8bd9a27cf7e13b",
+   "path": "OAI/Combinatorics/Ryser/Construction/AmbientDeletionPoolLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/AmbientDeletionProcess.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.AmbientDeletionProcess",
+   "original_sha256": "7664356e8fc9aa59bc1b16d7efb99e856fb375587d8a2f822b27818b77cb77ea",
+   "path": "OAI/Combinatorics/Ryser/Construction/AmbientDeletionProcess.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/AmbientDeletionShapes.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.AmbientDeletionShapes",
+   "original_sha256": "6055b84de7ea0f69a0e5e31314b6bea7a36ec2a73b5571ab8cb71396d9db0b64",
+   "path": "OAI/Combinatorics/Ryser/Construction/AmbientDeletionShapes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/AmbientDeletionSurvivors.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.AmbientDeletionSurvivors",
+   "original_sha256": "34e77ecd2c7f7661f9eafdf6ccf42a9423a863025db0dc0cc56094ae4f7746c4",
+   "path": "OAI/Combinatorics/Ryser/Construction/AmbientDeletionSurvivors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/AmbientDeletionTrials.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.AmbientDeletionTrials",
+   "original_sha256": "8760095bb722897b12c4a645ca2f11df764fc9d9f0bbfd7806c8158730254250",
+   "path": "OAI/Combinatorics/Ryser/Construction/AmbientDeletionTrials.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/AmbientPoolExistence.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.AmbientPoolExistence",
+   "original_sha256": "56e8f6d7a31f1e3302ddedc77f91fc48aec4a56faedca1fc55784b105c2b7f8c",
+   "path": "OAI/Combinatorics/Ryser/Construction/AmbientPoolExistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/CoordinateCompatibility.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.CoordinateCompatibility",
+   "original_sha256": "1f669537fa53e81b419beea722ee0c5926c7c5fc46ece0c9263002eb7311e68f",
+   "path": "OAI/Combinatorics/Ryser/Construction/CoordinateCompatibility.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/CosetDirections.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.CosetDirections",
+   "original_sha256": "9388571afa6f3c98eb652b251bd0c65122db6bb2c9d646670a58856f27976360",
+   "path": "OAI/Combinatorics/Ryser/Construction/CosetDirections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/CosetIndex.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.CosetIndex",
+   "original_sha256": "3d6558b8e684a499bd610a0d0655a17e6ff0bc3faed54ef1dc750e6eccc10aef",
+   "path": "OAI/Combinatorics/Ryser/Construction/CosetIndex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/CoverBudget.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.CoverBudget",
+   "original_sha256": "6f45410aeafc6370bc1c32188d33a6e33f35a346488b2c06af1283fec7af51ff",
+   "path": "OAI/Combinatorics/Ryser/Construction/CoverBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/CoverCounting.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.CoverCounting",
+   "original_sha256": "38f42707cd704b7672422473705f0b9796a4ad1f0e25e5722d36b00e4519667d",
+   "path": "OAI/Combinatorics/Ryser/Construction/CoverCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/CoverPencil.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.CoverPencil",
+   "original_sha256": "95fb216a98493d1aa042c5f25fbd3943c7c431690ae25d5ca660c3f13e4e21b7",
+   "path": "OAI/Combinatorics/Ryser/Construction/CoverPencil.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/DeletionIntersection.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.DeletionIntersection",
+   "original_sha256": "19297f066f011543dc59d42352a181784743fa830aa36329f2649351902c4ad5",
+   "path": "OAI/Combinatorics/Ryser/Construction/DeletionIntersection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/DeletionLines.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.DeletionLines",
+   "original_sha256": "60f5166afa48280704af52f41f80ec4d940294708d7983a65adb0cafed48b98c",
+   "path": "OAI/Combinatorics/Ryser/Construction/DeletionLines.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/DeletionParallel.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.DeletionParallel",
+   "original_sha256": "10fe51ec956e2ad7a6b1889f626ea4432b86bfb9b7a2d665cf0f65f8107f1c41",
+   "path": "OAI/Combinatorics/Ryser/Construction/DeletionParallel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/DeletionUnionBasic.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.DeletionUnionBasic",
+   "original_sha256": "c7bbecb6a9163353990795e2ecececba2309adb18e46069da354b1ea2513b5f0",
+   "path": "OAI/Combinatorics/Ryser/Construction/DeletionUnionBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/DeletionUnionInside.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.DeletionUnionInside",
+   "original_sha256": "244b6209d5cca750deb88c9fcf54914e2463ad8b50fde0c5ffc8f8623325b646",
+   "path": "OAI/Combinatorics/Ryser/Construction/DeletionUnionInside.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/DeletionUnionOutside.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.DeletionUnionOutside",
+   "original_sha256": "6dddc67d6cfd5ba9b90cdec4f03224a600e96d8d2036c17eacdbb4b13f06d59a",
+   "path": "OAI/Combinatorics/Ryser/Construction/DeletionUnionOutside.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/DeterministicCover.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.DeterministicCover",
+   "original_sha256": "e3ed0999fb96855e84176f2cf6472d09de275250a5ac5a954fc80bdd79fd62ad",
+   "path": "OAI/Combinatorics/Ryser/Construction/DeterministicCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/DirectionPlacement.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.DirectionPlacement",
+   "original_sha256": "49563e0896b7468e1c295e9b63484c618e8e6aa05371e1902cfe38c18c205243",
+   "path": "OAI/Combinatorics/Ryser/Construction/DirectionPlacement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/DirectionSets.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.DirectionSets",
+   "original_sha256": "a18c036f377c3c20254a52c682a8f4cb235b7b391b0fc06713f942162646c02a",
+   "path": "OAI/Combinatorics/Ryser/Construction/DirectionSets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/ExceptionalBudget.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.ExceptionalBudget",
+   "original_sha256": "cd5d363cbba52bbcbe860283a287df12592f6ab4e91fa58f4f71fb89d09f077a",
+   "path": "OAI/Combinatorics/Ryser/Construction/ExceptionalBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/ExceptionalCover.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.ExceptionalCover",
+   "original_sha256": "15cbf23b48eac725cdfa58f2cd46625fad1b09b55cee6861785fd31b94aeeae6",
+   "path": "OAI/Combinatorics/Ryser/Construction/ExceptionalCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/ExtraDirections.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.ExtraDirections",
+   "original_sha256": "cad26ea3c73b53632932903d2bfce926b7e40d8bae2dd550cacb263f190aa512",
+   "path": "OAI/Combinatorics/Ryser/Construction/ExtraDirections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/FiniteInsideCover.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.FiniteInsideCover",
+   "original_sha256": "cb9c893eeb34848769d6583346cf815bdbce80ea2414677725c9ded108fcf4c5",
+   "path": "OAI/Combinatorics/Ryser/Construction/FiniteInsideCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/FiniteOutsideAction.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.FiniteOutsideAction",
+   "original_sha256": "c9723a88e9e5e1a09b41604d8a7f1dcd1e7926e039e31a6803cad4fd9cf6b375",
+   "path": "OAI/Combinatorics/Ryser/Construction/FiniteOutsideAction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/FiniteOutsideCover.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.FiniteOutsideCover",
+   "original_sha256": "01f05a7c8ab4d642bdb71960e1fa77e2afc6021b5937806ca7cfde18442fcc6b",
+   "path": "OAI/Combinatorics/Ryser/Construction/FiniteOutsideCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/FiniteSelectionCounting.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.FiniteSelectionCounting",
+   "original_sha256": "68956851a2684cd740fd40141481fb0f8d6d318586ec053353235a4498bffa6d",
+   "path": "OAI/Combinatorics/Ryser/Construction/FiniteSelectionCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/GadgetAlgebra.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.GadgetAlgebra",
+   "original_sha256": "7a5bc82ab1eded94332f6f11b2c7edc586905e7d7b88f5667439148744eacb7f",
+   "path": "OAI/Combinatorics/Ryser/Construction/GadgetAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/GadgetConcentration.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.GadgetConcentration",
+   "original_sha256": "2619367024aada786937e131a77a4c113abfa591de3f6c731dc9850469dd20f9",
+   "path": "OAI/Combinatorics/Ryser/Construction/GadgetConcentration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/GadgetConsequences.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.GadgetConsequences",
+   "original_sha256": "2779c29a0bf14fa51e596e7026147ec022b0e54623f2650144921b1ff3e76da1",
+   "path": "OAI/Combinatorics/Ryser/Construction/GadgetConsequences.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/GadgetCover.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.GadgetCover",
+   "original_sha256": "18dfe4f07c34828ad808b2820ab5782fec75261a29df23c130e4c72dd3e0fe6a",
+   "path": "OAI/Combinatorics/Ryser/Construction/GadgetCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/GadgetDefinitions.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.GadgetDefinitions",
+   "original_sha256": "ad909da72188fa064fdaba837832c2c1d007dd46b4dc53092852550baba00dc8",
+   "path": "OAI/Combinatorics/Ryser/Construction/GadgetDefinitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/GadgetExistence.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.GadgetExistence",
+   "original_sha256": "49ea3077df182946a91a6dbc478c389e9e471e24bb63037c097c81f0a2ad1c3c",
+   "path": "OAI/Combinatorics/Ryser/Construction/GadgetExistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/GadgetGood.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.GadgetGood",
+   "original_sha256": "c95e2a7d26d271cb0372994436f5953a4a04ef1ddcb8df5af8bdfeec649584b6",
+   "path": "OAI/Combinatorics/Ryser/Construction/GadgetGood.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/GadgetOriginalCounts.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.GadgetOriginalCounts",
+   "original_sha256": "b5399e1c96cbaed8e3e56a302db50f3a2c0e29188cbc233bcdbca6c2cd5fb777",
+   "path": "OAI/Combinatorics/Ryser/Construction/GadgetOriginalCounts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/GadgetOriginalDensity.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.GadgetOriginalDensity",
+   "original_sha256": "b1d3384433724b5aa9c53042ed6cbdb1d858f2d1142ba32957d184769bdf1477",
+   "path": "OAI/Combinatorics/Ryser/Construction/GadgetOriginalDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/GadgetOriginalExpectation.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.GadgetOriginalExpectation",
+   "original_sha256": "1770dcb03b4b54bde2977100053b0ce449d4a66748f4e2d667e25aba7313b525",
+   "path": "OAI/Combinatorics/Ryser/Construction/GadgetOriginalExpectation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/GadgetProcess.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.GadgetProcess",
+   "original_sha256": "8a2933317923fca956e6a3a9ed531e32544245af2108c980c043f79afc6ac7c9",
+   "path": "OAI/Combinatorics/Ryser/Construction/GadgetProcess.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/GadgetShapes.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.GadgetShapes",
+   "original_sha256": "e616216931066b012627232d84f05e9ecf0a9468829aae55af53db9aef9f1453",
+   "path": "OAI/Combinatorics/Ryser/Construction/GadgetShapes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/GroupBounds.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.GroupBounds",
+   "original_sha256": "0d16802f1dbc07d4dc7de965159ddb2bc3e090f5702c9facf85e58e2557af5db",
+   "path": "OAI/Combinatorics/Ryser/Construction/GroupBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/GroupPlacement.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.GroupPlacement",
+   "original_sha256": "3318046f01c3c8b4f8e9739ed17b05f42df50519f8057ed6b393b361705cc44c",
+   "path": "OAI/Combinatorics/Ryser/Construction/GroupPlacement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/GroupSelection.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.GroupSelection",
+   "original_sha256": "df6e3faee0e7c220d346993a223f0986218b50bffcec00fc199665dad792f5b1",
+   "path": "OAI/Combinatorics/Ryser/Construction/GroupSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/Hypergraph.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.Hypergraph",
+   "original_sha256": "9cdca5eefc06b89f0ac0917143a03fb660effd333208cfc9a6c378889d6313a1",
+   "path": "OAI/Combinatorics/Ryser/Construction/Hypergraph.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/InfiniteCover.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.InfiniteCover",
+   "original_sha256": "6cb7a16c9fc0f520f7f48e81300b8e8caed69ff710ff114d949ff73b06786d3d",
+   "path": "OAI/Combinatorics/Ryser/Construction/InfiniteCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/Intersection.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.Intersection",
+   "original_sha256": "db05c92d684147a86328a278502f006ad3c4bd1b0fab3550a363be665ae6d163",
+   "path": "OAI/Combinatorics/Ryser/Construction/Intersection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/LabelAction.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.LabelAction",
+   "original_sha256": "8ec34c9aa725be209034b48475f1cca66e8eb2bde44c88bfb971b738a2d56248",
+   "path": "OAI/Combinatorics/Ryser/Construction/LabelAction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/LinearPlacement.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.LinearPlacement",
+   "original_sha256": "a265c6bdb3e781f9c3d68f2667b9af1475e0602055c021ea42bd185d9fabbec3",
+   "path": "OAI/Combinatorics/Ryser/Construction/LinearPlacement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/Main.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.Main",
+   "original_sha256": "a9e07fc87c05c763788fd6db62a04c8a18c612dfee2d6eaf5498f03d017a783b",
+   "path": "OAI/Combinatorics/Ryser/Construction/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/OrdinaryCover.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.OrdinaryCover",
+   "original_sha256": "87f65ce4a1e37ee2258c300e703a5cf1133c7f3fa70c9148ff6922c689a71b4e",
+   "path": "OAI/Combinatorics/Ryser/Construction/OrdinaryCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/PlacedLines.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.PlacedLines",
+   "original_sha256": "9a0d15dc477f887fbf494f398d9e966951ec839b0c25812b1e7031be6099e811",
+   "path": "OAI/Combinatorics/Ryser/Construction/PlacedLines.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/PlacementIntersection.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.PlacementIntersection",
+   "original_sha256": "8970b76558d8eb38befce91df6f7c5b55d51416a6c4931e4ec9a91e38237e5f2",
+   "path": "OAI/Combinatorics/Ryser/Construction/PlacementIntersection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/PoolThinAsymptotic.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.PoolThinAsymptotic",
+   "original_sha256": "073d8e5149ef1f6dc5d4bce09bf8e3192c41638a8859c9f4b4c93bbd9c519314",
+   "path": "OAI/Combinatorics/Ryser/Construction/PoolThinAsymptotic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/PoolThinGeometry.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.PoolThinGeometry",
+   "original_sha256": "15aedef4e32eb8b3490eaf3a56efe5398068596e19c81a43883e87d14b43aaa0",
+   "path": "OAI/Combinatorics/Ryser/Construction/PoolThinGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/PoolThinProbability.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.PoolThinProbability",
+   "original_sha256": "69de26c0aeb239d7067eec7b504fb692524e977e2ff538667afd87e108166579",
+   "path": "OAI/Combinatorics/Ryser/Construction/PoolThinProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/PoolThinSelection.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.PoolThinSelection",
+   "original_sha256": "6966ca896f33b96d0f1d91dcbab9a2aa340f240dbb0b325be75c2075bc0e2270",
+   "path": "OAI/Combinatorics/Ryser/Construction/PoolThinSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/SelectedHypergraph.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.SelectedHypergraph",
+   "original_sha256": "ded8445c28b41fdc18cda18f3ff2ebfc44723f2b323aade07cdf2cb5d4a21f2b",
+   "path": "OAI/Combinatorics/Ryser/Construction/SelectedHypergraph.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Construction/SmallPrimes.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Construction.SmallPrimes",
+   "original_sha256": "7256c0091f4db9bbecc785df933a12218bca566288a1e3994eb4a554b6c29ccf",
+   "path": "OAI/Combinatorics/Ryser/Construction/SmallPrimes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Domination/Append.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Domination.Append",
+   "original_sha256": "2827f4e3190c22687dbdd2ea5cacbcb5bd1fb1866b1a5b76a0cc3db1fde284d6",
+   "path": "OAI/Combinatorics/Ryser/Domination/Append.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Domination/Basic.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Domination.Basic",
+   "original_sha256": "fc11cfe0ff79c6df63bb6b41181e3af36476f71b7246fa29e00dfde26b427b76",
+   "path": "OAI/Combinatorics/Ryser/Domination/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Domination/Counting.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Domination.Counting",
+   "original_sha256": "184e2916649edcbc131b6bd776df5ca6b9bbfc46e2fd7f81362f0e56b7b9a883",
+   "path": "OAI/Combinatorics/Ryser/Domination/Counting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Domination/Exchange.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Domination.Exchange",
+   "original_sha256": "ee9f2913a8a283e9ae969efc7a89db8e7c8ef213bb3874211fe7706c23c9c921",
+   "path": "OAI/Combinatorics/Ryser/Domination/Exchange.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Domination/Extension.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Domination.Extension",
+   "original_sha256": "29c9fa24de16149b51369838c70bd4617fb15fb2205485142453f4e9c66d0095",
+   "path": "OAI/Combinatorics/Ryser/Domination/Extension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Domination/Main.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Domination.Main",
+   "original_sha256": "9bcf3860cb3ae8392696ff3f9c23a07462693077736b4e80abe5b8bff260bb74",
+   "path": "OAI/Combinatorics/Ryser/Domination/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Domination/Nonempty.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Domination.Nonempty",
+   "original_sha256": "233a005ab651f93411c564e4e241c77568eb57919f972755858a6e0046130f14",
+   "path": "OAI/Combinatorics/Ryser/Domination/Nonempty.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Domination/Seed.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Domination.Seed",
+   "original_sha256": "a1905c227271f5984e9d8301257109e820a4234c61600ac57a9ff119a8789ea9",
+   "path": "OAI/Combinatorics/Ryser/Domination/Seed.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Domination/TraceDefinitions.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Domination.TraceDefinitions",
+   "original_sha256": "441a05965132929949139fdf18880eb6026bf73d818023d8cce53da0e06dbefb",
+   "path": "OAI/Combinatorics/Ryser/Domination/TraceDefinitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Field/Extension.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Field.Extension",
+   "original_sha256": "ae193d59eef33b3b7d588617dbb40bec3a01b93f0bccbaa368d400fdfd6eb3b1",
+   "path": "OAI/Combinatorics/Ryser/Field/Extension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Field/ExtensionSubfields.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Field.ExtensionSubfields",
+   "original_sha256": "a30b5ea543875a8e339484bf4aba6e2c2d0b39647ea6a1d777b017b0196144f1",
+   "path": "OAI/Combinatorics/Ryser/Field/ExtensionSubfields.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Field/SubfieldBound.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Field.SubfieldBound",
+   "original_sha256": "ec90b7b98cbfa129dc8eb1f70b88a9ffa30b299f89379300f3fa3c35cf3cce3c",
+   "path": "OAI/Combinatorics/Ryser/Field/SubfieldBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Geometry/AffineJoins.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Geometry.AffineJoins",
+   "original_sha256": "21fd93d41b7bac424de9c5b2155d09ce3446c08c92c9de4703ff5887db788cb4",
+   "path": "OAI/Combinatorics/Ryser/Geometry/AffineJoins.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Geometry/Basic.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Geometry.Basic",
+   "original_sha256": "2123ad83254a51a0a830ec209c204a0af1d927f6bc672af0d7493431878da307",
+   "path": "OAI/Combinatorics/Ryser/Geometry/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Geometry/Cardinality.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Geometry.Cardinality",
+   "original_sha256": "588ae40d8f4fa14383536daea9d36c2c006d915206a030672754a8441e4724d0",
+   "path": "OAI/Combinatorics/Ryser/Geometry/Cardinality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Geometry/Normalization.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Geometry.Normalization",
+   "original_sha256": "cadf7d48e4442b2465ac18cfcc5fc1a7ab2d8b513d0b940d25fd7a2225cb97b0",
+   "path": "OAI/Combinatorics/Ryser/Geometry/Normalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Geometry/ProjectionMoments.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Geometry.ProjectionMoments",
+   "original_sha256": "a0b5333a235ede4489fe92edcbe52275345f13e696c3f852e674c699fc54e6c4",
+   "path": "OAI/Combinatorics/Ryser/Geometry/ProjectionMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Geometry/ProjectionPair.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Geometry.ProjectionPair",
+   "original_sha256": "ef456ab5ca661ee721a53b4a9bbbe84406c6e0324d4148118e0fb8b5c4095c06",
+   "path": "OAI/Combinatorics/Ryser/Geometry/ProjectionPair.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Geometry/ProjectiveJoins.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Geometry.ProjectiveJoins",
+   "original_sha256": "0ca3b93b972ccf4509adb1375ad11de7db927325a4238dd42553a05cd809aeae",
+   "path": "OAI/Combinatorics/Ryser/Geometry/ProjectiveJoins.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Geometry/ProjectiveTransformAffine.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Geometry.ProjectiveTransformAffine",
+   "original_sha256": "94d2a37627b6887166ced9b8982f479cdb962bf77fd2bf7d30edbde25692f5c0",
+   "path": "OAI/Combinatorics/Ryser/Geometry/ProjectiveTransformAffine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Geometry/ProjectiveTransformBasic.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Geometry.ProjectiveTransformBasic",
+   "original_sha256": "6248b68f958faf0f7f20022a463eaa6ebc6949e515e00aa9a0c10218ea3d7af8",
+   "path": "OAI/Combinatorics/Ryser/Geometry/ProjectiveTransformBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Geometry/ProjectiveTransformXY.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Geometry.ProjectiveTransformXY",
+   "original_sha256": "428f98098812831fa34b930954c3f7f0ab8b567618c9da0ec39599f15c9b70fe",
+   "path": "OAI/Combinatorics/Ryser/Geometry/ProjectiveTransformXY.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Geometry/ProjectiveTransformXZ.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Geometry.ProjectiveTransformXZ",
+   "original_sha256": "e18e0301102a7ed4a4e7c3af898758e601d8f66d854e26d0a6c843f707960825",
+   "path": "OAI/Combinatorics/Ryser/Geometry/ProjectiveTransformXZ.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Geometry/SliceEnergy.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Geometry.SliceEnergy",
+   "original_sha256": "1cca73f1861aa33bc6187226cb011f2b1aeee4067d313500536840d06ac49a30",
+   "path": "OAI/Combinatorics/Ryser/Geometry/SliceEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Hypergraph/Cover.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Hypergraph.Cover",
+   "original_sha256": "177850712f6a2383c5d5b6b0108c6eb10414267d0cd971281b9c4c8169470e13",
+   "path": "OAI/Combinatorics/Ryser/Hypergraph/Cover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Hypergraph/Definitions.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Hypergraph.Definitions",
+   "original_sha256": "1618084c0d398032c889769cdb755c5cf2376f67022b3ef8df1820a3e5490695",
+   "path": "OAI/Combinatorics/Ryser/Hypergraph/Definitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Hypergraph/Infinitude.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Hypergraph.Infinitude",
+   "original_sha256": "a057e4e0226e1f045b0478a5338a91d4c7e95de18d51695413272724a6599769",
+   "path": "OAI/Combinatorics/Ryser/Hypergraph/Infinitude.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Hypergraph/Matching.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Hypergraph.Matching",
+   "original_sha256": "f98485b77d7c4d7bef3fc35e67fb7dfd85db2e17f60c511fddea34e3db737c9f",
+   "path": "OAI/Combinatorics/Ryser/Hypergraph/Matching.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Hypergraph/Partite.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Hypergraph.Partite",
+   "original_sha256": "cfd6a1b8e97768480f983d37979011c568be70935ea0be9c58ae5c80b9d8d99f",
+   "path": "OAI/Combinatorics/Ryser/Hypergraph/Partite.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/AllLineCap.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.AllLineCap",
+   "original_sha256": "fb79c718beff39738781bcad257685f84fce487c9d3ecffa9fd71e724509eeb7",
+   "path": "OAI/Combinatorics/Ryser/Incidence/AllLineCap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/CoordinateTransfer.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.CoordinateTransfer",
+   "original_sha256": "4bcc3590e1eeda88d7fb579971a8158a7c9868475274a08dcea1a6f3e961cebb",
+   "path": "OAI/Combinatorics/Ryser/Incidence/CoordinateTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/CoordinateTransferSet.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.CoordinateTransferSet",
+   "original_sha256": "cb425be3dd5bf4fcb55474ddf29cf97eea92e83c237661d8ef4abb2a41826f7e",
+   "path": "OAI/Combinatorics/Ryser/Incidence/CoordinateTransferSet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/DegreeSquares.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.DegreeSquares",
+   "original_sha256": "58772e6fed058d2a06a8e51d3a4d25a8c7dcebd54b7410ba8bdffdc08fde3f5c",
+   "path": "OAI/Combinatorics/Ryser/Incidence/DegreeSquares.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/DenseNeighborhood.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.DenseNeighborhood",
+   "original_sha256": "2be2f7840352ab5d0f6d9798aebe5b31220acae8f3811faa3498c99c9098d987",
+   "path": "OAI/Combinatorics/Ryser/Incidence/DenseNeighborhood.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/ExtractedContradiction.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.ExtractedContradiction",
+   "original_sha256": "54a159140356d7d5e644bcc89597b3ba1b27286c0d4e5f281384c1f363c64e63",
+   "path": "OAI/Combinatorics/Ryser/Incidence/ExtractedContradiction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/FiniteSetCovering.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.FiniteSetCovering",
+   "original_sha256": "dfd51b133af1b02651c09dab329c210b5172caf53dd660ebeb03369226db00fc",
+   "path": "OAI/Combinatorics/Ryser/Incidence/FiniteSetCovering.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/FiniteSetEstimates.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.FiniteSetEstimates",
+   "original_sha256": "4cf4d81e11fc756d35799da06b0bf920e72c02fa5e1f1ba7d6b1bf6fc878c56c",
+   "path": "OAI/Combinatorics/Ryser/Incidence/FiniteSetEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/FiniteSets.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.FiniteSets",
+   "original_sha256": "70accc82bf0cb432983825a2e7713a6da5b01b88b88f4be4b9e13920417bbf24",
+   "path": "OAI/Combinatorics/Ryser/Incidence/FiniteSets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/FourAnchors.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.FourAnchors",
+   "original_sha256": "e7bc816f620e26e45ed52916590e3f209ab1f3d83f81897cb1363fc888b0e9ce",
+   "path": "OAI/Combinatorics/Ryser/Incidence/FourAnchors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/FourAnchorsCounting.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.FourAnchorsCounting",
+   "original_sha256": "8073426e8be1e7bc97ecb3f6342197d7afe81e21717cbd89eeafa1938f1cb06d",
+   "path": "OAI/Combinatorics/Ryser/Incidence/FourAnchorsCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/FourAnchorsGeometry.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.FourAnchorsGeometry",
+   "original_sha256": "ea3b4834397ed4983cfe75a74cb9effad4ea426def2df2274f5ae297b7b889e1",
+   "path": "OAI/Combinatorics/Ryser/Incidence/FourAnchorsGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/FourAnchorsLocal.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.FourAnchorsLocal",
+   "original_sha256": "2cf29ca094b3dba4990f4225dfed06a3da051af66d1c9e2ff4577728af18618a",
+   "path": "OAI/Combinatorics/Ryser/Incidence/FourAnchorsLocal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/FourAnchorsNumerics.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.FourAnchorsNumerics",
+   "original_sha256": "2bc56b6fab4a0c86fd439e55b124e5b8e47775f3e0ddf65c863393866b2f6748",
+   "path": "OAI/Combinatorics/Ryser/Incidence/FourAnchorsNumerics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/GraphParameters.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.GraphParameters",
+   "original_sha256": "6aa98c6c385a1a22a6a7be2b7c92be8aaa804f766f29d02cbcace77d67f99150",
+   "path": "OAI/Combinatorics/Ryser/Incidence/GraphParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/NoApproximateSubfield.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.NoApproximateSubfield",
+   "original_sha256": "c1f7240152dbbd8e1e14eafe511b30164f9656acaf11df1ff7819140da0d64a0",
+   "path": "OAI/Combinatorics/Ryser/Incidence/NoApproximateSubfield.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/NoApproximateSubfieldNumerics.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.NoApproximateSubfieldNumerics",
+   "original_sha256": "f93b38d13f441e2d4797041482a14a1f6c3cea76da417b77a6d4d5b5378b3911",
+   "path": "OAI/Combinatorics/Ryser/Incidence/NoApproximateSubfieldNumerics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/Parameters.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.Parameters",
+   "original_sha256": "9c6a94c3c1f6769fc875ce5647b54dec8767dad439870e5c54497e3095239ef1",
+   "path": "OAI/Combinatorics/Ryser/Incidence/Parameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/Pencils.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.Pencils",
+   "original_sha256": "bb578366edce4a2e617a2272cad7c723d1f83cce3a32fb961d1fda1615d68505",
+   "path": "OAI/Combinatorics/Ryser/Incidence/Pencils.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/PopularOverlap.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.PopularOverlap",
+   "original_sha256": "bb054cc79e58a6f3b22fd5c4659f91fae959affa336fac9226c65aea39d477d3",
+   "path": "OAI/Combinatorics/Ryser/Incidence/PopularOverlap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/PopularScalars.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.PopularScalars",
+   "original_sha256": "af896a22e5cf714e20af035fe3c741eee970728ffab051f01856e9fa1646bf76",
+   "path": "OAI/Combinatorics/Ryser/Incidence/PopularScalars.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/PrunedContradiction.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.PrunedContradiction",
+   "original_sha256": "3ebca6501154b38e8be62f75209aaeaf92456291a284cb75eee6197be02d3504",
+   "path": "OAI/Combinatorics/Ryser/Incidence/PrunedContradiction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/Pruning.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.Pruning",
+   "original_sha256": "b65cbb0f55ae9c305ef4891d9ed97b245950d128f67c1a08c644f9b77166ba6f",
+   "path": "OAI/Combinatorics/Ryser/Incidence/Pruning.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/PruningCore.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.PruningCore",
+   "original_sha256": "f19031b7d1d3bbdcc2c2408672d96e1ba7555cef6afacd9eaad3e37a46325955",
+   "path": "OAI/Combinatorics/Ryser/Incidence/PruningCore.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/PruningHigh.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.PruningHigh",
+   "original_sha256": "025f9494f02de738d78fad4dbff879040f21faade09a4e408cb2ffb2589a19f3",
+   "path": "OAI/Combinatorics/Ryser/Incidence/PruningHigh.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/PruningNumerics.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.PruningNumerics",
+   "original_sha256": "9d82875cc45cd6ad2d9a879e4bd842868936272c378d35fe94e6090bac295f5d",
+   "path": "OAI/Combinatorics/Ryser/Incidence/PruningNumerics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/RatioSet.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.RatioSet",
+   "original_sha256": "9fe056c8d803a70040c309fe0476495524a02a42fac36dbe5a48333885d594ed",
+   "path": "OAI/Combinatorics/Ryser/Incidence/RatioSet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/ScalarCollisionCount.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.ScalarCollisionCount",
+   "original_sha256": "978cdcba921ef64ec3de49cdf7a8f44f6bdc6450485ba5a74820d6744e6f3b1d",
+   "path": "OAI/Combinatorics/Ryser/Incidence/ScalarCollisionCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/ScalarCollisions.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.ScalarCollisions",
+   "original_sha256": "17f2e24fd7b37aeb791bef017df5d2c21e3ed607712e74c3eb1962281115fc46",
+   "path": "OAI/Combinatorics/Ryser/Incidence/ScalarCollisions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/ScalarCover.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.ScalarCover",
+   "original_sha256": "d900c8773f5a2e139bc51828d83504bfadfbb08ebfd74a8d40bf2e012ec42d6c",
+   "path": "OAI/Combinatorics/Ryser/Incidence/ScalarCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/ScalarCoverExpressions.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.ScalarCoverExpressions",
+   "original_sha256": "4ca40a12385db00e41f4338f51e517307561ed896dd8ec88223e584d675a8b04",
+   "path": "OAI/Combinatorics/Ryser/Incidence/ScalarCoverExpressions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/ScalarCoverGeometry.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.ScalarCoverGeometry",
+   "original_sha256": "b0a09f3d4642c6a58194ccdb3a133b2659b6cbeb4b0cb614ab38efcbd7f9ca48",
+   "path": "OAI/Combinatorics/Ryser/Incidence/ScalarCoverGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/Uniform.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.Uniform",
+   "original_sha256": "6db22a6cf85f325074d4d70ccee879c716e4362d395b8a915811306b48de91bf",
+   "path": "OAI/Combinatorics/Ryser/Incidence/Uniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/WalkCounts.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.WalkCounts",
+   "original_sha256": "0a52c190c293e19229c463f981ab418afa6f7c78cf75a09a40bb828014fed340",
+   "path": "OAI/Combinatorics/Ryser/Incidence/WalkCounts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/WalkExpansion.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.WalkExpansion",
+   "original_sha256": "d5e5f1db9a5726cb044ee8298799e29664f8295ee91acaa4d3a70a673286a1bc",
+   "path": "OAI/Combinatorics/Ryser/Incidence/WalkExpansion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/WalkExtraction.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.WalkExtraction",
+   "original_sha256": "62efe73aa03ca44524b6a1b3789de1ede77518f0d6f1869ac8bc50555b0f7248",
+   "path": "OAI/Combinatorics/Ryser/Incidence/WalkExtraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/WalkQuotients.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.WalkQuotients",
+   "original_sha256": "5a6bcc3e51ae52f2652fa5e0463fc8d8c9c5c48a11c417344f5e521c5a6f1184",
+   "path": "OAI/Combinatorics/Ryser/Incidence/WalkQuotients.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Incidence/WalkTrimming.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Incidence.WalkTrimming",
+   "original_sha256": "22310c712a54ed7a0afacc7c73d47db374d522c054be333c9a29ac958df042ff",
+   "path": "OAI/Combinatorics/Ryser/Incidence/WalkTrimming.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/CleanCover.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.CleanCover",
+   "original_sha256": "040c1bea59599493eff5dea7e2ec9dac8b96eee66f36fc72ac2a688e46f4964c",
+   "path": "OAI/Combinatorics/Ryser/LineCover/CleanCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/CountConcentration.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.CountConcentration",
+   "original_sha256": "ae41beeb042bea56d16e89eb5fb25619f70f87a8d120318ab134743fffe3681c",
+   "path": "OAI/Combinatorics/Ryser/LineCover/CountConcentration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/CountEvents.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.CountEvents",
+   "original_sha256": "50498811f31f2b240c3ede5a16df094c5450a7c3d32207516b5b0ef20323f3e4",
+   "path": "OAI/Combinatorics/Ryser/LineCover/CountEvents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/CountTailNumerics.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.CountTailNumerics",
+   "original_sha256": "bd8fd3827a61514fa540fd716ad6d13c8d6d11837dc32a24994d7702852e2c0c",
+   "path": "OAI/Combinatorics/Ryser/LineCover/CountTailNumerics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/CoverEstimates.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.CoverEstimates",
+   "original_sha256": "e1e4b53c5350873c0766caf44f525f8b2066ff06b4d12c27961e8860d2e7b484",
+   "path": "OAI/Combinatorics/Ryser/LineCover/CoverEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/Definitions.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.Definitions",
+   "original_sha256": "b08ba7d4c6ab4136c5eeaec59a11376f64d91e2e8c6919fd709f35b568d3f933",
+   "path": "OAI/Combinatorics/Ryser/LineCover/Definitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/Deletion.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.Deletion",
+   "original_sha256": "17c807b7589f751a42204ee01c7f89d000b9ce4e5cc4cf02d59131954c42700f",
+   "path": "OAI/Combinatorics/Ryser/LineCover/Deletion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/DeletionDefinitions.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.DeletionDefinitions",
+   "original_sha256": "96363d551f3fb43e5cf6314770378ca2cadf5ff8c2e43dd44de122906545da84",
+   "path": "OAI/Combinatorics/Ryser/LineCover/DeletionDefinitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/DisjointPairs.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.DisjointPairs",
+   "original_sha256": "ae41b5075d8c46488452ee996b103dba9322528d45aba2573811d7075405f1d1",
+   "path": "OAI/Combinatorics/Ryser/LineCover/DisjointPairs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/FailureNumerics.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.FailureNumerics",
+   "original_sha256": "998ebe2d9a5e1399e4506f0b29c2b23597a9da33271579ba181a0aebed2c4ce1",
+   "path": "OAI/Combinatorics/Ryser/LineCover/FailureNumerics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/FiniteFailureNumerics.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.FiniteFailureNumerics",
+   "original_sha256": "81c117d5e61928516ac185f38f2f47f3900e5323f561092d7cf89892141fd122",
+   "path": "OAI/Combinatorics/Ryser/LineCover/FiniteFailureNumerics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/GoodCounts.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.GoodCounts",
+   "original_sha256": "133dbfde525294953d9e68c2ebb148dd7f46827a49cd5b833d189fd4d7a06241",
+   "path": "OAI/Combinatorics/Ryser/LineCover/GoodCounts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/GoodTuples.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.GoodTuples",
+   "original_sha256": "a7a26e5f58d6049556fc845c601a683ba78068559f6cf2898b69b122c5fb3257",
+   "path": "OAI/Combinatorics/Ryser/LineCover/GoodTuples.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/HeavyIncidence.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.HeavyIncidence",
+   "original_sha256": "c42e9d8e9dd79fe7f9d68f00b1d0b04ad088f68416596a9842fb98b4711a9ddf",
+   "path": "OAI/Combinatorics/Ryser/LineCover/HeavyIncidence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/HighConcurrency.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.HighConcurrency",
+   "original_sha256": "3c26f05b0e06c221aa09fb0d09cf047c000ff32e629ea0ea53c1f5469de2d5aa",
+   "path": "OAI/Combinatorics/Ryser/LineCover/HighConcurrency.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/HighDegeneracy.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.HighDegeneracy",
+   "original_sha256": "f01d5d29d84ab5b3984616aa86bc8cef5bf450813fe8add7944b5d71a841eb52",
+   "path": "OAI/Combinatorics/Ryser/LineCover/HighDegeneracy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/HighIncidence.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.HighIncidence",
+   "original_sha256": "44459cbb18891bbd1920b42420fff8a3916e7cb6e93e7540bdcfd7535cbef522",
+   "path": "OAI/Combinatorics/Ryser/LineCover/HighIncidence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/HighOccupancy.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.HighOccupancy",
+   "original_sha256": "b06b512010cef37ddea80cb095ac18110f96ef90d85bc4592597c9b09b11ed6b",
+   "path": "OAI/Combinatorics/Ryser/LineCover/HighOccupancy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/HighProbability.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.HighProbability",
+   "original_sha256": "276ddc780ccb6879dedd3d9bcbe5c4b20437480a802c1790ab7a311650dd95e5",
+   "path": "OAI/Combinatorics/Ryser/LineCover/HighProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/HighSamples.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.HighSamples",
+   "original_sha256": "c23ef0140ab5b955784a4dab196a99245b351af8cb969947e8396ea1e9f672d5",
+   "path": "OAI/Combinatorics/Ryser/LineCover/HighSamples.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/InjectionSampling.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.InjectionSampling",
+   "original_sha256": "493d6ba584f70aab8cc93abaa8bcebb9053634352ceff75fffcec03491a4ca36",
+   "path": "OAI/Combinatorics/Ryser/LineCover/InjectionSampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/LowConcurrency.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.LowConcurrency",
+   "original_sha256": "887593a9ecef88086d3cc0d294788a078f02cd5903e0f54a69736c8d9e3cff05",
+   "path": "OAI/Combinatorics/Ryser/LineCover/LowConcurrency.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/LowDegeneracy.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.LowDegeneracy",
+   "original_sha256": "4090039599a256ce47f2d09f616907129ddfa50777505d1e84a00f7f3d1c1041",
+   "path": "OAI/Combinatorics/Ryser/LineCover/LowDegeneracy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/LowOccupancy.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.LowOccupancy",
+   "original_sha256": "1a58378c4752849883a23d7d3e94a8eb0b4cbed14d9fdd088610f2b703b8a606",
+   "path": "OAI/Combinatorics/Ryser/LineCover/LowOccupancy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/Main.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.Main",
+   "original_sha256": "a324527f88d4716603292a0e36a38bb48fa3901dceb0e7ae488523b87dc22dfe",
+   "path": "OAI/Combinatorics/Ryser/LineCover/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/MaxConcurrency.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.MaxConcurrency",
+   "original_sha256": "1246ad2a4eedba59599978c32c40b0c8fce3258c7fcb2d7c72a0663fa7c95a50",
+   "path": "OAI/Combinatorics/Ryser/LineCover/MaxConcurrency.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/MeanCounts.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.MeanCounts",
+   "original_sha256": "c17031fb5a2036321af2533f2eec0ec5d67f33fdea22af4da56ff53491bb4e11",
+   "path": "OAI/Combinatorics/Ryser/LineCover/MeanCounts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/Overlap.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.Overlap",
+   "original_sha256": "50c95776b3d562f86d58f262563da29cca4bb4600f48a64a382ebbf9afffee27",
+   "path": "OAI/Combinatorics/Ryser/LineCover/Overlap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/PairCounting.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.PairCounting",
+   "original_sha256": "5c82b7eafb8a0aff5a225e859fd220d94865bcbb5273c0f6eb0c182b76971bde",
+   "path": "OAI/Combinatorics/Ryser/LineCover/PairCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/PairSampling.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.PairSampling",
+   "original_sha256": "ec9cb117cb9ad35f20df7c7e126581a50eb185bf8d990e7019b43cf32696a884",
+   "path": "OAI/Combinatorics/Ryser/LineCover/PairSampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/Process.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.Process",
+   "original_sha256": "b0525992568fefbbe435b329dc681ebb3e1eded402be8558056227d80c5a2da9",
+   "path": "OAI/Combinatorics/Ryser/LineCover/Process.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/ProjectiveLift.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.ProjectiveLift",
+   "original_sha256": "20c29950c78ec9c86223ccb2a971dd20a6d0d78bada35009d125a4c6977e658a",
+   "path": "OAI/Combinatorics/Ryser/LineCover/ProjectiveLift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/Rigidity.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.Rigidity",
+   "original_sha256": "ac81134f7d668a07c8847cc6b5bcb602d3da753f48511be6f92e0c7a062ec1cb",
+   "path": "OAI/Combinatorics/Ryser/LineCover/Rigidity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/RigidityNumerics.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.RigidityNumerics",
+   "original_sha256": "ac675b9973f9f4cbe19eb2e6f72717f97bdf158a3fe59a223206bad0f7f75e3e",
+   "path": "OAI/Combinatorics/Ryser/LineCover/RigidityNumerics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/RigidityParameters.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.RigidityParameters",
+   "original_sha256": "35ee805330c85757a936063dc9ea906ff7120734dee45b2667564c58cb4cd2f8",
+   "path": "OAI/Combinatorics/Ryser/LineCover/RigidityParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/RigiditySampling.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.RigiditySampling",
+   "original_sha256": "00dc6c4f5e90ef2de894ca390653d397e94a3f191f447e6007a57c17f0fe7ad9",
+   "path": "OAI/Combinatorics/Ryser/LineCover/RigiditySampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/SamplingDefinitions.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.SamplingDefinitions",
+   "original_sha256": "c6e3f6b8e03912763148344e9d670d9c0bf8e16500ca5864186a366464bf7548",
+   "path": "OAI/Combinatorics/Ryser/LineCover/SamplingDefinitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/SamplingNumerics.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.SamplingNumerics",
+   "original_sha256": "9b88ae724a6295dd0fd57c0539f1190388f1d04bf9ee70604b8c01d8a691dd57",
+   "path": "OAI/Combinatorics/Ryser/LineCover/SamplingNumerics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/SurvivalNumerics.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.SurvivalNumerics",
+   "original_sha256": "6dc9c2c369702d5fc6b963e19c88c6de7b5d1b9041b18346535b877e0f4694aa",
+   "path": "OAI/Combinatorics/Ryser/LineCover/SurvivalNumerics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/SurvivorSampling.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.SurvivorSampling",
+   "original_sha256": "40dad4de5f632d08e560e7e409bc00d1fd13d62bd260e885463f393a41ad4313",
+   "path": "OAI/Combinatorics/Ryser/LineCover/SurvivorSampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/TailNumerics.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.TailNumerics",
+   "original_sha256": "ae3d13334610e4564e18198e7e98c8e13b16d61f874fa460ee98c005b1345c1d",
+   "path": "OAI/Combinatorics/Ryser/LineCover/TailNumerics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/TupleConcentration.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.TupleConcentration",
+   "original_sha256": "e7a0db8951a1b5c7d6b526ef3484e8e865e32e8880cb25d189ecd25b5533278e",
+   "path": "OAI/Combinatorics/Ryser/LineCover/TupleConcentration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/TupleGeometry.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.TupleGeometry",
+   "original_sha256": "d3ea651ec158dccc153d645deee325b4d450903300ad1fc07518a96c39a05530",
+   "path": "OAI/Combinatorics/Ryser/LineCover/TupleGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/TwoPopulationMoments.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.TwoPopulationMoments",
+   "original_sha256": "c2d8b4e2107bc4038a2cb81cebb43da55a8c53800e86d1a476ffb414866ff731",
+   "path": "OAI/Combinatorics/Ryser/LineCover/TwoPopulationMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/LineCover/TwoPopulationSampling.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.LineCover.TwoPopulationSampling",
+   "original_sha256": "3e70f43079e246bd07f68c9ba6582cef12b753d0eea2eb887515139d8d501848",
+   "path": "OAI/Combinatorics/Ryser/LineCover/TwoPopulationSampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Probability/Concentration.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Probability.Concentration",
+   "original_sha256": "0086418532f6294fd5ff248234494ff9abee012c7a8c5af7df0607465d39b88b",
+   "path": "OAI/Combinatorics/Ryser/Probability/Concentration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Probability/Exponential.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Probability.Exponential",
+   "original_sha256": "bd27de3359ebbf998f7c67328bae57674fdc11d8a9504508ed9ff3a6dacad7ac",
+   "path": "OAI/Combinatorics/Ryser/Probability/Exponential.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Probability/Exposure.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Probability.Exposure",
+   "original_sha256": "d35c3acb2a0623e83908a72bd4791092d5291a766af385aeefa0efdeebb2cb3e",
+   "path": "OAI/Combinatorics/Ryser/Probability/Exposure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Probability/Finite.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Probability.Finite",
+   "original_sha256": "8887029903ce3411718071be57ad251f2618a141fcee5dd33759569ea5c4b43c",
+   "path": "OAI/Combinatorics/Ryser/Probability/Finite.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Probability/Product.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Probability.Product",
+   "original_sha256": "f0823937f779ae6a0876932071d4c85d5e61579d02472fcdbddca8629c0f8216",
+   "path": "OAI/Combinatorics/Ryser/Probability/Product.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Probability/ProductMap.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Probability.ProductMap",
+   "original_sha256": "a997ea751d1cd5a5771bbf4383900c0b6d4a9f39eff8e908e52f39fccf346837",
+   "path": "OAI/Combinatorics/Ryser/Probability/ProductMap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Probability/RareAnchor.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Probability.RareAnchor",
+   "original_sha256": "b4fce4a52a6ace8420b1874db8086291834addddb0f6251ab2d36f2addbfd6c5",
+   "path": "OAI/Combinatorics/Ryser/Probability/RareAnchor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Probability/Variance.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Probability.Variance",
+   "original_sha256": "bce40f75cbef3f5af788b2044a4d6c5298f1b3c1078309631486246dccc7dbbb",
+   "path": "OAI/Combinatorics/Ryser/Probability/Variance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/AnalyticalLimits.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.AnalyticalLimits",
+   "original_sha256": "6690d6361593c27b50f779fdb0492e5d6f0bb71208264f934c97cff95c2034ef",
+   "path": "OAI/Combinatorics/Ryser/Selection/AnalyticalLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/CertificateBounds.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.CertificateBounds",
+   "original_sha256": "cefe5b487fb39a2662a7729cf77b794fcf4fe5e73bf3fda7642f3484e97f58b0",
+   "path": "OAI/Combinatorics/Ryser/Selection/CertificateBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/CertificateCount.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.CertificateCount",
+   "original_sha256": "d2c737f6a5fba509df3eae69da211650108381f32975f18754432209522c09dc",
+   "path": "OAI/Combinatorics/Ryser/Selection/CertificateCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/CertificateUnion.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.CertificateUnion",
+   "original_sha256": "c4513fbbb6137aa7281e31500426260781b77d15eb2b040ec590d00c3bcdcb33",
+   "path": "OAI/Combinatorics/Ryser/Selection/CertificateUnion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/Chunk.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.Chunk",
+   "original_sha256": "c44ec308681ecb53a42f33670a2c09523583231c103a33d32ed6dd2fd253075c",
+   "path": "OAI/Combinatorics/Ryser/Selection/Chunk.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/ChunkConditioning.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.ChunkConditioning",
+   "original_sha256": "9ecd6d2fae20734cc532e46a107686913af3f26e73972706e5b8734db7c65eef",
+   "path": "OAI/Combinatorics/Ryser/Selection/ChunkConditioning.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/ChunkDensity.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.ChunkDensity",
+   "original_sha256": "27af1a26e325d15070368d2f02b7348512b5f90df3e7c78f87039411226e04ac",
+   "path": "OAI/Combinatorics/Ryser/Selection/ChunkDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/ChunkEnergy.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.ChunkEnergy",
+   "original_sha256": "0dd9811a49938676d5a49181a98cdb51ff6b79306527443ee02bd6cf676135fc",
+   "path": "OAI/Combinatorics/Ryser/Selection/ChunkEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/ChunkLoss.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.ChunkLoss",
+   "original_sha256": "63119891a63ae85349ed592bd0935c682f2e015d4650e2d32e133ba6c74c58d5",
+   "path": "OAI/Combinatorics/Ryser/Selection/ChunkLoss.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/ChunkPartition.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.ChunkPartition",
+   "original_sha256": "db6e3aec007c15f53706581f3eae329913028f6fd906a2bb0e72195395606cf0",
+   "path": "OAI/Combinatorics/Ryser/Selection/ChunkPartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/ChunkPartitionBounds.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.ChunkPartitionBounds",
+   "original_sha256": "cb261aaae0328774485c34a7cf639e69d0a900fc58f0466cbf0f238be3437edf",
+   "path": "OAI/Combinatorics/Ryser/Selection/ChunkPartitionBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/ChunkTail.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.ChunkTail",
+   "original_sha256": "10b7b604ab79d87caee05dd5d2c65e2c8d8a78aa16a1262c13f60390ea03274a",
+   "path": "OAI/Combinatorics/Ryser/Selection/ChunkTail.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/ChunkTailAsymptotics.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.ChunkTailAsymptotics",
+   "original_sha256": "83e1acbc985c75f05103d5e37c8d34dc4c873e2e047201404d45695c1d0ca74b",
+   "path": "OAI/Combinatorics/Ryser/Selection/ChunkTailAsymptotics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/Definitions.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.Definitions",
+   "original_sha256": "fc0d366eb1df98a9ee9f9a7dd039ecd0455d72a776608e338f38b01e4304178d",
+   "path": "OAI/Combinatorics/Ryser/Selection/Definitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/DensityConstants.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.DensityConstants",
+   "original_sha256": "d01b311491c8ed3e8b82694286d51fae712145d4afc604dfc1b1849d33ef78ff",
+   "path": "OAI/Combinatorics/Ryser/Selection/DensityConstants.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/Estimates.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.Estimates",
+   "original_sha256": "c2c9f7d9235ddfc70af43ba7ea811a13c3e308ee7db08794791398794235e6e6",
+   "path": "OAI/Combinatorics/Ryser/Selection/Estimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/FeasibleDensity.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.FeasibleDensity",
+   "original_sha256": "c60ef88a42622f58f8f1ff1428137d3014b8f61486809a7da34b584dd1a2bcca",
+   "path": "OAI/Combinatorics/Ryser/Selection/FeasibleDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/Forbidden.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.Forbidden",
+   "original_sha256": "b51184977612fb55d2160721fe5a33687ae9b1ae1d40969f3dafa0744a9cc2e9",
+   "path": "OAI/Combinatorics/Ryser/Selection/Forbidden.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/IndependentTail.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.IndependentTail",
+   "original_sha256": "f506a872fa2efb0bbb994455cd49c5732e2d758b2ea20b88d5033c2d8a08e1b2",
+   "path": "OAI/Combinatorics/Ryser/Selection/IndependentTail.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/KChoice.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.KChoice",
+   "original_sha256": "712f87d3ace80eb2f4207a23b739391360c9b304ab5cb6c116d87320c38e0e09",
+   "path": "OAI/Combinatorics/Ryser/Selection/KChoice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/LargeCertificates.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.LargeCertificates",
+   "original_sha256": "3a6db7bb150808105f746d375cdb7221f2a2ba486676e760edbc324959daf128",
+   "path": "OAI/Combinatorics/Ryser/Selection/LargeCertificates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/LayerBounds.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.LayerBounds",
+   "original_sha256": "db69ced7109fff5c72cb3f31caec465ef1d2322116e7eb553f6a57b1589b38ad",
+   "path": "OAI/Combinatorics/Ryser/Selection/LayerBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/LayerNormalization.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.LayerNormalization",
+   "original_sha256": "2ccd3287a109ba650a485b0ef73130130c0a27785ec61384b9b10e0ff6a17e01",
+   "path": "OAI/Combinatorics/Ryser/Selection/LayerNormalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/Main.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.Main",
+   "original_sha256": "86e502ccd6b8cda9686355aa56f99df4b4d8ae22977b4ac6cc1df4115c6a7344",
+   "path": "OAI/Combinatorics/Ryser/Selection/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/NumericLimits.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.NumericLimits",
+   "original_sha256": "2fb452ddc862e65e4c71911175b3395c8e91b7bf7e7a42edbf7738c5f3af44fc",
+   "path": "OAI/Combinatorics/Ryser/Selection/NumericLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/Parameters.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.Parameters",
+   "original_sha256": "e493a1bd264c8d148f0e560d02af20418b9d464f81dca82e5cd47c885890e3b9",
+   "path": "OAI/Combinatorics/Ryser/Selection/Parameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/PoolCounts.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.PoolCounts",
+   "original_sha256": "c37f4d47287718588255a74c6002e858f8bd27c0c3c3aa2a4353fbf14f176551",
+   "path": "OAI/Combinatorics/Ryser/Selection/PoolCounts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/PoolGraph.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.PoolGraph",
+   "original_sha256": "442bcfa6b794086551186405b54836d2a0b4c7cc8090ec0a84c17e6865752573",
+   "path": "OAI/Combinatorics/Ryser/Selection/PoolGraph.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/PoolLaw.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.PoolLaw",
+   "original_sha256": "4f045981814d9ec90190dea75d25f5671b03d94f69f94ba09e090434242c63fd",
+   "path": "OAI/Combinatorics/Ryser/Selection/PoolLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/Quantitative.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.Quantitative",
+   "original_sha256": "2272a21edbea239a4b147d302c93083e8020f5a7d61d17e8e8113984ea84d12a",
+   "path": "OAI/Combinatorics/Ryser/Selection/Quantitative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/RegularTail.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.RegularTail",
+   "original_sha256": "6a2d35b40b6a53d33027e67981f6274c7cdd2060b4336ed2b8b8ce762acc5cbd",
+   "path": "OAI/Combinatorics/Ryser/Selection/RegularTail.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/SmallCertificates.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.SmallCertificates",
+   "original_sha256": "6ad8c63f2fdadd3278d9dc622277a9f721f57f96b7eec70675c5a6224565d316",
+   "path": "OAI/Combinatorics/Ryser/Selection/SmallCertificates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/SmallRange.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.SmallRange",
+   "original_sha256": "99c6dceff19bcc0c0348f2a466425d86cfbd0e2ba2b85f03ae35937d2b6603b1",
+   "path": "OAI/Combinatorics/Ryser/Selection/SmallRange.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/SmallSum.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.SmallSum",
+   "original_sha256": "7900e07f48cb130a7cd16bff51177b0f1cb0a378af36ba53cc9434690f5f4cbf",
+   "path": "OAI/Combinatorics/Ryser/Selection/SmallSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/UniformDensity.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.UniformDensity",
+   "original_sha256": "ea22c7d75685f6813d6dcb2ccff1eed47bb91baf39d4e58ef0e832bed8079aa6",
+   "path": "OAI/Combinatorics/Ryser/Selection/UniformDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/Ryser/Selection/UnusedProduct.lean"
+   },
+   "module": "OAI.Combinatorics.Ryser.Selection.UnusedProduct",
+   "original_sha256": "2b5a1fe85c05c8b43c0ca23b409419cc9475d7c0bd0bc76e41e4f978a77a1633",
+   "path": "OAI/Combinatorics/Ryser/Selection/UnusedProduct.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.Ryser.Construction.ActualHypergraph",
+  "OAI.Combinatorics.Ryser.Construction.AmbientDeletionGeometry",
+  "OAI.Combinatorics.Ryser.Construction.AmbientDeletionNumerics",
+  "OAI.Combinatorics.Ryser.Construction.AmbientDeletionPoolLaw",
+  "OAI.Combinatorics.Ryser.Construction.AmbientDeletionProcess",
+  "OAI.Combinatorics.Ryser.Construction.AmbientDeletionShapes",
+  "OAI.Combinatorics.Ryser.Construction.AmbientDeletionSurvivors",
+  "OAI.Combinatorics.Ryser.Construction.AmbientDeletionTrials",
+  "OAI.Combinatorics.Ryser.Construction.AmbientPoolExistence",
+  "OAI.Combinatorics.Ryser.Construction.CoordinateCompatibility",
+  "OAI.Combinatorics.Ryser.Construction.CosetDirections",
+  "OAI.Combinatorics.Ryser.Construction.CosetIndex",
+  "OAI.Combinatorics.Ryser.Construction.CoverBudget",
+  "OAI.Combinatorics.Ryser.Construction.CoverCounting",
+  "OAI.Combinatorics.Ryser.Construction.CoverPencil",
+  "OAI.Combinatorics.Ryser.Construction.DeletionIntersection",
+  "OAI.Combinatorics.Ryser.Construction.DeletionLines",
+  "OAI.Combinatorics.Ryser.Construction.DeletionParallel",
+  "OAI.Combinatorics.Ryser.Construction.DeletionUnionBasic",
+  "OAI.Combinatorics.Ryser.Construction.DeletionUnionInside",
+  "OAI.Combinatorics.Ryser.Construction.DeletionUnionOutside",
+  "OAI.Combinatorics.Ryser.Construction.DeterministicCover",
+  "OAI.Combinatorics.Ryser.Construction.DirectionPlacement",
+  "OAI.Combinatorics.Ryser.Construction.DirectionSets",
+  "OAI.Combinatorics.Ryser.Construction.ExceptionalBudget",
+  "OAI.Combinatorics.Ryser.Construction.ExceptionalCover",
+  "OAI.Combinatorics.Ryser.Construction.ExtraDirections",
+  "OAI.Combinatorics.Ryser.Construction.FiniteInsideCover",
+  "OAI.Combinatorics.Ryser.Construction.FiniteOutsideAction",
+  "OAI.Combinatorics.Ryser.Construction.FiniteOutsideCover",
+  "OAI.Combinatorics.Ryser.Construction.FiniteSelectionCounting",
+  "OAI.Combinatorics.Ryser.Construction.GadgetAlgebra",
+  "OAI.Combinatorics.Ryser.Construction.GadgetConcentration",
+  "OAI.Combinatorics.Ryser.Construction.GadgetConsequences",
+  "OAI.Combinatorics.Ryser.Construction.GadgetCover",
+  "OAI.Combinatorics.Ryser.Construction.GadgetDefinitions",
+  "OAI.Combinatorics.Ryser.Construction.GadgetExistence",
+  "OAI.Combinatorics.Ryser.Construction.GadgetGood",
+  "OAI.Combinatorics.Ryser.Construction.GadgetOriginalCounts",
+  "OAI.Combinatorics.Ryser.Construction.GadgetOriginalDensity",
+  "OAI.Combinatorics.Ryser.Construction.GadgetOriginalExpectation",
+  "OAI.Combinatorics.Ryser.Construction.GadgetProcess",
+  "OAI.Combinatorics.Ryser.Construction.GadgetShapes",
+  "OAI.Combinatorics.Ryser.Construction.GroupBounds",
+  "OAI.Combinatorics.Ryser.Construction.GroupPlacement",
+  "OAI.Combinatorics.Ryser.Construction.GroupSelection",
+  "OAI.Combinatorics.Ryser.Construction.Hypergraph",
+  "OAI.Combinatorics.Ryser.Construction.InfiniteCover",
+  "OAI.Combinatorics.Ryser.Construction.Intersection",
+  "OAI.Combinatorics.Ryser.Construction.LabelAction",
+  "OAI.Combinatorics.Ryser.Construction.LinearPlacement",
+  "OAI.Combinatorics.Ryser.Construction.Main",
+  "OAI.Combinatorics.Ryser.Construction.OrdinaryCover",
+  "OAI.Combinatorics.Ryser.Construction.PlacedLines",
+  "OAI.Combinatorics.Ryser.Construction.PlacementIntersection",
+  "OAI.Combinatorics.Ryser.Construction.PoolThinAsymptotic",
+  "OAI.Combinatorics.Ryser.Construction.PoolThinGeometry",
+  "OAI.Combinatorics.Ryser.Construction.PoolThinProbability",
+  "OAI.Combinatorics.Ryser.Construction.PoolThinSelection",
+  "OAI.Combinatorics.Ryser.Construction.SelectedHypergraph",
+  "OAI.Combinatorics.Ryser.Construction.SmallPrimes",
+  "OAI.Combinatorics.Ryser.Domination.Append",
+  "OAI.Combinatorics.Ryser.Domination.Basic",
+  "OAI.Combinatorics.Ryser.Domination.Counting",
+  "OAI.Combinatorics.Ryser.Domination.Exchange",
+  "OAI.Combinatorics.Ryser.Domination.Extension",
+  "OAI.Combinatorics.Ryser.Domination.Main",
+  "OAI.Combinatorics.Ryser.Domination.Nonempty",
+  "OAI.Combinatorics.Ryser.Domination.Seed",
+  "OAI.Combinatorics.Ryser.Domination.TraceDefinitions",
+  "OAI.Combinatorics.Ryser.Field.Extension",
+  "OAI.Combinatorics.Ryser.Field.ExtensionSubfields",
+  "OAI.Combinatorics.Ryser.Field.SubfieldBound",
+  "OAI.Combinatorics.Ryser.Geometry.AffineJoins",
+  "OAI.Combinatorics.Ryser.Geometry.Basic",
+  "OAI.Combinatorics.Ryser.Geometry.Cardinality",
+  "OAI.Combinatorics.Ryser.Geometry.Normalization",
+  "OAI.Combinatorics.Ryser.Geometry.ProjectionMoments",
+  "OAI.Combinatorics.Ryser.Geometry.ProjectionPair",
+  "OAI.Combinatorics.Ryser.Geometry.ProjectiveJoins",
+  "OAI.Combinatorics.Ryser.Geometry.ProjectiveTransformAffine",
+  "OAI.Combinatorics.Ryser.Geometry.ProjectiveTransformBasic",
+  "OAI.Combinatorics.Ryser.Geometry.ProjectiveTransformXY",
+  "OAI.Combinatorics.Ryser.Geometry.ProjectiveTransformXZ",
+  "OAI.Combinatorics.Ryser.Geometry.SliceEnergy",
+  "OAI.Combinatorics.Ryser.Hypergraph.Cover",
+  "OAI.Combinatorics.Ryser.Hypergraph.Definitions",
+  "OAI.Combinatorics.Ryser.Hypergraph.Infinitude",
+  "OAI.Combinatorics.Ryser.Hypergraph.Matching",
+  "OAI.Combinatorics.Ryser.Hypergraph.Partite",
+  "OAI.Combinatorics.Ryser.Incidence.AllLineCap",
+  "OAI.Combinatorics.Ryser.Incidence.CoordinateTransfer",
+  "OAI.Combinatorics.Ryser.Incidence.CoordinateTransferSet",
+  "OAI.Combinatorics.Ryser.Incidence.DegreeSquares",
+  "OAI.Combinatorics.Ryser.Incidence.DenseNeighborhood",
+  "OAI.Combinatorics.Ryser.Incidence.ExtractedContradiction",
+  "OAI.Combinatorics.Ryser.Incidence.FiniteSetCovering",
+  "OAI.Combinatorics.Ryser.Incidence.FiniteSetEstimates",
+  "OAI.Combinatorics.Ryser.Incidence.FiniteSets",
+  "OAI.Combinatorics.Ryser.Incidence.FourAnchors",
+  "OAI.Combinatorics.Ryser.Incidence.FourAnchorsCounting",
+  "OAI.Combinatorics.Ryser.Incidence.FourAnchorsGeometry",
+  "OAI.Combinatorics.Ryser.Incidence.FourAnchorsLocal",
+  "OAI.Combinatorics.Ryser.Incidence.FourAnchorsNumerics",
+  "OAI.Combinatorics.Ryser.Incidence.GraphParameters",
+  "OAI.Combinatorics.Ryser.Incidence.NoApproximateSubfield",
+  "OAI.Combinatorics.Ryser.Incidence.NoApproximateSubfieldNumerics",
+  "OAI.Combinatorics.Ryser.Incidence.Parameters",
+  "OAI.Combinatorics.Ryser.Incidence.Pencils",
+  "OAI.Combinatorics.Ryser.Incidence.PopularOverlap",
+  "OAI.Combinatorics.Ryser.Incidence.PopularScalars",
+  "OAI.Combinatorics.Ryser.Incidence.PrunedContradiction",
+  "OAI.Combinatorics.Ryser.Incidence.Pruning",
+  "OAI.Combinatorics.Ryser.Incidence.PruningCore",
+  "OAI.Combinatorics.Ryser.Incidence.PruningHigh",
+  "OAI.Combinatorics.Ryser.Incidence.PruningNumerics",
+  "OAI.Combinatorics.Ryser.Incidence.RatioSet",
+  "OAI.Combinatorics.Ryser.Incidence.ScalarCollisionCount",
+  "OAI.Combinatorics.Ryser.Incidence.ScalarCollisions",
+  "OAI.Combinatorics.Ryser.Incidence.ScalarCover",
+  "OAI.Combinatorics.Ryser.Incidence.ScalarCoverExpressions",
+  "OAI.Combinatorics.Ryser.Incidence.ScalarCoverGeometry",
+  "OAI.Combinatorics.Ryser.Incidence.Uniform",
+  "OAI.Combinatorics.Ryser.Incidence.WalkCounts",
+  "OAI.Combinatorics.Ryser.Incidence.WalkExpansion",
+  "OAI.Combinatorics.Ryser.Incidence.WalkExtraction",
+  "OAI.Combinatorics.Ryser.Incidence.WalkQuotients",
+  "OAI.Combinatorics.Ryser.Incidence.WalkTrimming",
+  "OAI.Combinatorics.Ryser.LineCover.CleanCover",
+  "OAI.Combinatorics.Ryser.LineCover.CountConcentration",
+  "OAI.Combinatorics.Ryser.LineCover.CountEvents",
+  "OAI.Combinatorics.Ryser.LineCover.CountTailNumerics",
+  "OAI.Combinatorics.Ryser.LineCover.CoverEstimates",
+  "OAI.Combinatorics.Ryser.LineCover.Definitions",
+  "OAI.Combinatorics.Ryser.LineCover.Deletion",
+  "OAI.Combinatorics.Ryser.LineCover.DeletionDefinitions",
+  "OAI.Combinatorics.Ryser.LineCover.DisjointPairs",
+  "OAI.Combinatorics.Ryser.LineCover.FailureNumerics",
+  "OAI.Combinatorics.Ryser.LineCover.FiniteFailureNumerics",
+  "OAI.Combinatorics.Ryser.LineCover.GoodCounts",
+  "OAI.Combinatorics.Ryser.LineCover.GoodTuples",
+  "OAI.Combinatorics.Ryser.LineCover.HeavyIncidence",
+  "OAI.Combinatorics.Ryser.LineCover.HighConcurrency",
+  "OAI.Combinatorics.Ryser.LineCover.HighDegeneracy",
+  "OAI.Combinatorics.Ryser.LineCover.HighIncidence",
+  "OAI.Combinatorics.Ryser.LineCover.HighOccupancy",
+  "OAI.Combinatorics.Ryser.LineCover.HighProbability",
+  "OAI.Combinatorics.Ryser.LineCover.HighSamples",
+  "OAI.Combinatorics.Ryser.LineCover.InjectionSampling",
+  "OAI.Combinatorics.Ryser.LineCover.LowConcurrency",
+  "OAI.Combinatorics.Ryser.LineCover.LowDegeneracy",
+  "OAI.Combinatorics.Ryser.LineCover.LowOccupancy",
+  "OAI.Combinatorics.Ryser.LineCover.Main",
+  "OAI.Combinatorics.Ryser.LineCover.MaxConcurrency",
+  "OAI.Combinatorics.Ryser.LineCover.MeanCounts",
+  "OAI.Combinatorics.Ryser.LineCover.Overlap",
+  "OAI.Combinatorics.Ryser.LineCover.PairCounting",
+  "OAI.Combinatorics.Ryser.LineCover.PairSampling",
+  "OAI.Combinatorics.Ryser.LineCover.Process",
+  "OAI.Combinatorics.Ryser.LineCover.ProjectiveLift",
+  "OAI.Combinatorics.Ryser.LineCover.Rigidity",
+  "OAI.Combinatorics.Ryser.LineCover.RigidityNumerics",
+  "OAI.Combinatorics.Ryser.LineCover.RigidityParameters",
+  "OAI.Combinatorics.Ryser.LineCover.RigiditySampling",
+  "OAI.Combinatorics.Ryser.LineCover.SamplingDefinitions",
+  "OAI.Combinatorics.Ryser.LineCover.SamplingNumerics",
+  "OAI.Combinatorics.Ryser.LineCover.SurvivalNumerics",
+  "OAI.Combinatorics.Ryser.LineCover.SurvivorSampling",
+  "OAI.Combinatorics.Ryser.LineCover.TailNumerics",
+  "OAI.Combinatorics.Ryser.LineCover.TupleConcentration",
+  "OAI.Combinatorics.Ryser.LineCover.TupleGeometry",
+  "OAI.Combinatorics.Ryser.LineCover.TwoPopulationMoments",
+  "OAI.Combinatorics.Ryser.LineCover.TwoPopulationSampling",
+  "OAI.Combinatorics.Ryser.Probability.Concentration",
+  "OAI.Combinatorics.Ryser.Probability.Exponential",
+  "OAI.Combinatorics.Ryser.Probability.Exposure",
+  "OAI.Combinatorics.Ryser.Probability.Finite",
+  "OAI.Combinatorics.Ryser.Probability.Product",
+  "OAI.Combinatorics.Ryser.Probability.ProductMap",
+  "OAI.Combinatorics.Ryser.Probability.RareAnchor",
+  "OAI.Combinatorics.Ryser.Probability.Variance",
+  "OAI.Combinatorics.Ryser.Selection.AnalyticalLimits",
+  "OAI.Combinatorics.Ryser.Selection.CertificateBounds",
+  "OAI.Combinatorics.Ryser.Selection.CertificateCount",
+  "OAI.Combinatorics.Ryser.Selection.CertificateUnion",
+  "OAI.Combinatorics.Ryser.Selection.Chunk",
+  "OAI.Combinatorics.Ryser.Selection.ChunkConditioning",
+  "OAI.Combinatorics.Ryser.Selection.ChunkDensity",
+  "OAI.Combinatorics.Ryser.Selection.ChunkEnergy",
+  "OAI.Combinatorics.Ryser.Selection.ChunkLoss",
+  "OAI.Combinatorics.Ryser.Selection.ChunkPartition",
+  "OAI.Combinatorics.Ryser.Selection.ChunkPartitionBounds",
+  "OAI.Combinatorics.Ryser.Selection.ChunkTail",
+  "OAI.Combinatorics.Ryser.Selection.ChunkTailAsymptotics",
+  "OAI.Combinatorics.Ryser.Selection.Definitions",
+  "OAI.Combinatorics.Ryser.Selection.DensityConstants",
+  "OAI.Combinatorics.Ryser.Selection.Estimates",
+  "OAI.Combinatorics.Ryser.Selection.FeasibleDensity",
+  "OAI.Combinatorics.Ryser.Selection.Forbidden",
+  "OAI.Combinatorics.Ryser.Selection.IndependentTail",
+  "OAI.Combinatorics.Ryser.Selection.KChoice",
+  "OAI.Combinatorics.Ryser.Selection.LargeCertificates",
+  "OAI.Combinatorics.Ryser.Selection.LayerBounds",
+  "OAI.Combinatorics.Ryser.Selection.LayerNormalization",
+  "OAI.Combinatorics.Ryser.Selection.Main",
+  "OAI.Combinatorics.Ryser.Selection.NumericLimits",
+  "OAI.Combinatorics.Ryser.Selection.Parameters",
+  "OAI.Combinatorics.Ryser.Selection.PoolCounts",
+  "OAI.Combinatorics.Ryser.Selection.PoolGraph",
+  "OAI.Combinatorics.Ryser.Selection.PoolLaw",
+  "OAI.Combinatorics.Ryser.Selection.Quantitative",
+  "OAI.Combinatorics.Ryser.Selection.RegularTail",
+  "OAI.Combinatorics.Ryser.Selection.SmallCertificates",
+  "OAI.Combinatorics.Ryser.Selection.SmallRange",
+  "OAI.Combinatorics.Ryser.Selection.SmallSum",
+  "OAI.Combinatorics.Ryser.Selection.UniformDensity",
+  "OAI.Combinatorics.Ryser.Selection.UnusedProduct"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/RyserCovering.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Combinatorics.Ryser.Construction.Main",
+   "name": "OAI.RyserCoveringCounterexample.exists_prime_eventually_counterexampleRank",
+   "statement_sha256": "217f927f271b8da171be24177258684ac8efece9325222ce2c5f65af8fbff6e0"
+  }
+ ],
+ "task_id": "oai-ryser-covering",
+ "task_revision": 1,
+ "title": "OpenAI math: Counterexamples to Ryser’s covering conjecture: Fixed-prime Ryser counterexamples",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

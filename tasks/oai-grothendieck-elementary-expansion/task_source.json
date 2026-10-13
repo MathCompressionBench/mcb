@@ -1,0 +1,1001 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 108902360
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.GrothendieckElementaryExpansion",
+  "challenge_sha256": "9b2e52c8286079d5bea2dcc70cf382e4f6de44e324780e665d38377129553056",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/GrothendieckElementaryExpansion.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.GrothendieckElementaryExpansion",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.CategoryTheory.Globular.Main",
+   "theorem_names": [
+    "OAI.Grothendieck.elementary_expansion"
+   ]
+  },
+  "config_sha256": "9b43d4f3bce820f9f013a6078de44c83085d2feaedf3065aba6b665e71f509a2",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/GrothendieckElementaryExpansion.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.Grothendieck.elementary_expansion": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Basic.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Basic",
+   "original_sha256": "66d17895c2255122380cfa42acb7893ef175676a2d4f824e4a125e614dea521f",
+   "path": "OAI/CategoryTheory/Globular/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Boundary.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Boundary",
+   "original_sha256": "6f27acab2d58d6383c3a12c113472bcfd37566ef208214c837696a8980a28372",
+   "path": "OAI/CategoryTheory/Globular/Boundary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/BoundaryCells.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.BoundaryCells",
+   "original_sha256": "93a94e4357225dc8e0d49b8334ea2743103f8962f1eeec9e9d73c1dd4d3b53ac",
+   "path": "OAI/CategoryTheory/Globular/BoundaryCells.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Coglobular.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Coglobular",
+   "original_sha256": "b5aa92d810e2cb12e1f9e5d30fd0352963952376b892aba331c9e40849a3d28d",
+   "path": "OAI/CategoryTheory/Globular/Coglobular.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Colimits.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Colimits",
+   "original_sha256": "f61891c1b0c07df1be8ac41cb7f901d89b0d4e2450d931d9755a6beaea3aed01",
+   "path": "OAI/CategoryTheory/Globular/Colimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Composition.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Composition",
+   "original_sha256": "d12d361188b3266c5be5fb302b201e7ea93b4026af6809fa74e1d6e9342e116f",
+   "path": "OAI/CategoryTheory/Globular/Composition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/CriticalJoint.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.CriticalJoint",
+   "original_sha256": "8fc48d7e4c1e8ad1ffd1344fdc62fb88ccacc691d362fe54e59f38e2a10013c0",
+   "path": "OAI/CategoryTheory/Globular/CriticalJoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Cutoff.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Cutoff",
+   "original_sha256": "51ada7f2d3170da4b915923c83e315ebb8bd37a1cd66fc1c4dca6f3557e93e0e",
+   "path": "OAI/CategoryTheory/Globular/Cutoff.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/CutoffCells.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.CutoffCells",
+   "original_sha256": "d6b1b365cad12494bf25accbb208fa97ad7983cf56ec29d0b6d43e488ee1f130",
+   "path": "OAI/CategoryTheory/Globular/CutoffCells.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/CutoffExistence.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.CutoffExistence",
+   "original_sha256": "5749d46a04408f1b33751161e2aa32f2acfb6c7b2451a7054dccc4544f1a1a2a",
+   "path": "OAI/CategoryTheory/Globular/CutoffExistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/CutoffExpansion.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.CutoffExpansion",
+   "original_sha256": "7bf5186ed7e65195a7ea3e6b65c383ff5dc03c119bc63d99570f5dcd21039d08",
+   "path": "OAI/CategoryTheory/Globular/CutoffExpansion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/CylinderContractibility.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.CylinderContractibility",
+   "original_sha256": "59e9c6186c51092338a7164063bb6b6333f6320424167366d19ae8b44ad22f3c",
+   "path": "OAI/CategoryTheory/Globular/CylinderContractibility.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/CylinderExtension.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.CylinderExtension",
+   "original_sha256": "0f3284cd90b99245d5bf00ab73aa855b0004d19cf3f84ea7c9893dc0ae2d7079",
+   "path": "OAI/CategoryTheory/Globular/CylinderExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/CylinderFramework.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.CylinderFramework",
+   "original_sha256": "6a36e446f34106ad8598e4d0f46e6830c1c1727507c1e12480b62761c613d4bd",
+   "path": "OAI/CategoryTheory/Globular/CylinderFramework.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/CylinderGluing.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.CylinderGluing",
+   "original_sha256": "1e0eb82d351f807b1050a3ce625c6b65e2365668b764bfed4ac9b53bdc9c7ae2",
+   "path": "OAI/CategoryTheory/Globular/CylinderGluing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/CylinderInterpretation.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.CylinderInterpretation",
+   "original_sha256": "5dbfb401887f3cf6ddde06b6a73f019991577cc0b8b677df18b179906443dce0",
+   "path": "OAI/CategoryTheory/Globular/CylinderInterpretation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/CylinderJointUpper.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.CylinderJointUpper",
+   "original_sha256": "5323cc6dec44d9d4b0e93585698ec628ce0b2dda394acc0d08a89b3b41c536e1",
+   "path": "OAI/CategoryTheory/Globular/CylinderJointUpper.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/CylinderLifting.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.CylinderLifting",
+   "original_sha256": "fb9a7691cc23c71c800c8bfed7f678d00b6d45b8b8e1b334095dcfeab08dc207",
+   "path": "OAI/CategoryTheory/Globular/CylinderLifting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/CylinderObjects.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.CylinderObjects",
+   "original_sha256": "ca93ad91433fb70dc98c790b269dc4924c3870edddeb65126e75bcbf63d60314",
+   "path": "OAI/CategoryTheory/Globular/CylinderObjects.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/CylinderPathLifting.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.CylinderPathLifting",
+   "original_sha256": "51281a3b5c9dcb3e7262ea42e3639f189b8960258db3a612d0db9f882fca3eb8",
+   "path": "OAI/CategoryTheory/Globular/CylinderPathLifting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/CylinderPresentations.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.CylinderPresentations",
+   "original_sha256": "71874214eeefdad3c875065c2932314671d78deec9448f010b8b76af7a5bc406",
+   "path": "OAI/CategoryTheory/Globular/CylinderPresentations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/CylinderShapes.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.CylinderShapes",
+   "original_sha256": "307fa0ae5c9a88ed7240ff78c7c811248038ad17497c459e0ddf2486d7e12697",
+   "path": "OAI/CategoryTheory/Globular/CylinderShapes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/CylinderSplitting.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.CylinderSplitting",
+   "original_sha256": "3372c324a5ce12be3817172bd7462d5e9a5493d8b47b58e3d8597a5f8cb16ec7",
+   "path": "OAI/CategoryTheory/Globular/CylinderSplitting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/CylinderTheory.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.CylinderTheory",
+   "original_sha256": "6a3226b592a8b0fa349df63c1e36e1f0a28ac7ce425d0e534b8f9719fc53245e",
+   "path": "OAI/CategoryTheory/Globular/CylinderTheory.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Density.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Density",
+   "original_sha256": "60a79c8ea9b372d0ecb183e88e323c30e958915062673e1802ef81a8ad64065b",
+   "path": "OAI/CategoryTheory/Globular/Density.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/DiskComparison.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.DiskComparison",
+   "original_sha256": "8f81998cec86da2dde34b5cbf763a92b8dc832d9ffa1847cb7c3eeddf042a9f1",
+   "path": "OAI/CategoryTheory/Globular/DiskComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/DiskRealization.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.DiskRealization",
+   "original_sha256": "a903ce50a76abf0f2d090af42515ee46a4e74c3df4d57c48edcca0ae665168c0",
+   "path": "OAI/CategoryTheory/Globular/DiskRealization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/ElementaryExpansion.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.ElementaryExpansion",
+   "original_sha256": "b2147010474504c58d45b33d125e34ca26c27f6b6b06451c46a24546db594b13",
+   "path": "OAI/CategoryTheory/Globular/ElementaryExpansion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Expansion.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Expansion",
+   "original_sha256": "c042c7457538c9fd207d43839d7d058e89bae1e5aae16c2c15fcf6b2542cbe1d",
+   "path": "OAI/CategoryTheory/Globular/Expansion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Factorization.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Factorization",
+   "original_sha256": "b19a5623a96fc1046be7f4ccd40038f1cb7cb9d1de645a48fdb1cffb06c01ad5",
+   "path": "OAI/CategoryTheory/Globular/Factorization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Fillers.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Fillers",
+   "original_sha256": "a3f33db1b73daea835c440cb2e861f59925659a10c8436a5ef754a0bf2bf52b0",
+   "path": "OAI/CategoryTheory/Globular/Fillers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/FrameJoint.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.FrameJoint",
+   "original_sha256": "7a8c0ca41a58cd27c1765f83912fce688939c4875d768c4109c0c50a3d8a0d37",
+   "path": "OAI/CategoryTheory/Globular/FrameJoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/FrameMaps.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.FrameMaps",
+   "original_sha256": "8c53701a63642f09bf165349056e0e3add67681c98b1c3aec8f9c51d91e38ac5",
+   "path": "OAI/CategoryTheory/Globular/FrameMaps.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/FrameOperations.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.FrameOperations",
+   "original_sha256": "2cbeed8331d1a316359301587fced848e4a6137f707c767e6eadfda650bf2098",
+   "path": "OAI/CategoryTheory/Globular/FrameOperations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/FrameRealization.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.FrameRealization",
+   "original_sha256": "9c83b32d6fb15b643259de37d8d45c8cb23cfb2db2ce08943f837edee68100a7",
+   "path": "OAI/CategoryTheory/Globular/FrameRealization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/FullCylinder.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.FullCylinder",
+   "original_sha256": "9bdc6084b9ea64fc3e67380cfe06b1374a6031a444c6abdac39c651cb77ab0a9",
+   "path": "OAI/CategoryTheory/Globular/FullCylinder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Groupoid.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Groupoid",
+   "original_sha256": "a7b99aab09bee6cb51f05253aa81c123e3cd48dc27871d8387b02b738763d25e",
+   "path": "OAI/CategoryTheory/Globular/Groupoid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Homotopy.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Homotopy",
+   "original_sha256": "a9f4be2c0bd204b53800abbaffff1f42201460651367f0d18e31356203d486f0",
+   "path": "OAI/CategoryTheory/Globular/Homotopy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/HomotopyGroups.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.HomotopyGroups",
+   "original_sha256": "f8978a9c962dbc06d8b1e69584d83b75d5259d6f2d7cfbd665e12678197a6b3c",
+   "path": "OAI/CategoryTheory/Globular/HomotopyGroups.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/LinearCells.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.LinearCells",
+   "original_sha256": "85ffa54fd3e25fd0e8d42a52ff13e471f583339c6e0b4275aad2eabd551340f8",
+   "path": "OAI/CategoryTheory/Globular/LinearCells.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/LinearShape.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.LinearShape",
+   "original_sha256": "59abfcc7bc17b57b9a33c439c0ca5a8621b982bf09914f046a3399ec72d6176a",
+   "path": "OAI/CategoryTheory/Globular/LinearShape.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Main.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Main",
+   "original_sha256": "0ed44c8dfcb095a254350b8c4a4aa8ab48e3dc6b02ad8f9790195a4ccdd8394a",
+   "path": "OAI/CategoryTheory/Globular/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Model.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Model",
+   "original_sha256": "f71c5d62a2cab600982177160d9a9eb616cb9793324f814ce77e03828f1957e8",
+   "path": "OAI/CategoryTheory/Globular/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/OneSidedPresentation.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.OneSidedPresentation",
+   "original_sha256": "43d9daf031496891642026c2c0b554339f1fbb0975e30019c0f8b2fcf2e6e563",
+   "path": "OAI/CategoryTheory/Globular/OneSidedPresentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Realization.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Realization",
+   "original_sha256": "e01e3c7a9b98e1835829a9377d7b744c0a6a660119e6f13948a39905a89a42ac",
+   "path": "OAI/CategoryTheory/Globular/Realization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/ReflectedCylinder.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.ReflectedCylinder",
+   "original_sha256": "324db440bb33fc9db026d1f97a6812767dce955cc4f80d0241018d0acab2d846",
+   "path": "OAI/CategoryTheory/Globular/ReflectedCylinder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Reflection.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Reflection",
+   "original_sha256": "0a9b049cd55b10b0cad8eb2b975187d5b73941da661fe31c8060f86a87750781",
+   "path": "OAI/CategoryTheory/Globular/Reflection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/RelativeLifting.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.RelativeLifting",
+   "original_sha256": "04384a67004df124830dc22fe4b32a129943f9b84c8938dcb452d322125a495b",
+   "path": "OAI/CategoryTheory/Globular/RelativeLifting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/ReverseWhisker.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.ReverseWhisker",
+   "original_sha256": "ac8d31c4434e17b02012d98cc0808954ec5999b59c81b612aa2f690640b536cd",
+   "path": "OAI/CategoryTheory/Globular/ReverseWhisker.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/ShapeFrame.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.ShapeFrame",
+   "original_sha256": "3c57cb3dd7e36d7a0035116af9fd0f7656ba46d16ca74e728a96b43395437660",
+   "path": "OAI/CategoryTheory/Globular/ShapeFrame.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/SkeletalPresentation.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.SkeletalPresentation",
+   "original_sha256": "f555c153d5dbca4d95557aa8896e31e0c04c5293cca627892774982a9ee0d745",
+   "path": "OAI/CategoryTheory/Globular/SkeletalPresentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/SmallFree.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.SmallFree",
+   "original_sha256": "98a977bdfe137665d25a77b4c7204179b2cc43cde081b747c4926862605d99ba",
+   "path": "OAI/CategoryTheory/Globular/SmallFree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/SmallObject.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.SmallObject",
+   "original_sha256": "a06e54b07e81f2d84ee7cf848d34ea5337ac9ada786c0df7817145802a67e245",
+   "path": "OAI/CategoryTheory/Globular/SmallObject.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/SpineWhisker.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.SpineWhisker",
+   "original_sha256": "090daf6a605d72625ec08a9e3552b272a8233cee0ad4e0602407e6145735d3e2",
+   "path": "OAI/CategoryTheory/Globular/SpineWhisker.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Spines.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Spines",
+   "original_sha256": "019ccedf903d7dcecf452575434b1dca72247dc990b54efea6328983ab3417ad",
+   "path": "OAI/CategoryTheory/Globular/Spines.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Tree.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Tree",
+   "original_sha256": "508641b93420be1ac430e137928750f5cc39c6cf97c31b26486f11fd7a1f3bf8",
+   "path": "OAI/CategoryTheory/Globular/Tree.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/Whisker.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.Whisker",
+   "original_sha256": "49285c6ea7c6a73ac80b2ad5c8e9ccdcf691e93cee0146b2617f20b1eb4dc958",
+   "path": "OAI/CategoryTheory/Globular/Whisker.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/CategoryTheory/Globular/WhiskerUniverse.lean"
+   },
+   "module": "OAI.CategoryTheory.Globular.WhiskerUniverse",
+   "original_sha256": "6fef816a740eb3e23af9fbdcd44115dc5dca07c047dd6b553bd27fcfd58fc5b4",
+   "path": "OAI/CategoryTheory/Globular/WhiskerUniverse.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.CategoryTheory.Globular.Basic",
+  "OAI.CategoryTheory.Globular.Boundary",
+  "OAI.CategoryTheory.Globular.BoundaryCells",
+  "OAI.CategoryTheory.Globular.Coglobular",
+  "OAI.CategoryTheory.Globular.Colimits",
+  "OAI.CategoryTheory.Globular.Composition",
+  "OAI.CategoryTheory.Globular.CriticalJoint",
+  "OAI.CategoryTheory.Globular.Cutoff",
+  "OAI.CategoryTheory.Globular.CutoffCells",
+  "OAI.CategoryTheory.Globular.CutoffExistence",
+  "OAI.CategoryTheory.Globular.CutoffExpansion",
+  "OAI.CategoryTheory.Globular.CylinderContractibility",
+  "OAI.CategoryTheory.Globular.CylinderExtension",
+  "OAI.CategoryTheory.Globular.CylinderFramework",
+  "OAI.CategoryTheory.Globular.CylinderGluing",
+  "OAI.CategoryTheory.Globular.CylinderInterpretation",
+  "OAI.CategoryTheory.Globular.CylinderJointUpper",
+  "OAI.CategoryTheory.Globular.CylinderLifting",
+  "OAI.CategoryTheory.Globular.CylinderObjects",
+  "OAI.CategoryTheory.Globular.CylinderPathLifting",
+  "OAI.CategoryTheory.Globular.CylinderPresentations",
+  "OAI.CategoryTheory.Globular.CylinderShapes",
+  "OAI.CategoryTheory.Globular.CylinderSplitting",
+  "OAI.CategoryTheory.Globular.CylinderTheory",
+  "OAI.CategoryTheory.Globular.Density",
+  "OAI.CategoryTheory.Globular.DiskComparison",
+  "OAI.CategoryTheory.Globular.DiskRealization",
+  "OAI.CategoryTheory.Globular.ElementaryExpansion",
+  "OAI.CategoryTheory.Globular.Expansion",
+  "OAI.CategoryTheory.Globular.Factorization",
+  "OAI.CategoryTheory.Globular.Fillers",
+  "OAI.CategoryTheory.Globular.FrameJoint",
+  "OAI.CategoryTheory.Globular.FrameMaps",
+  "OAI.CategoryTheory.Globular.FrameOperations",
+  "OAI.CategoryTheory.Globular.FrameRealization",
+  "OAI.CategoryTheory.Globular.FullCylinder",
+  "OAI.CategoryTheory.Globular.Groupoid",
+  "OAI.CategoryTheory.Globular.Homotopy",
+  "OAI.CategoryTheory.Globular.HomotopyGroups",
+  "OAI.CategoryTheory.Globular.LinearCells",
+  "OAI.CategoryTheory.Globular.LinearShape",
+  "OAI.CategoryTheory.Globular.Main",
+  "OAI.CategoryTheory.Globular.Model",
+  "OAI.CategoryTheory.Globular.OneSidedPresentation",
+  "OAI.CategoryTheory.Globular.Realization",
+  "OAI.CategoryTheory.Globular.ReflectedCylinder",
+  "OAI.CategoryTheory.Globular.Reflection",
+  "OAI.CategoryTheory.Globular.RelativeLifting",
+  "OAI.CategoryTheory.Globular.ReverseWhisker",
+  "OAI.CategoryTheory.Globular.ShapeFrame",
+  "OAI.CategoryTheory.Globular.SkeletalPresentation",
+  "OAI.CategoryTheory.Globular.SmallFree",
+  "OAI.CategoryTheory.Globular.SmallObject",
+  "OAI.CategoryTheory.Globular.SpineWhisker",
+  "OAI.CategoryTheory.Globular.Spines",
+  "OAI.CategoryTheory.Globular.Tree",
+  "OAI.CategoryTheory.Globular.Whisker",
+  "OAI.CategoryTheory.Globular.WhiskerUniverse"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/GrothendieckElementaryExpansion.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.CategoryTheory.Globular.ElementaryExpansion",
+   "name": "OAI.Grothendieck.elementary_expansion",
+   "statement_sha256": "d4d20336f537ee1548265bec0830827d7d31129922b97e1a20b2830e05e97ab9"
+  }
+ ],
+ "task_id": "oai-grothendieck-elementary-expansion",
+ "task_revision": 1,
+ "title": "OpenAI math: The Grothendieck homotopy hypothesis: Elementary-expansion weak equivalence",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

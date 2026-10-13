@@ -1,0 +1,161 @@
+# ABOUTME: Lake project of an lcbench OpenAI-math task: OAI modules of openai/math @ adc7f1241b42 (lean/)
+# ABOUTME: with the upstream lakefile.lean's requires and Lean options; dependencies come patched in --deps.
+name = "OAI"
+defaultTargets = ["OAI"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "fixed-point-theorems"
+git = "https://github.com/harfe/fixed-point-theorems-lean4.git"
+rev = "770940ddf9878cf61952ed53d910b92bca841838"
+
+[[require]]
+name = "Zeta3Irrational"
+git = "https://github.com/ahhwuhu/zeta_3_irrational.git"
+rev = "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1"
+
+[[require]]
+name = "rellich-kondrachov"
+git = "https://github.com/abenenson/rellich-kondrachov.git"
+rev = "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23"
+
+[[require]]
+name = "carleson"
+git = "https://github.com/fpvandoorn/carleson.git"
+rev = "306ae5b29300771aece1aa39f0a939183cc59486"
+
+[[require]]
+name = "StrongPNT"
+git = "https://github.com/math-inc/strongpnt.git"
+rev = "2f5835c322314f55f1026ec2f139d704b7c45c69"
+
+[[require]]
+name = "AbsorptionCutoff"
+git = "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+rev = "41c45c6d72e979419e46224bb7b4be5cee31f2b5"
+
+[[require]]
+name = "AINTLIB"
+git = "https://github.com/CBirkbeck/AINTLIB.git"
+rev = "160e446617a2168c34c95bbe7a76c4105b392434"
+
+[[require]]
+name = "ClassFieldTheory"
+git = "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+rev = "2eb22d6485af45f29c5219de6c49f196a61c4f49"
+
+[[require]]
+name = "schoenflies-lean"
+git = "https://github.com/alonamaloh/schoenflies-lean"
+rev = "05a43d29cde026618777db3d4e4316204ccca237"
+
+[[require]]
+name = "SphereEversion"
+git = "https://github.com/leanprover-community/sphere-eversion.git"
+rev = "9c53f91e2a281199163ecea04dc4976cb79e2076"
+
+[[require]]
+name = "TauCeti"
+git = "https://github.com/TauCetiProject/TauCeti.git"
+rev = "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+
+[[require]]
+name = "gromov"
+git = "https://github.com/Aaron1011/gromov.git"
+rev = "8db79f13cf211b570e3116301d91379fbc01cf3e"
+
+[[require]]
+name = "iut"
+git = "https://github.com/lana-agents/iut.git"
+rev = "d9465c111ec4073709f67e9fccec7e3eb374a816"
+
+[[require]]
+name = "tate-curves-theta"
+git = "https://github.com/lana-agents/tate-curves-theta.git"
+rev = "ca6c2279d3cea0690cdb01328e727118d5485d68"
+
+[[require]]
+name = "genl"
+git = "https://github.com/lana-agents/genl.git"
+rev = "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf"
+
+[[require]]
+name = "heights"
+git = "https://github.com/lana-agents/heights.git"
+rev = "721496ca4c158e511d25d8ccf6bfe8503eda73c1"
+
+[[require]]
+name = "pi1"
+git = "https://github.com/lana-agents/pi1.git"
+rev = "ca7def953193f861a462aa0831eec8f0a31ff69f"
+
+[[require]]
+name = "orbicurve-cores"
+git = "https://github.com/lana-agents/orbicurve-cores.git"
+rev = "61616dcd77fbe45c083a8ebfa7cc80728f86e841"
+
+[[require]]
+name = "oka"
+git = "https://github.com/lana-agents/oka.git"
+rev = "75dcdc3faadd10b986afb9283e89902bcdddecd4"
+
+[[require]]
+name = "tempered-fundamental-groups"
+git = "https://github.com/lana-agents/tempered-fundamental-groups.git"
+rev = "2006651f52b70ea2fe3388238c7d9db14d21748f"
+
+[[require]]
+name = "elliptic-curves"
+git = "https://github.com/lana-agents/elliptic-curves.git"
+rev = "bebec3fc9f2602e81c83e5236789572a541c85fb"
+
+[[require]]
+name = "formal-schemes"
+git = "https://github.com/lana-agents/formal-schemes.git"
+rev = "51aa935079537bf4dc580751a6e70727fb23ca93"
+
+[[require]]
+name = "belyi"
+git = "https://github.com/lana-agents/belyi.git"
+rev = "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8"
+
+[[require]]
+name = "PrimeNumberTheoremAnd"
+git = "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+rev = "c39a751132c88b6e8080b74c74023fd95b3d8be0"
+
+[[require]]
+name = "leancert"
+git = "https://github.com/alerad/leancert.git"
+rev = "7f91b6eb3567437f6cfac03ed279706603ee22f4"
+
+[[require]]
+name = "LeanArchitect"
+git = "https://github.com/hanwenzhu/LeanArchitect.git"
+rev = "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97"
+
+[[require]]
+name = "PrimeCert"
+git = "https://github.com/b-mehta/PrimeCert.git"
+rev = "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2"
+
+[[require]]
+name = "doc-gen4"
+git = "https://github.com/leanprover/doc-gen4.git"
+rev = "953c8992d174b4e56955e01e101d46668c68f2bb"
+
+[[require]]
+name = "checkdecls"
+git = "https://github.com/PatrickMassot/checkdecls.git"
+rev = "3d425859e73fcfbef85b9638c2a91708ef4a22d4"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+[[lean_lib]]
+name = "OAI"
+globs = ["OAI.+"]

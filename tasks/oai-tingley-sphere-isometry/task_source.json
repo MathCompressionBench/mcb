@@ -1,0 +1,1091 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 28239687
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.TingleySphereIsometry",
+  "challenge_sha256": "fee90b109d4640af4faeebb337b39e654e57c4db645f049d654d082f25fd7303",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/TingleySphereIsometry.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.TingleySphereIsometry",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.SphereIsometry.Main",
+   "theorem_names": [
+    "OAI.Tingley.tingley_sphere_isometry_full"
+   ]
+  },
+  "config_sha256": "7e50ce0afaab04e002f1d5cba129579b6a079c966238487d9329eb8fd325a12f",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/TingleySphereIsometry.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.Tingley.tingley_sphere_isometry_full": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/AlignedConfiguration.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.AlignedConfiguration",
+   "original_sha256": "c074ea5d4e8ebc69a96e2e45c55657bbe674885317447a05c1095a6b86bf6b37",
+   "path": "OAI/Analysis/SphereIsometry/AlignedConfiguration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/Alignment.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.Alignment",
+   "original_sha256": "af6f8293ddf82f8a2df04997d8f924aa73b0ff7c258201f4df6eee0093cba0ec",
+   "path": "OAI/Analysis/SphereIsometry/Alignment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/AlignmentSet.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.AlignmentSet",
+   "original_sha256": "e628ec8f7511c041d33b62043acdd7aec2530be584190ae77675755a911dc9e8",
+   "path": "OAI/Analysis/SphereIsometry/AlignmentSet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/BarycentricBasic.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.BarycentricBasic",
+   "original_sha256": "110caef6d51430b0f062abd14068da98ea33f26c568c617af500679e0cf568c8",
+   "path": "OAI/Analysis/SphereIsometry/BarycentricBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/BarycentricFlags.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.BarycentricFlags",
+   "original_sha256": "176e12e162868ab7395954d22d3c4f99ff3c25252bc0eeb53e7662964178e1cb",
+   "path": "OAI/Analysis/SphereIsometry/BarycentricFlags.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/BarycentricIncidence.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.BarycentricIncidence",
+   "original_sha256": "3ea3a85d54f78bbea0be4ae149c80479513cb8433155585363210c5316cec27b",
+   "path": "OAI/Analysis/SphereIsometry/BarycentricIncidence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/BarycentricMesh.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.BarycentricMesh",
+   "original_sha256": "f9f5a3bce03ce671dd89ebbce0fe37eb9c30c01c95e9d75febdf6d160a4153be",
+   "path": "OAI/Analysis/SphereIsometry/BarycentricMesh.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/BarycentricPoints.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.BarycentricPoints",
+   "original_sha256": "df31d8d24799b56a675097065c77e27858c082951c6dc8aec75c15472b28d332",
+   "path": "OAI/Analysis/SphereIsometry/BarycentricPoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/BarycentricPurity.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.BarycentricPurity",
+   "original_sha256": "b8aa3e7a063c074f4074cd8b3ac82d45f018c9761baf2f7e4cc11eddc0a5dd21",
+   "path": "OAI/Analysis/SphereIsometry/BarycentricPurity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/BarycentricRestriction.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.BarycentricRestriction",
+   "original_sha256": "e4b85af13d7592b4f0d6f4304dbfd465f6274681ff732eb619785c4a28075c36",
+   "path": "OAI/Analysis/SphereIsometry/BarycentricRestriction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/BarycentricSupport.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.BarycentricSupport",
+   "original_sha256": "0361124181a488a82ae981af6ee0a97543995b10b8fd87a6aa24c15536d2498c",
+   "path": "OAI/Analysis/SphereIsometry/BarycentricSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/BarycentricZero.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.BarycentricZero",
+   "original_sha256": "4717d08ce09268a7f6e0cb44a47947d752e9461a96f1905b7959528336c2bf63",
+   "path": "OAI/Analysis/SphereIsometry/BarycentricZero.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/Basic.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.Basic",
+   "original_sha256": "781c208ded0259a69a8f787e76aaac1a5f4a556c7bedb1f82a14108e84a9dbc5",
+   "path": "OAI/Analysis/SphereIsometry/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/ChordContradiction.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.ChordContradiction",
+   "original_sha256": "ffed2d1560cde7d6fd075e564aad518527f1615bdf7792416fbc345a31828445",
+   "path": "OAI/Analysis/SphereIsometry/ChordContradiction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/ChordSecant.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.ChordSecant",
+   "original_sha256": "65278afe9954649a428a1fbfb189e968d9016b09b712b88f95228c09bb554c25",
+   "path": "OAI/Analysis/SphereIsometry/ChordSecant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/CoefficientBins.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.CoefficientBins",
+   "original_sha256": "512914f14f5c8285c31695f416132593830a6d79de301f05b9d7aa30d3d6e1f9",
+   "path": "OAI/Analysis/SphereIsometry/CoefficientBins.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/CompactApproximation.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.CompactApproximation",
+   "original_sha256": "7e661db4e4db07713a37b113acaf9e779a6985791fd1fd17b134373941eef548",
+   "path": "OAI/Analysis/SphereIsometry/CompactApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/CompactConvexFixedPoint.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.CompactConvexFixedPoint",
+   "original_sha256": "495ded4cd104349320af30e07db0bdc948ea80fd89881ca34398ba1ae694bd24",
+   "path": "OAI/Analysis/SphereIsometry/CompactConvexFixedPoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/CondensingFixedPoint.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.CondensingFixedPoint",
+   "original_sha256": "cbbc54c0a71a95aa86d65294ea84c2ac43d4133ff4800eeec0d5310d10dd4f4f",
+   "path": "OAI/Analysis/SphereIsometry/CondensingFixedPoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/CondensingIteration.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.CondensingIteration",
+   "original_sha256": "353b59b6a16adc0985cbe6cf818ea2ece9f701b37f9e722b0a544b3ebd5ff0b1",
+   "path": "OAI/Analysis/SphereIsometry/CondensingIteration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/ConvexCoverRegroup.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.ConvexCoverRegroup",
+   "original_sha256": "67e0d6c56306f6a096596945112d862d86529115c7a11b5216157de2a00e4752",
+   "path": "OAI/Analysis/SphereIsometry/ConvexCoverRegroup.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/ConvexDiameter.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.ConvexDiameter",
+   "original_sha256": "1bb0f776aab49f85cb9da23a806c05126e5d091339805ce019cec2de5e4daf8c",
+   "path": "OAI/Analysis/SphereIsometry/ConvexDiameter.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/DefectAttainment.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.DefectAttainment",
+   "original_sha256": "c6ce90280d8e269eb1e8a07ece661f390d41dd4081700bf3f9e81a67b2ef325c",
+   "path": "OAI/Analysis/SphereIsometry/DefectAttainment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/DefectSequence.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.DefectSequence",
+   "original_sha256": "7916a78dccf1783b38f04238a673179e66062744f00c964d256af763fecd1eda",
+   "path": "OAI/Analysis/SphereIsometry/DefectSequence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/DiameterBounds.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.DiameterBounds",
+   "original_sha256": "0cd1d40e7ba855d2711c842fea6cfcc2f0103e656f53dba66bc541458cb8f306",
+   "path": "OAI/Analysis/SphereIsometry/DiameterBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/Extension.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.Extension",
+   "original_sha256": "260b19b57b7029d273f9becec39accf9eecf90d3ae65bd1701d7ec3dca0a7873",
+   "path": "OAI/Analysis/SphereIsometry/Extension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/ExtremalPropagation.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.ExtremalPropagation",
+   "original_sha256": "a6409c5c28a175e931a9a4c28a5f3c8333ff15efbaf03055ce17b1719015724e",
+   "path": "OAI/Analysis/SphereIsometry/ExtremalPropagation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/FiniteComplex.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.FiniteComplex",
+   "original_sha256": "8d75ab01e6954b2c9af1927352441d01986514222becc248516dd942b5c8e6cd",
+   "path": "OAI/Analysis/SphereIsometry/FiniteComplex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/InvariantConvexSet.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.InvariantConvexSet",
+   "original_sha256": "e1709f7d19b5cb87c1c10f4a8a8683da8e07fa077c548a55d2d023e03f0bb577",
+   "path": "OAI/Analysis/SphereIsometry/InvariantConvexSet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/IteratedPoints.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.IteratedPoints",
+   "original_sha256": "b5b75e47f5beafbd6b0fb3c85a5c937eca0c17708749a2baa6344ccf814531ca",
+   "path": "OAI/Analysis/SphereIsometry/IteratedPoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/IteratedSubdivision.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.IteratedSubdivision",
+   "original_sha256": "fe8a0d2272eec6fc20c191a22e24c254ca9814867fc0b6da92f391ce0820987e",
+   "path": "OAI/Analysis/SphereIsometry/IteratedSubdivision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/KuratowskiBasic.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.KuratowskiBasic",
+   "original_sha256": "8fc535b28e3a9418691cd8df2283313209584cf6a9c367704569a90dc4f27fea",
+   "path": "OAI/Analysis/SphereIsometry/KuratowskiBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/KuratowskiConvexHull.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.KuratowskiConvexHull",
+   "original_sha256": "f01550cc0428872bc917974324fc7b36314626938bea633ef19730d52c68d8cf",
+   "path": "OAI/Analysis/SphereIsometry/KuratowskiConvexHull.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/KuratowskiNested.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.KuratowskiNested",
+   "original_sha256": "5194c4ebdb2dcf240e5d5e29e40d27b1dfa70350f72dc6d50cab9a87a1477e13",
+   "path": "OAI/Analysis/SphereIsometry/KuratowskiNested.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/KuratowskiTotalBounded.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.KuratowskiTotalBounded",
+   "original_sha256": "da21963e94dcf9d1edeccbae1efe8dd4923ff4be5fbf2b3952a45bdd2b2e5e8d",
+   "path": "OAI/Analysis/SphereIsometry/KuratowskiTotalBounded.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/LargeChord.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.LargeChord",
+   "original_sha256": "732b1d980a553c39ed27067352fd8628a2276147bbfbfba76742faf5e5361a20",
+   "path": "OAI/Analysis/SphereIsometry/LargeChord.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/Main.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.Main",
+   "original_sha256": "7dff5cd3a9ab9b9993f855981768c36330b91ac4d1c0bd8c76b77e810bfb12a8",
+   "path": "OAI/Analysis/SphereIsometry/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/Model.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.Model",
+   "original_sha256": "508b379135cdfcc1491d36bbbeebfbe8c832e79312e536b8675f2d2dff0c4e17",
+   "path": "OAI/Analysis/SphereIsometry/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/PositiveConvexFace.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.PositiveConvexFace",
+   "original_sha256": "7ace73b86879469a54a6cda20fbeb5651596c9016be99b553337464de6275274",
+   "path": "OAI/Analysis/SphereIsometry/PositiveConvexFace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/PositiveScheduling.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.PositiveScheduling",
+   "original_sha256": "90f90d6d229801d955838b9719aa2af2e196e1b2383b358afb75c436cddb221b",
+   "path": "OAI/Analysis/SphereIsometry/PositiveScheduling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/ProbabilitySimplex.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.ProbabilitySimplex",
+   "original_sha256": "68920c7aad03552a108512ce5600147b86737f675ffd5fcd768b8ebf1fff08c9",
+   "path": "OAI/Analysis/SphereIsometry/ProbabilitySimplex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/RadialContact.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.RadialContact",
+   "original_sha256": "01c77b527c3bb8d29ab1f52687b5fc0ce52925ccfdad86d486e27fb930459088",
+   "path": "OAI/Analysis/SphereIsometry/RadialContact.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/RadialExtension.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.RadialExtension",
+   "original_sha256": "4bba01d384730cc824f34ef3b714d0160ddd78cea5aea5b633c3727efdee6649",
+   "path": "OAI/Analysis/SphereIsometry/RadialExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/RadialPerturbation.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.RadialPerturbation",
+   "original_sha256": "2f76960d5ef367251e655edd82659eb522d85e52463a214d6dc568d73dbf65e0",
+   "path": "OAI/Analysis/SphereIsometry/RadialPerturbation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/ReturnMap.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.ReturnMap",
+   "original_sha256": "cda67a44a0dc09dad6348deb7bc5661e95e106787430f92824b340dd4aff852c",
+   "path": "OAI/Analysis/SphereIsometry/ReturnMap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/ReturnMapBounds.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.ReturnMapBounds",
+   "original_sha256": "f447bd995fbe991012afd08c6ffee5bd6a33b38f1607ab6441b6fb4a72670338",
+   "path": "OAI/Analysis/SphereIsometry/ReturnMapBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/ReturnMapEstimate.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.ReturnMapEstimate",
+   "original_sha256": "7dd28956e21164f6d39949fe11c614a40fa9ee2d87e457a248781f6164cb6b31",
+   "path": "OAI/Analysis/SphereIsometry/ReturnMapEstimate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/ReturnMapFixedPoint.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.ReturnMapFixedPoint",
+   "original_sha256": "45d4a455921ee20c037cce9512cb9069f311a3a055f6ea31f79272040cb15447",
+   "path": "OAI/Analysis/SphereIsometry/ReturnMapFixedPoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/ReturnMapNoncompactness.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.ReturnMapNoncompactness",
+   "original_sha256": "bb777f59fab1988e646a228d1467df12e799276eb9f826f91753ec56e3e717cd",
+   "path": "OAI/Analysis/SphereIsometry/ReturnMapNoncompactness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/ScalarBins.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.ScalarBins",
+   "original_sha256": "413e93f7b5bd8e056b564dc6a6283690f704b154e6f825b31ccdf1ae852e8556",
+   "path": "OAI/Analysis/SphereIsometry/ScalarBins.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/SimplexFixedPoint.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.SimplexFixedPoint",
+   "original_sha256": "b6b52eca046d10880b920fe71bf78cf6f2178eeff316e51bf642ecadbb74c011",
+   "path": "OAI/Analysis/SphereIsometry/SimplexFixedPoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/SimplexLimit.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.SimplexLimit",
+   "original_sha256": "4261979de296ca8ae59d4ea58f1a1bd974f7c5411ffc66a7dba79397b22d9642",
+   "path": "OAI/Analysis/SphereIsometry/SimplexLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/SmallChord.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.SmallChord",
+   "original_sha256": "bab9a48a7a402ec5252092ebc0b121a725bb18d3dc332834aa4e90458e2ee55d",
+   "path": "OAI/Analysis/SphereIsometry/SmallChord.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/Sperner.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.Sperner",
+   "original_sha256": "e3f43b3acbe7f84f6e3ad3138f659ae3509e7a4c6ed38aa7b02ddd480bef159b",
+   "path": "OAI/Analysis/SphereIsometry/Sperner.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/SpernerBoundary.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.SpernerBoundary",
+   "original_sha256": "680585c5dbf2ba6b69af0b445f58d439ef0394db21f99449a356901dbf0be2c6",
+   "path": "OAI/Analysis/SphereIsometry/SpernerBoundary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/SpernerFacet.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.SpernerFacet",
+   "original_sha256": "c702c80e234d71ccb686c91e31a1de2193da0737fcc56d550cc72aafc23fd867",
+   "path": "OAI/Analysis/SphereIsometry/SpernerFacet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/SpernerIncidence.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.SpernerIncidence",
+   "original_sha256": "8107898709663466cf9534fff2684a5c9d2616f457880c14ad93e1c10ddf4ae6",
+   "path": "OAI/Analysis/SphereIsometry/SpernerIncidence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/SphereCompletion.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.SphereCompletion",
+   "original_sha256": "8ac1fba89f67653f74d70d886103ffdf00f657ce457b725eea74aa384082c086",
+   "path": "OAI/Analysis/SphereIsometry/SphereCompletion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/SubdivisionData.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.SubdivisionData",
+   "original_sha256": "4ef3da9f2a3e8fd2388a3ff4fb6c30d3a60354bdb869bcea58b15f412874b8d0",
+   "path": "OAI/Analysis/SphereIsometry/SubdivisionData.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/SubdivisionIncidence.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.SubdivisionIncidence",
+   "original_sha256": "f838d93c2bbb80581cd2ff52fa7ca62d7f7a32c84dc4c4c0377e49fd7359689c",
+   "path": "OAI/Analysis/SphereIsometry/SubdivisionIncidence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/SubdivisionPointRestriction.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.SubdivisionPointRestriction",
+   "original_sha256": "d28516611fa75f755efd72e15a73c8d81bdca41c8f7bfce9eb9c2a19240e9c52",
+   "path": "OAI/Analysis/SphereIsometry/SubdivisionPointRestriction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/SubdivisionRestriction.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.SubdivisionRestriction",
+   "original_sha256": "aec71753799c9218bd7164fa2464a805006896489f947d05547f270f1d08c01c",
+   "path": "OAI/Analysis/SphereIsometry/SubdivisionRestriction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/Supports.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.Supports",
+   "original_sha256": "84ea15b368266b9928123bbeb78de1144f2aa3dcbe9fc01f6bdbfddaa746afcf",
+   "path": "OAI/Analysis/SphereIsometry/Supports.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/UltraNormed.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.UltraNormed",
+   "original_sha256": "9aeb19c6f1c56f4129574718b8bb773afcf9db3218631d50c6d3fa74ddb8b1c6",
+   "path": "OAI/Analysis/SphereIsometry/UltraNormed.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/UltraRealLimit.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.UltraRealLimit",
+   "original_sha256": "54a98d96863164da24bf9895371a27c54b3e2a375e0bf029a95cfedb2e4e3b0e",
+   "path": "OAI/Analysis/SphereIsometry/UltraRealLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/UltraSphere.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.UltraSphere",
+   "original_sha256": "c2a986f3d3d66c28d393f4fcdf74ec1a19f1b912662d9116c069c0e02afa9ac8",
+   "path": "OAI/Analysis/SphereIsometry/UltraSphere.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/SphereIsometry/UnitRepresentatives.lean"
+   },
+   "module": "OAI.Analysis.SphereIsometry.UnitRepresentatives",
+   "original_sha256": "a92b61f46d5d585d09e99a9cf80884e70243d5d3f96da41794140280b8f32b22",
+   "path": "OAI/Analysis/SphereIsometry/UnitRepresentatives.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.SphereIsometry.AlignedConfiguration",
+  "OAI.Analysis.SphereIsometry.Alignment",
+  "OAI.Analysis.SphereIsometry.AlignmentSet",
+  "OAI.Analysis.SphereIsometry.BarycentricBasic",
+  "OAI.Analysis.SphereIsometry.BarycentricFlags",
+  "OAI.Analysis.SphereIsometry.BarycentricIncidence",
+  "OAI.Analysis.SphereIsometry.BarycentricMesh",
+  "OAI.Analysis.SphereIsometry.BarycentricPoints",
+  "OAI.Analysis.SphereIsometry.BarycentricPurity",
+  "OAI.Analysis.SphereIsometry.BarycentricRestriction",
+  "OAI.Analysis.SphereIsometry.BarycentricSupport",
+  "OAI.Analysis.SphereIsometry.BarycentricZero",
+  "OAI.Analysis.SphereIsometry.Basic",
+  "OAI.Analysis.SphereIsometry.ChordContradiction",
+  "OAI.Analysis.SphereIsometry.ChordSecant",
+  "OAI.Analysis.SphereIsometry.CoefficientBins",
+  "OAI.Analysis.SphereIsometry.CompactApproximation",
+  "OAI.Analysis.SphereIsometry.CompactConvexFixedPoint",
+  "OAI.Analysis.SphereIsometry.CondensingFixedPoint",
+  "OAI.Analysis.SphereIsometry.CondensingIteration",
+  "OAI.Analysis.SphereIsometry.ConvexCoverRegroup",
+  "OAI.Analysis.SphereIsometry.ConvexDiameter",
+  "OAI.Analysis.SphereIsometry.DefectAttainment",
+  "OAI.Analysis.SphereIsometry.DefectSequence",
+  "OAI.Analysis.SphereIsometry.DiameterBounds",
+  "OAI.Analysis.SphereIsometry.Extension",
+  "OAI.Analysis.SphereIsometry.ExtremalPropagation",
+  "OAI.Analysis.SphereIsometry.FiniteComplex",
+  "OAI.Analysis.SphereIsometry.InvariantConvexSet",
+  "OAI.Analysis.SphereIsometry.IteratedPoints",
+  "OAI.Analysis.SphereIsometry.IteratedSubdivision",
+  "OAI.Analysis.SphereIsometry.KuratowskiBasic",
+  "OAI.Analysis.SphereIsometry.KuratowskiConvexHull",
+  "OAI.Analysis.SphereIsometry.KuratowskiNested",
+  "OAI.Analysis.SphereIsometry.KuratowskiTotalBounded",
+  "OAI.Analysis.SphereIsometry.LargeChord",
+  "OAI.Analysis.SphereIsometry.Main",
+  "OAI.Analysis.SphereIsometry.Model",
+  "OAI.Analysis.SphereIsometry.PositiveConvexFace",
+  "OAI.Analysis.SphereIsometry.PositiveScheduling",
+  "OAI.Analysis.SphereIsometry.ProbabilitySimplex",
+  "OAI.Analysis.SphereIsometry.RadialContact",
+  "OAI.Analysis.SphereIsometry.RadialExtension",
+  "OAI.Analysis.SphereIsometry.RadialPerturbation",
+  "OAI.Analysis.SphereIsometry.ReturnMap",
+  "OAI.Analysis.SphereIsometry.ReturnMapBounds",
+  "OAI.Analysis.SphereIsometry.ReturnMapEstimate",
+  "OAI.Analysis.SphereIsometry.ReturnMapFixedPoint",
+  "OAI.Analysis.SphereIsometry.ReturnMapNoncompactness",
+  "OAI.Analysis.SphereIsometry.ScalarBins",
+  "OAI.Analysis.SphereIsometry.SimplexFixedPoint",
+  "OAI.Analysis.SphereIsometry.SimplexLimit",
+  "OAI.Analysis.SphereIsometry.SmallChord",
+  "OAI.Analysis.SphereIsometry.Sperner",
+  "OAI.Analysis.SphereIsometry.SpernerBoundary",
+  "OAI.Analysis.SphereIsometry.SpernerFacet",
+  "OAI.Analysis.SphereIsometry.SpernerIncidence",
+  "OAI.Analysis.SphereIsometry.SphereCompletion",
+  "OAI.Analysis.SphereIsometry.SubdivisionData",
+  "OAI.Analysis.SphereIsometry.SubdivisionIncidence",
+  "OAI.Analysis.SphereIsometry.SubdivisionPointRestriction",
+  "OAI.Analysis.SphereIsometry.SubdivisionRestriction",
+  "OAI.Analysis.SphereIsometry.Supports",
+  "OAI.Analysis.SphereIsometry.UltraNormed",
+  "OAI.Analysis.SphereIsometry.UltraRealLimit",
+  "OAI.Analysis.SphereIsometry.UltraSphere",
+  "OAI.Analysis.SphereIsometry.UnitRepresentatives"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/TingleySphereIsometry.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.SphereIsometry.Extension",
+   "name": "OAI.Tingley.tingley_sphere_isometry_full",
+   "statement_sha256": "824f3ac6e61fa31abfc02d4eeb6a15bccfdbf996d8de70f8f82e9eca8d431aab"
+  }
+ ],
+ "task_id": "oai-tingley-sphere-isometry",
+ "task_revision": 1,
+ "title": "OpenAI math: Tingley’s sphere-isometry problem: Tingley's sphere-isometry extension",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

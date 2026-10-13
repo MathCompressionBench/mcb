@@ -1,0 +1,1281 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 208875020
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.HyperbolicCones",
+  "challenge_sha256": "88c428351740c111e39d35aed94f3cfc08010f3dce0d9589ca5bcfde8308f9bf",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/HyperbolicCones.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.HyperbolicCones",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.HyperbolicCones.Main",
+   "theorem_names": [
+    "OAI.Paper256.main_result"
+   ]
+  },
+  "config_sha256": "954a11b27fce69c9b1e70daa002eefe7f8182fb477629cacf4aa6460e2dced8d",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/HyperbolicCones.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.Paper256.main_result": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/BlockNormalization.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.BlockNormalization",
+   "original_sha256": "4b44b4cb22d320e124d0bfef869589d1025e3c0a0cf32d04043c2cf63666ef24",
+   "path": "OAI/Analysis/HyperbolicCones/BlockNormalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/BlockReduction.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.BlockReduction",
+   "original_sha256": "45fb2539a96ffcdb37d6feb7f1ae20de4d663cb913a38cc77a9b1b55f69a7037",
+   "path": "OAI/Analysis/HyperbolicCones/BlockReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/BlockScaling.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.BlockScaling",
+   "original_sha256": "116a9ab27ce1dd9e219d967cce304dccacb1a3bb79231c3f98720d91e577ec5a",
+   "path": "OAI/Analysis/HyperbolicCones/BlockScaling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/ComplexPositive.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.ComplexPositive",
+   "original_sha256": "522bfe55b830dad9ea8ab1d7845ce922c4676c61558fe04ffc6d0ce2cb2579d1",
+   "path": "OAI/Analysis/HyperbolicCones/ComplexPositive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/CompressionBasic.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.CompressionBasic",
+   "original_sha256": "7fd1441a9954e0ea0c6fc5ec5b8abab0c2300716b49706bd5ba0aab9ab00867e",
+   "path": "OAI/Analysis/HyperbolicCones/CompressionBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/ConeContinuity.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.ConeContinuity",
+   "original_sha256": "947505228f20936519dc0fda7db853a4274f9f6baee8b9511c9afc8de86e9be6",
+   "path": "OAI/Analysis/HyperbolicCones/ConeContinuity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/ConeInterior.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.ConeInterior",
+   "original_sha256": "1c6ae4c7acd26e96ea1f9a57b0929fd3686a83b765f827deb2de41ec2ea11f80",
+   "path": "OAI/Analysis/HyperbolicCones/ConeInterior.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/ConeMatrix.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.ConeMatrix",
+   "original_sha256": "59a1ad47f373edad82b5b17b0dec32af310e2c0fe9bf51024e5adbd60ef4a3ee",
+   "path": "OAI/Analysis/HyperbolicCones/ConeMatrix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/ConePositive.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.ConePositive",
+   "original_sha256": "bbc642811bb1c2ca281166a14bc9e9586116f3c6c7be74f4c62d3e1fda09ebbd",
+   "path": "OAI/Analysis/HyperbolicCones/ConePositive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/ConeRoots.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.ConeRoots",
+   "original_sha256": "401f7d74988f0ff7c4b35c7a2b727c29d7af883dfd98ff6ed55d30b8b59832db",
+   "path": "OAI/Analysis/HyperbolicCones/ConeRoots.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/ConeZero.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.ConeZero",
+   "original_sha256": "4703d00cf1a178eac5ba6028ff8e2c1b738898f1d2250e13e499f2f4982ae2f6",
+   "path": "OAI/Analysis/HyperbolicCones/ConeZero.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/CongruenceMaps.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.CongruenceMaps",
+   "original_sha256": "9400853574f0aa6244a57f7eca9ef4e4f0ceed5192bbccc7a4692c00e435ba8f",
+   "path": "OAI/Analysis/HyperbolicCones/CongruenceMaps.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/Coordinates.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.Coordinates",
+   "original_sha256": "0148ecdb91e1f8d938933a8e54f3a21d303186a8aa3c5a82d9d14864e112eabe",
+   "path": "OAI/Analysis/HyperbolicCones/Coordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/Deformation.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.Deformation",
+   "original_sha256": "09a82355e56371fa50958a8873b92f17e8d188a055e87d14dfa24df1e3c31c0d",
+   "path": "OAI/Analysis/HyperbolicCones/Deformation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/DeformationBasic.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.DeformationBasic",
+   "original_sha256": "fc1809cb283caed38c17bb852c05bfbc9f7e6e21594fc16589cc1e742d89690c",
+   "path": "OAI/Analysis/HyperbolicCones/DeformationBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/DeformationCone.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.DeformationCone",
+   "original_sha256": "6cd3f7b3974a171d655fe5e2f7167c43e2287c1689a44fb650fd6c238037dcff",
+   "path": "OAI/Analysis/HyperbolicCones/DeformationCone.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/DeformationFamily.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.DeformationFamily",
+   "original_sha256": "177ce873ca724842da241346a19693ac6492502b7a2a04b5c85b8778d103add2",
+   "path": "OAI/Analysis/HyperbolicCones/DeformationFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/DeformationRoots.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.DeformationRoots",
+   "original_sha256": "201c6c5540629dff6675aa2d0f1a0def5217960de4da90215f158814884f3403",
+   "path": "OAI/Analysis/HyperbolicCones/DeformationRoots.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/FiniteTopology.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.FiniteTopology",
+   "original_sha256": "16c4b6ef8ff1a0a1b4dcc980fb8754a48bebb6285d9d81b3f6b7ad02511f20fb",
+   "path": "OAI/Analysis/HyperbolicCones/FiniteTopology.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/FormBasic.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.FormBasic",
+   "original_sha256": "f964e2e2bda61a359c109cbf67d3bebf6a63b630e09a4f23bf2b5a88a8d50350",
+   "path": "OAI/Analysis/HyperbolicCones/FormBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/FormPositive.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.FormPositive",
+   "original_sha256": "e3a400df3405247b875df1a4094dd04438e090e76e317011c1feff6e29bf9a73",
+   "path": "OAI/Analysis/HyperbolicCones/FormPositive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/FormRigidity.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.FormRigidity",
+   "original_sha256": "38ba07caac56bf02903f7e9d5c8d664d4765261853e320c7623dd4d74d47c3fd",
+   "path": "OAI/Analysis/HyperbolicCones/FormRigidity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/GramProjection.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.GramProjection",
+   "original_sha256": "0e4f5d106de5a1e6cbe311935888370bc8afa93269ea83f2197cfc013b38e604",
+   "path": "OAI/Analysis/HyperbolicCones/GramProjection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/Hyperbolicity.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.Hyperbolicity",
+   "original_sha256": "eeaf4fc54f44669b787c890f7ca23ccdaa773c3d8233499062eef48a255fb320",
+   "path": "OAI/Analysis/HyperbolicCones/Hyperbolicity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/InverseOrder.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.InverseOrder",
+   "original_sha256": "aea70e869e8ef71381f92fb53ffd20e9bd6c4004edfe8d216ae299a14541a076",
+   "path": "OAI/Analysis/HyperbolicCones/InverseOrder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/KernelLimit.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.KernelLimit",
+   "original_sha256": "1aa219f6f7bff83fc6bd490ada61b07a59e4f90ad96c326a0b533fb25be305df",
+   "path": "OAI/Analysis/HyperbolicCones/KernelLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/KernelLocal.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.KernelLocal",
+   "original_sha256": "a262ed5509a91c3c6ef783deacc050b33fd1bc21b363bb3231cb9942b4683565",
+   "path": "OAI/Analysis/HyperbolicCones/KernelLocal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/KernelSmooth.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.KernelSmooth",
+   "original_sha256": "1209f1fe1c7673f553516b5767f80291395cf4510ad0ca3a1467c41d240aa06a",
+   "path": "OAI/Analysis/HyperbolicCones/KernelSmooth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/KernelSpectrum.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.KernelSpectrum",
+   "original_sha256": "dd0c8b30d2940e1f8d6f4ada950bca847eb61859a6691c6e2f9aba2db850c9db",
+   "path": "OAI/Analysis/HyperbolicCones/KernelSpectrum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/KernelTangent.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.KernelTangent",
+   "original_sha256": "5963ebea51d5bd975238bd968ac0f027e29ef011cc2cb13c91b734c3b9c7a427",
+   "path": "OAI/Analysis/HyperbolicCones/KernelTangent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/LineEvaluation.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.LineEvaluation",
+   "original_sha256": "5a25366c1b4d2dbece35d6ac0f4733539e7065c3745ab5b020a76192f3566d62",
+   "path": "OAI/Analysis/HyperbolicCones/LineEvaluation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/LinePolynomial.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.LinePolynomial",
+   "original_sha256": "dac53e4317bf091ed350831b36e03f4c2ca58098bd4d8b8d30c39d7519d2da22",
+   "path": "OAI/Analysis/HyperbolicCones/LinePolynomial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/LineShift.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.LineShift",
+   "original_sha256": "c77b71e6352d5715089c4a98a9c35e323ec008d33c40480110ec3b2266996ab3",
+   "path": "OAI/Analysis/HyperbolicCones/LineShift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/Main.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.Main",
+   "original_sha256": "553e40cb2a2020aa1599b658a857d14e5d6b6c8dd043c4dc42430baf5dc50b42",
+   "path": "OAI/Analysis/HyperbolicCones/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/MatrixBasic.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.MatrixBasic",
+   "original_sha256": "7412b5ae7f21eef0c2bd4b3bd2ea10da16327ad5213b3509c9d84f3a6fc509a8",
+   "path": "OAI/Analysis/HyperbolicCones/MatrixBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/MatrixComplex.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.MatrixComplex",
+   "original_sha256": "8aa47f41ef3f4096e330e9bb950b5371bef30d443674d4b002c13ef5daca8169",
+   "path": "OAI/Analysis/HyperbolicCones/MatrixComplex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/MatrixLinear.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.MatrixLinear",
+   "original_sha256": "2be1d6b9731cb87b472480b7557e56c1bf352ccb1ecec0e39011c63028578bcb",
+   "path": "OAI/Analysis/HyperbolicCones/MatrixLinear.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/MatrixPositive.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.MatrixPositive",
+   "original_sha256": "da14a6d4eac7b872b6bb11a4fb6d6aec24a765cfde60353a036ece109b242a3c",
+   "path": "OAI/Analysis/HyperbolicCones/MatrixPositive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/MatrixResolvent.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.MatrixResolvent",
+   "original_sha256": "1675babaabeb2ed9dbed035ee52d827021bd589243b766728015f01f11266fdb",
+   "path": "OAI/Analysis/HyperbolicCones/MatrixResolvent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/MaxEigenvalue.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.MaxEigenvalue",
+   "original_sha256": "15b5ea32553c3c5f8a3fab66f2008f37a2258071b2749f99dbc686b9477572fc",
+   "path": "OAI/Analysis/HyperbolicCones/MaxEigenvalue.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/Model.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.Model",
+   "original_sha256": "1292a11cdc19e2467cfb1e70f4e2b12b2fd8dd3045a46984c810fdf7f1add038",
+   "path": "OAI/Analysis/HyperbolicCones/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/NormCongruence.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.NormCongruence",
+   "original_sha256": "ba270611a2211b27940d3ec91774017c397a9e3c095128a209e1915e4d590d5b",
+   "path": "OAI/Analysis/HyperbolicCones/NormCongruence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/NormIdentity.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.NormIdentity",
+   "original_sha256": "532b880e9a6e272d9df3b1cbab5dda3e85c51bfac7f6f6f403be5f900d1ea62c",
+   "path": "OAI/Analysis/HyperbolicCones/NormIdentity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/NormLimits.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.NormLimits",
+   "original_sha256": "69a98821315828bbcd10668dd5eb240d87235ea9d9ecf4828f6324880abcaf30",
+   "path": "OAI/Analysis/HyperbolicCones/NormLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/NormThreshold.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.NormThreshold",
+   "original_sha256": "796187c234958fd8faa6c4c9af46141a8df1f5ced53e2b0573a175493510b54c",
+   "path": "OAI/Analysis/HyperbolicCones/NormThreshold.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/OperatorEntries.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.OperatorEntries",
+   "original_sha256": "cc8d89401a4dadd608880abb0feae5b8404227328b6bc9e241b18b7db0dc9317",
+   "path": "OAI/Analysis/HyperbolicCones/OperatorEntries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/Pencil.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.Pencil",
+   "original_sha256": "3b8161a72b9aaea193e17cc2816356f9caac0f946275b52ab01b2d23a251f59d",
+   "path": "OAI/Analysis/HyperbolicCones/Pencil.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/PencilBlocks.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.PencilBlocks",
+   "original_sha256": "6ce6f8acef1ac099ded006d07b1e3bdba1c0d45e053ed5bf491638754eef827d",
+   "path": "OAI/Analysis/HyperbolicCones/PencilBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/PencilCompression.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.PencilCompression",
+   "original_sha256": "bec14c9bf100567d575520e10f0daa920da684a9976d03ce3e97dd83b61c93a0",
+   "path": "OAI/Analysis/HyperbolicCones/PencilCompression.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/PencilConjugation.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.PencilConjugation",
+   "original_sha256": "4dd004380092fd6ccfada90f415fe315de045e5c20853019148cd00fc799b3d6",
+   "path": "OAI/Analysis/HyperbolicCones/PencilConjugation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/PencilKernel.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.PencilKernel",
+   "original_sha256": "948641e81bfe47755880214550e5239baeaa2ec242bc62963484bf0a8ad6dd36",
+   "path": "OAI/Analysis/HyperbolicCones/PencilKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/PencilLimit.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.PencilLimit",
+   "original_sha256": "e8a2a7961fe82f811c1e0faf6e432c939f5ec37961721d675e9e89c0af07ff7d",
+   "path": "OAI/Analysis/HyperbolicCones/PencilLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/PencilOrder.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.PencilOrder",
+   "original_sha256": "11521dccfcb62f55453f2162e71843ff2b3de3cb6f0a0b797119ba1238264e75",
+   "path": "OAI/Analysis/HyperbolicCones/PencilOrder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/PencilRecovery.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.PencilRecovery",
+   "original_sha256": "2bd6f8c0289359baf5ecf35280e206e8d99b1b5767bc15af74dfcb068d8b6730",
+   "path": "OAI/Analysis/HyperbolicCones/PencilRecovery.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/PencilRegularization.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.PencilRegularization",
+   "original_sha256": "8118da67eb183e5041bbaf77cac79160222cd3781bce83f0eb338caee787be5a",
+   "path": "OAI/Analysis/HyperbolicCones/PencilRegularization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/PencilRepresentation.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.PencilRepresentation",
+   "original_sha256": "285d77aeda0a4373f0658d76c97d6dc34f29a0bad45b8fda6f5bb3f8c4e31166",
+   "path": "OAI/Analysis/HyperbolicCones/PencilRepresentation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/PencilSplit.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.PencilSplit",
+   "original_sha256": "1c466163430f836f9a6ca023f0551594a0c4342d922100b2200fe8522b36307c",
+   "path": "OAI/Analysis/HyperbolicCones/PencilSplit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/PencilTopology.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.PencilTopology",
+   "original_sha256": "4e7e94700a5da6a673ba57819ac7a5de94d2b610d58ec9da12600e80b145bb09",
+   "path": "OAI/Analysis/HyperbolicCones/PencilTopology.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/PolynomialBasic.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.PolynomialBasic",
+   "original_sha256": "dcc399953228502bc2c3392d2f8e101871a855e54bbab142060214b9ed9b6e29",
+   "path": "OAI/Analysis/HyperbolicCones/PolynomialBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/PolynomialEvaluation.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.PolynomialEvaluation",
+   "original_sha256": "6a2f8d1c6b88ee1f7991236734e4f8d6726b1e01b751c35d3d3810041e4b0b50",
+   "path": "OAI/Analysis/HyperbolicCones/PolynomialEvaluation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/PolynomialHomogeneous.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.PolynomialHomogeneous",
+   "original_sha256": "05bfd6f7190f9f9b32f9196ea06f52ad24b03b789910c0714d1d16351a09d8bf",
+   "path": "OAI/Analysis/HyperbolicCones/PolynomialHomogeneous.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/PolynomialScaling.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.PolynomialScaling",
+   "original_sha256": "6a9dfac0af62decbcf2a32e61d352ecf9d5424dcfd40d19f291db180f5654e13",
+   "path": "OAI/Analysis/HyperbolicCones/PolynomialScaling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/PositiveCore.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.PositiveCore",
+   "original_sha256": "367467272239efabbb84ffa64578d10ed41583c3e04694b89bd5885e7e0719c8",
+   "path": "OAI/Analysis/HyperbolicCones/PositiveCore.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/PositiveMaps.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.PositiveMaps",
+   "original_sha256": "b3c3d842f3866128433f192a46f75cc148ad1519a5b0124214a4174dfdd45b55",
+   "path": "OAI/Analysis/HyperbolicCones/PositiveMaps.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/PositivePath.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.PositivePath",
+   "original_sha256": "348eaff96705991300c88809c337633b6c57010d9207cfb042379012313cf894",
+   "path": "OAI/Analysis/HyperbolicCones/PositivePath.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/QuadraticDeformation.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.QuadraticDeformation",
+   "original_sha256": "b5b09f4786bd6e305cfab5ee89c28a82f6bf9073960b02f51f313a4ee21e5368",
+   "path": "OAI/Analysis/HyperbolicCones/QuadraticDeformation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/RankNorm.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.RankNorm",
+   "original_sha256": "ce59749fb578701b7287ea19145237c4195578c0368be85c49c9bc36c9b4f110",
+   "path": "OAI/Analysis/HyperbolicCones/RankNorm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/RawBlocks.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.RawBlocks",
+   "original_sha256": "5b92851870a6a0734dfd106f6654d6af4bc1f1d2ddbda81caf40a66fa75bb1b1",
+   "path": "OAI/Analysis/HyperbolicCones/RawBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/RescalingBasic.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.RescalingBasic",
+   "original_sha256": "727ae021fc89aff935762c34b567a473a10486069ff058067f263e593101cc1c",
+   "path": "OAI/Analysis/HyperbolicCones/RescalingBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/ResidualBound.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.ResidualBound",
+   "original_sha256": "236dcdf7d81199cb8348305962355a26689afd0913b1e5bfb84f4b1b4be206da",
+   "path": "OAI/Analysis/HyperbolicCones/ResidualBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/ResidualOrder.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.ResidualOrder",
+   "original_sha256": "7ed849bc390bb9f88efe92283b513f1ecc36674aa29e85cbe41e9d5af90f46bb",
+   "path": "OAI/Analysis/HyperbolicCones/ResidualOrder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/ScalingAlgebra.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.ScalingAlgebra",
+   "original_sha256": "9cd6c737379afb7bf8d25567e9e0b8621d13a03135561531f4b22937da503730",
+   "path": "OAI/Analysis/HyperbolicCones/ScalingAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/ShiftValue.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.ShiftValue",
+   "original_sha256": "3221bb4283c61899c1602ca8e0463d26d08b7dbf8652e31ce4229cdd05ccd570",
+   "path": "OAI/Analysis/HyperbolicCones/ShiftValue.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/SpectralBounds.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.SpectralBounds",
+   "original_sha256": "a34d06c1007c0ed34c9d7b7f688608ff7ecf5eaf013795ade1e0196a92bf96e9",
+   "path": "OAI/Analysis/HyperbolicCones/SpectralBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/SpectralContinuity.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.SpectralContinuity",
+   "original_sha256": "f5cb4f1f7a56387573f53a0762c5d9e133088867863342b47c80fc513f0589c6",
+   "path": "OAI/Analysis/HyperbolicCones/SpectralContinuity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/SpectralProjection.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.SpectralProjection",
+   "original_sha256": "76d77f581ca65a186e5a2cfcc7a6443fca84bd0d14c65a4f206e67fd4032f6d1",
+   "path": "OAI/Analysis/HyperbolicCones/SpectralProjection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/SplitAssembly.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.SplitAssembly",
+   "original_sha256": "39f6c86a489d21bfd5f6f2ff2bfa7680173d95a6c7ed39e67c0c7f75157622cb",
+   "path": "OAI/Analysis/HyperbolicCones/SplitAssembly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/SplitBasic.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.SplitBasic",
+   "original_sha256": "de646598f3e1cdf9db2368691a5e0d46aec2806e4ebe399f2d0f27a23413526a",
+   "path": "OAI/Analysis/HyperbolicCones/SplitBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/SplitFrame.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.SplitFrame",
+   "original_sha256": "b9a1c0b830f819eae60be8d4d14d36e61bf6309e9d277983470182318b1fe183",
+   "path": "OAI/Analysis/HyperbolicCones/SplitFrame.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/StrictBlock.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.StrictBlock",
+   "original_sha256": "fdf3dec3846f11f2c9788a38beec56ee16ef664427344d493cbefdae96ebb56b",
+   "path": "OAI/Analysis/HyperbolicCones/StrictBlock.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/TangentBasic.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.TangentBasic",
+   "original_sha256": "6302763c0be26db5736665ed98bf69d175c5b9f7e33bde8c073aa02395e14596",
+   "path": "OAI/Analysis/HyperbolicCones/TangentBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/TangentIdentity.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.TangentIdentity",
+   "original_sha256": "d3a428a9330152683e124820634b9141660e68909c196fa8e534a114dd409e74",
+   "path": "OAI/Analysis/HyperbolicCones/TangentIdentity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/TangentLimit.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.TangentLimit",
+   "original_sha256": "93ae235c7b6ca5206fd7b9f4df5938d71542ac6cf663b03cbbb10e857a1093e4",
+   "path": "OAI/Analysis/HyperbolicCones/TangentLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/TangentObstruction.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.TangentObstruction",
+   "original_sha256": "2173b0a56c2b81a54578a60f4107f283cb1dd5e816b59fc93da757efd6be32db",
+   "path": "OAI/Analysis/HyperbolicCones/TangentObstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/TangentRigidity.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.TangentRigidity",
+   "original_sha256": "eb7a68cdef3bba14977c9853313634b1563a7a9c8c4da5da796a991d6a34aeb7",
+   "path": "OAI/Analysis/HyperbolicCones/TangentRigidity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HyperbolicCones/ZeroPolynomial.lean"
+   },
+   "module": "OAI.Analysis.HyperbolicCones.ZeroPolynomial",
+   "original_sha256": "2ebe2c0d7a86f3c9ffd2301a56519161003950c2dc37ac7defabf4d85a25b3d7",
+   "path": "OAI/Analysis/HyperbolicCones/ZeroPolynomial.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.HyperbolicCones.BlockNormalization",
+  "OAI.Analysis.HyperbolicCones.BlockReduction",
+  "OAI.Analysis.HyperbolicCones.BlockScaling",
+  "OAI.Analysis.HyperbolicCones.ComplexPositive",
+  "OAI.Analysis.HyperbolicCones.CompressionBasic",
+  "OAI.Analysis.HyperbolicCones.ConeContinuity",
+  "OAI.Analysis.HyperbolicCones.ConeInterior",
+  "OAI.Analysis.HyperbolicCones.ConeMatrix",
+  "OAI.Analysis.HyperbolicCones.ConePositive",
+  "OAI.Analysis.HyperbolicCones.ConeRoots",
+  "OAI.Analysis.HyperbolicCones.ConeZero",
+  "OAI.Analysis.HyperbolicCones.CongruenceMaps",
+  "OAI.Analysis.HyperbolicCones.Coordinates",
+  "OAI.Analysis.HyperbolicCones.Deformation",
+  "OAI.Analysis.HyperbolicCones.DeformationBasic",
+  "OAI.Analysis.HyperbolicCones.DeformationCone",
+  "OAI.Analysis.HyperbolicCones.DeformationFamily",
+  "OAI.Analysis.HyperbolicCones.DeformationRoots",
+  "OAI.Analysis.HyperbolicCones.FiniteTopology",
+  "OAI.Analysis.HyperbolicCones.FormBasic",
+  "OAI.Analysis.HyperbolicCones.FormPositive",
+  "OAI.Analysis.HyperbolicCones.FormRigidity",
+  "OAI.Analysis.HyperbolicCones.GramProjection",
+  "OAI.Analysis.HyperbolicCones.Hyperbolicity",
+  "OAI.Analysis.HyperbolicCones.InverseOrder",
+  "OAI.Analysis.HyperbolicCones.KernelLimit",
+  "OAI.Analysis.HyperbolicCones.KernelLocal",
+  "OAI.Analysis.HyperbolicCones.KernelSmooth",
+  "OAI.Analysis.HyperbolicCones.KernelSpectrum",
+  "OAI.Analysis.HyperbolicCones.KernelTangent",
+  "OAI.Analysis.HyperbolicCones.LineEvaluation",
+  "OAI.Analysis.HyperbolicCones.LinePolynomial",
+  "OAI.Analysis.HyperbolicCones.LineShift",
+  "OAI.Analysis.HyperbolicCones.Main",
+  "OAI.Analysis.HyperbolicCones.MatrixBasic",
+  "OAI.Analysis.HyperbolicCones.MatrixComplex",
+  "OAI.Analysis.HyperbolicCones.MatrixLinear",
+  "OAI.Analysis.HyperbolicCones.MatrixPositive",
+  "OAI.Analysis.HyperbolicCones.MatrixResolvent",
+  "OAI.Analysis.HyperbolicCones.MaxEigenvalue",
+  "OAI.Analysis.HyperbolicCones.Model",
+  "OAI.Analysis.HyperbolicCones.NormCongruence",
+  "OAI.Analysis.HyperbolicCones.NormIdentity",
+  "OAI.Analysis.HyperbolicCones.NormLimits",
+  "OAI.Analysis.HyperbolicCones.NormThreshold",
+  "OAI.Analysis.HyperbolicCones.OperatorEntries",
+  "OAI.Analysis.HyperbolicCones.Pencil",
+  "OAI.Analysis.HyperbolicCones.PencilBlocks",
+  "OAI.Analysis.HyperbolicCones.PencilCompression",
+  "OAI.Analysis.HyperbolicCones.PencilConjugation",
+  "OAI.Analysis.HyperbolicCones.PencilKernel",
+  "OAI.Analysis.HyperbolicCones.PencilLimit",
+  "OAI.Analysis.HyperbolicCones.PencilOrder",
+  "OAI.Analysis.HyperbolicCones.PencilRecovery",
+  "OAI.Analysis.HyperbolicCones.PencilRegularization",
+  "OAI.Analysis.HyperbolicCones.PencilRepresentation",
+  "OAI.Analysis.HyperbolicCones.PencilSplit",
+  "OAI.Analysis.HyperbolicCones.PencilTopology",
+  "OAI.Analysis.HyperbolicCones.PolynomialBasic",
+  "OAI.Analysis.HyperbolicCones.PolynomialEvaluation",
+  "OAI.Analysis.HyperbolicCones.PolynomialHomogeneous",
+  "OAI.Analysis.HyperbolicCones.PolynomialScaling",
+  "OAI.Analysis.HyperbolicCones.PositiveCore",
+  "OAI.Analysis.HyperbolicCones.PositiveMaps",
+  "OAI.Analysis.HyperbolicCones.PositivePath",
+  "OAI.Analysis.HyperbolicCones.QuadraticDeformation",
+  "OAI.Analysis.HyperbolicCones.RankNorm",
+  "OAI.Analysis.HyperbolicCones.RawBlocks",
+  "OAI.Analysis.HyperbolicCones.RescalingBasic",
+  "OAI.Analysis.HyperbolicCones.ResidualBound",
+  "OAI.Analysis.HyperbolicCones.ResidualOrder",
+  "OAI.Analysis.HyperbolicCones.ScalingAlgebra",
+  "OAI.Analysis.HyperbolicCones.ShiftValue",
+  "OAI.Analysis.HyperbolicCones.SpectralBounds",
+  "OAI.Analysis.HyperbolicCones.SpectralContinuity",
+  "OAI.Analysis.HyperbolicCones.SpectralProjection",
+  "OAI.Analysis.HyperbolicCones.SplitAssembly",
+  "OAI.Analysis.HyperbolicCones.SplitBasic",
+  "OAI.Analysis.HyperbolicCones.SplitFrame",
+  "OAI.Analysis.HyperbolicCones.StrictBlock",
+  "OAI.Analysis.HyperbolicCones.TangentBasic",
+  "OAI.Analysis.HyperbolicCones.TangentIdentity",
+  "OAI.Analysis.HyperbolicCones.TangentLimit",
+  "OAI.Analysis.HyperbolicCones.TangentObstruction",
+  "OAI.Analysis.HyperbolicCones.TangentRigidity",
+  "OAI.Analysis.HyperbolicCones.ZeroPolynomial"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/HyperbolicCones.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.HyperbolicCones.Main",
+   "name": "OAI.Paper256.main_result",
+   "statement_sha256": "66c904da11d33f004ed89a73c3882664a9d17577c79634d7be2fa083ebfe914f"
+  }
+ ],
+ "task_id": "oai-hyperbolic-cones",
+ "task_revision": 1,
+ "title": "OpenAI math: Hyperbolicity cones without semidefinite lifts: Nonspectrahedral hyperbolicity cone",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

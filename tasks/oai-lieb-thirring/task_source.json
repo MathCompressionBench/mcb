@@ -1,0 +1,801 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 350702085
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.LiebThirring",
+  "challenge_sha256": "008bcfc167bb1931b14682171578ab2422a7176658bafd95dafb8feb13ab8ade",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/LiebThirring.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.LiebThirring",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.LiebThirring.Main",
+   "theorem_names": [
+    "OAI.SharpLiebThirring.sharp_lieb_thirring"
+   ]
+  },
+  "config_sha256": "f268c47258b1afc0c96bffe7b35757b86657050ebaf9a6c3c67f4e7a9f38955a",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/LiebThirring.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.SharpLiebThirring.sharp_lieb_thirring": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/ActionBounds.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.ActionBounds",
+   "original_sha256": "171866201458e90df38dc49fbb47d815d01982fe9215981963eea5c2c8adab43",
+   "path": "OAI/Analysis/LiebThirring/ActionBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/ActionPenalty.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.ActionPenalty",
+   "original_sha256": "cc9fd092eb36b4805c411a5378ab23c04d0f7b3f195f86504b6a9aa32ef32c66",
+   "path": "OAI/Analysis/LiebThirring/ActionPenalty.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/BoundState.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.BoundState",
+   "original_sha256": "eeb87ea7df258c584b77dd9fb86e58fe6f4ad0d3a1efbe07a7f986abaa1c3b05",
+   "path": "OAI/Analysis/LiebThirring/BoundState.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/BoundaryParity.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.BoundaryParity",
+   "original_sha256": "030bf0d917338ee668735f51ff7b32ccdeccdc6e16bee095212518020adfd1fd",
+   "path": "OAI/Analysis/LiebThirring/BoundaryParity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/BoundaryValues.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.BoundaryValues",
+   "original_sha256": "b330d140bbc3b66fe0b8ffe1ae8234022ec9e22c627f312465ff957a7a1856c3",
+   "path": "OAI/Analysis/LiebThirring/BoundaryValues.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/ComplexFamilies.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.ComplexFamilies",
+   "original_sha256": "2b0eb0e5b7a4e39c07e8d88dfbc24ef55757396dc1534975d3e0161a3882a86a",
+   "path": "OAI/Analysis/LiebThirring/ComplexFamilies.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/ConnectingPath.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.ConnectingPath",
+   "original_sha256": "7c7d399e5bf2c594f567b806b24eb3f50c6213050a4ebe803786159cb6989fca",
+   "path": "OAI/Analysis/LiebThirring/ConnectingPath.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/Continuation.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.Continuation",
+   "original_sha256": "796d7b171f75d6fd43dc582fabd246519242b39952926664a1afa69714df5809",
+   "path": "OAI/Analysis/LiebThirring/Continuation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/CubeFlags.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.CubeFlags",
+   "original_sha256": "efffc3133beda9b2313a6efad1d18ff89a135600fcf236393ac0955c7110b337",
+   "path": "OAI/Analysis/LiebThirring/CubeFlags.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/CutoffEnergy.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.CutoffEnergy",
+   "original_sha256": "b23b9415468eaa14bffcc206821115f576c77212061ac9fc3abe8bea8b31a752",
+   "path": "OAI/Analysis/LiebThirring/CutoffEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/EnergyAlgebra.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.EnergyAlgebra",
+   "original_sha256": "4f5051e9abdbd68d96c01a14703512a915351156e483ebfbbad00d28c5f42c8e",
+   "path": "OAI/Analysis/LiebThirring/EnergyAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/EquivariantFlags.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.EquivariantFlags",
+   "original_sha256": "b632171e35bcb79ff2cf0c3cb8270db1dca9caa0a8ac5fe5aca26ec9dec75613",
+   "path": "OAI/Analysis/LiebThirring/EquivariantFlags.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/ExtremizerMass.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.ExtremizerMass",
+   "original_sha256": "d878cec7a32ca832c9941328cde4c0f9571616eb5cb8e64c0487264681296eb4",
+   "path": "OAI/Analysis/LiebThirring/ExtremizerMass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/FieldFlow.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.FieldFlow",
+   "original_sha256": "0b70f86b272eba0bd476f878b923e1e98e5190f3464eeb78d875243ea8a43ce9",
+   "path": "OAI/Analysis/LiebThirring/FieldFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/FieldLimit.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.FieldLimit",
+   "original_sha256": "2828f15d60c3cb42de12a0673d2b2e4f6b5589fbecde72ea0d899725d9af1996",
+   "path": "OAI/Analysis/LiebThirring/FieldLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/FieldPrimitive.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.FieldPrimitive",
+   "original_sha256": "2ff17c3cc7dae820487c02254268f062d4f9241b205026a74accc7ecf85f7b00",
+   "path": "OAI/Analysis/LiebThirring/FieldPrimitive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/FieldRegularity.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.FieldRegularity",
+   "original_sha256": "058dac194bb05646195910dbf449c26dfa0fd1e6c3fbc58560db837326f77510",
+   "path": "OAI/Analysis/LiebThirring/FieldRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/FiniteParity.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.FiniteParity",
+   "original_sha256": "91d5e071ac80d099c38091f9de63641df7a0830dcb82c7eb6ea2fca6d3774682",
+   "path": "OAI/Analysis/LiebThirring/FiniteParity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/FlagApproximation.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.FlagApproximation",
+   "original_sha256": "a747daf7ca50a3c3edf4d4791a33381f8c4d63564836bac2d11ae3576b7222cf",
+   "path": "OAI/Analysis/LiebThirring/FlagApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/FlagGeometry.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.FlagGeometry",
+   "original_sha256": "502802e0156c8d49abbf9c5e653d512290d2c1f1a4e49488b170a94996d65054",
+   "path": "OAI/Analysis/LiebThirring/FlagGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/FlowContinuation.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.FlowContinuation",
+   "original_sha256": "baf31fabb378cbb2fa6ca2dc239173289a6f34d21ae17c3111587115e2ab7e26",
+   "path": "OAI/Analysis/LiebThirring/FlowContinuation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/FreeLocus.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.FreeLocus",
+   "original_sha256": "056df6d549fe26cd716583364a01e8b8ca230c364d442c4370eb1486b4a20718",
+   "path": "OAI/Analysis/LiebThirring/FreeLocus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/Gamma.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.Gamma",
+   "original_sha256": "c24c54ffcb939742251176268ffe2875bf8ad17773af9160c618fed2e28f79fa",
+   "path": "OAI/Analysis/LiebThirring/Gamma.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/GenericPosition.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.GenericPosition",
+   "original_sha256": "bb50fa8243aac316fe2bc46d59b46ed59ddf3cf980ae1b7e4de2e6def1a21706",
+   "path": "OAI/Analysis/LiebThirring/GenericPosition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/InitialOrbit.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.InitialOrbit",
+   "original_sha256": "b94ab7efe560377a7ac2703a79d8827ac485d9f0457a74d26c2911f1d65e6b68",
+   "path": "OAI/Analysis/LiebThirring/InitialOrbit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/IntervalAction.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.IntervalAction",
+   "original_sha256": "548af1997e73758bf9eef652084403129536733b4c902eacdf962c727e45340a",
+   "path": "OAI/Analysis/LiebThirring/IntervalAction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/Main.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.Main",
+   "original_sha256": "0cdcb02e908d87d1ee4586fe7108960f7785190cc77b1c9f2297864951428c3b",
+   "path": "OAI/Analysis/LiebThirring/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/MatrixFlow.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.MatrixFlow",
+   "original_sha256": "23ea5bed882d7a86db7188803af5161ff87954a8a8cd5395294e7832bb222ca2",
+   "path": "OAI/Analysis/LiebThirring/MatrixFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/MatrixOrder.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.MatrixOrder",
+   "original_sha256": "3573cdbb1a6c4246fb4c2f888495bab095c1d2e359a7dd784a869910184e2fd8",
+   "path": "OAI/Analysis/LiebThirring/MatrixOrder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/MatrixTangent.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.MatrixTangent",
+   "original_sha256": "9f71e02715cdb999fcd780253ee91e380f0c4c31f51a726f36283ffc76d7514d",
+   "path": "OAI/Analysis/LiebThirring/MatrixTangent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/Model.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.Model",
+   "original_sha256": "fc10df121db6f69b684b6c469bd2458d6b9aa78c57906524a68c35f70ad616b6",
+   "path": "OAI/Analysis/LiebThirring/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/MomentBound.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.MomentBound",
+   "original_sha256": "36b2a6a11e72395e7626108088ba8048c74f432f70ae03235af702df0c0744d9",
+   "path": "OAI/Analysis/LiebThirring/MomentBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/QuadraticForms.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.QuadraticForms",
+   "original_sha256": "82a23de5c5d9b9fd5e6b8028f649c455268d830c43d6902310cdbb27a764c89a",
+   "path": "OAI/Analysis/LiebThirring/QuadraticForms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/RankOne.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.RankOne",
+   "original_sha256": "0d0db67701753a67b15f6b1c4c8ce09e133b63678774fe0a29cc24cf8fcd1e79",
+   "path": "OAI/Analysis/LiebThirring/RankOne.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/ResolventCalculus.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.ResolventCalculus",
+   "original_sha256": "4a4959804e42e6fca151ff54b60dc2260d31f99f55a007f5921a6d2c4244e7e5",
+   "path": "OAI/Analysis/LiebThirring/ResolventCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/RowSigns.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.RowSigns",
+   "original_sha256": "6d82504becb77e4e4b4634762033da26a9af30f75b9066cc971dbdf8a27abce9",
+   "path": "OAI/Analysis/LiebThirring/RowSigns.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/SobolevProjection.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.SobolevProjection",
+   "original_sha256": "f9c352a28a913481be2d603744a7f49d4288f13079c5013cbd197b272eb36382",
+   "path": "OAI/Analysis/LiebThirring/SobolevProjection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LiebThirring/SpectralTrials.lean"
+   },
+   "module": "OAI.Analysis.LiebThirring.SpectralTrials",
+   "original_sha256": "a83a4f1140f41b4661c8cc9df49983c8e4aed8ff6d0261f5784efe7ba2791f62",
+   "path": "OAI/Analysis/LiebThirring/SpectralTrials.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.LiebThirring.ActionBounds",
+  "OAI.Analysis.LiebThirring.ActionPenalty",
+  "OAI.Analysis.LiebThirring.BoundState",
+  "OAI.Analysis.LiebThirring.BoundaryParity",
+  "OAI.Analysis.LiebThirring.BoundaryValues",
+  "OAI.Analysis.LiebThirring.ComplexFamilies",
+  "OAI.Analysis.LiebThirring.ConnectingPath",
+  "OAI.Analysis.LiebThirring.Continuation",
+  "OAI.Analysis.LiebThirring.CubeFlags",
+  "OAI.Analysis.LiebThirring.CutoffEnergy",
+  "OAI.Analysis.LiebThirring.EnergyAlgebra",
+  "OAI.Analysis.LiebThirring.EquivariantFlags",
+  "OAI.Analysis.LiebThirring.ExtremizerMass",
+  "OAI.Analysis.LiebThirring.FieldFlow",
+  "OAI.Analysis.LiebThirring.FieldLimit",
+  "OAI.Analysis.LiebThirring.FieldPrimitive",
+  "OAI.Analysis.LiebThirring.FieldRegularity",
+  "OAI.Analysis.LiebThirring.FiniteParity",
+  "OAI.Analysis.LiebThirring.FlagApproximation",
+  "OAI.Analysis.LiebThirring.FlagGeometry",
+  "OAI.Analysis.LiebThirring.FlowContinuation",
+  "OAI.Analysis.LiebThirring.FreeLocus",
+  "OAI.Analysis.LiebThirring.Gamma",
+  "OAI.Analysis.LiebThirring.GenericPosition",
+  "OAI.Analysis.LiebThirring.InitialOrbit",
+  "OAI.Analysis.LiebThirring.IntervalAction",
+  "OAI.Analysis.LiebThirring.Main",
+  "OAI.Analysis.LiebThirring.MatrixFlow",
+  "OAI.Analysis.LiebThirring.MatrixOrder",
+  "OAI.Analysis.LiebThirring.MatrixTangent",
+  "OAI.Analysis.LiebThirring.Model",
+  "OAI.Analysis.LiebThirring.MomentBound",
+  "OAI.Analysis.LiebThirring.QuadraticForms",
+  "OAI.Analysis.LiebThirring.RankOne",
+  "OAI.Analysis.LiebThirring.ResolventCalculus",
+  "OAI.Analysis.LiebThirring.RowSigns",
+  "OAI.Analysis.LiebThirring.SobolevProjection",
+  "OAI.Analysis.LiebThirring.SpectralTrials"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/LiebThirring.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.LiebThirring.Main",
+   "name": "OAI.SharpLiebThirring.sharp_lieb_thirring",
+   "statement_sha256": "66e4cf5a5763c988ee4524501dfb550fda646eb3b98e636b4852c1ab715abff4"
+  }
+ ],
+ "task_id": "oai-lieb-thirring",
+ "task_revision": 1,
+ "title": "OpenAI math: Sharp finite-matrix Lieb–Thirring inequalities and all equality cases: Sharp one-dimensional Lieb–Thirring inequality",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

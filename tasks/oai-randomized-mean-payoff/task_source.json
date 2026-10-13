@@ -1,0 +1,1311 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 1040396046
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.RandomizedMeanPayoff",
+  "challenge_sha256": "0814324496e79fc843198a37954c4615543e7c6fdc09796f9f177c071a6439a5",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/RandomizedMeanPayoff.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.RandomizedMeanPayoff",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Computability.RandomMean.Main",
+   "theorem_names": [
+    "OAI.randomized_quasipolynomial_mean_payoff"
+   ]
+  },
+  "config_sha256": "ff6f8b5b31fa7ee7fc125d6d652ceb947eff43a808b187dd6f8d3d5dc68f36b4",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/RandomizedMeanPayoff.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.randomized_quasipolynomial_mean_payoff": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Allocation.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Allocation",
+   "original_sha256": "b3b704c63502f0f9e7e8cf5014774cd4038bf01eb9d970ec5af93bdc3d0845fd",
+   "path": "OAI/Computability/MeanPayoff/Allocation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Alternatives.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Alternatives",
+   "original_sha256": "93ab7d7d916702b0db524afc8c257e194c4e078863ac433c37dc9abd409aa82d",
+   "path": "OAI/Computability/MeanPayoff/Alternatives.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/ArenaParsing.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.ArenaParsing",
+   "original_sha256": "24f05212a86f090b7d441f0e868484d9775c1906cf00a18ac507a6ffb0c0ebbc",
+   "path": "OAI/Computability/MeanPayoff/ArenaParsing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Arithmetic.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Arithmetic",
+   "original_sha256": "e9819d4e1c4d35b4116f56aa2c96d814e9557c7878eabb6f29cdeeabbe9c8405",
+   "path": "OAI/Computability/MeanPayoff/Arithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/ArithmeticBounds.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.ArithmeticBounds",
+   "original_sha256": "0abe90baf087cc1bc13c42a2f3d272d35479d37ce80b6f0e14fc62828e3d7cd2",
+   "path": "OAI/Computability/MeanPayoff/ArithmeticBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/ArithmeticDevices.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.ArithmeticDevices",
+   "original_sha256": "9b96da1c8713a1c1d52717f0c5af55d5318043134e10e57f333ef39c5336bc38",
+   "path": "OAI/Computability/MeanPayoff/ArithmeticDevices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/BatchDevices.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.BatchDevices",
+   "original_sha256": "7304eb1025b83d1876bb555505d3300fafe2b96ea1d4206f81de25bd98614d04",
+   "path": "OAI/Computability/MeanPayoff/BatchDevices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/BinaryData.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.BinaryData",
+   "original_sha256": "8d5a535adca116ec4f768dfe87cbee67245f12d3db8d78eb37a94f54ad61d5c9",
+   "path": "OAI/Computability/MeanPayoff/BinaryData.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/BitDepth.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.BitDepth",
+   "original_sha256": "4287a03277ddc112fb1f1311915b42884c932fcf3ac797cf4ccdf9e022d20929",
+   "path": "OAI/Computability/MeanPayoff/BitDepth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/BitProgram.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.BitProgram",
+   "original_sha256": "f5bb64da8bfa6a248e698f1fcb000951c1fbcc760ee0392b900c75941e460047",
+   "path": "OAI/Computability/MeanPayoff/BitProgram.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Budgets.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Budgets",
+   "original_sha256": "72777b9b19121bcbf7bc847c3cdba7664a321696e2b572fde04cb8ef2c4b4356",
+   "path": "OAI/Computability/MeanPayoff/Budgets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/CallBounds.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.CallBounds",
+   "original_sha256": "4cce5fea2149391ebc9d9c30aeb61cec7cde7d311c415012e27d38b2aa63f2f8",
+   "path": "OAI/Computability/MeanPayoff/CallBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Comparison.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Comparison",
+   "original_sha256": "3408bd8ed81e67d684c0fe5bff45531c1393445bc0816cbe77c839a9328c7948",
+   "path": "OAI/Computability/MeanPayoff/Comparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/CountedRecursion.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.CountedRecursion",
+   "original_sha256": "0db75c14b3f61e19b2118cde7eb149b8e0d59cc7465d46cc22faca26b5354861",
+   "path": "OAI/Computability/MeanPayoff/CountedRecursion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/CountedTraversal.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.CountedTraversal",
+   "original_sha256": "85d2053ff92ffb0338a440d9084c7b4819314854fd3d6837b949a6a4bb146457",
+   "path": "OAI/Computability/MeanPayoff/CountedTraversal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Counters.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Counters",
+   "original_sha256": "81a9745537f573273c448e9429b0a4a317aedc38d6b3ec36ede675e4c2992e48",
+   "path": "OAI/Computability/MeanPayoff/Counters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Decoding.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Decoding",
+   "original_sha256": "3f2b8477e3bb48f5ea4c6fbaa206772765487e1d1605199cc3b66b677b501d31",
+   "path": "OAI/Computability/MeanPayoff/Decoding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Deviation.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Deviation",
+   "original_sha256": "a240ffd2611a3173bffa8f4198264d7f53571b996b910f34818cc42bcc6737e4",
+   "path": "OAI/Computability/MeanPayoff/Deviation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Drift.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Drift",
+   "original_sha256": "597410ea1850ccd9fcd57c4cf9fccd19e4467b4c2bc849c4d08bc782a0f3b38b",
+   "path": "OAI/Computability/MeanPayoff/Drift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Driver.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Driver",
+   "original_sha256": "1e83f63f392a02f89b88f9406b1f4e36d3802d3b91d2928ec7f5f3cc42015f33",
+   "path": "OAI/Computability/MeanPayoff/Driver.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/DriverExecution.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.DriverExecution",
+   "original_sha256": "d21bff1b5e07e07c5c8583732f2a49896f15468287183124e52f10ee5fff48ae",
+   "path": "OAI/Computability/MeanPayoff/DriverExecution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/EncodedArithmetic.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.EncodedArithmetic",
+   "original_sha256": "4ab6db4b5e2de928919d6a1157567f6b1a0bd4abc9b70acea179652c52613019",
+   "path": "OAI/Computability/MeanPayoff/EncodedArithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/EncodedPrograms.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.EncodedPrograms",
+   "original_sha256": "e6b425c900088037aa1aa4de91217fb63b9c3966d65fbe19da617881a8b7a69c",
+   "path": "OAI/Computability/MeanPayoff/EncodedPrograms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/ErrorBounds.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.ErrorBounds",
+   "original_sha256": "d8e3da9ebdb13bb73eab0a8950e01c0c88531346cb9eb46af0ec0088db081487",
+   "path": "OAI/Computability/MeanPayoff/ErrorBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/FiniteBox.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.FiniteBox",
+   "original_sha256": "5a0b3d5e26a470cf2a4484c839d67badfad0a92054775cfbd5040e7fc7570462",
+   "path": "OAI/Computability/MeanPayoff/FiniteBox.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/FiniteIteration.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.FiniteIteration",
+   "original_sha256": "cf79b47c00cbd5835ca03fae9033b9f663bb33b8b370b3b4c3d6580b260cacca",
+   "path": "OAI/Computability/MeanPayoff/FiniteIteration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/FiniteSuccess.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.FiniteSuccess",
+   "original_sha256": "84290ffb6c3a196c824a888fbcfa24ba03d684c53605addc46b9a57a8b743005",
+   "path": "OAI/Computability/MeanPayoff/FiniteSuccess.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/FiniteTrees.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.FiniteTrees",
+   "original_sha256": "b58c4ad57b9f4145aa2657562138b11d16ffb121080cc6fc92e30962df5333c1",
+   "path": "OAI/Computability/MeanPayoff/FiniteTrees.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/GridLabels.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.GridLabels",
+   "original_sha256": "493afb52cafff674b1457b1b393cb12c2afa24308bef8540b107290ce488db68",
+   "path": "OAI/Computability/MeanPayoff/GridLabels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/InputCode.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.InputCode",
+   "original_sha256": "1bd7614ebe36436d7c3e614faf2e81dc32abb4d68397251a830020e866477486",
+   "path": "OAI/Computability/MeanPayoff/InputCode.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/InputSize.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.InputSize",
+   "original_sha256": "1f01142f7acb9a044240c5ce63511528817948e69abec4f418ede5706f499fce",
+   "path": "OAI/Computability/MeanPayoff/InputSize.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Instructions.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Instructions",
+   "original_sha256": "f28930af6e6b4a77de7cefe6b933722a8b0ac2fae6dd384accd6fdf350553347",
+   "path": "OAI/Computability/MeanPayoff/Instructions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Labeller.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Labeller",
+   "original_sha256": "b30b9798cf6986639ca48aba9b57e0854d2a325e4b3b24ad577ce281b499018c",
+   "path": "OAI/Computability/MeanPayoff/Labeller.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/LoopDevices.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.LoopDevices",
+   "original_sha256": "5c4396132176b745e6ddb336af360d00efa98f263882463f2dec219b299f1723",
+   "path": "OAI/Computability/MeanPayoff/LoopDevices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Main.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Main",
+   "original_sha256": "28f40140a05e0c3ba226eef965a13a6b54d9eecf2189ce1cae159531432bc9a9",
+   "path": "OAI/Computability/MeanPayoff/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Model.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Model",
+   "original_sha256": "aa7f21cbc324771b2e92d4096c45c1465e0a17b1c8b013e7048830dbece76f24",
+   "path": "OAI/Computability/MeanPayoff/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Normalization.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Normalization",
+   "original_sha256": "b6f1b718f3592b7eb3d3db44c1c9047c42847a96a18385b04fac6274c8f896d2",
+   "path": "OAI/Computability/MeanPayoff/Normalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Online.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Online",
+   "original_sha256": "c8da3702c9a70b97a435cf2e3ea59c5844664118d67f0905d4a4036c8026ba45",
+   "path": "OAI/Computability/MeanPayoff/Online.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/OperatorCosts.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.OperatorCosts",
+   "original_sha256": "55efafced226e5d9dc8ee92e0b861c595b81c8a9dda25c1c9f356fecabf28e5a",
+   "path": "OAI/Computability/MeanPayoff/OperatorCosts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/OperatorDevices.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.OperatorDevices",
+   "original_sha256": "8720166f2ec8484bba201cea1d30d07de18c77cc0a1a96994d14475b5979fdbb",
+   "path": "OAI/Computability/MeanPayoff/OperatorDevices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Orientation.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Orientation",
+   "original_sha256": "315e8dde7f18bdaf51edac404191260df78a954e03ebe139c10f51145132bf35",
+   "path": "OAI/Computability/MeanPayoff/Orientation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Packets.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Packets",
+   "original_sha256": "77ae0b730c6ad6a7c7275ba8f95dcb70663c9a6b4ed027a9a94cc44edd9e1b37",
+   "path": "OAI/Computability/MeanPayoff/Packets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/ParserCosts.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.ParserCosts",
+   "original_sha256": "f9c105e20d3250e0a6a15cb88bc7a175edc32988e6c3d277eb03bb7aebc626ba",
+   "path": "OAI/Computability/MeanPayoff/ParserCosts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Pivots.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Pivots",
+   "original_sha256": "d03f180ac76d5abaea569ece65368f420c9903e606fccb3502c4bda8f74b7602",
+   "path": "OAI/Computability/MeanPayoff/Pivots.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/PolynomialCosts.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.PolynomialCosts",
+   "original_sha256": "f2de7ac191b7c20ddbc9baa6b95217c22980de6a5703c6c6901e1db7ba3dcd13",
+   "path": "OAI/Computability/MeanPayoff/PolynomialCosts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Potential.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Potential",
+   "original_sha256": "243a729de3ab164fa33a7062268ff01d3e36a7b9e3ee3ef8e30c918140fab9fb",
+   "path": "OAI/Computability/MeanPayoff/Potential.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Preparation.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Preparation",
+   "original_sha256": "57bc74c4f7e2115b1c6ec80f0edd0fab0274914f3eb2ecfcf49343986ffd97f8",
+   "path": "OAI/Computability/MeanPayoff/Preparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Probability.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Probability",
+   "original_sha256": "cbb718ce7b9f33f887c84482b75c6e034df1a48d3ed1ccfa77fef2531d3f2b68",
+   "path": "OAI/Computability/MeanPayoff/Probability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/RawLabels.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.RawLabels",
+   "original_sha256": "a1faf64432f39b04abd4eef52acc9b83d9ded2858914e04c739333cd9f04a29e",
+   "path": "OAI/Computability/MeanPayoff/RawLabels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/RawMass.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.RawMass",
+   "original_sha256": "8c78c8ca0aa86fb0844d662abf9d49ec44968b0351f0635a65d4875733178631",
+   "path": "OAI/Computability/MeanPayoff/RawMass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/RawSolutions.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.RawSolutions",
+   "original_sha256": "1252df64c6c27bfb7d920fc2a8b0c86b5a4e5d68fbd686524fb304e1e7095a1c",
+   "path": "OAI/Computability/MeanPayoff/RawSolutions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Realizer.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Realizer",
+   "original_sha256": "9bd5259d2d83a5ada4c81ffcc5dd6d43ed5e1ef8da3c7932a2f970ecc3ebf976",
+   "path": "OAI/Computability/MeanPayoff/Realizer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Recursion.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Recursion",
+   "original_sha256": "0f74547f24f95bddcd03cf1c2a9f0965dceab23fca1eefbece9fa120c4437e46",
+   "path": "OAI/Computability/MeanPayoff/Recursion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/RecursiveExecution.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.RecursiveExecution",
+   "original_sha256": "f63afc9b024bbeb664d8dbd0b6931295f9aa108a06aa7fb9ea963b929312ff7b",
+   "path": "OAI/Computability/MeanPayoff/RecursiveExecution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Registers.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Registers",
+   "original_sha256": "a4fb61184454f59d49b72e25b491821e50574ae3aa0a2efaf9e6ff7c5bc79397",
+   "path": "OAI/Computability/MeanPayoff/Registers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/RootBox.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.RootBox",
+   "original_sha256": "1c64218d0cabc87f831cdf7f49f377a88df9bf555a12a6fb38d15c21034d95f7",
+   "path": "OAI/Computability/MeanPayoff/RootBox.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Sampling.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Sampling",
+   "original_sha256": "aae60646576a2e015885dd332e97dabbe02288e826d8e4cf50774e48ed1d004e",
+   "path": "OAI/Computability/MeanPayoff/Sampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/SignedBits.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.SignedBits",
+   "original_sha256": "82d31fc0c0241cae03669f15d599b97ee01cb98e16523e11d3e42ead4b01c004",
+   "path": "OAI/Computability/MeanPayoff/SignedBits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Simulation.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Simulation",
+   "original_sha256": "a1cb25e6ce6ee8be1caa23d569ccd34e67847d01b3b26c6cebf14d997a854053",
+   "path": "OAI/Computability/MeanPayoff/Simulation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/SizeBounds.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.SizeBounds",
+   "original_sha256": "a3c906941a556738c0dc2edd570239d2c2c08077e17b21122318ba83f5df52dc",
+   "path": "OAI/Computability/MeanPayoff/SizeBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Sorting.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Sorting",
+   "original_sha256": "8cc71a87f04a4e570fae1807d038da50d9936c33bc5dfa09c912c331bc2436f4",
+   "path": "OAI/Computability/MeanPayoff/Sorting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Stack.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Stack",
+   "original_sha256": "1d52214cbee42c88470bdb287f0725c83e306ad84939136846fd671f79a4b858",
+   "path": "OAI/Computability/MeanPayoff/Stack.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/StackMacros.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.StackMacros",
+   "original_sha256": "395ba532cfe86a7299975498e3d77175e428eb97fba7c137f8b42dc1bd1f2089",
+   "path": "OAI/Computability/MeanPayoff/StackMacros.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/StackSimulation.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.StackSimulation",
+   "original_sha256": "c7b005f690e8f334858f4256a10dd5a2f9552f72fe2a7fe0fddf9700c1e7f01f",
+   "path": "OAI/Computability/MeanPayoff/StackSimulation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Tightening.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Tightening",
+   "original_sha256": "884729d785774d7d2cb23ba8897d1f5b94044e39be841ea3cb998c69728af96c",
+   "path": "OAI/Computability/MeanPayoff/Tightening.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Traversal.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Traversal",
+   "original_sha256": "6ad51bf9be6b29d23452f770729570c541dc8f362e57e835093c342d28eccd6e",
+   "path": "OAI/Computability/MeanPayoff/Traversal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/TreeCopy.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.TreeCopy",
+   "original_sha256": "7e3a96ffb51bacc1e5e8f8f78a139a4ef283b1ebe917ab5547bcb47938457091",
+   "path": "OAI/Computability/MeanPayoff/TreeCopy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/TreeDevices.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.TreeDevices",
+   "original_sha256": "fb9d2e5b56baf0379f5eadbc7958aee3b1746c4fe0276a77c902e8ba24f80470",
+   "path": "OAI/Computability/MeanPayoff/TreeDevices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/VectorDevices.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.VectorDevices",
+   "original_sha256": "e9ab3b0b9edc508224717b2d0a7bcb7fa4c302ac4c7ce190f241466eda2a2584",
+   "path": "OAI/Computability/MeanPayoff/VectorDevices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/Volume.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.Volume",
+   "original_sha256": "5d540b366ed3669cdd76872d2ef7b7f568e0c01b873b1ea1f01574353695ca4c",
+   "path": "OAI/Computability/MeanPayoff/Volume.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/WinnerCorrespondence.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.WinnerCorrespondence",
+   "original_sha256": "10f9f5f652b1dce0b89a4e80bc8fcadfd2f5234f73398851fe18cbc285a09cc8",
+   "path": "OAI/Computability/MeanPayoff/WinnerCorrespondence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/MeanPayoff/WordDecoding.lean"
+   },
+   "module": "OAI.Computability.MeanPayoff.WordDecoding",
+   "original_sha256": "55e2eb8860ef30dbba422c38449f54c6a0498d7b892a0fd8c62265ef9ab45203",
+   "path": "OAI/Computability/MeanPayoff/WordDecoding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RandomMean/Allocation.lean"
+   },
+   "module": "OAI.Computability.RandomMean.Allocation",
+   "original_sha256": "6dfd1ed8e9438a31822bd6fbd42273c26dce69dd191218225eb5dd2dc6c51f0c",
+   "path": "OAI/Computability/RandomMean/Allocation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RandomMean/Chunks.lean"
+   },
+   "module": "OAI.Computability.RandomMean.Chunks",
+   "original_sha256": "c7f216d613ed37cbefeebb41eed1d9f6eec932a70cc6e1d271196271dfc3d846",
+   "path": "OAI/Computability/RandomMean/Chunks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RandomMean/Complexity.lean"
+   },
+   "module": "OAI.Computability.RandomMean.Complexity",
+   "original_sha256": "ede2f698bb5146ccb565baa7b1c13a04ae0cb47fcd5c4ed4b5a0379c67e47eff",
+   "path": "OAI/Computability/RandomMean/Complexity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RandomMean/Control.lean"
+   },
+   "module": "OAI.Computability.RandomMean.Control",
+   "original_sha256": "194d4943d934c2ef172de2281b68034ebfe79b937c47f5cb633eb1d5456318c9",
+   "path": "OAI/Computability/RandomMean/Control.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RandomMean/ControlCorrectness.lean"
+   },
+   "module": "OAI.Computability.RandomMean.ControlCorrectness",
+   "original_sha256": "2ab1b72097d2ada97d02057c5bdd32320eb6342346a928790b00235d4f45cbee",
+   "path": "OAI/Computability/RandomMean/ControlCorrectness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RandomMean/DispatchBounds.lean"
+   },
+   "module": "OAI.Computability.RandomMean.DispatchBounds",
+   "original_sha256": "1cf07333d0cddf7324de0549974f3e9c6a0d63e83659b17ff36903b65bbebd7e",
+   "path": "OAI/Computability/RandomMean/DispatchBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RandomMean/Growth.lean"
+   },
+   "module": "OAI.Computability.RandomMean.Growth",
+   "original_sha256": "8b17725bc7fd5ec6803d03eebdf694f7e26f6731d90f70b9cc585d78e9443537",
+   "path": "OAI/Computability/RandomMean/Growth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RandomMean/InputBounds.lean"
+   },
+   "module": "OAI.Computability.RandomMean.InputBounds",
+   "original_sha256": "65dec06340af01ee1827d664e4c1c8648b3a58f02575591bee1b55cc56b5cde0",
+   "path": "OAI/Computability/RandomMean/InputBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RandomMean/Loop.lean"
+   },
+   "module": "OAI.Computability.RandomMean.Loop",
+   "original_sha256": "a95a19a38492fda1c01c478b022128fc398cba09a9d712b95f66bfaf00626cc3",
+   "path": "OAI/Computability/RandomMean/Loop.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RandomMean/Main.lean"
+   },
+   "module": "OAI.Computability.RandomMean.Main",
+   "original_sha256": "6305408e6a1aed02542ae3bbac9d46f4be8ee0ff6ace61485259a176e1ec8c04",
+   "path": "OAI/Computability/RandomMean/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RandomMean/Orientation.lean"
+   },
+   "module": "OAI.Computability.RandomMean.Orientation",
+   "original_sha256": "da294df6e9d9b9d3aa24257f3e1b84b4dd6aa04ba1a5b0b336e8faeebeceab20",
+   "path": "OAI/Computability/RandomMean/Orientation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RandomMean/Preparation.lean"
+   },
+   "module": "OAI.Computability.RandomMean.Preparation",
+   "original_sha256": "9430c2296511c0c7f51f14bb009954cf7bc6a5b961cd0ad26e3537b9133e8fba",
+   "path": "OAI/Computability/RandomMean/Preparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RandomMean/RandomTables.lean"
+   },
+   "module": "OAI.Computability.RandomMean.RandomTables",
+   "original_sha256": "c2ef783d91e312a1e561666163deabcd06790145b18755daf4fd08eedf851d6c",
+   "path": "OAI/Computability/RandomMean/RandomTables.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RandomMean/Realizer.lean"
+   },
+   "module": "OAI.Computability.RandomMean.Realizer",
+   "original_sha256": "c8786f0a9776fd6c2630ed0fdbe75d3a3109ff773bccea1e997e43d3f88b46a1",
+   "path": "OAI/Computability/RandomMean/Realizer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RandomMean/SizeBounds.lean"
+   },
+   "module": "OAI.Computability.RandomMean.SizeBounds",
+   "original_sha256": "e33e9db965fae1345a50889f00531bf841764349f86d7521d4147f0142d94203",
+   "path": "OAI/Computability/RandomMean/SizeBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RandomMean/StateGrowth.lean"
+   },
+   "module": "OAI.Computability.RandomMean.StateGrowth",
+   "original_sha256": "351248fe244e864762e233547261c8a2702f9136c653642a4c1d6d9dc399a92b",
+   "path": "OAI/Computability/RandomMean/StateGrowth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/RandomMean/Traces.lean"
+   },
+   "module": "OAI.Computability.RandomMean.Traces",
+   "original_sha256": "23b377e9f72e966004dc00bb908c340ddf714ef65fe39de5ae815d8d89ab6727",
+   "path": "OAI/Computability/RandomMean/Traces.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Computability.MeanPayoff.Allocation",
+  "OAI.Computability.MeanPayoff.Alternatives",
+  "OAI.Computability.MeanPayoff.ArenaParsing",
+  "OAI.Computability.MeanPayoff.Arithmetic",
+  "OAI.Computability.MeanPayoff.ArithmeticBounds",
+  "OAI.Computability.MeanPayoff.ArithmeticDevices",
+  "OAI.Computability.MeanPayoff.BatchDevices",
+  "OAI.Computability.MeanPayoff.BinaryData",
+  "OAI.Computability.MeanPayoff.BitDepth",
+  "OAI.Computability.MeanPayoff.BitProgram",
+  "OAI.Computability.MeanPayoff.Budgets",
+  "OAI.Computability.MeanPayoff.CallBounds",
+  "OAI.Computability.MeanPayoff.Comparison",
+  "OAI.Computability.MeanPayoff.CountedRecursion",
+  "OAI.Computability.MeanPayoff.CountedTraversal",
+  "OAI.Computability.MeanPayoff.Counters",
+  "OAI.Computability.MeanPayoff.Decoding",
+  "OAI.Computability.MeanPayoff.Deviation",
+  "OAI.Computability.MeanPayoff.Drift",
+  "OAI.Computability.MeanPayoff.Driver",
+  "OAI.Computability.MeanPayoff.DriverExecution",
+  "OAI.Computability.MeanPayoff.EncodedArithmetic",
+  "OAI.Computability.MeanPayoff.EncodedPrograms",
+  "OAI.Computability.MeanPayoff.ErrorBounds",
+  "OAI.Computability.MeanPayoff.FiniteBox",
+  "OAI.Computability.MeanPayoff.FiniteIteration",
+  "OAI.Computability.MeanPayoff.FiniteSuccess",
+  "OAI.Computability.MeanPayoff.FiniteTrees",
+  "OAI.Computability.MeanPayoff.GridLabels",
+  "OAI.Computability.MeanPayoff.InputCode",
+  "OAI.Computability.MeanPayoff.InputSize",
+  "OAI.Computability.MeanPayoff.Instructions",
+  "OAI.Computability.MeanPayoff.Labeller",
+  "OAI.Computability.MeanPayoff.LoopDevices",
+  "OAI.Computability.MeanPayoff.Main",
+  "OAI.Computability.MeanPayoff.Model",
+  "OAI.Computability.MeanPayoff.Normalization",
+  "OAI.Computability.MeanPayoff.Online",
+  "OAI.Computability.MeanPayoff.OperatorCosts",
+  "OAI.Computability.MeanPayoff.OperatorDevices",
+  "OAI.Computability.MeanPayoff.Orientation",
+  "OAI.Computability.MeanPayoff.Packets",
+  "OAI.Computability.MeanPayoff.ParserCosts",
+  "OAI.Computability.MeanPayoff.Pivots",
+  "OAI.Computability.MeanPayoff.PolynomialCosts",
+  "OAI.Computability.MeanPayoff.Potential",
+  "OAI.Computability.MeanPayoff.Preparation",
+  "OAI.Computability.MeanPayoff.Probability",
+  "OAI.Computability.MeanPayoff.RawLabels",
+  "OAI.Computability.MeanPayoff.RawMass",
+  "OAI.Computability.MeanPayoff.RawSolutions",
+  "OAI.Computability.MeanPayoff.Realizer",
+  "OAI.Computability.MeanPayoff.Recursion",
+  "OAI.Computability.MeanPayoff.RecursiveExecution",
+  "OAI.Computability.MeanPayoff.Registers",
+  "OAI.Computability.MeanPayoff.RootBox",
+  "OAI.Computability.MeanPayoff.Sampling",
+  "OAI.Computability.MeanPayoff.SignedBits",
+  "OAI.Computability.MeanPayoff.Simulation",
+  "OAI.Computability.MeanPayoff.SizeBounds",
+  "OAI.Computability.MeanPayoff.Sorting",
+  "OAI.Computability.MeanPayoff.Stack",
+  "OAI.Computability.MeanPayoff.StackMacros",
+  "OAI.Computability.MeanPayoff.StackSimulation",
+  "OAI.Computability.MeanPayoff.Tightening",
+  "OAI.Computability.MeanPayoff.Traversal",
+  "OAI.Computability.MeanPayoff.TreeCopy",
+  "OAI.Computability.MeanPayoff.TreeDevices",
+  "OAI.Computability.MeanPayoff.VectorDevices",
+  "OAI.Computability.MeanPayoff.Volume",
+  "OAI.Computability.MeanPayoff.WinnerCorrespondence",
+  "OAI.Computability.MeanPayoff.WordDecoding",
+  "OAI.Computability.RandomMean.Allocation",
+  "OAI.Computability.RandomMean.Chunks",
+  "OAI.Computability.RandomMean.Complexity",
+  "OAI.Computability.RandomMean.Control",
+  "OAI.Computability.RandomMean.ControlCorrectness",
+  "OAI.Computability.RandomMean.DispatchBounds",
+  "OAI.Computability.RandomMean.Growth",
+  "OAI.Computability.RandomMean.InputBounds",
+  "OAI.Computability.RandomMean.Loop",
+  "OAI.Computability.RandomMean.Main",
+  "OAI.Computability.RandomMean.Orientation",
+  "OAI.Computability.RandomMean.Preparation",
+  "OAI.Computability.RandomMean.RandomTables",
+  "OAI.Computability.RandomMean.Realizer",
+  "OAI.Computability.RandomMean.SizeBounds",
+  "OAI.Computability.RandomMean.StateGrowth",
+  "OAI.Computability.RandomMean.Traces"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/RandomizedMeanPayoff.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Computability.RandomMean.Main",
+   "name": "OAI.randomized_quasipolynomial_mean_payoff",
+   "statement_sha256": "9f1a1572dd1ab8d5c0c76932a2bf82e13ebf64b5d3acdd3ea1eb8e8d30fa93bd"
+  }
+ ],
+ "task_id": "oai-randomized-mean-payoff",
+ "task_revision": 1,
+ "title": "OpenAI math: Quasipolynomial algorithms for mean-payoff, stochastic and parity games: Randomized quasipolynomial mean-payoff algorithm",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

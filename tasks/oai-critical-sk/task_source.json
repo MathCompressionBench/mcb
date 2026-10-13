@@ -1,0 +1,785 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 277588943
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.CriticalSK",
+  "challenge_sha256": "d365331a7e2c669d579e5e248fcb9c9f41062a188f60a6484c562f532aa4e08a",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/CriticalSK.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.CriticalSK",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.MathematicalPhysics.CriticalSK.Main",
+   "theorem_names": [
+    "OAI.CriticalSK.realized_equilibrium_initial_states",
+    "OAI.CriticalSK.covariance_and_linear_tests",
+    "OAI.CriticalSK.critical_mixing_lower_bounds"
+   ]
+  },
+  "config_sha256": "3164b158fbba980bda240f2d512b8480efd678b64662e13e6955ec16782003b3",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/CriticalSK.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.CriticalSK.covariance_and_linear_tests": "equal",
+   "OAI.CriticalSK.critical_mixing_lower_bounds": "equal",
+   "OAI.CriticalSK.realized_equilibrium_initial_states": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/BlockEnergy.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.BlockEnergy",
+   "original_sha256": "7586ce96089f1dfa38fa8f1400fa552f3715f27f34d8df7b47aebf17c45e8052",
+   "path": "OAI/MathematicalPhysics/CriticalSK/BlockEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/Cavity.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.Cavity",
+   "original_sha256": "688d0d1b435f8724c1d5d6102b6d51ed96370aae70b0519f96330d93a753aacf",
+   "path": "OAI/MathematicalPhysics/CriticalSK/Cavity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/Covariance.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.Covariance",
+   "original_sha256": "b6d5c6b43c57de06122b5c659ca784faa2bcfa580cc4b94973cc3b3f037544f1",
+   "path": "OAI/MathematicalPhysics/CriticalSK/Covariance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/CubeOverlap.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.CubeOverlap",
+   "original_sha256": "48a4ffb8528f35d558dbd7d3eb4163fc31518c628bb9e407dabe83ec657e86ca",
+   "path": "OAI/MathematicalPhysics/CriticalSK/CubeOverlap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/CubeRestriction.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.CubeRestriction",
+   "original_sha256": "031e82c94ac279f51eb1d526fdc72b024c6e6d044ad2e711ebf5ef7e7f32178b",
+   "path": "OAI/MathematicalPhysics/CriticalSK/CubeRestriction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/DisorderTransfer.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.DisorderTransfer",
+   "original_sha256": "8968a0f7d9434819680ae218f00ad240eb44d4fe305f1b6f7ee6baf1403ba62f",
+   "path": "OAI/MathematicalPhysics/CriticalSK/DisorderTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/EdgeAsymptotics.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.EdgeAsymptotics",
+   "original_sha256": "cfe448a9f5eb8e00c4e549d3620a11f039588fcecedbdf1cfdc300c076597cc6",
+   "path": "OAI/MathematicalPhysics/CriticalSK/EdgeAsymptotics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/Equilibrium.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.Equilibrium",
+   "original_sha256": "c390e174493c3da1bdbf2bfb7a7b35128c9d831675df2de62a46c1b7cd4422ff",
+   "path": "OAI/MathematicalPhysics/CriticalSK/Equilibrium.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/GOESpectrum.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.GOESpectrum",
+   "original_sha256": "dfbd12587ed892f23e5015448e80e1dff5e37b8731c380746fbfbaf96b100a2d",
+   "path": "OAI/MathematicalPhysics/CriticalSK/GOESpectrum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/GapMixing.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.GapMixing",
+   "original_sha256": "e946c8a50d4c25e1399cbd137fc4fb3785d52432e9698a93caccd41519e36378",
+   "path": "OAI/MathematicalPhysics/CriticalSK/GapMixing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/GaussianConcentration.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.GaussianConcentration",
+   "original_sha256": "e5b070284e48609ab44244f1d204026dd736f2c40accc79ee480fbefa685d728",
+   "path": "OAI/MathematicalPhysics/CriticalSK/GaussianConcentration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/GaussianMatrices.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.GaussianMatrices",
+   "original_sha256": "d879963daaefaf30a50774201a16fc29184e2eb5e449c6213f559bf43cac7365",
+   "path": "OAI/MathematicalPhysics/CriticalSK/GaussianMatrices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/GaussianMoments.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.GaussianMoments",
+   "original_sha256": "eeddc406db5736f7df2a2713917f5d2d203e2d4bca82c9f970de50955622b48c",
+   "path": "OAI/MathematicalPhysics/CriticalSK/GaussianMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/Gibbs.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.Gibbs",
+   "original_sha256": "892a899b2a545e367960922b847abeb3ade6110946f06371dd841f461a2ea0c4",
+   "path": "OAI/MathematicalPhysics/CriticalSK/Gibbs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/HeatBath.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.HeatBath",
+   "original_sha256": "bba07cbd6ce9b8650639cd2f7526494788f7c4449cae1409335ca23a65c6a910",
+   "path": "OAI/MathematicalPhysics/CriticalSK/HeatBath.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/HighTemperature.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.HighTemperature",
+   "original_sha256": "512fd9701f8febc92616c071c44d44f6e6dc9a136757e167d1ae6545ad003695",
+   "path": "OAI/MathematicalPhysics/CriticalSK/HighTemperature.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/Main.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.Main",
+   "original_sha256": "bcfbe7e95a48b52fb23bc0ad56b721f98522b114621a7e53f3676dea9a2b4ed4",
+   "path": "OAI/MathematicalPhysics/CriticalSK/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/MinMax.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.MinMax",
+   "original_sha256": "ba60a74de6ce25d60c8697788f6bf6d9dc9cdd4041de970104ecfae3ae9ed981",
+   "path": "OAI/MathematicalPhysics/CriticalSK/MinMax.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/Mixing.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.Mixing",
+   "original_sha256": "c21317286edb1e4aed144d145056a37d441bf01488bca5f219884bba286150ea",
+   "path": "OAI/MathematicalPhysics/CriticalSK/Mixing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/OrientationBounds.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.OrientationBounds",
+   "original_sha256": "4f64a8d56f457bea048a6bba03555fb8f1c4af391f9882066b36827fbe254dbc",
+   "path": "OAI/MathematicalPhysics/CriticalSK/OrientationBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/OrientationLimits.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.OrientationLimits",
+   "original_sha256": "cae3b290d5500a75db017e5e1cc6927f90edc36ee61966d872eb0a4a579b1f96",
+   "path": "OAI/MathematicalPhysics/CriticalSK/OrientationLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/OverlapMoments.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.OverlapMoments",
+   "original_sha256": "6ed89d83084466152941f800ecbcb9b0b7180f03b43247ce9b7dad26002f050b",
+   "path": "OAI/MathematicalPhysics/CriticalSK/OverlapMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/PartitionBounds.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.PartitionBounds",
+   "original_sha256": "b1f2742cf3325c74f8c2d3acd3d2915b4ca06b536d4118cad9c0b8dfd2bea9fb",
+   "path": "OAI/MathematicalPhysics/CriticalSK/PartitionBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/PathEnergy.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.PathEnergy",
+   "original_sha256": "2e3e95c73f734952dab0112d6e6a4b6d420afe80e3902a492f893c62b0b82fd0",
+   "path": "OAI/MathematicalPhysics/CriticalSK/PathEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/PathSpectra.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.PathSpectra",
+   "original_sha256": "d34ab8717e5ee1785047e91309f9930bc7e491d358a4f5358ecb24bae43b3355",
+   "path": "OAI/MathematicalPhysics/CriticalSK/PathSpectra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/Powers.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.Powers",
+   "original_sha256": "a9808f8ebcbb16042b0e898795d666e29487aa04a5c9eb406134c624b63bc7a9",
+   "path": "OAI/MathematicalPhysics/CriticalSK/Powers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/Rayleigh.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.Rayleigh",
+   "original_sha256": "e7bc9bcfcf278091f8521112600a0a072d7155f1775203cfb9aa521390da3721",
+   "path": "OAI/MathematicalPhysics/CriticalSK/Rayleigh.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/Resolvent.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.Resolvent",
+   "original_sha256": "17e1cdb28c02e0ec4e1638ac7db11e2914e8b1fd2c12058fd7329e9a6e6fe6bf",
+   "path": "OAI/MathematicalPhysics/CriticalSK/Resolvent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/Saddle.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.Saddle",
+   "original_sha256": "a7e5ffdd2bec193ee8d0a21c5ae27a456e22f9bb932729b30840464ca72e750d",
+   "path": "OAI/MathematicalPhysics/CriticalSK/Saddle.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/SaddleLimit.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.SaddleLimit",
+   "original_sha256": "971d0a452aa5aaacd3f16daf0b7e809b00b4518036effbbc19df104579f43496",
+   "path": "OAI/MathematicalPhysics/CriticalSK/SaddleLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/SmallBall.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.SmallBall",
+   "original_sha256": "c48690e1459714dcac5f74fbad3af359237899dea0c88530f8c097974d671414",
+   "path": "OAI/MathematicalPhysics/CriticalSK/SmallBall.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/SphereGeometry.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.SphereGeometry",
+   "original_sha256": "b8fa685c6f91a9abb93db72e0109ac5cae9fac254143238bf05ec29c825ca47e",
+   "path": "OAI/MathematicalPhysics/CriticalSK/SphereGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/SphereSaddle.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.SphereSaddle",
+   "original_sha256": "ee0cca344570dd49b0262b39536826b1485b5cc82ec4aa910f1ea8ec29ccd2e5",
+   "path": "OAI/MathematicalPhysics/CriticalSK/SphereSaddle.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/SpinModel.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.SpinModel",
+   "original_sha256": "2097330973032edfb55ae6ae6f382a47ee32e441bdde324a1d1e1933d3783207",
+   "path": "OAI/MathematicalPhysics/CriticalSK/SpinModel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/CriticalSK/TriNoise.lean"
+   },
+   "module": "OAI.MathematicalPhysics.CriticalSK.TriNoise",
+   "original_sha256": "096af3f32ee0e38c6f929960781ed72d6af517bb6205e26cbcc629ea693734b9",
+   "path": "OAI/MathematicalPhysics/CriticalSK/TriNoise.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.MathematicalPhysics.CriticalSK.BlockEnergy",
+  "OAI.MathematicalPhysics.CriticalSK.Cavity",
+  "OAI.MathematicalPhysics.CriticalSK.Covariance",
+  "OAI.MathematicalPhysics.CriticalSK.CubeOverlap",
+  "OAI.MathematicalPhysics.CriticalSK.CubeRestriction",
+  "OAI.MathematicalPhysics.CriticalSK.DisorderTransfer",
+  "OAI.MathematicalPhysics.CriticalSK.EdgeAsymptotics",
+  "OAI.MathematicalPhysics.CriticalSK.Equilibrium",
+  "OAI.MathematicalPhysics.CriticalSK.GOESpectrum",
+  "OAI.MathematicalPhysics.CriticalSK.GapMixing",
+  "OAI.MathematicalPhysics.CriticalSK.GaussianConcentration",
+  "OAI.MathematicalPhysics.CriticalSK.GaussianMatrices",
+  "OAI.MathematicalPhysics.CriticalSK.GaussianMoments",
+  "OAI.MathematicalPhysics.CriticalSK.Gibbs",
+  "OAI.MathematicalPhysics.CriticalSK.HeatBath",
+  "OAI.MathematicalPhysics.CriticalSK.HighTemperature",
+  "OAI.MathematicalPhysics.CriticalSK.Main",
+  "OAI.MathematicalPhysics.CriticalSK.MinMax",
+  "OAI.MathematicalPhysics.CriticalSK.Mixing",
+  "OAI.MathematicalPhysics.CriticalSK.OrientationBounds",
+  "OAI.MathematicalPhysics.CriticalSK.OrientationLimits",
+  "OAI.MathematicalPhysics.CriticalSK.OverlapMoments",
+  "OAI.MathematicalPhysics.CriticalSK.PartitionBounds",
+  "OAI.MathematicalPhysics.CriticalSK.PathEnergy",
+  "OAI.MathematicalPhysics.CriticalSK.PathSpectra",
+  "OAI.MathematicalPhysics.CriticalSK.Powers",
+  "OAI.MathematicalPhysics.CriticalSK.Rayleigh",
+  "OAI.MathematicalPhysics.CriticalSK.Resolvent",
+  "OAI.MathematicalPhysics.CriticalSK.Saddle",
+  "OAI.MathematicalPhysics.CriticalSK.SaddleLimit",
+  "OAI.MathematicalPhysics.CriticalSK.SmallBall",
+  "OAI.MathematicalPhysics.CriticalSK.SphereGeometry",
+  "OAI.MathematicalPhysics.CriticalSK.SphereSaddle",
+  "OAI.MathematicalPhysics.CriticalSK.SpinModel",
+  "OAI.MathematicalPhysics.CriticalSK.TriNoise"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/CriticalSK.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.MathematicalPhysics.CriticalSK.Equilibrium",
+   "name": "OAI.CriticalSK.realized_equilibrium_initial_states",
+   "statement_sha256": "4bee7d8e766900a1c5a969862af06b89ff4ed336020688bfef0396416e05085a"
+  },
+  {
+   "module": "OAI.MathematicalPhysics.CriticalSK.Rayleigh",
+   "name": "OAI.CriticalSK.covariance_and_linear_tests",
+   "statement_sha256": "0574f4bc87119fb6b449c072ff14e730359c3577cb700e2e6fa52d1d9118083d"
+  },
+  {
+   "module": "OAI.MathematicalPhysics.CriticalSK.Mixing",
+   "name": "OAI.CriticalSK.critical_mixing_lower_bounds",
+   "statement_sha256": "40cc58f91717fe874d01844a82dfac8f10f7e75e508dd762281a1f6a0b867b1b"
+  }
+ ],
+ "task_id": "oai-critical-sk",
+ "task_revision": 1,
+ "title": "OpenAI math: Critical SK autocorrelation processes and dynamics across the temperature transition: Equilibrium starts, covariance, and mixing lower bounds",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

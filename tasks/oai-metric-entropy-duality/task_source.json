@@ -1,0 +1,941 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 5826381
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.MetricEntropyDuality",
+  "challenge_sha256": "56e4e4aaa1c1cb998e03aca8f659471996a0428e35736316dfa4cb31f9457cc8",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/MetricEntropyDuality.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.MetricEntropyDuality",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.MetricEntropy.Main",
+   "theorem_names": [
+    "OAI.MetricEntropyDuality.exists_entropy_duality_counterexample_with_covers"
+   ]
+  },
+  "config_sha256": "7b95c9c86fdd3dab7640e14a4f56f29873de2e6571caff62ad52a3b9314d964a",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/MetricEntropyDuality.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.MetricEntropyDuality.exists_entropy_duality_counterexample_with_covers": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/Asymptotics.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.Asymptotics",
+   "original_sha256": "36718f763a593bb92bdda151150a2d98ed7ea61d89e6a320c9c200d0a2d04199",
+   "path": "OAI/Analysis/MetricEntropy/Asymptotics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/Basic.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.Basic",
+   "original_sha256": "4841463681b32466eaa3f9a00722d34ab2dba188ab3297d7061f8c0cff050b25",
+   "path": "OAI/Analysis/MetricEntropy/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/CommonIndex.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.CommonIndex",
+   "original_sha256": "4d67ccc664834b808682273520cdf3816a8c4f07aee28ac4c17e62f0398ee892",
+   "path": "OAI/Analysis/MetricEntropy/CommonIndex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/Compression.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.Compression",
+   "original_sha256": "7879c5beb16dd61f82d003d4965f884f100cb71e7ac1028e1ff7c4059fadc534",
+   "path": "OAI/Analysis/MetricEntropy/Compression.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/CompressionCode.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.CompressionCode",
+   "original_sha256": "dee7ef05e86cacd8f859d9974255e3c23dc3c3e677bf09d7c440f664309f10f4",
+   "path": "OAI/Analysis/MetricEntropy/CompressionCode.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/CompressionDecoder.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.CompressionDecoder",
+   "original_sha256": "4dddaf5e65944a4a954f9de8af95c8170844711112771dd7333cc5e6b4a81948",
+   "path": "OAI/Analysis/MetricEntropy/CompressionDecoder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/CompressionLevels.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.CompressionLevels",
+   "original_sha256": "0fbb807d9b20ff6490ab9aef1464f15ae42dd204c3a7f8d984b5a09b1d53d0b6",
+   "path": "OAI/Analysis/MetricEntropy/CompressionLevels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/Construction.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.Construction",
+   "original_sha256": "68abde3d76c0c8c727910275c96741e92bce859a163ac171903dcbd2e6edc9a0",
+   "path": "OAI/Analysis/MetricEntropy/Construction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/ConvexBody.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.ConvexBody",
+   "original_sha256": "2ceaaff8d39e3c01733f1359b6483f625a0ef47ee2653281b0d5440e39960211",
+   "path": "OAI/Analysis/MetricEntropy/ConvexBody.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/CoordinateTransport.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.CoordinateTransport",
+   "original_sha256": "354582baf12a5030031ef71c95fcb696639a7fdcaa8728c97e91bc235300aae9",
+   "path": "OAI/Analysis/MetricEntropy/CoordinateTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/CoveringNumber.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.CoveringNumber",
+   "original_sha256": "08c1f9a1821360869e3f478c51cffcfc66b0b74c11f14307bf3207b9a07a6923",
+   "path": "OAI/Analysis/MetricEntropy/CoveringNumber.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/DimensionRatio.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.DimensionRatio",
+   "original_sha256": "1cf15fd843139d0b20ebd7cd6f5457b4ff865bbf87a098dc452c2a835a2f4299",
+   "path": "OAI/Analysis/MetricEntropy/DimensionRatio.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/DirectionBudget.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.DirectionBudget",
+   "original_sha256": "088c99ead5d1e501682b7f02a24e5bb856abf94d77760c49447c03c02bc43100",
+   "path": "OAI/Analysis/MetricEntropy/DirectionBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/DirectionDeletion.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.DirectionDeletion",
+   "original_sha256": "c148d2c0849d35a947116e5836475196a258517ed8fed966b98e6332b3abe358",
+   "path": "OAI/Analysis/MetricEntropy/DirectionDeletion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/DirectionSampling.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.DirectionSampling",
+   "original_sha256": "ad07f02ff14849b9da93107008f920c828ecb0cdb22b27629fe18faa5ce5bc77",
+   "path": "OAI/Analysis/MetricEntropy/DirectionSampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/DirectionTuples.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.DirectionTuples",
+   "original_sha256": "d527dfcbf605f4cc7921272af157293e23f00e65eccb951d859136f43bd1f8ee",
+   "path": "OAI/Analysis/MetricEntropy/DirectionTuples.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/EntropyBounds.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.EntropyBounds",
+   "original_sha256": "1bebbc598112926c1467b030a85b4ede29dd353ef819a750c7717d3df26095e8",
+   "path": "OAI/Analysis/MetricEntropy/EntropyBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/EntropyComparison.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.EntropyComparison",
+   "original_sha256": "38fcda6895c2dae0f723caf14c67a0080d2239538cf18838691bf8d9cb17f703",
+   "path": "OAI/Analysis/MetricEntropy/EntropyComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/EntropyFinal.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.EntropyFinal",
+   "original_sha256": "56277c4343ec8c02573084345ced8c70868ef6f04412d719422027352256ee1d",
+   "path": "OAI/Analysis/MetricEntropy/EntropyFinal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/EntropyPair.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.EntropyPair",
+   "original_sha256": "518dcb3f88932d7179802db31bf0c6093927d10ab6160127cdd58035c8423291",
+   "path": "OAI/Analysis/MetricEntropy/EntropyPair.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/EntropyPairLimits.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.EntropyPairLimits",
+   "original_sha256": "e8cdac0479ad23fbd1b2121602ef1265de127c2e4a7a2ba2dcc08ea625b8d813",
+   "path": "OAI/Analysis/MetricEntropy/EntropyPairLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/FieldGraphSeparation.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.FieldGraphSeparation",
+   "original_sha256": "062d0d82fcdbaa850697fab1d18205c190fc258d9523c67896f9cded5def8610",
+   "path": "OAI/Analysis/MetricEntropy/FieldGraphSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/FiniteFieldRows.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.FiniteFieldRows",
+   "original_sha256": "dfca3b113c0c3ce2b21d778522e0b7391ea95b48e3cf4fbec166e8c92f59ff1c",
+   "path": "OAI/Analysis/MetricEntropy/FiniteFieldRows.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/FiniteProductCounting.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.FiniteProductCounting",
+   "original_sha256": "de8333b06371a5e6cd8b7bf6180ff1c19d5e50297e13cb1fe8452e60539003d1",
+   "path": "OAI/Analysis/MetricEntropy/FiniteProductCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/FormCardinality.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.FormCardinality",
+   "original_sha256": "70a8b6a4d011af8f9ba601b1c7096025803be534ddf47f84a209c5871c1979bb",
+   "path": "OAI/Analysis/MetricEntropy/FormCardinality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/FormContraction.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.FormContraction",
+   "original_sha256": "05fcf1a735e4f14f3c316377c0fc274feaed1ed5cc018a4651b526f2a043cc76",
+   "path": "OAI/Analysis/MetricEntropy/FormContraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/FormDimension.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.FormDimension",
+   "original_sha256": "8606cc7b7399092573b83895d0daea68742037199f572188e07e67e6fa896ce8",
+   "path": "OAI/Analysis/MetricEntropy/FormDimension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/FormPolynomials.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.FormPolynomials",
+   "original_sha256": "c8d61784883ac856639a0017dbdbdea62f93d2acefbe7139fa03782154119491",
+   "path": "OAI/Analysis/MetricEntropy/FormPolynomials.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/FormZeroCount.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.FormZeroCount",
+   "original_sha256": "ab724f4e46544858c68071c68de55b9ebfd1c1e738516aca26c17d8626ed2108",
+   "path": "OAI/Analysis/MetricEntropy/FormZeroCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/GraphProfile.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.GraphProfile",
+   "original_sha256": "0150d1086cf69f705904524737817a1332bc45d4137ab6f9e60e12aa8d4d5bec",
+   "path": "OAI/Analysis/MetricEntropy/GraphProfile.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/GreedyPivots.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.GreedyPivots",
+   "original_sha256": "3c0ef0c99970291693f0e9bd1f484e4e50353cebe6fe7fe85aa9d41f21d67c60",
+   "path": "OAI/Analysis/MetricEntropy/GreedyPivots.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/GroupedWeights.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.GroupedWeights",
+   "original_sha256": "6228bcef8878b73c9406fd2c194473afc6647cd980dccfac27c9d2994408e4d4",
+   "path": "OAI/Analysis/MetricEntropy/GroupedWeights.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/LabelEncoding.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.LabelEncoding",
+   "original_sha256": "830b3181c9b4aaaa88d77474b55ef773d2e5e2333abe78d675092871c8f5fa30",
+   "path": "OAI/Analysis/MetricEntropy/LabelEncoding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/LogProfile.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.LogProfile",
+   "original_sha256": "98546582254098ce615e693e292d5c1e6749e6d1390dac44046ac16880fd932c",
+   "path": "OAI/Analysis/MetricEntropy/LogProfile.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/Main.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.Main",
+   "original_sha256": "348c7c9942bead0526697205993d56606eb857f6b4a089a1ef44515ece3d602d",
+   "path": "OAI/Analysis/MetricEntropy/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/MatrixEntropy.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.MatrixEntropy",
+   "original_sha256": "de63ff981a96b4478c4a4ab541fd76551d6e78f14c726a513377578dfc3c173e",
+   "path": "OAI/Analysis/MetricEntropy/MatrixEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/MatrixToBody.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.MatrixToBody",
+   "original_sha256": "e337bcddac9e268708cc755ec86f05e9e9d274f03df36f3c87989e9391ee9722",
+   "path": "OAI/Analysis/MetricEntropy/MatrixToBody.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/Model.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.Model",
+   "original_sha256": "f61ce924d02204444c364cdebce8e022d2b23a9d59a7b3351431c2c40d5341e8",
+   "path": "OAI/Analysis/MetricEntropy/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/Parameters.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.Parameters",
+   "original_sha256": "e408a9602f637ea36f0c44d9cdd6179c4f918243ef15a3d04c19fc98b0a57c54",
+   "path": "OAI/Analysis/MetricEntropy/Parameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/PartitionGraph.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.PartitionGraph",
+   "original_sha256": "74dece55123a6db1ec703e86d528df357859d709f9c1b26cc806f05505857939",
+   "path": "OAI/Analysis/MetricEntropy/PartitionGraph.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/PolarCover.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.PolarCover",
+   "original_sha256": "8d6c5d492633f43e1339aeb02c46eca8f7da64e6357b4e3cd5499e0c9deab493",
+   "path": "OAI/Analysis/MetricEntropy/PolarCover.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/PolynomialZeroBound.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.PolynomialZeroBound",
+   "original_sha256": "725c4e645624e914c4426f1a756cca710b7d26bfaa60a4bb18ba137ad73c7b39",
+   "path": "OAI/Analysis/MetricEntropy/PolynomialZeroBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/PrimeChoice.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.PrimeChoice",
+   "original_sha256": "6dbe8eac21987e6da88ee0ebc52c37f9535d1734cbe6b70b752f3a1950f60b12",
+   "path": "OAI/Analysis/MetricEntropy/PrimeChoice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/ProfileMixtures.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.ProfileMixtures",
+   "original_sha256": "5a474d00adedefebdca12e7d36813d6f3a107ca0323186df8c17929112850518",
+   "path": "OAI/Analysis/MetricEntropy/ProfileMixtures.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/ProfilePivots.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.ProfilePivots",
+   "original_sha256": "111760f1df5438dc918fd6b24da1bfa23455cb5abb4900022bacc9fcb4a05e22",
+   "path": "OAI/Analysis/MetricEntropy/ProfilePivots.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/RobustDirections.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.RobustDirections",
+   "original_sha256": "a51aa3788ef6a1882636fc54e41a4b41fb604f3d95e0baa5187f5d42cc6f3454",
+   "path": "OAI/Analysis/MetricEntropy/RobustDirections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/SignedCompression.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.SignedCompression",
+   "original_sha256": "af6e7dd754915784223627c8507acd379956089abf5cead178b1ac731815c19e",
+   "path": "OAI/Analysis/MetricEntropy/SignedCompression.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/SupportPolar.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.SupportPolar",
+   "original_sha256": "62a14449754d75701e4ba9bd66e7c3166434101f2422064cbf8cbd0eafa2799a",
+   "path": "OAI/Analysis/MetricEntropy/SupportPolar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/SymmetricForms.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.SymmetricForms",
+   "original_sha256": "94b6402e42125993ca12457fd4b39bd857be9310cf50aeada19be2faf72b2f29",
+   "path": "OAI/Analysis/MetricEntropy/SymmetricForms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/SymmetricIndex.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.SymmetricIndex",
+   "original_sha256": "4c3c5b4a32c683cc122164850ef81307e64d497c909724243f2c4a378de5afdc",
+   "path": "OAI/Analysis/MetricEntropy/SymmetricIndex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/SymmetricMultiplicity.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.SymmetricMultiplicity",
+   "original_sha256": "a323223b272ae381d48565325fe00c94d00ac0158904da12bc371d9e8c882e53",
+   "path": "OAI/Analysis/MetricEntropy/SymmetricMultiplicity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MetricEntropy/WeightRounding.lean"
+   },
+   "module": "OAI.Analysis.MetricEntropy.WeightRounding",
+   "original_sha256": "82436e905a0dab9e26e48eeb56b9081985fdb62e502345ecfa205ce7bc4d64d2",
+   "path": "OAI/Analysis/MetricEntropy/WeightRounding.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.MetricEntropy.Asymptotics",
+  "OAI.Analysis.MetricEntropy.Basic",
+  "OAI.Analysis.MetricEntropy.CommonIndex",
+  "OAI.Analysis.MetricEntropy.Compression",
+  "OAI.Analysis.MetricEntropy.CompressionCode",
+  "OAI.Analysis.MetricEntropy.CompressionDecoder",
+  "OAI.Analysis.MetricEntropy.CompressionLevels",
+  "OAI.Analysis.MetricEntropy.Construction",
+  "OAI.Analysis.MetricEntropy.ConvexBody",
+  "OAI.Analysis.MetricEntropy.CoordinateTransport",
+  "OAI.Analysis.MetricEntropy.CoveringNumber",
+  "OAI.Analysis.MetricEntropy.DimensionRatio",
+  "OAI.Analysis.MetricEntropy.DirectionBudget",
+  "OAI.Analysis.MetricEntropy.DirectionDeletion",
+  "OAI.Analysis.MetricEntropy.DirectionSampling",
+  "OAI.Analysis.MetricEntropy.DirectionTuples",
+  "OAI.Analysis.MetricEntropy.EntropyBounds",
+  "OAI.Analysis.MetricEntropy.EntropyComparison",
+  "OAI.Analysis.MetricEntropy.EntropyFinal",
+  "OAI.Analysis.MetricEntropy.EntropyPair",
+  "OAI.Analysis.MetricEntropy.EntropyPairLimits",
+  "OAI.Analysis.MetricEntropy.FieldGraphSeparation",
+  "OAI.Analysis.MetricEntropy.FiniteFieldRows",
+  "OAI.Analysis.MetricEntropy.FiniteProductCounting",
+  "OAI.Analysis.MetricEntropy.FormCardinality",
+  "OAI.Analysis.MetricEntropy.FormContraction",
+  "OAI.Analysis.MetricEntropy.FormDimension",
+  "OAI.Analysis.MetricEntropy.FormPolynomials",
+  "OAI.Analysis.MetricEntropy.FormZeroCount",
+  "OAI.Analysis.MetricEntropy.GraphProfile",
+  "OAI.Analysis.MetricEntropy.GreedyPivots",
+  "OAI.Analysis.MetricEntropy.GroupedWeights",
+  "OAI.Analysis.MetricEntropy.LabelEncoding",
+  "OAI.Analysis.MetricEntropy.LogProfile",
+  "OAI.Analysis.MetricEntropy.Main",
+  "OAI.Analysis.MetricEntropy.MatrixEntropy",
+  "OAI.Analysis.MetricEntropy.MatrixToBody",
+  "OAI.Analysis.MetricEntropy.Model",
+  "OAI.Analysis.MetricEntropy.Parameters",
+  "OAI.Analysis.MetricEntropy.PartitionGraph",
+  "OAI.Analysis.MetricEntropy.PolarCover",
+  "OAI.Analysis.MetricEntropy.PolynomialZeroBound",
+  "OAI.Analysis.MetricEntropy.PrimeChoice",
+  "OAI.Analysis.MetricEntropy.ProfileMixtures",
+  "OAI.Analysis.MetricEntropy.ProfilePivots",
+  "OAI.Analysis.MetricEntropy.RobustDirections",
+  "OAI.Analysis.MetricEntropy.SignedCompression",
+  "OAI.Analysis.MetricEntropy.SupportPolar",
+  "OAI.Analysis.MetricEntropy.SymmetricForms",
+  "OAI.Analysis.MetricEntropy.SymmetricIndex",
+  "OAI.Analysis.MetricEntropy.SymmetricMultiplicity",
+  "OAI.Analysis.MetricEntropy.WeightRounding"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/MetricEntropyDuality.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.MetricEntropy.Main",
+   "name": "OAI.MetricEntropyDuality.exists_entropy_duality_counterexample_with_covers",
+   "statement_sha256": "10c88cff5de08e054c1cdb6aaf7eb0b73b57bc04d21f15532cea1ca8c17ca505"
+  }
+ ],
+ "task_id": "oai-metric-entropy-duality",
+ "task_revision": 1,
+ "title": "OpenAI math: A counterexample to metric-entropy duality: Counterexample to metric-entropy duality",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

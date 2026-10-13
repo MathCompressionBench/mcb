@@ -1,0 +1,931 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 526077380
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.ExactFourier",
+  "challenge_sha256": "93b33a2b9f6543dd0b893c3a5a504df19a1a39476072c6d7ebe18133a820ef6d",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ExactFourier.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.ExactFourier",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Computability.FourierCircuit.Main",
+   "theorem_names": [
+    "OAI.ExactFourier.main_theorem"
+   ]
+  },
+  "config_sha256": "5c80971062c12f3ec364ae482fbd1e0d954c81c36437f3faa0b2c56562d1892c",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ExactFourier.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.ExactFourier.main_theorem": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/AmplificationMaster.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.AmplificationMaster",
+   "original_sha256": "876bfba4405df25a01ea07be21f8bfbc840bdfa50197c37356f5adca3625263e",
+   "path": "OAI/Computability/FourierCircuit/AmplificationMaster.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/Boundary.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.Boundary",
+   "original_sha256": "2b22a0965493eaf6241e9f5402e4fb5b7e2931a6ef052816c1a61a8692e272cd",
+   "path": "OAI/Computability/FourierCircuit/Boundary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/BoundaryActiveCircuit.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.BoundaryActiveCircuit",
+   "original_sha256": "0774872986218a7de4e09c19fcba2f40b068feab025f795c6100a6a08c694897",
+   "path": "OAI/Computability/FourierCircuit/BoundaryActiveCircuit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/CascadeLimit.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.CascadeLimit",
+   "original_sha256": "9e2a8ba5a7ad70fda983f24f727f6acb25d00fd1e6d216655d84c307c6360b82",
+   "path": "OAI/Computability/FourierCircuit/CascadeLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/CascadeWord.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.CascadeWord",
+   "original_sha256": "28873f803caf6bbe3e62468c57b64a7914b2f97ef620451a1c0a0391845c8729",
+   "path": "OAI/Computability/FourierCircuit/CascadeWord.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/CircuitCost.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.CircuitCost",
+   "original_sha256": "33d80b1b4eb938cd67bfe25395419f7e9564ebcec8f04149798f227388aa5aeb",
+   "path": "OAI/Computability/FourierCircuit/CircuitCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/CircuitExtensions.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.CircuitExtensions",
+   "original_sha256": "f7f6754bec8d8d0dd14f29eeb0a009048d36f65c6534477333028c1c53738650",
+   "path": "OAI/Computability/FourierCircuit/CircuitExtensions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/ClearedCircuit.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.ClearedCircuit",
+   "original_sha256": "e7817700a7a7caf574bca57fc12e066e5f650a4df88afd958fe9bf7bfe07c372",
+   "path": "OAI/Computability/FourierCircuit/ClearedCircuit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/ComparisonRename.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.ComparisonRename",
+   "original_sha256": "d500c696620d675b8056abf12012aebc5cb7d357634adddcc365b2f81c2f35da",
+   "path": "OAI/Computability/FourierCircuit/ComparisonRename.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/Core.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.Core",
+   "original_sha256": "45fd659a66b3bb93ea9e55ebf0c06fde26a3038e2c7fb369cbd8dada371603a6",
+   "path": "OAI/Computability/FourierCircuit/Core.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/DiagonalBlocks.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.DiagonalBlocks",
+   "original_sha256": "c6612118544f475b2bfa646bff922eff1935dc13ea2f56f1c99487071620eff9",
+   "path": "OAI/Computability/FourierCircuit/DiagonalBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/DisplacementKernel.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.DisplacementKernel",
+   "original_sha256": "485824a0c0080d8acf1781fcc06968a4c47b5c11db056bfb5bc34c2c0e217cd4",
+   "path": "OAI/Computability/FourierCircuit/DisplacementKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/FFTCircuit.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.FFTCircuit",
+   "original_sha256": "10d06e994ba0ef2008edcb1444cb3ed9a45447714ba2e4791c76dc00f9d95de5",
+   "path": "OAI/Computability/FourierCircuit/FFTCircuit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/FiniteSeparation.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.FiniteSeparation",
+   "original_sha256": "2819d514ddd9c8789b9b54a492ff5bef458e976336c7fd66c252683cdc158dc4",
+   "path": "OAI/Computability/FourierCircuit/FiniteSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/GraphBlocks.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.GraphBlocks",
+   "original_sha256": "b74e58ea8ca56e3b518c6a0f8214a474282d32942595b508cc273c141a23524c",
+   "path": "OAI/Computability/FourierCircuit/GraphBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/InventoryValidity.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.InventoryValidity",
+   "original_sha256": "e4ed518032c004cf69e69c2eafb4317d87d5436dc40eeb199436c5064d438989",
+   "path": "OAI/Computability/FourierCircuit/InventoryValidity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/LinearDAG.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.LinearDAG",
+   "original_sha256": "d82a7b78a04c5f1a1bef9bab356cab5ae4f08e6fe6636bd5bb1930e8168c4f19",
+   "path": "OAI/Computability/FourierCircuit/LinearDAG.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/LiveSectors.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.LiveSectors",
+   "original_sha256": "0b773d35b4a860522649600649580d957db2aa0c9970f79a07185c9b9d0432ab",
+   "path": "OAI/Computability/FourierCircuit/LiveSectors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/Main.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.Main",
+   "original_sha256": "ff1fb1bc4b5ec26f1722d41d9603898b3361844af1cb4a78e0233a6bc6de582b",
+   "path": "OAI/Computability/FourierCircuit/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/MatrixRelabel.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.MatrixRelabel",
+   "original_sha256": "5463a5ba94b9f26272966c03fb6029635fc0e730edbe0ee8d2a356d148f1814c",
+   "path": "OAI/Computability/FourierCircuit/MatrixRelabel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/MonomialFeedback.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.MonomialFeedback",
+   "original_sha256": "ed865d97caf26ee1d5a0a201177df9887ed0071be2cbd9901baf9f8b68ded4de",
+   "path": "OAI/Computability/FourierCircuit/MonomialFeedback.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/MonomialTools.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.MonomialTools",
+   "original_sha256": "482d3e2d900cc422d18c1434cd85c0359cb0ebf1abc212c6d94008ce3cb332c5",
+   "path": "OAI/Computability/FourierCircuit/MonomialTools.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/MultiWord.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.MultiWord",
+   "original_sha256": "cbcbbba4d099066d486b29794eb7d6692f6b21182984fc43917b1c183f379761",
+   "path": "OAI/Computability/FourierCircuit/MultiWord.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/PackedSchedule.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.PackedSchedule",
+   "original_sha256": "24bb8757a33f88b8c24cea29adb3d05c3b34110bb0f83727c6c92fafd554e26c",
+   "path": "OAI/Computability/FourierCircuit/PackedSchedule.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/PairFamilies.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.PairFamilies",
+   "original_sha256": "c13e4f9177433493dd2d5b66736c35f66d5e9a30c2cdb1b4363c90491c597523",
+   "path": "OAI/Computability/FourierCircuit/PairFamilies.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/ParameterAlgebra.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.ParameterAlgebra",
+   "original_sha256": "d3744dbb54a49f7a24b5b6ffb49943bc463f665533ca516096ddbd357be01fff",
+   "path": "OAI/Computability/FourierCircuit/ParameterAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/PiTensor.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.PiTensor",
+   "original_sha256": "2c5551fde12488ea2e8003d2527cbc9c911780166cf4689e246cc4ab4269e64b",
+   "path": "OAI/Computability/FourierCircuit/PiTensor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/PivotAlgebra.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.PivotAlgebra",
+   "original_sha256": "aabacf5f02bb9cf2acb2322d77e9f5b96c89458eed00593aa001e9518127fca8",
+   "path": "OAI/Computability/FourierCircuit/PivotAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/PivotJoin.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.PivotJoin",
+   "original_sha256": "10537c4fe858b69e4840b08716a50715daa4cae6434a8ae8f2e338854063f72e",
+   "path": "OAI/Computability/FourierCircuit/PivotJoin.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/PolynomialClearing.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.PolynomialClearing",
+   "original_sha256": "5a7b4b3eb602f5de9168afb84e8f046d3fe4b41184f57a9793faeeab529bc64d",
+   "path": "OAI/Computability/FourierCircuit/PolynomialClearing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/PortMatrices.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.PortMatrices",
+   "original_sha256": "b93adbdcf4901998e29767e1aea695aa6cef18781925217cbae328c6b990d36a",
+   "path": "OAI/Computability/FourierCircuit/PortMatrices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/PositiveReach.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.PositiveReach",
+   "original_sha256": "f8815cad2f01689a58f20678bd63596840043df25b43c6508d0916e266399286",
+   "path": "OAI/Computability/FourierCircuit/PositiveReach.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/Prices.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.Prices",
+   "original_sha256": "131359dad35e2381d60e90811f2348bd5285a116d567f13ac0f8723544e990f1",
+   "path": "OAI/Computability/FourierCircuit/Prices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/RationalClearing.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.RationalClearing",
+   "original_sha256": "ae8d5610f092d4f6bdbec8d948111e53b1faedf2d0fbf9b6c714698b606ac099",
+   "path": "OAI/Computability/FourierCircuit/RationalClearing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/RawPositive.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.RawPositive",
+   "original_sha256": "21f7bb1223ccc05176d9359f4ce48f9362e19ce19fd424bbc46a42bf90463f3b",
+   "path": "OAI/Computability/FourierCircuit/RawPositive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/RawWordBound.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.RawWordBound",
+   "original_sha256": "28b51ed9917ac73a5c33561a02fbb42f74734e200f765893584e1f007acf0c43",
+   "path": "OAI/Computability/FourierCircuit/RawWordBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/RectStableAlgebra.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.RectStableAlgebra",
+   "original_sha256": "ccc3e1351dd2b258f3a53510c42d210fc55b8c3146122345e179b2529908e615",
+   "path": "OAI/Computability/FourierCircuit/RectStableAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/Shears.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.Shears",
+   "original_sha256": "8bcdd80af087314d24c429097d2cc62f607bdc0d6c3d3075d5604195d0b8fb7e",
+   "path": "OAI/Computability/FourierCircuit/Shears.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/SignedPrice.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.SignedPrice",
+   "original_sha256": "2da1da505d51279869e8a28232afd52708d16013fd42f100948e4e83e6a3f2db",
+   "path": "OAI/Computability/FourierCircuit/SignedPrice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/SlotAssembly.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.SlotAssembly",
+   "original_sha256": "cb57eb08f738346bfbd22f75280423d4f518ed18744dd9502e2ac752fb95e5a2",
+   "path": "OAI/Computability/FourierCircuit/SlotAssembly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/SparseShear.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.SparseShear",
+   "original_sha256": "a1ae51b89d9abc24e6b8efe45ec1ea48d2e117d842ae513add787398209ac57b",
+   "path": "OAI/Computability/FourierCircuit/SparseShear.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/SparseSpectral.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.SparseSpectral",
+   "original_sha256": "07d0e79c59e8f8bf5660fb89bcd4b6ce37cddba207497fc530961115f9aaefb8",
+   "path": "OAI/Computability/FourierCircuit/SparseSpectral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/StreamSeries.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.StreamSeries",
+   "original_sha256": "40c023c4745b6b2deb4277bc056a0da56da83bcd3a176eabc5ac2fc8daa18a8c",
+   "path": "OAI/Computability/FourierCircuit/StreamSeries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/SumFramed.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.SumFramed",
+   "original_sha256": "3171eade73a889a4449abfbf94e68c54d5a75fd675acf91a347b08cc2b5bde52",
+   "path": "OAI/Computability/FourierCircuit/SumFramed.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/SymmetricLaplacian.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.SymmetricLaplacian",
+   "original_sha256": "bbdd7f0fa3b2ceb6c82ab86e9ddc515a22bfb1006ec07e728fa7fac402731db1",
+   "path": "OAI/Computability/FourierCircuit/SymmetricLaplacian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/TensorCostAlgebra.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.TensorCostAlgebra",
+   "original_sha256": "9dd1e545fb099d0d7e3b3cb652a77716da2155ef55e5aa835a6abc3ea5452441",
+   "path": "OAI/Computability/FourierCircuit/TensorCostAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/TensorTools.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.TensorTools",
+   "original_sha256": "9159d03f6f409fe4c8b69aceb74595a6b3a621033656e3339501d8ddbbf8b2a8",
+   "path": "OAI/Computability/FourierCircuit/TensorTools.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/ToeplitzCross.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.ToeplitzCross",
+   "original_sha256": "d75fcbd8dcdd2e85c2d09853c80094c847b4ef27f73a40bb0fb445de9b216d3c",
+   "path": "OAI/Computability/FourierCircuit/ToeplitzCross.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/Triangular.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.Triangular",
+   "original_sha256": "a21688d80b37db9e84a30d4342d4288db2f32cbc819f105604efafeb794dbbcc",
+   "path": "OAI/Computability/FourierCircuit/Triangular.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/WordScheduling.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.WordScheduling",
+   "original_sha256": "dba4f2335bdce8d3ed38aefbff7a6420ba1b394e3597bc4e7d65030bdf0f9267",
+   "path": "OAI/Computability/FourierCircuit/WordScheduling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Computability/FourierCircuit/Words.lean"
+   },
+   "module": "OAI.Computability.FourierCircuit.Words",
+   "original_sha256": "89bf59683cb8293d78b88bcc7ac389cbb8c7a4f0b2645fc743224d6c2d695f9a",
+   "path": "OAI/Computability/FourierCircuit/Words.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Computability.FourierCircuit.AmplificationMaster",
+  "OAI.Computability.FourierCircuit.Boundary",
+  "OAI.Computability.FourierCircuit.BoundaryActiveCircuit",
+  "OAI.Computability.FourierCircuit.CascadeLimit",
+  "OAI.Computability.FourierCircuit.CascadeWord",
+  "OAI.Computability.FourierCircuit.CircuitCost",
+  "OAI.Computability.FourierCircuit.CircuitExtensions",
+  "OAI.Computability.FourierCircuit.ClearedCircuit",
+  "OAI.Computability.FourierCircuit.ComparisonRename",
+  "OAI.Computability.FourierCircuit.Core",
+  "OAI.Computability.FourierCircuit.DiagonalBlocks",
+  "OAI.Computability.FourierCircuit.DisplacementKernel",
+  "OAI.Computability.FourierCircuit.FFTCircuit",
+  "OAI.Computability.FourierCircuit.FiniteSeparation",
+  "OAI.Computability.FourierCircuit.GraphBlocks",
+  "OAI.Computability.FourierCircuit.InventoryValidity",
+  "OAI.Computability.FourierCircuit.LinearDAG",
+  "OAI.Computability.FourierCircuit.LiveSectors",
+  "OAI.Computability.FourierCircuit.Main",
+  "OAI.Computability.FourierCircuit.MatrixRelabel",
+  "OAI.Computability.FourierCircuit.MonomialFeedback",
+  "OAI.Computability.FourierCircuit.MonomialTools",
+  "OAI.Computability.FourierCircuit.MultiWord",
+  "OAI.Computability.FourierCircuit.PackedSchedule",
+  "OAI.Computability.FourierCircuit.PairFamilies",
+  "OAI.Computability.FourierCircuit.ParameterAlgebra",
+  "OAI.Computability.FourierCircuit.PiTensor",
+  "OAI.Computability.FourierCircuit.PivotAlgebra",
+  "OAI.Computability.FourierCircuit.PivotJoin",
+  "OAI.Computability.FourierCircuit.PolynomialClearing",
+  "OAI.Computability.FourierCircuit.PortMatrices",
+  "OAI.Computability.FourierCircuit.PositiveReach",
+  "OAI.Computability.FourierCircuit.Prices",
+  "OAI.Computability.FourierCircuit.RationalClearing",
+  "OAI.Computability.FourierCircuit.RawPositive",
+  "OAI.Computability.FourierCircuit.RawWordBound",
+  "OAI.Computability.FourierCircuit.RectStableAlgebra",
+  "OAI.Computability.FourierCircuit.Shears",
+  "OAI.Computability.FourierCircuit.SignedPrice",
+  "OAI.Computability.FourierCircuit.SlotAssembly",
+  "OAI.Computability.FourierCircuit.SparseShear",
+  "OAI.Computability.FourierCircuit.SparseSpectral",
+  "OAI.Computability.FourierCircuit.StreamSeries",
+  "OAI.Computability.FourierCircuit.SumFramed",
+  "OAI.Computability.FourierCircuit.SymmetricLaplacian",
+  "OAI.Computability.FourierCircuit.TensorCostAlgebra",
+  "OAI.Computability.FourierCircuit.TensorTools",
+  "OAI.Computability.FourierCircuit.ToeplitzCross",
+  "OAI.Computability.FourierCircuit.Triangular",
+  "OAI.Computability.FourierCircuit.WordScheduling",
+  "OAI.Computability.FourierCircuit.Words"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/ExactFourier.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Computability.FourierCircuit.Main",
+   "name": "OAI.ExactFourier.main_theorem",
+   "statement_sha256": "2720964f5cb15d1653b831627e87d8cc74157eccd78ede2a22dffa05fb1d9e95"
+  }
+ ],
+ "task_id": "oai-exact-fourier",
+ "task_revision": 1,
+ "title": "OpenAI math: Exact Fourier transforms below `n\\log n`: Subsequential savings for exact Fourier circuits",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

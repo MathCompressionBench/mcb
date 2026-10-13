@@ -1,0 +1,891 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 456691084
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.GaussianPropeller",
+  "challenge_sha256": "4130e2ee06a20af2578cf886bacc86cc22750a0e17080e69e8675aae25cf608c",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/GaussianPropeller.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.GaussianPropeller",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Probability.GaussianPropeller.Main",
+   "theorem_names": [
+    "OAI.GaussianPropeller.all_partitions"
+   ]
+  },
+  "config_sha256": "8a26e668bd42299e8699ae3d25a31c1b4831ce782a618383347e4e879f116d63",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/GaussianPropeller.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.GaussianPropeller.all_partitions": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Analytic.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Analytic",
+   "original_sha256": "f50490bbaeebb2c907415c536471664b7937b0efe07f258f2bb4385b33a8f38a",
+   "path": "OAI/Probability/GaussianPropeller/Analytic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Attainment.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Attainment",
+   "original_sha256": "5b2b3176452e69f5372eaa2055b83250ffa267f934f9a034a9ae9b069052ac8a",
+   "path": "OAI/Probability/GaussianPropeller/Attainment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/CapBounds.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.CapBounds",
+   "original_sha256": "10c61efde7bc5ebe9e51a563a65dd409bd822df8124ce06bcc028fca1a98c29e",
+   "path": "OAI/Probability/GaussianPropeller/CapBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/CapCertificates.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.CapCertificates",
+   "original_sha256": "d4d3e5488bd179e42b126691bd6c5e2ddb35111efffc34dbffd73348e9e7f57a",
+   "path": "OAI/Probability/GaussianPropeller/CapCertificates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/CapIntegral.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.CapIntegral",
+   "original_sha256": "9ef20f13375173b8f0ce819f74552ab717b5765c05b6aa738ce527a1dbe26d90",
+   "path": "OAI/Probability/GaussianPropeller/CapIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/CapNumeric.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.CapNumeric",
+   "original_sha256": "b9e08698f0b7cfc8c082ca3ec0646b33d27cc6b5a9ca6cac35730c5eb85ab579",
+   "path": "OAI/Probability/GaussianPropeller/CapNumeric.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/CapReduction.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.CapReduction",
+   "original_sha256": "a7e4fd24bdd5039c294914e469e290ea28df32680922533cfa6b99e5f7aa4101",
+   "path": "OAI/Probability/GaussianPropeller/CapReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/CellBounds.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.CellBounds",
+   "original_sha256": "e2eec15a9acba34f55d72f584b47eb3d3e472a53d013c119705c1971b9d477df",
+   "path": "OAI/Probability/GaussianPropeller/CellBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/ConeConcavity.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.ConeConcavity",
+   "original_sha256": "edffd8904423593d8496433533e700438dada8c46eeb6ef40d5fb74b2147529c",
+   "path": "OAI/Probability/GaussianPropeller/ConeConcavity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/ConeReduction.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.ConeReduction",
+   "original_sha256": "832d89aa5674efd70d5c4408d16dc548b9a479f0d878d0f27460079691ccad28",
+   "path": "OAI/Probability/GaussianPropeller/ConeReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Configuration.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Configuration",
+   "original_sha256": "9347beecb07b0bb7ffae807d8a980554ecc2d3ff33d5d10d761a44f1d99f6253",
+   "path": "OAI/Probability/GaussianPropeller/Configuration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Coordinates.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Coordinates",
+   "original_sha256": "e41bc326d00bad317f5e36bcf62d5a1657e6a0933ba62910e91e147c0bb66810",
+   "path": "OAI/Probability/GaussianPropeller/Coordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Deletion.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Deletion",
+   "original_sha256": "30c481e3b27fab932351a00b27b5e021f8dda9801e8b5e0b974ab1abf2756706",
+   "path": "OAI/Probability/GaussianPropeller/Deletion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Dual.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Dual",
+   "original_sha256": "bb7bd2647c53f2e4cf5c91050a92e50dada8788e846c212d061ff7e24f3ca6bb",
+   "path": "OAI/Probability/GaussianPropeller/Dual.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Elimination.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Elimination",
+   "original_sha256": "7e91a15cac85e7c9fefb979b6d3594f66edce4a876426acb255ccf42f56ae138",
+   "path": "OAI/Probability/GaussianPropeller/Elimination.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/FourAlgebra.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.FourAlgebra",
+   "original_sha256": "b425516d030fd2277f67397c3ff776de7d472fc122fe209dba727f82949c9d5b",
+   "path": "OAI/Probability/GaussianPropeller/FourAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/FourCells.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.FourCells",
+   "original_sha256": "53c2014b810073b473717f3e1c39c2d2bb960dcd38c3934d5084d3b9539b0f4e",
+   "path": "OAI/Probability/GaussianPropeller/FourCells.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/FourReduction.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.FourReduction",
+   "original_sha256": "8860efc9af6a1d3fe6c980e161d25cbfc34a18b7f07ea7e21f29b28660fee051",
+   "path": "OAI/Probability/GaussianPropeller/FourReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/GaussianCoordinates.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.GaussianCoordinates",
+   "original_sha256": "a03e571380f07916b14d383e98cdac67879ef55c7fca81429eedb88b4509a45f",
+   "path": "OAI/Probability/GaussianPropeller/GaussianCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Geometry.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Geometry",
+   "original_sha256": "e8841663e59dbe0d0cf812432a1df3a3bee6fffc7759df3b746026e8708526f8",
+   "path": "OAI/Probability/GaussianPropeller/Geometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Gram.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Gram",
+   "original_sha256": "00937491615037658f363b7e985e770cd1e13f512e626c67c3a82e8efe53ddee",
+   "path": "OAI/Probability/GaussianPropeller/Gram.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/HeatConvolution.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.HeatConvolution",
+   "original_sha256": "5e0a15cd0fbe6ae95ffba25adda02bd7079c95222ed87c1022f8278e94e1d61d",
+   "path": "OAI/Probability/GaussianPropeller/HeatConvolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/HeatMaximum.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.HeatMaximum",
+   "original_sha256": "a3f7777992f2be95bfbf110b0a9e6f59de59110a83e2fe33cf4f2e6051d83875",
+   "path": "OAI/Probability/GaussianPropeller/HeatMaximum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/LargeCertificates.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.LargeCertificates",
+   "original_sha256": "5f397afe3cce5cd59dabc2f97b6f8208386e1e7524a2f083257df67d2710af89",
+   "path": "OAI/Probability/GaussianPropeller/LargeCertificates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/LossCertificates.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.LossCertificates",
+   "original_sha256": "26a99da2d67987d3d32f3a1b2c815029c7ab7c00ff97ac9a38e0649cc37b1185",
+   "path": "OAI/Probability/GaussianPropeller/LossCertificates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Main.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Main",
+   "original_sha256": "a35072dc3f46e60e5e8d8f3d63f376d7ffdf7887b6b60bee2c4d78b83a6fa1d2",
+   "path": "OAI/Probability/GaussianPropeller/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Mills.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Mills",
+   "original_sha256": "65a3cff8684c20c0779fc1141859903d276040b075151a9c52b63ba50ff6bd04",
+   "path": "OAI/Probability/GaussianPropeller/Mills.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Model.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Model",
+   "original_sha256": "2ff87ae34b6e22e839278a722f5bbe4f154228817c4e4a00ba8244a8892c1149",
+   "path": "OAI/Probability/GaussianPropeller/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Moments.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Moments",
+   "original_sha256": "d00c6ae6535718eb96f653b357752dc61fdbcabebed06652a4b789c1c8b39653",
+   "path": "OAI/Probability/GaussianPropeller/Moments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/OneCell.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.OneCell",
+   "original_sha256": "0df7589de714175a99cf4d0dc0522962fa440f7f77f9d1f22eef57c8a2bdda97",
+   "path": "OAI/Probability/GaussianPropeller/OneCell.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/PairBounds.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.PairBounds",
+   "original_sha256": "361b1aa8a5b115dc7fa426051adc0243885fe42c7127df5e9c240551f3d31e92",
+   "path": "OAI/Probability/GaussianPropeller/PairBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/PairIntegral.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.PairIntegral",
+   "original_sha256": "95627fe914ca17141fbe90521e9ce21701fc2c762003834eb82f56db95cc0ddc",
+   "path": "OAI/Probability/GaussianPropeller/PairIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Polar.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Polar",
+   "original_sha256": "a6a6f799c936768ce36c3700729394bb523f5184c9fbc95de4f01635f7d86a4b",
+   "path": "OAI/Probability/GaussianPropeller/Polar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/ProbabilityBounds.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.ProbabilityBounds",
+   "original_sha256": "5847fbf955b1bea32717d2d02e28c1bc71fbd0111bd187f8af4db8a7623cc36d",
+   "path": "OAI/Probability/GaussianPropeller/ProbabilityBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Quantile.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Quantile",
+   "original_sha256": "56870bb133ae4855cc6c68f318f957e301964514d54a9e7d778dbd6bd6b13177",
+   "path": "OAI/Probability/GaussianPropeller/Quantile.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/QuantileCalculus.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.QuantileCalculus",
+   "original_sha256": "c097fcd027f5ddd9472e1890c76076e70321e34c8f9766fe7bec9c339355fcef",
+   "path": "OAI/Probability/GaussianPropeller/QuantileCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/QuarticCertificates.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.QuarticCertificates",
+   "original_sha256": "7bc3f95ff50f30c6d8ba5537003bdc76d9ad2d3b49a15efc18a2db8a987792a7",
+   "path": "OAI/Probability/GaussianPropeller/QuarticCertificates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/ResidualBounds.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.ResidualBounds",
+   "original_sha256": "e9e23d78f66b222e95bbf86e9f0d9710c144d0b5876aa4f247ad22613059c055",
+   "path": "OAI/Probability/GaussianPropeller/ResidualBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Scalar.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Scalar",
+   "original_sha256": "8b4b817bf1017126c9aa663e4b4f4f80ee1a55e799a11a8a537f005bc4eb1287",
+   "path": "OAI/Probability/GaussianPropeller/Scalar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/SmallCell.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.SmallCell",
+   "original_sha256": "d0285a19cf4164bcdbf5ff925751db52563c48c6bd9164675f85da4f1b94c878",
+   "path": "OAI/Probability/GaussianPropeller/SmallCell.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/SmallCertificates.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.SmallCertificates",
+   "original_sha256": "373b8ac788afb8e8b8e707ec36b3bf4e0d43efb050d26dc4c08ce9b5a5397099",
+   "path": "OAI/Probability/GaussianPropeller/SmallCertificates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/SmoothedConcavity.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.SmoothedConcavity",
+   "original_sha256": "5255cba10a4006c55ef7891d36e4d2263f4359c50b79955ddd027a4ab73e0e83",
+   "path": "OAI/Probability/GaussianPropeller/SmoothedConcavity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/SoftMinimum.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.SoftMinimum",
+   "original_sha256": "46c5aec3e0060f7b71a4b80fdfe6afa2a0c72a690739b4d1b11365b99072b83c",
+   "path": "OAI/Probability/GaussianPropeller/SoftMinimum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/SpanReduction.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.SpanReduction",
+   "original_sha256": "79ad07804739aff1dbda80f2090f5ee18eed44214e908eee0bf305cb537573f5",
+   "path": "OAI/Probability/GaussianPropeller/SpanReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Stein.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Stein",
+   "original_sha256": "90607657e66ab21150a692b5feb3a99036f902f2a0fe5c486e9457d8faabc864",
+   "path": "OAI/Probability/GaussianPropeller/Stein.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Taylor.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Taylor",
+   "original_sha256": "d274b0c4e29bbf34042f3b490e6beb89ce6caf8d753e24fce0b0a337b0126552",
+   "path": "OAI/Probability/GaussianPropeller/Taylor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/GaussianPropeller/Translation.lean"
+   },
+   "module": "OAI.Probability.GaussianPropeller.Translation",
+   "original_sha256": "fc0ed3ec35734ebf7fa199fbdab24f4d11e651e5b453de36d568bdd5d523d9fa",
+   "path": "OAI/Probability/GaussianPropeller/Translation.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Probability.GaussianPropeller.Analytic",
+  "OAI.Probability.GaussianPropeller.Attainment",
+  "OAI.Probability.GaussianPropeller.CapBounds",
+  "OAI.Probability.GaussianPropeller.CapCertificates",
+  "OAI.Probability.GaussianPropeller.CapIntegral",
+  "OAI.Probability.GaussianPropeller.CapNumeric",
+  "OAI.Probability.GaussianPropeller.CapReduction",
+  "OAI.Probability.GaussianPropeller.CellBounds",
+  "OAI.Probability.GaussianPropeller.ConeConcavity",
+  "OAI.Probability.GaussianPropeller.ConeReduction",
+  "OAI.Probability.GaussianPropeller.Configuration",
+  "OAI.Probability.GaussianPropeller.Coordinates",
+  "OAI.Probability.GaussianPropeller.Deletion",
+  "OAI.Probability.GaussianPropeller.Dual",
+  "OAI.Probability.GaussianPropeller.Elimination",
+  "OAI.Probability.GaussianPropeller.FourAlgebra",
+  "OAI.Probability.GaussianPropeller.FourCells",
+  "OAI.Probability.GaussianPropeller.FourReduction",
+  "OAI.Probability.GaussianPropeller.GaussianCoordinates",
+  "OAI.Probability.GaussianPropeller.Geometry",
+  "OAI.Probability.GaussianPropeller.Gram",
+  "OAI.Probability.GaussianPropeller.HeatConvolution",
+  "OAI.Probability.GaussianPropeller.HeatMaximum",
+  "OAI.Probability.GaussianPropeller.LargeCertificates",
+  "OAI.Probability.GaussianPropeller.LossCertificates",
+  "OAI.Probability.GaussianPropeller.Main",
+  "OAI.Probability.GaussianPropeller.Mills",
+  "OAI.Probability.GaussianPropeller.Model",
+  "OAI.Probability.GaussianPropeller.Moments",
+  "OAI.Probability.GaussianPropeller.OneCell",
+  "OAI.Probability.GaussianPropeller.PairBounds",
+  "OAI.Probability.GaussianPropeller.PairIntegral",
+  "OAI.Probability.GaussianPropeller.Polar",
+  "OAI.Probability.GaussianPropeller.ProbabilityBounds",
+  "OAI.Probability.GaussianPropeller.Quantile",
+  "OAI.Probability.GaussianPropeller.QuantileCalculus",
+  "OAI.Probability.GaussianPropeller.QuarticCertificates",
+  "OAI.Probability.GaussianPropeller.ResidualBounds",
+  "OAI.Probability.GaussianPropeller.Scalar",
+  "OAI.Probability.GaussianPropeller.SmallCell",
+  "OAI.Probability.GaussianPropeller.SmallCertificates",
+  "OAI.Probability.GaussianPropeller.SmoothedConcavity",
+  "OAI.Probability.GaussianPropeller.SoftMinimum",
+  "OAI.Probability.GaussianPropeller.SpanReduction",
+  "OAI.Probability.GaussianPropeller.Stein",
+  "OAI.Probability.GaussianPropeller.Taylor",
+  "OAI.Probability.GaussianPropeller.Translation"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/GaussianPropeller.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Probability.GaussianPropeller.Main",
+   "name": "OAI.GaussianPropeller.all_partitions",
+   "statement_sha256": "80eb8033c524ab7f2feeca9da5873e53a8d33503087f1cfa07c16db8dfa7252d"
+  }
+ ],
+ "task_id": "oai-gaussian-propeller",
+ "task_revision": 1,
+ "title": "OpenAI math: The Gaussian propeller conjecture in every dimension: Gaussian propeller bound and attainment",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

@@ -1,0 +1,971 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 122111556
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.UniformSparsestCut",
+  "challenge_sha256": "27d55087cde8a7080de8d37e72843dd064103be505ef78e509af56bdffcd2eeb",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/UniformSparsestCut.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.UniformSparsestCut",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Combinatorics.SparsestCut.Main",
+   "theorem_names": [
+    "OAI.UniformSparsestCut.mainGap"
+   ]
+  },
+  "config_sha256": "5901cd9c1d96b4e4a42660db2dd4476f224b5e9cafa17e304cec6f58dc5618e3",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/UniformSparsestCut.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.UniformSparsestCut.mainGap": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/CellInterface.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.CellInterface",
+   "original_sha256": "40e996b64c7bf1385fc0817a58a100b50719199eaeef9273ba9da39cfcdbed7f",
+   "path": "OAI/Combinatorics/SparsestCut/CellInterface.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/ChartAngles.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.ChartAngles",
+   "original_sha256": "082044c0ec32be5de69ba7568c25820680c994ede1b63fda2b70a8677abcd25f",
+   "path": "OAI/Combinatorics/SparsestCut/ChartAngles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/ChartKernel.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.ChartKernel",
+   "original_sha256": "9d2e3ce9e73c2c95b32cd9a01d09fbb6a3ed94d1f27c3dc1750bb952c187c061",
+   "path": "OAI/Combinatorics/SparsestCut/ChartKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/ChartLinear.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.ChartLinear",
+   "original_sha256": "fda694a154c85623c3d424fe408cbb4a9ac4d25d5e895957fa480f577b454d06",
+   "path": "OAI/Combinatorics/SparsestCut/ChartLinear.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/ChartMetric.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.ChartMetric",
+   "original_sha256": "57575453a40dcde9f54a65cd0b31bfc0e9f589bb664a9ca5ceed4742149aa7fd",
+   "path": "OAI/Combinatorics/SparsestCut/ChartMetric.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/CommonKernel.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.CommonKernel",
+   "original_sha256": "3c58aa12dbe739ad39c4df89622a729949f83d940147162283080eaa35443b57",
+   "path": "OAI/Combinatorics/SparsestCut/CommonKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/ConcreteCells.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.ConcreteCells",
+   "original_sha256": "6957e96cecc464b3c4c51b036eebaad9971e8e71c0296049c51eaf10c3e583a7",
+   "path": "OAI/Combinatorics/SparsestCut/ConcreteCells.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/ContractionAverage.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.ContractionAverage",
+   "original_sha256": "96782b15adb6df9b69a8564714855fd904834f90cadf87b12be3781a1e27818b",
+   "path": "OAI/Combinatorics/SparsestCut/ContractionAverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/ContractionBounds.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.ContractionBounds",
+   "original_sha256": "64d1c631e2a3a0cbe7234ccdc5f9c2d01a67433ec434d05afccbf908581bd7fa",
+   "path": "OAI/Combinatorics/SparsestCut/ContractionBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/ContractionCore.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.ContractionCore",
+   "original_sha256": "e44ae4e52baf3bfba94d046057abb886065a4ca451926d4c4ceebb6699c48fee",
+   "path": "OAI/Combinatorics/SparsestCut/ContractionCore.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/CoordinateSplit.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.CoordinateSplit",
+   "original_sha256": "8d7539a43209a0e3c240bd6fe9038250f11d55d5f36395d1151b6c616cd6edef",
+   "path": "OAI/Combinatorics/SparsestCut/CoordinateSplit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/CubeGeometry.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.CubeGeometry",
+   "original_sha256": "dea30d4a91f0f4e3a2419c831ddb28f7bf411f5409c537ad71241d0bcb0d8f7b",
+   "path": "OAI/Combinatorics/SparsestCut/CubeGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/CubePoincare.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.CubePoincare",
+   "original_sha256": "7beba3ef6f2cdaa4aab4d3e69fa0427ffb91dec3981aaaef99809a93fb72b035",
+   "path": "OAI/Combinatorics/SparsestCut/CubePoincare.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/CubeTransfer.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.CubeTransfer",
+   "original_sha256": "069067f1831a82722635fefeaad819e1f3b8757091a6ecf52cc96d2815c561fb",
+   "path": "OAI/Combinatorics/SparsestCut/CubeTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/CutDuality.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.CutDuality",
+   "original_sha256": "35c29be9438ec595ad20975795914cb066004f874a66ecb5c6d224a32775969a",
+   "path": "OAI/Combinatorics/SparsestCut/CutDuality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/CutSums.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.CutSums",
+   "original_sha256": "f49c92322133dbd3507f10947a672bc33f7ba9ba594cba92489a8a5f29745477",
+   "path": "OAI/Combinatorics/SparsestCut/CutSums.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/DirectionAsymptotics.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.DirectionAsymptotics",
+   "original_sha256": "008ca564b6e29b7cee4ae610fa838b5820e93f8fc25b96471a962118d4aa098c",
+   "path": "OAI/Combinatorics/SparsestCut/DirectionAsymptotics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/DirectionFamily.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.DirectionFamily",
+   "original_sha256": "0a3b071e4136d53733e6dfccca52432161b91050d53029069ffa926ac42f9ff2",
+   "path": "OAI/Combinatorics/SparsestCut/DirectionFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/DirectionInterpolation.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.DirectionInterpolation",
+   "original_sha256": "44fbb5bb533800eee6a470bf3a407fbe6925562b5a5bcd5572d54ccf043ca679",
+   "path": "OAI/Combinatorics/SparsestCut/DirectionInterpolation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/Directions.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.Directions",
+   "original_sha256": "2837813c3217537b672ee229ae035a2d764a4ea7f7f673e3c264e1055e6e8026",
+   "path": "OAI/Combinatorics/SparsestCut/Directions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/EuclideanCells.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.EuclideanCells",
+   "original_sha256": "2612e55a57a29ad54ae808a28ac65cc447dbd1f636e6ba6296491d6b7c3bc3bc",
+   "path": "OAI/Combinatorics/SparsestCut/EuclideanCells.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/FiniteDuality.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.FiniteDuality",
+   "original_sha256": "d2bd29740f6b19743c139bb2d5e1c1ee89185098e99197b849bb2f3d249d9216",
+   "path": "OAI/Combinatorics/SparsestCut/FiniteDuality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/FiniteNets.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.FiniteNets",
+   "original_sha256": "1907432d4be2513ea313fc8f0adc3dc5cab876d9b1dddc5c84370b4178bbd461",
+   "path": "OAI/Combinatorics/SparsestCut/FiniteNets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/GaussianCDF.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.GaussianCDF",
+   "original_sha256": "2a6b2004b8963de0fac957872dd8c807d72778a54ca91569f3a43208d9c119ee",
+   "path": "OAI/Combinatorics/SparsestCut/GaussianCDF.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/GaussianNonparallel.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.GaussianNonparallel",
+   "original_sha256": "3a293c8cacfc5d8e8ff27251f9742784e644a105c273fddd294f90fef367549d",
+   "path": "OAI/Combinatorics/SparsestCut/GaussianNonparallel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/GaussianPoincare.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.GaussianPoincare",
+   "original_sha256": "b70bb5b5f57f1ac538d73c29e43337438639eb973ff80069505a96084f30739e",
+   "path": "OAI/Combinatorics/SparsestCut/GaussianPoincare.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/GaussianTools.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.GaussianTools",
+   "original_sha256": "ad459bb9a34b39afaece5955a561f7433da26e9b6bcb36a0501e67233c4ea055",
+   "path": "OAI/Combinatorics/SparsestCut/GaussianTools.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/GradientBudget.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.GradientBudget",
+   "original_sha256": "1fcd429cbd110898840034a3a2dd2c0ca78fcb588180271549e8fe47ad083102",
+   "path": "OAI/Combinatorics/SparsestCut/GradientBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/InterfaceStep.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.InterfaceStep",
+   "original_sha256": "d900a094d159fa200e2f80251a8bf82b81185f720222f6c4f43dbb3fefc7c735",
+   "path": "OAI/Combinatorics/SparsestCut/InterfaceStep.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/KernelApprox.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.KernelApprox",
+   "original_sha256": "b668f78f04704636ae798c9ec504e53047e4492be6824451d4646e28625f330c",
+   "path": "OAI/Combinatorics/SparsestCut/KernelApprox.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/LabelCount.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.LabelCount",
+   "original_sha256": "fe8b811114cdaadf9a10c2ad43da0c64e1e710c79539e3da30ea39f0a6745d27",
+   "path": "OAI/Combinatorics/SparsestCut/LabelCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/LatticeDensity.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.LatticeDensity",
+   "original_sha256": "6470a2405285d8b8ef2d619756623f6fe1c700df712cfd35c9cce250e3207997",
+   "path": "OAI/Combinatorics/SparsestCut/LatticeDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/Logarithms.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.Logarithms",
+   "original_sha256": "4836e6b27a47ae35e907cc6777f8c35da4a255d38e1e847be501b355692bc520",
+   "path": "OAI/Combinatorics/SparsestCut/Logarithms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/Main.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.Main",
+   "original_sha256": "725340bf92db9ddd002511e22500a58913b529143c0ffab6149559056697fe07",
+   "path": "OAI/Combinatorics/SparsestCut/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/Metric.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.Metric",
+   "original_sha256": "594a11bfbb29d8dbc6e98d94363ec298974f7f58fd1a07151fb082d32d2b4873",
+   "path": "OAI/Combinatorics/SparsestCut/Metric.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/MetricKernel.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.MetricKernel",
+   "original_sha256": "591ccf3110875085b48cb837a6b27148136d74ddd32c5b18e562f96809da4951",
+   "path": "OAI/Combinatorics/SparsestCut/MetricKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/Model.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.Model",
+   "original_sha256": "cc2b9ac20ee63ec39e5aef9bce2ebbce3e6b1065cff93ffb97161e05d9df7c71",
+   "path": "OAI/Combinatorics/SparsestCut/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/Mollifier.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.Mollifier",
+   "original_sha256": "89e5339176e4b3e50c71afd8d9ee733b615ea4f80b9d6f0d25437a91ce9f5543",
+   "path": "OAI/Combinatorics/SparsestCut/Mollifier.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/Parameters.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.Parameters",
+   "original_sha256": "c6c0b72bebc64da0c874068cc389ba8fa3f056de2816af3c9d8e92872aabccc0",
+   "path": "OAI/Combinatorics/SparsestCut/Parameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/PivotFamily.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.PivotFamily",
+   "original_sha256": "65f18180a0561ba1d17c42f5fcb657daba4498b96126d919c1fcb58740b0f7b6",
+   "path": "OAI/Combinatorics/SparsestCut/PivotFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/PositiveKernels.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.PositiveKernels",
+   "original_sha256": "bc5f2851d4a859cd53a2174279bf3997ffa384fbdadf86b2f9b78c045da088bc",
+   "path": "OAI/Combinatorics/SparsestCut/PositiveKernels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/ProductSlice.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.ProductSlice",
+   "original_sha256": "ef4ad2335763e21de1418b59876de6bba1980d0373b68d5dc7bd75808faddfdb",
+   "path": "OAI/Combinatorics/SparsestCut/ProductSlice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/Profiles.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.Profiles",
+   "original_sha256": "925097f8a97dd97cc4c1c31fcd35ec9b5f0991c09f9c79c247228fca9409e3dd",
+   "path": "OAI/Combinatorics/SparsestCut/Profiles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/Replication.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.Replication",
+   "original_sha256": "711bc0e1626cc2da42087e94a0863c183e0fa630979d6072f5bb22a0960e67b2",
+   "path": "OAI/Combinatorics/SparsestCut/Replication.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/RoundedCharts.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.RoundedCharts",
+   "original_sha256": "5ff2e395f2f7078d74a6fc8353e32377abc2ea6d9f1ebc3fd6da5daa41dfe0e4",
+   "path": "OAI/Combinatorics/SparsestCut/RoundedCharts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/Semimetrics.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.Semimetrics",
+   "original_sha256": "34d9de108cd02b712d71cbae634aff8a7095a95a5bac7fad3544eb2450e2380c",
+   "path": "OAI/Combinatorics/SparsestCut/Semimetrics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/SliceCoefficients.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.SliceCoefficients",
+   "original_sha256": "defe685c82b0718dd324bc5c497061054c767fb0a65b466729f3c300b7b0f035",
+   "path": "OAI/Combinatorics/SparsestCut/SliceCoefficients.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/SliceIntegration.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.SliceIntegration",
+   "original_sha256": "107f200cd7ff1891ed86a56b1ad8a9a6a533344c5e5ff04b63e6d79d0e457a36",
+   "path": "OAI/Combinatorics/SparsestCut/SliceIntegration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/Smoothing.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.Smoothing",
+   "original_sha256": "1c6ab59bc61e9c6fd3872219a79d22e0e72a3e2f69481fc045dbe7c637793118",
+   "path": "OAI/Combinatorics/SparsestCut/Smoothing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/TriangleRepair.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.TriangleRepair",
+   "original_sha256": "dbfab7ce7aaed2b0ae1d9194eaa3e7c8bbab6c044d10b5306a9ae07add145462",
+   "path": "OAI/Combinatorics/SparsestCut/TriangleRepair.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/UniformMetric.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.UniformMetric",
+   "original_sha256": "3f3bf55966d9fdd21352e4235b10722160724a8a91efc0b31ffafbcd9921aa53",
+   "path": "OAI/Combinatorics/SparsestCut/UniformMetric.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/UniformReplication.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.UniformReplication",
+   "original_sha256": "c084019614742db8d43621d1613c56b26b3a8faaea84d15b524beaf103da1ae9",
+   "path": "OAI/Combinatorics/SparsestCut/UniformReplication.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/VertexCount.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.VertexCount",
+   "original_sha256": "02df209fe761315bf6be55f7bedeb9d0cc2f8a0c0862a4eed3f463f5b8ee762f",
+   "path": "OAI/Combinatorics/SparsestCut/VertexCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/VertexMeasure.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.VertexMeasure",
+   "original_sha256": "e35212d3729f9cb8d49cb2260b98e53d931d46965216fcc9bd5d74b96c6a942a",
+   "path": "OAI/Combinatorics/SparsestCut/VertexMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/SparsestCut/WeightedMetric.lean"
+   },
+   "module": "OAI.Combinatorics.SparsestCut.WeightedMetric",
+   "original_sha256": "92ab23ce3e481c68955146756b9f9c45853ea97166f1496d330b66627294337c",
+   "path": "OAI/Combinatorics/SparsestCut/WeightedMetric.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.SparsestCut.CellInterface",
+  "OAI.Combinatorics.SparsestCut.ChartAngles",
+  "OAI.Combinatorics.SparsestCut.ChartKernel",
+  "OAI.Combinatorics.SparsestCut.ChartLinear",
+  "OAI.Combinatorics.SparsestCut.ChartMetric",
+  "OAI.Combinatorics.SparsestCut.CommonKernel",
+  "OAI.Combinatorics.SparsestCut.ConcreteCells",
+  "OAI.Combinatorics.SparsestCut.ContractionAverage",
+  "OAI.Combinatorics.SparsestCut.ContractionBounds",
+  "OAI.Combinatorics.SparsestCut.ContractionCore",
+  "OAI.Combinatorics.SparsestCut.CoordinateSplit",
+  "OAI.Combinatorics.SparsestCut.CubeGeometry",
+  "OAI.Combinatorics.SparsestCut.CubePoincare",
+  "OAI.Combinatorics.SparsestCut.CubeTransfer",
+  "OAI.Combinatorics.SparsestCut.CutDuality",
+  "OAI.Combinatorics.SparsestCut.CutSums",
+  "OAI.Combinatorics.SparsestCut.DirectionAsymptotics",
+  "OAI.Combinatorics.SparsestCut.DirectionFamily",
+  "OAI.Combinatorics.SparsestCut.DirectionInterpolation",
+  "OAI.Combinatorics.SparsestCut.Directions",
+  "OAI.Combinatorics.SparsestCut.EuclideanCells",
+  "OAI.Combinatorics.SparsestCut.FiniteDuality",
+  "OAI.Combinatorics.SparsestCut.FiniteNets",
+  "OAI.Combinatorics.SparsestCut.GaussianCDF",
+  "OAI.Combinatorics.SparsestCut.GaussianNonparallel",
+  "OAI.Combinatorics.SparsestCut.GaussianPoincare",
+  "OAI.Combinatorics.SparsestCut.GaussianTools",
+  "OAI.Combinatorics.SparsestCut.GradientBudget",
+  "OAI.Combinatorics.SparsestCut.InterfaceStep",
+  "OAI.Combinatorics.SparsestCut.KernelApprox",
+  "OAI.Combinatorics.SparsestCut.LabelCount",
+  "OAI.Combinatorics.SparsestCut.LatticeDensity",
+  "OAI.Combinatorics.SparsestCut.Logarithms",
+  "OAI.Combinatorics.SparsestCut.Main",
+  "OAI.Combinatorics.SparsestCut.Metric",
+  "OAI.Combinatorics.SparsestCut.MetricKernel",
+  "OAI.Combinatorics.SparsestCut.Model",
+  "OAI.Combinatorics.SparsestCut.Mollifier",
+  "OAI.Combinatorics.SparsestCut.Parameters",
+  "OAI.Combinatorics.SparsestCut.PivotFamily",
+  "OAI.Combinatorics.SparsestCut.PositiveKernels",
+  "OAI.Combinatorics.SparsestCut.ProductSlice",
+  "OAI.Combinatorics.SparsestCut.Profiles",
+  "OAI.Combinatorics.SparsestCut.Replication",
+  "OAI.Combinatorics.SparsestCut.RoundedCharts",
+  "OAI.Combinatorics.SparsestCut.Semimetrics",
+  "OAI.Combinatorics.SparsestCut.SliceCoefficients",
+  "OAI.Combinatorics.SparsestCut.SliceIntegration",
+  "OAI.Combinatorics.SparsestCut.Smoothing",
+  "OAI.Combinatorics.SparsestCut.TriangleRepair",
+  "OAI.Combinatorics.SparsestCut.UniformMetric",
+  "OAI.Combinatorics.SparsestCut.UniformReplication",
+  "OAI.Combinatorics.SparsestCut.VertexCount",
+  "OAI.Combinatorics.SparsestCut.VertexMeasure",
+  "OAI.Combinatorics.SparsestCut.WeightedMetric"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/UniformSparsestCut.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Combinatorics.SparsestCut.Main",
+   "name": "OAI.UniformSparsestCut.mainGap",
+   "statement_sha256": "838b2189a835f0aa3638a9546fbdfa6add462106113671871b7fad3af3c20a7d"
+  }
+ ],
+ "task_id": "oai-uniform-sparsest-cut",
+ "task_revision": 1,
+ "title": "OpenAI math: Uniform sparsest cut: hardness and semidefinite gaps: Uniform sparsest-cut integrality gaps",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

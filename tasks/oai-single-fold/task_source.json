@@ -1,0 +1,701 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 411396610
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.SingleFold",
+  "challenge_sha256": "a32b461c1dadec053dce0a3ddc101273021af51e987e949cac44dc5cd4012a98",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SingleFold.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.SingleFold",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.NumberTheory.SingleFold.Main",
+   "theorem_names": [
+    "OAI.SingleFold.main"
+   ]
+  },
+  "config_sha256": "c3bebcda69363690d5cf9df87f157ac35de09b7a2bd7304158059e2c366a680c",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SingleFold.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.SingleFold.main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/Binary.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.Binary",
+   "original_sha256": "f9cda86fedd7acaa9358eef984d623dc588122deaa89969bb8110556e4fa83a5",
+   "path": "OAI/NumberTheory/SingleFold/Binary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/CounterBounds.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.CounterBounds",
+   "original_sha256": "e40e78982b8ac0d9de43e947cc20bd6e88626725d96b0e18739643193ec5c2d2",
+   "path": "OAI/NumberTheory/SingleFold/CounterBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/CounterCompilation.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.CounterCompilation",
+   "original_sha256": "f82f482842fa5ee55b50c1e66b0ee3040c2749397dd080ff3977dd4a6273d678",
+   "path": "OAI/NumberTheory/SingleFold/CounterCompilation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/CounterMachine.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.CounterMachine",
+   "original_sha256": "9c266d20c6871427fcb4fd0bb8f5cc3a0c7c0c5980bb590dd98293483d8c5a2d",
+   "path": "OAI/NumberTheory/SingleFold/CounterMachine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/CounterRecords.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.CounterRecords",
+   "original_sha256": "d43a3f5d1c3afb9fac9f78f87565a3898bb760c64b6b0fe012a5e1c38d66b7b8",
+   "path": "OAI/NumberTheory/SingleFold/CounterRecords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/DescentMap.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.DescentMap",
+   "original_sha256": "765e6caf44e0d47c1b94f0d2681692c928de44c3357cbbef6a469c38aceb1cb0",
+   "path": "OAI/NumberTheory/SingleFold/DescentMap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/Duplication.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.Duplication",
+   "original_sha256": "81174e9555ce742ff1693dfb0ae0241d1acd2dcdebba37aa90e3d4f6c7834c8f",
+   "path": "OAI/NumberTheory/SingleFold/Duplication.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/EllipticCoordinates.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.EllipticCoordinates",
+   "original_sha256": "6474b64beefb8291d7ce75aaa27814c9b4cdde0319a746c7cbe659824c208a14",
+   "path": "OAI/NumberTheory/SingleFold/EllipticCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/EllipticGrowth.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.EllipticGrowth",
+   "original_sha256": "8f19cbd81756ff0e2acc21a96e72204a8fa91d34373695702e53d82fdf54a9b3",
+   "path": "OAI/NumberTheory/SingleFold/EllipticGrowth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/EllipticHeight.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.EllipticHeight",
+   "original_sha256": "b56be30680c15a861890765af99b9c4977ae01bd692f443e692426cd7a97809f",
+   "path": "OAI/NumberTheory/SingleFold/EllipticHeight.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/FiniteGeneration.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.FiniteGeneration",
+   "original_sha256": "ef8422be2d274fade1ce8c2a2ad7f92b8802564792d9267a368b507999bc34c4",
+   "path": "OAI/NumberTheory/SingleFold/FiniteGeneration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/FunctionalCompiler.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.FunctionalCompiler",
+   "original_sha256": "710b552d2fa90c1d7fd1d8ed83a0c3fbf50efa6f2e17d2755221331e5652abf8",
+   "path": "OAI/NumberTheory/SingleFold/FunctionalCompiler.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/HeightGrowth.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.HeightGrowth",
+   "original_sha256": "c1d59ac85a6ff9f0e6807417dc5ca1064faf2b350159c5048b8abda4a771757d",
+   "path": "OAI/NumberTheory/SingleFold/HeightGrowth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/LocalDescent.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.LocalDescent",
+   "original_sha256": "e09267921fc7ca011cc8f61a768fbb5a951a0ba3e8afd66b4d8feee277bdaa77",
+   "path": "OAI/NumberTheory/SingleFold/LocalDescent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/MacroMachine.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.MacroMachine",
+   "original_sha256": "077b20bfa13ce6db95ac3c62c69f6cc0ae5621cefaa94f36e5fd7fa403aa0460",
+   "path": "OAI/NumberTheory/SingleFold/MacroMachine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/Main.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.Main",
+   "original_sha256": "ae4c93ba2a67225c9ffb640f9291de84e9b382d815e27fe46fb539f1d3412b31",
+   "path": "OAI/NumberTheory/SingleFold/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/Model.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.Model",
+   "original_sha256": "e603583c55bb90f3db90b67f927df8fa0493a21f9812b5e042f9f58625a6ef51",
+   "path": "OAI/NumberTheory/SingleFold/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/Packed.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.Packed",
+   "original_sha256": "83b70f9f0dad72455bf052f9cb1d7c32e5309b2c61ad829502715b18471f8f33",
+   "path": "OAI/NumberTheory/SingleFold/Packed.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/Pell.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.Pell",
+   "original_sha256": "51c20fe707b619a24c7f789f08398fdfd75e6dbc24c2249104fd47b43da56c97",
+   "path": "OAI/NumberTheory/SingleFold/Pell.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/PolynomialCompiler.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.PolynomialCompiler",
+   "original_sha256": "665b75e48c6a891972515fcb60333721ab2794033f53df60070d62a43845f359",
+   "path": "OAI/NumberTheory/SingleFold/PolynomialCompiler.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/Power.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.Power",
+   "original_sha256": "1f323660cdfd9774c331ddaf79aa98d34ad729a96ea12eb6f2af798441b12812",
+   "path": "OAI/NumberTheory/SingleFold/Power.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/QuadraticHeight.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.QuadraticHeight",
+   "original_sha256": "7cfc8506cd7b457d8cb1080607580bdf4c030b0447fbe07065918431718ac47b",
+   "path": "OAI/NumberTheory/SingleFold/QuadraticHeight.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/Rank.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.Rank",
+   "original_sha256": "305244298c789c71467a722de7e99898e50dfe0afa18a2ca0e04b918c1330c09",
+   "path": "OAI/NumberTheory/SingleFold/Rank.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/RationalCodes.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.RationalCodes",
+   "original_sha256": "9b122762cece9653dc8f55014d1ee2718edfc8982be1fcd11c8512d0e3c41f22",
+   "path": "OAI/NumberTheory/SingleFold/RationalCodes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/RecursiveEnumeration.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.RecursiveEnumeration",
+   "original_sha256": "bfd2b03e7b3d68fa63c8e690804402acee8d9b2529c337eec2471d44a4e816f5",
+   "path": "OAI/NumberTheory/SingleFold/RecursiveEnumeration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/SquareSupport.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.SquareSupport",
+   "original_sha256": "54f4f62c92baff08c19c210897320168451e2f33dc3a3d0988763d93ffe07d82",
+   "path": "OAI/NumberTheory/SingleFold/SquareSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/Torsion.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.Torsion",
+   "original_sha256": "d05cc841e313e0be248a970b66eefd12f0ffe39641a1fffad0dad44c12ce7f5b",
+   "path": "OAI/NumberTheory/SingleFold/Torsion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/SingleFold/TuringSimulation.lean"
+   },
+   "module": "OAI.NumberTheory.SingleFold.TuringSimulation",
+   "original_sha256": "1ac0a07ee6fa96e439624099270e3892055332cdb7bb8ea2062d191775e88a58",
+   "path": "OAI/NumberTheory/SingleFold/TuringSimulation.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.NumberTheory.SingleFold.Binary",
+  "OAI.NumberTheory.SingleFold.CounterBounds",
+  "OAI.NumberTheory.SingleFold.CounterCompilation",
+  "OAI.NumberTheory.SingleFold.CounterMachine",
+  "OAI.NumberTheory.SingleFold.CounterRecords",
+  "OAI.NumberTheory.SingleFold.DescentMap",
+  "OAI.NumberTheory.SingleFold.Duplication",
+  "OAI.NumberTheory.SingleFold.EllipticCoordinates",
+  "OAI.NumberTheory.SingleFold.EllipticGrowth",
+  "OAI.NumberTheory.SingleFold.EllipticHeight",
+  "OAI.NumberTheory.SingleFold.FiniteGeneration",
+  "OAI.NumberTheory.SingleFold.FunctionalCompiler",
+  "OAI.NumberTheory.SingleFold.HeightGrowth",
+  "OAI.NumberTheory.SingleFold.LocalDescent",
+  "OAI.NumberTheory.SingleFold.MacroMachine",
+  "OAI.NumberTheory.SingleFold.Main",
+  "OAI.NumberTheory.SingleFold.Model",
+  "OAI.NumberTheory.SingleFold.Packed",
+  "OAI.NumberTheory.SingleFold.Pell",
+  "OAI.NumberTheory.SingleFold.PolynomialCompiler",
+  "OAI.NumberTheory.SingleFold.Power",
+  "OAI.NumberTheory.SingleFold.QuadraticHeight",
+  "OAI.NumberTheory.SingleFold.Rank",
+  "OAI.NumberTheory.SingleFold.RationalCodes",
+  "OAI.NumberTheory.SingleFold.RecursiveEnumeration",
+  "OAI.NumberTheory.SingleFold.SquareSupport",
+  "OAI.NumberTheory.SingleFold.Torsion",
+  "OAI.NumberTheory.SingleFold.TuringSimulation"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/SingleFold.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.NumberTheory.SingleFold.Main",
+   "name": "OAI.SingleFold.main",
+   "statement_sha256": "eeca7acfba0c1f183a9d667966ce87ba44e26c64efa1a2c471e0016a57d26d7a"
+  }
+ ],
+ "task_id": "oai-single-fold",
+ "task_revision": 1,
+ "title": "OpenAI math: Single-fold Diophantine representations and undecidability under an at-most-one-solution promise: Single-fold Diophantine representations",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

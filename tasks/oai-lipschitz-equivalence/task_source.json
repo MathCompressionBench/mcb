@@ -1,0 +1,1021 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 716074788
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.LipschitzEquivalence",
+  "challenge_sha256": "6cd6d20439f9433567e6b11781ec06fb4f5ef5c16b84808062b09af146232625",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/LipschitzEquivalence.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.LipschitzEquivalence",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.LipschitzEquivalence.Main",
+   "theorem_names": [
+    "OAI.LipschitzCounterexample.main"
+   ]
+  },
+  "config_sha256": "0cf9f13307f002f69b6de183508c5f30faefac4593c3b73d1c445bea5b7f3566",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/LipschitzEquivalence.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.LipschitzCounterexample.main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/BanachAssembly.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.BanachAssembly",
+   "original_sha256": "ef55edf45f49143feef5c3839a9b5641b46b1d11f7c2dab60d28999427a0d317",
+   "path": "OAI/Analysis/LipschitzEquivalence/BanachAssembly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/BidualSeparation.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.BidualSeparation",
+   "original_sha256": "8fab9cd63549da04d2e0c8b459adb6d00583688938939223326739f9bdbefa60",
+   "path": "OAI/Analysis/LipschitzEquivalence/BidualSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/BlockSelection.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.BlockSelection",
+   "original_sha256": "a0cf61bed47a7878d177e409c37002456468f4037e3047c07f9191ef7b59386d",
+   "path": "OAI/Analysis/LipschitzEquivalence/BlockSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/CauchyApproximation.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.CauchyApproximation",
+   "original_sha256": "b12e1d44f0d16c217ea009bff057503de7ed8bb6b59ba282d5f1ddc8a4cc21de",
+   "path": "OAI/Analysis/LipschitzEquivalence/CauchyApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/CauchyReduction.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.CauchyReduction",
+   "original_sha256": "ea944b914ae1052ae4de3d738f1f01d07bf5379f06aa860d431d6d57c545cf6c",
+   "path": "OAI/Analysis/LipschitzEquivalence/CauchyReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/CompactHilbertWSC.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.CompactHilbertWSC",
+   "original_sha256": "9a79f81004f1c59f7e53d27521319592ce441cdcdeb308ee400e209fdf2fb402",
+   "path": "OAI/Analysis/LipschitzEquivalence/CompactHilbertWSC.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/CompactLipschitz.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.CompactLipschitz",
+   "original_sha256": "e0e631b093b34514335c6015a7227ffd7fe2ebf8a08fedc56a4a46bff736afda",
+   "path": "OAI/Analysis/LipschitzEquivalence/CompactLipschitz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/CompactLocalization.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.CompactLocalization",
+   "original_sha256": "0bac47cd50d3252826f25a031f7394b0e906ce95ec4852db0c0d6e7dc742cf52",
+   "path": "OAI/Analysis/LipschitzEquivalence/CompactLocalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/CompactReduction.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.CompactReduction",
+   "original_sha256": "9bf8009a0f0d6140164ae08e1fdb3e98d9cad26e9a66e6ca11208b9d81d3b04d",
+   "path": "OAI/Analysis/LipschitzEquivalence/CompactReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/CompactSupports.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.CompactSupports",
+   "original_sha256": "68dfaad9075de3cf905edbab83ebc1af5c89834917f8b3f061713be00930436e",
+   "path": "OAI/Analysis/LipschitzEquivalence/CompactSupports.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/CompleteContinuity.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.CompleteContinuity",
+   "original_sha256": "bfe53e032078f7192850e7197ba564c3f9feceab10349cc5f674e70298be3af6",
+   "path": "OAI/Analysis/LipschitzEquivalence/CompleteContinuity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/DetectingSequence.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.DetectingSequence",
+   "original_sha256": "13383907bdbc3eefb8e66434e91f98a118d07c4acf34c97cdfab0eb985d2a3bf",
+   "path": "OAI/Analysis/LipschitzEquivalence/DetectingSequence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/EnergyEstimates.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.EnergyEstimates",
+   "original_sha256": "440c09f18260e9e676703c0284dbf35476e16d36621f463c39402ab69d042ece",
+   "path": "OAI/Analysis/LipschitzEquivalence/EnergyEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/FiniteApproximants.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.FiniteApproximants",
+   "original_sha256": "c327b1f5df731cc6f79fc4ad746b41300351006eef5d3177b85b4c0d571471e3",
+   "path": "OAI/Analysis/LipschitzEquivalence/FiniteApproximants.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/FiniteMultipliers.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.FiniteMultipliers",
+   "original_sha256": "7db1629236d8d7a6ae3fd40b407e142a8a75f09674b2f9a58bd2f4e92c9a8a21",
+   "path": "OAI/Analysis/LipschitzEquivalence/FiniteMultipliers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/FiniteReduction.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.FiniteReduction",
+   "original_sha256": "413d85a14b90c5f68c626bcfa7add9ed063afed23692752c42815c7c6376d9bd",
+   "path": "OAI/Analysis/LipschitzEquivalence/FiniteReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/FiniteRows.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.FiniteRows",
+   "original_sha256": "75d62d41557cb60568ea33ca477cd2bc0da3d513730191c4146b8a3d40fd1c2a",
+   "path": "OAI/Analysis/LipschitzEquivalence/FiniteRows.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/FreeSpace.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.FreeSpace",
+   "original_sha256": "e37d0ec85181eea0ddc770f02f7e3f9aba0eefef4b2e68e32447fd85fda37ca1",
+   "path": "OAI/Analysis/LipschitzEquivalence/FreeSpace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/GlobalInverse.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.GlobalInverse",
+   "original_sha256": "11eb82b7975274e3346940f8cf9e3d23df977631e7591e64711af0a1967d1ef1",
+   "path": "OAI/Analysis/LipschitzEquivalence/GlobalInverse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/GraphEmbedding.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.GraphEmbedding",
+   "original_sha256": "f2f16d13d9f578e9b232575c035a62abb5a8bf17173dade372bbb75410bad499",
+   "path": "OAI/Analysis/LipschitzEquivalence/GraphEmbedding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/GraphEquivalence.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.GraphEquivalence",
+   "original_sha256": "71e5651600cd6080345026a55db5cee23c66efdd3edd3ea726c0a082d9522302",
+   "path": "OAI/Analysis/LipschitzEquivalence/GraphEquivalence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/GraphObstruction.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.GraphObstruction",
+   "original_sha256": "02396ebf8167fe25dddbcea047f1762b971fc0762c3267066add5ed80a7c5748",
+   "path": "OAI/Analysis/LipschitzEquivalence/GraphObstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/HilbertBijection.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.HilbertBijection",
+   "original_sha256": "466890cae40fa1b00e9736d3af5ed83c5731220001c6f6c905bbe44e6efc3962",
+   "path": "OAI/Analysis/LipschitzEquivalence/HilbertBijection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/HilbertBlocks.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.HilbertBlocks",
+   "original_sha256": "6c104370872654cdd728cb1e2f3246a42a79c86ebbac6d869d71ac5e93fcbc29",
+   "path": "OAI/Analysis/LipschitzEquivalence/HilbertBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/HilbertDecomposition.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.HilbertDecomposition",
+   "original_sha256": "3cd248e1e285d1ea0b572954db39457727631280f973715d968e2afc692acfc6",
+   "path": "OAI/Analysis/LipschitzEquivalence/HilbertDecomposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/InverseTails.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.InverseTails",
+   "original_sha256": "da426f47544f7b372152ac2da77f65f1b2e3a83095adfe3676308ecb70c9a721",
+   "path": "OAI/Analysis/LipschitzEquivalence/InverseTails.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/LinearizationContinuity.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.LinearizationContinuity",
+   "original_sha256": "9bee6fbd98fcabba27b0d8835152d5d48b8c77d185f0bcaa1867ad5d9d698991",
+   "path": "OAI/Analysis/LipschitzEquivalence/LinearizationContinuity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/LocalLipschitz.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.LocalLipschitz",
+   "original_sha256": "3be0fa8019eed84c4b98a62fc7d2274d5144ef08af2f1c08f5d74d835aedc1a9",
+   "path": "OAI/Analysis/LipschitzEquivalence/LocalLipschitz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/LocalOrthogonality.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.LocalOrthogonality",
+   "original_sha256": "bd07d53df629ae4403470e8496e74ae013522231b1e8cd9a1ca50fa9848f056c",
+   "path": "OAI/Analysis/LipschitzEquivalence/LocalOrthogonality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/Localization.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.Localization",
+   "original_sha256": "d7f080633bfa88c128e8956c9fc76eb1fe6b2d33af69834aea3543b67e8c3c4d",
+   "path": "OAI/Analysis/LipschitzEquivalence/Localization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/Main.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.Main",
+   "original_sha256": "dd3169c24398f268681517ce2c882814531ade64177c0e2f7e98bd9cac67e0cf",
+   "path": "OAI/Analysis/LipschitzEquivalence/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/Model.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.Model",
+   "original_sha256": "24adbeb2f0d9f6bfe55964a1778a2109c9f2cf1f1f5afc46854b0dd6930013aa",
+   "path": "OAI/Analysis/LipschitzEquivalence/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/MolecularApproximation.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.MolecularApproximation",
+   "original_sha256": "d8280d0302bb9bdf1924ad92ecbb4db35a164bd1f2042777fb937e052f9783e2",
+   "path": "OAI/Analysis/LipschitzEquivalence/MolecularApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/MovingSlots.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.MovingSlots",
+   "original_sha256": "874e4125696a1822b0da89b06b82f828bedd97847daf8634f2488d9bfc1a6ce7",
+   "path": "OAI/Analysis/LipschitzEquivalence/MovingSlots.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/Multipliers.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.Multipliers",
+   "original_sha256": "a7fe4d16eb1733d6be1912f321ec9b7c39f64e72a42ee76beaef21016543848e",
+   "path": "OAI/Analysis/LipschitzEquivalence/Multipliers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/NullSequences.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.NullSequences",
+   "original_sha256": "48112c273e57d4b62f5644adb17ece5423f42cc34dc3802001114532a3d2ff30",
+   "path": "OAI/Analysis/LipschitzEquivalence/NullSequences.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/PairingEstimates.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.PairingEstimates",
+   "original_sha256": "da540afbd5229fbbc54ae81a392b3bfb07912c8fdd88400d450ff32d9999fb37",
+   "path": "OAI/Analysis/LipschitzEquivalence/PairingEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/RadialBudget.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.RadialBudget",
+   "original_sha256": "0ddaeaf2354a14f9f3f48235d1084be9b1fb3be8804754e1aaca8d4d074d0d7a",
+   "path": "OAI/Analysis/LipschitzEquivalence/RadialBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/RadiusReduction.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.RadiusReduction",
+   "original_sha256": "5b53128c324dfc77fc62a155c9c54106aa3c58c2a838836670fecf74e5171cb8",
+   "path": "OAI/Analysis/LipschitzEquivalence/RadiusReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/RotatingStages.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.RotatingStages",
+   "original_sha256": "f5c8c88fa44092f34450939ce2d02589b9d8b84e3380164562198392a68e89c1",
+   "path": "OAI/Analysis/LipschitzEquivalence/RotatingStages.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/Schur.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.Schur",
+   "original_sha256": "1f9b019a1fbbc592b522b0e2226c56a747815e06498779bf0dd0b4339a1dac78",
+   "path": "OAI/Analysis/LipschitzEquivalence/Schur.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/SelectionStep.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.SelectionStep",
+   "original_sha256": "c42c759e3042f26a3198defc01011927a10513e908ef2da29fe1265fbcb171d6",
+   "path": "OAI/Analysis/LipschitzEquivalence/SelectionStep.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/SeparableCoordinates.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.SeparableCoordinates",
+   "original_sha256": "2e1b106ef133670c5294254e44c8891f15e83ff116ffabc89b0404857f1c0d95",
+   "path": "OAI/Analysis/LipschitzEquivalence/SeparableCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/SeparatingCoordinates.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.SeparatingCoordinates",
+   "original_sha256": "eed8894fbbf1c75b8c0251aeadf26622814a7d24724156bfaeed4d9781b1960d",
+   "path": "OAI/Analysis/LipschitzEquivalence/SeparatingCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/ShrinkingCutoffs.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.ShrinkingCutoffs",
+   "original_sha256": "ec880256ad7650fdcca744a66f752f0a5edbc5a159de08d23b34f97e37f7269a",
+   "path": "OAI/Analysis/LipschitzEquivalence/ShrinkingCutoffs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/SlotBudget.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.SlotBudget",
+   "original_sha256": "8f57535bb9c4bd799838334428623718647918c7bdc183dba4305db7b71ee332",
+   "path": "OAI/Analysis/LipschitzEquivalence/SlotBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/SlotRadii.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.SlotRadii",
+   "original_sha256": "66e8a68a1f71d1b697a7aef1893e86091c8a0be86365775287c9365245cce0b4",
+   "path": "OAI/Analysis/LipschitzEquivalence/SlotRadii.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/SlowAngles.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.SlowAngles",
+   "original_sha256": "dd8620fe4a1246ede1680d73574b5f0396a977eb148ec18c3077d6896df6d5c3",
+   "path": "OAI/Analysis/LipschitzEquivalence/SlowAngles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/SmoothCalculus.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.SmoothCalculus",
+   "original_sha256": "fcc749916e0fb43d2110d0b31baf5a495101e39bdb95458ce39848b389d85fe9",
+   "path": "OAI/Analysis/LipschitzEquivalence/SmoothCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/SmoothHilbert.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.SmoothHilbert",
+   "original_sha256": "359577fa85d3c8f88114b230fdb2959f26308e189f2e8a6d901e0241be23a9f0",
+   "path": "OAI/Analysis/LipschitzEquivalence/SmoothHilbert.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/SmoothMultiplier.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.SmoothMultiplier",
+   "original_sha256": "7bc84c8a438f30d7821ade1f8da514acf7ca20eb80df838c7ea8f9d29a8e4982",
+   "path": "OAI/Analysis/LipschitzEquivalence/SmoothMultiplier.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/SmoothRows.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.SmoothRows",
+   "original_sha256": "712df156d234626c18df1331227a3de7408b888f14686c1d057b87756a0b7ea7",
+   "path": "OAI/Analysis/LipschitzEquivalence/SmoothRows.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/SupportedDuality.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.SupportedDuality",
+   "original_sha256": "7a4effbf1f5387cb5674f2a777802eed179ae50b65fbbead5ac0f2a6ee9a2f7b",
+   "path": "OAI/Analysis/LipschitzEquivalence/SupportedDuality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/TriangularDuals.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.TriangularDuals",
+   "original_sha256": "8e690226ff99973173c654cf8c0d55e9030b8989fc4d39b90b906c2661166162",
+   "path": "OAI/Analysis/LipschitzEquivalence/TriangularDuals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/WUCDuals.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.WUCDuals",
+   "original_sha256": "c70008c86481b645bc97d6929446b9c2a83940aab015c1e72fadf762418ebf23",
+   "path": "OAI/Analysis/LipschitzEquivalence/WUCDuals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/WUCFunctions.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.WUCFunctions",
+   "original_sha256": "f3f6a0cfcb10660d6a53e910eff0e3e22218c9a116487b017e736def97737711",
+   "path": "OAI/Analysis/LipschitzEquivalence/WUCFunctions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/WUCOperator.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.WUCOperator",
+   "original_sha256": "9bd943f1efacdce9a7af48422b1342b4551ec20db33b478c9704289f46488994",
+   "path": "OAI/Analysis/LipschitzEquivalence/WUCOperator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/WeakCauchy.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.WeakCauchy",
+   "original_sha256": "c512db9de37821d675b2cf095a5fd50bbcbae74dcb3c2b24509c62cdb78db15e",
+   "path": "OAI/Analysis/LipschitzEquivalence/WeakCauchy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/WeakSums.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.WeakSums",
+   "original_sha256": "fecb0d2ae77a70efda17707a7c4a8510ae785e947a5435ca535b72cb7493b71c",
+   "path": "OAI/Analysis/LipschitzEquivalence/WeakSums.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LipschitzEquivalence/WeightedGraph.lean"
+   },
+   "module": "OAI.Analysis.LipschitzEquivalence.WeightedGraph",
+   "original_sha256": "8407e4573fa8219d422d11fee60c8ed754cfcc8a2656ee78874471e2de905978",
+   "path": "OAI/Analysis/LipschitzEquivalence/WeightedGraph.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.LipschitzEquivalence.BanachAssembly",
+  "OAI.Analysis.LipschitzEquivalence.BidualSeparation",
+  "OAI.Analysis.LipschitzEquivalence.BlockSelection",
+  "OAI.Analysis.LipschitzEquivalence.CauchyApproximation",
+  "OAI.Analysis.LipschitzEquivalence.CauchyReduction",
+  "OAI.Analysis.LipschitzEquivalence.CompactHilbertWSC",
+  "OAI.Analysis.LipschitzEquivalence.CompactLipschitz",
+  "OAI.Analysis.LipschitzEquivalence.CompactLocalization",
+  "OAI.Analysis.LipschitzEquivalence.CompactReduction",
+  "OAI.Analysis.LipschitzEquivalence.CompactSupports",
+  "OAI.Analysis.LipschitzEquivalence.CompleteContinuity",
+  "OAI.Analysis.LipschitzEquivalence.DetectingSequence",
+  "OAI.Analysis.LipschitzEquivalence.EnergyEstimates",
+  "OAI.Analysis.LipschitzEquivalence.FiniteApproximants",
+  "OAI.Analysis.LipschitzEquivalence.FiniteMultipliers",
+  "OAI.Analysis.LipschitzEquivalence.FiniteReduction",
+  "OAI.Analysis.LipschitzEquivalence.FiniteRows",
+  "OAI.Analysis.LipschitzEquivalence.FreeSpace",
+  "OAI.Analysis.LipschitzEquivalence.GlobalInverse",
+  "OAI.Analysis.LipschitzEquivalence.GraphEmbedding",
+  "OAI.Analysis.LipschitzEquivalence.GraphEquivalence",
+  "OAI.Analysis.LipschitzEquivalence.GraphObstruction",
+  "OAI.Analysis.LipschitzEquivalence.HilbertBijection",
+  "OAI.Analysis.LipschitzEquivalence.HilbertBlocks",
+  "OAI.Analysis.LipschitzEquivalence.HilbertDecomposition",
+  "OAI.Analysis.LipschitzEquivalence.InverseTails",
+  "OAI.Analysis.LipschitzEquivalence.LinearizationContinuity",
+  "OAI.Analysis.LipschitzEquivalence.LocalLipschitz",
+  "OAI.Analysis.LipschitzEquivalence.LocalOrthogonality",
+  "OAI.Analysis.LipschitzEquivalence.Localization",
+  "OAI.Analysis.LipschitzEquivalence.Main",
+  "OAI.Analysis.LipschitzEquivalence.Model",
+  "OAI.Analysis.LipschitzEquivalence.MolecularApproximation",
+  "OAI.Analysis.LipschitzEquivalence.MovingSlots",
+  "OAI.Analysis.LipschitzEquivalence.Multipliers",
+  "OAI.Analysis.LipschitzEquivalence.NullSequences",
+  "OAI.Analysis.LipschitzEquivalence.PairingEstimates",
+  "OAI.Analysis.LipschitzEquivalence.RadialBudget",
+  "OAI.Analysis.LipschitzEquivalence.RadiusReduction",
+  "OAI.Analysis.LipschitzEquivalence.RotatingStages",
+  "OAI.Analysis.LipschitzEquivalence.Schur",
+  "OAI.Analysis.LipschitzEquivalence.SelectionStep",
+  "OAI.Analysis.LipschitzEquivalence.SeparableCoordinates",
+  "OAI.Analysis.LipschitzEquivalence.SeparatingCoordinates",
+  "OAI.Analysis.LipschitzEquivalence.ShrinkingCutoffs",
+  "OAI.Analysis.LipschitzEquivalence.SlotBudget",
+  "OAI.Analysis.LipschitzEquivalence.SlotRadii",
+  "OAI.Analysis.LipschitzEquivalence.SlowAngles",
+  "OAI.Analysis.LipschitzEquivalence.SmoothCalculus",
+  "OAI.Analysis.LipschitzEquivalence.SmoothHilbert",
+  "OAI.Analysis.LipschitzEquivalence.SmoothMultiplier",
+  "OAI.Analysis.LipschitzEquivalence.SmoothRows",
+  "OAI.Analysis.LipschitzEquivalence.SupportedDuality",
+  "OAI.Analysis.LipschitzEquivalence.TriangularDuals",
+  "OAI.Analysis.LipschitzEquivalence.WUCDuals",
+  "OAI.Analysis.LipschitzEquivalence.WUCFunctions",
+  "OAI.Analysis.LipschitzEquivalence.WUCOperator",
+  "OAI.Analysis.LipschitzEquivalence.WeakCauchy",
+  "OAI.Analysis.LipschitzEquivalence.WeakSums",
+  "OAI.Analysis.LipschitzEquivalence.WeightedGraph"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/LipschitzEquivalence.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.LipschitzEquivalence.Main",
+   "name": "OAI.LipschitzCounterexample.main",
+   "statement_sha256": "59039552775ac7e9f9811498b195a449cbd01fa218023fb7b7efa1edaede5170"
+  }
+ ],
+ "task_id": "oai-lipschitz-equivalence",
+ "task_revision": 1,
+ "title": "OpenAI math: Lipschitz equivalent Banach spaces need not be linearly isomorphic: Bi-Lipschitz equivalent nonisomorphic Banach spaces",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

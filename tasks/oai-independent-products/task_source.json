@@ -1,0 +1,662 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 88268552
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.IndependentProducts",
+  "challenge_sha256": "e2fc5aaab473f3d9b27baaa3fb5cd6646a8d86798298fb9f1f86c809509b8827",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/IndependentProducts.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.IndependentProducts",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.ProductSpaces.Main",
+   "theorem_names": [
+    "OAI.IndependentProducts.main_general",
+    "OAI.IndependentProducts.main_exponential",
+    "OAI.IndependentProducts.main_gaussian_24",
+    "OAI.IndependentProducts.main_gaussian_12"
+   ]
+  },
+  "config_sha256": "311a2588782b51d5324e1029b1550b069f58630d7008868ea979b0fb8fab9610",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/IndependentProducts.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.IndependentProducts.main_exponential": "equal",
+   "OAI.IndependentProducts.main_gaussian_12": "equal",
+   "OAI.IndependentProducts.main_gaussian_24": "equal",
+   "OAI.IndependentProducts.main_general": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/AffineBounds.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.AffineBounds",
+   "original_sha256": "37adada2a3be30e46fae6d155af8e5f52b30389df3559bdcbccefecbe1957210",
+   "path": "OAI/Analysis/ProductSpaces/AffineBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/ClosedTails.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.ClosedTails",
+   "original_sha256": "a69264380d213b8722b0d4bda20831572b2190423d92845f332cfb7b92e22f69",
+   "path": "OAI/Analysis/ProductSpaces/ClosedTails.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/CoefficientBounds.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.CoefficientBounds",
+   "original_sha256": "cf56c81155fccccecd97e6ea781d04b3d858f86a0aa63f5d286328a0114ef6b6",
+   "path": "OAI/Analysis/ProductSpaces/CoefficientBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/CoefficientLaw.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.CoefficientLaw",
+   "original_sha256": "67ae0246c3870301590132619ad26ad0b9c7df323365f61c8205f5296fc998b3",
+   "path": "OAI/Analysis/ProductSpaces/CoefficientLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/ConditionalBounds.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.ConditionalBounds",
+   "original_sha256": "7011d5635e4509a8652539d1c07d341b8a0d4c44917c9c3a20ece07e390c5922",
+   "path": "OAI/Analysis/ProductSpaces/ConditionalBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/ExponentialExcess.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.ExponentialExcess",
+   "original_sha256": "51e592c0e85514b17e141ff6ef620029ea75db2d314c05b7e5ec4d43d7439755",
+   "path": "OAI/Analysis/ProductSpaces/ExponentialExcess.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/ExponentialLaw.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.ExponentialLaw",
+   "original_sha256": "b46bb335c3e1c27e77c5f7bb4d383034ab180eab395c5c013435d37a4ad9c268",
+   "path": "OAI/Analysis/ProductSpaces/ExponentialLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/ExponentialMixture.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.ExponentialMixture",
+   "original_sha256": "12f2020df8cffd17101cc82dc3ee5639f353c834542bd152c806cbacbea28171",
+   "path": "OAI/Analysis/ProductSpaces/ExponentialMixture.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/FiniteHeads.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.FiniteHeads",
+   "original_sha256": "ec7d833335abbf05d81edf7d762de6e636671fd11fa46466d8d10fe3bab57bc4",
+   "path": "OAI/Analysis/ProductSpaces/FiniteHeads.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/GaussianBounds.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.GaussianBounds",
+   "original_sha256": "fbdc0fbbec1c1de227f123e1657c07f4778b08a62211fe25857b28ecb4a2181f",
+   "path": "OAI/Analysis/ProductSpaces/GaussianBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/GaussianExcess.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.GaussianExcess",
+   "original_sha256": "0f7c2b4aef4d64cd810fa8ab2393db53507012ce16c5be182efee54f8af165c4",
+   "path": "OAI/Analysis/ProductSpaces/GaussianExcess.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/GaussianMoments.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.GaussianMoments",
+   "original_sha256": "ced07b693077010d861084b34a212f1c1f2ad55394fa22a4eb80d004139cf577",
+   "path": "OAI/Analysis/ProductSpaces/GaussianMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/Main.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.Main",
+   "original_sha256": "4758147d4f00be01a6960261c740f4295e370fa204dacbe3d5f261a5e59f646a",
+   "path": "OAI/Analysis/ProductSpaces/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/MidpointModulus.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.MidpointModulus",
+   "original_sha256": "9c5b44e5c8ecab03e1a89b006ad21440aea418b79e967409b1f18cca5bff4aff",
+   "path": "OAI/Analysis/ProductSpaces/MidpointModulus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/Model.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.Model",
+   "original_sha256": "9fa86b6413cc7912389e1278a1aeef774a66f80023758d86e7655e96fa8c2507",
+   "path": "OAI/Analysis/ProductSpaces/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/PathMoments.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.PathMoments",
+   "original_sha256": "b41e0d44d5a02d2cbb459d64a037d9edc345ec5111c98cf4793a9498fdae79e6",
+   "path": "OAI/Analysis/ProductSpaces/PathMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/RandomSigns.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.RandomSigns",
+   "original_sha256": "23e99864bdb9e37aa9defc6ff92633d8f04d092a61fc35b40239ca811f76e9be",
+   "path": "OAI/Analysis/ProductSpaces/RandomSigns.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/Resampling.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.Resampling",
+   "original_sha256": "be888c3d37c01bf6d021c142416f147a70d317d4aedc69b859d628fdba2b144a",
+   "path": "OAI/Analysis/ProductSpaces/Resampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/ScalarBounds.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.ScalarBounds",
+   "original_sha256": "e44b373ded03f6bb2ec6cece7f61111dd34d3168044674f8aec08b32c62d3550",
+   "path": "OAI/Analysis/ProductSpaces/ScalarBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/TailCoefficients.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.TailCoefficients",
+   "original_sha256": "e1e07bce555a0afc17c756ee498143e27123d88907a4e33aa0ce6ae785756840",
+   "path": "OAI/Analysis/ProductSpaces/TailCoefficients.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/TreeObstruction.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.TreeObstruction",
+   "original_sha256": "d46559256faf7e493890c0f0e57194aa3f568e93bf4885fd0f36b9be8db38aef",
+   "path": "OAI/Analysis/ProductSpaces/TreeObstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/ProductSpaces/WeakNullity.lean"
+   },
+   "module": "OAI.Analysis.ProductSpaces.WeakNullity",
+   "original_sha256": "1dcd9d7d4945343d06a7b4d008d969f40a02ccb2126fdccf6e09ac7eefaa83bf",
+   "path": "OAI/Analysis/ProductSpaces/WeakNullity.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.ProductSpaces.AffineBounds",
+  "OAI.Analysis.ProductSpaces.ClosedTails",
+  "OAI.Analysis.ProductSpaces.CoefficientBounds",
+  "OAI.Analysis.ProductSpaces.CoefficientLaw",
+  "OAI.Analysis.ProductSpaces.ConditionalBounds",
+  "OAI.Analysis.ProductSpaces.ExponentialExcess",
+  "OAI.Analysis.ProductSpaces.ExponentialLaw",
+  "OAI.Analysis.ProductSpaces.ExponentialMixture",
+  "OAI.Analysis.ProductSpaces.FiniteHeads",
+  "OAI.Analysis.ProductSpaces.GaussianBounds",
+  "OAI.Analysis.ProductSpaces.GaussianExcess",
+  "OAI.Analysis.ProductSpaces.GaussianMoments",
+  "OAI.Analysis.ProductSpaces.Main",
+  "OAI.Analysis.ProductSpaces.MidpointModulus",
+  "OAI.Analysis.ProductSpaces.Model",
+  "OAI.Analysis.ProductSpaces.PathMoments",
+  "OAI.Analysis.ProductSpaces.RandomSigns",
+  "OAI.Analysis.ProductSpaces.Resampling",
+  "OAI.Analysis.ProductSpaces.ScalarBounds",
+  "OAI.Analysis.ProductSpaces.TailCoefficients",
+  "OAI.Analysis.ProductSpaces.TreeObstruction",
+  "OAI.Analysis.ProductSpaces.WeakNullity"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/IndependentProducts.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.ProductSpaces.WeakNullity",
+   "name": "OAI.IndependentProducts.main_general",
+   "statement_sha256": "99c05d70e87522f2284a5c5480f5850660ab73c69641d06357a04ebc28dacbd9"
+  },
+  {
+   "module": "OAI.Analysis.ProductSpaces.Main",
+   "name": "OAI.IndependentProducts.main_exponential",
+   "statement_sha256": "cada903f793690c399640db9e99c4b2594f16db530e80ad6b0a348ddcb290aa9"
+  },
+  {
+   "module": "OAI.Analysis.ProductSpaces.GaussianBounds",
+   "name": "OAI.IndependentProducts.main_gaussian_24",
+   "statement_sha256": "fde0371cec815aac0fdf778f1189dc8773278e4ac42de82ad177110ba217ae13"
+  },
+  {
+   "module": "OAI.Analysis.ProductSpaces.GaussianBounds",
+   "name": "OAI.IndependentProducts.main_gaussian_12",
+   "statement_sha256": "ac3665d381cc2e8821e07682fe075cfbf02d8bb87e74a742493351f34dda42cc"
+  }
+ ],
+ "task_id": "oai-independent-products",
+ "task_revision": 1,
+ "title": "OpenAI math: Reflexive midpoint convexity and diamond distortion: Independent-product spaces and positive midpoint moduli",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

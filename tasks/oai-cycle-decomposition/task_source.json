@@ -1,0 +1,761 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 118314550
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.CycleDecomposition",
+  "challenge_sha256": "8c40255789147b218565654daa7d4f9ef39824b009d06ec9fb6beb7b45cae0f9",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/CycleDecomposition.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.CycleDecomposition",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Combinatorics.CycleDecomposition.Main",
+   "theorem_names": [
+    "OAI.ErdosGallai.erdos_gallai"
+   ]
+  },
+  "config_sha256": "f89705dba6bfbf27113cae83ae8000946bd6276b2afae4b19e28fa528dfb32d0",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/CycleDecomposition.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.ErdosGallai.erdos_gallai": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/BatchEndpoints.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.BatchEndpoints",
+   "original_sha256": "b9f508fa150ee4180b5589514a917e11ea4d20528a41259e11284228895f6eb5",
+   "path": "OAI/Combinatorics/CycleDecomposition/BatchEndpoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/BatchIndexing.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.BatchIndexing",
+   "original_sha256": "5dd10ea708404173b8a60e086de39a9a63938c75badbafdb31bb0425160da072",
+   "path": "OAI/Combinatorics/CycleDecomposition/BatchIndexing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/BatchLovasz.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.BatchLovasz",
+   "original_sha256": "8b88880e74a764300e8411eaa6662377ea1722933b65e175e7b775c841e0b96b",
+   "path": "OAI/Combinatorics/CycleDecomposition/BatchLovasz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/BatchPathDeletion.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.BatchPathDeletion",
+   "original_sha256": "6345ea5cd484dd5c819820e4695f501bfa2dd89d197abc15901f41d9f4908f12",
+   "path": "OAI/Combinatorics/CycleDecomposition/BatchPathDeletion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/BatchPreparation.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.BatchPreparation",
+   "original_sha256": "f9c3bf8e297602d91358c5c0a9e13277edc63581db7f81f66a7a2b595b113670",
+   "path": "OAI/Combinatorics/CycleDecomposition/BatchPreparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/BatchResolution.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.BatchResolution",
+   "original_sha256": "a3a7fb57b6aee2ce1682c0f13d618abeff490886b3602db18030118be0002cdc",
+   "path": "OAI/Combinatorics/CycleDecomposition/BatchResolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/BatchRouting.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.BatchRouting",
+   "original_sha256": "b59516c44bec94e1b56b86788899211c65026f3af04a1f008761c153356f9503",
+   "path": "OAI/Combinatorics/CycleDecomposition/BatchRouting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/CollisionEstimates.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.CollisionEstimates",
+   "original_sha256": "164e10dff3d9b722850f1f689918589cb18ecd50ddd056785bb20c5957fd9a61",
+   "path": "OAI/Combinatorics/CycleDecomposition/CollisionEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/CostRegrouping.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.CostRegrouping",
+   "original_sha256": "290d0a17dba2d0307cbe582ee53adcb316990ddde3d9198396416f40cca5977c",
+   "path": "OAI/Combinatorics/CycleDecomposition/CostRegrouping.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/CoupledResolution.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.CoupledResolution",
+   "original_sha256": "6f4e75dd021691bd4ce076dbc5d5bacc865ce23170dc0027baa69b3110e8d53a",
+   "path": "OAI/Combinatorics/CycleDecomposition/CoupledResolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/CycleLifting.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.CycleLifting",
+   "original_sha256": "1faf8d15cd44a3ff639f45eb8265dbd90aa0ea289d9c0c83a614e653502ec1ea",
+   "path": "OAI/Combinatorics/CycleDecomposition/CycleLifting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/Decomposition.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.Decomposition",
+   "original_sha256": "4f742482cd903447ea3ce10f25f80f8dfbc84540e92877e771c4c08acb441853",
+   "path": "OAI/Combinatorics/CycleDecomposition/Decomposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/DepthFirstSearch.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.DepthFirstSearch",
+   "original_sha256": "5a25eaad1f55ccee0cae9e6200a1cc0dfa2b04b429cdd053fc405c7a8fa83097",
+   "path": "OAI/Combinatorics/CycleDecomposition/DepthFirstSearch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/EdgeSplitting.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.EdgeSplitting",
+   "original_sha256": "267f9f00cb7f4f43f3d00399c4c10bb226e013544fd1ff9391c077d960054136",
+   "path": "OAI/Combinatorics/CycleDecomposition/EdgeSplitting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/EndpointPartition.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.EndpointPartition",
+   "original_sha256": "c4d7364ac829d52001e1567b499f3764ecc4fec91889d400974fbee47947a62c",
+   "path": "OAI/Combinatorics/CycleDecomposition/EndpointPartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/ExpansionBoxes.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.ExpansionBoxes",
+   "original_sha256": "08474a1cae35c28c3691033cb4de5bbceec2392dc0fd7545700c62073f0cc548",
+   "path": "OAI/Combinatorics/CycleDecomposition/ExpansionBoxes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/LayerCosts.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.LayerCosts",
+   "original_sha256": "7ddbf378c4883c08ba7ef4d4117cae15cc1ea2d32c9465921c8aa8d14b8c6e0b",
+   "path": "OAI/Combinatorics/CycleDecomposition/LayerCosts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/Lovasz.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.Lovasz",
+   "original_sha256": "1fa567a0ccd24344fa6eae72a05c25d1090bca655f32aaa5991148a1f2fa7353",
+   "path": "OAI/Combinatorics/CycleDecomposition/Lovasz.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/Main.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.Main",
+   "original_sha256": "03edc7620d991daaa5629313c05395708b83ea44e5634a5ef69227ba2bcf77d9",
+   "path": "OAI/Combinatorics/CycleDecomposition/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/Pairing.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.Pairing",
+   "original_sha256": "7e8bbecd35e0fc9ebb83d54ed3574da5e70cc47f35752bcea15bdbc63f5e1808",
+   "path": "OAI/Combinatorics/CycleDecomposition/Pairing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/PathDeletion.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.PathDeletion",
+   "original_sha256": "70408e8d6e9132193d9b88cf1a3341645068971027cb6ee5c872690e51f0582d",
+   "path": "OAI/Combinatorics/CycleDecomposition/PathDeletion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/PrefixSelection.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.PrefixSelection",
+   "original_sha256": "2ace7017770a5c9593fa87e907fea11d775cd0775c22ec786557628c5058a22c",
+   "path": "OAI/Combinatorics/CycleDecomposition/PrefixSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/Representatives.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.Representatives",
+   "original_sha256": "4bc9e049246588a1b02582da448de42a2adcbebc780158af57ed097deea0f2d8",
+   "path": "OAI/Combinatorics/CycleDecomposition/Representatives.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/ReservoirCycles.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.ReservoirCycles",
+   "original_sha256": "03b4280fec516953b650dfef2a9623d992cd9f6b398b13064e16051f53d974c9",
+   "path": "OAI/Combinatorics/CycleDecomposition/ReservoirCycles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/ReservoirRemainder.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.ReservoirRemainder",
+   "original_sha256": "e66d9790fbf617721598ec86278bae7418f9ad93cb22b2b9d0164a49a11e3408",
+   "path": "OAI/Combinatorics/CycleDecomposition/ReservoirRemainder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/ReservoirSampling.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.ReservoirSampling",
+   "original_sha256": "296d2e743613f0338aaeed65919709193af57f60375e0f810c5a5836091d7dfb",
+   "path": "OAI/Combinatorics/CycleDecomposition/ReservoirSampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/Routing.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.Routing",
+   "original_sha256": "bda59fcac1565efb22c3bfd21c59b97b8708457e2a3aba334e2e7cb84e8f8586",
+   "path": "OAI/Combinatorics/CycleDecomposition/Routing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/Sampling.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.Sampling",
+   "original_sha256": "0da57bc89c09bab54b5007e3b30ead035aebb369076a3a0929c0e7d67824a048",
+   "path": "OAI/Combinatorics/CycleDecomposition/Sampling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/SamplingCuts.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.SamplingCuts",
+   "original_sha256": "eb67aed05e2269fcae158355fc57affed794d9eb5410464315ec369e07553079",
+   "path": "OAI/Combinatorics/CycleDecomposition/SamplingCuts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/ScaleDecomposition.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.ScaleDecomposition",
+   "original_sha256": "305492ed8166f07a1dbf8d768767efc39416b10e48ab0ced695c3c0e82574fa0",
+   "path": "OAI/Combinatorics/CycleDecomposition/ScaleDecomposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/ScaleExtraction.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.ScaleExtraction",
+   "original_sha256": "86e67577ca500858e49b367a3044bf856ebe1f5e5f0b3513657b6510a08cc76c",
+   "path": "OAI/Combinatorics/CycleDecomposition/ScaleExtraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/ScaleHierarchy.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.ScaleHierarchy",
+   "original_sha256": "d0164e09f11e039d7a532026da9aaa4dd16b8cdfcf8c627c31ec995f9fbc8d78",
+   "path": "OAI/Combinatorics/CycleDecomposition/ScaleHierarchy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/Templates.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.Templates",
+   "original_sha256": "c8e63c3241a525021205d940a55b1e61f46b0e28630c1ddc0df2b0998806af02",
+   "path": "OAI/Combinatorics/CycleDecomposition/Templates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/CycleDecomposition/UniformLayers.lean"
+   },
+   "module": "OAI.Combinatorics.CycleDecomposition.UniformLayers",
+   "original_sha256": "30c59f4a7cdcbf9f5e0f782ba1135b50e27bf9a5eec0a10bb71841474a2d98b1",
+   "path": "OAI/Combinatorics/CycleDecomposition/UniformLayers.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.CycleDecomposition.BatchEndpoints",
+  "OAI.Combinatorics.CycleDecomposition.BatchIndexing",
+  "OAI.Combinatorics.CycleDecomposition.BatchLovasz",
+  "OAI.Combinatorics.CycleDecomposition.BatchPathDeletion",
+  "OAI.Combinatorics.CycleDecomposition.BatchPreparation",
+  "OAI.Combinatorics.CycleDecomposition.BatchResolution",
+  "OAI.Combinatorics.CycleDecomposition.BatchRouting",
+  "OAI.Combinatorics.CycleDecomposition.CollisionEstimates",
+  "OAI.Combinatorics.CycleDecomposition.CostRegrouping",
+  "OAI.Combinatorics.CycleDecomposition.CoupledResolution",
+  "OAI.Combinatorics.CycleDecomposition.CycleLifting",
+  "OAI.Combinatorics.CycleDecomposition.Decomposition",
+  "OAI.Combinatorics.CycleDecomposition.DepthFirstSearch",
+  "OAI.Combinatorics.CycleDecomposition.EdgeSplitting",
+  "OAI.Combinatorics.CycleDecomposition.EndpointPartition",
+  "OAI.Combinatorics.CycleDecomposition.ExpansionBoxes",
+  "OAI.Combinatorics.CycleDecomposition.LayerCosts",
+  "OAI.Combinatorics.CycleDecomposition.Lovasz",
+  "OAI.Combinatorics.CycleDecomposition.Main",
+  "OAI.Combinatorics.CycleDecomposition.Pairing",
+  "OAI.Combinatorics.CycleDecomposition.PathDeletion",
+  "OAI.Combinatorics.CycleDecomposition.PrefixSelection",
+  "OAI.Combinatorics.CycleDecomposition.Representatives",
+  "OAI.Combinatorics.CycleDecomposition.ReservoirCycles",
+  "OAI.Combinatorics.CycleDecomposition.ReservoirRemainder",
+  "OAI.Combinatorics.CycleDecomposition.ReservoirSampling",
+  "OAI.Combinatorics.CycleDecomposition.Routing",
+  "OAI.Combinatorics.CycleDecomposition.Sampling",
+  "OAI.Combinatorics.CycleDecomposition.SamplingCuts",
+  "OAI.Combinatorics.CycleDecomposition.ScaleDecomposition",
+  "OAI.Combinatorics.CycleDecomposition.ScaleExtraction",
+  "OAI.Combinatorics.CycleDecomposition.ScaleHierarchy",
+  "OAI.Combinatorics.CycleDecomposition.Templates",
+  "OAI.Combinatorics.CycleDecomposition.UniformLayers"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/CycleDecomposition.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Combinatorics.CycleDecomposition.Main",
+   "name": "OAI.ErdosGallai.erdos_gallai",
+   "statement_sha256": "c0c11d8c1025da38c57000bacf11115cff38797d6bda4092e46e3c7705bb9972"
+  }
+ ],
+ "task_id": "oai-cycle-decomposition",
+ "task_revision": 1,
+ "title": "OpenAI math: The Erdős–Gallai cycle-decomposition conjecture: Linear cycle-and-edge decomposition",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

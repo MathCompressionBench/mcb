@@ -1,0 +1,1781 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 113677854
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.PosteriorReplicas",
+  "challenge_sha256": "4738f722c6294eae589ecd91c1132f3862154c97bcaea7090bed792e98375dcc",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/PosteriorReplicas.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.PosteriorReplicas",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Probability.PosteriorReplicas.Main",
+   "theorem_names": [
+    "OAI.PosteriorReplicas.source_main"
+   ]
+  },
+  "config_sha256": "aa8e4892d4f48c971b6caa742d4362a572fae3ab72bc8fe13a6359424965ff93",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/PosteriorReplicas.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.PosteriorReplicas.source_main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Gaussian/ConstrainedGaussian.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Gaussian.ConstrainedGaussian",
+   "original_sha256": "8c256f4b28c99b8504c221ba81c33bcd06debcc8c573f8c4aa3e835dc7f0a536",
+   "path": "OAI/Probability/PosteriorReplicas/Gaussian/ConstrainedGaussian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Gaussian/ConstrainedNoise.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Gaussian.ConstrainedNoise",
+   "original_sha256": "007def66ff2adfa3eeaf7443c018556ee750b461a14a159b6d934abc3196b92d",
+   "path": "OAI/Probability/PosteriorReplicas/Gaussian/ConstrainedNoise.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Gaussian/GaussianDensity.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Gaussian.GaussianDensity",
+   "original_sha256": "a055535fc5a2c831107f3892afddee0e4354d24254c7bf82c1c09bcd841f4d44",
+   "path": "OAI/Probability/PosteriorReplicas/Gaussian/GaussianDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Gaussian/GaussianFiber.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Gaussian.GaussianFiber",
+   "original_sha256": "4c38bd7eb67bf9c7c121149f8fe3c7b3d25da713dfe25e95933c6143703e9c17",
+   "path": "OAI/Probability/PosteriorReplicas/Gaussian/GaussianFiber.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Gaussian/GaussianGramMoment.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Gaussian.GaussianGramMoment",
+   "original_sha256": "a1036aef2aaff749010377d9b5e5facae85ebfe9994da65d8a4eeea28812b163",
+   "path": "OAI/Probability/PosteriorReplicas/Gaussian/GaussianGramMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Gaussian/GaussianLogMoment.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Gaussian.GaussianLogMoment",
+   "original_sha256": "3760e5734545801d10448a7a3df7f441ab4ab91d30a9c13d193fff4812026cff",
+   "path": "OAI/Probability/PosteriorReplicas/Gaussian/GaussianLogMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Gaussian/GaussianPolar.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Gaussian.GaussianPolar",
+   "original_sha256": "0aa7f91ec90304ef8a2bd5b22694514d7f98c107c41c335faa987d9f2131d80a",
+   "path": "OAI/Probability/PosteriorReplicas/Gaussian/GaussianPolar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Gaussian/GaussianRowMix.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Gaussian.GaussianRowMix",
+   "original_sha256": "6ae83d4c4d5bc19c8225017cfe43c5d63fc91dee55ae0ed93f2cf8c1cafe1155",
+   "path": "OAI/Probability/PosteriorReplicas/Gaussian/GaussianRowMix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Gaussian/GaussianSmallBall.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Gaussian.GaussianSmallBall",
+   "original_sha256": "75af3415846ed0797c88a62b09e1a579c31067c52a58e595469466714cca9641",
+   "path": "OAI/Probability/PosteriorReplicas/Gaussian/GaussianSmallBall.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Gaussian/GaussianWishart.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Gaussian.GaussianWishart",
+   "original_sha256": "3961168f0c168f37c0a849dc74a8efca42260aace876e26c09fb4d273777ce0f",
+   "path": "OAI/Probability/PosteriorReplicas/Gaussian/GaussianWishart.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Gaussian/GramTransform.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Gaussian.GramTransform",
+   "original_sha256": "18ac8d6a238d31e755dd18b53fba75d21c4fdd05e51b700d8ad07617d913ac45",
+   "path": "OAI/Probability/PosteriorReplicas/Gaussian/GramTransform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Gaussian/MatrixNoise.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Gaussian.MatrixNoise",
+   "original_sha256": "53fffb34f4f72dc9f6ad7606da96effad6ef3e883f9048ce4f07136ed9d58c9c",
+   "path": "OAI/Probability/PosteriorReplicas/Gaussian/MatrixNoise.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Gaussian/ObservableGaussian.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Gaussian.ObservableGaussian",
+   "original_sha256": "fdd2ccee6b92bcc8c6c48aeb839f6f70b576ed2a8703c241a2b7511f85309b1d",
+   "path": "OAI/Probability/PosteriorReplicas/Gaussian/ObservableGaussian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Gaussian/RadialIntegrals.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Gaussian.RadialIntegrals",
+   "original_sha256": "ec5067184b82190a7d27bbebc0b004c5b9803ac1923f2c7e532c175dc7bc49fd",
+   "path": "OAI/Probability/PosteriorReplicas/Gaussian/RadialIntegrals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Gaussian/RandomComplement.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Gaussian.RandomComplement",
+   "original_sha256": "98a07055dce2c9bdd5c599bb602482baabfdc11385c3fb9b5365c793e37ad744",
+   "path": "OAI/Probability/PosteriorReplicas/Gaussian/RandomComplement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Geometry/AffineMoments.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Geometry.AffineMoments",
+   "original_sha256": "d37f947c2938364ee757c6ccb4c9602cc5e5ade7a6abc640c8dab0ebf72f979c",
+   "path": "OAI/Probability/PosteriorReplicas/Geometry/AffineMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Geometry/BallJacobian.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Geometry.BallJacobian",
+   "original_sha256": "6cc92bf834f2189bbc46411099e4ec27f7760fbdbae95c2e5142b18e5a4128e4",
+   "path": "OAI/Probability/PosteriorReplicas/Geometry/BallJacobian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Geometry/BaseContinuity.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Geometry.BaseContinuity",
+   "original_sha256": "978b26cbda86fa2340fc92507003dfc1a1709922c5797de0c2e1f68ec7dd32f4",
+   "path": "OAI/Probability/PosteriorReplicas/Geometry/BaseContinuity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Geometry/BaseFunProp.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Geometry.BaseFunProp",
+   "original_sha256": "dfda6257ee21df653cac33d3db15409cc965041f627b1b14896a7e4481b34538",
+   "path": "OAI/Probability/PosteriorReplicas/Geometry/BaseFunProp.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Geometry/BaseGeometry.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Geometry.BaseGeometry",
+   "original_sha256": "07e5cc3d162d3655c7c879602887aafdc36c70b22d9ba180275fd7fbe0c35814",
+   "path": "OAI/Probability/PosteriorReplicas/Geometry/BaseGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Geometry/DensityBinEnvelope.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Geometry.DensityBinEnvelope",
+   "original_sha256": "c64e4da850f73f550cb70f3f9406d55460ed8d50cb75cf1f8565355a6c7f735d",
+   "path": "OAI/Probability/PosteriorReplicas/Geometry/DensityBinEnvelope.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Geometry/DensityBinsGeometry.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Geometry.DensityBinsGeometry",
+   "original_sha256": "f38b7c461c5e1dc76151c9a6ca566914b7a1c4c78aa6af8278532b487d1b69d2",
+   "path": "OAI/Probability/PosteriorReplicas/Geometry/DensityBinsGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Geometry/FrameTubes.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Geometry.FrameTubes",
+   "original_sha256": "b2a582682be5fa6132369c0d668197d2be20611b8f5c398766a3813ae0e48ae5",
+   "path": "OAI/Probability/PosteriorReplicas/Geometry/FrameTubes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Geometry/InverseMomentBins.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Geometry.InverseMomentBins",
+   "original_sha256": "ae66068e914b777d53799fdea5e98be99b2952b0c610ac5b133202f51a449134",
+   "path": "OAI/Probability/PosteriorReplicas/Geometry/InverseMomentBins.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Geometry/LabelConvolution.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Geometry.LabelConvolution",
+   "original_sha256": "f2b4860329ac419f8a1e4dab84649a3624ee5457f363bba73cd8fbcd56c27d1e",
+   "path": "OAI/Probability/PosteriorReplicas/Geometry/LabelConvolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Geometry/LabelEllipsoids.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Geometry.LabelEllipsoids",
+   "original_sha256": "bb4f8416a98667a461695e40adfe24966539f269303a039ac6d00262b3307685",
+   "path": "OAI/Probability/PosteriorReplicas/Geometry/LabelEllipsoids.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Geometry/SphereDensity.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Geometry.SphereDensity",
+   "original_sha256": "954b1aa8a53068b4b953c234ad1f54c6e0417774d858961e8c504ad0de697c79",
+   "path": "OAI/Probability/PosteriorReplicas/Geometry/SphereDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Geometry/SphereSubspace.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Geometry.SphereSubspace",
+   "original_sha256": "aad49aa3725f8d8dac78186230514fc76aff821de2bda8369d5cb2d7197a77b2",
+   "path": "OAI/Probability/PosteriorReplicas/Geometry/SphereSubspace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Geometry/SphereTubeQuantitative.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Geometry.SphereTubeQuantitative",
+   "original_sha256": "5db4f7f9ecbb0b3fec6b86a15a59ca123d0ee2e62ddf035aa9c7bf58a249a693",
+   "path": "OAI/Probability/PosteriorReplicas/Geometry/SphereTubeQuantitative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Geometry/TupleMoments.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Geometry.TupleMoments",
+   "original_sha256": "46b418546716fa8c13cb0f86ab37e2b8303dbe4393f1764adc40de08dacb5555",
+   "path": "OAI/Probability/PosteriorReplicas/Geometry/TupleMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/BinCutoff.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.BinCutoff",
+   "original_sha256": "1e1379cdccf4c5ac42d55cb5948f8b6b42609b7d19b500c97eb4b19d68ffa0a1",
+   "path": "OAI/Probability/PosteriorReplicas/Information/BinCutoff.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/CmiKernel.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.CmiKernel",
+   "original_sha256": "95a4c8d6749d77767d3380137908359599731e76bab4b4cfa4e9aba6cc340abb",
+   "path": "OAI/Probability/PosteriorReplicas/Information/CmiKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/ConditionalKL.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.ConditionalKL",
+   "original_sha256": "008143395811194d6025fd198ba743e13e4941eca7b31611d4b8698c8be6c021",
+   "path": "OAI/Probability/PosteriorReplicas/Information/ConditionalKL.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/ConditionalPiKL.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.ConditionalPiKL",
+   "original_sha256": "980641e85affd2e93f0af5a718dc8c23bd4e1fb347c0d0132c9e4fe5a052fc54",
+   "path": "OAI/Probability/PosteriorReplicas/Information/ConditionalPiKL.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/EntropyLossTest.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.EntropyLossTest",
+   "original_sha256": "5959756607acbff2e3bf7d38c66a46c52487e8e7836617bbf7440874efa93d07",
+   "path": "OAI/Probability/PosteriorReplicas/Information/EntropyLossTest.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/EntropyTest.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.EntropyTest",
+   "original_sha256": "d408506d891572017a78ce6500d1248b482921670861ab564ff0f865f9a422c2",
+   "path": "OAI/Probability/PosteriorReplicas/Information/EntropyTest.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/FiniteConditionalEntropy.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.FiniteConditionalEntropy",
+   "original_sha256": "b3e5b60f7b222dd15756056b110e7a01e4964439c4e31744c5caf87bbf7105ed",
+   "path": "OAI/Probability/PosteriorReplicas/Information/FiniteConditionalEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/FiniteEntropyBounds.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.FiniteEntropyBounds",
+   "original_sha256": "2150623596eb93ce5b11241993d21b3ad6ef00c6daca7e72f227f3dcddc05f25",
+   "path": "OAI/Probability/PosteriorReplicas/Information/FiniteEntropyBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/FiniteKL.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.FiniteKL",
+   "original_sha256": "3fb7d8264c5b7a927c00607656533890acea9081003e18510070d3f50f7fdc9e",
+   "path": "OAI/Probability/PosteriorReplicas/Information/FiniteKL.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/FiniteStateDensity.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.FiniteStateDensity",
+   "original_sha256": "58cee034d41c6b4b1aff3e620e4bc407e91c24b7e76bf671138641c2477aa1c1",
+   "path": "OAI/Probability/PosteriorReplicas/Information/FiniteStateDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/GenericInformationBound.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.GenericInformationBound",
+   "original_sha256": "84ff510245de2d18b490aad8597d62034b6942460a5fdd5987c822dfa958d34c",
+   "path": "OAI/Probability/PosteriorReplicas/Information/GenericInformationBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/GraphKL.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.GraphKL",
+   "original_sha256": "15348c9b4a35ad2bd052ab925bd819eab4a12b790949f5e31b6b22682e821727",
+   "path": "OAI/Probability/PosteriorReplicas/Information/GraphKL.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/HaarInformationEq.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.HaarInformationEq",
+   "original_sha256": "ed4360e2949f4c06ea1e03fc4aaf2068b4dd2854adbd23061bfbb8c70d2ea665",
+   "path": "OAI/Probability/PosteriorReplicas/Information/HaarInformationEq.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/HaarStateBound.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.HaarStateBound",
+   "original_sha256": "5f1eab8b67f94b00ddfd0c7b29a0645b6cf8326498521a873eecff4b873830a5",
+   "path": "OAI/Probability/PosteriorReplicas/Information/HaarStateBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/HeadlineInformation.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.HeadlineInformation",
+   "original_sha256": "b1df280cef8a8d3c0a13bca35fc43c50a0cd5fea58614225b7ba3e67f26aea82",
+   "path": "OAI/Probability/PosteriorReplicas/Information/HeadlineInformation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/KLTools.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.KLTools",
+   "original_sha256": "a024cbb553bca710066cce863278836264033100ad803c79e9aea617ad23ca22",
+   "path": "OAI/Probability/PosteriorReplicas/Information/KLTools.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/LikelihoodIntegrability.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.LikelihoodIntegrability",
+   "original_sha256": "cd0c73f452cfa29dc8b48cb7792c7809a703b39c9ff5103474b33d8a22fa1f33",
+   "path": "OAI/Probability/PosteriorReplicas/Information/LikelihoodIntegrability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/LogComparison.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.LogComparison",
+   "original_sha256": "777be9f820ca4f928bab0ca7494eb8f019bc1320a4df714ce6280a26cebe3d40",
+   "path": "OAI/Probability/PosteriorReplicas/Information/LogComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/NormalizedLikelihood.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.NormalizedLikelihood",
+   "original_sha256": "efd30138619bb4bb29fdbf53210e2b9996e3d1a881c785c1d33edc811804cf33",
+   "path": "OAI/Probability/PosteriorReplicas/Information/NormalizedLikelihood.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/ObservableLikelihood.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.ObservableLikelihood",
+   "original_sha256": "ad06a7fdd728c2bed6356db2bbe182088941ce98a89a3cb9adc273df5061da94",
+   "path": "OAI/Probability/PosteriorReplicas/Information/ObservableLikelihood.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/ObservationCorrelation.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.ObservationCorrelation",
+   "original_sha256": "67e6224e7cfd83f77db3b128b2386434407941ecafa145a4d9435e76569e854b",
+   "path": "OAI/Probability/PosteriorReplicas/Information/ObservationCorrelation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/ParametricKernel.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.ParametricKernel",
+   "original_sha256": "dbe7d3fb3c4fc77200044897295f77b8b2e991305eeacb00b1d596f5ecb4fef6",
+   "path": "OAI/Probability/PosteriorReplicas/Information/ParametricKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/PiKL.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.PiKL",
+   "original_sha256": "d2806a6cad8a0c79c619ff8765ece7f41308187c54c290f8445434664812edcd",
+   "path": "OAI/Probability/PosteriorReplicas/Information/PiKL.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/RandomCorrelation.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.RandomCorrelation",
+   "original_sha256": "9b87b25afa38dcacd747fccc5746263ac609baf8db040b7d2e7e05a6a59f18e6",
+   "path": "OAI/Probability/PosteriorReplicas/Information/RandomCorrelation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/RandomProjectionInformation.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.RandomProjectionInformation",
+   "original_sha256": "3e8183782f1656681cd6f5582de654335a8e427e2474a33d02eece8c42a66da5",
+   "path": "OAI/Probability/PosteriorReplicas/Information/RandomProjectionInformation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/ReplicaCost.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.ReplicaCost",
+   "original_sha256": "f713d0daec55f3490e5ac7d5d0cc7498f0b93c706cd6425a57b9fe7573b9022b",
+   "path": "OAI/Probability/PosteriorReplicas/Information/ReplicaCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/ReplicaFiniteKL.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.ReplicaFiniteKL",
+   "original_sha256": "bfcf64560a7fac2fdeae078d2e349ad8389d9185ca88ce4825a5dcc74cc8d9bc",
+   "path": "OAI/Probability/PosteriorReplicas/Information/ReplicaFiniteKL.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/ReplicaInformation.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.ReplicaInformation",
+   "original_sha256": "ad95f9f0468332078e5af81d451fc6d2c8f898138ba6c99131ecd3b4eb6dc389",
+   "path": "OAI/Probability/PosteriorReplicas/Information/ReplicaInformation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/ReplicaInformationBound.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.ReplicaInformationBound",
+   "original_sha256": "001ba2e005ba714bb456a722bbf244e5492501d9debe09ee2f361a7076eb5e86",
+   "path": "OAI/Probability/PosteriorReplicas/Information/ReplicaInformationBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/ReplicaLoss.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.ReplicaLoss",
+   "original_sha256": "e5861e0c30d7a6a46fbee280b6169b96a9c2cb74c01d8e10821e43f4e96ebe77",
+   "path": "OAI/Probability/PosteriorReplicas/Information/ReplicaLoss.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/ReplicaMeasureInformation.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.ReplicaMeasureInformation",
+   "original_sha256": "3fa80f16396e251afadd0f438135dbc2905393dde3bbcfdc0788843840b14900",
+   "path": "OAI/Probability/PosteriorReplicas/Information/ReplicaMeasureInformation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/StateExperiment.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.StateExperiment",
+   "original_sha256": "4930aa41aef3eebe48abe913fe83f9eb2cfb98a9c6d8394b28bc9dfb129de0d4",
+   "path": "OAI/Probability/PosteriorReplicas/Information/StateExperiment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Information/StateSide.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Information.StateSide",
+   "original_sha256": "dbd2d92f13011df68280e5e6a052de5ee4445dbd1dc4151cb75fb017d0ef454d",
+   "path": "OAI/Probability/PosteriorReplicas/Information/StateSide.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Kernels/DensityRatio.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Kernels.DensityRatio",
+   "original_sha256": "2f78484907356f2bd1bc5720015feba7ea5d21332c3d8868496d76d86f36654e",
+   "path": "OAI/Probability/PosteriorReplicas/Kernels/DensityRatio.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Kernels/KernelPi.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Kernels.KernelPi",
+   "original_sha256": "09962818b0c0bf6714917a5794e56698b69863a88d5424a4a5621a025263f570",
+   "path": "OAI/Probability/PosteriorReplicas/Kernels/KernelPi.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Kernels/LiftedReplica.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Kernels.LiftedReplica",
+   "original_sha256": "eb29f615582825d73a45651cb66a1d6384f11df0483656f1085a76c9e2a379b9",
+   "path": "OAI/Probability/PosteriorReplicas/Kernels/LiftedReplica.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Kernels/PosteriorExperiment.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Kernels.PosteriorExperiment",
+   "original_sha256": "a5cf419dbbb82d2b7608b6a7760bd183a05c1482a16ce6c4bff1d82e315e9394",
+   "path": "OAI/Probability/PosteriorReplicas/Kernels/PosteriorExperiment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Kernels/PosteriorKernel.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Kernels.PosteriorKernel",
+   "original_sha256": "8e371bc0ee8298929b0af30e8903f2209f4bb81c63ac1a11c6143035ebf971e4",
+   "path": "OAI/Probability/PosteriorReplicas/Kernels/PosteriorKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Kernels/ReplicaGaussianMarginals.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Kernels.ReplicaGaussianMarginals",
+   "original_sha256": "5bae982633257fb2354955692f782be7e95449f45826c6af4412e6d52842f93b",
+   "path": "OAI/Probability/PosteriorReplicas/Kernels/ReplicaGaussianMarginals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Kernels/ReplicaMeasure.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Kernels.ReplicaMeasure",
+   "original_sha256": "ce47ede0761b43f7fb09c29cb285b8e0e30600d9d41afae4b0ffeb68c8d7e1c7",
+   "path": "OAI/Probability/PosteriorReplicas/Kernels/ReplicaMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Kernels/ReplicaTupleMarginals.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Kernels.ReplicaTupleMarginals",
+   "original_sha256": "2a82860640d6352a6823a5920dfc362b541fcd4a29db2925bf4819e885aa2ae6",
+   "path": "OAI/Probability/PosteriorReplicas/Kernels/ReplicaTupleMarginals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Learners/CompletedKernelLaw.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Learners.CompletedKernelLaw",
+   "original_sha256": "ae4481a9ab06efc6fd60ee5be0e4574e05ab5c997c5a2c4e2bd032039a4c489c",
+   "path": "OAI/Probability/PosteriorReplicas/Learners/CompletedKernelLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Learners/CompletedKernelLearner.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Learners.CompletedKernelLearner",
+   "original_sha256": "2e04e9b929c53b128b55e6f4fdc073966f8efcbc5b781de691580a02f4af138e",
+   "path": "OAI/Probability/PosteriorReplicas/Learners/CompletedKernelLearner.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Learners/HaarLawIdentification.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Learners.HaarLawIdentification",
+   "original_sha256": "8e36a96a269a63a6ee3daa1a6da0433a46eb39f408277ba39952253645fad5b3",
+   "path": "OAI/Probability/PosteriorReplicas/Learners/HaarLawIdentification.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Learners/JointKernelExperiment.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Learners.JointKernelExperiment",
+   "original_sha256": "0914cdf1fd9daca3ca6016e0432e8b150e083a775eac000e339c5162eaa9e14b",
+   "path": "OAI/Probability/PosteriorReplicas/Learners/JointKernelExperiment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Learners/JointLawBridge.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Learners.JointLawBridge",
+   "original_sha256": "281f163117e93b5e0efcaddd8235309660f9b058e58f304c76b84bc048a0ea15",
+   "path": "OAI/Probability/PosteriorReplicas/Learners/JointLawBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Learners/KernelLearnerBridge.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Learners.KernelLearnerBridge",
+   "original_sha256": "6c6bbf6bd82d2f2cd920d28197fab3600270ec35b9a561bce3433ea176ab8d81",
+   "path": "OAI/Probability/PosteriorReplicas/Learners/KernelLearnerBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Learners/KernelSuccess.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Learners.KernelSuccess",
+   "original_sha256": "6eaacff15cc9f97d63178cc0cf24b0ff60b2d1f52104c4db719d864a014944ac",
+   "path": "OAI/Probability/PosteriorReplicas/Learners/KernelSuccess.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Learners/LearnerModelBridge.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Learners.LearnerModelBridge",
+   "original_sha256": "7d56dd0b13d117855443b6e59a84f00533997aea5f525c9159e5515017f97d7f",
+   "path": "OAI/Probability/PosteriorReplicas/Learners/LearnerModelBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Main.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Main",
+   "original_sha256": "70b1be94af9ec432318cdb85fe7771128485db537140991a269d5bfe35d4a872",
+   "path": "OAI/Probability/PosteriorReplicas/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Measures/BaseDisintegration.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Measures.BaseDisintegration",
+   "original_sha256": "8fe566dc42cf15e8a2796f9f2fa7bb49941641cc53e73ce2df7b460ccb853e6d",
+   "path": "OAI/Probability/PosteriorReplicas/Measures/BaseDisintegration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Measures/ConstrainedDensityExpectation.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Measures.ConstrainedDensityExpectation",
+   "original_sha256": "32a3833c4b7b54208ff51e6d666318fc67f8d19f23e53a85e33d2ddd7dd0e085",
+   "path": "OAI/Probability/PosteriorReplicas/Measures/ConstrainedDensityExpectation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Measures/DensityDifferentiation.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Measures.DensityDifferentiation",
+   "original_sha256": "de9f8101702ba43a42d61e90071c4a32dfd43484b125118ea56d1eefa1ef00e4",
+   "path": "OAI/Probability/PosteriorReplicas/Measures/DensityDifferentiation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Measures/DensityTools.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Measures.DensityTools",
+   "original_sha256": "430a14b2af0da985ebafafef957c135c4c04e6b3dd80b05d518a1691d7999722",
+   "path": "OAI/Probability/PosteriorReplicas/Measures/DensityTools.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Measures/EqualApproximation.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Measures.EqualApproximation",
+   "original_sha256": "ea06650a072cbdf126ff625b17914434122fea487a86f75a7b5afe5d2e775b65",
+   "path": "OAI/Probability/PosteriorReplicas/Measures/EqualApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Measures/EqualBaseMeasures.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Measures.EqualBaseMeasures",
+   "original_sha256": "cef1cc26a64f6aeda60fcee93a333e5813235e0f0ee7214d67cbd8491b5addfa",
+   "path": "OAI/Probability/PosteriorReplicas/Measures/EqualBaseMeasures.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Measures/EqualLabelIdentity.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Measures.EqualLabelIdentity",
+   "original_sha256": "c4ac92464b9ac2e8f35cbf2230b4b2f04f22ab6c07973e22c3087a7d63b709b0",
+   "path": "OAI/Probability/PosteriorReplicas/Measures/EqualLabelIdentity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Measures/EqualLabelTransfer.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Measures.EqualLabelTransfer",
+   "original_sha256": "e68153ddd0f9b60bbe6d1a4f1946b1ab5d13cff74396efe8cc09c79ad320f8db",
+   "path": "OAI/Probability/PosteriorReplicas/Measures/EqualLabelTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Measures/EqualLabelVersions.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Measures.EqualLabelVersions",
+   "original_sha256": "d2227dca7b43e79c32747dcc15bb3cc67bfd0e53135879d44170af810cefaa05",
+   "path": "OAI/Probability/PosteriorReplicas/Measures/EqualLabelVersions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Measures/EqualRightMeasure.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Measures.EqualRightMeasure",
+   "original_sha256": "4cf50fe327802116147642acc276657c0aa64ec0aee21228c63fed2c2ca3be5d",
+   "path": "OAI/Probability/PosteriorReplicas/Measures/EqualRightMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Measures/EuclideanLabels.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Measures.EuclideanLabels",
+   "original_sha256": "67fb22afeafdf04cecd9341283c1cf58ec4146f1265f008001d3fe4367159961",
+   "path": "OAI/Probability/PosteriorReplicas/Measures/EuclideanLabels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Measures/GaussianConstant.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Measures.GaussianConstant",
+   "original_sha256": "fd5cba9c218c1c93f7444dc6c60680a5a87e0453edfc6401f815b5ce6880ca33",
+   "path": "OAI/Probability/PosteriorReplicas/Measures/GaussianConstant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Measures/GaussianDifferentiation.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Measures.GaussianDifferentiation",
+   "original_sha256": "5abc54c67599dd4108da2aed79cb05d30550fefebdd7123a088faf6dfc0a6abe",
+   "path": "OAI/Probability/PosteriorReplicas/Measures/GaussianDifferentiation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Measures/PiTools.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Measures.PiTools",
+   "original_sha256": "a3e740d838e836215ac44aae70d480f34080847f7948d9233a6dd14805833110",
+   "path": "OAI/Probability/PosteriorReplicas/Measures/PiTools.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Measures/ProductFibers.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Measures.ProductFibers",
+   "original_sha256": "5a484fbf5a75d169b1e622fff6999e4ba19b44ebbdf32cc031f9e03d3b983e4a",
+   "path": "OAI/Probability/PosteriorReplicas/Measures/ProductFibers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Measures/ReferenceMoments.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Measures.ReferenceMoments",
+   "original_sha256": "25a291bc51ee12571a6ed61c8ee2326bf176e018301ee97d5bbb852f5014a998",
+   "path": "OAI/Probability/PosteriorReplicas/Measures/ReferenceMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Measures/TiltNormalization.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Measures.TiltNormalization",
+   "original_sha256": "8aa98eae6ccc22ac24da8610d4c3e1b0b96e0c5a3abf43ba12475d3a7f64905c",
+   "path": "OAI/Probability/PosteriorReplicas/Measures/TiltNormalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Model.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Model",
+   "original_sha256": "6914d4072e1b67d692e7ee9566ae76d9275232728761363866e796532ec734a7",
+   "path": "OAI/Probability/PosteriorReplicas/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/AePiLast.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.AePiLast",
+   "original_sha256": "38145b7d14243a424465923347815eca18276bfd96586776298943b92e237acb",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/AePiLast.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/AffineTubes.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.AffineTubes",
+   "original_sha256": "1b7aabdbe5e30d84944877c263dc9eff5ca5fc81a1028d5ce25eee7d4354394f",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/AffineTubes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/Conclusions.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.Conclusions",
+   "original_sha256": "5fd3f4e6ffa3162930381382b5f4578118cc6847b79877944a17331cddabc4fa",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/Conclusions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/EuclideanNets.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.EuclideanNets",
+   "original_sha256": "87827805cf5a11fb7e135116cf7f30537b2c4c7bd31a140d8d46bf712048dbe6",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/EuclideanNets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/FiniteNets.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.FiniteNets",
+   "original_sha256": "1324bdd4e3253f22a973863b74079681bbfe39180259c5dec19d7ab3abbfcebc",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/FiniteNets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/FrostmanGeometry.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.FrostmanGeometry",
+   "original_sha256": "9fad01db36ab7ee4b324e88546e0a40b14a461594eb3749fad5df3248728a1ee",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/FrostmanGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/Fubini.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.Fubini",
+   "original_sha256": "eeb11b0e40e42f511a93bde638a8912e5d8611ce32aefca0c4d33ba33e43fe79",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/Fubini.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/GaussianDomination.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.GaussianDomination",
+   "original_sha256": "534e2fb8e9d17f170e228470994034e15e03a6ad0dd973bcb02c9718a3516b82",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/GaussianDomination.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/GaussianKernel.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.GaussianKernel",
+   "original_sha256": "68b20050d937db37eafe944c20a8ccdfea7a70d40d13a06227b49f9fab9404f0",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/GaussianKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/GaussianNoise.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.GaussianNoise",
+   "original_sha256": "7de097ddb857902914a83599dd88e3059a3bca84cb19ee75bbecacf8e45bfcb1",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/GaussianNoise.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/GramDistances.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.GramDistances",
+   "original_sha256": "306cdcb8a7c3f98af1d94e2d8cacfe9f256eca2740d2029a101aaf105c1a790f",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/GramDistances.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/GramFactorization.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.GramFactorization",
+   "original_sha256": "03f6a03870ce05be23be4722b1515fd8fd717e567f937b1756002d6b411a5e90",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/GramFactorization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/HolderSet.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.HolderSet",
+   "original_sha256": "31bf03ec62c965aeddd59df1f9d9afbfae1d9250b3fcedb4947c9bb5edd7dab7",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/HolderSet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/InverseMoments.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.InverseMoments",
+   "original_sha256": "6b2c40b96c87316b368c757bbb496609c987e5ece686eecd36ed4618e214f00b",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/InverseMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/LabelDependence.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.LabelDependence",
+   "original_sha256": "1f6727cbd9528c16376691dc2fb9e752dad0d15143908f552eb64b41eb8cc5f4",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/LabelDependence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/LearnerBasics.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.LearnerBasics",
+   "original_sha256": "cd4f40ea2d59ea9e2d0c3acdbfaf6030ca199152407d71cd7b8044b0948c3336",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/LearnerBasics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/LimitSet.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.LimitSet",
+   "original_sha256": "c8b93db192b1bd48a52fe23e46d6517267c274a1761993f3f5fa8209b15bab16",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/LimitSet.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/LowerFubini.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.LowerFubini",
+   "original_sha256": "f3bbe1f3d59d2d88e60a17bbb627d0f5673a1451832c8b458f1591f6e1de2d07",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/LowerFubini.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/MemoryBounds.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.MemoryBounds",
+   "original_sha256": "d071b967e16f071f0e71317bf8744cd8b874d9a5ce9c665ca95f0a1f8280968f",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/MemoryBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/MemoryPrecision.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.MemoryPrecision",
+   "original_sha256": "15467de25a8494d28b7debc77b6792cb7a3c303e328aac486707404ec3acaf90",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/MemoryPrecision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/ObservationContinuity.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.ObservationContinuity",
+   "original_sha256": "a96d2d993d7b95be0130fdc24b2d475744b990ff4953d470be03078684031c4e",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/ObservationContinuity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/OuterBound.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.OuterBound",
+   "original_sha256": "333fc3d8c43a5b65b2dfd23000998ac7aae500363b995ecfcc0832447cf3c75a",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/OuterBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/PiLast.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.PiLast",
+   "original_sha256": "be450defcd0e5b2a659e9aca305091469ec2460a03efb52053d2e9d8ec0d8cd6",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/PiLast.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/ProductDensity.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.ProductDensity",
+   "original_sha256": "a1ab8b1d4a03df3000d64a6a17a9f4df393239590170a6dff7cbedc8c8ef961d",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/ProductDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/ProjectionBlocks.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.ProjectionBlocks",
+   "original_sha256": "7545b1a64997c5945c06f9892d79ef273fa8e22f25047a9ad919a6bd7ba84661",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/ProjectionBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/ProjectionCoupling.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.ProjectionCoupling",
+   "original_sha256": "fbe46c27dbec72a60f1166aee9cbb095f41396d5eae08bc143786fd2a6186248",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/ProjectionCoupling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/ReplicaKernel.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.ReplicaKernel",
+   "original_sha256": "824a5829d01535fc6bce16d15f62955bd3861d83dfcdf6c56c089eead3923a45",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/ReplicaKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/ReplicaMoments.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.ReplicaMoments",
+   "original_sha256": "630f34eb878da6c8d81037df71339ee4131c6b384be6bb8e9ffad407d1533611",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/ReplicaMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/ReplicaNondegenerate.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.ReplicaNondegenerate",
+   "original_sha256": "ecf94f5d9a0961f130d656f616bc99c1313f1481a2406cba5cc6fac312b12849",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/ReplicaNondegenerate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/SmoothingMoments.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.SmoothingMoments",
+   "original_sha256": "863503a15649b4a7e84b15514de1b0d748883fc279e1cf303bc1d1590b6b5154",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/SmoothingMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/SphereBounds.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.SphereBounds",
+   "original_sha256": "0d867e5abb398531f0369f01c071856521ef5b406651210f7f1539a330f4ef50",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/SphereBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/SphereGeometry.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.SphereGeometry",
+   "original_sha256": "5cfedc04dd843fc053cc77122de1a8173fb10e3d96a2a8c5bf7fcce66c6980ad",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/SphereGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/StreamCaps.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.StreamCaps",
+   "original_sha256": "701e53e46660d67ad37df4e725239edce84ac57bdf39d88357ddd8748c066b70",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/StreamCaps.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/StreamEstimates.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.StreamEstimates",
+   "original_sha256": "b38beb52a6616eaa95f8702dc7734aaff253bbb6c96b57b8df776b6ec4c8be61",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/StreamEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/StreamIntegrals.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.StreamIntegrals",
+   "original_sha256": "253ea1689a275ab04209992cface61abcf7243edfb3c372cf2951809ef6f8867",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/StreamIntegrals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/StreamSlices.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.StreamSlices",
+   "original_sha256": "05d7bbb50513593454c42366641f3e18f493c5a31cb8eb5fa9eb648560e413ad",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/StreamSlices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/StreamTransfer.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.StreamTransfer",
+   "original_sha256": "3a3cf9edc868e36b54a21dab249d1afaaae3d04a7a26d8a5101999e4c369ef14",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/StreamTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/PosteriorReplicas/Regression/SupportVolume.lean"
+   },
+   "module": "OAI.Probability.PosteriorReplicas.Regression.SupportVolume",
+   "original_sha256": "de75742322fe23aaa4b2f984705551afb12ab062889d55eb3ee0e1b963ba7709",
+   "path": "OAI/Probability/PosteriorReplicas/Regression/SupportVolume.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Probability.PosteriorReplicas.Gaussian.ConstrainedGaussian",
+  "OAI.Probability.PosteriorReplicas.Gaussian.ConstrainedNoise",
+  "OAI.Probability.PosteriorReplicas.Gaussian.GaussianDensity",
+  "OAI.Probability.PosteriorReplicas.Gaussian.GaussianFiber",
+  "OAI.Probability.PosteriorReplicas.Gaussian.GaussianGramMoment",
+  "OAI.Probability.PosteriorReplicas.Gaussian.GaussianLogMoment",
+  "OAI.Probability.PosteriorReplicas.Gaussian.GaussianPolar",
+  "OAI.Probability.PosteriorReplicas.Gaussian.GaussianRowMix",
+  "OAI.Probability.PosteriorReplicas.Gaussian.GaussianSmallBall",
+  "OAI.Probability.PosteriorReplicas.Gaussian.GaussianWishart",
+  "OAI.Probability.PosteriorReplicas.Gaussian.GramTransform",
+  "OAI.Probability.PosteriorReplicas.Gaussian.MatrixNoise",
+  "OAI.Probability.PosteriorReplicas.Gaussian.ObservableGaussian",
+  "OAI.Probability.PosteriorReplicas.Gaussian.RadialIntegrals",
+  "OAI.Probability.PosteriorReplicas.Gaussian.RandomComplement",
+  "OAI.Probability.PosteriorReplicas.Geometry.AffineMoments",
+  "OAI.Probability.PosteriorReplicas.Geometry.BallJacobian",
+  "OAI.Probability.PosteriorReplicas.Geometry.BaseContinuity",
+  "OAI.Probability.PosteriorReplicas.Geometry.BaseFunProp",
+  "OAI.Probability.PosteriorReplicas.Geometry.BaseGeometry",
+  "OAI.Probability.PosteriorReplicas.Geometry.DensityBinEnvelope",
+  "OAI.Probability.PosteriorReplicas.Geometry.DensityBinsGeometry",
+  "OAI.Probability.PosteriorReplicas.Geometry.FrameTubes",
+  "OAI.Probability.PosteriorReplicas.Geometry.InverseMomentBins",
+  "OAI.Probability.PosteriorReplicas.Geometry.LabelConvolution",
+  "OAI.Probability.PosteriorReplicas.Geometry.LabelEllipsoids",
+  "OAI.Probability.PosteriorReplicas.Geometry.SphereDensity",
+  "OAI.Probability.PosteriorReplicas.Geometry.SphereSubspace",
+  "OAI.Probability.PosteriorReplicas.Geometry.SphereTubeQuantitative",
+  "OAI.Probability.PosteriorReplicas.Geometry.TupleMoments",
+  "OAI.Probability.PosteriorReplicas.Information.BinCutoff",
+  "OAI.Probability.PosteriorReplicas.Information.CmiKernel",
+  "OAI.Probability.PosteriorReplicas.Information.ConditionalKL",
+  "OAI.Probability.PosteriorReplicas.Information.ConditionalPiKL",
+  "OAI.Probability.PosteriorReplicas.Information.EntropyLossTest",
+  "OAI.Probability.PosteriorReplicas.Information.EntropyTest",
+  "OAI.Probability.PosteriorReplicas.Information.FiniteConditionalEntropy",
+  "OAI.Probability.PosteriorReplicas.Information.FiniteEntropyBounds",
+  "OAI.Probability.PosteriorReplicas.Information.FiniteKL",
+  "OAI.Probability.PosteriorReplicas.Information.FiniteStateDensity",
+  "OAI.Probability.PosteriorReplicas.Information.GenericInformationBound",
+  "OAI.Probability.PosteriorReplicas.Information.GraphKL",
+  "OAI.Probability.PosteriorReplicas.Information.HaarInformationEq",
+  "OAI.Probability.PosteriorReplicas.Information.HaarStateBound",
+  "OAI.Probability.PosteriorReplicas.Information.HeadlineInformation",
+  "OAI.Probability.PosteriorReplicas.Information.KLTools",
+  "OAI.Probability.PosteriorReplicas.Information.LikelihoodIntegrability",
+  "OAI.Probability.PosteriorReplicas.Information.LogComparison",
+  "OAI.Probability.PosteriorReplicas.Information.NormalizedLikelihood",
+  "OAI.Probability.PosteriorReplicas.Information.ObservableLikelihood",
+  "OAI.Probability.PosteriorReplicas.Information.ObservationCorrelation",
+  "OAI.Probability.PosteriorReplicas.Information.ParametricKernel",
+  "OAI.Probability.PosteriorReplicas.Information.PiKL",
+  "OAI.Probability.PosteriorReplicas.Information.RandomCorrelation",
+  "OAI.Probability.PosteriorReplicas.Information.RandomProjectionInformation",
+  "OAI.Probability.PosteriorReplicas.Information.ReplicaCost",
+  "OAI.Probability.PosteriorReplicas.Information.ReplicaFiniteKL",
+  "OAI.Probability.PosteriorReplicas.Information.ReplicaInformation",
+  "OAI.Probability.PosteriorReplicas.Information.ReplicaInformationBound",
+  "OAI.Probability.PosteriorReplicas.Information.ReplicaLoss",
+  "OAI.Probability.PosteriorReplicas.Information.ReplicaMeasureInformation",
+  "OAI.Probability.PosteriorReplicas.Information.StateExperiment",
+  "OAI.Probability.PosteriorReplicas.Information.StateSide",
+  "OAI.Probability.PosteriorReplicas.Kernels.DensityRatio",
+  "OAI.Probability.PosteriorReplicas.Kernels.KernelPi",
+  "OAI.Probability.PosteriorReplicas.Kernels.LiftedReplica",
+  "OAI.Probability.PosteriorReplicas.Kernels.PosteriorExperiment",
+  "OAI.Probability.PosteriorReplicas.Kernels.PosteriorKernel",
+  "OAI.Probability.PosteriorReplicas.Kernels.ReplicaGaussianMarginals",
+  "OAI.Probability.PosteriorReplicas.Kernels.ReplicaMeasure",
+  "OAI.Probability.PosteriorReplicas.Kernels.ReplicaTupleMarginals",
+  "OAI.Probability.PosteriorReplicas.Learners.CompletedKernelLaw",
+  "OAI.Probability.PosteriorReplicas.Learners.CompletedKernelLearner",
+  "OAI.Probability.PosteriorReplicas.Learners.HaarLawIdentification",
+  "OAI.Probability.PosteriorReplicas.Learners.JointKernelExperiment",
+  "OAI.Probability.PosteriorReplicas.Learners.JointLawBridge",
+  "OAI.Probability.PosteriorReplicas.Learners.KernelLearnerBridge",
+  "OAI.Probability.PosteriorReplicas.Learners.KernelSuccess",
+  "OAI.Probability.PosteriorReplicas.Learners.LearnerModelBridge",
+  "OAI.Probability.PosteriorReplicas.Main",
+  "OAI.Probability.PosteriorReplicas.Measures.BaseDisintegration",
+  "OAI.Probability.PosteriorReplicas.Measures.ConstrainedDensityExpectation",
+  "OAI.Probability.PosteriorReplicas.Measures.DensityDifferentiation",
+  "OAI.Probability.PosteriorReplicas.Measures.DensityTools",
+  "OAI.Probability.PosteriorReplicas.Measures.EqualApproximation",
+  "OAI.Probability.PosteriorReplicas.Measures.EqualBaseMeasures",
+  "OAI.Probability.PosteriorReplicas.Measures.EqualLabelIdentity",
+  "OAI.Probability.PosteriorReplicas.Measures.EqualLabelTransfer",
+  "OAI.Probability.PosteriorReplicas.Measures.EqualLabelVersions",
+  "OAI.Probability.PosteriorReplicas.Measures.EqualRightMeasure",
+  "OAI.Probability.PosteriorReplicas.Measures.EuclideanLabels",
+  "OAI.Probability.PosteriorReplicas.Measures.GaussianConstant",
+  "OAI.Probability.PosteriorReplicas.Measures.GaussianDifferentiation",
+  "OAI.Probability.PosteriorReplicas.Measures.PiTools",
+  "OAI.Probability.PosteriorReplicas.Measures.ProductFibers",
+  "OAI.Probability.PosteriorReplicas.Measures.ReferenceMoments",
+  "OAI.Probability.PosteriorReplicas.Measures.TiltNormalization",
+  "OAI.Probability.PosteriorReplicas.Model",
+  "OAI.Probability.PosteriorReplicas.Regression.AePiLast",
+  "OAI.Probability.PosteriorReplicas.Regression.AffineTubes",
+  "OAI.Probability.PosteriorReplicas.Regression.Conclusions",
+  "OAI.Probability.PosteriorReplicas.Regression.EuclideanNets",
+  "OAI.Probability.PosteriorReplicas.Regression.FiniteNets",
+  "OAI.Probability.PosteriorReplicas.Regression.FrostmanGeometry",
+  "OAI.Probability.PosteriorReplicas.Regression.Fubini",
+  "OAI.Probability.PosteriorReplicas.Regression.GaussianDomination",
+  "OAI.Probability.PosteriorReplicas.Regression.GaussianKernel",
+  "OAI.Probability.PosteriorReplicas.Regression.GaussianNoise",
+  "OAI.Probability.PosteriorReplicas.Regression.GramDistances",
+  "OAI.Probability.PosteriorReplicas.Regression.GramFactorization",
+  "OAI.Probability.PosteriorReplicas.Regression.HolderSet",
+  "OAI.Probability.PosteriorReplicas.Regression.InverseMoments",
+  "OAI.Probability.PosteriorReplicas.Regression.LabelDependence",
+  "OAI.Probability.PosteriorReplicas.Regression.LearnerBasics",
+  "OAI.Probability.PosteriorReplicas.Regression.LimitSet",
+  "OAI.Probability.PosteriorReplicas.Regression.LowerFubini",
+  "OAI.Probability.PosteriorReplicas.Regression.MemoryBounds",
+  "OAI.Probability.PosteriorReplicas.Regression.MemoryPrecision",
+  "OAI.Probability.PosteriorReplicas.Regression.ObservationContinuity",
+  "OAI.Probability.PosteriorReplicas.Regression.OuterBound",
+  "OAI.Probability.PosteriorReplicas.Regression.PiLast",
+  "OAI.Probability.PosteriorReplicas.Regression.ProductDensity",
+  "OAI.Probability.PosteriorReplicas.Regression.ProjectionBlocks",
+  "OAI.Probability.PosteriorReplicas.Regression.ProjectionCoupling",
+  "OAI.Probability.PosteriorReplicas.Regression.ReplicaKernel",
+  "OAI.Probability.PosteriorReplicas.Regression.ReplicaMoments",
+  "OAI.Probability.PosteriorReplicas.Regression.ReplicaNondegenerate",
+  "OAI.Probability.PosteriorReplicas.Regression.SmoothingMoments",
+  "OAI.Probability.PosteriorReplicas.Regression.SphereBounds",
+  "OAI.Probability.PosteriorReplicas.Regression.SphereGeometry",
+  "OAI.Probability.PosteriorReplicas.Regression.StreamCaps",
+  "OAI.Probability.PosteriorReplicas.Regression.StreamEstimates",
+  "OAI.Probability.PosteriorReplicas.Regression.StreamIntegrals",
+  "OAI.Probability.PosteriorReplicas.Regression.StreamSlices",
+  "OAI.Probability.PosteriorReplicas.Regression.StreamTransfer",
+  "OAI.Probability.PosteriorReplicas.Regression.SupportVolume"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/PosteriorReplicas.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Probability.PosteriorReplicas.Main",
+   "name": "OAI.PosteriorReplicas.source_main",
+   "statement_sha256": "b4d6a30a188670ce8b36a19cb81bc19e0da3635f9b6b7d30de96d7784da409d1"
+  }
+ ],
+ "task_id": "oai-posterior-replicas",
+ "task_revision": 1,
+ "title": "OpenAI math: Memory–sample lower bounds for noiseless Gaussian regression: Posterior-replica comparisons and sample lower bound",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

@@ -1,0 +1,781 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 1811801979
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.HarmonicGrowth",
+  "challenge_sha256": "02c9e5d8654bbbd6cc4de899fcaaf1fa550252cb0b3f3418921ffb8711f263fb",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/HarmonicGrowth.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.HarmonicGrowth",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Geometry.HarmonicGrowth.Main",
+   "theorem_names": [
+    "OAI.HarmonicCounterexample.main"
+   ]
+  },
+  "config_sha256": "5f390cbc0c9f2fe3dd7fc51bd86d3add956b8435140fe3a6b1b6d4d46887ffa9",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/HarmonicGrowth.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.HarmonicCounterexample.main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/Angular.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.Angular",
+   "original_sha256": "f9def49364212ab296fbbed3b3caf7b083f61119523b14d1f7c531565cfb5264",
+   "path": "OAI/Geometry/HarmonicGrowth/Angular.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/AngularStream.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.AngularStream",
+   "original_sha256": "a130406c75eb1cffd1f7175c27e557c5b0e00efcb63f82e2b68c7135d6c5467d",
+   "path": "OAI/Geometry/HarmonicGrowth/AngularStream.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/AngularTrace.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.AngularTrace",
+   "original_sha256": "d6d879754f97dd2d3c4cbbb5c1780f4f448ff1e734600a761d5c87dd8f6330be",
+   "path": "OAI/Geometry/HarmonicGrowth/AngularTrace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/Attainment.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.Attainment",
+   "original_sha256": "20d24ade193f29953243e290aa205ad93aa3bf33414bd401851beaffcf543863",
+   "path": "OAI/Geometry/HarmonicGrowth/Attainment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/Basic.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.Basic",
+   "original_sha256": "e61650b1426fdda610a8d0ec0f801c99306eab3ccb1d5cb395df0f97249082b8",
+   "path": "OAI/Geometry/HarmonicGrowth/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/Berger.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.Berger",
+   "original_sha256": "8829356436beb2998e0dca94672578517682c054167df8a7aa6092ed26f3ee85",
+   "path": "OAI/Geometry/HarmonicGrowth/Berger.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/ComplexHarmonics.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.ComplexHarmonics",
+   "original_sha256": "61ebe653fcf164ac42f81232d633a32203fc467a2abd9fe2bae6fb04ef162244",
+   "path": "OAI/Geometry/HarmonicGrowth/ComplexHarmonics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/ControlWords.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.ControlWords",
+   "original_sha256": "e92bfeb4aa86c2f1c249ac32721bfef35e4f3c5cd3de36cd6156d04703f7698c",
+   "path": "OAI/Geometry/HarmonicGrowth/ControlWords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/Counting.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.Counting",
+   "original_sha256": "ed30b0ec2b13adc733745bf21773c0cee4579d48c883da357409a09d48ec51a1",
+   "path": "OAI/Geometry/HarmonicGrowth/Counting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/Curvature.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.Curvature",
+   "original_sha256": "8611577e9e38ddb66f6b343cf0587574f31293b0f33f95a196d9bae8c3c320f0",
+   "path": "OAI/Geometry/HarmonicGrowth/Curvature.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/Cycling.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.Cycling",
+   "original_sha256": "45e5439742c9472aa8cfad7e8c257cae6ef511cb6f7fb3e3f84a8bb22d595b23",
+   "path": "OAI/Geometry/HarmonicGrowth/Cycling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/Damping.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.Damping",
+   "original_sha256": "67e3ec83dbab9849d05745cb1698b2835105083d9f94d9fd5236490adec18dd1",
+   "path": "OAI/Geometry/HarmonicGrowth/Damping.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/EndpointBounds.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.EndpointBounds",
+   "original_sha256": "a266ba3a47c97a82f41baaa4e1e5f3215216bec6a0542d9cf93011b04998122a",
+   "path": "OAI/Geometry/HarmonicGrowth/EndpointBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/Flow.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.Flow",
+   "original_sha256": "4c7fe8af4e667bea4ca537b76f1f65bc8641a8ef5215a342986f31d39b4cb2f9",
+   "path": "OAI/Geometry/HarmonicGrowth/Flow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/GlobalControl.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.GlobalControl",
+   "original_sha256": "17be9f82ede161ceac8faf6606dafdc4709e280309ec93804d0ba09d14794f6d",
+   "path": "OAI/Geometry/HarmonicGrowth/GlobalControl.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/Growth.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.Growth",
+   "original_sha256": "e7cf55778c19f5f229977c66b5ae86c4dd9267e531651b29706b40e12484de64",
+   "path": "OAI/Geometry/HarmonicGrowth/Growth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/HopfSpectrum.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.HopfSpectrum",
+   "original_sha256": "e0b922b65a3cf327f6bf7eda340365877598795d2aa7bdc5ae73d977589d949d",
+   "path": "OAI/Geometry/HarmonicGrowth/HopfSpectrum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/InsertedWord.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.InsertedWord",
+   "original_sha256": "bd9682a7aa2a00704a788f822ba065518ef763166b6a97b40b8ffae33243ee83",
+   "path": "OAI/Geometry/HarmonicGrowth/InsertedWord.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/Intrinsic.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.Intrinsic",
+   "original_sha256": "8ad6ca14436d866a893c03513b05c080dbcd64111065371f8d52b7b15536ad25",
+   "path": "OAI/Geometry/HarmonicGrowth/Intrinsic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/LieGeneration.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.LieGeneration",
+   "original_sha256": "bc2aa2956406c56a4c7fa5c681f977655b21d8525306fee8af9d6d53cc3e4a8f",
+   "path": "OAI/Geometry/HarmonicGrowth/LieGeneration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/LieSaturation.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.LieSaturation",
+   "original_sha256": "28b8df66ba79f7f6dec42d4c851692883cd0bacd66126428f7f78b453f931812",
+   "path": "OAI/Geometry/HarmonicGrowth/LieSaturation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/Main.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.Main",
+   "original_sha256": "526696848b9e89ca2fbc57b9e66d8b93a5c920ecd84134d868cbd3d48b45613f",
+   "path": "OAI/Geometry/HarmonicGrowth/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/PolarGeometry.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.PolarGeometry",
+   "original_sha256": "649c8f3256b04aaaa920e5044f80d2392c603a5d8bc1a322a5eb9a771ffbe224",
+   "path": "OAI/Geometry/HarmonicGrowth/PolarGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/PolynomialControl.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.PolynomialControl",
+   "original_sha256": "bfa02691a3cf1078e0e585729b131081d2a93dc6e46cfa25e2861a84f6f68f42",
+   "path": "OAI/Geometry/HarmonicGrowth/PolynomialControl.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/Profiles.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.Profiles",
+   "original_sha256": "145ed6ea56a970a0c2883cafecb2b55925963d7bee941ff019e7dd63b0b5beb5",
+   "path": "OAI/Geometry/HarmonicGrowth/Profiles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/PulseODE.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.PulseODE",
+   "original_sha256": "7cee1754f1b992a3981c20addfcbad67a0d747fc36f9183dfd901fc40e51cebc",
+   "path": "OAI/Geometry/HarmonicGrowth/PulseODE.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/PulseSystem.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.PulseSystem",
+   "original_sha256": "a3dd4cbdf7e95043c3462f6b92e0afc0a482c46be90c511197b62d169b9a106e",
+   "path": "OAI/Geometry/HarmonicGrowth/PulseSystem.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/RealForms.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.RealForms",
+   "original_sha256": "7640bbe2cb4b1f6daa33ab3c62737ca1e2e50229a2de6a452ceb1a814ad3a0fd",
+   "path": "OAI/Geometry/HarmonicGrowth/RealForms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/Realization.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.Realization",
+   "original_sha256": "7a7caf82157927d1d47296f2f7749ce89f6aa5a7d2d55feb14a19d3f8c98c554",
+   "path": "OAI/Geometry/HarmonicGrowth/Realization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/ScalarODE.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.ScalarODE",
+   "original_sha256": "f4d5a90d2f7810eda57da018ba104d03a29c59e30d9ca91864d22883a54bfa6a",
+   "path": "OAI/Geometry/HarmonicGrowth/ScalarODE.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/SmoothWord.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.SmoothWord",
+   "original_sha256": "73321c8e709b71eecc5d3b1c13107e43f8e80ccd826e73cc4d4321d5d8143a16",
+   "path": "OAI/Geometry/HarmonicGrowth/SmoothWord.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/SpectralSelection.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.SpectralSelection",
+   "original_sha256": "893b7cf700717baff53cd8da866d1c67127de5fa13b118cd1f4b7f79aaaa4886",
+   "path": "OAI/Geometry/HarmonicGrowth/SpectralSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/StreamData.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.StreamData",
+   "original_sha256": "df01f4a10b13aa0edb0f64fb254ac8d793647c94e24534571d86a213471d84e2",
+   "path": "OAI/Geometry/HarmonicGrowth/StreamData.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/Taylor.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.Taylor",
+   "original_sha256": "1cf694cd3639221e870b98b044b048c0abc32a7e5861cb4fd16f9a61e0bf457a",
+   "path": "OAI/Geometry/HarmonicGrowth/Taylor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/Transmission.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.Transmission",
+   "original_sha256": "5f1e43b3df63aaf1b1c14e62797dacf0a722663aea16935213f100c4cec4d7e8",
+   "path": "OAI/Geometry/HarmonicGrowth/Transmission.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/HarmonicGrowth/Variation.lean"
+   },
+   "module": "OAI.Geometry.HarmonicGrowth.Variation",
+   "original_sha256": "49b2955ef8bb82991325ddd0a4b2354d7428b9945f197cd71fb798873aa26e53",
+   "path": "OAI/Geometry/HarmonicGrowth/Variation.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Geometry.HarmonicGrowth.Angular",
+  "OAI.Geometry.HarmonicGrowth.AngularStream",
+  "OAI.Geometry.HarmonicGrowth.AngularTrace",
+  "OAI.Geometry.HarmonicGrowth.Attainment",
+  "OAI.Geometry.HarmonicGrowth.Basic",
+  "OAI.Geometry.HarmonicGrowth.Berger",
+  "OAI.Geometry.HarmonicGrowth.ComplexHarmonics",
+  "OAI.Geometry.HarmonicGrowth.ControlWords",
+  "OAI.Geometry.HarmonicGrowth.Counting",
+  "OAI.Geometry.HarmonicGrowth.Curvature",
+  "OAI.Geometry.HarmonicGrowth.Cycling",
+  "OAI.Geometry.HarmonicGrowth.Damping",
+  "OAI.Geometry.HarmonicGrowth.EndpointBounds",
+  "OAI.Geometry.HarmonicGrowth.Flow",
+  "OAI.Geometry.HarmonicGrowth.GlobalControl",
+  "OAI.Geometry.HarmonicGrowth.Growth",
+  "OAI.Geometry.HarmonicGrowth.HopfSpectrum",
+  "OAI.Geometry.HarmonicGrowth.InsertedWord",
+  "OAI.Geometry.HarmonicGrowth.Intrinsic",
+  "OAI.Geometry.HarmonicGrowth.LieGeneration",
+  "OAI.Geometry.HarmonicGrowth.LieSaturation",
+  "OAI.Geometry.HarmonicGrowth.Main",
+  "OAI.Geometry.HarmonicGrowth.PolarGeometry",
+  "OAI.Geometry.HarmonicGrowth.PolynomialControl",
+  "OAI.Geometry.HarmonicGrowth.Profiles",
+  "OAI.Geometry.HarmonicGrowth.PulseODE",
+  "OAI.Geometry.HarmonicGrowth.PulseSystem",
+  "OAI.Geometry.HarmonicGrowth.RealForms",
+  "OAI.Geometry.HarmonicGrowth.Realization",
+  "OAI.Geometry.HarmonicGrowth.ScalarODE",
+  "OAI.Geometry.HarmonicGrowth.SmoothWord",
+  "OAI.Geometry.HarmonicGrowth.SpectralSelection",
+  "OAI.Geometry.HarmonicGrowth.StreamData",
+  "OAI.Geometry.HarmonicGrowth.Taylor",
+  "OAI.Geometry.HarmonicGrowth.Transmission",
+  "OAI.Geometry.HarmonicGrowth.Variation"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/HarmonicGrowth.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Geometry.HarmonicGrowth.Main",
+   "name": "OAI.HarmonicCounterexample.main",
+   "statement_sha256": "a07dec4bfb3063f6e9377b096757045fdbf823867f58fc8ad393e08b4cad96bb"
+  }
+ ],
+ "task_id": "oai-harmonic-growth",
+ "task_revision": 1,
+ "title": "OpenAI math: Failure of integer-degree harmonic dimension comparison: Counterexample to harmonic dimension comparison",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

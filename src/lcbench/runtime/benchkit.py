@@ -27,7 +27,7 @@ CHECK_SCHEMA = "lcbench.check.v1"
 # semver of the scorer (this file and the organizer Lean tool sources); printed by ./check and recorded in
 # TASK.json and every receipt. Every change to those files is a new version (tests/unit/test_scorer_versions.py):
 # a package built by one scorer is rejected by a verifier running another.
-SCORER_VERSION = "1.0.0-rc.10.3"
+SCORER_VERSION = "1.0.0-rc.11"
 # metrics every check and receipt reports next to the primary one (null until the scorer computes them)
 RECORDED_METRICS = ["dag_nodes_v1"]
 
@@ -1146,11 +1146,11 @@ def paranoid_default() -> bool:
 
 
 def build_and_extract(task: dict, project: Path, tools_dir: Path, runner=None,
-                      background_manifest: Path | None = None, paranoid: bool = False) -> dict:
+                      background_manifest: Path | None = None, paranoid: bool = False, replay: bool = True) -> dict:
     """`build_stages`; an organizer helper command that overruns its own wall-clock bound (`lake env printenv`,
     compiling the organizer tools) is an infrastructure timeout too, never a verdict."""
     try:
-        return build_stages(task, project, tools_dir, runner, background_manifest, paranoid)
+        return build_stages(task, project, tools_dir, runner, background_manifest, paranoid, replay)
     except subprocess.TimeoutExpired as e:
         cmd = " ".join(str(c) for c in (e.cmd or [])[:3])
         return {"stage": "infrastructure", "timings": {},
@@ -1175,14 +1175,16 @@ def stop_message(stop: InfrastructureStop, during: str) -> str:
 
 
 def build_stages(task: dict, project: Path, tools_dir: Path, runner=None,
-                 background_manifest: Path | None = None, paranoid: bool = False) -> dict:
+                 background_manifest: Path | None = None, paranoid: bool = False, replay: bool = True) -> dict:
     """Build, re-hash the pinned background .olean files (when TASK.json pins them), replay every owner module into
     the kernel (`lcbench-check replay`: stock leanchecker's check with one background import), then read the validity
     facts (statements, axioms, frozen closures, imports) and count and export the charged declarations
     (`lcbench-check facts`: the extractor and the metric counter on one import of the owner modules). The organizer
     tools are compiled executables that import the owner modules at run time in a fresh process (no participant
     initializers, no organizer command elaborated in the participant's environment). With `paranoid`, stock
-    `leanchecker` also replays every owner module (one process each), and the two replays must agree."""
+    `leanchecker` also replays every owner module (one process each), and the two replays must agree. `replay=False`
+    is only for make-task's second extraction of the same build (the first one replayed it); check and verify always
+    replay."""
     if runner is None:
         # make-task passes a draft task without `toolchain`; it checks `lean --githash` itself
         pinned = task if "toolchain" in task else {"toolchain": {"id": "(from PATH)", "lean_githash": run(
@@ -1257,9 +1259,14 @@ def build_stages(task: dict, project: Path, tools_dir: Path, runner=None,
                 "log": f"{INFRASTRUCTURE_ERROR}: the organizer tools could not be built on this machine; this says "
                        f"nothing about the submission: re-run it on another machine\n{err}"}
     runner.expose(check_exe.parents[3])
+    if not replay:
+        return facts_stage(task, runner, check_exe, lake_env, timed, stopped, owners, pinned, background_manifest,
+                           [], {}, {"mode": "skipped", "fallback_reason": "make-task re-extraction of a replayed build"},
+                           timings)
     # one process replays every owner, each declaration in the kernel with the task's heartbeat budget
     budget = limits["kernel_heartbeats"]
-    replay = timed("kernel_replay_s", lake_env([str(check_exe), "replay", "--kernel-heartbeats", str(budget), *owners]))
+    replay = timed("kernel_replay_s", lake_env([str(check_exe), "replay", "--kernel-heartbeats", str(budget),
+                                                "--jobs", str(replay_jobs()), *owners]))
     if replay is None:
         return stopped()
     try:
@@ -1288,6 +1295,15 @@ def build_stages(task: dict, project: Path, tools_dir: Path, runner=None,
                 return {"stage": "kernel_replay", "log": (log + stock.stdout + stock.stderr)[-6000:],
                         "timings": timings, "kernel_replay_mode": mode}
             replay_logs.append(f"leanchecker {m}: ok")
+    return facts_stage(task, runner, check_exe, lake_env, timed, stopped, owners, pinned, background_manifest,
+                       replay_logs, heartbeats, mode, timings)
+
+
+def facts_stage(task: dict, runner, check_exe: Path, lake_env, timed, stopped, owners: list[str], pinned,
+                background_manifest: Path | None, replay_logs: list[str], heartbeats: dict, mode: dict,
+                timings: dict) -> dict:
+    """The validity facts and the metrics of a built, replayed project (`lcbench-check facts`): the last stage of
+    build_stages."""
     out = runner.project / "bench_extract__.json"
     if out.exists():
         out.unlink()
@@ -1353,6 +1369,14 @@ def build_stages(task: dict, project: Path, tools_dir: Path, runner=None,
             "heartbeats": heartbeats, "kernel_replay_mode": mode}
 
 
+def replay_jobs() -> int:
+    """How many owner modules the kernel replay checks at once when it runs one process per owner: the CPUs this
+    process may use (a batch job's or a sandbox's allocation, not the whole machine), at most 16. The verdict and
+    the report rows do not depend on it, only the time."""
+    cpus = len(os.sched_getaffinity(0)) if hasattr(os, "sched_getaffinity") else (os.cpu_count() or 1)
+    return max(1, min(16, cpus))
+
+
 def read_metric_result(path: Path, returncode: int) -> dict:
     """The counter's lcbench.metric_result.v1 from the request's "result" file (`lcbench-check facts`), read whole;
     {"error": "no result (exit N)"} when the counter wrote no complete result there."""
@@ -1400,7 +1424,9 @@ def task_in_background(task: dict, module: str) -> bool:
         or module in bg.get("fixed_modules", [])
 
 
-IMPORT_RE = re.compile(r"^\s*import\s+(\S+)", re.M)
+# an import command, also in the module system's forms (`public`/`private`, `meta`, `import all`): its module is the
+# last word; `all` is not a module (Lean 4.34.1 sources write `import all M`)
+IMPORT_RE = re.compile(r"^\s*(?:(?:public|private)\s+)?(?:meta\s+)?import\s+(?:all\s+)?(\S+)", re.M)
 
 
 # `set_option Elab.async false` at the start of a line (alone or as `... in`): Lean then elaborates the file's proofs on

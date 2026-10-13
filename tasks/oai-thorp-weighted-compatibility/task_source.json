@@ -1,0 +1,761 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 15466513
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.ThorpWeightedCompatibility",
+  "challenge_sha256": "ac71a11b9450c2f10be55aadc2d9d7c325a9eaafbe9db8a288a8128b6d5ce4df",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ThorpWeightedCompatibility.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.ThorpWeightedCompatibility",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Probability.ThorpCompatibility.Main",
+   "theorem_names": [
+    "OAI.ThorpCompatibility.weightedCompatibility_main"
+   ]
+  },
+  "config_sha256": "2eaaae47369fc7f1f0981778763d8cb9234f492542599b5d8b35f99c4a5267a8",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ThorpWeightedCompatibility.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.ThorpCompatibility.weightedCompatibility_main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/BinomialBounds.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.BinomialBounds",
+   "original_sha256": "186bab5f2728df632c529e23e0ba652d993569d2b0cc0ba0faffb8a81df23686",
+   "path": "OAI/Probability/ThorpCompatibility/BinomialBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/ClumpCost.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.ClumpCost",
+   "original_sha256": "18400be5d70b89b0392bff682f8af8b1892a019a56173863f8092cd0050025ce",
+   "path": "OAI/Probability/ThorpCompatibility/ClumpCost.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/ClumpMoments.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.ClumpMoments",
+   "original_sha256": "7f598a783e6d1c096c56655a0a57249906dd8a82a41a4e851efc0f76ed6bf7f1",
+   "path": "OAI/Probability/ThorpCompatibility/ClumpMoments.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/ClumpParameters.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.ClumpParameters",
+   "original_sha256": "1b5f3099c17cf9444fc1ff9470bec540cdf8ee6ebe50405b63ca04077ceed214",
+   "path": "OAI/Probability/ThorpCompatibility/ClumpParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/ConditionalEntropy.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.ConditionalEntropy",
+   "original_sha256": "8a712f02540622b92414acb6b78dac385b443022970cfacccdac670ee1bf00c6",
+   "path": "OAI/Probability/ThorpCompatibility/ConditionalEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/Entropy.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.Entropy",
+   "original_sha256": "f7bc938622cfc19ff2331b5359e49e78e1d2e8d02c67b777053967c8b0dfb7a8",
+   "path": "OAI/Probability/ThorpCompatibility/Entropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/EntropyBounds.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.EntropyBounds",
+   "original_sha256": "07aa869ade6f664e66df9a63539706f9c8b9d6e10ee6d71aca8fa32ef159bd4b",
+   "path": "OAI/Probability/ThorpCompatibility/EntropyBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/EntropyChain.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.EntropyChain",
+   "original_sha256": "5a611049f92fb7d32df015c8b30d67c41784a9726a441919ce1a4f04456997f1",
+   "path": "OAI/Probability/ThorpCompatibility/EntropyChain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/EntropyEstimate.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.EntropyEstimate",
+   "original_sha256": "120143ffcdb8091885cc1c8cbb85e095da0428b5d7b74cfcb9a68cd78f3024e2",
+   "path": "OAI/Probability/ThorpCompatibility/EntropyEstimate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/ExposureEntropy.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.ExposureEntropy",
+   "original_sha256": "b93dcac12acec4b31ce533856a8b611decef255a44aa8c9fddbd4d96aee74174",
+   "path": "OAI/Probability/ThorpCompatibility/ExposureEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/FactorialBounds.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.FactorialBounds",
+   "original_sha256": "c8c4d4f3ce04a623f6b56f65915ffb8397e521720778ac78d06c85148ef7ddbc",
+   "path": "OAI/Probability/ThorpCompatibility/FactorialBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/FiniteLaw.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.FiniteLaw",
+   "original_sha256": "45aebcc272bccc8955644deac02eebba551b30d6619c7f41bb61729b0bde17bf",
+   "path": "OAI/Probability/ThorpCompatibility/FiniteLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/GridDeficits.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.GridDeficits",
+   "original_sha256": "382d3e8e2a4c39e7d0528238b3898234826fd9dd53816a17714477a1965991c3",
+   "path": "OAI/Probability/ThorpCompatibility/GridDeficits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/GridEntropy.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.GridEntropy",
+   "original_sha256": "b2c79e39276ef2056f592dc05121fa99923fe2cb6d0fc78d9f6268c0297f129a",
+   "path": "OAI/Probability/ThorpCompatibility/GridEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/GridExposure.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.GridExposure",
+   "original_sha256": "fff4a2c1381867c4450637d9b886548a76304671ea19ca1e1fd803cafe405ac6",
+   "path": "OAI/Probability/ThorpCompatibility/GridExposure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/HeavyColumns.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.HeavyColumns",
+   "original_sha256": "36f08fed328b34ea45e6352f819f67eb9c56a82174a34467695cf746135c9e5b",
+   "path": "OAI/Probability/ThorpCompatibility/HeavyColumns.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/HeavyEntries.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.HeavyEntries",
+   "original_sha256": "a58d07f748e32adff4b7e2cd27f13ae1f63d95abf5b02b2b382d118f4bff333e",
+   "path": "OAI/Probability/ThorpCompatibility/HeavyEntries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/LightRescaling.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.LightRescaling",
+   "original_sha256": "b17b73d0b331551367b0bc397c32805dba322bd3636cbd4d90f993f76d3dd40f",
+   "path": "OAI/Probability/ThorpCompatibility/LightRescaling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/ListIncidence.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.ListIncidence",
+   "original_sha256": "758a6eadd0a90a788fb8859cdb6131a37b2480106cd0d640726bcd201e0366ab",
+   "path": "OAI/Probability/ThorpCompatibility/ListIncidence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/LogEstimates.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.LogEstimates",
+   "original_sha256": "3af3015d271dcfccb8b6e4e379a24c99f6193607c61d2557fb158f123b62b61e",
+   "path": "OAI/Probability/ThorpCompatibility/LogEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/Main.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.Main",
+   "original_sha256": "08d25535a816de97f48af16155c27d5b9a7b1b344e0d93c88770506a1e16890f",
+   "path": "OAI/Probability/ThorpCompatibility/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/Model.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.Model",
+   "original_sha256": "d59d3bd3daee76e071ae5a569ba9583d0b6df0c2e1edfbb8f22f9c958ae1c690",
+   "path": "OAI/Probability/ThorpCompatibility/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/MomentBound.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.MomentBound",
+   "original_sha256": "b5d7442c3b4862e8da7ce12e585f4e0680a416d96711b1b2dfaad9bf090f3824",
+   "path": "OAI/Probability/ThorpCompatibility/MomentBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/Normalization.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.Normalization",
+   "original_sha256": "418c1ea419824fc8e0a3ff2a822c27079c4300d26add95be247c90b39da447f5",
+   "path": "OAI/Probability/ThorpCompatibility/Normalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/PermutationCount.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.PermutationCount",
+   "original_sha256": "cffdf73940f241efdf82ba707ca75133ba7832606550db0cec11385fe0b9121d",
+   "path": "OAI/Probability/ThorpCompatibility/PermutationCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/PermutationProbability.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.PermutationProbability",
+   "original_sha256": "53eeb9eba16c3bcbd39ff5274130b76ce8ab209df4f237f5170394b978bc527c",
+   "path": "OAI/Probability/ThorpCompatibility/PermutationProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/Prediction.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.Prediction",
+   "original_sha256": "02ba4f66be9a952ad9e1e4c87a8f0bb54d9dcceffa6c5454151a847588c7b993",
+   "path": "OAI/Probability/ThorpCompatibility/Prediction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/RandomExclusion.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.RandomExclusion",
+   "original_sha256": "8c527f6acaf55de905470cc180ccf391ab26d7361b35dc322fac69707dcc39cf",
+   "path": "OAI/Probability/ThorpCompatibility/RandomExclusion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/RankAverages.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.RankAverages",
+   "original_sha256": "c65b65f30f07b720b52187f03a56b0312267a814a7272d114a57d29f5b3af817",
+   "path": "OAI/Probability/ThorpCompatibility/RankAverages.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/RankLaw.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.RankLaw",
+   "original_sha256": "d31d301d5123099158f656fe124be93f6fe08cbf59f65f00116dd348838dc4e0",
+   "path": "OAI/Probability/ThorpCompatibility/RankLaw.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/UniformAverages.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.UniformAverages",
+   "original_sha256": "6207b05e8d502663554006ae2e9d913903719fa3d754c02eb071ef0f0eaf7e6d",
+   "path": "OAI/Probability/ThorpCompatibility/UniformAverages.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/UniformSupport.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.UniformSupport",
+   "original_sha256": "88103464013c3ddc9d787bf99cc67faf56cceb2e935a05204dc6eeb4016ac197",
+   "path": "OAI/Probability/ThorpCompatibility/UniformSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/VariationalBound.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.VariationalBound",
+   "original_sha256": "71f52453ccddceb23564332c993959ed567e7c428f883bd4043f65e65c809cc4",
+   "path": "OAI/Probability/ThorpCompatibility/VariationalBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/ThorpCompatibility/WeightedGibbs.lean"
+   },
+   "module": "OAI.Probability.ThorpCompatibility.WeightedGibbs",
+   "original_sha256": "a29d4818bf55619ba5377fb5e74b81c964281213cdf86a1a198641f153a44d64",
+   "path": "OAI/Probability/ThorpCompatibility/WeightedGibbs.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Probability.ThorpCompatibility.BinomialBounds",
+  "OAI.Probability.ThorpCompatibility.ClumpCost",
+  "OAI.Probability.ThorpCompatibility.ClumpMoments",
+  "OAI.Probability.ThorpCompatibility.ClumpParameters",
+  "OAI.Probability.ThorpCompatibility.ConditionalEntropy",
+  "OAI.Probability.ThorpCompatibility.Entropy",
+  "OAI.Probability.ThorpCompatibility.EntropyBounds",
+  "OAI.Probability.ThorpCompatibility.EntropyChain",
+  "OAI.Probability.ThorpCompatibility.EntropyEstimate",
+  "OAI.Probability.ThorpCompatibility.ExposureEntropy",
+  "OAI.Probability.ThorpCompatibility.FactorialBounds",
+  "OAI.Probability.ThorpCompatibility.FiniteLaw",
+  "OAI.Probability.ThorpCompatibility.GridDeficits",
+  "OAI.Probability.ThorpCompatibility.GridEntropy",
+  "OAI.Probability.ThorpCompatibility.GridExposure",
+  "OAI.Probability.ThorpCompatibility.HeavyColumns",
+  "OAI.Probability.ThorpCompatibility.HeavyEntries",
+  "OAI.Probability.ThorpCompatibility.LightRescaling",
+  "OAI.Probability.ThorpCompatibility.ListIncidence",
+  "OAI.Probability.ThorpCompatibility.LogEstimates",
+  "OAI.Probability.ThorpCompatibility.Main",
+  "OAI.Probability.ThorpCompatibility.Model",
+  "OAI.Probability.ThorpCompatibility.MomentBound",
+  "OAI.Probability.ThorpCompatibility.Normalization",
+  "OAI.Probability.ThorpCompatibility.PermutationCount",
+  "OAI.Probability.ThorpCompatibility.PermutationProbability",
+  "OAI.Probability.ThorpCompatibility.Prediction",
+  "OAI.Probability.ThorpCompatibility.RandomExclusion",
+  "OAI.Probability.ThorpCompatibility.RankAverages",
+  "OAI.Probability.ThorpCompatibility.RankLaw",
+  "OAI.Probability.ThorpCompatibility.UniformAverages",
+  "OAI.Probability.ThorpCompatibility.UniformSupport",
+  "OAI.Probability.ThorpCompatibility.VariationalBound",
+  "OAI.Probability.ThorpCompatibility.WeightedGibbs"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/ThorpWeightedCompatibility.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Probability.ThorpCompatibility.Main",
+   "name": "OAI.ThorpCompatibility.weightedCompatibility_main",
+   "statement_sha256": "b767995ec74094125bb95c279a3c6ffccfc33d507618bcc915fa36b54d4e85d9"
+  }
+ ],
+ "task_id": "oai-thorp-weighted-compatibility",
+ "task_revision": 1,
+ "title": "OpenAI math: Optimal logarithmic mixing of the Thorp shuffle: Weighted row–column compatibility bound",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

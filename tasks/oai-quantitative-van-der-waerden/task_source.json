@@ -1,0 +1,1571 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 73951922
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.QuantitativeVanDerWaerden",
+  "challenge_sha256": "1caa563bbf7a5602adb8cdbbc06aaf1e3d4d5fe27ed4bebf2bf44cf2937a6593",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/QuantitativeVanDerWaerden.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.QuantitativeVanDerWaerden",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Combinatorics.ProgressionColoring.Main",
+   "theorem_names": [
+    "OAI.QuantitativeVanDerWaerden.uniform_lower_bound"
+   ]
+  },
+  "config_sha256": "0fcea93df537b8451e08f27d23231cb1b05b515afee53c5d1d8b33dfcfd814fa",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/QuantitativeVanDerWaerden.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.QuantitativeVanDerWaerden.uniform_lower_bound": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/AdaptiveMesh.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.AdaptiveMesh",
+   "original_sha256": "3266e1add8c8e2d15e80aa984d4cbff4f826c0fd741db4113c65dacb4ea8fc35",
+   "path": "OAI/Combinatorics/ProgressionColoring/AdaptiveMesh.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/AdaptiveMeshBreakpoints.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.AdaptiveMeshBreakpoints",
+   "original_sha256": "ca55257a72d1ab819661a853fc75bf221b67a7b3a2d9012752c3d20ca2122160",
+   "path": "OAI/Combinatorics/ProgressionColoring/AdaptiveMeshBreakpoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/AdaptiveMeshCounting.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.AdaptiveMeshCounting",
+   "original_sha256": "c9d73945b569f3977529a4e5ee3eecad6bc3dc9f0f25cbdb62bdb603e9d99eb5",
+   "path": "OAI/Combinatorics/ProgressionColoring/AdaptiveMeshCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/AffineEntropy.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.AffineEntropy",
+   "original_sha256": "dd1d25e46f7363cac7be391eb0060a725cb42b9f35a3c57a7de86b1ebf565086",
+   "path": "OAI/Combinatorics/ProgressionColoring/AffineEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/AffineEntropyNat.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.AffineEntropyNat",
+   "original_sha256": "b07980bdbef47372032772b33d0a6f6bccf7bf7a961d430122f78e2662e39356",
+   "path": "OAI/Combinatorics/ProgressionColoring/AffineEntropyNat.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/AnchoredPatternDefinitions.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.AnchoredPatternDefinitions",
+   "original_sha256": "d7f0394719ab9c5c821d9bc4d04abacd00f9dc36695e2ad87235d483b4bdb042",
+   "path": "OAI/Combinatorics/ProgressionColoring/AnchoredPatternDefinitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/AnchoredPatterns.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.AnchoredPatterns",
+   "original_sha256": "36054b8d97d064c51116abe96a7fbfb16be9a6370ba77882039a7f62fc64c39e",
+   "path": "OAI/Combinatorics/ProgressionColoring/AnchoredPatterns.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/Arrangement.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.Arrangement",
+   "original_sha256": "6dd5ca8287a72843d30b3b741653c89c3d47fb2a959fde739d9f016d721e4524",
+   "path": "OAI/Combinatorics/ProgressionColoring/Arrangement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/Asymptotics.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.Asymptotics",
+   "original_sha256": "f9355b4546f278f8cb0e4c330f7267157ef4c49f91f786a49755baef023d0dd9",
+   "path": "OAI/Combinatorics/ProgressionColoring/Asymptotics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/Basic.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.Basic",
+   "original_sha256": "b4643804e9017dba423b1ebbeb13724dce0c1a349409b73cb72f08d91b7c35cc",
+   "path": "OAI/Combinatorics/ProgressionColoring/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/BlockCoverage.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.BlockCoverage",
+   "original_sha256": "0c1ff636a7ead8bde57722e46a55e4c1e87f4040b5707e7788e96630f68a3fe7",
+   "path": "OAI/Combinatorics/ProgressionColoring/BlockCoverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ClosestReturn.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ClosestReturn",
+   "original_sha256": "bfc91ae09f01a590842e4385cce2de21ab4a8adcbbc100e5c7c3e462f335774c",
+   "path": "OAI/Combinatorics/ProgressionColoring/ClosestReturn.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ClosestReturnEstimates.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ClosestReturnEstimates",
+   "original_sha256": "e4f2aa5e409deebc6304921cfc80464462bc8e2de0abd23f63fd4dcc69527fb8",
+   "path": "OAI/Combinatorics/ProgressionColoring/ClosestReturnEstimates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ComparisonOutputs.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ComparisonOutputs",
+   "original_sha256": "3b44c7e1aac596c7fe974362a532a1a9607e6ce58fa21502c14f83806adf18c0",
+   "path": "OAI/Combinatorics/ProgressionColoring/ComparisonOutputs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ConstructionArithmetic.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ConstructionArithmetic",
+   "original_sha256": "a903935f8a1b1694a5544672c93b76d89badec8f4248d5626124890a148fe071",
+   "path": "OAI/Combinatorics/ProgressionColoring/ConstructionArithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ConstructionDichotomyDenominator.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ConstructionDichotomyDenominator",
+   "original_sha256": "31b626a9f2a9b0b7cb248edeb03cd31a8dc42c61d1dd9711e27f7b7a97b9cba6",
+   "path": "OAI/Combinatorics/ProgressionColoring/ConstructionDichotomyDenominator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ConstructionDichotomyScales.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ConstructionDichotomyScales",
+   "original_sha256": "062710ef013cba8a6b729f4dff5355fcae4b2c1f971ebb03aedb26158a3c9180",
+   "path": "OAI/Combinatorics/ProgressionColoring/ConstructionDichotomyScales.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ConstructionHeavyLabelReturn.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ConstructionHeavyLabelReturn",
+   "original_sha256": "fed3902ed514328ff19d435b056df88a9689c4a26af25c9e8013a7a5bd31d3cf",
+   "path": "OAI/Combinatorics/ProgressionColoring/ConstructionHeavyLabelReturn.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ConstructionHeavyLight.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ConstructionHeavyLight",
+   "original_sha256": "54d9356d4c5aab9b0285e7d51c88fbe404309b2abdea91a16b142a4115136ccd",
+   "path": "OAI/Combinatorics/ProgressionColoring/ConstructionHeavyLight.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ConstructionModel.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ConstructionModel",
+   "original_sha256": "c44c122a4f37aeab3113276cc835a8dea6de16a5e4a68634c14f758f4b57c540",
+   "path": "OAI/Combinatorics/ProgressionColoring/ConstructionModel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ConstructionModelBounds.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ConstructionModelBounds",
+   "original_sha256": "f92ff8c14f2977bf1ae41d6e4c5dbe280d0828ac4bc087f8bb9b56849ef3ca30",
+   "path": "OAI/Combinatorics/ProgressionColoring/ConstructionModelBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ConstructionSignatureBudget.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ConstructionSignatureBudget",
+   "original_sha256": "38c1a29ec1b6be85a4da7eb478a86fdb016f300b0b6c15600bcb80e14ba2a441",
+   "path": "OAI/Combinatorics/ProgressionColoring/ConstructionSignatureBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ConstructionWordFamily.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ConstructionWordFamily",
+   "original_sha256": "51a5940e23d7b147a7398d3a35f90234be12ec5f28dea603b67d5b484d7bae4a",
+   "path": "OAI/Combinatorics/ProgressionColoring/ConstructionWordFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/CoshBound.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.CoshBound",
+   "original_sha256": "9fdb94fbc866461caa979b062625bb63b73d4ee294d2af95b357d58e921e12f5",
+   "path": "OAI/Combinatorics/ProgressionColoring/CoshBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/CyclicBasic.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.CyclicBasic",
+   "original_sha256": "ece90b81cc625fc21eb4936a31f44c36fe4bf4e35a9d4e7bf2fd88c2deeff7cd",
+   "path": "OAI/Combinatorics/ProgressionColoring/CyclicBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/CyclicBlockLabels.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.CyclicBlockLabels",
+   "original_sha256": "9e3d72ae3c3ca8713b94ecaa7e0719b11248a86c34e68d2d87429ff3a3cf2819",
+   "path": "OAI/Combinatorics/ProgressionColoring/CyclicBlockLabels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/CyclicColoring.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.CyclicColoring",
+   "original_sha256": "d45bf0708775700fab18357467fd6d7c7394f13418bd1a6a842209a9a1069f8f",
+   "path": "OAI/Combinatorics/ProgressionColoring/CyclicColoring.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/CyclicHeavyIntervalWidth.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.CyclicHeavyIntervalWidth",
+   "original_sha256": "3fc70bf56ce27fb95998fe0034f0cc4d4ddc4134672ed4e474a6c9b4fb8d5b96",
+   "path": "OAI/Combinatorics/ProgressionColoring/CyclicHeavyIntervalWidth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/CyclicModel.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.CyclicModel",
+   "original_sha256": "f3d018e50890fa26c9d7c9043bd4cd3f503dd44ab77f956889c2c2886c5e4951",
+   "path": "OAI/Combinatorics/ProgressionColoring/CyclicModel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/CyclicRationalReturn.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.CyclicRationalReturn",
+   "original_sha256": "b7a631e8b3627ea7355c375a2efcc3b8c7b814f63d1e0185ccac04b4384b7de0",
+   "path": "OAI/Combinatorics/ProgressionColoring/CyclicRationalReturn.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/CyclicSignatures.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.CyclicSignatures",
+   "original_sha256": "65045f08ff53deaf2e9f65a94b504b9c280c5ab535d23e3ce13d8bf67cba7ce1",
+   "path": "OAI/Combinatorics/ProgressionColoring/CyclicSignatures.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/CyclicWitness.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.CyclicWitness",
+   "original_sha256": "d4334250fe00c44726395cea30ee36358f66de8d95d5ecad7b03aa5c5a52eb35",
+   "path": "OAI/Combinatorics/ProgressionColoring/CyclicWitness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/Dichotomy.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.Dichotomy",
+   "original_sha256": "f1e489d9620b12fd38bb85dd86385fbb3665261327408d6c346e136021b68896",
+   "path": "OAI/Combinatorics/ProgressionColoring/Dichotomy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/DigitProduct.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.DigitProduct",
+   "original_sha256": "c12ea4f3760705fe5c25c0a42cf41d4432b5d5d25fcb87f8c825e4f22faed0c5",
+   "path": "OAI/Combinatorics/ProgressionColoring/DigitProduct.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/DigitProductBounds.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.DigitProductBounds",
+   "original_sha256": "a488ff55133d8387e2b8baba456e33856b4c2b3361405d54b5992bcdab563f72",
+   "path": "OAI/Combinatorics/ProgressionColoring/DigitProductBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/Dilation.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.Dilation",
+   "original_sha256": "0b8c5aa20574d10de59edb2312c444b9e06d34c3a9acee6a94c5ea8c76a1142e",
+   "path": "OAI/Combinatorics/ProgressionColoring/Dilation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/EligibleOuterColoring.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.EligibleOuterColoring",
+   "original_sha256": "1a0a834b5e70c4635fba59843ad7077a3ddbd0b5f1d3ba467544590db4b26367",
+   "path": "OAI/Combinatorics/ProgressionColoring/EligibleOuterColoring.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/EligiblePatternTests.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.EligiblePatternTests",
+   "original_sha256": "95c9649db4f9a4ccbc2fd5911b9e4653489e31988e52c3c134d433fb8d12c6e3",
+   "path": "OAI/Combinatorics/ProgressionColoring/EligiblePatternTests.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/EligibleRecordedSupport.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.EligibleRecordedSupport",
+   "original_sha256": "11cfdac13329da23f824570d73832ce43913be366a53be5285ccc2913de0df6b",
+   "path": "OAI/Combinatorics/ProgressionColoring/EligibleRecordedSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/FairBitProbability.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.FairBitProbability",
+   "original_sha256": "5cd2650fb7e4e5e4f8e87685807b002802065175a57fe6d2d85b27ae72f0ddb9",
+   "path": "OAI/Combinatorics/ProgressionColoring/FairBitProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/FairBitTail.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.FairBitTail",
+   "original_sha256": "f075957ecd9012b0e1b00ec93106df1b51c1a6f921cfebc3810ce3220096f13e",
+   "path": "OAI/Combinatorics/ProgressionColoring/FairBitTail.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/FairOuterColoring.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.FairOuterColoring",
+   "original_sha256": "45ccb0684ed78b1b3ef558722488d56e1d6eefef8c498c5f4b5038e6de96a8e8",
+   "path": "OAI/Combinatorics/ProgressionColoring/FairOuterColoring.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/FiniteGaps.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.FiniteGaps",
+   "original_sha256": "bbb8fd3afa70b31f56ec889a745b185d28fa7ba4bcd2f08611fd5a085de557f9",
+   "path": "OAI/Combinatorics/ProgressionColoring/FiniteGaps.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/FiniteLocalLemma.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.FiniteLocalLemma",
+   "original_sha256": "437edd2e7dd665428f12a4762cd659123e1fe6671cdc88f89d5956cd22c1b5c1",
+   "path": "OAI/Combinatorics/ProgressionColoring/FiniteLocalLemma.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/FiniteLocalLemmaMeasure.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.FiniteLocalLemmaMeasure",
+   "original_sha256": "f72023cb45d0266432ec06c732cea8a9180e862a5efb865d09c18ec0357833e9",
+   "path": "OAI/Combinatorics/ProgressionColoring/FiniteLocalLemmaMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/FiniteProbability.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.FiniteProbability",
+   "original_sha256": "e3f05a34cb329937e955c46ddf8f2809740e9469341a9a1bb2b23ec707479f72",
+   "path": "OAI/Combinatorics/ProgressionColoring/FiniteProbability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/GenericAsymptotics.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.GenericAsymptotics",
+   "original_sha256": "0ec0ce217410e3a4d91ce8aa4722a7a2cdc47b6dbfb9d1f655a6376fbe0e8f4c",
+   "path": "OAI/Combinatorics/ProgressionColoring/GenericAsymptotics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/GlobalLabelWords.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.GlobalLabelWords",
+   "original_sha256": "a2fb6289cc42a11e860b90816137ae9a7c307a91091dff9e9b91d4e5271b384b",
+   "path": "OAI/Combinatorics/ProgressionColoring/GlobalLabelWords.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/Growth.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.Growth",
+   "original_sha256": "82fa3af9ca5135f890b54e2eee2a24e471bfd35e40be277d8c995e21901eda7d",
+   "path": "OAI/Combinatorics/ProgressionColoring/Growth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/GrowthConsequences.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.GrowthConsequences",
+   "original_sha256": "c7e3abba84b8c54ee629527d3535706ee95d7dc83bc0b5879b6527abd5b3f9d5",
+   "path": "OAI/Combinatorics/ProgressionColoring/GrowthConsequences.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/GrowthRates.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.GrowthRates",
+   "original_sha256": "ac48ccb8ba38c82c237235e2de62c0f8fb23c8d010b358fe8169f9b8c913211a",
+   "path": "OAI/Combinatorics/ProgressionColoring/GrowthRates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/HeavyIntervalWidth.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.HeavyIntervalWidth",
+   "original_sha256": "ebcfb8a64f01ea9b53a57f02ff94b17f01279c02060fb35638197616e53d17db",
+   "path": "OAI/Combinatorics/ProgressionColoring/HeavyIntervalWidth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/HeavyLabelReturn.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.HeavyLabelReturn",
+   "original_sha256": "c1b81aea352b8c010a75f155c6cdb6187f83bed7f8ccb971603341bb1b3f1882",
+   "path": "OAI/Combinatorics/ProgressionColoring/HeavyLabelReturn.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/HeavyReturnFinPath.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.HeavyReturnFinPath",
+   "original_sha256": "494af36cb7c1e52a632c014842a3c800073d6da9b3249e2837daecbb46b19c76",
+   "path": "OAI/Combinatorics/ProgressionColoring/HeavyReturnFinPath.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/HeavyReturnSeparation.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.HeavyReturnSeparation",
+   "original_sha256": "680baf79455f1cd2c0c1bf203c31784c24472dd09470e68615eae3a704af58d6",
+   "path": "OAI/Combinatorics/ProgressionColoring/HeavyReturnSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/HeavyReturnWidth.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.HeavyReturnWidth",
+   "original_sha256": "b645ce7e9afbda21345937e7e4c680ae7fb6115c7fb983df9abcd5c892ceeba5",
+   "path": "OAI/Combinatorics/ProgressionColoring/HeavyReturnWidth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/KeyMultiplicity.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.KeyMultiplicity",
+   "original_sha256": "91dafdae90e7d476f28e6b8d1c6ee3b58cf3a1da51afd428dd4e5b63ea15acdc",
+   "path": "OAI/Combinatorics/ProgressionColoring/KeyMultiplicity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/LabelCounts.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.LabelCounts",
+   "original_sha256": "ab2e33c40caa2be829aa94d8485f0c69f06646ae7026a3a855afa9a54c722586",
+   "path": "OAI/Combinatorics/ProgressionColoring/LabelCounts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/LabelFiber.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.LabelFiber",
+   "original_sha256": "04c70d9edddf7b2c49b84b239104b4299e7c78373970dda0bac8117b7db20075",
+   "path": "OAI/Combinatorics/ProgressionColoring/LabelFiber.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/LabelIncidences.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.LabelIncidences",
+   "original_sha256": "6be4cf379b2341457b3f75d77d9e6079dce334b6651eba1e796b943f7e613172",
+   "path": "OAI/Combinatorics/ProgressionColoring/LabelIncidences.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/LargeColor.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.LargeColor",
+   "original_sha256": "6b311b7e66ec10b7d9b8aa610b0d1058e48a87340c536bf39a6b7a57da485779",
+   "path": "OAI/Combinatorics/ProgressionColoring/LargeColor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/LargeColorConsequences.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.LargeColorConsequences",
+   "original_sha256": "837d4dd2e44668b6e6342c05abfb24e5ae68c9f6016e515f2d63297303b03e26",
+   "path": "OAI/Combinatorics/ProgressionColoring/LargeColorConsequences.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/LargeColorGrowth.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.LargeColorGrowth",
+   "original_sha256": "e1fc8f8cb1be489ba5bd0cca83e131d4c5f1cbf73640b5480d26b77cef3db8d2",
+   "path": "OAI/Combinatorics/ProgressionColoring/LargeColorGrowth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/LiteralLabelRectangles.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.LiteralLabelRectangles",
+   "original_sha256": "b36312515377daeee4fdfc314aa6cb5b955ac9ae38ee579652eb7efb131f2ed1",
+   "path": "OAI/Combinatorics/ProgressionColoring/LiteralLabelRectangles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/LocalTail.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.LocalTail",
+   "original_sha256": "ae25207c6d10a01ee511e3dbff010e01809fe819ea4bfee37b8663609d487774",
+   "path": "OAI/Combinatorics/ProgressionColoring/LocalTail.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/LongPeriodBlocks.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.LongPeriodBlocks",
+   "original_sha256": "5d6fddd52e2c8d692c0e2a810d4291b0c845b75d5edb9bf6e95f8ac848ad1f36",
+   "path": "OAI/Combinatorics/ProgressionColoring/LongPeriodBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/LongPeriodColoring.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.LongPeriodColoring",
+   "original_sha256": "5eebc79ce3a4ac970015ae51afdb5a2db88ca32ec8c0003bbea9c39f4301a863",
+   "path": "OAI/Combinatorics/ProgressionColoring/LongPeriodColoring.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/LongPeriodEligibility.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.LongPeriodEligibility",
+   "original_sha256": "adc491b5dddeded3748bf900e218f95f9f7b9c71d87c966e425716b9c4d3b31c",
+   "path": "OAI/Combinatorics/ProgressionColoring/LongPeriodEligibility.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/LongPeriodRegularGrid.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.LongPeriodRegularGrid",
+   "original_sha256": "6464ab2bd5c1f8774319f8ae3dc1563daf79ab8d98597f9b6f9a65569f661338",
+   "path": "OAI/Combinatorics/ProgressionColoring/LongPeriodRegularGrid.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/LongPeriodRegularity.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.LongPeriodRegularity",
+   "original_sha256": "b501dc0c235afa9ae92dd3782dab7877a6d572440fd457e113a9839084389c32",
+   "path": "OAI/Combinatorics/ProgressionColoring/LongPeriodRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/Main.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.Main",
+   "original_sha256": "631fc2737af9923814430ba8de89038abcd047a935a63dedccfb1f103ba4ed90",
+   "path": "OAI/Combinatorics/ProgressionColoring/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/MeshPartitions.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.MeshPartitions",
+   "original_sha256": "e6e56423b3a1bcad621a8c684cbb2692a563b53e7ab27d7be2d8e981b58a58c2",
+   "path": "OAI/Combinatorics/ProgressionColoring/MeshPartitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/Model.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.Model",
+   "original_sha256": "b65269a30cbb7c83f83e9247aae48b119032ee62bef254378e98fadd77aa75e8",
+   "path": "OAI/Combinatorics/ProgressionColoring/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ModelGeometry.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ModelGeometry",
+   "original_sha256": "7454ba91a74366147dd35ac55f8368b6d5066552f14f4a874f13b8491ef12f02",
+   "path": "OAI/Combinatorics/ProgressionColoring/ModelGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/NormBands.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.NormBands",
+   "original_sha256": "abf5d6861061fd6e70e13ddc82adfe35906298240c32315e979454337284e522",
+   "path": "OAI/Combinatorics/ProgressionColoring/NormBands.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/OuterBalanced.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.OuterBalanced",
+   "original_sha256": "54bc1ace4bb6672138d9d942c367e9b8453ac600a36179be898d8980e5dad86d",
+   "path": "OAI/Combinatorics/ProgressionColoring/OuterBalanced.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/OuterBudget.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.OuterBudget",
+   "original_sha256": "dc2ec7134501740338381d51f0b6081437e907bde91fc35bc5563679984c5210",
+   "path": "OAI/Combinatorics/ProgressionColoring/OuterBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/OuterChoiceDefinitions.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.OuterChoiceDefinitions",
+   "original_sha256": "08ed680fe9f9d50782e2a49133479e2ea2f4471bd28ceb918d20e2079d5efb0f",
+   "path": "OAI/Combinatorics/ProgressionColoring/OuterChoiceDefinitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/OuterColoring.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.OuterColoring",
+   "original_sha256": "a4b0e5d348ef3aac4f31258d07256e68bc8ee00544a8278af3d5ecaa90272337",
+   "path": "OAI/Combinatorics/ProgressionColoring/OuterColoring.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/OuterDichotomy.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.OuterDichotomy",
+   "original_sha256": "86a274e4288c421719ff9bcb3b85a92ce2d960ce1d5676208cb1fc2bc7ef5046",
+   "path": "OAI/Combinatorics/ProgressionColoring/OuterDichotomy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/OuterFamilies.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.OuterFamilies",
+   "original_sha256": "9dea6cb962e667c5063ec3f39bba6ff701185e374c1f233212f7d00ee801a779",
+   "path": "OAI/Combinatorics/ProgressionColoring/OuterFamilies.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/OuterIncidence.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.OuterIncidence",
+   "original_sha256": "369d4ebc189cee87101cfb01e2081f9320b4275cd00c5da5db9d33c0641da1ac",
+   "path": "OAI/Combinatorics/ProgressionColoring/OuterIncidence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/OuterModelChoice.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.OuterModelChoice",
+   "original_sha256": "3d004407b4d470da64a0f4ddb5e8921659ce7e6b33e2469258bf4dd3c45b6654",
+   "path": "OAI/Combinatorics/ProgressionColoring/OuterModelChoice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/OuterPatternColoring.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.OuterPatternColoring",
+   "original_sha256": "048c558f12a709d0c0d6bf3b52d910ccbd5c874b5244bbbc06961a1a0766f591",
+   "path": "OAI/Combinatorics/ProgressionColoring/OuterPatternColoring.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/OuterRowRealBound.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.OuterRowRealBound",
+   "original_sha256": "6eda49ef4766515abd4b9b150cec7820c41ce3acc6bfc9d117bd1a4fbfaa7bbe",
+   "path": "OAI/Combinatorics/ProgressionColoring/OuterRowRealBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/OuterRows.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.OuterRows",
+   "original_sha256": "0dc9c476c343a89692f9e529c601763e9bf1ecc5437caa0fc26e4d691a3e7113",
+   "path": "OAI/Combinatorics/ProgressionColoring/OuterRows.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/OuterRowsMod.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.OuterRowsMod",
+   "original_sha256": "4aa19de09b2bc467c89b2265619a54901a8953c5ac39d159ae10b01c54c2b082",
+   "path": "OAI/Combinatorics/ProgressionColoring/OuterRowsMod.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/OuterTestColoring.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.OuterTestColoring",
+   "original_sha256": "925832c9b505d1907cd8c1b5413812204d231bbcf08fdf841ef0df9bd403fe87",
+   "path": "OAI/Combinatorics/ProgressionColoring/OuterTestColoring.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/OuterWordTests.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.OuterWordTests",
+   "original_sha256": "362a1189bc77bb011d7f3442de37465a3754c43c1ac2a56f713161240cd910fb",
+   "path": "OAI/Combinatorics/ProgressionColoring/OuterWordTests.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/Parameters.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.Parameters",
+   "original_sha256": "1eba1ccde059f82a30545f4288552692d05556c855dbbed5b00ec21489c2403f",
+   "path": "OAI/Combinatorics/ProgressionColoring/Parameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/Perturbation.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.Perturbation",
+   "original_sha256": "04ea4ec7e4974625f1c2ce15b6bd8fccf5a5a96aa4a32bf5ed2c0116915b9cd9",
+   "path": "OAI/Combinatorics/ProgressionColoring/Perturbation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/PerturbationScales.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.PerturbationScales",
+   "original_sha256": "d579cc9780fd0ddb346424e9b1496347a872956edc2c919138b33ce97ec14578",
+   "path": "OAI/Combinatorics/ProgressionColoring/PerturbationScales.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/PrimeScale.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.PrimeScale",
+   "original_sha256": "747e21530a69bc6be831e4471bec9a3aa0917995f0cc2ff76e69b064236fc5cf",
+   "path": "OAI/Combinatorics/ProgressionColoring/PrimeScale.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/PrimitiveVector.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.PrimitiveVector",
+   "original_sha256": "e92d95556b77859502ee9a58ae2c4d34f2f4af81aa0198ff74de63ba3696b34e",
+   "path": "OAI/Combinatorics/ProgressionColoring/PrimitiveVector.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ProbabilityScales.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ProbabilityScales",
+   "original_sha256": "e97e85a012432664dc4d180da0e20c4a5d926197c0efa8fb4c13c3d5c0ca16bf",
+   "path": "OAI/Combinatorics/ProgressionColoring/ProbabilityScales.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/RationalGridCount.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.RationalGridCount",
+   "original_sha256": "ed4874c4dca95a4f01aae60ab4506ea4aeea54b7098e850d782d4423507262cd",
+   "path": "OAI/Combinatorics/ProgressionColoring/RationalGridCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/RationalGridMultiplicity.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.RationalGridMultiplicity",
+   "original_sha256": "032654dc2b6d960d152d7f86e3e9da75bb3f9ef16164c9cc0828d9bb22f95906",
+   "path": "OAI/Combinatorics/ProgressionColoring/RationalGridMultiplicity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/RationalReturn.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.RationalReturn",
+   "original_sha256": "72b6fa0c83a247cb670925c7577eb869e5d6249469a1bc65bb3d9c5c01d1bb94",
+   "path": "OAI/Combinatorics/ProgressionColoring/RationalReturn.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/RationalSeparation.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.RationalSeparation",
+   "original_sha256": "6540633c50f214c4ba79b8c4135e80da7bc3e36fec8dd977be67c9fe20f08cab",
+   "path": "OAI/Combinatorics/ProgressionColoring/RationalSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/RecordedSupport.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.RecordedSupport",
+   "original_sha256": "8105afa0ecf7d590fb94869f79d30d539944bca1870b0fa39ef9b1f7349f5c84",
+   "path": "OAI/Combinatorics/ProgressionColoring/RecordedSupport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ResidueFiber.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ResidueFiber",
+   "original_sha256": "d091c22b48fb7cddddcadf648845e220b5688a4a5c74a2ad5654730499bf1c35",
+   "path": "OAI/Combinatorics/ProgressionColoring/ResidueFiber.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ScalarAdaptiveMesh.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ScalarAdaptiveMesh",
+   "original_sha256": "af4e375f0b0b338bff8330c898e0076a8a7399d5bc2ffdd5f1de61ed90cf7090",
+   "path": "OAI/Combinatorics/ProgressionColoring/ScalarAdaptiveMesh.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ScalarEntropy.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ScalarEntropy",
+   "original_sha256": "4db0b2a6526104e9cdbbc4b73156e97d03efddfdf7a40a274b4ade4fba101b9c",
+   "path": "OAI/Combinatorics/ProgressionColoring/ScalarEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ScalarMesh.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ScalarMesh",
+   "original_sha256": "56df8b6aa0991d942c829ffcbbe304b4d2a96def66ccdab9205de9af827029c0",
+   "path": "OAI/Combinatorics/ProgressionColoring/ScalarMesh.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ShortPeriodCut.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ShortPeriodCut",
+   "original_sha256": "8235776f21163b235548bf65bb62f65c17f63d982eee87e6c107101a5a629496",
+   "path": "OAI/Combinatorics/ProgressionColoring/ShortPeriodCut.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ShortPeriodLift.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ShortPeriodLift",
+   "original_sha256": "bcce9b2040820e87a174f8db6db60c9d3fef26c193151de54fa7f5aa4760e4f7",
+   "path": "OAI/Combinatorics/ProgressionColoring/ShortPeriodLift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/ShortPeriodPath.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.ShortPeriodPath",
+   "original_sha256": "eb9da27579548edf89bd5101fecb3f06c27cc55dfdafa18cdaf32f1d9dd3cd24",
+   "path": "OAI/Combinatorics/ProgressionColoring/ShortPeriodPath.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/SignatureCounting.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.SignatureCounting",
+   "original_sha256": "aac69b4ed06edfe6a314707cb14c61487496c797a70f9f2b281c483237e485c6",
+   "path": "OAI/Combinatorics/ProgressionColoring/SignatureCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/SmallBoxAffinity.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.SmallBoxAffinity",
+   "original_sha256": "c596e406e1b457f45246fc966e6ffece76e24b51d98fb5c55be2d4df186c1b0e",
+   "path": "OAI/Combinatorics/ProgressionColoring/SmallBoxAffinity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/TernarySign.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.TernarySign",
+   "original_sha256": "fea6135c01aa74937b9b94e042885e251b108a5f3d85f059a5648e5ca94dc1c0",
+   "path": "OAI/Combinatorics/ProgressionColoring/TernarySign.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/UniformBudget.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.UniformBudget",
+   "original_sha256": "c3a78f4753eba3073920497d27b9400b29d9c66404030248372b15d488d74cb4",
+   "path": "OAI/Combinatorics/ProgressionColoring/UniformBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/UniformMesh.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.UniformMesh",
+   "original_sha256": "09d9bd93de0f0bdfcf79fe12e481117e74968f1aac3ac4c3c2642a288b456fc0",
+   "path": "OAI/Combinatorics/ProgressionColoring/UniformMesh.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/UniformTransfer.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.UniformTransfer",
+   "original_sha256": "19d1ba6459fc9897693753b0884451a7a6c94124bc110d1046270f2e81eb294f",
+   "path": "OAI/Combinatorics/ProgressionColoring/UniformTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/UpperBound.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.UpperBound",
+   "original_sha256": "cf9468e501516348fcf7ffede7f4c67757601536248b862c4d9ec4de42cfa6c6",
+   "path": "OAI/Combinatorics/ProgressionColoring/UpperBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Combinatorics/ProgressionColoring/WordDichotomy.lean"
+   },
+   "module": "OAI.Combinatorics.ProgressionColoring.WordDichotomy",
+   "original_sha256": "66cec549809077b475cd335c452a5752ea8ffb5b18e01b07a18b148d8573c610",
+   "path": "OAI/Combinatorics/ProgressionColoring/WordDichotomy.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Combinatorics.ProgressionColoring.AdaptiveMesh",
+  "OAI.Combinatorics.ProgressionColoring.AdaptiveMeshBreakpoints",
+  "OAI.Combinatorics.ProgressionColoring.AdaptiveMeshCounting",
+  "OAI.Combinatorics.ProgressionColoring.AffineEntropy",
+  "OAI.Combinatorics.ProgressionColoring.AffineEntropyNat",
+  "OAI.Combinatorics.ProgressionColoring.AnchoredPatternDefinitions",
+  "OAI.Combinatorics.ProgressionColoring.AnchoredPatterns",
+  "OAI.Combinatorics.ProgressionColoring.Arrangement",
+  "OAI.Combinatorics.ProgressionColoring.Asymptotics",
+  "OAI.Combinatorics.ProgressionColoring.Basic",
+  "OAI.Combinatorics.ProgressionColoring.BlockCoverage",
+  "OAI.Combinatorics.ProgressionColoring.ClosestReturn",
+  "OAI.Combinatorics.ProgressionColoring.ClosestReturnEstimates",
+  "OAI.Combinatorics.ProgressionColoring.ComparisonOutputs",
+  "OAI.Combinatorics.ProgressionColoring.ConstructionArithmetic",
+  "OAI.Combinatorics.ProgressionColoring.ConstructionDichotomyDenominator",
+  "OAI.Combinatorics.ProgressionColoring.ConstructionDichotomyScales",
+  "OAI.Combinatorics.ProgressionColoring.ConstructionHeavyLabelReturn",
+  "OAI.Combinatorics.ProgressionColoring.ConstructionHeavyLight",
+  "OAI.Combinatorics.ProgressionColoring.ConstructionModel",
+  "OAI.Combinatorics.ProgressionColoring.ConstructionModelBounds",
+  "OAI.Combinatorics.ProgressionColoring.ConstructionSignatureBudget",
+  "OAI.Combinatorics.ProgressionColoring.ConstructionWordFamily",
+  "OAI.Combinatorics.ProgressionColoring.CoshBound",
+  "OAI.Combinatorics.ProgressionColoring.CyclicBasic",
+  "OAI.Combinatorics.ProgressionColoring.CyclicBlockLabels",
+  "OAI.Combinatorics.ProgressionColoring.CyclicColoring",
+  "OAI.Combinatorics.ProgressionColoring.CyclicHeavyIntervalWidth",
+  "OAI.Combinatorics.ProgressionColoring.CyclicModel",
+  "OAI.Combinatorics.ProgressionColoring.CyclicRationalReturn",
+  "OAI.Combinatorics.ProgressionColoring.CyclicSignatures",
+  "OAI.Combinatorics.ProgressionColoring.CyclicWitness",
+  "OAI.Combinatorics.ProgressionColoring.Dichotomy",
+  "OAI.Combinatorics.ProgressionColoring.DigitProduct",
+  "OAI.Combinatorics.ProgressionColoring.DigitProductBounds",
+  "OAI.Combinatorics.ProgressionColoring.Dilation",
+  "OAI.Combinatorics.ProgressionColoring.EligibleOuterColoring",
+  "OAI.Combinatorics.ProgressionColoring.EligiblePatternTests",
+  "OAI.Combinatorics.ProgressionColoring.EligibleRecordedSupport",
+  "OAI.Combinatorics.ProgressionColoring.FairBitProbability",
+  "OAI.Combinatorics.ProgressionColoring.FairBitTail",
+  "OAI.Combinatorics.ProgressionColoring.FairOuterColoring",
+  "OAI.Combinatorics.ProgressionColoring.FiniteGaps",
+  "OAI.Combinatorics.ProgressionColoring.FiniteLocalLemma",
+  "OAI.Combinatorics.ProgressionColoring.FiniteLocalLemmaMeasure",
+  "OAI.Combinatorics.ProgressionColoring.FiniteProbability",
+  "OAI.Combinatorics.ProgressionColoring.GenericAsymptotics",
+  "OAI.Combinatorics.ProgressionColoring.GlobalLabelWords",
+  "OAI.Combinatorics.ProgressionColoring.Growth",
+  "OAI.Combinatorics.ProgressionColoring.GrowthConsequences",
+  "OAI.Combinatorics.ProgressionColoring.GrowthRates",
+  "OAI.Combinatorics.ProgressionColoring.HeavyIntervalWidth",
+  "OAI.Combinatorics.ProgressionColoring.HeavyLabelReturn",
+  "OAI.Combinatorics.ProgressionColoring.HeavyReturnFinPath",
+  "OAI.Combinatorics.ProgressionColoring.HeavyReturnSeparation",
+  "OAI.Combinatorics.ProgressionColoring.HeavyReturnWidth",
+  "OAI.Combinatorics.ProgressionColoring.KeyMultiplicity",
+  "OAI.Combinatorics.ProgressionColoring.LabelCounts",
+  "OAI.Combinatorics.ProgressionColoring.LabelFiber",
+  "OAI.Combinatorics.ProgressionColoring.LabelIncidences",
+  "OAI.Combinatorics.ProgressionColoring.LargeColor",
+  "OAI.Combinatorics.ProgressionColoring.LargeColorConsequences",
+  "OAI.Combinatorics.ProgressionColoring.LargeColorGrowth",
+  "OAI.Combinatorics.ProgressionColoring.LiteralLabelRectangles",
+  "OAI.Combinatorics.ProgressionColoring.LocalTail",
+  "OAI.Combinatorics.ProgressionColoring.LongPeriodBlocks",
+  "OAI.Combinatorics.ProgressionColoring.LongPeriodColoring",
+  "OAI.Combinatorics.ProgressionColoring.LongPeriodEligibility",
+  "OAI.Combinatorics.ProgressionColoring.LongPeriodRegularGrid",
+  "OAI.Combinatorics.ProgressionColoring.LongPeriodRegularity",
+  "OAI.Combinatorics.ProgressionColoring.Main",
+  "OAI.Combinatorics.ProgressionColoring.MeshPartitions",
+  "OAI.Combinatorics.ProgressionColoring.Model",
+  "OAI.Combinatorics.ProgressionColoring.ModelGeometry",
+  "OAI.Combinatorics.ProgressionColoring.NormBands",
+  "OAI.Combinatorics.ProgressionColoring.OuterBalanced",
+  "OAI.Combinatorics.ProgressionColoring.OuterBudget",
+  "OAI.Combinatorics.ProgressionColoring.OuterChoiceDefinitions",
+  "OAI.Combinatorics.ProgressionColoring.OuterColoring",
+  "OAI.Combinatorics.ProgressionColoring.OuterDichotomy",
+  "OAI.Combinatorics.ProgressionColoring.OuterFamilies",
+  "OAI.Combinatorics.ProgressionColoring.OuterIncidence",
+  "OAI.Combinatorics.ProgressionColoring.OuterModelChoice",
+  "OAI.Combinatorics.ProgressionColoring.OuterPatternColoring",
+  "OAI.Combinatorics.ProgressionColoring.OuterRowRealBound",
+  "OAI.Combinatorics.ProgressionColoring.OuterRows",
+  "OAI.Combinatorics.ProgressionColoring.OuterRowsMod",
+  "OAI.Combinatorics.ProgressionColoring.OuterTestColoring",
+  "OAI.Combinatorics.ProgressionColoring.OuterWordTests",
+  "OAI.Combinatorics.ProgressionColoring.Parameters",
+  "OAI.Combinatorics.ProgressionColoring.Perturbation",
+  "OAI.Combinatorics.ProgressionColoring.PerturbationScales",
+  "OAI.Combinatorics.ProgressionColoring.PrimeScale",
+  "OAI.Combinatorics.ProgressionColoring.PrimitiveVector",
+  "OAI.Combinatorics.ProgressionColoring.ProbabilityScales",
+  "OAI.Combinatorics.ProgressionColoring.RationalGridCount",
+  "OAI.Combinatorics.ProgressionColoring.RationalGridMultiplicity",
+  "OAI.Combinatorics.ProgressionColoring.RationalReturn",
+  "OAI.Combinatorics.ProgressionColoring.RationalSeparation",
+  "OAI.Combinatorics.ProgressionColoring.RecordedSupport",
+  "OAI.Combinatorics.ProgressionColoring.ResidueFiber",
+  "OAI.Combinatorics.ProgressionColoring.ScalarAdaptiveMesh",
+  "OAI.Combinatorics.ProgressionColoring.ScalarEntropy",
+  "OAI.Combinatorics.ProgressionColoring.ScalarMesh",
+  "OAI.Combinatorics.ProgressionColoring.ShortPeriodCut",
+  "OAI.Combinatorics.ProgressionColoring.ShortPeriodLift",
+  "OAI.Combinatorics.ProgressionColoring.ShortPeriodPath",
+  "OAI.Combinatorics.ProgressionColoring.SignatureCounting",
+  "OAI.Combinatorics.ProgressionColoring.SmallBoxAffinity",
+  "OAI.Combinatorics.ProgressionColoring.TernarySign",
+  "OAI.Combinatorics.ProgressionColoring.UniformBudget",
+  "OAI.Combinatorics.ProgressionColoring.UniformMesh",
+  "OAI.Combinatorics.ProgressionColoring.UniformTransfer",
+  "OAI.Combinatorics.ProgressionColoring.UpperBound",
+  "OAI.Combinatorics.ProgressionColoring.WordDichotomy"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/QuantitativeVanDerWaerden.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Combinatorics.ProgressionColoring.Main",
+   "name": "OAI.QuantitativeVanDerWaerden.uniform_lower_bound",
+   "statement_sha256": "a3ff076ae5a2f387457d2c55fb81e081a6fa52345d1868f08975256402af4ab2"
+  }
+ ],
+ "task_id": "oai-quantitative-van-der-waerden",
+ "task_revision": 1,
+ "title": "OpenAI math: Superexponential van der Waerden numbers: Uniform van der Waerden lower bound",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

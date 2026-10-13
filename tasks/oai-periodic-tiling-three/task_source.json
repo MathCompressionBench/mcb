@@ -1,0 +1,1641 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 66284423
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.PeriodicTilingThree",
+  "challenge_sha256": "056c498ce4a6e7b71b688eb8c499ebef70ad1bddfea98b7215d480eb11e08bba",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/PeriodicTilingThree.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.PeriodicTilingThree",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Geometry.PeriodicTiling.Main",
+   "theorem_names": [
+    "OAI.PeriodicTilingThree.periodic_tiling_counterexample_and_minimality"
+   ]
+  },
+  "config_sha256": "e87378eda65c42e0ecdf457306ef3f79db0ee94dbfe99f890ba1b351a64ce147",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/PeriodicTilingThree.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.PeriodicTilingThree.periodic_tiling_counterexample_and_minimality": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/AETilingCountable.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.AETilingCountable",
+   "original_sha256": "686e09d18f51cf355dd6c6b064f2e012ce366ee6b022f20981b55e9ba0740a27",
+   "path": "OAI/Geometry/PeriodicTiling/AETilingCountable.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/Activation.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.Activation",
+   "original_sha256": "eab1aa599067ddac4fbe966538b6eb569e32e162ad1450be7be4828dac444420",
+   "path": "OAI/Geometry/PeriodicTiling/Activation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ActivationOffsets.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ActivationOffsets",
+   "original_sha256": "df9aa7c3475757c346367398a95670e700d99438258963b8a8257be7b46e3976",
+   "path": "OAI/Geometry/PeriodicTiling/ActivationOffsets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ActivationTiles.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ActivationTiles",
+   "original_sha256": "9896703ae6fb251db87714870e386fb822f1483fb1c4d14d2c762cc62c2dfe77",
+   "path": "OAI/Geometry/PeriodicTiling/ActivationTiles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ActivityWord.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ActivityWord",
+   "original_sha256": "7964b959d34eef0bbf11b5993b8de51817d200fe4158fc5d58f7373eeb377d00",
+   "path": "OAI/Geometry/PeriodicTiling/ActivityWord.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/AuxiliaryCubes.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.AuxiliaryCubes",
+   "original_sha256": "83ed0eaab1107c7420279160536aef457c285fee08a02d04839ff341f35b3ec8",
+   "path": "OAI/Geometry/PeriodicTiling/AuxiliaryCubes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/BlockActivationInverse.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.BlockActivationInverse",
+   "original_sha256": "788b43c9201ca06f85cbe4cc590d5d56176c4e5c0991b4e63f1794cf81a2b6bb",
+   "path": "OAI/Geometry/PeriodicTiling/BlockActivationInverse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/BoundedDifferences.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.BoundedDifferences",
+   "original_sha256": "bab40bffc4879105f725f1757d2dc542b8228eb9ebc16e02e7caa7415776a3e1",
+   "path": "OAI/Geometry/PeriodicTiling/BoundedDifferences.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/CenterFiniteness.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.CenterFiniteness",
+   "original_sha256": "812d2b8f73f1ef67eb5b6fd222801f0e9531cb78944a57c1cd6880c2e2ecd964",
+   "path": "OAI/Geometry/PeriodicTiling/CenterFiniteness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ChannelDigitBlocks.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ChannelDigitBlocks",
+   "original_sha256": "983622cb95a2fc3e6bb44cba5e04120f0a246d4d3c92b769028024a1ba03900f",
+   "path": "OAI/Geometry/PeriodicTiling/ChannelDigitBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/CircleWeylCriterion.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.CircleWeylCriterion",
+   "original_sha256": "43a4fe088d346c1d0d49366ffa79aa215cd340e17a8fcca974e9821855aa8337",
+   "path": "OAI/Geometry/PeriodicTiling/CircleWeylCriterion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ClosedBoxRounding.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ClosedBoxRounding",
+   "original_sha256": "65cf9f952a57be5969b3c7c4fe032d22af4aa73c2b1feb1ebd16be627bc16931",
+   "path": "OAI/Geometry/PeriodicTiling/ClosedBoxRounding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ClosedCoverChains.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ClosedCoverChains",
+   "original_sha256": "ca4da402db7ebea5ad25184b94cec0e446cf642c618848faddafb0a2e67b9ed2",
+   "path": "OAI/Geometry/PeriodicTiling/ClosedCoverChains.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/CommonModel.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.CommonModel",
+   "original_sha256": "8b15ee6c986dc60abb6ed61235f6da91110faa571dc35c0e2ae46b91b7ef3a3f",
+   "path": "OAI/Geometry/PeriodicTiling/CommonModel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/CommonSeedOutputs.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.CommonSeedOutputs",
+   "original_sha256": "be09266e4e2c2e8a4da9f3c16c8d41976771e14248f0a09c76554b6800f828f9",
+   "path": "OAI/Geometry/PeriodicTiling/CommonSeedOutputs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/CommonSolution.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.CommonSolution",
+   "original_sha256": "679703441fb8d367b1d17d200763ef6acca81074c8ddb555f8f9de5bfcdf6c32",
+   "path": "OAI/Geometry/PeriodicTiling/CommonSolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ComponentTargets.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ComponentTargets",
+   "original_sha256": "cdd6325c8dae407d5cf853a06dce61110a2265a3614b9977bea4b901f51314ae",
+   "path": "OAI/Geometry/PeriodicTiling/ComponentTargets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ConfigurationDifferenceReduction.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ConfigurationDifferenceReduction",
+   "original_sha256": "e2faf7e56bfca6a83c98740127532c4b91e716c36c433e9ee2eaf943b760fa3d",
+   "path": "OAI/Geometry/PeriodicTiling/ConfigurationDifferenceReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ConfigurationDifferences.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ConfigurationDifferences",
+   "original_sha256": "d41f5ed0d29fafff7350c70b062cf08242eb7fa64af306e3263fde23066dfd1e",
+   "path": "OAI/Geometry/PeriodicTiling/ConfigurationDifferences.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ConstituentAssembly.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ConstituentAssembly",
+   "original_sha256": "feef5118496c9b8b1486be680605985aaa26b04fdd8b88a67a5617a322ed8e47",
+   "path": "OAI/Geometry/PeriodicTiling/ConstituentAssembly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ConstituentGeometry.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ConstituentGeometry",
+   "original_sha256": "0cf8de27730857f365ff5127b44b32aa4a23533ab70416bb162eb38a5b9b4b2d",
+   "path": "OAI/Geometry/PeriodicTiling/ConstituentGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ConstraintCycles.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ConstraintCycles",
+   "original_sha256": "941c5244eac28bb34c73ef89ac6b0370506d019d5bbe6a4d859bb607e95a8e77",
+   "path": "OAI/Geometry/PeriodicTiling/ConstraintCycles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/CosetParts.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.CosetParts",
+   "original_sha256": "c58146cdba54c1d61b1dcf0773affcc5b50d5ba85ac5e73d2f914e2cce56f8a1",
+   "path": "OAI/Geometry/PeriodicTiling/CosetParts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/CosetPeriodicity.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.CosetPeriodicity",
+   "original_sha256": "6dda20b467b85054a0ef86a355be295f929dffd3aab1ce2e7a4b9cff29581c13",
+   "path": "OAI/Geometry/PeriodicTiling/CosetPeriodicity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/Counterexample.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.Counterexample",
+   "original_sha256": "2a7cac9d5ec1cfe91911599ebe9d58cff2b704e33296cb6495f00bb0ee6617ef",
+   "path": "OAI/Geometry/PeriodicTiling/Counterexample.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/CycleTests.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.CycleTests",
+   "original_sha256": "c2b4b5b2a79860264eeba37bbca56a526bee6eeb3a57a58b985e31a8aa84caae",
+   "path": "OAI/Geometry/PeriodicTiling/CycleTests.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/CyclicCRT.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.CyclicCRT",
+   "original_sha256": "17417be1ef8691a103acf4f6b3a50df64a12005c8c12d31ceaadd7a8493c677f",
+   "path": "OAI/Geometry/PeriodicTiling/CyclicCRT.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/CyclicCoordinates.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.CyclicCoordinates",
+   "original_sha256": "6208d408b1849d8895bec83c55c1948c7c1a85f1d86a285e03bd6ebe36c9a491",
+   "path": "OAI/Geometry/PeriodicTiling/CyclicCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/CyclicCounterexample.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.CyclicCounterexample",
+   "original_sha256": "2cadc9d854175df8d5052a09a94ce9f62cac25fb7bfc5f6c28b3cac5076bbddd",
+   "path": "OAI/Geometry/PeriodicTiling/CyclicCounterexample.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/CyclicFactorCRT.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.CyclicFactorCRT",
+   "original_sha256": "e5337228da191ebfec1452e285807711af8124e515b19f074592b8c63ff84452",
+   "path": "OAI/Geometry/PeriodicTiling/CyclicFactorCRT.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/CyclicQuotient.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.CyclicQuotient",
+   "original_sha256": "9cf238fe3e6e8e2b6c0a7ad7c73f6271476f7fa4a82605c680dac50c786272c4",
+   "path": "OAI/Geometry/PeriodicTiling/CyclicQuotient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/CyclicShear.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.CyclicShear",
+   "original_sha256": "10a0d2e6221b8867fa72e44b6213004b24d88c9fd7b477ca2f7de6957d3ff682",
+   "path": "OAI/Geometry/PeriodicTiling/CyclicShear.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/CyclicStack.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.CyclicStack",
+   "original_sha256": "732946c39744db5294355f718459acc9d532e8e7f97378f869201916ef1507d3",
+   "path": "OAI/Geometry/PeriodicTiling/CyclicStack.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/CyclicSystemStacking.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.CyclicSystemStacking",
+   "original_sha256": "56cd4fa1dcd12a4ed46550b6a14cc7aa3870ca98a03ed5177d7c9cc362efb7b5",
+   "path": "OAI/Geometry/PeriodicTiling/CyclicSystemStacking.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/CyclicTypes.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.CyclicTypes",
+   "original_sha256": "17d869f81346ba2f83933372da7a75e4d024f0d1db05c17045ede1c8018f6120",
+   "path": "OAI/Geometry/PeriodicTiling/CyclicTypes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/Dependence.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.Dependence",
+   "original_sha256": "b1f8e3be2a002a89baaebad4984d257911f4879db861eb520668e7f5ddc129aa",
+   "path": "OAI/Geometry/PeriodicTiling/Dependence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/DirectionalLimits.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.DirectionalLimits",
+   "original_sha256": "ba1326c43fbc6a2f9aa23170d8c50a39e675a6c56ebe2529f510836581eba004",
+   "path": "OAI/Geometry/PeriodicTiling/DirectionalLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/DirectionalSlices.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.DirectionalSlices",
+   "original_sha256": "cc9ba7c15f6804e22ab9b6776a2e22042e7c93c424e42919367d998bca6b4d03",
+   "path": "OAI/Geometry/PeriodicTiling/DirectionalSlices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/DisjointSuccessorPairs.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.DisjointSuccessorPairs",
+   "original_sha256": "5169882ba8e2b0c1f3440c89bb309c7690e5e5c67d65301fe06151c4ab201d42",
+   "path": "OAI/Geometry/PeriodicTiling/DisjointSuccessorPairs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/EncodedSystem.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.EncodedSystem",
+   "original_sha256": "a91577ebae2bca2617a470eb7d8b2d2b57ff59e4187720d2b032d01931df0b72",
+   "path": "OAI/Geometry/PeriodicTiling/EncodedSystem.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/EncodedSystemObstruction.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.EncodedSystemObstruction",
+   "original_sha256": "5294780973fdff203f89ef78b54855c640320b843aabf3ddda80b54ad50a09e2",
+   "path": "OAI/Geometry/PeriodicTiling/EncodedSystemObstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/EncodingParameters.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.EncodingParameters",
+   "original_sha256": "a5b6ecce931b015ad3647e022aea786a5d82c97ede2e7d89460bc25eb6422783",
+   "path": "OAI/Geometry/PeriodicTiling/EncodingParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/EncodingPrimeSelection.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.EncodingPrimeSelection",
+   "original_sha256": "357e047636b2ddd3651d1252979fc6dbcac3a9c2a2687e801051dbdd7d3fd0c1",
+   "path": "OAI/Geometry/PeriodicTiling/EncodingPrimeSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/EuclideanBasic.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.EuclideanBasic",
+   "original_sha256": "f4789156ab9f471c0b08d3835c14841e7cf87dd7ac9ddcf24ec5b426faa4fa18",
+   "path": "OAI/Geometry/PeriodicTiling/EuclideanBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/FiniteCylinder.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.FiniteCylinder",
+   "original_sha256": "9b40ecd0d42fb6b73c1e51a7b177c0029856b758c967698db5c2b3894e599613",
+   "path": "OAI/Geometry/PeriodicTiling/FiniteCylinder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/FiniteDifferencePolynomial.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.FiniteDifferencePolynomial",
+   "original_sha256": "b499f13fdaa82bba2b701fbe0ec23d597ff1e38585552867c09aeb161936ccce",
+   "path": "OAI/Geometry/PeriodicTiling/FiniteDifferencePolynomial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/FiniteEventUnion.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.FiniteEventUnion",
+   "original_sha256": "e39ff8bff91b517c18150d13939d9ca4baa7e6331e113ba7228da409fcc9cda7",
+   "path": "OAI/Geometry/PeriodicTiling/FiniteEventUnion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/FiniteMasks.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.FiniteMasks",
+   "original_sha256": "af0bc0769e09741ecf94efee1032393d54deab5a1b92408c62bca99dc9ff6fc1",
+   "path": "OAI/Geometry/PeriodicTiling/FiniteMasks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/FinitePairCounting.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.FinitePairCounting",
+   "original_sha256": "5ada4ada09794eb0fd44e6c01e96b44ddafbd7fc6860afa2967b2acca94348e6",
+   "path": "OAI/Geometry/PeriodicTiling/FinitePairCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/FinitePairRatio.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.FinitePairRatio",
+   "original_sha256": "a329c6eff6a7cca221a1023bb09aeb58275264054c65e5edbeb3227a78ccf30c",
+   "path": "OAI/Geometry/PeriodicTiling/FinitePairRatio.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ForwardDifference.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ForwardDifference",
+   "original_sha256": "a59324ce0c220250e95121a567cc8e2260f1428c15ff0379e716b0254396f15b",
+   "path": "OAI/Geometry/PeriodicTiling/ForwardDifference.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/FullDifferenceBound.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.FullDifferenceBound",
+   "original_sha256": "4ac9cd6ec9312b096e99e4a2bb1ecea01770eedd26fb23e54ea2ee7ff3dea8dd",
+   "path": "OAI/Geometry/PeriodicTiling/FullDifferenceBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/FullDifferencePartition.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.FullDifferencePartition",
+   "original_sha256": "3f3f2437a42b191240e9df2b949b6280758746d3b16361e7b89c09b14e0ab909",
+   "path": "OAI/Geometry/PeriodicTiling/FullDifferencePartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/GraphTests.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.GraphTests",
+   "original_sha256": "8fb623b97ae000892e43acef6f25f7cd422c79ffcf2f3130d258127c1e48c1ed",
+   "path": "OAI/Geometry/PeriodicTiling/GraphTests.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/GridRigidity.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.GridRigidity",
+   "original_sha256": "06d610c2e43c39671e5653755c1d24b00cd7d62d89b8ffe9f9f23f872598174d",
+   "path": "OAI/Geometry/PeriodicTiling/GridRigidity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/IntegerMatrixIndex.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.IntegerMatrixIndex",
+   "original_sha256": "22fa27cbdba9a930efdd37128bcbcc0e59c05e3fc293db8595bd09f15e86835b",
+   "path": "OAI/Geometry/PeriodicTiling/IntegerMatrixIndex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/LabeledDigitBlocks.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.LabeledDigitBlocks",
+   "original_sha256": "9e97e0ab47d7982f30a2429e67dfef519c04b160536ea5b85c20427710d46f1b",
+   "path": "OAI/Geometry/PeriodicTiling/LabeledDigitBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/LastDigit.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.LastDigit",
+   "original_sha256": "af0833756ee3e42e3d7e852cd3959b6a3926d9c1cefd6c4ed036d0e6aefb3147",
+   "path": "OAI/Geometry/PeriodicTiling/LastDigit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/LatticeDescent.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.LatticeDescent",
+   "original_sha256": "e351358ec9d4e134a138797bddb7838e3522777f2845ac3d1bc0925d935d83e3",
+   "path": "OAI/Geometry/PeriodicTiling/LatticeDescent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/LatticeDimensions.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.LatticeDimensions",
+   "original_sha256": "7fab40a376dcbcfbc0a7f2ebf5cb8a56dccd8e9f1b4c75ff18f8bc4ed6402cb0",
+   "path": "OAI/Geometry/PeriodicTiling/LatticeDimensions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/LatticePeriodicity.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.LatticePeriodicity",
+   "original_sha256": "ff95716f2a1a789832db30faf58700c1b9497f8fa15f2f87f37bcd82348f8a15",
+   "path": "OAI/Geometry/PeriodicTiling/LatticePeriodicity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/LatticeThickening.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.LatticeThickening",
+   "original_sha256": "5a06b606d8faedfe88e0472ff873e686f991238fa93dfed1ecbc13ec0428dcb9",
+   "path": "OAI/Geometry/PeriodicTiling/LatticeThickening.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/LowerDimensions.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.LowerDimensions",
+   "original_sha256": "8f180a67b96b43426a271a5cb76977f07cf53e6f7e3b6f8b47a88bf7db63a7ea",
+   "path": "OAI/Geometry/PeriodicTiling/LowerDimensions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/Main.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.Main",
+   "original_sha256": "0ad791a1800f2d65b53979b8bf6d8133a993116f264ba07a01a946ceb5bb96e7",
+   "path": "OAI/Geometry/PeriodicTiling/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/MarkedCell.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.MarkedCell",
+   "original_sha256": "c4c46865acaf6483a85269d85934d5a33ee589df3c20728225094f6809c4bcc2",
+   "path": "OAI/Geometry/PeriodicTiling/MarkedCell.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/MarkedTile.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.MarkedTile",
+   "original_sha256": "794df0a7848a091ea4f8378eae7bf7a358277c40d8b142d36074669ce6d0a4f7",
+   "path": "OAI/Geometry/PeriodicTiling/MarkedTile.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/MarkedTileDescent.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.MarkedTileDescent",
+   "original_sha256": "9814c2100798dc58b24ad2167aa6331651dd78d553f891ac22e94c5f1beb52b0",
+   "path": "OAI/Geometry/PeriodicTiling/MarkedTileDescent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/MarkedTileExistence.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.MarkedTileExistence",
+   "original_sha256": "da2b12e32802eab74fb276f81b0f008fbe5ce6535ecbd7ba1dc974e74612f131",
+   "path": "OAI/Geometry/PeriodicTiling/MarkedTileExistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/Model.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.Model",
+   "original_sha256": "1fcc7ebc50e235d68d8eebd9f9b0310fa0452eaa41aa1bdc548a72b1adb307f4",
+   "path": "OAI/Geometry/PeriodicTiling/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/OneDimensional.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.OneDimensional",
+   "original_sha256": "4cc50f4d934002a0cd32483ec10c993d299c398ecea1c5631c5b9f63a08a393e",
+   "path": "OAI/Geometry/PeriodicTiling/OneDimensional.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/OneDimensionalLattice.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.OneDimensionalLattice",
+   "original_sha256": "fad1fc9e355396fce2b0a20a8df83fbbe5cd148bedc9387667471e76bfe6bfc3",
+   "path": "OAI/Geometry/PeriodicTiling/OneDimensionalLattice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/OrdinaryActivation.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.OrdinaryActivation",
+   "original_sha256": "76602538e501e23bd10e32aedd782f4106e93a04e173cc963073a0cbb9305d56",
+   "path": "OAI/Geometry/PeriodicTiling/OrdinaryActivation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/OrdinaryModel.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.OrdinaryModel",
+   "original_sha256": "ea1125dba988f4368bcc6090dfe93ac5c11b74ed31b68ef60581ef6218e38bcc",
+   "path": "OAI/Geometry/PeriodicTiling/OrdinaryModel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/PeriodicPartGrouping.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.PeriodicPartGrouping",
+   "original_sha256": "e2f74c7ba62722770813dc0c043f691f7c8aab91755826027e4006ed1b09eb9b",
+   "path": "OAI/Geometry/PeriodicTiling/PeriodicPartGrouping.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/PeriodicRegion.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.PeriodicRegion",
+   "original_sha256": "32e2567abb03a5d224f164e1399a2f9bfc595485f942cdec5b91221a448b2f89",
+   "path": "OAI/Geometry/PeriodicTiling/PeriodicRegion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/PeriodicVolume.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.PeriodicVolume",
+   "original_sha256": "196e5dd6bd159546ee3dfffacf8a139b74c89df77191e8f640890b46dfddcf5b",
+   "path": "OAI/Geometry/PeriodicTiling/PeriodicVolume.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/PeriodicVolumeMass.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.PeriodicVolumeMass",
+   "original_sha256": "b6e0bfe11f08284477908703611c85297b6942628171d24991c1f530e8df039a",
+   "path": "OAI/Geometry/PeriodicTiling/PeriodicVolumeMass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/PeriodicVolumeOrbits.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.PeriodicVolumeOrbits",
+   "original_sha256": "068f0e5421f24c0a5a0e9ead089a30fe428c533cfe0d4857874c1f50057a1b40",
+   "path": "OAI/Geometry/PeriodicTiling/PeriodicVolumeOrbits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/PlanarPeriodicity.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.PlanarPeriodicity",
+   "original_sha256": "fdbcd6b2039164690375147c222ec40d827141f9418a4335fb0b5b6e7df08a6f",
+   "path": "OAI/Geometry/PeriodicTiling/PlanarPeriodicity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/PlaneLattices.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.PlaneLattices",
+   "original_sha256": "fb9c5183d2152b6d02a91b6abd1d7d3fc526e5930e071ccd78f431dc1ba002e1",
+   "path": "OAI/Geometry/PeriodicTiling/PlaneLattices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/PolynomialShiftDifference.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.PolynomialShiftDifference",
+   "original_sha256": "94234e5d5fade07e25f29f44950466c5f9302dbb3cae4074bbdf516689556f71",
+   "path": "OAI/Geometry/PeriodicTiling/PolynomialShiftDifference.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/PolynomialWeyl.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.PolynomialWeyl",
+   "original_sha256": "8b8a7e6e80941e00d3f88081a0c45adc108f64e66a2cbc200145e9b1e835e2f1",
+   "path": "OAI/Geometry/PeriodicTiling/PolynomialWeyl.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/PrimeDifferencePairs.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.PrimeDifferencePairs",
+   "original_sha256": "727504fb58aa3fa9311cf3704d798f06c8a48c2a758b5bce418480f1248939ce",
+   "path": "OAI/Geometry/PeriodicTiling/PrimeDifferencePairs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/QuotientTiling.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.QuotientTiling",
+   "original_sha256": "f20d6f979453f3f5a201efe6d924a279d54d21dace69196a9c74b4f2e5b1462a",
+   "path": "OAI/Geometry/PeriodicTiling/QuotientTiling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/RationalPolynomialPeriod.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.RationalPolynomialPeriod",
+   "original_sha256": "2824257b518700a4264be80ca0ecd803fa18df717e0326147143747587cc893e",
+   "path": "OAI/Geometry/PeriodicTiling/RationalPolynomialPeriod.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ResidueCoordinates.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ResidueCoordinates",
+   "original_sha256": "2e925caa6aa3137d6eb2cb853037709a695d86200acaae9afb11702d8c7b19eb",
+   "path": "OAI/Geometry/PeriodicTiling/ResidueCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ResidueCountBound.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ResidueCountBound",
+   "original_sha256": "348fd45a2dd56204c664b03a1d19dfc6294bd5f24c31e658157ce719890ce262",
+   "path": "OAI/Geometry/PeriodicTiling/ResidueCountBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ResidueLiftPairs.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ResidueLiftPairs",
+   "original_sha256": "0c43e76f9b4e0f4d87c79d1655d0ea23aa7591772918dbaa8908e4d2640a3653",
+   "path": "OAI/Geometry/PeriodicTiling/ResidueLiftPairs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ResidueTransversal.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ResidueTransversal",
+   "original_sha256": "ec748db3f1c3384671209b3465db7f2e5ff78b8c6168415a1cb97b73b7120c50",
+   "path": "OAI/Geometry/PeriodicTiling/ResidueTransversal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/RigidSectionGeometry.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.RigidSectionGeometry",
+   "original_sha256": "bd88a54e446bbde5062444794dc8159f63374c0261b3715bd2edc04f8b8dfc59",
+   "path": "OAI/Geometry/PeriodicTiling/RigidSectionGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ScalarAverage.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ScalarAverage",
+   "original_sha256": "77212d2ffc1c3d871a411a69ee614e8266cb7d031135babbe8f59567ac6064e4",
+   "path": "OAI/Geometry/PeriodicTiling/ScalarAverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ScalarPolynomialPeriodicity.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ScalarPolynomialPeriodicity",
+   "original_sha256": "7b608131a3c9de75e8872fd8b08651a49a2cf07352f3840afd154956e00b3f72",
+   "path": "OAI/Geometry/PeriodicTiling/ScalarPolynomialPeriodicity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ScalarVanDerCorput.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ScalarVanDerCorput",
+   "original_sha256": "3de62b3b9334b1c4ccbde029d3de34c078d2f9a85ab40f25593387839ea908ee",
+   "path": "OAI/Geometry/PeriodicTiling/ScalarVanDerCorput.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/SeedSymbols.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.SeedSymbols",
+   "original_sha256": "917e57eebdce1f292476b8a040762965242a187c37e6bcf70c5d9f6baac05f09",
+   "path": "OAI/Geometry/PeriodicTiling/SeedSymbols.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/SeparatedCenters.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.SeparatedCenters",
+   "original_sha256": "75a8bb5566f8ae5786f4373cc7b279c37a063a42b29cb6710ed548fb78aa129c",
+   "path": "OAI/Geometry/PeriodicTiling/SeparatedCenters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/SharedSeedInactive.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.SharedSeedInactive",
+   "original_sha256": "7db012454d8449904c019f0440cd64f34db1c61472274a8f58233b72e6960b59",
+   "path": "OAI/Geometry/PeriodicTiling/SharedSeedInactive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/SharedSeedInverse.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.SharedSeedInverse",
+   "original_sha256": "e918647d7245eb51f509128885fd3a5eaefa9e103a03e542a39c68a744f348ca",
+   "path": "OAI/Geometry/PeriodicTiling/SharedSeedInverse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/SharedSeedLabelEquiv.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.SharedSeedLabelEquiv",
+   "original_sha256": "2467d25d83a35ea3250f047b766de3eea8789b559bf30b7d12dc71eb7499b8d6",
+   "path": "OAI/Geometry/PeriodicTiling/SharedSeedLabelEquiv.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/SharedSeedLabels.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.SharedSeedLabels",
+   "original_sha256": "f1631456a420676d1b32599e3d3b89889fe7da3ce118fcb26c905cc1cbad1449",
+   "path": "OAI/Geometry/PeriodicTiling/SharedSeedLabels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/SharedSeedRegions.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.SharedSeedRegions",
+   "original_sha256": "88dc435fe2024bc0adcc53ffaedb44e19ff43ddae1fe0ac8e39c840d7a39fe78",
+   "path": "OAI/Geometry/PeriodicTiling/SharedSeedRegions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/SharedSeedSizeTransport.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.SharedSeedSizeTransport",
+   "original_sha256": "a3216a3c2ebc102b8898c456bd77fe678256d8036a097d7ab6aa6911807aafbd",
+   "path": "OAI/Geometry/PeriodicTiling/SharedSeedSizeTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ShiftMultiplicity.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ShiftMultiplicity",
+   "original_sha256": "ff6774b5a373969157d9033246398a4778980a79e6b8762a8f48d9a84966aa51",
+   "path": "OAI/Geometry/PeriodicTiling/ShiftMultiplicity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/Stacking.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.Stacking",
+   "original_sha256": "303ee63e199d79f4c6e8c0170361f8f12c1e3740d83735046c478bd1ca7a699d",
+   "path": "OAI/Geometry/PeriodicTiling/Stacking.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/StackingContributions.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.StackingContributions",
+   "original_sha256": "8268334d96de4ccf5bdb332ccfa7ba83f011daf1fbc971c3fa31a9a9d16875ce",
+   "path": "OAI/Geometry/PeriodicTiling/StackingContributions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/SystemObstruction.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.SystemObstruction",
+   "original_sha256": "eab698e1e342d84bbaffc935fdc16b6e6827925f8c4813a75daf76087b4c1626",
+   "path": "OAI/Geometry/PeriodicTiling/SystemObstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ThreeDimensionalTransfer.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ThreeDimensionalTransfer",
+   "original_sha256": "7359a7044c120683f42489c9b92cd878926a61439b670af2a134c40106ca7c1c",
+   "path": "OAI/Geometry/PeriodicTiling/ThreeDimensionalTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/ThreeDimensions.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.ThreeDimensions",
+   "original_sha256": "0b21cbd4317c0013ba865c1a5025825ddbc08bf78f83bbe6277005892fd00ae3",
+   "path": "OAI/Geometry/PeriodicTiling/ThreeDimensions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/TileDilation.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.TileDilation",
+   "original_sha256": "d3ade174b366729d28e36e409fac68e88f004903d371001d5cb63e1579c07025",
+   "path": "OAI/Geometry/PeriodicTiling/TileDilation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/TilesRegion.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.TilesRegion",
+   "original_sha256": "3dd7d760c8858dc85d92d732b07d62f16a740c79bc82a69f79bfdc34bb49dfd9",
+   "path": "OAI/Geometry/PeriodicTiling/TilesRegion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/TilingBasic.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.TilingBasic",
+   "original_sha256": "00b1f54391a8627448bf83fa98c74efd9a4340e1c7d4a6565528733d4dea019e",
+   "path": "OAI/Geometry/PeriodicTiling/TilingBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/TilingTranslation.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.TilingTranslation",
+   "original_sha256": "2e9b8971d0dc20126ed17cf02f8581b4f3f936b29d520878146a891be58bb3fb",
+   "path": "OAI/Geometry/PeriodicTiling/TilingTranslation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/TilingTransport.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.TilingTransport",
+   "original_sha256": "05547503815215064d414626c1781962f7985dacbfd87621c53f3583b30bd67e",
+   "path": "OAI/Geometry/PeriodicTiling/TilingTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/VoxelCubeMeasure.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.VoxelCubeMeasure",
+   "original_sha256": "b465824bc576cefc7ff173cc577211b06feeb0d45e9b97409f47abcb24cdd426",
+   "path": "OAI/Geometry/PeriodicTiling/VoxelCubeMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/VoxelGeometry.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.VoxelGeometry",
+   "original_sha256": "2d274819d68e09acd41c865160520c6b21059e59f1f5ca90af24e9d0e552d7ee",
+   "path": "OAI/Geometry/PeriodicTiling/VoxelGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/VoxelMeasure.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.VoxelMeasure",
+   "original_sha256": "616d0eb81d8fab57ec737699c6e5d6beddd7370fe4bb6a980b65efe06c5e0e5f",
+   "path": "OAI/Geometry/PeriodicTiling/VoxelMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/WeakPeriodicity.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.WeakPeriodicity",
+   "original_sha256": "4bf86c7dd4c9b056b23282f99ee2a71fca5233cfebda0b5b719cb492fa99e6b4",
+   "path": "OAI/Geometry/PeriodicTiling/WeakPeriodicity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/WordAffine.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.WordAffine",
+   "original_sha256": "b0ce1b26d2c058a1d1930824c2737d63997e8153df907b7e20a9b3029cbf8509",
+   "path": "OAI/Geometry/PeriodicTiling/WordAffine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/WordAffineAlgebra.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.WordAffineAlgebra",
+   "original_sha256": "1eee49238f396b103242b0a55345cd453dba8c4253605bdb7b27b98e829d6683",
+   "path": "OAI/Geometry/PeriodicTiling/WordAffineAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/WordAffineCount.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.WordAffineCount",
+   "original_sha256": "6207096e3c42eeff96e33f3a9a81551e5126df0feee95bb289b3528f910f7961",
+   "path": "OAI/Geometry/PeriodicTiling/WordAffineCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/WordAffineGeometry.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.WordAffineGeometry",
+   "original_sha256": "70bca8c1007e1f4713fe989e99372a62b616494772406e2e0712948b03bf410e",
+   "path": "OAI/Geometry/PeriodicTiling/WordAffineGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/WordObstruction.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.WordObstruction",
+   "original_sha256": "df9521d728cda823dc23a35ec2f8b8832f8f16dd93c0704e4041d11cad981e33",
+   "path": "OAI/Geometry/PeriodicTiling/WordObstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/PeriodicTiling/WordRule.lean"
+   },
+   "module": "OAI.Geometry.PeriodicTiling.WordRule",
+   "original_sha256": "5fd1870aa8734df10a112163acc9baf7037c619d8a482b370727736b9522253e",
+   "path": "OAI/Geometry/PeriodicTiling/WordRule.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Geometry.PeriodicTiling.AETilingCountable",
+  "OAI.Geometry.PeriodicTiling.Activation",
+  "OAI.Geometry.PeriodicTiling.ActivationOffsets",
+  "OAI.Geometry.PeriodicTiling.ActivationTiles",
+  "OAI.Geometry.PeriodicTiling.ActivityWord",
+  "OAI.Geometry.PeriodicTiling.AuxiliaryCubes",
+  "OAI.Geometry.PeriodicTiling.BlockActivationInverse",
+  "OAI.Geometry.PeriodicTiling.BoundedDifferences",
+  "OAI.Geometry.PeriodicTiling.CenterFiniteness",
+  "OAI.Geometry.PeriodicTiling.ChannelDigitBlocks",
+  "OAI.Geometry.PeriodicTiling.CircleWeylCriterion",
+  "OAI.Geometry.PeriodicTiling.ClosedBoxRounding",
+  "OAI.Geometry.PeriodicTiling.ClosedCoverChains",
+  "OAI.Geometry.PeriodicTiling.CommonModel",
+  "OAI.Geometry.PeriodicTiling.CommonSeedOutputs",
+  "OAI.Geometry.PeriodicTiling.CommonSolution",
+  "OAI.Geometry.PeriodicTiling.ComponentTargets",
+  "OAI.Geometry.PeriodicTiling.ConfigurationDifferenceReduction",
+  "OAI.Geometry.PeriodicTiling.ConfigurationDifferences",
+  "OAI.Geometry.PeriodicTiling.ConstituentAssembly",
+  "OAI.Geometry.PeriodicTiling.ConstituentGeometry",
+  "OAI.Geometry.PeriodicTiling.ConstraintCycles",
+  "OAI.Geometry.PeriodicTiling.CosetParts",
+  "OAI.Geometry.PeriodicTiling.CosetPeriodicity",
+  "OAI.Geometry.PeriodicTiling.Counterexample",
+  "OAI.Geometry.PeriodicTiling.CycleTests",
+  "OAI.Geometry.PeriodicTiling.CyclicCRT",
+  "OAI.Geometry.PeriodicTiling.CyclicCoordinates",
+  "OAI.Geometry.PeriodicTiling.CyclicCounterexample",
+  "OAI.Geometry.PeriodicTiling.CyclicFactorCRT",
+  "OAI.Geometry.PeriodicTiling.CyclicQuotient",
+  "OAI.Geometry.PeriodicTiling.CyclicShear",
+  "OAI.Geometry.PeriodicTiling.CyclicStack",
+  "OAI.Geometry.PeriodicTiling.CyclicSystemStacking",
+  "OAI.Geometry.PeriodicTiling.CyclicTypes",
+  "OAI.Geometry.PeriodicTiling.Dependence",
+  "OAI.Geometry.PeriodicTiling.DirectionalLimits",
+  "OAI.Geometry.PeriodicTiling.DirectionalSlices",
+  "OAI.Geometry.PeriodicTiling.DisjointSuccessorPairs",
+  "OAI.Geometry.PeriodicTiling.EncodedSystem",
+  "OAI.Geometry.PeriodicTiling.EncodedSystemObstruction",
+  "OAI.Geometry.PeriodicTiling.EncodingParameters",
+  "OAI.Geometry.PeriodicTiling.EncodingPrimeSelection",
+  "OAI.Geometry.PeriodicTiling.EuclideanBasic",
+  "OAI.Geometry.PeriodicTiling.FiniteCylinder",
+  "OAI.Geometry.PeriodicTiling.FiniteDifferencePolynomial",
+  "OAI.Geometry.PeriodicTiling.FiniteEventUnion",
+  "OAI.Geometry.PeriodicTiling.FiniteMasks",
+  "OAI.Geometry.PeriodicTiling.FinitePairCounting",
+  "OAI.Geometry.PeriodicTiling.FinitePairRatio",
+  "OAI.Geometry.PeriodicTiling.ForwardDifference",
+  "OAI.Geometry.PeriodicTiling.FullDifferenceBound",
+  "OAI.Geometry.PeriodicTiling.FullDifferencePartition",
+  "OAI.Geometry.PeriodicTiling.GraphTests",
+  "OAI.Geometry.PeriodicTiling.GridRigidity",
+  "OAI.Geometry.PeriodicTiling.IntegerMatrixIndex",
+  "OAI.Geometry.PeriodicTiling.LabeledDigitBlocks",
+  "OAI.Geometry.PeriodicTiling.LastDigit",
+  "OAI.Geometry.PeriodicTiling.LatticeDescent",
+  "OAI.Geometry.PeriodicTiling.LatticeDimensions",
+  "OAI.Geometry.PeriodicTiling.LatticePeriodicity",
+  "OAI.Geometry.PeriodicTiling.LatticeThickening",
+  "OAI.Geometry.PeriodicTiling.LowerDimensions",
+  "OAI.Geometry.PeriodicTiling.Main",
+  "OAI.Geometry.PeriodicTiling.MarkedCell",
+  "OAI.Geometry.PeriodicTiling.MarkedTile",
+  "OAI.Geometry.PeriodicTiling.MarkedTileDescent",
+  "OAI.Geometry.PeriodicTiling.MarkedTileExistence",
+  "OAI.Geometry.PeriodicTiling.Model",
+  "OAI.Geometry.PeriodicTiling.OneDimensional",
+  "OAI.Geometry.PeriodicTiling.OneDimensionalLattice",
+  "OAI.Geometry.PeriodicTiling.OrdinaryActivation",
+  "OAI.Geometry.PeriodicTiling.OrdinaryModel",
+  "OAI.Geometry.PeriodicTiling.PeriodicPartGrouping",
+  "OAI.Geometry.PeriodicTiling.PeriodicRegion",
+  "OAI.Geometry.PeriodicTiling.PeriodicVolume",
+  "OAI.Geometry.PeriodicTiling.PeriodicVolumeMass",
+  "OAI.Geometry.PeriodicTiling.PeriodicVolumeOrbits",
+  "OAI.Geometry.PeriodicTiling.PlanarPeriodicity",
+  "OAI.Geometry.PeriodicTiling.PlaneLattices",
+  "OAI.Geometry.PeriodicTiling.PolynomialShiftDifference",
+  "OAI.Geometry.PeriodicTiling.PolynomialWeyl",
+  "OAI.Geometry.PeriodicTiling.PrimeDifferencePairs",
+  "OAI.Geometry.PeriodicTiling.QuotientTiling",
+  "OAI.Geometry.PeriodicTiling.RationalPolynomialPeriod",
+  "OAI.Geometry.PeriodicTiling.ResidueCoordinates",
+  "OAI.Geometry.PeriodicTiling.ResidueCountBound",
+  "OAI.Geometry.PeriodicTiling.ResidueLiftPairs",
+  "OAI.Geometry.PeriodicTiling.ResidueTransversal",
+  "OAI.Geometry.PeriodicTiling.RigidSectionGeometry",
+  "OAI.Geometry.PeriodicTiling.ScalarAverage",
+  "OAI.Geometry.PeriodicTiling.ScalarPolynomialPeriodicity",
+  "OAI.Geometry.PeriodicTiling.ScalarVanDerCorput",
+  "OAI.Geometry.PeriodicTiling.SeedSymbols",
+  "OAI.Geometry.PeriodicTiling.SeparatedCenters",
+  "OAI.Geometry.PeriodicTiling.SharedSeedInactive",
+  "OAI.Geometry.PeriodicTiling.SharedSeedInverse",
+  "OAI.Geometry.PeriodicTiling.SharedSeedLabelEquiv",
+  "OAI.Geometry.PeriodicTiling.SharedSeedLabels",
+  "OAI.Geometry.PeriodicTiling.SharedSeedRegions",
+  "OAI.Geometry.PeriodicTiling.SharedSeedSizeTransport",
+  "OAI.Geometry.PeriodicTiling.ShiftMultiplicity",
+  "OAI.Geometry.PeriodicTiling.Stacking",
+  "OAI.Geometry.PeriodicTiling.StackingContributions",
+  "OAI.Geometry.PeriodicTiling.SystemObstruction",
+  "OAI.Geometry.PeriodicTiling.ThreeDimensionalTransfer",
+  "OAI.Geometry.PeriodicTiling.ThreeDimensions",
+  "OAI.Geometry.PeriodicTiling.TileDilation",
+  "OAI.Geometry.PeriodicTiling.TilesRegion",
+  "OAI.Geometry.PeriodicTiling.TilingBasic",
+  "OAI.Geometry.PeriodicTiling.TilingTranslation",
+  "OAI.Geometry.PeriodicTiling.TilingTransport",
+  "OAI.Geometry.PeriodicTiling.VoxelCubeMeasure",
+  "OAI.Geometry.PeriodicTiling.VoxelGeometry",
+  "OAI.Geometry.PeriodicTiling.VoxelMeasure",
+  "OAI.Geometry.PeriodicTiling.WeakPeriodicity",
+  "OAI.Geometry.PeriodicTiling.WordAffine",
+  "OAI.Geometry.PeriodicTiling.WordAffineAlgebra",
+  "OAI.Geometry.PeriodicTiling.WordAffineCount",
+  "OAI.Geometry.PeriodicTiling.WordAffineGeometry",
+  "OAI.Geometry.PeriodicTiling.WordObstruction",
+  "OAI.Geometry.PeriodicTiling.WordRule"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/PeriodicTilingThree.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Geometry.PeriodicTiling.Counterexample",
+   "name": "OAI.PeriodicTilingThree.periodic_tiling_counterexample_and_minimality",
+   "statement_sha256": "ae6de18c33d9403fdf366c2e1375a6956e8a4398eb79a1b101af866cb5083d2b"
+  }
+ ],
+ "task_id": "oai-periodic-tiling-three",
+ "task_revision": 1,
+ "title": "OpenAI math: A counterexample to periodic tiling in dimension three: Aperiodic translational tile in dimension three",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

@@ -1,0 +1,971 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 814561575
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.ComplexCancellation",
+  "challenge_sha256": "1c25be0bb2a81b32b787856546194c82dd11947efe765742d3d9c4b915f6f428",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ComplexCancellation.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.ComplexCancellation",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Algebra.AffineCancellation.Main",
+   "theorem_names": [
+    "OAI.ComplexCancellation.main"
+   ]
+  },
+  "config_sha256": "d6387837a006e069413a5529bd5ce1e1bf8a1f4dc959fe40a4f8dba5ccab3465",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ComplexCancellation.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.ComplexCancellation.main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/BezoutFrame.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.BezoutFrame",
+   "original_sha256": "d108afa98f200bfce183b8afc0af586b70734f7ad2cce1bc5e49853a2f555c6f",
+   "path": "OAI/Algebra/AffineCancellation/BezoutFrame.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/Bundle.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.Bundle",
+   "original_sha256": "fb7291ee59e3504be9c7fa81225a48be5a5b0ce6a99690c6a52116b4065a6d7a",
+   "path": "OAI/Algebra/AffineCancellation/Bundle.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/BundleGrading.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.BundleGrading",
+   "original_sha256": "342d68cc28fecd3bccf78355aa33db8a314a8e336500b1cbcbc6cb7b2281e2cc",
+   "path": "OAI/Algebra/AffineCancellation/BundleGrading.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/Clearing.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.Clearing",
+   "original_sha256": "f6112c373f2eda11b0375d01327d80cc7b36a61e44786ad386842d9d67756085",
+   "path": "OAI/Algebra/AffineCancellation/Clearing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/Cylinder.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.Cylinder",
+   "original_sha256": "aa71cb1e494d56e89688a8f8322305d08614cbedfb4c202a050655d839a2a5ea",
+   "path": "OAI/Algebra/AffineCancellation/Cylinder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/CylinderMaps.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.CylinderMaps",
+   "original_sha256": "8aaa5280d0a1a523889c8df755abcb1ca9766d930c110783f1d6fe5f3cc04fb8",
+   "path": "OAI/Algebra/AffineCancellation/CylinderMaps.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/CylinderShift.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.CylinderShift",
+   "original_sha256": "b18999a0b914f4990fba176e516d11479bb957e0b20347539ac2a0965ad245c9",
+   "path": "OAI/Algebra/AffineCancellation/CylinderShift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/Degeneration.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.Degeneration",
+   "original_sha256": "398272900d7083ed811f228e7034b04b2615a1b202729d10dbd606981c4e8b49",
+   "path": "OAI/Algebra/AffineCancellation/Degeneration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/DegenerationGrading.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.DegenerationGrading",
+   "original_sha256": "d183f4c914c6765e7b4ce65a6ca64ebe456789553a80ffccc8e69b5be9330fb4",
+   "path": "OAI/Algebra/AffineCancellation/DegenerationGrading.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/Determinant.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.Determinant",
+   "original_sha256": "bc84273a4c41419f42fc302f20325637a9d85a1b6f87f68930a2d271ed7e60cb",
+   "path": "OAI/Algebra/AffineCancellation/Determinant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/DeterminantRigidity.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.DeterminantRigidity",
+   "original_sha256": "72b2f18e9d8d28f6a06df545fee451e02df0f98aa546b35372de2ee5f2a27a50",
+   "path": "OAI/Algebra/AffineCancellation/DeterminantRigidity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/DifferentialSlice.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.DifferentialSlice",
+   "original_sha256": "55dcb37f2dae5431e3e0698d169f9c7d59051f9115fe6471feb0637afeaae5cb",
+   "path": "OAI/Algebra/AffineCancellation/DifferentialSlice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/Dimension.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.Dimension",
+   "original_sha256": "f092ebb78919362ae7a247e69dfd8dacbd438597ff881b2b82d9497be1cee3bd",
+   "path": "OAI/Algebra/AffineCancellation/Dimension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/EquivariantLift.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.EquivariantLift",
+   "original_sha256": "0dba4a35081665e4f6bf906ecbccb76abb2e2b6b60fff961aed8b48983c7122d",
+   "path": "OAI/Algebra/AffineCancellation/EquivariantLift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/Extraction.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.Extraction",
+   "original_sha256": "d1c08e78671c5b1c3012e1f969ac3e27de26d0fffb502ef36b431f31775cd183",
+   "path": "OAI/Algebra/AffineCancellation/Extraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/FactorDerivation.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.FactorDerivation",
+   "original_sha256": "d06999499c9366f514dc56dbb41711e8cf63431c90daf7ade602b3275d9c05f5",
+   "path": "OAI/Algebra/AffineCancellation/FactorDerivation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/FractionDerivation.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.FractionDerivation",
+   "original_sha256": "f6fc1487a60cb0b4a2f9dcb1e72c26e67ce6bee8961743c215dec92dc5a7ef03",
+   "path": "OAI/Algebra/AffineCancellation/FractionDerivation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/GradedCommutation.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.GradedCommutation",
+   "original_sha256": "bfab0a0abd4dbef5ab4669b14157ac70e639222caa3fed97d69125df0babba2f",
+   "path": "OAI/Algebra/AffineCancellation/GradedCommutation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/GradedLND.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.GradedLND",
+   "original_sha256": "10bed70942f2f78139ae829fdf41b46757c320ff720f432bc2a08faea0a7bc7c",
+   "path": "OAI/Algebra/AffineCancellation/GradedLND.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/GradedMap.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.GradedMap",
+   "original_sha256": "9bd0da9b30dc8700e662c1b1cdd4f8ac58dd37a1f9a9a0203628688d83836a3a",
+   "path": "OAI/Algebra/AffineCancellation/GradedMap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/HighestWeight.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.HighestWeight",
+   "original_sha256": "0cd8c55bb27bfcc8d0d6d86f071aa364bc3dee142cc5667ab53fc14ad5988dee",
+   "path": "OAI/Algebra/AffineCancellation/HighestWeight.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/HomogeneousExtraction.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.HomogeneousExtraction",
+   "original_sha256": "9ccb4ddb9f5a2990c53097a8b42f8c27c5c2806ffa179ba15253ea6c8d4fe15a",
+   "path": "OAI/Algebra/AffineCancellation/HomogeneousExtraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/Intertwining.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.Intertwining",
+   "original_sha256": "8c1ec7900e24aa5c40bcd557b2cb34d2ea530f9880c41e95b4c91f59956832ab",
+   "path": "OAI/Algebra/AffineCancellation/Intertwining.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/InvariantRestriction.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.InvariantRestriction",
+   "original_sha256": "3f4b1f65e7ecfc356b6acd5f1f1ad2b6069737822d036900774d753ec58516fc",
+   "path": "OAI/Algebra/AffineCancellation/InvariantRestriction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/Kernel.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.Kernel",
+   "original_sha256": "b0fd1e8666df7b9510816a292f57babc473fdef9280a3f2b4eeb87d75b51b4fb",
+   "path": "OAI/Algebra/AffineCancellation/Kernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/LaurentDerivation.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.LaurentDerivation",
+   "original_sha256": "bfbe7ee221670fefebbe02645a2ab273ca46d39c70240efb541e59e080abd6da",
+   "path": "OAI/Algebra/AffineCancellation/LaurentDerivation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/LaurentEuler.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.LaurentEuler",
+   "original_sha256": "4dc331349b697912a1e9aa49591eea80ef6ebe26a2c3dce3df7a264da4fcf459",
+   "path": "OAI/Algebra/AffineCancellation/LaurentEuler.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/Main.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.Main",
+   "original_sha256": "95f52f319d7203e69f28b31eff7e8337ba28065e2368e160b57954db3de06354",
+   "path": "OAI/Algebra/AffineCancellation/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/Model.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.Model",
+   "original_sha256": "16cd931adbfa58f3192e2049d55582e5efda1785316c214d04ae69782fce5413",
+   "path": "OAI/Algebra/AffineCancellation/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/Modification.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.Modification",
+   "original_sha256": "ca4a18ce01d15832cbf5064546cabc34d564c7efd8f9df4a7a667b4bd0236272",
+   "path": "OAI/Algebra/AffineCancellation/Modification.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/ModificationGrading.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.ModificationGrading",
+   "original_sha256": "119f3e8c3e89b42c2481d3621f54775cfd65fb9866e1a364681a3c6c09e21efa",
+   "path": "OAI/Algebra/AffineCancellation/ModificationGrading.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/Orbit.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.Orbit",
+   "original_sha256": "79c5c8b641c731c883c8c2c5b80df3146255e0610b2566e5ff621e42580d1f84",
+   "path": "OAI/Algebra/AffineCancellation/Orbit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/OrbitRigidity.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.OrbitRigidity",
+   "original_sha256": "d5e1ab8e6bfcb290f8717aa16ef5cce2f6395cab331c4f5898cf6fde94e17a6b",
+   "path": "OAI/Algebra/AffineCancellation/OrbitRigidity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/Order.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.Order",
+   "original_sha256": "3d35f03adc64b9b0135287c445281cd08c27fae94120135732881064d09ad33e",
+   "path": "OAI/Algebra/AffineCancellation/Order.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/PolynomialDerivation.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.PolynomialDerivation",
+   "original_sha256": "c7b44674495d22ad1bc183db7d61de7b0315e210dec3bf5e91749ce45ff63afe",
+   "path": "OAI/Algebra/AffineCancellation/PolynomialDerivation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/PolynomialSlice.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.PolynomialSlice",
+   "original_sha256": "337583caac03958914479f4ddcd1b25fae78460ab63a9414a05b8718b42c2f5b",
+   "path": "OAI/Algebra/AffineCancellation/PolynomialSlice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/PositiveInvariant.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.PositiveInvariant",
+   "original_sha256": "4aa2074236b83617444e456018575a520726b1182c2d5434de810168cf5d1a97",
+   "path": "OAI/Algebra/AffineCancellation/PositiveInvariant.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/PositiveObstruction.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.PositiveObstruction",
+   "original_sha256": "68858ddb798443712c6c6c492f776b1ce6ceaaa616e270d43d264635bb217dc3",
+   "path": "OAI/Algebra/AffineCancellation/PositiveObstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/Primitive.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.Primitive",
+   "original_sha256": "c6d2f7d7297058fea64490eeddb15a71f5ff5448b7f35976da84f8df7e25b73c",
+   "path": "OAI/Algebra/AffineCancellation/Primitive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/Quadric.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.Quadric",
+   "original_sha256": "03539de3143be81a59211010dde6cb5b81a276a2c7dfbd9f4ac14b09081bff31",
+   "path": "OAI/Algebra/AffineCancellation/Quadric.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/QuotientDerivation.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.QuotientDerivation",
+   "original_sha256": "6a580efce7fb5c5c3cd3bf77563c618e954b472a27492541c69b18ab04191f6e",
+   "path": "OAI/Algebra/AffineCancellation/QuotientDerivation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/QuotientGrading.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.QuotientGrading",
+   "original_sha256": "8ed959cb47f470c53c54c835d63448d78387f2345902cf00d6a92e49b88f2da6",
+   "path": "OAI/Algebra/AffineCancellation/QuotientGrading.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/RationalSlice.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.RationalSlice",
+   "original_sha256": "09effb4f4bdc47e0eda5618d6c66e1f917e97c04a1a6594f5c4ad6fe2392b03c",
+   "path": "OAI/Algebra/AffineCancellation/RationalSlice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/Rees.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.Rees",
+   "original_sha256": "2d796c9735da7a4871d084428066be8623ef8661fc65f2ef4d0ea2cf6af08c1c",
+   "path": "OAI/Algebra/AffineCancellation/Rees.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/ReesClearing.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.ReesClearing",
+   "original_sha256": "5d4dbdcc5b6a974109386b2ad5b843dee79a6f62d3a9c778b8c891f6c425ff42",
+   "path": "OAI/Algebra/AffineCancellation/ReesClearing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/ReesDerivation.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.ReesDerivation",
+   "original_sha256": "808c39b162ee75bb746d1b02deea8fddd3c438e603c467748bfcce867f9b5491",
+   "path": "OAI/Algebra/AffineCancellation/ReesDerivation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/ReesGrading.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.ReesGrading",
+   "original_sha256": "e7921a218be5c2e82f9fcc29c602b5d0d4f56e9c9134df3ad4697dc6cd44a3b8",
+   "path": "OAI/Algebra/AffineCancellation/ReesGrading.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/ReesReduction.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.ReesReduction",
+   "original_sha256": "c638d9d11aa7da6c48b30bc155eef5b291fb282bd7274b9a7df06a08372b7705",
+   "path": "OAI/Algebra/AffineCancellation/ReesReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/RelativeClearing.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.RelativeClearing",
+   "original_sha256": "4a518fe277fb2a5a613a3bfb5dfc5597b36afd00875624d6bda570dab21f016a",
+   "path": "OAI/Algebra/AffineCancellation/RelativeClearing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/ReplicaLift.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.ReplicaLift",
+   "original_sha256": "ec0ed176b573da1a28472a56c82a4f7e3982bf10829f68db8b298956d32c697f",
+   "path": "OAI/Algebra/AffineCancellation/ReplicaLift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/Rigidity.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.Rigidity",
+   "original_sha256": "252c5f2b72b2e003bae718c5110fffa67fba37d1f5397b3d5b0186a6acbeb1a0",
+   "path": "OAI/Algebra/AffineCancellation/Rigidity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/TorsorClearing.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.TorsorClearing",
+   "original_sha256": "d33dab5f4a6f7c3b67facb09fdc3aa5a4b2f3b66629864880f284a87a0ce2c35",
+   "path": "OAI/Algebra/AffineCancellation/TorsorClearing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/TorsorEuler.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.TorsorEuler",
+   "original_sha256": "85778035022f33c7ad94309a1a15b32017a2ce1b6d33215e71e6c98c88ba7b52",
+   "path": "OAI/Algebra/AffineCancellation/TorsorEuler.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/TorsorFrame.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.TorsorFrame",
+   "original_sha256": "a829b495030867b424a7d5697b8df9f119274d7cb8991769760a8e996585059c",
+   "path": "OAI/Algebra/AffineCancellation/TorsorFrame.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Algebra/AffineCancellation/TorsorInverse.lean"
+   },
+   "module": "OAI.Algebra.AffineCancellation.TorsorInverse",
+   "original_sha256": "dca7cc38867938b43cf9119a4f242a40b3c81b105435489b34034d9ecd5ce176",
+   "path": "OAI/Algebra/AffineCancellation/TorsorInverse.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Algebra.AffineCancellation.BezoutFrame",
+  "OAI.Algebra.AffineCancellation.Bundle",
+  "OAI.Algebra.AffineCancellation.BundleGrading",
+  "OAI.Algebra.AffineCancellation.Clearing",
+  "OAI.Algebra.AffineCancellation.Cylinder",
+  "OAI.Algebra.AffineCancellation.CylinderMaps",
+  "OAI.Algebra.AffineCancellation.CylinderShift",
+  "OAI.Algebra.AffineCancellation.Degeneration",
+  "OAI.Algebra.AffineCancellation.DegenerationGrading",
+  "OAI.Algebra.AffineCancellation.Determinant",
+  "OAI.Algebra.AffineCancellation.DeterminantRigidity",
+  "OAI.Algebra.AffineCancellation.DifferentialSlice",
+  "OAI.Algebra.AffineCancellation.Dimension",
+  "OAI.Algebra.AffineCancellation.EquivariantLift",
+  "OAI.Algebra.AffineCancellation.Extraction",
+  "OAI.Algebra.AffineCancellation.FactorDerivation",
+  "OAI.Algebra.AffineCancellation.FractionDerivation",
+  "OAI.Algebra.AffineCancellation.GradedCommutation",
+  "OAI.Algebra.AffineCancellation.GradedLND",
+  "OAI.Algebra.AffineCancellation.GradedMap",
+  "OAI.Algebra.AffineCancellation.HighestWeight",
+  "OAI.Algebra.AffineCancellation.HomogeneousExtraction",
+  "OAI.Algebra.AffineCancellation.Intertwining",
+  "OAI.Algebra.AffineCancellation.InvariantRestriction",
+  "OAI.Algebra.AffineCancellation.Kernel",
+  "OAI.Algebra.AffineCancellation.LaurentDerivation",
+  "OAI.Algebra.AffineCancellation.LaurentEuler",
+  "OAI.Algebra.AffineCancellation.Main",
+  "OAI.Algebra.AffineCancellation.Model",
+  "OAI.Algebra.AffineCancellation.Modification",
+  "OAI.Algebra.AffineCancellation.ModificationGrading",
+  "OAI.Algebra.AffineCancellation.Orbit",
+  "OAI.Algebra.AffineCancellation.OrbitRigidity",
+  "OAI.Algebra.AffineCancellation.Order",
+  "OAI.Algebra.AffineCancellation.PolynomialDerivation",
+  "OAI.Algebra.AffineCancellation.PolynomialSlice",
+  "OAI.Algebra.AffineCancellation.PositiveInvariant",
+  "OAI.Algebra.AffineCancellation.PositiveObstruction",
+  "OAI.Algebra.AffineCancellation.Primitive",
+  "OAI.Algebra.AffineCancellation.Quadric",
+  "OAI.Algebra.AffineCancellation.QuotientDerivation",
+  "OAI.Algebra.AffineCancellation.QuotientGrading",
+  "OAI.Algebra.AffineCancellation.RationalSlice",
+  "OAI.Algebra.AffineCancellation.Rees",
+  "OAI.Algebra.AffineCancellation.ReesClearing",
+  "OAI.Algebra.AffineCancellation.ReesDerivation",
+  "OAI.Algebra.AffineCancellation.ReesGrading",
+  "OAI.Algebra.AffineCancellation.ReesReduction",
+  "OAI.Algebra.AffineCancellation.RelativeClearing",
+  "OAI.Algebra.AffineCancellation.ReplicaLift",
+  "OAI.Algebra.AffineCancellation.Rigidity",
+  "OAI.Algebra.AffineCancellation.TorsorClearing",
+  "OAI.Algebra.AffineCancellation.TorsorEuler",
+  "OAI.Algebra.AffineCancellation.TorsorFrame",
+  "OAI.Algebra.AffineCancellation.TorsorInverse"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/ComplexCancellation.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Algebra.AffineCancellation.Main",
+   "name": "OAI.ComplexCancellation.main",
+   "statement_sha256": "b17672db9ced229f6caaeb01e3a74cd05298af20fddbe1db7309142cc425e65b"
+  }
+ ],
+ "task_id": "oai-complex-cancellation",
+ "task_revision": 1,
+ "title": "OpenAI math: Zariski cancellation and affine fibrations over the complex numbers: Complex affine-space cancellation counterexample",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

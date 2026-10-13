@@ -1,0 +1,1881 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 372275322
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.QuinticLienard",
+  "challenge_sha256": "cb34f454db432f46902a17036812adde4c73fe276d6d7a8a8b21797ace40d000",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/QuinticLienard.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.QuinticLienard",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.LienardCycles.Main",
+   "theorem_names": [
+    "OAI.QuinticLienard.main"
+   ]
+  },
+  "config_sha256": "52e78108c45ce22cf96adafd9826f378ad61b6e222891b5dbade39ab1e805d95",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/QuinticLienard.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.QuinticLienard.main": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ActualCharacteristic.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ActualCharacteristic",
+   "original_sha256": "d522cfa3e8e347f0a0d45ba4636848d093cfc68be55fbd7b988c8b974dbe2fcb",
+   "path": "OAI/Analysis/LienardCycles/ActualCharacteristic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ActualError.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ActualError",
+   "original_sha256": "424fdb92c661e2b71fdeff6c0acfbbf03be3ac121b98e64ba58eca062d8c2586",
+   "path": "OAI/Analysis/LienardCycles/ActualError.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ActualFitLimits.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ActualFitLimits",
+   "original_sha256": "b8ef9416c8d92875a4274c9bdf764997016843bb7b3a1e5d5c0703cbb5f99ba4",
+   "path": "OAI/Analysis/LienardCycles/ActualFitLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ActualFitTransport.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ActualFitTransport",
+   "original_sha256": "8aff17e87a45bc7d2dda9b9a41293290dc5b874aed79b8ab601dc1db224b1edb",
+   "path": "OAI/Analysis/LienardCycles/ActualFitTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ActualReflection.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ActualReflection",
+   "original_sha256": "c0e41b9d66ce647e266a240b555cfbdb27667048efcd5468529a3bc6464c4f42",
+   "path": "OAI/Analysis/LienardCycles/ActualReflection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ActualSlopeComparison.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ActualSlopeComparison",
+   "original_sha256": "2994ca439e0d1284da3831068cdc1079980135e2193856cd0ed8a410dc7e1348",
+   "path": "OAI/Analysis/LienardCycles/ActualSlopeComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ActualSmallWidth.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ActualSmallWidth",
+   "original_sha256": "88dc3fefca97164e7e15f7cc6283b53a03de0da0e3b6803ecde84d42f14247d4",
+   "path": "OAI/Analysis/LienardCycles/ActualSmallWidth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/AlgebraicFlow.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.AlgebraicFlow",
+   "original_sha256": "63165c5357c3eb1f4eb6cdc3f597d671ea173fe8ffd17272f6df2cbef087eadb",
+   "path": "OAI/Analysis/LienardCycles/AlgebraicFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/AlgebraicNotation.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.AlgebraicNotation",
+   "original_sha256": "0d9d2c16811b989842c3bbc34e2f6500a3a6f0574488d33fe39bbe90c564e39b",
+   "path": "OAI/Analysis/LienardCycles/AlgebraicNotation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/AngleBounds.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.AngleBounds",
+   "original_sha256": "b32004618d06f6e7af9ac0ec983277f76203155f0b259d7faf77829c81dd4e27",
+   "path": "OAI/Analysis/LienardCycles/AngleBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ArcEndpoints.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ArcEndpoints",
+   "original_sha256": "76e92537f24154e7d2da9c6ac2ddb6f0fa02220c0b0176ee2be11e10c465b7a8",
+   "path": "OAI/Analysis/LienardCycles/ArcEndpoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ArcFamilies.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ArcFamilies",
+   "original_sha256": "4f83181a067d6d7a662b362d856139b28bba0c029aba53cd6eab6f572559c10f",
+   "path": "OAI/Analysis/LienardCycles/ArcFamilies.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ArchSymmetries.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ArchSymmetries",
+   "original_sha256": "db82ae8a1ec59aeef473b6f544d918d52c339dee5b5936c971d72d9d7fbd04c4",
+   "path": "OAI/Analysis/LienardCycles/ArchSymmetries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ArchVariation.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ArchVariation",
+   "original_sha256": "e1960ed282d3568415e559f9d0fd04a6387b1fa24a1deb66486ea06ced42c5da",
+   "path": "OAI/Analysis/LienardCycles/ArchVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/AxisBranches.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.AxisBranches",
+   "original_sha256": "f28cc328600312450f3eba168d7582d6c4ba17e1fdf6670de919927d0008e5ad",
+   "path": "OAI/Analysis/LienardCycles/AxisBranches.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/AxisCases.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.AxisCases",
+   "original_sha256": "82c342ccb3044a107279c231114ca8ad9f55c209c88e251f2f2aa25c541a4be8",
+   "path": "OAI/Analysis/LienardCycles/AxisCases.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/AxisComparison.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.AxisComparison",
+   "original_sha256": "df5445d989e2dd9946fbe2d943febc40ec7305c35e0524f71b5167ae05e44793",
+   "path": "OAI/Analysis/LienardCycles/AxisComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/AxisFit.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.AxisFit",
+   "original_sha256": "219e4ff8e4081afb83a7076aceafa7cb7095e0227846ecece7887162b45d9fe8",
+   "path": "OAI/Analysis/LienardCycles/AxisFit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/AxisIntercept.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.AxisIntercept",
+   "original_sha256": "878907b0e5f16f14fbb8181932865e977f09e9c105ae6a1e82564d1e2902ecb6",
+   "path": "OAI/Analysis/LienardCycles/AxisIntercept.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/AxisLimits.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.AxisLimits",
+   "original_sha256": "ca3b949a431f9bf046800fd99ac46abdb654c6df96a93d3ec8b8d2240523b078",
+   "path": "OAI/Analysis/LienardCycles/AxisLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/AxisReflection.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.AxisReflection",
+   "original_sha256": "f2084df489bf665761567b2d6d45dc9a55f90c9349a67419e7edbc4dc3adaf64",
+   "path": "OAI/Analysis/LienardCycles/AxisReflection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/AxisRegularity.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.AxisRegularity",
+   "original_sha256": "cc2c6251365d982784f9295e7dc7995940b08555a7ab2066ac7e039f64919393",
+   "path": "OAI/Analysis/LienardCycles/AxisRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/AxisSecants.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.AxisSecants",
+   "original_sha256": "9f0c87afe99f2c691fc5c509c0701a2447b88d8a7d40d95c9ee9b6eb83b339fe",
+   "path": "OAI/Analysis/LienardCycles/AxisSecants.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/AxisWidthGerm.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.AxisWidthGerm",
+   "original_sha256": "1230f9463f442dd062bc0aedae961d1d9ce5ea217a7e89c894a9aaa6f4b3febb",
+   "path": "OAI/Analysis/LienardCycles/AxisWidthGerm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/AxisWidthRegularity.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.AxisWidthRegularity",
+   "original_sha256": "fe07701947c214727ec62e30f586452e2979618c9fc6fe71fc21217752ee4234",
+   "path": "OAI/Analysis/LienardCycles/AxisWidthRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/AxisZeroCount.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.AxisZeroCount",
+   "original_sha256": "eea5abcb9fe4dc9bd13227d9e0ea9557a6c3b0b4ac1432eedd1a20adf9d3d86c",
+   "path": "OAI/Analysis/LienardCycles/AxisZeroCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/AxisZeros.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.AxisZeros",
+   "original_sha256": "b5d44382858f2f5c0aac1318d10ba1f1fc098bd5e4ec922f11ca060b899810c7",
+   "path": "OAI/Analysis/LienardCycles/AxisZeros.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/BaseLimits.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.BaseLimits",
+   "original_sha256": "217d01a30e511892b1a1104fe9c56a9b1c824f5bf439a143e4590f1271c46a03",
+   "path": "OAI/Analysis/LienardCycles/BaseLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/BaseSymmetry.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.BaseSymmetry",
+   "original_sha256": "6f5f8cac9a6d35662484dee711c2db8f522f3c9a49b1e036ccdc3d6ba02f4979",
+   "path": "OAI/Analysis/LienardCycles/BaseSymmetry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/BaseTransport.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.BaseTransport",
+   "original_sha256": "49876b05a9d53fba7f46477381242411a3cda6314f16453b374404ae3354f9fb",
+   "path": "OAI/Analysis/LienardCycles/BaseTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/BoundaryFlow.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.BoundaryFlow",
+   "original_sha256": "9fe2b9790483e8634e096125e1e9b9551cd345ef6a2b2d3b2b07be9badfb2cf9",
+   "path": "OAI/Analysis/LienardCycles/BoundaryFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/BoundaryGerm.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.BoundaryGerm",
+   "original_sha256": "32ab411089f0a7b76ce7940de755e887176a7048e5f565d409e81e1f5216011f",
+   "path": "OAI/Analysis/LienardCycles/BoundaryGerm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/CanonicalAnalytic.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.CanonicalAnalytic",
+   "original_sha256": "c0cd9083add2b62a617840e4e02042a7f3c7db7bef928ae52d2b2a1c655cb5c7",
+   "path": "OAI/Analysis/LienardCycles/CanonicalAnalytic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/CanonicalVariation.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.CanonicalVariation",
+   "original_sha256": "545933a18c85f2c2c10419fc9af15491e29697a1fc59ce30a96e685398e1415b",
+   "path": "OAI/Analysis/LienardCycles/CanonicalVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/CaseOne.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.CaseOne",
+   "original_sha256": "66e6114dc49b874d30173e7dc4ea675ac5b84503f00ea968f8320ba96d80c43b",
+   "path": "OAI/Analysis/LienardCycles/CaseOne.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/Characteristic.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.Characteristic",
+   "original_sha256": "39ab6a26683c6100df34f936d21a1dd8b9eb968ac8450f39a1fefa0a9fae3738",
+   "path": "OAI/Analysis/LienardCycles/Characteristic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/CharacteristicJets.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.CharacteristicJets",
+   "original_sha256": "d3c0dc8f4d83c4e48b18df0e08cc0124c64b73f6294e4b598ddb1ff022ff3b79",
+   "path": "OAI/Analysis/LienardCycles/CharacteristicJets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/CharacteristicLimit.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.CharacteristicLimit",
+   "original_sha256": "7a373615494f5d96599666dfa8d08854865b046114b81f5342454deb070e107d",
+   "path": "OAI/Analysis/LienardCycles/CharacteristicLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/CharacteristicPositive.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.CharacteristicPositive",
+   "original_sha256": "84851df65bfb453078feb0e98a7c69638b4154d6dfb72c24a123e3d01bfcc7cf",
+   "path": "OAI/Analysis/LienardCycles/CharacteristicPositive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/CharacteristicScaling.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.CharacteristicScaling",
+   "original_sha256": "9d6fcf0d0844e495c37104dd9b2ca146c87ebe7f4682c3d39dce14c7475ebb6f",
+   "path": "OAI/Analysis/LienardCycles/CharacteristicScaling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/CharacteristicSigns.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.CharacteristicSigns",
+   "original_sha256": "f5ea8633b0e4b3cc48da4b788270f0a4991a858ad6efa134b540465721b0cdfb",
+   "path": "OAI/Analysis/LienardCycles/CharacteristicSigns.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ClosedCutoff.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ClosedCutoff",
+   "original_sha256": "430ddac753a6d857cd30367a2d9df61059b300cefc0962abb2c368b16f4b5db5",
+   "path": "OAI/Analysis/LienardCycles/ClosedCutoff.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/CoefficientCases.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.CoefficientCases",
+   "original_sha256": "e838940620931f2a980553b0e52b56eecc7a232ea1e73388ce3a1a201f17a9d5",
+   "path": "OAI/Analysis/LienardCycles/CoefficientCases.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ConditionalFit.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ConditionalFit",
+   "original_sha256": "dfd38488d8b75ebf2bd9574fc52812a2e343ae6e828581ff181d6612e6d5791b",
+   "path": "OAI/Analysis/LienardCycles/ConditionalFit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/CubicVariation.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.CubicVariation",
+   "original_sha256": "cef6fd2ae8bb17838d031cf66b70bfca508fe9a1b803a066a934384f3fe6909f",
+   "path": "OAI/Analysis/LienardCycles/CubicVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/CurvatureComparison.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.CurvatureComparison",
+   "original_sha256": "329d5ee76ecf64d0a14f33f82d6f484f52ed6ca69c0527ce378c225aa4cbc969",
+   "path": "OAI/Analysis/LienardCycles/CurvatureComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/CurvatureJets.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.CurvatureJets",
+   "original_sha256": "95ca84df010a3eebf98950a59e50150ca5f3571392fcf0da8bec0339900218c8",
+   "path": "OAI/Analysis/LienardCycles/CurvatureJets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/CurvaturePositive.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.CurvaturePositive",
+   "original_sha256": "423072ca338c4bda412b5cac7a26b307468d0c06c9f62eb295acd0461597e150",
+   "path": "OAI/Analysis/LienardCycles/CurvaturePositive.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/CurvatureRange.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.CurvatureRange",
+   "original_sha256": "5bf7b515d63c61e536d7a839412cf7add878d082dc37f950aed48ce41202aa47",
+   "path": "OAI/Analysis/LienardCycles/CurvatureRange.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/CurvatureTransport.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.CurvatureTransport",
+   "original_sha256": "19f4c143bcb73738bbf3bd00b1100312a00e3d00cbd2a0ce7d23fbd219ee2c79",
+   "path": "OAI/Analysis/LienardCycles/CurvatureTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/CycleIsolation.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.CycleIsolation",
+   "original_sha256": "34aa5baa1fd54affdae7a0a7a50cf0df927522d7f364a566f66a99fd3ace0f46",
+   "path": "OAI/Analysis/LienardCycles/CycleIsolation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/CycleSection.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.CycleSection",
+   "original_sha256": "690d85792b1ec00abd585e9f83b6609086615bff9eff97e3849e99738ec8ea59",
+   "path": "OAI/Analysis/LienardCycles/CycleSection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/CycleTransform.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.CycleTransform",
+   "original_sha256": "9d24fe515577ee8028862db66de420bb95930afb83529d1ed6f09a9c200012fe",
+   "path": "OAI/Analysis/LienardCycles/CycleTransform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/EndpointAlgebra.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.EndpointAlgebra",
+   "original_sha256": "0386a770b9665a7c0e7462bf4cf3e0a54244e7cc93d81249c4cb2aca8028b7ce",
+   "path": "OAI/Analysis/LienardCycles/EndpointAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/EndpointComparison.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.EndpointComparison",
+   "original_sha256": "562def1341bfa59f8b049b7719695f92e5684dc1f12554d02808a58d15c92031",
+   "path": "OAI/Analysis/LienardCycles/EndpointComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/EndpointJets.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.EndpointJets",
+   "original_sha256": "fc3a819b8500525032c76ed015874fa7b88e2648d80f0db685cea9e04d0f3054",
+   "path": "OAI/Analysis/LienardCycles/EndpointJets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/EndpointScaling.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.EndpointScaling",
+   "original_sha256": "0bd1ccc9d42e7d13715b5a8cb76a5f49c1e5c8b28a59bcba9f8f1fb88b527d62",
+   "path": "OAI/Analysis/LienardCycles/EndpointScaling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/EndpointSigns.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.EndpointSigns",
+   "original_sha256": "b1f1118bc2d77d42dc121b77c0d14e7a8240c3c7a857853f31aef8575fa1d52e",
+   "path": "OAI/Analysis/LienardCycles/EndpointSigns.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ExcursionAxis.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ExcursionAxis",
+   "original_sha256": "f8fbe09d30390ea5fd8b2baedddee3187ff272026a1a8c64ce36c8d542ecca92",
+   "path": "OAI/Analysis/LienardCycles/ExcursionAxis.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ExcursionGraph.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ExcursionGraph",
+   "original_sha256": "58abca98637eefeb7af10f028e50a16599f3ba485cbe4b2f31da2d3f78cae61f",
+   "path": "OAI/Analysis/LienardCycles/ExcursionGraph.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ExcursionSigns.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ExcursionSigns",
+   "original_sha256": "08f5744304c54c191624f834766564fcfc9747bd755b75210b242e3246e65267",
+   "path": "OAI/Analysis/LienardCycles/ExcursionSigns.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/FiberQuotient.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.FiberQuotient",
+   "original_sha256": "3f89d69db90a72aac6d52a9ca483b0758132b44127487a2182527ed3dc4b0bd4",
+   "path": "OAI/Analysis/LienardCycles/FiberQuotient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/FiniteFlow.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.FiniteFlow",
+   "original_sha256": "94752fdb13605adaf8b6dcb45019687d79ad96377a3c62e3c0425624bb3dac07",
+   "path": "OAI/Analysis/LienardCycles/FiniteFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/FitAngles.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.FitAngles",
+   "original_sha256": "aae9f43a41535154b4912cdd93d9dd9ec84f2541ef357b83835db29544f5fd71",
+   "path": "OAI/Analysis/LienardCycles/FitAngles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/FitProperness.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.FitProperness",
+   "original_sha256": "5c35b97585fe567614c026a6223d9105598b70b7ac75a307a1ac818d883f29aa",
+   "path": "OAI/Analysis/LienardCycles/FitProperness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/FitSmall.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.FitSmall",
+   "original_sha256": "1de68bb58f5d65d21e7d8bb3d5cc046a2829b1f426387bd86063f1ddf8e5ec77",
+   "path": "OAI/Analysis/LienardCycles/FitSmall.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/FixedSlopeLimit.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.FixedSlopeLimit",
+   "original_sha256": "b0d8404271624f1e67ca8ea3402f8363dd025c8e9dd86fe67e7a240fdf706b6b",
+   "path": "OAI/Analysis/LienardCycles/FixedSlopeLimit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/FixedWidthFamilies.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.FixedWidthFamilies",
+   "original_sha256": "85abef5bf89997527fad582b3eb587fac6a31132bad5389c81eb3752365bec00",
+   "path": "OAI/Analysis/LienardCycles/FixedWidthFamilies.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/GlobalFit.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.GlobalFit",
+   "original_sha256": "acd57bf0f2a1f8eda2a1503a3143dcd3fe1c01fb41a6e009894ecf393ab2356e",
+   "path": "OAI/Analysis/LienardCycles/GlobalFit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/GlobalODE.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.GlobalODE",
+   "original_sha256": "0f071796abcbc9655ad16d3b6da0b2251b1d0d01b11b7185970fafacbc1caeae",
+   "path": "OAI/Analysis/LienardCycles/GlobalODE.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/HeightLimits.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.HeightLimits",
+   "original_sha256": "cc8e7a4bb4ae3a95b74712ab9826a1c1edc6f00a050fca5fde4d356fd54b6c81",
+   "path": "OAI/Analysis/LienardCycles/HeightLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/HeightSigns.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.HeightSigns",
+   "original_sha256": "af0e48f828290e9558bc9abbc8de04f402f558ef71e7b43e43c2724df90e5715",
+   "path": "OAI/Analysis/LienardCycles/HeightSigns.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/HyperbolicCoordinate.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.HyperbolicCoordinate",
+   "original_sha256": "7a52ccfc0a3f56d2c17afd639b30174d0365219086217f748d2cf9e3b9df5863",
+   "path": "OAI/Analysis/LienardCycles/HyperbolicCoordinate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/Intercept.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.Intercept",
+   "original_sha256": "9415666e658ab9520c13d29703e435578807ef08c1a685e72c6327ce48c35b9e",
+   "path": "OAI/Analysis/LienardCycles/Intercept.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/IntervalInverse.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.IntervalInverse",
+   "original_sha256": "d982574e92ca6cb9438fff852d1064089e81c82631bbd3e96d4c30a3dccd4439",
+   "path": "OAI/Analysis/LienardCycles/IntervalInverse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/LocalExcursion.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.LocalExcursion",
+   "original_sha256": "f192139589e0e711aba12a53f7d23cce04efcd68bcd11f756711808a5129583e",
+   "path": "OAI/Analysis/LienardCycles/LocalExcursion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/Main.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.Main",
+   "original_sha256": "13baacc8e7d7def3b6104d31b329dc0f4da0cb0e6adc1f87e367e416d9ac00c5",
+   "path": "OAI/Analysis/LienardCycles/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/MixedDerivatives.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.MixedDerivatives",
+   "original_sha256": "7e0aa8a6c0a8b8fb46b0bd7f3f50508b5fcf0da30a9d15e5a7236388b492ecef",
+   "path": "OAI/Analysis/LienardCycles/MixedDerivatives.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/Model.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.Model",
+   "original_sha256": "7feed17423586223101ad947ab6aa135a8ec47170929c62df784943ae16035af",
+   "path": "OAI/Analysis/LienardCycles/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ModelAlgebra.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ModelAlgebra",
+   "original_sha256": "7d27dd7a56c6b3ca3052fd6b9ace0721841e7e7d5234526322dcc33a0fcb7de9",
+   "path": "OAI/Analysis/LienardCycles/ModelAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ModelEndpoint.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ModelEndpoint",
+   "original_sha256": "3560cd506c7afe05dddfa9c804df310dc8381d54d2f830e6ef26c805f151a2f1",
+   "path": "OAI/Analysis/LienardCycles/ModelEndpoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ModelScaling.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ModelScaling",
+   "original_sha256": "c179ee6227166f591d3b0672ff7a898f740395f3d114e901088d6df2bdd54d35",
+   "path": "OAI/Analysis/LienardCycles/ModelScaling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/MonotoneIntegral.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.MonotoneIntegral",
+   "original_sha256": "47dbc2561206b1e694654a59a761987947bd42e73bdb0e07b94b83399175b0ae",
+   "path": "OAI/Analysis/LienardCycles/MonotoneIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/OpenArch.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.OpenArch",
+   "original_sha256": "b0155386333d3cebf0aeaae08bec0ea47ae04e9386625c194fb7eaa053f5512d",
+   "path": "OAI/Analysis/LienardCycles/OpenArch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/OpenArchAxis.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.OpenArchAxis",
+   "original_sha256": "79d3d21e659e250392d9f3cdb3b171b40407dfb94b6e15064cf162d4c66a103f",
+   "path": "OAI/Analysis/LienardCycles/OpenArchAxis.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/OriginalProfile.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.OriginalProfile",
+   "original_sha256": "2ed93484cb4e017476c9241b5a7a4510a25cd09fe61971a076bafa62520deaf9",
+   "path": "OAI/Analysis/LienardCycles/OriginalProfile.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/OvalMatching.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.OvalMatching",
+   "original_sha256": "2f96e21639ad96ce5f3a2cb1c7d501a000e5db1c5f24cb81ca8348671e96af82",
+   "path": "OAI/Analysis/LienardCycles/OvalMatching.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ParameterVariation.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ParameterVariation",
+   "original_sha256": "67c5785b057b4b0fd640a893eb8ba00518cfee5e76ec0ff20fffadf873ac4bca",
+   "path": "OAI/Analysis/LienardCycles/ParameterVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PartialCalculus.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PartialCalculus",
+   "original_sha256": "9a985ea8f9d03eb2977f9b3fd90455a594e92ce65987b2a94b781c6b197209f5",
+   "path": "OAI/Analysis/LienardCycles/PartialCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PeriodicBasics.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PeriodicBasics",
+   "original_sha256": "5b3259669249e24e3d58088da4a6effd41626d20d3e2cc4ca312de89ef962f1f",
+   "path": "OAI/Analysis/LienardCycles/PeriodicBasics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PeriodicMatching.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PeriodicMatching",
+   "original_sha256": "c8b1771b110b07352c367677d497f6df9825cedba052b5aaa7039ff283aa2b53",
+   "path": "OAI/Analysis/LienardCycles/PeriodicMatching.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PeriodicOval.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PeriodicOval",
+   "original_sha256": "bc7f15cc4957fbd9ae187eb19b6d6ea294d4b5b1e1815e718cb340d45b3197db",
+   "path": "OAI/Analysis/LienardCycles/PeriodicOval.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PeriodicSymmetry.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PeriodicSymmetry",
+   "original_sha256": "657d528409acac1f4c85cb0e41f7a70a4e655a0e4510d3e9825a030958135be0",
+   "path": "OAI/Analysis/LienardCycles/PeriodicSymmetry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PhysicalFlow.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PhysicalFlow",
+   "original_sha256": "431d077cbe6f97a6d5fb7e46760d159ff81e78308f80c67c98677295adf99aab",
+   "path": "OAI/Analysis/LienardCycles/PhysicalFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PolynomialModel.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PolynomialModel",
+   "original_sha256": "15c718ba8f5d30346a4e014bef0aaebd79567f25872973be0d7c4dc641b9048e",
+   "path": "OAI/Analysis/LienardCycles/PolynomialModel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PositiveArcs.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PositiveArcs",
+   "original_sha256": "6d120d35463e91a4b9ce985574ca6de68043d7a54059deb8fca7748c0056e7d6",
+   "path": "OAI/Analysis/LienardCycles/PositiveArcs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PositiveBase.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PositiveBase",
+   "original_sha256": "cb47bc00d8e9621d4b45506ba3e650b7a2a8017abe06b19bbfa2fd1a4565a062",
+   "path": "OAI/Analysis/LienardCycles/PositiveBase.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PositiveCanonical.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PositiveCanonical",
+   "original_sha256": "7239cd148d1c99d570b6aab672fc51a83be9e07813c53e46c97993e0619d8a77",
+   "path": "OAI/Analysis/LienardCycles/PositiveCanonical.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PositiveEndpoints.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PositiveEndpoints",
+   "original_sha256": "001fa14e23d4c5d69a9259115a14a3c823c694e7dae5a6696e4aee3eccd7da50",
+   "path": "OAI/Analysis/LienardCycles/PositiveEndpoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PositiveFit.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PositiveFit",
+   "original_sha256": "3b49e2939c69c37b04d994405fde831febf81a449544cf7b27b434ad52cbcc43",
+   "path": "OAI/Analysis/LienardCycles/PositiveFit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PositiveParabolic.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PositiveParabolic",
+   "original_sha256": "4ef9adab5ad43763ed7a2d3f41dbae939e92ca9a41beb31acda2638cf4d3ef91",
+   "path": "OAI/Analysis/LienardCycles/PositiveParabolic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PositiveScaling.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PositiveScaling",
+   "original_sha256": "a68cb15e4d5fa9229afaf4407f9cf0f340d7a507ddf258fe8c293cd8640646e5",
+   "path": "OAI/Analysis/LienardCycles/PositiveScaling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PositiveSymmetries.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PositiveSymmetries",
+   "original_sha256": "091d1def46363d1295b4c0328f7ecaa2a439271bb11a715ef21330c074fce4ac",
+   "path": "OAI/Analysis/LienardCycles/PositiveSymmetries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PositiveTransport.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PositiveTransport",
+   "original_sha256": "76955bcb9a3c3e54e124eaebc6110cb001a496f0b98713f8ce0e583f4e6f7534",
+   "path": "OAI/Analysis/LienardCycles/PositiveTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PositiveVariation.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PositiveVariation",
+   "original_sha256": "0b00ac9b57dfdc94eb1b836ce68408202130474d4116f285c5d72198f829c28a",
+   "path": "OAI/Analysis/LienardCycles/PositiveVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PositiveWidth.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PositiveWidth",
+   "original_sha256": "e84d8465aaa1829f5619263b6ee0c6d81084e3b59988c00f24b18dcd720362cf",
+   "path": "OAI/Analysis/LienardCycles/PositiveWidth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/PositiveZero.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.PositiveZero",
+   "original_sha256": "b3fdebb084462f101055b69841ecc650375f4fd03cb78919604ab435a01ce802",
+   "path": "OAI/Analysis/LienardCycles/PositiveZero.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ProfileComparison.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ProfileComparison",
+   "original_sha256": "fcd8ce0e08f5037c92d8adee22293126ab8b4998af533219a43b697af45371c7",
+   "path": "OAI/Analysis/LienardCycles/ProfileComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ProfileDerivatives.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ProfileDerivatives",
+   "original_sha256": "b7597635bd4cf4bc9ec1e807abdae8861ce77708d3103d8fb0c88bdf8ff7b833",
+   "path": "OAI/Analysis/LienardCycles/ProfileDerivatives.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/QuadraticCoordinates.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.QuadraticCoordinates",
+   "original_sha256": "a35e93169afad58e0252f8a9b9f86c13d938283fcd3141d2fada3f9b0b469e3b",
+   "path": "OAI/Analysis/LienardCycles/QuadraticCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/QuadraticDerivatives.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.QuadraticDerivatives",
+   "original_sha256": "82216920459eee619f67271093f55c6b6da63e54aa33332ef0578415fefa245c",
+   "path": "OAI/Analysis/LienardCycles/QuadraticDerivatives.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/QuadraticFit.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.QuadraticFit",
+   "original_sha256": "56117917b2f63cf2e11cf536678017b7ffa79840f4d5a7342c2ed24dfcaee74d",
+   "path": "OAI/Analysis/LienardCycles/QuadraticFit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/QuadraticSlices.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.QuadraticSlices",
+   "original_sha256": "295411356b0c71a0a98019702640244b9fe0f51a03c88ee19d8909ba6013036d",
+   "path": "OAI/Analysis/LienardCycles/QuadraticSlices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/QuadraticVariation.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.QuadraticVariation",
+   "original_sha256": "326b927c6aa8890c1a0461f2338ae2d704b047502a767fddaebce56a160d4574",
+   "path": "OAI/Analysis/LienardCycles/QuadraticVariation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/QuadraticZero.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.QuadraticZero",
+   "original_sha256": "1d6a17300eb45eadebd76163eacae50f07f35a965ec3bd76559ddac753cfe70f",
+   "path": "OAI/Analysis/LienardCycles/QuadraticZero.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/RadiusLimits.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.RadiusLimits",
+   "original_sha256": "f7e4136d045f513aa18174fb4437cc0d20aad815849f374319bd1f1dfe130e39",
+   "path": "OAI/Analysis/LienardCycles/RadiusLimits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/RadiusSigns.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.RadiusSigns",
+   "original_sha256": "0fb7ea08d91467849f969dd2ec7d7d8a86aa938f7f6a31eca5402be8ff4479be",
+   "path": "OAI/Analysis/LienardCycles/RadiusSigns.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/RealAnalysis.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.RealAnalysis",
+   "original_sha256": "7b5d2bfda3573348093672b9ed473cdbf7b34f5112f1656fced31c0e103a5351",
+   "path": "OAI/Analysis/LienardCycles/RealAnalysis.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/RegionBarrier.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.RegionBarrier",
+   "original_sha256": "cffde653d91532cb2bbb27fbd0103e9a7447a827a004299240067e7ed45a7102",
+   "path": "OAI/Analysis/LienardCycles/RegionBarrier.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ReturnMatching.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ReturnMatching",
+   "original_sha256": "2b4df1d33283577932589386a9ad5bfe6b94b8b2c69d7e21c69085f9bc4a4af3",
+   "path": "OAI/Analysis/LienardCycles/ReturnMatching.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ReturnNeighborhood.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ReturnNeighborhood",
+   "original_sha256": "d5297ed9da0268b7459da734d3da4deaa8210da4b0e9c0b3131f4f071d8910d6",
+   "path": "OAI/Analysis/LienardCycles/ReturnNeighborhood.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/Riccati.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.Riccati",
+   "original_sha256": "38d23ebdf7a5d09cd28331364184247726a3cbde10658927bcc0fb9351daf3ad",
+   "path": "OAI/Analysis/LienardCycles/Riccati.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/RiccatiComparison.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.RiccatiComparison",
+   "original_sha256": "7e810643e816a16c124483db8530eb4b33f234949c6552e9d00e7d559aa0a205",
+   "path": "OAI/Analysis/LienardCycles/RiccatiComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/RiccatiDerivatives.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.RiccatiDerivatives",
+   "original_sha256": "ec3786500e9d043f6ed6a857318312e4f68c8f821fb9b5032eee1efab32d0133",
+   "path": "OAI/Analysis/LienardCycles/RiccatiDerivatives.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/RiccatiJets.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.RiccatiJets",
+   "original_sha256": "c7036d4b01c0ef3ca03ba5268695b0b93df5ec7e9de77f9e324229c1b2aa1418",
+   "path": "OAI/Analysis/LienardCycles/RiccatiJets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ScalarArcs.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ScalarArcs",
+   "original_sha256": "3af4ce8546cb492cc90a60e8af263d11023e0178c01a3c2f7302cbb5c3003989",
+   "path": "OAI/Analysis/LienardCycles/ScalarArcs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ScalarComparison.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ScalarComparison",
+   "original_sha256": "68c440b7030132c2f33d684ed8cd5e91f50fd6de699ec516f730d6fbbde877cf",
+   "path": "OAI/Analysis/LienardCycles/ScalarComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ScaledActual.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ScaledActual",
+   "original_sha256": "e36f6ad9987f7e0236d64eac01079231b0c303ddbed5bafd275a6de06e1bd76b",
+   "path": "OAI/Analysis/LienardCycles/ScaledActual.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ScaledAlgebraic.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ScaledAlgebraic",
+   "original_sha256": "c7048c48f03b8a7914dfb4a43a3cf4f6fe21e427a884d4cf9ed0aaef243668fc",
+   "path": "OAI/Analysis/LienardCycles/ScaledAlgebraic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ScaledCoefficients.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ScaledCoefficients",
+   "original_sha256": "a1405cc965abdcb49430374b5636c14494cfd6c247716edff9d57ef08ad037f8",
+   "path": "OAI/Analysis/LienardCycles/ScaledCoefficients.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ScaledDerivative.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ScaledDerivative",
+   "original_sha256": "06199e3730bd211818bdfb3dfa0995ca8161d307fd1d303bcdf1f69b43218596",
+   "path": "OAI/Analysis/LienardCycles/ScaledDerivative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ScaledExpansion.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ScaledExpansion",
+   "original_sha256": "03d68716e090b508cb6ed13a292a26fcaa56767936fedd30a4de561a2ca7f907",
+   "path": "OAI/Analysis/LienardCycles/ScaledExpansion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/Schwarzian.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.Schwarzian",
+   "original_sha256": "837099a9fb5343538e473cc5054cbe67fa9fcfbce17e0845a876ded14fd4d52b",
+   "path": "OAI/Analysis/LienardCycles/Schwarzian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/SchwarzianScaling.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.SchwarzianScaling",
+   "original_sha256": "9536330c558dc4c642e6e017ba9877965f68ef89fcd75c5d951141d90be3ce89",
+   "path": "OAI/Analysis/LienardCycles/SchwarzianScaling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/SecantIntegral.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.SecantIntegral",
+   "original_sha256": "00e18581c1c77c215641010161d519cf7503d989d5f8093547e1645b69e732da",
+   "path": "OAI/Analysis/LienardCycles/SecantIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/SharpCycles.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.SharpCycles",
+   "original_sha256": "0d9116e537664f59b41c1e4b0e199e0cb31605e4a1779a5959439b0a345b4cb7",
+   "path": "OAI/Analysis/LienardCycles/SharpCycles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/SharpFlow.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.SharpFlow",
+   "original_sha256": "3a2d6aa220ccb3f05a2adf5952491de21ad2d47d06749e30d3f59c39d59f8f81",
+   "path": "OAI/Analysis/LienardCycles/SharpFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/SharpPhysical.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.SharpPhysical",
+   "original_sha256": "36b873dbc0bb3fda025fbca51f91853ebe27339ea65551e4dcd2404d5327727d",
+   "path": "OAI/Analysis/LienardCycles/SharpPhysical.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/SharpReturn.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.SharpReturn",
+   "original_sha256": "7a6f78e47b6aefa0762e16fc5ccb39c3ce4930a582edb6a5abfbc3a11b79d7da",
+   "path": "OAI/Analysis/LienardCycles/SharpReturn.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/SmoothFlow.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.SmoothFlow",
+   "original_sha256": "afda0a42f513baa2ab8b292589f8c5e404f55deb2a03f9da0d0c9de1f6502890",
+   "path": "OAI/Analysis/LienardCycles/SmoothFlow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/SqrtPaths.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.SqrtPaths",
+   "original_sha256": "053f25ca43669e9f59aaa92bfef60bf3bf3d2c39c9144dbd664e1712081addf8",
+   "path": "OAI/Analysis/LienardCycles/SqrtPaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/StableExcursion.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.StableExcursion",
+   "original_sha256": "7f3545b29261befc4f29cd2cf37431ffd1042fddb0257cf4cb47214e6005ee70",
+   "path": "OAI/Analysis/LienardCycles/StableExcursion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/UpperAssembly.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.UpperAssembly",
+   "original_sha256": "07b66b414b1439b48e718a0fa8c1cd111d1f0fa359fa6312a489f684531f3653",
+   "path": "OAI/Analysis/LienardCycles/UpperAssembly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/WidthCoordinates.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.WidthCoordinates",
+   "original_sha256": "7630d1614a984c93677e8bb5c7b2a4305583749017265a53a5b175af5da5f4e0",
+   "path": "OAI/Analysis/LienardCycles/WidthCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/WidthTransport.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.WidthTransport",
+   "original_sha256": "b0e1f3284da56f37d8d21594f0a0d4d9bc784fa5f31273da2aaf6a0d3a2f1d24",
+   "path": "OAI/Analysis/LienardCycles/WidthTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/LienardCycles/ZeroVariation.lean"
+   },
+   "module": "OAI.Analysis.LienardCycles.ZeroVariation",
+   "original_sha256": "07604e023337f483af94c6bb89f7ce79391ade5078bef3d6eab8c9393fde7dc6",
+   "path": "OAI/Analysis/LienardCycles/ZeroVariation.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.LienardCycles.ActualCharacteristic",
+  "OAI.Analysis.LienardCycles.ActualError",
+  "OAI.Analysis.LienardCycles.ActualFitLimits",
+  "OAI.Analysis.LienardCycles.ActualFitTransport",
+  "OAI.Analysis.LienardCycles.ActualReflection",
+  "OAI.Analysis.LienardCycles.ActualSlopeComparison",
+  "OAI.Analysis.LienardCycles.ActualSmallWidth",
+  "OAI.Analysis.LienardCycles.AlgebraicFlow",
+  "OAI.Analysis.LienardCycles.AlgebraicNotation",
+  "OAI.Analysis.LienardCycles.AngleBounds",
+  "OAI.Analysis.LienardCycles.ArcEndpoints",
+  "OAI.Analysis.LienardCycles.ArcFamilies",
+  "OAI.Analysis.LienardCycles.ArchSymmetries",
+  "OAI.Analysis.LienardCycles.ArchVariation",
+  "OAI.Analysis.LienardCycles.AxisBranches",
+  "OAI.Analysis.LienardCycles.AxisCases",
+  "OAI.Analysis.LienardCycles.AxisComparison",
+  "OAI.Analysis.LienardCycles.AxisFit",
+  "OAI.Analysis.LienardCycles.AxisIntercept",
+  "OAI.Analysis.LienardCycles.AxisLimits",
+  "OAI.Analysis.LienardCycles.AxisReflection",
+  "OAI.Analysis.LienardCycles.AxisRegularity",
+  "OAI.Analysis.LienardCycles.AxisSecants",
+  "OAI.Analysis.LienardCycles.AxisWidthGerm",
+  "OAI.Analysis.LienardCycles.AxisWidthRegularity",
+  "OAI.Analysis.LienardCycles.AxisZeroCount",
+  "OAI.Analysis.LienardCycles.AxisZeros",
+  "OAI.Analysis.LienardCycles.BaseLimits",
+  "OAI.Analysis.LienardCycles.BaseSymmetry",
+  "OAI.Analysis.LienardCycles.BaseTransport",
+  "OAI.Analysis.LienardCycles.BoundaryFlow",
+  "OAI.Analysis.LienardCycles.BoundaryGerm",
+  "OAI.Analysis.LienardCycles.CanonicalAnalytic",
+  "OAI.Analysis.LienardCycles.CanonicalVariation",
+  "OAI.Analysis.LienardCycles.CaseOne",
+  "OAI.Analysis.LienardCycles.Characteristic",
+  "OAI.Analysis.LienardCycles.CharacteristicJets",
+  "OAI.Analysis.LienardCycles.CharacteristicLimit",
+  "OAI.Analysis.LienardCycles.CharacteristicPositive",
+  "OAI.Analysis.LienardCycles.CharacteristicScaling",
+  "OAI.Analysis.LienardCycles.CharacteristicSigns",
+  "OAI.Analysis.LienardCycles.ClosedCutoff",
+  "OAI.Analysis.LienardCycles.CoefficientCases",
+  "OAI.Analysis.LienardCycles.ConditionalFit",
+  "OAI.Analysis.LienardCycles.CubicVariation",
+  "OAI.Analysis.LienardCycles.CurvatureComparison",
+  "OAI.Analysis.LienardCycles.CurvatureJets",
+  "OAI.Analysis.LienardCycles.CurvaturePositive",
+  "OAI.Analysis.LienardCycles.CurvatureRange",
+  "OAI.Analysis.LienardCycles.CurvatureTransport",
+  "OAI.Analysis.LienardCycles.CycleIsolation",
+  "OAI.Analysis.LienardCycles.CycleSection",
+  "OAI.Analysis.LienardCycles.CycleTransform",
+  "OAI.Analysis.LienardCycles.EndpointAlgebra",
+  "OAI.Analysis.LienardCycles.EndpointComparison",
+  "OAI.Analysis.LienardCycles.EndpointJets",
+  "OAI.Analysis.LienardCycles.EndpointScaling",
+  "OAI.Analysis.LienardCycles.EndpointSigns",
+  "OAI.Analysis.LienardCycles.ExcursionAxis",
+  "OAI.Analysis.LienardCycles.ExcursionGraph",
+  "OAI.Analysis.LienardCycles.ExcursionSigns",
+  "OAI.Analysis.LienardCycles.FiberQuotient",
+  "OAI.Analysis.LienardCycles.FiniteFlow",
+  "OAI.Analysis.LienardCycles.FitAngles",
+  "OAI.Analysis.LienardCycles.FitProperness",
+  "OAI.Analysis.LienardCycles.FitSmall",
+  "OAI.Analysis.LienardCycles.FixedSlopeLimit",
+  "OAI.Analysis.LienardCycles.FixedWidthFamilies",
+  "OAI.Analysis.LienardCycles.GlobalFit",
+  "OAI.Analysis.LienardCycles.GlobalODE",
+  "OAI.Analysis.LienardCycles.HeightLimits",
+  "OAI.Analysis.LienardCycles.HeightSigns",
+  "OAI.Analysis.LienardCycles.HyperbolicCoordinate",
+  "OAI.Analysis.LienardCycles.Intercept",
+  "OAI.Analysis.LienardCycles.IntervalInverse",
+  "OAI.Analysis.LienardCycles.LocalExcursion",
+  "OAI.Analysis.LienardCycles.Main",
+  "OAI.Analysis.LienardCycles.MixedDerivatives",
+  "OAI.Analysis.LienardCycles.Model",
+  "OAI.Analysis.LienardCycles.ModelAlgebra",
+  "OAI.Analysis.LienardCycles.ModelEndpoint",
+  "OAI.Analysis.LienardCycles.ModelScaling",
+  "OAI.Analysis.LienardCycles.MonotoneIntegral",
+  "OAI.Analysis.LienardCycles.OpenArch",
+  "OAI.Analysis.LienardCycles.OpenArchAxis",
+  "OAI.Analysis.LienardCycles.OriginalProfile",
+  "OAI.Analysis.LienardCycles.OvalMatching",
+  "OAI.Analysis.LienardCycles.ParameterVariation",
+  "OAI.Analysis.LienardCycles.PartialCalculus",
+  "OAI.Analysis.LienardCycles.PeriodicBasics",
+  "OAI.Analysis.LienardCycles.PeriodicMatching",
+  "OAI.Analysis.LienardCycles.PeriodicOval",
+  "OAI.Analysis.LienardCycles.PeriodicSymmetry",
+  "OAI.Analysis.LienardCycles.PhysicalFlow",
+  "OAI.Analysis.LienardCycles.PolynomialModel",
+  "OAI.Analysis.LienardCycles.PositiveArcs",
+  "OAI.Analysis.LienardCycles.PositiveBase",
+  "OAI.Analysis.LienardCycles.PositiveCanonical",
+  "OAI.Analysis.LienardCycles.PositiveEndpoints",
+  "OAI.Analysis.LienardCycles.PositiveFit",
+  "OAI.Analysis.LienardCycles.PositiveParabolic",
+  "OAI.Analysis.LienardCycles.PositiveScaling",
+  "OAI.Analysis.LienardCycles.PositiveSymmetries",
+  "OAI.Analysis.LienardCycles.PositiveTransport",
+  "OAI.Analysis.LienardCycles.PositiveVariation",
+  "OAI.Analysis.LienardCycles.PositiveWidth",
+  "OAI.Analysis.LienardCycles.PositiveZero",
+  "OAI.Analysis.LienardCycles.ProfileComparison",
+  "OAI.Analysis.LienardCycles.ProfileDerivatives",
+  "OAI.Analysis.LienardCycles.QuadraticCoordinates",
+  "OAI.Analysis.LienardCycles.QuadraticDerivatives",
+  "OAI.Analysis.LienardCycles.QuadraticFit",
+  "OAI.Analysis.LienardCycles.QuadraticSlices",
+  "OAI.Analysis.LienardCycles.QuadraticVariation",
+  "OAI.Analysis.LienardCycles.QuadraticZero",
+  "OAI.Analysis.LienardCycles.RadiusLimits",
+  "OAI.Analysis.LienardCycles.RadiusSigns",
+  "OAI.Analysis.LienardCycles.RealAnalysis",
+  "OAI.Analysis.LienardCycles.RegionBarrier",
+  "OAI.Analysis.LienardCycles.ReturnMatching",
+  "OAI.Analysis.LienardCycles.ReturnNeighborhood",
+  "OAI.Analysis.LienardCycles.Riccati",
+  "OAI.Analysis.LienardCycles.RiccatiComparison",
+  "OAI.Analysis.LienardCycles.RiccatiDerivatives",
+  "OAI.Analysis.LienardCycles.RiccatiJets",
+  "OAI.Analysis.LienardCycles.ScalarArcs",
+  "OAI.Analysis.LienardCycles.ScalarComparison",
+  "OAI.Analysis.LienardCycles.ScaledActual",
+  "OAI.Analysis.LienardCycles.ScaledAlgebraic",
+  "OAI.Analysis.LienardCycles.ScaledCoefficients",
+  "OAI.Analysis.LienardCycles.ScaledDerivative",
+  "OAI.Analysis.LienardCycles.ScaledExpansion",
+  "OAI.Analysis.LienardCycles.Schwarzian",
+  "OAI.Analysis.LienardCycles.SchwarzianScaling",
+  "OAI.Analysis.LienardCycles.SecantIntegral",
+  "OAI.Analysis.LienardCycles.SharpCycles",
+  "OAI.Analysis.LienardCycles.SharpFlow",
+  "OAI.Analysis.LienardCycles.SharpPhysical",
+  "OAI.Analysis.LienardCycles.SharpReturn",
+  "OAI.Analysis.LienardCycles.SmoothFlow",
+  "OAI.Analysis.LienardCycles.SqrtPaths",
+  "OAI.Analysis.LienardCycles.StableExcursion",
+  "OAI.Analysis.LienardCycles.UpperAssembly",
+  "OAI.Analysis.LienardCycles.WidthCoordinates",
+  "OAI.Analysis.LienardCycles.WidthTransport",
+  "OAI.Analysis.LienardCycles.ZeroVariation"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/QuinticLienard.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.LienardCycles.Main",
+   "name": "OAI.QuinticLienard.main",
+   "statement_sha256": "ee96cb5c804c4e5fce3b897166d26925bbffb0c7316034186eb1111bc3f2c88e"
+  }
+ ],
+ "task_id": "oai-quintic-lienard",
+ "task_revision": 1,
+ "title": "OpenAI math: Hilbert's sixteenth problem: uniform bounds for limit cycles: Exact two-cycle bound for quintic Liénard systems",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

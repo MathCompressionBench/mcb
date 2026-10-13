@@ -1,0 +1,1101 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 161486429
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.ThompsonNonamenability",
+  "challenge_sha256": "ffe66b3d35e17a81e46fb9ef0109f1ee79b199a0b36da82d946f79efdbe606a1",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ThompsonNonamenability.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.ThompsonNonamenability",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.GroupTheory.Thompson.Main",
+   "theorem_names": [
+    "OAI.ThompsonNonamenability.thompson_F_nonamenable_composition"
+   ]
+  },
+  "config_sha256": "5e8f9248dde00437950209958b428878b0a05a2428974a4f086d2094f4e206b4",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/ThompsonNonamenability.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.ThompsonNonamenability.thompson_F_nonamenable_composition": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AffineGridArithmetic.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AffineGridArithmetic",
+   "original_sha256": "942af5514b34dbd51a731d768a50c496829ec5eafd978f8447580d229294d9af",
+   "path": "OAI/GroupTheory/Thompson/AffineGridArithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AffinePiece.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AffinePiece",
+   "original_sha256": "9025577240ba0fb8860beb644acd6eb0a3e3bedf929a0dee8f76ee9f281c7ac5",
+   "path": "OAI/GroupTheory/Thompson/AffinePiece.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AffineTransport.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AffineTransport",
+   "original_sha256": "78be56bb692d4275c9535dc45e5b5ca78463c0ff390125eb9feb5953b2332b75",
+   "path": "OAI/GroupTheory/Thompson/AffineTransport.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AnalyticConstruction.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AnalyticConstruction",
+   "original_sha256": "d1653149eaa83b3299845e9c96a380181c28c9d4ef33e940fd05d1407293b308",
+   "path": "OAI/GroupTheory/Thompson/AnalyticConstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AnalyticCorrection.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AnalyticCorrection",
+   "original_sha256": "c3d81e79d3c8f62e1db469bc0617fec8b29314be4f78616241b27bc1330872bd",
+   "path": "OAI/GroupTheory/Thompson/AnalyticCorrection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AnalyticCurve.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AnalyticCurve",
+   "original_sha256": "4cc18fa8a131470250a1ad584433cfafe763170a7f088430f516af49b4fee335",
+   "path": "OAI/GroupTheory/Thompson/AnalyticCurve.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AnalyticCurveBounds.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AnalyticCurveBounds",
+   "original_sha256": "5cbfea76b906f70650eb0e195389b88123b9fa2d9871ad658dd72a1c1cf40896",
+   "path": "OAI/GroupTheory/Thompson/AnalyticCurveBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AnalyticCurveRotation.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AnalyticCurveRotation",
+   "original_sha256": "3a2893b8401a84bd89665a1d998f47eedd9c0a3b6cf003e283d66697feb67b6a",
+   "path": "OAI/GroupTheory/Thompson/AnalyticCurveRotation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AnalyticCurveSeparation.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AnalyticCurveSeparation",
+   "original_sha256": "dacc479bd247f55c5b5e9b1b30c79b5ae6babc9334d2ec744bf5ce89cb0ce57d",
+   "path": "OAI/GroupTheory/Thompson/AnalyticCurveSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AnalyticCutoffs.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AnalyticCutoffs",
+   "original_sha256": "90e3b96965a6848844799d52858aa5b599504c50e96fc47b4128dd687a76568c",
+   "path": "OAI/GroupTheory/Thompson/AnalyticCutoffs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AnalyticLpCalculus.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AnalyticLpCalculus",
+   "original_sha256": "4ecf1f1dfdbf95b20ebec94ecafa34c95a89af501bbe223142223271378021e1",
+   "path": "OAI/GroupTheory/Thompson/AnalyticLpCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AnalyticModel.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AnalyticModel",
+   "original_sha256": "a75619ffe4b7120c0b3ba0c6bde61070603a0e17c9696d896115384e2f22975d",
+   "path": "OAI/GroupTheory/Thompson/AnalyticModel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AnalyticNormalization.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AnalyticNormalization",
+   "original_sha256": "d008ed2e961ac3e21612f9d27dc1a64835f7665df4c00de74718d1b2e4f1c960",
+   "path": "OAI/GroupTheory/Thompson/AnalyticNormalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AnalyticOscillator.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AnalyticOscillator",
+   "original_sha256": "f7d0c50e79b10851f14901e1f995c3734f4fb010bce73c6f83a9902a3c6c1623",
+   "path": "OAI/GroupTheory/Thompson/AnalyticOscillator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AnalyticPlaneOscillator.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AnalyticPlaneOscillator",
+   "original_sha256": "92f88a28ea1d3e4749bd141c9274539ba5377515180b5d5b9f994c8183f62df6",
+   "path": "OAI/GroupTheory/Thompson/AnalyticPlaneOscillator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AnalyticRotation.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AnalyticRotation",
+   "original_sha256": "bdfdda01d9f23fb9b00d412236cc9826a50ac4de0b23f30f3a7948207233aa68",
+   "path": "OAI/GroupTheory/Thompson/AnalyticRotation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AnalyticScalarDerivatives.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AnalyticScalarDerivatives",
+   "original_sha256": "2e3b1b5696347ae0e3c6cd47371a16cc54d22598e8da2dfb0b73b1088f304dd1",
+   "path": "OAI/GroupTheory/Thompson/AnalyticScalarDerivatives.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AnalyticScalarProfiles.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AnalyticScalarProfiles",
+   "original_sha256": "f9d55cb419fe72e1f14f4d8f532c7c8228a98861210b28436b996933f6205026",
+   "path": "OAI/GroupTheory/Thompson/AnalyticScalarProfiles.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AnalyticSeparation.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AnalyticSeparation",
+   "original_sha256": "afc8805fe48ef7b4447571385f33e1b805702a27f77d4abef6757ea2e20095a0",
+   "path": "OAI/GroupTheory/Thompson/AnalyticSeparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AnalyticSinc.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AnalyticSinc",
+   "original_sha256": "cd94c68d73a9fb54ae3826054a2b3580f24811811dda83fe5077c6a1b004cf88",
+   "path": "OAI/GroupTheory/Thompson/AnalyticSinc.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/AnalyticTube.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.AnalyticTube",
+   "original_sha256": "2fc217bf2c61519b9eec3c1678f9e2be9508d210dba1034e2048e2a66e7c3f8b",
+   "path": "OAI/GroupTheory/Thompson/AnalyticTube.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/BasicInterval.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.BasicInterval",
+   "original_sha256": "78789a969c544cf19a3680d07d43fcdc4ce34251dd24fb91b313ed6b0c926378",
+   "path": "OAI/GroupTheory/Thompson/BasicInterval.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/BasicIntervalNesting.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.BasicIntervalNesting",
+   "original_sha256": "c1204f45faf5f3a7215f9347e6a33834ab2e6d64bd98021ec481385becb266cb",
+   "path": "OAI/GroupTheory/Thompson/BasicIntervalNesting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/BasicPartition.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.BasicPartition",
+   "original_sha256": "1ee1a307e0e6802c42796eebe2a8f14607b13e4c67352fedd8b8148b799bea3e",
+   "path": "OAI/GroupTheory/Thompson/BasicPartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/BoundaryAlgebra.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.BoundaryAlgebra",
+   "original_sha256": "a63e8b00124551919a03d8d280022624299db501b0b190338e78cc33f937e6c7",
+   "path": "OAI/GroupTheory/Thompson/BoundaryAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/CorrectionData.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.CorrectionData",
+   "original_sha256": "1de0d056fd1317c9c4fb23d9928f7e65eab5e3e480cb721b0490f28506cc69eb",
+   "path": "OAI/GroupTheory/Thompson/CorrectionData.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/CorrectionLocal.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.CorrectionLocal",
+   "original_sha256": "5af88b44ebed8c7aa52f06f899f328ec5d5c5ad02277acac4c7fd542480f8aa3",
+   "path": "OAI/GroupTheory/Thompson/CorrectionLocal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/CorrectionNonzero.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.CorrectionNonzero",
+   "original_sha256": "a46256f871e6d4bfbbdae67572ff242fd5a15c341046707cfc4ad7c09c39b5e0",
+   "path": "OAI/GroupTheory/Thompson/CorrectionNonzero.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/CorrelationVariance.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.CorrelationVariance",
+   "original_sha256": "209ab433fcd6cc4e4ce46e4302856d622683b686e15fdb92e7ac9d09ef10c88b",
+   "path": "OAI/GroupTheory/Thompson/CorrelationVariance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/DisplacementEstimate.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.DisplacementEstimate",
+   "original_sha256": "7e5cc957b6fd103f52ec7d55f26903538db240dedd246a0980d02d1148d6ea69",
+   "path": "OAI/GroupTheory/Thompson/DisplacementEstimate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/DyadicArithmetic.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.DyadicArithmetic",
+   "original_sha256": "772fba64871fb8b017ffcd7445d83ab4e0ead659ad035bce241c73fc790f3e1d",
+   "path": "OAI/GroupTheory/Thompson/DyadicArithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/DyadicGapChain.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.DyadicGapChain",
+   "original_sha256": "f79d4885e5c1512bc038af2f5e877e404aa8525cdc8e78b8e8b760eb5889e5e6",
+   "path": "OAI/GroupTheory/Thompson/DyadicGapChain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/DyadicGapPartition.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.DyadicGapPartition",
+   "original_sha256": "00fd7eaea14d0a451c9430d58b8380fc5b68724cb2e830a4eca803109a41295d",
+   "path": "OAI/GroupTheory/Thompson/DyadicGapPartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/DyadicImages.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.DyadicImages",
+   "original_sha256": "4a1c5ae66c13bbcdf4df3114b5bbd021e724362d20036890cb77bc0507ab80ee",
+   "path": "OAI/GroupTheory/Thompson/DyadicImages.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/FiniteAverage.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.FiniteAverage",
+   "original_sha256": "bca8ac04548d02eeb5cde17da9dc56ddf3fd08158f69de8ecbed05bcaa535d8c",
+   "path": "OAI/GroupTheory/Thompson/FiniteAverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/FiniteBoundary.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.FiniteBoundary",
+   "original_sha256": "e21f4b852ed01f0c38ce0eb55d740a6b4bdd7d06ff18b7ceb657a210f15c21ac",
+   "path": "OAI/GroupTheory/Thompson/FiniteBoundary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/FiniteCoarea.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.FiniteCoarea",
+   "original_sha256": "b62dd5f14fdc63a2d3511ec6dfd98662727beea834bc7dce0fcf9b66e8adbc1c",
+   "path": "OAI/GroupTheory/Thompson/FiniteCoarea.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/FiniteCorrelationBoundary.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.FiniteCorrelationBoundary",
+   "original_sha256": "073555ed7d118035226c72ae090f5d2b8af3235135fe3aa092785c72466ad9d0",
+   "path": "OAI/GroupTheory/Thompson/FiniteCorrelationBoundary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/FiniteLevels.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.FiniteLevels",
+   "original_sha256": "6b557a17838f67a63536ff281c464d586108f036be7c87102290406d470578bc",
+   "path": "OAI/GroupTheory/Thompson/FiniteLevels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/GlobalColors.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.GlobalColors",
+   "original_sha256": "4835019e97fb26828c6e6089f0af2405ea29bdff8eaa9207ee2f5f3cd34ef4d1",
+   "path": "OAI/GroupTheory/Thompson/GlobalColors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/HilbertAverage.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.HilbertAverage",
+   "original_sha256": "67cc37c4aca76be9410359e445e5b400d76ec0c23741cee28f7e64c04e35a553",
+   "path": "OAI/GroupTheory/Thompson/HilbertAverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/IntervalCharts.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.IntervalCharts",
+   "original_sha256": "e73c4aad8e51c1d294179f2138b1a2f94b86fa560c86a99d23a304f8cf498bb5",
+   "path": "OAI/GroupTheory/Thompson/IntervalCharts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/IntervalFamily.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.IntervalFamily",
+   "original_sha256": "7498669a9893c88e7c79de99eb869fc848c80c989d996682a24c434891d231c4",
+   "path": "OAI/GroupTheory/Thompson/IntervalFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/IntervalHomeomorph.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.IntervalHomeomorph",
+   "original_sha256": "d0c044272509256df015b8249b2688c93b877143a76aee19e73a613067362397",
+   "path": "OAI/GroupTheory/Thompson/IntervalHomeomorph.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/InvariantMean.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.InvariantMean",
+   "original_sha256": "c6e792ec79f79020c9decbf3cd40977cc190f147825697e24691946379d98138",
+   "path": "OAI/GroupTheory/Thompson/InvariantMean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/Main.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.Main",
+   "original_sha256": "ee3e8bc9d0ff85beceaf73ce2cc45d3e3ada447f99386cd007624b8c959ef264",
+   "path": "OAI/GroupTheory/Thompson/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/MeanApproximation.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.MeanApproximation",
+   "original_sha256": "6414b92843826f60d14864285b846905698da74a87f5f51ff90ba7af0af64137",
+   "path": "OAI/GroupTheory/Thompson/MeanApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/MeanToFolner.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.MeanToFolner",
+   "original_sha256": "031e76b41ccfd5da569382f03faefd7a1a3cb55bcd65937031fd8c7682b2cf9a",
+   "path": "OAI/GroupTheory/Thompson/MeanToFolner.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/Model.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.Model",
+   "original_sha256": "13ca40f47953fa76c967de45f04f6c1a4a600809547c77ca024e5b08deb94e3c",
+   "path": "OAI/GroupTheory/Thompson/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/OrderedChainKnots.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.OrderedChainKnots",
+   "original_sha256": "e899f655cc047ace33656f0bd1ec0eb8c1724284af3d96d5879f745db6a61b02",
+   "path": "OAI/GroupTheory/Thompson/OrderedChainKnots.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/OrderedPLInterpolation.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.OrderedPLInterpolation",
+   "original_sha256": "6a540daf5f0da1d592b403861d4fd7da9ab4b7df2461a9a9cf7e7d69977dbbc8",
+   "path": "OAI/GroupTheory/Thompson/OrderedPLInterpolation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/PLRefinement.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.PLRefinement",
+   "original_sha256": "3d58d04994b5dcd8509ef587a452051d1c116a301e3f665ca8f260c957e9022a",
+   "path": "OAI/GroupTheory/Thompson/PLRefinement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/PartitionColorFamily.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.PartitionColorFamily",
+   "original_sha256": "65b46a99ed2ef2082666468f9ca28a4080448a1db9fc2820d3fcb8f688a2c341",
+   "path": "OAI/GroupTheory/Thompson/PartitionColorFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/ProbabilityDefects.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.ProbabilityDefects",
+   "original_sha256": "e0fd33011540f145f8f97ee89de5ae65fd55d41902b58c35610ccf94af94dbd4",
+   "path": "OAI/GroupTheory/Thompson/ProbabilityDefects.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/RecursiveColoring.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.RecursiveColoring",
+   "original_sha256": "6bf84568bc79613790ed6bc738a2e9a24bb61f436fc87c848b5558d6a86c24f2",
+   "path": "OAI/GroupTheory/Thompson/RecursiveColoring.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/RestrictionCovariance.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.RestrictionCovariance",
+   "original_sha256": "e91f2038aaad6db1935a3520f1fb19c111a9482525c03f8a8bece4172ef92c0d",
+   "path": "OAI/GroupTheory/Thompson/RestrictionCovariance.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/SortedSubdivision.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.SortedSubdivision",
+   "original_sha256": "4cea3c1290dbeb808f0ed74306b489dd7e34d942fab18af59aae99b497030135",
+   "path": "OAI/GroupTheory/Thompson/SortedSubdivision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/StandardCharacterization.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.StandardCharacterization",
+   "original_sha256": "d67d7fd8b254949effc7f85bc0d9921b5ac3f68cbe42110e5392f5a0005bd8f6",
+   "path": "OAI/GroupTheory/Thompson/StandardCharacterization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/StandardF.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.StandardF",
+   "original_sha256": "732148d6e45c7dd80c3c6d9e5802332403365b71e7ecf3518c64fc40e2200e45",
+   "path": "OAI/GroupTheory/Thompson/StandardF.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/StandardPL.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.StandardPL",
+   "original_sha256": "23bd18d7f9aba19d7e47f0117d7fe5e47155021c06434bc739e7f6569d367cc2",
+   "path": "OAI/GroupTheory/Thompson/StandardPL.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/TransportFamily.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.TransportFamily",
+   "original_sha256": "a79e49f99f868059aa4b21e40dc0955f4ceae3fab70f17fd27cbf1e5853fed5e",
+   "path": "OAI/GroupTheory/Thompson/TransportFamily.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/TubeComparison.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.TubeComparison",
+   "original_sha256": "4926176da358242ffb9ce4fdc46020dbf47ca47c38d56018c66d0a8a4cb84329",
+   "path": "OAI/GroupTheory/Thompson/TubeComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/TubeNearest.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.TubeNearest",
+   "original_sha256": "c2fa2357ce19bf360a7e6942e66e3a1a8b8454d0c73f1b39c4140287d74c74c1",
+   "path": "OAI/GroupTheory/Thompson/TubeNearest.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/TubeRegularCurve.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.TubeRegularCurve",
+   "original_sha256": "908a9bc852f45f7489012a01ad7efb637040c820f2726182a774bcae732ac045",
+   "path": "OAI/GroupTheory/Thompson/TubeRegularCurve.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/TubeTangent.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.TubeTangent",
+   "original_sha256": "83351aeb114f0292f91fe62bd1ffaac68645ce59ee212a9290d1aa4ceb4fc1db",
+   "path": "OAI/GroupTheory/Thompson/TubeTangent.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/UniformPL.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.UniformPL",
+   "original_sha256": "a049df6b70caf4dd9bc971a05e2389178c230a29c3e94e82a0c97e4c08828556",
+   "path": "OAI/GroupTheory/Thompson/UniformPL.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/UniformPartition.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.UniformPartition",
+   "original_sha256": "03075f5a4359e94205188ce434b68ac4f7ef02d08971c7f6b5f789f5b6b8d6c4",
+   "path": "OAI/GroupTheory/Thompson/UniformPartition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/GroupTheory/Thompson/UnitBall.lean"
+   },
+   "module": "OAI.GroupTheory.Thompson.UnitBall",
+   "original_sha256": "abe5a5f571025114fc940133b6dc5f04dff4353f815e740ee21ae1ab38755c39",
+   "path": "OAI/GroupTheory/Thompson/UnitBall.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.GroupTheory.Thompson.AffineGridArithmetic",
+  "OAI.GroupTheory.Thompson.AffinePiece",
+  "OAI.GroupTheory.Thompson.AffineTransport",
+  "OAI.GroupTheory.Thompson.AnalyticConstruction",
+  "OAI.GroupTheory.Thompson.AnalyticCorrection",
+  "OAI.GroupTheory.Thompson.AnalyticCurve",
+  "OAI.GroupTheory.Thompson.AnalyticCurveBounds",
+  "OAI.GroupTheory.Thompson.AnalyticCurveRotation",
+  "OAI.GroupTheory.Thompson.AnalyticCurveSeparation",
+  "OAI.GroupTheory.Thompson.AnalyticCutoffs",
+  "OAI.GroupTheory.Thompson.AnalyticLpCalculus",
+  "OAI.GroupTheory.Thompson.AnalyticModel",
+  "OAI.GroupTheory.Thompson.AnalyticNormalization",
+  "OAI.GroupTheory.Thompson.AnalyticOscillator",
+  "OAI.GroupTheory.Thompson.AnalyticPlaneOscillator",
+  "OAI.GroupTheory.Thompson.AnalyticRotation",
+  "OAI.GroupTheory.Thompson.AnalyticScalarDerivatives",
+  "OAI.GroupTheory.Thompson.AnalyticScalarProfiles",
+  "OAI.GroupTheory.Thompson.AnalyticSeparation",
+  "OAI.GroupTheory.Thompson.AnalyticSinc",
+  "OAI.GroupTheory.Thompson.AnalyticTube",
+  "OAI.GroupTheory.Thompson.BasicInterval",
+  "OAI.GroupTheory.Thompson.BasicIntervalNesting",
+  "OAI.GroupTheory.Thompson.BasicPartition",
+  "OAI.GroupTheory.Thompson.BoundaryAlgebra",
+  "OAI.GroupTheory.Thompson.CorrectionData",
+  "OAI.GroupTheory.Thompson.CorrectionLocal",
+  "OAI.GroupTheory.Thompson.CorrectionNonzero",
+  "OAI.GroupTheory.Thompson.CorrelationVariance",
+  "OAI.GroupTheory.Thompson.DisplacementEstimate",
+  "OAI.GroupTheory.Thompson.DyadicArithmetic",
+  "OAI.GroupTheory.Thompson.DyadicGapChain",
+  "OAI.GroupTheory.Thompson.DyadicGapPartition",
+  "OAI.GroupTheory.Thompson.DyadicImages",
+  "OAI.GroupTheory.Thompson.FiniteAverage",
+  "OAI.GroupTheory.Thompson.FiniteBoundary",
+  "OAI.GroupTheory.Thompson.FiniteCoarea",
+  "OAI.GroupTheory.Thompson.FiniteCorrelationBoundary",
+  "OAI.GroupTheory.Thompson.FiniteLevels",
+  "OAI.GroupTheory.Thompson.GlobalColors",
+  "OAI.GroupTheory.Thompson.HilbertAverage",
+  "OAI.GroupTheory.Thompson.IntervalCharts",
+  "OAI.GroupTheory.Thompson.IntervalFamily",
+  "OAI.GroupTheory.Thompson.IntervalHomeomorph",
+  "OAI.GroupTheory.Thompson.InvariantMean",
+  "OAI.GroupTheory.Thompson.Main",
+  "OAI.GroupTheory.Thompson.MeanApproximation",
+  "OAI.GroupTheory.Thompson.MeanToFolner",
+  "OAI.GroupTheory.Thompson.Model",
+  "OAI.GroupTheory.Thompson.OrderedChainKnots",
+  "OAI.GroupTheory.Thompson.OrderedPLInterpolation",
+  "OAI.GroupTheory.Thompson.PLRefinement",
+  "OAI.GroupTheory.Thompson.PartitionColorFamily",
+  "OAI.GroupTheory.Thompson.ProbabilityDefects",
+  "OAI.GroupTheory.Thompson.RecursiveColoring",
+  "OAI.GroupTheory.Thompson.RestrictionCovariance",
+  "OAI.GroupTheory.Thompson.SortedSubdivision",
+  "OAI.GroupTheory.Thompson.StandardCharacterization",
+  "OAI.GroupTheory.Thompson.StandardF",
+  "OAI.GroupTheory.Thompson.StandardPL",
+  "OAI.GroupTheory.Thompson.TransportFamily",
+  "OAI.GroupTheory.Thompson.TubeComparison",
+  "OAI.GroupTheory.Thompson.TubeNearest",
+  "OAI.GroupTheory.Thompson.TubeRegularCurve",
+  "OAI.GroupTheory.Thompson.TubeTangent",
+  "OAI.GroupTheory.Thompson.UniformPL",
+  "OAI.GroupTheory.Thompson.UniformPartition",
+  "OAI.GroupTheory.Thompson.UnitBall"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/ThompsonNonamenability.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.GroupTheory.Thompson.Main",
+   "name": "OAI.ThompsonNonamenability.thompson_F_nonamenable_composition",
+   "statement_sha256": "c447a07e8495563a3e64fc3a9412de0fd5f96792eeb7b0586aaaa50628d3c283"
+  }
+ ],
+ "task_id": "oai-thompson-nonamenability",
+ "task_revision": 1,
+ "title": "OpenAI math: Thompson's group <i>F</i> is nonamenable: Nonamenability of Thompson's group F",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

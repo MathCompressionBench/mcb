@@ -1,0 +1,671 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 1259529030
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.SubsphereCurrent",
+  "challenge_sha256": "794e9edce13c7286e2b7a837fb17375d5ffa6a7cf81acd0d250351e60a55a073",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SubsphereCurrent.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.SubsphereCurrent",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Probability.Subsphere.Main",
+   "theorem_names": [
+    "OAI.SubsphereCurrent.full_current_main_scope"
+   ]
+  },
+  "config_sha256": "9fdd2387a3fa37dbc56b915de3510d79dedcc273d79b5d9a18170b1ba1285393",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/SubsphereCurrent.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.SubsphereCurrent.full_current_main_scope": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Estimates/AffinePrecision.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Estimates.AffinePrecision",
+   "original_sha256": "1851ed3b21f5a976e840d46f81a925dbc747437e55e7ff8f4ccf15a6176b87a8",
+   "path": "OAI/Probability/Subsphere/Estimates/AffinePrecision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Estimates/FixedPrecision.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Estimates.FixedPrecision",
+   "original_sha256": "b3da549e8fc93a50c089cc8bdbc07875b1f8f597804677661154d4928c012f66",
+   "path": "OAI/Probability/Subsphere/Estimates/FixedPrecision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Estimates/HalfPrecision.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Estimates.HalfPrecision",
+   "original_sha256": "039b067cd63634dbad53b4abb4630da84319256167516afc5fd3b59e1c8a0475",
+   "path": "OAI/Probability/Subsphere/Estimates/HalfPrecision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Estimates/Numerics.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Estimates.Numerics",
+   "original_sha256": "92de1e8aaa298cb373fb70257be75e18161ea484e8733f34721543395682dc2a",
+   "path": "OAI/Probability/Subsphere/Estimates/Numerics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Estimates/Weighted.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Estimates.Weighted",
+   "original_sha256": "ba7d3ba15b62603a3c571754d8dbab6d059ce8244b9bf882d86c84ab1f02a1a3",
+   "path": "OAI/Probability/Subsphere/Estimates/Weighted.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Geometry/Affine.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Geometry.Affine",
+   "original_sha256": "dae3c9c97fc1633af9afd3dc92faf1a60d3c700618f8897fc25133caddf75956",
+   "path": "OAI/Probability/Subsphere/Geometry/Affine.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Geometry/Integration.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Geometry.Integration",
+   "original_sha256": "67beba652aa25d930714a697713176b6cb6f0346e1f29955ef5eaed2abcd5707",
+   "path": "OAI/Probability/Subsphere/Geometry/Integration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Geometry/MassBounds.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Geometry.MassBounds",
+   "original_sha256": "ede6977624b76073508829dbf7e7eae7e5bbf633861241cab3c6e6a6cc2e1063",
+   "path": "OAI/Probability/Subsphere/Geometry/MassBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Kernels/Precision.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Kernels.Precision",
+   "original_sha256": "b24f440e0f624707e341b6fdb3ce3b83f13c5905177288bca5a6fb242663e3a7",
+   "path": "OAI/Probability/Subsphere/Kernels/Precision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Main.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Main",
+   "original_sha256": "f6884ea58401e5e7f5c618b271f81c2372fcaf5add630483d093a2fde61012ae",
+   "path": "OAI/Probability/Subsphere/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Mixture/BetaTheory.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Mixture.BetaTheory",
+   "original_sha256": "190e58d6f347bcad1f8f76e1ac26f9c6f3a39fe560213d345198ee9ec1b644f8",
+   "path": "OAI/Probability/Subsphere/Mixture/BetaTheory.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Mixture/Domination.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Mixture.Domination",
+   "original_sha256": "196be1737d87ff9478d568f25de4abc26c983c7b1e3da8105b78cdd0248a4118",
+   "path": "OAI/Probability/Subsphere/Mixture/Domination.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Mixture/Haar.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Mixture.Haar",
+   "original_sha256": "4f3ed8620c7e503e32f9ddfb970caf7fcd2edfa711163e3053181e3239a56693",
+   "path": "OAI/Probability/Subsphere/Mixture/Haar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Mixture/Latitude.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Mixture.Latitude",
+   "original_sha256": "2ff2646c9a1b084e6fc82858c06e1ffc8a6272e6c12af1be3ff2c7e2f1d882f4",
+   "path": "OAI/Probability/Subsphere/Mixture/Latitude.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Model.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Model",
+   "original_sha256": "64e8356290609bf03dc776533a477ee42a1b202a1837dbcebe9be658d09447d2",
+   "path": "OAI/Probability/Subsphere/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Models.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Models",
+   "original_sha256": "e85cdc49f694a75ac393a90da1f4ceea68dc611400e140fc47ea2c69ef444f18",
+   "path": "OAI/Probability/Subsphere/Models.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Regression/Blocks.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Regression.Blocks",
+   "original_sha256": "0d4ab8bc418dcda3455707c1acb8df66d091d56af3d5e71c92e924a58cb66103",
+   "path": "OAI/Probability/Subsphere/Regression/Blocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Regression/Gaussian.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Regression.Gaussian",
+   "original_sha256": "2074e365f6e32cc0ff98e90e58b09ec6fdfee3172608f9c3bf4c2b2c2373f99a",
+   "path": "OAI/Probability/Subsphere/Regression/Gaussian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Regression/Geometry.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Regression.Geometry",
+   "original_sha256": "000c4e757a76ff60a0f03bdc72906f76e63159fb2a0449f902d681d90dace424",
+   "path": "OAI/Probability/Subsphere/Regression/Geometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Regression/Gram.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Regression.Gram",
+   "original_sha256": "200de02b0ee6a915428cdd326d717810f9f8e1ff33189f6f1a121cac2e1b529c",
+   "path": "OAI/Probability/Subsphere/Regression/Gram.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Regression/Model.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Regression.Model",
+   "original_sha256": "168cc82abba3231a7473feaa70aa5fc98a895cbe7734192387ee55284ed5c629",
+   "path": "OAI/Probability/Subsphere/Regression/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Regression/Precision.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Regression.Precision",
+   "original_sha256": "4f30c5b1bfcc8c359013e79271e606fa360f7d38cadf91b3d33b9e3485c96287",
+   "path": "OAI/Probability/Subsphere/Regression/Precision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Regression/Projection.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Regression.Projection",
+   "original_sha256": "5f1b24084b079610c031e023724ca3bc3b166d6aec43cebb99becef03f087808",
+   "path": "OAI/Probability/Subsphere/Regression/Projection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Regression/Spheres.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Regression.Spheres",
+   "original_sha256": "77e731d35f755948c14ebcc881c5690c99db07be3aaf681b481a1e6c14e56592",
+   "path": "OAI/Probability/Subsphere/Regression/Spheres.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Probability/Subsphere/Regression/Streaming.lean"
+   },
+   "module": "OAI.Probability.Subsphere.Regression.Streaming",
+   "original_sha256": "a304056caf2c33951a87b6ae2df3d24abb17bd1f089459ffd310ed6516d18803",
+   "path": "OAI/Probability/Subsphere/Regression/Streaming.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Probability.Subsphere.Estimates.AffinePrecision",
+  "OAI.Probability.Subsphere.Estimates.FixedPrecision",
+  "OAI.Probability.Subsphere.Estimates.HalfPrecision",
+  "OAI.Probability.Subsphere.Estimates.Numerics",
+  "OAI.Probability.Subsphere.Estimates.Weighted",
+  "OAI.Probability.Subsphere.Geometry.Affine",
+  "OAI.Probability.Subsphere.Geometry.Integration",
+  "OAI.Probability.Subsphere.Geometry.MassBounds",
+  "OAI.Probability.Subsphere.Kernels.Precision",
+  "OAI.Probability.Subsphere.Main",
+  "OAI.Probability.Subsphere.Mixture.BetaTheory",
+  "OAI.Probability.Subsphere.Mixture.Domination",
+  "OAI.Probability.Subsphere.Mixture.Haar",
+  "OAI.Probability.Subsphere.Mixture.Latitude",
+  "OAI.Probability.Subsphere.Model",
+  "OAI.Probability.Subsphere.Models",
+  "OAI.Probability.Subsphere.Regression.Blocks",
+  "OAI.Probability.Subsphere.Regression.Gaussian",
+  "OAI.Probability.Subsphere.Regression.Geometry",
+  "OAI.Probability.Subsphere.Regression.Gram",
+  "OAI.Probability.Subsphere.Regression.Model",
+  "OAI.Probability.Subsphere.Regression.Precision",
+  "OAI.Probability.Subsphere.Regression.Projection",
+  "OAI.Probability.Subsphere.Regression.Spheres",
+  "OAI.Probability.Subsphere.Regression.Streaming"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/SubsphereCurrent.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Probability.Subsphere.Main",
+   "name": "OAI.SubsphereCurrent.full_current_main_scope",
+   "statement_sha256": "407ab0bfa1258a662d06ba9684a15379a5d98a4cad3fbc67c7068ab12f9b3ea6"
+  }
+ ],
+ "task_id": "oai-subsphere-current",
+ "task_revision": 1,
+ "title": "OpenAI math: Memory–sample lower bounds for noiseless Gaussian regression: Subsphere estimates and memory–sample lower bounds",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

@@ -1,0 +1,3377 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 130369867
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.EgyptianFractions",
+  "challenge_sha256": "e96f5967735c7f7af64fc306601a5280d20f5752799e8c9a5fcc424cd421c0f6",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/EgyptianFractions.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.EgyptianFractions",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.NumberTheory.EgyptianFractions.Main",
+   "theorem_names": [
+    "OAI.Problem337.egyptian_length_is_minimum",
+    "OAI.Problem337.main_double_log_order",
+    "OAI.Problem337.one_expansions_finite_and_bounded",
+    "OAI.Problem337.counting_double_log_order",
+    "OAI.Problem337.exact_marker_padding",
+    "OAI.Problem337.every_exact_marker_occurs",
+    "OAI.Problem337.quantitative_marked_length",
+    "OAI.Problem337.missing_denominator_semantics",
+    "OAI.Problem337.prescribed_denominator_corollary"
+   ]
+  },
+  "config_sha256": "e437463f549509b9f7915877a19a54ec1d17d961fee02ce83d5cc3cf1a5fcf36",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/EgyptianFractions.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.Problem337.counting_double_log_order": "equal",
+   "OAI.Problem337.egyptian_length_is_minimum": "equal",
+   "OAI.Problem337.every_exact_marker_occurs": "equal",
+   "OAI.Problem337.exact_marker_padding": "equal",
+   "OAI.Problem337.main_double_log_order": "equal",
+   "OAI.Problem337.missing_denominator_semantics": "equal",
+   "OAI.Problem337.one_expansions_finite_and_bounded": "equal",
+   "OAI.Problem337.prescribed_denominator_corollary": "equal",
+   "OAI.Problem337.quantitative_marked_length": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/BackwardExpansions.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.BackwardExpansions",
+   "original_sha256": "c6fdd81718b9ea5216b72b334814b3daf94d91feeeff486495c8af2a3741e8bb",
+   "path": "OAI/NumberTheory/EgyptianFractions/BackwardExpansions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/BadPredecessorCount.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.BadPredecessorCount",
+   "original_sha256": "3a89ee7dfaf1bb98f58befb91c22c51de5fdc61c00c0a90e2bfde2a42d9b7349",
+   "path": "OAI/NumberTheory/EgyptianFractions/BadPredecessorCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/BilinearFourier.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.BilinearFourier",
+   "original_sha256": "25bf3b9adab54ab93bf7497c81961fc7488715b5669afa2f6fe5d88577542a2a",
+   "path": "OAI/NumberTheory/EgyptianFractions/BilinearFourier.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/BinaryExpansion.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.BinaryExpansion",
+   "original_sha256": "c3952bf0c80864af955eb5d06b784a5153c9eca97aee52602005217e4e147514",
+   "path": "OAI/NumberTheory/EgyptianFractions/BinaryExpansion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CeilResidue.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CeilResidue",
+   "original_sha256": "83eff7c60e0b309837dc29b1a874c0d10251abfd45061af0479403312be680c6",
+   "path": "OAI/NumberTheory/EgyptianFractions/CeilResidue.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CleanupApplications.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CleanupApplications",
+   "original_sha256": "c4c61718528c6de07324577a3ac00aaf3598666bbd964eec34340e216fee890f",
+   "path": "OAI/NumberTheory/EgyptianFractions/CleanupApplications.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CollisionCounting.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CollisionCounting",
+   "original_sha256": "0a87549cea3fea2b349528d72fed9004f1d3a1839e2dc08bb388bdefac7a189f",
+   "path": "OAI/NumberTheory/EgyptianFractions/CollisionCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CompositeBadDensity.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CompositeBadDensity",
+   "original_sha256": "18bde3afc5032f5255017c16af23225274f1ae9b07fb1a12a439bd8c11b62ab5",
+   "path": "OAI/NumberTheory/EgyptianFractions/CompositeBadDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CompositeBadDensityBound.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CompositeBadDensityBound",
+   "original_sha256": "8dc1cdc2f7c9e18630f6060135728aeb5a910fe9f4bdc4248e264a23dfe12d3a",
+   "path": "OAI/NumberTheory/EgyptianFractions/CompositeBadDensityBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CompositeBadModuli.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CompositeBadModuli",
+   "original_sha256": "45480935f8c0770f86824176e55b200a0b9d7154239478ff05ebf00dcf236c9a",
+   "path": "OAI/NumberTheory/EgyptianFractions/CompositeBadModuli.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CompositeConductorBudget.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CompositeConductorBudget",
+   "original_sha256": "2b45411aa01acb765eada59c877926c943d3601f0c65fef0b2640c59eb207a89",
+   "path": "OAI/NumberTheory/EgyptianFractions/CompositeConductorBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CompositeMarkedReduction.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CompositeMarkedReduction",
+   "original_sha256": "ba1977ae971fbaf028dd8322e03dc840abb47fea0e11c520b15e99457406e74f",
+   "path": "OAI/NumberTheory/EgyptianFractions/CompositeMarkedReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CompositeRationalSupply.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CompositeRationalSupply",
+   "original_sha256": "c74604b77aa70df5e57aab24fe8c3fa25aaee0c7131506a88daa36dcd2ddc638",
+   "path": "OAI/NumberTheory/EgyptianFractions/CompositeRationalSupply.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CompositeSpectral.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CompositeSpectral",
+   "original_sha256": "9b8f38fa6939fe566eeb183ab2b748c67e1e6e1b589b9d1a6819cb0b1cdb2299",
+   "path": "OAI/NumberTheory/EgyptianFractions/CompositeSpectral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CompositeSupplyFinal.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CompositeSupplyFinal",
+   "original_sha256": "e07f9e248827601907a1e7860e05749317c968328f5f2eaa8d4fd04b87461fe6",
+   "path": "OAI/NumberTheory/EgyptianFractions/CompositeSupplyFinal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CompositeSupplySize.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CompositeSupplySize",
+   "original_sha256": "638aaf459f2d0abb0d241f7240f6a58488019685c5ee78d20804686cd8ec1d0e",
+   "path": "OAI/NumberTheory/EgyptianFractions/CompositeSupplySize.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CompositeUnitMixing.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CompositeUnitMixing",
+   "original_sha256": "6d17acf833330dd1df6a590f82b875a7a1a98271ad07f8c588b823d4f1390206",
+   "path": "OAI/NumberTheory/EgyptianFractions/CompositeUnitMixing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ConcreteGoodExposure.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ConcreteGoodExposure",
+   "original_sha256": "29e93f00ee7666c52a1334197110dc76e7b89b78f877a848a50328a5ab6eb3e6",
+   "path": "OAI/NumberTheory/EgyptianFractions/ConcreteGoodExposure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CorrelationPhase.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CorrelationPhase",
+   "original_sha256": "b6ab27f72526ffd1a8b60632cc1adf740b829c1759721117bc691f75ff71e8cc",
+   "path": "OAI/NumberTheory/EgyptianFractions/CorrelationPhase.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CountingFromMain.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CountingFromMain",
+   "original_sha256": "aa1465e2cc059e753a8fcd6ac9bc55178a50dfd89f38dae84413c21d9df66cc2",
+   "path": "OAI/NumberTheory/EgyptianFractions/CountingFromMain.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CountingFromMarkers.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CountingFromMarkers",
+   "original_sha256": "99521eba696aee656227afcb14ee88872dd3441b2531529bda38774b3dea0ec6",
+   "path": "OAI/NumberTheory/EgyptianFractions/CountingFromMarkers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CountingPadding.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CountingPadding",
+   "original_sha256": "ca0d8dc267cca5e4c12aa1b9cf3d3bac0d18d2914b0ff624212f5a329d03ebc1",
+   "path": "OAI/NumberTheory/EgyptianFractions/CountingPadding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CountingTransfer.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CountingTransfer",
+   "original_sha256": "c51b1fe6c0177eddc02dc8c23f4357a5b22642912ed4707b2525d83c9ba64b7d",
+   "path": "OAI/NumberTheory/EgyptianFractions/CountingTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CountingUpper.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CountingUpper",
+   "original_sha256": "9c58e5ea8d33f0813908d8a29a998e4493359863ec928013f088cfe2e9374ee7",
+   "path": "OAI/NumberTheory/EgyptianFractions/CountingUpper.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CubeFreeDensity.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CubeFreeDensity",
+   "original_sha256": "f25206541f2628a0f6a4dc2aaf68edb4f24c888e7bffc8d86c031b20cbfb28d8",
+   "path": "OAI/NumberTheory/EgyptianFractions/CubeFreeDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CubeFreeRationalSupply.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CubeFreeRationalSupply",
+   "original_sha256": "eb22cda674b909e5676e1745a3d7f3044f862dd75130714e0596ccdabca0dc93",
+   "path": "OAI/NumberTheory/EgyptianFractions/CubeFreeRationalSupply.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CubeFreeSupplyFromExceptions.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CubeFreeSupplyFromExceptions",
+   "original_sha256": "93a6744f5acb62ef418beda3b3608aa19edc97744a02dfa00428e8b1670e294e",
+   "path": "OAI/NumberTheory/EgyptianFractions/CubeFreeSupplyFromExceptions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CyclicCeilingCount.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CyclicCeilingCount",
+   "original_sha256": "6aabb92028a20896128ff9d610082d92b237049a0567f8581a09a73a9357566c",
+   "path": "OAI/NumberTheory/EgyptianFractions/CyclicCeilingCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CyclicDiscrepancy.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CyclicDiscrepancy",
+   "original_sha256": "6c8f8dee9650492cea1c9de2e078f6f5a44df519d016b79cffbf535be6dfe4b0",
+   "path": "OAI/NumberTheory/EgyptianFractions/CyclicDiscrepancy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CyclicDiscrepancyAutomatic.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CyclicDiscrepancyAutomatic",
+   "original_sha256": "bfc9afea65088478585144a7772a199241f342921f497e316b180ebdf327e533",
+   "path": "OAI/NumberTheory/EgyptianFractions/CyclicDiscrepancyAutomatic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CyclicInterval.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CyclicInterval",
+   "original_sha256": "cb4ce8daec45bec9894f27677a819566836aa732d649a47756ffa6816d9c6d4c",
+   "path": "OAI/NumberTheory/EgyptianFractions/CyclicInterval.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CyclicKernel.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CyclicKernel",
+   "original_sha256": "8c553bf70fcc195d77996f246e0f80cf2705ed98a1c390a75663911456f6594b",
+   "path": "OAI/NumberTheory/EgyptianFractions/CyclicKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/CyclicSmoothing.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.CyclicSmoothing",
+   "original_sha256": "8723827c55014b6c0235d60e6537cf56bb080f7868182893cbcfa5c7d86e50d0",
+   "path": "OAI/NumberTheory/EgyptianFractions/CyclicSmoothing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/Defs.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.Defs",
+   "original_sha256": "ebf02f9dc75e621df19f85b05827f865c9fb36f16808ea6b4892732082b482f6",
+   "path": "OAI/NumberTheory/EgyptianFractions/Defs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DenominatorBound.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DenominatorBound",
+   "original_sha256": "6aa456a4b25ca980d4a492f49db812b57da5a8c90986b2463e0d79c19f77b205",
+   "path": "OAI/NumberTheory/EgyptianFractions/DenominatorBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DenseExpansion.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DenseExpansion",
+   "original_sha256": "deae5cbcab3fe0f2f72d6f739833671639b542cbb9adedf609568e5f922a1011",
+   "path": "OAI/NumberTheory/EgyptianFractions/DenseExpansion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DenseModularPair.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DenseModularPair",
+   "original_sha256": "f22c0d24d4fb7970f2ec8b031ce9fbb2d1e0b092dfa063d8f6ece6207bf88e2e",
+   "path": "OAI/NumberTheory/EgyptianFractions/DenseModularPair.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DenseModularSupply.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DenseModularSupply",
+   "original_sha256": "7c438db39bc28a38abb253ca205dfe311f8064e35c6fd61efaa1658e61a4ab40",
+   "path": "OAI/NumberTheory/EgyptianFractions/DenseModularSupply.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DensePairing.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DensePairing",
+   "original_sha256": "f21049f783c94abcbafaf72515bd3575b245bcdeade1e5ec3092202c4d326b8a",
+   "path": "OAI/NumberTheory/EgyptianFractions/DensePairing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DensityAssembly.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DensityAssembly",
+   "original_sha256": "8f8d319a5bb837f2151a87465323a08a092e2a3b9f629a51db7633c141907583",
+   "path": "OAI/NumberTheory/EgyptianFractions/DensityAssembly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DensityLoss.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DensityLoss",
+   "original_sha256": "0efdad89a1c3e25ac2ee226c3d5a930a723ee71cd87e0d857de39a8810d1d82d",
+   "path": "OAI/NumberTheory/EgyptianFractions/DensityLoss.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DensityMomentBound.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DensityMomentBound",
+   "original_sha256": "7dce7536d4cf1385c8999ef6e3f14632d6832bea9a26167dcf32f9234e406fbf",
+   "path": "OAI/NumberTheory/EgyptianFractions/DensityMomentBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DensityMomentBridge.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DensityMomentBridge",
+   "original_sha256": "70eb9dd716b9d8cc41dd6aee8b4c095ffcb008f11e0123501f0141199ba8feb2",
+   "path": "OAI/NumberTheory/EgyptianFractions/DensityMomentBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DensityParameters.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DensityParameters",
+   "original_sha256": "1ec5dd450d20d244ae280b622a4846d61593f41fe1095a951de78d3527104fd3",
+   "path": "OAI/NumberTheory/EgyptianFractions/DensityParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DescentDecay.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DescentDecay",
+   "original_sha256": "c69270cf2993fc7acb845db45041dc9a567e3f88e23be86c14b59524a6e41c4c",
+   "path": "OAI/NumberTheory/EgyptianFractions/DescentDecay.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DescentDepth.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DescentDepth",
+   "original_sha256": "9ffe6288b36f0d6e355a66136c604217d16119b16606afdeb772b93dcb0ac130",
+   "path": "OAI/NumberTheory/EgyptianFractions/DescentDepth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DescentHolder.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DescentHolder",
+   "original_sha256": "ca36f5d226f083301b3ecf2755c0aa88c8ef7477b583c623047df1e947af664a",
+   "path": "OAI/NumberTheory/EgyptianFractions/DescentHolder.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DescentRecurrence.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DescentRecurrence",
+   "original_sha256": "6aca0f2c5e51b22f44cf4cf9230b91ddf3e6bf8255e7a2e22d03d1c1a1c221a9",
+   "path": "OAI/NumberTheory/EgyptianFractions/DescentRecurrence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DeterministicMean.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DeterministicMean",
+   "original_sha256": "8ef5380f611e95bb5bcd2498478a4659e7c095ced04c8f2786f5c69ced5b25b9",
+   "path": "OAI/NumberTheory/EgyptianFractions/DeterministicMean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DeterministicMeanDecay.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DeterministicMeanDecay",
+   "original_sha256": "c8f8f9bd1422be23068e9c83c220173f1d0c23019bdd0104de534de13da76a60",
+   "path": "OAI/NumberTheory/EgyptianFractions/DeterministicMeanDecay.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DeterministicPhaseWindow.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DeterministicPhaseWindow",
+   "original_sha256": "06fd38c06c2569c4d56f12ba26ab5829ff4a8c7324cf07133f21cbe7354b77d1",
+   "path": "OAI/NumberTheory/EgyptianFractions/DeterministicPhaseWindow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DeterministicReciprocal.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DeterministicReciprocal",
+   "original_sha256": "1305779278aa045a00f1e2393bb8a013afce7bd369386c624a03936d1aa42329",
+   "path": "OAI/NumberTheory/EgyptianFractions/DeterministicReciprocal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DeterministicResidueSupply.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DeterministicResidueSupply",
+   "original_sha256": "5d541071a5f0e4b741798811797aa6bed1d2b905d4b997d2c5f7eca696585a59",
+   "path": "OAI/NumberTheory/EgyptianFractions/DeterministicResidueSupply.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DiscreteFirstDerivative.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DiscreteFirstDerivative",
+   "original_sha256": "16e33facfd95cca6e614ae246174282e83cb1a185da7cdcfca8242b886217518",
+   "path": "OAI/NumberTheory/EgyptianFractions/DiscreteFirstDerivative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DiscreteSecondDerivative.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DiscreteSecondDerivative",
+   "original_sha256": "a9f65f663ad2de247972397fb187bb3c84fab0e5d9bece86b7c5008e184ca1ba",
+   "path": "OAI/NumberTheory/EgyptianFractions/DiscreteSecondDerivative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/Distinctize.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.Distinctize",
+   "original_sha256": "085ea5e9c9e89d55f7d72f7381931406e91cb75f35405cd70517d5ea89517cab",
+   "path": "OAI/NumberTheory/EgyptianFractions/Distinctize.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DivisorBandDecay.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DivisorBandDecay",
+   "original_sha256": "37dfa025bba53ad90b6638470d1fe933330b2494bb43ac4538440b2a453030e8",
+   "path": "OAI/NumberTheory/EgyptianFractions/DivisorBandDecay.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DivisorClassAssembly.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DivisorClassAssembly",
+   "original_sha256": "b309743f16d4812baddffae9048775448f54ca86f8a56a5318e5db0cc8a06b91",
+   "path": "OAI/NumberTheory/EgyptianFractions/DivisorClassAssembly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DivisorClasses.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DivisorClasses",
+   "original_sha256": "0f31f033d49d418e689ac7a21e7dd0508232402c6e3c4944342d550f6be03a58",
+   "path": "OAI/NumberTheory/EgyptianFractions/DivisorClasses.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DivisorCounting.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DivisorCounting",
+   "original_sha256": "f4c7bd152552ae5eb0f381dda109212d490e8883f01fea51c7a49cf859613bad",
+   "path": "OAI/NumberTheory/EgyptianFractions/DivisorCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DivisorDensity.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DivisorDensity",
+   "original_sha256": "788ba65ef09d542bc7ecea95faf58389971bdc863765e790bd1bf01f6a29b6b7",
+   "path": "OAI/NumberTheory/EgyptianFractions/DivisorDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DivisorEnergyNesting.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DivisorEnergyNesting",
+   "original_sha256": "2224f1c6a9892a47597dcceaf842dbdde9785f370ddbe6b9e9b3d139431e4e28",
+   "path": "OAI/NumberTheory/EgyptianFractions/DivisorEnergyNesting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DivisorFactorBound.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DivisorFactorBound",
+   "original_sha256": "a9e4fa2a4e292681b8867d726a47ff98cf042e76c18b0f24b0d3fa56cc6002e9",
+   "path": "OAI/NumberTheory/EgyptianFractions/DivisorFactorBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DivisorLocalFactor.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DivisorLocalFactor",
+   "original_sha256": "d5a232b60c3fe7ccdf91021a321c9972bfb7bc16a6d28069f4e9f07d84e5e5b3",
+   "path": "OAI/NumberTheory/EgyptianFractions/DivisorLocalFactor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DivisorMomentAbsorption.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DivisorMomentAbsorption",
+   "original_sha256": "b82e3b1c178d5af91a5ddc3fcd0f174265cedd221613fbcb6db289d190ff5e3a",
+   "path": "OAI/NumberTheory/EgyptianFractions/DivisorMomentAbsorption.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DivisorMomentFinalBudget.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DivisorMomentFinalBudget",
+   "original_sha256": "b1c2c6e28223ab9cccf62c13a232505bc56e1f54a6aefbcd67eab8970b219a57",
+   "path": "OAI/NumberTheory/EgyptianFractions/DivisorMomentFinalBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DivisorPointwiseUniform.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DivisorPointwiseUniform",
+   "original_sha256": "b3ff418009c1c83aee031cba1d620799193561577ba46004ad2aabca88b5e525",
+   "path": "OAI/NumberTheory/EgyptianFractions/DivisorPointwiseUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DivisorPrefixCounting.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DivisorPrefixCounting",
+   "original_sha256": "cc004d784097a6667b8f25906e0604bb4073b9bf345ec8d4f724447288bfc7d6",
+   "path": "OAI/NumberTheory/EgyptianFractions/DivisorPrefixCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DivisorSplit.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DivisorSplit",
+   "original_sha256": "bf8fabc6c8be68655f1cd70f8f425acf99cc39071a6309a8b70648a83e3dc8ed",
+   "path": "OAI/NumberTheory/EgyptianFractions/DivisorSplit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DivisorSquareMean.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DivisorSquareMean",
+   "original_sha256": "683fd295616226b1c7d147d78b686fda338980896504110baae1c1dbb806db20",
+   "path": "OAI/NumberTheory/EgyptianFractions/DivisorSquareMean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DyadicBands.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DyadicBands",
+   "original_sha256": "12a207132f309a6b03b6aef2a8676466d374c95895bf2a2db520c7caf924b3eb",
+   "path": "OAI/NumberTheory/EgyptianFractions/DyadicBands.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/DyadicSum.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.DyadicSum",
+   "original_sha256": "31bf1e9f0220760fce553f2a7602ad97a90853a25b812e3a01091627377ca782",
+   "path": "OAI/NumberTheory/EgyptianFractions/DyadicSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/EgyptianExistence.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.EgyptianExistence",
+   "original_sha256": "9585e375ed203e562edbdcb05bffdc2b5ce8bcc230b27a4ee7c20e713d9f4305",
+   "path": "OAI/NumberTheory/EgyptianFractions/EgyptianExistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/EightProductConductor.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.EightProductConductor",
+   "original_sha256": "9b83f0025672c37c2ec2dc62a142cef7a3ee091cb342e1c47908dd7e790797f6",
+   "path": "OAI/NumberTheory/EgyptianFractions/EightProductConductor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/EightProductRationalSupply.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.EightProductRationalSupply",
+   "original_sha256": "71458b15b4bdb3f64df0fcd48345b427359bf6c895aced06371a32c1415fc9b1",
+   "path": "OAI/NumberTheory/EgyptianFractions/EightProductRationalSupply.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ExactPadding.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ExactPadding",
+   "original_sha256": "93eb1000eaf8146abc9c8a5d3049555501777dc9b97086e6676941e355b2b822",
+   "path": "OAI/NumberTheory/EgyptianFractions/ExactPadding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ExposedCorrelation.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ExposedCorrelation",
+   "original_sha256": "59bbff3b3a852f3433c261fdcb427fdcf31557efdacaee4673975f8882b4616f",
+   "path": "OAI/NumberTheory/EgyptianFractions/ExposedCorrelation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/FejerBounds.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.FejerBounds",
+   "original_sha256": "f4af4ec232ce573da90e0c8c9fa9b3d6ae691349b923ceed3e77ad8846120cc3",
+   "path": "OAI/NumberTheory/EgyptianFractions/FejerBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/FejerBudget.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.FejerBudget",
+   "original_sha256": "9b31c2839934ae2b88909de8ede9e540226034ad98bd699b7f133e3363830c03",
+   "path": "OAI/NumberTheory/EgyptianFractions/FejerBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/FejerExponentialBudget.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.FejerExponentialBudget",
+   "original_sha256": "03569f14ae0f27f992667ef555bf53be73dbc9c3498cf1b2d7d74a26da07b365",
+   "path": "OAI/NumberTheory/EgyptianFractions/FejerExponentialBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/FejerSampleMean.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.FejerSampleMean",
+   "original_sha256": "1285b521f79eec18697cd85e1908f55668f5d385b8f72700cefcd0a54cb57345",
+   "path": "OAI/NumberTheory/EgyptianFractions/FejerSampleMean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/FiniteBox.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.FiniteBox",
+   "original_sha256": "0c96d0d6354708a3daa2aebf6a2a10bcc35eaf47e5b6e4698d3c70ac73353d1d",
+   "path": "OAI/NumberTheory/EgyptianFractions/FiniteBox.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/FiniteEulerBound.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.FiniteEulerBound",
+   "original_sha256": "53804d9fa980756915b896ac10a2d10a4d5e77bc3f15a4e80f6e5674c7867c72",
+   "path": "OAI/NumberTheory/EgyptianFractions/FiniteEulerBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/FiniteExpansion.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.FiniteExpansion",
+   "original_sha256": "d177921cc3eb0625e3a063451371395b230a5e80a9d5b168cdf765c281e8ae76",
+   "path": "OAI/NumberTheory/EgyptianFractions/FiniteExpansion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/FiniteExposureAverage.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.FiniteExposureAverage",
+   "original_sha256": "eeab9eea1471b13ef01d2d1005dcee5f82ddf4b976838eee541daa253aaad84f",
+   "path": "OAI/NumberTheory/EgyptianFractions/FiniteExposureAverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/FiniteGoodExposure.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.FiniteGoodExposure",
+   "original_sha256": "c6604054bf7674e167e596bbbca78f757247122b27d1497af4b6e5739e8f1bc2",
+   "path": "OAI/NumberTheory/EgyptianFractions/FiniteGoodExposure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/FinitePowerSaving.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.FinitePowerSaving",
+   "original_sha256": "04b00811661edfe4269e169cbfe4ad843b627f366c0e79b8c4e59507742d6d36",
+   "path": "OAI/NumberTheory/EgyptianFractions/FinitePowerSaving.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/FiniteResidueIndices.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.FiniteResidueIndices",
+   "original_sha256": "04460c531690200beb4dfa5190f5848aca064077fa7fad2806a6281eda4c6c84",
+   "path": "OAI/NumberTheory/EgyptianFractions/FiniteResidueIndices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/FirstDerivativeSum.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.FirstDerivativeSum",
+   "original_sha256": "5efde7fc2a54f4491c2712c6b29e7dfe900d04d0e8098f3fc2c344ccbdca7cc0",
+   "path": "OAI/NumberTheory/EgyptianFractions/FirstDerivativeSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/FiveProducts.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.FiveProducts",
+   "original_sha256": "259b69cb99ad838010c8d432b9c9f7594420ecec090373a2130ecf3abcb62cbb",
+   "path": "OAI/NumberTheory/EgyptianFractions/FiveProducts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/FixedSumFinite.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.FixedSumFinite",
+   "original_sha256": "d3fa346313799719b709bbfc5f6ad33949423bbbb3e101b5464acc65c84b6442",
+   "path": "OAI/NumberTheory/EgyptianFractions/FixedSumFinite.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ForwardDifference.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ForwardDifference",
+   "original_sha256": "42bed25646d0a2464d904f0ba2ce9fc1af944f9a39d01d1f22555e004fe7c2df",
+   "path": "OAI/NumberTheory/EgyptianFractions/ForwardDifference.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/FourierCommonRealization.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.FourierCommonRealization",
+   "original_sha256": "350ac9820319ba580a6ff43fd7b5391fdac832cc68875c91b0025032219ea75f",
+   "path": "OAI/NumberTheory/EgyptianFractions/FourierCommonRealization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/FourierFailureBounds.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.FourierFailureBounds",
+   "original_sha256": "2d88b6385bbb032e300a4fefcf75810bedba232639b79b07342937ef1e58c111",
+   "path": "OAI/NumberTheory/EgyptianFractions/FourierFailureBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/FourierFrequencyGap.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.FourierFrequencyGap",
+   "original_sha256": "0e31d14e3822537e5125ab797e210c974ad7f5878e28e459665cafab95b1fe02",
+   "path": "OAI/NumberTheory/EgyptianFractions/FourierFrequencyGap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/FourierSecondMoment.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.FourierSecondMoment",
+   "original_sha256": "4297df7f4a50cc4c89e50e0f378e6fba419084251e38543a7a29bf2949325f5d",
+   "path": "OAI/NumberTheory/EgyptianFractions/FourierSecondMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/GeometricCharacterBound.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.GeometricCharacterBound",
+   "original_sha256": "2e78601f2f217a5d7a57824df0955f82e190fa651a24f0398863311c8f405941",
+   "path": "OAI/NumberTheory/EgyptianFractions/GeometricCharacterBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/GeometricRandomRanges.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.GeometricRandomRanges",
+   "original_sha256": "1e888b95f852cc426ab2018a01ad180abd35107a5ea14bc3ba4b8792fc8e6c63",
+   "path": "OAI/NumberTheory/EgyptianFractions/GeometricRandomRanges.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/GeometricRandomResidues.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.GeometricRandomResidues",
+   "original_sha256": "c5346a59e4006cfada0c28387babae12c191119c827fe42116a7b8fdaf06c2cb",
+   "path": "OAI/NumberTheory/EgyptianFractions/GeometricRandomResidues.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/GeometricRawDensity.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.GeometricRawDensity",
+   "original_sha256": "4526ad715b157d9155539308fc5e2b804dcba80dc10d89a3dc379ddee12d2353",
+   "path": "OAI/NumberTheory/EgyptianFractions/GeometricRawDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/GoodNumeratorSets.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.GoodNumeratorSets",
+   "original_sha256": "95ab767c729cc5b9fa233cdc5983082e7299e13fdae37ff005205ca96c09ed5e",
+   "path": "OAI/NumberTheory/EgyptianFractions/GoodNumeratorSets.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/GreedyBudget.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.GreedyBudget",
+   "original_sha256": "c8ecd0002ac403d527dddf9b0278006d10525fa8580bcc5ae44dda790b29ab99",
+   "path": "OAI/NumberTheory/EgyptianFractions/GreedyBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/GreedyPreparation.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.GreedyPreparation",
+   "original_sha256": "b8a1192e65d98eb8d35a282f4ce8cdc7daf35f86804bd4f0a8fa94f6ac63e3a5",
+   "path": "OAI/NumberTheory/EgyptianFractions/GreedyPreparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/GreedyStep.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.GreedyStep",
+   "original_sha256": "5cad7bd0a11276696a1fc383ac1fedce614ea7a8a57edfc15901d164edebe043",
+   "path": "OAI/NumberTheory/EgyptianFractions/GreedyStep.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/HammingException.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.HammingException",
+   "original_sha256": "6e3ce67c31fd7125d38cc004e0953839b2040a62ea117731b3b8328cbe712cc9",
+   "path": "OAI/NumberTheory/EgyptianFractions/HammingException.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/HarmonicMoment.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.HarmonicMoment",
+   "original_sha256": "3a573ad7bb943a40dcc20a71d9c0322b005504a0ea3b517bf074612cb2759827",
+   "path": "OAI/NumberTheory/EgyptianFractions/HarmonicMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/HarmonicPrefixBudget.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.HarmonicPrefixBudget",
+   "original_sha256": "2294cdb578d2e041e7fa8b85aff5e6fb375d5df19aba7a8e39e7cb33b42f24d1",
+   "path": "OAI/NumberTheory/EgyptianFractions/HarmonicPrefixBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/HighResidueDistribution.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.HighResidueDistribution",
+   "original_sha256": "d8fd7784a860bbd2641cf345cd894d706486e3d1edb309bc57fdce091846819e",
+   "path": "OAI/NumberTheory/EgyptianFractions/HighResidueDistribution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/HitCount.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.HitCount",
+   "original_sha256": "d77351c09d44fed100982f92327df27ef67c7b203685856d39b45c483b995005",
+   "path": "OAI/NumberTheory/EgyptianFractions/HitCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/HyperbolaCorrelation.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.HyperbolaCorrelation",
+   "original_sha256": "939670f463602453feb090b0f46afcd3138c9cc04249bea2b4651770a14bce71",
+   "path": "OAI/NumberTheory/EgyptianFractions/HyperbolaCorrelation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/HyperbolaDyadicBridge.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.HyperbolaDyadicBridge",
+   "original_sha256": "28eb5241030197d8b8947f941214e89f0287924ed7f4308c919fdeac5484d0ec",
+   "path": "OAI/NumberTheory/EgyptianFractions/HyperbolaDyadicBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/HyperbolaTypeII.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.HyperbolaTypeII",
+   "original_sha256": "3d3189b43163b65af553e59fb69d09b94059c45e85d598b0637ace628d5d13ae",
+   "path": "OAI/NumberTheory/EgyptianFractions/HyperbolaTypeII.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/IndependentBlockSelection.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.IndependentBlockSelection",
+   "original_sha256": "7f55596358e5e0636453fcb8d540516700e81fd206f9509b9e6e3dfd1d0686b0",
+   "path": "OAI/NumberTheory/EgyptianFractions/IndependentBlockSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/IntermediateBandBudget.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.IntermediateBandBudget",
+   "original_sha256": "115984f179c51ef405d3685cec0f53faa212c8f546dceabb6e2c2b1ea36c60e9",
+   "path": "OAI/NumberTheory/EgyptianFractions/IntermediateBandBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/IntermediateBandDecay.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.IntermediateBandDecay",
+   "original_sha256": "899f758987c127728b0749b78705b3a8eb09aa119e4c1e022fd84de31cea6433",
+   "path": "OAI/NumberTheory/EgyptianFractions/IntermediateBandDecay.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/IntermediatePrefixClass.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.IntermediatePrefixClass",
+   "original_sha256": "30868f30b4de949aaa3ebafef5d077c63a1ed38c4d18f774d9b16140de676654",
+   "path": "OAI/NumberTheory/EgyptianFractions/IntermediatePrefixClass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/IntermediatePrimeClass.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.IntermediatePrimeClass",
+   "original_sha256": "7231842fb9e3d0a183a62169ee459d730e1fe17edf5a69123eeb3ee23ba96f61",
+   "path": "OAI/NumberTheory/EgyptianFractions/IntermediatePrimeClass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/IteratedDifferencing.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.IteratedDifferencing",
+   "original_sha256": "43305e2b9868cb361d91e76347e4c0e5644c02ca0fc00c5e8c30b205ec7fc884",
+   "path": "OAI/NumberTheory/EgyptianFractions/IteratedDifferencing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/LargeClassUniform.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.LargeClassUniform",
+   "original_sha256": "c00a8c654480e656b36f4c4e43658895be39ad177e9ba826c0afb988bff007cd",
+   "path": "OAI/NumberTheory/EgyptianFractions/LargeClassUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/LargePrefixClass.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.LargePrefixClass",
+   "original_sha256": "c469e35e29f0c56ccec430c0d59fae54400aa885e3e622558aa2c2f65f47189c",
+   "path": "OAI/NumberTheory/EgyptianFractions/LargePrefixClass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/LargePrefixHarmonic.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.LargePrefixHarmonic",
+   "original_sha256": "5862faa820ea04d4b6d8297446c9b1f07746ddb7116c1e8fd028c3da7c755845",
+   "path": "OAI/NumberTheory/EgyptianFractions/LargePrefixHarmonic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/LargePrimeDivisors.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.LargePrimeDivisors",
+   "original_sha256": "3f4d61dbe2722b59cf2df565cd33e5fd7fa15fba3a5bf261d8f6eb1a5e7670bb",
+   "path": "OAI/NumberTheory/EgyptianFractions/LargePrimeDivisors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/LeastResidueBridge.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.LeastResidueBridge",
+   "original_sha256": "2c4ec108721fbd853c22ca4283f50ed27933ba07027cfc0470d5707455ad415a",
+   "path": "OAI/NumberTheory/EgyptianFractions/LeastResidueBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/LengthBasic.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.LengthBasic",
+   "original_sha256": "428e8276b18c25695f7d72bcf83ee96975c6dceea6b6691f03fb9d5377882f88",
+   "path": "OAI/NumberTheory/EgyptianFractions/LengthBasic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/LevelFailureMean.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.LevelFailureMean",
+   "original_sha256": "7d13b498540cefaf5442c998cd08fb2ed4aeb84ca46a6e5cf316ed8ab7b74cd4",
+   "path": "OAI/NumberTheory/EgyptianFractions/LevelFailureMean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/LogWeightedSums.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.LogWeightedSums",
+   "original_sha256": "591bee8b212a26ce2b2f893372c44cc3fe57e5a8ead11e4acf8d338fd6a293b3",
+   "path": "OAI/NumberTheory/EgyptianFractions/LogWeightedSums.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.Main",
+   "original_sha256": "6b0a640028aff138041d0c3c5f631ecd6be84b08d7d0bfc305c08facd2fb234d",
+   "path": "OAI/NumberTheory/EgyptianFractions/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MainLowerAppend.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MainLowerAppend",
+   "original_sha256": "271b5e89fde91fef55ec2296b106a52641452f9a5c894697656f40014ca03da7",
+   "path": "OAI/NumberTheory/EgyptianFractions/MainLowerAppend.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MainLowerVerified.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MainLowerVerified",
+   "original_sha256": "5ca5bcf81a8f9c7140f47642322c0ba0d336faad71fd6dd8a37150230ebe0fc1",
+   "path": "OAI/NumberTheory/EgyptianFractions/MainLowerVerified.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MainUpperReduction.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MainUpperReduction",
+   "original_sha256": "1b5054603b6b2f5908ffae63da2a127a15c4d774c3c68e1feec8c757c6326ff7",
+   "path": "OAI/NumberTheory/EgyptianFractions/MainUpperReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MajorArcApproximationBridge.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MajorArcApproximationBridge",
+   "original_sha256": "d89a0d681106b473a8d34ce1a9f18175017e767d88c9be2ea84f00767b62f5ac",
+   "path": "OAI/NumberTheory/EgyptianFractions/MajorArcApproximationBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MangoldtMajorArcReduction.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MangoldtMajorArcReduction",
+   "original_sha256": "db42c12645a177f5a5596ee30ab597269c44cad7bc1bbd3461f3f4be27d08df4",
+   "path": "OAI/NumberTheory/EgyptianFractions/MangoldtMajorArcReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MangoldtMinorArcActual.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MangoldtMinorArcActual",
+   "original_sha256": "42e9fe7852f4d9887dbb8e5b0bc81f1c76b7cbc774a6668019720f2818569132",
+   "path": "OAI/NumberTheory/EgyptianFractions/MangoldtMinorArcActual.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MarkedBudget.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MarkedBudget",
+   "original_sha256": "b0a2343e833dfcdaae9bb542ba2b5cdde68ffdf7ffe88bf0aac419b1f2d09efe",
+   "path": "OAI/NumberTheory/EgyptianFractions/MarkedBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MarkedCleanup.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MarkedCleanup",
+   "original_sha256": "5b9d03fc96b0ebb2333f2017f1c09484e13bf44275ec8288905fef1c1e002677",
+   "path": "OAI/NumberTheory/EgyptianFractions/MarkedCleanup.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MarkedConstruction.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MarkedConstruction",
+   "original_sha256": "9b79dec8484d1839cd5ad5c304e809b4e12ce271b99c962314e250ddfa385cc1",
+   "path": "OAI/NumberTheory/EgyptianFractions/MarkedConstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MarkedEndgame.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MarkedEndgame",
+   "original_sha256": "2fa14ce68a571524a9091cb40fd47ff5f0857f5e848c1c0690d9c15e47a3097c",
+   "path": "OAI/NumberTheory/EgyptianFractions/MarkedEndgame.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MarkedFinalReduction.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MarkedFinalReduction",
+   "original_sha256": "f718e1e05f6214a85f765432188dc3eb48ae824c107f2aa09c7e428cec1bd4de",
+   "path": "OAI/NumberTheory/EgyptianFractions/MarkedFinalReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MarkedGreedy.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MarkedGreedy",
+   "original_sha256": "6f874e65458c1a542a586b57a1c286cfda4447930fd49698809e327866406bb8",
+   "path": "OAI/NumberTheory/EgyptianFractions/MarkedGreedy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MarkedGreedyDensity.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MarkedGreedyDensity",
+   "original_sha256": "1e67fa2d5c2d0669374daabfcebebcb74847d6fa0456dceb847dc6ae21462554",
+   "path": "OAI/NumberTheory/EgyptianFractions/MarkedGreedyDensity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MarkedGreedyLength.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MarkedGreedyLength",
+   "original_sha256": "fed364ef83dad757d814422b349e5f39897c044370253d5442695129738074f4",
+   "path": "OAI/NumberTheory/EgyptianFractions/MarkedGreedyLength.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MarkedGrouping.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MarkedGrouping",
+   "original_sha256": "333edca1343810515a730507eebf1a5cff7247ae420476048a1373d2f07c6577",
+   "path": "OAI/NumberTheory/EgyptianFractions/MarkedGrouping.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MarkedGroupingFin.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MarkedGroupingFin",
+   "original_sha256": "4955cc91a1a51dffdeee66d765a6594158285e78cecac4daacadfbd3daabe74e",
+   "path": "OAI/NumberTheory/EgyptianFractions/MarkedGroupingFin.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MarkedGroupingUnits.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MarkedGroupingUnits",
+   "original_sha256": "26d5e20f871a738cdaa6665ad80a568225b05e05b686940303d8b7323600db44",
+   "path": "OAI/NumberTheory/EgyptianFractions/MarkedGroupingUnits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MarkedPrefixBridge.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MarkedPrefixBridge",
+   "original_sha256": "8a987c5586040b6eed65d91e000779983f509dbf3747554280a174db64b1d203",
+   "path": "OAI/NumberTheory/EgyptianFractions/MarkedPrefixBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MarkedPrimeSupplyReduction.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MarkedPrimeSupplyReduction",
+   "original_sha256": "d657dbce96555670c8095b52884aa2c181d5c420546d7ce8538cacaf5841c330",
+   "path": "OAI/NumberTheory/EgyptianFractions/MarkedPrimeSupplyReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MarkedQuantitative.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MarkedQuantitative",
+   "original_sha256": "1e559d683ccbc5f366e77924d3c3d900284da29aafb82a82ea528a17b42de39a",
+   "path": "OAI/NumberTheory/EgyptianFractions/MarkedQuantitative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MarkedReduction.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MarkedReduction",
+   "original_sha256": "f8ff28403873d1f0432091020d677a4be9ec07e0c772641ef703535af1520e81",
+   "path": "OAI/NumberTheory/EgyptianFractions/MarkedReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MarkedThreePrimeReduction.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MarkedThreePrimeReduction",
+   "original_sha256": "25470948968b43c8d83b1925d4c9bd75711cc070a2760f4885c507ffd78725c9",
+   "path": "OAI/NumberTheory/EgyptianFractions/MarkedThreePrimeReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MarkerCoverage.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MarkerCoverage",
+   "original_sha256": "93ec02bcd427598e99b098e68948dc2363edd46f28574d7f0dd0da2568368d99",
+   "path": "OAI/NumberTheory/EgyptianFractions/MarkerCoverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MarkerOccurrence.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MarkerOccurrence",
+   "original_sha256": "8edb800c70c4a2c40edc2288909f22417fc4ffe4082c5521f60de82bfd37c16f",
+   "path": "OAI/NumberTheory/EgyptianFractions/MarkerOccurrence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MinorArcApproximation.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MinorArcApproximation",
+   "original_sha256": "cd5bb7781e5916e27db4221061190e085d0ab98e8123563ac0d490c7a735ba54",
+   "path": "OAI/NumberTheory/EgyptianFractions/MinorArcApproximation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MinorArcBudget.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MinorArcBudget",
+   "original_sha256": "81d67c77362c34558b522e7deb6c4e820ebbd938399bb07742c858418df22b7b",
+   "path": "OAI/NumberTheory/EgyptianFractions/MinorArcBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MinorArcLogWindow.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MinorArcLogWindow",
+   "original_sha256": "5855ddccd06d2caa0024c77a3b800952f015649784c478070aac07db5729ffb8",
+   "path": "OAI/NumberTheory/EgyptianFractions/MinorArcLogWindow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MinorArcMeasure.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MinorArcMeasure",
+   "original_sha256": "f01273df09e63e7f6eb78212c79173401038040cf04af75dbb003ea977ae746d",
+   "path": "OAI/NumberTheory/EgyptianFractions/MinorArcMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MinorArcRealWindow.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MinorArcRealWindow",
+   "original_sha256": "a47abdea9e192494360bc8ecbcb9fa842ead7ec96b8a1ee797e7f79eb46a88c8",
+   "path": "OAI/NumberTheory/EgyptianFractions/MinorArcRealWindow.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MinorArcVaughan.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MinorArcVaughan",
+   "original_sha256": "d1951873b2312c73229882546c79ed27538cca2f6743ad34e807eb54026e3ec9",
+   "path": "OAI/NumberTheory/EgyptianFractions/MinorArcVaughan.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MissingSemantics.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MissingSemantics",
+   "original_sha256": "06715d9dd8a2e15d7db1ee726fe63fa67ad4bcab6dbe39795ee5862c6bbc809c",
+   "path": "OAI/NumberTheory/EgyptianFractions/MissingSemantics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/MonotoneBlocks.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.MonotoneBlocks",
+   "original_sha256": "c899e9d6f2111a7384cb2fc28feb5d9d93d2eeb125b6d369fc5e6b69588bae74",
+   "path": "OAI/NumberTheory/EgyptianFractions/MonotoneBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/OddPrimorial.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.OddPrimorial",
+   "original_sha256": "1e48f882f3421eb53e333e66c24790b655806a6f789c258d98f51e3abf8f91f4",
+   "path": "OAI/NumberTheory/EgyptianFractions/OddPrimorial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PhaseExtension.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PhaseExtension",
+   "original_sha256": "b70860cae7247ee9d75b92934aa7bd4f9d4af259efffee393cd8bfaf5f8b9e79",
+   "path": "OAI/NumberTheory/EgyptianFractions/PhaseExtension.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrefixGap.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrefixGap",
+   "original_sha256": "2abe41cd51550a9e989e097d032246fcf36ddccd06fc644d3c580b5166775b3e",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrefixGap.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrefixGrowth.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrefixGrowth",
+   "original_sha256": "503da8ddddf8e2e2c105c6dd720ba29a1e3a06c81074b135b72b6a29d230e336",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrefixGrowth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrescribedAnalysis.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrescribedAnalysis",
+   "original_sha256": "c122121565e00fc8c32367099b28e5199abfb0ecf6a27e3af1b34924e49a1de4",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrescribedAnalysis.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrescribedCorollary.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrescribedCorollary",
+   "original_sha256": "f970d54871c194c6afaf563a1f4273f52d3c649de3090f160803c429de5f4889",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrescribedCorollary.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrescribedInversion.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrescribedInversion",
+   "original_sha256": "62c8cc5105e0670300a5f8e8d524d0ac7fa5699d46820a3e380359733027f27f",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrescribedInversion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrimeFactorPrefix.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrimeFactorPrefix",
+   "original_sha256": "f33e2655f518fd7c8298e220b9718bc485c921616d63c0501655814e9818c640",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrimeFactorPrefix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrimeGcdHits.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrimeGcdHits",
+   "original_sha256": "f1d197b0d651a9b709f4e30cd2b9fd4dac6b3e9861c48f30215d444c499f4392",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrimeGcdHits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrimeHits.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrimeHits",
+   "original_sha256": "0b9701e2ef9bf6edcda38bf3951e40758a9ef01d81353301ac662b4700960f40",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrimeHits.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrimeObstruction.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrimeObstruction",
+   "original_sha256": "7403c9d92fda4559778cb1b9a6d7c640fc568487774024192c1d4f57aaf47cfd",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrimeObstruction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrimePool.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrimePool",
+   "original_sha256": "8629cd08baa594e849e7487ed7d5f412799ee21e2470e913363c89f1b573585a",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrimePool.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrimePoolSelection.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrimePoolSelection",
+   "original_sha256": "c2c103105d8320019741cc5e3e1c409dfff3331435aed0dc1992c70e00d2aaa4",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrimePoolSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrimePrefixSize.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrimePrefixSize",
+   "original_sha256": "f76f7cf2719b3c11f96cad45ec7dec45c01620620614c991d1ab3ee12c89d0ec",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrimePrefixSize.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrimeProductBound.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrimeProductBound",
+   "original_sha256": "7c22ca9130aa011937dccca67e19b00566544525ac773b5f26e58cdd761a470c",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrimeProductBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrimeProductFibers.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrimeProductFibers",
+   "original_sha256": "83330925f26f73eb064bb8b22f624c13cd673f02404d37e33829d716d5aeeb93",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrimeProductFibers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrimeProductGrowth.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrimeProductGrowth",
+   "original_sha256": "aae74009d4de67464fff8b16e0635e8e5f83f1560097079894e8708f7eacf92f",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrimeProductGrowth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrimeReciprocalBound.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrimeReciprocalBound",
+   "original_sha256": "33729aebac2f8379533e55ccf66f48cde4c136e0c542bd3bf3bb4f6257589030",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrimeReciprocalBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrimeReciprocalSharp.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrimeReciprocalSharp",
+   "original_sha256": "03461c159d7549f079b9849fba52de7fc3409083328fadb49514c263203c5623",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrimeReciprocalSharp.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrimeTripleAsymptotics.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrimeTripleAsymptotics",
+   "original_sha256": "292f68064b5390ccf54f8fdebf8addf7156319cafd086ca4accef147e149c074",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrimeTripleAsymptotics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/PrimeTripleExclusion.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.PrimeTripleExclusion",
+   "original_sha256": "f585c64ed48280a06d2b692e30a9a7e30fddc42ac53b774cbdd32b8e96518fac",
+   "path": "OAI/NumberTheory/EgyptianFractions/PrimeTripleExclusion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RandomCommonRealization.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RandomCommonRealization",
+   "original_sha256": "293b79ab2aa9afa8f9a6c19daf8c5764548a82384f0b754c7b35d8aa9a5d5919",
+   "path": "OAI/NumberTheory/EgyptianFractions/RandomCommonRealization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RandomCorrelation.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RandomCorrelation",
+   "original_sha256": "6e0661f3ed85880558084820c2a51e61c3eca6308636f93978a29a8c7a58133f",
+   "path": "OAI/NumberTheory/EgyptianFractions/RandomCorrelation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RandomExposure.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RandomExposure",
+   "original_sha256": "299b3d593e540afe1a6629a28e6aa34f0d473d3097d6579e0b8a6222c91af8d8",
+   "path": "OAI/NumberTheory/EgyptianFractions/RandomExposure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RandomGcdBound.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RandomGcdBound",
+   "original_sha256": "be7642e1aa80a522acf37c91455f45c64a67bf0637dc2c9fe7d0e4f6c4bd8f56",
+   "path": "OAI/NumberTheory/EgyptianFractions/RandomGcdBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RandomGcdMarginal.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RandomGcdMarginal",
+   "original_sha256": "a63b3507a525086bad8975193a7623feb643fe431979ad0f5e4cacbdf310d89f",
+   "path": "OAI/NumberTheory/EgyptianFractions/RandomGcdMarginal.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RandomProductFourier.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RandomProductFourier",
+   "original_sha256": "c7fed2d9001b18d3a4fb20954ac20e1a1d2bf7863b2f75c3410b2ecd27d6c1f5",
+   "path": "OAI/NumberTheory/EgyptianFractions/RandomProductFourier.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RandomProductParameters.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RandomProductParameters",
+   "original_sha256": "0f10e914498bbdfb8c1fc87b712691c9974380a2212404cafd8def00e295fc56",
+   "path": "OAI/NumberTheory/EgyptianFractions/RandomProductParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RandomResidueRealization.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RandomResidueRealization",
+   "original_sha256": "6dd44cbc0b5952347d5bee6ec9f9bd80b3821900336a9f6f5f2b7dafef22269b",
+   "path": "OAI/NumberTheory/EgyptianFractions/RandomResidueRealization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RandomSecondMoment.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RandomSecondMoment",
+   "original_sha256": "d28fde40d90e0133e602f887893944172e551bbf2d80274345811ab015ebbc88",
+   "path": "OAI/NumberTheory/EgyptianFractions/RandomSecondMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RandomSelection.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RandomSelection",
+   "original_sha256": "d183adb7624d070fa29254298821109ae60bc21e75591d30b013de850ae95ba7",
+   "path": "OAI/NumberTheory/EgyptianFractions/RandomSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RankinAdmissibility.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RankinAdmissibility",
+   "original_sha256": "64a5e849369504d040bfea14c9acda8b3e14b3fd1328c5252e842e8ac003058d",
+   "path": "OAI/NumberTheory/EgyptianFractions/RankinAdmissibility.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RankinBand.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RankinBand",
+   "original_sha256": "e2ccc6b9922bbda329d9467b720c167aeb3592f93e508e05d9df3c306faf2f39",
+   "path": "OAI/NumberTheory/EgyptianFractions/RankinBand.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RationalArcVolume.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RationalArcVolume",
+   "original_sha256": "7c15618af423befab6ae8e3db8920f6c1ac4df9732d15cbf62c00f16fc50a503",
+   "path": "OAI/NumberTheory/EgyptianFractions/RationalArcVolume.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RationalDivisorLift.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RationalDivisorLift",
+   "original_sha256": "cfaf64798b12e80f85c1f2fe7b6908e0d8752e979b471828eccdc7b484fa1d0f",
+   "path": "OAI/NumberTheory/EgyptianFractions/RationalDivisorLift.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RationalDivisorSupplyAlgebra.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RationalDivisorSupplyAlgebra",
+   "original_sha256": "3a05e93ffaeff4fff221de94cb7856b399f695f69f9c8e4b2eb40899613d2940",
+   "path": "OAI/NumberTheory/EgyptianFractions/RationalDivisorSupplyAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RationalDivisorSupplyBridge.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RationalDivisorSupplyBridge",
+   "original_sha256": "eef115ac026e58ae8791fe00833305e3eec87fc44ee71d82f25388bcb492af58",
+   "path": "OAI/NumberTheory/EgyptianFractions/RationalDivisorSupplyBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RationalPhaseHyperbola.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RationalPhaseHyperbola",
+   "original_sha256": "942ecf9228254ee90fd92e014fd2ecff1ae620857d738dc24eaaff4bb09a40f7",
+   "path": "OAI/NumberTheory/EgyptianFractions/RationalPhaseHyperbola.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RationalPhaseSpacing.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RationalPhaseSpacing",
+   "original_sha256": "99ab1637c3823e3d534066a6e7c93aabc1084686a3404fd30c237d81dfe8756a",
+   "path": "OAI/NumberTheory/EgyptianFractions/RationalPhaseSpacing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RationalSupplyFromThreePrimes.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RationalSupplyFromThreePrimes",
+   "original_sha256": "1d35af9201aa53a22a5c5678544f7c1deed5d8bcfe0a606826eed8a4d2d0032f",
+   "path": "OAI/NumberTheory/EgyptianFractions/RationalSupplyFromThreePrimes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RationalSupplyReduction.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RationalSupplyReduction",
+   "original_sha256": "78159927727942cc2cd4db650b5c15f12b67dbaefb86f9679ea1f28b4330d44b",
+   "path": "OAI/NumberTheory/EgyptianFractions/RationalSupplyReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RationalSupplyScaling.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RationalSupplyScaling",
+   "original_sha256": "68f5904177cb35efafa70be68d2da049992aa6e2afaaf61a71704a3517e63d78",
+   "path": "OAI/NumberTheory/EgyptianFractions/RationalSupplyScaling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RawDensityExistence.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RawDensityExistence",
+   "original_sha256": "1e1c3a71a40591a54a4f63d757ab51b5ec42ccd9e336e52a7e749f4d356d137c",
+   "path": "OAI/NumberTheory/EgyptianFractions/RawDensityExistence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RawDensityParameters.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RawDensityParameters",
+   "original_sha256": "e21fc22bc29f8ddc051084d5f5ed51631b7d5958721891caef9e9a4525612045",
+   "path": "OAI/NumberTheory/EgyptianFractions/RawDensityParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RawDensityUpper.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RawDensityUpper",
+   "original_sha256": "68f971269a39858b36e4055e351bfc35372752c30c8b6a751af9412ae80037a2",
+   "path": "OAI/NumberTheory/EgyptianFractions/RawDensityUpper.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RealPhaseEnvelope.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RealPhaseEnvelope",
+   "original_sha256": "7101ee80bdbac55f8fdaac979da383222692a04d45345df18cc64cba1cb83226",
+   "path": "OAI/NumberTheory/EgyptianFractions/RealPhaseEnvelope.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RealTypeI.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RealTypeI",
+   "original_sha256": "d550ae66f5870d540c8b82cfd332c6aa6b2cdde6f50684f7a5665f61976e59db",
+   "path": "OAI/NumberTheory/EgyptianFractions/RealTypeI.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ReciprocalDerivatives.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ReciprocalDerivatives",
+   "original_sha256": "40d2ce067d724a0338b2fba1c5cb6262a4d99d51973b7e5ebbb90767d6987ba6",
+   "path": "OAI/NumberTheory/EgyptianFractions/ReciprocalDerivatives.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ReciprocalDifferencingBudget.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ReciprocalDifferencingBudget",
+   "original_sha256": "78596c7edf2a75e1281b1ff59525bc385bbd7c007b9a6fda170058852baa72bd",
+   "path": "OAI/NumberTheory/EgyptianFractions/ReciprocalDifferencingBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ReciprocalPhase.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ReciprocalPhase",
+   "original_sha256": "07d2df7a72f2f8c3fdc478a1974e14288bc724362e6ce86f12d8cab1c8c08941",
+   "path": "OAI/NumberTheory/EgyptianFractions/ReciprocalPhase.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ReciprocalPhaseCancellation.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ReciprocalPhaseCancellation",
+   "original_sha256": "85d018b264d339ab5a771a7507e4f73e164f1c1dfa394138e9fea50a67e0995f",
+   "path": "OAI/NumberTheory/EgyptianFractions/ReciprocalPhaseCancellation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ReciprocalPhasePreparation.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ReciprocalPhasePreparation",
+   "original_sha256": "dc11e8e98c15ae8aefae9f60985e7cef95d054d4e362eece6af034522bb227d8",
+   "path": "OAI/NumberTheory/EgyptianFractions/ReciprocalPhasePreparation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ReciprocalPhaseRegularity.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ReciprocalPhaseRegularity",
+   "original_sha256": "1492c957378fc220dc41480f31deefe020ed2c8f435dab625c5c3e0feea877bf",
+   "path": "OAI/NumberTheory/EgyptianFractions/ReciprocalPhaseRegularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ReciprocalPhaseScale.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ReciprocalPhaseScale",
+   "original_sha256": "c4d5004df70745d965bf1f86b92e4013e1e018106c0d23f7e2c6cb5476b3a649",
+   "path": "OAI/NumberTheory/EgyptianFractions/ReciprocalPhaseScale.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ReciprocalPhaseUniform.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ReciprocalPhaseUniform",
+   "original_sha256": "7b1c7e7053acb2f6815d4ff175a55a38cba282ff058de9a12c8ea130469c262a",
+   "path": "OAI/NumberTheory/EgyptianFractions/ReciprocalPhaseUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ReciprocalTerminalSum.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ReciprocalTerminalSum",
+   "original_sha256": "c07e9eee0a35d408009e55153688d4523f6fc5c174a7022206f5824310c029e0",
+   "path": "OAI/NumberTheory/EgyptianFractions/ReciprocalTerminalSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ReducedCharacter.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ReducedCharacter",
+   "original_sha256": "d96f719add9a2634f221ba2e54a4a0fd91cb4830e367e412725364427182a81d",
+   "path": "OAI/NumberTheory/EgyptianFractions/ReducedCharacter.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ReducedCollisionFourier.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ReducedCollisionFourier",
+   "original_sha256": "72ebde08d3d135cc12296cf8490d0ea4d2464b5009d0bef6be7024425a86f27e",
+   "path": "OAI/NumberTheory/EgyptianFractions/ReducedCollisionFourier.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RemoveRepetitions.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RemoveRepetitions",
+   "original_sha256": "fb353a342df5c1e359d1cfd68d7c160bf5fae36ac94dd410ea09bd0970d635de",
+   "path": "OAI/NumberTheory/EgyptianFractions/RemoveRepetitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RepeatedSquaring.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RepeatedSquaring",
+   "original_sha256": "0fe059be0b39a2b8c51a8d47fe943eeb5d6425ab257d6e3885893ba3824cec28",
+   "path": "OAI/NumberTheory/EgyptianFractions/RepeatedSquaring.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ResidueDenominator.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ResidueDenominator",
+   "original_sha256": "8b19025de6c833c7d89106bec234afac7969defc16ea0a2f4164d217dbcfbd57",
+   "path": "OAI/NumberTheory/EgyptianFractions/ResidueDenominator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ResidueDenominatorCertificate.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ResidueDenominatorCertificate",
+   "original_sha256": "46b347bdcc0267c4e74d73b6f41d541f090128b909367b4682914fbb4c9cd836",
+   "path": "OAI/NumberTheory/EgyptianFractions/ResidueDenominatorCertificate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ResidueLevels.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ResidueLevels",
+   "original_sha256": "8516254f2534ae65b980b49216c78a3f24fd2537445c73565aaf85540b5010c8",
+   "path": "OAI/NumberTheory/EgyptianFractions/ResidueLevels.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ResidueRegimeSplice.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ResidueRegimeSplice",
+   "original_sha256": "45a63aedfe10d0aa0d586d01aba9a889a31e2d590705d3d27e48e7c4e6473bf0",
+   "path": "OAI/NumberTheory/EgyptianFractions/ResidueRegimeSplice.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ResidueStep.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ResidueStep",
+   "original_sha256": "14716456535e3344d1a5ee1b6967c9cea46c665eda68381198451cded97ee25a",
+   "path": "OAI/NumberTheory/EgyptianFractions/ResidueStep.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ResidueWideDenominator.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ResidueWideDenominator",
+   "original_sha256": "4132e8159ab537f783974223f87efd7d134a3a421dc6fbc04c5e331ec66da24b",
+   "path": "OAI/NumberTheory/EgyptianFractions/ResidueWideDenominator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RestrictedRoughAsymptotic.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RestrictedRoughAsymptotic",
+   "original_sha256": "0d51e21eef734dc99b0974c87d7ae07f33635d585e0eaf0dd7c58edfdcd46224",
+   "path": "OAI/NumberTheory/EgyptianFractions/RestrictedRoughAsymptotic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RoughDivisorAsymptotic.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RoughDivisorAsymptotic",
+   "original_sha256": "4a1709b2a2cbe1484648e60806592e9d02ae8c9a3f65ab90f77a9386fb94c088",
+   "path": "OAI/NumberTheory/EgyptianFractions/RoughDivisorAsymptotic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RoughModulusBlocks.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RoughModulusBlocks",
+   "original_sha256": "c7a07745fee0b13e890d809d8d235682e53c3a04452bf9ab23b605b6d5020442",
+   "path": "OAI/NumberTheory/EgyptianFractions/RoughModulusBlocks.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RoughModulusCollision.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RoughModulusCollision",
+   "original_sha256": "dd854e3a45d704385cdc72580662d020bd6f4b2c60139b6485c789b921e2a6ff",
+   "path": "OAI/NumberTheory/EgyptianFractions/RoughModulusCollision.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/RoughPart.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.RoughPart",
+   "original_sha256": "a15466fc78b61161662daf8c43b65ef9de0fc2cfb7577bcfd6bf65a6e6d779df",
+   "path": "OAI/NumberTheory/EgyptianFractions/RoughPart.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SampleWordTransfer.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SampleWordTransfer",
+   "original_sha256": "eb6f2b535f944455a68e7bba87f1f52ea1ee30edbe0c689ae83086b686afd863",
+   "path": "OAI/NumberTheory/EgyptianFractions/SampleWordTransfer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SampledDenominatorCertificate.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SampledDenominatorCertificate",
+   "original_sha256": "df145e29cd03cfed0db539298a9f42ef8b0f074a0ff00dcc78442bd6f6297c9e",
+   "path": "OAI/NumberTheory/EgyptianFractions/SampledDenominatorCertificate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SampledResidueDenominator.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SampledResidueDenominator",
+   "original_sha256": "a4f873498a2d68ba712b68d0f31bf6e837c9157371df29e81e652ea6b280e207",
+   "path": "OAI/NumberTheory/EgyptianFractions/SampledResidueDenominator.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SecondDerivativeBudget.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SecondDerivativeBudget",
+   "original_sha256": "209e56b198ad61ba160b8ac0653feb48f28c8c289846dea17369df2724914a80",
+   "path": "OAI/NumberTheory/EgyptianFractions/SecondDerivativeBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SecondDerivativeTest.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SecondDerivativeTest",
+   "original_sha256": "4b754a0fa1c2ff6758b9f4824c7539588dd0130e8e3b276e9e8e78efba1f4bfa",
+   "path": "OAI/NumberTheory/EgyptianFractions/SecondDerivativeTest.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SecondDifference.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SecondDifference",
+   "original_sha256": "d8f5296158a4c7b3605d02e1c518fc744b13354b9a7b8ac47d734c9502bc9f28",
+   "path": "OAI/NumberTheory/EgyptianFractions/SecondDifference.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SecondMomentAssembly.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SecondMomentAssembly",
+   "original_sha256": "175c5a5dc7f42367210a26a8dda904a90516aec62526fec9b8018c2d98a40517",
+   "path": "OAI/NumberTheory/EgyptianFractions/SecondMomentAssembly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SeparatedIntervalCount.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SeparatedIntervalCount",
+   "original_sha256": "30b551b91f80c796c876812275fa8707d0de6a06f11ffd1efca13702f2919b8d",
+   "path": "OAI/NumberTheory/EgyptianFractions/SeparatedIntervalCount.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SimultaneousSelection.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SimultaneousSelection",
+   "original_sha256": "4f62dbee21d43f039d31aab258cd8a068ffa2b3ecd1d945f4968957618b81c2d",
+   "path": "OAI/NumberTheory/EgyptianFractions/SimultaneousSelection.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SmallPrimeClass.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SmallPrimeClass",
+   "original_sha256": "103acf15cb748f19850eaed1046455d09d3e52601592d3952719d9362c8e853b",
+   "path": "OAI/NumberTheory/EgyptianFractions/SmallPrimeClass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SmallPrimeDivisors.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SmallPrimeDivisors",
+   "original_sha256": "5bf169ad09aa3407a1a7db0c392bb409642240e86bfd93a471bd761ec223795b",
+   "path": "OAI/NumberTheory/EgyptianFractions/SmallPrimeDivisors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SmallPrimeMoment.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SmallPrimeMoment",
+   "original_sha256": "36806835772abdfeafe180987ca5bc1204e72dc2b547b73554b2654613fdbf71",
+   "path": "OAI/NumberTheory/EgyptianFractions/SmallPrimeMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SmallPrimeRankin.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SmallPrimeRankin",
+   "original_sha256": "143847b5db87acb8db7e7b932fef37c347ab69f088da8a66a18a9ff03634e3b1",
+   "path": "OAI/NumberTheory/EgyptianFractions/SmallPrimeRankin.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SmallPrimeSelectedClass.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SmallPrimeSelectedClass",
+   "original_sha256": "75cf2afbb9381e10ab194cfa32be57f3b5d1871aac8a19fa2b53b5ece6507ee3",
+   "path": "OAI/NumberTheory/EgyptianFractions/SmallPrimeSelectedClass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SmoothRankin.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SmoothRankin",
+   "original_sha256": "e2604f3aede30512ac1873def77907c4cf20acbdb3b61b9436c0064c38f99ab8",
+   "path": "OAI/NumberTheory/EgyptianFractions/SmoothRankin.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SmoothRankinBounds.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SmoothRankinBounds",
+   "original_sha256": "3d18373973a8df359d3b76e5c96048a3b68eb33a36f1ae7812df4ac47bc8be1c",
+   "path": "OAI/NumberTheory/EgyptianFractions/SmoothRankinBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SparseBadDivisorTail.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SparseBadDivisorTail",
+   "original_sha256": "7fab723a7cd108529755c0f01aaf7d7a88485380d3738d57a8aa144ed0381bbf",
+   "path": "OAI/NumberTheory/EgyptianFractions/SparseBadDivisorTail.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SplitArithmetic.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SplitArithmetic",
+   "original_sha256": "79307e0dd9f4895416409b709a412a5dff77fd45fa2791f03cadf949c80d54d6",
+   "path": "OAI/NumberTheory/EgyptianFractions/SplitArithmetic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SubcriticalPowerSum.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SubcriticalPowerSum",
+   "original_sha256": "5e4fdc6063feda20825231e29ddac56e66d50c005d2c99192afb8da1522f8668",
+   "path": "OAI/NumberTheory/EgyptianFractions/SubcriticalPowerSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SupplyAsymptotics.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SupplyAsymptotics",
+   "original_sha256": "5eb67078dde2a92b87731da269b566fb6d340961ed5bc8ef6ea4589a80cadf4f",
+   "path": "OAI/NumberTheory/EgyptianFractions/SupplyAsymptotics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/SupplySize.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.SupplySize",
+   "original_sha256": "a0e352777189e9d7f2a89e81247034ce41e24f57b0edfd49f1a2881355a79075",
+   "path": "OAI/NumberTheory/EgyptianFractions/SupplySize.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/TerminalAssembly.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.TerminalAssembly",
+   "original_sha256": "b5ac6edaecef38327be0e1304192028d7b2b0f2f250c31dca87649cbb6b83c2e",
+   "path": "OAI/NumberTheory/EgyptianFractions/TerminalAssembly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/TerminalBridge.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.TerminalBridge",
+   "original_sha256": "a6f63a8f82d9e4cb84e4e322fefeaaf0461a1fbf7c9e0a8b3cdb75df1d622fac",
+   "path": "OAI/NumberTheory/EgyptianFractions/TerminalBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/TerminalDepth.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.TerminalDepth",
+   "original_sha256": "0998c9b92fdadd6a0ead8f6844a9140c135fd15115b42b27e5d695abf7362948",
+   "path": "OAI/NumberTheory/EgyptianFractions/TerminalDepth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/TerminalFiniteBudget.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.TerminalFiniteBudget",
+   "original_sha256": "44cdc87b193ea7611bc4ad618ac683d7ce52f0c769c29863dc4694c2be78a67d",
+   "path": "OAI/NumberTheory/EgyptianFractions/TerminalFiniteBudget.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/TerminalRecursion.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.TerminalRecursion",
+   "original_sha256": "484f0cd9ca7dab50fbe4045af59f925cf517d2be7d3fb9b4ffd9d0fb1f91c374",
+   "path": "OAI/NumberTheory/EgyptianFractions/TerminalRecursion.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ThinSupplyBase.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ThinSupplyBase",
+   "original_sha256": "c5b25f8df85715a90cd693d421596eae4e3a7257bf10b0eda5fccd46e8cc63ea",
+   "path": "OAI/NumberTheory/EgyptianFractions/ThinSupplyBase.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ThreePrimeAnalyticReduction.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ThreePrimeAnalyticReduction",
+   "original_sha256": "4a4dec71ea91d0f6e77a61e80914b8142a761d6fc2a8168c12315f4eb0fb25de",
+   "path": "OAI/NumberTheory/EgyptianFractions/ThreePrimeAnalyticReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ThreePrimeContinuousEnergy.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ThreePrimeContinuousEnergy",
+   "original_sha256": "c817a664475eb70fcdb3ba0d71253494a338c7b07b3eb9586375b70a92a83b5c",
+   "path": "OAI/NumberTheory/EgyptianFractions/ThreePrimeContinuousEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ThreePrimeContinuousFourier.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ThreePrimeContinuousFourier",
+   "original_sha256": "83d87c2a43db902027ca698c4504abb4950cd07d7af17fa4a1df2621da8de492",
+   "path": "OAI/NumberTheory/EgyptianFractions/ThreePrimeContinuousFourier.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ThreePrimeMangoldt.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ThreePrimeMangoldt",
+   "original_sha256": "70322f623231164fc9d084e91162cf51fbab7b4607bb73b144039347f60bc7a4",
+   "path": "OAI/NumberTheory/EgyptianFractions/ThreePrimeMangoldt.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ThreePrimeMangoldtBridge.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ThreePrimeMangoldtBridge",
+   "original_sha256": "0ccdfe2446d3effc3b67b8cdf6547f6209a536097cfa757cceeb7deed84bb95f",
+   "path": "OAI/NumberTheory/EgyptianFractions/ThreePrimeMangoldtBridge.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ThreePrimeMangoldtIntegral.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ThreePrimeMangoldtIntegral",
+   "original_sha256": "7f40d67318a378b478346759b6c2cdd9729b3b8c1a71020b8250ec306e705d2b",
+   "path": "OAI/NumberTheory/EgyptianFractions/ThreePrimeMangoldtIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ThreePrimePartialSummation.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ThreePrimePartialSummation",
+   "original_sha256": "2c2a3867cb596b13b7dba6d89bd1454a8011c5624c059edc5f7731bae70904e9",
+   "path": "OAI/NumberTheory/EgyptianFractions/ThreePrimePartialSummation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ThreePrimeSingularSeries.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ThreePrimeSingularSeries",
+   "original_sha256": "44e38d34354498dca394a40f7517d70898a3657cca2250afccf66b5f9857145d",
+   "path": "OAI/NumberTheory/EgyptianFractions/ThreePrimeSingularSeries.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/ThreePrimeWeighted.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.ThreePrimeWeighted",
+   "original_sha256": "218ab65244746c5de38a279297a53e4f372912cba1c64a81c0bdeee13a8790e1",
+   "path": "OAI/NumberTheory/EgyptianFractions/ThreePrimeWeighted.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/TruncatedDivisors.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.TruncatedDivisors",
+   "original_sha256": "d1aac9360a069e98eb7e3c25961bc8adaf0d27f7d0ae35b81d293afde033e1fa",
+   "path": "OAI/NumberTheory/EgyptianFractions/TruncatedDivisors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/TypeIIBlockScalar.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.TypeIIBlockScalar",
+   "original_sha256": "8fc79bee8ab57d71223ba454c8f647e40749b8ae0b636051b5864dd617160fcb",
+   "path": "OAI/NumberTheory/EgyptianFractions/TypeIIBlockScalar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/UniformDivisorMoment.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.UniformDivisorMoment",
+   "original_sha256": "0ff9bcc98e0bcfcb26a1894b8c01fabecc063229905202d83b8cf9558965aa2f",
+   "path": "OAI/NumberTheory/EgyptianFractions/UniformDivisorMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/UniformSecondMoment.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.UniformSecondMoment",
+   "original_sha256": "453603fc5288080344c1c54fa154980fa6b77ab8d076ee2044ff8bcaf90fb213",
+   "path": "OAI/NumberTheory/EgyptianFractions/UniformSecondMoment.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/UpperSlope.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.UpperSlope",
+   "original_sha256": "cbfb0a696c30c1167273b631617c3ea7f58aa3051528cbadc92bd80d4b286316",
+   "path": "OAI/NumberTheory/EgyptianFractions/UpperSlope.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/VanDerCorput.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.VanDerCorput",
+   "original_sha256": "bb5de8d2bab045e97bdd93e93bca726598780f73be857d332e0090b0361eaca4",
+   "path": "OAI/NumberTheory/EgyptianFractions/VanDerCorput.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/VaughanBilinear.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.VaughanBilinear",
+   "original_sha256": "e38c63e38fd1173c9a233a9ce0faeea74564497886ed315178e954422cd14f07",
+   "path": "OAI/NumberTheory/EgyptianFractions/VaughanBilinear.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/VaughanCutoff.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.VaughanCutoff",
+   "original_sha256": "4ea26b915ff457f2124ee2eff1e29ba7f79fad99d50052894d38787caf6464d2",
+   "path": "OAI/NumberTheory/EgyptianFractions/VaughanCutoff.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/VaughanDecomposition.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.VaughanDecomposition",
+   "original_sha256": "6ced36bab6f45ba9279ea0c2ecabdf92635acce361e37648d398135d5cb8d9aa",
+   "path": "OAI/NumberTheory/EgyptianFractions/VaughanDecomposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/VaughanDyadic.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.VaughanDyadic",
+   "original_sha256": "909698fca63c6d238232ac1ec2967ba4d8a898aeadfa7d5a12e3627a87766ea3",
+   "path": "OAI/NumberTheory/EgyptianFractions/VaughanDyadic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/VaughanDyadicDecomposition.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.VaughanDyadicDecomposition",
+   "original_sha256": "3e1d99faac83daaac04d7bd2f70687abf981b2b8030fef5dbfdb75dc905217c4",
+   "path": "OAI/NumberTheory/EgyptianFractions/VaughanDyadicDecomposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/VaughanDyadicEstimate.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.VaughanDyadicEstimate",
+   "original_sha256": "647a0b9e94a9897d2180ee67e7863f7e1c5e8af2e740abea12c92107850a07c6",
+   "path": "OAI/NumberTheory/EgyptianFractions/VaughanDyadicEstimate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/VaughanDyadicUniform.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.VaughanDyadicUniform",
+   "original_sha256": "eebf876b0c7210ce2a462f65ea30b84340bb6480ac13e38478420e7fc40d197e",
+   "path": "OAI/NumberTheory/EgyptianFractions/VaughanDyadicUniform.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/VaughanEstimate.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.VaughanEstimate",
+   "original_sha256": "32da32498798fc0bd210877934f8633705946f94927d999b3feced6d550a2255",
+   "path": "OAI/NumberTheory/EgyptianFractions/VaughanEstimate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/VaughanHyperbola.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.VaughanHyperbola",
+   "original_sha256": "876c8dfae1a8839a13fc8927910865c7291f2ce88cbe3b4ed398e8387bd5386b",
+   "path": "OAI/NumberTheory/EgyptianFractions/VaughanHyperbola.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/VaughanHyperbolicNearRational.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.VaughanHyperbolicNearRational",
+   "original_sha256": "f13e6e6e47ec443e68fbfd6131153382da444d483d836bc10ac45a871bc479ef",
+   "path": "OAI/NumberTheory/EgyptianFractions/VaughanHyperbolicNearRational.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/VaughanIdentity.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.VaughanIdentity",
+   "original_sha256": "3df76f9c8cab94c9f923978ec763fde1c284af459905d3858344450b78d66519",
+   "path": "OAI/NumberTheory/EgyptianFractions/VaughanIdentity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/VaughanNearRational.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.VaughanNearRational",
+   "original_sha256": "fd341e598caaa94058c35830b1ec5a0f1e6d8c6ca30151d92de6fd650ddd33ee",
+   "path": "OAI/NumberTheory/EgyptianFractions/VaughanNearRational.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/VaughanOptimized.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.VaughanOptimized",
+   "original_sha256": "f4a94c76ca6e8f2797fedb32d6fb1fa72387ae29e1032031f7e8e1a3b32046a4",
+   "path": "OAI/NumberTheory/EgyptianFractions/VaughanOptimized.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/VaughanRealTypeIHyperbolic.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.VaughanRealTypeIHyperbolic",
+   "original_sha256": "d06104814adec9658d76208aa1b396deb135fbbf425e03fef59c3b812c8073c9",
+   "path": "OAI/NumberTheory/EgyptianFractions/VaughanRealTypeIHyperbolic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/VaughanTypeI.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.VaughanTypeI",
+   "original_sha256": "047ee2152a264ee05dad5c79c15bc5f54a778bc5fbd411557f5b31c3c2c01047",
+   "path": "OAI/NumberTheory/EgyptianFractions/VaughanTypeI.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/VaughanTypeINormalized.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.VaughanTypeINormalized",
+   "original_sha256": "846c106cf440a06eb9bebc054bc15f60883af176d5eba60749d5fbf11dc2ee3a",
+   "path": "OAI/NumberTheory/EgyptianFractions/VaughanTypeINormalized.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/VaughanWeighted.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.VaughanWeighted",
+   "original_sha256": "d8bb5b4680a3fa07eaaee4d3d644c01197159162de2f33149e1ab46daaef123e",
+   "path": "OAI/NumberTheory/EgyptianFractions/VaughanWeighted.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/NumberTheory/EgyptianFractions/WeightedBinomial.lean"
+   },
+   "module": "OAI.NumberTheory.EgyptianFractions.WeightedBinomial",
+   "original_sha256": "87dcbd12fba70ccd3792d9d78f26815285ba434ee366ab95519b31f79f0bea41",
+   "path": "OAI/NumberTheory/EgyptianFractions/WeightedBinomial.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 45056
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.NumberTheory.EgyptianFractions.BackwardExpansions",
+  "OAI.NumberTheory.EgyptianFractions.BadPredecessorCount",
+  "OAI.NumberTheory.EgyptianFractions.BilinearFourier",
+  "OAI.NumberTheory.EgyptianFractions.BinaryExpansion",
+  "OAI.NumberTheory.EgyptianFractions.CeilResidue",
+  "OAI.NumberTheory.EgyptianFractions.CleanupApplications",
+  "OAI.NumberTheory.EgyptianFractions.CollisionCounting",
+  "OAI.NumberTheory.EgyptianFractions.CompositeBadDensity",
+  "OAI.NumberTheory.EgyptianFractions.CompositeBadDensityBound",
+  "OAI.NumberTheory.EgyptianFractions.CompositeBadModuli",
+  "OAI.NumberTheory.EgyptianFractions.CompositeConductorBudget",
+  "OAI.NumberTheory.EgyptianFractions.CompositeMarkedReduction",
+  "OAI.NumberTheory.EgyptianFractions.CompositeRationalSupply",
+  "OAI.NumberTheory.EgyptianFractions.CompositeSpectral",
+  "OAI.NumberTheory.EgyptianFractions.CompositeSupplyFinal",
+  "OAI.NumberTheory.EgyptianFractions.CompositeSupplySize",
+  "OAI.NumberTheory.EgyptianFractions.CompositeUnitMixing",
+  "OAI.NumberTheory.EgyptianFractions.ConcreteGoodExposure",
+  "OAI.NumberTheory.EgyptianFractions.CorrelationPhase",
+  "OAI.NumberTheory.EgyptianFractions.CountingFromMain",
+  "OAI.NumberTheory.EgyptianFractions.CountingFromMarkers",
+  "OAI.NumberTheory.EgyptianFractions.CountingPadding",
+  "OAI.NumberTheory.EgyptianFractions.CountingTransfer",
+  "OAI.NumberTheory.EgyptianFractions.CountingUpper",
+  "OAI.NumberTheory.EgyptianFractions.CubeFreeDensity",
+  "OAI.NumberTheory.EgyptianFractions.CubeFreeRationalSupply",
+  "OAI.NumberTheory.EgyptianFractions.CubeFreeSupplyFromExceptions",
+  "OAI.NumberTheory.EgyptianFractions.CyclicCeilingCount",
+  "OAI.NumberTheory.EgyptianFractions.CyclicDiscrepancy",
+  "OAI.NumberTheory.EgyptianFractions.CyclicDiscrepancyAutomatic",
+  "OAI.NumberTheory.EgyptianFractions.CyclicInterval",
+  "OAI.NumberTheory.EgyptianFractions.CyclicKernel",
+  "OAI.NumberTheory.EgyptianFractions.CyclicSmoothing",
+  "OAI.NumberTheory.EgyptianFractions.Defs",
+  "OAI.NumberTheory.EgyptianFractions.DenominatorBound",
+  "OAI.NumberTheory.EgyptianFractions.DenseExpansion",
+  "OAI.NumberTheory.EgyptianFractions.DenseModularPair",
+  "OAI.NumberTheory.EgyptianFractions.DenseModularSupply",
+  "OAI.NumberTheory.EgyptianFractions.DensePairing",
+  "OAI.NumberTheory.EgyptianFractions.DensityAssembly",
+  "OAI.NumberTheory.EgyptianFractions.DensityLoss",
+  "OAI.NumberTheory.EgyptianFractions.DensityMomentBound",
+  "OAI.NumberTheory.EgyptianFractions.DensityMomentBridge",
+  "OAI.NumberTheory.EgyptianFractions.DensityParameters",
+  "OAI.NumberTheory.EgyptianFractions.DescentDecay",
+  "OAI.NumberTheory.EgyptianFractions.DescentDepth",
+  "OAI.NumberTheory.EgyptianFractions.DescentHolder",
+  "OAI.NumberTheory.EgyptianFractions.DescentRecurrence",
+  "OAI.NumberTheory.EgyptianFractions.DeterministicMean",
+  "OAI.NumberTheory.EgyptianFractions.DeterministicMeanDecay",
+  "OAI.NumberTheory.EgyptianFractions.DeterministicPhaseWindow",
+  "OAI.NumberTheory.EgyptianFractions.DeterministicReciprocal",
+  "OAI.NumberTheory.EgyptianFractions.DeterministicResidueSupply",
+  "OAI.NumberTheory.EgyptianFractions.DiscreteFirstDerivative",
+  "OAI.NumberTheory.EgyptianFractions.DiscreteSecondDerivative",
+  "OAI.NumberTheory.EgyptianFractions.Distinctize",
+  "OAI.NumberTheory.EgyptianFractions.DivisorBandDecay",
+  "OAI.NumberTheory.EgyptianFractions.DivisorClassAssembly",
+  "OAI.NumberTheory.EgyptianFractions.DivisorClasses",
+  "OAI.NumberTheory.EgyptianFractions.DivisorCounting",
+  "OAI.NumberTheory.EgyptianFractions.DivisorDensity",
+  "OAI.NumberTheory.EgyptianFractions.DivisorEnergyNesting",
+  "OAI.NumberTheory.EgyptianFractions.DivisorFactorBound",
+  "OAI.NumberTheory.EgyptianFractions.DivisorLocalFactor",
+  "OAI.NumberTheory.EgyptianFractions.DivisorMomentAbsorption",
+  "OAI.NumberTheory.EgyptianFractions.DivisorMomentFinalBudget",
+  "OAI.NumberTheory.EgyptianFractions.DivisorPointwiseUniform",
+  "OAI.NumberTheory.EgyptianFractions.DivisorPrefixCounting",
+  "OAI.NumberTheory.EgyptianFractions.DivisorSplit",
+  "OAI.NumberTheory.EgyptianFractions.DivisorSquareMean",
+  "OAI.NumberTheory.EgyptianFractions.DyadicBands",
+  "OAI.NumberTheory.EgyptianFractions.DyadicSum",
+  "OAI.NumberTheory.EgyptianFractions.EgyptianExistence",
+  "OAI.NumberTheory.EgyptianFractions.EightProductConductor",
+  "OAI.NumberTheory.EgyptianFractions.EightProductRationalSupply",
+  "OAI.NumberTheory.EgyptianFractions.ExactPadding",
+  "OAI.NumberTheory.EgyptianFractions.ExposedCorrelation",
+  "OAI.NumberTheory.EgyptianFractions.FejerBounds",
+  "OAI.NumberTheory.EgyptianFractions.FejerBudget",
+  "OAI.NumberTheory.EgyptianFractions.FejerExponentialBudget",
+  "OAI.NumberTheory.EgyptianFractions.FejerSampleMean",
+  "OAI.NumberTheory.EgyptianFractions.FiniteBox",
+  "OAI.NumberTheory.EgyptianFractions.FiniteEulerBound",
+  "OAI.NumberTheory.EgyptianFractions.FiniteExpansion",
+  "OAI.NumberTheory.EgyptianFractions.FiniteExposureAverage",
+  "OAI.NumberTheory.EgyptianFractions.FiniteGoodExposure",
+  "OAI.NumberTheory.EgyptianFractions.FinitePowerSaving",
+  "OAI.NumberTheory.EgyptianFractions.FiniteResidueIndices",
+  "OAI.NumberTheory.EgyptianFractions.FirstDerivativeSum",
+  "OAI.NumberTheory.EgyptianFractions.FiveProducts",
+  "OAI.NumberTheory.EgyptianFractions.FixedSumFinite",
+  "OAI.NumberTheory.EgyptianFractions.ForwardDifference",
+  "OAI.NumberTheory.EgyptianFractions.FourierCommonRealization",
+  "OAI.NumberTheory.EgyptianFractions.FourierFailureBounds",
+  "OAI.NumberTheory.EgyptianFractions.FourierFrequencyGap",
+  "OAI.NumberTheory.EgyptianFractions.FourierSecondMoment",
+  "OAI.NumberTheory.EgyptianFractions.GeometricCharacterBound",
+  "OAI.NumberTheory.EgyptianFractions.GeometricRandomRanges",
+  "OAI.NumberTheory.EgyptianFractions.GeometricRandomResidues",
+  "OAI.NumberTheory.EgyptianFractions.GeometricRawDensity",
+  "OAI.NumberTheory.EgyptianFractions.GoodNumeratorSets",
+  "OAI.NumberTheory.EgyptianFractions.GreedyBudget",
+  "OAI.NumberTheory.EgyptianFractions.GreedyPreparation",
+  "OAI.NumberTheory.EgyptianFractions.GreedyStep",
+  "OAI.NumberTheory.EgyptianFractions.HammingException",
+  "OAI.NumberTheory.EgyptianFractions.HarmonicMoment",
+  "OAI.NumberTheory.EgyptianFractions.HarmonicPrefixBudget",
+  "OAI.NumberTheory.EgyptianFractions.HighResidueDistribution",
+  "OAI.NumberTheory.EgyptianFractions.HitCount",
+  "OAI.NumberTheory.EgyptianFractions.HyperbolaCorrelation",
+  "OAI.NumberTheory.EgyptianFractions.HyperbolaDyadicBridge",
+  "OAI.NumberTheory.EgyptianFractions.HyperbolaTypeII",
+  "OAI.NumberTheory.EgyptianFractions.IndependentBlockSelection",
+  "OAI.NumberTheory.EgyptianFractions.IntermediateBandBudget",
+  "OAI.NumberTheory.EgyptianFractions.IntermediateBandDecay",
+  "OAI.NumberTheory.EgyptianFractions.IntermediatePrefixClass",
+  "OAI.NumberTheory.EgyptianFractions.IntermediatePrimeClass",
+  "OAI.NumberTheory.EgyptianFractions.IteratedDifferencing",
+  "OAI.NumberTheory.EgyptianFractions.LargeClassUniform",
+  "OAI.NumberTheory.EgyptianFractions.LargePrefixClass",
+  "OAI.NumberTheory.EgyptianFractions.LargePrefixHarmonic",
+  "OAI.NumberTheory.EgyptianFractions.LargePrimeDivisors",
+  "OAI.NumberTheory.EgyptianFractions.LeastResidueBridge",
+  "OAI.NumberTheory.EgyptianFractions.LengthBasic",
+  "OAI.NumberTheory.EgyptianFractions.LevelFailureMean",
+  "OAI.NumberTheory.EgyptianFractions.LogWeightedSums",
+  "OAI.NumberTheory.EgyptianFractions.Main",
+  "OAI.NumberTheory.EgyptianFractions.MainLowerAppend",
+  "OAI.NumberTheory.EgyptianFractions.MainLowerVerified",
+  "OAI.NumberTheory.EgyptianFractions.MainUpperReduction",
+  "OAI.NumberTheory.EgyptianFractions.MajorArcApproximationBridge",
+  "OAI.NumberTheory.EgyptianFractions.MangoldtMajorArcReduction",
+  "OAI.NumberTheory.EgyptianFractions.MangoldtMinorArcActual",
+  "OAI.NumberTheory.EgyptianFractions.MarkedBudget",
+  "OAI.NumberTheory.EgyptianFractions.MarkedCleanup",
+  "OAI.NumberTheory.EgyptianFractions.MarkedConstruction",
+  "OAI.NumberTheory.EgyptianFractions.MarkedEndgame",
+  "OAI.NumberTheory.EgyptianFractions.MarkedFinalReduction",
+  "OAI.NumberTheory.EgyptianFractions.MarkedGreedy",
+  "OAI.NumberTheory.EgyptianFractions.MarkedGreedyDensity",
+  "OAI.NumberTheory.EgyptianFractions.MarkedGreedyLength",
+  "OAI.NumberTheory.EgyptianFractions.MarkedGrouping",
+  "OAI.NumberTheory.EgyptianFractions.MarkedGroupingFin",
+  "OAI.NumberTheory.EgyptianFractions.MarkedGroupingUnits",
+  "OAI.NumberTheory.EgyptianFractions.MarkedPrefixBridge",
+  "OAI.NumberTheory.EgyptianFractions.MarkedPrimeSupplyReduction",
+  "OAI.NumberTheory.EgyptianFractions.MarkedQuantitative",
+  "OAI.NumberTheory.EgyptianFractions.MarkedReduction",
+  "OAI.NumberTheory.EgyptianFractions.MarkedThreePrimeReduction",
+  "OAI.NumberTheory.EgyptianFractions.MarkerCoverage",
+  "OAI.NumberTheory.EgyptianFractions.MarkerOccurrence",
+  "OAI.NumberTheory.EgyptianFractions.MinorArcApproximation",
+  "OAI.NumberTheory.EgyptianFractions.MinorArcBudget",
+  "OAI.NumberTheory.EgyptianFractions.MinorArcLogWindow",
+  "OAI.NumberTheory.EgyptianFractions.MinorArcMeasure",
+  "OAI.NumberTheory.EgyptianFractions.MinorArcRealWindow",
+  "OAI.NumberTheory.EgyptianFractions.MinorArcVaughan",
+  "OAI.NumberTheory.EgyptianFractions.MissingSemantics",
+  "OAI.NumberTheory.EgyptianFractions.MonotoneBlocks",
+  "OAI.NumberTheory.EgyptianFractions.OddPrimorial",
+  "OAI.NumberTheory.EgyptianFractions.PhaseExtension",
+  "OAI.NumberTheory.EgyptianFractions.PrefixGap",
+  "OAI.NumberTheory.EgyptianFractions.PrefixGrowth",
+  "OAI.NumberTheory.EgyptianFractions.PrescribedAnalysis",
+  "OAI.NumberTheory.EgyptianFractions.PrescribedCorollary",
+  "OAI.NumberTheory.EgyptianFractions.PrescribedInversion",
+  "OAI.NumberTheory.EgyptianFractions.PrimeFactorPrefix",
+  "OAI.NumberTheory.EgyptianFractions.PrimeGcdHits",
+  "OAI.NumberTheory.EgyptianFractions.PrimeHits",
+  "OAI.NumberTheory.EgyptianFractions.PrimeObstruction",
+  "OAI.NumberTheory.EgyptianFractions.PrimePool",
+  "OAI.NumberTheory.EgyptianFractions.PrimePoolSelection",
+  "OAI.NumberTheory.EgyptianFractions.PrimePrefixSize",
+  "OAI.NumberTheory.EgyptianFractions.PrimeProductBound",
+  "OAI.NumberTheory.EgyptianFractions.PrimeProductFibers",
+  "OAI.NumberTheory.EgyptianFractions.PrimeProductGrowth",
+  "OAI.NumberTheory.EgyptianFractions.PrimeReciprocalBound",
+  "OAI.NumberTheory.EgyptianFractions.PrimeReciprocalSharp",
+  "OAI.NumberTheory.EgyptianFractions.PrimeTripleAsymptotics",
+  "OAI.NumberTheory.EgyptianFractions.PrimeTripleExclusion",
+  "OAI.NumberTheory.EgyptianFractions.RandomCommonRealization",
+  "OAI.NumberTheory.EgyptianFractions.RandomCorrelation",
+  "OAI.NumberTheory.EgyptianFractions.RandomExposure",
+  "OAI.NumberTheory.EgyptianFractions.RandomGcdBound",
+  "OAI.NumberTheory.EgyptianFractions.RandomGcdMarginal",
+  "OAI.NumberTheory.EgyptianFractions.RandomProductFourier",
+  "OAI.NumberTheory.EgyptianFractions.RandomProductParameters",
+  "OAI.NumberTheory.EgyptianFractions.RandomResidueRealization",
+  "OAI.NumberTheory.EgyptianFractions.RandomSecondMoment",
+  "OAI.NumberTheory.EgyptianFractions.RandomSelection",
+  "OAI.NumberTheory.EgyptianFractions.RankinAdmissibility",
+  "OAI.NumberTheory.EgyptianFractions.RankinBand",
+  "OAI.NumberTheory.EgyptianFractions.RationalArcVolume",
+  "OAI.NumberTheory.EgyptianFractions.RationalDivisorLift",
+  "OAI.NumberTheory.EgyptianFractions.RationalDivisorSupplyAlgebra",
+  "OAI.NumberTheory.EgyptianFractions.RationalDivisorSupplyBridge",
+  "OAI.NumberTheory.EgyptianFractions.RationalPhaseHyperbola",
+  "OAI.NumberTheory.EgyptianFractions.RationalPhaseSpacing",
+  "OAI.NumberTheory.EgyptianFractions.RationalSupplyFromThreePrimes",
+  "OAI.NumberTheory.EgyptianFractions.RationalSupplyReduction",
+  "OAI.NumberTheory.EgyptianFractions.RationalSupplyScaling",
+  "OAI.NumberTheory.EgyptianFractions.RawDensityExistence",
+  "OAI.NumberTheory.EgyptianFractions.RawDensityParameters",
+  "OAI.NumberTheory.EgyptianFractions.RawDensityUpper",
+  "OAI.NumberTheory.EgyptianFractions.RealPhaseEnvelope",
+  "OAI.NumberTheory.EgyptianFractions.RealTypeI",
+  "OAI.NumberTheory.EgyptianFractions.ReciprocalDerivatives",
+  "OAI.NumberTheory.EgyptianFractions.ReciprocalDifferencingBudget",
+  "OAI.NumberTheory.EgyptianFractions.ReciprocalPhase",
+  "OAI.NumberTheory.EgyptianFractions.ReciprocalPhaseCancellation",
+  "OAI.NumberTheory.EgyptianFractions.ReciprocalPhasePreparation",
+  "OAI.NumberTheory.EgyptianFractions.ReciprocalPhaseRegularity",
+  "OAI.NumberTheory.EgyptianFractions.ReciprocalPhaseScale",
+  "OAI.NumberTheory.EgyptianFractions.ReciprocalPhaseUniform",
+  "OAI.NumberTheory.EgyptianFractions.ReciprocalTerminalSum",
+  "OAI.NumberTheory.EgyptianFractions.ReducedCharacter",
+  "OAI.NumberTheory.EgyptianFractions.ReducedCollisionFourier",
+  "OAI.NumberTheory.EgyptianFractions.RemoveRepetitions",
+  "OAI.NumberTheory.EgyptianFractions.RepeatedSquaring",
+  "OAI.NumberTheory.EgyptianFractions.ResidueDenominator",
+  "OAI.NumberTheory.EgyptianFractions.ResidueDenominatorCertificate",
+  "OAI.NumberTheory.EgyptianFractions.ResidueLevels",
+  "OAI.NumberTheory.EgyptianFractions.ResidueRegimeSplice",
+  "OAI.NumberTheory.EgyptianFractions.ResidueStep",
+  "OAI.NumberTheory.EgyptianFractions.ResidueWideDenominator",
+  "OAI.NumberTheory.EgyptianFractions.RestrictedRoughAsymptotic",
+  "OAI.NumberTheory.EgyptianFractions.RoughDivisorAsymptotic",
+  "OAI.NumberTheory.EgyptianFractions.RoughModulusBlocks",
+  "OAI.NumberTheory.EgyptianFractions.RoughModulusCollision",
+  "OAI.NumberTheory.EgyptianFractions.RoughPart",
+  "OAI.NumberTheory.EgyptianFractions.SampleWordTransfer",
+  "OAI.NumberTheory.EgyptianFractions.SampledDenominatorCertificate",
+  "OAI.NumberTheory.EgyptianFractions.SampledResidueDenominator",
+  "OAI.NumberTheory.EgyptianFractions.SecondDerivativeBudget",
+  "OAI.NumberTheory.EgyptianFractions.SecondDerivativeTest",
+  "OAI.NumberTheory.EgyptianFractions.SecondDifference",
+  "OAI.NumberTheory.EgyptianFractions.SecondMomentAssembly",
+  "OAI.NumberTheory.EgyptianFractions.SeparatedIntervalCount",
+  "OAI.NumberTheory.EgyptianFractions.SimultaneousSelection",
+  "OAI.NumberTheory.EgyptianFractions.SmallPrimeClass",
+  "OAI.NumberTheory.EgyptianFractions.SmallPrimeDivisors",
+  "OAI.NumberTheory.EgyptianFractions.SmallPrimeMoment",
+  "OAI.NumberTheory.EgyptianFractions.SmallPrimeRankin",
+  "OAI.NumberTheory.EgyptianFractions.SmallPrimeSelectedClass",
+  "OAI.NumberTheory.EgyptianFractions.SmoothRankin",
+  "OAI.NumberTheory.EgyptianFractions.SmoothRankinBounds",
+  "OAI.NumberTheory.EgyptianFractions.SparseBadDivisorTail",
+  "OAI.NumberTheory.EgyptianFractions.SplitArithmetic",
+  "OAI.NumberTheory.EgyptianFractions.SubcriticalPowerSum",
+  "OAI.NumberTheory.EgyptianFractions.SupplyAsymptotics",
+  "OAI.NumberTheory.EgyptianFractions.SupplySize",
+  "OAI.NumberTheory.EgyptianFractions.TerminalAssembly",
+  "OAI.NumberTheory.EgyptianFractions.TerminalBridge",
+  "OAI.NumberTheory.EgyptianFractions.TerminalDepth",
+  "OAI.NumberTheory.EgyptianFractions.TerminalFiniteBudget",
+  "OAI.NumberTheory.EgyptianFractions.TerminalRecursion",
+  "OAI.NumberTheory.EgyptianFractions.ThinSupplyBase",
+  "OAI.NumberTheory.EgyptianFractions.ThreePrimeAnalyticReduction",
+  "OAI.NumberTheory.EgyptianFractions.ThreePrimeContinuousEnergy",
+  "OAI.NumberTheory.EgyptianFractions.ThreePrimeContinuousFourier",
+  "OAI.NumberTheory.EgyptianFractions.ThreePrimeMangoldt",
+  "OAI.NumberTheory.EgyptianFractions.ThreePrimeMangoldtBridge",
+  "OAI.NumberTheory.EgyptianFractions.ThreePrimeMangoldtIntegral",
+  "OAI.NumberTheory.EgyptianFractions.ThreePrimePartialSummation",
+  "OAI.NumberTheory.EgyptianFractions.ThreePrimeSingularSeries",
+  "OAI.NumberTheory.EgyptianFractions.ThreePrimeWeighted",
+  "OAI.NumberTheory.EgyptianFractions.TruncatedDivisors",
+  "OAI.NumberTheory.EgyptianFractions.TypeIIBlockScalar",
+  "OAI.NumberTheory.EgyptianFractions.UniformDivisorMoment",
+  "OAI.NumberTheory.EgyptianFractions.UniformSecondMoment",
+  "OAI.NumberTheory.EgyptianFractions.UpperSlope",
+  "OAI.NumberTheory.EgyptianFractions.VanDerCorput",
+  "OAI.NumberTheory.EgyptianFractions.VaughanBilinear",
+  "OAI.NumberTheory.EgyptianFractions.VaughanCutoff",
+  "OAI.NumberTheory.EgyptianFractions.VaughanDecomposition",
+  "OAI.NumberTheory.EgyptianFractions.VaughanDyadic",
+  "OAI.NumberTheory.EgyptianFractions.VaughanDyadicDecomposition",
+  "OAI.NumberTheory.EgyptianFractions.VaughanDyadicEstimate",
+  "OAI.NumberTheory.EgyptianFractions.VaughanDyadicUniform",
+  "OAI.NumberTheory.EgyptianFractions.VaughanEstimate",
+  "OAI.NumberTheory.EgyptianFractions.VaughanHyperbola",
+  "OAI.NumberTheory.EgyptianFractions.VaughanHyperbolicNearRational",
+  "OAI.NumberTheory.EgyptianFractions.VaughanIdentity",
+  "OAI.NumberTheory.EgyptianFractions.VaughanNearRational",
+  "OAI.NumberTheory.EgyptianFractions.VaughanOptimized",
+  "OAI.NumberTheory.EgyptianFractions.VaughanRealTypeIHyperbolic",
+  "OAI.NumberTheory.EgyptianFractions.VaughanTypeI",
+  "OAI.NumberTheory.EgyptianFractions.VaughanTypeINormalized",
+  "OAI.NumberTheory.EgyptianFractions.VaughanWeighted",
+  "OAI.NumberTheory.EgyptianFractions.WeightedBinomial"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/EgyptianFractions.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.NumberTheory.EgyptianFractions.Main",
+   "name": "OAI.Problem337.egyptian_length_is_minimum",
+   "statement_sha256": "5f047efeea2b75dc5e85af55c34367bdcb6ea112250e330f0de70a4ac90ede3a"
+  },
+  {
+   "module": "OAI.NumberTheory.EgyptianFractions.Main",
+   "name": "OAI.Problem337.main_double_log_order",
+   "statement_sha256": "915cf981c553365b0caee660a2b35e8a76271cbc149091048788992b046e2df6"
+  },
+  {
+   "module": "OAI.NumberTheory.EgyptianFractions.Main",
+   "name": "OAI.Problem337.one_expansions_finite_and_bounded",
+   "statement_sha256": "abeecdc567a864dfbf787d844e40d1b9c6ab7d7665210ca7c553d68c216afd9a"
+  },
+  {
+   "module": "OAI.NumberTheory.EgyptianFractions.Main",
+   "name": "OAI.Problem337.counting_double_log_order",
+   "statement_sha256": "81cbd31ed1f92a53f47d945d7bf3630ed735af1bcef9aa83b73fa915b4eaa581"
+  },
+  {
+   "module": "OAI.NumberTheory.EgyptianFractions.Main",
+   "name": "OAI.Problem337.exact_marker_padding",
+   "statement_sha256": "93b3dc45a971efaca1dcc4f6c9ff50eb0281b59dfafb1fd668d191730b3c7fbf"
+  },
+  {
+   "module": "OAI.NumberTheory.EgyptianFractions.Main",
+   "name": "OAI.Problem337.every_exact_marker_occurs",
+   "statement_sha256": "af4b236a6f125bd5e1372e9e47dd7d3bb5139bf6f967c54460b85974df630cf0"
+  },
+  {
+   "module": "OAI.NumberTheory.EgyptianFractions.Main",
+   "name": "OAI.Problem337.quantitative_marked_length",
+   "statement_sha256": "acde99c9212e68f9973f099719a1e5984a169114c6de1b9026062de61b81ff70"
+  },
+  {
+   "module": "OAI.NumberTheory.EgyptianFractions.Main",
+   "name": "OAI.Problem337.missing_denominator_semantics",
+   "statement_sha256": "4e585440c952997cd46b01b3880fabc039448a6124bc07ece0a6224df7e8c221"
+  },
+  {
+   "module": "OAI.NumberTheory.EgyptianFractions.Main",
+   "name": "OAI.Problem337.prescribed_denominator_corollary",
+   "statement_sha256": "1d848215fdf59d3946a9749df3b6743cbdc27c13f7746441f7d6548cc5daed4e"
+  }
+ ],
+ "task_id": "oai-egyptian-fractions",
+ "task_revision": 1,
+ "title": "OpenAI math: Short Egyptian fractions: Short expansions, counting, and prescribed denominators",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

@@ -1,0 +1,761 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 179761149
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.QuadricBundles",
+  "challenge_sha256": "de366a18291196c1089c1f5a65b89c046806345edef5fb1679c881fe05b3b9f7",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/QuadricBundles.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.QuadricBundles",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Geometry.QuadricBundles.Main",
+   "theorem_names": [
+    "OAI.QuadricCounterexample.main_theorem"
+   ]
+  },
+  "config_sha256": "e8dd5512653fec19023cca766e782d657b3ec6dca33347b87fb1620a49ffa64f",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/QuadricBundles.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.QuadricCounterexample.main_theorem": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/Ampleness.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.Ampleness",
+   "original_sha256": "7944ddf3463f76f9d2b6a083007c17317bbee4f46ffcc887a0f9d995e341ca08",
+   "path": "OAI/Geometry/QuadricBundles/Ampleness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/BallAverage.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.BallAverage",
+   "original_sha256": "604bbd0b65d9e67365ac5dd0e4f6975979508915a648482f40d4f8c4b5726bbc",
+   "path": "OAI/Geometry/QuadricBundles/BallAverage.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/BinaryForms.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.BinaryForms",
+   "original_sha256": "a12ac61ad83ae6f77e8eed67f51bf650eecb53de70e270e89698ad52986dd0e5",
+   "path": "OAI/Geometry/QuadricBundles/BinaryForms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/Charts.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.Charts",
+   "original_sha256": "bf7b30a1cf67a28a185d5135880794af1c759ac810bf892adbc66e8e94c4ca7f",
+   "path": "OAI/Geometry/QuadricBundles/Charts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/Compactness.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.Compactness",
+   "original_sha256": "435b1b81326a8631d761099447457ded1c2d13b23287f666d75d7d073bd671c5",
+   "path": "OAI/Geometry/QuadricBundles/Compactness.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/Curvature.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.Curvature",
+   "original_sha256": "aa3a3c279a942e9b23c63ab5b9ef5b7b0721543c85877fa0c53ffb4ab9f9b010",
+   "path": "OAI/Geometry/QuadricBundles/Curvature.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/DiskHessian.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.DiskHessian",
+   "original_sha256": "aad4c861c6e5a22175d23aec0a22f1211ddb4ecd3317aedd7e904db6d40926f6",
+   "path": "OAI/Geometry/QuadricBundles/DiskHessian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/DualForms.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.DualForms",
+   "original_sha256": "b93c0e1a6c7da97fce35d2080d3e6a8a3387efe694b868e28357e04647ac71ef",
+   "path": "OAI/Geometry/QuadricBundles/DualForms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/Embedding.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.Embedding",
+   "original_sha256": "c7ce3e466a2c90a3f50e20fac66b0ac3c060f0e8651237a7cbfc24a051ad2605",
+   "path": "OAI/Geometry/QuadricBundles/Embedding.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/Equalizer.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.Equalizer",
+   "original_sha256": "2e7b3934d126eb6d1a980b3933afbd17356e32a6eff0d2902f16448fb3c69bb8",
+   "path": "OAI/Geometry/QuadricBundles/Equalizer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/Gluing.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.Gluing",
+   "original_sha256": "734b801877324e94a6191df45ff8a3293fc3dbfc3b77134fc01535985ef4a14d",
+   "path": "OAI/Geometry/QuadricBundles/Gluing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/Graphs.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.Graphs",
+   "original_sha256": "b4490d5fbdc9b17300cb31dc8610ef24c810147f5883453ba07552fa845948ec",
+   "path": "OAI/Geometry/QuadricBundles/Graphs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/HomogeneousClassification.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.HomogeneousClassification",
+   "original_sha256": "8143dbf910258f3502d60e427e6f434905d90ac183ca8fdb4f8aa6d2eb27c2c4",
+   "path": "OAI/Geometry/QuadricBundles/HomogeneousClassification.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/LaurentCech.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.LaurentCech",
+   "original_sha256": "570d6099fd6f2b115176ebd3972e7709b642adb8a04facf8e3c041bb86f9b782",
+   "path": "OAI/Geometry/QuadricBundles/LaurentCech.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/LineFactors.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.LineFactors",
+   "original_sha256": "e32c9adf05f5a1525e2937a0f60611a3e99f8fe46faec5ffe43efb5beb6de8d7",
+   "path": "OAI/Geometry/QuadricBundles/LineFactors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/Main.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.Main",
+   "original_sha256": "48bdbc35aa568a4bc84d050838bb5bde97ed09d8522f351aba96578c54734747",
+   "path": "OAI/Geometry/QuadricBundles/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/MatrixDynamics.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.MatrixDynamics",
+   "original_sha256": "3c8d7f347d1d3ba3ca46b700f181838efc5ff2bface3c52d486a9b039377ddf0",
+   "path": "OAI/Geometry/QuadricBundles/MatrixDynamics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/MatrixRepresentative.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.MatrixRepresentative",
+   "original_sha256": "19485c5aa696e099167687b63c182c46d12b5d455139c1349e6c0ce23f7d2cfa",
+   "path": "OAI/Geometry/QuadricBundles/MatrixRepresentative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/Model.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.Model",
+   "original_sha256": "5a67e7403deda9e9627ee7e39c9656da8fe45cc4a68fa46b0872dae8a2103e47",
+   "path": "OAI/Geometry/QuadricBundles/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/Noncollapse.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.Noncollapse",
+   "original_sha256": "97e1b7f186002949934bd80a0043374060f0762e59743c22c79e408b66d27cad",
+   "path": "OAI/Geometry/QuadricBundles/Noncollapse.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/Plurisubharmonic.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.Plurisubharmonic",
+   "original_sha256": "33ff007beeb36b121028a7f1dca4d835095d959c2a28f35e3f87f79a341ee2db",
+   "path": "OAI/Geometry/QuadricBundles/Plurisubharmonic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/PointwiseRepresentative.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.PointwiseRepresentative",
+   "original_sha256": "5b714b7815a187be6e76e46c9342ccd13c6b6f10d80a2998ee69707aa43fe2b6",
+   "path": "OAI/Geometry/QuadricBundles/PointwiseRepresentative.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/PolynomialGeneration.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.PolynomialGeneration",
+   "original_sha256": "8c9fafa16cc3b3ff5561c401ee486abcc98dc26a5f72e2b7231f019e16acb112",
+   "path": "OAI/Geometry/QuadricBundles/PolynomialGeneration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/ProjectiveEquations.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.ProjectiveEquations",
+   "original_sha256": "a51b11b6a34e8fa769ec7e1552bdc6d77ba6db4200ec7813ce8c59f53bdf5e45",
+   "path": "OAI/Geometry/QuadricBundles/ProjectiveEquations.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/RegularMatrices.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.RegularMatrices",
+   "original_sha256": "63ab253076fa86ee3e0086dd7c6564c71852efa688c09539b98bfb37a6a1217e",
+   "path": "OAI/Geometry/QuadricBundles/RegularMatrices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/Regularity.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.Regularity",
+   "original_sha256": "636754e8f0b8a92f128670458c1364cd529fb991981d8a821d804d377500101e",
+   "path": "OAI/Geometry/QuadricBundles/Regularity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/Removability.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.Removability",
+   "original_sha256": "fae6bb3a1f1bdc7745b3f9f01ac488ed5c51450c0c5bb815dc056c2209e60fec",
+   "path": "OAI/Geometry/QuadricBundles/Removability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/RootTrace.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.RootTrace",
+   "original_sha256": "a8f60d705123d7fa87799688fd2d88587fef55aae4a23c651f657161b570d376",
+   "path": "OAI/Geometry/QuadricBundles/RootTrace.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/SymmetricFlags.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.SymmetricFlags",
+   "original_sha256": "f0b3c6465dfc6a174fa0956d04e645e0f3126e5a699a12aee91a001e41d32a33",
+   "path": "OAI/Geometry/QuadricBundles/SymmetricFlags.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/TraceExtraction.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.TraceExtraction",
+   "original_sha256": "31f320be62b8af0f14bde04c45e7406ad2884672fc34a8db5e30867fe687dbec",
+   "path": "OAI/Geometry/QuadricBundles/TraceExtraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/TraceMetrics.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.TraceMetrics",
+   "original_sha256": "59728a2f030bff9f8bb489beacce10e569929ea0a526d34d8b5f30c8a4f95eb0",
+   "path": "OAI/Geometry/QuadricBundles/TraceMetrics.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/TriangularSections.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.TriangularSections",
+   "original_sha256": "22cc8e7b899e0153f547a290281fe39333ac6d2ac8095b2deee39b6370849da6",
+   "path": "OAI/Geometry/QuadricBundles/TriangularSections.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/WeakBaseChange.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.WeakBaseChange",
+   "original_sha256": "aea7dbbe2568d90de7902db2263780f5f7edcf63cfd23601adba7e4fcbbdffc6",
+   "path": "OAI/Geometry/QuadricBundles/WeakBaseChange.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Geometry/QuadricBundles/WeakLimits.lean"
+   },
+   "module": "OAI.Geometry.QuadricBundles.WeakLimits",
+   "original_sha256": "c33f04e96888eea1a16c6e6773ce7249681cd0e3518e99ede1038a184ba9bea6",
+   "path": "OAI/Geometry/QuadricBundles/WeakLimits.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Geometry.QuadricBundles.Ampleness",
+  "OAI.Geometry.QuadricBundles.BallAverage",
+  "OAI.Geometry.QuadricBundles.BinaryForms",
+  "OAI.Geometry.QuadricBundles.Charts",
+  "OAI.Geometry.QuadricBundles.Compactness",
+  "OAI.Geometry.QuadricBundles.Curvature",
+  "OAI.Geometry.QuadricBundles.DiskHessian",
+  "OAI.Geometry.QuadricBundles.DualForms",
+  "OAI.Geometry.QuadricBundles.Embedding",
+  "OAI.Geometry.QuadricBundles.Equalizer",
+  "OAI.Geometry.QuadricBundles.Gluing",
+  "OAI.Geometry.QuadricBundles.Graphs",
+  "OAI.Geometry.QuadricBundles.HomogeneousClassification",
+  "OAI.Geometry.QuadricBundles.LaurentCech",
+  "OAI.Geometry.QuadricBundles.LineFactors",
+  "OAI.Geometry.QuadricBundles.Main",
+  "OAI.Geometry.QuadricBundles.MatrixDynamics",
+  "OAI.Geometry.QuadricBundles.MatrixRepresentative",
+  "OAI.Geometry.QuadricBundles.Model",
+  "OAI.Geometry.QuadricBundles.Noncollapse",
+  "OAI.Geometry.QuadricBundles.Plurisubharmonic",
+  "OAI.Geometry.QuadricBundles.PointwiseRepresentative",
+  "OAI.Geometry.QuadricBundles.PolynomialGeneration",
+  "OAI.Geometry.QuadricBundles.ProjectiveEquations",
+  "OAI.Geometry.QuadricBundles.RegularMatrices",
+  "OAI.Geometry.QuadricBundles.Regularity",
+  "OAI.Geometry.QuadricBundles.Removability",
+  "OAI.Geometry.QuadricBundles.RootTrace",
+  "OAI.Geometry.QuadricBundles.SymmetricFlags",
+  "OAI.Geometry.QuadricBundles.TraceExtraction",
+  "OAI.Geometry.QuadricBundles.TraceMetrics",
+  "OAI.Geometry.QuadricBundles.TriangularSections",
+  "OAI.Geometry.QuadricBundles.WeakBaseChange",
+  "OAI.Geometry.QuadricBundles.WeakLimits"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/QuadricBundles.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Geometry.QuadricBundles.Main",
+   "name": "OAI.QuadricCounterexample.main_theorem",
+   "statement_sha256": "da105c5c32af4f5a7aa947258c4b66253a704e438f9bac04e75d899ea7952fd1"
+  }
+ ],
+ "task_id": "oai-quadric-bundles",
+ "task_revision": 1,
+ "title": "OpenAI math: A counterexample to Griffiths’ positivity conjecture: Ample bundles without Griffiths-positive metrics",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

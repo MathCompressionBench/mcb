@@ -1,0 +1,1381 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 213383228
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.HenonEmden",
+  "challenge_sha256": "f42125331b02564e56f0ccb7009c294b4233cb12fd4467b5aa96dd2a3524b3da",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/HenonEmden.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.HenonEmden",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.Analysis.HenonEmden.Main",
+   "theorem_names": [
+    "OAI.HenonLaneEmden.main_nonexistence"
+   ]
+  },
+  "config_sha256": "c56ebe52117b7c2c119e85cb4442d5c71df3c5c774d52e3d7d528c862e533578",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/HenonEmden.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.HenonLaneEmden.main_nonexistence": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/AdaptiveCaps.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.AdaptiveCaps",
+   "original_sha256": "f9407397814b4e21faae92a58ba315dc6a4584ea550cb0222a3cd0d6c8d897a2",
+   "path": "OAI/Analysis/HenonEmden/AdaptiveCaps.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/Angular.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.Angular",
+   "original_sha256": "3b420a4cb0f8e83cc1a25700c34ffe9e58427267b50b1522cd6f3ced85dbbe76",
+   "path": "OAI/Analysis/HenonEmden/Angular.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/AngularBounds.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.AngularBounds",
+   "original_sha256": "51345ce4256daba2f653dc9aeea8763f13f602e120119db83c9760030a84c7ae",
+   "path": "OAI/Analysis/HenonEmden/AngularBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/AngularIntegration.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.AngularIntegration",
+   "original_sha256": "163dc46b82de5283644cdc0abadab95eadbc1f9c2ed3f39b74de9b6a857f737a",
+   "path": "OAI/Analysis/HenonEmden/AngularIntegration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/AngularLoss.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.AngularLoss",
+   "original_sha256": "f6a5b3f274f84c5709d87ba3f3f07733b55ce91d1d017de1f897f74fb3768568",
+   "path": "OAI/Analysis/HenonEmden/AngularLoss.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/AngularMeasurability.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.AngularMeasurability",
+   "original_sha256": "d15c76450c584a7a3fc620be55c746e0fd2d205ea54409765a2faeba61fa79c0",
+   "path": "OAI/Analysis/HenonEmden/AngularMeasurability.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/AngularPressure.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.AngularPressure",
+   "original_sha256": "dd582a33700a763c3594a2b70bc613627aa66750b7f914e639fba2ecf2cb8b09",
+   "path": "OAI/Analysis/HenonEmden/AngularPressure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/CapContinuity.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.CapContinuity",
+   "original_sha256": "dc6a370092c27c5dfc9e3085df59fe262730d94ff1308b3e4e3e9f83a47a8b7d",
+   "path": "OAI/Analysis/HenonEmden/CapContinuity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/CapGeometry.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.CapGeometry",
+   "original_sha256": "16c7f80209dc9340ef37d03413caa3facad11ff90342b684780af3c8b7760d88",
+   "path": "OAI/Analysis/HenonEmden/CapGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/CapLoss.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.CapLoss",
+   "original_sha256": "685ad1a9eb73e38ed1afb124bc53c4db0800cd00a8059c3a20fdcf9fffa33a76",
+   "path": "OAI/Analysis/HenonEmden/CapLoss.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/CapMismatch.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.CapMismatch",
+   "original_sha256": "32d96e85b21d03c75f29236b8edbc04c69f1d2dcd2bf65a3763d798735fe83fc",
+   "path": "OAI/Analysis/HenonEmden/CapMismatch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/CapOscillation.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.CapOscillation",
+   "original_sha256": "56d1d7c8f4e04b238800f117f2d7ea8fce3ce9495c79872788439670e60eeef1",
+   "path": "OAI/Analysis/HenonEmden/CapOscillation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/CapWeights.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.CapWeights",
+   "original_sha256": "3b1c8a34522efd4bb1f13457a72d35e2d227f0c784909bc97b64140ff29395f9",
+   "path": "OAI/Analysis/HenonEmden/CapWeights.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/ComponentWeights.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.ComponentWeights",
+   "original_sha256": "5e8a704346f5a657bf2f06e3bddc2ee30cd1b71795aaad11a049a37decabe8b9",
+   "path": "OAI/Analysis/HenonEmden/ComponentWeights.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/Components.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.Components",
+   "original_sha256": "02dc2e6155e73b09e1c259d50ef61317a2d7c7923f30a58bf50e0a6addc2dab0",
+   "path": "OAI/Analysis/HenonEmden/Components.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/Cutoff.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.Cutoff",
+   "original_sha256": "bf037b2784d8ca9423270b73053a3f9ae2681c4abac92a2fb6d9f7b2b6451b84",
+   "path": "OAI/Analysis/HenonEmden/Cutoff.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/CutoffOscillation.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.CutoffOscillation",
+   "original_sha256": "a86da43a99fe7ae606bfe9b8a7400537947317f8f3a5eb9a42e74bd4d3a3031e",
+   "path": "OAI/Analysis/HenonEmden/CutoffOscillation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/CutoffSmooth.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.CutoffSmooth",
+   "original_sha256": "b52f0e8ef475bc49a2d5837d7c93c9ae1f0b5bd72fd5fab3c0a4c033f95e2ff6",
+   "path": "OAI/Analysis/HenonEmden/CutoffSmooth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/CutoffTaylor.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.CutoffTaylor",
+   "original_sha256": "53ae69716e54f283fe1209b535faaa720628fc0c59e2a8bbe85f6f4228db9cc8",
+   "path": "OAI/Analysis/HenonEmden/CutoffTaylor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/DirectionalPressure.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.DirectionalPressure",
+   "original_sha256": "e3f5551689e7cf45fe9ee0da97a84a76fd9f0ce0af3c3f5c8f65d671ef8c9d6f",
+   "path": "OAI/Analysis/HenonEmden/DirectionalPressure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/Distribution.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.Distribution",
+   "original_sha256": "fcf65498ca7c7dffdddbe5fa234d68e2a380bf864161b5838a1dabb95bb6f8e8",
+   "path": "OAI/Analysis/HenonEmden/Distribution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/Endpoints.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.Endpoints",
+   "original_sha256": "cd670b9731c5e3ccd94636bd1999c6674d57bf2316f750571abd98f1d5dd7e8a",
+   "path": "OAI/Analysis/HenonEmden/Endpoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/Energy.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.Energy",
+   "original_sha256": "d37607760204ed9a04568b57f4aae64e1bd3405574e61061f1595a931f4d4ffa",
+   "path": "OAI/Analysis/HenonEmden/Energy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/FarInteraction.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.FarInteraction",
+   "original_sha256": "166e4768b8f3d56a3428330196c94289b5e527076fa6339bc50ebe78e5968158",
+   "path": "OAI/Analysis/HenonEmden/FarInteraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/FarLocalization.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.FarLocalization",
+   "original_sha256": "06226ea7abf58506cc782a0a7fc59e2721d09abff49ec51d4f1c2112920a281d",
+   "path": "OAI/Analysis/HenonEmden/FarLocalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/FundamentalSolution.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.FundamentalSolution",
+   "original_sha256": "16d6f5f863b42a512d5794c8ac5e66fdabc42972dc87f9d559f52fef3f71a68f",
+   "path": "OAI/Analysis/HenonEmden/FundamentalSolution.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/GlobalLoss.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.GlobalLoss",
+   "original_sha256": "3e6c112974e339b41c3a56331daa4e888dfb7247d58cbde33a9619148b7426fc",
+   "path": "OAI/Analysis/HenonEmden/GlobalLoss.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/Gradients.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.Gradients",
+   "original_sha256": "16b6b9131177bdd4dc1b88587aaaf3c351e07eda936f58d4b77eb3be6e963157",
+   "path": "OAI/Analysis/HenonEmden/Gradients.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/Harmonic.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.Harmonic",
+   "original_sha256": "30e6e5355d34138398aa3dc28a76b7822ff017a5cc42aac9854b0ef724f56571",
+   "path": "OAI/Analysis/HenonEmden/Harmonic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/IntegratedPressure.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.IntegratedPressure",
+   "original_sha256": "7c33e8b6442618a433b4386bac109e6eaeed7b4517b2beb3327f2a6bdde0e0eb",
+   "path": "OAI/Analysis/HenonEmden/IntegratedPressure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/IntegratedRecovery.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.IntegratedRecovery",
+   "original_sha256": "e5edb96e9fa7929f6acfb43e079cdd53e7f3802f7db458ea2cbf63c20eb382dc",
+   "path": "OAI/Analysis/HenonEmden/IntegratedRecovery.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/Interaction.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.Interaction",
+   "original_sha256": "6dfa2ab5405e1c0e240712aa1cf1b4a7628dd4a982b41a7758c51000920e7e82",
+   "path": "OAI/Analysis/HenonEmden/Interaction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/InteractionBounds.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.InteractionBounds",
+   "original_sha256": "a87eb9fa9d2a12559cf08afef58b3d7b56ac2a6642231c729e25db9c3417602f",
+   "path": "OAI/Analysis/HenonEmden/InteractionBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/Intervals.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.Intervals",
+   "original_sha256": "0451960f879b0cdec00e1e15f2b8b32cbdd59a90a2e7558576818a3401f840ef",
+   "path": "OAI/Analysis/HenonEmden/Intervals.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/KernelBalls.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.KernelBalls",
+   "original_sha256": "4b0c5798c375ff7615a9257dd8aff4bc8b917d8c82b60a501825a92fef90ccf7",
+   "path": "OAI/Analysis/HenonEmden/KernelBalls.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/LayerAssembly.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.LayerAssembly",
+   "original_sha256": "5ad68de8ca7206875b647d83ecc7981d65dbdf3b48dbaf10dc114d7908f51ab7",
+   "path": "OAI/Analysis/HenonEmden/LayerAssembly.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/LayerIntegration.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.LayerIntegration",
+   "original_sha256": "b99588315f0b8ff92bf21e914de3dd712fb85d44f34f24ee0bd15fb83dfdfe56",
+   "path": "OAI/Analysis/HenonEmden/LayerIntegration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/LayerPressure.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.LayerPressure",
+   "original_sha256": "1f3c403273971828e4a39b6e0cec548afc39b418644da2a50aaccde200b5c588",
+   "path": "OAI/Analysis/HenonEmden/LayerPressure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/LayerRecovery.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.LayerRecovery",
+   "original_sha256": "787b8063ea7d81684114ce504e5b32934c7d522377ccdd3582d91c3e277c8d9f",
+   "path": "OAI/Analysis/HenonEmden/LayerRecovery.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/LayerSplit.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.LayerSplit",
+   "original_sha256": "e4cd7baa984f9a440a1403f4d7e89cad015262a8b60974a3aa2d856259d77142",
+   "path": "OAI/Analysis/HenonEmden/LayerSplit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/LineCoordinates.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.LineCoordinates",
+   "original_sha256": "31cbe14f7bf8a3133b192289792ec432f9b77b2a67193137b69bc08fa15ee441",
+   "path": "OAI/Analysis/HenonEmden/LineCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/LocalizationIntegral.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.LocalizationIntegral",
+   "original_sha256": "283c306faaebc3b56b38031113979425db30504bf2d7b6571df4a1b8c63f77d9",
+   "path": "OAI/Analysis/HenonEmden/LocalizationIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/Main.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.Main",
+   "original_sha256": "f4e2f096a0243cf1190de46dda83d96e8d95fdeae5463b114f18c7222f7e8823",
+   "path": "OAI/Analysis/HenonEmden/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/MassGrowth.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.MassGrowth",
+   "original_sha256": "430dcd5d6b817eea1920e5e771d87891794375432ba245df3a31d7770129edaa",
+   "path": "OAI/Analysis/HenonEmden/MassGrowth.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/MeasureShuffle.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.MeasureShuffle",
+   "original_sha256": "02da742d54a99acc5fe572a6f6a8bc02fd608e584d6b930992bb620fa0579d83",
+   "path": "OAI/Analysis/HenonEmden/MeasureShuffle.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/Model.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.Model",
+   "original_sha256": "bbbe671e5bd3a8d9e58b1993686361854ec2dc9136ec3ab3ef1c01cac0c46957",
+   "path": "OAI/Analysis/HenonEmden/Model.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/Mollification.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.Mollification",
+   "original_sha256": "88e87ba099cc70831b8bd895575f76ec4f0f3b69f6f64478cd916f182eeabf86",
+   "path": "OAI/Analysis/HenonEmden/Mollification.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/NearLocalization.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.NearLocalization",
+   "original_sha256": "9af2e30ad4ec8f604e81b6943d679008c831483f0ba45d1d8d97e0e9c2d604b1",
+   "path": "OAI/Analysis/HenonEmden/NearLocalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/NewtonBounds.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.NewtonBounds",
+   "original_sha256": "cff482215164bf146ec8ff404c6247e947e6e8d5d971fb488cd50abea19a50c9",
+   "path": "OAI/Analysis/HenonEmden/NewtonBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/NewtonPotential.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.NewtonPotential",
+   "original_sha256": "3340328e4442dcd08d210ac7bdac92dca58f0a2c6d47a4b00eb3947bc3d64576",
+   "path": "OAI/Analysis/HenonEmden/NewtonPotential.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/OriginBounds.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.OriginBounds",
+   "original_sha256": "9e5de2031a3eaddbc19f95d2f011ccd74ff96ff5c1fcad8154bf4c997cb3bcf2",
+   "path": "OAI/Analysis/HenonEmden/OriginBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/OriginCutoff.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.OriginCutoff",
+   "original_sha256": "7629d132ee11a529e2c02dcc08f0e28cfa3f36465dd1ef98b703cc977fda771b",
+   "path": "OAI/Analysis/HenonEmden/OriginCutoff.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/OriginVirial.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.OriginVirial",
+   "original_sha256": "e5a7941c354afc172ec69c26aa999e3129f1e3bbdbf76864c612d34831419560",
+   "path": "OAI/Analysis/HenonEmden/OriginVirial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/PDEPressure.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.PDEPressure",
+   "original_sha256": "999fd1673e0aa78102872a0ced3c92926e72c0633fd0d371a023f269ee3a6eb7",
+   "path": "OAI/Analysis/HenonEmden/PDEPressure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/PairPressure.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.PairPressure",
+   "original_sha256": "49156dd7efa713f0a761cc1480e6f65a6002032fb7b1cb59721d972d4e629efd",
+   "path": "OAI/Analysis/HenonEmden/PairPressure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/PairRecovery.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.PairRecovery",
+   "original_sha256": "5cc38515a230e20ed5e52501d1eef7cbff70ee2b54bd0274929057ea4c2639f0",
+   "path": "OAI/Analysis/HenonEmden/PairRecovery.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/Polar.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.Polar",
+   "original_sha256": "f56c20a70192a5e53c2afe8a57c559a435ee6730dd9ad5cbf953d1f15a9473d7",
+   "path": "OAI/Analysis/HenonEmden/Polar.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/PotentialContinuity.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.PotentialContinuity",
+   "original_sha256": "fc671862891f99e01b522d210ae83e126c3eed4e17000fdbd1c97eb24acb1ad3",
+   "path": "OAI/Analysis/HenonEmden/PotentialContinuity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/PressureEstimate.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.PressureEstimate",
+   "original_sha256": "9aced297eb34346caba132995b0ff331459710bfe2e782767fb2f43d017b5c81",
+   "path": "OAI/Analysis/HenonEmden/PressureEstimate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/PressureMismatch.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.PressureMismatch",
+   "original_sha256": "62d4de35fafe6e0271e3392d0319dbf75b581ca58cf3181ea19a8974ed5eb415",
+   "path": "OAI/Analysis/HenonEmden/PressureMismatch.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/PressureRecovery.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.PressureRecovery",
+   "original_sha256": "c64dd8c6eaf356d904926b81840a12fe88213edc51782600c029e24e42bdfd1f",
+   "path": "OAI/Analysis/HenonEmden/PressureRecovery.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/ProductBounds.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.ProductBounds",
+   "original_sha256": "d05d4dc62575040d8a70571455e4de640e7d12cdcbcf1bcb4cf2f8d34679a8fb",
+   "path": "OAI/Analysis/HenonEmden/ProductBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/RadialCalculus.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.RadialCalculus",
+   "original_sha256": "a2269faefe3313ad0ff55d176e5d7463cbdb94f0046018f896d0d98a745c9ab2",
+   "path": "OAI/Analysis/HenonEmden/RadialCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/RadialGeometry.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.RadialGeometry",
+   "original_sha256": "2b9d34a9a629d9e0726a15ee4e3ae3cac9f8adea785f88e63a48958c143e9a83",
+   "path": "OAI/Analysis/HenonEmden/RadialGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/RadialGradient.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.RadialGradient",
+   "original_sha256": "ae1dbf32a5c7e115805a98c7294a1312e0912d7db4a965027faafc64b8bf98ad",
+   "path": "OAI/Analysis/HenonEmden/RadialGradient.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/RadialIntegration.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.RadialIntegration",
+   "original_sha256": "3d3456ccb81b04e81ed8daad6059bef3b7ec3c688beebf49e057737f22687033",
+   "path": "OAI/Analysis/HenonEmden/RadialIntegration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/RadialJoint.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.RadialJoint",
+   "original_sha256": "9405a597d7e67b2c2aa4ecd881da98b1273ac51f6ca4098ea4abec6eef866980",
+   "path": "OAI/Analysis/HenonEmden/RadialJoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/RadialKernel.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.RadialKernel",
+   "original_sha256": "b00742bc2f973adaa9244ab0a3078338e15fa2dbb63d761dc4f88e8c439433d8",
+   "path": "OAI/Analysis/HenonEmden/RadialKernel.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/RadialODE.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.RadialODE",
+   "original_sha256": "f9e80ffc14cb30988608c4c8bfc67a4882b6bc512325bb2f798c3c17c5b2a068",
+   "path": "OAI/Analysis/HenonEmden/RadialODE.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/RadialTaylor.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.RadialTaylor",
+   "original_sha256": "fe68fc13cd712f251d3c36916ef64106b54cd149b689b7f01a7f9a37a8f14ff6",
+   "path": "OAI/Analysis/HenonEmden/RadialTaylor.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/RealInteraction.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.RealInteraction",
+   "original_sha256": "21141d700873eb8adf0d8cd43cfe263070e983944d2e68ffb8e5343eea3ab8de",
+   "path": "OAI/Analysis/HenonEmden/RealInteraction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/RelativeLocalization.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.RelativeLocalization",
+   "original_sha256": "a643240eca83418f68d1bab9ce265176cc54054f862ad90409144b1070fb2c04",
+   "path": "OAI/Analysis/HenonEmden/RelativeLocalization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/RelativePressure.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.RelativePressure",
+   "original_sha256": "d866ab1cc09e21d6261583266526c7a3f79c9823d126c2649718e53d2b38d8d9",
+   "path": "OAI/Analysis/HenonEmden/RelativePressure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/RootRecovery.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.RootRecovery",
+   "original_sha256": "fbdc96e69b3318653d5011097ecfd596153af059bab87d7e8a217201cc7d1e3f",
+   "path": "OAI/Analysis/HenonEmden/RootRecovery.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/Scaling.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.Scaling",
+   "original_sha256": "7944d633b5a09e858efd492cf4f0b4fa33cfcd20d57e436ab2ce175c694fcb40",
+   "path": "OAI/Analysis/HenonEmden/Scaling.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/ShortComponents.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.ShortComponents",
+   "original_sha256": "e12e21b21b6c3fadd70025dce661aa04af069533d567b38a4625e59395559f2f",
+   "path": "OAI/Analysis/HenonEmden/ShortComponents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/SourceEndpoints.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.SourceEndpoints",
+   "original_sha256": "0e3cba045f869340733f51040b7f50b36062abd3d9f9a1ef15dd4fa6e43836fc",
+   "path": "OAI/Analysis/HenonEmden/SourceEndpoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/SourceMass.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.SourceMass",
+   "original_sha256": "c88faf2e1ea527f90455064f139190ad5e144bb528f7d8246753e4da1e23ba74",
+   "path": "OAI/Analysis/HenonEmden/SourceMass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/Sources.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.Sources",
+   "original_sha256": "19356a546fa1db23ca9b13d45bf48d307f30d674502250c8b2c1c54763e3cc69",
+   "path": "OAI/Analysis/HenonEmden/Sources.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/SpatialComponents.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.SpatialComponents",
+   "original_sha256": "1bfe1bd85cd44cbc7631a0e1815d7aa355e3dbda17cedf8013280f3c1653eb1f",
+   "path": "OAI/Analysis/HenonEmden/SpatialComponents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/SpatialEndpoints.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.SpatialEndpoints",
+   "original_sha256": "2b7faae34c93f8963166b4683fb2308ff784366594d7efd48e9a1cfaefc8bdb9",
+   "path": "OAI/Analysis/HenonEmden/SpatialEndpoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/SpatialPressure.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.SpatialPressure",
+   "original_sha256": "d72b992a6956f3d3e4da465361c55d473e3a11f63d884e28f8c2417bbb97e3ae",
+   "path": "OAI/Analysis/HenonEmden/SpatialPressure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/SphereCaps.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.SphereCaps",
+   "original_sha256": "9a987fc820ecf774b3a5792b6de9ba615682a4bdd3bc3d3603d8447ece7e776e",
+   "path": "OAI/Analysis/HenonEmden/SphereCaps.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/SphereFlux.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.SphereFlux",
+   "original_sha256": "df14e7a6baf9d942b8304a7cb5be839cf6816075ca5e258ab6a51863d8c4d0b0",
+   "path": "OAI/Analysis/HenonEmden/SphereFlux.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/SphereMean.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.SphereMean",
+   "original_sha256": "c9ad1ee5ea134281bca1cfeac739006d28895a7b1cfe061e3bd166e24874905e",
+   "path": "OAI/Analysis/HenonEmden/SphereMean.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/SymmetricVirial.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.SymmetricVirial",
+   "original_sha256": "0131a5578414a5ad8a8c30670e5bd2260b9f271dae82d8c16e914a5f66cd64e0",
+   "path": "OAI/Analysis/HenonEmden/SymmetricVirial.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/Tails.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.Tails",
+   "original_sha256": "7228d0a7c093101f0a6dfff31f984f56e56620a0bf269ea117ac0eeb1b8a1a93",
+   "path": "OAI/Analysis/HenonEmden/Tails.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/Tonelli.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.Tonelli",
+   "original_sha256": "37a0746e28de7b18c35c940ff4cbd06e818a97b9b9585213b0145c24977d98b8",
+   "path": "OAI/Analysis/HenonEmden/Tonelli.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/UniformBounds.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.UniformBounds",
+   "original_sha256": "2eb5c2c3cebd724493d2fe1e7c3ffa69a4942438c23dc3a031c819250c99a308",
+   "path": "OAI/Analysis/HenonEmden/UniformBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/UniformEnergy.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.UniformEnergy",
+   "original_sha256": "8c8bdc4d523f029b1a3d8b70f10566bc8e43150be12746865a77bd3e774fd50a",
+   "path": "OAI/Analysis/HenonEmden/UniformEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/VirialCalculus.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.VirialCalculus",
+   "original_sha256": "97c371ec68e7df6223d05c46ca9fea8a19a2698fc3d87bdad4eb1e9f29a99f4e",
+   "path": "OAI/Analysis/HenonEmden/VirialCalculus.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/WeakForm.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.WeakForm",
+   "original_sha256": "6169601c8d015ffa4822d3a1dc8dedaec239a65f4ca2e1aedd757a33fd97c1af",
+   "path": "OAI/Analysis/HenonEmden/WeakForm.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/WeakOrigin.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.WeakOrigin",
+   "original_sha256": "5d730b5a84ddda3d85cefd1061bf889d07605437586ec330585cecec5368ac45",
+   "path": "OAI/Analysis/HenonEmden/WeakOrigin.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/WeightedEndpoints.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.WeightedEndpoints",
+   "original_sha256": "0c52e3c87e366cacb832c55a8035a74b20ce15341cb0e768be4ae6584cbde5c9",
+   "path": "OAI/Analysis/HenonEmden/WeightedEndpoints.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/WeightedEnergy.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.WeightedEnergy",
+   "original_sha256": "8f766d77f9fca3e11e41cc582076c672dedc6c58e0e07460157b2b611d11b25a",
+   "path": "OAI/Analysis/HenonEmden/WeightedEnergy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/HenonEmden/WeightedVirial.lean"
+   },
+   "module": "OAI.Analysis.HenonEmden.WeightedVirial",
+   "original_sha256": "9a3e0cf4d18fd4e2a13b406c662c1c6a16bc08394654b4e2f8f8f4627409b3a8",
+   "path": "OAI/Analysis/HenonEmden/WeightedVirial.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.Analysis.HenonEmden.AdaptiveCaps",
+  "OAI.Analysis.HenonEmden.Angular",
+  "OAI.Analysis.HenonEmden.AngularBounds",
+  "OAI.Analysis.HenonEmden.AngularIntegration",
+  "OAI.Analysis.HenonEmden.AngularLoss",
+  "OAI.Analysis.HenonEmden.AngularMeasurability",
+  "OAI.Analysis.HenonEmden.AngularPressure",
+  "OAI.Analysis.HenonEmden.CapContinuity",
+  "OAI.Analysis.HenonEmden.CapGeometry",
+  "OAI.Analysis.HenonEmden.CapLoss",
+  "OAI.Analysis.HenonEmden.CapMismatch",
+  "OAI.Analysis.HenonEmden.CapOscillation",
+  "OAI.Analysis.HenonEmden.CapWeights",
+  "OAI.Analysis.HenonEmden.ComponentWeights",
+  "OAI.Analysis.HenonEmden.Components",
+  "OAI.Analysis.HenonEmden.Cutoff",
+  "OAI.Analysis.HenonEmden.CutoffOscillation",
+  "OAI.Analysis.HenonEmden.CutoffSmooth",
+  "OAI.Analysis.HenonEmden.CutoffTaylor",
+  "OAI.Analysis.HenonEmden.DirectionalPressure",
+  "OAI.Analysis.HenonEmden.Distribution",
+  "OAI.Analysis.HenonEmden.Endpoints",
+  "OAI.Analysis.HenonEmden.Energy",
+  "OAI.Analysis.HenonEmden.FarInteraction",
+  "OAI.Analysis.HenonEmden.FarLocalization",
+  "OAI.Analysis.HenonEmden.FundamentalSolution",
+  "OAI.Analysis.HenonEmden.GlobalLoss",
+  "OAI.Analysis.HenonEmden.Gradients",
+  "OAI.Analysis.HenonEmden.Harmonic",
+  "OAI.Analysis.HenonEmden.IntegratedPressure",
+  "OAI.Analysis.HenonEmden.IntegratedRecovery",
+  "OAI.Analysis.HenonEmden.Interaction",
+  "OAI.Analysis.HenonEmden.InteractionBounds",
+  "OAI.Analysis.HenonEmden.Intervals",
+  "OAI.Analysis.HenonEmden.KernelBalls",
+  "OAI.Analysis.HenonEmden.LayerAssembly",
+  "OAI.Analysis.HenonEmden.LayerIntegration",
+  "OAI.Analysis.HenonEmden.LayerPressure",
+  "OAI.Analysis.HenonEmden.LayerRecovery",
+  "OAI.Analysis.HenonEmden.LayerSplit",
+  "OAI.Analysis.HenonEmden.LineCoordinates",
+  "OAI.Analysis.HenonEmden.LocalizationIntegral",
+  "OAI.Analysis.HenonEmden.Main",
+  "OAI.Analysis.HenonEmden.MassGrowth",
+  "OAI.Analysis.HenonEmden.MeasureShuffle",
+  "OAI.Analysis.HenonEmden.Model",
+  "OAI.Analysis.HenonEmden.Mollification",
+  "OAI.Analysis.HenonEmden.NearLocalization",
+  "OAI.Analysis.HenonEmden.NewtonBounds",
+  "OAI.Analysis.HenonEmden.NewtonPotential",
+  "OAI.Analysis.HenonEmden.OriginBounds",
+  "OAI.Analysis.HenonEmden.OriginCutoff",
+  "OAI.Analysis.HenonEmden.OriginVirial",
+  "OAI.Analysis.HenonEmden.PDEPressure",
+  "OAI.Analysis.HenonEmden.PairPressure",
+  "OAI.Analysis.HenonEmden.PairRecovery",
+  "OAI.Analysis.HenonEmden.Polar",
+  "OAI.Analysis.HenonEmden.PotentialContinuity",
+  "OAI.Analysis.HenonEmden.PressureEstimate",
+  "OAI.Analysis.HenonEmden.PressureMismatch",
+  "OAI.Analysis.HenonEmden.PressureRecovery",
+  "OAI.Analysis.HenonEmden.ProductBounds",
+  "OAI.Analysis.HenonEmden.RadialCalculus",
+  "OAI.Analysis.HenonEmden.RadialGeometry",
+  "OAI.Analysis.HenonEmden.RadialGradient",
+  "OAI.Analysis.HenonEmden.RadialIntegration",
+  "OAI.Analysis.HenonEmden.RadialJoint",
+  "OAI.Analysis.HenonEmden.RadialKernel",
+  "OAI.Analysis.HenonEmden.RadialODE",
+  "OAI.Analysis.HenonEmden.RadialTaylor",
+  "OAI.Analysis.HenonEmden.RealInteraction",
+  "OAI.Analysis.HenonEmden.RelativeLocalization",
+  "OAI.Analysis.HenonEmden.RelativePressure",
+  "OAI.Analysis.HenonEmden.RootRecovery",
+  "OAI.Analysis.HenonEmden.Scaling",
+  "OAI.Analysis.HenonEmden.ShortComponents",
+  "OAI.Analysis.HenonEmden.SourceEndpoints",
+  "OAI.Analysis.HenonEmden.SourceMass",
+  "OAI.Analysis.HenonEmden.Sources",
+  "OAI.Analysis.HenonEmden.SpatialComponents",
+  "OAI.Analysis.HenonEmden.SpatialEndpoints",
+  "OAI.Analysis.HenonEmden.SpatialPressure",
+  "OAI.Analysis.HenonEmden.SphereCaps",
+  "OAI.Analysis.HenonEmden.SphereFlux",
+  "OAI.Analysis.HenonEmden.SphereMean",
+  "OAI.Analysis.HenonEmden.SymmetricVirial",
+  "OAI.Analysis.HenonEmden.Tails",
+  "OAI.Analysis.HenonEmden.Tonelli",
+  "OAI.Analysis.HenonEmden.UniformBounds",
+  "OAI.Analysis.HenonEmden.UniformEnergy",
+  "OAI.Analysis.HenonEmden.VirialCalculus",
+  "OAI.Analysis.HenonEmden.WeakForm",
+  "OAI.Analysis.HenonEmden.WeakOrigin",
+  "OAI.Analysis.HenonEmden.WeightedEndpoints",
+  "OAI.Analysis.HenonEmden.WeightedEnergy",
+  "OAI.Analysis.HenonEmden.WeightedVirial"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/HenonEmden.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.Analysis.HenonEmden.Main",
+   "name": "OAI.HenonLaneEmden.main_nonexistence",
+   "statement_sha256": "cfd8eb0e134a790da4e1ffa1ef3ec23b6147f9a3306550969c3c35d174640308"
+  }
+ ],
+ "task_id": "oai-henon-emden",
+ "task_revision": 1,
+ "title": "OpenAI math: The Lane–Emden and Hénon–Lane–Emden conjectures: Subcritical Hénon–Lane–Emden nonexistence",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

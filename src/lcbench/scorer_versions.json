@@ -3,7 +3,8 @@
  "note": "SCORER_VERSION -> sha256 of the scoring code (verify.scorer_sha256: benchkit.py and the organizer Lean tool sources); one row per released scorer, never edited.",
  "versions": {
   "1.0.0-rc.10.2": "332e603069acf43730d7f3090882989fe6f08b201ced74a7a94b2551b7f1fa4e",
-  "1.0.0-rc.10.3": "2ca49909cfb0c4f07d0ae33ddf38c8460510e85bf2ffaa4382c433a37674a04a"
+  "1.0.0-rc.10.3": "2ca49909cfb0c4f07d0ae33ddf38c8460510e85bf2ffaa4382c433a37674a04a",
+  "1.0.0-rc.11": "7b00c14c66061ad6d5fba5d7609b59b4a93b432f3ceeb202b5bd48f8af03f944"
  },
  "changes": {
   "1.0.0-rc.10.2": [
@@ -14,6 +15,12 @@
    "What a participant reads names the project's command and repositories: ./submit points to the submissions repository MathCompressionBench/mcb-submissions and to `mcb intake add` and `mcb verify`, TASK.json's commands say `mcb`, ./check prints `scorer mcb <version>`, and the usage lines say mcb.",
    "Every package carries LICENSE-Apache-2.0 and NOTICE.",
    "Scoring unchanged (the node count, dag_nodes_v1 and every verdict are the same). Package and task hashes change because the scoring code and TASK.json ship in every package. Bundles made from the packages of 1.0.0-rc.10.2 are still accepted and are verified with the tools of that release."
+  ],
+  "1.0.0-rc.11": [
+   "Adds the task set oai-v1: 175 tasks made from the published math challenges of github.com/openai/math, on Lean v4.34.1 (the lcbench-v1 tasks stay on Lean v4.32.0; each package names its toolchain).",
+   "The kernel replay of a task whose declarations live in many modules checks several modules at once (one process per module, as many as the CPUs available, at most 16); the report is the same as when they are checked one at a time. make-task replays its build once.",
+   "The import rule reads the import forms of Lean's module system (`public import`, `meta import`, `import all M`), which the oai-v1 sources use.",
+   "Scoring unchanged (the node count, dag_nodes_v1 and every verdict are the same). Package and task hashes change because the scoring code ships in every package. Bundles made from the packages of 1.0.0-rc.10.3 and 1.0.0-rc.10.2 are still accepted and are verified with the tools of those releases."
   ]
  }
 }

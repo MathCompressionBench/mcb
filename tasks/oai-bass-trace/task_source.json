@@ -1,0 +1,1111 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "AbsorptionCutoff",
+   "Aesop",
+   "AesopTest",
+   "Architect",
+   "ArchitectTest",
+   "Archive",
+   "Audit",
+   "Batteries",
+   "BatteriesTest",
+   "Belyi",
+   "BibtexQuery",
+   "Blueprint",
+   "Cache",
+   "Carleson",
+   "Challenge",
+   "CheckDecls",
+   "Cli",
+   "CliTest",
+   "Common",
+   "Comparator",
+   "Counterexamples",
+   "DocGen4",
+   "DownstreamTest",
+   "EllipticCurves",
+   "FixedPointTheorems",
+   "FormalSchemes",
+   "Genl",
+   "Gromov",
+   "Heights",
+   "ImportGraph",
+   "ImportGraphTest",
+   "Iut",
+   "Iut4Sec1",
+   "Lean4",
+   "LeanCert",
+   "LeanCertMathlibPin",
+   "LeanSearchClient",
+   "LeanSearchClientTest",
+   "MD4Lean",
+   "MD4LeanTest",
+   "MD4LeanTestDriver",
+   "Main",
+   "MainGraph",
+   "MainUnusedTransitiveImports",
+   "Mathlib",
+   "MathlibTest",
+   "MillerRabin",
+   "Oka",
+   "OrbicurveCores",
+   "Pi1",
+   "Plausible",
+   "PlausibleTest",
+   "PrimeCert",
+   "PrimeCertTest",
+   "PrimeNumberTheoremAnd",
+   "ProofWidgets",
+   "Qq",
+   "QqTest",
+   "RellichKondrachov",
+   "SQLite",
+   "Schoenflies",
+   "Solution",
+   "SphereEversion",
+   "StrongPNT",
+   "TateCurvesTheta",
+   "TauCeti",
+   "TemperedFundamentalGroups",
+   "Tests",
+   "UnicodeBasic",
+   "Wanted",
+   "Zeta3Irrational",
+   "blueprint",
+   "blueprint-verso",
+   "docs",
+   "examples",
+   "lookup",
+   "projects",
+   "scripts",
+   "test",
+   "tests",
+   "util",
+   "web"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 775981011
+ },
+ "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+ "comparator": {
+  "challenge_module": "ComparatorChallenges.BassTrace",
+  "challenge_sha256": "e52ea8e1f8feb2f39084de0e3102519adb6d975ce07ff1421c2b2f48bdf33f1b",
+  "challenge_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/BassTrace.lean",
+  "config": {
+   "challenge_module": "ComparatorChallenges.BassTrace",
+   "definition_names": [],
+   "enable_nanoda": false,
+   "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+   ],
+   "solution_module": "OAI.RingTheory.BassTrace.Main",
+   "theorem_names": [
+    "OAI.BassTrace.RightProjective.bassTraceModules_vanishing_and_support"
+   ]
+  },
+  "config_sha256": "c539654a4313c8174c966e8bfe7db6aaad145975fb41107dce7afcecaf3a537a",
+  "config_url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/BassTrace.json",
+  "external_kernels_run": [],
+  "statement_relation": {
+   "OAI.BassTrace.RightProjective.bassTraceModules_vanishing_and_support": "equal"
+  }
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/ActivatedUnions.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.ActivatedUnions",
+   "original_sha256": "ff31c621d5f5a9c4b47cb586bc73414c8083f65eb5318cce0faed4c6ff07ed94",
+   "path": "OAI/RingTheory/BassTrace/ActivatedUnions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/AdmissibleCuts.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.AdmissibleCuts",
+   "original_sha256": "98fbe52de2e3c9158d6844115a63c611ea4459e1644d87aea27ea6ca1a740bee",
+   "path": "OAI/RingTheory/BassTrace/AdmissibleCuts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/AffineCoarea.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.AffineCoarea",
+   "original_sha256": "e4dc20b603d3e19cfad14b9369aa4663462d51d58e57e259c0f3b489e95f9604",
+   "path": "OAI/RingTheory/BassTrace/AffineCoarea.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/AffinePotentials.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.AffinePotentials",
+   "original_sha256": "e9dcbe688388051a7adf03ca887c5f4cdf7de20115ea1b4aabdedbb4d518e3d9",
+   "path": "OAI/RingTheory/BassTrace/AffinePotentials.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/AreaSurgery.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.AreaSurgery",
+   "original_sha256": "9fb5df52faddea973f94d4ad8ecfebc120096fc06ee676f4d3f17528498caed6",
+   "path": "OAI/RingTheory/BassTrace/AreaSurgery.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/AveragedChains.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.AveragedChains",
+   "original_sha256": "dbec32db59f89e66ceb0e644e1f16e24eb0f025c21d51d4eb60d57f8c5d72268",
+   "path": "OAI/RingTheory/BassTrace/AveragedChains.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/BallComparison.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.BallComparison",
+   "original_sha256": "7b1b3859b19f4f2d859f29a286a1ab0c76cafd8037596e8399aa9bfd6a64a6da",
+   "path": "OAI/RingTheory/BassTrace/BallComparison.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/BallGeometry.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.BallGeometry",
+   "original_sha256": "c1ac35f6603fb06898182ddccf3776cc78d5f5f44bd13fc1c06fdc4dbd3fd04d",
+   "path": "OAI/RingTheory/BassTrace/BallGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/BallMass.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.BallMass",
+   "original_sha256": "a6ba3b5869ea7288b50e674edce932cbc51b11a48cc59e94dc8e15da27b2b3e0",
+   "path": "OAI/RingTheory/BassTrace/BallMass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/BallReplacement.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.BallReplacement",
+   "original_sha256": "acf8c1bd4862eacc0040c77d46b41d46b3ecbeb288e7298349234ac2e898c4b8",
+   "path": "OAI/RingTheory/BassTrace/BallReplacement.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/BarycentricBounds.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.BarycentricBounds",
+   "original_sha256": "9a322449a1f049fa37eb7bb990f472de86ada5895b3e4de913154e663ef4dc66",
+   "path": "OAI/RingTheory/BassTrace/BarycentricBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/BarycentricChains.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.BarycentricChains",
+   "original_sha256": "b4b296716e8dbd6627cbee148f335ef89671c1b0737e313aeb8253c0d463199e",
+   "path": "OAI/RingTheory/BassTrace/BarycentricChains.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/CanonicalCells.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.CanonicalCells",
+   "original_sha256": "072799361e0e982b861a1f2e920e127f4aac4f852c6696f41ff72973fea55803",
+   "path": "OAI/RingTheory/BassTrace/CanonicalCells.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/CellTriangulation.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.CellTriangulation",
+   "original_sha256": "fc5aa7d5e4888cc82ca2ca42b3b6fb34aee9d022d117e0175b122e1beaa6b153",
+   "path": "OAI/RingTheory/BassTrace/CellTriangulation.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/CentralizerGeometry.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.CentralizerGeometry",
+   "original_sha256": "f05a6464a20beab7caece5eca22b85f71c51e4f50a25b51bc0aa4ec46f921992",
+   "path": "OAI/RingTheory/BassTrace/CentralizerGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/ChainMaps.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.ChainMaps",
+   "original_sha256": "90ef36064dbefe1864f5492eb86a1673a20d5bf46ee0eaf03123de8fb4ccb042",
+   "path": "OAI/RingTheory/BassTrace/ChainMaps.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/ClosedPaths.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.ClosedPaths",
+   "original_sha256": "2d80c2869b9cd96a93dad3ddab5080113fd3ffb87523489d2552bd19bbe15c34",
+   "path": "OAI/RingTheory/BassTrace/ClosedPaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/Coning.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.Coning",
+   "original_sha256": "79420e7edce64f16f7d6877261c734b0d9932bbe6217b30d0437a8fcd4a7c81b",
+   "path": "OAI/RingTheory/BassTrace/Coning.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/CutNaturality.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.CutNaturality",
+   "original_sha256": "a52352b1afa49dd9cc75f017fc29c008f6cff2f0fd0babf7eee000aa75f5aa19",
+   "path": "OAI/RingTheory/BassTrace/CutNaturality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/Definitions.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.Definitions",
+   "original_sha256": "28deba4fe321b58ee3519450d86d078b2da081d4d322a7ee6c4183bd2ce5ad3e",
+   "path": "OAI/RingTheory/BassTrace/Definitions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/DirectedCuts.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.DirectedCuts",
+   "original_sha256": "c0c9a3bf813385c3bdae4ce8dfb3b185720a02b6a333a469b41276234e1c43c5",
+   "path": "OAI/RingTheory/BassTrace/DirectedCuts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/EquivariantSurgery.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.EquivariantSurgery",
+   "original_sha256": "4057840e422330adc861b7c76c0f4cf3bb50a95a6bd3ddb19148467a702bf6e8",
+   "path": "OAI/RingTheory/BassTrace/EquivariantSurgery.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/ExteriorChains.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.ExteriorChains",
+   "original_sha256": "1cdc1a2669172dc8c66aca9435300fd6f9e2234eb972a40c8744e4d3bc13981b",
+   "path": "OAI/RingTheory/BassTrace/ExteriorChains.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/ExteriorDetector.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.ExteriorDetector",
+   "original_sha256": "ace1d563d65d5e6f685e8f4ab4af61b2341587732e96cb032e0f3cb694423395",
+   "path": "OAI/RingTheory/BassTrace/ExteriorDetector.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/FaceFiltration.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.FaceFiltration",
+   "original_sha256": "9fb7b335f29462601ec20cc2049aba8be5e2f05d47ef504b7d381fe3ed79bb66",
+   "path": "OAI/RingTheory/BassTrace/FaceFiltration.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/FacetGeometry.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.FacetGeometry",
+   "original_sha256": "0f72d926d5371f5239b9b934d47e32780c7bc6d1cdc88f1475631e06fb67be76",
+   "path": "OAI/RingTheory/BassTrace/FacetGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/FiniteAverages.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.FiniteAverages",
+   "original_sha256": "1fa081ed39610353f889ed57ef8c45bb599be8ae30d50039c491fe3ba1d68495",
+   "path": "OAI/RingTheory/BassTrace/FiniteAverages.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/FiniteCells.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.FiniteCells",
+   "original_sha256": "e81356f2d02497edb35503f038670a2b6097c3412863f346abf4131c7a0a1fa2",
+   "path": "OAI/RingTheory/BassTrace/FiniteCells.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/FiniteGenerators.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.FiniteGenerators",
+   "original_sha256": "b33dd45c254ec7571be32100d8fcc084f8551aa1ccc5206b4bbd20ef04f7c357",
+   "path": "OAI/RingTheory/BassTrace/FiniteGenerators.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/FreeParameters.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.FreeParameters",
+   "original_sha256": "ae8f4e4ddc1dcad6285dc11c8019a9739d8e53360060dd86c72578c99433dfe1",
+   "path": "OAI/RingTheory/BassTrace/FreeParameters.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/FundamentalChains.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.FundamentalChains",
+   "original_sha256": "e7e61c1db0a0bf4b13668f0168a7fbb9acce1715f5b1688bde66246f118de66f",
+   "path": "OAI/RingTheory/BassTrace/FundamentalChains.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/GeometricSubcomplexes.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.GeometricSubcomplexes",
+   "original_sha256": "72bdefaee329e182dc278e05dbc050fc28685c45ccc80d305e00dfbdc1c5970e",
+   "path": "OAI/RingTheory/BassTrace/GeometricSubcomplexes.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/GraphCounting.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.GraphCounting",
+   "original_sha256": "109ecba74048d32b9247894c846099de2ae79d3b0e5eccbf12aedfa3b7fd9a76",
+   "path": "OAI/RingTheory/BassTrace/GraphCounting.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/GraphRealization.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.GraphRealization",
+   "original_sha256": "310b34277f857b9ca8db206ca4b65296eb76ef4eca8c484f85b67dd5d7617423",
+   "path": "OAI/RingTheory/BassTrace/GraphRealization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/HausdorffArea.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.HausdorffArea",
+   "original_sha256": "965e9c5dcdbc6c7e23eef4cd0a147ba95dcda0cbbcf16bc0d861214371e7e73b",
+   "path": "OAI/RingTheory/BassTrace/HausdorffArea.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/Incidence.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.Incidence",
+   "original_sha256": "5e8fba6b2533320fec04619975f095e66c14a2f8942fc930ae10fd7af38925e1",
+   "path": "OAI/RingTheory/BassTrace/Incidence.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/LocalCuts.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.LocalCuts",
+   "original_sha256": "6694892c7a66f8deaa41c0a50cd7550d2b50d631d206fdefb2455057e25ffcfa",
+   "path": "OAI/RingTheory/BassTrace/LocalCuts.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/Main.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.Main",
+   "original_sha256": "3578899496bc23902a29f94cf5b62b724b6a0a1ab0494aad7c982c8029f3e384",
+   "path": "OAI/RingTheory/BassTrace/Main.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/MarkedArea.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.MarkedArea",
+   "original_sha256": "1fe0d931052c81eafe70a97150c1ba1fc384c454506942d240e8fd7b47f65b05",
+   "path": "OAI/RingTheory/BassTrace/MarkedArea.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/MarkedSubdivisions.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.MarkedSubdivisions",
+   "original_sha256": "0205f2cd5ee3c5bc2eca85f2067a3c31de6fa3390ed7abea4eb34019e96f7b65",
+   "path": "OAI/RingTheory/BassTrace/MarkedSubdivisions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/MatrixK0.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.MatrixK0",
+   "original_sha256": "25c0278be23a1247ed01bb35ef729e5a973151b03bf03d317e4d0cde917e8580",
+   "path": "OAI/RingTheory/BassTrace/MatrixK0.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/MatrixVanishing.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.MatrixVanishing",
+   "original_sha256": "92be326d89e5615d3e528615c5d4bc1212d2d11d91382c6f22445fb874c0cbef",
+   "path": "OAI/RingTheory/BassTrace/MatrixVanishing.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/MeasurableSlices.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.MeasurableSlices",
+   "original_sha256": "abdfe487f5ca359a9c34cc15fa1dbf85d28593aa6fbc50229b23c2bddc1ef761",
+   "path": "OAI/RingTheory/BassTrace/MeasurableSlices.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/ModuleK0.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.ModuleK0",
+   "original_sha256": "e84e4e9bd8f735313a2c9829bb11a2e42532613d3e9810f046c027752a7a2975",
+   "path": "OAI/RingTheory/BassTrace/ModuleK0.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/NormedVectors.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.NormedVectors",
+   "original_sha256": "73f647fe215c94c8e65be4354097fc1ee4a9bf52baf8da44e229747b7dc689d2",
+   "path": "OAI/RingTheory/BassTrace/NormedVectors.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/OrbitAreas.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.OrbitAreas",
+   "original_sha256": "eb128be2a0600dca25ff7f054abe607548311aff0b97731a45fa4674021458d2",
+   "path": "OAI/RingTheory/BassTrace/OrbitAreas.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/OrbitForms.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.OrbitForms",
+   "original_sha256": "8d58dadfc4169f46fda50312d5a2975da12cbf9ba89667b2bd6132698edb5f22",
+   "path": "OAI/RingTheory/BassTrace/OrbitForms.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/PathComplex.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.PathComplex",
+   "original_sha256": "2c39ad411efcca3c91e8c2eb718cb03115925a7279099a09cf236035e576ce8e",
+   "path": "OAI/RingTheory/BassTrace/PathComplex.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/PathWeights.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.PathWeights",
+   "original_sha256": "8207ab59ddc2148b3491e6cadd253f86abc8077ed55726b3513dd0cd5ece6449",
+   "path": "OAI/RingTheory/BassTrace/PathWeights.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/PfaffianDetector.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.PfaffianDetector",
+   "original_sha256": "64f80e892dfcace8b7fc20b1ca985c212e718c2dcaf0df796654cf55a6e00831",
+   "path": "OAI/RingTheory/BassTrace/PfaffianDetector.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/ProbabilityGeometry.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.ProbabilityGeometry",
+   "original_sha256": "fd8d007540330d85193e8e8e1b4c75b24e87a6908ccd63445d9939a106a35433",
+   "path": "OAI/RingTheory/BassTrace/ProbabilityGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/RelativeExponents.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.RelativeExponents",
+   "original_sha256": "0651f931614588e06a1ebc751b83df1af99bf86066800b422509dc6e014b9808",
+   "path": "OAI/RingTheory/BassTrace/RelativeExponents.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/RightRetractions.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.RightRetractions",
+   "original_sha256": "7fcfb19626c48649bfbf211a9d7c3ad133ec1fcc40ab5505e45d6e4bf29c7c24",
+   "path": "OAI/RingTheory/BassTrace/RightRetractions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/SimplexCoordinates.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.SimplexCoordinates",
+   "original_sha256": "d1315f18a8cbac1a6ec4c7a39967afeaf66fe8312e5ac601e078a3cadd8db782",
+   "path": "OAI/RingTheory/BassTrace/SimplexCoordinates.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/SimplexMeasures.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.SimplexMeasures",
+   "original_sha256": "7300520c8e79421ae655b0f78ddbdc1fdac784ce0f9950eeaad22321bd33d670",
+   "path": "OAI/RingTheory/BassTrace/SimplexMeasures.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/SimplexVolume.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.SimplexVolume",
+   "original_sha256": "c01b0be2fab4ff22598f3cf26b8d2d3cb7ce2f9088c78cdc79f96e8de0749fdf",
+   "path": "OAI/RingTheory/BassTrace/SimplexVolume.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/SparseBounds.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.SparseBounds",
+   "original_sha256": "7d6fe015acf130f3151a0d71f58d8855b594f7180c42d3c0501a7870bb54f216",
+   "path": "OAI/RingTheory/BassTrace/SparseBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/SparseChains.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.SparseChains",
+   "original_sha256": "b5ec97656021cf762ac967bff8ef232ea471772855f55109805c416dd21ba14d",
+   "path": "OAI/RingTheory/BassTrace/SparseChains.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/SubdivisionWeights.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.SubdivisionWeights",
+   "original_sha256": "83206eab46524d089f726a39e7159bc6629fab1f7a514b061d72bfab84683ffd",
+   "path": "OAI/RingTheory/BassTrace/SubdivisionWeights.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/Subdivisions.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.Subdivisions",
+   "original_sha256": "45a332c4c78c3c82c4131e9010c5a80afc17dadeff82b1cb5422f074f3b11d90",
+   "path": "OAI/RingTheory/BassTrace/Subdivisions.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/SupportGeometry.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.SupportGeometry",
+   "original_sha256": "d4ed84b41efd714c5f5e68aa0945bc94c9ec09bb2537dc0bb02febcc3e63a052",
+   "path": "OAI/RingTheory/BassTrace/SupportGeometry.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/TraceCoefficients.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.TraceCoefficients",
+   "original_sha256": "b1ef9c7752752ba0c409757b81d7829d77810c7374a059e2d0b3096603ac82cf",
+   "path": "OAI/RingTheory/BassTrace/TraceCoefficients.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/TransportMetric.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.TransportMetric",
+   "original_sha256": "0a2faec37f1b7c9cbcf9e0f2f5425e9cfebc91b6089af7a8f6f8cdab11aaaeb5",
+   "path": "OAI/RingTheory/BassTrace/TransportMetric.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/TreeArea.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.TreeArea",
+   "original_sha256": "45e70006831dcd7f3948ab523f4e587a3fc9a39bf860ad86157781f2c61bed47",
+   "path": "OAI/RingTheory/BassTrace/TreeArea.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/TreeDeterminants.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.TreeDeterminants",
+   "original_sha256": "6feb18a7ceb713bf22ead191eff726b408de53a73aed04708d76d9336313f662",
+   "path": "OAI/RingTheory/BassTrace/TreeDeterminants.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/TwistedPaths.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.TwistedPaths",
+   "original_sha256": "6f6d5b5f60022910a2187bd179844991a0c3aa52394cb50d89fbd0e67a177378",
+   "path": "OAI/RingTheory/BassTrace/TwistedPaths.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/VolumeBounds.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.VolumeBounds",
+   "original_sha256": "bd04afb58189184c5db7a6a7f8d126112f929c865a5939ce856655b5257943a8",
+   "path": "OAI/RingTheory/BassTrace/VolumeBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/ZeroCarriers.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.ZeroCarriers",
+   "original_sha256": "6bfe517fb3f573d91fdf9eec01e7719852c0d66e844dae88ac836dedebc82c26",
+   "path": "OAI/RingTheory/BassTrace/ZeroCarriers.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/RingTheory/BassTrace/ZeroStrata.lean"
+   },
+   "module": "OAI.RingTheory.BassTrace.ZeroStrata",
+   "original_sha256": "cbeb4c778df2670e03aafaf223626517f0245710cf906022bfeec01cb558a337",
+   "path": "OAI/RingTheory/BassTrace/ZeroStrata.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 32768
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm"
+ ],
+ "owner_modules": [
+  "OAI.RingTheory.BassTrace.ActivatedUnions",
+  "OAI.RingTheory.BassTrace.AdmissibleCuts",
+  "OAI.RingTheory.BassTrace.AffineCoarea",
+  "OAI.RingTheory.BassTrace.AffinePotentials",
+  "OAI.RingTheory.BassTrace.AreaSurgery",
+  "OAI.RingTheory.BassTrace.AveragedChains",
+  "OAI.RingTheory.BassTrace.BallComparison",
+  "OAI.RingTheory.BassTrace.BallGeometry",
+  "OAI.RingTheory.BassTrace.BallMass",
+  "OAI.RingTheory.BassTrace.BallReplacement",
+  "OAI.RingTheory.BassTrace.BarycentricBounds",
+  "OAI.RingTheory.BassTrace.BarycentricChains",
+  "OAI.RingTheory.BassTrace.CanonicalCells",
+  "OAI.RingTheory.BassTrace.CellTriangulation",
+  "OAI.RingTheory.BassTrace.CentralizerGeometry",
+  "OAI.RingTheory.BassTrace.ChainMaps",
+  "OAI.RingTheory.BassTrace.ClosedPaths",
+  "OAI.RingTheory.BassTrace.Coning",
+  "OAI.RingTheory.BassTrace.CutNaturality",
+  "OAI.RingTheory.BassTrace.Definitions",
+  "OAI.RingTheory.BassTrace.DirectedCuts",
+  "OAI.RingTheory.BassTrace.EquivariantSurgery",
+  "OAI.RingTheory.BassTrace.ExteriorChains",
+  "OAI.RingTheory.BassTrace.ExteriorDetector",
+  "OAI.RingTheory.BassTrace.FaceFiltration",
+  "OAI.RingTheory.BassTrace.FacetGeometry",
+  "OAI.RingTheory.BassTrace.FiniteAverages",
+  "OAI.RingTheory.BassTrace.FiniteCells",
+  "OAI.RingTheory.BassTrace.FiniteGenerators",
+  "OAI.RingTheory.BassTrace.FreeParameters",
+  "OAI.RingTheory.BassTrace.FundamentalChains",
+  "OAI.RingTheory.BassTrace.GeometricSubcomplexes",
+  "OAI.RingTheory.BassTrace.GraphCounting",
+  "OAI.RingTheory.BassTrace.GraphRealization",
+  "OAI.RingTheory.BassTrace.HausdorffArea",
+  "OAI.RingTheory.BassTrace.Incidence",
+  "OAI.RingTheory.BassTrace.LocalCuts",
+  "OAI.RingTheory.BassTrace.Main",
+  "OAI.RingTheory.BassTrace.MarkedArea",
+  "OAI.RingTheory.BassTrace.MarkedSubdivisions",
+  "OAI.RingTheory.BassTrace.MatrixK0",
+  "OAI.RingTheory.BassTrace.MatrixVanishing",
+  "OAI.RingTheory.BassTrace.MeasurableSlices",
+  "OAI.RingTheory.BassTrace.ModuleK0",
+  "OAI.RingTheory.BassTrace.NormedVectors",
+  "OAI.RingTheory.BassTrace.OrbitAreas",
+  "OAI.RingTheory.BassTrace.OrbitForms",
+  "OAI.RingTheory.BassTrace.PathComplex",
+  "OAI.RingTheory.BassTrace.PathWeights",
+  "OAI.RingTheory.BassTrace.PfaffianDetector",
+  "OAI.RingTheory.BassTrace.ProbabilityGeometry",
+  "OAI.RingTheory.BassTrace.RelativeExponents",
+  "OAI.RingTheory.BassTrace.RightRetractions",
+  "OAI.RingTheory.BassTrace.SimplexCoordinates",
+  "OAI.RingTheory.BassTrace.SimplexMeasures",
+  "OAI.RingTheory.BassTrace.SimplexVolume",
+  "OAI.RingTheory.BassTrace.SparseBounds",
+  "OAI.RingTheory.BassTrace.SparseChains",
+  "OAI.RingTheory.BassTrace.SubdivisionWeights",
+  "OAI.RingTheory.BassTrace.Subdivisions",
+  "OAI.RingTheory.BassTrace.SupportGeometry",
+  "OAI.RingTheory.BassTrace.TraceCoefficients",
+  "OAI.RingTheory.BassTrace.TransportMetric",
+  "OAI.RingTheory.BassTrace.TreeArea",
+  "OAI.RingTheory.BassTrace.TreeDeterminants",
+  "OAI.RingTheory.BassTrace.TwistedPaths",
+  "OAI.RingTheory.BassTrace.VolumeBounds",
+  "OAI.RingTheory.BassTrace.ZeroCarriers",
+  "OAI.RingTheory.BassTrace.ZeroStrata"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3bf7453faeb9e266d24647fc11aae586811f9bf4fd01d9ef65cebee0e0bfe566"
+  },
+  "library_name": "OAI",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "checkdecls",
+    "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+    "url": "https://github.com/PatrickMassot/checkdecls.git"
+   },
+   {
+    "name": "doc-gen4",
+    "rev": "953c8992d174b4e56955e01e101d46668c68f2bb",
+    "url": "https://github.com/leanprover/doc-gen4.git"
+   },
+   {
+    "name": "PrimeCert",
+    "rev": "0803c2f6bd289c09704c7d352bb8fcf770cbb9b2",
+    "url": "https://github.com/b-mehta/PrimeCert.git"
+   },
+   {
+    "name": "LeanArchitect",
+    "rev": "468e8f58fb4ad6e6ad672a08da6d0d0531e95a97",
+    "url": "https://github.com/hanwenzhu/LeanArchitect.git"
+   },
+   {
+    "name": "leancert",
+    "rev": "7f91b6eb3567437f6cfac03ed279706603ee22f4",
+    "url": "https://github.com/alerad/leancert.git"
+   },
+   {
+    "name": "PrimeNumberTheoremAnd",
+    "rev": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+   },
+   {
+    "name": "belyi",
+    "rev": "9ce4d3f793d3bc831f2fc7214b7dbad90ea012d8",
+    "url": "https://github.com/lana-agents/belyi.git"
+   },
+   {
+    "name": "formal-schemes",
+    "rev": "51aa935079537bf4dc580751a6e70727fb23ca93",
+    "url": "https://github.com/lana-agents/formal-schemes.git"
+   },
+   {
+    "name": "elliptic-curves",
+    "rev": "bebec3fc9f2602e81c83e5236789572a541c85fb",
+    "url": "https://github.com/lana-agents/elliptic-curves.git"
+   },
+   {
+    "name": "tempered-fundamental-groups",
+    "rev": "2006651f52b70ea2fe3388238c7d9db14d21748f",
+    "url": "https://github.com/lana-agents/tempered-fundamental-groups.git"
+   },
+   {
+    "name": "oka",
+    "rev": "75dcdc3faadd10b986afb9283e89902bcdddecd4",
+    "url": "https://github.com/lana-agents/oka.git"
+   },
+   {
+    "name": "orbicurve-cores",
+    "rev": "61616dcd77fbe45c083a8ebfa7cc80728f86e841",
+    "url": "https://github.com/lana-agents/orbicurve-cores.git"
+   },
+   {
+    "name": "pi1",
+    "rev": "ca7def953193f861a462aa0831eec8f0a31ff69f",
+    "url": "https://github.com/lana-agents/pi1.git"
+   },
+   {
+    "name": "heights",
+    "rev": "721496ca4c158e511d25d8ccf6bfe8503eda73c1",
+    "url": "https://github.com/lana-agents/heights.git"
+   },
+   {
+    "name": "genl",
+    "rev": "ea2846c877d1e16d8f0b911a5fed07f5ee69eaaf",
+    "url": "https://github.com/lana-agents/genl.git"
+   },
+   {
+    "name": "tate-curves-theta",
+    "rev": "ca6c2279d3cea0690cdb01328e727118d5485d68",
+    "url": "https://github.com/lana-agents/tate-curves-theta.git"
+   },
+   {
+    "name": "iut",
+    "rev": "d9465c111ec4073709f67e9fccec7e3eb374a816",
+    "url": "https://github.com/lana-agents/iut.git"
+   },
+   {
+    "name": "gromov",
+    "rev": "8db79f13cf211b570e3116301d91379fbc01cf3e",
+    "url": "https://github.com/Aaron1011/gromov.git"
+   },
+   {
+    "name": "TauCeti",
+    "rev": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+    "url": "https://github.com/TauCetiProject/TauCeti.git"
+   },
+   {
+    "name": "SphereEversion",
+    "rev": "9c53f91e2a281199163ecea04dc4976cb79e2076",
+    "url": "https://github.com/leanprover-community/sphere-eversion.git"
+   },
+   {
+    "name": "schoenflies-lean",
+    "rev": "05a43d29cde026618777db3d4e4316204ccca237",
+    "url": "https://github.com/alonamaloh/schoenflies-lean"
+   },
+   {
+    "name": "ClassFieldTheory",
+    "rev": "2eb22d6485af45f29c5219de6c49f196a61c4f49",
+    "url": "https://github.com/n-yamaguchi-0729/ClassFieldTheory.git"
+   },
+   {
+    "name": "AINTLIB",
+    "rev": "160e446617a2168c34c95bbe7a76c4105b392434",
+    "url": "https://github.com/CBirkbeck/AINTLIB.git"
+   },
+   {
+    "name": "AbsorptionCutoff",
+    "rev": "41c45c6d72e979419e46224bb7b4be5cee31f2b5",
+    "url": "https://github.com/BennyAvelin/AbsorptionCutoff.git"
+   },
+   {
+    "name": "StrongPNT",
+    "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "url": "https://github.com/math-inc/strongpnt.git"
+   },
+   {
+    "name": "carleson",
+    "rev": "306ae5b29300771aece1aa39f0a939183cc59486",
+    "url": "https://github.com/fpvandoorn/carleson.git"
+   },
+   {
+    "name": "rellich-kondrachov",
+    "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23",
+    "url": "https://github.com/abenenson/rellich-kondrachov.git"
+   },
+   {
+    "name": "Zeta3Irrational",
+    "rev": "e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1",
+    "url": "https://github.com/ahhwuhu/zeta_3_irrational.git"
+   },
+   {
+    "name": "fixed-point-theorems",
+    "rev": "770940ddf9878cf61952ed53d910b92bca841838",
+    "url": "https://github.com/harfe/fixed-point-theorems-lean4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "e928b72544873815af278d38681b31c0293588e3",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "leansqlite",
+    "rev": "f9cdb9eacb5c8b8ecc02ee9fd9e568d7d28c1416",
+    "url": "https://github.com/leanprover/leansqlite"
+   },
+   {
+    "name": "Cli",
+    "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "url": "https://github.com/leanprover/lean4-cli"
+   },
+   {
+    "name": "UnicodeBasic",
+    "rev": "0e569d08b6443ce0908d356884c765397253e2f0",
+    "url": "https://github.com/fgdorais/lean4-unicode-basic"
+   },
+   {
+    "name": "BibtexQuery",
+    "rev": "4d8616fd4870d0a3453d845770833eac7951fe1c",
+    "url": "https://github.com/dupuisf/BibtexQuery"
+   },
+   {
+    "name": "MD4Lean",
+    "rev": "31907cc18f48a95384f99cee5582c00fb39e0f67",
+    "url": "https://github.com/acmepjz/md4lean"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/math",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-10-07",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "OpenAI Comparator config ComparatorChallenges/BassTrace.json: its theorem_names are the targets, whose statements must equal the challenge module's (lcbench: structural kernel-type hash, pinned from the challenge module when statement_sha256 is given); its definition_names are frozen with the statement closure; its permitted_axioms are the allowed axioms",
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-10-06",
+ "source_license": {
+  "evidence": "https://github.com/openai/math has a top-level Apache-2.0 LICENSE at the pinned commit and lean/formalization.yaml declares Apache-2.0",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "OAI.RingTheory.BassTrace.Main",
+   "name": "OAI.BassTrace.RightProjective.bassTraceModules_vanishing_and_support",
+   "statement_sha256": "45cb75ad3c7efaa2da952ac99780d4e910eb6488111f007222d7f161c5ecbc9f"
+  }
+ ],
+ "task_id": "oai-bass-trace",
+ "task_revision": 1,
+ "title": "OpenAI math: The ℓ¹-Bass conjecture for all discrete groups: Complex Bass trace vanishing and support",
+ "toolchain": {
+  "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "id": "leanprover/lean4:v4.34.1"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+   "role": "toolchain v4.34.1: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}
