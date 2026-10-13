@@ -2,12 +2,18 @@
  "schema": "lcbench.scorer_versions.v1",
  "note": "SCORER_VERSION -> sha256 of the scoring code (verify.scorer_sha256: benchkit.py and the organizer Lean tool sources); one row per released scorer, never edited.",
  "versions": {
-  "1.0.0-rc.10.2": "332e603069acf43730d7f3090882989fe6f08b201ced74a7a94b2551b7f1fa4e"
+  "1.0.0-rc.10.2": "332e603069acf43730d7f3090882989fe6f08b201ced74a7a94b2551b7f1fa4e",
+  "1.0.0-rc.10.3": "2ca49909cfb0c4f07d0ae33ddf38c8460510e85bf2ffaa4382c433a37674a04a"
  },
  "changes": {
   "1.0.0-rc.10.2": [
    "Removes a recorded-only diagnostic field and the compiled-file copies from bundles: a bundle holds the editable sources and the kernel export at its top level; scoring unchanged (the node count, dag_nodes_v1 and every verdict are the same). Package and task hashes change because the scoring code ships in every package.",
    "Receipts name the release lcbench-v1."
+  ],
+  "1.0.0-rc.10.3": [
+   "What a participant reads names the project's command and repositories: ./submit points to the submissions repository MathCompressionBench/mcb-submissions and to `mcb intake add` and `mcb verify`, TASK.json's commands say `mcb`, ./check prints `scorer mcb <version>`, and the usage lines say mcb.",
+   "Every package carries LICENSE-Apache-2.0 and NOTICE.",
+   "Scoring unchanged (the node count, dag_nodes_v1 and every verdict are the same). Package and task hashes change because the scoring code and TASK.json ship in every package. Bundles made from the packages of 1.0.0-rc.10.2 are still accepted and are verified with the tools of that release."
   ]
  }
 }

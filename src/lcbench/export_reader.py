@@ -190,7 +190,7 @@ def metric_from_export(export: bytes) -> dict:
 
 
 def main(argv: list[str]) -> int:
-    ap = argparse.ArgumentParser(prog="lcbench export-recount",
+    ap = argparse.ArgumentParser(prog="mcb export-recount",
                                  description="Recompute the proof-term node count and dag_nodes_v1 from an lcbench.metric_export.v1 file.")
     ap.add_argument("export", help="NDJSON export written by lcbench-metric")
     ap.add_argument("--per-declaration", action="store_true", help="also print each declaration's node count")

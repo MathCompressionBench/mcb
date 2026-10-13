@@ -42,7 +42,7 @@ def commands(modules: list[str] | None = None) -> dict:
 
 def usage(table: dict) -> str:
     width = max(len(cmd) for cmd in table)
-    lines = ["usage: lcbench <command> [args...]   (lcbench <command> --help for its options)", "", "commands:"]
+    lines = ["usage: mcb <command> [args...]   (mcb <command> --help for its options)", "", "commands:"]
     lines += [f"  {cmd.ljust(width)}  {help_text}" for cmd, (help_text, _) in sorted(table.items())]
     return "\n".join(lines)
 

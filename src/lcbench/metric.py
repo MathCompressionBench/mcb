@@ -95,7 +95,7 @@ def run_metric(request: dict, project: Path, exe: Path | None = None, crosscheck
 
 
 def main(argv: list[str]) -> int:
-    ap = argparse.ArgumentParser(prog="lcbench metric",
+    ap = argparse.ArgumentParser(prog="mcb metric",
                                  description="Run lcbench-metric (the proof-term node count and dag_nodes_v1) "
                                              "on a built task project; see docs/METRIC.md for the request format.")
     ap.add_argument("request", help="request JSON: modules, targets, background{prefixes,modules}, optional export")

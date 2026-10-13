@@ -99,7 +99,7 @@ def compare(a_path: Path, b_path: Path) -> list[str]:
 
 
 def main(argv=None) -> int:
-    ap = argparse.ArgumentParser(prog="lcbench verify-receipt")
+    ap = argparse.ArgumentParser(prog="mcb verify-receipt")
     ap.add_argument("receipt", type=Path, nargs="+",
                     help="receipt JSON (two receipts with --compare)")
     ap.add_argument("--bundle", type=Path, help="the submission bundle, to re-score its stored kernel export")

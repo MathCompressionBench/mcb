@@ -296,7 +296,7 @@ def sign(path: Path, key: Path) -> Path:
 
 
 def main(argv=None) -> int:
-    ap = argparse.ArgumentParser(prog="lcbench verify")
+    ap = argparse.ArgumentParser(prog="mcb verify")
     ap.add_argument("task", type=Path, help="task package tarball or directory")
     ap.add_argument("bundle", type=Path)
     ap.add_argument("--expected-id", help="submission ID registered at submission time")

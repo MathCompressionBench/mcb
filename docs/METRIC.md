@@ -164,7 +164,7 @@ and the Python recount with the hand computation. Each case is one target.
 | letE | `let x : Nat := Nat.zero; x` | 4 | 4 |
 | natLit | literal `5` | 1 | 1 |
 | bigNatLit | literal `2^100` | 1 | 1 |
-| strLit | literal `"lcbench"` | 1 | 1 |
+| strLit | literal `"mcb"` | 1 | 1 |
 | mdata | `mdata (Nat.succ Nat.zero)` | 3 | 3 |
 | mdataNested | `Nat.add Nat.zero (mdata Nat.zero)` | 5 | 4 |
 | proj | `(Prod.mk.{0,0} Nat Nat Nat.zero Nat.zero).1` | 12 | 8 |

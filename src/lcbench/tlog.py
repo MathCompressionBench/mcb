@@ -26,7 +26,7 @@ def git(repo: Path, *args: str, check: bool = True) -> str:
 def init(repo: Path) -> None:
     repo.mkdir(parents=True, exist_ok=True)
     git(repo, "init", "-q")
-    (repo / "README").write_text("lcbench submission log: entries/NNNNNN.json, one per commit, append-only.\n")
+    (repo / "README").write_text("MathCompressionBench submission log: entries/NNNNNN.json, one per commit, append-only.\n")
     git(repo, "add", "README")
     git(repo, "commit", "-q", "-m", "log genesis")
 
@@ -135,7 +135,7 @@ def verify(repo: Path, pinned_head: str | None = None, receipts: Path | list[Pat
 
 
 def main(argv=None) -> int:
-    ap = argparse.ArgumentParser(prog="lcbench log")
+    ap = argparse.ArgumentParser(prog="mcb log")
     sub = ap.add_subparsers(dest="cmd", required=True)
     p = sub.add_parser("init")
     p.add_argument("repo", type=Path)

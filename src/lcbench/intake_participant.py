@@ -48,7 +48,7 @@ def add_problems(checkout: Path, task: str, bundle: Path, track: str | None = No
         problems.append(f"the bundle was made for the task {sub.get('task_name')!r}, not {task!r}")
     if track is not None and track != bundle_track(sub):
         problems.append(f"--track {track} differs from the track the bundle records ({bundle_track(sub) or 'none'}); "
-                        f"the track is the one `lcbench start --track` gave the workspace")
+                        f"the track is the one `mcb start --track` gave the workspace")
     listing = checkout / ACCEPTED_PACKAGES_FILE
     if not listing.is_file():
         return problems, [f"{listing} does not exist, so whether {task!r} is open was not checked"]
@@ -94,7 +94,7 @@ def add_arguments(p: argparse.ArgumentParser) -> None:
     p.add_argument("--self-receipt", type=Path)
     p.add_argument("--claimed", type=int, help="self-reported proof-term node count (default: the bundle's own claim)")
     p.add_argument("--track", choices=list(bk.TRACKS),
-                   help="optional: the track the bundle records (from `lcbench start --track`); refused if it differs")
+                   help="optional: the track the bundle records (from `mcb start --track`); refused if it differs")
     p.add_argument("--entry", help="the submission's entry name: the bundle belongs to entries/<entry>/metadata.yaml")
 
 
@@ -122,7 +122,7 @@ def add(args) -> int:
 
 def main(argv=None) -> int:
     """`lcbench intake add` alone: the command a participant's checkout has when it holds no organizer intake."""
-    ap = argparse.ArgumentParser(prog="lcbench intake")
+    ap = argparse.ArgumentParser(prog="mcb intake")
     sub = ap.add_subparsers(dest="cmd", required=True)
     add_arguments(sub.add_parser("add", help="put a bundle and its metadata into a submissions checkout"))
     return add(ap.parse_args(argv))

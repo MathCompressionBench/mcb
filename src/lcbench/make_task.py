@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 
 from . import taskspec
-from .paths import BENCHKIT, LEAN_DIR
+from .paths import BENCHKIT, LEAN_DIR, REPO_ROOT
 from .runtime import benchkit as bk
 
 SUPPORTED_METRICS = {"expr_nodes_with_levels_v1"}
@@ -34,10 +34,33 @@ exec python3 "$here/.benchmark/benchkit.py" submit --package "$here" "$@"
 """
 CHANNELS = [
     "To submit, open a pull request that adds {bundle} to the submissions repository "
-    "https://github.com/richardxd/lcbench-submissions; its README lists the steps (`lcbench intake add` copies the "
+    "https://github.com/MathCompressionBench/mcb-submissions; its README lists the steps (`mcb intake add` copies the "
     "bundle under its full ID). Keep {bundle}: its ID {id} identifies it, and anyone can re-verify it with "
-    "`lcbench verify`.",
+    "`mcb verify`.",
 ]
+# TASK.json "commands": how a participant runs each step (the tools' command is `mcb`, bin/mcb in a checkout)
+PARTICIPANT_COMMANDS = {
+    "start": "mcb start <package url> --dir DIR [--deps DIR] [--budget-seconds N | --unlimited] [--track agent|record]",
+    "check": "./check",
+    "submit": "./submit [--log DIR] [--tokens-json FILE] [--track agent|record]",
+    "verify": "mcb verify <package> <bundle>",
+}
+# the license of the third-party files every package carries (the task sources' Apache-2.0 upstream files, the Lean tools'
+# copy of Lean's Environment.replay) and the notice that names them; the development repository keeps them in
+# public/release-assets/, the public tool repository at its top level
+LICENSE_FILES = ("LICENSE-Apache-2.0", "NOTICE")
+LICENSE_DIRS = (".", "public/release-assets")
+
+
+def license_sources(root: Path = REPO_ROOT) -> dict[str, Path]:
+    """{name: path} of the license files under a checkout's top level or its public/release-assets/ (the first folder
+    that holds both); stops when neither holds them, so that no package is made without them."""
+    for folder in LICENSE_DIRS:
+        found = {name: root / folder / name for name in LICENSE_FILES}
+        if all(path.is_file() for path in found.values()):
+            return {name: (root / name if folder == "." else path) for name, path in found.items()}
+    sys.exit(f"{' and '.join(LICENSE_FILES)} not found at the top of {root} or in its public/release-assets/; every "
+             "package carries them")
 
 
 SCOPE_OPEN = re.compile(r"(?:@\[[^\]]*\]\s*)?(?:(?:public|private|noncomputable)\s+)*(namespace|section|mutual)\b\s*([^\s-]*)")
@@ -415,7 +438,7 @@ def fetch_original(base: Path, entry: dict) -> bytes:
 
 
 def fetch_main(argv=None) -> int:
-    ap = argparse.ArgumentParser(prog="lcbench fetch-originals")
+    ap = argparse.ArgumentParser(prog="mcb fetch-originals")
     ap.add_argument("task_source", type=Path, help="tasks/<id>/task_source.json")
     args = ap.parse_args(argv)
     src, files = load_source(args.task_source.resolve())
@@ -561,14 +584,16 @@ def task_markdown(task: dict, src: dict) -> str:
               "- `TASK.json`: this specification in machine-readable form (targets and their statement hashes, "
               "frozen definitions, limits, objective).",
               "- `RUN.json`: the budget and track of this copy.",
-              "- `check`, `submit`, `.benchmark/`: the checking tools.", "",
+              "- `check`, `submit`, `.benchmark/`: the checking tools.",
+              "- `LICENSE-Apache-2.0`, `NOTICE`: the license of the third-party files in this package and where they "
+              "come from.", "",
               f"## Targets ({len(targets)})", ""]
     lines += [f"- `{name}`" for name in targets]
     return "\n".join(lines) + "\n"
 
 
 def main(argv=None) -> int:
-    ap = argparse.ArgumentParser(prog="lcbench make-task")
+    ap = argparse.ArgumentParser(prog="mcb make-task")
     ap.add_argument("task_source", type=Path, help="tasks/<id>/task_source.json")
     ap.add_argument("--mode", choices=["no_hint", "warm"], required=True)
     ap.add_argument("--out", required=True, type=Path, help="output directory for the package and its tarball")
@@ -576,6 +601,7 @@ def main(argv=None) -> int:
     ap.add_argument("--deps", type=Path, help="directory holding the pinned Lake packages (tasks with packages)")
     ap.add_argument("--name", help="package name (default <task_id>-<mode>)")
     args = ap.parse_args(argv)
+    licenses = license_sources()
     src, files = load_source(args.task_source.resolve())
     errors = taskspec.lint(src, args.task_source.resolve().parent)
     if errors:
@@ -665,7 +691,7 @@ def main(argv=None) -> int:
 
     recorded = {m: {"baseline": computed.get(m, src.get("baseline", {}).get(m)),
                     "status": "computed by lcbench-metric" if m in computed
-                    else "not computed by lcbench (recorded from the audited baseline only)"}
+                    else "not computed by the scorer (recorded from the audited baseline only)"}
                 for m in src["metrics"].get("recorded", [])}
     task = {
         "schema": bk.TASK_SCHEMA,
@@ -713,10 +739,7 @@ def main(argv=None) -> int:
                    "charging": "targets: value nodes; every other owner-module declaration reached: "
                                "type + value + recursor-rule nodes; background declarations: free",
                    "score": "reduction_pct = 100 * (baseline_total - total) / baseline_total"},
-        "commands": {"start": "lcbench start <package url> --dir DIR [--deps DIR] [--budget-seconds N | --unlimited] "
-                              "[--track agent|record]", "check": "./check",
-                     "submit": "./submit [--log DIR] [--tokens-json FILE] [--track agent|record]",
-                     "verify": "lcbench verify <package> <bundle>"},
+        "commands": dict(PARTICIPANT_COMMANDS),
         "submission_channels": CHANNELS,
     }
     problems = bk.check_extraction(task, data, originals)
@@ -754,6 +777,8 @@ def main(argv=None) -> int:
     for rel in bk.METRIC_TOOL_FILES:
         (pkg / ".benchmark/tools" / rel).parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(LEAN_DIR / rel, pkg / ".benchmark/tools" / rel)
+    for license_name, license_path in licenses.items():
+        shutil.copyfile(license_path, pkg / license_name)
     for script, body in (("check", CHECK_SH), ("submit", SUBMIT_SH)):
         (pkg / script).write_text(body)
         (pkg / script).chmod((pkg / script).stat().st_mode | stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH)

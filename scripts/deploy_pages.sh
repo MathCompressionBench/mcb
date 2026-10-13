@@ -57,8 +57,9 @@ mkdir -p "$out"
 cp -R "$site"/. "$out"/
 touch "$out/.nojekyll"   # serve the files as they are
 
+# the commit's dates are UTC, never the organizer's local time zone
 export GIT_AUTHOR_NAME=$AUTHOR_NAME GIT_AUTHOR_EMAIL=$AUTHOR_EMAIL GIT_COMMITTER_NAME=$AUTHOR_NAME \
-  GIT_COMMITTER_EMAIL=$AUTHOR_EMAIL
+  GIT_COMMITTER_EMAIL=$AUTHOR_EMAIL TZ=UTC
 g() { git -C "$out" -c commit.gpgsign=false -c core.hooksPath=/dev/null "$@"; }
 git init -q "$out"
 g symbolic-ref HEAD "refs/heads/$branch"

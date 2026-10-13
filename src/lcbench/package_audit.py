@@ -100,7 +100,7 @@ def audit(tar: Path, task_source: Path | None = None, warm_tar: Path | None = No
 
 
 def main(argv=None) -> int:
-    ap = argparse.ArgumentParser(prog="lcbench audit-package")
+    ap = argparse.ArgumentParser(prog="mcb audit-package")
     ap.add_argument("tarball", type=Path, help="task package tarball written by make-task")
     ap.add_argument("--task-source", type=Path, help="tasks/<id>/task_source.json (adds its original hashes)")
     ap.add_argument("--warm", type=Path, help="the warm package of the same task (no_hint statements must match)")

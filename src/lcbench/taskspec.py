@@ -423,7 +423,7 @@ def cmd_card(args) -> int:
         card = render_card(src, p.parent, load_measured(p.parent))
         if args.check:
             if not (p.parent / "CARD.md").is_file() or (p.parent / "CARD.md").read_text() != card:
-                print(f"{p.parent.name}: CARD.md is stale (run lcbench tasks card {p.parent})")
+                print(f"{p.parent.name}: CARD.md is stale (run mcb tasks card {p.parent})")
                 return 1
         else:
             (p.parent / "CARD.md").write_text(card)
@@ -432,7 +432,7 @@ def cmd_card(args) -> int:
 
 
 def main(argv=None) -> int:
-    ap = argparse.ArgumentParser(prog="lcbench tasks")
+    ap = argparse.ArgumentParser(prog="mcb tasks")
     sub = ap.add_subparsers(dest="cmd", required=True)
     p = sub.add_parser("lint", help="lint task sources (lcbench.task_source.v1)")
     p.add_argument("paths", nargs="+", help="tasks/ directory, a task directory or a task_source.json")

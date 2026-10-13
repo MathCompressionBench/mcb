@@ -27,7 +27,7 @@ CHECK_SCHEMA = "lcbench.check.v1"
 # semver of the scorer (this file and the organizer Lean tool sources); printed by ./check and recorded in
 # TASK.json and every receipt. Every change to those files is a new version (tests/unit/test_scorer_versions.py):
 # a package built by one scorer is rejected by a verifier running another.
-SCORER_VERSION = "1.0.0-rc.10.2"
+SCORER_VERSION = "1.0.0-rc.10.3"
 # metrics every check and receipt reports next to the primary one (null until the scorer computes them)
 RECORDED_METRICS = ["dag_nodes_v1"]
 
@@ -399,7 +399,7 @@ if pid == 0:
     try:
         os.execvp(cmd[0], cmd)
     except OSError as e:
-        os.write(2, ("lcbench: cannot run %s: %s\n" % (cmd[0], e)).encode())
+        os.write(2, ("mcb: cannot run %s: %s\n" % (cmd[0], e)).encode())
     os._exit(127)
 status = 0
 while True:
@@ -522,7 +522,7 @@ class _Tail:
         data = b"".join(self.chunks)
         cut = max(0, len(data) - self.limit)
         dropped = self.dropped + cut
-        head = f"[lcbench: the first {dropped} bytes of output dropped]\n" if dropped else ""
+        head = f"[mcb: the first {dropped} bytes of output dropped]\n" if dropped else ""
         return head + data[cut:].decode("utf-8", errors="replace")
 
     def total_dropped(self) -> int:
@@ -1620,7 +1620,7 @@ def package_packages_dir(package: Path, task: dict) -> Path | None:
 def objective_line(task: dict) -> str:
     """The second line of ./check: the scorer and the one objective (recorded metrics are not objectives); the
     metric id appears once, on the result line below."""
-    return f"scorer lcbench {SCORER_VERSION}  objective: proof-term node count (smaller is better)"
+    return f"scorer mcb {SCORER_VERSION}  objective: proof-term node count (smaller is better)"
 
 
 def compression_summary(score: dict) -> str:
@@ -1925,7 +1925,7 @@ def positive_seconds(text: str) -> int:
 
 
 def parse_args(argv=None) -> argparse.Namespace:
-    ap = argparse.ArgumentParser(prog="lcbench")
+    ap = argparse.ArgumentParser(prog="mcb")
     sub = ap.add_subparsers(dest="cmd", required=True)
     st = sub.add_parser("start", help="fetch and set up a task package")
     st.add_argument("package", help="task package tarball URL (https://, file://) or path")

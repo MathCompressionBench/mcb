@@ -22,15 +22,20 @@ runs are listed on the leaderboards with the merged submissions ([docs/SUBMITTIN
 ## Submitting
 
 Submissions are pull requests to https://github.com/MathCompressionBench/mcb-submissions; its README and
-[docs/SUBMITTING.md](docs/SUBMITTING.md) have the steps. Open for submissions now: `toyarith-warm`. The lcbench-v1
-tasks work with the tools; the submissions README says when they open. The "lcbench check status" comment on your pull
-request is posted and edited by the organizers' GitHub account only.
+[docs/SUBMITTING.md](docs/SUBMITTING.md) have the steps. Open for submissions now: `toyarith-warm` and the seven
+lcbench-v1 tasks, each as its warm and its no_hint package. The "lcbench check status" comment on your pull request is
+posted and edited by the organizers' GitHub account only.
 
-The submissions README names the accepted toy package: its package sha256 and the GitHub release of this repository
-that holds it.
+Get the tools with `git clone https://github.com/MathCompressionBench/mcb.git` (no GitHub account needed).
 
-- download it: `gh release download <release named there> --repo MathCompressionBench/mcb` gives `toyarith-warm.tar.gz`
-  and its `.sha256` file; then `bin/mcb start "file://$PWD/toyarith-warm.tar.gz" --dir <workspace>
+The submissions README names the accepted packages: each one's package sha256 and the GitHub release of this
+repository that holds it (the lcbench-v1 packages are the assets of the release that `sets/lcbench-v1.json` names).
+Every release asset downloads without a login from
+`https://github.com/MathCompressionBench/mcb/releases/download/<release>/<file>`. For the toy package:
+
+- download it: `curl -fLO https://github.com/MathCompressionBench/mcb/releases/download/<release named there>/toyarith-warm.tar.gz`
+  and the same URL with `.sha256` for its `.sha256` file (or `gh release download <release> --repo MathCompressionBench/mcb`
+  when you are logged in to GitHub); then `bin/mcb start "file://$PWD/toyarith-warm.tar.gz" --dir <workspace>
   --budget-seconds <N> --track agent` (or `--unlimited`, `--track record`);
 - or build it yourself with `make-task`, as in the quickstart below; that gives the same file. A package records the
   scorer version of the code that built it (`scorer_version` in its `TASK.json`), so one built at another commit can
@@ -38,6 +43,12 @@ that holds it.
 
 `mcb start` prints the package sha256 and the task sha256, and `./check` prints the task sha256; compare them with
 the submissions README.
+
+**no_hint packages.** An untouched no_hint package reports INVALID: its target proofs are replaced by `sorry`, and
+`./check` names every target whose proof is, or uses, a replaced one (for example 175 of the 197 targets of mathlib197,
+whose package keeps 25 short `rfl` proofs that later declarations need). Its `TASK.md` states the baseline: the node
+count of the original proofs, which the warm package reproduces. Your proofs are scored against it once no target
+uses `sorry`.
 
 ## Quickstart on the toy task
 
@@ -145,7 +156,10 @@ proofwidgets, importGraph, LeanSearchClient, Cli). There are two ways to provide
    `<workspace>/<task>-deps/.lake/packages/` and downloads Mathlib's compiled cache) and links `project/.lake/packages`
    to that folder. `start` prints the folder; pass it with `--deps` to set up another copy without fetching again. On Linux
    with an empty home directory this took about 80 s and 7.9 GB in the dependency folder, plus 0.4 GB of download
-   cache in the home directory; the following untouched `./check` gave the exact baseline.
+   cache in the home directory; the following untouched `./check` gave the exact baseline. On a slow network the fetch
+   can take much longer (an hour in one test). Plan for about 11 GB for a first Mathlib task: the dependency folder
+   (about 7.8 GB) and about 3.2 GB in the home directory (the Lean toolchain under `~/.elan`, about 2.8 GB, and Lake's
+   download cache).
 2. **Reuse one dependency directory.** Build it once and pass its `packages` directory with `--deps` to
    `make-task`, `start` and `verify` (it may be read-only):
 

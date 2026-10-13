@@ -46,9 +46,12 @@ their packages (the task sha256 the set records), not their original node counts
 
 - `lcbench-v1` is the seven tasks of the study: ramsey96, slt26, slt49, permanent2, compactness5, mathlib197 and
   mathlib372 ([sets/lcbench-v1.json](../sets/lcbench-v1.json)). Submissions use their `warm` packages, for example
-  `ramsey96-warm`. This release is the release candidate `lcbench-v1-rc.10.2`: its packages, built by scorer
-  `1.0.0-rc.10.2`, are the assets of the GitHub release of that name, and the set's status is `candidate` until the
-  final release freezes it.
+  `ramsey96-warm`. This release is the release candidate `lcbench-v1-rc.10.3`: its packages, built by scorer
+  `1.0.0-rc.10.3`, are the assets of the GitHub release of that name, and the set's status is `candidate` until the
+  final release freezes it. Each task's no_hint package is open too; an untouched no_hint package reports INVALID
+  (its target proofs are `sorry`) until your proofs replace them. The packages of the earlier release candidate
+  `lcbench-v1-rc.10.2` (scorer `1.0.0-rc.10.2`, the same node counts) are still accepted; the organizers verify their
+  bundles with the tools of that release.
 - More task sets will be added later, for example the published math challenges. A new set never changes an
   existing one.
 - Every leaderboard is per task set and per track. A result counts on a set only when its bundle was made from the
@@ -207,7 +210,7 @@ edits it when the status changes. It shows:
 A refused pull request gets the reasons instead. Push a new commit to fix it; the newest commit is checked again. For
 example, after the check of one toy bundle on `open` (a file shortened by hand, so `human_assisted: true`). The bundle,
 the scores and the receipt are real: the organizers' receipt of the toy file `tests/fixtures/toy/ToyArithHand_Basic.lean`
-at scorer `1.0.0-rc.10.2`. Only the verifier commit is shown as a placeholder: it is the commit of the MathCompressionBench checkout
+at scorer `1.0.0-rc.10.3`. Only the verifier commit is shown as a placeholder: it is the commit of the MathCompressionBench checkout
 that ran the check. `verifier_sha256` names the verifier's code itself; [VERIFY.md](VERIFY.md) shows how to compute it
 from your checkout.
 
@@ -228,23 +231,23 @@ from your checkout.
 | attempts per task | `3` |
 | links | `https://example.org/acme` |
 
-- toyarith-warm/5caec29c222e3d236cb4eebd70d383fcbfd0be04208e2171eb5bc9b9ba135ce3: verified (8,331 nodes; baseline 20,190) (the verified receipt matches the self-report)
+- toyarith-warm/c5349e772879080a8037e3948bbfe81a24629bcf88e7f0c1400205b478610758: verified (8,331 nodes; baseline 20,190) (the verified receipt matches the self-report)
 
 **Receipts** (the organizers' receipts; each one is in their append-only receipt log):
 
 | task | submission | result | node count | receipt root | log entry |
 |---|---|---|---|---|---|
-| toyarith-warm | `5caec29c222e3d23` | verified | 8,331 | `0fbb6daace8a3a37` | 1 |
+| toyarith-warm | `c5349e772879080a` | verified | 8,331 | `4e0e4294ccc82a0c` | 1 |
 
-<details><summary>receipt of toyarith-warm/5caec29c222e3d23</summary>
+<details><summary>receipt of toyarith-warm/c5349e772879080a</summary>
 
 ```json
 {
- "bundle_sha256": "5caec29c222e3d236cb4eebd70d383fcbfd0be04208e2171eb5bc9b9ba135ce3",
+ "bundle_sha256": "c5349e772879080a8037e3948bbfe81a24629bcf88e7f0c1400205b478610758",
  "problems": [],
  "receipt_log_entry": 1,
- "receipt_root": "0fbb6daace8a3a375a4e57767ecebc88d909f44e1b33024ede903012f8a35309",
- "receipt_sha256": "f7ba2096d8103b4faef8d88749b6a342e6f7c4f762386979a7c22816d1988700",
+ "receipt_root": "4e0e4294ccc82a0ca1a74d2c3a9bf6d4fd38e05309c372cc1aeb45b8269a05e7",
+ "receipt_sha256": "066c1eadae45fa0cef648a629014d815d545d5739c54079fe6f50ebb2515610f",
  "run": {
   "budget_seconds": "unlimited",
   "elapsed_seconds": null
@@ -256,13 +259,13 @@ from your checkout.
  },
  "status": "verified",
  "task_name": "toyarith-warm",
- "task_sha256": "a58f2689c2ca3c29c83ec39578b5d29ec39e8e1f02e1ab2bcdcb7ebd8b2c56a1",
+ "task_sha256": "a31d5e234130f7004defd452dd377ede58342e23dddc7741722afcaac41ba4cb",
  "track": null,
  "verdict": "ACCEPT",
  "verifier": {
   "commit": "<the MathCompressionBench commit that checked it>",
-  "scorer_version": "1.0.0-rc.10.2",
-  "verifier_sha256": "7e485a287fa363b0abadca203c9b4486ef2a7b7ca50d902fff57d1255750f31d"
+  "scorer_version": "1.0.0-rc.10.3",
+  "verifier_sha256": "a10e8d62c30d7971c5e3795681ca66b90cb129ff949fdeb077c18ecb7b0953ba"
  }
 }
 ```

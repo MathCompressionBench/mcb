@@ -286,7 +286,7 @@ def run_problems(track: str, run_track, budget_seconds) -> list[str]:
         return []
     problems = []
     if run_track != "agent":
-        problems.append(f"the {track} track is for agent runs: start the workspace with `lcbench start --track agent` "
+        problems.append(f"the {track} track is for agent runs: start the workspace with `mcb start --track agent` "
                         f"(the run records track {run_track!r})")
     if not (isinstance(budget_seconds, int) and not isinstance(budget_seconds, bool) and 0 < budget_seconds <= limit):
         problems.append(f"the {track} track allows at most {limit} seconds per run: start the workspace with "
@@ -338,7 +338,7 @@ def open_tasks_near(path: Path) -> set | None:
 
 
 def main(argv=None) -> int:
-    ap = argparse.ArgumentParser(prog="lcbench submission",
+    ap = argparse.ArgumentParser(prog="mcb submission",
                                  description="Check a submission's metadata.yaml before you open the pull request.")
     sub = ap.add_subparsers(dest="cmd", required=True)
     p = sub.add_parser("validate", help="check metadata.yaml: every required field, the track rules, the tasks")
