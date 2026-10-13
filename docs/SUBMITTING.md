@@ -7,8 +7,9 @@ The submissions repository's README has the same steps in short.
 
 ## In short
 
-1. You open a pull request to the submissions repository, https://github.com/MathCompressionBench/mcb-submissions. It adds
-   your bundles (the files `./submit` writes) and one `metadata.yaml` that describes your system.
+1. You open a pull request to the submissions repository, https://github.com/MathCompressionBench/mcb-submissions, from
+   your fork of it. It adds your bundles (the files `./submit` writes) and one `metadata.yaml` that describes your
+   system.
 2. The organizers' check rebuilds and re-scores every bundle on the organizers' machines. It posts the verdict, the
    node count and the organizers' receipt as a comment on your pull request.
 3. An organizer reviews your `metadata.yaml` and merges the pull request.
@@ -171,7 +172,34 @@ never read differently from what you meant.
    ```
 
 2. **Work, check and submit** in the workspace: `./check`, then `./submit` for the final you want to send.
-3. **Add the bundles** to a new branch of your clone of the submissions repository, naming your entry.
+3. **Fork the submissions repository**, https://github.com/MathCompressionBench/mcb-submissions, on GitHub: its "Fork"
+   button, or `gh repo fork MathCompressionBench/mcb-submissions --clone=false`. You push to your fork; the organizers'
+   repository takes only pull requests.
+4. **Clone your fork** over https and add the organizers' repository as `upstream`:
+
+   ```sh
+   git clone https://github.com/<your account>/mcb-submissions.git
+   cd mcb-submissions
+   git remote add upstream https://github.com/MathCompressionBench/mcb-submissions.git
+   ```
+
+5. **Sync your fork with `upstream`, then make a branch**, before every submission. The organizers add newly
+   accepted packages to `accepted-packages.json` on `main`. `intake add` (step 6) reads that file in your clone and
+   `scripts/check_submission.py` (step 8) reads it on your fork's `main` (`origin/main`), so with a stale fork both
+   refuse bundles made from the newly accepted packages.
+
+   ```sh
+   git switch main
+   git fetch upstream
+   git merge --ff-only upstream/main
+   git push origin main
+   git switch -c my-submission
+   ```
+
+   The "Sync fork" button on your fork's GitHub page, or `gh repo sync <your account>/mcb-submissions`, syncs
+   the fork on GitHub; then run `git switch main && git pull` in your clone. If you made your branch before
+   syncing, run `git merge upstream/main` on it.
+6. **Add the bundles** to your branch, naming your entry.
 
    ```sh
    bin/mcb intake add <submissions checkout> <task> <bundle> --participant "<your name or team>" \
@@ -181,16 +209,20 @@ never read differently from what you meant.
    `intake add` writes the track that the bundle records (from `mcb start --track`); `--track` is optional, and
    when given it must be the same.
 
-4. **Write the metadata:** copy `templates/metadata.yaml` to `entries/<entry>/metadata.yaml` in the submissions
+7. **Write the metadata:** copy `templates/metadata.yaml` to `entries/<entry>/metadata.yaml` in the submissions
    checkout and fill it in. Check it:
 
    ```sh
    bin/mcb submission validate <submissions checkout>/entries/<entry>
    ```
 
-5. **Check the whole pull request** before opening it: commit, then run `python3 scripts/check_submission.py` in the
+8. **Check the whole pull request** before opening it: commit, then run `python3 scripts/check_submission.py` in the
    submissions checkout. It applies the organizers' rules, including the metadata, and needs only Python 3 and git.
-6. **Open the pull request** to `main` and fill in its template.
+9. **Push** the branch to your fork: `git push -u origin my-submission`.
+10. **Open the pull request** against `main` of MathCompressionBench/mcb-submissions and fill in its template. GitHub offers
+    it after the push, or run `gh pr create --repo MathCompressionBench/mcb-submissions --base main`. It may add up to five
+    bundles ([What you submit](#what-you-submit)). The organizers' check posts one comment and edits that comment in
+    place as the status changes (next section).
 
 ## What the organizers' check posts
 

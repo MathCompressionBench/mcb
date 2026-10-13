@@ -22,9 +22,8 @@ runs are listed on the leaderboards with the merged submissions ([docs/SUBMITTIN
 ## Submitting
 
 Submissions are pull requests to https://github.com/MathCompressionBench/mcb-submissions; its README and
-[docs/SUBMITTING.md](docs/SUBMITTING.md) have the steps. Open for submissions now: `toyarith-warm` and the seven
-lcbench-v1 tasks, each as its warm and its no_hint package. The "lcbench check status" comment on your pull request is
-posted and edited by the organizers' GitHub account only.
+[docs/SUBMITTING.md](docs/SUBMITTING.md) have the details. Open for submissions now: `toyarith-warm` and the seven
+lcbench-v1 tasks, each as its warm and its no_hint package.
 
 Get the tools with `git clone https://github.com/MathCompressionBench/mcb.git` (no GitHub account needed).
 
@@ -49,6 +48,44 @@ the submissions README.
 whose package keeps 25 short `rfl` proofs that later declarations need). Its `TASK.md` states the baseline: the node
 count of the original proofs, which the warm package reproduces. Your proofs are scored against it once no target
 uses `sorry`.
+
+**Submit.** Once `./submit` has written your bundles (the quickstart below shows how), submit them from a fork
+of the submissions repository:
+
+1. **Fork** https://github.com/MathCompressionBench/mcb-submissions on GitHub: its "Fork" button, or
+   `gh repo fork MathCompressionBench/mcb-submissions --clone=false`. You push to your fork, not to the organizers'
+   repository.
+2. **Clone your fork** over https and add the organizers' repository as `upstream`:
+
+   ```sh
+   git clone https://github.com/<your account>/mcb-submissions.git
+   cd mcb-submissions
+   git remote add upstream https://github.com/MathCompressionBench/mcb-submissions.git
+   ```
+
+3. **Sync your fork with `upstream`** before every submission, then make a branch. The organizers add newly
+   accepted packages to `accepted-packages.json` on `main`; with a stale fork, `mcb intake add` and
+   `scripts/check_submission.py` refuse bundles made from them.
+
+   ```sh
+   git switch main
+   git fetch upstream
+   git merge --ff-only upstream/main
+   git push origin main
+   git switch -c my-submission
+   ```
+
+   The "Sync fork" button on your fork's GitHub page, or `gh repo sync <your account>/mcb-submissions`, syncs
+   the fork on GitHub; then run `git switch main && git pull` in your clone. If you made your branch before
+   syncing, run `git merge upstream/main` on it.
+4. **Add your bundles** from this repository's checkout with `bin/mcb intake add <your clone> <task> <bundle>
+   --participant "<your name or team>" --entry <entry>`, write `entries/<entry>/metadata.yaml`, commit, and run
+   `python3 scripts/check_submission.py` in your clone.
+5. **Push** the branch to your fork: `git push -u origin my-submission`.
+6. **Open the pull request** against `main` of MathCompressionBench/mcb-submissions: GitHub offers it after the push, or
+   run `gh pr create --repo MathCompressionBench/mcb-submissions --base main`. One pull request may add up to five bundles,
+   for one or more tasks. The organizers' check posts one comment, "lcbench check status", and edits that comment in
+   place as the status changes; only the organizers' GitHub account posts and edits it.
 
 ## Quickstart on the toy task
 
