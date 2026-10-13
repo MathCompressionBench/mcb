@@ -1,0 +1,644 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "Batteries",
+   "Aesop",
+   "Qq",
+   "Mathlib",
+   "Plausible",
+   "ProofWidgets",
+   "ImportGraph",
+   "LeanSearchClient",
+   "Cli"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 11338478
+ },
+ "commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored: redistribution license not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/ten-proofs/94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6/MulticolorTriangleRamsey.lean"
+   },
+   "original_sha256": "a87bd60efe16dab00ba07ea4069f22b8dbc991b3f3ba34ae5088b1f8b1987cd3",
+   "path": "MulticolorTriangleRamsey.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 16384
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm",
+  "no_hint"
+ ],
+ "owner_modules": [
+  "MulticolorTriangleRamsey"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "0b7b8ea017b340b49c3cf120f1e27ff156c19c1f18715f186fca27e2c77b84f9"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "ce0e8729559e318cb90019dfd2eb79e3615f0d530bdbe5d75384ea72e0838bc3"
+  },
+  "library_name": "MulticolorTriangleRamsey",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "81a5d257c8e410db227a6665ed08f64fea08e997",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "Cli",
+    "rev": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+    "url": "https://github.com/leanprover/lean4-cli"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/ten-proofs",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-09-29",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "not run; statement identity = structural kernel-type hash, definitions reachable from target statements are frozen (proof-irrelevant closure hash)",
+  "forbidden_text": [],
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-08-02",
+ "source_license": {
+  "evidence": "openai/ten-proofs has a top-level Apache-2.0 LICENSE at the pinned commit and GitHub's license API reports Apache-2.0 (checked 2026-09-29)",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.PaletteBlockCertificate.colourGraph_colorable",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.PaletteBlockCertificate.noMonochromaticTriangle",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.allColourPaletteRamsey_exponential_bound_sharp",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.card_badSaturationMatrices",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.card_badSaturationRows_le",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.card_badSaturationRows_lt_pow",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.card_badSaturationRows_mul_lt",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.card_exceptionalColumns_le",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.card_missingSymbolRows",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.choose_le_choose_of_le_half",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.choose_le_exp_mul_div_pow",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.cliqueFree_compRight_embedding",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.cliqueFree_pullback_embedding",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.colorable_pullback_embedding",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.differenceColourEmbedding_mem",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.divergentRamseyRoot",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.erdos_183",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.erdos_problem_183_explicit",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.exists_coordinate_covering",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.exists_forcesMonochromaticTriangle",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.exists_maximal_separated_palette_cover",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.exists_paletteStage_bracket",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.exists_recursivePaletteColouring_fin",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.exists_recursivePaletteStage",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.exists_saturated_matrix",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.exists_saturated_matrix_ceil",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.exists_saturated_of_bad_row_union_bound",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.exists_separated_palette_packing",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.exists_stage_palette_packing_binomial",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.exists_stage_palette_packing_exp",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.factorial_exp_lower",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.forcesMonochromaticTriangle_mono",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.forcesMonochromaticTriangle_succ",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.forcesMonochromaticTriangle_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.labelGraph_pullback_embedding",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.log_le_paletteLogWidth",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.mem_exceptionalColumns",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.mem_missingSymbolRows",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.missing_symbol_power_bound",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.missing_symbol_power_bound_nat",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.no_three_pairwise_palette_disagreements",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.one_le_log_nat_of_three_le",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteBall_card_le_binomial_sum",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteBlockLabel_valid",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteColourCount_adjacent_scaled_sharp",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteColourCount_le_twenty_six_sharp",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteColourCount_mono",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteColourCount_three",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteCrossColour_changes_membership",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteCrossColour_same_left_label",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteCrossColour_same_right_label",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteFamilyCrossColour_changes_membership",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteFamilyCrossColour_same_left_label",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteFamilyCrossColour_same_right_label",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteFamilyForwardList_mem",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteFamily_reverse_rank_lt",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteGrowthBound_succ",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteLogWidth_le_stage",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteLogWidth_le_two_log",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteLogWidth_two_le",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteRelabel_adj_iff",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteRelabel_cliqueFree",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteRelabel_missing_no_adj",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteSeparated_insert",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteShell_card_le",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.paletteStage_cube_root_control_six_sharp",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.palette_binomial_sum_le",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.palette_exp_loss_bound",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.palette_exponential_adjacent_transfer_sharp",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.palette_packing_card_le",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.quantitativeLowerBound_explicit_all",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.quantitativeLowerBound_explicit_small",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.recursiveCrossColour_changes_membership",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.recursiveCrossColour_same_left_coordinate",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.recursiveCrossColour_same_right_coordinate",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.recursiveCrossColour_spec",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.recursivePaletteColouring_cross_adj_iff_of_lt",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.recursivePaletteColouring_get",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.recursivePaletteColouring_internal_adj_iff",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.recursivePaletteEdgeColour_symm",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.recursivePaletteRamsey_exponential_bound",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.saturatedMatrixRows_adjacent_scaled_sharp",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.saturated_coordinate_covering",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.stageWidths_succ_le",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.stage_mul_paletteWidth_le_matrixWidth_sharp",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.stage_palette_numerator_bound",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.triangleFree_deleteUnusedColour",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.triangleFree_lt_triangleRamseyNumber",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.triangleRamseyNumber_factorial_upper",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.triangleRamseyNumber_forces",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.triangleRamseyNumber_log_eventually_bounds",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.triangleRamseyNumber_log_isTheta",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.triangleRamseyNumber_log_sharp_coefficients",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.triangleRamseyNumber_mono",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.triangleRamseyNumber_succ_le",
+   "statement_sha256": null
+  },
+  {
+   "module": "MulticolorTriangleRamsey",
+   "name": "ErdosProblems.MulticolourTriangleRamsey.two_mul_stage_le_paletteColourCount",
+   "statement_sha256": null
+  }
+ ],
+ "task_id": "ramsey96",
+ "task_revision": 1,
+ "title": "Multicolour triangle Ramsey (Erdős Problem 183), ten-proofs MulticolorTriangleRamsey.lean",
+ "toolchain": {
+  "githash": "8c9756b28d64dab099da31a4c09229a9e6a2ef35",
+  "id": "leanprover/lean4:v4.32.0"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "8c9756b28d64dab099da31a4c09229a9e6a2ef35",
+   "role": "toolchain v4.32.0: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

@@ -1,0 +1,935 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "Batteries",
+   "Aesop",
+   "Qq",
+   "Mathlib",
+   "Plausible",
+   "ProofWidgets",
+   "ImportGraph",
+   "LeanSearchClient",
+   "Cli"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 392854783
+ },
+ "commit": "d0f506f0a695018265dccb33bcb05e2f5ca1c876",
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/Chaining.lean"
+   },
+   "module": "SLT.Chaining",
+   "original_sha256": "0fc1d4e3f1774f35229396e4118233830592d667526870ebc75aa0658076c684",
+   "path": "SLT/Chaining.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/ConvergenceL1Subseq.lean"
+   },
+   "module": "SLT.ConvergenceL1Subseq",
+   "original_sha256": "9c68b82984246989606811af9dc629925b7b4cf33bb93b9639038be1ab2e4236",
+   "path": "SLT/ConvergenceL1Subseq.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/CoveringNumber.lean"
+   },
+   "module": "SLT.CoveringNumber",
+   "original_sha256": "af1c7ca87ea6d2ceb0b592c5ed594ba8799c9162c55307fa3d093f26c095d4ed",
+   "path": "SLT/CoveringNumber.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/Dudley.lean"
+   },
+   "module": "SLT.Dudley",
+   "original_sha256": "965805e51ba3e86371a5267edc7947402622bf13cf66c75b12c503bb0428b85d",
+   "path": "SLT/Dudley.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/EfronStein.lean"
+   },
+   "module": "SLT.EfronStein",
+   "original_sha256": "4b6cc98bf9116571fade2846649f30d12f873790898da289ead521e897152fa5",
+   "path": "SLT/EfronStein.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianLSI/BernoulliLSI.lean"
+   },
+   "module": "SLT.GaussianLSI.BernoulliLSI",
+   "original_sha256": "953a9ec8bd30ea321653a9104b85488be659374fba7a3622c9595aad76ece612",
+   "path": "SLT/GaussianLSI/BernoulliLSI.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianLSI/DualEntApp.lean"
+   },
+   "module": "SLT.GaussianLSI.DualEntApp",
+   "original_sha256": "d2854bb651567555867f649d2feff5bfd5533d13def74a58828b6e78a3d233e6",
+   "path": "SLT/GaussianLSI/DualEntApp.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianLSI/DualityEntropy.lean"
+   },
+   "module": "SLT.GaussianLSI.DualityEntropy",
+   "original_sha256": "4b6759b8b569175d76cf218ee1b6ea51b1ef7b0c62fc763c1d5c6127073ed277",
+   "path": "SLT/GaussianLSI/DualityEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianLSI/Entropy.lean"
+   },
+   "module": "SLT.GaussianLSI.Entropy",
+   "original_sha256": "00530d1b319448a5a668439018da08b7bd9b40be518262e108fe4ac9ffcdc6b7",
+   "path": "SLT/GaussianLSI/Entropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianLSI/OneDimGLSI.lean"
+   },
+   "module": "SLT.GaussianLSI.OneDimGLSI",
+   "original_sha256": "811abf3ffbd836acc6f99ec94660d286c71d59f318fceef142678d0ec3d7e6db",
+   "path": "SLT/GaussianLSI/OneDimGLSI.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianLSI/OneDimGLSICompSmo.lean"
+   },
+   "module": "SLT.GaussianLSI.OneDimGLSICompSmo",
+   "original_sha256": "ebe756ab83c2439881aa3805fd1de5073c5166f94fa7fbb6e641506502cc13c1",
+   "path": "SLT/GaussianLSI/OneDimGLSICompSmo.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianLSI/SubAddEnt/Basic.lean"
+   },
+   "module": "SLT.GaussianLSI.SubAddEnt.Basic",
+   "original_sha256": "63092f8ea5f2710de41c212853ce002d68e8f62c413146bbf5001d2eb8086650",
+   "path": "SLT/GaussianLSI/SubAddEnt/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianLSI/SubAddEnt/Decomposition.lean"
+   },
+   "module": "SLT.GaussianLSI.SubAddEnt.Decomposition",
+   "original_sha256": "e4e6641911c25b40ebd0047f23da951ba87fb2fd92d43740d1ab8318e737d955",
+   "path": "SLT/GaussianLSI/SubAddEnt/Decomposition.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianLSI/SubAddEnt/Subadditivity.lean"
+   },
+   "module": "SLT.GaussianLSI.SubAddEnt.Subadditivity",
+   "original_sha256": "2e9b445270abe798d7b455a2b3b364d60ca4316c1d0b4cbc12930cad9877b517",
+   "path": "SLT/GaussianLSI/SubAddEnt/Subadditivity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianLSI/TensorizedGLSI.lean"
+   },
+   "module": "SLT.GaussianLSI.TensorizedGLSI",
+   "original_sha256": "5fa2fb9eb365be8d534a8607d9a20f9167466226214bcff406219719cbb98b03",
+   "path": "SLT/GaussianLSI/TensorizedGLSI.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianLSI/TwoPoint.lean"
+   },
+   "module": "SLT.GaussianLSI.TwoPoint",
+   "original_sha256": "5895959d95304467fc74861e8e67e35da0aeb71da63d73eb5219d98795847141",
+   "path": "SLT/GaussianLSI/TwoPoint.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianLipConcen.lean"
+   },
+   "module": "SLT.GaussianLipConcen",
+   "original_sha256": "a9e01a429e6fd2bb9ab7afaec957fa53e01a76543e5564a3d0b0a1fd8015ebc6",
+   "path": "SLT/GaussianLipConcen.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianMeasure.lean"
+   },
+   "module": "SLT.GaussianMeasure",
+   "original_sha256": "b3b25d72754dc1933419d3048c6cfc372589c70b418dc9ebbecc1d3eee62380e",
+   "path": "SLT/GaussianMeasure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianPoincare/EfronSteinApp.lean"
+   },
+   "module": "SLT.GaussianPoincare.EfronSteinApp",
+   "original_sha256": "d2ae6ec8c8d7a92a6b7227e0392dcff274d80f40b5afcd7b30a44bd023a6e71e",
+   "path": "SLT/GaussianPoincare/EfronSteinApp.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianPoincare/LevyContinuity.lean"
+   },
+   "module": "SLT.GaussianPoincare.LevyContinuity",
+   "original_sha256": "9a59c60d6c00e50b49e32e9861d9e08966f366e88e2868c4fbea298843a60e4c",
+   "path": "SLT/GaussianPoincare/LevyContinuity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianPoincare/Limit.lean"
+   },
+   "module": "SLT.GaussianPoincare.Limit",
+   "original_sha256": "4bc70c94e5d9cca273fdd816431e80af6d19de36af0d64a7854d1b05353a346b",
+   "path": "SLT/GaussianPoincare/Limit.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianPoincare/RademacherApprox.lean"
+   },
+   "module": "SLT.GaussianPoincare.RademacherApprox",
+   "original_sha256": "e00175eea9c8c99daaecf8996aff5d952e98a0f6a5699b5de15db86659999126",
+   "path": "SLT/GaussianPoincare/RademacherApprox.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianPoincare/TaylorBound.lean"
+   },
+   "module": "SLT.GaussianPoincare.TaylorBound",
+   "original_sha256": "940ae14e5f4499764893a839dcf9020ec11d02e0ad1b16b7d14c9cc29707844a",
+   "path": "SLT/GaussianPoincare/TaylorBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianSobolevDense/Cutoff.lean"
+   },
+   "module": "SLT.GaussianSobolevDense.Cutoff",
+   "original_sha256": "d43baee918d15024b7f655bc3c7c13a983f46cd10b41c3aeba44c6d82a111125",
+   "path": "SLT/GaussianSobolevDense/Cutoff.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianSobolevDense/Defs.lean"
+   },
+   "module": "SLT.GaussianSobolevDense.Defs",
+   "original_sha256": "1a0f0133b75a5a468f015fc9854b2ebd7949cc4201759992e9c7a3acde305a08",
+   "path": "SLT/GaussianSobolevDense/Defs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianSobolevDense/Density.lean"
+   },
+   "module": "SLT.GaussianSobolevDense.Density",
+   "original_sha256": "7840d96028a572dc50cba287312ae6bda77e06e0321e5f14f9f0fb0948be4b69",
+   "path": "SLT/GaussianSobolevDense/Density.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianSobolevDense/LipschitzMollification.lean"
+   },
+   "module": "SLT.GaussianSobolevDense.LipschitzMollification",
+   "original_sha256": "f576ae81c85913e347a46bddb131cfc9df92862f97a05b7149de7f2edbb8a9eb",
+   "path": "SLT/GaussianSobolevDense/LipschitzMollification.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/GaussianSobolevDense/Mollification.lean"
+   },
+   "module": "SLT.GaussianSobolevDense.Mollification",
+   "original_sha256": "82a18c9f6f8df5c386266f0e5412670e9e0e9e2c569092ec69c26a189905cdb9",
+   "path": "SLT/GaussianSobolevDense/Mollification.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/HansonWright.lean"
+   },
+   "module": "SLT.HansonWright",
+   "original_sha256": "0e3debbb31d1f81da8b70c4ba04a3ed6f445e5df1536934f8d947b76b9c91a77",
+   "path": "SLT/HansonWright.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/BasicInequality.lean"
+   },
+   "module": "SLT.LeastSquares.BasicInequality",
+   "original_sha256": "29f2f398da67eda11584c659da7e8fdf4544b11286d6091412668fe26e484612",
+   "path": "SLT/LeastSquares/BasicInequality.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/CriticalRadius.lean"
+   },
+   "module": "SLT.LeastSquares.CriticalRadius",
+   "original_sha256": "aa53b652e5a9f5e8b76f60d9bed9d572d2d33e265657ac7582654a2ce9cc9152",
+   "path": "SLT/LeastSquares/CriticalRadius.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/Defs.lean"
+   },
+   "module": "SLT.LeastSquares.Defs",
+   "original_sha256": "e4243642f19cea988f88f9ab1f424c78dc49fe7789a71015200673d00dd7442f",
+   "path": "SLT/LeastSquares/Defs.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/DudleyApplication.lean"
+   },
+   "module": "SLT.LeastSquares.DudleyApplication",
+   "original_sha256": "969a32ee49c491f168ceaa88ee5804cd70ab70a522f5f060d9f769304eb5d737",
+   "path": "SLT/LeastSquares/DudleyApplication.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/L1Regression/L1CoveringBound.lean"
+   },
+   "module": "SLT.LeastSquares.L1Regression.L1CoveringBound",
+   "original_sha256": "61add68ab332186be2426139a63cda21b23cd3513e29153c76f38e55c4704a7e",
+   "path": "SLT/LeastSquares/L1Regression/L1CoveringBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/L1Regression/L1DesignMatrix.lean"
+   },
+   "module": "SLT.LeastSquares.L1Regression.L1DesignMatrix",
+   "original_sha256": "7d2030ed93e40cbaa5523d0f4819f31e67961082df157877f5ebb75db86843e0",
+   "path": "SLT/LeastSquares/L1Regression/L1DesignMatrix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/L1Regression/L1LocalizedBall.lean"
+   },
+   "module": "SLT.LeastSquares.L1Regression.L1LocalizedBall",
+   "original_sha256": "a3644dc44726a2861383d86929849292a5ee01508176f3009b5c71cab7c320cd",
+   "path": "SLT/LeastSquares/L1Regression/L1LocalizedBall.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/L1Regression/L1PredictorClass.lean"
+   },
+   "module": "SLT.LeastSquares.L1Regression.L1PredictorClass",
+   "original_sha256": "8580f438775cd79489e6ac73ac643d095beefd9df87c2498a7f6b42085bf4867",
+   "path": "SLT/LeastSquares/L1Regression/L1PredictorClass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/L1Regression/L1ShiftedClass.lean"
+   },
+   "module": "SLT.LeastSquares.L1Regression.L1ShiftedClass",
+   "original_sha256": "f77d253badca3cbf99e7d1a97ca6df72489aa16cacf72981a1a3a8e0a38beb6f",
+   "path": "SLT/LeastSquares/L1Regression/L1ShiftedClass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/LinearRegression/DesignMatrix.lean"
+   },
+   "module": "SLT.LeastSquares.LinearRegression.DesignMatrix",
+   "original_sha256": "264c23aefc25f2cff8c565c4a330c18a73da83af02c866ab058b94a12f6698fb",
+   "path": "SLT/LeastSquares/LinearRegression/DesignMatrix.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/LinearRegression/EmpiricalProcess.lean"
+   },
+   "module": "SLT.LeastSquares.LinearRegression.EmpiricalProcess",
+   "original_sha256": "6dc220addcfb93b0c2a8fcc5ed47136a89fdb23ab4ff22405430537ad264b60f",
+   "path": "SLT/LeastSquares/LinearRegression/EmpiricalProcess.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/LinearRegression/EntropyIntegral.lean"
+   },
+   "module": "SLT.LeastSquares.LinearRegression.EntropyIntegral",
+   "original_sha256": "fa4e06f4c094c3fdde419bc8ee224286e59936c450ee8b69143e699d6cc8ffb9",
+   "path": "SLT/LeastSquares/LinearRegression/EntropyIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/LinearRegression/EuclideanReduction.lean"
+   },
+   "module": "SLT.LeastSquares.LinearRegression.EuclideanReduction",
+   "original_sha256": "0e52a2ef7a66bb3bcdf744e521515c1ecd4336a0a54add26ee38189eed2ad786",
+   "path": "SLT/LeastSquares/LinearRegression/EuclideanReduction.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/LinearRegression/GaussianComplexity.lean"
+   },
+   "module": "SLT.LeastSquares.LinearRegression.GaussianComplexity",
+   "original_sha256": "81e62ab40f78040d4590346363d1d91c93edbc515b5d4c9aaf1eb08585a5f2de",
+   "path": "SLT/LeastSquares/LinearRegression/GaussianComplexity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/LinearRegression/IntegralBounds.lean"
+   },
+   "module": "SLT.LeastSquares.LinearRegression.IntegralBounds",
+   "original_sha256": "e601813df77377b8b587d7efce9f0181f8eb49dbbb0ab1dd61684afaf8895c5c",
+   "path": "SLT/LeastSquares/LinearRegression/IntegralBounds.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/LinearRegression/LinearPredictorClass.lean"
+   },
+   "module": "SLT.LeastSquares.LinearRegression.LinearPredictorClass",
+   "original_sha256": "4e21cd57f6334731719a1f546cd07a0e5f8de872e87c871fe82e7d7e8a9a97c5",
+   "path": "SLT/LeastSquares/LinearRegression/LinearPredictorClass.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/LinearRegression/LocalizedBall.lean"
+   },
+   "module": "SLT.LeastSquares.LinearRegression.LocalizedBall",
+   "original_sha256": "bb36b72bdba67d4eeb127b46fb76fd92ac6c0d38742dfb5046fcf60bb0edefa0",
+   "path": "SLT/LeastSquares/LinearRegression/LocalizedBall.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/LinearRegression/MinimaxRate.lean"
+   },
+   "module": "SLT.LeastSquares.LinearRegression.MinimaxRate",
+   "original_sha256": "95615058db95b4ac0fa0b69e58fb92e554b9a1f0912cf10654098e5ce9b413e9",
+   "path": "SLT/LeastSquares/LinearRegression/MinimaxRate.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/Localization.lean"
+   },
+   "module": "SLT.LeastSquares.Localization",
+   "original_sha256": "f952e9391ff21fb2ea2c4852051448d0d86a94fbe161d45c1c58b631fc4a0c4a",
+   "path": "SLT/LeastSquares/Localization.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/MasterErrorBound.lean"
+   },
+   "module": "SLT.LeastSquares.MasterErrorBound",
+   "original_sha256": "249d5dd35263fda8743a678af64657e3785bdabed0c0597992ab405b98e97e1d",
+   "path": "SLT/LeastSquares/MasterErrorBound.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LeastSquares/SubGaussianity.lean"
+   },
+   "module": "SLT.LeastSquares.SubGaussianity",
+   "original_sha256": "e4ff75caadd04d65721e647f4deda8cc6931ffb137154c93991a31d2b6ff8a4b",
+   "path": "SLT/LeastSquares/SubGaussianity.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/LipschitzProperty.lean"
+   },
+   "module": "SLT.LipschitzProperty",
+   "original_sha256": "731cb143f54ccfcdb01fcc725657220bfe3caefb7fbaa255230a17b3af2fff22",
+   "path": "SLT/LipschitzProperty.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/MatrixInfra/Basic.lean"
+   },
+   "module": "SLT.MatrixInfra.Basic",
+   "original_sha256": "c31f4ab9074f768b5d44b8dcc2ddf6b550ca5bc767174f4c7ac9bf649f5afd22",
+   "path": "SLT/MatrixInfra/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/MatrixInfra/CourantFischer.lean"
+   },
+   "module": "SLT.MatrixInfra.CourantFischer",
+   "original_sha256": "32d4f99e48b8bc5a587490c8024573548a32ed464f6ca6ee9ebc6b7ffd4e98e6",
+   "path": "SLT/MatrixInfra/CourantFischer.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/MatrixInfra/EYM.lean"
+   },
+   "module": "SLT.MatrixInfra.EYM",
+   "original_sha256": "51e371e050c40938c9d03fc44f5c7955a0b9441ac4e09cd754ca02fd7f0024c5",
+   "path": "SLT/MatrixInfra/EYM.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/MatrixInfra/MatCalc.lean"
+   },
+   "module": "SLT.MatrixInfra.MatCalc",
+   "original_sha256": "9940689875f037e96fdf1e6a237f719aba34e35f8d2a4693611dc760e6dab638",
+   "path": "SLT/MatrixInfra/MatCalc.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/MatrixInfra/Perturb.lean"
+   },
+   "module": "SLT.MatrixInfra.Perturb",
+   "original_sha256": "bbb05110d4d61dc5cb6a2242caa4ecdc77fc61112dc3a7a96b29bf5b261fa488",
+   "path": "SLT/MatrixInfra/Perturb.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/MeasureInfrastructure.lean"
+   },
+   "module": "SLT.MeasureInfrastructure",
+   "original_sha256": "d6bf77cd76c91a4bc23b4f43095270415069d41fe467e3f726a0ca4c65c6bdb8",
+   "path": "SLT/MeasureInfrastructure.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/MetricEntropy.lean"
+   },
+   "module": "SLT.MetricEntropy",
+   "original_sha256": "71323ab0c75e711cfe378587e7d6738258b0f86cf4df3dfa81cb9a5b8ceebb0d",
+   "path": "SLT/MetricEntropy.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/RMT/Basic.lean"
+   },
+   "module": "SLT.RMT.Basic",
+   "original_sha256": "675344a461a21c015abd4d140ec1b88993046234af2e91a31473b1b684038962",
+   "path": "SLT/RMT/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/RMT/Lieb.lean"
+   },
+   "module": "SLT.RMT.Lieb",
+   "original_sha256": "f814bd189d87ce02e50456cc34a35e975b8fd2c10614c6f72cce2d427b626f2f",
+   "path": "SLT/RMT/Lieb.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/RMT/MatBern.lean"
+   },
+   "module": "SLT.RMT.MatBern",
+   "original_sha256": "b6543e135f295b0b7076dfdcb19269ae689261ad795e8db3558a84f3021ce9c0",
+   "path": "SLT/RMT/MatBern.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/SeparableSpaceSup.lean"
+   },
+   "module": "SLT.SeparableSpaceSup",
+   "original_sha256": "5da74501f18bbdd0d2cd9df728b613fd4b6c9f5d8ad7410e755273eb05f3140f",
+   "path": "SLT/SeparableSpaceSup.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/SmallBallProb.lean"
+   },
+   "module": "SLT.SmallBallProb",
+   "original_sha256": "9b7e795d7d1c4807bc2c7c0b300fbf19d2d77dc250c266b080e2414da4bc7248",
+   "path": "SLT/SmallBallProb.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/SubGaussian.lean"
+   },
+   "module": "SLT.SubGaussian",
+   "original_sha256": "a9816eee5dad7f0f11c71564b8770e1b29c5c41756dd72739963df8679ffe4bc",
+   "path": "SLT/SubGaussian.lean"
+  },
+  {
+   "fetch": {
+    "note": "not vendored: Apache-2.0 upstream, redistribution not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/YuanheZ/lean-stat-learning-theory/d0f506f0a695018265dccb33bcb05e2f5ca1c876/SLT/TDudley.lean"
+   },
+   "module": "SLT.TDudley",
+   "original_sha256": "3ba8d439aa3fa0102efac865ae0c5418652dc0c9a17049f5a32bd22abcdb9bab",
+   "path": "SLT/TDudley.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 100352
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm",
+  "no_hint"
+ ],
+ "owner_modules": [
+  "SLT.Chaining",
+  "SLT.ConvergenceL1Subseq",
+  "SLT.CoveringNumber",
+  "SLT.Dudley",
+  "SLT.EfronStein",
+  "SLT.GaussianLSI.BernoulliLSI",
+  "SLT.GaussianLSI.DualEntApp",
+  "SLT.GaussianLSI.DualityEntropy",
+  "SLT.GaussianLSI.Entropy",
+  "SLT.GaussianLSI.OneDimGLSI",
+  "SLT.GaussianLSI.OneDimGLSICompSmo",
+  "SLT.GaussianLSI.SubAddEnt.Basic",
+  "SLT.GaussianLSI.SubAddEnt.Decomposition",
+  "SLT.GaussianLSI.SubAddEnt.Subadditivity",
+  "SLT.GaussianLSI.TensorizedGLSI",
+  "SLT.GaussianLSI.TwoPoint",
+  "SLT.GaussianLipConcen",
+  "SLT.GaussianMeasure",
+  "SLT.GaussianPoincare.EfronSteinApp",
+  "SLT.GaussianPoincare.LevyContinuity",
+  "SLT.GaussianPoincare.Limit",
+  "SLT.GaussianPoincare.RademacherApprox",
+  "SLT.GaussianPoincare.TaylorBound",
+  "SLT.GaussianSobolevDense.Cutoff",
+  "SLT.GaussianSobolevDense.Defs",
+  "SLT.GaussianSobolevDense.Density",
+  "SLT.GaussianSobolevDense.LipschitzMollification",
+  "SLT.GaussianSobolevDense.Mollification",
+  "SLT.HansonWright",
+  "SLT.LeastSquares.BasicInequality",
+  "SLT.LeastSquares.CriticalRadius",
+  "SLT.LeastSquares.Defs",
+  "SLT.LeastSquares.DudleyApplication",
+  "SLT.LeastSquares.L1Regression.L1CoveringBound",
+  "SLT.LeastSquares.L1Regression.L1DesignMatrix",
+  "SLT.LeastSquares.L1Regression.L1LocalizedBall",
+  "SLT.LeastSquares.L1Regression.L1PredictorClass",
+  "SLT.LeastSquares.L1Regression.L1ShiftedClass",
+  "SLT.LeastSquares.LinearRegression.DesignMatrix",
+  "SLT.LeastSquares.LinearRegression.EmpiricalProcess",
+  "SLT.LeastSquares.LinearRegression.EntropyIntegral",
+  "SLT.LeastSquares.LinearRegression.EuclideanReduction",
+  "SLT.LeastSquares.LinearRegression.GaussianComplexity",
+  "SLT.LeastSquares.LinearRegression.IntegralBounds",
+  "SLT.LeastSquares.LinearRegression.LinearPredictorClass",
+  "SLT.LeastSquares.LinearRegression.LocalizedBall",
+  "SLT.LeastSquares.LinearRegression.MinimaxRate",
+  "SLT.LeastSquares.Localization",
+  "SLT.LeastSquares.MasterErrorBound",
+  "SLT.LeastSquares.SubGaussianity",
+  "SLT.LipschitzProperty",
+  "SLT.MatrixInfra.Basic",
+  "SLT.MatrixInfra.CourantFischer",
+  "SLT.MatrixInfra.EYM",
+  "SLT.MatrixInfra.MatCalc",
+  "SLT.MatrixInfra.Perturb",
+  "SLT.MeasureInfrastructure",
+  "SLT.MetricEntropy",
+  "SLT.RMT.Basic",
+  "SLT.RMT.Lieb",
+  "SLT.RMT.MatBern",
+  "SLT.SeparableSpaceSup",
+  "SLT.SmallBallProb",
+  "SLT.SubGaussian",
+  "SLT.TDudley"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "10b3c83382fde368b80a96eae279adf8a1ba353144d81bd2ee707c5a686a921b"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "3c5829af7eda589cef4e402dac99a0a24376b4dac3ae13aa356af1b0cc1dfe88"
+  },
+  "library_name": "SLT",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "81a5d257c8e410db227a6665ed08f64fea08e997",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "Cli",
+    "rev": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+    "url": "https://github.com/leanprover/lean4-cli"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/YuanheZ/lean-stat-learning-theory",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-09-30",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "not run; statement identity = structural kernel-type hash, definitions reachable from target statements are frozen (proof-irrelevant closure hash)",
+  "forbidden_text": [],
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-07-15",
+ "source_license": {
+  "evidence": "https://github.com/YuanheZ/lean-stat-learning-theory has a top-level Apache-2.0 LICENSE at the pinned commit and GitHub's license API reports Apache-2.0 (checked 2026-09-30)",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "SLT.Dudley",
+   "name": "dudley",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.GaussianLipConcen",
+   "name": "GaussianLipConcen.gaussian_lipschitz_concentration",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.HansonWright",
+   "name": "HansonWright.hanson_wright_inequality_hdp",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.LeastSquares.L1Regression.L1CoveringBound",
+   "name": "LeastSquares.l1BallImage_coveringNumber_le",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.LeastSquares.LinearRegression.MinimaxRate",
+   "name": "LeastSquares.linear_minimax_rate_rank",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.LeastSquares.MasterErrorBound",
+   "name": "LeastSquares.master_error_bound",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.MatrixInfra.Basic",
+   "name": "Matrix.eq_sum_singularValue_vecMulVec",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.MatrixInfra.CourantFischer",
+   "name": "LinearMap.IsSymmetric.eigenvalues_eq_courantFischerMaxMin_succ",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.MatrixInfra.CourantFischer",
+   "name": "LinearMap.IsSymmetric.eigenvalues_eq_courantFischerMinMax_sub",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.MatrixInfra.CourantFischer",
+   "name": "LinearMap.singularValues_eq_singularCourantFischerMaxMin_succ",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.MatrixInfra.CourantFischer",
+   "name": "LinearMap.singularValues_eq_singularCourantFischerMinMax_sub",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.MatrixInfra.EYM",
+   "name": "Matrix.eckartYoungMirsky_hdp",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.MatrixInfra.MatCalc",
+   "name": "Matrix.lieb_inequality_hdp_5_4_8",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.MatrixInfra.Perturb",
+   "name": "LinearMap.IsSymmetric.abs_eigenvalues_sub_le_opNorm",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.MatrixInfra.Perturb",
+   "name": "LinearMap.IsSymmetric.davisKahan_eigenvector_angle_hdp",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.MatrixInfra.Perturb",
+   "name": "LinearMap.IsSymmetric.davisKahan_spectralProjection_hdp",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.MatrixInfra.Perturb",
+   "name": "LinearMap.abs_singularValues_sub_le_opNorm",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.RMT.Basic",
+   "name": "RMT.norm_random_matrices_lower_bound_hdp_of_pos",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.RMT.Basic",
+   "name": "RMT.norm_subgaussian_matrices_expectation_hdp_of_pos",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.RMT.Basic",
+   "name": "RMT.norm_subgaussian_matrices_hdp_of_pos",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.RMT.Basic",
+   "name": "RMT.norm_symmetric_subgaussian_matrices_hdp_of_pos",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.RMT.Basic",
+   "name": "RMT.two_sided_subgaussian_matrices_expectation_hdp_of_pos",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.RMT.Basic",
+   "name": "RMT.two_sided_subgaussian_matrices_hdp_of_pos",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.RMT.Lieb",
+   "name": "RMT.lieb_inequality_random_matrices_hdp_5_4_9",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.RMT.MatBern",
+   "name": "RMT.matrix_bernstein_inequality_hdp_all",
+   "statement_sha256": null
+  },
+  {
+   "module": "SLT.TDudley",
+   "name": "truncated_dudley_entropy_bound",
+   "statement_sha256": null
+  }
+ ],
+ "task_id": "slt26",
+ "task_revision": 1,
+ "title": "Statistical learning theory: 26 published endpoints of lean-stat-learning-theory",
+ "toolchain": {
+  "githash": "8c9756b28d64dab099da31a4c09229a9e6a2ef35",
+  "id": "leanprover/lean4:v4.32.0"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "8c9756b28d64dab099da31a4c09229a9e6a2ef35",
+   "role": "toolchain v4.32.0: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

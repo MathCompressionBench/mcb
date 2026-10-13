@@ -1,0 +1,15 @@
+# ABOUTME: Lake project of the mathlib197 task: depends on the pinned Mathlib and rebuilds the 10 editable Mathlib
+# ABOUTME: leaf modules (library LcbenchEditable) from the project copy; every other Mathlib .olean stays pinned.
+name = "benchtask"
+defaultTargets = ["LcbenchEditable"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.32.0"
+
+# the editable Mathlib leaf modules, rebuilt from the project copy with Mathlib's own library options
+[[lean_lib]]
+name = "LcbenchEditable"
+globs = ["Mathlib.Algebra.Colimit.Ring", "Mathlib.Algebra.MonoidAlgebra.ToDirectSum", "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno", "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv", "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes", "Mathlib.CategoryTheory.Preadditive.Mat", "Mathlib.Geometry.Manifold.GroupLieAlgebra", "Mathlib.Geometry.Manifold.Riemannian.Basic", "Mathlib.Probability.BrownianMotion.Basic", "Mathlib.Probability.Process.LocalProperty"]
+leanOptions = { pp.unicode.fun = true, autoImplicit = false, maxSynthPendingDepth = 3, weak.linter.mathlibStandardSet = true, weak.linter.style.header = true, weak.linter.checkInitImports = true, weak.linter.allScriptsDocumented = true, weak.linter.pythonStyle = true, weak.linter.style.longFile = 1500 }

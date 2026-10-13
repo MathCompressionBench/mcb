@@ -1,0 +1,19 @@
+# ABOUTME: Lake package lcbench_tools: organizer Lean tools. `lake build` gives the library and the compiled exes
+# ABOUTME: .lake/build/bin/lcbench-metric (A, dag_nodes_v1) and lcbench-check (kernel replay, validity facts).
+name = "lcbench_tools"
+defaultTargets = ["LcbenchTools", "lcbench-metric", "lcbench-check"]
+
+[[lean_lib]]
+name = "LcbenchTools"
+roots = ["LcbenchTools.Metric", "LcbenchTools.Request", "LcbenchTools.Replay",
+  "LcbenchTools.BudgetReplay", "LcbenchTools.Extract"]
+
+[[lean_exe]]
+name = "lcbench-metric"
+root = "Main"
+supportInterpreter = false
+
+[[lean_exe]]
+name = "lcbench-check"
+root = "Check"
+supportInterpreter = false

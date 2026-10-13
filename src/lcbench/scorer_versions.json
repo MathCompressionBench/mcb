@@ -1,0 +1,13 @@
+{
+ "schema": "lcbench.scorer_versions.v1",
+ "note": "SCORER_VERSION -> sha256 of the scoring code (verify.scorer_sha256: benchkit.py and the organizer Lean tool sources); one row per released scorer, never edited.",
+ "versions": {
+  "1.0.0-rc.10.2": "332e603069acf43730d7f3090882989fe6f08b201ced74a7a94b2551b7f1fa4e"
+ },
+ "changes": {
+  "1.0.0-rc.10.2": [
+   "Removes a recorded-only diagnostic field and the compiled-file copies from bundles: a bundle holds the editable sources and the kernel export at its top level; scoring unchanged (the node count, dag_nodes_v1 and every verdict are the same). Package and task hashes change because the scoring code ships in every package.",
+   "Receipts name the release lcbench-v1."
+  ]
+ }
+}

@@ -1,0 +1,26 @@
+# ABOUTME: Lake project of the lcbench slt tasks: the lean-stat-learning-theory library (all SLT.* modules) on
+# ABOUTME: Mathlib v4.32.0, with the Lean options of the upstream lakefile.lean at d0f506f (autoImplicit off, weak linters).
+name = "SLT"
+defaultTargets = ["SLT"]
+
+[leanOptions]
+pp.unicode.fun = true
+autoImplicit = false
+weak.linter.hashCommand = true
+weak.linter.missingEnd = true
+weak.linter.cdot = true
+weak.linter.dollarSyntax = true
+weak.linter.style.lambdaSyntax = true
+weak.linter.longLine = true
+weak.linter.oldObtain = true
+weak.linter.refine = true
+weak.linter.setOption = true
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.32.0"
+
+[[lean_lib]]
+name = "SLT"
+globs = ["SLT.+"]

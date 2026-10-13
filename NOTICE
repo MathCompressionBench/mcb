@@ -1,0 +1,44 @@
+MathCompressionBench
+Copyright (c) 2026 The MathCompressionBench Authors
+
+The MathCompressionBench tools are released under the MIT License (the file LICENSE of the repository
+https://github.com/MathCompressionBench/mcb).
+
+Third-party material
+====================
+
+1. Task sources (Apache License 2.0)
+
+The task packages of the task set lcbench-v1 (the release assets <task>-warm.tar.gz and <task>-no_hint.tar.gz)
+contain Lean source files from the following repositories, each at the pinned commit below. Each repository is
+licensed under the Apache License, Version 2.0; a copy of the license is in the file LICENSE-Apache-2.0. None of these
+repositories has a NOTICE file at the pinned commit.
+
+| task | upstream repository | pinned commit |
+|---|---|---|
+| ramsey96 | https://github.com/openai/ten-proofs | 94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6 |
+| permanent2 | https://github.com/openai/ten-proofs | 94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6 |
+| compactness5 | https://github.com/openai/ten-proofs | 94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6 |
+| slt26 | https://github.com/YuanheZ/lean-stat-learning-theory | d0f506f0a695018265dccb33bcb05e2f5ca1c876 |
+| slt49 | https://github.com/YuanheZ/lean-stat-learning-theory | d0f506f0a695018265dccb33bcb05e2f5ca1c876 |
+| mathlib197 | https://github.com/leanprover-community/mathlib4 | 81a5d257c8e410db227a6665ed08f64fea08e997 |
+| mathlib372 | https://github.com/leanprover-community/mathlib4 | 81a5d257c8e410db227a6665ed08f64fea08e997 |
+
+Each task's files are listed, with their sha256, in tasks/<task>/task_source.json of the MathCompressionBench repository (the
+`editable` entries and their `fetch` URLs). The repository itself does not contain these files: `mcb make-task`
+downloads them from the URLs above and checks their sha256.
+
+Changes made to the files:
+
+- The warm packages contain the files unchanged.
+- The no_hint packages replace the proofs of the target theorems with `sorry`; the statements and every other part
+  of the files are unchanged. In mathlib197 and mathlib372, the target proofs that are a bare `rfl` and that later
+  declarations of the same files need as definitional lemmas are kept (25 in mathlib197, 54 in mathlib372); each
+  package's TASK.json lists them under `no_hint.rfl_proofs_kept`.
+
+2. Lean 4 (Apache License 2.0)
+
+lean/LcbenchTools/BudgetReplay.lean (also in every task package, as .benchmark/tools/LcbenchTools/BudgetReplay.lean)
+contains `Lean.Environment.replay` from Lean 4 v4.32.0 (https://github.com/leanprover/lean4, src/Lean/Replay.lean,
+Copyright (c) 2023 Kim Morrison), licensed under the Apache License, Version 2.0, changed so that each declaration is
+checked with a kernel heartbeat limit; the file says what changed.

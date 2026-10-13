@@ -1,0 +1,43 @@
+# metadata.yaml: one per submission, at entries/<entry>/metadata.yaml in the submissions repository.
+# <entry> is a short name you choose: lowercase letters, digits, '.', '_' or '-', for example acme-prover-2026-10-12.
+# Every field below is required except links and logs. A submission missing a required field is not reviewed.
+# Check it with mcb submission validate: from the MathCompressionBench checkout, bin/mcb submission validate
+# <submissions checkout>/entries/<entry>; or in the submissions checkout, python3 scripts/submission_meta.py validate
+# entries/<entry>.
+# Values with ': ' or '#' in them go in double quotes.
+
+# The name of your system, as the leaderboard shows it.
+system: "Acme Prover"
+
+# The model and its version (a model id with its date or release). Several models: name them all.
+model: "example-model-2026-09-01"
+
+# The program that ran the model (agent harness), with its version.
+harness: "example-harness 1.4.2"
+
+# The reasoning effort the model ran with (for example low, medium, high), or none.
+reasoning_effort: high
+
+# open: no time limit; a person may help (say so below). The main track.
+# agent-60 / agent-120: an agent alone, at most 60 / 120 minutes of wall-clock time per run.
+#   Start each run with: mcb start <package> --track agent --budget-seconds 3600   (7200 for agent-120)
+track: open
+
+# true if a person helped in any way beyond starting the runs (open track only).
+human_assisted: false
+
+# The tasks this submission covers, as the submissions repository names them.
+tasks: [toyarith-warm]
+
+# How many attempts you made per task in all, counting the ones you do not submit. Only your best counts, but the
+# number is shown beside your entry. One number for every task, or one per task:
+#   attempts_per_task:
+#     toyarith-warm: 3
+attempts_per_task: 1
+
+# How the organizers reach you (an email address). It is not published.
+contact: "you@example.org"
+
+# Optional: links to an article, code or a write-up, and to your run logs.
+links: []
+logs: null

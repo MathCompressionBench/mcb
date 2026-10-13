@@ -1,0 +1,5 @@
+#!/bin/sh
+# ABOUTME: Repo-local entry point for the MathCompressionBench tools (`mcb`): runs src/lcbench with the python3 on PATH.
+# ABOUTME: Example: bin/mcb start file://$PWD/toyarith-warm.tar.gz --dir work
+here=$(cd "$(dirname "$0")/.." && pwd -P)
+PYTHONPATH="$here/src${PYTHONPATH:+:$PYTHONPATH}" exec python3 -m lcbench "$@"

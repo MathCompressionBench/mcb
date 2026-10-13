@@ -1,0 +1,21 @@
+# ABOUTME: Package metadata for MathCompressionBench: zero runtime dependencies (stdlib only) and the `mcb` console script.
+# ABOUTME: The Lean tools in lean/ are resolved from a repo checkout (src/lcbench/paths.py); use bin/mcb there.
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mathcompressionbench"
+version = "0.1.0"
+description = "Lean proof-compression benchmark: task packages, local check, submission bundles, verifier, receipt log"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+mcb = "lcbench.__main__:main"
+lcbench = "lcbench.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

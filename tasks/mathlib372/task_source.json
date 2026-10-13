@@ -1,0 +1,2215 @@
+{
+ "background": {
+  "explicit_modules": {
+   "content_file": "background_modules.txt",
+   "count": 3718,
+   "sha256": "84b374cc6a6c305d217fe3bcde48cf946146c63a7d2ac0ddc6cd5238104ae5ec"
+  },
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module (the core), or is in the explicit list (the non-core import closure of the editable modules)"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 186421329
+ },
+ "commit": "81a5d257c8e410db227a6665ed08f64fea08e997",
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/Algebra/Category/ModuleCat/Presheaf/ColimitFunctor.lean"
+   },
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "original_sha256": "0843769c1bcd4020df0ce8626ba3572b1d2122e239dd869656ce8ad074134f6f",
+   "path": "Mathlib/Algebra/Category/ModuleCat/Presheaf/ColimitFunctor.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/Algebra/Colimit/Ring.lean"
+   },
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "original_sha256": "bb422f65290e1f77f0ff174c9074a27d87a032108ae01af7ed90e9fe59e7079f",
+   "path": "Mathlib/Algebra/Colimit/Ring.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/Algebra/Homology/Augment.lean"
+   },
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "original_sha256": "931b6483394c08f0df814b4388264fab3c62b430b705df08fba3f94b02a6a7db",
+   "path": "Mathlib/Algebra/Homology/Augment.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/Algebra/MonoidAlgebra/ToDirectSum.lean"
+   },
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "original_sha256": "881afc4a5020b125fbae5458aa7e68bf127c67888e5542a5a8a0def5d9b57ab6",
+   "path": "Mathlib/Algebra/MonoidAlgebra/ToDirectSum.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/Analysis/Calculus/FDeriv/Norm.lean"
+   },
+   "module": "Mathlib.Analysis.Calculus.FDeriv.Norm",
+   "original_sha256": "4bfc315c4c02b1e2a1df3feaf2277a4e9ffd39e425a7b00ef7ecb31c74211883",
+   "path": "Mathlib/Analysis/Calculus/FDeriv/Norm.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/Analysis/Calculus/IteratedDeriv/FaaDiBruno.lean"
+   },
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "original_sha256": "2be57a970cda0aba46782b4ed07a46198354911da7a16bbd3ef6858f4ca06eb4",
+   "path": "Mathlib/Analysis/Calculus/IteratedDeriv/FaaDiBruno.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/Analysis/Calculus/LocalExtr/LineDeriv.lean"
+   },
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "original_sha256": "63c1a75936cb9858db813aa91b0003b3421458d7234124d7f151b46270128706",
+   "path": "Mathlib/Analysis/Calculus/LocalExtr/LineDeriv.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/Analysis/Calculus/Rademacher.lean"
+   },
+   "module": "Mathlib.Analysis.Calculus.Rademacher",
+   "original_sha256": "5fc79ee3c9c5a0fc17fed09487b6b54dcad3b7d27e4e92880e18300a3f47a7cf",
+   "path": "Mathlib/Analysis/Calculus/Rademacher.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/CategoryTheory/Abelian/Injective/Ext.lean"
+   },
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "original_sha256": "c86a72b7cf454550c67234dce2ed8bba6566a0446fdeaf30020f9bcf9cfed003",
+   "path": "Mathlib/CategoryTheory/Abelian/Injective/Ext.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/CategoryTheory/Limits/Shapes/FunctorToTypes.lean"
+   },
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "original_sha256": "a8213893d9c236d1a671ab5169947332278178a687596e25984d183adf271e48",
+   "path": "Mathlib/CategoryTheory/Limits/Shapes/FunctorToTypes.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/CategoryTheory/Preadditive/Mat.lean"
+   },
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "original_sha256": "6f52b9f36eb40236ca2f40a6f4ca88443e647a298204cca5244e6f0849b21eea",
+   "path": "Mathlib/CategoryTheory/Preadditive/Mat.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/CategoryTheory/Presentable/OrthogonalReflection.lean"
+   },
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "original_sha256": "f43f20b9ce00ce089e6a539edbfd4564f6ceb6ee57c06e50a1aa6a1ddd738246",
+   "path": "Mathlib/CategoryTheory/Presentable/OrthogonalReflection.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/Geometry/Manifold/Bordism.lean"
+   },
+   "module": "Mathlib.Geometry.Manifold.Bordism",
+   "original_sha256": "2a7a6eeebe08fbda41a79df6639e981a244398a8a3eb8a7b8add0598ff628684",
+   "path": "Mathlib/Geometry/Manifold/Bordism.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/Geometry/Manifold/GroupLieAlgebra.lean"
+   },
+   "module": "Mathlib.Geometry.Manifold.GroupLieAlgebra",
+   "original_sha256": "65c6ba19c48d3d71fbcf6d3376aed7d4570e0a9cd9ea32a0f385ddafdc3a01b7",
+   "path": "Mathlib/Geometry/Manifold/GroupLieAlgebra.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/Geometry/Manifold/Riemannian/Basic.lean"
+   },
+   "module": "Mathlib.Geometry.Manifold.Riemannian.Basic",
+   "original_sha256": "222577189dacb6d329c4f2057359b82aac2e10ea0598fce7151e0b84f7ce1dd3",
+   "path": "Mathlib/Geometry/Manifold/Riemannian/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/Geometry/Manifold/VectorBundle/CovariantDerivative/Torsion.lean"
+   },
+   "module": "Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion",
+   "original_sha256": "0dc7954b82d2b19f83a16049573fb2b78fac25593d017e90c8592c61a4516a75",
+   "path": "Mathlib/Geometry/Manifold/VectorBundle/CovariantDerivative/Torsion.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/MeasureTheory/Function/UnifTight.lean"
+   },
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "original_sha256": "3066138f64104c1c53f97e39bc736832074e353238173e4313b01e90b7f43fa6",
+   "path": "Mathlib/MeasureTheory/Function/UnifTight.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/MeasureTheory/Integral/TorusIntegral.lean"
+   },
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "original_sha256": "9c7f8689c925d2a0c9113df521fe6deb69efc0ae2d095dcce4502b179438f759",
+   "path": "Mathlib/MeasureTheory/Integral/TorusIntegral.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/Probability/BrownianMotion/Basic.lean"
+   },
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "original_sha256": "48e76914e12791b3eb841b9933ad6f80e72c4515bc3faaf828abf1cb41030052",
+   "path": "Mathlib/Probability/BrownianMotion/Basic.lean"
+  },
+  {
+   "fetch": {
+    "note": "Mathlib source at the pinned commit; fetched by URL@commit + sha256 like every non-vendored original (make-task downloads it once into fetched/)",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/81a5d257c8e410db227a6665ed08f64fea08e997/Mathlib/Probability/Process/LocalProperty.lean"
+   },
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "original_sha256": "49f3048c2a01057cb569cf3bbab6f71aaf25ecd6314308a3c61b8071308880a4",
+   "path": "Mathlib/Probability/Process/LocalProperty.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 30000
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm",
+  "no_hint"
+ ],
+ "no_hint": {
+  "keep_rfl_proofs": true,
+  "reason": "later non-target declarations of the same Mathlib files use targets proved by `rfl` as rfl-lemmas (`dsimp [id_def]` in Preadditive/Mat.lean); erasing them breaks the build, and a bare `rfl` reveals nothing beyond the statement"
+ },
+ "owner_modules": [
+  "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+  "Mathlib.Algebra.Colimit.Ring",
+  "Mathlib.Algebra.Homology.Augment",
+  "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+  "Mathlib.Analysis.Calculus.FDeriv.Norm",
+  "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+  "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+  "Mathlib.Analysis.Calculus.Rademacher",
+  "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+  "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+  "Mathlib.CategoryTheory.Preadditive.Mat",
+  "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+  "Mathlib.Geometry.Manifold.Bordism",
+  "Mathlib.Geometry.Manifold.GroupLieAlgebra",
+  "Mathlib.Geometry.Manifold.Riemannian.Basic",
+  "Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion",
+  "Mathlib.MeasureTheory.Function.UnifTight",
+  "Mathlib.MeasureTheory.Integral.TorusIntegral",
+  "Mathlib.Probability.BrownianMotion.Basic",
+  "Mathlib.Probability.Process.LocalProperty"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "0b7b8ea017b340b49c3cf120f1e27ff156c19c1f18715f186fca27e2c77b84f9"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "0e4a10ad1c73c9c6925d2f5ecd4750104d6f1dae85a20d4c90a566b40e6959ea"
+  },
+  "library_name": "LcbenchEditable",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "81a5d257c8e410db227a6665ed08f64fea08e997",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "Cli",
+    "rev": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+    "url": "https://github.com/leanprover/lean4-cli"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/leanprover-community/mathlib4",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-09-30",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "not run; statement identity = structural kernel-type hash, definitions reachable from target statements are frozen (proof-irrelevant closure hash)",
+  "forbidden_text": [],
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-07-13",
+ "source_license": {
+  "evidence": "leanprover-community/mathlib4 has a top-level Apache-2.0 LICENSE at the pinned commit (checked 2026-09-30)",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.comp_map",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.homEquiv'_app_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.homEquiv'_symm_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.homEquiv_app_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.homEquiv_naturality_left",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.homEquiv_naturality_left_symm",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.homEquiv_naturality_right",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.homEquiv_symm_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.jointly_surjective₂",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.jointly_surjective₃",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.jointly_surjective₃'",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.map_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.map_id",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.map_smul_homEquiv'_iff",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.smul_eq",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.ιM_jointly_surjective",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.ιM_jointly_surjective₂",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.ιM_jointly_surjective₃",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.ModuleColimit.ιR_jointly_surjective",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.colimitAdjunction_homEquiv",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Category.ModuleCat.Presheaf.ColimitFunctor",
+   "name": "PresheafOfModules.colimitAdjunction_homEquiv_symm_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Field.DirectLimit.exists_inv",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Field.DirectLimit.inv_mul_cancel",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Field.DirectLimit.mul_inv_cancel",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.Polynomial.exists_of",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.congr_apply_of",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.congr_symm_apply_of",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.exists_of",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.hom_ext",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.induction_on",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.lift_comp_of",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.lift_injective",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.lift_of",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.lift_of'",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.map_apply_of",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.map_comp",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.map_id",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.of.zero_exact",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.of_f",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.of_injective",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.quotientMk_of",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.ringEquiv_of",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Colimit.Ring",
+   "name": "Ring.DirectLimit.ringEquiv_symm_mk",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "ChainComplex.augmentTruncate_hom_f_succ",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "ChainComplex.augmentTruncate_hom_f_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "ChainComplex.augmentTruncate_inv_f_succ",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "ChainComplex.augmentTruncate_inv_f_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "ChainComplex.augment_X_succ",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "ChainComplex.augment_X_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "ChainComplex.augment_d_one_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "ChainComplex.augment_d_succ_succ",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "ChainComplex.chainComplex_d_succ_succ_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "ChainComplex.truncateAugment_hom_f",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "ChainComplex.truncateAugment_inv_f",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "CochainComplex.augmentTruncate_hom_f_succ",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "CochainComplex.augmentTruncate_hom_f_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "CochainComplex.augmentTruncate_inv_f_succ",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "CochainComplex.augmentTruncate_inv_f_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "CochainComplex.augment_X_succ",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "CochainComplex.augment_X_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "CochainComplex.augment_d_succ_succ",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "CochainComplex.augment_d_zero_one",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "CochainComplex.cochainComplex_d_succ_succ_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "CochainComplex.truncateAugment_hom_f",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.Homology.Augment",
+   "name": "CochainComplex.truncateAugment_inv_f",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "AddMonoidAlgebra.toDirectSum_add",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "AddMonoidAlgebra.toDirectSum_intCast",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "AddMonoidAlgebra.toDirectSum_mul",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "AddMonoidAlgebra.toDirectSum_natCast",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "AddMonoidAlgebra.toDirectSum_neg",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "AddMonoidAlgebra.toDirectSum_ofNat",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "AddMonoidAlgebra.toDirectSum_one",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "AddMonoidAlgebra.toDirectSum_pow",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "AddMonoidAlgebra.toDirectSum_single",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "AddMonoidAlgebra.toDirectSum_sub",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "AddMonoidAlgebra.toDirectSum_toAddMonoidAlgebra",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "AddMonoidAlgebra.toDirectSum_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "DirectSum.toAddMonoidAlgebra_add",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "DirectSum.toAddMonoidAlgebra_intCast",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "DirectSum.toAddMonoidAlgebra_mul",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "DirectSum.toAddMonoidAlgebra_natCast",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "DirectSum.toAddMonoidAlgebra_neg",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "DirectSum.toAddMonoidAlgebra_of",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "DirectSum.toAddMonoidAlgebra_ofNat",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "DirectSum.toAddMonoidAlgebra_one",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "DirectSum.toAddMonoidAlgebra_pow",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "DirectSum.toAddMonoidAlgebra_sub",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "DirectSum.toAddMonoidAlgebra_toDirectSum",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Algebra.MonoidAlgebra.ToDirectSum",
+   "name": "DirectSum.toAddMonoidAlgebra_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.FDeriv.Norm",
+   "name": "ContDiffAt.contDiffAt_norm_of_smul",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.FDeriv.Norm",
+   "name": "ContDiffAt.contDiffAt_norm_smul",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.FDeriv.Norm",
+   "name": "DifferentiableAt.differentiableAt_norm_of_smul",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.FDeriv.Norm",
+   "name": "DifferentiableAt.fderiv_norm_self",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.FDeriv.Norm",
+   "name": "HasFDerivAt.hasFDerivAt_norm_smul",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.FDeriv.Norm",
+   "name": "HasFDerivAt.hasFDerivAt_norm_smul_neg",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.FDeriv.Norm",
+   "name": "HasFDerivAt.hasFDerivAt_norm_smul_pos",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.FDeriv.Norm",
+   "name": "HasStrictFDerivAt.hasStrictDerivAt_norm_smul_neg",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.FDeriv.Norm",
+   "name": "HasStrictFDerivAt.hasStrictDerivAt_norm_smul_pos",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.FDeriv.Norm",
+   "name": "HasStrictFDerivAt.hasStrictFDerivAt_norm_smul",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.FDeriv.Norm",
+   "name": "contDiffAt_norm_smul_iff",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.FDeriv.Norm",
+   "name": "differentiableAt_norm_smul",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.FDeriv.Norm",
+   "name": "fderiv_norm_smul",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.FDeriv.Norm",
+   "name": "fderiv_norm_smul_neg",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.FDeriv.Norm",
+   "name": "fderiv_norm_smul_pos",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.FDeriv.Norm",
+   "name": "norm_fderiv_norm",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.FDeriv.Norm",
+   "name": "not_differentiableAt_norm_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "name": "iteratedDerivWithin_comp_eq_sum_orderedFinpartition",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "name": "iteratedDerivWithin_comp_three",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "name": "iteratedDerivWithin_comp_two",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "name": "iteratedDerivWithin_scomp_eq_sum_orderedFinpartition",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "name": "iteratedDerivWithin_scomp_three",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "name": "iteratedDerivWithin_scomp_two",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "name": "iteratedDerivWithin_vcomp_eq_sum_orderedFinpartition",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "name": "iteratedDerivWithin_vcomp_three",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "name": "iteratedDerivWithin_vcomp_two",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "name": "iteratedDeriv_comp_eq_sum_orderedFinpartition",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "name": "iteratedDeriv_comp_three",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "name": "iteratedDeriv_comp_two",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "name": "iteratedDeriv_scomp_eq_sum_orderedFinpartition",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "name": "iteratedDeriv_scomp_three",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "name": "iteratedDeriv_scomp_two",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "name": "iteratedDeriv_vcomp_eq_sum_orderedFinpartition",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "name": "iteratedDeriv_vcomp_three",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.IteratedDeriv.FaaDiBruno",
+   "name": "iteratedDeriv_vcomp_two",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsExtrFilter.hasLineDerivAt_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsExtrFilter.lineDeriv_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsExtrOn.hasLineDerivAt_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsExtrOn.hasLineDerivWithinAt_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsExtrOn.lineDerivWithin_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsExtrOn.lineDeriv_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsLocalExtr.hasLineDerivAt_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsLocalExtr.lineDeriv_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsLocalMax.hasLineDerivAt_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsLocalMax.lineDeriv_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsLocalMin.hasLineDerivAt_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsLocalMin.lineDeriv_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsMaxOn.hasLineDerivAt_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsMaxOn.hasLineDerivWithinAt_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsMaxOn.lineDerivWithin_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsMaxOn.lineDeriv_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsMinOn.hasLineDerivAt_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsMinOn.hasLineDerivWithinAt_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsMinOn.lineDerivWithin_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.LocalExtr.LineDeriv",
+   "name": "IsMinOn.lineDeriv_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.Rademacher",
+   "name": "LipschitzOnWith.ae_differentiableWithinAt",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.Rademacher",
+   "name": "LipschitzOnWith.ae_differentiableWithinAt_of_mem",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.Rademacher",
+   "name": "LipschitzOnWith.ae_differentiableWithinAt_of_mem_of_real",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.Rademacher",
+   "name": "LipschitzOnWith.ae_differentiableWithinAt_of_mem_pi",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.Rademacher",
+   "name": "LipschitzWith.ae_differentiableAt",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.Rademacher",
+   "name": "LipschitzWith.ae_differentiableAt_of_real",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.Rademacher",
+   "name": "LipschitzWith.ae_exists_fderiv_of_countable",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.Rademacher",
+   "name": "LipschitzWith.ae_lineDeriv_sum_eq",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.Rademacher",
+   "name": "LipschitzWith.ae_lineDifferentiableAt",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.Rademacher",
+   "name": "LipschitzWith.hasFDerivAt_of_hasLineDerivAt_of_closure",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.Rademacher",
+   "name": "LipschitzWith.integral_inv_smul_sub_mul_tendsto_integral_lineDeriv_mul",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.Rademacher",
+   "name": "LipschitzWith.integral_inv_smul_sub_mul_tendsto_integral_lineDeriv_mul'",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.Rademacher",
+   "name": "LipschitzWith.integral_lineDeriv_mul_eq",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.Rademacher",
+   "name": "LipschitzWith.locallyIntegrable_lineDeriv",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.Rademacher",
+   "name": "LipschitzWith.memLp_lineDeriv",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.Rademacher",
+   "name": "ae_differentiableAt_norm",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Analysis.Calculus.Rademacher",
+   "name": "dense_differentiableAt_norm",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.add_extMk",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.extEquivCohomologyClass_add",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.extEquivCohomologyClass_extMk",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.extEquivCohomologyClass_neg",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.extEquivCohomologyClass_sub",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.extEquivCohomologyClass_symm_add",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.extEquivCohomologyClass_symm_mk_hom",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.extEquivCohomologyClass_symm_neg",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.extEquivCohomologyClass_symm_sub",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.extEquivCohomologyClass_symm_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.extEquivCohomologyClass_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.extMk_comp_mk₀",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.extMk_eq_zero_iff",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.extMk_hom",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.extMk_surjective",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.extMk_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.mk₀_comp_extMk",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.neg_extMk",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Abelian.Injective.Ext",
+   "name": "CategoryTheory.InjectiveResolution.sub_extMk",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.binaryProductIso_hom_comp_fst",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.binaryProductIso_hom_comp_snd",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.binaryProductIso_inv_comp_fst",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.binaryProductIso_inv_comp_fst_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.binaryProductIso_inv_comp_snd",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.binaryProductIso_inv_comp_snd_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.coprod.desc_inl",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.coprod.desc_inr",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.inl_comp_binaryCoproductIso_hom",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.inl_comp_binaryCoproductIso_hom_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.inl_comp_binaryCoproductIso_inv",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.inl_comp_binaryCoproductIso_inv_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.inr_comp_binaryCoproductIso_hom",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.inr_comp_binaryCoproductIso_hom_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.inr_comp_binaryCoproductIso_inv",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.inr_comp_binaryCoproductIso_inv_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.prod.lift_fst",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.prod.lift_snd",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.prodMk_fst",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.prodMk_snd",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.prod_ext",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes",
+   "name": "CategoryTheory.FunctorToTypes.prod_ext'",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat.add_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat.comp_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat.comp_def",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat.hom_ext",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat.id_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat.id_apply_of_ne",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat.id_apply_self",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat.id_def",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat_.add_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat_.additiveObjIsoBiproduct_hom_π",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat_.additiveObjIsoBiproduct_naturality",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat_.additiveObjIsoBiproduct_naturality'",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat_.comp_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat_.comp_def",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat_.equivalenceSelfOfHasFiniteBiproducts_functor",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat_.equivalenceSelfOfHasFiniteBiproducts_inverse",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat_.hom_ext",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat_.id_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat_.id_apply_of_ne",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat_.id_apply_self",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat_.id_def",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Preadditive.Mat",
+   "name": "CategoryTheory.Mat_.ι_additiveObjIsoBiproduct_inv",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.MorphismProperty.isCardinalAccessible_ι_isLocal",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.MorphismProperty.isClosedUnderColimitsOfShape_isLocal",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.MorphismProperty.isLocallyPresentable_isLocal",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.MorphismProperty.isRightAdjoint_ι_isLocal",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.OrthogonalReflection.D₁.hasCoproductsOfShape",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.OrthogonalReflection.D₁.ιLeft_comp_l",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.OrthogonalReflection.D₁.ιLeft_comp_t",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.OrthogonalReflection.D₁.ι_comp_t",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.OrthogonalReflection.D₂.condition",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.OrthogonalReflection.D₂.hasColimitsOfShape",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.OrthogonalReflection.isIso_toSucc_iff",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.OrthogonalReflection.isLocal_isLocal_reflection",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.OrthogonalReflection.isLocal_isLocal_toSucc",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.OrthogonalReflection.isLocal_reflectionObj",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.OrthogonalReflection.isRightAdjoint_ι",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.OrthogonalReflection.iteration_map_succ",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.OrthogonalReflection.iteration_map_succ_injectivity",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.OrthogonalReflection.iteration_map_succ_surjectivity",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.OrthogonalReflection.toSucc_injectivity",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.CategoryTheory.Presentable.OrthogonalReflection",
+   "name": "CategoryTheory.OrthogonalReflection.toSucc_surjectivity",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Bordism",
+   "name": "SingularManifold.comap_M",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Bordism",
+   "name": "SingularManifold.comap_f",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Bordism",
+   "name": "SingularManifold.empty_M",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Bordism",
+   "name": "SingularManifold.map_M",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Bordism",
+   "name": "SingularManifold.map_comp",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Bordism",
+   "name": "SingularManifold.map_f",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Bordism",
+   "name": "SingularManifold.sum_M",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Bordism",
+   "name": "SingularManifold.sum_f",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.GroupLieAlgebra",
+   "name": "GroupLieAlgebra.bracket_def",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.GroupLieAlgebra",
+   "name": "addInvariantVectorField_smul",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.GroupLieAlgebra",
+   "name": "contMDiffAt_mulInvariantVectorField",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.GroupLieAlgebra",
+   "name": "contMDiff_mulInvariantVectorField",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.GroupLieAlgebra",
+   "name": "inverse_mfderiv_mul_left",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.GroupLieAlgebra",
+   "name": "mdifferentiableAt_mulInvariantVectorField",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.GroupLieAlgebra",
+   "name": "mdifferentiable_mulInvariantVectorField",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.GroupLieAlgebra",
+   "name": "mpullback_mulInvariantVectorField",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.GroupLieAlgebra",
+   "name": "mulInvariantVectorField_add",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.GroupLieAlgebra",
+   "name": "mulInvariantVectorField_eq_mpullback",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.GroupLieAlgebra",
+   "name": "mulInvariantVectorField_smul",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.GroupLieAlgebra",
+   "name": "mulInvariantVector_mlieBracket",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Riemannian.Basic",
+   "name": "enorm_tangentSpace_vectorSpace",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Riemannian.Basic",
+   "name": "eventually_enorm_mfderivWithin_symm_extChartAt_lt",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Riemannian.Basic",
+   "name": "eventually_enorm_mfderiv_extChartAt_lt",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Riemannian.Basic",
+   "name": "eventually_norm_mfderivWithin_symm_extChartAt_comp_lt",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Riemannian.Basic",
+   "name": "eventually_norm_mfderivWithin_symm_extChartAt_lt",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Riemannian.Basic",
+   "name": "eventually_norm_mfderiv_extChartAt_lt",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Riemannian.Basic",
+   "name": "eventually_riemannianEDist_le_edist_extChartAt",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Riemannian.Basic",
+   "name": "eventually_riemannianEDist_lt",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Riemannian.Basic",
+   "name": "lintegral_fderiv_lineMap_eq_edist",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Riemannian.Basic",
+   "name": "nnnorm_tangentSpace_vectorSpace",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Riemannian.Basic",
+   "name": "norm_tangentSpace_vectorSpace",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Riemannian.Basic",
+   "name": "setOf_riemannianEDist_lt_subset_nhds",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.Riemannian.Basic",
+   "name": "setOf_riemannianEDist_lt_subset_nhds'",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion",
+   "name": "CovariantDerivative.torsion_antisymm",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion",
+   "name": "CovariantDerivative.torsion_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion",
+   "name": "CovariantDerivative.torsion_apply_eq_extend",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion",
+   "name": "CovariantDerivative.torsion_eq_zero_iff",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion",
+   "name": "CovariantDerivative.torsion_self",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion",
+   "name": "IsCovariantDerivativeOn.torsion_antisymm",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion",
+   "name": "IsCovariantDerivativeOn.torsion_apply",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion",
+   "name": "IsCovariantDerivativeOn.torsion_apply_eq_extend",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion",
+   "name": "IsCovariantDerivativeOn.torsion_self",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion",
+   "name": "_private.Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion.0.IsCovariantDerivativeOn.torsionAux_tensorial₁",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion",
+   "name": "_private.Mathlib.Geometry.Manifold.VectorBundle.CovariantDerivative.Torsion.0.IsCovariantDerivativeOn.torsionAux_tensorial₂",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "MeasureTheory.UnifTight.add",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "MeasureTheory.UnifTight.aeeq",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "MeasureTheory.UnifTight.eventually_cofinite_indicator",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "MeasureTheory.UnifTight.exists_measurableSet_indicator",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "MeasureTheory.UnifTight.neg",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "MeasureTheory.UnifTight.sub",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "MeasureTheory.tendstoInMeasure_iff_tendsto_Lp",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "MeasureTheory.tendsto_Lp_of_tendstoInMeasure",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "MeasureTheory.tendsto_Lp_of_tendsto_ae",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "MeasureTheory.unifTight_congr_ae",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "MeasureTheory.unifTight_const",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "MeasureTheory.unifTight_finite",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "MeasureTheory.unifTight_iff_ennreal",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "MeasureTheory.unifTight_iff_real",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "MeasureTheory.unifTight_of_subsingleton",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "_private.Mathlib.MeasureTheory.Function.UnifTight.0.MeasureTheory.ae_tendsto_ae_congr",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "_private.Mathlib.MeasureTheory.Function.UnifTight.0.MeasureTheory.tendsto_Lp_of_tendsto_ae_of_meas",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "_private.Mathlib.MeasureTheory.Function.UnifTight.0.MeasureTheory.unifTight_fin",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "_private.Mathlib.MeasureTheory.Function.UnifTight.0.MeasureTheory.unifTight_of_tendsto_Lp",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Function.UnifTight",
+   "name": "_private.Mathlib.MeasureTheory.Function.UnifTight.0.MeasureTheory.unifTight_of_tendsto_Lp_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "TorusIntegrable.add",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "TorusIntegrable.function_integrable",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "TorusIntegrable.neg",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "TorusIntegrable.sub",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "TorusIntegrable.torusIntegrable_const",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "TorusIntegrable.torusIntegrable_zero_radius",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "norm_torusIntegral_le_of_norm_le_const",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "torusIntegral_add",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "torusIntegral_const_mul",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "torusIntegral_dim0",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "torusIntegral_dim1",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "torusIntegral_neg",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "torusIntegral_radius_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "torusIntegral_smul",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "torusIntegral_sub",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "torusIntegral_succ",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "torusIntegral_succAbove",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "torusMap_eq_center_iff",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "torusMap_sub_center",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.MeasureTheory.Integral.TorusIntegral",
+   "name": "torusMap_zero_radius",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.HasIndepIncrements.isPreBrownianReal_of_hasLaw",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsBrownianReal.neg",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsBrownianReal.shift",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsBrownianReal.smul",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsBrownianReal.tendsto_nhds_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsGaussianProcess.isPreBrownianReal_of_covariance",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsPreBrownianReal.aemeasurable",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsPreBrownianReal.congr",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsPreBrownianReal.covariance_eval",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsPreBrownianReal.covariance_fun_eval",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsPreBrownianReal.eval_zero_ae_eq_zero",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsPreBrownianReal.hasIndepIncrements",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsPreBrownianReal.hasLaw_eval",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsPreBrownianReal.hasLaw_sub",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsPreBrownianReal.indepFun_shift",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsPreBrownianReal.integrable_eval",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsPreBrownianReal.integral_eval",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsPreBrownianReal.inv",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsPreBrownianReal.isGaussianProcess",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsPreBrownianReal.neg",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsPreBrownianReal.shift",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.BrownianMotion.Basic",
+   "name": "ProbabilityTheory.IsPreBrownianReal.smul",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "ProbabilityTheory.IsLocalizingSequence.isPrelocalizingSequence_inf_extraction",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "ProbabilityTheory.IsLocalizingSequence.min",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "ProbabilityTheory.IsPreLocalizingSequence.isLocalizingSequence_biInf",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "ProbabilityTheory.IsStable.and",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "ProbabilityTheory.IsStable.locally",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "ProbabilityTheory.IsStable.locally_and_iff",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "ProbabilityTheory.IsStable.locally_induction",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "ProbabilityTheory.IsStable.locally_induction₂",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "ProbabilityTheory.IsStable.locally_locally_iff",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "ProbabilityTheory.IsStable.locally_of_isPreLocalizingSequence",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "ProbabilityTheory.Locally.isLocalizingSequence_localSeq",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "ProbabilityTheory.Locally.left",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "ProbabilityTheory.Locally.mono",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "ProbabilityTheory.Locally.of_and",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "ProbabilityTheory.Locally.of_prop",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "ProbabilityTheory.Locally.right",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "ProbabilityTheory.Locally.stoppedProcess_localSeq",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "ProbabilityTheory.isLocalizingSequence_const_top",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "_private.Mathlib.Probability.Process.LocalProperty.0.ProbabilityTheory.isPreLocalizingSequence_of_isLocalizingSequence_aux",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "_private.Mathlib.Probability.Process.LocalProperty.0.ProbabilityTheory.isPreLocalizingSequence_of_isLocalizingSequence_aux'",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "_private.Mathlib.Probability.Process.LocalProperty.0.ProbabilityTheory.le_mkStrictMonoAux",
+   "statement_sha256": null
+  },
+  {
+   "module": "Mathlib.Probability.Process.LocalProperty",
+   "name": "_private.Mathlib.Probability.Process.LocalProperty.0.ProbabilityTheory.mkStrictMonoAux_strictMono",
+   "statement_sha256": null
+  }
+ ],
+ "task_id": "mathlib372",
+ "task_revision": 1,
+ "title": "Mathlib leaf modules, joint medium20: 20 editable import-leaf modules inside Mathlib, 372 targets",
+ "toolchain": {
+  "githash": "8c9756b28d64dab099da31a4c09229a9e6a2ef35",
+  "id": "leanprover/lean4:v4.32.0"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "8c9756b28d64dab099da31a4c09229a9e6a2ef35",
+   "role": "toolchain v4.32.0: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

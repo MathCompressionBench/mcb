@@ -1,0 +1,5 @@
+#!/bin/sh
+# ABOUTME: Repo-local entry point for the lcbench tools: runs src/lcbench with the python3 on PATH.
+# ABOUTME: Example: bin/lcbench make-task tasks/toyarith/task_source.json --mode warm --out dist --workdir .work/mk
+here=$(cd "$(dirname "$0")/.." && pwd -P)
+PYTHONPATH="$here/src${PYTHONPATH:+:$PYTHONPATH}" exec python3 -m lcbench "$@"

@@ -1,0 +1,174 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean",
+   "Lake",
+   "Batteries",
+   "Aesop",
+   "Qq",
+   "Mathlib",
+   "Plausible",
+   "ProofWidgets",
+   "ImportGraph",
+   "LeanSearchClient",
+   "Cli"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "expr_nodes_with_levels_v1": 85690155
+ },
+ "commit": "94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6",
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "fetch": {
+    "note": "not vendored: redistribution license not yet confirmed; make-task downloads it once into fetched/",
+    "url": "https://raw.githubusercontent.com/openai/ten-proofs/94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6/Permanent.lean"
+   },
+   "original_sha256": "bdd53fe0b026c9b9e369db67b3c040e5d3eeffd04d13f00e041d23eb33603111",
+   "path": "Permanent.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 24576
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm",
+  "no_hint"
+ ],
+ "owner_modules": [
+  "Permanent"
+ ],
+ "project": {
+  "lake_manifest": {
+   "content_file": "lake-manifest.json",
+   "sha256": "0b7b8ea017b340b49c3cf120f1e27ff156c19c1f18715f186fca27e2c77b84f9"
+  },
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "9ce79be03ad1492e6f5fbe2babb6f7283c667af3e763ffaa36fcd64ae84dffe8"
+  },
+  "library_name": "MulticolorTriangleRamsey",
+  "packages": [
+   {
+    "name": "mathlib",
+    "rev": "81a5d257c8e410db227a6665ed08f64fea08e997",
+    "url": "https://github.com/leanprover-community/mathlib4.git"
+   },
+   {
+    "name": "plausible",
+    "rev": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+    "url": "https://github.com/leanprover-community/plausible"
+   },
+   {
+    "name": "LeanSearchClient",
+    "rev": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+    "url": "https://github.com/leanprover-community/LeanSearchClient"
+   },
+   {
+    "name": "importGraph",
+    "rev": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+    "url": "https://github.com/leanprover-community/import-graph"
+   },
+   {
+    "name": "proofwidgets",
+    "rev": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+    "url": "https://github.com/leanprover-community/ProofWidgets4"
+   },
+   {
+    "name": "aesop",
+    "rev": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+    "url": "https://github.com/leanprover-community/aesop"
+   },
+   {
+    "name": "Qq",
+    "rev": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+    "url": "https://github.com/leanprover-community/quote4"
+   },
+   {
+    "name": "batteries",
+    "rev": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+    "url": "https://github.com/leanprover-community/batteries"
+   },
+   {
+    "name": "Cli",
+    "rev": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+    "url": "https://github.com/leanprover/lean4-cli"
+   }
+  ]
+ },
+ "provenance": {},
+ "repository": "https://github.com/openai/ten-proofs",
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-09-29",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "not run; statement identity = structural kernel-type hash, definitions reachable from target statements are frozen (proof-irrelevant closure hash)",
+  "forbidden_text": [],
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": "2026-08-02",
+ "source_license": {
+  "evidence": "openai/ten-proofs has a top-level Apache-2.0 LICENSE at the pinned commit and GitHub's license API reports Apache-2.0 (checked 2026-09-29)",
+  "redistribution": "fetch",
+  "spdx": "Apache-2.0"
+ },
+ "status": "candidate",
+ "targets": [
+  {
+   "module": "Permanent",
+   "name": "PermanentFormulaLowerBound.permanent_divisionFree_formula_lower_bound",
+   "statement_sha256": null
+  },
+  {
+   "module": "Permanent",
+   "name": "PermanentFormulaLowerBound.permanent_rational_formula_lower_bound",
+   "statement_sha256": null
+  }
+ ],
+ "task_id": "permanent2",
+ "task_revision": 1,
+ "title": "Permanent formula lower bounds, ten-proofs Permanent.lean",
+ "toolchain": {
+  "githash": "8c9756b28d64dab099da31a4c09229a9e6a2ef35",
+  "id": "leanprover/lean4:v4.32.0"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "8c9756b28d64dab099da31a4c09229a9e6a2ef35",
+   "role": "toolchain v4.32.0: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}

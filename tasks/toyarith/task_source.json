@@ -1,0 +1,172 @@
+{
+ "background": {
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "rule": "a module is background iff it equals or is prefixed by a listed module"
+ },
+ "baseline": {
+  "dag_nodes_v1": 2198,
+  "expr_nodes_with_levels_v1": 20190
+ },
+ "core": {
+  "class": "background",
+  "modules": [
+   "Init",
+   "Std",
+   "Lean"
+  ],
+  "note": "core modules are free (background), as in every historical baseline"
+ },
+ "editable": [
+  {
+   "content_file": "originals/ToyArith/Basic.lean",
+   "original_sha256": "decc20c066cbbed08bf7ea0508f45c58052769276da7c330dbf2ef004b574069",
+   "path": "ToyArith/Basic.lean"
+  }
+ ],
+ "export": {
+  "kernel_export": true
+ },
+ "frozen": "statement_closure",
+ "limits": {
+  "kernel_heartbeats": 10000000000,
+  "mem_mb": 4096
+ },
+ "metrics": {
+  "primary": "expr_nodes_with_levels_v1",
+  "recorded": []
+ },
+ "modes": [
+  "warm",
+  "no_hint"
+ ],
+ "owner_modules": [
+  "ToyArith.Basic"
+ ],
+ "project": {
+  "lakefile": {
+   "content_file": "lakefile.toml",
+   "name": "lakefile.toml",
+   "sha256": "c140986a1e3087f48810071cb3a20d094169db66bc5867b8e23fd52c899f09c4"
+  },
+  "library_name": "ToyArith",
+  "packages": []
+ },
+ "provenance": {},
+ "revision_history": [
+  {
+   "change": "first release",
+   "date": "2026-09-29",
+   "revision": 1
+  }
+ ],
+ "rules": {
+  "allowed_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "comparator": "none (structural statement hash + frozen closure hash)",
+  "forbidden_text": [
+   "sorry",
+   "native_decide",
+   "implemented_by",
+   "extern",
+   "unsafe",
+   "skipKernelTC",
+   "debug.",
+   "axiom ",
+   "#exit",
+   "admit",
+   "partial "
+  ],
+  "kernel_replay": "leanchecker on every owner module"
+ },
+ "schema": "lcbench.task_source.v1",
+ "source_commit_date": null,
+ "source_license": {
+  "evidence": "written for lcbench",
+  "redistribution": "vendored",
+  "spdx": "LicenseRef-lcbench-repository"
+ },
+ "status": "prototype",
+ "targets": [
+  {
+   "module": "ToyArith.Basic",
+   "name": "ToyArith.MyNat.add_zero_eq",
+   "statement_sha256": null
+  },
+  {
+   "module": "ToyArith.Basic",
+   "name": "ToyArith.MyNat.add_succ_eq",
+   "statement_sha256": null
+  },
+  {
+   "module": "ToyArith.Basic",
+   "name": "ToyArith.MyNat.zero_add_eq",
+   "statement_sha256": null
+  },
+  {
+   "module": "ToyArith.Basic",
+   "name": "ToyArith.MyNat.succ_add_eq",
+   "statement_sha256": null
+  },
+  {
+   "module": "ToyArith.Basic",
+   "name": "ToyArith.MyNat.add_comm_eq",
+   "statement_sha256": null
+  },
+  {
+   "module": "ToyArith.Basic",
+   "name": "ToyArith.MyNat.add_assoc_eq",
+   "statement_sha256": null
+  },
+  {
+   "module": "ToyArith.Basic",
+   "name": "ToyArith.MyNat.add_right_comm_eq",
+   "statement_sha256": null
+  },
+  {
+   "module": "ToyArith.Basic",
+   "name": "ToyArith.MyNat.mul_zero_eq",
+   "statement_sha256": null
+  },
+  {
+   "module": "ToyArith.Basic",
+   "name": "ToyArith.MyNat.zero_mul_eq",
+   "statement_sha256": null
+  },
+  {
+   "module": "ToyArith.Basic",
+   "name": "ToyArith.MyNat.mul_one_eq",
+   "statement_sha256": null
+  },
+  {
+   "module": "ToyArith.Basic",
+   "name": "ToyArith.MyNat.left_distrib_eq",
+   "statement_sha256": null
+  },
+  {
+   "module": "ToyArith.Basic",
+   "name": "ToyArith.MyNat.mul_comm_eq",
+   "statement_sha256": null
+  }
+ ],
+ "task_id": "toyarith",
+ "task_revision": 1,
+ "title": "Toy MyNat arithmetic (Init background)",
+ "toolchain": {
+  "githash": "8c9756b28d64dab099da31a4c09229a9e6a2ef35",
+  "id": "leanprover/lean4:v4.32.0"
+ },
+ "tools": {
+  "lean4": {
+   "commit": "8c9756b28d64dab099da31a4c09229a9e6a2ef35",
+   "role": "toolchain v4.32.0: lean, lake, leanchecker (kernel replay)",
+   "url": "https://github.com/leanprover/lean4"
+  }
+ }
+}
